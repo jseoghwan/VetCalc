@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>혈액가스 판독 · KUVECC</title>
+<title>혈액가스 판독 · VECC</title>
 <meta name="description" content="VBGA·ABGA 혈액가스 판독 계산기 — 개/고양이 기준, Traditional·Stewart·Semi-quantitative 종합">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#4453A3">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="KUVECC">
+<meta name="apple-mobile-web-app-title" content="VECC Calc">
 <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -259,8 +259,8 @@ table.ctr td.num,table.ctr th.num{text-align:center}
   <div class="top-inner">
     <div class="brand">
       <a class="home" href="../index.html" aria-label="홈으로">‹ 홈</a>
-      <h1>KUVECC Blood Gas</h1>
-      <span class="sub">건국대 응급중환자의학과 · 혈액가스 판독 계산기</span>
+      <h1>VECC Blood Gas</h1>
+      <span class="sub">혈액가스 판독 계산기 · VBGA / ABGA</span>
     </div>
     <div class="seg" role="group" aria-label="종 선택">
       <button type="button" id="sp-dog" aria-pressed="true" data-sp="dog">DOG</button>
@@ -287,7 +287,7 @@ table.ctr td.num,table.ctr th.num{text-align:center}
       </div>
       <div class="inputs-body">
         <div class="igroup">
-          <div class="g">혈액가스 (Critical Care 3rd ref.)</div>
+          <div class="g">혈액가스 (Critical Care 3rd)</div>
           <div class="field" data-ref="pH"><label for="v-ph"><span class="n">pH</span></label><input type="number" inputmode="decimal" step="0.01" id="v-ph" value="7.21"><span class="ref"><span class="rr"></span><b></b></span></div>
           <div class="field" data-ref="PCO2"><label for="v-pco2"><span class="n">PCO<sub>2</sub></span><span class="u">mmHg</span></label><input type="number" inputmode="decimal" step="0.1" id="v-pco2" value="51"><span class="ref"><span class="rr"></span><b></b></span></div>
           <div class="field" data-ref="HCO3"><label for="v-hco3"><span class="n">HCO<sub>3</sub>(c)</span><span class="u">mmol/L</span></label><input type="number" inputmode="decimal" step="0.1" id="v-hco3" value="19"><span class="ref"><span class="rr"></span><b></b></span></div>
@@ -296,7 +296,7 @@ table.ctr td.num,table.ctr th.num{text-align:center}
           <div class="field" data-ref="AG"><label for="v-ag"><span class="n">AG</span><span class="u">mmol/L</span></label><input type="number" inputmode="decimal" step="0.1" id="v-ag" value="21"><span class="ref"><span class="rr"></span><b></b></span></div>
         </div>
         <div class="igroup">
-          <div class="g">전해질 · 단백 (본원 장비 ref.)</div>
+          <div class="g">전해질 · 단백 (reference interval)</div>
           <div class="field" data-ref="Na"><label for="v-na"><span class="n">Na</span><span class="u">mmol/L</span></label><input type="number" inputmode="decimal" step="0.1" id="v-na" value="153"><span class="ref"><span class="rr"></span><b></b></span></div>
           <div class="field" data-ref="K"><label for="v-k"><span class="n">K</span><span class="u">mmol/L</span></label><input type="number" inputmode="decimal" step="0.1" id="v-k" value="3.3"><span class="ref"><span class="rr"></span><b></b></span></div>
           <div class="field" data-ref="Cl"><label for="v-cl"><span class="n">Cl</span><span class="u">mmol/L</span></label><input type="number" inputmode="decimal" step="0.1" id="v-cl" value="116"><span class="ref"><span class="rr"></span><b></b></span></div>
@@ -596,7 +596,7 @@ table.ctr td.num,table.ctr th.num{text-align:center}
   </div>
 
   <div class="block">
-    <div class="sec"><span class="kicker">Reference</span><h2>기준 범위</h2><span class="note">산-염기: Critical Care 3rd, Table 60.3 · 전해질/Alb/Phos: 본원 장비</span></div>
+    <div class="sec"><span class="kicker">Reference</span><h2>기준 범위</h2><span class="note">산-염기: Critical Care 3rd, Table 60.3 · 전해질/Alb/Phos: reference interval</span></div>
     <div class="two">
       <div class="tw">
         <table>
@@ -777,7 +777,7 @@ table.ctr td.num,table.ctr th.num{text-align:center}
 
 <div class="foot">
   <span>Reference: Silverstein &amp; Hopper, Small Animal Critical Care Medicine 3rd · Nelson 6th · Ettinger 9th</span>
-  <span>전해질·Alb·Phos 기준은 본원 장비 reference interval</span>
+  <span>전해질·Alb·Phos 기준은 reference interval</span>
   <span>원본: VBGA ABGA SHM GYJ 260715 최종.xlsx</span>
 </div>
 </main>

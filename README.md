@@ -1,6 +1,6 @@
-# KUVECC ER · ICU Tools
+# VECC Calculation Tools
 
-건국대 응급중환자의학과 내부용 임상 계산기 · 프로토콜 모음 (PWA).
+Veterinary Emergency & Critical Care 임상 계산기 · 프로토콜 모음 (PWA).
 
 ## 구조
 

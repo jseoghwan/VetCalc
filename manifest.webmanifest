@@ -1,7 +1,7 @@
 {
-  "name": "KUVECC ER · ICU Tools",
-  "short_name": "KUVECC",
-  "description": "건국대 응급중환자의학과 내부용 임상 계산기 · 프로토콜",
+  "name": "VECC Calculation Tools",
+  "short_name": "VECC Calc",
+  "description": "Veterinary Emergency & Critical Care 임상 계산기 · 프로토콜",
   "lang": "ko",
   "start_url": "./index.html",
   "scope": "./",
