@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>KUVECC ER · ICU Tools</title>
+<meta name="description" content="건국대 응급중환자의학과 내부용 임상 계산기 · 프로토콜">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#4453A3">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="KUVECC">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#F3F4F7; --surface:#FFFFFF; --surface-2:#E9EBF1; --line:#D6D9E2; --line-strong:#B9BECB;
+  --ink:#1A1D26; --ink-2:#4A5063; --muted:#6F7588;
+  --venous:#4453A3; --venous-soft:#E5E8F6; --venous-ink:#2E3A80;
+  --arterial:#B3313B; --arterial-soft:#F8E4E5; --arterial-ink:#8C242C;
+  --shadow:0 1px 2px rgba(20,24,40,.06), 0 8px 24px -12px rgba(20,24,40,.18);
+  --radius:12px;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#111318; --surface:#1A1D25; --surface-2:#232733; --line:#2F3442; --line-strong:#454B5C;
+    --ink:#E9EBF1; --ink-2:#C0C5D3; --muted:#8F95A8;
+    --venous:#8B97E0; --venous-soft:#252B48; --venous-ink:#C6CDF6;
+    --arterial:#E0666E; --arterial-soft:#42232A; --arterial-ink:#F3B6BA;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans KR",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;font-size:15px;line-height:1.55;padding-inline:16px;padding-block:0 48px;padding-top:env(safe-area-inset-top)}
+h1,h2,h3{margin:0;line-height:1.25;text-wrap:balance}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:760px;margin:0 auto}
+.top{display:flex;align-items:center;gap:12px;padding:22px 0 18px}
+.top img{width:44px;height:44px;border-radius:11px;flex-shrink:0}
+.top h1{font-size:19px;font-weight:700;letter-spacing:-.01em}
+.top .sub{font-size:12.5px;color:var(--muted)}
+.sec{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:18px 0 8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.card{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow);min-height:86px}
+.card:hover{border-color:var(--line-strong)}
+.card:focus-visible{outline:2px solid var(--venous);outline-offset:2px}
+.card .ic{width:36px;height:36px;border-radius:9px;flex-shrink:0;display:grid;place-items:center;font-weight:700;font-size:13px;letter-spacing:.02em}
+.card .ic.v{background:var(--venous-soft);color:var(--venous-ink)}
+.card .ic.a{background:var(--arterial-soft);color:var(--arterial-ink)}
+.card .ic.g{background:var(--surface-2);color:var(--muted)}
+.card h3{font-size:15px;font-weight:700}
+.card p{margin:3px 0 0;font-size:13px;color:var(--ink-2);line-height:1.5}
+.card .tags{margin-top:6px;display:flex;gap:4px;flex-wrap:wrap}
+.tag{font-size:11px;font-weight:600;padding:1px 7px;border-radius:999px;background:var(--surface-2);color:var(--ink-2)}
+.card.soon{opacity:.6;box-shadow:none;border-style:dashed}
+.note{margin-top:22px;padding:12px 14px;border-left:3px dashed var(--line-strong);font-size:12.5px;color:var(--muted);line-height:1.6}
+.note b{color:var(--ink-2)}
+.foot{margin-top:28px;font-size:11.5px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <img src="icons/icon-192.png" alt="">
+    <div>
+      <h1>KUVECC ER · ICU Tools</h1>
+      <div class="sub">건국대 응급중환자의학과 · 임상 계산기 · 프로토콜</div>
+    </div>
+  </header>
+
+  <div class="sec">계산기</div>
+  <div class="grid">
+    <a class="card" href="tools/bloodgas.html">
+      <div class="ic v">BG</div>
+      <div>
+        <h3>혈액가스 판독</h3>
+        <p>VBGA·ABGA 계산기와 이론 정리. 개/고양이 기준 범위, Traditional·Stewart·Semi-quantitative 종합 결론, NaHCO<sub>3</sub> 용량.</p>
+        <div class="tags"><span class="tag">VBGA</span><span class="tag">ABGA</span><span class="tag">DOG / CAT</span></div>
+      </div>
+    </a>
+    <div class="card soon" aria-disabled="true">
+      <div class="ic g">+</div>
+      <div>
+        <h3>추가 예정</h3>
+        <p>다음 계산기·프로토콜은 이 자리에 카드로 추가됩니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    <b>휴대폰에 앱으로 설치</b> — iPhone: Safari 공유 버튼 → "홈 화면에 추가". Android: Chrome 메뉴(⋮) → "홈 화면에 추가" 또는 "앱 설치".
+    설치 후에는 인터넷이 잠시 끊겨도 마지막으로 열었던 내용이 표시됩니다.
+  </div>
+  <div class="foot">참고 문헌: Silverstein &amp; Hopper, Small Animal Critical Care Medicine 3rd · Nelson 6th · Ettinger 9th. 본원 장비 reference interval 일부 반영. 임상 판단의 보조 도구이며 최종 결정은 담당 수의사에게 있습니다.</div>
+</div>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => { navigator.serviceWorker.register('sw.js').catch(() => {}); });
+}
+</script>
+</body>
+</html>

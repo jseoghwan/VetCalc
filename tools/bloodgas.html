@@ -1,0 +1,1143 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>혈액가스 판독 · KUVECC</title>
+<meta name="description" content="VBGA·ABGA 혈액가스 판독 계산기 — 개/고양이 기준, Traditional·Stewart·Semi-quantitative 종합">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#4453A3">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="KUVECC">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+</head>
+<body>
+<style>
+:root{
+  --bg:#F3F4F7; --surface:#FFFFFF; --surface-2:#E9EBF1; --line:#D6D9E2; --line-strong:#B9BECB;
+  --ink:#1A1D26; --ink-2:#4A5063; --muted:#6F7588;
+  --venous:#4453A3; --venous-soft:#E5E8F6; --venous-ink:#2E3A80;
+  --arterial:#B3313B; --arterial-soft:#F8E4E5; --arterial-ink:#8C242C;
+  --input-bg:#FFF6D9; --input-line:#E0A92B; --input-ink:#5B4300; --input-focus:#F5C23A;
+  --ok:#2E7D4F; --ok-soft:#DFF2E6; --low:#2B67B3; --low-soft:#DDE9F8; --high:#C13A2E; --high-soft:#F9E1DE; --warn:#9A6A00; --warn-soft:#FBEFC9;
+  --shadow:0 1px 2px rgba(20,24,40,.06), 0 8px 24px -12px rgba(20,24,40,.18);
+  --radius:10px;
+  --accent:var(--venous); --accent-soft:var(--venous-soft); --accent-ink:var(--venous-ink);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111318; --surface:#1A1D25; --surface-2:#232733; --line:#2F3442; --line-strong:#454B5C;
+    --ink:#E9EBF1; --ink-2:#C0C5D3; --muted:#8F95A8;
+    --venous:#8B97E0; --venous-soft:#252B48; --venous-ink:#C6CDF6;
+    --arterial:#E0666E; --arterial-soft:#42232A; --arterial-ink:#F3B6BA;
+    --input-bg:#33290F; --input-line:#D9A83A; --input-ink:#F6DFA0; --input-focus:#F5C23A;
+    --ok:#6FCF97; --ok-soft:#1D3328; --low:#7FB2F0; --low-soft:#1E2E45; --high:#F08479; --high-soft:#432420; --warn:#E5B94A; --warn-soft:#3B3116;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111318; --surface:#1A1D25; --surface-2:#232733; --line:#2F3442; --line-strong:#454B5C;
+  --ink:#E9EBF1; --ink-2:#C0C5D3; --muted:#8F95A8;
+  --venous:#8B97E0; --venous-soft:#252B48; --venous-ink:#C6CDF6;
+  --arterial:#E0666E; --arterial-soft:#42232A; --arterial-ink:#F3B6BA;
+  --input-bg:#33290F; --input-line:#D9A83A; --input-ink:#F6DFA0; --input-focus:#F5C23A;
+  --ok:#6FCF97; --ok-soft:#1D3328; --low:#7FB2F0; --low-soft:#1E2E45; --high:#F08479; --high-soft:#432420; --warn:#E5B94A; --warn-soft:#3B3116;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+img{max-width:100%}[hidden]{display:none!important}
+body{padding-top:env(safe-area-inset-top)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans KR",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;font-size:15px;line-height:1.55;}
+body[data-mode="abga"]{--accent:var(--arterial);--accent-soft:var(--arterial-soft);--accent-ink:var(--arterial-ink)}
+.mono{font-family:"IBM Plex Mono","SFMono-Regular",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums;font-size:.93em}
+sub,sup{font-size:.68em;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-.22em}
+sup{top:-.45em}
+a{color:var(--accent)}
+h1,h2,h3,h4{margin:0;text-wrap:balance;line-height:1.25}
+p{margin:0}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+.top-inner{max-width:1120px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.brand{display:flex;align-items:baseline;gap:10px;flex:1 1 auto;min-width:0}
+.brand h1{font-size:17px;font-weight:700;letter-spacing:-.01em;white-space:nowrap}
+.brand .home{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;padding:4px 8px 4px 4px;border-radius:6px;white-space:nowrap;align-self:center}
+.brand .home:hover{background:var(--surface-2);color:var(--ink)}
+.brand .sub{font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media (max-width:600px){.brand .sub{display:none}.top-inner{flex-wrap:nowrap}}
+.seg{display:inline-flex;border:1px solid var(--line-strong);border-radius:999px;padding:3px;background:var(--surface-2);gap:2px}
+.seg button{border:0;background:transparent;color:var(--ink-2);font:inherit;font-weight:600;font-size:13px;padding:5px 14px;border-radius:999px;cursor:pointer;min-height:30px}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.tabs{max-width:1120px;margin:0 auto;padding:0 16px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{border:0;background:transparent;font:inherit;font-size:14px;font-weight:600;color:var(--muted);padding:10px 12px 11px;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap;display:flex;align-items:center;gap:7px}
+.tab .dot{width:8px;height:8px;border-radius:50%;background:currentColor;opacity:.55}
+.tab[data-kind="v"]{--tab-accent:var(--venous)}
+.tab[data-kind="a"]{--tab-accent:var(--arterial)}
+.tab[aria-selected="true"]{color:var(--tab-accent);border-bottom-color:var(--tab-accent)}
+.tab[aria-selected="true"] .dot{opacity:1}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+
+main{max-width:1120px;margin:0 auto;padding:20px 16px 64px}
+.panel{display:none}
+.panel.active{display:block}
+
+/* section header */
+.sec{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;margin:0 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.sec h2{font-size:15px;font-weight:700;letter-spacing:-.005em}
+.sec .kicker{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);padding:2px 7px;border-radius:4px;background:var(--accent-soft);line-height:1.5}
+.sec .note{font-size:12px;color:var(--muted);margin-left:auto;text-align:right;line-height:1.5}
+@media (max-width:640px){.sec .note{flex-basis:100%;margin-left:0;text-align:left}}
+.block+.block{margin-top:28px}
+
+/* calculator layout: inputs on top, results below */
+.calc{display:flex;flex-direction:column;gap:28px}
+.inputs{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.inputs-head{display:flex;align-items:center;gap:10px;padding:11px 16px;border-bottom:1px solid var(--line)}
+.inputs-head h2{font-size:14px;font-weight:700}
+.legend{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;color:var(--muted);margin-left:auto;white-space:nowrap}
+.legend i{display:inline-block;width:14px;height:10px;border-radius:2px;background:var(--input-bg);border:1.5px solid var(--input-line)}
+.inputs-body{padding:12px 16px 4px}
+.igroup{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px 12px;padding-bottom:12px}
+.igroup+.igroup{border-top:1px dashed var(--line);padding-top:12px}
+.igroup .g{grid-column:1 / -1;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:-4px}
+@media (max-width:480px){.igroup{grid-template-columns:1fr 1fr;gap:10px 10px}}
+@media (max-width:330px){.igroup{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column;gap:3px;min-width:0}
+.field label{font-size:12.5px;font-weight:600;color:var(--ink-2);display:flex;justify-content:space-between;align-items:baseline;gap:6px;line-height:1.4;white-space:nowrap}
+.field label .n{overflow:hidden;text-overflow:ellipsis}
+.field label .u{font-weight:500;color:var(--muted);font-size:11px;flex-shrink:0}
+.field input{font-family:"IBM Plex Mono",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums;font-size:17px;font-weight:500;color:var(--input-ink);background:var(--input-bg);border:1.5px solid var(--input-line);border-radius:7px;padding:7px 10px;width:100%;min-width:0;-moz-appearance:textfield;line-height:1.3}
+.field input::-webkit-outer-spin-button,.field input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.field input:focus{outline:0;border-color:var(--input-focus);box-shadow:0 0 0 3px color-mix(in srgb,var(--input-focus) 35%,transparent)}
+.field input::placeholder{color:var(--muted);opacity:.7;font-weight:400}
+.field .ref{font-size:10.5px;color:var(--muted);display:flex;justify-content:space-between;gap:6px;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap;line-height:1.5;overflow:hidden}
+.field .ref .rr{overflow:hidden;text-overflow:ellipsis}
+.field .ref b{font-weight:500;color:var(--ink-2);flex-shrink:0}
+.field.flag-low .ref b{color:var(--low)}
+.field.flag-high .ref b{color:var(--high)}
+.actions{display:flex;gap:8px;padding:0 16px 14px}
+.btn{font:inherit;font-size:13px;font-weight:600;border:1px solid var(--line-strong);background:var(--surface);color:var(--ink);padding:7px 12px;border-radius:7px;cursor:pointer}
+.btn:hover{background:var(--surface-2)}
+.btn:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.btn.quiet{color:var(--muted)}
+
+/* result tiles */
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}
+.tiles.wide{grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+@media (max-width:480px){.tiles{grid-template-columns:1fr 1fr}}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 12px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.tile .k{font-size:12px;font-weight:600;color:var(--ink-2);display:flex;flex-wrap:wrap;justify-content:space-between;gap:0 8px;align-items:baseline;line-height:1.5}
+.tile .k small{font-weight:500;color:var(--muted);font-size:11px;white-space:nowrap}
+.tile .v{font-family:"IBM Plex Mono",Menlo,monospace;font-variant-numeric:tabular-nums;font-size:22px;font-weight:600;line-height:1.1;letter-spacing:-.01em}
+.tile .v.txt{font-size:15px;font-family:inherit;font-weight:700;line-height:1.3}
+.tile .vrow{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:4px 8px;min-width:0}
+.tile .vrow .chip{flex-shrink:0}
+.tile .vrow .v{min-width:0}
+.tile .r{font-size:10.5px;color:var(--muted);font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;line-height:1.5;margin-top:2px}
+.tile .v.j{font-size:15px;font-family:inherit;font-weight:700;line-height:1.3}
+.chip{display:inline-block;font-family:"IBM Plex Sans KR",sans-serif;font-size:11px;font-weight:700;padding:1px 7px;border-radius:999px;line-height:1.5;white-space:nowrap}
+.chip.ok{color:var(--ok);background:var(--ok-soft)}
+.chip.low{color:var(--low);background:var(--low-soft)}
+.chip.high{color:var(--high);background:var(--high-soft)}
+.chip.warn{color:var(--warn);background:var(--warn-soft)}
+.chip.na{color:var(--muted);background:var(--surface-2)}
+.tile.ok{border-color:color-mix(in srgb,var(--ok) 45%,var(--line))}
+.tile.low{border-color:color-mix(in srgb,var(--low) 55%,var(--line))}
+.tile.high{border-color:color-mix(in srgb,var(--high) 55%,var(--line))}
+
+/* tables */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;line-height:1.5}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:middle}
+thead th{font-size:11px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;color:var(--muted);background:var(--surface-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap;font-size:13px}
+td.f{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink-2);white-space:nowrap}
+td .chip{vertical-align:middle}
+tbody td:first-child{white-space:nowrap}
+tr.in-range td{background:color-mix(in srgb,var(--ok-soft) 60%,transparent)}
+.tag{display:inline-block;font-size:11px;font-weight:600;padding:1px 6px;border-radius:4px;background:var(--surface-2);color:var(--ink-2);white-space:nowrap}
+.tag.v{background:var(--venous-soft);color:var(--venous-ink)}
+.tag.a{background:var(--arterial-soft);color:var(--arterial-ink)}
+
+/* callouts / prose */
+.callout{border-left:3px solid var(--accent);background:var(--surface);border-radius:0 8px 8px 0;padding:10px 14px;font-size:13.5px;line-height:1.65;color:var(--ink-2)}
+.callout.warn{border-left-color:var(--warn);}
+.callout b{color:var(--ink)}
+.callout p+p{margin-top:4px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+@media (max-width:720px){.two{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;font-size:13.5px;line-height:1.65;color:var(--ink-2)}
+.card h3{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:6px;display:block;line-height:1.5}
+.card h3 .tag{margin-left:6px;vertical-align:1px}
+.card ul{margin:6px 0 0;padding-left:18px}
+.card li{margin:0}
+.card li+li{margin-top:3px}
+.card li ul{margin-top:3px;padding-left:16px}
+.card .lead{color:var(--ink-2)}
+.card b{color:var(--ink);font-weight:600}
+/* data-driven interpretation vs static reference text */
+.val{font-family:"IBM Plex Mono",Menlo,monospace;font-variant-numeric:tabular-nums;font-size:.9em;font-weight:600;color:var(--input-ink);background:var(--input-bg);border:1px solid color-mix(in srgb,var(--input-line) 45%,transparent);border-radius:4px;padding:0 5px;white-space:nowrap;line-height:1.5}
+.verdict{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--radius);padding:14px 16px 14px 18px}
+.verdict .head{font-size:18px;font-weight:700;letter-spacing:-.01em;line-height:1.35;color:var(--ink)}
+.verdict .head .chip{vertical-align:3px;margin-left:6px}
+.verdict .rows{display:grid;grid-template-columns:max-content 1fr;gap:10px 16px;margin-top:12px;font-size:13.5px;line-height:1.7;color:var(--ink-2)}
+.verdict .rows b{color:var(--ink);font-weight:600}
+.verdict .lbl{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);padding-top:4px;white-space:nowrap}
+.verdict .row-rx{grid-column:1 / -1;display:grid;grid-template-columns:subgrid;background:var(--warn-soft);border-radius:6px;padding:8px 10px;margin:2px -10px 0}
+.verdict .row-rx .lbl{color:var(--warn)}
+.verdict .row-rx.ok{background:var(--ok-soft)}
+.verdict .row-rx.ok .lbl{color:var(--ok)}
+.verdict .row-rx.no{background:var(--high-soft)}
+.verdict .row-rx.no .lbl{color:var(--high)}
+@media (max-width:520px){.verdict .rows{grid-template-columns:1fr;gap:2px 0}.verdict .lbl{padding-top:8px}.verdict .row-rx{grid-template-columns:1fr;margin-top:6px}}
+.findings{margin:8px 0 0;padding:0;list-style:none;display:grid;gap:6px;font-size:13.5px;line-height:1.7;color:var(--ink-2)}
+.findings li{padding:0}
+.findings b{color:var(--ink);font-weight:600}
+.legend-line{font-size:11.5px;color:var(--muted);margin-top:8px;display:flex;flex-wrap:wrap;gap:4px 14px;align-items:center}
+.legend-line .val{font-size:11px}
+.val-empty{display:inline-block;width:26px;height:14px;vertical-align:-2px}
+.j{font-weight:600}
+.j.hi{color:var(--high)}
+.j.lo{color:var(--low)}
+.j.ok{color:var(--ok)}
+.j.n{color:var(--ink)}
+.j.w{color:var(--warn)}
+table.ctr th,table.ctr td{text-align:center}
+table.ctr th:first-child,table.ctr td:first-child{text-align:left}
+table.ctr td.num,table.ctr th.num{text-align:center}
+#v-comp th:nth-child(1){width:32%}#v-comp th:nth-child(2){width:14%}#v-comp th:nth-child(3){width:20%}#v-comp th:nth-child(4){width:12%}
+#v-semi th:nth-child(1){width:26%}#v-semi th:nth-child(2){width:12%}#v-semi th:nth-child(3){width:24%}
+#v-semi td.f{text-align:center}
+.legend-line .k{display:inline-block;width:10px;height:10px;border-left:3px dashed var(--line-strong);vertical-align:-1px;margin-right:4px}
+/* static reference notes */
+.callout.ref{border-left:3px dashed var(--line-strong);background:transparent;color:var(--muted);font-size:13px;padding:6px 14px}
+.callout.ref b{color:var(--ink-2);font-weight:600}
+.callout.ref .kick{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.06em;color:var(--muted);border:1px solid var(--line-strong);border-radius:4px;padding:0 5px;margin-bottom:4px;line-height:1.6}
+.defs{display:grid;grid-template-columns:max-content 1fr;gap:3px 12px;margin:0}
+.defs dt{font-weight:600;color:var(--ink-2);white-space:nowrap}
+.defs dd{margin:0}
+@media (max-width:480px){.defs{grid-template-columns:1fr;gap:0}.defs dd{margin-bottom:5px}}
+.prose{max-width:72ch;color:var(--ink-2);font-size:13.5px;line-height:1.7}
+.prose p+p{margin-top:8px}
+.prose b{color:var(--ink);font-weight:600}
+.src{font-size:11.5px;color:var(--muted);margin-top:8px;line-height:1.5}
+.formula{font-family:"IBM Plex Mono",monospace;font-size:12px;background:var(--surface-2);border-radius:5px;padding:1px 6px;color:var(--ink-2);white-space:normal;overflow-wrap:anywhere}
+.flist{display:grid;gap:6px;margin:8px 0 0;padding:0;list-style:none}
+.flist li{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:baseline}
+.flist .fk{min-width:56px;font-weight:600;color:var(--ink);font-size:13px}
+
+/* hypoxemia tree */
+.tree{display:grid;grid-template-columns:repeat(5,minmax(150px,1fr));gap:10px}
+.tree .branch{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px;font-size:13px;line-height:1.6;color:var(--ink-2)}
+.tree .branch h4{font-size:13.5px;font-weight:700;color:var(--ink);margin-bottom:2px}
+.tree .branch .hint{font-size:11.5px;color:var(--muted);margin-bottom:6px;line-height:1.5}
+.tree .branch ul{margin:0;padding-left:16px}
+.tree .branch li{margin:0}
+.tree .branch li+li{margin-top:2px}
+.tree-head{display:grid;grid-template-columns:2fr 3fr;gap:10px;margin-bottom:10px}
+.tree-head>div{border-radius:8px;padding:8px 12px;font-size:13px;font-weight:600;background:var(--accent-soft);color:var(--accent-ink);text-align:center}
+@media (max-width:820px){.tree{grid-template-columns:1fr 1fr}.tree-head{grid-template-columns:1fr}}
+@media (max-width:480px){.tree{grid-template-columns:1fr}}
+
+.foot{margin-top:40px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 18px}
+@media (prefers-reduced-motion:no-preference){.tile,.field input{transition:border-color .15s ease}}
+</style>
+
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <a class="home" href="../index.html" aria-label="홈으로">‹ 홈</a>
+      <h1>KUVECC Blood Gas</h1>
+      <span class="sub">건국대 응급중환자의학과 · 혈액가스 판독 계산기</span>
+    </div>
+    <div class="seg" role="group" aria-label="종 선택">
+      <button type="button" id="sp-dog" aria-pressed="true" data-sp="dog">DOG</button>
+      <button type="button" id="sp-cat" aria-pressed="false" data-sp="cat">CAT</button>
+    </div>
+  </div>
+  <nav class="tabs" role="tablist" aria-label="페이지">
+    <button class="tab" role="tab" id="tab-vtheory" data-kind="v" data-panel="p-vtheory" aria-selected="false"><span class="dot"></span>VBGA 이론</button>
+    <button class="tab" role="tab" id="tab-atheory" data-kind="a" data-panel="p-atheory" aria-selected="false"><span class="dot"></span>ABGA 이론</button>
+    <button class="tab" role="tab" id="tab-vcalc" data-kind="v" data-panel="p-vcalc" aria-selected="true"><span class="dot"></span>VBGA 계산기</button>
+    <button class="tab" role="tab" id="tab-acalc" data-kind="a" data-panel="p-acalc" aria-selected="false"><span class="dot"></span>ABGA 계산기</button>
+  </nav>
+</header>
+
+<main>
+
+<!-- ===================== VBGA CALCULATOR ===================== -->
+<section class="panel active" id="p-vcalc" role="tabpanel" aria-labelledby="tab-vcalc">
+  <div class="calc">
+    <aside class="inputs">
+      <div class="inputs-head">
+        <h2>결과값 입력</h2>
+        <span class="legend"><i></i> 노란 칸 = 직접 입력</span>
+      </div>
+      <div class="inputs-body">
+        <div class="igroup">
+          <div class="g">혈액가스 (Critical Care 3rd ref.)</div>
+          <div class="field" data-ref="pH"><label for="v-ph"><span class="n">pH</span></label><input type="number" inputmode="decimal" step="0.01" id="v-ph" value="7.21"><span class="ref"><span class="rr"></span><b></b></span></div>
+          <div class="field" data-ref="PCO2"><label for="v-pco2"><span class="n">PCO<sub>2</sub></span><span class="u">mmHg</span></label><input type="number" inputmode="decimal" step="0.1" id="v-pco2" value="51"><span class="ref"><span class="rr"></span><b></b></span></div>
+          <div class="field" data-ref="HCO3"><label for="v-hco3"><span class="n">HCO<sub>3</sub>(c)</span><span class="u">mmol/L</span></label><input type="number" inputmode="decimal" step="0.1" id="v-hco3" value="19"><span class="ref"><span class="rr"></span><b></b></span></div>
+          <div class="field" data-ref="BE"><label for="v-be"><span class="n">BE-ecf</span><span class="u">mmol/L</span></label><input type="number" inputmode="decimal" step="0.1" id="v-be" value="9.4"><span class="ref"><span class="rr"></span><b></b></span></div>
+          <div class="field" data-ref="Lac"><label for="v-lac"><span class="n">Lac</span><span class="u">mmol/L</span></label><input type="number" inputmode="decimal" step="0.01" id="v-lac" value="5.89"><span class="ref"><span class="rr"></span><b></b></span></div>
+          <div class="field" data-ref="AG"><label for="v-ag"><span class="n">AG</span><span class="u">mmol/L</span></label><input type="number" inputmode="decimal" step="0.1" id="v-ag" value="21"><span class="ref"><span class="rr"></span><b></b></span></div>
+        </div>
+        <div class="igroup">
+          <div class="g">전해질 · 단백 (본원 장비 ref.)</div>
+          <div class="field" data-ref="Na"><label for="v-na"><span class="n">Na</span><span class="u">mmol/L</span></label><input type="number" inputmode="decimal" step="0.1" id="v-na" value="153"><span class="ref"><span class="rr"></span><b></b></span></div>
+          <div class="field" data-ref="K"><label for="v-k"><span class="n">K</span><span class="u">mmol/L</span></label><input type="number" inputmode="decimal" step="0.1" id="v-k" value="3.3"><span class="ref"><span class="rr"></span><b></b></span></div>
+          <div class="field" data-ref="Cl"><label for="v-cl"><span class="n">Cl</span><span class="u">mmol/L</span></label><input type="number" inputmode="decimal" step="0.1" id="v-cl" value="116"><span class="ref"><span class="rr"></span><b></b></span></div>
+          <div class="field" data-ref="iCa"><label for="v-ica"><span class="n">iCa</span><span class="u">mmol/L</span></label><input type="number" inputmode="decimal" step="0.01" id="v-ica" value="1.5"><span class="ref"><span class="rr"></span><b></b></span></div>
+          <div class="field" data-ref="Alb"><label for="v-alb"><span class="n">Alb</span><span class="u">g/dL</span></label><input type="number" inputmode="decimal" step="0.1" id="v-alb" value="2.7"><span class="ref"><span class="rr"></span><b></b></span></div>
+          <div class="field" data-ref="Phos"><label for="v-phos"><span class="n">Phos</span><span class="u">mg/dL</span></label><input type="number" inputmode="decimal" step="0.1" id="v-phos" value="4"><span class="ref"><span class="rr"></span><b></b></span></div>
+        </div>
+        <div class="igroup">
+          <div class="g">환자</div>
+          <div class="field"><label for="v-bw"><span class="n">BW</span><span class="u">kg</span></label><input type="number" inputmode="decimal" step="0.1" id="v-bw" value="3.5"><span class="ref"><span class="rr">NaHCO<sub>3</sub> 용량 계산용</span><b></b></span></div>
+        </div>
+      </div>
+      <div class="actions">
+        <button type="button" class="btn quiet" data-action="clear" data-scope="v">전체 지우기</button>
+        <button type="button" class="btn quiet" data-action="sample" data-scope="v">예시값 불러오기</button>
+      </div>
+    </aside>
+
+    <div class="results">
+      <div class="block">
+        <div class="sec"><span class="kicker">종합 결론</span><h2>판독 요약</h2><span class="note">Traditional · Stewart · Semi-quantitative 종합</span></div>
+        <div class="verdict" id="v-verdict">
+          <div class="head" id="v-verdict-head">—</div>
+          <div class="rows" id="v-verdict-rows"></div>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="sec"><span class="kicker">1차 평가</span><h2>산-염기 상태</h2><span class="note">Traditional 기준 (Critical Care 3rd)</span></div>
+        <div class="verdict" id="v-summary">
+          <div class="head" id="v-sum-title">—</div>
+          <ul class="findings" id="v-sum-why"></ul>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="sec"><span class="kicker">계산값</span><h2>기본 지표</h2></div>
+        <div class="tiles" id="v-basic"></div>
+      </div>
+
+      <div class="block">
+        <div class="sec"><span class="kicker">Traditional</span><h2>예상 보상 범위</h2><span class="note">DOG 기준 · CAT은 보상 guideline 없음</span></div>
+        <div class="tw">
+          <table id="v-comp" class="ctr">
+            <thead><tr><th>1차 이상</th><th>보상 지표</th><th class="num">예상 범위</th><th class="num">측정값</th><th>판정</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="callout ref" style="margin-top:10px">
+          <span class="kick">참고</span>
+          <dl class="defs">
+            <dt>Mixed 판단</dt><dd>pH가 정상이면 BE·HCO<sub>3</sub>의 경향을 보고 산증 또는 알칼리증의 보상 중 하나로 택1 평가</dd>
+            <dt>호흡성 원발</dt><dd>대사성 보상 계산 적용 시 주의</dd>
+            <dt>대사성 원발</dt><dd>호흡성 보상 계산은 권장되지 않음 (VBGA의 PvCO<sub>2</sub>는 참고용 — 폐기능은 ABGA로 평가)</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="sec"><span class="kicker">Stewart</span><h2>Strong ion 분석</h2></div>
+        <div class="tiles wide" id="v-stewart"></div>
+        <div class="callout ref" style="margin-top:10px">
+          <span class="kick">참고</span>
+          <dl class="defs">
+            <dt>SID ↑</dt><dd>저염소성 알칼리증, 고나트륨성(농축) 알칼리증</dd>
+            <dt>SID ↓</dt><dd>음이온 증가성(고염소, 유기산) 산증, 저나트륨성(희석) 산증</dd>
+            <dt>A<sub>TOT</sub> ↑</dt><dd>고인산혈증·고알부민혈증 → 산증</dd>
+            <dt>A<sub>TOT</sub> ↓</dt><dd>저인산혈증·저알부민혈증 → 알칼리증</dd>
+            <dt>SIG ↑</dt><dd>unmeasured anion 증가</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="sec"><span class="kicker">Semi-quantitative</span><h2>BE 분해</h2><span class="note">(−) 산증에 기여 · (+) 알칼리증에 기여</span></div>
+        <div class="tw">
+          <table id="v-semi" class="ctr">
+            <thead><tr><th>Effect</th><th class="num" id="v-semi-sp">DOG</th><th>판정</th><th>기준</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="sec"><span class="kicker">치료</span><h2>Sodium bicarbonate</h2></div>
+        <div class="two">
+          <div class="card">
+            <div class="tiles" style="grid-template-columns:1fr">
+              <div class="tile" id="v-nahco3"><div class="k"><span>총 투여량</span><small>8.4% NaHCO<sub>3</sub></small></div><div class="vrow"><div class="v">—</div><span class="chip-slot"></span></div><div class="r">−BE × BW × 0.3</div></div>
+            </div>
+            <ul style="margin-top:10px">
+              <li><b>방법 1</b> ½ dose over 6 hr, then re-evaluate</li>
+              <li><b>방법 2</b> ¼–⅓ dose slow IV, then ¼ dose over 4–6 hr</li>
+              <li>WFI 또는 NS로 <b>1:3 희석</b> 필요</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3><span class="tag">Indication</span></h3>
+            <ul><li>고염소성 대사성 산증</li><li>Uremic acidosis</li></ul>
+            <h3 style="margin-top:12px"><span class="tag" style="background:var(--high-soft);color:var(--high)">Contraindication</span></h3>
+            <ul><li>호흡성 산증 mixed</li><li>Lactic acidosis (pH 무관)</li><li>Ketoacidosis</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABGA CALCULATOR ===================== -->
+<section class="panel" id="p-acalc" role="tabpanel" aria-labelledby="tab-acalc">
+  <div class="calc">
+    <aside class="inputs">
+      <div class="inputs-head">
+        <h2>결과값 입력</h2>
+        <span class="legend"><i></i> 노란 칸 = 직접 입력</span>
+      </div>
+      <div class="inputs-body">
+        <div class="igroup">
+          <div class="g">동맥혈 가스</div>
+          <div class="field"><label for="a-fio2"><span class="n">FiO<sub>2</sub></span><span class="u">분율</span></label><input type="number" inputmode="decimal" step="0.01" min="0.21" max="1" id="a-fio2" value="0.3"><span class="ref"><span class="rr">room air 0.21</span><b></b></span></div>
+          <div class="field"><label for="a-pao2"><span class="n">PaO<sub>2</sub></span><span class="u">mmHg</span></label><input type="number" inputmode="decimal" step="0.1" id="a-pao2" value="92"><span class="ref"><span class="rr">ref 80 ~ 125</span><b></b></span></div>
+          <div class="field"><label for="a-paco2"><span class="n">PaCO<sub>2</sub></span><span class="u">mmHg</span></label><input type="number" inputmode="decimal" step="0.1" id="a-paco2" value="72"><span class="ref"><span class="rr">ref 35 ~ 45</span><b></b></span></div>
+          <div class="field"><label for="a-sao2"><span class="n">SaO<sub>2</sub></span><span class="u">%</span></label><input type="number" inputmode="decimal" step="0.1" id="a-sao2" value="97.6"><span class="ref"><span class="rr">ref 95 ~ 99</span><b></b></span></div>
+        </div>
+        <div class="igroup">
+          <div class="g">Qs/Qt 계산용 · 정맥혈은 jugular 채혈로 대체</div>
+          <div class="field"><label for="a-hb"><span class="n">Hb</span><span class="u">g/dL</span></label><input type="number" inputmode="decimal" step="0.1" id="a-hb" value="10.1"><span class="ref"><span class="rr"></span><b></b></span></div>
+          <div class="field"><label for="a-svo2"><span class="n">SvO<sub>2</sub></span><span class="u">%</span></label><input type="number" inputmode="decimal" step="0.1" id="a-svo2" placeholder="정맥혈"><span class="ref"><span class="rr">% 입력 (자동 /100)</span><b></b></span></div>
+          <div class="field"><label for="a-pvo2"><span class="n">PvO<sub>2</sub></span><span class="u">mmHg</span></label><input type="number" inputmode="decimal" step="0.1" id="a-pvo2" placeholder="정맥혈"><span class="ref"><span class="rr"></span><b></b></span></div>
+        </div>
+      </div>
+      <div class="actions">
+        <button type="button" class="btn quiet" data-action="clear" data-scope="a">전체 지우기</button>
+        <button type="button" class="btn quiet" data-action="sample" data-scope="a">예시값 불러오기</button>
+      </div>
+    </aside>
+
+    <div class="results">
+      <div class="block">
+        <div class="sec"><span class="kicker">종합 결론</span><h2>판독 요약</h2><span class="note">산소화 · 환기 · 폐기능 지표 종합</span></div>
+        <div class="verdict" id="a-verdict">
+          <div class="head" id="a-verdict-head">—</div>
+          <div class="rows" id="a-verdict-rows"></div>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="sec"><span class="kicker">1차 평가</span><h2>산소화 · 환기</h2><span class="note">PaO<sub>2</sub>/SaO<sub>2</sub> 기준 (Critical Care 3rd)</span></div>
+        <div class="tiles wide" id="a-basic"></div>
+      </div>
+
+      <div class="block">
+        <div class="sec"><span class="kicker">계산값</span><h2>폐기능 지표</h2></div>
+        <div class="tiles wide" id="a-lung"></div>
+        <div class="callout ref" style="margin-top:10px">
+          <span class="kick">참고</span>
+          <dl class="defs">
+            <dt>PaO<sub>2</sub>/FiO<sub>2</sub></dt><dd>산소 치료 중 사용하기 가장 좋은 지표 (ref &gt; 300)</dd>
+            <dt>A-a gradient</dt><dd>Room air(FiO<sub>2</sub> 0.21)에서 사용하기 가장 좋은 지표 (ref &lt; 10–15)</dd>
+            <dt>120 rule</dt><dd>Room air에서만 사용 가능 · PaO<sub>2</sub> + PaCO<sub>2</sub> &lt; 120이면 venous admixture</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="sec"><span class="kicker">Venous admixture</span><h2>Qs/Qt (shunt fraction)</h2><span class="note">Q<sub>S</sub>/Q<sub>T</sub> = (CcO<sub>2</sub> − CaO<sub>2</sub>) / (CcO<sub>2</sub> − CvO<sub>2</sub>)</span></div>
+        <div class="tiles wide" id="a-shunt"></div>
+        <div class="tw" style="margin-top:10px">
+          <table id="a-qs" class="ctr">
+            <thead><tr><th>Qs/Qt</th><th>판정</th><th>해석</th></tr></thead>
+            <tbody>
+              <tr id="qs-r1"><td>&lt; 5%</td><td class="qs-mark"></td><td>normal</td></tr>
+              <tr id="qs-r2"><td>&gt; 10%</td><td class="qs-mark"></td><td>venous admixture</td></tr>
+              <tr id="qs-r3"><td>&gt; 50%</td><td class="qs-mark"></td><td>severe, diffuse lung disease</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== VBGA THEORY ===================== -->
+<section class="panel" id="p-vtheory" role="tabpanel" aria-labelledby="tab-vtheory">
+  <div class="block">
+    <div class="sec"><span class="kicker">VBGA</span><h2>정맥혈 가스 — 대사성 평가</h2><span class="note">호흡성 이상은 ABGA로 폐기능 평가</span></div>
+    <div class="two">
+      <div class="card">
+        <h3><span class="tag v">대사성 산증</span></h3>
+        <ul>
+          <li><b>AG 증가</b> — 유기산증 (KULES: Ketones, Uremia, Lactate, Ethylene glycol, Salicylate)</li>
+          <li><b>AG 정상–감소</b> — HCO<sub>3</sub> 소실 또는 H<sup>+</sup> 배설 장애
+            <ul>
+              <li>HCO<sub>3</sub> 소실: 설사, 근위세뇨관산증(Fanconi), 독소/약물, 부갑상선기능저하증 등</li>
+              <li>H<sup>+</sup> 배설 장애: 신우신염, IMHA, 에디슨 등</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="tag v">대사성 알칼리증</span></h3>
+        <ul>
+          <li>신장의 HCO<sub>3</sub> 배설 장애 — 탈수, 저염소혈증, 저칼륨혈증, 알도스테론 과다</li>
+          <li>구토, 위저류, 이뇨제, 중탄산 투여에 의해 주로 발생</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="tag">호흡성 산증</span></h3>
+        <p class="lead">RR 감소, tidal volume 감소 → 저환기, CO<sub>2</sub> 배출 장애</p>
+        <ul>
+          <li>호흡기질환 — 상부호흡기 폐색, 폐질환</li>
+          <li>Restrictive extrapulmonary disorder — 흉강질환, 횡격막탈장, flail chest</li>
+          <li>기타 — 마취 중 저환기, 심한 비만, 신경근질환에 의한 호흡근 마비</li>
+          <li>저환기 &amp; CO<sub>2</sub> 생성 증가 — CPA, 발작, 열사병 등</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="tag">호흡성 알칼리증</span></h3>
+        <p class="lead">RR 증가, tidal volume 증가 → 과환기</p>
+        <ul>
+          <li>통증, 불안, 고체온, 운동</li>
+          <li>저산소혈증 — 호흡기질환, R→L shunt, 심한 빈혈, 순환기질환(저혈압, CHF 등)</li>
+          <li>Systemic — 간질환, 패혈증, 대사성 산증 보상 중, 쿠싱, 약물 등</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="sec"><span class="kicker">Traditional</span><h2>진단 기준 · 보상 공식</h2><span class="note">Critical Care 3rd, Textbox 1</span></div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>이상</th><th>DOG 기준</th><th>DOG 예상 보상</th><th>CAT 기준</th></tr></thead>
+        <tbody>
+          <tr><td>Metabolic acidosis</td><td class="f">pH &lt; 7.32, HCO<sub>3</sub> &lt; 18</td><td class="f">PvCO<sub>2</sub> = 40 − (ΔHCO<sub>3</sub> × 0.7) ± 3</td><td class="f">pH &lt; 7.34, HCO<sub>3</sub> &lt; 18</td></tr>
+          <tr><td>Metabolic alkalosis</td><td class="f">pH &gt; 7.43, HCO<sub>3</sub> &gt; 26</td><td class="f">PvCO<sub>2</sub> = 40 + (ΔHCO<sub>3</sub> × 0.7) ± 3</td><td class="f">pH &gt; 7.43, HCO<sub>3</sub> &gt; 26</td></tr>
+          <tr><td>Respiratory acidosis</td><td class="f">pH &lt; 7.32, PvCO<sub>2</sub> &gt; 45</td><td class="f">HCO<sub>3</sub> = 22 + (0.15–0.35 × ΔPCO<sub>2</sub>) ± 2</td><td class="f">pH &lt; 7.34, PvCO<sub>2</sub> &gt; 39</td></tr>
+          <tr><td>Respiratory alkalosis</td><td class="f">pH &gt; 7.43, PvCO<sub>2</sub> &lt; 37</td><td class="f">HCO<sub>3</sub> = 22 − (0.25–0.55 × ΔPCO<sub>2</sub>) ± 2</td><td class="f">pH &gt; 7.43, PvCO<sub>2</sub> &lt; 34</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="prose" style="margin-top:10px">
+      <p>ΔHCO<sub>3</sub> = 정상 중앙값 22 − 측정 HCO<sub>3</sub> · ΔPCO<sub>2</sub> = 정상 중앙값 41 − 측정 PCO<sub>2</sub>. 급성 호흡성 이상은 계수 0.15 / 0.25, 만성은 0.35 / 0.55.</p>
+      <p><b>Mixed disturbance</b> — 2차 시스템의 반응이 예상 범위를 벗어남. <b>고양이</b>는 보상을 계산하지 않고, PvCO<sub>2</sub>와 BE/HCO<sub>3</sub> 모두 이상이면 두 가지 이상이 공존하는 것으로 보고.</p>
+      <p><b>AG에 의한 대사성 산증 세분류</b> — DOG: AG &gt; 16 (증가) / ≤ 16 · CAT: AG &gt; 20 (증가) / ≤ 20.</p>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="sec"><span class="kicker">Stewart</span><h2>진단 기준 · 공식</h2><span class="note">Critical Care 3rd, Textbox 2 · Table 60.1</span></div>
+    <div class="two">
+      <div class="tw">
+        <table>
+          <thead><tr><th>항목</th><th>DOG</th><th>CAT</th></tr></thead>
+          <tbody>
+            <tr><td>SID ↑ 대사성 알칼리증</td><td class="f">SID<sub>app</sub> &gt; 45</td><td class="f">&gt; 44</td></tr>
+            <tr><td>SID ↓ 대사성 산증</td><td class="f">SID<sub>app</sub> &lt; 32</td><td class="f">&lt; 40</td></tr>
+            <tr><td>A<sub>TOT</sub> ↑ 대사성 산증</td><td class="f">A<sub>TOT</sub> &gt; 11</td><td class="f">&gt; 17</td></tr>
+            <tr><td>A<sub>TOT</sub> ↓ 대사성 알칼리증</td><td class="f">A<sub>TOT</sub> &lt; 10</td><td class="f">&lt; 8</td></tr>
+            <tr><td>Unmeasured anion ↑</td><td class="f">SIG &gt; 7</td><td class="f">&gt; 9</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tw">
+        <table>
+          <thead><tr><th>Parameter</th><th>Formula</th></tr></thead>
+          <tbody>
+            <tr><td>SID</td><td class="f">(Na + K) − Cl</td></tr>
+            <tr><td>Albumin effect</td><td class="f">Alb × 10 × (0.123 × pH − 0.631)</td></tr>
+            <tr><td>Phosphorus effect</td><td class="f">Phos × 0.323 × (0.309 × pH − 0.469)</td></tr>
+            <tr><td>A<sub>TOT</sub></td><td class="f">albumin effect + phosphorus effect</td></tr>
+            <tr><td>SIG</td><td class="f">SID − (HCO<sub>3</sub> + A<sub>TOT</sub>)</td></tr>
+            <tr><td>Simplified SIG</td><td class="f">DOG: Alb × 4.9 − AG · CAT: Alb × 7.4 − AG</td></tr>
+            <tr><td>AG<sub>phos-adjusted</sub></td><td class="f">AG + (2.52 − 5.58 × Phos)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="sec"><span class="kicker">Semi-quantitative</span><h2>BE 분해 — 공식 · 기준</h2><span class="note">Critical Care 3rd, Textbox 3 · Table 60.1</span></div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Effect</th><th>Formula (DOG / CAT)</th><th>산증 기준</th><th>알칼리증 기준</th></tr></thead>
+        <tbody>
+          <tr><td>Free water</td><td class="f">0.25 × (Na − 145) / 0.22 × (Na − 150)</td><td class="f">&lt; −1.25 / &lt; −1.0 (dilutional)</td><td class="f">&gt; 1.0 / &gt; 0.7 (contraction)</td></tr>
+          <tr><td>Corrected Cl</td><td class="f">Cl × (145 / Na) / Cl × (150 / Na)</td><td colspan="2" class="f">—</td></tr>
+          <tr><td>Chloride</td><td class="f">115 − corrected Cl / 121 − corrected Cl</td><td class="f">&lt; −5.0 / &lt; −4.0</td><td class="f">&gt; 5.0 / &gt; 5.0</td></tr>
+          <tr><td>Albumin</td><td class="f">3.7 × (3.1 − Alb)</td><td class="f">&lt; −2.0 / &lt; −3.0</td><td class="f">&gt; 2.0 / &gt; 3.0</td></tr>
+          <tr><td>Phosphorus</td><td class="f">0.58 × (4.8 − Phos) / 0.58 × (5.3 − Phos)</td><td class="f">&lt; −1.0</td><td class="f">&gt; 1.0</td></tr>
+          <tr><td>Lactate</td><td class="f">−1 × Lac</td><td class="f">&lt; −2.0</td><td class="f">—</td></tr>
+          <tr><td>Unmeasured ions (XA)</td><td class="f">BE − (free water + Cl + Alb + Phos + Lac)</td><td class="f">&lt; −0.5 (unmeasured acids)</td><td class="f">&gt; 0.5 (unmeasured alkali)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="sec"><span class="kicker">Reference</span><h2>기준 범위</h2><span class="note">산-염기: Critical Care 3rd, Table 60.3 · 전해질/Alb/Phos: 본원 장비</span></div>
+    <div class="two">
+      <div class="tw">
+        <table>
+          <thead><tr><th>Parameter</th><th class="num">DOG</th><th class="num">CAT</th></tr></thead>
+          <tbody>
+            <tr><td>pH</td><td class="num">7.32–7.43</td><td class="num">7.34–7.43</td></tr>
+            <tr><td>PvCO<sub>2</sub> mmHg</td><td class="num">37–45</td><td class="num">34–39</td></tr>
+            <tr><td>HCO<sub>3</sub> mmol/L</td><td class="num">18–26</td><td class="num">20–23</td></tr>
+            <tr><td>BE mmol/L</td><td class="num">−4 to −1</td><td class="num">−5 to 0</td></tr>
+            <tr><td>Lactate mmol/L</td><td class="num">&lt; 2</td><td class="num">&lt; 2</td></tr>
+            <tr><td>Anion gap</td><td class="num">8–16</td><td class="num">16–20</td></tr>
+            <tr><td>SID</td><td class="num">32–45</td><td class="num">40–44</td></tr>
+            <tr><td>A<sub>TOT</sub></td><td class="num">10–11</td><td class="num">8–17</td></tr>
+            <tr><td>SIG</td><td class="num">0–8</td><td class="num">6–9</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tw">
+        <table>
+          <thead><tr><th>Parameter</th><th class="num">DOG [mid]</th><th class="num">CAT [mid]</th></tr></thead>
+          <tbody>
+            <tr><td>Na mmol/L</td><td class="num">139–151 [145]</td><td class="num">143–156 [150]</td></tr>
+            <tr><td>K mmol/L</td><td class="num">3.6–5.3 [4.5]</td><td class="num">3.5–5.5 [4.5]</td></tr>
+            <tr><td>Cl mmol/L</td><td class="num">107–122 [115]</td><td class="num">113–128 [121]</td></tr>
+            <tr><td>iCa mmol/L</td><td class="num">1.16–1.47</td><td class="num">1.11–1.46</td></tr>
+            <tr><td>Alb g/dL</td><td class="num">2.2–3.9 [3.1]</td><td class="num">2.3–3.9 [3.1]</td></tr>
+            <tr><td>Phos mg/dL</td><td class="num">2.5–6.8 [4.8]</td><td class="num">3.1–7.5 [5.3]</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABGA THEORY ===================== -->
+<section class="panel" id="p-atheory" role="tabpanel" aria-labelledby="tab-atheory">
+  <div class="block">
+    <div class="sec"><span class="kicker">ABGA</span><h2>동맥혈 가스 — 산소화 · 환기 평가</h2></div>
+    <div class="two">
+      <div class="tw">
+        <table>
+          <thead><tr><th>PaO<sub>2</sub> 분류</th><th class="num">PaO<sub>2</sub> mmHg</th><th class="num">SaO<sub>2</sub> %</th></tr></thead>
+          <tbody>
+            <tr><td>Hyperoxemia</td><td class="num">&gt; 125</td><td class="num">100</td></tr>
+            <tr><td>Normoxemia</td><td class="num">80–125</td><td class="num">95–99</td></tr>
+            <tr><td>Hypoxemia</td><td class="num">&lt; 80</td><td class="num">&lt; 95</td></tr>
+            <tr><td>Severe hypoxemia</td><td class="num">&lt; 60</td><td class="num">&lt; 90</td></tr>
+            <tr><td>Life-threatening hypoxemia</td><td class="num">&lt; 30</td><td class="num">&lt; 40</td></tr>
+          </tbody>
+        </table>
+        <p class="src" style="padding:0 11px 8px">Critical Care 3rd, Table 16.1 — 사람·개 기준 근사치. 고양이는 P<sub>50</sub> ≈ 34로 우측 이동, 같은 PaO<sub>2</sub>에서 SaO<sub>2</sub>가 더 낮음.</p>
+      </div>
+      <div class="tw">
+        <table>
+          <thead><tr><th>환기 분류</th><th class="num">PaCO<sub>2</sub> mmHg</th></tr></thead>
+          <tbody>
+            <tr><td>Hypoventilation</td><td class="num">≥ 45</td></tr>
+            <tr><td>Normoventilation</td><td class="num">35–45</td></tr>
+            <tr><td>Hyperventilation</td><td class="num">&lt; 35</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="sec"><span class="kicker">지표</span><h2>폐기능 지표 해석</h2></div>
+    <div class="two">
+      <div class="card">
+        <h3>PaO<sub>2</sub>/FiO<sub>2</sub> ratio <span class="tag">ref. &gt; 300</span></h3>
+        <p class="lead">Oxygen treatment 진행 중 사용하기 가장 좋은 지표</p>
+        <ul>
+          <li><span class="mono">500</span> normal</li>
+          <li><span class="mono">&lt; 300</span> acute lung injury (ALI) = mild ARDS</li>
+          <li><span class="mono">&lt; 200</span> ARDS</li>
+          <li><span class="mono">&lt; 100</span> severe ARDS</li>
+        </ul>
+        <p class="src">Clinical advisor</p>
+      </div>
+      <div class="card">
+        <h3>A-a gradient <span class="tag">ref. &lt; 10–15</span></h3>
+        <p class="lead">Room air (FiO<sub>2</sub> 21%)에서 사용하기 가장 좋은 지표 · <span class="formula">(713 × FiO<sub>2</sub> − PaCO<sub>2</sub>/0.8) − PaO<sub>2</sub></span></p>
+        <ul>
+          <li><span class="mono">&lt; 10–15</span> normal</li>
+          <li><span class="mono">&gt; 15–20</span> V/Q mismatch — lower airway disease</li>
+        </ul>
+        <p class="src">Nelson 6th &amp; Ettinger 9th</p>
+      </div>
+      <div class="card">
+        <h3>120 rule <span class="tag">ref. 120</span></h3>
+        <p class="lead">Room air (FiO<sub>2</sub> 21%)에서만 사용 가능 · <span class="formula">PaO<sub>2</sub> + PaCO<sub>2</sub></span></p>
+        <ul>
+          <li><span class="mono">≈ 120</span> normal</li>
+          <li><span class="mono">&lt; 120</span> venous admixture</li>
+        </ul>
+        <p class="src">Critical Care 3rd</p>
+      </div>
+      <div class="card">
+        <h3>Qs/Qt <span class="tag">ref. &lt; 5%</span></h3>
+        <p class="lead">Venous admixture를 가장 정확하게 측정하는 공식. 정식 계산은 pulmonary artery 혈액 기준이나 jugular vein 혈액으로 대체 적용.</p>
+        <ul class="flist">
+          <li><span class="fk">Qs/Qt</span><span class="formula">(CcO<sub>2</sub> − CaO<sub>2</sub>) / (CcO<sub>2</sub> − CvO<sub>2</sub>)</span></li>
+          <li><span class="fk">PAO<sub>2</sub></span><span class="formula">713 × FiO<sub>2</sub> − PaCO<sub>2</sub> / 0.8</span></li>
+          <li><span class="fk">CcO<sub>2</sub></span><span class="formula">1.34 × Hb × 1 + 0.003 × PAO<sub>2</sub></span></li>
+          <li><span class="fk">CaO<sub>2</sub></span><span class="formula">1.34 × Hb × SaO<sub>2</sub> + 0.003 × PaO<sub>2</sub></span></li>
+          <li><span class="fk">CvO<sub>2</sub></span><span class="formula">1.34 × Hb × SvO<sub>2</sub> + 0.003 × PvO<sub>2</sub></span></li>
+        </ul>
+        <ul>
+          <li><span class="mono">&lt; 5%</span> normal</li>
+          <li><span class="mono">&gt; 10%</span> venous admixture</li>
+          <li><span class="mono">&gt; 50%</span> severe, diffuse lung disease</li>
+        </ul>
+        <p class="src">Critical Care 3rd</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="sec"><span class="kicker">Hypoxemia</span><h2>저산소혈증의 5가지 원인</h2><span class="note">A-a gradient → 100% FiO<sub>2</sub> 반응으로 분기</span></div>
+    <div class="tree-head">
+      <div>A-a gradient <b>정상</b></div>
+      <div>A-a gradient <b>증가</b> → 100% FiO<sub>2</sub> 반응 확인</div>
+    </div>
+    <div class="tree">
+      <div class="branch"><h4>↓ FiO<sub>2</sub></h4><div class="hint">A-a 정상</div><ul><li>High altitude</li></ul></div>
+      <div class="branch"><h4>Hypoventilation</h4><div class="hint">A-a 정상 · PCO<sub>2</sub> ↑ 동반</div><ul><li>CNS depression (brainstem, narcotic)</li><li>Obesity hypoventilation</li><li>Muscular weakness</li></ul></div>
+      <div class="branch"><h4>V/Q mismatch</h4><div class="hint">A-a ↑ · O<sub>2</sub>에 교정됨 · 가장 흔한 원인</div><ul><li>Obstructive lung disease</li><li>PE</li><li>Mild alveolar filling (“blood, water, pus, protein”)</li></ul></div>
+      <div class="branch"><h4>Diffusion impairment</h4><div class="hint">A-a ↑ · O<sub>2</sub>에 교정됨</div><ul><li>Interstitial lung disease</li><li>Emphysema</li><li>Pulmonary vascular disease</li><li>↑ cardiac output (transit time ↑)</li></ul></div>
+      <div class="branch"><h4>Shunt</h4><div class="hint">A-a ↑ · O<sub>2</sub>에 교정 안 됨 (large shunt)</div><ul><li>Alveolar filling (“blood, water, pus, protein”)</li><li>Atelectasis, pleural process</li><li>Pulmonary AVM, intracardiac shunt</li></ul></div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="sec"><span class="kicker">임상 상관</span><h2>혈액가스 이상의 임상 해석</h2><span class="note">Box 20.7</span></div>
+    <div class="two">
+      <div class="card">
+        <h3>PaO<sub>2</sub> ↓ + PaCO<sub>2</sub> ↑ <span class="tag">A-a 정상</span></h3>
+        <ul>
+          <li>Venous specimen</li>
+          <li>Hypoventilation
+            <ul>
+              <li>Airway obstruction</li>
+              <li>Ventilatory muscle function ↓ — anesthesia, CNS disease, polyneuropathy, polymyopathy, NMJ disorder (MG), extreme fatigue</li>
+              <li>Restriction of lung expansion — thoracic wall abnormality, excessive bandage, pneumothorax, pleural effusion</li>
+              <li>Increased dead space — severe COPD/emphysema</li>
+            </ul>
+          </li>
+          <li>End-stage severe pulmonary parenchymal disease</li>
+          <li>Severe pulmonary thromboembolism</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>PaO<sub>2</sub> ↓ + PaCO<sub>2</sub> 정상/↓ <span class="tag">A-a 증가</span></h3>
+        <ul>
+          <li>V/Q abnormality — 대부분의 하부 호흡기 질환</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="sec"><span class="kicker">산소 공급</span><h2>Methods for supplementing oxygen</h2><span class="note">Table 4.4</span></div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Mode</th><th>Indication</th><th>Flow rate</th><th class="num">FiO<sub>2</sub></th></tr></thead>
+        <tbody>
+          <tr><td>Face mask</td><td>Short-term emergency stabilization</td><td>6–10 L/min (fit 확인)</td><td class="num">35–55%</td></tr>
+          <tr><td>Flow-by</td><td>Short-term stabilization; face mask 거부 시</td><td>6–8 L/min</td><td class="num">25–45%</td></tr>
+          <tr><td>Tent / E-collar canopy</td><td>Nasal catheter 거부; oxygen cage 없을 때</td><td>0.75–1 L/min</td><td class="num">30–40%</td></tr>
+          <tr><td>Nasal catheter</td><td>Postoperative; prolonged delivery</td><td>1–6 L/min; 50–100 mL/kg/min</td><td class="num">30–50%</td></tr>
+          <tr><td>Nasotracheal tube</td><td>Upper airway obstruction; nasal catheter 거부</td><td>50 mL/kg/min</td><td class="num">40–60%</td></tr>
+          <tr><td>Oxygen cage</td><td>Prolonged delivery; 접근 제한</td><td>—</td><td class="num">40–50%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<div class="foot">
+  <span>Reference: Silverstein &amp; Hopper, Small Animal Critical Care Medicine 3rd · Nelson 6th · Ettinger 9th</span>
+  <span>전해질·Alb·Phos 기준은 본원 장비 reference interval</span>
+  <span>원본: VBGA ABGA SHM GYJ 260715 최종.xlsx</span>
+</div>
+</main>
+
+<script>
+(function(){
+  const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+  const REF={
+    dog:{pH:[7.32,7.43],PCO2:[37,45],Na:[139,151],K:[3.6,5.3],Cl:[107,122],iCa:[1.16,1.47],Lac:[null,2],BE:[-4,-1],HCO3:[18,26],AG:[8,16],Alb:[2.2,3.9],Phos:[2.5,6.8],SID:[32,45],ATOT:[10,11],SIG:[0,8],
+         mid:{Na:145,Cl:115,Phos:4.8,Alb:3.1,fw:0.25},pcoHi:45,pcoLo:37,agHi:16,
+         semi:{fw:[-1.25,1.0],cl:[-5,5],alb:[-2,2],phos:[-1,1],lac:-2}},
+    cat:{pH:[7.34,7.43],PCO2:[34,39],Na:[143,156],K:[3.5,5.5],Cl:[113,128],iCa:[1.11,1.46],Lac:[null,2],BE:[-5,0],HCO3:[20,23],AG:[16,20],Alb:[2.3,3.9],Phos:[3.1,7.5],SID:[40,44],ATOT:[8,17],SIG:[6,9],
+         mid:{Na:150,Cl:121,Phos:5.3,Alb:3.1,fw:0.22},pcoHi:39,pcoLo:34,agHi:20,
+         semi:{fw:[-1.0,0.7],cl:[-4,5],alb:[-3,3],phos:[-1,1],lac:-2}}
+  };
+  const SAMPLE={v:{'v-ph':7.21,'v-pco2':51,'v-hco3':19,'v-be':9.4,'v-lac':5.89,'v-ag':21,'v-na':153,'v-k':3.3,'v-cl':116,'v-ica':1.5,'v-alb':2.7,'v-phos':4,'v-bw':3.5},
+                a:{'a-fio2':0.3,'a-pao2':92,'a-paco2':72,'a-sao2':97.6,'a-hb':10.1,'a-svo2':'','a-pvo2':''}};
+  let species='dog';
+  const num=id=>{const v=parseFloat($('#'+id).value);return Number.isFinite(v)?v:null};
+  const fmt=(v,d=1)=>v==null||!Number.isFinite(v)?'—':(Math.round(v*10**d)/10**d).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
+  const rng=r=>r[0]==null?`< ${r[1]}`:r[1]==null?`> ${r[0]}`:`${r[0]} ~ ${r[1]}`;
+  const flag=(v,r)=>{if(v==null||!r)return 'na';if(r[0]!=null&&v<r[0])return 'low';if(r[1]!=null&&v>r[1])return 'high';return 'ok'};
+  const FL={ok:'정상',low:'낮음',high:'높음',na:'—'};
+  const chip=(f,t)=>`<span class="chip ${f}">${t||FL[f]}</span>`;
+  const tile=(k,v,opt={})=>{const f=opt.flag||'na';const c=opt.chip!=null?opt.chip:(f!=='na'?chip(f):'');return `<div class="tile ${f==='na'?'':f}"><div class="k"><span>${k}</span>${opt.unit?`<small>${opt.unit}</small>`:''}</div><div class="vrow"><div class="v ${opt.text?'j '+(f==='na'?'n':f):''}">${v}</div>${c}</div>${opt.ref?`<div class="r" title="${opt.ref.replace(/<[^>]+>/g,'')}">${opt.ref}</div>`:''}</div>`};
+
+  /* ---------- reference labels on inputs ---------- */
+  function paintRefs(){
+    const R=REF[species];
+    $$('#p-vcalc .field[data-ref]').forEach(f=>{
+      const key=f.dataset.ref, r=R[key], v=num(f.querySelector('input').id);
+      f.querySelector('.rr').textContent='ref '+rng(r);
+      const fl=flag(v,r); f.classList.remove('flag-low','flag-high');
+      if(fl==='low'||fl==='high')f.classList.add('flag-'+fl);
+      f.querySelector('b').textContent=fl==='na'?'':fl==='ok'?'정상':fl==='low'?'▼ 낮음':'▲ 높음';
+    });
+  }
+
+  /* ---------- VBGA ---------- */
+  function calcV(){
+    const R=REF[species], SP=species.toUpperCase();
+    const pH=num('v-ph'),pco2=num('v-pco2'),hco3=num('v-hco3'),be=num('v-be'),lac=num('v-lac'),ag=num('v-ag'),
+          na=num('v-na'),k=num('v-k'),cl=num('v-cl'),alb=num('v-alb'),phos=num('v-phos'),bw=num('v-bw');
+    paintRefs();
+    const V=(x,d=1)=>`<span class="val">${typeof x==='string'?x:fmt(x,d)}</span>`;
+    const J=(c,t)=>`<span class="j ${c}">${t}</span>`;
+
+    /* ---- basic ---- */
+    const tco2=(hco3!=null&&pco2!=null)?hco3+0.0307*pco2:null;
+    $('#v-basic').innerHTML=[
+      tile('TCO<sub>2</sub>',fmt(tco2,2),{unit:'mmol/L',ref:'HCO<sub>3</sub> + 0.0307 × PCO<sub>2</sub>'}),
+      tile('pH',fmt(pH,2),{ref:'ref '+rng(R.pH),flag:flag(pH,R.pH)}),
+      tile('PCO<sub>2</sub>',fmt(pco2,1),{unit:'mmHg',ref:'ref '+rng(R.PCO2),flag:flag(pco2,R.PCO2)}),
+      tile('HCO<sub>3</sub>',fmt(hco3,1),{unit:'mmol/L',ref:'ref '+rng(R.HCO3),flag:flag(hco3,R.HCO3)}),
+      tile('BE-ecf',fmt(be,1),{unit:'mmol/L',ref:'ref '+rng(R.BE),flag:flag(be,R.BE)}),
+      tile('AG',fmt(ag,1),{unit:'mmol/L',ref:'ref '+rng(R.AG),flag:flag(ag,R.AG)}),
+      tile('Lac',fmt(lac,2),{unit:'mmol/L',ref:'ref '+rng(R.Lac),flag:flag(lac,R.Lac)})
+    ].join('');
+
+    /* ---- traditional classification ---- */
+    const acid=pH!=null&&pH<R.pH[0], alk=pH!=null&&pH>R.pH[1], phNormal=pH!=null&&!acid&&!alk;
+    const metAc=hco3!=null&&hco3<18, metAl=hco3!=null&&hco3>26;
+    const resAc=pco2!=null&&pco2>R.pcoHi, resAl=pco2!=null&&pco2<R.pcoLo;
+    const agHigh=ag!=null&&ag>R.agHi;
+    // primary disorders consistent with pH direction
+    const prim=[];
+    if(acid){ if(metAc)prim.push('metAc'); if(resAc)prim.push('resAc'); }
+    if(alk){ if(metAl)prim.push('metAl'); if(resAl)prim.push('resAl'); }
+    const NAME={metAc:'대사성 산증',metAl:'대사성 알칼리증',resAc:'호흡성 산증',resAl:'호흡성 알칼리증'};
+
+    /* ---- compensation (dog formulas, as in the sheet) ---- */
+    const dH=hco3!=null?Math.abs(22-hco3):null, dP=pco2!=null?Math.abs(41-pco2):null;
+    const CR={
+      metAc:dH!=null?[40-dH*0.7-3,40-dH*0.7+3]:null, metAl:dH!=null?[40+dH*0.7-3,40+dH*0.7+3]:null,
+      resAcA:dP!=null?[22+dP*0.15-2,22+dP*0.15+2]:null, resAlA:dP!=null?[22-dP*0.25-2,22-dP*0.25+2]:null,
+      resAcC:dP!=null?[22+dP*0.35-2,22+dP*0.35+2]:null, resAlC:dP!=null?[22-dP*0.55-2,22-dP*0.55+2]:null
+    };
+    const inR=(v,r)=>r&&v!=null&&v>=r[0]&&v<=r[1];
+    const rows=[
+      ['Metabolic acidosis','PCO<sub>2</sub>',CR.metAc,pco2,'metAc'],
+      ['Metabolic alkalosis','PCO<sub>2</sub>',CR.metAl,pco2,'metAl'],
+      ['Respiratory acidosis (acute)','HCO<sub>3</sub>',CR.resAcA,hco3,'resAc'],
+      ['Respiratory alkalosis (acute)','HCO<sub>3</sub>',CR.resAlA,hco3,'resAl'],
+      ['Respiratory acidosis (chronic)','HCO<sub>3</sub>',CR.resAcC,hco3,'resAc'],
+      ['Respiratory alkalosis (chronic)','HCO<sub>3</sub>',CR.resAlC,hco3,'resAl']
+    ];
+    $('#v-comp tbody').innerHTML=rows.map(([n,m,r,v,key])=>{
+      const ok=inR(v,r);
+      const verdict=r==null||v==null?chip('na'):ok?chip('ok','예상 범위 내'):chip(v<r[0]?'low':'high',v<r[0]?'예상보다 낮음':'예상보다 높음');
+      const relev=prim.includes(key);
+      return `<tr class="${relev&&ok?'in-range':''}"><td>${n}${relev?' <span class="tag">해당</span>':''}</td><td>${m} 보상</td><td class="num">${r?fmt(r[0],2)+' ~ '+fmt(r[1],2):'—'}</td><td class="num">${fmt(v,1)}</td><td>${verdict}</td></tr>`;
+    }).join('');
+
+    /* ---- Stewart ---- */
+    const sid=(na!=null&&k!=null&&cl!=null)?(na+k)-cl:null;
+    const atot=(alb!=null&&phos!=null&&pH!=null)?(alb*10*(0.123*pH-0.631))+(phos*0.323*(0.309*pH-0.469)):null;
+    const sig=(sid!=null&&hco3!=null&&atot!=null)?sid-(hco3+atot):null;
+    $('#v-stewart').innerHTML=[
+      tile('SID',fmt(sid,1),{unit:'(Na + K) − Cl',ref:'ref '+rng(R.SID)+' mmol/L',flag:flag(sid,R.SID)}),
+      tile('A<sub>TOT</sub>',fmt(atot,2),{unit:'Alb effect + Phos effect',ref:'ref '+rng(R.ATOT)+' mmol/L',flag:flag(atot,R.ATOT)}),
+      tile('SIG',fmt(sig,2),{unit:'SID − (HCO<sub>3</sub> + A<sub>TOT</sub>)',ref:'ref '+rng(R.SIG)+' mmol/L',flag:flag(sig,R.SIG)})
+    ].join('');
+    const ST=species==='dog'?{sidHi:45,sidLo:32,atHi:11,atLo:10,sig:7}:{sidHi:44,sidLo:40,atHi:17,atLo:8,sig:9};
+    const stew=[];
+    if(sid!=null)stew.push(sid>ST.sidHi?`SID ${V(sid)} ${J('lo','↑ (> '+ST.sidHi+') → SID 알칼리증')}`:sid<ST.sidLo?`SID ${V(sid)} ${J('hi','↓ (< '+ST.sidLo+') → SID 산증')}`:`SID ${V(sid)} ${J('ok','정상')}`);
+    if(atot!=null)stew.push(atot>ST.atHi?`A<sub>TOT</sub> ${V(atot,2)} ${J('hi','↑ (> '+ST.atHi+') → A<sub>TOT</sub> 산증')}`:atot<ST.atLo?`A<sub>TOT</sub> ${V(atot,2)} ${J('lo','↓ (< '+ST.atLo+') → A<sub>TOT</sub> 알칼리증')}`:`A<sub>TOT</sub> ${V(atot,2)} ${J('ok','정상')}`);
+    if(sig!=null)stew.push(sig>ST.sig?`SIG ${V(sig,2)} ${J('hi','↑ (> '+ST.sig+') → unmeasured anion 증가')}`:`SIG ${V(sig,2)} ${J('ok','정상 범위')}`);
+
+    /* ---- semi-quantitative ---- */
+    const M=R.mid,S=R.semi;
+    const corrCl=(cl!=null&&na!=null)?cl*(M.Na/na):null;
+    const fw=na!=null?M.fw*(na-M.Na):null;
+    const clE=corrCl!=null?M.Cl-corrCl:null;
+    const phE=phos!=null?0.58*(M.Phos-phos):null;
+    const albE=alb!=null?3.7*(M.Alb-alb):null;
+    const lacE=lac!=null?-lac:null;
+    const sum=[fw,clE,phE,albE,lacE].every(x=>x!=null)?fw+clE+phE+albE+lacE:null;
+    const ua=(be!=null&&sum!=null)?be-sum:null;
+    $('#v-semi-sp').textContent=SP;
+    const interp=(v,lo,hi,acidLabel,alkLabel)=>{if(v==null)return chip('na');if(lo!=null&&v<lo)return chip('high',acidLabel);if(hi!=null&&v>hi)return chip('low',alkLabel);return chip('ok','유의한 기여 없음')};
+    const semiRows=[
+      ['Corrected Cl',corrCl,'<span class="chip na">계산 보조</span>','Cl × ('+M.Na+'/Na)'],
+      ['Free water',fw,interp(fw,S.fw[0],S.fw[1],'Dilutional acidosis','Contraction alkalosis'),`< ${S.fw[0]} 산증 · > ${S.fw[1]} 알칼리증`],
+      ['Chloride',clE,interp(clE,S.cl[0],S.cl[1],'Hyperchloremic acidosis','Hypochloremic alkalosis'),`< ${S.cl[0]} 산증 · > ${S.cl[1]} 알칼리증`],
+      ['Phosphorus',phE,interp(phE,S.phos[0],S.phos[1],'Acidosis','Alkalosis'),`< ${S.phos[0]} 산증 · > ${S.phos[1]} 알칼리증`],
+      ['Albumin',albE,interp(albE,S.alb[0],S.alb[1],'Acidosis','Alkalosis'),`< ${S.alb[0]} 산증 · > ${S.alb[1]} 알칼리증`],
+      ['Lactate',lacE,interp(lacE,S.lac,null,'Lactic acidosis',''),`< ${S.lac} 산증`],
+      ['<b>Unmeasured anions (XA)</b>',ua,ua==null?chip('na'):ua<-0.5?chip('high','Unmeasured acids'):ua>0.5?chip('low','Unmeasured alkali'):chip('ok','정상'),'BE − Σ effects · < −0.5 산 · > 0.5 알칼리']
+    ];
+    $('#v-semi tbody').innerHTML=semiRows.map(([n,v,c,b])=>`<tr><td>${n}</td><td class="num">${fmt(v,2)}</td><td>${c}</td><td class="f">${b}</td></tr>`).join('');
+    const acidC=[],alkC=[];
+    const hyperCl=clE!=null&&clE<S.cl[0], lacticAc=lacE!=null&&lacE<S.lac;
+    if(fw!=null&&fw<S.fw[0])acidC.push(`free water ${V(fw,2)} ${J('hi','희석성')}`); if(fw!=null&&fw>S.fw[1])alkC.push(`free water ${V(fw,2)} ${J('lo','농축성')}`);
+    if(hyperCl)acidC.push(`Cl ${V(clE,2)} ${J('hi','고염소성')}`); if(clE!=null&&clE>S.cl[1])alkC.push(`Cl ${V(clE,2)} ${J('lo','저염소성')}`);
+    if(phE!=null&&phE<S.phos[0])acidC.push(`Phos ${V(phE,2)} ${J('hi','고인산')}`); if(phE!=null&&phE>S.phos[1])alkC.push(`Phos ${V(phE,2)} ${J('lo','저인산')}`);
+    if(albE!=null&&albE<S.alb[0])acidC.push(`Alb ${V(albE,2)} ${J('hi','고알부민')}`); if(albE!=null&&albE>S.alb[1])alkC.push(`Alb ${V(albE,2)} ${J('lo','저알부민')}`);
+    if(lacticAc)acidC.push(`lactate ${V(lacE,2)} ${J('hi','lactic acidosis')}`);
+    if(ua!=null&&ua<-0.5)acidC.push(`XA ${V(ua,2)} ${J('hi','unmeasured acids')}`); if(ua!=null&&ua>0.5)alkC.push(`XA ${V(ua,2)} ${J('lo','unmeasured alkali')}`);
+
+    /* ---- NaHCO3 ---- */
+    const dose=(be!=null&&bw!=null)?-be*bw*0.3:null;
+    const t=$('#v-nahco3');
+    t.className='tile '+(dose==null?'':dose>0?'high':'ok');
+    t.querySelector('.v').textContent=dose==null?'—':dose>0?fmt(dose,1)+' mL':'해당 없음';
+    t.querySelector('.vrow .chip-slot').innerHTML=dose==null?'':dose>0?chip('high','BE 음성 — 투여 고려'):chip('ok','BE ≥ 0');
+    t.querySelector('.r').textContent='−BE × BW × 0.3 = '+(dose==null?'—':fmt(dose,2));
+
+    /* ---- 1차 평가 (traditional) ---- */
+    let title='—';const f=[];
+    if(pH==null){f.push('pH를 입력하면 판정이 표시됩니다')}
+    else if(acid){
+      title=`Acidemia (pH ${fmt(pH,2)})`;
+      if(metAc)f.push(`${J('hi','Metabolic acidosis')} — HCO<sub>3</sub> ${V(hco3)} < 18`+(ag!=null?(agHigh?` · ${J('hi','AG 증가')} ${V(ag)} > ${R.agHi} → 유기산증 (KULES)`:` · ${J('ok','AG 정상–감소')} ${V(ag)} ≤ ${R.agHi} → HCO<sub>3</sub> 소실 또는 H<sup>+</sup> 배설 장애`):''));
+      if(resAc)f.push(`${J('hi','Respiratory acidosis')} — PCO<sub>2</sub> ${V(pco2)} > ${R.pcoHi}`);
+      if(!metAc&&!resAc)f.push('HCO<sub>3</sub>·PCO<sub>2</sub>가 진단 기준 미충족 — 경계성, mixed 가능성 검토');
+      if(metAc&&resAc)f.push(J('hi','Mixed')+' — 대사성 + 호흡성 산증 공존');
+    }else if(alk){
+      title=`Alkalemia (pH ${fmt(pH,2)})`;
+      if(metAl)f.push(`${J('lo','Metabolic alkalosis')} — HCO<sub>3</sub> ${V(hco3)} > 26`);
+      if(resAl)f.push(`${J('lo','Respiratory alkalosis')} — PCO<sub>2</sub> ${V(pco2)} < ${R.pcoLo}`);
+      if(!metAl&&!resAl)f.push('HCO<sub>3</sub>·PCO<sub>2</sub>가 진단 기준 미충족 — 경계성, mixed 가능성 검토');
+      if(metAl&&resAl)f.push(J('lo','Mixed')+' — 대사성 + 호흡성 알칼리증 공존');
+    }else{
+      title=`pH 정상 (${fmt(pH,2)})`;
+      const hints=[];
+      if(metAc||metAl)hints.push(`HCO<sub>3</sub> ${V(hco3)}${metAc?' ↓':' ↑'}`);
+      if(resAc||resAl)hints.push(`PCO<sub>2</sub> ${V(pco2)}${resAc?' ↑':' ↓'}`);
+      if(be!=null&&flag(be,R.BE)!=='ok')hints.push(`BE ${V(be)}${be>R.BE[1]?' ↑':' ↓'}`);
+      f.push(hints.length?`이상 소견 ${hints.join(', ')} → ${J('w','완전 보상 또는 mixed disturbance')}. BE·HCO<sub>3</sub> 경향으로 택1 평가`:J('ok','산-염기 지표 모두 정상 범위'));
+    }
+    if(pH!=null&&species==='cat')f.push('CAT — 보상 계산 없음. PvCO<sub>2</sub>와 BE/HCO<sub>3</sub> 모두 이상이면 두 이상의 공존으로 판단');
+    $('#v-sum-title').innerHTML=title;
+    $('#v-sum-why').innerHTML=f.map(x=>`<li>${x}</li>`).join('');
+
+    /* ---- 종합 결론 ---- */
+    let head='—', headChip='';
+    const rowsOut=[];
+    if(pH==null){head='값을 입력하면 종합 판독이 표시됩니다'}
+    else{
+      // headline
+      if(prim.length===0)head=phNormal?`pH 정상 (${fmt(pH,2)})`+((metAc||metAl||resAc||resAl)?' — 완전 보상 또는 mixed':' — 산-염기 정상'):`${acid?'Acidemia':'Alkalemia'} (pH ${fmt(pH,2)}) — 경계성`;
+      else{
+        head=prim.map(p=>NAME[p]).join(' + ')+(prim[0]==='metAc'&&ag!=null?` (AG ${agHigh?'증가':'정상'})`:'');
+        if(prim.length>1)headChip=chip('high','Mixed');
+      }
+      // traditional row
+      let trad;
+      if(prim.length)trad=`${acid?'Acidemia':'Alkalemia'} pH ${V(pH,2)} · `+prim.map(p=>p.startsWith('met')?`HCO<sub>3</sub> ${V(hco3)}`:`PCO<sub>2</sub> ${V(pco2)}`).join(', ')+` → ${J(acid?'hi':'lo',prim.map(p=>NAME[p]).join(' + '))}`+(prim[0]==='metAc'&&ag!=null?` · AG ${V(ag)} ${agHigh?J('hi','증가 → 유기산증 (KULES)'):J('ok','정상–감소 → HCO<sub>3</sub> 소실 / H<sup>+</sup> 배설 장애')}`:'');
+      else trad=`pH ${V(pH,2)} ${phNormal?J('ok','정상'):J('w','이상')} · HCO<sub>3</sub> ${V(hco3)} · PCO<sub>2</sub> ${V(pco2)} — ${J('w','단일 1차 이상으로 분류되지 않음')}`;
+      rowsOut.push(['Traditional',trad]);
+      // stewart row
+      rowsOut.push(['Stewart',stew.length?stew.join(' · '):'Na·K·Cl·Alb·Phos 입력 필요']);
+      // semi-quant row
+      let semi='';
+      if(sum==null)semi='Na·Cl·Alb·Phos·Lac·BE 입력 필요';
+      else{
+        semi=(acidC.length?`<b>산증 기여</b>: ${acidC.join(', ')}`:J('ok','산증 방향 유의 기여 없음'))+' · '+(alkC.length?`<b>알칼리증 기여</b>: ${alkC.join(', ')}`:J('ok','알칼리증 방향 유의 기여 없음'));
+      }
+      rowsOut.push(['Semi-quant',semi]);
+      // compensation row
+      let comp='';
+      if(species==='cat')comp='CAT은 보상 공식 없음 — PvCO<sub>2</sub>와 BE/HCO<sub>3</sub> 모두 이상이면 두 이상의 공존으로 판단';
+      else if(!prim.length)comp=phNormal&&(metAc||metAl||resAc||resAl)?J('w','완전 보상 또는 mixed')+' — pH가 정상이므로 BE·HCO<sub>3</sub> 경향으로 택1 평가':J('w','1차 이상이 확정되지 않아 보상 판정 보류');
+      else{
+        const parts=[];
+        prim.forEach(p=>{
+          if(p==='metAc'||p==='metAl'){
+            const r=CR[p]; const ok=inR(pco2,r);
+            parts.push(`${NAME[p]}에 대한 예상 PCO<sub>2</sub> ${V(fmt(r[0],1)+' ~ '+fmt(r[1],1))} vs 측정 ${V(pco2)} → `+(ok?J('ok','적절한 호흡성 보상'):pco2>r[1]?J('hi','보상 부족 — 호흡성 산증 동반 가능'):J('lo','과보상 — 호흡성 알칼리증 동반 가능'))+' (VBGA 참고용, 폐기능은 ABGA로)');
+          }else{
+            const rA=CR[p+'A'], rC=CR[p+'C'];
+            const okA=inR(hco3,rA), okC=inR(hco3,rC);
+            parts.push(`${NAME[p]}에 대한 예상 HCO<sub>3</sub> 급성 ${V(fmt(rA[0],1)+' ~ '+fmt(rA[1],1))} / 만성 ${V(fmt(rC[0],1)+' ~ '+fmt(rC[1],1))} vs 측정 ${V(hco3)} → `+(okA&&okC?J('ok','대사성 보상 범위 내'):okA?J('ok','급성 보상 범위'):okC?J('ok','만성 보상 범위'):J('hi','예상 범위 벗어남 — 대사성 이상 동반 (mixed) 가능')));
+          }
+        });
+        comp=parts.join('<br>');
+      }
+      rowsOut.push(['보상',comp]);
+      // bicarbonate row
+      if(be!=null&&be<0&&(metAc||acid)){
+        const contra=[];
+        if(resAc)contra.push('호흡성 산증 mixed');
+        if(lacticAc)contra.push('lactic acidosis');
+        const indic=hyperCl?'고염소성 대사성 산증':null;
+        const doseTxt=dose!=null?`계산 용량 ${V(fmt(dose,1)+' mL')} (8.4% NaHCO<sub>3</sub>, −BE × BW × 0.3)`:'BW 입력 시 용량 계산';
+        if(contra.length)rowsOut.push(['NaHCO3',`${J('hi','투여 비권장')} — ${contra.join(', ')} 해당. ${doseTxt}는 참고만`, 'no']);
+        else if(indic)rowsOut.push(['NaHCO3',`${J('w','투여 고려')} — ${indic} 소견 (Cl effect ${V(clE,2)}). ${doseTxt} · ½ dose over 6 hr 후 재평가, WFI/NS 1:3 희석`, 'rx']);
+        else rowsOut.push(['NaHCO3',`BE ${V(be)} 음성 — ${J('w','적응증(고염소성 대사성 산증, uremic acidosis) 해당 여부 확인 후 결정')}. ${doseTxt}`, 'rx']);
+      }
+    }
+    $('#v-verdict-head').innerHTML=head+headChip;
+    $('#v-verdict-rows').innerHTML=rowsOut.map(([l,t,kind])=>kind
+      ?`<div class="row-rx ${kind==='no'?'no':''}"><div class="lbl">${l==='NaHCO3'?'NaHCO<sub>3</sub>':l}</div><div>${t}</div></div>`
+      :`<div class="lbl">${l}</div><div>${t}</div>`).join('');
+  }
+
+  /* ---------- ABGA ---------- */
+  function calcA(){
+    const fio2=num('a-fio2'),pao2=num('a-pao2'),paco2=num('a-paco2'),sao2=num('a-sao2'),hb=num('a-hb'),svo2=num('a-svo2'),pvo2=num('a-pvo2');
+    const V=(x,d=1)=>`<span class="val">${typeof x==='string'?x:fmt(x,d)}</span>`;
+    const J=(c,t)=>`<span class="j ${c}">${t}</span>`;
+    const oxy=pao2==null?null:pao2>125?['Hyperoxemia','high','> 125']:pao2>=80?['Normoxemia','ok','80 ~ 125']:pao2>=60?['Hypoxemia','low','< 80']:pao2>=30?['Severe hypoxemia','high','< 60']:['Life-threatening hypoxemia','high','< 30'];
+    const vent=paco2==null?null:paco2>=45?['Hypoventilation','high','≥ 45']:paco2>=35?['Normoventilation','ok','35 ~ 45']:['Hyperventilation','low','< 35'];
+    const sat=sao2==null?null:sao2>=100?['Hyperoxemia','high','100']:sao2>=95?['Normoxemia','ok','95 ~ 99']:sao2>=90?['Hypoxemia','low','< 95']:sao2>=40?['Severe hypoxemia','high','< 90']:['Life-threatening','high','< 40'];
+    $('#a-basic').innerHTML=[
+      tile('Oxygenation',oxy?oxy[0]:'—',{text:true,unit:'PaO<sub>2</sub> '+fmt(pao2,1)+' mmHg',ref:oxy?'기준 '+oxy[2]+' mmHg':'PaO<sub>2</sub> 입력 필요',flag:oxy?oxy[1]:'na',chip:''}),
+      tile('Ventilation',vent?vent[0]:'—',{text:true,unit:'PaCO<sub>2</sub> '+fmt(paco2,1)+' mmHg',ref:vent?'기준 '+vent[2]+' mmHg':'PaCO<sub>2</sub> 입력 필요',flag:vent?vent[1]:'na',chip:''}),
+      tile('SaO<sub>2</sub>',sat?sat[0]:'—',{text:true,unit:'SaO<sub>2</sub> '+fmt(sao2,1)+' %',ref:sat?'기준 '+sat[2]+' %':'SaO<sub>2</sub> 입력 필요',flag:sat?sat[1]:'na',chip:''})
+    ].join('');
+
+    const pf=(pao2!=null&&fio2)?pao2/fio2:null;
+    const PAO2=(fio2!=null&&paco2!=null)?713*fio2-paco2/0.8:null;
+    const aa=(PAO2!=null&&pao2!=null)?PAO2-pao2:null;
+    const r120=(pao2!=null&&paco2!=null)?pao2+paco2:null;
+    const roomAir=fio2!=null&&Math.abs(fio2-0.21)<0.015;
+    const pfF=pf==null?'na':pf>=300?'ok':'low';
+    const pfLabel=pf==null?'':pf>=300?'정상 (> 300)':pf>=200?'ALI / mild ARDS (< 300)':pf>=100?'ARDS (< 200)':'severe ARDS (< 100)';
+    const aaF=aa==null?'na':aa<15?'ok':'high';
+    const aaLabel=aa==null?'':aa<10?'정상 (< 10)':aa<15?'정상 상한 (10–15)':aa<=20?'경계 (15–20)':'V/Q mismatch (> 20)';
+    const r120F=r120==null?'na':r120>=120?'ok':'low';
+    const r120Label=r120==null?'':r120>=120?'정상 (≥ 120)':'venous admixture (< 120)';
+    $('#a-lung').innerHTML=[
+      tile('PaO<sub>2</sub>/FiO<sub>2</sub>',fmt(pf,0),{unit:'PaO<sub>2</sub> ÷ FiO<sub>2</sub>',ref:'ref > 300',flag:pfF,chip:pf==null?'':chip(pfF,pfLabel)}),
+      tile('A-a gradient',fmt(aa,1),{unit:'PAO<sub>2</sub> − PaO<sub>2</sub> · mmHg',ref:'ref < 10–15 · PAO<sub>2</sub> '+fmt(PAO2,1),flag:roomAir?aaF:'na',chip:aa==null?'':roomAir?chip(aaF,aaLabel):chip('na','room air 아님 · 참고')}),
+      tile('120 rule',fmt(r120,1),{unit:'PaO<sub>2</sub> + PaCO<sub>2</sub> · mmHg',ref:'ref ≥ 120 · room air 전용',flag:roomAir?r120F:'na',chip:r120==null?'':roomAir?chip(r120F,r120Label):chip('na','room air 아님 · 참고')})
+    ].join('');
+
+    // shunt
+    const sa=sao2!=null?sao2/100:null, sv=svo2!=null?svo2/100:null;
+    const cc=(hb!=null&&PAO2!=null)?1.34*hb*1+0.003*PAO2:null;
+    const ca=(hb!=null&&sa!=null&&pao2!=null)?1.34*hb*sa+0.003*pao2:null;
+    const cv=(hb!=null&&sv!=null&&pvo2!=null)?1.34*hb*sv+0.003*pvo2:null;
+    const qs=(cc!=null&&ca!=null&&cv!=null&&(cc-cv)!==0)?(cc-ca)/(cc-cv):null;
+    const qsF=qs==null?'na':qs<0.05?'ok':qs<=0.10?'warn':'high';
+    const qsLabel=qs==null?'':qs<0.05?'정상 (< 5%)':qs<=0.10?'경계 (5–10%)':qs<=0.5?'venous admixture (> 10%)':'severe, diffuse lung disease (> 50%)';
+    $('#a-shunt').innerHTML=[
+      tile('Qs/Qt',qs==null?'—':fmt(qs*100,1)+'%',{unit:'shunt fraction',ref:'ref < 5%',flag:qsF==='warn'?'na':qsF,chip:qs==null?chip('na','SvO<sub>2</sub>·PvO<sub>2</sub> 입력 필요'):chip(qsF,qsLabel)}),
+      tile('PAO<sub>2</sub>',fmt(PAO2,1),{unit:'713 × FiO<sub>2</sub> − PaCO<sub>2</sub>/0.8',ref:'alveolar O<sub>2</sub> · mmHg'}),
+      tile('CcO<sub>2</sub>',fmt(cc,2),{unit:'1.34 × Hb × 1 + 0.003 × PAO<sub>2</sub>',ref:'capillary · mL/dL'}),
+      tile('CaO<sub>2</sub>',fmt(ca,2),{unit:'1.34 × Hb × SaO<sub>2</sub> + 0.003 × PaO<sub>2</sub>',ref:'arterial · mL/dL'}),
+      tile('CvO<sub>2</sub>',fmt(cv,2),{unit:'1.34 × Hb × SvO<sub>2</sub> + 0.003 × PvO<sub>2</sub>',ref:'venous · mL/dL'})
+    ].join('');
+    ['qs-r1','qs-r2','qs-r3'].forEach(id=>{const r=$('#'+id);r.classList.remove('in-range');r.querySelector('.qs-mark').innerHTML=''});
+    if(qs!=null){const id=qs<0.05?'qs-r1':qs>0.5?'qs-r3':qs>0.10?'qs-r2':null;if(id){$('#'+id).classList.add('in-range');$('#'+id+' .qs-mark').innerHTML=chip('ok','해당 '+fmt(qs*100,1)+'%')}}
+
+    // 종합 결론
+    let head='—',headChip='';const rows=[];
+    if(pao2==null&&paco2==null){head='값을 입력하면 종합 판독이 표시됩니다'}
+    else{
+      const parts=[];
+      if(oxy)parts.push(oxy[0]); if(vent)parts.push(vent[0]);
+      head=parts.join(' · ');
+      if(oxy&&oxy[1]!=='ok'&&vent&&vent[1]==='high'&&aa!=null&&aa<15)headChip=chip('warn','저환기성 저산소혈증 의심');
+      // oxygenation
+      let o=[];
+      if(oxy)o.push(`PaO<sub>2</sub> ${V(pao2)} → ${J(oxy[1],oxy[0])} (${oxy[2]})`);
+      if(sat)o.push(`SaO<sub>2</sub> ${V(sao2)} % → ${J(sat[1],sat[0])} (${sat[2]})`);
+      if(oxy&&sat&&oxy[1]!==sat[1])o.push(J('w','PaO<sub>2</sub>와 SaO<sub>2</sub> 판정 불일치 — 고양이는 해리곡선 우측 이동, 장비 오차 고려'));
+      rows.push(['산소화',o.join(' · ')||'PaO<sub>2</sub> 입력 필요']);
+      // ventilation
+      let v='';
+      if(vent){v=`PaCO<sub>2</sub> ${V(paco2)} → ${J(vent[1],vent[0])} (${vent[2]})`;
+        if(vent[1]==='high')v+=' — '+J('hi','CO<sub>2</sub> 저류')+' → 호흡성 산증 가능. VBGA 탭에서 pH·HCO<sub>3</sub>와 함께 보상 여부 확인';
+        else if(vent[1]==='low')v+=' — '+J('lo','과환기')+' → 호흡성 알칼리증 가능 (통증·불안·저산소혈증·대사성 산증 보상 등)';
+      }
+      rows.push(['환기',v||'PaCO<sub>2</sub> 입력 필요']);
+      // lung function
+      let l=[];
+      if(fio2!=null)l.push(roomAir?`FiO<sub>2</sub> ${V(fio2,2)} room air → A-a gradient·120 rule 적용 가능`:`FiO<sub>2</sub> ${V(fio2,2)} 산소 공급 중 → ${J('n','P/F ratio 기준으로 판단')}`);
+      if(pf!=null)l.push(`P/F ${V(pf,0)} → ${J(pfF,pfLabel)}`);
+      if(aa!=null)l.push(`A-a ${V(aa)} → ${J(roomAir?aaF:'n',aaLabel)}${roomAir?'':' (참고)'}`);
+      if(r120!=null&&roomAir)l.push(`120 rule ${V(r120)} → ${J(r120F,r120Label)}`);
+      rows.push(['폐기능',l.join(' · ')||'FiO<sub>2</sub>·PaO<sub>2</sub>·PaCO<sub>2</sub> 입력 필요']);
+      // mechanism hint
+      if(oxy&&oxy[1]!=='ok'&&pao2<80){
+        let m='';
+        if(vent&&vent[1]==='high'&&aa!=null&&aa<15)m=J('w','A-a 정상 + PaCO<sub>2</sub> ↑')+' → 저환기(hypoventilation)에 의한 저산소혈증 — 기도폐색, 호흡근 기능 저하, 흉벽 제한, 정맥혈 검체 여부 확인';
+        else if(aa!=null&&aa>=15)m=J('hi','A-a 증가')+' → V/Q mismatch·확산 장애·shunt (하부 호흡기 질환). 100% FiO<sub>2</sub>에 교정되면 V/Q mismatch, 교정 안 되면 shunt';
+        else if(aa!=null)m=J('n','A-a 정상')+' → FiO<sub>2</sub> 저하 또는 저환기 기전';
+        if(m)rows.push(['기전',m]);
+      }
+      // shunt
+      rows.push(['Qs/Qt',qs==null?'Hb·SvO<sub>2</sub>·PvO<sub>2</sub> 입력 시 shunt fraction 계산':`Qs/Qt ${V(fmt(qs*100,1)+' %')} → ${J(qsF==='warn'?'w':qsF,qsLabel)}`]);
+    }
+    $('#a-verdict-head').innerHTML=head+headChip;
+    $('#a-verdict-rows').innerHTML=rows.map(([l,t])=>`<div class="lbl">${l}</div><div>${t}</div>`).join('');
+  }
+
+  /* ---------- wiring ---------- */
+  function recalc(){calcV();calcA()}
+  $$('#p-vcalc input').forEach(i=>i.addEventListener('input',calcV));
+  $$('#p-acalc input').forEach(i=>i.addEventListener('input',calcA));
+  $$('.seg button').forEach(b=>b.addEventListener('click',()=>{species=b.dataset.sp;$$('.seg button').forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));recalc()}));
+  $$('.btn[data-action]').forEach(b=>b.addEventListener('click',()=>{
+    const sc=b.dataset.scope, vals=SAMPLE[sc];
+    Object.keys(vals).forEach(id=>{$('#'+id).value=b.dataset.action==='sample'?vals[id]:''});
+    sc==='v'?calcV():calcA();
+    if(b.dataset.action==='clear'){const first=$('#'+Object.keys(vals)[0]);first&&first.focus()}
+  }));
+  function showTab(id,push){
+    $$('.tab').forEach(t=>t.setAttribute('aria-selected',t.id===id?'true':'false'));
+    const tab=document.getElementById(id);
+    $$('.panel').forEach(p=>p.classList.toggle('active',p.id===tab.dataset.panel));
+    document.body.dataset.mode=tab.dataset.kind==='a'?'abga':'vbga';
+    try{if(push)history.replaceState(null,'','#'+tab.dataset.panel)}catch(e){}
+    window.scrollTo({top:0});
+  }
+  $$('.tab').forEach(t=>t.addEventListener('click',()=>showTab(t.id,true)));
+  $$('.tabs').forEach(n=>n.addEventListener('keydown',e=>{
+    const tabs=$$('.tab'),i=tabs.findIndex(t=>t.getAttribute('aria-selected')==='true');
+    if(e.key==='ArrowRight'){e.preventDefault();const t=tabs[(i+1)%tabs.length];t.focus();showTab(t.id,true)}
+    if(e.key==='ArrowLeft'){e.preventDefault();const t=tabs[(i-1+tabs.length)%tabs.length];t.focus();showTab(t.id,true)}
+  }));
+  const h=(location.hash||'').slice(1);
+  const initial=$$('.tab').find(t=>t.dataset.panel===h);
+  showTab(initial?initial.id:'tab-vcalc',false);
+  recalc();
+})();
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => { navigator.serviceWorker.register('../sw.js').catch(() => {}); });
+}
+</script>
+</body>
+</html>
