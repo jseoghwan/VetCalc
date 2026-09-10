@@ -1,13 +1,14 @@
 /* VECC Calculation Tools — service worker
    업데이트 방법: 파일을 수정해 올릴 때 아래 VERSION 숫자를 하나 올리면
    모든 기기가 다음 접속 때 새 파일을 받습니다. */
-const VERSION = 'v7';
+const VERSION = 'v8';
 const CACHE = 'kuvecc-' + VERSION;
 const PRECACHE = [
   './',
   './index.html',
   './manifest.webmanifest',
   './tools/bloodgas.html',
+  './tools/anesthesia.html'
   './icons/icon-192.png',
   './icons/icon-512.png',
   './icons/apple-touch-icon.png'
