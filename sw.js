@@ -8,7 +8,7 @@ const PRECACHE = [
   './index.html',
   './manifest.webmanifest',
   './tools/bloodgas.html',
-  './tools/anesthesia.html'
+  './tools/anesthesia.html',
   './icons/icon-192.png',
   './icons/icon-512.png',
   './icons/apple-touch-icon.png'
