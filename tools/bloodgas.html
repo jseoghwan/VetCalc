@@ -1146,10 +1146,16 @@ if ('serviceWorker' in navigator) {
         requestAnimationFrame(() => t.classList.add('show'));
         setTimeout(() => { t.classList.remove('show'); setTimeout(() => t.remove(), 400); }, 3200);
       };
-      reg.addEventListener('updatefound', () => {
-        const nw = reg.installing; if (!nw) return;
-        nw.addEventListener('statechange', () => { if (nw.state === 'activated' && navigator.serviceWorker.controller) showToast('새 버전으로 업데이트됨'); });
+      // 새 버전이 설치되어 제어권을 넘겨받으면 자동으로 새로고침해 바로 적용
+      const hadController = !!navigator.serviceWorker.controller;
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (refreshing || !hadController) return;
+        refreshing = true;
+        showToast('새 버전 적용 중…');
+        setTimeout(() => window.location.reload(), 700);
       });
+      reg.update().catch(() => {});
     }).catch(() => {});
   });
 }
