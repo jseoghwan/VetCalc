@@ -250,6 +250,9 @@ table.ctr td.num,table.ctr th.num{text-align:center}
 
 .foot{margin-top:40px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 18px}
 @media (prefers-reduced-motion:no-preference){.tile,.field input{transition:border-color .15s ease}}
+
+.sw-toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);opacity:0;background:var(--ink);color:var(--bg);font-size:13px;font-weight:600;padding:9px 14px;border-radius:999px;box-shadow:0 6px 20px -6px rgba(0,0,0,.4);z-index:50;pointer-events:none;transition:opacity .25s,transform .25s;white-space:nowrap}
+.sw-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 </style>
 
 <header class="top">
@@ -1136,7 +1139,19 @@ table.ctr td.num,table.ctr th.num{text-align:center}
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => { navigator.serviceWorker.register('../sw.js').catch(() => {}); });
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('../sw.js').then((reg) => {
+      const showToast = (msg) => {
+        const t = document.createElement('div'); t.className = 'sw-toast'; t.textContent = msg; document.body.appendChild(t);
+        requestAnimationFrame(() => t.classList.add('show'));
+        setTimeout(() => { t.classList.remove('show'); setTimeout(() => t.remove(), 400); }, 3200);
+      };
+      reg.addEventListener('updatefound', () => {
+        const nw = reg.installing; if (!nw) return;
+        nw.addEventListener('statechange', () => { if (nw.state === 'activated' && navigator.serviceWorker.controller) showToast('새 버전으로 업데이트됨'); });
+      });
+    }).catch(() => {});
+  });
 }
 </script>
 </body>
