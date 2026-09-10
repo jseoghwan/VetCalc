@@ -123,6 +123,12 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 64px}
 .field .ref b{font-weight:500;color:var(--ink-2);flex-shrink:0}
 .field.flag-low .ref b{color:var(--low)}
 .field.flag-high .ref b{color:var(--high)}
+.inwrap{display:flex;gap:6px;align-items:stretch}
+.inwrap input{flex:1 1 auto}
+.pm{flex:0 0 auto;width:40px;font:inherit;font-size:18px;font-weight:600;border:1.5px solid var(--input-line);background:var(--surface);color:var(--input-ink);border-radius:7px;cursor:pointer;line-height:1;padding:0}
+.pm:hover{background:var(--input-bg)}
+.pm:focus-visible{outline:2px solid var(--input-focus);outline-offset:1px}
+.pm[data-neg="true"]{background:var(--low-soft);border-color:var(--low);color:var(--low)}
 .actions{display:flex;gap:8px;padding:0 16px 14px}
 .btn{font:inherit;font-size:13px;font-weight:600;border:1px solid var(--line-strong);background:var(--surface);color:var(--ink);padding:7px 12px;border-radius:7px;cursor:pointer}
 .btn:hover{background:var(--surface-2)}
@@ -291,7 +297,7 @@ table.ctr td.num,table.ctr th.num{text-align:center}
           <div class="field" data-ref="pH"><label for="v-ph"><span class="n">pH</span></label><input type="number" inputmode="decimal" step="0.01" id="v-ph" value="7.21"><span class="ref"><span class="rr"></span><b></b></span></div>
           <div class="field" data-ref="PCO2"><label for="v-pco2"><span class="n">PCO<sub>2</sub></span><span class="u">mmHg</span></label><input type="number" inputmode="decimal" step="0.1" id="v-pco2" value="51"><span class="ref"><span class="rr"></span><b></b></span></div>
           <div class="field" data-ref="HCO3"><label for="v-hco3"><span class="n">HCO<sub>3</sub>(c)</span><span class="u">mmol/L</span></label><input type="number" inputmode="decimal" step="0.1" id="v-hco3" value="19"><span class="ref"><span class="rr"></span><b></b></span></div>
-          <div class="field" data-ref="BE"><label for="v-be"><span class="n">BE-ecf</span><span class="u">mmol/L</span></label><input type="number" inputmode="decimal" step="0.1" id="v-be" value="9.4"><span class="ref"><span class="rr"></span><b></b></span></div>
+          <div class="field" data-ref="BE"><label for="v-be"><span class="n">BE-ecf</span><span class="u">mmol/L</span></label><div class="inwrap"><button type="button" class="pm" data-for="v-be" aria-label="부호 바꾸기 (음수/양수)" title="음수/양수 전환">±</button><input type="number" step="0.1" id="v-be" value="9.4"></div><span class="ref"><span class="rr">ref</span><b></b></span></div>
           <div class="field" data-ref="Lac"><label for="v-lac"><span class="n">Lac</span><span class="u">mmol/L</span></label><input type="number" inputmode="decimal" step="0.01" id="v-lac" value="5.89"><span class="ref"><span class="rr"></span><b></b></span></div>
           <div class="field" data-ref="AG"><label for="v-ag"><span class="n">AG</span><span class="u">mmol/L</span></label><input type="number" inputmode="decimal" step="0.1" id="v-ag" value="21"><span class="ref"><span class="rr"></span><b></b></span></div>
         </div>
@@ -1108,6 +1114,26 @@ table.ctr td.num,table.ctr th.num{text-align:center}
 
   /* ---------- wiring ---------- */
   function recalc(){calcV();calcA()}
+  // ± 버튼: 휴대폰 숫자 키패드에 '-'가 없어 부호를 버튼으로 전환
+  $$('.pm').forEach(b=>{
+    const inp=$('#'+b.dataset.for);
+    let pending=false; // 빈 칸에서 ±를 누르면 다음에 입력되는 숫자를 음수로
+    const sync=()=>b.dataset.neg=String(pending||inp.value.trim().startsWith('-'));
+    b.addEventListener('click',()=>{
+      const v=inp.value.trim();
+      if(v==='')pending=!pending;
+      else if(v.startsWith('-'))inp.value=v.slice(1);
+      else inp.value='-'+v;
+      sync();inp.dispatchEvent(new Event('input',{bubbles:true}));inp.focus();
+    });
+    inp.addEventListener('input',()=>{
+      const v=inp.value.trim();
+      if(pending&&v!==''&&!v.startsWith('-')){inp.value='-'+v;pending=false;inp.dispatchEvent(new Event('input',{bubbles:true}));return}
+      if(v!=='')pending=false;
+      sync();
+    });
+    sync();
+  });
   $$('#p-vcalc input').forEach(i=>i.addEventListener('input',calcV));
   $$('#p-acalc input').forEach(i=>i.addEventListener('input',calcA));
   $$('.seg button').forEach(b=>b.addEventListener('click',()=>{species=b.dataset.sp;$$('.seg button').forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));recalc()}));
