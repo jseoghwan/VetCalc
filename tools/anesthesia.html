@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>마취·응급 약물 · VECC</title>
+<meta name="description" content="진정·마취 bolus, 응급 약물, 수술 후 CRI 용량 계산기 — 개/고양이, FR 기준">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#4453A3">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="VECC Calc">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+</head>
+<body>
+<style>
+:root{
+  --bg:#F3F4F7; --surface:#FFFFFF; --surface-2:#E9EBF1; --line:#D6D9E2; --line-strong:#B9BECB;
+  --ink:#1A1D26; --ink-2:#4A5063; --muted:#6F7588;
+  --venous:#4453A3; --venous-soft:#E5E8F6; --venous-ink:#2E3A80;
+  --arterial:#B3313B; --arterial-soft:#F8E4E5; --arterial-ink:#8C242C;
+  --input-bg:#FFF6D9; --input-line:#E0A92B; --input-ink:#5B4300; --input-focus:#F5C23A;
+  --ok:#2E7D4F; --ok-soft:#DFF2E6; --low:#2B67B3; --low-soft:#DDE9F8; --high:#C13A2E; --high-soft:#F9E1DE; --warn:#9A6A00; --warn-soft:#FBEFC9;
+  --shadow:0 1px 2px rgba(20,24,40,.06), 0 8px 24px -12px rgba(20,24,40,.18);
+  --radius:10px;
+  --accent:var(--venous); --accent-soft:var(--venous-soft); --accent-ink:var(--venous-ink);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111318; --surface:#1A1D25; --surface-2:#232733; --line:#2F3442; --line-strong:#454B5C;
+    --ink:#E9EBF1; --ink-2:#C0C5D3; --muted:#8F95A8;
+    --venous:#8B97E0; --venous-soft:#252B48; --venous-ink:#C6CDF6;
+    --arterial:#E0666E; --arterial-soft:#42232A; --arterial-ink:#F3B6BA;
+    --input-bg:#33290F; --input-line:#D9A83A; --input-ink:#F6DFA0; --input-focus:#F5C23A;
+    --ok:#6FCF97; --ok-soft:#1D3328; --low:#7FB2F0; --low-soft:#1E2E45; --high:#F08479; --high-soft:#432420; --warn:#E5B94A; --warn-soft:#3B3116;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111318; --surface:#1A1D25; --surface-2:#232733; --line:#2F3442; --line-strong:#454B5C;
+  --ink:#E9EBF1; --ink-2:#C0C5D3; --muted:#8F95A8;
+  --venous:#8B97E0; --venous-soft:#252B48; --venous-ink:#C6CDF6;
+  --arterial:#E0666E; --arterial-soft:#42232A; --arterial-ink:#F3B6BA;
+  --input-bg:#33290F; --input-line:#D9A83A; --input-ink:#F6DFA0; --input-focus:#F5C23A;
+  --ok:#6FCF97; --ok-soft:#1D3328; --low:#7FB2F0; --low-soft:#1E2E45; --high:#F08479; --high-soft:#432420; --warn:#E5B94A; --warn-soft:#3B3116;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+[hidden]{display:none!important}
+body{margin:0;padding-top:env(safe-area-inset-top);background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans KR",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;font-size:15px;line-height:1.55}
+body[data-mode="emg"]{--accent:var(--arterial);--accent-soft:var(--arterial-soft);--accent-ink:var(--arterial-ink)}
+.mono{font-family:"IBM Plex Mono","SFMono-Regular",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums;font-size:.93em}
+a{color:var(--accent)}
+h1,h2,h3,h4{margin:0;text-wrap:balance;line-height:1.25}
+p{margin:0}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+.top-inner{max-width:1120px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.brand{display:flex;align-items:baseline;gap:10px;flex:1 1 auto;min-width:0}
+.brand h1{font-size:17px;font-weight:700;letter-spacing:-.01em;white-space:nowrap}
+.brand .home{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;padding:4px 8px 4px 4px;border-radius:6px;white-space:nowrap;align-self:center}
+.brand .home:hover{background:var(--surface-2);color:var(--ink)}
+@media (max-width:600px){.top-inner{flex-wrap:nowrap}}
+.seg{display:inline-flex;border:1px solid var(--line-strong);border-radius:999px;padding:3px;background:var(--surface-2);gap:2px}
+.seg button{border:0;background:transparent;color:var(--ink-2);font:inherit;font-weight:600;font-size:13px;padding:5px 14px;border-radius:999px;cursor:pointer;min-height:30px}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.tabs{max-width:1120px;margin:0 auto;padding:0 16px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{border:0;background:transparent;font:inherit;font-size:14px;font-weight:600;color:var(--muted);padding:10px 12px 11px;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap;display:flex;align-items:center;gap:7px}
+.tab .dot{width:8px;height:8px;border-radius:50%;background:currentColor;opacity:.55}
+.tab[data-kind="v"]{--tab-accent:var(--venous)}
+.tab[data-kind="a"]{--tab-accent:var(--arterial)}
+.tab[aria-selected="true"]{color:var(--tab-accent);border-bottom-color:var(--tab-accent)}
+.tab[aria-selected="true"] .dot{opacity:1}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+
+main{max-width:1120px;margin:0 auto;padding:20px 16px 64px}
+.panel{display:none}
+.panel.active{display:block}
+
+/* section header */
+.sec{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;margin:0 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.sec h2{font-size:15px;font-weight:700;letter-spacing:-.005em}
+.sec .kicker{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);padding:2px 7px;border-radius:4px;background:var(--accent-soft);line-height:1.5}
+.sec .note{font-size:12px;color:var(--muted);margin-left:auto;text-align:right;line-height:1.5}
+@media (max-width:640px){.sec .note{flex-basis:100%;margin-left:0;text-align:left}}
+.block+.block{margin-top:28px}
+.calc{display:flex;flex-direction:column;gap:22px}
+
+/* inputs */
+.inputs{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:22px}
+.inputs-head{display:flex;align-items:center;gap:10px;padding:11px 16px;border-bottom:1px solid var(--line)}
+.inputs-head h2{font-size:14px;font-weight:700}
+.legend{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;color:var(--muted);margin-left:auto;white-space:nowrap}
+.legend i{display:inline-block;width:14px;height:10px;border-radius:2px;background:var(--input-bg);border:1.5px solid var(--input-line)}
+.inputs-body{padding:12px 16px 4px}
+.igroup{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px 12px;padding-bottom:12px}
+@media (max-width:480px){.igroup{grid-template-columns:1fr 1fr}}
+.field{display:flex;flex-direction:column;gap:3px;min-width:0}
+.field label{font-size:12.5px;font-weight:600;color:var(--ink-2);display:flex;justify-content:space-between;align-items:baseline;gap:6px;line-height:1.4;white-space:nowrap}
+.field label .u{font-weight:500;color:var(--muted);font-size:11px;flex-shrink:0}
+.field input{font-family:"IBM Plex Mono",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums;font-size:17px;font-weight:500;color:var(--input-ink);background:var(--input-bg);border:1.5px solid var(--input-line);border-radius:7px;padding:7px 10px;width:100%;min-width:0;-moz-appearance:textfield;line-height:1.3}
+.field input::-webkit-outer-spin-button,.field input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.field input:focus{outline:0;border-color:var(--input-focus);box-shadow:0 0 0 3px color-mix(in srgb,var(--input-focus) 35%,transparent)}
+.field input::placeholder{color:var(--muted);opacity:.7;font-weight:400}
+.field .ref{font-size:10.5px;color:var(--muted);font-family:"IBM Plex Mono",monospace;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.field.wide{grid-column:span 2}
+@media (max-width:480px){.field.wide{grid-column:1 / -1}}
+
+/* result tiles */
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.tiles.wide{grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+@media (max-width:480px){.tiles{grid-template-columns:1fr 1fr}.tiles.wide{grid-template-columns:1fr}}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 12px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.tile .k{font-size:12.5px;font-weight:600;color:var(--ink-2);display:flex;flex-wrap:wrap;justify-content:space-between;gap:0 8px;align-items:baseline;line-height:1.5}
+.tile .k small{font-weight:500;color:var(--muted);font-size:11px;white-space:nowrap}
+.tile .v{font-family:"IBM Plex Mono",Menlo,monospace;font-variant-numeric:tabular-nums;font-size:22px;font-weight:600;line-height:1.1;letter-spacing:-.01em;white-space:nowrap}
+.tile .v small{font-family:"IBM Plex Sans KR",sans-serif;font-size:12px;font-weight:500;color:var(--muted);margin-left:3px;letter-spacing:0}
+.tile .r{font-size:10.5px;color:var(--muted);font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;line-height:1.5;margin-top:2px;white-space:normal}
+.tile.accent{border-color:color-mix(in srgb,var(--accent) 55%,var(--line));background:color-mix(in srgb,var(--accent-soft) 45%,var(--surface))}
+.tile.accent .v{color:var(--accent-ink)}
+.tile .tgt{display:flex;align-items:center;gap:6px;margin-top:6px;font-size:11.5px;color:var(--muted);flex-wrap:wrap}
+.tile .tgt input{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:14px;font-weight:500;color:var(--input-ink);background:var(--input-bg);border:1.5px solid var(--input-line);border-radius:6px;padding:3px 7px;width:70px;-moz-appearance:textfield}
+.tile .tgt input::-webkit-outer-spin-button,.tile .tgt input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.tile .tgt input:focus{outline:0;border-color:var(--input-focus);box-shadow:0 0 0 3px color-mix(in srgb,var(--input-focus) 35%,transparent)}
+.tile .tgt output{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-weight:600;font-size:14px;color:var(--accent-ink);margin-left:auto;white-space:nowrap}
+.chip{display:inline-block;font-family:"IBM Plex Sans KR",sans-serif;font-size:11px;font-weight:700;padding:1px 7px;border-radius:999px;line-height:1.5;white-space:nowrap}
+.chip.high{color:var(--high);background:var(--high-soft)}
+.chip.warn{color:var(--warn);background:var(--warn-soft)}
+.chip.na{color:var(--muted);background:var(--surface-2)}
+
+/* tables */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;line-height:1.5}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:middle}
+thead th{font-size:11px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;color:var(--muted);background:var(--surface-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap;font-size:15px;font-weight:600}
+td.num small{font-family:"IBM Plex Sans KR",sans-serif;font-size:11px;font-weight:500;color:var(--muted);margin-left:2px}
+td.num .sub{display:block;font-size:10.5px;font-weight:500;color:var(--muted);font-family:"IBM Plex Sans KR",sans-serif;line-height:1.3}
+td.num.cpcr{color:var(--high)}
+td.num.dim{color:var(--muted);font-weight:500}
+td.f{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink-2);white-space:nowrap}
+td.f .d{display:block;font-family:"IBM Plex Sans KR",sans-serif;font-size:11.5px;color:var(--muted);white-space:normal;line-height:1.45;margin-top:1px}
+tbody td:first-child{white-space:nowrap;font-weight:600}
+td .rt{display:block;font-size:11px;font-weight:500;color:var(--muted);line-height:1.3}
+.tag{display:inline-block;font-size:11px;font-weight:600;padding:1px 6px;border-radius:4px;background:var(--surface-2);color:var(--ink-2);white-space:nowrap}
+.tag.v{background:var(--venous-soft);color:var(--venous-ink)}
+.tag.a{background:var(--arterial-soft);color:var(--arterial-ink)}
+
+/* callouts */
+.callout{border-left:3px solid var(--accent);background:var(--surface);border-radius:0 8px 8px 0;padding:10px 14px;font-size:13.5px;line-height:1.65;color:var(--ink-2);margin-top:12px}
+.callout.warn{border-left-color:var(--warn)}
+.callout b{color:var(--ink)}
+.callout.ref{border-left:3px dashed var(--line-strong);background:transparent;color:var(--muted);font-size:13px;padding:6px 14px}
+.callout.ref b{color:var(--ink-2);font-weight:600}
+.foot{margin-top:40px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 18px}
+@media (prefers-reduced-motion:no-preference){.tile,.field input{transition:border-color .15s ease}}
+.sw-toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);opacity:0;background:var(--ink);color:var(--bg);font-size:13px;font-weight:600;padding:9px 14px;border-radius:999px;box-shadow:0 6px 20px -6px rgba(0,0,0,.4);z-index:50;pointer-events:none;transition:opacity .25s,transform .25s;white-space:nowrap}
+.sw-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+</style>
+
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <a class="home" href="../index.html" aria-label="홈으로">‹ 홈</a>
+      <h1>VECC Anesthesia Drugs</h1>
+    </div>
+    <div class="seg" role="group" aria-label="종 선택">
+      <button type="button" id="sp-dog" aria-pressed="true" data-sp="dog">DOG</button>
+      <button type="button" id="sp-cat" aria-pressed="false" data-sp="cat">CAT</button>
+    </div>
+  </div>
+  <nav class="tabs" role="tablist" aria-label="페이지">
+    <button class="tab" role="tab" id="tab-sed" data-kind="v" data-panel="p-sed" aria-selected="true"><span class="dot"></span>진정·마취</button>
+    <button class="tab" role="tab" id="tab-emg" data-kind="a" data-panel="p-emg" aria-selected="false"><span class="dot"></span>응급 약물</button>
+    <button class="tab" role="tab" id="tab-post" data-kind="v" data-panel="p-post" aria-selected="false"><span class="dot"></span>수술 후 CRI</button>
+  </nav>
+</header>
+
+<main>
+<aside class="inputs">
+  <div class="inputs-head">
+    <h2>환자 입력</h2>
+    <span class="legend"><i></i> 노란 칸 = 직접 입력</span>
+  </div>
+  <div class="inputs-body">
+    <div class="igroup">
+      <div class="field"><label for="bw"><span class="n">체중</span><span class="u">kg</span></label><input type="number" inputmode="decimal" step="0.1" min="0" id="bw" placeholder="0.0"><span class="ref">BW</span></div>
+      <div class="field"><label for="fr"><span class="n">FR (유지 수액속도)</span><span class="u">mL/kg/hr</span></label><input type="number" inputmode="decimal" step="0.5" min="0" id="fr" value="2.5"><span class="ref" id="fr-ref">펌프 = FR × BW</span></div>
+    </div>
+  </div>
+</aside>
+
+<!-- ===================== 진정·마취 ===================== -->
+<section class="panel active" id="p-sed" role="tabpanel" aria-labelledby="tab-sed">
+  <div class="sec"><span class="kicker">Bolus</span><h2>진정 / 마취 약물</h2><span class="note">계산값 = BW × mL/kg</span></div>
+  <div class="tw"><table>
+    <thead><tr><th>약물</th><th>용량식</th><th class="num">계산값</th><th class="num">대체</th></tr></thead>
+    <tbody id="t-sed"></tbody>
+  </table></div>
+  <div class="callout ref">프로포폴은 효과를 보며 나눠 투여(to effect). 세파졸린은 주사용수 5 mL로 희석한 용액 기준.</div>
+</section>
+
+<!-- ===================== 응급 약물 ===================== -->
+<section class="panel" id="p-emg" role="tabpanel" aria-labelledby="tab-emg">
+  <div class="calc">
+    <div class="block">
+      <div class="sec"><span class="kicker">CRI</span><h2>승압제 · 진통</h2><span class="note">100 mL N/S 1 bag 기준 희석</span></div>
+      <div class="tiles wide" id="t-pressor"></div>
+    </div>
+    <div class="block">
+      <div class="sec"><span class="kicker">Bolus</span><h2>응급 약물</h2><span class="note"><span class="chip high">CPCR</span> 심폐소생 용량</span></div>
+      <div class="tw"><table>
+        <thead><tr><th>약물</th><th>용량식</th><th class="num">계산값</th><th class="num">CPCR / 대체</th></tr></thead>
+        <tbody id="t-emg"></tbody>
+      </table></div>
+      <div class="callout warn"><b>중탄산나트륨은 기관내(IT) 투여 금기.</b> 에피네프린 High dose는 원액(1 mg/mL) 0.1 mL/kg IV 또는 IT.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 수술 후 CRI ===================== -->
+<section class="panel" id="p-post" role="tabpanel" aria-labelledby="tab-post">
+  <div class="calc">
+    <div class="block">
+      <div class="sec"><span class="kicker">FL</span><h2>Fentanyl + Lidocaine</h2><span class="note">100 mL N/S 1 bag · FR 유지</span></div>
+      <div class="tiles" id="t-fl-tiles"></div>
+      <div class="tw" style="margin-top:10px"><table>
+        <thead><tr><th>약물</th><th>구분</th><th>용량식</th><th class="num">계산값</th></tr></thead>
+        <tbody id="t-fl"></tbody>
+      </table></div>
+    </div>
+    <div class="block">
+      <div class="sec"><span class="kicker">F or R / LK</span><h2>Fentanyl or Remifentanil + Lidocaine + Ketamine</h2><span class="note">100 mL N/S 1 bag · FR 유지</span></div>
+      <div class="tiles" id="t-flk-tiles"></div>
+      <div class="tw" style="margin-top:10px"><table>
+        <thead><tr><th>약물</th><th>구분</th><th>용량식</th><th class="num">계산값</th></tr></thead>
+        <tbody id="t-flk"></tbody>
+      </table></div>
+    </div>
+    <div class="callout ref"><b>FR 유지</b> = 유지 수액속도(mL/kg/hr)로 bag을 투여. 위 FR을 바꾸면 펌프 속도와 환산 용량이 함께 바뀜. 환산은 원액 농도 펜타닐 50 µg/mL · 레미펜타닐 1 mg/5 mL(200 µg/mL) · 리도카인 2%(20 mg/mL) · 케타민 50 mg/mL, bag 총량 100 mL 기준.</div>
+  </div>
+</section>
+
+<div class="foot">
+  <span>원액 농도: 도부타민 50 mg/mL · 노르에피네프린 1 mg/mL · 바소프레신 20 U/mL · 펜타닐 50 µg/mL · 리도카인 2% · 케타민 50 mg/mL</span>
+  <span>임상 판단의 보조 도구이며 최종 결정은 담당 수의사에게 있습니다.</span>
+</div>
+</main>
+
+<script>
+(function(){
+  const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+  const S={bw:0,fr:2.5,sp:'dog'};
+  const targets={};
+
+  const f=(x)=>{ if(!isFinite(x)||S.bw<=0) return '—'; if(x===0) return '0'; if(x<0.1) return x.toFixed(3); if(x<10) return x.toFixed(2); return x.toFixed(1); };
+  const ml=(perKg,lbl,cls='')=>`<td class="num ${cls}">${f(S.bw*perKg)}<small>mL</small>${lbl?`<span class="sub">${lbl}</span>`:''}</td>`;
+  const blank=()=>`<td class="num dim">—</td>`;
+  const tr=(name,route,formula,c1,c2)=>`<tr><td>${name}${route?`<span class="rt">${route}</span>`:''}</td><td class="f">${formula}</td>${c1}${c2}</tr>`;
+
+  /* ---------- 진정·마취 ---------- */
+  function renderSed(){
+    $('#t-sed').innerHTML=[
+      tr('프로포폴','IV','BW × 0.4–0.6 <span class="d">4–6 mg/kg</span>',ml(0.4,'0.4 mL/kg'),ml(0.6,'0.6 mL/kg')),
+      tr('미다졸람','IV','BW × 0.3 <span class="d">0.3 mg/kg</span>',ml(0.3),blank()),
+      tr('부토파놀','IV','BW × 0.05 <span class="d">0.1 mg/kg</span>',ml(0.05),blank()),
+      tr('세파졸린','IV','BW × 0.15 <span class="d">주사용수 5 mL 희석</span>',ml(0.15),blank()),
+      tr('파모티딘','IV','BW × 0.25',ml(0.25),blank()),
+      tr('세레니아','SC / IV','BW × 0.1',ml(0.1),blank()),
+    ].join('');
+  }
+
+  /* ---------- 응급 ---------- */
+  const PRESSORS=[
+    {id:'dobu',name:'도부타민',mix:'100 mL N/S + 도부타민(50 mg/mL) 0.6 mL',conc:300,unit:'µg',min:1,max:4,minD:5,maxD:20,dU:'µg/kg/min',def:5},
+    {id:'ne',name:'노르에피네프린',mix:'100 mL N/S + 노르핀주(1 mg/mL) 1.2 mL',conc:12,unit:'µg',min:0.25,max:10,minD:0.05,maxD:2,dU:'µg/kg/min',def:0.1},
+    {id:'vaso',name:'바소프레신',mix:'100 mL N/S + Vaso(20 U/mL) 0.15 mL',conc:30,unit:'mU',min:1,max:1,minD:0.5,maxD:0.5,dU:'mU/kg/min',def:0.5},
+  ];
+  const toMlHr=(d,t)=>(t*S.bw*60)/d.conc;
+  function pressorTile(d){
+    const t=targets[d.id]??d.def, single=d.min===d.max;
+    const range=single?`${f(d.min*S.bw)}`:`${f(d.min*S.bw)}–${f(d.max*S.bw)}`;
+    return `<div class="tile">
+      <div class="k">${d.name}<small>CRI</small></div>
+      <div class="v">${range}<small>mL/hr</small></div>
+      <div class="r">${d.mix}<br>${d.conc} ${d.unit}/mL · ${single?d.min:d.min+'–'+d.max} mL/kg/hr = ${single?d.minD:d.minD+'–'+d.maxD} ${d.dU}</div>
+      <div class="tgt"><span>목표</span><input type="number" inputmode="decimal" step="any" min="0" value="${t}" data-target="${d.id}" aria-label="${d.name} 목표 용량"><span>${d.dU}</span><output>${f(toMlHr(d,t))} mL/hr</output></div>
+    </div>`;
+  }
+  function fentTile(){
+    const c=(3.2*50)/100;
+    return `<div class="tile accent">
+      <div class="k">펜타닐<small>CRI · FR 유지</small></div>
+      <div class="v">${f(S.fr*S.bw)}<small>mL/hr</small></div>
+      <div class="r">100 mL N/S + 펜타닐 3.2 mL<br>${c.toFixed(1)} µg/mL × FR ${S.fr} = ${(c*S.fr).toFixed(1)} µg/kg/hr</div>
+    </div>`;
+  }
+  function renderEmg(){
+    $('#t-pressor').innerHTML=PRESSORS.map(pressorTile).join('')+fentTile();
+    $$('#t-pressor input[data-target]').forEach(el=>el.addEventListener('input',()=>{
+      const d=PRESSORS.find(x=>x.id===el.dataset.target); targets[d.id]=parseFloat(el.value)||0;
+      el.closest('.tgt').querySelector('output').textContent=f(toMlHr(d,targets[d.id]))+' mL/hr';
+    }));
+    const cat=S.sp==='cat';
+    $('#t-emg').innerHTML=[
+      tr('펜타닐','Loading IV','BW × 0.08 <span class="d">고양이 0.04</span>',
+        cat?ml(0.04,'고양이'):ml(0.08,'개'), cat?ml(0.08,'개','dim'):ml(0.04,'고양이','dim')),
+      tr('아트로핀','Bolus','서맥 0.01 mg/kg IV (0.02 mL/kg)<span class="d">CPCR 0.04 mg/kg (0.08 mL/kg) · IT 0.15–0.2 mg/kg</span>',ml(0.02,'서맥 IV'),ml(0.08,'CPCR','cpcr')),
+      tr('에피네프린','Bolus','Low: N/S 10배 희석 0.1 mL/kg IV (0.01 mg/kg)<span class="d">IT 0.02 mg/kg · High: 원액 0.1 mL/kg IV, IT (0.1 mg/kg)</span>',ml(0.1,'Low · 10배 희석'),ml(0.1,'High · 원액','cpcr')),
+      tr('바소프레신','Bolus IV','BW × 0.04 <span class="d">0.8 U/kg</span>',ml(0.04),blank()),
+      tr('Flumazenil','IV','0.01 mg/kg (0.1 mL/kg)<span class="d">CPCR 용량 동일</span>',ml(0.1),ml(0.1,'CPCR','cpcr')),
+      tr('Naloxone','IV, IM, SC','0.01 mg/kg (0.025 mL/kg)<span class="d">CPCR 0.04 mg/kg (0.1 mL/kg)</span>',ml(0.025),ml(0.1,'CPCR','cpcr')),
+      tr('Atipamezole','IV, IM','0.05 mg/kg (0.01 mL/kg)<span class="d">CPCR 0.1 mg/kg (0.02 mL/kg)</span>',ml(0.01),ml(0.02,'CPCR','cpcr')),
+      tr('중탄산나트륨','IV, IO','1 mEq/kg (1 mL/kg) <span class="chip high">IT 금기</span>',ml(1),blank()),
+    ].join('');
+  }
+
+  /* ---------- 수술 후 CRI ---------- */
+  const STOCK={fent:50,remi:200,lido:20,keta:50};
+  const pumpTile=()=>`<div class="tile accent"><div class="k">펌프 속도<small>FR ${S.fr} mL/kg/hr</small></div><div class="v">${f(S.fr*S.bw)}<small>mL/hr</small></div><div class="r">FR × BW</div></div>`;
+  function criTile(name,add,stock,unit,perMin){
+    const c=(add*stock)/100, hr=c*S.fr;
+    const d=perMin?`${hr.toFixed(2)} ${unit}/kg/hr = ${(hr*1000/60).toFixed(0)} µg/kg/min`:`${hr.toFixed(2)} ${unit}/kg/hr`;
+    return `<div class="tile"><div class="k">${name}<small>CRI</small></div><div class="v">${add}<small>mL / bag</small></div><div class="r">${c%1?c.toFixed(2):c} ${unit}/mL × FR ${S.fr}<br>= ${d}</div></div>`;
+  }
+  function renderPost(){
+    const cat=S.sp==='cat';
+    const fentLoad=`<tr><td>펜타닐<span class="rt">IV</span></td><td class="f">Loading</td><td class="f">BW × 0.08 <span class="d">고양이 0.04</span></td>${cat?ml(0.04,'고양이'):ml(0.08,'개')}</tr>`;
+    $('#t-fl-tiles').innerHTML=pumpTile()+criTile('리도카인',2.4,STOCK.lido,'mg',true)+criTile('펜타닐',3.2,STOCK.fent,'µg',false);
+    $('#t-fl').innerHTML=[
+      `<tr><td>리도카인<span class="rt">IV</span></td><td class="f">Loading</td><td class="f">BW × 0.0125</td>${ml(0.0125)}</tr>`,
+      `<tr><td>리도카인</td><td class="f">CRI</td><td class="f">2.4 mL + N/S 100 mL <span class="d">FR 유지</span></td><td class="num dim">${f(S.fr*S.bw)}<small>mL/hr</small></td></tr>`,
+      fentLoad,
+      `<tr><td>펜타닐</td><td class="f">CRI</td><td class="f">3.2 mL + N/S 100 mL <span class="d">FR 유지</span></td><td class="num dim">${f(S.fr*S.bw)}<small>mL/hr</small></td></tr>`,
+      `<tr><td>펜타닐</td><td class="f">Patch</td><td class="f">5 kg당 1장</td><td class="num">${f(S.bw/5)}<small>장</small></td></tr>`,
+    ].join('');
+    $('#t-flk-tiles').innerHTML=pumpTile()+criTile('펜타닐',2.9,STOCK.fent,'µg',false)+criTile('레미펜타닐',1,STOCK.remi,'µg',false)+criTile('리도카인',6,STOCK.lido,'mg',true)+criTile('케타민',0.24,STOCK.keta,'mg',true);
+    $('#t-flk').innerHTML=[
+      `<tr><td>FLK 수액</td><td class="f">Loading</td><td class="f">1시간치 <span class="d">2.5 mL/kg</span></td>${ml(2.5)}</tr>`,
+      `<tr><td>펜타닐</td><td class="f">CRI</td><td class="f">2.9 mL + N/S 100 mL <span class="d">FR 유지</span></td><td class="num dim">${f(S.fr*S.bw)}<small>mL/hr</small></td></tr>`,
+      `<tr><td>레미펜타닐</td><td class="f">CRI</td><td class="f">1 mL (5 mL 희석) + N/S 100 mL <span class="d">FR 유지</span></td><td class="num dim">${f(S.fr*S.bw)}<small>mL/hr</small></td></tr>`,
+      `<tr><td>리도카인</td><td class="f">CRI</td><td class="f">6 mL + N/S 100 mL <span class="d">FR 유지</span></td><td class="num dim">${f(S.fr*S.bw)}<small>mL/hr</small></td></tr>`,
+      `<tr><td>케타민</td><td class="f">CRI</td><td class="f">0.24 mL + N/S 100 mL <span class="d">FR 유지</span></td><td class="num dim">${f(S.fr*S.bw)}<small>mL/hr</small></td></tr>`,
+    ].join('');
+  }
+
+  function recalc(){ renderSed(); renderEmg(); renderPost(); $('#fr-ref').textContent=S.bw>0?`펌프 = ${f(S.fr*S.bw)} mL/hr`:'펌프 = FR × BW'; }
+
+  $('#bw').addEventListener('input',e=>{S.bw=parseFloat(e.target.value)||0;recalc()});
+  $('#fr').addEventListener('input',e=>{S.fr=parseFloat(e.target.value)||0;recalc()});
+  $$('.seg button').forEach(b=>b.addEventListener('click',()=>{
+    S.sp=b.dataset.sp; $$('.seg button').forEach(x=>x.setAttribute('aria-pressed',x===b)); recalc();
+  }));
+
+  function showTab(id,push){
+    const tab=$('#'+id); if(!tab) return;
+    $$('.tab').forEach(t=>t.setAttribute('aria-selected',t===tab));
+    $$('.panel').forEach(p=>p.classList.toggle('active',p.id===tab.dataset.panel));
+    document.body.dataset.mode=tab.dataset.kind==='a'?'emg':'sed';
+    try{if(push)history.replaceState(null,'','#'+tab.dataset.panel)}catch(e){}
+    window.scrollTo({top:0});
+  }
+  $$('.tab').forEach(t=>t.addEventListener('click',()=>showTab(t.id,true)));
+  $$('.tabs').forEach(n=>n.addEventListener('keydown',e=>{
+    const tabs=$$('.tab'),i=tabs.findIndex(t=>t.getAttribute('aria-selected')==='true');
+    if(e.key==='ArrowRight'){e.preventDefault();const t=tabs[(i+1)%tabs.length];t.focus();showTab(t.id,true)}
+    if(e.key==='ArrowLeft'){e.preventDefault();const t=tabs[(i-1+tabs.length)%tabs.length];t.focus();showTab(t.id,true)}
+  }));
+  const h=(location.hash||'').slice(1);
+  const initial=$$('.tab').find(t=>t.dataset.panel===h);
+  showTab(initial?initial.id:'tab-sed',false);
+  recalc();
+})();
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('../sw.js').then((reg) => {
+      const showToast = (msg) => {
+        const t = document.createElement('div'); t.className = 'sw-toast'; t.textContent = msg; document.body.appendChild(t);
+        requestAnimationFrame(() => t.classList.add('show'));
+        setTimeout(() => { t.classList.remove('show'); setTimeout(() => t.remove(), 400); }, 3200);
+      };
+      const hadController = !!navigator.serviceWorker.controller;
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (refreshing || !hadController) return;
+        refreshing = true;
+        showToast('새 버전 적용 중…');
+        setTimeout(() => window.location.reload(), 700);
+      });
+      reg.update().catch(() => {});
+    }).catch(() => {});
+  });
+}
+</script>
+</body>
+</html>
