@@ -1,0 +1,79 @@
+{"id":"sacc3-p5-c61","book":"Small Animal Critical Care Medicine, 3rd ed.","book_short":"SACCM 3판",
+ "part":"Part V","part_title":"Electrolyte and Acid-Base Disturbances","chapter_num":61,
+ "title":"Hyperlactatemia","author":"Patricia G. Rosenstein, DVM, DACVECC; Dez Hughes, BVSc (Hons), DACVECC","format":2,
+ "blocks":[
+{"type":"callout","title":"KEY POINTS","items":[
+ "혈장 lactate는 조직 저관류의 늦지만 정량적인 지표로, 예후 지표이자 치료·진단 지침으로 쓸 수 있다.",
+ "Lactate는 포도당 산화의 중간 대사체로 탄수화물 에너지 기질 저장소 역할을 한다.",
+ "Lactate 생성은 세포 에너지 결핍에 대한 적응·보호 반응으로, 에너지 요구가 호기성 호흡 능력을 초과할 때 빠르거나 지속적인 에너지 생산을 가능하게 한다.",
+ "중증 질환(특히 패혈증)에서 lactate는 호기성·혐기성 기전 모두로 생성되며, 조직 저관류뿐 아니라 adrenergic 스트레스 반응의 대리 지표다."
+]},
+{"type":"paragraph","text":"임상에서 혈장 lactate의 주 용도 = 면밀한 신체검사에 더해 저관류를 감지·감시하는 보조 지표. 1차 대전 후 임상 유용성 인식, 1964년 확정 보고, 1990년대에 저렴·간편한 분석법으로 보급. 한때 혐기 대사의 막다른 노폐물로 여겨졌으나 현재는 세포 에너지 셔틀의 일부이자 대사 조절자로 인식."},
+{"type":"heading","level":2,"text":"생화학·생리","gist":"산증은 lactate 자체가 아닌 ATP 사용의 H⁺ 때문; 간 30–60%·신피질 20–30% 소비"},
+{"type":"list","items":[
+ "Lactate ≠ lactic acid. Lactic acid(CH₃CH(OH)COOH)는 강산으로 생리적 pH에서 거의 완전히 lactate 음이온 + H⁺로 해리. 고lactate혈증 = 혈장 lactate↑; 원인·동반 산-염기 이상·완충 예비에 따라 순 acidemia가 있을 수도 없을 수도.",
+ "해당(glycolysis, 세포질; 산소 유무 무관) ▸ glucose 1 mole → pyruvate 2 mole + ATP + NADH. Pyruvate → 미토콘드리아 → acetyl CoA → (산소 충분 시) TCA 회로·전자전달계·산화적 인산화로 ATP 36 mole (Fig. 61.1). 정상 호기 조건에서는 소량의 pyruvate만 LDH로 lactate가 됨 → 세포 밖으로 수송되거나 같은 세포에서 사용; 결국 국소·원격 조직에서 pyruvate로 되돌아가 산화되거나 포도당신생으로 glucose로.",
+ "산소 결핍(상대·절대) 시 TCA·산화적 인산화가 느려져 NAD⁺↓, pyruvate·NADH 축적 → 해당 둔화. Pyruvate → lactate 전환으로 NAD⁺ 보충, pyruvate·H⁺ 제거 → 해당 지속. 해당은 glucose당 ATP 2 mole뿐이나 매우 빨라 일시적으로 에너지 수요 충족.",
+ "통념과 달리 lactate 관련 대사성 산증은 lactate 생성이 아니라 ATP 사용 때문 — 해당은 lactic acid가 아닌 lactate 이온 생성. 해당으로 만든 ATP를 쓰면 H⁺가 세포질로 방출되며, 정상에서는 미토콘드리아 양성자 경사 유지에 쓰이나 산소 부족 시 축적 → 세포 밖으로 수송. 즉 산증은 H⁺ 소비 감소 때문. Lactate는 세균·파충류에서 고등 포유류까지 보존 → 진화적 이점 추정.",
+ "Stewart 접근에서 lactate는 강 음이온 — Cl처럼 Na 증가 없이 오르면 산성화. 반정량적 접근: lactate 1 mmol/L 상승당 SBE 1 mmol/L 감소. 그러나 lactate–산증 관계는 복잡·논란; lactate 변화가 항상 H⁺ 변화를 반영하지 않으므로 임상 판단 필요 (Ch.60).",
+ "건강 시 약동학 ▸ 세포질에서 생성 → pyruvate로 재전환(국소 호기 대사) 또는 세포 밖·혈류로 원격 조직에. 모든 조직이 생성 가능하나 안정 시 대부분 골격근·뇌·지방조직(고유 생성능·체중 대비 질량). 소비: 간 30–60%(현저히 증가한 부하도 대사 가능), 신피질 20–30%. 탄수화물 기질(사실상 glucose의 절반)이라 혈장 농도가 높기 전엔 요 배설 없음 — 근위곡세뇨관 재흡수, 신장 역치 6–10 mmol/L.",
+ "질병 시 약동학 ▸ 전신 저관류 시 조직별 생성은 혈류 감소 vs 선택적 보존에 따름; 국소 질환도 영향(급성 폐손상 시 폐가 lactate 생성↑). 고lactate혈증 중 골격근·심근·뇌는 lactate 흡수↑(때로 glucose보다 우선). 간은 간 혈류가 정상의 30% 미만이 될 때까지 추출 지속하나 관류 불량·중증 저산소·간부전에서는 순 생성자로 전환.",
+ "조직 → 간질 → 혈장 → 적혈구 세포내와 평형. 전혈 lactate = 적혈구내·혈장 평균; 거의 모든 분석기는 전혈을 흡인해도 혈장 lactate를 측정."
+]},
+{"type":"heading","level":2,"text":"원인 (Type A / B)","gist":"A = 산소 결핍 증거 있음(가장 흔함); B는 대개 3–6, 중증(6–>20)은 대개 전신 저관류"},
+{"type":"paragraph","text":"고lactate혈증은 개·고양이 대사성 산증의 가장 흔한 동반 상태 중 하나; 생성 > 소비일 때 발생. Lactic acidosis = 고lactate혈증 + 대사성 산증. Type A(가장 흔함) = 상대·절대 조직 산소 결핍의 임상 증거 있음; Type B = 산소 운반 감소의 임상 증거 없음. 둘이 공존 가능. 임상 경험상 Type B는 보통 경증–중등도(3–6 mmol/L); 중증(6–>20 mmol/L)은 대개 전신 저관류가 주원인."},
+{"type":"table","title":"Table 61.1 고lactate혈증의 원인","headers":["범주","원인"],"rows":[
+ ["Type A — 산소 요구 증가","운동, 떨림/전율, 근육 진전, 발작, 몸부림(struggling)"],
+ ["Type A — 산소 운반 감소","전신 저관류, 국소 저관류, 중증 빈혈, 중증 저산소혈증, 일산화탄소 중독"],
+ ["Type B1 — 기저 질환","패혈증, 종양, 당뇨병, 간질환, thiamine 결핍, 갈색세포종, 갑상선기능항진증, 알칼리증"],
+ ["Type B2 — 약물·독소","Acetaminophen, 활성탄, β₂ agonist, bicarbonate, corticosteroid, cyanide, epinephrine, ethanol, ethylene glycol, glucose, insulin, lactulose, methanol, methylxanthine, nitroprusside, propofol, propylene glycol, salicylate, strychnine, sorbitol, TPN, xylitol"],
+ ["Type B3 — 선천성 대사 이상","미토콘드리아 근병증, 효소 결핍, MELAS"],
+ ["기타","d-Lactic acidosis"]
+]},
+{"type":"heading","level":3,"text":"Type A"},
+{"type":"list","items":[
+ "산소 요구↑ ▸ 근육 활동(운동, 몸부림, 전율, 떨림, 진전, 발작). 최대 운동 시: 야외 훈련 Labrador Retriever 6.31 mmol/L – 경주 Greyhound >30 mmol/L. 생리적 고lactate혈증은 근육 활동 중단 후 제거 반감기 20–60분으로 무사히 해소 — 이 시간 내 해소되지 않으면 동반 질환 가능성.",
+ "산소 운반↓ ▸ 가장 흔히 전신 저관류(저혈량성·분포성·심인성·폐색성 쇼크). 개에서 저관류 악화와 혈장 lactate는 거의 선형: 경증 3–4, 중등도 4–6, 중증 >6 mmol/L. 저자 경험상 고양이는 지수형 — 경·중등도 저관류에서는 상승이 적고 중증에서 급상승. 혈압 하강처럼 고lactate혈증도 저혈량의 늦은 지표 → 정상 lactate에서도 준임상적 저관류 가능.",
+ "빈혈·저산소혈증 단독 원인은 드묾(저혈량·저혈압 동반 없이는). 실험적 급성 중증 정상혈량 빈혈에서 PCV <15%가 되어야 고lactate; 만성 정상혈량 빈혈 개·고양이는 PCV 10% 이하에서도 정상 lactate 가능. IMHA 개의 고lactate혈증 보고는 동반 저관류일 수도. 순수 저산소혈증은 PaO₂ 25–40 mm Hg로 매우 심해야 발생.",
+ "국소 저관류(대동맥 혈전색전증, 장기 염전) ▸ 해당 조직 배출 정맥의 lactate↑; 전신 농도 영향은 허혈 조직의 잔여 혈류(washout)에 좌우 — washout 적으면 전신 lactate 거의 안 오름. 임상 경험상 폐엽·간엽·비장 염전은 lactate를 많이 방출하지 않아 전신 lactate는 전신 관류 상태를 반영."
+]},
+{"type":"heading","level":3,"text":"Type B"},
+{"type":"list","items":[
+ "B1 패혈증 ▸ 패혈증·패혈성 쇼크에서 흔하며 저관류·빈혈·저산소혈증을 공격적으로 교정해도 지속 가능. 기전(복합적): catecholamine에 의한 골격근 Na⁺/K⁺-ATPase 자극, 미토콘드리아 기능 장애(cytochrome 직접 억제 포함), 간 lactate 생성↑·추출↓, 조직 산소 추출 장애, 모세혈관 단락; NO 생성↑, 내피 평활근 신경호르몬 조절 변화, 적혈구 유연성↓, 백혈구 활성화↑, pyruvate dehydrogenase 억제. Adrenergic 자극에 의한 호기성 해당 증가가 상당히 기여한다는 강력한 근거.",
+ "B1 종양 ▸ 일부는 저관류; 악성세포는 산소 충분해도 해당 경로를 우선 사용(Warburg 효과). 림프종·혈관육종의 드문 예에서 정상 관류인데도 고lactate. 당뇨 개 일부에서 lactate↑(동반 Type A 원인일 수도). 간질환은 중증 간기능 장애·부전 또는 동반 저관류에서만.",
+ "B2 ▸ Prednisone 항염·면역억제 용량 모두 정상 개에서 경증–중등도 상승(평균±SD 각각 최대 3.4±0.9, 4.3±0.7 mmol/L). Ethylene glycol·ethanol 대사는 NADH/NAD⁺ 비↑ → LDH 반응이 lactate 쪽으로; 단 EG 중독의 중증 산증·AG는 주로 산성 EG 대사체 때문. Propylene glycol(식품·화학제·약물)은 l-lactate·d-lactate·pyruvate로 대사 → 과량 시 고lactate; 일부 활성탄 제형은 propylene glycol과 lactate 전구체 glycerol 함유. Epinephrine은 Na⁺/K⁺-ATPase 활성·glycogen 분해↑; 갈색세포종 등 내인성 catecholamine 과잉도 연관. LRS 급속 주입은 lactate 처리 변화(간부전·종양) 시 또는 비라세미 levorotatory 용액(L-lactate 28 mmol/L) 사용 시 혈장 lactate에 영향.",
+ "B3 ▸ 사람: glucose-6-phosphatase 결핍, pyruvate dehydrogenase 결핍, MELAS. 미토콘드리아 근병증: Jack Russell Terrier, German Shepherd, Old English Sheepdog. Pyruvate dehydrogenase 결핍: Clumber Spaniel, Sussex Spaniel."
+]},
+{"type":"list","title":"Cryptic shock","items":[
+ "저혈압 없이 lactate가 높은 병든·손상 환자. 거시순환 산소 운반↓, 미세순환 장애, 세포 기능 장애, 또는 단순히 강한 교감 자극의 반영인지 불명확 — 어쨌든 조사가 필요한 심각한 기저 원인의 반영일 수 있음.",
+ "사람: 응급실·ICU의 정상혈압 패혈증 환자에서 lactate↑는 고lactate 없는 저혈압 환자와 같거나 더 나쁜 생존; 혈역학 정상 외상 환자에서 lactate↑가 대량 수혈 필요 예측.",
+ "개·고양이 근거 제한적: 저혈량·패혈성 쇼크 개를 전통적 혈역학 목표까지 소생한 연구에서 20%는 lactate 지속 상승, 37%는 중심정맥 산소 지속 저하 → 정상혈압에도 조직 저관류 지속 시사."
+]},
+{"type":"list","title":"d-Lactate","items":[
+ "L-lactate(포유류 세포 주 생성형)만 일반 임상 장비로 측정; d-lactate는 전문 검사실에서만. 건강 시 d-lactate는 l-lactate의 <1%. 일부 세균이 혐기 조건에서 d·l 모두 생성.",
+ "사람: 단장 증후군·췌외분비 질환의 d-고lactate혈증이 뇌병증에 기여 추정. 고양이: DKA, propylene glycol 중독, 세균 dysbiosis 동반 췌외분비부전에서 보고; 소화기 질환 고양이는 d-lactate가 유의하게 높음. 반추류: 곡류 과식 등에서 잘 알려짐. 개·고양이 AG↑ 대사성 산증의 드물지만 가능한 원인으로 고려."
+]},
+{"type":"heading","level":2,"text":"임상 이용 (채혈·분석기·참고치)","gist":"같은 부위 반복 측정; handheld는 참고치 부근에서 부정확; 개 0.3–2.5 mmol/L"},
+{"type":"list","items":[
+ "근육 활동이 lactate를 올리므로 몸부림·떨림 최소화하여 채혈; 경·중등도 몸부림은 영향 적으나 심한 몸부림·전율·진전·격한 운동·발작은 유의하게 상승 — 해석 시 고려.",
+ "폐동맥·말초동맥혈 lactate = 전신 정맥 유출의 혼합; 정맥혈 = 동맥으로 들어온 lactate와 그 조직에서 일어난 일의 순 균형. 정상 혈류·건강 시 요골쪽피부정맥이 동맥보다 약간 높으나 임상적으로 무의미; 조직 혈류 낮고 lactate 생성 시(전신 저관류 동물의 사지) 정맥이 동맥보다 훨씬 높음 → 반복 측정은 같은 부위에서. 동맥혈 사용의 임상적 이유는 보통 없음.",
+ "분석기 ▸ handheld·benchtop 다양; 정확도·정밀도·편향·직선성이 기기마다 다르고 benchtop이 우수. Handheld는 참고치 내·약간 위 농도에서 부정확·부정밀 가능 → handheld 약 3 mmol/L는 인위적 상승일 수도 진짜일 수도.",
+ "참고치 ▸ 개(6개월–12세) 혈장 0.3–2.5 mmol/L; 강아지는 생후 2–3개월간 성견보다 높을 수 있음. 고양이: 소규모 연구 2건 0.3–1.7 및 0.37–2.81 mmol/L; 대규모(47마리) 0.67–5.44 mmol/L — 예상 밖의 높은 상한은 추가 연구 전까지 신중히 적용. Lactate는 조직 저관류에 둔감한 지표 → 다른 원인 배제 후엔 작은 상승도 매우 유의."
+]},
+{"type":"heading","level":2,"text":"예후·진단·치료 목표","gist":"치료 후 감소 추세가 초기값보다 중요; 1–2시간마다 절반 감소; 24–48h 정상화 실패 시 생존↓"},
+{"type":"list","title":"예후적 이용","items":[
+ "신중·적절히 해석하면 유용: 낮으면 생존 가능성↑, 매우 높으면↓ — 기저 상태에 따라 다름. 원인 질환의 사망률이 높으면(패혈증) 예후 가치↑, 쉽게 교정되는 원인(지혈 가능한 단순 출혈)이면 덜 유용. 저관류에서 초기 lactate는 저관류 정도를 반영하나 가역성은 아님. 치료에 따른 lactate 감소가 초기값보다 신뢰할 예후 지표; 중증 질환에서 24–48시간 내 정상화되지 않으면 생존 가능성↓.",
+ "사람: 외상, 패혈증·패혈성 쇼크, 심정지, CO 중독, 두부 외상, 말라리아, 간부전에서 예후 가치; 거시혈역학 상태와 무관하게 lactate↑는 나쁜 예후와 연관.",
+ "개: 병든·손상 개, 전신 질환 개, SIRS, IMHA, 두부 외상, GDV, 중증 연조직 감염, 심장사상충 caval syndrome, babesiosis, 외상, 패혈성 복막염에서 일정 예후 가치. 고양이: 저혈압 고양이, IV 수액 필요 ICU 입원 고양이, 응급 내원 고양이, 패혈성 복막염에서 일부 가치; 사망률과 연관 못 찾은 연구도 있어 고양이는 개보다 일관성 낮음. APPLE 점수(개·고양이)는 lactate를 사망과 가장 유의한 변수 중 하나로 보고 full·fast 모두에 포함."
+]},
+{"type":"list","title":"진단적 이용 — 패혈성 복막염","items":[
+ "복수에서 glucose, pH, PO₂, PCO₂와 함께 측정. 패혈성 복수: glucose↓(<50 mg/dl; 2.8 mmol/L), PO₂↓, pH↓(<7.0), PCO₂↑, lactate↑; 복강내 glucose·PO₂·pH는 말초정맥혈보다 낮고 PCO₂·lactate는 높은 경우 많음. 비감염성 복수는 대개 이런 변화 없음.",
+ "무균성 복부 위기(소장 교액, 장간막 혈관 혈전)에서도 복수 lactate↑·복수–혈액 경사 발생. 복수 lactate 상승 원인 미확정(백혈구·RBC·세균·종양세포 생성 + 조직 혐기 대사 복합 추정) → 중증 췌장염·복부 종양 등 고염증 상태와 감별 못 할 수 있음. 개 연구는 환자 수가 매우 적어 단독 진단법으로 사용 금지; 복강 배액관이 복수 lactate에 영향."
+]},
+{"type":"list","title":"치료 목표로서의 lactate","items":[
+ "수의 임상에서 가장 흔한 원인 = 저혈량 추정. 특히 소생 초기에 lactate로 소생 지침. 저관류 원인을 찾아 치료하고 환자별 맞춤: 산소 함량↑(RBC 수혈, 산소 보충), 산소 운반↑(수액, 승압제, 강심제). 심기능 장애에 의한 저관류면 심혈관 특이 치료 필요하고 용적 소생은 금기일 수 있음.",
+ "아급성기 지속 고lactate혈증은 다인성 가능성↑ → 의인성 손상(특히 수액 반응성이 없어진 환자의 과도한 수액; 패혈증에서 특히) 피하도록 신중.",
+ "저혈량성 고lactate혈증은 심한 지속 손실이 없으면 용적 소생으로 빨리 호전 — 대략 1–2시간마다 절반으로 감소해야 함. 아니면 다른 lactate 원인 의심: 지속 저혈량, 분포성·폐색성 쇼크, 내부 허혈 병소, Type B 원인.",
+ "Sodium bicarbonate 등 완충제는 보통 비권장. Thiamine pyrophosphate가 pyruvate dehydrogenase 조효소이므로 thiamine 보충은 이론적 이점 → 보조 치료로 고려 가능. 생리적 고lactate혈증(운동, 단순 발작 후)은 치료 불필요, 빠르게 해소."
+]}
+]}

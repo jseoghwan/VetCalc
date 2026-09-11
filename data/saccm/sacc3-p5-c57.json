@@ -1,0 +1,421 @@
+{
+ "id": "sacc3-p5-c57",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part V",
+ "part_title": "Electrolyte and Acid-Base Disturbances",
+ "chapter_num": 57,
+ "title": "Calcium Disorders",
+ "author": "Joao Felipe de Brito Galvao, MV, MS, DACVIM (SAIM); Dennis J. Chew, DVM, Dipl ACVIM; Todd A. Green, DVM, MS, DACVIM",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "중증 고칼슘혈증·저칼슘혈증은 개·고양이에서 치명적일 수 있으며, 특히 혈청 Ca가 급격히 변할 때 위험하다.",
+    "고칼슘혈증의 독성은 혈청 P도 함께 상승하면 크게 증폭된다.",
+    "고칼슘혈증 위기(hypercalcemic crisis)는 체내 순환 vitamin D 대사체 과잉 독성에서 가장 잘 발생한다.",
+    "중등–중증 ionized 고Ca의 급성 치료: IV saline, furosemide, calcitonin, glucocorticoid; 중증은 bisphosphonate가 도움.",
+    "중증·증상성 저Ca 치료는 대개 calcium salt IV bolus 즉시 투여 후 CRI로 정상 ionized Ca 유지."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "칼슘 항상성 (Calcium Homeostasis)",
+   "gist": "조절되는 것은 ionized Ca뿐; PTH·vitamin D·calcitonin이 장·신장·뼈에 작용"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Ca 역할: 근수축·신경근 기능 (ionized Ca가 신경근 전달 시 acetylcholine 방출 매개), 신경세포막 안정화(Na 투과성↓), 골격 지지. 항상성 기전은 혈청 Ca를 좁은 범위로 유지하되, 조절 대상은 총 Ca 중 순환 ionized 분획뿐.",
+    "순환 Ca 3 형태 ▸ ionized(free), 단백결합, 복합체(phosphate·bicarbonate·lactate·citrate·oxalate 결합). 자동 생화학 분석기의 total Ca는 세 성분 모두 측정. 생물학적 활성형은 ionized Ca — 기능적 Ca 상태의 가장 중요한 지표.",
+    "PTH ▸ 부갑상선 주세포에서 저Ca, 낮은 calcitriol(1,25(OH)₂D₃), 낮은 25(OH)D₃(calcidiol)에 반응해 합성·분비; 건강한 동물에서는 ionized Ca를 좁은 범위로 유지할 만큼 지속 분비. 억제 인자: ionized Ca↑, calcitriol↑. 주작용: 세뇨관 Ca 재흡수↑, 파골세포 골흡수↑, calcitriol 생성↑ → 장 Ca 흡수↑.",
+    "Vitamin D ▸ 개·고양이는 사람과 달리 피부 광합성이 비효율적 → 식이 의존. Cholecalciferol → 간에서 25(OH)D₃(calcidiol) → 신장 근위세뇨관 1α-hydroxylase로 calcitriol. 이 최종 수산화는 PTH, calcitriol, P, ionized Ca, FGF-23이 조절: P·calcitriol·Ca 감소 → 합성↑, 증가 → 합성↓; PTH↑ → 강력히 합성↑; FGF-23 → 억제.",
+    "Calcitriol 작용 ▸ 장: 장세포 Ca·phosphate 흡수↑. 뼈: 조골세포 단백 조절로 골형성·석회화 촉진, 파골세포 분화로 정상 골흡수에도 필요. 신장: 1α-hydroxylase 억제, 사구체 여액에서 Ca·P 재흡수 촉진. 부갑상선: PTH 합성 억제(genomic).",
+    "Calcitonin ▸ 갑상선 여포곁 C세포가 Ca 풍부한 식사 후·고Ca 시 분비. 주로 뼈에서 파골세포 골흡수 억제, 세뇨관 Ca 재흡수도↓. PTH·vitamin D에 비해 역할은 작음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "칼슘 측정",
+   "gist": "공복·혐기 혈청 권장; total Ca는 ionized Ca 예측에 부정확 → ionized 직접 측정"
+  },
+  {
+   "type": "list",
+   "title": "검체 취급",
+   "items": [
+    "가능하면 공복 채혈(식후 Ca 상승 최소화). 혈청·헤파린 혈장 사용 가능; oxalate·citrate·EDTA는 Ca와 결합해 측정치를 크게 낮추므로 금지.",
+    "이온 선택 전극으로 ionized Ca 측정 시 전혈·헤파린 혈액보다 혈청이 변동 적어 선호; 헤파린 검체는 헤파린 양·충전량 표준 프로토콜 사용 시 만족 (Ch.202).",
+    "혐기 검체 권장 — 호기 조건에서 CO₂ 소실 → pH↑ → Ca의 단백(특히 albumin) 결합↑ → ionized Ca 인위적 감소.",
+    "휴대형 POC 분석기의 ionized Ca는 벤치 장비보다 낮게 나오며 오차는 Ca가 높을수록 커짐. 항응고제 없는 전혈을 ionized Ca 카트리지에 직접 쓸 수 있으나 응고 방지를 위해 채혈 직후 즉시 적용."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Ionized vs Total Ca",
+   "items": [
+    "대부분 total Ca(tCa)로 먼저 평가하나 질병 환자(특히 중환자)의 ionized Ca를 반영하지 못하는 경우 많음.",
+    "고양이 ▸ tCa로 예측 시 고Ca·정상Ca는 과소평가, 저Ca는 과대평가. 개 ▸ 반대 — 고Ca·정상Ca 빈도 과대평가, 저Ca 과소평가.",
+    "고P 없는 개에서 tCa 역치 12.0 mg/dl의 ionized 고Ca에 대한 PPV 93% (95% CI 84%–98%), 민감도 52% (95% CI 43%–61%). 만성 신부전·고P 개에서는 오차가 크게 증가 — tCa는 높고 ionized는 정상(CKD에서 순환 복합체 결합↑ 추정)으로 고Ca 과잉 진단.",
+    "아조트혈증 고양이에서 tCa >11.8 mg/dl + ionized 고Ca가 흔하나, tCa <11.8 mg/dl인 ionized 고Ca 고양이(아조트혈증 유무 불문)도 많음.",
+    "개·고양이의 다변량 ionized Ca 예측 모델이 tCa·보정 tCa 단독보다 우수하나 불일치 5.1% → ionized Ca 측정이 불가능할 때만 고려. 초기 보정 공식은 매우 부정확. 정확한 평가에는 ionized Ca 측정 권장."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "고칼슘혈증 (Hypercalcemia)",
+   "gist": "개 1위 림프종, 고양이 1위 특발성; 확진은 iCa 개 >1.5 / 고양이 >1.4 mmol/L"
+  },
+  {
+   "type": "table",
+   "title": "Box 57.1 감별 진단",
+   "headers": [
+    "범주",
+    "원인"
+   ],
+   "rows": [
+    [
+     "비병적",
+     "식후, 성장기 어린 동물, 검사 오류, 지질혈증"
+    ],
+    [
+     "일과성·경미",
+     "혈액농축, 고단백혈증, 부신피질기능저하증"
+    ],
+    [
+     "병적 — 부갑상선 의존성",
+     "일차성 부갑상선항진증(선종, 선암종, 과형성), 재조합 PTH 과량"
+    ],
+    [
+     "병적 — 부갑상선 비의존성: 악성종양",
+     "악성 체액성 고Ca(HHM): 림프육종, 항문낭 아포크린선 선암종, 암종(갑상선·전립선·유선), 흉선종\n혈액 악성종양(골수 골용해·국소 골용해): 림프육종, 다발성 골수종, 백혈병, 골수증식 질환\n골 종양(원발·전이)"
+    ],
+    [
+     "병적 — 기타",
+     "특발성 고Ca(고양이); 만성 신부전; calcinosis cutis 회복기(특히 DMSO 후)\nHypervitaminosis D: 의인성, 식물(calcitriol glycosides), 쥐약(cholecalciferol), 항건선 크림(calcipotriene·calcipotriol)\n육아종성 질환(calcitriol 합성): 진균 감염, 주사 부위 반응, 무균성 피부염\nAKI; 골 병변(골수염, 비대성 골이영양증, 폐용성 골다공증, 골경색)\n과도한 경구·주사 Ca 투여: Ca 함유 장내 인 결합제, Ca 보충제(carbonate, gluconate, chloride)\nHypervitaminosis A; 건포도·포도 중독; calcinosis cutis의 DMSO 치료"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "title": "임상 증상·진단",
+   "items": [
+    "증상은 대략 Ca 상승 정도에 비례(개체 예외 있음): 다뇨·다음(고양이는 드묾), 식욕부진, 변비, 무기력, 쇠약. 중증: 실조, 둔감, 무관심, 근육 연축, 발작, 혼수.",
+    "서맥; ECG ▸ PR 연장, QRS 확장, QT 단축, ST 단축·소실, T파 확장. 서맥성 부정맥 → 완전 방실차단, 무수축, 심정지.",
+    "정상 total Ca는 대략 개 10 mg/dl, 고양이 9 mg/dl (성숙 동물; 장비별 참고치 사용). 성장기(특히 개)는 골성장으로 더 높음. tCa 개 >12 mg/dl, 고양이 >11 mg/dl이면 ionized Ca로 확진. tCa가 정상 범위여도 일부 질환에서는 ionized가 먼저 상승 → tCa 상승 추세(CKD 고양이 등)에서 ionized 측정 유용.",
+    "확진 ▸ ionized Ca 개 >6 mg/dl(1.5 mmol/L), 고양이 >5.7 mg/dl(1.4 mmol/L) — 분석기 참고 범위 적용.",
+    "확진 후 신체검사 재시행: 항문낭(개)·말초 림프절 촉진, 안저검사(전신 질환·진균·종양), 놓친 종괴(유선 종양 등). 추가: CBC, 화학, 요검사, 영상(흉·복부 방사선, 복부·부갑상선 초음파), 종괴 FNA, PTH, PTHrP, calcidiol·calcitriol, 골 생검, 골수 흡인. 흉부 방사선은 모든 예에서 권장(전이·흉선 종괴 배제) — T세포 림프종은 흔히 종격동 침범하므로 항문낭 변화 없는 ionized 고Ca 개에서 특히 중요."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "흔한 원인 순위",
+   "headers": [
+    "종",
+    "순위·빈도"
+   ],
+   "rows": [
+    [
+     "개",
+     "종양 관련(특히 림프종) > 신부전 > 부갑상선항진증 > 부신피질기능저하증. Cholecalciferol 쥐약이 미국 규제 변화(더 독성 강한 제품 제한)로 다시 중요한 원인이 될 가능성"
+    ],
+    [
+     "고양이 (tCa 기준)",
+     "종양 > 신부전"
+    ],
+    [
+     "고양이 (ionized Ca 기준)",
+     "특발성 고Ca 48% > CKD 35% > 요석증 14% > 종양 13% > 일차성 부갑상선항진증 3%"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "일차성 부갑상선항진증 또는 PTH·PTHrP 상승 악성종양에서는 혈청 P가 정상 또는 낮은 경향.",
+    "종양 관련 ionized 고Ca 개(림프종·항문낭 선암종)는 신부전·부신피질기능저하증·다른 종양보다 ionized Ca가 더 높은 경향이나, 고Ca 크기만으로 특정 질환을 예측할 수는 없음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "고칼슘혈증 치료"
+  },
+  {
+   "type": "list",
+   "items": [
+    "결과는 CNS·소화기·심장·신장 등 다장기에 미침 → 특히 급성 중증에서 신속 진단·개입이 중요. 공격적 치료를 시작할 절대적 Ca 값은 없음 — 고Ca 크기, 발생 속도, 안정/진행 여부, 증상, 장기 기능(신·심·CNS), 환자 상태, 추정 원인으로 결정 (Fig. 57.1).",
+    "Fig. 57.1 고칼슘혈증 위기 정의 ▸ ionized Ca 고양이 ≥7.0 mg/dl (≥1.75 mmol/L), 개 ≥7.5 mg/dl (≥1.88 mmol/L); 심장 부정맥, 신기능 급속 저하, 발작, 뇌병증 급속 진행, 근육 연축 — 증상 유무 불문한 높은 수준의 고Ca.",
+    "Ca × P product >60이면 연조직 석회화 위험↑ → P 평가가 치료 지침에 도움.",
+    "확정 치료 = 원인 제거. 원인 불명확 시 원발 질환 치료 전 완화 치료 시작 (Table 57.1). 수액이 항상 첫 선택이고 반응·상태에 따라 다른 방법 추가."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 57.1 고칼슘혈증 치료",
+   "headers": [
+    "치료",
+    "용량",
+    "적응증",
+    "비고"
+   ],
+   "rows": [
+    [
+     "0.9% NaCl",
+     "4–6 ml/kg/hr IV CRI. 탈수 교정 후 가능하면 유지량의 최소 1.5–2배 (Fig. 57.2A: 2–3배 경증 용적 확장, KCl 추가)",
+     "중등–중증 고Ca",
+     "CHF·고혈압 금기. 수액 선택 이유: Na가 세뇨관 Ca 재흡수와 경쟁 → 칼슘뇨↑; Ca 무함유(다른 등장 정질액과 달리). K 보충 흔히 필요. 고Ca는 혈관수축으로 고혈압 기여 → 수액 전·중 혈압 측정"
+    ],
+    [
+     "Furosemide",
+     "1–2 mg/kg IV, SC, PO q6-12h\nCRI 0.2–1 mg/kg/hr (위기 시; Fig. 57.2A bolus IV 1 mg/kg)",
+     "중등–중증 고Ca",
+     "투여 전 용적 상태 확보 — 용적 결핍 동물에 금지. 빠른 발현. CRI 시 심한 용적 결핍 방지 위해 수액 균형 철저히 — 요 카테터로 투여량과 요 손실 맞춤"
+    ],
+    [
+     "Dexamethasone",
+     "0.1–0.22 mg/kg SC, IV q12-24h",
+     "중등–중증 고Ca",
+     "골흡수↓·장 흡수↓·신 배설↑ (비특이적). 원인 확인 전 사용 시 림프·형질세포 용해로 세포·조직 진단 어려움(림프육종·골수종) → 진단 미확정이면 calcitonin·bisphosphonate 우선"
+    ],
+    [
+     "Prednisone (prednisolone)",
+     "1–2.2 mg/kg PO, SC, IV q12h",
+     "중등–중증 고Ca",
+     "상동"
+    ],
+    [
+     "Calcitonin-salmon",
+     "4–6 IU/kg SC q8-12h",
+     "Hypervitaminosis D",
+     "파골세포 활성·형성↓. 빠른 발현이나 효과 단기(수일 후 감소, tachyphylaxis); 개에서 수일 투여 후 구토"
+    ],
+    [
+     "Sodium bicarbonate",
+     "1 mEq/kg IV over 0.5–4 h (본문: 0.5–1 mEq/kg); 반복 시 총 4 mEq/kg까지",
+     "중증·생명 위협 고Ca(사망 위험 시)",
+     "Ionized·total Ca↓ (결합 분획 영향은 미검토). pH·전해질 면밀 감시 — 알칼리혈증, 역설적 뇌 산증, 고Na, 저K 위험. 빠른 발현. 저환기 시 금기"
+    ],
+    [
+     "Pamidronate (bisphosphonate)",
+     "1.3–2.0 mg/kg in 150 ml 0.9% NaCl IV over 2–4 hr; 필요 시 1주 후 반복(효과 1개월 지속 가능; Fig. 57.2B: 2–4주마다 반복, 72시간 내 iCa 큰 감소 기대; 전·중·후 IV 수액)",
+     "중등–중증 고Ca",
+     "파골세포 활성↓ → 골흡수↓. 발현 지연 1–3일 → 급성·위기 치료제 아님. 제네릭 저렴. 수의학에서 가장 흔히 사용; tCa 중앙 감소 28.5%"
+    ],
+    [
+     "Zoledronate (bisphosphonate)",
+     "0.1–0.25 mg/kg in 45–100 ml 0.9% NaCl over 30 min",
+     "중등–중증 고Ca",
+     "Pamidronate보다 강력; 제네릭 저렴. 개 4마리에서 tCa 중앙 26.5%, iCa 19% 감소. 사람에서 pamidronate보다 우수"
+    ],
+    [
+     "Cinacalcet (calcimimetic)",
+     "일화적 0.5 mg/kg (시작 용량)",
+     "3차 부갑상선항진증, 악성 일차성 부갑상선항진증, 비수술 일차성 부갑상선항진증",
+     "Ca-sensing receptor 활성화 → PTH 분비↓. 동물 보고 부족(개 일차성 부갑상선항진증 list serve 일화). 향후 수의학 활용 가능"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "title": "기타·장기 치료",
+   "items": [
+    "불응성 예에서 Ca 무함유 투석액 복막·혈액투석 고려 가능하나 드묾.",
+    "아급성·장기: glucocorticoid·furosemide 경구; SC 0.9% NaCl 75–100 ml/kg q24h 필요 시.",
+    "고양이 특발성 고Ca는 서서히 발생해 위기 관리는 거의 불필요. 경구 alendronate 1–3 mg/kg/wk 또는 10–40 mg/cat/wk (만성 치료) — 다른 치료보다 장기 조절 우수(저자 미발표 관찰)하나 급성기에는 IV bisphosphonate만 못함.",
+    "경구 bisphosphonate: 식도 자극, 사람에서 복부 불편·오심·구토 → 식도 통과 시간 단축 조치(투여 후 물 수 ml 경구, 입술에 버터를 발라 침 분비 유도). 정제 분할은 부식 효과 심해질 수 있어 비권장.",
+    "장기 bisphosphonate 골 독성: 개·고양이 턱 골괴사; 장기 경구 alendronate 고양이에서 양측 슬개골 병적 골절 + 경골 피질 비후(골 독성 지표 가능).",
+    "Calcimimetic은 다른 방법으로 원인 치료가 안 되는 예(3차 부갑상선항진증, 암종에 의한 일차성)에 드물게 사용."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "저칼슘혈증 (Hypocalcemia)",
+   "gist": "tCa↓ 1위 저알부민; iCa 개 <1.25, 고양이 <1.1 mmol/L; Ca SC 금지"
+  },
+  {
+   "type": "list",
+   "title": "역학·예후",
+   "items": [
+    "중환자 개·고양이에서 tCa 감소는 흔함(특히 저알부민) — ionized와 일치하지 않을 수 있음. Ionized 저Ca 유병률: 병든 개 31%, 고양이 27%.",
+    "중환자·외상 개의 ionized 저Ca는 예후 불량 가능 — 수혈·교질·승압제 요구↑. 배양 양성 패혈증 개는 ionized 저Ca 많고 입원 기간↑. 패혈성 복막염 고양이 89%가 진단 시 ionized 저Ca; 입원 중 정상화 실패는 퇴원 생존율↓·입원·ICU 기간↑.",
+    "췌장염 고양이 58.3%가 ionized 저Ca; 이 군에서 <1.0 mmol/L는 예후 불량. 요도 폐색 수컷 고양이 75%가 참고치 미만(경증 38%, 중등 25%, 중증 12.5%) — 중증 고양이의 전기·기계적 심장 변화에 기여 가능.",
+    "개 자간증(eclampsia)이 1차 진료에서 급성 저Ca 응급 치료가 가장 필요한 진단."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Box 57.2 저칼슘혈증의 임상 증상",
+   "headers": [
+    "빈도",
+    "증상"
+   ],
+   "rows": [
+    [
+     "흔함",
+     "무증상; 근육 떨림·섬유속연축, 안면 비비기, 근육 경련, 뻣뻣한 보행, 행동 변화, 안절부절·흥분, 공격성, 자극 과민, 방향감각 상실, 발열, 무기력, 식욕부진, 제3안검 돌출(고양이), 후낭 백내장, 빈맥 또는 ECG 변화(QT 연장)"
+    ],
+    [
+     "가끔",
+     "발작, 헐떡임(panting)"
+    ],
+    [
+     "드묾",
+     "다뇨·다음, 저혈압, 호흡 정지·사망"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "title": "진단",
+   "items": [
+    "증상은 보통 tCa <6.5 mg/dl (ionized <4 mg/dl 또는 <1 mmol/L) 전에는 없고, 더 낮아도 증상 적은 동물 많음; 급속 발생 시 대부분 증상. 중증: 수축력·심박수↓(서맥), ECG QT 연장(ST 연장), 깊고 넓은 T파, 방실차단.",
+    "정의 ▸ tCa 개 <8 mg/dl, 고양이 <7 mg/dl → 반드시 ionized로 확인. Ionized 개 <5 mg/dl (1.25 mmol/L), 고양이 <4.5 mg/dl (1.1 mmol/L) — 분석기 참고치로 조정.",
+    "확진 후 CBC, 화학, 요검사, PTH, vitamin D 대사체 측정으로 확정 진단.",
+    "가장 흔한 tCa 저Ca 원인 = 저알부민혈증 — 대개 경증·무증상. 알부민 보정 공식은 ionized·total Ca를 정확히 예측 못해 비권장. 개 2위 = 신기능 이상. 장기 Ca 특이 치료가 필요한 유일한 질환 = 일차성 부갑상선기능저하증. 고P 동반 시 감별: 신기능 이상, 췌장염(± 신전성 아조트혈증), 과도한 P 섭취, 일차성 부갑상선기능저하증."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Box 57.3 감별 진단",
+   "headers": [
+    "범주",
+    "원인"
+   ],
+   "rows": [
+    [
+     "흔함·질환",
+     "저알부민혈증, 만성 신부전, 자간증, AKI, 췌장염, 연조직 외상·횡문근융해증"
+    ],
+    [
+     "부갑상선기능저하증",
+     "일차성(특발성, 의인성 — 양측 갑상선절제술 후, 만성 고Ca 급반전 후), Mg 결핍·저류에 이차"
+    ],
+    [
+     "중독·의인성",
+     "Ethylene glycol, 인산 관장, bicarbonate 투여, 부적절 항응고제(EDTA), 부갑상선 선종 경색, 급속 IV phosphate, 급성 Ca 무함유 IV 수액, 수혈(citrate 항응고제), 킬레이트제(Ca EDTA, dimercaprol/BAL, d-penicillamine, succimer, IV 조영제), 과도한 bisphosphonate"
+    ],
+    [
+     "영양·기타",
+     "장 흡수 장애·PLE·기아, hypovitaminosis D, 저Mg(PTH 분비·수용체 효과), 영양성 이차 부갑상선항진증, 급성 종양 용해 증후군, 중증 질환의 저Ca"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "저칼슘혈증 치료"
+  },
+  {
+   "type": "list",
+   "items": [
+    "미치료 중증 ionized 저Ca는 심근 부전·호흡 정지로 치명적; 패혈증 개에서 부정적 예후 지표. 치료 결정 요인: 증상 중증도, 발생 속도, 원발 질환. 고Mg·저Mg 모두 PTH 분비·수용체 작용을 저해 → 특히 불응성 저Ca에서 혈청 Mg(가능하면 ionized) 측정.",
+    "PLE 개: ionized 저Ca + 25(OH)D↓ + PTH↑ 보고; 진단 마취(장 생검) 전 ionized 저Ca 치료 타당 — 빈맥, QT 연장, 불응성 저혈압, 호흡 정지 가능.",
+    "tCa↓ + ionized 정상 → 치료 불필요. Ionized↓이며 안정·무증상·진행하지 않으면 치료 안 하는 것도 합리적. 중증 ionized↓는 증상 무관 Ca 특이 치료; 중등도 진행성 무증상도 증상 예방 위해 치료 가능(부갑상선 선종 절제 후 흔함). 증상 있으면 명확히 구조 치료.",
+    "급성 vs 아급성·장기로 구분; 항상 원발 질환 치료. 장기 치료가 필요한 것은 부갑상선기능저하증뿐. Tetany·발작·섬유속연축은 급성 치료 — calcium salt + vitamin D 대사체.",
+    "급성 ▸ Ca를 IV로 10–20분에 걸쳐 효과 볼 때까지. Calcium gluconate 선호 — 혈관 밖 유출 시 자극 없음(calcium chloride와 달리). Ca salt는 희석해도 절대 SC 금지 — 안락사가 필요할 정도의 피부 괴사·농양.",
+    "투여 중 심박수·ECG 면밀 감시 — 서맥, PR 연장, QRS 확장, QT 단축, ST 상승·단축·소실, T파 확장 = 심독성. 교정 후 모든 증상 소실까지 30–60분 걸릴 수 있고 행동 변화·헐떡임 지속 가능.",
+    "아급성 ▸ 초기 bolus 후 CRI(저Ca 지속 예상 시): elemental Ca 1–3 mg/kg/hr IV (본문; Table 57.2는 5–15 mg/kg/h) — 경구 Ca·vitamin D로 조절 가능할 때까지. 장 Ca 수송 최대화에 수일 걸리므로 vitamin D 대사체도 조기 시작.",
+    "Calcitriol이 선호 활성 대사체 — 발현 빠르고 혈장 반감기·생물학적 효과 반감기 짧음(과교정 고Ca 시 중요). 유도 20–30 ng/kg (일부 60 ng/kg까지) PO 하루 2회 분할 × 3–4일 → 유지 5–15 ng/kg q24h 2회 분할, 목표 Ca에 맞춰 조정.",
+    "장기(일차성 부갑상선기능저하증) ▸ 경구 Ca 필요. 목표는 Ca 완전 정상화가 아님 — PTH의 세뇨관 기저 작용이 없어 정상Ca에서도 고칼슘뇨 → 증상 조절 + 정상 바로 아래로. 경구 Ca(carbonate, lactate, chloride, gluconate) 모두 25–50 mg/kg q24h (2회 분할); calcium carbonate가 가장 흔하고 내약성 양호. Calcitriol 병용.",
+    "Calcilytics ▸ Ca-sensing receptor 길항 → PTH 분비 자극; 사람 골다공증·상염색체 우성 저Ca(가족성 고칼슘뇨성 저Ca)에 연구 중, 불응성 저Ca에 향후 활용 가능."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 57.2 저칼슘혈증 치료 — Calcium",
+   "headers": [
+    "약물",
+    "제제 / Ca 함량",
+    "용량",
+    "비고"
+   ],
+   "rows": [
+    [
+     "Calcium gluconate (비경구)",
+     "10% 용액 / Ca 9.3 mg/ml",
+     "a. 서서히 IV 효과 볼 때까지 0.5–1.5 ml/kg; 급성 위기 50–150 mg/kg over 20–30 min\nb. 정상 Ca 유지 주입 5–15 mg/kg/h IV; 1000–1500 mg/kg/day (42–63 mg/kg/hr)",
+     "서맥 또는 QT 단축 시 중단. SC 수액에 혼합 비권장(희석해도 농양·피부 괴사·석회화)"
+    ],
+    [
+     "Calcium chloride (비경구)",
+     "10% 용액 / Ca 27.2 mg/ml",
+     "5–15 mg/kg/h IV",
+     "혈관 밖 유출 시 극히 부식성 → IV로만"
+    ],
+    [
+     "Calcium carbonate (경구)",
+     "다양한 크기 / 40% 정제",
+     "25–50 mg/kg/day",
+     "가장 흔한 Ca 보충제"
+    ],
+    [
+     "Calcium lactate (경구)",
+     "325, 650 mg 정제 / 13%",
+     "25–50 mg/kg/day",
+     "—"
+    ],
+    [
+     "Calcium chloride (경구)",
+     "분말 / 27.2%",
+     "25–50 mg/kg/day",
+     "위 자극 가능"
+    ],
+    [
+     "Calcium gluconate (경구)",
+     "다양한 크기 / 10%",
+     "25–50 mg/kg/day",
+     "—"
+    ]
+   ],
+   "note": "용량은 elemental Ca 기준으로 계산. Ca 용액을 bicarbonate 함유 수액과 혼합 금지(침전). — = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "table",
+   "title": "Table 57.2 저칼슘혈증 치료 — Vitamin D",
+   "headers": [
+    "약물",
+    "용량",
+    "최대 효과까지",
+    "독성 소실까지",
+    "비고"
+   ],
+   "rows": [
+    [
+     "Vitamin D₂ (ergocalciferol)",
+     "초기 4000–6000 U/kg/day; 유지 1000–2000 U/kg 1일 1회 – 주 1회",
+     "5–21일",
+     "1–18주",
+     "처방약"
+    ],
+    [
+     "Vitamin D₃ (cholecalciferol)",
+     "100 IU/kg/day, 보통 6주 투여 후 25(OH)D·Ca 재검",
+     "—",
+     "—",
+     "일반의약품"
+    ],
+    [
+     "Dihydrotachysterol",
+     "초기 20–30 mcg/kg/day; 유지 10–20 mcg/kg q24-48h",
+     "1–7일",
+     "1–3주",
+     "—"
+    ],
+    [
+     "1,25-(OH)₂D₃ (calcitriol)",
+     "초기 20–30 ng/kg/day × 3–4일; 유지 5–15 ng/kg/day",
+     "1–4일",
+     "2–14일",
+     "선호 활성 대사체"
+    ]
+   ],
+   "note": "— = 요약에 해당 내용 없음"
+  }
+ ]
+}

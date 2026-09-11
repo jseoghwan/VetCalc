@@ -1,0 +1,404 @@
+{
+ "id": "sacc3-p5-c60",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part V",
+ "part_title": "Electrolyte and Acid-Base Disturbances",
+ "chapter_num": 60,
+ "title": "Nontraditional Acid-Base Analysis",
+ "author": "Kate Hopper, BVSc, PhD, DACVECC",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "비전통적 접근은 대사성 산-염기 이상의 기저 기전을 더 깊이 이해하게 해줄 수 있다.",
+    "Strong ion difference(SID) 접근은 산-염기 균형의 독립 결정 인자 3가지를 정의한다: PCO₂, SID, 총 약산(ATOT).",
+    "Strong ion gap(SIG)은 Stewart 방식의 비측정 음이온·양이온 척도이며 albumin 농도 변화에 영향받지 않는다.",
+    "반정량적(semiquantitative) 접근은 5개 지표 — 자유수(Na로 표시), Cl 변화, albumin, P, lactate — 가 base excess에 미치는 효과를 계산한다.",
+    "XA는 비측정 음이온·양이온의 반정량적 평가 지표다."
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "호흡성 요소의 평가는 모든 접근법에서 동일(Ch.59); 비전통적(정량적) 접근은 대사성 기여를 평가하는 대안이다. 전통적 접근의 주된 비판 = 대사성 이상에 기여하는 개별 질병 과정을 식별하지 못함."
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Strong Ion Difference (Stewart) 접근",
+   "gist": "독립 변수 PCO₂·SID·ATOT; 수액 SID: NaCl 0, LRS ≈28, NaHCO₃ 1000"
+  },
+  {
+   "type": "list",
+   "items": [
+    "독립 결정 인자 3개 ▸ PCO₂, SID(강 양이온 − 강 음이온), ATOT(총 비휘발성 약산). H⁺(또는 HCO₃)의 추가·제거는 최종 pH와 무관 — H⁺ 농도는 '독립' 변수가 아님. SID·ATOT가 전기화학적 힘으로 물의 해리를 바꿔 H⁺ 농도에 직접 영향.",
+    "Strong ion = 생리적 pH에서 완전 해리된 이온: Na, K, Ca, Mg, Cl (일부 저자는 lactate·ketoacid 포함). 공식은 포함 이온에 따라 다름; 양적으로 Na·Cl이 가장 중요해 SID ≈ Na − Cl로 단순화. ATOT가 일정하면 SID 변화 = HCO₃ 변화 반영 (Fig. 60.1 Gamblegram).",
+    "SID↓ 대사성 산증 ▸ 저Na, 고Cl, 또는 둘 다. SID↑ 대사성 알칼리증 ▸ 고Na, 저Cl, 또는 둘 다. 치료는 대개 SID를 정상화하는 수액 — 수액의 SID도 혈장처럼 계산 가능해 선택 지침이 됨.",
+    "ATOT ▸ 약산 = 생리적 pH에서 부분 해리; 주 기여자 albumin·P. 해리가 pH에 따라 달라 계산식 복잡. Constable의 종 특이 Ka 단순식: 순 단백 전하 개 0.25 mEq/g(총단백) 또는 0.42 mEq/g(albumin); 고양이 0.19 mEq/g(총단백) 또는 0.41 mEq/g(albumin). ATOT↑ = 대사성 산증, ATOT↓(주로 저albumin) = 대사성 알칼리증. 치료: 가능하면 albumin·P 정상화."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "수액의 SID",
+   "headers": [
+    "수액",
+    "SID",
+    "적용"
+   ],
+   "rows": [
+    [
+     "0.9% NaCl",
+     "0",
+     "SID↑ 알칼리증"
+    ],
+    [
+     "Lactated Ringer's",
+     "유효 SID 약 28 mmol/L (lactate 대사 후)",
+     "SID↓ 산증"
+    ],
+    [
+     "Sodium bicarbonate 8.4% (Na 1000 mmol/L)",
+     "1000 mmol/L (HCO₃는 strong ion이 아님)",
+     "SID↓ 대사성 산증의 효과적 치료"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Box 60.1 SID 접근으로 식별하는 5가지 대사성 이상",
+   "items": [
+    "SID↑ 대사성 알칼리증",
+    "SID↓ 대사성 산증",
+    "ATOT↑ 대사성 산증",
+    "ATOT↓ 대사성 알칼리증",
+    "SIG↑ 대사성 산증"
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Strong Ion Gap (SIG)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "SID 접근의 비측정 음이온 평가(전통적 AG에 해당). SIG = SID(apparent) − (HCO₃ + ATOT)(SID effective). 비측정 음이온이 없으면(SIG = 0) SID = HCO₃ + ATOT; 비측정 음이온 존재 시 SIG가 더 양성.",
+    "Constable 단순식(Table 60.1) ▸ 개 SIGsimplified = [albumin g/dl] × 4.9 − AG; 고양이 = [albumin] × 7.4 − AG. 개 단순 SIG 참고치 −8.6 – 3.7 mmol/L; 비측정 음이온 증가는 더 음성인 값으로 나타남. 단순식은 P 변화를 반영 못함 → 고P 시 AG를 먼저 보정: AG(P 보정) = AG + (2.52 − 5.58 × 측정 P).",
+    "SIG↑(AG↑처럼) = 비측정 음이온(lactate, sulfate, ethylene glycol, ketone)의 산성화 영향. SID 식이 다양(lactate 포함 여부 등)해 SIG 해석에 영향. 주요 장점: albumin 변화와 독립 → 저albumin 환자에서 AG보다 비측정 음이온에 민감."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 60.1 SID 접근 계산식",
+   "headers": [
+    "지표",
+    "공식"
+   ],
+   "rows": [
+    [
+     "SID",
+     "(Na + K) − Cl"
+    ],
+    [
+     "Albumin effect",
+     "측정 albumin × 10 × [(0.123 × pH) − 0.631]"
+    ],
+    [
+     "Phosphorus effect",
+     "측정 P × 0.323 × [0.309 × pH − 0.469]"
+    ],
+    [
+     "ATOT",
+     "albumin effect + phosphorus effect"
+    ],
+    [
+     "SIG",
+     "SID − (HCO₃ + ATOT)"
+    ],
+    [
+     "SIG simplified",
+     "개: [albumin] × 4.9 − AG\n고양이: [albumin] × 7.4 − AG"
+    ],
+    [
+     "AG (P 보정)",
+     "AG + (2.52 − 5.58 × 측정 P)"
+    ]
+   ],
+   "note": "[albumin] g/dl, [P] mg/dl, 나머지 mmol/L."
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "반정량적 접근 (Semiquantitative)",
+   "gist": "BE를 자유수·Cl·albumin·P·lactate 효과로 분해; 나머지 = XA(비측정 이온)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "전통적 + SID 방식의 결합 (Stewart–Fencl, Stewart–Figge, base excess partitioning 등으로 불림). 개별 산-염기 과정이 BE에 미치는 효과 크기를 식으로 추정 — 5개 지표: ① 자유수 효과(Na), ② Cl 변화, ③ albumin, ④ P, ⑤ lactate. 계산된 효과 합과 BE의 차이 = 비측정 산·염기.",
+    "필요 항목: BE + 가능한 한 많은 Na, Cl, albumin, lactate, P. 10가지 대사성 영향을 식별해 BE 기여 크기 추정. 음의 효과 = 산성화, 양의 효과 = 알칼리화. 전체 평가에는 pH·PCO₂와 통합. 응급 환자, 전형적 부신피질기능저하증, parvo 장염 등 수의 집단에 적용됨."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 60.1 / 60.2 반정량적 계산식",
+   "headers": [
+    "효과",
+    "정식 (Table 60.1)",
+    "간이식 (Table 60.2)"
+   ],
+   "rows": [
+    [
+     "Free water effect",
+     "개 0.25 × ([Na] − 정상 중간값 [Na])\n고양이 0.22 × ([Na] − 정상 중간값 [Na])",
+     "(측정 Na − 정상 중간값 Na) / 4"
+    ],
+    [
+     "Corrected chloride",
+     "측정 [Cl] × (정상 중간값 [Na] / 측정 [Na])",
+     "동일"
+    ],
+    [
+     "Chloride effect",
+     "정상 중간값 [Cl] − 교정 [Cl]",
+     "동일"
+    ],
+    [
+     "Albumin effect",
+     "3.7 × (정상 중간값 [albumin] − 측정 [albumin])",
+     "(정상 중간값 albumin − 측정 albumin) × 4"
+    ],
+    [
+     "Phosphorus effect",
+     "0.58 × (정상 중간값 [P] − 측정 [P])",
+     "(정상 중간값 P − 측정 P) / 2"
+    ],
+    [
+     "Lactate effect",
+     "−1 × [lactate]",
+     "측정 lactate × −1"
+    ],
+    [
+     "Sum",
+     "free water + chloride + P + albumin + lactate 효과",
+     "동일"
+    ],
+    [
+     "Unmeasured ion effect (XA)",
+     "base excess − sum",
+     "동일"
+    ]
+   ],
+   "note": "[albumin] g/dl, [P] mg/dl, BE·Cl·K·lactate·Na mmol/L. 간이식은 스프레드시트 없이 임상에서 대략 추정하는 용도."
+  },
+  {
+   "type": "table",
+   "title": "각 효과의 해석",
+   "headers": [
+    "효과",
+    "기전",
+    "방향"
+   ],
+   "rows": [
+    [
+     "Free water",
+     "Na 농도가 자유수 반영: 결핍 → 고Na, 과잉 → 저Na",
+     "저Na(과잉) → 음성 = 희석성 산증; 고Na(결핍) → 양성 = contraction alkalosis"
+    ],
+    [
+     "Chloride",
+     "Cl과 HCO₃는 많은 과정에서 역방향 연결(Cl 배설 시 HCO₃ 저류 등): 위산 분비, 장 HCO₃ 분비, 신장 산-염기 처리, 세포 간 이온 교환. 자유수 변화도 Cl을 바꾸므로 교정 Cl로 그 영향 제거 후 계산",
+     "양성(저Cl) = HCO₃↑ 알칼리화 과정; 음성 = 산성화. 대안: Cl:Na 비 — 개·고양이 연구에서 정상 비는 Cl 관련 이상을 배제, 비↑ = 교정 고Cl, 비↓ = 교정 저Cl (거의 모든 예); 종 특이 검사실 참고치로 정상 비 결정"
+    ],
+    [
+     "Albumin",
+     "약산 (histidine imidazole기의 H⁺ 결합 부위 다수). 저albumin = 약산 제거",
+     "저albumin → 양성(알칼리화); 고albumin → 음성(산성화)"
+    ],
+    [
+     "Phosphorus",
+     "인산·황산은 단백 대사 산물로 신장 배설; AKI·신부전에서 저류 → 대사성 산증",
+     "고P → 음성(산성화). 정상 P가 낮아 저P는 임상적으로 유의한 알칼리증을 만들지 않음. Sulfate는 보통 미측정 → 비측정 음이온"
+    ],
+    [
+     "Lactate",
+     "Pyruvate → lactate(LDH)는 H⁺ 소모 반응; lactic acidosis는 ATP 가수분해 H⁺가 동시 축적될 때(미토콘드리아 기능 장애·세포 저산소, Ch.61). 혐기성 대사의 급성 lactic acidosis에서 lactate는 BE에 등몰 효과",
+     "lactate↑ → 음성(산성화). 모든 고lactate가 산증은 아니므로 포함 여부는 임상 판단; sodium lactate 오염 검체(LRS)는 산증 없이 lactate↑"
+    ],
+    [
+     "XA (비측정 이온)",
+     "식별된 효과 합과 BE의 차이 = 미확인 산·염기. 비측정 산: ketoacid, 황산, ethylene glycol, salicylic acid, propylene glycol, metaldehyde",
+     "SIG처럼 albumin 변화에 영향받지 않아 저albumin 환자에서 더 민감"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "결론·한계",
+   "gist": "기전(특히 albumin 영향) 파악이 장점; 호흡 장애 보상을 인식 못함; 개·고양이 미검증"
+  },
+  {
+   "type": "list",
+   "items": [
+    "장점 ▸ 산-염기 장애의 기저 기전, 특히 albumin 변화의 영향 인식.",
+    "한계 ▸ 일차 호흡성 장애에 대한 보상 변화를 인식하지 못해 모든 대사 변화를 병적으로 판정. SID 접근은 전통적 접근보다 훨씬 혼란스럽고 위압적 — albumin(이상적으로 P도) 측정 필요, 스프레드시트 권장; 비용·복잡성 증가가 임상 이득을 정당화하는지 불명. SID·ATOT는 AG처럼 집합 지표라 비특이적.",
+    "반정량적 접근도 전통적보다 복잡하나 간이식으로 임상 적용 가능; 개별 질병 기전을 인식하려 하므로 더 유용할 수 있음. 각 효과가 작아 검사실 값의 고유 오차가 결과 변동에 기여. 개·고양이에서 검증되지 않음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "임상 예 (Table 60.3)",
+   "gist": "증례 1 개: 저알부민의 알칼리화가 산증을 가림; 증례 2 고양이: 위산 소실 + 케톤"
+  },
+  {
+   "type": "table",
+   "title": "검사값 — 환자값 (참고치) [정상 중간값]",
+   "headers": [
+    "지표",
+    "증례 1: 개",
+    "증례 2: 고양이"
+   ],
+   "rows": [
+    [
+     "Na (mmol/L)",
+     "152 (144–152) [148]",
+     "128 (148–156) [152]"
+    ],
+    [
+     "K (mmol/L)",
+     "3 (3.6–4.7) [4.1]",
+     "2.2 (3.4–4.6) [3.0]"
+    ],
+    [
+     "Cl (mmol/L)",
+     "125 (111–121) [116]",
+     "82 (115–125) [120]"
+    ],
+    [
+     "Albumin (g/dl)",
+     "1.1 (3.4–4.3) [3.9]",
+     "3.7 (2.2–4.6) [3.4]"
+    ],
+    [
+     "P (mg/dl)",
+     "12.1 (2.6–5.2) [3.9]",
+     "2.2 (3.2–6.4) [4.8]"
+    ],
+    [
+     "pH",
+     "7.383 (7.32–7.43)",
+     "7.395 (7.34–7.43)"
+    ],
+    [
+     "PvCO₂ (mm Hg)",
+     "28 (37–45)",
+     "44.5 (34–39)"
+    ],
+    [
+     "HCO₃ (mmol/L)",
+     "16 (18–26)",
+     "26.7 (20–23)"
+    ],
+    [
+     "BE (mmol/L)",
+     "−7.8 (−4 to −1)",
+     "2.2 (−5 to 0)"
+    ],
+    [
+     "Lactate (mmol/L)",
+     "1.1 (<2)",
+     "2 (<2)"
+    ],
+    [
+     "Anion gap",
+     "14 (8–16)",
+     "21.5 (16–20)"
+    ],
+    [
+     "SID",
+     "30 (32–45)",
+     "48.2 (40–44)"
+    ],
+    [
+     "ATOT",
+     "9.8 (10–11)",
+     "11.6 (8–17)"
+    ],
+    [
+     "SIG",
+     "4.2 (0–8)",
+     "9.9 (6–9)"
+    ],
+    [
+     "Free water effect",
+     "+1.0",
+     "−5.3"
+    ],
+    [
+     "Corrected chloride",
+     "122",
+     "97"
+    ],
+    [
+     "Chloride effect",
+     "−6",
+     "+23"
+    ],
+    [
+     "Lactate effect",
+     "−1.1",
+     "−2"
+    ],
+    [
+     "Albumin effect",
+     "+10.4",
+     "−1.2"
+    ],
+    [
+     "Phosphorus effect",
+     "−4.8",
+     "+1.5"
+    ],
+    [
+     "Sum",
+     "−0.6",
+     "+16.2"
+    ],
+    [
+     "XA",
+     "−7.2",
+     "−14"
+    ]
+   ],
+   "note": "Table 60.1 공식으로 계산된 값."
+  },
+  {
+   "type": "table",
+   "title": "접근법별 해석",
+   "headers": [
+    "증례",
+    "전통적",
+    "SID",
+    "반정량적"
+   ],
+   "rows": [
+    [
+     "1 — 13세 중성화 암컷 테리어 잡종, 구토·허탈 (최종 진단: 췌장염 + 신우신염)",
+     "혼합 장애: 호흡성 알칼리증 + 대사성 산증 → pH 정상. AG는 참고치보다 약간 낮음",
+     "전통적보다 얻는 것이 거의 없음 — SID·ATOT·SIG 사실상 정상. 저albumin의 알칼리화를 고P의 산성화가 상쇄해 ATOT가 거의 정상",
+     "작은 자유수 결핍의 경미한 알칼리화, HCO₃–Cl 교환 관련 산증, 고P 산증; 저albumin이 강한 알칼리화로 산증 중증도를 낮춤. 효과 합이 BE 대부분을 설명하고 소량의 비측정 음이온(요독성 sulfate 등 추정). 공존하는 알칼리성·산성 이상을 여럿 식별"
+    ],
+    [
+     "2 — 10세 중성화 수컷 고양이, 당뇨 3개월, 식욕저하·변비 (위에 다량 액체; 혈장·요에 다량 케톤)",
+     "혼합 장애: 경미한 호흡성 산증 + 경미한 대사성 알칼리증, AG 소폭↑",
+     "SID 약간↑ → 경미한 SID↑ 대사성 알칼리증, SIG 최소 증가. 동반 저Na 때문에 알칼리증 중증도를 과소평가",
+     "Cl–HCO₃ 교환 관련 큰 알칼리화(선택적 위산 소실 추정), 자유수 획득의 산성화, 비측정 음이온(ketoacid)의 유의한 산성화. 자유수 변화에 대한 Cl 교정의 가치를 보여줌 — 진성 저Cl이나 측정값은 자유수↑ 때문에 효과를 과대평가. AG는 저P로 감소, SIG는 SID·P·HCO₃ 변화에 영향받아 둘 다 비측정 음이온 크기를 놓침. 치료: DKA 치료 + 위산 소실 원인 해결 + Cl 정상화 수액"
+    ]
+   ]
+  }
+ ]
+}

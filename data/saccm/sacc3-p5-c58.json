@@ -1,0 +1,128 @@
+{"id":"sacc3-p5-c58","book":"Small Animal Critical Care Medicine, 3rd ed.","book_short":"SACCM 3판",
+ "part":"Part V","part_title":"Electrolyte and Acid-Base Disturbances","chapter_num":58,
+ "title":"Magnesium and Phosphate Disorders","author":"Linda G. Martin, DVM, MS, DACVECC; Ashley E. Allen-Durrance, DVM, DACVECC","format":2,
+ "blocks":[
+{"type":"callout","title":"KEY POINTS","items":[
+ "총 체내 Mg의 1% 미만이 혈청에 있으므로 혈청 Mg가 총 저장량을 반영하지 못할 수 있다 — 총 체내 Mg 결핍인데 혈청 Mg가 정상일 수 있다.",
+ "Mg 항상성은 주로 장 흡수와 요 배설의 기능 → 저Mg는 거의 항상 이 두 기관계 중 하나 이상의 장애에서 온다. 고Mg 대부분은 신부전 요소를 포함한다.",
+ "중증 저Mg·고Mg는 심혈관계·신경근계 임상 증상을 일으킨다.",
+ "Phosphate는 세포 에너지 조절, 세포막·핵산 합성, 골 석회화, 산-염기 조절, 세포 신호 등 많은 생리 과정의 핵심 성분이다.",
+ "저P는 중환자에서 흔하며 대개 세포내 이동과 연관. 총 저장량 고갈을 동반한 중증 저P는 용혈성 빈혈, 혈소판 기능 장애, 면역 억제, 심근 기능 장애, 신경 이상을 일으킬 수 있다.",
+ "고P는 대개 급성·만성 신질환과 연관되며, 증상은 주로 저칼슘혈증과 전이성 연조직 석회화의 결과다."
+]},
+{"type":"heading","level":2,"text":"Magnesium — 생리","gist":"K 다음으로 많은 세포내 양이온; 뼈 60%·골격근 20%·혈청 <1%"},
+{"type":"list","items":[
+ "중환자 개·고양이에서 Mg 이상은 흔하며, 총 혈청 Mg 이상 중환자는 정상 Mg 중환자보다 이환율·사망률·동반 전해질 이상이 높음.",
+ "분포 ▸ 뼈 60%, 골격근 20%, 나머지 다른 조직(주로 심장·간); 혈청 <1%.",
+ "혈청 Mg 3 형태 ▸ ionized(생리적 활성): 고양이 약 66%, 개 약 63%; 음이온 복합체(phosphate·bicarbonate·sulfate·citrate·lactate): 고양이 4%, 개 6%; 단백결합(주로 albumin): 고양이 30%, 개 31%.",
+ "역할 ▸ ATP 생성·이용; Na-K-ATPase 조효소(모든 막의 Na-K 경사 유지), Ca-ATPase·proton pump에도 필요; 단백·핵산 합성, 혈관 평활근 긴장도, 2차 전령·신호 전달; 림프구 활성화·사이토카인 생성·전신 염증.",
+ "항상성 ▸ 흡수는 주로 소장(공장·회장), 대장은 거의 없음. 신장 재흡수는 Henle 고리·원위곡세뇨관. 신장이 혈청 Mg·총 Mg의 주 조절자(사구체 여과 + 세뇨관 재흡수). 배설↑: 부하 비례, PGE₂. 보존: 결핍, PTH, calcitonin, arginine vasopressin, β-adrenergic agonist, EGF.",
+ "수유는 GI·신장 Mg 처리에 관여 — PTH↑와 Ca 농도가 유선 공급을 위한 Mg 보존에 참여. 일차 조절 호르몬은 미확인(부갑상선·갑상선·부신 관여 추정)."
+]},
+{"type":"heading","level":2,"text":"저마그네슘혈증 (Hypomagnesemia)","gist":"섭취↓·손실↑·재분포; 부정맥·불응성 저K·저Ca; IV 0.25–1 mEq/kg/24h"},
+{"type":"list","items":[
+ "대부분 총 저장량 고갈 상태에서 발생; 중환자 개·고양이에서 흔함. Ionized 저Mg 보고: 고양이 신장 이식 주술기, 당뇨·DKA 고양이. 위험군: 복막투석, furosemide 치료 중 CHF 개, PLE 개, 수유 중 개."
+]},
+{"type":"table","title":"Box 58.1 원인","headers":["범주","원인"],"rows":[
+ ["I. 섭취 감소","장기간 영양 섭취 부족(수 주 지속 시 유의한 고갈); Mg 결핍 IV 수액·비경구 영양. 이화 질환도 기여"],
+ ["II. 손실 증가 — 소화기","흡수 장애 증후군, 광범위 소장 절제, 만성 설사, IBD, 장기간(보통 >1년) PPI 사용(사람; TRPM6·7 채널 억제로 장 상피 흡수 저해 추정). 장액은 Mg 농도가 높아 대량 설사 지속 시 유의한 고갈"],
+ ["II. 손실 증가 — 신장","내인성 세뇨관 장애: 사구체신염, 급성 세뇨관 괴사(비핍뇨기), 폐색 해제 후 이뇨, 약물 세뇨관 손상(aminoglycoside, amphotericin B, cisplatin, cyclosporine)\n신외 인자: 이뇨제(furosemide, thiazide, mannitol), DKA, 갑상선기능항진증, 일차성 부갑상선항진증 — DKA·갑상선항진증은 Mg 분획 배설↑"],
+ ["II. 손실 증가 — 수유","—"],
+ ["III. 분포 변화","세포외 → 세포내 이동: glucose·insulin·bicarbonate·아미노산 투여\n킬레이트: catecholamine 상승(패혈증·쇼크·외상 — β-adrenergic 지방분해로 생긴 유리지방산이 Mg와 불용성 염 형성), 대량 수혈(citrate 혈액제제)\n격리(sequestration): 췌장염(췌장 주위 지방 괴사 부위에서 불용성 비누 형성)"]
+],"note":"— = 요약에 해당 내용 없음"},
+{"type":"table","title":"임상 증상","headers":["계통","소견"],"rows":[
+ ["심혈관","부정맥(가장 극적): 심방세동, SVT, VT, 심실세동. 선행 ECG 변화: PR 연장, QRS 확장, ST 함몰, T파 peaking. 고혈압, 관상동맥 혈관경련, 혈소판 응집 — Mg는 Ca·K 조절자로 작용"],
+ ["신경근 (비특이적)","Mg 결핍은 신경 말단 acetylcholine 방출↑, 신경·근막 흥분성↑, 골격근 세포내 Ca↑ → 전신 근육 약화, 섬유속연축, 실조, 발작; 식도·호흡근 약화 → 연하곤란·호흡곤란. 동반 저Ca·저K도 기여"],
+ ["대사","Na·K·Ca 세포 출입에 Mg 필요 → 저K·저Na·저Ca 동반. 공격적 K 보충에 불응하는 저K는 Mg 결핍에 의한 신장 K 과다 손실 가능 → Mg 평가·보충 권장. 저Mg는 PTH 방출 저해 + Ca의 ECF → 뼈 이동↑ → total·ionized 저Ca 흔히 동반, 저Ca 증상 관찰"]
+]},
+{"type":"table","title":"참고치","headers":["항목","개","고양이"],"rows":[
+ ["총 혈청 Mg (mg/dl)","1.89–2.51","1.75–2.99"],
+ ["Ionized Mg (mmol/L)","0.43–0.6","0.43–0.7"]
+],"note":"검사실별 참고치 설정 권장. 총 체내 Mg의 >99%가 세포내라 총 혈청 Mg 정상이어도 결핍 가능; 위험 환자의 낮은 총 혈청 Mg는 대개 유의. Ionized Mg는 세포막을 빠르게 평형하므로 세포내 저장을 더 잘 반영하는 '활성' 성분."},
+{"type":"heading","level":3,"text":"치료"},
+{"type":"list","items":[
+ "보충 고려 기준 ▸ 총 혈청 Mg <1.5 mg/dl, ionized Mg 참고치 미만, 또는 농도 불문 임상 증상(부정맥, 근육 떨림, 불응성 저K) 있을 때. 경증은 기저 질환 관리 + 경구 보충으로 해결 가능.",
+ "투여 전 신기능·심장 전도 평가. 주로 신장 배설 → 아조트혈증 환자는 용량 50% 감량·잦은 측정(고Mg 예방). Mg는 AV 결절 전도를 연장 → 전도 장애 환자는 신중 보충 + 지속 ECG.",
+ "비경구 제제: sulfate·chloride 염. IM은 통증 때문에 IV 선호."
+]},
+{"type":"table","title":"저Mg 치료 용량","headers":["상황","방법·용량","비고"],"rows":[
+ ["초기 보충","0.25–1 mEq/kg/24h CRI (0.9% NaCl 또는 5% DW)","이후 0.25–0.5 mEq/kg/24h를 추가 3–5일"],
+ ["생명 위협 심실 부정맥","0.15–0.3 mEq/kg를 생리식염수 또는 5% DW에 희석, 5–15분에 걸쳐 서서히 IV","—"],
+ ["경구","chloride·gluconate·oxide·hydroxide 염 1–2 mEq/kg/24h","주 부작용 설사"]
+],"note":"MgSO₄ 비경구 투여 시 sulfate가 Ca를 킬레이트해 저Ca 가능 → 저Ca 동반 시 MgCl₂. 기타 부작용: 저혈압, 방실차단, 각차단 — 주로 IV bolus에서(CRI보다). — = 요약에 해당 내용 없음"},
+{"type":"list","items":[
+ "많은 수의 중환자 식이는 Mg 농도가 낮고(0.1–0.22 mg/kcal), RER 이하로 급여되는 경우 많아 실제 섭취량이 결핍 보충에 크게 미달.",
+ "표준 TPN의 Mg 보충(0.13–0.22 mEq/kg/day)도 저Mg 치료 권장 농도(0.3–1.0 mEq/kg/day) 미만 → 중등–중증 저Mg는 추가 IV·경구 보충 필요, 특히 GI·신장 손실 지속 질환에서."
+]},
+{"type":"heading","level":2,"text":"고마그네슘혈증 (Hypermagnesemia)","gist":"거의 항상 아조트혈증 동반; 초기 징후 저반사; Ca gluconate 0.5–1.5 ml/kg"},
+{"type":"list","items":[
+ "저Mg보다 드물고 단순. 신장이 다량의 Mg를 쉽게 배설하므로 아조트혈증 없는 고Mg는 드묾.",
+ "원인 ▸ 신부전·신손상(GFR↓에 따라 절대 배설↓; 정도는 신부전 정도에 비례; AKI가 CKD보다 임상적으로 유의한 고Mg 가능성 높음), 내분비병증(부신피질기능저하증 — 신전성 아조트혈증 기여, 부갑상선항진증, 갑상선기능저하증; 신부전보다 경미), 의인성 과량(신기능 미고려 보충; Mg 함유 cathartic·완하제·제산제 반복 투여, 특히 신질환 환자).",
+ "증상 ▸ 비특이적: 무기력, 침울, 쇠약. 신경근 차단 — 가장 이른 징후 저반사(hyporeflexia); 극심한 상승 시 호흡근 마비 → 호흡 억제·저환기·저산소혈증; 의인성 과량 고양이 1·개 1에서 위협·안검 반사 소실 보고; 자율신경 차단·혈관 허탈.",
+ "심장 ▸ AV·심실내 전도 지연으로 PR 연장, QRS 확장; 서맥 흔함; 극심하면 완전 방실차단·무수축. 이소성 박동은 증가하지 않음. 혈관 저항 혈관 이완으로 저혈압; 혈소판 기능·응고 장애 가능.",
+ "진단 ▸ 결핍과 달리 정상 혈청 농도가 증가된 저장량을 숨기지 못함. 총 혈청 Mg 고양이 >2.99, 개 >2.51 mg/dl; ionized 고양이 >0.7, 개 >0.6 mmol/L."
+]},
+{"type":"table","title":"고Mg 치료","headers":["상황","치료","비고"],"rows":[
+ ["공통","모든 외인성 Mg 투여 중단","이후는 정도·증상·신기능에 따라"],
+ ["경증(침울·저반사), 신기능 정상","지지요법·관찰; saline 이뇨 + furosemide로 신장 배설 촉진","—"],
+ ["중증(무반응, 호흡 억제, 혈역학 불안정)","10% calcium gluconate 0.5–1.5 ml/kg 서서히 IV bolus, 15–30분","Ca는 신경근 접합부에서 Mg 직접 길항 → 심혈관 효과 역전"],
+ ["심한 신기능 저하","복막투석 또는 혈액투석","—"],
+ ["중증 신경독성","Physostigmine 0.02 mg/kg IV q12h, 증상 소실까지 (항콜린에스테라제)","—"],
+ ["심폐정지 합병","삽관·기계환기 (Ch.4)","고Mg 쇼크는 epinephrine·norepinephrine 등 승압제에 불응 가능 → 소생 매우 어려움"]
+],"note":"— = 요약에 해당 내용 없음"},
+{"type":"heading","level":2,"text":"Phosphate — 생리","gist":"주요 세포내 음이온; 3.1 mg/dl = 1 mmol/L = 1.8 mEq/L; 12시간 공복 채혈"},
+{"type":"list","items":[
+ "역할 ▸ ATP·GTP·cAMP·phosphocreatine 생성(세포막 완전성, 에너지 저장, 대사, 전령 체계); 뼈·치아 기질(hydroxyapatite); 2,3-DPG로 조직 산소화 조절(Hb 산소 친화도↓); 인지질로 세포막 구조·전하; 인단백으로 미토콘드리아 전자전달계 ATP 생성; 산증 완충.",
+ "용어 ▸ phosphorus는 원소, phosphate는 분자 음이온(HPO₄²⁻ 등)이나 혼용; 이 장은 phosphate로 통일.",
+ "분포 ▸ 뼈·치아 80–85%(무기 hydroxyapatite), 연조직 14–15%, 세포외 <1%. 유기 P는 주로 세포내(인지질·인단백·핵산·효소·보조인자·중간체; 약 2/3가 인지질), 무기 P는 주로 세포외. 무기 P = orthophosphate + pyrophosphate(무시할 양). Orthophosphate 약 85%는 유리형 HPO₄²⁻ : H₂PO₄⁻ = 4:1 (pH 7.4; 알칼리증은 2가 비율↑, 산증은↓); 나머지 15%는 단백결합 10% + Mg·Ca·Na 복합체 5%. 적혈구 P의 70–80%는 2,3-DPG.",
+ "측정 ▸ 혈액 화학 분석기는 무기 P만 측정. 정상 혈장 P 3.1 mg/dl = 1 mmol/L = 1.8 mEq/L. 혈청 또는 헤파린 혈장(1시간 내 세포 분리). 식후 6–8시간 일시 peak → 12시간 공복 후 채혈 이상적. 가성 고P: in vitro 용혈·혈구 파열, 고중성지방혈증, 단클론 감마병증.",
+ "균형 ▸ 장 흡수는 섭취량에 선형, 섭취 P의 60–70%가 십이지장·공장·회장에서 흡수; 결핍 시 calcitriol이 능동 수송↑. 혈청 P는 GFR + 세뇨관 재흡수(주로 근위곡세뇨관, 여과량의 60–90% 재흡수; P 결핍 식이에서 최대)에 의존.",
+ "호르몬 ▸ PTH = 인뇨성(세뇨관 재흡수 Tm↓). 재흡수↑: growth hormone(어린 성장 동물의 고P를 부분 설명), insulin, IGF-1, thyroxine. 요 배설↑: phosphatonin(FGF-23 — P·vitamin D 항상성 조절), calcitonin, ANP, 초생리적 vasopressin, 고용량 dexamethasone, ACTH.",
+ "골격 = P 저장고 (PTH·calcitonin 조절): PTH 매개 골용해는 빠름(분–시간), 파골세포 활성화는 느림(일–주); PTH의 인뇨 효과로 이 과정에서 고P는 생기지 않음."
+]},
+{"type":"heading","level":2,"text":"저인산혈증 (Hypophosphatemia)","gist":"가장 흔한 원인 세포내 이동; <1 mg/dl 중증 → IV 0.01–0.12 mmol/kg/hr"},
+{"type":"list","items":[
+ "분석기 혈청 P(정상 2.9–5.3 mg/dl, 연령·장비별)는 총 체내 균형을 반영하지 않을 수 있음 — P는 주요 세포내 음이온이라 급속 세포 내외 이동 가능. 경증–중등도(1.0–2.5 mg/dl)는 임상적 의미 있을 수도 없을 수도, 보통 고갈과 무관. 중증(<1 mg/dl)은 대개 유의하며 총 체내 고갈 동반. 혈청 정상이어도 고갈 가능 → 치료 결정은 개별 임상 평가 + 측정치.",
+ "진단 ▸ 저P(혈청↓; 총 P 낮음·정상·높음 모두 가능)와 P 고갈(총 체내↓; 섭취·흡수↓ 또는 신장 손실↑, 세포내 이동으로 악화)을 구분해야 하나 세포내 구획은 검체 채취가 어려워 힘듦. 고갈은 소인·증상 있으면 의심."
+]},
+{"type":"table","title":"Box 58.2 원인","headers":["기전","원인"],"rows":[
+ ["I. 장 흡수 감소","만성 영양불량, 흡수 장애 증후군(중증 침윤성 질환), 지방변(steatorrhea; vitamin D 결핍성 이차 부갑상선항진증도 기여), 만성 구토·설사, vitamin D 결핍, P 결합 제산제(aluminum hydroxide, lanthanum carbonate — 대변 배설↑)"],
+ ["II. 세포내 이동 (가장 흔함)","알칼리증(호흡성·대사성 — 과호흡: 통증·불안·패혈증·열사병·CNS 질환 → CO₂ 세포 밖 확산 → 세포내 pH↑ → phosphofructokinase·해당 활성화), IV dextrose, insulin, refeeding syndrome(가장 흔하고 중요한 전해질 이상; 만성 영양불량에서 영양 공급 → insulin → P 세포 흡수), catecholamine(내인·외인; epinephrine·norepinephrine·terbutaline — β 수용체 매개), salicylate 중독(산화적 인산화 탈공역·Krebs 억제 → 초기 고P 후 30–60분 내 요 배설↑로 저P), 자간증, 악성 고Ca, 비경구 영양"],
+ ["III. 요 손실 증가","이뇨: 삼투성(DM/DKA, 고삼투 고혈당 비케톤 증후군, 3도 화상 회복기), 약물(carbonic anhydrase 억제제, mannitol), 폐색 해제 후, 저체온 유발(사람 두부 외상 치료적 저체온 — Mg·P·K·Ca 고갈), 비경구 수액\n부갑상선항진증(일차성, 영양성 이차성 — PTH 인뇨), 고알도스테론증(신장 Ca 손실 → 저Ca → PTH↑ → P 정상~낮음), glucocorticoid ± 부신피질기능항진증(사람 원인; 수의학은 논란 — 전향 연구에서 HAC 개는 PTH↑이나 P 정상)"],
+ ["IV. 가성·검사 오류","단클론 감마병증, 용혈, 고빌리루빈혈증, mannitol(혈중 >25 mmol/L — DuPont ACA 비색법의 phosphomolybdate 형성 방해; 수의 문헌 미보고). Mannitol은 이뇨로 실제 P 소실도 이론상 가능"]
+]},
+{"type":"list","items":[
+ "당뇨 환자는 고갈 위험 높음(삼투성 이뇨, 근육량 소실, insulin 결핍에 의한 조직 P 이용 장애) — insulin·IV 수액 치료 후 세포내 이동으로 악화.",
+ "3도 화상: 체표면적 클수록 저P 유의 — 피부 손실·회복기 요 배설↑.",
+ "패혈증(사람): IL-6·TNF-α 등 염증 사이토카인 관련 추정(기전 불명); 급성 호흡성 알칼리증의 해당 자극도 기여. 중증 저P(<1 mg/dl) 패혈증 환자는 사망률 8배."
+]},
+{"type":"table","title":"중증도별 임상 증상·치료","headers":["중증도","임상 증상","치료"],"rows":[
+ ["경증–중등도\n1–2.5 mg/dl","대개 무증상","원발 질환 치료로 대부분 해소(예: 호흡성 알칼리증 관련 저P는 환기·산-염기 정상화 시). 무증상이면 경구 보충(양은 경험적) — 우유(elemental P 0.032 mmol/ml)"],
+ ["중증\n<1 mg/dl","ATP·2,3-DPG 고갈로 광범위 세포 기능 장애: 용혈(RBC ATP·2,3-DPG↓, 구상적혈구, 막 경직, 생존↓), 2,3-DPG↓로 조직 저산소, 백혈구 주화성·탐식·살균능↓(감염↑), 혈소판 생존↓·응괴 수축 장애(출혈↑), 가역적 심근 기능 장애(치료적 저체온 부정맥 기전 추정), 골격근 약화·떨림·근육통(인공호흡기 이탈 어려움), 횡문근융해(refeeding), 신경(실조·발작·혼수 — 대사성 뇌병증), 소화기(식욕부진·오심·기능성 장폐색·구토·설사)","비경구 보충 — 고갈 후유증 고위험. Sodium/potassium phosphate IV 0.01–0.12 mmol/kg/hr. 시작 후 혈청 P·ionized Ca·K를 4–6시간마다 재검"]
+],"note":"치료 결정 요인: 결핍 정도, 고갈 의심·임박 여부, 예상 질병 기간, 증상, 섭취↓·손실↑ 동반 질환. 초점은 원발 질환 치료."},
+{"type":"table","title":"비경구 phosphate 제제","headers":["제제","함량","주의"],"rows":[
+ ["Sodium phosphate (Na₂HPO₄)","phosphate 3 mmol/ml (93 mg/ml), sodium 4 mEq/L","고장액 — 보통 0.9% saline에 희석. LRS 희석 금지(Ca와 침전)"],
+ ["Potassium phosphate (KH₂PO₄)","phosphate 3 mmol/ml (99.1 mg/ml), potassium 4.36 mEq/L","수액 계획의 총 K 보충량에 합산 — 의인성 고K 방지"]
+],"note":"과잉 보충 부작용: 고P, 저Ca(tetany), 전이성 석회화, 신부전; K phosphate 과잉 시 고K."},
+{"type":"heading","level":2,"text":"고인산혈증 (Hyperphosphatemia)","gist":"1위 AKI·CKD; Ca×P >58–70이면 연조직 석회화; 성견 >5.3–6 mg/dl"},
+{"type":"list","items":[
+ "정의는 연령별로 달라야 함 — 기본 정상 2.9–5.3 mg/dl(장비별 설정)이나 건강한 강아지에서 10 mg/dl 보고. 진단 ▸ 성묘·성견 혈청 P >5.3–6 mg/dl. 8주령 미만 강아지·새끼고양이가 가장 높고 성장하며 감소, 1세에 성체 값."
+]},
+{"type":"table","title":"원인","headers":["기전","원인·설명"],"rows":[
+ ["신장 배설 감소 (수의학에서 가장 흔함)","AKI·CKD. 고P → 1α-hydroxylase 억제 + PTH 분비 자극; calcitriol↓는 장 P 흡수↓, PTH↑는 장 흡수·요 배설↑ → 순효과는 소량 배설↑. PTH↑가 calcitriol 회복 → 초기엔 P 정상화되나 PTH↓ 시 GFR↓로 다시 상승, 순환 반복. CKD 진행으로 세뇨관 재흡수 최대 억제를 넘으면 지속 고P; 기능 세뇨관 세포↓로 calcitriol 합성↓, PTH↑에도 고P 진행. 신성 이차 부갑상선항진증은 CKD 개·고양이의 47–100%(IRIS 3·4기에서 더 높음)\n중환자: AKI(보상 기전 발달 시간 부족으로 유의한 고P 흔함), acute-on-chronic, 요도 폐색, uroabdomen"],
+ ["세포외 이동","종양 용해 증후군(K·P·핵산 방출 → AKI; 세뇨관 석회화 관여; 종양 세포는 정상의 최대 4배 P 함유 → 화학·방사선에 급속 반응하는 고부하 종양[stage IV·V 림프종] 고위험), 횡문근융해증(세포내 방출 + myoglobin AKI로 배설↓; 개·고양이 드묾), 용혈"],
+ ["섭취·의인성 증가","비경구 phosphate 과량(급성 대량 시 고P + 저Mg·저Ca·저혈압), phosphate 관장(Fleet — 중증 고P, 치명적 가능), cholecalciferol 쥐약·vitamin D₃ 피부 크림(calcipotriene; 장 흡수↑·골 방출)"],
+ ["기타","부갑상선기능저하증(드묾; 급성 tetany·섬유속연축·발작·저Ca + 정상 신기능[정상 신장 수치·적절한 요비중]이면 의심; 고P는 있을 수도 없을 수도), 갑상선기능항진증(thyroxine이 세뇨관 P 재흡수↑)"]
+]},
+{"type":"list","title":"임상 증상","items":[
+ "식욕부진, 오심, 구토, 쇠약, tetany, 발작, 부정맥. 흔히 저Ca·저Mg·고Na·대사성 산증 동반.",
+ "주 발현은 저Ca와 이소성 연조직 석회화. Ca × P product >58–70 mg²/dl² 시 인산칼슘 침착(저Ca 기전 중 하나) — 심장, 혈관, 신세뇨관, 폐, 관절·관절 주위, 결막, 골격근, 피부.",
+ "부정맥: 후속 저Ca·저Mg에 의한 QT 연장 → 다형성 VT·torsades de pointes."
+]},
+{"type":"table","title":"치료","headers":["상황","치료"],"rows":[
+ ["공통","기저 원인 철저 조사"],
+ ["급속 교정 필요","정질액 수액 + dextrose 투여 — 아조트혈증 교정 + P 세포내 흡수↑"],
+ ["핍뇨·무뇨 AKI","CRRT 또는 혈액투석"],
+ ["CKD","저P 식이, 인 결합제: aluminum hydroxide, calcium carbonate/chitosan (Ipakitine), lanthanum carbonate, sevelamer"]
+]}
+]}
