@@ -1,0 +1,116 @@
+{
+ "id": "sacc3-p10-c104",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part X",
+ "part_title": "Hematologic Disorders",
+ "chapter_num": 104,
+ "title": "Dyshemoglobinemias",
+ "author": "Louisa J. Rahilly, DVM, DACVECC / Deborah C. Mandell, VMD, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "헤모글로빈(Hb) 이상은 산소 운반·방출 능력의 변화 또는 다른 물질의 경쟁적 결합으로 발생한다.",
+    "수의학에서 가장 흔한 이상혈색소증은 일산화탄소(CO) 중독과 산화 손상에 의한 메트헤모글로빈혈증(metHb)이다. Sulfhemoglobinemia도 산화 손상의 결과지만 소동물에서는 보고된 바 없다.",
+    "CO는 연기 중 고농도 노출로 발생하며 산소와 Hb 결합을 경쟁한다.",
+    "metHb는 독성물질 노출이나 유전적 결함으로 Hb 내 철이 Fe²⁺(ferrous)에서 Fe³⁺(ferric)로 산화되어 생긴다. metHb는 산소를 운반하지 못하며 20%를 넘으면 세포 저산소증과 쇼크를 일으킨다.",
+    "metHb를 유발하는 많은 물질은 임상적으로 유의한 Heinz body(변성 Hb 응집체)도 형성해 면역매개 적혈구 파괴와 빈혈로 이어질 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "일산화탄소(CO) 중독"
+  },
+  {
+   "type": "list",
+   "items": [
+    "CO는 무색·무취·비자극성 기체로 탄화수소 불완전연소(화재, 자동차 배기, 숯불, 가솔린 발전기, 난방기)에서 발생한다. 적혈구·heme 이화의 최종산물로 내인성 생성도 있고 CNS에서는 신경전달물질로 작용하므로 정상 개체도 COHb가 최대 1%까지 존재한다.",
+    "공기 중 0.1% CO 흡입만으로 COHb가 50%를 초과할 수 있다. 소동물의 보고된 원인은 연기흡입, 가스보일러·히터, 배기가 불충분한 발전기 가동이다.",
+    "기전 ① 산소전달 장애: CO는 산소보다 Hb 결합친화력이 200–240배 높고, Hb 분자당 4개 heme 중 2개에 결합해 산소운반능을 50% 감소시킨다. 또한 산소해리곡선을 아래·왼쪽으로 이동시켜 조직으로의 산소 방출까지 방해한다. 따라서 Hb 농도와 PaO₂가 정상이어도 산소운반능이 현저히 떨어진다.",
+    "기전 ② 직접 세포독성: cytochrome a3 결합 → 산화적 대사 교란과 자유라디칼 생성, myoglobin 결합 → 심근 저산소·부정맥·횡문근융해, guanylyl cyclase 결합 → cGMP 증가·뇌혈관확장·의식소실. 간접적으로는 백혈구 격리, NO 생성 증가, 재관류 손상, 지질과산화가 관여한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "적혈구 산화 손상: 메트헤모글로빈혈증과 sulfhemoglobinemia"
+  },
+  {
+   "type": "list",
+   "items": [
+    "metHb는 산소 결합이 불가능하며, 남은 ferrous 부위의 산소 친화도를 높여 조직 방출을 줄이고 산소해리곡선을 왼쪽으로 이동시킨다. 적혈구가 갈색을 띠어 점막이 초콜릿색/암청색으로 보인다.",
+    "정상 동물도 매일 Hb의 0.5–3%가 metHb로 산화되지만 즉시 환원되어 총 Hb의 3% 미만으로 유지된다. 항산화 방어를 압도하는 외인성 물질이나 선천·후천적 적응 이상이 있으면 상승한다.",
+    "적혈구 방어체계: superoxide dismutase, catalase, glutathione peroxidase, glutathione(GSH), metHb reductase(cytochrome b5 reductase/diaphorase). NADPH·NADH가 산화된 glutathione과 metHb의 환원에 필수적이다.",
+    "적혈구는 산소를 운반하고 혈장 화학물질에 노출되며 핵·미토콘드리아가 없어 산화 손상에 특히 취약하다(단백 생성 불가, 혐기성 대사 의존).",
+    "Heinz body(HzB): 변성·침전된 Hb 응집체. metHb 형성이 HzB 발생에 선행·필수적으로 여겨진다. 막단백에 결합해 음이온 수송 교란, 변형능 저하, 자가항체로 작용할 수 있는 막단백 복합체 형성을 유발한다. 심하면 'ghost cell'(막과 HzB만 남은 빈 적혈구)이 되어 혈관내 용혈과 연관된다. 대개는 비장 등 단핵탐식계에서 제거된다.",
+    "고양이 특이성: 고양이 Hb의 globin에는 SH기가 8개(개는 4개)로 산화에 더 취약하고, 비장의 초미세구조 변이로 산화 적혈구 제거(pitting) 능력이 떨어진다. 그 결과 건강한 고양이도 순환 HzB가 상당수(최대 96% 보고) 존재할 수 있다.",
+    "Sulfhemoglobin: 황 함유 약물(sulfasalazine 등 sulfonamide)이나 화합물 노출로 형성되는 안정한 녹색 색소. 황 원자가 Hb porphyrin ring에 비가역적으로 결합한다. 산소 운반이 불가능하고 산소해리곡선을 오른쪽으로 이동시켜, 호흡곤란 없이 청색증이 나타난다(0.5 g/dl에서 청색증). 해독제가 없고 적혈구 수명 동안 지속되며 60% 초과 시 세포 저산소·사망. 소동물 보고는 없으나 metHb 치료에 반응하지 않으면 의심한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "산화 손상의 구체적 원인"
+  },
+  {
+   "type": "list",
+   "items": [
+    "metHb 유발: acetaminophen, 국소 benzocaine, phenazopyridine, 아질산염·질산염, 스컹크 분비물, hydroxycarbamide(hydroxyurea), aniline, metHb reductase 결핍. 사람에서는 dapsone, metoclopramide, sulfonamide, nitroglycerin, nitroprusside도 원인이다.",
+    "HzB 유발(대개 metHb도 동반하나 임상징후는 용혈성 빈혈에 기인): Allium 식물(양파·마늘), propylene glycol, 아연, methylene blue, 원유, naphthalene(좀약), 고양이의 propofol 반복 투여, phenothiazine, phenylhydrazine, 고양이의 methionine, 개의 menadione(vitamin K3), 구리(특히 구리축적질환).",
+    "질환 상태: 사람 패혈증에서 NO 증가로 낮은 수준의 metHb가 확인된다. 고양이의 당뇨병(특히 케톤산증), 갑상선기능항진증, 림프종은 HzB 증가와 경도~중등도 빈혈과 연관된다.",
+    "Acetaminophen: 고양이 10 mg/kg, 개 150–200 mg/kg에서 독성. 대부분 보호자가 통증·불편을 치료하려 투여해 발생한다. 간에서 sulfate 포합, glucuronide 포합, CYP450에 의한 NAPQI 생성 경로로 대사된다. 고양이는 glucuronyltransferase가 없고 sulfate 결합능도 제한적이어서 개의 약 1/10 수준의 제거능을 가진다. 최근 연구는 적혈구 산화 손상에는 NAPQI보다 para-aminophenol(PAP)이 더 큰 역할을 한다고 본다(적혈구에는 NAPQI 생성 효소가 없다). 개·고양이는 metHb reductase 수치도 낮아 취약하다. 예후는 신중하며, 섭취–치료 간 시간이 이환율·생존의 가장 중요한 인자다. 무증상·금기 없음·60분 이내 섭취라면 구토를 유발한다.",
+    "Benzocaine: 고양이 후두경련용 스프레이, 개·고양이의 소양증용 OTC 크림. 14% 에어로졸 2초 분무(약 56 mg)로 개·고양이 모두 metHb가 상승했고 고양이가 더 심했다. HzB 형성은 대개 경미하고 용혈은 드물다.",
+    "질산염·아질산염: 드물게 HzB를 만들지 않는 원인. NO 공여 혈관확장제(nitroglycerin, nitroprusside) 사용 시 잠재적 합병증이며, 원인불명 고젖산혈증이 나타나면 고려한다(cyanide 독성도 함께 감별).",
+    "metHb reductase 결핍: 드문 선천 이상으로 metHb 18–41%, 100%에서 경도~중등도 점막 청색증, 50% 미만에서 운동불내성. 확진은 연구기관에서 적혈구 metHb reductase 효소 활성 측정. 단모 고양이 1례와 Chihuahua, Borzoi, English Setter, Terrier mix, Cockapoo, Poodle, Corgi, Pomeranian, toy American Eskimo 등에서 보고. 대개 양성 경과로 정상 수명을 가지며, 임상징후가 있거나 전신마취를 앞둔 경우에만 치료한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "임상 징후"
+  },
+  {
+   "type": "list",
+   "items": [
+    "CO: 무기력, 침울, 혼동, 실신, 발작, 의식소실, 사망 등 CNS 징후와 빈호흡, 빈맥, 오심, 부정맥, 구토. 중증도는 COHb 수치와 일관되게 비례하지 않는다. 사람 기준 COHb >15%에서 빈호흡·두통, >30%에서 신경학적 이상, ≥50%에서 의식소실·무호흡·사망.",
+    "개 화재 증례에서 COHb 수치와 상관된 소견은 저체온, 호흡노력 증가, 비정상 청진, 신경학적 상태 변화였다. 전형적인 '체리색 점막'은 실제로는 드물다(연기흡입 개 24마리 중 7마리, 고양이 17마리 중 2마리에서 점막 충혈).",
+    "지연성 신경정신증후군(DNS): 중독 후 3–240일에 발생. 사람 발생률 1–47%. 수의 증례에서 실조성 보행, 보행 불능, 침울·혼미, 발작, 난청이 보고되었다. 사람에서 약 75%가 1년 내 회복한다.",
+    "metHb: 20%부터 빈맥, 빈호흡, 호흡곤란, 무기력, 식욕부진, 구토, 허약, 실조, 혼미, 저체온, 유연(고양이의 경련), 80%에서 혼수·사망. 초콜릿색 점막이 특징이며 청색증은 12–14% 이상에서 나타난다. Acetaminophen 중독 시(특히 고양이) 머리·목·사지 부종이 발생할 수 있고, 고양이의 propofol 반복 투여에서도 안면부종이 보고되었다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "진단"
+  },
+  {
+   "type": "list",
+   "items": [
+    "간이 검사: 환자의 정맥혈 한 방울을 흰 종이 위 대조혈액 옆에 떨어뜨린다. 공기 중 산소 노출 후 대조혈은 선홍색이 되지만 metHb >10%인 혈액은 갈색으로 남는다. EDTA 튜브 혈액을 실온 공기에 15분 노출시켜도 같은 방식으로 감별할 수 있다.",
+    "확진·정량은 co-oximeter 또는 assay로 직접 측정한다. 동맥혈이 산-염기·PaO₂ 평가에 이상적이나 COHb·metHb 측정에는 정맥혈로 충분하다. 이송 중 산소를 투여받았다면 내원 시 COHb가 정상일 수 있어 병력과 임상징후에 근거해 진단한다.",
+    "metHb·sulfHb assay는 시료에 cyanide를 넣기 전후 630 nm 흡광도 변화를 분광학적으로 정량한다. Sulfhemoglobin은 metHb와 스펙트럼 정점이 유사해 co-oximeter에서 metHb 상승으로 보이지만, cyanide 첨가 후에도 정점이 지속되면 sulfHb를 시사한다.",
+    "Saturation gap: 맥박산소측정치와 동맥혈가스 산소포화도의 차이가 5%를 넘으면 이상혈색소증을 의심한다. metHb >30% 또는 sulfHb >28%면 실제 산소함량과 무관하게 맥박산소측정치가 약 85%에서 정체된다.",
+    "혈액도말에서 HzB, eccentrocyte, ghost cell을 확인한다. 고양이 HzB는 창백한 봉입체 또는 세포 표면 돌출로 보이고, 개 HzB는 작고 산재해 new methylene blue(짙은 굴절성 봉입체)나 망상적혈구 염색(연한 청색 봉입체)이 필요할 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료"
+  },
+  {
+   "type": "list",
+   "items": [
+    "CO — 산소요법이 치료의 근간이다. 용존산소가 Hb 결합부위를 두고 CO와 경쟁해 CO 반감기를 줄이고 CO는 폐로 배출된다. 비강 캐뉼라나 산소 케이지로 50–150 ml/kg/min 유량이 개의 CO 제거를 촉진했다. DNS 예방을 위해서도 산소요법이 필요하며, 설치류 연구에 근거해 PaO₂ ≥300 mmHg 유지가 권장된다. 고압산소치료(HBOT)는 사람에서도 여전히 논란이다.",
+    "CO — 나머지는 지지요법이다. 심혈관 감시와 조직관류 확보, 저체온 환자의 적극적 가온(사람에서 생존율 개선; 개에서도 COHb가 높을수록 체온이 낮았다). 중등도 이상 또는 DNS 징후 시 N-acetylcysteine·vitamin E 등 항산화제 사용을 고려할 수 있다. 초기 의식소실이나 중증 신경학적 이상은 예후가 더 신중하나, 전반적으로는 시간과 지지치료로 양호한 편이다.",
+    "산화 손상 — 원인 제거가 최우선. 산소요법은 대개 1차로 시행하나 산소 운반이 가능한 Hb는 이미 최대 포화 상태이므로 단독 치료로는 불충분하다. 최근 섭취이고 아직 증상이 없으면 구토 유발 후 활성탄을 투여하고, 수액·전해질·산염기 교정을 병행한다. 중증 sulfhemoglobinemia에는 농축 적혈구 수혈을 고려한다.",
+    "N-acetylcysteine(NAC) — acetaminophen 중독의 표준 치료. Cysteine으로 가수분해되어 내인성 GSH를 보충하고, NAPQI와 직접 결합해 무독성 포합체를 만들며, sulfate 포합 배설분획을 늘린다(고양이에서 acetaminophen 반감기 절반). 섭취 12시간 이내가 가장 효과적이나 36–80시간까지도 권장된다. 용량: 초회 140 mg/kg IV(중증은 280 mg/kg) 후 70 mg/kg q6h로 7회 추가. 경구 시 오심·구토, 급속 정주 시 저혈압·기관지경련, 혈관외 누출 시 정맥염이 발생하므로 5% 용액으로 희석해 0.2 µm 필터를 통해 30–60분에 걸쳐 천천히 정주한다.",
+    "Methylene blue — NADPH dehydrogenase를 이용해 metHb 환원 속도를 높인다. 1% 용액 1 mg/kg을 수 분에 걸쳐 1회 정주하며 30분 내 임상 개선이 나타나야 한다. 그러나 특히 고양이에서 적혈구 산화 손상을 유발해 HzB 빈혈을 악화시킬 수 있고 수일 후 지연 반응도 가능하므로 투여 후 3–4일간 헤마토크릿과 도말을 감시한다. 고양이 acetaminophen 중독 비교연구에서 methylene blue는 metHb 반감기에 거의 영향이 없었고, 수컷에서는 NAC의 효과를 감쇠시킬 가능성이 있었다. Sulfhemoglobinemia는 methylene blue에 반응하지 않는다.",
+    "보조 치료 — Ascorbic acid 30 mg/kg IV q6h(항산화·비효소적 metHb 환원), cimetidine 5 mg/kg IV q8h(간 P450 억제로 NAPQI 생성 제한; 사람 연구에서는 일관된 이득 미입증), SAMe(간보호·항산화·적혈구 삼투취약성 감소), bioflavonoid, 수혈."
+   ]
+  }
+ ]
+}

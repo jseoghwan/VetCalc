@@ -1,0 +1,401 @@
+{
+ "id": "sacc3-p18-c145",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part XVIII",
+ "part_title": "Pharmacology",
+ "chapter_num": 145,
+ "title": "Vasopressin",
+ "author": "Deborah C. Silverstein, DVM, DACVECC; Samantha Hart, BVMS (Hons), MS, DACVS, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "Vasopressin(항이뇨호르몬, ADH)은 시상하부에서 합성되어 뇌하수체 후엽에 저장·방출되는 펩티드 호르몬이다.",
+    "체내에는 네 종류의 vasopressin 수용체가 있다 ▸ V1R, V2R, V3R, oxytocin 수용체.",
+    "건강한 상태에서 vasopressin은 신수질·피질 집합관에서 V2R을 통해 자유수분 균형을 조절한다.",
+    "순환성 쇼크 상태에서는 vasopressin 수치가 현저히 증가하며, V1R을 통해 강력한 비아드레날린성 혈관수축제로 작용한다. 또한 V3R을 통해 ACTH 분비를 자극한다.",
+    "치료적 용도 ▸ 뇌하수체성 요붕증, von Willebrand disease, 혈관확장성 저혈압, 출혈성 쇼크, 심폐소생술."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Vasopressin의 생리"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Arginine vasopressin(AVP; ADH, 8-arginine-vasopressin, β-hypophamine으로도 불림)은 이황화 결합을 가진 9개 아미노산 당펩티드로, 시상하부 magnocellular 뉴런에서 합성되어 뇌하수체 줄기를 따라 이동해 후엽 pars nervosa에 저장된다. 합성·수송·저장 전 과정에 1–2시간 소요.",
+    "AVP는 간·신장의 vasopressinase에 의해 빠르게 대사되며 반감기는 10–35분.",
+    "종 차이 ▸ 대부분의 포유류(개·고양이·사람)는 arginine vasopressin이지만, 돼지는 arginine 대신 lysine을 가져 AVP보다 역가가 낮다.",
+    "AVP 방출의 가장 강력한 자극 ▸ 혈장 삼투압 증가, 혈압 감소, 순환 혈액량 감소.",
+    "기타 방출 유발 요인 ▸ 통증, 오심, 저산소증, 고탄산혈증, 인두 자극, glycopenia, 약물·화학물질(acetylcholine, 고용량 opioid, dopamine, angiotensin II, prostaglandin, glutamine, histamine), 특정 악성종양, 기계환기.",
+    "방출 억제 ▸ glucocorticoid, 저용량 opioid, 심방나트륨이뇨인자(ANF), GABA."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "삼투 및 압력 수용체 조절"
+  },
+  {
+   "type": "list",
+   "items": [
+    "중추 삼투수용체는 제3뇌실에 위치해 전신 삼투압 변화를 감지한다. 말초 삼투수용체는 장간막·문맥 정맥에 있어 섭취한 음식·수분의 삼투압을 조기에 감지하며, 구심성 자극이 미주신경을 통해 뇌의 실방핵·시삭상핵으로 올라가 AVP 방출을 자극한다.",
+    "혈장 고장성은 시상하부 magnocellular 뉴런을 탈분극시켜 AVP 방출을 더 증가시킨다.",
+    "혈액량·혈압 감소는 AVP를 지수적으로 증가시킨다. 저혈량·저혈압은 삼투압–vasopressin 반응곡선을 이동시켜, 저혈압 상태에서 정상 삼투압을 유지하려면 더 높은 AVP 수치가 필요하게 한다.",
+    "좌심방·대동맥궁·경동맥동 신전수용체의 구심성 자극은 긴장성으로 AVP 분비를 억제한다. 심방 신전수용체는 혈액량 증가에, 대동맥궁·경동맥동 수용체는 동맥혈압 증가에 반응한다.",
+    "저혈압 상태에서 동맥 압력수용체 활성이 감소하면 AVP 방출의 '탈억제(disinhibition)'가 일어나 AVP 분비가 증가한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Vasopressin 수용체"
+  },
+  {
+   "type": "table",
+   "title": "Table 148.1 — Vasopressin 수용체, 영향 조직, 주요 효과",
+   "headers": [
+    "수용체",
+    "조직",
+    "주요 효과"
+   ],
+   "rows": [
+    [
+     "V1 (V1a)",
+     "혈관 평활근",
+     "고용량에서 혈관수축 / 저용량에서 뇌·신·폐·장간막 혈관 확장"
+    ],
+    [
+     "V2",
+     "신집합관",
+     "수분 투과성 증가"
+    ],
+    [
+     "V2",
+     "내피세포",
+     "von Willebrand factor 방출 증가"
+    ],
+    [
+     "V2",
+     "혈소판",
+     "응집 자극"
+    ],
+    [
+     "V2",
+     "혈관 내피",
+     "혈관확장"
+    ],
+    [
+     "V3 (V1b)",
+     "뇌하수체",
+     "ACTH 방출"
+    ],
+    [
+     "Oxytocin",
+     "자궁·유선",
+     "수축"
+    ],
+    [
+     "Oxytocin",
+     "위장관, 내피",
+     "혈관확장"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "V1 수용체"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Vasopressin 수용체는 모두 G 단백 연결 수용체다. V1R(구 V1a)은 주로 혈관 평활근세포에 있으며 대부분의 혈관상에서 Gq 매개 phospholipase C·phosphoinositide 경로 활성을 통해 혈관수축을 일으킨다.",
+    "Inositol phosphate와 diacylglycerol 증가 → 전압의존성 칼슘채널 활성화 → 세포내 칼슘 증가 → 혈관수축.",
+    "Vasopressin은 혈관 평활근세포의 K-ATP 채널을 불활성화한다. 산증·저산소증에서 이 채널이 열리면 칼륨이 유출되어 과분극이 일어나고 칼슘 유입이 차단되지만, AVP에 의한 채널 불활성화는 탈분극 → 전압의존성 칼슘채널 개방 → 세포질 칼슘 증가 → 혈관수축으로 이어진다.",
+    "일부 혈관상에서는 nitric oxide 매개로 혈관확장이 일어날 수 있다. V1R은 신장·피부·골격근·췌장·갑상선·자궁근층·방광·간세포·지방세포·비장의 혈관 내피에 존재한다.",
+    "혈소판도 V1R을 발현하며, 자극 시 세포내 칼슘 증가로 혈전 형성을 촉진한다.",
+    "신장의 V1R ▸ 내수질 혈류 감소, AVP의 항이뇨 효과 제한, 원심성 세동맥의 선택적 수축으로 GFR 증가. V1R의 위치와 기능에는 종간 차이가 상당하다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "V2 수용체"
+  },
+  {
+   "type": "list",
+   "items": [
+    "주로 원위세뇨관 기저외측막과 피질·수질 집합관 주세포에 위치. Gs 신호전달과 결합해 세포내 cAMP를 증가시킨다.",
+    "증가한 cAMP는 aquaporin-2를 담은 소포가 집합관 주세포의 첨단 원형질막과 융합하도록 유도해 자유수분 흡수를 증가시킨다.",
+    "AVP의 수분 항상성 조절은 두 가지 ▸ ① aquaporin-2의 신속한 세포 표면 이동 조절, ② aquaporin-2 암호화 mRNA 합성 자극.",
+    "유전성 신성 요붕증 동물 대부분은 V2R 유전자 변이를 가진다.",
+    "V2R 활성화는 골수에서 혈소판 방출을 자극하고, 내피세포에서 von Willebrand factor와 factor VIII 방출을 증가시킨다. Factor VIII 관련 항원과 ristocetin cofactor 활성도 경미하게 올린다.",
+    "혈관 내피에도 V2R이 있어, 강력한 V2R 작용제인 DDAVP(1-deamino-8-D-arginine vasopressin)는 vWF·factor VIII 방출 외에 혈관확장도 유발한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "V3 수용체 및 기타"
+  },
+  {
+   "type": "list",
+   "items": [
+    "V3R(구 V1bR)은 뇌하수체 전엽에 위치하며 Gq를 활성화해 phospholipase C·phosphoinositol cascade를 통해 세포내 칼슘을 방출시킨다. V3R 활성화는 ACTH 방출을 자극한다.",
+    "V3R은 AVP의 중추신경계 작용도 담당해 기억·혈압·체온·수면주기·뇌하수체 호르몬 방출의 신경전달물질 또는 조절자로 작용한다.",
+    "Oxytocin 수용체는 AVP와 oxytocin 모두에 동일한 친화도를 갖는 비선택적 vasopressin 수용체다. 활성화 시 주로 자궁근층과 유선 근상피세포에서 평활근 수축이 일어난다.",
+    "AVP는 제대정맥·대동맥·폐동맥의 oxytocin 수용체에도 작용해 nitric oxide 매개 혈관확장을 일으킨다. 심장 oxytocin 수용체 자극은 심방나트륨이뇨펩티드 방출로 이어진다.",
+    "Vasopressin은 P2 purinoreceptor(ATP 수용체)도 자극해 nitric oxide와 prostacyclin 매개 혈관확장을 일으킨다. P2 수용체는 심박수에 직접 영향 없이 양성 inotrope로도 작용한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Vasopressin의 생리적 효과"
+  },
+  {
+   "type": "list",
+   "items": [
+    "V1R을 통해 직접적인 전신 혈관수축을 일으킨다. In vitro에서 AVP는 몰 기준으로 angiotensin II, norepinephrine, phenylephrine보다 강력한 혈관수축제다.",
+    "V2R을 통한 삼투조절과 정상혈량 유지에 필수적이며, 지혈 유지, 체온 조절, 기억, 수면, ACTH 분비에도 관여한다. 정상 생리 상태에서 AVP의 주 역할은 자유수분 균형 조절이다.",
+    "공복 사람의 vasopressin 수치 ▸ < 4 pg/ml. 혈장 삼투압이 조금만 올라도 AVP가 10 pg/ml까지 증가하며, AVP > 20 pg/ml에서 요 삼투압이 최대로 증가한다.",
+    "정상 동물에서 vasopressin은 혈관 평활근 수축을 조절하지 않지만, 저혈압 상태에서는 필수적이다. 사람에서 동맥압의 유의한 증가를 얻으려면 혈장 AVP 50 pg/ml에 도달해야 한다.",
+    "AVP의 승압(혈관수축) 효과는 비아드레날린성이며, 동맥 평활근에 대한 직접·간접 효과로 매개되는 것으로 생각된다.",
+    "V1R 자극 ▸ 피부·골격근·지방·방광·자궁근층·간·비장·췌장·갑상선의 혈관수축. 저농도 AVP ▸ 뇌·폐·장간막·신장 혈관의 확장.",
+    "강력한 방출 자극이 있어도 뇌하수체 저장 AVP의 10–20%만 즉시 방출될 수 있고, 이후 방출은 훨씬 느려 혈관확장성 쇼크에서 이상성(biphasic) 반응이 나타난다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "약리학"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "외인성 AVP"
+  },
+  {
+   "type": "list",
+   "items": [
+    "합성 AVP(8-arginine vasopressin)의 멸균 수용액으로 IV·IM·SC 투여 가능. 위장관에서 파괴되므로 비경구 투여만 한다.",
+    "단백결합이 없고 분포용적 140 ml/kg, 반감기 약 24분. 신배설(65%)과 조직 peptidase 대사(35%)로 제거된다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Terlipressin"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Triglycyl-lysine vasopressin — 순환 중 lysine vasopressin으로 전환되는 합성 prodrug. V1R 선택성이 더 높고 작용 지속시간이 길다(유효 반감기 약 6시간 vs vasopressin 16–24분).",
+    "개의 출혈성 위장염 관리에 사용되었으나 예후 개선은 없었다.",
+    "단독 및 norepinephrine 등과의 병용에서 MAP 상승에 효과적이었으나, 특히 말초 청색증/허혈 등 이상반응 위험이 유의하게 증가할 수 있다. 허혈 위험과 이득이 더 명확해질 때까지 신중히 사용해야 한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Selepressin"
+  },
+  {
+   "type": "list",
+   "items": [
+    "새로운 선택적 V1R 작용제. 패혈성 쇼크 사람, 패혈증 실험 양, 건강한 연구견에서 연구되었다.",
+    "건강한 실험견에서 AVP 대비 관상동맥 허혈 위험이 감소했다. 장간막 혈류와 위점막 관류에 대한 악영향도 AVP보다 유의하게 적었으나, norepinephrine 역시 이 지표들을 개선했다.",
+    "MAP 유지, 혈관 누출·부종 형성 감소, 쇼크 지속기간 단축으로 norepinephrine의 효과적 대체제임이 제시되었으나, 최근 norepinephrine 투여 중인 사람 환자에서 위약과 비교했을 때 예후 개선은 없었다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Desmopressin (DDAVP)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "합성 vasopressin 유사체로 비강용·주사용 제형이 있다(경구정제도 제조되나 경구 생체이용률이 매우 낮다).",
+    "주로 V2R에 결합하므로 단위 체중당 AVP보다 항이뇨·전응고 활성이 강하고 승압 작용은 약하다.",
+    "두 제형 모두 냉장 보관해야 한다(비강 제형은 실온에서 3주간 안정).",
+    "Factor VIII과 plasminogen factor의 혈장 농도를 용량 의존적으로 증가시킨다. Factor VIII 관련 항원과 ristocetin cofactor 활성도 소폭 증가시키나 효과는 3–4시간만 지속된다.",
+    "개에서 항이뇨 작용 발현은 대개 투여 후 2시간 이내, 2–8시간에 최고, 최대 24시간까지 지속. 대사는 잘 알려져 있지 않으며 사람의 IV 투여 후 말단 반감기는 0.4–4시간이다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "임상적 사용"
+  },
+  {
+   "type": "table",
+   "title": "Table 148.2 — Vasopressin 또는 DDAVP 치료의 적응증과 용량",
+   "headers": [
+    "적응증",
+    "용량"
+   ],
+   "rows": [
+    [
+     "심폐소생술",
+     "0.4–0.8 U/kg IV ± 1–4 mU/kg/min AVP IV CRI (개)ᵃ"
+    ],
+    [
+     "혈관확장성 쇼크",
+     "0.5–5 mU/kg/min AVP IV CRI (개)ᵃ"
+    ],
+    [
+     "중추성 요붕증",
+     "DDAVP 0.1 mg/ml 비강용액 1–4방울 결막낭 내 q12-24h, 또는 0.01–0.05 ml SC q12-24h / 대안: aqueous AVP 3–5 IU/두(개) 또는 0.5 IU/kg(고양이) SC q4h 또는 필요 시 / 경구 DDAVP 정제 0.1–0.2 mg/두 PO q8-12h(개)ᵇ, 25–50 mcg PO q8-12h(고양이)"
+    ],
+    [
+     "von Willebrand disease",
+     "DDAVP 1–4 mcg/kg SC q3-4h (개)"
+    ],
+    [
+     "위장관 질환, 출혈성 쇼크",
+     "미상(unknown)"
+    ]
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "ᵃ사람 용량에서 외삽; 고양이 용량은 알려져 있지 않다. ᵇ개에서는 생체이용률이 효과를 제한할 수 있다. (AVP: arginine vasopressin, CRI: constant rate infusion, DDAVP: 1-deamino-8-D-arginine vasopressin)"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "심폐소생술 (CPR)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "초기 연구들은 vasopressin이 ROSC나 생존에서 epinephrine과 최소한 동등하다고 시사했으나, 최근 연구들은 epinephrine 단독 대비 vasopressin(±epinephrine)의 이득이 없다고 본다.",
+    "개 60마리 무작위 전향 연구 ▸ AVP(0.5–1 U/kg)와 저용량 epinephrine(0.01–0.02 mg/kg) 간에 생존이나 6분 ROSC의 차이가 없었다. 다만 대부분의 개에서 사용된 AVP 용량이 권장 용량 0.8 U/kg보다 낮았고 기저 질환도 매우 다양했다. 다른 관찰연구에서는 AVP 치료와 성공적 소생 간 연관 가능성이 보고되었다.",
+    "돼지 실험적 CPR ▸ AVP가 epinephrine 대비 뇌 산소 운반, 소생 성공률, 신경학적 예후, 주요 장기 혈류를 개선.",
+    "AHA 지침은 2000년부터 불안정 심실빈맥·심실세동 치료에 vasopressin을 포함했으나, 2019년 최신 개정에서는 심정지에서 고려할 수는 있으나 epinephrine의 대체제로서 이득이 없고, epinephrine과의 병용도 epinephrine 단독 대비 이점이 없다고 보고했다.",
+    "RECOVER 수의 지침 ▸ 개·고양이 CPR 중 AVP 요법(0.8 U/kg)을 epinephrine의 허용 가능한 대안으로 제시. 최근 vasopressin 가격 상승으로 특히 수의학에서 사용은 덜 흔해졌다.",
+    "심정지 후 vasopressin 수치는 상승하며, 소생에 성공한 사람에서 그렇지 못한 환자보다 유의하게 높다.",
+    "Vasopressin은 epinephrine보다 작용 지속이 짧지만 저산소·산혈 상태의 심정지에서 더 큰 혈관수축 효과를 낸다(산혈 상태의 효능은 최근 이견 제기).",
+    "개 외삽 용량 ▸ 0.4–0.8 U/kg IV, 필요 시 1–4 mU/kg/min CRI. 정상 실험동물에서 AVP 반감기는 10–20분.",
+    "기관내·기관지내 투여 ▸ 개에서 두 경로 모두 epinephrine 대비 유의하게 높은 이완기 혈압을 보였다. 돼지 CPR 모델의 기관지내 vasopressin은 위약 대비 관상동맥 관류압과 소생 성공률을 높였다. 정맥 접근이 지연·불가능할 때 대안으로 고려할 수 있다.",
+    "골내(IO) 투여는 돼지 실험 CPR 모델에서 IV 투여만큼 효과적임이 최근 확인되었다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "혈관확장성 쇼크 (Vasodilatory Shock)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Vasopressin 결핍은 sepsis, 장기화된 출혈성 쇼크, 심정지에 이차적인 vasoplegia 동물에서 중요한 역할을 할 수 있다.",
+    "실험적으로 혈장 AVP 농도 20–30 pg/ml를 얻는 외인성 AVP 주입은 장기관류에 최소한의 악영향만으로 혈압을 회복시킬 수 있다.",
+    "개 연구 ▸ 출혈성 쇼크 초기 AVP 농도 300–1000 pg/ml, 실험적 내독소혈증 후 500–1200 pg/ml. 쇼크 후기에는 방출된 AVP의 분해와 신경뇌하수체 저장 고갈(재합성에 시간 소요)로 수치가 감소하며, 출혈성 쇼크 후기에는 29 pg/ml까지 떨어졌다.",
+    "진행성 혈관확장성 쇼크 사람 ▸ AVP 분비 결핍과 AVP 유발 혈압 변화에 대한 감수성 증가가 동시에 존재.",
+    "낮은 AVP 수치의 대안 가설 ▸ sepsis에서 자율신경 반사 손상으로 저혈압 환자의 압력수용체 자극 감소, 용적 부하나 기계환기로 인한 심방 신전수용체의 긴장성 억제, nitric oxide나 높은 순환 norepinephrine에 의한 AVP 방출 억제.",
+    "사람 연구 ▸ 불응성 저혈압에 AVP IV 주입이 유망한 결과. 많은 환자가 AVP 추가로 카테콜아민 지지에서 이탈했다.",
+    "요량 증가 ▸ 신 원심성 세동맥 수축에 의한 신관류압 증가, nitric oxide 유발 혈관확장, 나트륨이뇨를 증가시키는 oxytocin 수용체 자극, 심방나트륨이뇨펩티드 증가가 원인으로 추정된다.",
+    "AVP 요법은 중환자에서 AKI의 신부전 진행률을 낮추고 신대체요법 필요를 줄일 수 있다. 다만 최근 메타분석에서는 norepinephrine 대비 사망률의 유의한 개선은 없었다.",
+    "패혈성 쇼크에서 vasopressin 사용은 카테콜아민 요구량을 줄이고 이탈을 용이하게 할 수 있으며, vasopressin + norepinephrine 병용은 norepinephrine 단독 대비 저혈압을 더 빨리 해소할 수 있다.",
+    "한 연구 ▸ 생리적 수준의 corticosteroid와 AVP를 함께 받은 환자가 norepinephrine + corticosteroid 또는 corticosteroid 없는 단독 요법보다 사망률이 낮았다.",
+    "고용량 요법은 과도한 관상·내장 혈관수축과 과응고 상태를 유발한다. 과도한 혈관수축은 CO 감소나 치명적 심장 사건으로 이어질 수 있으며, 특히 심근 기능이 저하된 환자에서 위험하다.",
+    "Guzman 등 ▸ 내독소성 쇼크 마취견에서 IV norepinephrine과 IV AVP 비교. AVP군의 더 뚜렷한 서맥을 제외하면 전신·내장 혈류 변화는 비슷했으나, AVP 주입은 신혈류와 산소 운반을 회복시킨 반면 norepinephrine은 그러지 못했다.",
+    "Morales 등 ▸ 실험적 출혈성 쇼크 개에서 MAP 40 mmHg 유지에 norepinephrine 3 mcg/kg/min이 필요했던 상황에서 AVP 주입 후 MAP가 39±6 → 128±9 mmHg로 상승. 혈청 AVP는 급성 출혈 중 현저히 상승했다가 AVP 투여 전 319±66 → 29±9 pg/ml로 감소했다.",
+    "임상 ▸ 불응성 혈관확장성 쇼크 개에서 0.5 mU/kg/min으로 시작해 MAP > 70 mmHg, 심박수 < 140 bpm를 목표로 4 mU/kg/min까지 증량. MAP가 유의하게 증가했고 명백한 부작용은 최소였다(평균 사용 용량 2.1 mU/kg/min). 다만 해당 연구의 개들은 모두 안락사되거나 사망해 생존 정보는 없다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "출혈성 쇼크"
+  },
+  {
+   "type": "list",
+   "items": [
+    "AVP는 피부·골격근·위장관·장간막·말초로부터 혈류를 재분배시켜 이들 부위의 출혈을 최소화한다.",
+    "한 사람 외상 연구에서 수액 요구량과 사망률을 감소시켰고, 최근에는 급성 외상 환자에서 수혈 요구량과 심부정맥혈전증 위험을 유의하게 감소시키는 것으로 나타났다(다만 해당 연구는 관통상 비중이 컸으므로, 더 심한 둔상 환자에서 저용량 vasopressin이 효과적인지는 추가 연구가 필요).",
+    "실험동물 연구의 최근 메타분석 ▸ vasopressin이 다른 vasopressor를 포함한 모든 치료보다 출혈성 쇼크 관리에 더 효과적으로 보였다. 그러나 사람·동물 임상 연구에서의 확인이 필요하다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "중추성 요붕증"
+  },
+  {
+   "type": "list",
+   "items": [
+    "내인성 AVP 결핍에 의한 중추성 요붕증 동물은 aqueous vasopressin 또는 DDAVP 치료로 이득을 볼 수 있다.",
+    "수분 중독(water intoxication) 예방에 주의하고, 치료 중 전해질을 연속 측정해야 한다.",
+    "DDAVP가 항이뇨 활성이 더 크고 승압 작용 가능성이 적어 선호되는 경우가 많다.",
+    "용량 ▸ 0.1 mg/ml 비강용액 1–4방울을 결막낭에 q6-24h. 대안으로 DDAVP 0.01–0.05 ml SC q6-24h(개).",
+    "Aqueous vasopressin ▸ 개 3–5 U/두, 고양이 0.5 U/kg SC q4h 또는 필요 시.",
+    "고양이 중추성 요붕증에서 경구 DDAVP 정제 25–50 mcg PO q8-12h는 소규모 코호트에서 안전했고 효과는 가변적이었다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "von Willebrand Disease"
+  },
+  {
+   "type": "list",
+   "items": [
+    "DDAVP 요법이 도움이 될 수 있으나, type IIB나 platelet-type(pseudo) vWD에서는 혈소판 응집과 혈소판감소증이 발생할 수 있어 제외한다.",
+    "짧은 작용시간(2–4시간), 비용, 저항성(tachyphylaxis) 발생으로 반복 투여가 무효해지는 문제로 치료가 제한되는 경우가 많다.",
+    "중증 type II·III vWD 개에서는 효과가 없다.",
+    "용량 ▸ DDAVP 1–4 mcg/kg SC q3-4h. 작용 발현은 대개 30분 이내, 효과는 약 2시간 지속.",
+    "DDAVP는 요독증 등 다양한 다른 질환 상태에서도 혈소판 기능을 개선할 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "위장관 및 폐 질환"
+  },
+  {
+   "type": "list",
+   "items": [
+    "사람에서 사용되나 개에서는 아직 연구되지 않은 적응증 ▸ 식도정맥류와 위장관 출혈의 급성 치료, 수술 후 장폐색 환자의 연동운동 자극, 복부 영상검사 전 장내 가스 배출.",
+    "AVP는 화상·연기흡입 이차 급성 폐손상 양 모델에서 심폐 기능을 개선하는 것으로 나타났으며, 추가 연구가 유망한 영역이다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "부작용"
+  },
+  {
+   "type": "list",
+   "items": [
+    "AVP는 방광·담낭 평활근 수축을 일으키고 연동운동(특히 결장)을 증가시킬 수 있다. 위분비를 감소시키고 위장관 괄약근 압력을 증가시킬 수 있다.",
+    "잠재적 부작용 ▸ 주사 부위 국소 자극, 혈관외 유출 시 피부 괴사, 피부 반응.",
+    "혈관확장성 쇼크로 AVP를 투여받은 사람에서 간효소·빌리루빈 상승, 혈소판 감소, 저나트륨혈증, anaphylaxis, 기관지경련, 복통, 혈뇨, 두드러기가 보고되었으나 부작용 발생률은 상당히 낮아 보인다.",
+    "이론적으로 AVP가 vWF 방출을 유발하므로 혈소판 응집을 증진해 혈전증 위험을 높일 수 있다.",
+    "요붕증에 대한 고용량 요법에서 수분 중독이 보고되었다.",
+    "Vasopressin 또는 DDAVP는 결막낭 투여 시 자극을 유발할 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Vasopressin 길항제"
+  },
+  {
+   "type": "list",
+   "items": [
+    "다양한 질환에 대해 vasopressin 길항제 치료 연구가 진행 중이다.",
+    "V1R 길항제 ▸ 지주막하 출혈 관리에 유용할 가능성.",
+    "V2R 길항제 ▸ 울혈성 심부전 사람·개에서 loop 이뇨제보다 선호될 가능성.",
+    "내인성 AVP 상승이 환자에게 해로운 다양한 질환 상태의 치료에 vasopressin 길항제는 큰 가능성을 지닌다."
+   ]
+  }
+ ]
+}

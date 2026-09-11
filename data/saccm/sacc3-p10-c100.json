@@ -1,0 +1,108 @@
+{
+ "id": "sacc3-p10-c100",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part X",
+ "part_title": "Hematologic Disorders",
+ "chapter_num": 100,
+ "title": "Platelet Disorders",
+ "author": "Ronald H. L. Li, DVM, MVetMed, PhD, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "혈소판 질환의 흔한 임상징후는 점상출혈, 반상출혈, 점막 출혈, 흑색변이다.",
+    "후천성 혈소판감소증은 생성 감소, 소모 증가, 파괴 증가, 격리(sequestration)로 발생하며 임상적으로 유의한 출혈을 일으킬 수 있다.",
+    "후천성 혈소판 기능장애 치료의 핵심은 혈소판 기능을 저해하는 약물의 중단과 기저질환의 적극적 치료다.",
+    "선천성 혈소판 질환은 결함이 있는 혈소판 구성요소에 따라 분류하며, 확진에는 고급 혈소판 기능검사와 표적 단백·유전자 검사가 필요하다.",
+    "모든 혈소판 질환 치료의 기본은 출혈 소인의 예방과, 혈소판 수혈·항섬유소용해제·desmopressin을 통한 주요 출혈의 조절이다."
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "혈소판은 지혈의 1차 효과세포로, 혈관 손상 시 부착–활성화–응집을 거쳐 혈소판 마개를 형성하고 thrombin 생성을 촉진한다. 개에서는 점상출혈·피부 반상출혈·흑색변이 가장 흔한 초진 소견이며, 고양이에서는 혈종·비출혈·혈뇨도 보고된다."
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "후천성 혈소판감소증"
+  },
+  {
+   "type": "list",
+   "items": [
+    "일반적으로 혈소판 <30 × 10⁹/L에서 자발출혈이 가능하고, <10 × 10⁹/L에서 치명적 출혈 위험이 가장 높다. 다만 모든 환자가 출혈 징후를 보이지는 않으며, 마우스 모델에서 염증이 출혈 발생의 핵심 조절인자로 확인되었다.",
+    "개 ITP에서 초기 혈소판 수치는 생존과 상관관계가 없다. 오히려 입원 시 흑색변의 존재가 수혈 요구량 증가·사망률과 연관된다.",
+    "DOGiBAT 출혈 점수: 9개 해부학적 부위별 0(없음)–1(경증)–2(중증) 등급. 다기관 연구에서 수혈 요구량과 양의 상관, 혈소판 수와 음의 상관을 보여 체계적 평가 도구로 유용하다.",
+    "고양이의 원발성 ITP는 드물지만 혈소판 <50 × 10⁹/L에서 급성 잇몸출혈, 비출혈, 반상·점상출혈, 혈종이 보고된다.",
+    "ITP 기전: 혈소판 integrin αIIbβ3(fibrinogen 수용체) 또는 GPIb-IX(vWF 수용체)에 결합한 자가항체로 인해 비장 대식세포의 탐식이 증가한다.",
+    "원인 분류(Box 103.1) — 소모 증가: DIC, 급성·중증 출혈, 패혈증, 혈전성 미세혈관병증, 대량 혈전, 의인성(혈액투석, 심폐우회 후, 대량수혈 희석, EDTA 매개). 파괴 증가: 원발·속발 ITP(anaplasmosis, babesiosis, ehrlichiosis, 종양). 생성 감소: 골수질환, 항암화학요법. 격리: 비장 격리, 패혈증/SIRS.",
+    "패혈증성 혈소판감소증: 중증도가 사망률과 연관된다. 미생물–혈소판 직접 상호작용, 혈소판–백혈구 응집체 형성, 미세혈관 혈전에 의한 격리가 복합 작용한다. 개 혈소판은 기능적 TLR4를 발현해 LPS 환경에서 ADP·TXA2 의존적으로 활성화된다. 과도한 NETs 생성은 혈전 형성을 가속하고 섬유소용해를 저해해 장기부전과 혈소판감소를 악화시킨다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "후천성 혈소판 기능장애"
+  },
+  {
+   "type": "list",
+   "items": [
+    "요독증: 사람에서 잘 알려진 원인. 개에서는 응집·활성화는 정상이나 부착이 손상된다. AKI 개에서 vWF 농도는 정상~증가인데 vWF 결합 활성이 감소하여, 사람 2형 vWD와 유사한 표현형을 보인다. 전단력이 높은 미세순환에서 더 두드러진다.",
+    "간질환: 혈소판감소와 기능장애를 모두 유발한다. 간악성종양·간경변 개는 간염 개보다 혈소판 수가 낮다. Collagen·arachidonic acid에 대한 응집 감소가 보고되며, 사람 간경변에서는 혈소판 COX·thromboxane synthetase 활성 손상이 확인되었다.",
+    "심질환: 중증 HCM 및 수축기말 심강 폐쇄가 있는 고양이는 순환 활성 혈소판이 많다. HCM 유전소인 고양이의 혈소판은 ADP에 과반응한다. 개 심근병증에서는 혈소판 기능 항진이 입증되지 않았다.",
+    "Hydroxyethyl starch(HES): ① integrin αIIbβ3·GPIb 외부 도메인에 결합해 구조변화와 응집·부착을 억제, ② fVIII/vWF 복합체 형성을 방해해 청소를 가속, ③ 세포내 신호전달 간섭. 개 자발성 복강내출혈 무작위 시험에서 HES 초기 소생은 등장성 결정질액 3배량 대비 응고 지연과 불안정한 fibrin 망을 초래했다. 기존 혈소판 질환 환자에서는 HES를 피한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "혈소판 기능에 영향을 주는 약물 (Table 103.1)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "항혈소판제: Clopidogrel(활성대사체 반감기 3–5시간, 혈소판 억제는 최대 14일 지속), Aspirin(반감기 고양이 37.5시간, 개 8.5시간).",
+    "NSAIDs(ketoprofen, meloxicam, deracoxib, carprofen): 문헌이 상충한다. 혈소판생성이 항진된 동물에서 기능장애를 악화시킬 수 있으나, COX-2 선택적 억제제로 임상적으로 유의한 출혈은 드물다. 다만 혈소판생성 항진·항암치료 후에는 COX-2가 상향조절되어 TXA2 합성에 기여하므로 선택적 억제제도 문제가 될 수 있다.",
+    "혈소판 내 cyclic nucleotide 증가 약물: pimobendan(임상농도의 1000배에서만 in vitro 억제), sildenafil(NO 공여제 병용 시 상승작용), theophylline, aminophylline.",
+    "NO 공여제: sodium nitroprusside, nitroglycerin.",
+    "항혈전제: heparin, fXa 억제제(rivaroxaban, apixaban) — 항혈소판제와 병용 시 TF 매개 응집과 혈소판 의존 thrombin 생성이 상승적으로 억제된다.",
+    "섬유소용해제: streptokinase, tPA — 소동물 자료 없음. Plasmin은 fibrinogen 분해·integrin αIIbβ3 절단으로 응집을 저해하는 한편 thrombin 수용체를 절단해 응집을 유도하기도 한다.",
+    "항생제: β-lactam·cephalosporin은 용량·시간 의존적으로 혈소판 기능에 영향을 준다.",
+    "SSRI(fluoxetine, trazodone), 합성 콜로이드(dextran, HES), vitamin E/selenium 보충도 영향을 줄 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "선천성 혈소판 질환"
+  },
+  {
+   "type": "list",
+   "items": [
+    "분류(Fig. 103.2): A) 부착 수용체 결함, B) 작용제 수용체 결함, C) 과립 결함, D) 신호전달 결함, E) 전응고성 막 형성 결함.",
+    "선천성 vWD: 엄밀히는 혈소판 자체 질환이 아니나 고전단 환경에서 부착·응집 이상을 유발한다. 1형(양적 감소) — Doberman Pinscher 외 54개 견종, 상염색체 열성. 2형(질적 이상, 2A/2B/2M/2N) — 2A형은 고분자량 다합체 현저 감소, German Shorthair/Wirehair Pointer에서 보고. 3형(vWF 완전 결손, 가장 중증) — 고양이 및 Chesapeake Bay Retriever, Shetland Sheepdog, Scottish Terrier, Dutch Kooiker에서 보고.",
+    "Glanzmann thrombasthenia(GT): ITGA2B 유전자 변이로 αIIbβ3 발현 결손. Otterhound, Great Pyrenees, 단모 고양이에서 보고. 협점막출혈시간 연장, PFA-100 폐쇄시간 연장, 혈병수축 감소/소실, 작용제 유도 응집 소실. 확진은 유세포분석·Western blot·DNA 검사.",
+    "Bernard–Soulier 증후군(BSS): GPIb-IX-V 복합체 이상으로 대혈소판감소증과 혈소판 생존 단축. Cocker Spaniel에서 GP9 유전자 변이로 보고되며, 자연 소실되는 점막출혈부터 중증 산후출혈까지 다양하다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료 (Table 103.4)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "기본 원칙 두 가지: 출혈 소인의 예방과 주요 출혈의 조절. 근육주사를 피하고, 항혈소판·항혈전 효과가 확인된 약물을 중단한다(반감기가 짧아도 비가역적 억제는 혈소판 수명 4–6일을 넘어 지속될 수 있다).",
+    "전혈 유래 혈소판(8×10¹⁰): 중증 혈소판감소(≤10×10⁹/L) 예방적 투여, 침습적 처치 전(≤50×10⁹/L), 빈혈·쇼크·두개내/폐출혈을 동반한 중증 혈소판감소, 선천·후천성 혈소판 질환의 조절되지 않는 출혈. 1 unit/10 kg으로 시작해 효과에 따라 추가.",
+    "Trehalose 안정화 동결보존 혈소판 농축액: 3×10⁹ platelet/kg. 개 전향 임상시험에서 안전했으나 혈소판 수 상승이나 출혈 점수 개선은 유의하지 않았다.",
+    "신선전혈: 빈혈을 동반한 출혈 시 10 ml/kg으로 시작.",
+    "Cryoprecipitate: 1·2·3형 vWD에 1 unit/10–15 kg.",
+    "Desmopressin(DDAVP) 1–3 µg/kg IV 또는 SC: 경증 출혈, 혈소판 수혈 보조, aspirin 유발 기능장애, 간질환±요독증에 의한 기능장애, 1·2형 vWD. 개에서 aspirin 유발 기능장애의 협점막출혈시간과 만성 간질환의 응고시간을 단축시켰다.",
+    "항섬유소용해제(EACA, tranexamic acid): 선천성 혈소판 질환에서 치과처치·중성화 등 경미한 선택적 처치 전 3–5일 단기 예방 투여, 중등도 이상 출혈의 보조요법, 혈소판 수혈 병용요법.",
+    "신선동결혈장 6–10 ml/kg: 소모성 응고장애·저fibrinogen혈증 동반 시, 1·2·3형 vWD."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,511 @@
+{
+ "id": "sacc3-p15-c130",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part XV",
+ "part_title": "Anesthesia and Pain Management",
+ "chapter_num": 130,
+ "title": "Anesthesia in the Critically Ill Patient",
+ "author": "Jane Quandt, BS, DVM, MS, DACVAA, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "마취 관련 합병증을 최소화하려면 마취 전 중환자의 상태를 적절히 안정화하는 것이 필수다.",
+    "발생 가능한 문제를 예상하고, 마취 유도 전에 적절하고 효율적인 치료 계획을 세워 둔다.",
+    "심하게 저하된 중환자에서는 마취 약물 용량을 정상 건강 동물의 절반까지 줄일 수 있는 경우가 많다.",
+    "단일 약물 사용의 해로운 영향을 최소화하기 위해 balanced anesthesia 기법을 고려한다.",
+    "마취된 중환자에 대한 집중 모니터링이 필수적이다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "총론"
+  },
+  {
+   "type": "list",
+   "items": [
+    "중환자는 생리가 변화되어 있고 예비능이 감소되어 있어 마취제의 약동학·약력학이 달라진다. 스트레스 최소화와 산소 운반 최적화가 이득이 된다.",
+    "불안정한 상태에서 마취를 유도하면 마취 관련 합병증 위험이 커지므로, 마취제 노출 전 안정화가 필수다.",
+    "마취 전 필요에 따라 반복 신체검사, 영상검사, 혈액화학, CBC, 응고검사, 산-염기 상태, 혈당, 젖산을 평가한다. 탈수·저혈량 상태와 수액·산염기·전해질 결핍은 유도 전에 교정하는 것이 이상적이다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "안정화 - 혈관 접근"
+  },
+  {
+   "type": "list",
+   "items": [
+    "중환자는 마취 중 저혈압이 드물지 않으므로 정맥 접근 유지가 필수다. 탈수·저혈량·관류 불량·저체온 상태에서는 근육내·피하 투여 약물의 흡수가 지연되므로 정맥 투여를 선호한다.",
+    "여러 개의 말초 카테터 또는 중심정맥관을 두는 것이 유리하다. 수술 후 반복 채혈이나 parenteral nutrition(PN)이 예상되면 회복 전에 중심정맥관을 설치한다.",
+    "수액 속도 요구가 다르고 vasopressor, 중탄산나트륨, 수혈제제 간 배합 부적합 가능성이 있으므로, 불안정한 환자에서는 유도 전 최소 2개의 정맥 카테터를 확보한다.",
+    "혈액제제는 오염과 세균 증식 우려 때문에 전용 카테터로 투여하고 수혈 중 같은 라인에 다른 수액·약물을 투여하지 않는다. PN도 전용 라인을 사용한다.",
+    "마취 전·중에 따뜻한 수액을 공급해 장기 관류와 체온을 유지한다. Shock bolus 속도가 필요하면 가장 짧고 굵은 카테터(말초 cephalic)가 가장 빠른 투여를 가능하게 한다.",
+    "전신마취 후에는 동맥 카테터 설치를 권장한다. 직접 동맥압 측정과 동맥혈 가스 채혈이 가능해진다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "안정화 - 적혈구용적, 교질, 알부민"
+  },
+  {
+   "type": "list",
+   "items": [
+    "적절한 산소 운반능을 위해 PCV >25%가 필요하다. 마취 중 PCV는 3%–5% 감소할 수 있어, 소량의 출혈도 마취된 동물에서는 의미가 크고 수혈이 필요할 수 있다.",
+    "저단백혈증(총단백 ≤3.5 g/dl 및/또는 알부민 ≤2 g/dl) 환자는 정상 교질삼투압(COP; 정상 = 18–24 mm Hg) 유지와 부종·혈관 누출 예방을 위해 교질이 도움이 될 수 있다. 마취 전 COP 측정은 교질 지원의 필요성과 중단 시점 결정에 유용하다.",
+    "교질 선택지: Hetastarch, VetStarch, 동결건조 개 알부민 5 g, 종 특이 혈장.",
+    "고분자량 hydroxyethyl starch(Hetastarch)는 용량 의존적으로 응고를 저해하므로 저응고·저단백혈증 수술 환자에서 사용이 제한된다. VetStarch는 저분자량 tetrastarch로 응고 영향이 훨씬 적어 COP 지원에 쓸 수 있으나 고위험 저응고 환자에서는 사용을 최소화하는 것이 신중하다.",
+    "Hydroxyethyl starch 제제는 사람에서 신손상과 연관되었고 소동물에서의 위험은 완전히 규명되지 않았으므로, 신장질환이 있거나 고위험으로 판단되는 동물에서는 피하는 것이 권장된다.",
+    "소형·저응고·저알부민혈증 환자에서는 fresh-frozen plasma(FFP) 6–20 ml/kg가 정당화된다. 다만 알부민을 1 g/dl 올리려면 FFP 약 45 ml/kg가 필요해 대형견에서는 용량·비용이 제한 요인이다.",
+    "동결건조 개 알부민은 5 g 제형으로 시판되며 0.9% 생리식염수로 재구성한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "기저 대사질환 평가"
+  },
+  {
+   "type": "list",
+   "items": [
+    "신부전 환자는 신관류 유지를 위해 더 높은 수액 속도가 필요할 수 있고 마취 중 요량을 면밀히 감시해야 한다. 신장으로 배설되는 약물(고양이의 ketamine 등)은 배설이 지연되므로 신중히 사용한다.",
+    "간질환 환자는 포도당·알부민 생성 저하, cytochrome P-450을 통한 약물대사 변화, 응고인자 생성 감소로 마취 프로토콜과 모니터링이 달라진다.",
+    "심잡음은 판막질환의 존재를 시사할 수 있다. 이런 환자는 마취 중 보상능이 떨어지므로 수액 과부하를 피하고 혈압을 면밀히 감시한다(마취 유발 저혈압이 비대상성으로 이어질 수 있다).",
+    "NSAID, 이뇨제, 항경련제, 심장약 등 현재 투여 중인 약물을 반드시 확인한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "전처치(Premedication)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "심한 통증이 있거나 매우 사나운 경우가 아니면 전처치가 필요하지 않을 수 있다.",
+    "전처치가 유익하다고 판단되면 mu 작용제 오피오이드(hydromorphone, morphine, 또는 NMDA 비경쟁적 억제 작용도 가진 methadone)를 midazolam이나 저용량 acepromazine(0.005–0.01 mg/kg)과 함께 근육내 투여해 진통과 진정을 제공한다.",
+    "중환자에서 acepromazine은 심한 저혈압 가능성 때문에 정상 동물보다 낮은 용량을 쓴다.",
+    "kappa 작용제 butorphanol과 부분 mu 작용제 buprenorphine은 심한 통증에 불충분할 수 있으므로 mu 작용제를 선호한다.",
+    "사납지만 취약한 고양이에서는 alfaxalone + 오피오이드 + 벤조디아제핀 조합이 alpha-2 작용제나 해리성 마취제보다 심혈관 영향이 적으면서 진통·보정·근이완을 제공한다. 소형견에도 유용하지만 대형견 IM 투여 시에는 alfaxalone 용적이 커서 적합하지 않다.",
+    "mu 작용제 + alpha-2 작용제 및/또는 해리성 약물의 IM 병용은 심한 통증이나 극도로 사나운 동물에 쓸 수 있으나, 대개 둔감하고 다루기 쉬운 중환자에서는 거의 적응이 되지 않는다.",
+    "항콜린제는 서맥 치료가 필요한 경우가 아니면 일상적으로 쓰지 않는다.",
+    "마취 시간을 줄이기 위한 프로토콜을 마련한다. 가능하면 유도 전에 수술 부위를 제모한다.",
+    "유도 전 수 분간 preoxygenation을 하면 삽관에 필요한 시간 여유가 생기며, 호흡곤란이나 기도 확보가 어려운 동물에서 특히 유용하다.",
+    "유도 전에 심전도와 혈압 모니터링을 준비해 유도 중 발생 가능한 부정맥·저혈압·심혈관 허탈을 감지한다. 심하게 저하된 동물에서는 atropine, epinephrine 등 심정지 치료 약물을 유도·마취 기간 내내 곁에 둔다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "마취 유도(Induction)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "저하된 중환자에서는 마취 약물 용량을 정상 건강 동물의 절반까지 줄일 수 있는 경우가 많다(Table 133.1).",
+    "유도 약물은 IV로 천천히 효과에 맞춰 적정하며, 삽관에 필요한 최소량만 사용한다.",
+    "Balanced anesthetic technique을 사용해 단일 약물의 부작용을 최소화한다. 적절하다면 국소마취 블록과 경막외마취를 병용해 전신마취제 요구량을 줄인다.",
+    "기도 보호와 환기 능력 확보를 위해 항상 삽관한다. 응급 환자는 위가 차 있다고 간주하고 흡인 위험이 있다고 본다.",
+    "유도 전 maropitant(neurokinin 수용체 길항 항구토제) 1 mg/kg IV를 개·고양이에 투여하면 구토 예방에 도움이 된다.",
+    "후두경, 다양한 크기의 기관내관, 환자 크기에 맞는 호흡회로를 준비하고 모든 장비를 유도 전에 철저히 점검한다. 저환기·무호흡·흉강 수술 시에는 즉시 양압환기를 시행할 준비를 한다.",
+    "이상적으로는 심혈관계·신경계가 적응할 시간을 주는 완만한 마취 이행이 좋다. 그러나 중환자는 적절히 반응하지 못할 수 있어 즉시 개입할 준비가 필요하다. 예를 들어 호흡곤란 환자는 기도 확보와 100% 산소 환기를 위해 rapid-sequence intubation이 필요하다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "유도 약물 - Thiopental과 Propofol"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Thiopental과 propofol은 발현이 약 30초로 빨라 rapid-sequence induction에 적합하며 IV로 투여한다.",
+    "작용시간은 thiopental 10–15분, propofol 5–10분으로 짧으며, 작용시간이 더 짧은 propofol이 선호될 수 있다.",
+    "두 약물 모두 diazepam이나 midazolam과 병용해 이완을 개선하고 총 용량을 줄일 수 있다.",
+    "두 약물 모두 심장 부정맥, 저혈압, 무호흡을 일으킬 수 있어 간헐적 양압환기가 필요할 수 있다. 진통 작용이 없으므로 수술 전 별도의 진통제가 필요하다.",
+    "두개내압과 안압을 낮추므로 두부외상 환자의 유도에 적응이 된다.",
+    "새 제형 PropoFlo 28은 고양이에 허가되어 있지 않다. 보존제 benzyl alcohol이 다량 투여 시 고양이에 독성일 수 있고, 고양이는 glucuronic acid 포합능이 낮아 benzoic acid 대사능이 제한적이다. 다만 건강한 고양이에서는 독성 징후 없이 정상 회복으로 안전하게 사용된 바 있다.",
+    "Propofol은 개보다 고양이에서 대사·배설이 느려 내약성이 떨어지고, 반복 투여나 지속주입은 회복 지연과 연관된다. Heinz body를 증가시킬 수도 있다. 쇠약하거나 간기능이 저하된 고양이에서는 PropoFlo 28 사용을 피하는 것이 신중하다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "유도 약물 - Alfaxalone과 Etomidate"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Alfaxalone은 합성 neuroactive steroid로 빠르게 대사·배설된다. Thiopental·propofol처럼 용량 의존적 저환기와 무호흡을 일으키지만 안전역이 넓다.",
+    "CRI로도 사용 가능하고 좋은 근이완과 빠른 회복을 제공한다. 회복 시 paddling, 근육 연축, 심하면 격렬한 움직임 등 흥분이 있을 수 있어 진정이 회복 질을 개선한다. 작용시간은 14–50분으로 짧다.",
+    "마취 위험도가 높다고 평가된 개에서 alfaxalone 1–2 mg/kg IV를 60초에 걸쳐 투여하면 부드러운 회복을 보이는 적절한 유도제로 확인되었다. Fentanyl CRI와 안전하게 병용할 수 있다.",
+    "고양이에서 alfaxalone 유도는 부드럽지만 회복기에 paddling과 진전이 있을 수 있고 용량이 증가할수록 회복 질이 나빠진다. Propofol 유도보다 회복 시 더 혼란스럽고 신경질적일 수 있다.",
+    "Etomidate는 심혈관 영향이 최소여서 심혈관 불안정 환자의 유도에 매력적이다.",
+    "단독 유도제로 쓰면 retching과 myoclonus가 생길 수 있으므로 단독 사용은 피하고, 투여 전에 벤조디아제핀이나 오피오이드를 IV로 주면 이러한 부작용이 줄어든다.",
+    "고양이에서 반복 사용하면 propylene glycol 부형제 때문에 용혈이 생길 수 있다.",
+    "사람 중환자에서 etomidate는 부신 기능이상을 일으켜 이환율·사망률을 높일 수 있다는 점에서 논란이 있다. 중환자에서 부신 기능이상은 24–48시간 지속될 수 있고, hydrocortisone 투여는 결과를 개선하지 못했다. 사람 의학에서는 패혈성 쇼크 환자에 신중히 사용할 것을 권고한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "유도 약물 - Ketamine과 Ketofol"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Ketamine은 유도 프로토콜의 일부로 IV 사용하며 흔히 벤조디아제핀과 함께 투여한다. 단독 사용 시 발작을 유발할 수 있다.",
+    "중추 매개 교감신경 반응과 내인성 카테콜아민 분비로 심박수, 혈압, 심박출량을 증가시킨다. 심근 수축력 증가 가능성 때문에 비대성 심근증 동물에서는 신중히 사용한다.",
+    "직접적 심근 억제 작용도 있어, 내인성 카테콜아민 반응이 저하된 쇠약 환자에서는 저혈압과 심혈관 불안정이 나타날 수 있다.",
+    "NMDA 수용체를 통해 말초·체성 진통을 제공한다.",
+    "Ketofol(coinduction): propofol은 발현이 빠르고 지속이 짧으며 진통이 없고 무호흡·근연축을 일으킬 수 있는데, ketamine을 더하면 진통과 더 긴 작용시간을 얻는다.",
+    "혼합 방법 1: ketamine 200 mg(100 mg/ml)을 propofol 200 mg(10 mg/ml)에 섞어 0.5 ml/kg IV로 투여하며, 혼합액은 최대 12시간까지 보관한다. 방법 2: ketamine 2 mg/kg IV 투여 후 별도 주사기로 propofol 2 mg/kg IV를 투여한다.",
+    "Ketofol 사용은 더 높은 맥박수와 평균동맥압, 우수한 삽관·유도 질과 연관되었다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "유도 약물 - 오피오이드와 Remifentanil"
+  },
+  {
+   "type": "list",
+   "items": [
+    "상태가 안정된 중환자에서는 더 완만한 유도가 가능하다. hydromorphone, methadone, fentanyl 같은 neuroleptanalgesic을 diazepam이나 midazolam과 조합하고, 여기에 propofol, alfaxalone 또는 ketamine을 더해 유도를 마무리한다.",
+    "간기능이 심하게 저하된 개·고양이에서는 remifentanil을 전신마취 중 진통제로 고려할 수 있다. mu 수용체에 직접 작용하는 합성 오피오이드로 작용시간이 초단시간이며, 혈액·조직의 비특이 esterase로 대사되어 간·신 기능과 무관하게 제거된다.",
+    "장기 지속주입 후에도 회복이 매우 빠르다. 개에서는 초기 3 mcg/kg IV 후 0.1–0.3 mcg/kg/min CRI(생리식염수 희석)로 사용되었으며, 주입 기간과 무관하게 5–20분 내에 회복한다.",
+    "작용시간이 짧으므로 통증 상태가 지속되면 remifentanil 종료 시 다른 진통제를 반드시 추가해야 한다.",
+    "다른 오피오이드 CRI처럼 강력한 호흡억제제여서 기계환기가 필요할 수 있으나, 이 호흡억제는 회복 후에는 지속되지 않는다.",
+    "고양이에서도 사용되었으며 1 mcg/kg/min을 초과하는 용량은 dysphoria와 격렬한 운동 활동(frenetic locomotor activity)과 연관되었다.",
+    "Methadone은 mu 작용제이면서 NMDA 수용체 비경쟁적 억제제이며, norepinephrine과 serotonin의 재흡수를 감소시켜 진통에 기여할 수 있다. 서맥을 일으킬 수 있고, serotonin 조절 약물과 병용하면 세로토닌 농도 상승으로 serotonin syndrome이 발생할 수 있어 면밀한 감시가 필요하다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "다중양식(Balanced) 마취와 MLK"
+  },
+  {
+   "type": "list",
+   "items": [
+    "hydromorphone, midazolam, ketamine, lidocaine 같은 여러 약물의 병용이 balanced anesthesia의 예다. 발현은 느리지만 진통을 제공하고 심혈관계를 더 보존한다.",
+    "Ketamine은 진통을 강화하고 심박수와 혈압을 높인다. 이들 약물을 유도에 사용하면 그 용량이 CRI 전 loading dose 역할을 한다.",
+    "개에서 morphine(3.3 mcg/kg/min), lidocaine(50 mcg/kg/min), ketamine(10 mcg/kg/min)을 CRI 진통 조합(MLK)으로 투여할 수 있다.",
+    "Lidocaine은 자유라디칼 제거 능력, 진통 작용, 항부정맥 작용으로 손상 장기의 영향, 재관류 손상, 심실 부정맥을 완화할 수 있다. 그러나 고양이에서는 심혈관 억제 작용 때문에 lidocaine CRI가 권장되지 않는다.",
+    "Propofol은 침해자극에 대한 혈역학적 반응을 막지 못하므로 대수술의 단독 유지 약물로는 권장되지 않는다. 개에서는 lidocaine, ketamine 등과 병용해 total intravenous anesthesia로 사용할 수 있다. Propofol은 음성 변시·변력 작용과 정맥확장을 일으켜 혈압을 낮춘다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "비장질환 환자의 약물 선택"
+  },
+  {
+   "type": "list",
+   "items": [
+    "비장 종양이나 비장 파열이 있는 동물에서는 비장 크기를 늘리는 약물이 종양 파열이나 출혈 증가를 유발할 수 있으므로 유도제 선택이 중요하다.",
+    "Acepromazine, thiopental, propofol은 splenomegaly를 일으킬 수 있어 비장질환 동물이나 복강경 예정 환자에서는 피하는 것이 좋다.",
+    "Hydromorphone과 dexmedetomidine은 비장 크기를 증가시키지 않았다.",
+    "Acepromazine, thiopental, propofol을 투여받은 개에서는 헤마토크릿 감소도 나타나, 빈혈 환자에서 문제가 될 수 있다."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 133.1 마취 약물과 용량 (Anesthetic Agents and Their Dosages)",
+   "headers": [
+    "분류",
+    "약물 및 용량",
+    "비고"
+   ],
+   "rows": [
+    [
+     "항콜린제",
+     "Atropine 0.04 mg/kg IM, 0.02 mg/kg IV; Glycopyrrolate 0.01 mg/kg IM, IV",
+     "분비물을 더 점조하게 만듦; 해부학적 사강 증가; 심박수 증가; 심근 일량·산소소비 증가 가능; glycopyrrolate는 혈액뇌장벽과 태반을 통과하지 않음"
+    ],
+    [
+     "오피오이드 - mu 작용제",
+     "Morphine 0.2–2 mg/kg IM, SC; CRI: loading dose 0.1–0.3, 이후 0.1 mg/kg/hr",
+     "naloxone으로 완전 길항; 진통 작용; 호흡억제; 서맥; 심혈관 성능에는 영향 최소; CRI 시작 전 항콜린제 투여; 고양이는 고체온 감시"
+    ],
+    [
+     "오피오이드 - mu 작용제",
+     "Oxymorphone 0.05–0.2 mg/kg IM, IV, SC",
+     "위와 동일"
+    ],
+    [
+     "오피오이드 - mu 작용제",
+     "Meperidine 2–5 mg/kg IM, SC",
+     "위와 동일"
+    ],
+    [
+     "오피오이드 - mu 작용제",
+     "Hydromorphone 0.05–0.2 mg/kg IV, IM, SC; CRI: 0.025–0.05 mg/kg IV loading dose, 이후 0.01–0.04 mg/kg/hr",
+     "위와 동일"
+    ],
+    [
+     "오피오이드 - mu 작용제",
+     "Fentanyl 0.005–0.05 mg/kg IM, IV, SC; 개 CRI: loading dose 5–10 mcg/kg, 이후 2–10 mcg/kg/hr; 고양이 CRI: loading dose 5 mcg/kg, 이후 2–10 mcg/kg/hr",
+     "위와 동일"
+    ],
+    [
+     "오피오이드 - mu 작용제",
+     "Remifentanil 3 mcg/kg IV; CRI: 0.1–0.3 mcg/kg/min",
+     "위와 동일"
+    ],
+    [
+     "mu 작용제 + NMDA 길항제",
+     "Methadone 0.2–1 mg/kg IV, IM",
+     "서맥을 일으킬 수 있음; 만성통증·신경병증성 통증에 유용"
+    ],
+    [
+     "부분 mu 작용제",
+     "Buprenorphine 0.005–0.02 mg/kg IM, IV",
+     "발현이 느리고 효과를 길항하기 어려움; 중등도 통증에 적합"
+    ],
+    [
+     "kappa 작용제 / mu 길항제",
+     "Butorphanol 0.1–0.8 mg/kg IM, IV, SC; CRI: 0.1–0.2 mg/kg IV loading dose, 이후 0.1–0.2 mg/kg/hr",
+     "mu 작용제의 부분 길항; 심혈관 영향 최소; 심한 통증에는 부적합"
+    ],
+    [
+     "오피오이드 길항제",
+     "Naloxone 0.002–0.02 mg/kg IM, IV",
+     "mu 작용제 효과의 완전 길항"
+    ],
+    [
+     "해리성 마취제",
+     "Ketamine 4–11 mg/kg IV, IM; CRI: 0.5 mg/kg IV loading dose, 이후 0.1–1 mg/kg/hr",
+     "타액분비 유발; 심박수 증가; 두개내압·안압 증가; 진통 작용; 고양이에서는 신장 배설"
+    ],
+    [
+     "해리성 마취제",
+     "Tiletamine + zolazepam (Telazol) 2–4 mg/kg IM, IV",
+     "위와 동일"
+    ],
+    [
+     "Ketofol",
+     "Ketamine/propofol 1:1 — ketamine 200 mg를 propofol 200 mg에 혼합해 0.5 ml/kg IV(혼합액은 최대 12시간 보관), 또는 ketamine 2 mg/kg IV 후 propofol 2 mg/kg IV",
+     "삽관·유도 질이 우수; 맥박수와 평균동맥압이 더 양호"
+    ],
+    [
+     "벤조디아제핀",
+     "Diazepam 0.2–0.5 mg/kg IM, IV; CRI: 0.1–0.5 mg/kg/hr",
+     "다른 약물의 필요 용량을 줄임; 경도 진정·근이완; 항경련; 진통 없음; diazepam 제형에는 propylene glycol 함유"
+    ],
+    [
+     "벤조디아제핀",
+     "Midazolam 0.07–0.4 mg/kg IM, IV; CRI: 0.1–0.5 mg/kg/hr",
+     "위와 동일"
+    ],
+    [
+     "Phenothiazine",
+     "Acepromazine 0.01–0.1 mg/kg IM, IV; 총 용량 3 mg 초과 금지",
+     "혈관확장; 작용시간이 김; 진통 없음"
+    ],
+    [
+     "바비튜레이트",
+     "Thiopental 4–20 mg/kg IV",
+     "심혈관 억제; 호흡억제; 빠른 유도; 두개내압·안압 감소; 산증이나 저단백혈증이 동반되면 효과가 증강될 수 있음"
+    ],
+    [
+     "바비튜레이트",
+     "Methohexital 4–10 mg/kg IV",
+     "위와 동일"
+    ],
+    [
+     "Propofol",
+     "Propofol 2–8 mg/kg IV; CRI: 0.05–0.4 mg/kg/min",
+     "속효성이고 작용시간이 짧음; 호흡억제; 말초 혈관확장; 심근 억제; 진통 없음; 혈량 감소나 심혈관 저하 환자에서는 신중히 사용(심한 억제 유발 가능); 고양이에서 Heinz body 빈혈 유발 가능"
+    ],
+    [
+     "Etomidate",
+     "Etomidate 0.5–4 mg/kg IV",
+     "심혈관 안정성 유지; 단독 사용 불가; 단회 볼루스 후 2–6시간 부신피질 기능 억제; propylene glycol 함유"
+    ],
+    [
+     "alpha-2 작용제",
+     "Dexmedetomidine 3–40 mcg/kg IM, IV; CRI: 1 mcg/kg IV loading dose, 이후 0.5–2 mcg/kg/hr",
+     "심혈관 억제 유발; 구토 유발 가능; 우수한 진정·진통 제공; butorphanol이나 ketamine과 병용 가능"
+    ],
+    [
+     "alpha-2 길항제",
+     "Atipamezole 0.04–0.5 mg/kg IM, IV",
+     "-"
+    ],
+    [
+     "Neuroleptanalgesic",
+     "오피오이드 + 신경안정제(tranquilizer) 조합",
+     "진통 작용; 소리에 대한 민감도 증가; 심혈관 안정성 유지"
+    ],
+    [
+     "Alfaxalone",
+     "Alfaxalone 2–5 mg/kg IV; CRI 0.1–0.2 mg/kg/min",
+     "회복 질 개선을 위해 진정이 필요할 수 있음"
+    ],
+    [
+     "Lidocaine",
+     "CRI: 1–2 mg/kg IV loading dose, 이후 1–3 mg/kg/hr",
+     "고양이에는 권장되지 않음"
+    ],
+    [
+     "흡입마취제",
+     "Isoflurane, Sevoflurane, Nitrous oxide",
+     "용량 의존적 심혈관 억제와 말초 혈관확장; 마취 심도를 빠르게 조절 가능; 저산소혈증 가능성; isoflurane과 sevoflurane은 흡수·회복이 빠름; nitrous oxide는 폐쇄된 가스 공간이 있을 때 주의"
+    ],
+    [
+     "신경근차단제(NMB)",
+     "Atracurium 0.1 mg/kg IV 또는 CRI 3–8 mcg/kg/min IV; Cisatracurium 0.1 mg/kg IV, 유지 추가 용량 0.02–0.04 mg/kg IV",
+     "-"
+    ],
+    [
+     "아미노스테로이드계 NMB",
+     "Rocuronium 0.6 mg/kg IV; Vecuronium 0.1 mg/kg IV",
+     "-"
+    ],
+    [
+     "NMB 길항제",
+     "Neostigmine 0.04–0.06 mg/kg IV",
+     "서맥 예방을 위해 atropine 0.02 mg/kg IV를 함께 투여(본문에서는 glycopyrrolate 0.01 mg/kg IV 병용을 기술)"
+    ],
+    [
+     "아미노스테로이드계 NMB 길항제",
+     "Sugammadex 8 mg/kg IV",
+     "깊은 차단도 길항 가능; 심혈관 부작용 없음"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "유지 마취 - 흡입제와 CRI"
+  },
+  {
+   "type": "list",
+   "items": [
+    "삽관 후에는 isoflurane이나 sevoflurane으로 마취를 유지할 수 있다. 두 약물 모두 심혈관·호흡 억제를 일으키지만 발현과 회복이 빠르고 마취 농도를 신속히 바꿀 수 있다.",
+    "흡입마취의 저혈압 효과를 견디지 못하는 동물에서는 CRI로 유지 마취가 가능하다. 고양이 난소적출술에서 ketamine-propofol 및 ketamine-propofol-dexmedetomidine 주입이 사용되었고, 두 군 모두 부작용은 없었으나 dexmedetomidine 군에서 진정이 더 깊었다.",
+    "개에서는 morphine-lidocaine-ketamine CRI로 진통을 제공하고 흡입제 요구량을 줄일 수 있다. CRI로 쓸 수 있는 추가 mu 작용제로 fentanyl, oxymorphone, hydromorphone이 있다.",
+    "alpha-2 작용제도 CRI로 사용해 진통을 강화하고 흡입제 요구량을 줄일 수 있다.",
+    "수술 중 사용한 CRI는 회복기까지 이어가 적정 가능한 진통을 제공할 수 있으며, 수술 자극이 끝나면 대개 용량을 낮출 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "신경근차단제(NMB)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "적응: 양압환기 보조(balanced anesthesia의 일부), ICU 기계환기 환자의 관리. 환자-인공호흡기 비동조 예방, 자발 호흡 노력과 근육 움직임 차단, 가스교환 개선, inverse-ratio ventilation 시행을 돕는다.",
+    "두개내압 상승, 파상풍의 근경련, 약물 과다, 발작 관리에도 유용할 수 있다. 수술에서는 골격근 이완 강화, 흉강 수술 중 호흡 조절, 안구 고정, 어려운 기도의 삽관 보조 목적으로 쓴다.",
+    "NMB는 마취·진통 작용이 없으므로 반드시 통증과 의식이 충분히 차단된 상태에서만 투여해야 하며, 양압환기가 필수다.",
+    "저체온, 산-염기 이상, 전해질 장애(중환자에서 흔함)는 NMB의 작용시간을 변화시킨다.",
+    "간헐적 IV 볼루스 또는 CRI로 투여할 수 있다. 간헐적 볼루스는 tachyphylaxis 조절, 축적 감시, 진통·기억상실 제공, 장기·과도 차단 관련 합병증 제한이라는 이점이 있다.",
+    "NMB 투여 중에는 상시 감독이 필요하다. 기계 호흡회로가 고장나도 환자는 자발호흡이 불가능해 사망에 이르기 때문이다.",
+    "선호되는 약물은 비탈분극성 NMB이며, aminosteroidal 계열과 benzylisoquinolinium 계열로 나뉜다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Benzylisoquinolinium계와 Aminosteroid계"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Benzylisoquinolinium계(atracurium, cisatracurium, doxacurium, mivacurium)가 더 흔히 사용된다.",
+    "Atracurium은 중간 작용시간이며 심혈관 영향이 최소다. 효소 기능과 무관하게 혈장에서 ester hydrolysis와 Hofmann elimination으로 불활성화되며 체온·pH에서 자발 분해된다. 따라서 신생아와 심각한 간·신장 장애 환자에 적응이 된다.",
+    "Atracurium 차단은 투여 후 3–5분에 발현하고 20–30분 지속한다. 재투여는 0.1 mg/kg IV, CRI는 3–8.0 mcg/kg/min IV다. CRI 중단 후 정상 신경근 활동은 대개 1–2시간 내 회복되며 장기 기능과 무관하다. 장기 CRI는 내성을 유발해 증량이나 다른 NMB로의 전환이 필요할 수 있다.",
+    "Atracurium은 유도 프로토콜의 일부로도 쓸 수 있다. 기침이나 Valsalva로 인한 안압·두개내압·복강내압 상승을 피하고 싶을 때, 불안정한 동물에서 환기 조절을 빨리 확보하고 싶을 때 고려한다.",
+    "두 가지 유도 기법: (1) 계산 용량의 1/10–1/6을 먼저 투여하고 3–6분 후 나머지 용량을 유도제와 함께 투여해 유도 후 이완을 가속한다. (2) atracurium 단회 볼루스 후 3분 뒤 근력 약화가 시작될 때 유도제를 투여한다.",
+    "Atracurium의 부작용: laudanosine 생성과 히스타민 유리. Laudanosine은 Hofmann elimination의 분해산물로 중추신경 흥분과 연관되며 간에서 대사되므로 초고용량 투여나 간부전 환자에서 문제가 될 수 있다. 임상 용량 0.1–0.30 mg/kg IV에서는 히스타민 유리가 문제되지 않는 것으로 보인다.",
+    "Atracurium을 포함한 NMB의 장기 사용은 지속적 신경근 약화와 연관된다. 개 연구에서 atracurium 차단의 지속시간은 propofol CRI보다 sevoflurane 마취 시 약 15분 더 길었다.",
+    "Cisatracurium은 atracurium의 이성질체로 작용시간·배설 양상·laudanosine 생성이 유사하다. 심혈관 영향이 거의 없고 히스타민 유리 경향이 더 적으며 atracurium보다 강력하다. 용량은 0.1 mg/kg IV, 유지 추가 용량은 개에서 0.02–0.04 mg/kg IV다. 초기 용량의 지속시간은 27.2 ± 9.3분이고 추가 용량은 축적되지 않는 것으로 보인다. Laudanosine 대사물은 신장과 간으로 배설되나 개에서는 간 배설의 비중이 적다. Laudanosine은 저혈압과 발작을 일으킬 수 있으며 신·간질환 개에서 가능성이 높다.",
+    "Aminosteroid계는 vecuronium과 rocuronium이 흔히 쓰인다. Vecuronium은 발현 5분, 지속 30분이며 동결건조 분말로 재구성해 사용하고 간대사·신배설된다. Rocuronium은 발현이 더 빠르고 지속시간은 비슷하며 주로 간대사로 제거된다. 두 약물 모두 심혈관 영향이 최소이고 히스타민을 유리하지 않는다. 용량은 rocuronium 0.6 mg/kg IV, vecuronium 0.1 mg/kg IV다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "NMB 모니터링과 길항"
+  },
+  {
+   "type": "list",
+   "items": [
+    "말초신경자극기를 이용한 감시가 권장된다. 차단 심도를 감시하면 최소 용량 사용이 가능해 부작용이 줄고, 환기 지원과 마취를 중단하기 전에 신경근 기능 회복을 확인할 수 있다.",
+    "감시는 골격근 움직임과 호흡 노력 관찰, 경피 전류 자극에 대한 twitch 반응 측정으로 이루어진다. 흔히 쓰는 신경은 facial, ulnar, tibial, superficial peroneal nerve다.",
+    "NMB 효과가 감소하면 흉벽 유순도 감소, 환기 저항 증가, 같은 일회호흡량에서 더 높은 최고흡기압이 나타나며 안진, 동공 확대, 안검반사가 관찰될 수 있다.",
+    "회복 평가에는 Wright respirometer로 측정한 일회호흡량, 환기 양상, 연하 능력, pulse oximetry 판독의 적절성, end-tidal CO2를 활용한다. 잔여 근력 약화는 생명을 위협할 수 있으므로 회복이 의심스러우면 길항제를 투여한다.",
+    "Acceleromyography(AMG)는 최대 차단 정도와 발현 시간, 신경근 전달의 회복을 정량 평가하는 방법이다. train-of-four 자극 침을 신경 위에 두고 가속도 감지 변환기 크리스털을 발에 부착해 유발된 twitch를 객관적으로 정량한다.",
+    "비탈분극성 NMB의 길항은 가능하지만 항상 필요하지는 않다. 중환자에서 호흡근 기능 개선을 위해 고려한다. Train-of-four에서 twitch가 전혀 보이지 않을 때는 길항을 시도하지 않으며, 성공적 길항을 위해서는 twitch 높이가 기저치의 최소 10%여야 한다.",
+    "Neostigmine(항콜린에스테라제)이 길항에 사용된다. 아세틸콜린 축적으로 서맥, 타액분비, 기관지 분비 증가, 평활근 수축, 배변, 배뇨, 저혈압 같은 무스카린 효과가 생기므로 atropine이나 glycopyrrolate를 병용해 최소화한다.",
+    "Neostigmine은 투여 7–10분에 최대 효과, 작용시간 60–70분이며 용량은 0.04–0.06 mg/kg IV로 glycopyrrolate 0.01 mg/kg IV와 병용해 서맥을 방지한다.",
+    "Aminosteroid계(vecuronium, rocuronium)는 sugammadex 8 mg/kg IV로 길항한다. gamma-cyclodextrin으로 혈중에서 약물을 캡슐화해 결합하며 깊은 차단도 2분 이내에 길항할 수 있다. 결합은 견고하고 지속적이며 복합체는 생물학적으로 불활성으로 신장으로 배설된다.",
+    "Sugammadex는 아세틸콜린에스테라제 억제제가 가진 한계(깊은 차단 길항의 제한적 효과, 심혈관 부작용)가 없다. 다만 다른 스테로이드 약물이나 내인성 스테로이드를 캡슐화할 수 있다는 점이 우려된다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "마취 중 모니터링"
+  },
+  {
+   "type": "list",
+   "items": [
+    "과도한 마취 심도를 피하고 심혈관 기능을 보존하기 위해 세심하고 지속적인 감시가 필요하다.",
+    "심전도로 심박수·리듬 변화와 악성 부정맥을 감시한다. 외상, 비장질환, 패혈성 복막염, 저산소증, 위확장염전 환자에서 부정맥이 더 흔하다.",
+    "신관류 유지를 위해 평균동맥압을 60 mm Hg 이상으로 유지한다. 모세혈관 재충만시간, 점막색, 맥압 같은 관류 지표를 지속적으로 관찰한다.",
+    "마취 심도는 안구 위치, 동공 크기, 턱 긴장도, 자극에 대한 반응, 심박수, 혈압, 호흡수로 자주 평가한다.",
+    "Pulse oximetry는 헤모글로빈 포화도와 산소화 정보를 더한다. 다만 보조 산소를 받는 환자는 산소화 능력이 나빠도 정상 판독을 보일 수 있다. Pulse oximeter는 동맥혈 산소분압이 약 140 mm Hg 아래로 떨어져야 100% 미만으로 읽으므로, 100% 산소를 호흡 중인 환자의 유의한 산소화 저하를 놓칠 수 있다.",
+    "따라서 마취 중 중환자에서는 동맥혈 가스 분석이 gold standard로 필요할 수 있다. 산소화, 환기, 헤모글로빈 포화도, 산-염기 균형, 전해질 정보를 제공한다.",
+    "Capnography는 환기 적정성과 심박출량의 지표를 제공하며, 식도삽관, 호흡회로 분리, 심정지(이산화탄소가 전혀 기록되지 않음)의 감지에 사용된다.",
+    "요량은 정상 목표 1–2 ml/kg/hr를 달성하도록 면밀히 감시한다. 신장애나 혈량 부족 환자에서는 유치 요도카테터 사용을 고려한다.",
+    "수액 균형은 투여량과 같은 기간의 측정 손실량을 비교해 평가하되 기존 결핍을 고려한다. 중심정맥압 측정은 도움이 될 수 있으나 한계가 있다.",
+    "PCV, 총단백, COP는 수술 환자에서 급격히 변할 수 있으므로 자주 감시한다. 교질삼투압계가 없으면 총단백을 평가할 수 있으나 합성 교질의 존재를 정확히 반영하지는 못한다.",
+    "혈당은 소아 동물과 패혈증, 당뇨, 중증 간질환 환자에서 면밀히 감시한다.",
+    "마취제가 정상 체온조절을 교란하고 저체온이 회복을 지연시키므로 체온을 지속적으로 감시한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "마취 중 저혈압 관리"
+  },
+  {
+   "type": "list",
+   "items": [
+    "평균동맥압 <60 mm Hg 또는 수축기압 <90 mm Hg는 장기 관류 유지를 위해 즉시 치료해야 한다.",
+    "1단계: 억제·혈관확장 작용을 가진 흡입마취제의 투여를 줄인다.",
+    "2단계: 수액 볼루스를 시행한다. 결정질액(칼륨 무첨가)을 10–20 ml/kg IV로 15–20분에 걸쳐 투여하거나, 교질을 5–10 ml/kg IV로 10–20분에 걸쳐 투여한다. 반응이 없으면 소량 볼루스를 반복하되 총 투여량을 고려한다.",
+    "수액에도 저혈압이 지속되면 dobutamine이나 dopamine으로 변력·승압 지원을 한다. 반감기가 짧아 CRI 2–10 mcg/kg/min IV로 투여하며 두 약물을 동시에 쓸 수 있다.",
+    "변력제·승압제 투여 환자는 빈맥을 면밀히 감시한다. 빈맥이 생기면 주입 속도를 줄이거나 다른 약물을 추가한다.",
+    "기타 승압제: ephedrine 0.05–0.5 mg/kg IV 단회 볼루스, norepinephrine 0.1–1 mcg/kg/min IV CRI, vasopressin 1–5 mU/kg/min IV CRI.",
+    "첫 승압제·변력제로 교정되지 않으면 첫 약물을 유지한 채 두 번째 약물을 추가한다. norepinephrine은 dopamine이나 dobutamine과 병용하는 경우가 가장 많고 vasopressin도 함께 쓸 수 있다.",
+    "적절한 수액과 변력·승압 지원에도 저혈압이 지속되면 흡입마취제를 중단하고 주사 약물로 마취를 유지하는 것을 고려한다. fentanyl이나 morphine 같은 mu 작용제 CRI를 ketamine, lidocaine과 병용하며, 일부 환자는 fentanyl 간헐적 IV 볼루스나 CRI만으로 충분하다.",
+    "최근 연구에 따르면 마취된 고양이에서는 심혈관 억제 작용 때문에 lidocaine CRI를 사용하지 않아야 한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "회복(Recovery)과 요약"
+  },
+  {
+   "type": "list",
+   "items": [
+    "회복기에도 지속적인 심혈관 지지, 모니터링, 지지요법, 진통이 필수다. 회복 중에도 변력·승압 지원이 필요할 수 있으며 ICU에서 이어간다.",
+    "환자를 건조하고 따뜻하게 유지하고, 조용하고 스트레스가 없는 장소에서 지속적으로 감시하며 회복시킨다.",
+    "떨고 있는 동물은 포도당·산소 요구가 크게 증가하므로 떨림이 멈출 때까지 산소 공급과 보온을 시행한다. 회복·떨림 중인 동물에서는 산-염기, 전해질, PCV, 총단백, 혈당도 감시한다. 강제 온풍 가온 담요가 저체온 치료에 유용하다.",
+    "통증이 있는 중환자에서 진통은 필수다. 쇠약한 상태 때문에 전형적 통증 반응을 보이지 않더라도 신중하되 적절하게 진통제를 투여한다. 통증은 이화작용과 상처 치유 지연, 패혈증, 원내감염 같은 합병증으로 이어질 수 있다.",
+    "요약: 마취 전 적극적인 안정화, 마취 전 기간에 걸친 적절한 모니터링, 그리고 수술후 승압·변력 지원 지속, 적절한 수액 요법, 진통 지원, 산소 요법, 혈압 감시, 간호 관리가 중환자의 생존율을 높인다."
+   ]
+  }
+ ]
+}
