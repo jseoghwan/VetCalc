@@ -1,0 +1,65 @@
+{"id":"sacc3-p7-c76","book":"Small Animal Critical Care Medicine, 3rd ed.","book_short":"SACCM 3판","part":"Part VII","part_title":"Endocrine Disorders","chapter_num":76,"title":"Diabetes Insipidus","author":"Melissa A. Claus, DVM, DACVECC","format":2,"blocks":[
+{"type":"callout","title":"KEY POINTS","items":[
+"치료 중이거나 미치료 diabetes insipidus(DI) 중환자는 adipsia·hypodipsia가 되어 혈장 Na 농도가 크게 요동칠 위험.",
+"입원 중 dysnatremia는 사망률 증가와 연관 → DI 중환자에서 혈장 Na 변동 방지가 치료의 우선순위.",
+"Desmopressin(DDAVP)으로 치료 중인 central DI 환자는 저나트륨혈증 위험 → 혈장 Na와 저장성 수액량을 면밀히 모니터링하고, dysnatremia 예방을 위해 수액량과 DDAVP 용량을 조절.",
+"중환자의 후천성 DI 발생 위험 인자는 여러 가지. 삼투성 이뇨 없이 고나트륨혈증과 현저한 다뇨가 생기면 DI를 의심."]},
+{"type":"heading","level":2,"text":"삼투 조절 · 병태생리","gist":"AVP 부족 = central, 신장 반응 저하 = nephrogenic; 희석 다뇨 >50 ml/kg/day"},
+{"type":"list","items":[
+"DI ▸ 요로 전해질 없는 자유수(free water)가 과도하게 손실되는 질환. 현저한 희석성 다뇨(>50 ml/kg/day)와 이를 보충하는 강제 다음이 특징.",
+"Central DI ▸ 순환 arginine vasopressin(AVP)이 부족·없음 (magnocellular neuron의 합성, 축삭 수송, 분비 장애). Nephrogenic DI ▸ 순환 AVP에 대한 수용체 반응 감소·없음 (V2 receptor 결함 또는 AQP-2 이동·구성 이상). 둘 다 유전성(드묾) 또는 후천성 (Table 76.1).",
+"물을 자유롭게 마실 수 있는 건강한 동물에서 DI는 비교적 양성(주로 PU/PD). 중환자에서는 급격하고 생명을 위협하는 삼투압 변동을 막기 위해 자유수 균형을 세밀히 관리해야 함.",
+"AVP 생성 ▸ 시상하부 supraoptic·paraventricular nuclei의 magnocellular neuron에서 비활성 propeptide로 포장 → 뇌하수체 줄기를 따라 축삭 수송 중 절단되어 활성 AVP → 후엽 축삭말단에 저장.",
+"분비 자극 ▸ 혈장 삼투압의 미세한 상승 — 시상하부 전방의 혈액뇌장벽이 없는 circumventricular organ인 organum vasculosum laminae terminalis(OVLT)의 osmoreceptor가 감지. 분비량은 삼투압 상승 정도에 비례. OVLT 근처 subfornical organ의 osmoreceptor는 동시에 갈증 유발.",
+"작용 ▸ 신장 집합관 주세포 기저측막의 Gs protein-coupled V2 receptor 결합 → AQP-2 채널 함유 소포가 apical 막에 융합 → 자유수가 고장성 수질로 이동해 요 손실 방지. 재흡수 + 갈증에 의한 섭취 증가로 삼투압이 빠르게 정상화되면 AVP 분비·갈증 억제.",
+"Apelin ▸ 체수분 항상성에서 AVP와 상반된 역할의 neuro-vasopeptide. 후엽 AVP 분비 감소, 집합관 AQP-2 삽입 방해 → 자유수 배설 증가. 사람 nephrogenic DI에서 건강인보다 apelin 농도가 높았음. AVP-apelin 불균형 연구가 DI 기전 이해에 도움될 수 있음.",
+"유형과 관계없이 건강한 DI 환자는 상당한 다음으로 보상 — 자유수 섭취·흡수가 지속 손실을 따라가지 못할 때만 고나트륨혈증을 동반한 생명 위협 고삼투압 발생."]},
+{"type":"table","title":"Table 76.1 후천성 central DI와 nephrogenic DI의 원인","headers":["유형","범주","원인"],"rows":[
+["Central","뇌 외상","Blunt force, deceleration, penetrating; 수술(transsphenoidal 또는 transcranial)"],
+["Central","종양","Suprasellar extension 동반 pituitary macroadenoma, lymphoma, craniopharyngioma, hypothalamic glioma, pituitary stalk germinoma, 전이성 종양"],
+["Central","감염성·염증성","Meningitis, encephalitis/intracranial abscess, toxoplasmosis, histiocytosis, fungal (cryptococcus), parasite migration"],
+["Central","혈관성","Hypothalamic infarction, intracranial hemorrhage, hypoxic encephalopathy"],
+["Central","면역매개","Lymphocytic neurohypophysis"],
+["Central","특발성","Idiopathic"],
+["Nephrogenic","약물","Vasopressin, ofloxacin, amphotericin B, aminoglycosides, cisplatin, ifosfamide, vinblastine, colchicine"],
+["Nephrogenic","전해질 이상","Hypercalcemia, hypokalemia"],
+["Nephrogenic","세균 감염","Escherichia coli, Streptococcus spp., Leptospira spp."],
+["Nephrogenic","퇴행성","Amyloidosis, chronic kidney disease"],
+["Nephrogenic","Paraneoplastic","Intestinal leiomyosarcoma"]]},
+{"type":"heading","level":2,"text":"중환자에서의 의의","gist":"자유수 조절 불가 → 입원 중 Na 급변; 정상범위 내 변동도 사망률↑"},
+{"type":"list","items":[
+"모든 DI 환자는 정상 생리적 피드백으로 신장의 자유수 배설·보유를 조절할 수 없음 → 입원 시 Na의 큰 변화를 동반한 혈장 삼투압 변동 위험 증가.",
+"수분 섭취 부족 원인 ▸ 의식 변화에 의한 hypodipsia·adipsia, 흡수를 막는 위장관 기능 이상, 음수 접근 부족.",
+"자유수가 없는 IV crystalloid ▸ DI가 없는 환자는 경도 고Na 정도지만, 미치료 DI에서 단독 수액이면 고나트륨혈증이 빠르게 발생 → 삼투압 급변에 의한 뇌부종·osmotic demyelination 위험.",
+"Dysnatremia(참고범위 밖 Na)는 중환자 사람·반려동물에서 사망률 증가와 연관. Dysnatremia가 없어도 정상범위 내 Na 변동이 사망률을 높인다는 근거도 있음.",
+"→ 혈장 Na를 면밀히 측정하고 치료를 맞춰 Na 변동을 막는 자유수 균형 관리가 최우선.",
+"일부 후천성 DI는 일시적이나 회복 후에도 PU/PD가 지속될 수 있음 — 원인 확진 프로토콜은 이 장의 범위 밖."]},
+{"type":"heading","level":2,"text":"기진단 central DI 관리","gist":"DDAVP 유지 + 매일 전해질; 경장수·저장액 과다 시 저Na 위험"},
+{"type":"list","items":[
+"대부분 desmopressin(DDAVP, 순수 V2 receptor agonist)으로 관리 → 입원 중에도 지속해 요 자유수 손실과 고나트륨혈증 예방.",
+"삼투압이 정상 이하로 떨어지면 apelin 분비로 자유수 배설을 늘릴 수 있으나 DDAVP 효과를 완전히 상쇄하기는 어려움 → feeding tube를 통한 과도한 경장 수분이나 저장성 IV 용액으로 진행성 저나트륨혈증 위험.",
+"혈장 전해질 최소 매일 평가, normonatremia 유지를 위해 DDAVP 용량 조절. 경장 수분·저장성 IV 용액은 신중히.",
+"급성 저나트륨혈증 발생 시 Chapter 55에 따라 치료."]},
+{"type":"heading","level":2,"text":"기진단 nephrogenic DI 관리","gist":"Thiazide 중단 시 자유수 손실 → CFW로 시간당 보충량 추정"},
+{"type":"list","items":[
+"기전이 다양하며 자유수 손실을 줄이는 치료를 받고 있을 수도 아닐 수도 있음.",
+"Thiazide 이뇨제 ▸ DI에서 역설적으로 일일 총 요량 감소 — 한 기전은 총 세포외액량 감소에 의한 GFR 감소. 중환자에서는 기존 수분 균형 문제를 악화시켜 이환율을 높일 수 있어 지속이 바람직하지 않을 수 있음.",
+"중단 시 요 자유수 손실이 억제되지 않아 adipsic 환자에서 심한 자유수 결핍 가능 → 경장 또는 비경구로 자유수 손실 보충.",
+"음수·흡수가 가능해지면 스스로 마시게 하되, 퇴원까지 최소 매일 혈장 전해질을 확인해 normonatremia 유지 여부 확인. Dysnatremia는 Chapter 55에 따라."]},
+{"type":"table","title":"요 자유수 청소율 (urinary clearance of free water, CFW)","headers":["항목","내용"],"rows":[
+["공식","CFW = Vu × (1 − [([Na⁺]u + [K⁺]u) ÷ [Na⁺]p])"],
+["측정값","Vu: 알려진 시간 동안 모은 요량 (ml/hour)\n[Na⁺]u, [K⁺]u: 요 Na·K 농도 (mmol/L)\n[Na⁺]p: 동시에 측정한 혈장 Na (mmol/L)"],
+["해석","normonatremia 유지에 필요한 수분 투여 속도(ml/hour)의 대략적 추정치"],
+["주의","요 수분 손실은 시간에 따라 변하므로 혈장 Na를 정기적으로 재평가해 투여량이 충분한지 확인 (Chapter 62 참조)"]]},
+{"type":"heading","level":2,"text":"의심되는 후천성 DI 관리","gist":"삼투성 이뇨 없는 고Na + 다뇨 → 양성 CFW 확인, Na 교정 후 DDAVP 시험"},
+{"type":"list","items":[
+"의심 ▸ 삼투성 이뇨 없이 고나트륨혈증과 현저한 다뇨가 동시에 발생, 특히 후천성 DI 연관 질환(Table 76.1)이 있을 때.",
+"확인 ▸ 위 공식으로 CFW 계산 — 고나트륨혈증과 함께 CFW가 양성이면 central 또는 nephrogenic DI.",
+"DDAVP trial ▸ 두 유형을 구분해 지속 DDAVP 치료의 이득 여부 판단. 단, central DI에서 DDAVP 투여 시 혈장 Na가 갑자기 통제 불능으로 떨어질 수 있으므로 심한 고나트륨혈증을 먼저 해결.",
+"고Na 환자 수액 계획 ▸ 자유수 결손을 안전하게 보충(Chapter 55)하면서 동시에 지속 요 자유수 손실 보충.",
+"Normonatremia 도달 후 ▸ urine osmolarity 측정 → 방광을 비움 → DDAVP 2 to 5 mg 비강 내 또는 점안 투여. 효과에 따라 용량 적정 필요, 국소 투여는 피하주사보다 신뢰도가 낮을 수 있음."]},
+{"type":"table","title":"DDAVP trial 해석 (투여 2 to 4 hours 후 urine osmolarity)","headers":["기저치 대비 증가","해석","치료"],"rows":[
+["≥50%","완전 central DI","DDAVP 지속 + 필요 시 추가 자유수 투여, 정기 혈장 Na 모니터링"],
+["9% ~ 50%","부분 central DI 또는 nephrogenic DI","DDAVP 지속 + 필요 시 추가 자유수 투여, 정기 혈장 Na 모니터링"],
+["증가 없음","Nephrogenic DI 확진","지속적 자유수 보충; 원인이 알려져 있고 치료 가능하면 원인 치료"]]}
+]}

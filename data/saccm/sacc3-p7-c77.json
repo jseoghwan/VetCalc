@@ -1,0 +1,65 @@
+{"id":"sacc3-p7-c77","book":"Small Animal Critical Care Medicine, 3rd ed.","book_short":"SACCM 3판","part":"Part VII","part_title":"Endocrine Disorders","chapter_num":77,"title":"Syndrome of Inappropriate Antidiuretic Hormone","author":"Kate Hopper, BVSc, PhD, DACVECC","format":2,"blocks":[
+{"type":"callout","title":"KEY POINTS","items":[
+"SIADH ▸ 혈청 삼투압 상승이나 유효순환량(ECV) 감소 없이 ADH가 분비되는 상태.",
+"개의 보고된 원인: 흡인성 폐렴, meningoencephalitis, 수두증, 종양, 간질환, 전신마취.",
+"전형적으로 저삼투압성 저나트륨혈증 + 요 고삼투압(>100 mOsm/L).",
+"지속성 SIADH 관리는 주로 신중한 수분 제한 및/또는 이뇨제 투여."]},
+{"type":"heading","level":2,"text":"정상 생리","gist":"삼투압 1% 상승 또는 ECV 5–10% 감소 → ADH → 집합관 AQP-2 → 수분 재흡수"},
+{"type":"list","items":[
+"ADH(= arginine vasopressin) ▸ 시상하부 세포에서 생성 → 후엽 뇌하수체로 수송되어 과립에 저장. 체수분 균형 조절.",
+"분비 자극 ▸ 혈장 삼투압 상승 또는 ECV 감소.",
+"삼투 자극 ▸ 시상하부 supraoptic·paraventricular nuclei 등의 osmoreceptor가 작은 변화 감지 → ADH 분비 + 갈증. 혈장 삼투압이 1%만 올라도 ADH 분비, 갈증의 삼투 역치는 더 높음.",
+"용적 자극 ▸ baroreceptor 반응을 통한 ADH 분비에는 ECV 5%–10% 감소가 필요.",
+"작용 ▸ 혈관·신장 수용체에 결합해 혈관수축과 신장 수분 재흡수. 신장 집합관 주세포의 type 2 vasopressin receptor → aquaporin 2 채널이 apical 막에 배치 → 수질 간질의 삼투 기울기를 따라 세뇨관 내강에서 수분 재흡수. Aquaporin 2가 없으면 이 부위의 수분 투과성은 최소.",
+"신장 Na·urea 처리에 대한 추가 효과는 Chapter 148 (Vasopressin) 참조."]},
+{"type":"heading","level":2,"text":"정의 · 유형","gist":"정상혈량 저Na + 농축뇨; 사람은 4유형, Type A(무조절 분비)가 가장 흔함"},
+{"type":"paragraph","text":"SIADH는 삼투압 상승이나 ECV 감소 없이 ADH가 분비되는 상태로, 임상적으로 가장 흔히 농축뇨를 동반한 정상혈량(euvolemic) 저나트륨혈증으로 나타남. 사람에서 4가지 유형이 기술됨 (Box 77.1)."},
+{"type":"table","title":"Box 77.1 SIADH 유형 (사람)","headers":["유형","특징","빈도"],"rows":[
+["Type A — 무조절 ADH 분비","혈장 ADH 농도와 혈장 삼투압 사이에 관계 없음; 심한 저나트륨혈증 가능","사람에서 가장 흔함"],
+["Type B — 기저 ADH 상승","ADH 분비의 삼투 역치가 낮으나, 역치 이상에서는 ADH-삼투압 관계 정상 → 정상보다 낮은 수준에서 비교적 안정된 Na","드묾"],
+["Type C — Reset osmostat","정상 이상의 삼투압에서는 ADH-삼투압 관계 정상, 낮은 삼투압에서는 기저 ADH가 정상보다 높음","매우 드묾(rare)"],
+["Type D — ADH 검출 불가","SIADH 임상 기준은 충족하나 혈장 ADH 검출 안 됨; 종양의 ADH 유사물질 분비 또는 V2 receptor 돌연변이 가능","극히 드묾(very rare)"]]},
+{"type":"heading","level":2,"text":"원인","gist":"통증·오심·마취·수술 모두 ADH 분비 유발 → 중환자 대부분 ADH 상승 예상"},
+{"type":"list","items":[
+"사람 (한 연구) ▸ 종양과 약물 유발이 가장 흔하고, 이어 특발성, 폐 감염, 통증, 오심.",
+"개 ▸ 흡인성 폐렴, meningoencephalitis, 수두증, 종양, 간질환, 전신마취.",
+"고양이 ▸ 간질환 이차, vinblastine 치료 후.",
+"통증, 오심, 마취, 수술은 모두 잘 알려진 ADH 분비 원인 — 거의 모든 중환자가 하나 이상을 가지므로 대부분의 중증 환자·외상 환자는 ADH가 상승해 있을 것으로 예상."]},
+{"type":"table","title":"Box 77.2 SIADH의 보고된 원인 (사람)","headers":["범주","원인"],"rows":[
+["생리적 상태","General anesthesia*, surgical procedures*, nausea, pain, stress"],
+["종양","Carcinomas, lymphoma, sarcomas*"],
+["CNS 질환","출혈·종괴: tumor, hematoma, subarachnoid hemorrhage, cerebrovascular accident, traumatic brain injury, hydrocephalus*\n감염: encephalitis, meningitis*, abscess\n기타: Guillain–Barré, spinal cord disease, multiple sclerosis, traumatic brain injury, hypophysectomy"],
+["폐 질환","감염: pneumonia*, pulmonary abscess, aspergillosis\nAsthma, cystic fibrosis, positive pressure ventilation"],
+["약물 — ADH 분비 자극","Tricyclic antidepressants, nicotine, phenothiazines"],
+["약물 — ADH 유사체·효과 증강","Desmopressin, vasopressin/terlipressin, oxytocin, prostaglandin synthesis inhibitors (예: NSAIDs)"],
+["약물 — 효과 불확실","Chlorpropamide, serotonin reuptake inhibitors, carbamazepine, proton pump inhibitors, clozapine, vincristine/vinblastine*, opioids, cyclophosphamide, ACE inhibitors"],
+["기타","Liver disease*, immune-mediated disease*, idiopathic*"]],
+"note":"* = 개 및/또는 고양이에서 보고된 SIADH 원인."},
+{"type":"heading","level":2,"text":"진단","gist":"배제 진단: 저삼투 저Na + 정상혈량 + 요삼투압 >100 + 요 Na >30 + Addison 배제"},
+{"type":"table","title":"Box 77.3 SIADH 진단 기준","headers":["#","기준"],"rows":[
+["1","Hypoosmolar hyponatremia (저삼투압성 저나트륨혈증)"],
+["2","Euvolemia (정상혈량)"],
+["3","부적절하게 농축된 요 — urine osmolality >100 mOsm/L"],
+["4","Urine sodium concentration >30 mmol/L"],
+["5","Hypoadrenocorticism 배제"]]},
+{"type":"list","items":[
+"임상에서 SIADH는 배제 진단. 혈장 ADH 측정이 이상적이나 일상적으로 불가.",
+"주요 결과 ▸ 저삼투압성 저나트륨혈증 + 요 고삼투압(>100 mOsm/L). 고혈당이나 mannitol 같은 비측정 삼투물질에 의한 고삼투압성 저나트륨혈증은 SIADH의 원인으로 보지 않음.",
+"정상혈량 ▸ 신체검사 소견으로 판단하고 요 Na >30 mmol/L로 뒷받침 (Chapter 62 참조).",
+"적은 요량 ▸ ADH에 의한 강한 수분 보유의 흔한 결과. 그러나 적은 양의 농축뇨의 흔한 원인은 낮은 ECV → 전체 평가 필요. 낮은 ECV를 배제할 수 없으면 SIADH로 판단하기 전에 심혈관 상태 개선 치료를 먼저.",
+"요 삼투압·요 Na ▸ 현재 상태를 반영하도록 최근 생성된 요로 직접 측정. SIADH에서 요 삼투압 >100 mOsm/L (보통 >300 mOsm/L).",
+"요 삼투압이 없으면 요비중으로 추정 ▸ SIADH에서 USG >1.014 예상; USG >1.005면 요 삼투압 >100 mOsm/L를 시사해 SIADH에 부합.",
+"Hypoadrenocorticism은 SIADH를 모방할 수 있어 해당 질환 평가 필요."]},
+{"type":"heading","level":2,"text":"관리","gist":"원인 제거 → 수분 섭취 < 배설; 급성기 furosemide 0.1–0.5 mg/kg IV(개)"},
+{"type":"list","items":[
+"심한 저나트륨혈증에서 혈청 Na 상승 속도는 저Na의 중증도·지속 기간에 따라 결정 — Chapter 55 참조.",
+"입원 환자에서는 혈청 Na가 크게 떨어지기 전에 조기 발견될 수 있음. 가능한 원인은 제거 — 많은 경우 일시적이며 빠르게 해소.",
+"지속성 SIADH ▸ 주로 신중한 수분 제한 및/또는 이뇨제."]},
+{"type":"table","title":"SIADH 치료 선택지","headers":["치료","방법·용량","비고"],"rows":[
+["수분 제한","음수 중이거나 feeding tube로 경장 수분을 받으면 섭취 감소 — 혈청 Na가 정상화될 때까지 수분 섭취 < 수분 배설","갈증 욕구가 강해 어려울 수 있음. 48 hours 넘게 심한 저Na였다면 Na 급변 주의 (Chapter 55)."],
+["Loop 이뇨제 (furosemide)","개: 0.1–0.5 mg/kg IV (저자 경험상 이뇨 유발에 충분한 저용량)","급성기에 SIADH에도 신장 수분 배설 촉진. 수화·전해질 모니터링과 함께 입원 환자에서 매우 효과적."],
+["Demeclocycline, lithium","—","신장의 ADH 저항 유발. 사람에서 기술, 소동물 보고 없음."],
+["Urea","—","자유수 청소율 증가. 사람에서 보고, 소동물 보고 없음."],
+["Vaptans (vasopressin receptor antagonist)","—","사람 SIADH에 효과적. 저Na를 너무 빨리 교정할 우려로 심한 저나트륨혈증에는 비권장. 다른 치료와 비교한 RCT 없음, 최적 역할 미정. 소동물 보고 없음."]],
+"note":"— = 요약에 해당 내용 없음"}
+]}

@@ -1,0 +1,75 @@
+{"id":"sacc3-p7-c81","book":"Small Animal Critical Care Medicine, 3rd ed.","book_short":"SACCM 3판","part":"Part VII","part_title":"Endocrine Disorders","chapter_num":81,"title":"Critical Illness-Related Corticosteroid Insufficiency","author":"Jamie M. Burkitt Creedon, DVM, DACVECC","format":2,"blocks":[
+{"type":"callout","title":"KEY POINTS","items":[
+"Cortisol은 염증과 혈관운동 긴장도(vasomotor tone)를 조절.",
+"CIRCI(critical illness-related corticosteroid insufficiency)는 sepsis, septic shock 및 다른 유형의 중증질환 일부 환자에서 발생.",
+"CIRCI는 cortisol의 생성, 혈장 단백 결합, 대사, 표적조직 효과 변화가 복합된 결과.",
+"CIRCI는 일부 중증 개·고양이에서도 발생할 가능성이 높음.",
+"사람의 승압제 저항성 septic shock 및 일부 중증질환에서 저–중등도 용량 corticosteroid가 승압제 반응성과 기타 결과를 개선하는 것으로 보임.",
+"CIRCI의 최적 진단·관리 방법은 불명."]},
+{"type":"heading","level":2,"text":"정의 · 배경","gist":"중증도 대비 세포 corticosteroid 활성 부족; 승압제 저항성 저혈압"},
+{"type":"list","items":[
+"2008 consensus statement ▸ CIRCI = 환자 질병 중증도에 비해 부적절한 세포 corticosteroid 활성. 가장 흔히 보고되는 임상 발현은 승압제 저항성 저혈압.",
+"과거 명칭 relative adrenal insufficiency ▸ 부신 기능 외 요인도 병태생리에 기여해 사용이 줄어듦.",
+"가장 많이 보고·연구된 대상은 사람 septic shock (4개 RCT에서 감염성 원인의 전신 염증으로 적절한 수액 부하에도 저혈압인 상태로 정의). 심장질환·수술, 간부전 등 비패혈성 중증질환에서도 기술.",
+"약 30년의 연구로 복잡한 다인성 병태생리를 이해하기 시작했으나 최적 진단·치료는 불명. 현재 가이드라인은 다소 모순되며 대부분 조건부 권고(매우 낮음–낮은 근거 수준). 사람 권고를 개·고양이에 적용할 수 있는지 불명."]},
+{"type":"table","title":"사람 septic shock corticosteroid 주요 임상시험","headers":["연구","대상·치료","결과"],"rows":[
+["French study (Annane et al., 2002)","Septic shock 300명, 위약 대조 RCT: 저용량 hydrocortisone (200 mg/adult person/day) + fludrocortisone (50 mcg/day)","Corticotropin 반응이 둔화된 환자에서 생존 개선; 반응이 적절한 환자는 이득 없음. 비교적 작은 시험으로 이후 더 큰 시험들에서 재현 실패."],
+["CORTICUS (2008)","Septic shock 성인 499명, 위약 대조 RCT: hydrocortisone","ACTH stimulation 결과와 무관하게 쇼크 회복은 빨랐으나 생존 이득 없음. 스테로이드군에서 superinfection 증가. SOFA score 감소(주로 심혈관·간 점수 개선). 목표 800명 미달로 검정력 부족·선택 편향(임상의가 스테로이드를 쓰려고 등록을 꺼렸을 가능성)."],
+["APROCCHSS (2018)","Septic shock 1241명, 다기관 이중맹검 RCT: 저용량 hydrocortisone + fludrocortisone","Corticotropin 반응과 무관하게 위약보다 90-day 전체 사망률 개선. 승압제 무사용일·장기부전 무발생일 증가, 심각한 이상반응은 위약과 차이 없음."],
+["ADRENAL","Septic shock 3658명, 국제 다기관 이중맹검 RCT: 저용량 hydrocortisone vs 위약","90-day 생존 차이 없음. 쇼크 회복은 더 빨랐으나 전체 이상반응 증가."]],
+"note":"French study와 CORTICUS는 의미 있는 방법론적 한계가 있음. 종합하면 저용량·장기 hydrocortisone은 사람 septic shock에서 일부 개선을 보이나 이상반응도 더 흔할 수 있음."},
+{"type":"heading","level":2,"text":"병태생리","gist":"ACTH 낮은데 cortisol 높음(해리) + free 분율↑ + 대사↓ + GR 저항"},
+{"type":"list","items":[
+"Cortisol ▸ 부신에서 일주기 리듬에 따라 소량, 생리적 스트레스 시 다량 분비. 기능: 탄수화물·지질·단백 대사 조절, 면역 조절, catecholamine의 적절한 생산과 adrenergic receptor 기능 보장, 세포막 안정화.",
+"HPA axis ▸ 시상하부 CRH → 뇌하수체 전엽 ACTH (시상하부 arginine vasopressin이 CRH와 상승작용) → 부신 zona fasciculata·zona reticularis에서 cortisol 생성·분비 → CRH·arginine vasopressin·ACTH에 음성 되먹임.",
+"혈중 cortisol ▸ 대부분 corticosteroid-binding globulin(CBG)에, 소량은 albumin에 결합. 단백 비결합 free cortisol이 생물학적 활성 분율.",
+"작용 ▸ 유전체 경로: 세포질 glucocorticoid receptor(GR)와 결합 → 핵으로 이동해 수백–수천 유전자 전사 변화. 비유전체 경로: 세포막·미토콘드리아막에 삽입."]},
+{"type":"table","title":"CIRCI 병태생리 요소","headers":["요소","내용"],"rows":[
+["Cortisol 생성 감소","직접 외상, 경색·출혈, 사이토카인이 HPA axis 기능 손상. ICU 약물: ketoconazole, etomidate, propofol, opiates."],
+["ACTH-cortisol 해리","중증 환자는 ACTH가 낮은데 free·총 cortisol이 높은 경우가 흔함. ACTH 외 분자(사이토카인, lipopolysaccharide-bound toll-like receptor, endothelin)가 ACTH와 무관하게 부신 cortisol 생성 자극. 높은 free cortisol이 시상하부·뇌하수체를 억제해 ACTH 저하."],
+["Free cortisol 분율 증가","전신 염증으로 간의 CBG·albumin 합성 감소 (중증 환자 CBG 감소 확인). 산혈증, 고체온, 호중구 활성화가 CBG 구조를 바꿔 cortisol 친화도 감소."],
+["Cortisol 대사 감소","신장·간의 cortisol 대사 장애 — 일부는 순환 담즙산 증가와 연관."],
+["표적조직 저항성","Sepsis에서 GR 구조·수 변화 → 유전체 효과 발휘 능력 변화. 약리적 용량 glucocorticoid가 GR 수·기능을 정상화할 수 있다는 가설."]]},
+{"type":"heading","level":2,"text":"임상 발현","gist":"승압제 저항성 저혈압이 가장 흔함; ACTH 반응 불량 개는 저혈압·사망 위험↑"},
+{"type":"list","items":[
+"가장 흔한 이상 ▸ septic shock·CIRCI 환자의 승압제 저항성 저혈압 — glucocorticoid가 adrenergic receptor 기능에 영향을 주므로 논리적. 사람 연구에서 저용량 corticosteroid가 위약보다 혈압을 더 빨리 개선.",
+"외인성 ACTH 반응이 불량한 중증 개는 반응이 강한 개보다 저혈압 가능성이 높을 수 있음. Septic shock 고양이 2마리·개 1마리 증례: corticosteroid 추가 후 승압제 중단 가능.",
+"사망 ▸ ACTH에 대한 cortisol 반응이 변화된 사람은 같은 중증도의 정상 HPA axis 환자보다 사망 가능성이 높을 수 있음. 패혈증 개 1개 연구에서도 CIRCI가 있으면 사망 가능성이 더 높음.",
+"기타 발현은 불명확 ▸ 사람에서 신경·심혈관·소화기·호흡기 이상이 연관될 수 있으나 원발 질환과 구분이 어려움.",
+"진성 부신부전이면 Addisonian crisis의 전형적 임상병리 소견 예상 (Chapter 82) — 완전 부신부전은 CIRCI의 드문 발현."]},
+{"type":"heading","level":2,"text":"진단","gist":"사람·개·고양이 모두 확립된 진단법 없음 — cortisol 검사는 중증도 지표일 가능성"},
+{"type":"list","items":[
+"사람 ▸ CIRCI 진단법은 불명. 현 가이드라인은 hydrocortisone에 대한 혈역학 반응 대신 resting cortisol 또는 250 µg 표준 ACTH stimulation test를 권장 — 성인은 1 µg 검사가 아닌 250 µg cosyntropin 전량, free cortisol이 우월하지 않고 측정이 어려워 총 cortisol 측정.",
+"그러나 두 대형 시험에서 혈장 cortisol 검사와 hydrocortisone 이득 사이에 관계 없음 → 최대 CIRCI 시험은 resting·자극 cortisol을 전혀 측정하지 않고 치료. 최신 Surviving Sepsis Campaign 가이드라인도 cortisol 검사를 언급하지 않음.",
+"병태생리의 복잡성과 최근 중규모 연구 결과상 ACTH stimulation test·resting cortisol은 정확히 진단할 가능성이 낮음. 개체별 필요 cortisol 양은 알 수 없고 중증 환자에서 혈장 cortisol과 조직 활성의 관계는 불분명."]},
+{"type":"table","title":"개·고양이 HPA axis 연구","headers":["대상","검사","결과"],"rows":[
+["감염성 전신 염증 개","표준 1-hr 250 µg ACTH stimulation test","Delta cortisol ≤3 µg/dl인 개가 >3 µg/dl인 개보다 저혈압 가능성이 높고 생존 감소"],
+["Sepsis, 중증 외상, GDV 개 (Martin et al.)","1-hr ACTH stimulation, cosyntropin 5 µg/kg","Delta cortisol ≤3 µg/dl인 개가 >3 µg/dl보다 승압제를 받을 가능성이 유의하게 높음"],
+["고양이","표준 합성 ACTH 125 µg; resting·자극 cortisol, delta cortisol","절단값 제안 없음. Costello 등: 패혈성 고양이 평균 delta cortisol 2.3 µg/dl (SD ±2.5 µg/dl) vs 정상 고양이 6.5 µg/dl (SD ±4.6 µg/dl; 원문 추출은 ‘64.6’으로 ± 기호 깨짐) — 평균은 유의하게 낮지만 범위가 겹침"],
+["승압제 의존 저혈압 고양이 1마리 (증례)","ACTH stimulation","Delta cortisol 3.2 µg/dl, corticosteroid로 개선"]],
+"note":"이후 CIRCI 병태생리 이해의 진전과 사람에서 cortisol 측정 유용성에 대한 불확실성을 고려하면 이 결과들은 CIRCI의 진단보다는 질병 중증도의 지표일 가능성이 높음. 개·고양이의 CIRCI 진단법은 권고할 수 없음."},
+{"type":"heading","level":2,"text":"치료 — 사람","gist":"불응성 septic shock에 hydrocortisone; fludrocortisone 비권장"},
+{"type":"list","items":[
+"CIRCI 가이드라인 ▸ 수액과 중등도–고용량 승압제에 반응하지 않는 septic shock에서 저용량 hydrocortisone (<400 mg/day/adult) 3 days 권장.",
+"Surviving Sepsis Campaign ▸ 수액·승압제로 혈역학 안정이 회복되면 hydrocortisone 사용에 반대 권고; 사용한다면 200 mg/day/adult. 두 가이드라인 모두 낮은 근거 수준의 '조건부'·'약한' 권고.",
+"투여 방법 ▸ 하루 4회 분할(예: 50 mg every 6 hours, 총 200 mg/adult/day) 또는 부하 100 mg 후 10 mg/hr 지속 IV infusion (240 mg/adult/day). 감량 필요 여부 불명 — 최대 시험들은 갑자기 중단.",
+"Fludrocortisone ▸ 어떤 가이드라인도 권장하지 않음 — hydrocortisone 병용 시 생존 개선 없음, 해당 용량의 hydrocortisone이면 aldosterone receptor가 모두 점유됨.",
+"Septic shock이 아닌 sepsis ▸ corticosteroid 비권장.",
+"심폐정지 ▸ CPR 중 methylprednisolone 투여 후 신경학적 기능 양호한 생존 개선의 제한적 근거. ROSC 후 쇼크 상태에서 hydrocortisone 투여의 제한적 근거. 의미 있는 합병증 보고 없음. '매우 낮은 근거 수준'임을 전제로 가이드라인은 심폐정지에서 corticosteroid 사용을 제안."]},
+{"type":"heading","level":2,"text":"치료 — 개 · 고양이","gist":"Hydrocortisone 2.5–3 mg/kg/day CRI, 24h 내 반응 시만 지속"},
+{"type":"list","items":[
+"수액·승압제에도 지속되는 저혈압에 저용량 corticosteroid가 이득인지 판단할 임상 근거가 적음.",
+"매우 작은 전향 연구 ▸ septic shock 개에서 hydrocortisone vs 위약 생존 차이 없음. 반면 corticosteroid 후 승압제 이탈 증례 보고 있음.",
+"후향 증례군 (septic shock 개 47마리) ▸ 21마리가 hydrocortisone 2–4 mg/kg/day를 간헐 bolus 또는 지속 주입으로 받음 — 투여 전 중증도 점수가 더 높았으며, 후향 연구라 치료 효과는 판단 불가.",
+"저자 병원 ▸ 수액 부하 후 승압제 불응 septic shock 개·고양이에 임상의 판단으로 hydrocortisone 2.5 to 3 mg/kg/day 지속 IV 주입. 시작 24 hours 내 심혈관 상태가 뚜렷이 개선된 환자만 지속하는 것이 합리적 (Fig. 81.1).",
+"심폐정지에서 저용량 corticosteroid 사용에 대한 개·고양이 임상 근거는 없으며 사람 가이드라인 외삽 가능성 불명."]},
+{"type":"table","title":"Fig. 81.1 개·고양이 septic shock에서 corticosteroid 사용 결정 흐름","headers":["단계","질문","아니오","예"],"rows":[
+["1","적절한 수액 부하에 저항하는 저혈압?","Corticosteroid 투여하지 않음","2단계로"],
+["2","중등도 승압제 용량에도 저혈압 지속?","—","Hydrocortisone 2.5–3 mg/kg/day 시작"],
+["3","24 hours 이내 승압제 용량이 >50% 감소?","Corticosteroid 중단","Hydrocortisone 5 days 지속 후 2–3 days에 걸쳐 감량, 또는 full dose로 7 days 지속 후 중단"]],
+"note":"— = 원 그림에 해당 경로 없음"},
+{"type":"heading","level":2,"text":"예후","gist":"원발 질환에서 생존하면 HPA axis 기능 회복 예후 양호"},
+{"type":"list","items":[
+"사람 ▸ ICU 퇴원 1 week 이내 ACTH와 cortisol이 정상 이상 수준으로 증가.",
+"원발 기저질환에서 생존하면 정상 HPA axis 기능 회복 예후는 양호."]}
+]}

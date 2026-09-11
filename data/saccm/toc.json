@@ -69,5 +69,16 @@
 {"id": "sacc3-p6-c68", "num": 68, "title": "Shock Fluids and Fluid Challenge", "part": "Part VI", "part_title": "Fluid Therapy"},
 {"id": "sacc3-p6-c69", "num": 69, "title": "Transfusion Medicine", "part": "Part VI", "part_title": "Fluid Therapy"},
 {"id": "sacc3-p6-c70", "num": 70, "title": "Blood Types, Pretransfusion Compatibility, and Transfusion Reactions", "part": "Part VI", "part_title": "Fluid Therapy"},
-{"id": "sacc3-p6-c71", "num": 71, "title": "Hemorrhagic Shock", "part": "Part VI", "part_title": "Fluid Therapy"}
+{"id": "sacc3-p6-c71", "num": 71, "title": "Hemorrhagic Shock", "part": "Part VI", "part_title": "Fluid Therapy"},
+{"id": "sacc3-p7-c72", "num": 72, "title": "The Diabetic Patient in the ICU", "part": "Part VII", "part_title": "Endocrine Disorders"},
+{"id": "sacc3-p7-c73", "num": 73, "title": "Diabetic Ketoacidosis", "part": "Part VII", "part_title": "Endocrine Disorders"},
+{"id": "sacc3-p7-c74", "num": 74, "title": "Hyperglycemic Hyperosmolar Syndrome", "part": "Part VII", "part_title": "Endocrine Disorders"},
+{"id": "sacc3-p7-c75", "num": 75, "title": "Hypoglycemia", "part": "Part VII", "part_title": "Endocrine Disorders"},
+{"id": "sacc3-p7-c76", "num": 76, "title": "Diabetes Insipidus", "part": "Part VII", "part_title": "Endocrine Disorders"},
+{"id": "sacc3-p7-c77", "num": 77, "title": "Syndrome of Inappropriate Antidiuretic Hormone", "part": "Part VII", "part_title": "Endocrine Disorders"},
+{"id": "sacc3-p7-c78", "num": 78, "title": "Thyroid Storm", "part": "Part VII", "part_title": "Endocrine Disorders"},
+{"id": "sacc3-p7-c79", "num": 79, "title": "Hypothyroid Crisis in the Dog", "part": "Part VII", "part_title": "Endocrine Disorders"},
+{"id": "sacc3-p7-c80", "num": 80, "title": "Pheochromocytoma", "part": "Part VII", "part_title": "Endocrine Disorders"},
+{"id": "sacc3-p7-c81", "num": 81, "title": "Critical Illness-Related Corticosteroid Insufficiency", "part": "Part VII", "part_title": "Endocrine Disorders"},
+{"id": "sacc3-p7-c82", "num": 82, "title": "Hypoadrenocorticism", "part": "Part VII", "part_title": "Endocrine Disorders"}
 ]}

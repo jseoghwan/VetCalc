@@ -1,0 +1,89 @@
+{"id":"sacc3-p7-c72","book":"Small Animal Critical Care Medicine, 3rd ed.","book_short":"SACCM 3판","part":"Part VII","part_title":"Endocrine Disorders","chapter_num":72,"title":"The Diabetic Patient in the ICU","author":"Elizabeth Rozanski, DVM, DACVIM (SA-IM), DACVECC; Orla Mahoney-Wages, MVB, DACVIM (SA-IM), DECVIM","format":2,"blocks":[
+{"type":"callout","title":"KEY POINTS","items":[
+"당뇨를 동반한 중환자 관리는 혈당, 전해질, 산-염기, 용적 상태에 특별한 주의가 필요.",
+"인슐린은 케톤생성 억제(케톤 대사)와 산증 교정에 필수.",
+"DKA의 수액 요구량은 매우 높을 수 있음 (>180 ml/kg/day).",
+"많은 환자가 인슐린 저항성을 일으키는 기저 동반질환을 가지며, 이것이 케토산증으로 이어질 수 있음.",
+"외인성 glucocorticoid 투여 시 인슐린 요구량이 증가할 수 있음."]},
+{"type":"heading","level":2,"text":"개요 · 분류","gist":"개는 인슐린 절대결핍, 고양이는 저항성+상대결핍 — sick/not sick로 입원 결정"},
+{"type":"list","items":[
+"당뇨병은 개·고양이의 가장 흔한 내분비질환 중 하나이며, ICU 내원으로 이어지는 가장 흔한 내분비질환일 수 있음. 치료 지시의 잦은 재평가가 필요.",
+"다른 질환으로 입원한 당뇨 동물도 원발 질환 치료와 함께 고혈당 조절, 전해질·산-염기 모니터링, 용적 평가를 자주 시행.",
+"심정지 직전(periarrest)·중증 환자는 심한 고혈당(>500 mg/dl; 27.7 mmol/L) 때문에 당뇨로 오인될 수 있음. 인슐린 과량·과소 투여 후 내원하기도 함. 저혈당으로 내원한 고양이는 당뇨 관해(remission)를 감별해야 함.",
+"개 ▸ 인슐린 절대결핍 (베타세포 자가면역 파괴, 췌장염, 유전 요인; 특정 품종 과다대표) — 사람 1형과 유사. 고양이 ▸ 인슐린 저항성 + 상대결핍 — 사람 2형과 유사.",
+"개의 2차 원인: hypersomatotropism, hyperadrenocorticism, 외인성 glucocorticoid, diestrus, 임신.",
+"Glucotoxicity ▸ 지속 고혈당에 의한 베타세포 손상. 조기에 발견하면 가역적(특히 고양이) — 신속한 인슐린 치료의 근거.",
+"미치료 당뇨는 DKA로 진행 가능. 스트레스 요인(감염, 췌장염, hyperadrenocorticism, 외인성 glucocorticoid)이 있으면 더 빨리 진행. 일부 고양이(개는 드묾)는 DKA나 HONK(hyperosmolar nonketotic) crisis 이전에 뚜렷한 증상이 없음.",
+"DKA crisis로 내원한 동물의 40%–50%는 이미 인슐린을 투여받던 중이었으며, DKA·HONK 발생 이유가 불분명할 수 있음."]},
+{"type":"table","title":"Sick vs not sick diabetic","headers":["구분","정의","관리"],"rows":[
+["Sick diabetic","쇠약, 구토, 황달, 중등도–중증 탈수 및/또는 뚜렷한 산-염기 이상","가능하면 입원"],
+["Not sick diabetic","활발·의식 명료, 식욕 양호, 구토 없음 (혈당이 매우 높고 케톤이 있어도)","동반질환이 심하거나 생명을 위협하지 않으면 외래 치료 가능"]],
+"note":"비케톤성 당뇨 vs DKA로 나누기보다 이 구분이 더 나을 수 있음."},
+{"type":"heading","level":2,"text":"인슐린","gist":"입원 6h 내 시작 지지 우세; 목표 혈당 150–250 mg/dl, 낮으면 dextrose 추가"},
+{"type":"paragraph","text":"즉각적인 혈당 조절은 필요 없지만 인슐린은 신속히 시작하는 것이 중요. 시작 시점에 대한 전향적 연구는 없음 (자세한 프로토콜은 Chapter 73, Table 73.1)."},
+{"type":"table","title":"인슐린 시작 시점 논쟁","headers":["입장","시점","근거"],"rows":[
+["조기 시작","<6 hours","케토시스 역전·산증 해소에는 인슐린이 필요. Criticalist 설문(October 2020)에서 입원 6 hours 이내 시작을 거의 보편적으로 지지. DiFazio & Fletcher(후향): 조기 인슐린이 합병증 증가 없이 DK/DKA를 더 빨리 해소."],
+["지연 시작","12–24 hours 수액 소생 후","혈당의 과도하게 빠른 하강에 의한 뇌부종 우려; 인슐린 시작 전 교정해야 할 저칼륨혈증."]],
+"note":"케톤뇨가 심할수록 DK/DKA 해소에 더 오래 걸림. 인슐린 투여 목표 시점을 정할 전향 연구가 필요."},
+{"type":"table","title":"긴급 인슐린 선택","headers":["인슐린","경로","투여 간격","비고"],"rows":[
+["Rapidly acting (Lispro, Aspart) 또는 short-acting (regular)","CRI","—","속도를 자주 바꿀 수 있고 탈수 환자에서도 전달이 예측 가능. 관리가 더 집중적이며 높은 수준의 간호가 필요할 수 있음."],
+["Regular","IM (intermittent)","처음에는 매시간, 혈당 <250 mg/dl (13.9 mmol/L)까지","혈관 확보가 제한된 환자에서 쉽게 시행."],
+["Glargine","IM","q2–4h 반복","IM 시 빠르게 작용."],
+["Glargine","SQ","q12h","—"],
+["NPH 또는 glargine + short/rapid acting 추가","—","—","장시간형으로 DKA 치료를 시작하는 것도 허용."]],
+"note":"— = 요약에 해당 내용 없음"},
+{"type":"list","items":[
+"목표 혈당 ▸ 150–250 mg/dl (8.3–13.9 mmol/L).",
+"인슐린은 이상적으로 지속 투여 — 혈당이 낮으면 인슐린을 끊지 말고 dextrose를 보충하며 infusion 유지.",
+"pH가 계속 낮거나 케톤이 해소되지 않으면 혈당이 적절해도 인슐린 용량을 계속 증량. 일부는 현저한 인슐린 저항성으로 dextrose 보충과 더 높은 인슐린 용량이 필요하며, 케토시스가 해소되면서 감량 가능."]},
+{"type":"heading","level":2,"text":"수액 요법","gist":"요구량 흔히 >180 ml/kg/day; 균형 전해질액 선호, 보정 Na로 자유수 결손 추적"},
+{"type":"list","items":[
+"DKA·HONK 해소에 필수. 고혈당이 있으면 수액 요구량이 매우 높아 흔히 180 ml/kg/day를 초과.",
+"고혈당에 의한 강제(obligate) 이뇨로 심한 탈수 상태에서도 소변 생산이 지속. 기존 PU/PD에 의한 medullary washout도 기여.",
+"잘 마시지 않거나, 보행 불능이거나, 다뇨가 심하면 무균적으로 요도 카테터를 장착해 요 손실을 정량. 장착하지 않으면 체중, 요량(예: 패드 무게 측정), 피부 긴장도, 점막 습윤도를 주의 깊게 평가.",
+"소형 환자는 체중 차이가 뚜렷하지 않아도 임상적으로 의미 있는 수분 손실이 있을 수 있음.",
+"수액 종류는 크게 문제되지 않으나 균형 전해질 보충액(Plasma-Lyte/lactated Ringer's solution)이 가장 많이 쓰임. 0.9% saline은 산성화 수액이고 chloride 농도가 높아 신장에 해로울 수 있음.",
+"핵심은 전신 수화를 유지할 만큼 충분한 수액 투여 (Chapter 63, 64 참조)."]},
+{"type":"table","title":"Na를 이용한 자유수 결손 평가","headers":["항목","내용"],"rows":[
+["보정 Na (고혈당 보정)","Corrected sodium = Measured sodium + 0.016 × (Serum glucose − 100)"],
+["자유수 결손 예","15 kg 개, Na 145 → 160 mEq/L: 15 × (160/145 − 1) × 0.6 = 930 ml"],
+["주의","가성저나트륨혈증(pseudohyponatremia)을 고려해 해석 (Chapter 55 참조)"]]},
+{"type":"heading","level":2,"text":"혈관 확보 · 연속혈당측정기(CGM)","gist":"이중내강 카테터로 잦은 채혈; CGM은 >500 또는 <60 mg/dl이면 혈당으로 확인"},
+{"type":"list","items":[
+"채혈 가능한 카테터(예: double lumen catheter)가 잦은 혈당·전해질 측정에 유용. 특별한 사정이 없으면 충분히 수화되어 혈관이 보일 때 장착.",
+"CGM(예: FreeStyle Libre, Abbott) ▸ 피하에 위치하는 최소침습 장치로, 장착 후 빠르면 1 hour 내 간질액 혈당을 통증 없이 실시간 측정. DKA 개에서 Libre flash glucose monitoring system의 정확도가 허용 가능했음.",
+"혈당(blood glucose) 교차 확인 ▸ 주기적으로, 예상 밖 수치일 때, 또는 >500 mg/dl (27.7 mmol/L)이나 <60 mg/dl (3.33 mmol/L)일 때.",
+"케톤이 있는 신규 진단 환자에서도 유용. 많은 내과의가 재수화 후 조기 장착을 지지 — 케토시스 해소 후 간단·무통 평가, 퇴원 후에도 착용해 식욕 회복에 맞춘 재택 인슐린 조정 가능.",
+"조기 장착 시 더 잦은 모니터링 → 케토시스의 더 빠른 해소 가능, 소형 환자에서 잦은 채혈에 의한 의인성 빈혈 최소화."]},
+{"type":"heading","level":2,"text":"전해질 · 모니터링","gist":"K 미상 시 ≥40 mEq/L, Kmax 0.5 mEq/kg/hr; 저인산은 치료 24h 내 발생"},
+{"type":"list","items":[
+"저칼륨혈증 ▸ sick diabetic에서 매우 흔함(섭취 부족, 구토, 다뇨에 의한 대량 신장 손실). 초기에는 산증과 인슐린 결핍으로 K가 세포외로 이동해 중증도가 가려질 수 있음 (Chapter 56 참조). 적극 보충하고 자주 측정.",
+"저인산혈증 ▸ 치료 24 hours 이내 발생 가능 (삼투성 이뇨, 대사성 산증, 인슐린 치료, 수액 치료). 중증이면 용혈성 빈혈·근쇠약 → 초기치가 참고범위 하단이거나 치료 후 떨어지면 보충 고려. 고양이가 개보다 흔하고, 빈혈이 급격히 심해질 수 있음. 질소혈증 동물은 신청소율 저하로 저인산이 거의 없음."]},
+{"type":"table","title":"전해질 보충","headers":["약물","경로","용량","비고"],"rows":[
+["Potassium (KCl)","IV (수액 첨가)","혈청 K 미상 시 최소 40 mEq/L로 시작\n안전한 시작: 0.1–0.25 mEq/kg/hr (K 측정 전까지)\nKmax: 0.5 mEq/kg/hr","수액 속도를 함께 고려. Sliding Scale of Scott 등은 유지 속도 기준이므로 고속 수액 시 과보충 주의. Kmax 속도를 계산해 전용 수액백·별도 syringe pump·일반 infusion bag에 넣고 명확히 라벨."],
+["Magnesium","IV","1 mEq/kg/day (0.04 mEq/kg/hr)","저칼륨혈증이 빨리 교정되지 않을 때, 이상적으로는 측정 후 (Chapter 58 참조)."],
+["Potassium phosphate (KPhos)","IV","CRI 0.06–0.12 mmol/kg/hr\n또는 총 K 속도를 KCl:KPhos = 1:1로 분할","KPhos 1 ml = Phos 4.4 mmol + K 3 mEq (Chapter 58 참조)."]]},
+{"type":"table","title":"모니터링","headers":["항목","간격"],"rows":[
+["전해질","초기 q4–8h"],
+["Phosphorus","q12–24h"],
+["Glucose","q1–2h"],
+["수화 상태","체중, 의식 상태(attitude), 점막"]]},
+{"type":"list","items":[
+"복부 초음파 ▸ 췌장염 등 인슐린 저항성의 동반 원인 배제에 도움.",
+"요 배양 ▸ 소변검사에 감염 소견이 없어도 감염 배제를 위해 시행."]},
+{"type":"heading","level":2,"text":"장기 인슐린 전환","gist":"즉시(드묾) 또는 케톤 소실·식욕 회복 시 — 방법 간 우열 근거 없음"},
+{"type":"list","items":[
+"전환 시점 ▸ 즉시(드묾), 케톤 소실 시, 또는 식욕 회복 시. 어느 시점이 더 낫다는 근거는 없으며 전환 후 면밀한 모니터링이 중요.",
+"최적 장기 인슐린은 논쟁 중 — 임상의 선호와 보호자 비용에 따라 결정. 대부분 제형이 잘 듣지만 종류를 바꾸면 개선되는 경우도 있음.",
+"수의 전용 제품 ▸ Vetsulin/Caninsulin (Merck)과 PZI (B-I) — 둘 다 적절한 선택. 그 외 흔히 쓰는 것: NPH, insulin glargine (Lantus).",
+"미국에서는 일부 인슐린 가격이 부담스러울 정도이며 브랜드별 가격 차이가 큼 → 보호자에게 비용 안내."]},
+{"type":"heading","level":2,"text":"영양 지원 · 기타","gist":"식욕부진 지속 시 NG/E-tube; 음식 여러 개 늘어놓기는 혐오 악화"},
+{"type":"list","items":[
+"영양 지원은 중증 당뇨 해소에 필수. 전형적 당뇨 환자는 식욕이 왕성하지만 산-염기 이상, 질소혈증, 췌장염, 간지질증 때문에 DKA·HONK 환자는 흔히 식욕부진.",
+"지속 식욕부진 ▸ nasogastric tube 또는 E-tube 고려. NG tube는 진정이 적거나 없이 장착 가능하지만 튜브 굵기로 식이가 제한되어 장기 지원에는 덜 유용 (Chapter 126 참조).",
+"'smorgasbord' 제공(여러 음식 늘어놓기)은 음식 혐오를 지속시킬 수 있음 — 오심이 있으면 혐오가 커짐. 소량을 주고 먹지 않으면 치움. 데우거나 건사료/캔을 바꿔 제공.",
+"Capromorelin (Entyce) ▸ ghrelin agonist로 식욕을 개선할 수 있으나 IGF1 상승으로 인슐린 저항성을 높일 수 있음 — 식욕 증가의 이점이 크며 혈당 상승은 인슐린 추가로 대응.",
+"고양이 ▸ 저탄수화물·고단백 사료(예: Purina DM)가 관해 유도에 도움. 개의 관해는 매우 드묾.",
+"비경구 영양(TPN/PPN) ▸ dextrose 농도가 높아 인슐린 요구량 증가. 면역억제 위험으로 ICU에서 선호도 감소 (Chapter 127 참조).",
+"수혈 ▸ 혈액이 citrate phosphate dextrose adenine으로 항응고되어 있어 수혈 중·직후 인슐린 추가가 필요할 수 있음."]}
+]}
