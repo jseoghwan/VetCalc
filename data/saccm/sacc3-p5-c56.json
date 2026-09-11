@@ -1,103 +1,322 @@
-{"id":"sacc3-p5-c56","book":"Small Animal Critical Care Medicine, 3rd ed.","book_short":"SACCM 3판",
- "part":"Part V","part_title":"Electrolyte and Acid-Base Disturbances","chapter_num":56,
- "title":"Potassium Disorders","author":"Samantha Wigglesworth, VMD, DACVECC; Michael Schaer, DVM, DACVIM, DACVECC","format":2,
- "blocks":[
-{"type":"callout","title":"KEY POINTS","items":[
- "정상 혈청 K 농도는 정상 신경근 기능에 필수.",
- "저칼륨혈증의 흔한 원인: 당뇨병, 만성 신질환(특히 고양이), 장기간 식욕부진, 설사, 고알도스테론증, 대사성 알칼리증. 개·고양이의 주된 임상 발현은 저칼륨성 근병증.",
- "총 투여량보다 K 주입 속도가 치료적으로 더 중요. 경증–중등도 저K(2.5–3.5 mEq/L)는 최대 0.5 mEq/kg/hr로 교정 가능.",
- "유지 수액의 통상 K 보충 농도는 20 mEq/L이나, 혈청 K 3.4 – <2.0 mEq/L인 저K 동물에서는 30–60 mEq/L의 증량이 흔히 필요.",
- "소동물 고칼륨혈증의 가장 흔한 원인 = 요 배설 감소. 요로 폐색·uroabdomen에 의한 중증 고K는 신속한 고K 치료 + 원인 해결이 최적 목표.",
- "신부전, 부신피질기능저하증, 소화기 질환이 Na/K 비 <27:1의 가장 흔한 원인.",
- "혈청 K >7.5 mEq/L이면 즉시 K 저하·길항 치료(calcium, dextrose ± insulin, β₂ agonist). ECG 이상이 없어도 고K는 치료해야 한다.",
- "혈액투석·혈액관류는 혈청 K를 효과적·신속하게 낮추며, GFR 낮은 AKI 환자에서 치료 계획의 일부가 될 수 있다."
-]},
-{"type":"heading","level":2,"text":"K 분포와 항상성 조절","gist":"K 98–99% 세포내(ICF 140 vs 혈장 4 mEq/L) — 혈청 K는 총량을 반영 못함"},
-{"type":"list","items":[
- "K는 가장 풍부한 세포내 양이온: 98–99%가 세포내(대부분 골격근). 개·고양이 세포내 평균 140 mEq/L, 혈장 평균 4 mEq/L → 혈청 K는 총 체내 함량·조직 농도를 반영하지 않음.",
- "조절 인자: pH, 삼투압, 호르몬(insulin, catecholamine, aldosterone). 대사성 알칼리증 ▸ K가 세포내로 이동하며 H⁺와 교환. 고삼투압 ▸ 물이 세포 밖으로 나오며 K를 끌고 나옴('solvent drag'). Insulin·catecholamine·aldosterone ▸ K를 세포내로.",
- "ECF K↑ → aldosterone 분비 → 원위 세뇨관 Na-K-ATPase 활성↑ → 집합관 주세포를 통해 K가 내강으로 → K 배설·Na 재흡수.",
- "Kaliuretic feedforward control ▸ 위·간문맥 부위의 감지기가 K 섭취에 따른 국소 K 변화를 감지해 aldosterone과 무관하게 신장 K 배설을 조절 — 섭취에 의한 K 축적으로부터 내부 환경 보호. 위 감지기는 미확인(위 기계수용체 관여 가능).",
- "저K는 세포내 → 세포외 K 이동으로 상쇄. 사람: 혈청 K 3.0 mEq/L 하강 = 총 체내 K 200 mEq 결핍 (98%가 세포내라는 사실을 예시)."
-]},
-{"type":"heading","level":2,"text":"저칼륨혈증 (Hypokalemia)","gist":"<3.5 mEq/L; 근병증은 보통 <2.5에서; 주입 속도 ≤0.5 mEq/kg/hr"},
-{"type":"paragraph","text":"정의: 혈청 K <3.5 mEq/L (정상 3.5–5.5 mEq/L). 원인은 (1) 내부 균형 이상(재분포)과 (2) 외부 균형 이상(고갈). 최근 고양이 고알도스테론증(aldosteronoma 또는 부신피질 과형성)이 현저한 저K의 원인으로 주목; 페럿의 부신피질 선종과도 연관."},
-{"type":"table","title":"Box 56.1 저칼륨혈증의 원인","headers":["범주","원인"],"rows":[
- ["내부 균형 이상 (재분포)","대사성 알칼리증, insulin 투여, catecholamine 상승, β-adrenergic agonist 치료·중독, refeeding syndrome"],
- ["외부 균형 이상 (고갈)","신장 K 소실, 장기간 섭취 부족, 이뇨제, 삼투성·폐색 해제 후 이뇨, 만성 간질환, 비경구 수액의 부적절한 보충, aldosterone 분비 종양 등 고알도스테론증, 유문 유출 폐색 관련 지속 구토, DKA, 신세뇨관 산증, 중증 설사, barium 함유 파티 스파클러 섭취, glucocorticoid 투여"]
-]},
-{"type":"table","title":"저칼륨혈증의 결과 (4 범주)","headers":["범주","소견"],"rows":[
- ["대사","포도당 불내성이 가장 두드러진 대사 이상 — 총 체내 K↓ 시 췌장 β세포 insulin 분비 장애 근거"],
- ["신경근","골격근 약화(과분극된 근세포막 → 흥분성↓, 저분극으로 진행 가능): 머리·목 복측 굴곡(ventroflexion), 뻣뻣한 보행, 척행(plantigrade) 자세. 보통 혈청 K <2.5 mEq/L 전에는 드묾\n고양이 저K 근병증: 만성 신질환, 고알도스테론증, 조절 불량 당뇨; K 결핍 식이·장기 식욕부진도 원인\n고알도스테론증 고양이: 고혈압(aldosterone에 의한 Na 저류)에 의한 망막 출혈 → 시력 장애; 중증 시 횡격막·호흡근 마비로 사망\n횡문근융해증(신세뇨관 독성 가능), 평활근 장애(마비성 장폐색·위 무력증 소인)"],
- ["신장","만성 신질환 고양이는 K가 현저히 고갈될 수 있고, 저K가 다시 세뇨관 기능을 악화"],
- ["심혈관","세포내/외 K 비↑ → 전기적 과분극 → 활동전위 연장 → 심방·심실 빈맥성 부정맥, AV 해리, 심실세동 소인. ECG 이상 예측은 고K보다 신뢰도 낮음\n개 ECG: ST 분절 함몰, QT 간격 연장; P파 진폭↑, PR 연장, QRS 확장 가능 (Fig. 56.1: K 2.1 mEq/L 개 — P파 진폭↑, ST 함몰, T파 함몰)\nDigitalis 유발 부정맥 소인↑; class I 항부정맥제(lidocaine, quinidine, procainamide)에 불응"]
-]},
-{"type":"heading","level":3,"text":"저칼륨혈증 관리"},
-{"type":"list","items":[
- "목표: 지속적 K 손실 억제, 제제·경로를 고려한 K 결핍 보충, 원발 질환 교정. 대사성 알칼리증 동반 시 pH 정상화 + K 보충 + 알칼리증 원인 교정. 일차성 고알도스테론증 ▸ 원인 제거 및/또는 aldosterone 길항제(spironolactone)로 원위 세뇨관 작용 차단. 만성 신질환·당뇨는 적절히 치료해 손실 최소화.",
- "중등도(2.5–3.4 mEq/L)–중증(<2.5 mEq/L)이며 식욕부진·구토 환자 ▸ KCl 용액 비경구 투여 (저인산혈증 시 potassium phosphate; Table 56.1).",
- "속도 ▸ 경증–중등도는 0.5 mEq/kg/hr를 거의 넘기지 않음. 심한 저K(<2.5 mEq/L) + 정상·증가된 요량이면 ECG 감시하에 1–1.5 mEq/kg/hr까지 조심스럽게 증량. 안전 범위 0.5–1.5 mEq/kg/hr.",
- "KCl 20 mEq를 LRS·0.9% NaCl·Plasma-Lyte A 1 L에 추가하면 삼투압이 각각 312, 348, 334 mEq/L로 변하나 대부분 환자에서 문제 없음.",
- "K 주입 부작용 소인 ▸ 핍뇨·무뇨, 저알도스테론증(Addison), K 보존 약물(spironolactone, triamterene) 병용.",
- "수액 선택 ▸ 일차성 대사성 산증: 완충제 함유 수액(lactated/acetated Ringer's, Plasma-Lyte A)에 KCl 추가. 대사성 알칼리증 대부분: 생리식염수에 KCl 추가.",
- "범위는 환자별 조정 ▸ 중증 핍뇨·무뇨 환자는 최소 유지량; 다뇨성 케톤산증·케토알칼리증 당뇨 환자(regular insulin 투여 중)는 훨씬 많은 양 필요.",
- "수액 반응성 쇼크는 등장 정질액으로 먼저 소생 후 KCl 추가. 중증 저K(<2 mEq/L)는 재수화 기간 중 K 치료 시작 — 별도 주입 또는 더 느린 수액 속도로 안전 속도 유지.",
- "예외 ▸ 현저한 저K로 무호흡 시 KCl 2 mEq/ml 용액 0.01 ml/kg IV bolus가 느린 주입이 효과 낼 때까지 생명을 구할 수 있음 (저자 경험—M.S.); 철저한 ECG 감시 필수.",
- "저K 당뇨 환자에서 sodium bicarbonate·insulin 투여는 첫 4–8시간 또는 혈청 K >3.5 mEq/L까지 연기 — 아니면 K 세포내 이동으로 생명을 위협하는 저K.",
- "경구 ▸ Potassium gluconate 분말(Tumil-K): 안정된 경증 저K 개·고양이. 사료에 섞어 하루 2회, ¼ teaspoon(2 mEq)/4.5 kg; 유지 용량은 효과에 맞춰 조정. 경구 급여 또는 대구경 급식관 가능한 동물에 한정."
-]},
-{"type":"table","title":"Table 56.1 개·고양이 정맥 K 보충 지침","headers":["혈청 K (mEq/L)","250 ml 수액에 추가할 KCl (mEq)","1 L 수액에 추가할 KCl (mEq)","최대 수액 속도 (ml/kg/hr)"],"rows":[
- ["<2.0","—","—","—"],
- ["2.1–2.5","—","—","—"],
- ["2.6–3.0","—","—","—"],
- ["3.1–3.5","—","—","—"],
- ["3.6–5.0","—","—","—"]
-],"note":"— = 원문 추출에서 수치 누락 (표 본문 미검출). 최대 속도는 0.5 mEq/kg/hr를 넘지 않도록 설정. K 추가 시 환자 쪽 밸브를 잠그고 추가 중·후 수액백을 충분히 혼합할 것."},
-{"type":"list","title":"예상 합병증","items":[
- "과도한 K 보충으로 고K 가능. 전해질 보충에 쓰는 유치 카테터에서 채혈 시 주의.",
- "대사성 알칼리증·저Mg·저Ca 동반 시 저K 신경근 기능 장애가 악화되고 치료 불응 가능 → 정상 신경근 기능을 위해 모든 산-염기·전해질 이상 교정."
-]},
-{"type":"heading","level":2,"text":"고칼륨혈증 (Hyperkalemia)","gist":">5.5 mEq/L, >7.5는 생명 위협·즉시 치료; 가장 흔한 원인 요 배설↓"},
-{"type":"paragraph","text":"정의: 혈청 K >5.5 mEq/L; >7.5 mEq/L이면 생명 위협. 4가지 기본 기전: 섭취·투여 증가, ICF → ECF 이동, 신장 배설 감소, 인위적(pseudohyperkalemia). 개에서 중등–중증 고K의 가장 흔한 원인은 요로 질환."},
-{"type":"table","title":"Box 56.2 고칼륨혈증의 원인","headers":["범주","원인"],"rows":[
- ["섭취·보충 증가","IV K 함유 수액, 유효기간 지난 RBC 수혈, 약물(potassium penicillin G, KCl, KPhos)"],
- ["ICF → ECF 이동","무기산 산증(호흡성 산증, NH₄Cl, HCl, 요독증), insulin 결핍, 급성 종양 용해 증후군, 혈전색전증 치료 후 사지 재관류, 약물(비특이적 β-blocker, cardiac glycoside)ᵃ, 심폐정지"],
- ["요 배설 감소","무뇨·핍뇨성 신손상, 요도 폐색·양측 요관 폐색, uroabdomen, 부신피질기능저하증, 소화기 질환(trichuriasis, salmonellosis, 십이지장 천공), 유미흉·흉수·복수, 약물(ACE 억제제, ARB, heparin, cyclosporine·tacrolimus, NSAID, trimethoprim)ᵃ"],
- ["Pseudohyperkalemia","혈소판증가증·백혈구증가증(>1,000,000 혈소판 또는 >100,000 백혈구), Akita 등 일본 원산 견종, 특발성, 건강한 개의 전신마취(특히 Greyhound)"]
-],"note":"ᵃ 단독으로는 고K를 잘 일으키지 않음; 다른 약물·AKI·K 보충 등과 함께 유발 가능."},
-{"type":"list","title":"기전별 보충 설명","items":[
- "과다 보충 ▸ IV 속도는 일반적으로 0.5 mEq/kg/hr 초과 금지. 유효기간 지난 pRBC, K 보충 + ACE 억제제·ARB·K 보존 이뇨제(spironolactone)·비선택적 β-blocker(propranolol)·heparin·cyclosporine·tacrolimus 병용.",
- "세포 외 이동 ▸ 무기산 산증(호흡성 산증, 요독증, NH₄Cl·HCl·CaCl₂ 주입)에서 K가 H⁺와 교환되어 유출. 유기산(lactate, ketoacid)은 세포막 전기 중성 유지 능력 때문에 이 효과가 드묾. 열사병, 압궤 손상, 항암 종양 용해 증후군, 림프육종 개의 방사선 치료 후, 대동맥 혈전색전증 고양이의 혈전용해 후 재관류, CPR 중·ROSC 직후(허혈성 세포 손상으로 세포내 K 대량 방출).",
- "당뇨 환자 ▸ 총 체내 K는 고갈되어 있으나 insulin 결핍(세포 K 흡수↓), 고삼투압(solute drag), 신기능 저하(동반 질환·신전성·저혈량 관련 AKI)로 고K 위험. Insulin 치료가 결핍·고삼투압을 교정해 K를 세포내로 되돌리고 단백 이화 필요↓; K 보충으로 총 결핍 보충.",
- "요 배설 감소(신전성·신성·신후성) ▸ 소동물 고K의 가장 흔한 원인. 요로 폐색·uroabdomen을 신속 평가하며 동시에 고K 치료. K 함유 균형 전해질 용액(LRS, Normosol-R) 사용 가능 — 요로 폐색 고양이 연구에서 K 함유 균형액과 0.9% NaCl 간 K 정상화 속도 차이 없었고, 균형액이 산-염기 교정은 더 빠름.",
- "핍뇨·무뇨 ▸ 급성·말기 만성 신세뇨관 손상. 만성 신질환에서는 분획 K 배설↑·대변 배설↑ 적응. 원위 세뇨관 K 배설은 충분한 GFR과 요 흐름에 의존 → AKI에서 크게 손상. 세포내 이동 치료는 일시적 효과일 뿐 — 유효 요량·GFR 회복 전에는 혈액투석·복막투석으로만 K 감소 가능 (Ch.178).",
- "만성 신질환 개 ▸ 식이 K 섭취가 배설 초과, ACE 억제제(고혈압·단백뇨 치료) → K 감량 식이로 해결 가능. 비특이적 β-blocker, cardiac glycoside, ACE 억제제, ARB, cyclosporin, tacrolimus, heparin, trimethoprim 등 약물 재평가·중단·감량.",
- "부신피질기능저하증 ▸ 전형적 중증: 고K + 저Na, Na:K <27:1 (다른 질환도 20:1 이하 가능). 아조트혈증·안정 시 cortisol <1.0 µg/dl일 수 있어 AKI와 감별에 ACTH 자극검사 필수. Aldosterone 결핍 → natriuresis → 유효순환량↓ → 원위 세뇨관 K 배설↓, 신관류↓, 신전성 아조트혈증, K 저류↑. 초기 치료 = 유효순환량 회복 (Ch.68). 개에서 hyporeninemic hypoaldosteronism 보고 — aldosterone은 기저·ACTH 후 모두 낮고 cortisol은 정상; 흔한 원인이 배제된 지속 고K에서 고려.",
- "소화기 질환(trichuriasis, salmonellosis, 십이지장 천공) ▸ 고K + Na/K <27:1. 간헐·지속 배액하는 만성 유미흉도 고K·저Na. 폐엽 염전, 종양성 흉수, 만삭 임신 Greyhound 3마리에서도 보고; 건강한 Greyhound·Rottweiler의 전신마취 중 급성 고K 보고. 기전 불명이나 유효순환량↓ → 원위 세뇨관 흐름↓ → 요 K 배설 부족 추정."
-]},
-{"type":"list","title":"Pseudohyperkalemia","items":[
- "혈소판·백혈구 등 순환 혈구 증가 시 K 방출로 인위적 상승 (보통 >1,000,000 혈소판, >100,000 백혈구).",
- "Akita 등 일본 원산 견종: 적혈구 Na-K-ATPase 펌프가 많아 세포내 K 높음 → 혈청 튜브 내 in-vitro 용혈 시 인위적 고K.",
- "확인: 헤파린 튜브로 채혈한 혈장 K 측정 — 혈소판·백혈구 수 영향 없음 (백혈병 제외)."
-]},
-{"type":"list","title":"결과 (Consequences)","items":[
- "혈청 K >7.5 mEq/L에서 근육 약화. 세포내/외 K 비가 심장 안정막전위의 주요 결정 인자 — 고K에서 농도 경사↓ → 안정막전위가 덜 음성 → 역치와 차이↓ → 흥분성↑. 동시에 일부 Na-K 채널이 안정기에 불활성화되어 역치 도달은 느려지고, K 투과성↓로 재분극 K 유출 지연 → 회복 지연.",
- "저Ca는 역치 저하를 강화해 고K 심독성↑; Ca는 활동전위 고원기에 필수라 저Ca가 고원기 연장. 산혈증은 K 세포 외 이동 + 심장 β-adrenergic 수용체↓.",
- "ECG: peaked T파, wide QRS, P파 소실; 심방 정지(atrial standstill, Fig. 56.2), 심실 조동, 무수축. 동성 빈맥, 3도 방실차단, VPC, AV 해리도 보고. 일부 연구에서 개·고양이의 K와 심박수 상관 없음 — 고K 고양이군에서 K >8.5 mEq/L에서만 유의한 상관. ECG 변화 유무와 무관하게 응급 치료."
-]},
-{"type":"heading","level":3,"text":"고칼륨혈증 치료"},
-{"type":"table","title":"단계별 접근","headers":["상황","치료","추가·대안/주의"],"rows":[
- ["모든 고K 환자","외인성 K 투여 중단; ECG·혈압 동시 감시; 신체검사(활력, 방광 팽만 → 유출 폐색), 초음파·방사선(uroabdomen, 요관 폐색, 결석)","방광 유출 폐색·uroabdomen 관련 고K는 신속한 진단·치료가 핵심; K 촉진 약물(ACE 억제제, β-adrenergic antagonist, K 보존 이뇨제) 중단; 만성 신부전은 K 감량 식이 고려"],
- ["무증상, 정상 요량, K 5.5–6.5 mEq/L","즉시 치료는 거의 불필요 — 원인 조사","보충 수액(LRS, Normosol-R, Plasma-Lyte-148)으로 재수화·신전성 아조트혈증 교정·이뇨 촉진 → 경증(<6 mEq/L)은 이것만으로 교정 가능"],
- ["요 배설 촉진","Loop 이뇨제 furosemide 0.5–4 mg/kg IV 또는 thiazide chlorothiazide 20–40 mg/kg IV","재수화 후에만 사용; 핍뇨 환자에는 무익할 수 있음"],
- ["K >7.5 mEq/L","응급 치료: ① 심독성 길항 → ② K 배설 촉진 또는 세포내 이동 (Table 56.2)","일차 치료 = calcium gluconate, dextrose/insulin, β-adrenergic agonist. Sodium bicarbonate는 서서히 투여해야 하고 중증 알칼리증·역설적 뇌 산증 위험으로 드물게 사용 (Ch.59)"],
- ["핍뇨·무뇨 (불응성 고K)","복막투석, 혈액투석, CRRT로 K 제거 (Ch.178)","세포내 이동 치료는 심근독성을 일시적으로 상쇄할 뿐, 총 체내 K 감소는 체외 치료에 의존"]
-]},
-{"type":"table","title":"Table 56.2 생명 위협 고K의 치료","headers":["약물","용량","기전","작용 발현"],"rows":[
- ["10% Calcium gluconate","0.5–1.5 ml/kg IV, 15–20분에 걸쳐 서서히, ECG 감시","역치 전압↑ (혈청 K는 낮추지 않음). 급속 투여 시 부정맥 유발 가능","3–5분"],
- ["Sodium bicarbonate","1–2 mEq/kg IV 서서히","대사성 알칼리증 유발 → K 세포내 이동; 급속 투여 시 역설적 CNS 산증","15–300분 (검사·임상 중증도에 따라)"],
- ["50% Dextrose","0.5–1 ml/kg를 1:1 희석, IV 3–5분","내인성 insulin 존재 하에 K 세포내 이동. 경증은 glucose 단독 0.5 g/kg IV로 내인성 insulin 분비 자극","<1시간"],
- ["50% Dextrose + insulin","Regular insulin 0.25–0.5 U/kgᵃ IV + insulin 1 unit당 dextrose 1 g을 1:1 희석 IV, 이후 수액에 2.5–5% dextrose 4–6시간 지속","상동. 중등–중증에 권장; insulin 후 dextrose 지속 보충으로 저혈당 예방","15–30분"],
- ["Terbutaline (β-adrenergic agonist; albuterol·epinephrine도 해당)","0.01 mg/kg IM, SC, IV","Na⁺/K⁺-ATPase 자극 → K 세포내 이동","20–40분"]
-],"note":"ᵃ 부신피질기능저하증에서는 저혈당 소인 때문에 insulin을 0.25 U/kg IV로 감량. Calcium chloride도 calcium gluconate 대신 사용 가능."}
-]}
+{
+ "id": "sacc3-p5-c56",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part V",
+ "part_title": "Electrolyte and Acid-Base Disturbances",
+ "chapter_num": 56,
+ "title": "Potassium Disorders",
+ "author": "Samantha Wigglesworth, VMD, DACVECC; Michael Schaer, DVM, DACVIM, DACVECC",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "정상 혈청 K 농도는 정상 신경근 기능에 필수.",
+    "저칼륨혈증의 흔한 원인: 당뇨병, 만성 신질환(특히 고양이), 장기간 식욕부진, 설사, 고알도스테론증, 대사성 알칼리증. 개·고양이의 주된 임상 발현은 저칼륨성 근병증.",
+    "총 투여량보다 K 주입 속도가 치료적으로 더 중요. 경증–중등도 저K(2.5–3.5 mEq/L)는 최대 0.5 mEq/kg/hr로 교정 가능.",
+    "유지 수액의 통상 K 보충 농도는 20 mEq/L이나, 혈청 K 3.4 – <2.0 mEq/L인 저K 동물에서는 30–60 mEq/L의 증량이 흔히 필요.",
+    "소동물 고칼륨혈증의 가장 흔한 원인 = 요 배설 감소. 요로 폐색·uroabdomen에 의한 중증 고K는 신속한 고K 치료 + 원인 해결이 최적 목표.",
+    "신부전, 부신피질기능저하증, 소화기 질환이 Na/K 비 <27:1의 가장 흔한 원인.",
+    "혈청 K >7.5 mEq/L이면 즉시 K 저하·길항 치료(calcium, dextrose ± insulin, β₂ agonist). ECG 이상이 없어도 고K는 치료해야 한다.",
+    "혈액투석·혈액관류는 혈청 K를 효과적·신속하게 낮추며, GFR 낮은 AKI 환자에서 치료 계획의 일부가 될 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "K 분포와 항상성 조절",
+   "gist": "K 98–99% 세포내(ICF 140 vs 혈장 4 mEq/L) — 혈청 K는 총량을 반영 못함"
+  },
+  {
+   "type": "list",
+   "items": [
+    "K는 가장 풍부한 세포내 양이온: 98–99%가 세포내(대부분 골격근). 개·고양이 세포내 평균 140 mEq/L, 혈장 평균 4 mEq/L → 혈청 K는 총 체내 함량·조직 농도를 반영하지 않음.",
+    "조절 인자: pH, 삼투압, 호르몬(insulin, catecholamine, aldosterone). 대사성 알칼리증 ▸ K가 세포내로 이동하며 H⁺와 교환. 고삼투압 ▸ 물이 세포 밖으로 나오며 K를 끌고 나옴('solvent drag'). Insulin·catecholamine·aldosterone ▸ K를 세포내로.",
+    "ECF K↑ → aldosterone 분비 → 원위 세뇨관 Na-K-ATPase 활성↑ → 집합관 주세포를 통해 K가 내강으로 → K 배설·Na 재흡수.",
+    "Kaliuretic feedforward control ▸ 위·간문맥 부위의 감지기가 K 섭취에 따른 국소 K 변화를 감지해 aldosterone과 무관하게 신장 K 배설을 조절 — 섭취에 의한 K 축적으로부터 내부 환경 보호. 위 감지기는 미확인(위 기계수용체 관여 가능).",
+    "저K는 세포내 → 세포외 K 이동으로 상쇄. 사람: 혈청 K 3.0 mEq/L 하강 = 총 체내 K 200 mEq 결핍 (98%가 세포내라는 사실을 예시)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "저칼륨혈증 (Hypokalemia)",
+   "gist": "<3.5 mEq/L; 근병증은 보통 <2.5에서; 주입 속도 ≤0.5 mEq/kg/hr"
+  },
+  {
+   "type": "paragraph",
+   "text": "정의: 혈청 K <3.5 mEq/L (정상 3.5–5.5 mEq/L). 원인은 (1) 내부 균형 이상(재분포)과 (2) 외부 균형 이상(고갈). 최근 고양이 고알도스테론증(aldosteronoma 또는 부신피질 과형성)이 현저한 저K의 원인으로 주목; 페럿의 부신피질 선종과도 연관."
+  },
+  {
+   "type": "table",
+   "title": "Box 56.1 저칼륨혈증의 원인",
+   "headers": [
+    "범주",
+    "원인"
+   ],
+   "rows": [
+    [
+     "내부 균형 이상 (재분포)",
+     "대사성 알칼리증, insulin 투여, catecholamine 상승, β-adrenergic agonist 치료·중독, refeeding syndrome"
+    ],
+    [
+     "외부 균형 이상 (고갈)",
+     "신장 K 소실, 장기간 섭취 부족, 이뇨제, 삼투성·폐색 해제 후 이뇨, 만성 간질환, 비경구 수액의 부적절한 보충, aldosterone 분비 종양 등 고알도스테론증, 유문 유출 폐색 관련 지속 구토, DKA, 신세뇨관 산증, 중증 설사, barium 함유 파티 스파클러 섭취, glucocorticoid 투여"
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "title": "저칼륨혈증의 결과 (4 범주)",
+   "headers": [
+    "범주",
+    "소견"
+   ],
+   "rows": [
+    [
+     "대사",
+     "포도당 불내성이 가장 두드러진 대사 이상 — 총 체내 K↓ 시 췌장 β세포 insulin 분비 장애 근거"
+    ],
+    [
+     "신경근",
+     "골격근 약화(과분극된 근세포막 → 흥분성↓, 저분극으로 진행 가능): 머리·목 복측 굴곡(ventroflexion), 뻣뻣한 보행, 척행(plantigrade) 자세. 보통 혈청 K <2.5 mEq/L 전에는 드묾\n고양이 저K 근병증: 만성 신질환, 고알도스테론증, 조절 불량 당뇨; K 결핍 식이·장기 식욕부진도 원인\n고알도스테론증 고양이: 고혈압(aldosterone에 의한 Na 저류)에 의한 망막 출혈 → 시력 장애; 중증 시 횡격막·호흡근 마비로 사망\n횡문근융해증(신세뇨관 독성 가능), 평활근 장애(마비성 장폐색·위 무력증 소인)"
+    ],
+    [
+     "신장",
+     "만성 신질환 고양이는 K가 현저히 고갈될 수 있고, 저K가 다시 세뇨관 기능을 악화"
+    ],
+    [
+     "심혈관",
+     "세포내/외 K 비↑ → 전기적 과분극 → 활동전위 연장 → 심방·심실 빈맥성 부정맥, AV 해리, 심실세동 소인. ECG 이상 예측은 고K보다 신뢰도 낮음\n개 ECG: ST 분절 함몰, QT 간격 연장; P파 진폭↑, PR 연장, QRS 확장 가능 (Fig. 56.1: K 2.1 mEq/L 개 — P파 진폭↑, ST 함몰, T파 함몰)\nDigitalis 유발 부정맥 소인↑; class I 항부정맥제(lidocaine, quinidine, procainamide)에 불응"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "저칼륨혈증 관리"
+  },
+  {
+   "type": "list",
+   "items": [
+    "목표: 지속적 K 손실 억제, 제제·경로를 고려한 K 결핍 보충, 원발 질환 교정. 대사성 알칼리증 동반 시 pH 정상화 + K 보충 + 알칼리증 원인 교정. 일차성 고알도스테론증 ▸ 원인 제거 및/또는 aldosterone 길항제(spironolactone)로 원위 세뇨관 작용 차단. 만성 신질환·당뇨는 적절히 치료해 손실 최소화.",
+    "중등도(2.5–3.4 mEq/L)–중증(<2.5 mEq/L)이며 식욕부진·구토 환자 ▸ KCl 용액 비경구 투여 (저인산혈증 시 potassium phosphate; Table 56.1).",
+    "속도 ▸ 경증–중등도는 0.5 mEq/kg/hr를 거의 넘기지 않음. 심한 저K(<2.5 mEq/L) + 정상·증가된 요량이면 ECG 감시하에 1–1.5 mEq/kg/hr까지 조심스럽게 증량. 안전 범위 0.5–1.5 mEq/kg/hr.",
+    "KCl 20 mEq를 LRS·0.9% NaCl·Plasma-Lyte A 1 L에 추가하면 삼투압이 각각 312, 348, 334 mEq/L로 변하나 대부분 환자에서 문제 없음.",
+    "K 주입 부작용 소인 ▸ 핍뇨·무뇨, 저알도스테론증(Addison), K 보존 약물(spironolactone, triamterene) 병용.",
+    "수액 선택 ▸ 일차성 대사성 산증: 완충제 함유 수액(lactated/acetated Ringer's, Plasma-Lyte A)에 KCl 추가. 대사성 알칼리증 대부분: 생리식염수에 KCl 추가.",
+    "범위는 환자별 조정 ▸ 중증 핍뇨·무뇨 환자는 최소 유지량; 다뇨성 케톤산증·케토알칼리증 당뇨 환자(regular insulin 투여 중)는 훨씬 많은 양 필요.",
+    "수액 반응성 쇼크는 등장 정질액으로 먼저 소생 후 KCl 추가. 중증 저K(<2 mEq/L)는 재수화 기간 중 K 치료 시작 — 별도 주입 또는 더 느린 수액 속도로 안전 속도 유지.",
+    "예외 ▸ 현저한 저K로 무호흡 시 KCl 2 mEq/ml 용액 0.01 ml/kg IV bolus가 느린 주입이 효과 낼 때까지 생명을 구할 수 있음 (저자 경험—M.S.); 철저한 ECG 감시 필수.",
+    "저K 당뇨 환자에서 sodium bicarbonate·insulin 투여는 첫 4–8시간 또는 혈청 K >3.5 mEq/L까지 연기 — 아니면 K 세포내 이동으로 생명을 위협하는 저K.",
+    "경구 ▸ Potassium gluconate 분말(Tumil-K): 안정된 경증 저K 개·고양이. 사료에 섞어 하루 2회, ¼ teaspoon(2 mEq)/4.5 kg; 유지 용량은 효과에 맞춰 조정. 경구 급여 또는 대구경 급식관 가능한 동물에 한정."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 56.1 개·고양이 정맥 K 보충 지침",
+   "headers": [
+    "혈청 K (mEq/L)",
+    "250 ml 수액에 추가할 KCl (mEq)",
+    "1 L 수액에 추가할 KCl (mEq)",
+    "최대 수액 속도 (ml/kg/hr)"
+   ],
+   "rows": [
+    [
+     "<2.0",
+     "20",
+     "80",
+     "6"
+    ],
+    [
+     "2.1–2.5",
+     "15",
+     "60",
+     "8"
+    ],
+    [
+     "2.6–3.0",
+     "10",
+     "40",
+     "12"
+    ],
+    [
+     "3.1–3.5",
+     "7",
+     "28",
+     "18"
+    ],
+    [
+     "3.6–5.0",
+     "5",
+     "20",
+     "25"
+    ]
+   ],
+   "note": "최대 속도는 0.5 mEq/kg/hr를 넘지 않도록 설정. K 추가 시 환자 쪽 밸브를 잠그고, 추가 중·후 수액백을 충분히 혼합할 것."
+  },
+  {
+   "type": "list",
+   "title": "예상 합병증",
+   "items": [
+    "과도한 K 보충으로 고K 가능. 전해질 보충에 쓰는 유치 카테터에서 채혈 시 주의.",
+    "대사성 알칼리증·저Mg·저Ca 동반 시 저K 신경근 기능 장애가 악화되고 치료 불응 가능 → 정상 신경근 기능을 위해 모든 산-염기·전해질 이상 교정."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "고칼륨혈증 (Hyperkalemia)",
+   "gist": ">5.5 mEq/L, >7.5는 생명 위협·즉시 치료; 가장 흔한 원인 요 배설↓"
+  },
+  {
+   "type": "paragraph",
+   "text": "정의: 혈청 K >5.5 mEq/L; >7.5 mEq/L이면 생명 위협. 4가지 기본 기전: 섭취·투여 증가, ICF → ECF 이동, 신장 배설 감소, 인위적(pseudohyperkalemia). 개에서 중등–중증 고K의 가장 흔한 원인은 요로 질환."
+  },
+  {
+   "type": "table",
+   "title": "Box 56.2 고칼륨혈증의 원인",
+   "headers": [
+    "범주",
+    "원인"
+   ],
+   "rows": [
+    [
+     "섭취·보충 증가",
+     "IV K 함유 수액, 유효기간 지난 RBC 수혈, 약물(potassium penicillin G, KCl, KPhos)"
+    ],
+    [
+     "ICF → ECF 이동",
+     "무기산 산증(호흡성 산증, NH₄Cl, HCl, 요독증), insulin 결핍, 급성 종양 용해 증후군, 혈전색전증 치료 후 사지 재관류, 약물(비특이적 β-blocker, cardiac glycoside)ᵃ, 심폐정지"
+    ],
+    [
+     "요 배설 감소",
+     "무뇨·핍뇨성 신손상, 요도 폐색·양측 요관 폐색, uroabdomen, 부신피질기능저하증, 소화기 질환(trichuriasis, salmonellosis, 십이지장 천공), 유미흉·흉수·복수, 약물(ACE 억제제, ARB, heparin, cyclosporine·tacrolimus, NSAID, trimethoprim)ᵃ"
+    ],
+    [
+     "Pseudohyperkalemia",
+     "혈소판증가증·백혈구증가증(>1,000,000 혈소판 또는 >100,000 백혈구), Akita 등 일본 원산 견종, 특발성, 건강한 개의 전신마취(특히 Greyhound)"
+    ]
+   ],
+   "note": "ᵃ 단독으로는 고K를 잘 일으키지 않음; 다른 약물·AKI·K 보충 등과 함께 유발 가능."
+  },
+  {
+   "type": "list",
+   "title": "기전별 보충 설명",
+   "items": [
+    "과다 보충 ▸ IV 속도는 일반적으로 0.5 mEq/kg/hr 초과 금지. 유효기간 지난 pRBC, K 보충 + ACE 억제제·ARB·K 보존 이뇨제(spironolactone)·비선택적 β-blocker(propranolol)·heparin·cyclosporine·tacrolimus 병용.",
+    "세포 외 이동 ▸ 무기산 산증(호흡성 산증, 요독증, NH₄Cl·HCl·CaCl₂ 주입)에서 K가 H⁺와 교환되어 유출. 유기산(lactate, ketoacid)은 세포막 전기 중성 유지 능력 때문에 이 효과가 드묾. 열사병, 압궤 손상, 항암 종양 용해 증후군, 림프육종 개의 방사선 치료 후, 대동맥 혈전색전증 고양이의 혈전용해 후 재관류, CPR 중·ROSC 직후(허혈성 세포 손상으로 세포내 K 대량 방출).",
+    "당뇨 환자 ▸ 총 체내 K는 고갈되어 있으나 insulin 결핍(세포 K 흡수↓), 고삼투압(solute drag), 신기능 저하(동반 질환·신전성·저혈량 관련 AKI)로 고K 위험. Insulin 치료가 결핍·고삼투압을 교정해 K를 세포내로 되돌리고 단백 이화 필요↓; K 보충으로 총 결핍 보충.",
+    "요 배설 감소(신전성·신성·신후성) ▸ 소동물 고K의 가장 흔한 원인. 요로 폐색·uroabdomen을 신속 평가하며 동시에 고K 치료. K 함유 균형 전해질 용액(LRS, Normosol-R) 사용 가능 — 요로 폐색 고양이 연구에서 K 함유 균형액과 0.9% NaCl 간 K 정상화 속도 차이 없었고, 균형액이 산-염기 교정은 더 빠름.",
+    "핍뇨·무뇨 ▸ 급성·말기 만성 신세뇨관 손상. 만성 신질환에서는 분획 K 배설↑·대변 배설↑ 적응. 원위 세뇨관 K 배설은 충분한 GFR과 요 흐름에 의존 → AKI에서 크게 손상. 세포내 이동 치료는 일시적 효과일 뿐 — 유효 요량·GFR 회복 전에는 혈액투석·복막투석으로만 K 감소 가능 (Ch.178).",
+    "만성 신질환 개 ▸ 식이 K 섭취가 배설 초과, ACE 억제제(고혈압·단백뇨 치료) → K 감량 식이로 해결 가능. 비특이적 β-blocker, cardiac glycoside, ACE 억제제, ARB, cyclosporin, tacrolimus, heparin, trimethoprim 등 약물 재평가·중단·감량.",
+    "부신피질기능저하증 ▸ 전형적 중증: 고K + 저Na, Na:K <27:1 (다른 질환도 20:1 이하 가능). 아조트혈증·안정 시 cortisol <1.0 µg/dl일 수 있어 AKI와 감별에 ACTH 자극검사 필수. Aldosterone 결핍 → natriuresis → 유효순환량↓ → 원위 세뇨관 K 배설↓, 신관류↓, 신전성 아조트혈증, K 저류↑. 초기 치료 = 유효순환량 회복 (Ch.68). 개에서 hyporeninemic hypoaldosteronism 보고 — aldosterone은 기저·ACTH 후 모두 낮고 cortisol은 정상; 흔한 원인이 배제된 지속 고K에서 고려.",
+    "소화기 질환(trichuriasis, salmonellosis, 십이지장 천공) ▸ 고K + Na/K <27:1. 간헐·지속 배액하는 만성 유미흉도 고K·저Na. 폐엽 염전, 종양성 흉수, 만삭 임신 Greyhound 3마리에서도 보고; 건강한 Greyhound·Rottweiler의 전신마취 중 급성 고K 보고. 기전 불명이나 유효순환량↓ → 원위 세뇨관 흐름↓ → 요 K 배설 부족 추정."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Pseudohyperkalemia",
+   "items": [
+    "혈소판·백혈구 등 순환 혈구 증가 시 K 방출로 인위적 상승 (보통 >1,000,000 혈소판, >100,000 백혈구).",
+    "Akita 등 일본 원산 견종: 적혈구 Na-K-ATPase 펌프가 많아 세포내 K 높음 → 혈청 튜브 내 in-vitro 용혈 시 인위적 고K.",
+    "확인: 헤파린 튜브로 채혈한 혈장 K 측정 — 혈소판·백혈구 수 영향 없음 (백혈병 제외)."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "결과 (Consequences)",
+   "items": [
+    "혈청 K >7.5 mEq/L에서 근육 약화. 세포내/외 K 비가 심장 안정막전위의 주요 결정 인자 — 고K에서 농도 경사↓ → 안정막전위가 덜 음성 → 역치와 차이↓ → 흥분성↑. 동시에 일부 Na-K 채널이 안정기에 불활성화되어 역치 도달은 느려지고, K 투과성↓로 재분극 K 유출 지연 → 회복 지연.",
+    "저Ca는 역치 저하를 강화해 고K 심독성↑; Ca는 활동전위 고원기에 필수라 저Ca가 고원기 연장. 산혈증은 K 세포 외 이동 + 심장 β-adrenergic 수용체↓.",
+    "ECG: peaked T파, wide QRS, P파 소실; 심방 정지(atrial standstill, Fig. 56.2), 심실 조동, 무수축. 동성 빈맥, 3도 방실차단, VPC, AV 해리도 보고. 일부 연구에서 개·고양이의 K와 심박수 상관 없음 — 고K 고양이군에서 K >8.5 mEq/L에서만 유의한 상관. ECG 변화 유무와 무관하게 응급 치료."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "고칼륨혈증 치료"
+  },
+  {
+   "type": "table",
+   "title": "단계별 접근",
+   "headers": [
+    "상황",
+    "치료",
+    "추가·대안/주의"
+   ],
+   "rows": [
+    [
+     "모든 고K 환자",
+     "외인성 K 투여 중단; ECG·혈압 동시 감시; 신체검사(활력, 방광 팽만 → 유출 폐색), 초음파·방사선(uroabdomen, 요관 폐색, 결석)",
+     "방광 유출 폐색·uroabdomen 관련 고K는 신속한 진단·치료가 핵심; K 촉진 약물(ACE 억제제, β-adrenergic antagonist, K 보존 이뇨제) 중단; 만성 신부전은 K 감량 식이 고려"
+    ],
+    [
+     "무증상, 정상 요량, K 5.5–6.5 mEq/L",
+     "즉시 치료는 거의 불필요 — 원인 조사",
+     "보충 수액(LRS, Normosol-R, Plasma-Lyte-148)으로 재수화·신전성 아조트혈증 교정·이뇨 촉진 → 경증(<6 mEq/L)은 이것만으로 교정 가능"
+    ],
+    [
+     "요 배설 촉진",
+     "Loop 이뇨제 furosemide 0.5–4 mg/kg IV 또는 thiazide chlorothiazide 20–40 mg/kg IV",
+     "재수화 후에만 사용; 핍뇨 환자에는 무익할 수 있음"
+    ],
+    [
+     "K >7.5 mEq/L",
+     "응급 치료: ① 심독성 길항 → ② K 배설 촉진 또는 세포내 이동 (Table 56.2)",
+     "일차 치료 = calcium gluconate, dextrose/insulin, β-adrenergic agonist. Sodium bicarbonate는 서서히 투여해야 하고 중증 알칼리증·역설적 뇌 산증 위험으로 드물게 사용 (Ch.59)"
+    ],
+    [
+     "핍뇨·무뇨 (불응성 고K)",
+     "복막투석, 혈액투석, CRRT로 K 제거 (Ch.178)",
+     "세포내 이동 치료는 심근독성을 일시적으로 상쇄할 뿐, 총 체내 K 감소는 체외 치료에 의존"
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 56.2 생명 위협 고K의 치료",
+   "headers": [
+    "약물",
+    "용량",
+    "기전",
+    "작용 발현"
+   ],
+   "rows": [
+    [
+     "10% Calcium gluconate",
+     "0.5–1.5 ml/kg IV, 15–20분에 걸쳐 서서히, ECG 감시",
+     "역치 전압↑ (혈청 K는 낮추지 않음). 급속 투여 시 부정맥 유발 가능",
+     "3–5분"
+    ],
+    [
+     "Sodium bicarbonate",
+     "1–2 mEq/kg IV 서서히",
+     "대사성 알칼리증 유발 → K 세포내 이동; 급속 투여 시 역설적 CNS 산증",
+     "15–300분 (검사·임상 중증도에 따라)"
+    ],
+    [
+     "50% Dextrose",
+     "0.5–1 ml/kg를 1:1 희석, IV 3–5분",
+     "내인성 insulin 존재 하에 K 세포내 이동. 경증은 glucose 단독 0.5 g/kg IV로 내인성 insulin 분비 자극",
+     "<1시간"
+    ],
+    [
+     "50% Dextrose + insulin",
+     "Regular insulin 0.25–0.5 U/kgᵃ IV + insulin 1 unit당 dextrose 1 g을 1:1 희석 IV, 이후 수액에 2.5–5% dextrose 4–6시간 지속",
+     "상동. 중등–중증에 권장; insulin 후 dextrose 지속 보충으로 저혈당 예방",
+     "15–30분"
+    ],
+    [
+     "Terbutaline (β-adrenergic agonist; albuterol·epinephrine도 해당)",
+     "0.01 mg/kg IM, SC, IV",
+     "Na⁺/K⁺-ATPase 자극 → K 세포내 이동",
+     "20–40분"
+    ]
+   ],
+   "note": "ᵃ 부신피질기능저하증에서는 저혈당 소인 때문에 insulin을 0.25 U/kg IV로 감량. Calcium chloride도 calcium gluconate 대신 사용 가능."
+  }
+ ]
+}
