@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>SACCM 3판 요약 · VECC</title>
+<meta name="description" content="Small Animal Critical Care Medicine 3판 챕터별 요약">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#4453A3">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="VECC Calc">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#F3F4F7; --surface:#FFFFFF; --surface-2:#E9EBF1; --line:#D6D9E2; --line-strong:#B9BECB;
+  --ink:#1A1D26; --ink-2:#4A5063; --muted:#6F7588;
+  --venous:#4453A3; --venous-soft:#E5E8F6; --venous-ink:#2E3A80;
+  --arterial:#B3313B; --arterial-soft:#F8E4E5; --arterial-ink:#8C242C;
+  --mark:#FBEFC9; --mark-ink:#5B4300;
+  --shadow:0 1px 2px rgba(20,24,40,.06), 0 8px 24px -12px rgba(20,24,40,.18);
+  --radius:10px; --top-h:52px;
+  --accent:var(--venous); --accent-soft:var(--venous-soft); --accent-ink:var(--venous-ink);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#111318; --surface:#1A1D25; --surface-2:#232733; --line:#2F3442; --line-strong:#454B5C;
+    --ink:#E9EBF1; --ink-2:#C0C5D3; --muted:#8F95A8;
+    --venous:#8B97E0; --venous-soft:#252B48; --venous-ink:#C6CDF6;
+    --arterial:#E0666E; --arterial-soft:#42232A; --arterial-ink:#F3B6BA;
+    --mark:#4A3A12; --mark-ink:#F6DFA0;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--top-h) + 12px)}
+[hidden]{display:none!important}
+body{margin:0;padding-top:env(safe-area-inset-top);background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans KR",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;font-size:15px;line-height:1.55}
+h1,h2,h3{margin:0;text-wrap:balance;line-height:1.3}
+p{margin:0}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* header */
+.top{position:sticky;top:0;z-index:30;background:var(--surface);border-bottom:1px solid var(--line)}
+.top-inner{max-width:1240px;margin:0 auto;padding:0 16px;height:var(--top-h);display:flex;align-items:center;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;flex:1 1 auto;min-width:0}
+.brand h1{font-size:17px;font-weight:700;letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.home{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;padding:4px 8px 4px 4px;border-radius:6px;white-space:nowrap}
+.home:hover{background:var(--surface-2);color:var(--ink)}
+.toc-btn{display:none;border:1px solid var(--line-strong);background:var(--surface-2);border-radius:999px;padding:5px 14px;font-size:13px;font-weight:600;cursor:pointer;min-height:32px}
+
+/* layout */
+.layout{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:300px minmax(0,1fr);align-items:start}
+.side{position:sticky;top:var(--top-h);height:calc(100vh - var(--top-h));height:calc(100dvh - var(--top-h));overflow-y:auto;border-right:1px solid var(--line);background:var(--surface);padding:14px 10px 40px;overscroll-behavior:contain}
+.backdrop{display:none}
+@media (max-width:959px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .toc-btn{display:inline-flex;align-items:center}
+  .side{position:fixed;left:0;top:0;bottom:0;height:auto;width:min(340px,86vw);z-index:40;border-right:1px solid var(--line);box-shadow:var(--shadow);transform:translateX(-102%);padding-top:calc(14px + env(safe-area-inset-top));visibility:hidden}
+  .side.open{transform:none;visibility:visible}
+  .backdrop{display:block;position:fixed;inset:0;background:rgba(10,12,20,.38);z-index:35;opacity:0;pointer-events:none}
+  .backdrop.open{opacity:1;pointer-events:auto}
+  @media (prefers-reduced-motion:no-preference){.side{transition:transform .22s ease,visibility .22s}.backdrop{transition:opacity .22s}}
+}
+
+/* sidebar */
+.search{position:relative;margin:0 4px 12px}
+.search input{width:100%;font:inherit;font-size:14px;color:var(--ink);background:var(--bg);border:1px solid var(--line-strong);border-radius:8px;padding:8px 32px 8px 11px}
+.search input::placeholder{color:var(--muted)}
+.search input:focus{outline:0;border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 22%,transparent)}
+.search .clear{position:absolute;right:4px;top:50%;transform:translateY(-50%);border:0;background:transparent;color:var(--muted);width:28px;height:28px;border-radius:6px;cursor:pointer;font-size:16px;line-height:1}
+.part{border-radius:8px}
+.part+.part{margin-top:2px}
+.part>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:baseline;padding:7px 8px;border-radius:7px}
+.part>summary::-webkit-details-marker{display:none}
+.part>summary:hover{background:var(--surface-2)}
+.part .pn{font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:600;color:var(--muted);min-width:3.4em}
+.part .pt{font-size:13px;font-weight:600;color:var(--ink-2);line-height:1.35}
+.part .pc{font-size:11px;color:var(--muted);font-family:"IBM Plex Mono",monospace}
+.part[open]>summary .pt{color:var(--ink)}
+.chs{list-style:none;margin:2px 0 8px;padding:0}
+.ch{display:grid;grid-template-columns:2.4em 1fr;gap:6px;align-items:baseline;padding:6px 8px;border-radius:7px;text-decoration:none;color:var(--ink-2);font-size:13.5px;line-height:1.4}
+.ch:hover{background:var(--surface-2);color:var(--ink)}
+.ch .n{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:12px;color:var(--muted);text-align:right}
+.ch[aria-current="page"]{background:var(--accent-soft);color:var(--accent-ink);font-weight:600}
+.ch[aria-current="page"] .n{color:var(--accent-ink)}
+.res-h{font-size:12px;font-weight:600;color:var(--muted);margin:10px 8px 4px}
+.res{display:block;padding:8px;border-radius:7px;text-decoration:none;color:var(--ink-2)}
+.res:hover{background:var(--surface-2)}
+.res .rt{display:flex;justify-content:space-between;gap:8px;font-size:13.5px;font-weight:600;color:var(--ink)}
+.res .rt small{font-family:"IBM Plex Mono",monospace;font-weight:500;color:var(--muted);font-size:11px;white-space:nowrap}
+.res .sn{font-size:12.5px;color:var(--muted);line-height:1.5;margin-top:2px}
+.full-btn{display:block;width:calc(100% - 8px);margin:10px 4px 0;border:1px dashed var(--line-strong);background:transparent;border-radius:8px;padding:9px;font-size:13px;font-weight:600;color:var(--accent-ink);cursor:pointer}
+.full-btn:disabled{color:var(--muted);cursor:progress}
+.empty{font-size:13px;color:var(--muted);padding:8px}
+mark{background:var(--mark);color:var(--mark-ink);border-radius:3px;padding:0 1px}
+
+/* reader */
+main{padding:24px 20px 72px;min-width:0}
+.doc{max-width:860px;margin:0 auto}
+.crumb{font-size:12.5px;color:var(--muted);margin-bottom:6px}
+.doc-h{display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px 16px;padding-bottom:14px;margin-bottom:18px;border-bottom:1px solid var(--line)}
+.doc-h .t{flex:1 1 420px;min-width:0}
+.doc-h h2{font-size:24px;font-weight:700;letter-spacing:-.015em;display:flex;gap:12px;align-items:baseline}
+.doc-h h2 .num{font-family:"IBM Plex Mono",monospace;font-weight:600;color:var(--accent);font-size:.8em;flex-shrink:0}
+.doc-h .au{font-size:12.5px;color:var(--muted);margin-top:6px;line-height:1.5}
+.fold{border:1px solid var(--line-strong);background:var(--surface);border-radius:999px;padding:5px 13px;font-size:12.5px;font-weight:600;color:var(--ink-2);cursor:pointer;white-space:nowrap}
+.fold:hover{background:var(--surface-2)}
+
+.body{font-size:15.5px;line-height:1.72;color:var(--ink);word-break:keep-all;overflow-wrap:anywhere}
+.body ul,.body ol{margin:6px 0 0;padding-left:1.25em}
+.body li{padding-left:.15em}
+.body li+li{margin-top:5px}
+.body ul li::marker{color:var(--line-strong)}
+.body ol li::marker{font-family:"IBM Plex Mono",monospace;font-size:.88em;font-weight:600;color:var(--accent)}
+.body p.para{margin-top:8px}
+.body h3{font-size:15px;font-weight:700;color:var(--ink);margin:22px 0 2px;padding-left:10px;border-left:3px solid var(--line-strong);line-height:1.4}
+.body .lt{font-size:13px;font-weight:700;color:var(--ink-2);margin-top:12px}
+.lb{font-weight:700;color:var(--ink);margin-right:.4em}
+.dose{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:.92em;font-weight:600;color:var(--accent-ink);white-space:nowrap}
+
+.key{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:0 var(--radius) var(--radius) 0;padding:12px 18px 14px;margin-bottom:22px}
+.key .kt{font-size:13px;font-weight:700;color:var(--accent-ink)}
+.key ul{margin-top:6px}
+.key.aside{border-left-color:var(--line-strong);margin:14px 0 0}
+.key.aside .kt{color:var(--ink-2)}
+
+.sec{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.sec+.sec{margin-top:10px}
+.sec>summary{list-style:none;cursor:pointer;display:flex;gap:12px;align-items:flex-start;padding:13px 16px;border-radius:var(--radius)}
+.sec>summary::-webkit-details-marker{display:none}
+.sec>summary:hover{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+.sec .sh{flex:1;min-width:0}
+.sec h2{font-size:17px;font-weight:700;letter-spacing:-.01em}
+.sec .gist{font-size:13.5px;color:var(--ink-2);margin-top:3px;line-height:1.5}
+.sec .chev{flex-shrink:0;width:22px;height:22px;margin-top:1px;border-radius:6px;display:grid;place-items:center;color:var(--muted)}
+.sec .chev::before{content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translate(-2px,-2px)}
+.sec[open] .chev::before{transform:rotate(-135deg) translate(-2px,-2px)}
+.sec .sb{padding:0 16px 16px;border-top:1px solid var(--line)}
+.sec .sb>:first-child{margin-top:12px}
+
+/* tables */
+.tbl{margin:14px 0 0}
+.tbl figcaption{font-size:13px;font-weight:700;color:var(--ink-2);margin-bottom:6px}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--surface);-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.58}
+th,td{padding:9px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{font-size:12px;font-weight:600;color:var(--muted);background:var(--surface-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+tbody td:first-child{font-weight:600;color:var(--ink);min-width:7em}
+td{min-width:9em}
+td.na{color:var(--muted)}
+.tbl .note{font-size:12.5px;color:var(--muted);margin-top:6px}
+
+/* pager */
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:28px}
+.pager a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:11px 14px;text-decoration:none;color:var(--ink)}
+.pager a:hover{border-color:var(--line-strong)}
+.pager .d{font-size:12px;color:var(--muted)}
+.pager .tt{font-size:14px;font-weight:600;line-height:1.4;margin-top:2px}
+.pager .next{text-align:right;grid-column:2}
+.foot{margin-top:32px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+.state{padding:40px 0;color:var(--muted);font-size:14px}
+.state button{margin-top:10px;border:1px solid var(--line-strong);background:var(--surface);border-radius:999px;padding:6px 14px;font-weight:600;cursor:pointer}
+
+@media (max-width:600px){
+  main{padding:16px 12px 60px}
+  .doc-h h2{font-size:20px}
+  .body{font-size:15px}
+  .sec>summary{padding:12px 13px}
+  .sec .sb{padding:0 13px 14px}
+  .key{padding:11px 14px 12px}
+  table{font-size:13.5px}
+  th,td{padding:8px 10px}
+}
+.sw-toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);opacity:0;background:var(--ink);color:var(--bg);font-size:13px;font-weight:600;padding:9px 14px;border-radius:999px;box-shadow:0 6px 20px -6px rgba(0,0,0,.4);z-index:50;pointer-events:none;transition:opacity .25s,transform .25s;white-space:nowrap}
+.sw-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media print{.top,.side,.backdrop,.pager,.fold{display:none!important}.layout{display:block}.sec{box-shadow:none;break-inside:avoid-page}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <a class="home" href="../index.html" aria-label="홈으로">‹ 홈</a>
+      <h1>SACCM 3판 요약</h1>
+    </div>
+    <button class="toc-btn" id="toc-btn" type="button" aria-controls="side" aria-expanded="false">목차</button>
+  </div>
+</header>
+
+<div class="layout">
+  <nav class="side" id="side" aria-label="챕터 목차">
+    <div class="search">
+      <input id="q" type="search" placeholder="챕터 제목·번호 검색" autocomplete="off" aria-label="챕터 검색">
+      <button class="clear" id="q-clear" type="button" aria-label="검색어 지우기" hidden>×</button>
+    </div>
+    <div id="toc"><p class="empty">목차를 불러오는 중…</p></div>
+    <div id="results" hidden></div>
+  </nav>
+  <div class="backdrop" id="backdrop"></div>
+
+  <main>
+    <article class="doc" id="doc"><p class="state">챕터를 불러오는 중…</p></article>
+  </main>
+</div>
+
+<script>
+(function(){
+  const DATA = '../data/saccm/';
+  const $ = (s, r=document) => r.querySelector(s), $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+  const S = { toc: [], idx: {}, chapters: new Map(), full: false, loadingAll: false, current: null, pendingMark: '' };
+  const store = { get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } }, set(k,v){ try { localStorage.setItem(k,v); } catch(e){} } };
+
+  const esc = (s) => String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  const DOSE = /(^|[^\w.])(\d+(?:\.\d+)?(?:\s*[–~\-]\s*\d+(?:\.\d+)?)?\s*(?:mg|µg|μg|mcg|ng|g|mEq|mmol|ml|mL|U|IU)\/kg(?:\/(?:hr|h|min|day|24h))?)/g;
+  const FREQ = /(^|[^\w])(q\d+(?:[–~]\d+)?h)(?![\w])/g;
+  const inline = (s) => esc(s).replace(DOSE, '$1<span class="dose">$2</span>').replace(FREQ, '$1<span class="dose">$2</span>').replace(/\n/g, '<br>');
+  function item(s){
+    const m = s.match(/^([^:：▸\n]{1,24}?)\s*[:：]\s+([\s\S]+)$/) || s.match(/^([^▸\n]{1,60}?)\s+▸\s+([\s\S]+)$/);
+    return m ? `<b class="lb">${inline(m[1])}</b>${inline(m[2])}` : inline(s);
+  }
+  const cell = (c) => { const t = String(c ?? ''); return `<td${t.trim()==='—'||!t.trim()?' class="na"':''}>${inline(t) || '—'}</td>`; };
+
+  function block(b){
+    switch(b.type){
+      case 'heading': return `<h3>${inline(b.text)}</h3>`;
+      case 'paragraph': return `<p class="para">${inline(b.text)}</p>`;
+      case 'list': {
+        const tag = b.ordered ? 'ol' : 'ul';
+        return `${b.title?`<p class="lt">${inline(b.title)}</p>`:''}<${tag}>${(b.items||[]).map(i=>`<li>${item(i)}</li>`).join('')}</${tag}>`;
+      }
+      case 'callout': return `<aside class="key aside"><p class="kt">${inline(b.title||'참고')}</p><ul>${(b.items||[]).map(i=>`<li>${item(i)}</li>`).join('')}</ul></aside>`;
+      case 'table': {
+        const hs = b.headers || [], rows = b.rows || [];
+        const cols = Math.max(hs.length, ...rows.map(r => r.length), 1);
+        const head = hs.length ? `<thead><tr>${hs.map(h=>`<th scope="col">${inline(h)}</th>`).join('')}</tr></thead>` : '';
+        const body = rows.map(r => `<tr>${Array.from({length: cols}, (_, i) => cell(r[i])).join('')}</tr>`).join('');
+        return `<figure class="tbl">${b.title?`<figcaption>${inline(b.title)}</figcaption>`:''}<div class="tw"><table>${head}<tbody>${body}</tbody></table></div>${b.note?`<p class="note">${inline(b.note)}</p>`:''}</figure>`;
+      }
+      default: return '';
+    }
+  }
+
+  function renderChapter(c){
+    const blocks = c.blocks || [];
+    let lead = '', i = 0;
+    if (blocks[0] && blocks[0].type === 'callout') {
+      const k = blocks[0];
+      lead = `<aside class="key"><p class="kt">${inline(k.title||'KEY POINTS')}</p><ul>${(k.items||[]).map(x=>`<li>${item(x)}</li>`).join('')}</ul></aside>`;
+      i = 1;
+    }
+    const pre = [], secs = [];
+    for (; i < blocks.length; i++){
+      const b = blocks[i];
+      if (b.type === 'heading' && (b.level ?? 2) <= 2) secs.push({ h: b, blocks: [] });
+      else (secs.length ? secs[secs.length-1].blocks : pre).push(b);
+    }
+    const secHtml = secs.map(s => `<details class="sec" open><summary><div class="sh"><h2>${inline(s.h.text)}</h2>${s.h.gist?`<p class="gist">${inline(s.h.gist)}</p>`:''}</div><span class="chev" aria-hidden="true"></span></summary><div class="sb">${s.blocks.map(block).join('')}</div></details>`).join('');
+
+    const pos = S.idx[c.id] ?? -1, prev = S.toc[pos-1], next = S.toc[pos+1];
+    const link = (t, cls, label) => t ? `<a class="${cls}" href="#${esc(t.id)}"><div class="d">${label}</div><div class="tt">${t.num}. ${esc(t.title)}</div></a>` : '';
+
+    $('#doc').innerHTML = `
+      <div class="crumb">${esc(c.book_short)} · ${esc(c.part)} ${esc(c.part_title)}</div>
+      <div class="doc-h">
+        <div class="t"><h2><span class="num">${c.chapter_num}</span><span>${esc(c.title)}</span></h2>${c.author?`<p class="au">${esc(c.author)}</p>`:''}</div>
+        ${secs.length > 1 ? '<button class="fold" id="fold" type="button">모두 접기</button>' : ''}
+      </div>
+      <div class="body">${lead}${pre.map(block).join('')}${secHtml}</div>
+      <nav class="pager" aria-label="이전·다음 챕터">${link(prev,'prev','‹ 이전 챕터')}${link(next,'next','다음 챕터 ›')}</nav>
+      <p class="foot">SACCM 3판(Silverstein &amp; Hopper) 챕터별 요약입니다. 임상 판단의 보조 자료이며 최종 결정은 담당 수의사에게 있습니다.</p>`;
+    document.title = `${c.chapter_num}. ${c.title} · SACCM`;
+
+    const fold = $('#fold');
+    if (fold) {
+      const sync = () => { fold.textContent = $$('.sec').some(d => d.open) ? '모두 접기' : '모두 펼치기'; };
+      fold.addEventListener('click', () => { const open = !$$('.sec').some(d => d.open); $$('.sec').forEach(d => d.open = open); sync(); });
+      $$('.sec').forEach(d => d.addEventListener('toggle', sync));
+    }
+  }
+
+  function markActive(id){
+    $$('.ch').forEach(a => a.toggleAttribute('aria-current', false));
+    const a = $(`.ch[data-id="${CSS.escape(id)}"]`);
+    if (!a) return;
+    a.setAttribute('aria-current', 'page');
+    const part = a.closest('details'); if (part) part.open = true;
+    if (!$('#side').classList.contains('open')) a.scrollIntoView({ block: 'nearest' });
+  }
+
+  async function fetchChapter(id){
+    if (S.chapters.has(id)) return S.chapters.get(id);
+    const r = await fetch(DATA + encodeURIComponent(id) + '.json');
+    if (!r.ok) throw new Error(r.status);
+    const c = await r.json();
+    S.chapters.set(id, c);
+    return c;
+  }
+
+  async function open(id){
+    if (!S.idx.hasOwnProperty(id)) id = S.toc[0] && S.toc[0].id;
+    if (!id) return;
+    markActive(id);
+    if (S.current === id && !S.pendingMark) return;
+    $('#doc').innerHTML = '<p class="state">챕터를 불러오는 중…</p>';
+    try {
+      const c = await fetchChapter(id);
+      S.current = id; store.set('saccm:last', id);
+      renderChapter(c);
+      if (S.pendingMark) { highlight(S.pendingMark); S.pendingMark = ''; }
+      else window.scrollTo({ top: 0 });
+    } catch (e) {
+      S.current = null;
+      $('#doc').innerHTML = `<div class="state"><p>챕터 파일을 불러오지 못했습니다(${esc(id)}). 인터넷 연결을 확인한 뒤 다시 시도하세요.</p><button type="button" id="retry">다시 시도</button></div>`;
+      $('#retry').addEventListener('click', () => open(id));
+    }
+  }
+
+  /* ---------- TOC ---------- */
+  function renderToc(){
+    const parts = [];
+    S.toc.forEach(t => {
+      let p = parts[parts.length-1];
+      if (!p || p.part !== t.part) parts.push(p = { part: t.part, title: t.part_title, items: [] });
+      p.items.push(t);
+    });
+    $('#toc').innerHTML = parts.map(p => `
+      <details class="part">
+        <summary><span class="pn">${esc(p.part.replace('Part ',''))}</span><span class="pt">${esc(p.title)}</span><span class="pc">${p.items.length}</span></summary>
+        <ul class="chs">${p.items.map(t => `<li><a class="ch" data-id="${esc(t.id)}" href="#${esc(t.id)}"><span class="n">${t.num}</span><span>${esc(t.title)}</span></a></li>`).join('')}</ul>
+      </details>`).join('');
+  }
+
+  /* ---------- search ---------- */
+  const norm = (s) => String(s).toLowerCase();
+  function textOf(c){
+    if (c._text) return c._text;
+    const out = [];
+    const walk = (x) => { if (typeof x === 'string') out.push(x); else if (Array.isArray(x)) x.forEach(walk); else if (x && typeof x === 'object') for (const k in x) if (!['type','level','ordered','format'].includes(k)) walk(x[k]); };
+    walk(c.blocks);
+    return (c._text = out.join('  '));
+  }
+  function snippet(text, q){
+    const i = norm(text).indexOf(q); if (i < 0) return '';
+    const a = Math.max(0, i - 28), b = Math.min(text.length, i + q.length + 42);
+    return (a ? '…' : '') + esc(text.slice(a, i)) + '<mark>' + esc(text.slice(i, i + q.length)) + '</mark>' + esc(text.slice(i + q.length, b)) + (b < text.length ? '…' : '');
+  }
+  function search(){
+    const raw = $('#q').value.trim(), q = norm(raw);
+    $('#q-clear').hidden = !raw;
+    if (!q) { $('#results').hidden = true; $('#toc').hidden = false; return; }
+    $('#toc').hidden = true; $('#results').hidden = false;
+    const titleHits = S.toc.filter(t => norm(t.title).includes(q) || String(t.num) === q || norm(t.part_title).includes(q));
+    let html = `<p class="res-h">제목 ${titleHits.length}건</p>` + (titleHits.length ? titleHits.slice(0, 40).map(t => `<a class="res" href="#${esc(t.id)}" data-mark=""><div class="rt"><span>${t.num}. ${esc(t.title)}</span></div></a>`).join('') : '<p class="empty">일치하는 제목이 없습니다.</p>');
+    if (S.full) {
+      const hits = [];
+      S.toc.forEach(t => { const c = S.chapters.get(t.id); if (!c) return; const tx = textOf(c), n = norm(tx).split(q).length - 1; if (n) hits.push({ t, n, sn: snippet(tx, q) }); });
+      html += `<p class="res-h">본문 ${hits.length}개 챕터</p>` + (hits.length ? hits.slice(0, 60).map(h => `<a class="res" href="#${esc(h.t.id)}" data-mark="${esc(raw)}"><div class="rt"><span>${h.t.num}. ${esc(h.t.title)}</span><small>${h.n}회</small></div><p class="sn">${h.sn}</p></a>`).join('') : '<p class="empty">본문에서도 찾지 못했습니다. 영문·한글 표기를 바꿔 검색해 보세요.</p>');
+    } else {
+      html += `<button class="full-btn" id="full" type="button"${S.loadingAll?' disabled':''}>${S.loadingAll ? '본문 불러오는 중…' : `본문에서 “${esc(raw)}” 찾기`}</button>`;
+    }
+    $('#results').innerHTML = html;
+    const fb = $('#full'); if (fb) fb.addEventListener('click', loadAll);
+  }
+  async function loadAll(){
+    if (S.loadingAll || S.full) return;
+    S.loadingAll = true; search();
+    const ids = S.toc.map(t => t.id).filter(id => !S.chapters.has(id));
+    let done = S.toc.length - ids.length;
+    const fb = () => $('#full');
+    const worker = async () => { while (ids.length) { const id = ids.shift(); try { await fetchChapter(id); } catch(e){} done++; if (fb()) fb().textContent = `본문 불러오는 중… ${done}/${S.toc.length}`; } };
+    await Promise.all(Array.from({ length: 6 }, worker));
+    S.loadingAll = false; S.full = true; search();
+  }
+  function highlight(q){
+    const root = $('#doc .body'); if (!root || !q) return;
+    const lq = norm(q), walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT), nodes = [];
+    while (walker.nextNode()) if (norm(walker.currentNode.nodeValue).includes(lq)) nodes.push(walker.currentNode);
+    let first = null;
+    nodes.forEach(node => {
+      const v = node.nodeValue, lv = norm(v), frag = document.createDocumentFragment();
+      let i = 0, j;
+      while ((j = lv.indexOf(lq, i)) >= 0) {
+        frag.append(v.slice(i, j));
+        const m = document.createElement('mark'); m.textContent = v.slice(j, j + q.length); frag.append(m);
+        first = first || m; i = j + q.length;
+      }
+      frag.append(v.slice(i)); node.replaceWith(frag);
+    });
+    if (first) { const d = first.closest('details'); if (d) d.open = true; first.scrollIntoView({ block: 'center' }); }
+    else window.scrollTo({ top: 0 });
+  }
+
+  /* ---------- drawer ---------- */
+  const side = $('#side'), btn = $('#toc-btn'), bd = $('#backdrop');
+  const drawer = (on) => { side.classList.toggle('open', on); bd.classList.toggle('open', on); btn.setAttribute('aria-expanded', on); if (on) { const a = $('.ch[aria-current]'); if (a) a.scrollIntoView({ block: 'center' }); } };
+  btn.addEventListener('click', () => drawer(!side.classList.contains('open')));
+  bd.addEventListener('click', () => drawer(false));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') drawer(false); });
+  side.addEventListener('click', e => {
+    const a = e.target.closest('a.ch, a.res'); if (!a) return;
+    S.pendingMark = a.dataset.mark || '';
+    const id = a.getAttribute('href').slice(1);
+    if (id === S.current) { e.preventDefault(); if (S.pendingMark) open(id); }
+    drawer(false);
+  });
+
+  $('#q').addEventListener('input', search);
+  $('#q-clear').addEventListener('click', () => { $('#q').value = ''; search(); $('#q').focus(); });
+  window.addEventListener('hashchange', () => open(decodeURIComponent(location.hash.slice(1))));
+
+  (async function init(){
+    try {
+      const r = await fetch(DATA + 'toc.json', { cache: 'no-cache' });
+      if (!r.ok) throw new Error(r.status);
+      const t = await r.json();
+      S.toc = (t.chapters || []).slice().sort((a, b) => a.num - b.num);
+      S.toc.forEach((c, i) => S.idx[c.id] = i);
+      renderToc();
+      const want = decodeURIComponent(location.hash.slice(1)) || store.get('saccm:last') || '';
+      open(S.idx.hasOwnProperty(want) ? want : S.toc[0].id);
+    } catch (e) {
+      $('#toc').innerHTML = '<p class="empty">목차 파일(data/saccm/toc.json)을 불러오지 못했습니다.</p>';
+      $('#doc').innerHTML = '<p class="state">목차를 불러오지 못해 챕터를 열 수 없습니다. 인터넷 연결을 확인한 뒤 새로고침하세요.</p>';
+    }
+  })();
+})();
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('../sw.js').then((reg) => {
+      const showToast = (msg) => {
+        const t = document.createElement('div'); t.className = 'sw-toast'; t.textContent = msg; document.body.appendChild(t);
+        requestAnimationFrame(() => t.classList.add('show'));
+        setTimeout(() => { t.classList.remove('show'); setTimeout(() => t.remove(), 400); }, 3200);
+      };
+      const hadController = !!navigator.serviceWorker.controller;
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (refreshing || !hadController) return;
+        refreshing = true;
+        showToast('새 버전 적용 중…');
+        setTimeout(() => window.location.reload(), 700);
+      });
+      reg.update().catch(() => {});
+    }).catch(() => {});
+  });
+}
+</script>
+</body>
+</html>
