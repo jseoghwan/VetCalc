@@ -1,0 +1,118 @@
+{
+ "id": "sacc3-p1-c4",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part I",
+ "part_title": "Key Critical Care Concepts",
+ "chapter_num": 4,
+ "title": "Cardiopulmonary Resuscitation",
+ "author": "Daniel J. Fletcher, PhD, DVM, DACVECC; Manuel Boller, Dr med vet, MTR, DACVECC",
+ "format": 2,
+ "blocks": [
+  {"type": "callout", "title": "KEY POINTS", "items": [
+   "CPA의 조기 인지와 신속한 CPR 시작이 환자 생존에 결정적이다.",
+   "BLS = 고품질 흉부압박(100–120회/분, 흉곽 폭의 1/3–1/2 깊이, 2분 주기로 중단 없이) + 환기 10회/분 — CPR에서 가장 중요한 요소.",
+   "CPR 중 모니터링 우선순위: ECG(리듬 진단)와 ETCO₂(흉부압박 효과 평가 + ROSC의 조기 지표).",
+   "Asystole·PEA의 ALS: vasopressor + parasympatholytic(특히 높은 vagal tone에 의한 서맥성 arrest).",
+   "VF의 가장 효과적인 ALS는 전기 제세동. 처음엔 단일 shock만 주고, 불응성 VF에서는 2분 BLS 주기를 완전히 마친 뒤 추가 shock."
+  ]},
+  {"type": "heading", "level": 2, "text": "Overview (개요)", "gist": "개·고양이 CPA 퇴원 생존율 6%–7%; RECOVER(2012) 근거기반 가이드라인"},
+  {"type": "list", "items": [
+   "개·고양이 CPA는 치명적 — 퇴원 생존율 6%–7%. 사람은 표준화 CPR 가이드라인 교육으로 원내 CPA 결과가 2000년 13.7% → 2009년 22.3%로 개선.",
+   "RECOVER(Reassessment Campaign on Veterinary Resuscitation) initiative가 2012년 첫 근거기반 합의 수의 CPR 가이드라인 발표 — 5개 영역: preparedness and prevention, BLS, ALS, monitoring, post-cardiac arrest care (마지막은 Ch.5)."
+  ]},
+  {"type": "heading", "level": 2, "text": "Preparedness and Prevention (준비·예방)", "gist": "6개월마다 재교육; 크래시 카트·알고리즘·용량표; 의심 시 10–15초 내 CPR 시작"},
+  {"type": "list", "items": [
+   "이론 교육(기본 지식) + 실습(정신운동 기술)이 CPR 수행·결과 개선. 기본 교육 후 CPR 참여 가능 인력은 최소 6개월마다 재교육.",
+   "중앙에 위치하고 정기 점검되는 crash cart(필요 약물·장비). 알고리즘·용량표 같은 인지 보조도구는 가이드라인 준수와 개인 수행 향상 → 정기 사용 교육. 사건 후 짧은 debriefing으로 팀 수행 평가 = 향후 개선 + 재교육.",
+   "급성 무반응 환자에 표준화 평가 즉시 적용. 비마취 환자에서 호흡 없는 무의식 환자는 CPA 강력 의심. ABC(airway, breathing, circulation) 평가는 10–15초를 넘기지 않음.",
+   "CPA를 확실히 배제 못 하면 추가 진단 대신 즉시 CPR: ① 사람에서 맥박 촉진은 CPA에 비민감(개·고양이도 마찬가지일 수 있음), ② 무맥 환자에서 짧은 지연도 생존율 ↓, ③ CPA가 아닌 환자에 CPR 시작해도 위험 최소."
+  ]},
+  {"type": "heading", "level": 2, "text": "Basic Life Support — Chest Compressions (흉부압박)", "gist": "100–120/min, 폭 1/3–1/2, 2분 주기, leaning 금지; CPP = ADP − RADP"},
+  {"type": "list", "items": [
+   "BLS = 흉부압박(조직·폐 순환 혈류 회복) + 환기(동맥혈 산소화, 정맥혈 CO₂ 제거). CPA 진단 즉시 CAB(circulation, airway, breathing) 순으로 시작. 고품질 BLS(압박 우선, 이어 환기)가 결과에 가장 큰 영향; 단 개·고양이는 사람보다 원발성 호흡정지가 많아 조기 기도 확보·환기 강력 권장 — 다수 구조자 CPR에서는 압박 시작과 동시에 기도 확보.",
+   "미치료 CPA에서 조직 저산소·허혈 손상이 빠르게 진행(세포 에너지 고갈 → 막전위 변화·장기 기능장애); 허혈이 길수록 재관류 손상 심화. 고품질 압박은 허혈 손상을 줄이고 ROSC 후 재관류 손상을 완화.",
+   "압박의 두 목표: ① 폐 혈류 제공으로 CO₂ 제거·O₂ 흡수 회복, ② 전신 동맥 혈류로 조직 산소 공급. 잘 시행해도 정상 심박출량의 약 30% → 기법에 세심한 주의; 시작 지연·과도한 중단은 ROSC·퇴원 생존 ↓.",
+   "자발 박동 심장의 심실 수축기에는 관상동맥 혈류가 미미하거나 역행(backward pressure wave, intramyocardial pump, 수축기 흐름 방해, 심장 압박) — 외부 압박 CPR에서도 동일. 따라서 CPR 중 심근 관류는 대부분 감압기에 일어나며 coronary perfusion pressure(CPP = 대동맥 이완기압 − 우심방 이완기압)가 결정. 사람·개에서 CPP가 높을수록 성공률 ↑ → CPR 질의 1차 지표.",
+   "자세: 좌·우 측와위 모두 가능. 깊이 흉곽 폭의 1/3–1/2, 속도 100–120회/분(크기·종 무관). 개 실험에서 속도가 높을수록 CPP·관상동맥 혈류 속도 ↑이지만 순방향 흐름은 감압기에만 일어나 120회/분 초과 시 순 관상동맥 혈류 감소 → 더 빠른 속도 금지. Metronome이나 알맞은 템포의 노래(Bee Gees 'Stayin' Alive') 활용.",
+   "압박 사이 흉부에 기대면(leaning) 완전한 탄성 반동이 막혀 심장 충만 감소 → 금지.",
+   "2분 주기로 중단 없이 — 지속 압박 약 60초 후 CPP가 최대에 도달. ECG 리듬 진단·ROSC 확인 맥박 촉진은 각 2분 BLS 주기 끝의 짧은 중단(2–5초)에만; 이때 압박자 교대로 피로 최소화.",
+   "혈류 생성 기전 두 모델 → 환자 크기·흉곽 형태에 따라 최적 기법이 다름. Cardiac pump theory: 좌·우심실 직접 압박 → 심실압 ↑ → 폐동맥·대동맥판 개방; 흉곽 탄성 반동으로 대기압 이하 흉강내압 → 정맥혈이 심실로. Thoracic pump theory: 압박 시 전체 흉강내압 ↑가 흉강 밖 전신순환으로 혈액을 밀어냄, 심장은 도관 역할.",
+   "같은 품종도 개체마다 흉곽을 따로 평가해 품종과 무관하게 가장 적합한 기법 적용. 흉곽 compliance가 낮은 중·대형견은 상당한 압박력 필요 — 팔꿈치를 잠그고 한 손을 다른 손 위에, 어깨를 손 바로 위에 두어 core 근육 사용(이두·삼두근 대신) → 압박력 유지·피로 감소. 테이블 위 환자에서 팔꿈치가 안 잠기면 발판 사용, 또는 테이블에 올라 무릎 자세, 또는 환자를 바닥에.",
+   "고양이·소형견은 대부분 심장 바로 위 압박(compliance 높고 keel형 흉곽 → cardiac pump). 두 손 기법, 또는 한 손으로 흉골을 감싸 쥐어 짜는 기법; 양손 원주형 압박도 고려."
+  ]},
+  {"type": "table", "title": "Table 4.1 흉곽 형태별 흉부압박 접근", "headers": ["체형", "품종 예", "주된 이론", "기법"], "rows": [
+   ["중·대형 round-chested (좌우 폭 ≈ 배복 높이)", "Labrador Retriever, Golden Retriever, Rottweiler, German Shepherd, American Pitbull Terrier", "Thoracic pump", "측와위, 두 손, 흉곽에서 가장 넓은 부위(측와위에서 가장 높은 지점)"],
+   ["중·대형 keel-chested (좌우 폭 ≪ 배복 높이)", "Greyhound, Doberman Pinscher", "Cardiac pump", "측와위, 두 손, 심장 바로 위"],
+   ["Flat-chested (좌우 폭 ≫ 배복 깊이, 사람과 유사)", "English Bulldog, French Bulldog", "Cardiac pump", "배와위(dorsal recumbency), 두 손, 흉골 바로 위"],
+   ["고양이·소형견 (정상 체형)", "모든 고양이, Chihuahua, Yorkshire Terrier, Maltese, Shih Tzu", "Cardiac pump", "측와위, (a) 한 손으로 심장 위 흉골을 감싸는 기법, 또는 (b) 두 손을 심장 바로 위 — 과도한 압박 주의"],
+   ["비만 고양이·소형견", "—", "Cardiac pump 또는 Thoracic pump", "측와위, 두 손, keel형이면 심장 위 / round형이면 가장 넓은 부위"]
+  ], "note": "— = 요약에 해당 내용 없음"},
+  {"type": "heading", "level": 2, "text": "Basic Life Support — Ventilation (환기)", "gist": "삽관 후 10회/분, 흡기 ~1초, TV ~10 ml/kg; 비삽관 시 30:2 mouth-to-snout"},
+  {"type": "list", "items": [
+   "압박 시작 후 가능한 한 빨리 환기. 장비가 있으면 즉시 삽관 — 측와위에서 압박을 중단하지 않고 시행. 삽관 환자는 압박·환기 동시 시행; 부풀린 커프가 위 팽만 방지, 압박 중 폐 팽창 허용, 압박 중단 최소화.",
+   "환기 목표: 10회/분, 짧은 흡기 시간 약 1초, 일회호흡량 약 10 ml/kg. 폐 혈류가 감소해 있어 이 낮은 분당환기량으로 충분.",
+   "과환기 금지: 낮은 PaCO₂ → 뇌혈관 수축 → 뇌혈류·산소 공급 ↓. 또한 양압환기의 흉강내압 ↑는 정맥환류를 방해해 압박 효과·CPP ↓ → 환기 속도를 제한해 평균 흉강내압을 낮추면 심박출량 개선.",
+   "Mouth-to-snout: 삽관 불가 시에만. 한 손으로 입을 단단히 닫고 목을 신전해 주둥이와 척추 정렬 → 콧구멍을 입으로 밀봉하고 흉곽 움직임을 보며 정상 흉곽 확장까지 불어넣음; 흡기 약 1초.",
+   "비삽관 환자는 압박·환기 동시 불가 → 압박 30회 후 즉시 짧은 호흡 2회(30:2), 2분 주기, 매 주기 구조자 교대. 압박 중단이 불가피하므로 장비·인력 부족으로 삽관이 불가능할 때만."
+  ]},
+  {"type": "heading", "level": 2, "text": "Monitoring (모니터링)", "gist": "ECG는 2분 주기 사이에만; ETCO₂ <10–15 mm Hg는 ROSC 가능성 낮음"},
+  {"type": "list", "items": [
+   "CPR 중 motion artifact·부적절한 맥박질로 pulse oximeter, Doppler·oscillometric 간접 혈압계는 제한적. ECG와 capnography 권장.",
+   "ECG: ALS 결정의 근거이나 motion artifact에 매우 취약해 압박 중 해석 불가 → 압박자 교대하는 2분 BLS 주기 사이에만 평가. 팀 리더가 리듬 진단을 명확히 선언하고 동의·이의를 구함(오진 최소화); 의견이 다르면 즉시 압박 재개 후 다음 주기에 논의.",
+   "개·고양이 CPA의 가장 흔한 arrest rhythm 3가지: asystole, PEA, VF.",
+   "ETCO₂: CPR 중 안전·실행 가능, 기술과 무관하게 motion artifact에 강함. 측정 가능한 ETCO₂ = ETT 위치가 맞다는 시사(확정은 아님, 특히 폐 혈류 낮은 CPA 환자). 분당환기량이 일정하면 ETCO₂ ∝ 폐 혈류 → 압박 효과 지표. 매우 낮은 ETCO₂(<10–15 mm Hg)는 개·사람에서 ROSC 가능성 ↓. ROSC 시 크게 상승 → 조기 ROSC 지표."
+  ]},
+  {"type": "heading", "level": 2, "text": "Advanced Life Support — Drug Therapy (약물)", "gist": "IV/IO 우선; epinephrine 저용량 0.01 mg/kg 매 2주기; vasopressin 0.8 U/kg; atropine 0.04 mg/kg"},
+  {"type": "list", "items": [
+   "ALS(약물·제세동)는 BLS 시작 후 개시. 고품질 BLS 없이는 ALS 성공 가능성 낮음 → 모든 ALS는 BLS 질에 영향을 최소화하며 시행.",
+   "약물은 IV 또는 IO 경로 우선; 말초·중심 정맥 또는 IO 카테터 조기 확보(cutdown 흔히 필요). 혈관 확보 중 BLS 중단 금지. Arrest rhythm에 따라 vasopressor, parasympatholytic, antiarrhythmic; 상황에 따라 reversal, IV 수액, alkalinizing 제제. 용량표를 준비 구역에 비치(RECOVER 알고리즘·용량표: veccs.org)."
+  ]},
+  {"type": "table", "title": "Table 4.2 CPR 약물·용량", "headers": ["약물", "농도", "용량·경로", "비고"], "rows": [
+   ["Epinephrine (low dose)", "1 mg/ml (1:1000)", "0.01 mg/kg IV/IO\n0.02–0.1 mg/kg IT", "Asystole/PEA에 매 2번째 BLS 주기. IT는 용량 2–10배로 늘리고 희석"],
+   ["Epinephrine (high dose)", "1 mg/ml (1:1000)", "0.1 mg/kg IV/IO/IT", "지연된(>10분) CPR에서 고려"],
+   ["Vasopressin", "20 U/ml", "0.8 U/kg IV/IO\n1.2 U/kg IT", "매 2번째 BLS 주기. IT는 용량 증량"],
+   ["Atropine", "0.4 mg/ml", "0.04 mg/kg IV/IO\n0.15–0.2 mg/kg IT (표); 본문 0.08 mg/kg IT", "매 2번째 BLS 주기. 서맥성 arrest·높은 vagal tone(확인·의심)에 권장. IT는 용량 증량"],
+   ["Bicarbonate", "1 mEq/ml", "1 mEq/kg IV/IO", "지연 CPR/PCA 단계에서 pH <7.0일 때. Hypoventilation 시 사용 금지"],
+   ["Amiodarone", "50 mg/ml, 1.8 mg/ml", "5 mg/kg IV/IO (표); 본문 2.5–5 mg/kg", "불응성 VF/pulseless VT. 개에서 anaphylaxis 연관"],
+   ["Lidocaine", "20 mg/ml", "2 mg/kg slow IV/IO push (1–2분)", "불응성 VF/pulseless VT — amiodarone 없을 때만"],
+   ["Naloxone", "0.4 mg/ml", "0.04 mg/kg IV/IO", "Opioid 역전"],
+   ["Flumazenil", "0.1 mg/ml", "0.01 mg/kg IV/IO", "Benzodiazepine 역전"],
+   ["Atipamezole", "5 mg/ml", "0.1 mg/kg IV/IO (본문); 표 4.2 원문 표기 '100 mg/kg' (µ 소실로 추정)", "α₂ agonist 역전. Yohimbine 0.1 mg/kg IV/IO도 가능(본문)"],
+   ["Defibrillation — Monophasic", "—", "External 4–6 J/kg\nInternal 0.5–1 J/kg", "불응성 VF/pulseless VT에서 한 번 50%–100% 증량 가능(표); 본문: 2번째 용량 50% 증량, 이후 추가 증량 금지"],
+   ["Defibrillation — Biphasic", "—", "External 2–4 J/kg\nInternal 0.2–0.4 J/kg", "권장 (더 낮은 에너지로 제세동 → 심근 손상 ↓)"]
+  ], "note": "IT = intratracheal; PCA = post cardiac arrest. — = 요약에 해당 내용 없음"},
+  {"type": "table", "title": "약물별 근거·주의", "headers": ["약물군", "내용"], "rows": [
+   ["Vasopressor 총론", "CPR 중 심박출량은 정상의 30% 이하 → 말초 혈관저항 ↑로 혈류를 말초에서 중심으로 재분배하는 것이 리듬과 무관하게 유용"],
+   ["Epinephrine", "가장 잘 연구된 vasopressor. α₁(말초 혈관수축 — CPR 중 가장 유익, 관상·뇌혈관은 보존) + β₁·β₂. 사람 메타분석: 저용량(0.01 mg/kg IV/IO 매 2주기)이 고용량(0.1 mg/kg)보다 퇴원 생존 ↑; epinephrine 사용은 퇴원 생존 ↑와 함께 나쁜 신경학적 결과 ↑(중증 환자 생존 증가 때문일 가능성); 최근 대규모 위약대조 시험은 30일 생존 개선, 기능적 신경 결과 차이 없음 → 초기에는 저용량 권장. 지연된 CPR 후 고용량(0.1 mg/kg IV/IO 매 2주기)은 ROSC ↑ 근거로 고려 가능하나 퇴원 생존 ↓ 가능 이해하에, 급성·가역적 CPA에서는 피함. IT 투여(저용량 0.02 mg/kg, 고용량 0.2 mg/kg): 긴 카테터를 튜브로 넣고 등장성 식염수·멸균수로 1:1 희석. Asystole·PEA의 주 치료로 여전히 간주되나 ROSC ↑에도 일관된 장기 생존·기능 결과 효과는 미입증"],
+   ["Vasopressin", "0.8 U/kg IV/IO 매 2주기. 말초 V1 수용체 활성화; epinephrine과 교대 또는 병용. 산성 환경(α₁ 수용체가 epinephrine에 무반응)에서도 유효; ROSC 후 심근 허혈을 악화시킬 수 있는 β₁ 수축·변시 효과 없음. IT 투여 가능 (Ch.148)"],
+   ["Atropine (parasympatholytic)", "모든 개·고양이에서 고려 가능(0.04 mg/kg IV/IO 매 2주기); vagal tone ↑에 의한 asystole·PEA(만성 또는 심한 급성 GI·호흡기·안과 질환)에 특히 유용. IT 0.08 mg/kg. 가이드라인은 3–5분마다 반복 가능하나 반감기가 길어 1–2회만 반복이 신중"],
+   ["Antiarrhythmic", "제세동 불응성 VF → amiodarone 2.5–5 mg/kg IV/IO; 개에서 anaphylaxis 보고 → ROSC 후 징후 감시·치료(Ch.141). Lidocaine 2 mg/kg slow IV/IO push는 덜 효과적인 대안 — 개에서 제세동 필요 에너지를 높였다는 연구도, 유익하다는 연구도 있음"],
+   ["Reversal agents", "CPA 전 가역적 진정제 투여 시 유익 가능, 해 없음: naloxone 0.04 mg/kg IV/IO(opioid), flumazenil 0.01 mg/kg IV/IO(benzodiazepine), atipamezole 0.1 mg/kg IV/IO 또는 yohimbine 0.1 mg/kg IV/IO(α₂ agonist)"],
+   ["IV fluids", "정상·과혈량 환자에서는 해로울 수 있음 — CPA에서 동맥압보다 중심정맥(우심방)압을 올려 CPP·뇌관류압 ↓. 확인·의심 hypovolemia에서는 preload 회복, 압박 효과·수축기·이완기압 ↑ → CPP·뇌관류압 ↑"],
+   ["Corticosteroids", "대부분 연구에서 유익·유해 근거 불명확(다른 약물 병용으로 교란). 개·고양이 전향적 관찰연구에서 ROSC ↑ 있었으나 종류·용량이 매우 다양해 인과 추론 불가. 단회 고용량으로도 유의한 GI 궤양; 면역억제, 신장 prostaglandin ↓로 신 관류 ↓ → 일상적 사용 비권장"],
+   ["Alkalinizing (sodium bicarbonate)", "지연 CPA(>10–15분)의 심한 metabolic acidosis(효소·대사 억제, 심한 혈관확장) → 1 mEq/kg 1회 희석 IV 고려. ROSC 후 대사 이상이 빠르게 해소될 수 있어 대사성 심한 acidemia(pH <7.0)에만"]
+  ]},
+  {"type": "heading", "level": 2, "text": "Electrical Defibrillation (전기 제세동)", "gist": "VF ≤4분 즉시 shock, >4분이면 1주기 BLS 후; 단일 shock → 2분 BLS → 재평가"},
+  {"type": "list", "items": [
+   "VF·pulseless VT 치료의 핵심. CPR 없는 VF의 3단계 허혈 모델: electrical phase(처음 4분, 허혈 최소·세포 에너지 유지) → circulatory phase(이후 6분, ATP 고갈로 가역적 허혈 손상) → metabolic phase(10분 후, 비가역적 손상 시작 가능).",
+   "VF 지속 시간이 4분 이하로 알려지거나 의심되면 제세동기 충전까지만 압박 후 즉시 제세동. 4분 초과면 CPR 1주기 완료 후 제세동 — 심근세포에 혈류·산소 공급으로 ATP 생성·막전위 회복 → 제세동 반응성 ↑.",
+   "Monophasic(전극 간 한 방향 전류) vs biphasic(한 방향 후 극성 반전): biphasic이 더 낮은 에너지로 제세동 성공 → 심근 손상 ↓ → 권장. 시작 용량 monophasic 4–6 J/kg, biphasic 2–4 J/kg; 2번째 용량은 50% 증량 가능하나 이후 추가 증량 금지 (Ch.205).",
+   "3회 연속(stacked) shock은 더 이상 권장하지 않음. 단일 제세동 후 리듬 분석 없이 즉시 압박 재개 → 2분 BLS 완료 후 ECG 재평가 → VF 지속 시 그 주기 끝에 제세동 반복."
+  ]},
+  {"type": "heading", "level": 2, "text": "Open-Chest CPR (OCCPR)", "gist": "폐쇄흉 CPR 20분 후에는 효과 낮음; 흉강 질환·심낭액·관통상·거대견에서 유일한 선택"},
+  {"type": "list", "items": [
+   "ILCOR 합의는 대조 임상시험 부족으로 OCCPR 권고 없음. 그러나 개 실험·사람 임상연구에서 폐쇄흉 CPR 대비 혈역학 변수·CPP·뇌관류압·결과 개선; 시작 지연은 결과 악화, 개에서 폐쇄흉 CPR 20분 후에는 OCCPR 효과 낮음.",
+   "더 침습적·고비용이나 결과 개선 가능성 → 보호자 동의 + 금기 질환(thrombocytopenia, coagulopathy) 없으면 CPA 진단 후 가능한 한 빨리 시행.",
+   "술기: 우측와위에서 4–5번째 늑간 좌측 개흉 → Finochietto retractor. 심낭은 압박을 위해 제거 가능하며 pericardial effusion 등 심낭 질환에서는 항상 제거. 두 손 기법(좌수로 우심실을 감싸고 우수 손가락을 좌심실 위에) 또는 한 손 기법(우수 손가락을 좌심실 위에 두고 흉골에 대고 압박); apex → base 방향으로 압박해 순방향 혈류 극대화. ROSC 후 개흉 폐쇄·chest tube(pneumothorax 위험 ↓) → 집중 PCA 관리.",
+   "외부 압박이 무의미한 상황: 흉강 질환, pericardial effusion, 관통성 흉부 손상. Round·flat 흉곽의 giant breed는 폐쇄흉 CPR 비효과적 → OCCPR 선호. 수술 중 CPA도 OCCPR — 복부 수술 중이면 횡격막 절개로 심장 접근(개흉 불필요); 실험연구에서 비수술 상황에서도 경횡격막 접근이 측방 개흉과 압박 시작까지 시간이 같아 대안 가능."
+  ]},
+  {"type": "heading", "level": 2, "text": "Prognosis (예후)", "gist": "마취 중 arrest 퇴원 생존 최대 47%; 고양이 19%, 개보다 약 5배"},
+  {"type": "list", "items": [
+   "자료 제한적이나 arrest 원인이 중요한 예후 인자. 후향 연구: 퇴원 생존 개 15·고양이 3마리 중 유의한 만성 기저질환은 3/18뿐, 나머지는 급성 질환. 심하고 치료 불가·진행성 만성질환에 의한 CPA는 퇴원 생존 가능성 낮음(안락사로 교란).",
+   "마취 전후 arrest는 예후 훨씬 좋음 — 한 전향 관찰연구에서 퇴원 생존 최대 47%.",
+   "3차 의뢰기관 전향 관찰연구(개 172, 고양이 47): 고양이 퇴원 생존 19%, 개보다 약 5배 생존 가능성 ↑; 마취과 관리 중 CPA는 병원 다른 곳 arrest보다 약 15배 생존 가능성 ↑.",
+   "급성·치료 가능 질환(특히 마취 사건 유발)의 개·고양이에서 CPR은 정당하며, 보호자 동의 시 적극적·지속적으로."
+  ]}
+ ]
+}

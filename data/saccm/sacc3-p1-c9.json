@@ -1,0 +1,70 @@
+{
+ "id": "sacc3-p1-c9",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part I",
+ "part_title": "Key Critical Care Concepts",
+ "chapter_num": 9,
+ "title": "Endothelial Surface Layer",
+ "author": "Lisa Smart, BVSc, DACVECC, PhD; Deborah C. Silverstein, DVM, DACVECC",
+ "format": 2,
+ "blocks": [
+  {"type": "callout", "title": "KEY POINTS", "items": [
+   "내피 표면층(ESL)은 혈액–혈관, 혈관–간질 경계면에서 여러 중요한 역할을 한다.",
+   "ESL의 손상·변형은 혈관 투과성, 혈관운동 긴장도, 염증, 응고에 영향을 준다.",
+   "중증질환 동물은 ESL 손상·탈락(shedding) 위험이 높고, 이로 인해 장기 기능장애가 생길 수 있다.",
+   "손상의 검출·추적에는 순환 내피 glycocalyx 생체표지자 측정과 videomicroscopy로 perfused boundary region(PBR) 추정이 흔히 쓰인다.",
+   "ESL의 치료적 복원과 glycocalyx 복구는 활발히 연구 중이다."
+  ]},
+  {"type": "heading", "level": 2, "text": "Introduction and Importance (개요·중요성)", "gist": "ESL = gel형 glycocalyx + 부동 혈장층; EG는 ESL 안의 glycocalyx 구조만 지칭"},
+  {"type": "list", "items": [
+   "ESL = 혈관 내강 쪽의 gel형 glycocalyx + 부동(immobile) 혈장층. 염증·응고·혈관운동 긴장도·혈관벽 투과성 조절. 최근 10–15년간 연구가 많음. 용어: ESL = 내피층 전체, EG(endothelial glycocalyx) = ESL 내 glycocalyx 구조만 — 미묘하지만 중요한 구분.",
+   "ESL의 장벽 역할 이해로 전통적 Starling 가설이 수정됨 → 수액 분포 이해와 이상적 소생 수액 논쟁에 영향. 중증질환(특히 전신염증·허혈)이 ESL shedding을 일으킨다는 것은 확립 → 간질 부종, 염증 확산, 혈전 위험 ↑, 혈관운동 기능 ↓. 급속 IV 수액 등 ICU의 흔한 중재도 ESL 변형.",
+   "치료 접근 변경으로 ESL을 보호하거나 복구 중재가 임상 결과를 바꾸는지는 아직 불명; 다만 내피 손상·기능장애의 병태생리적 결과를 인지하는 것이 신중. 향후 새 치료가 등장할 가능성."
+  ]},
+  {"type": "heading", "level": 2, "text": "Structure and Function (구조·기능)", "gist": "Proteoglycan(syndecan, glypican-1) + GAG(heparan·chondroitin·dermatan sulfate, hyaluronan); 무세포 혈장 = 순환 혈장의 15%"},
+  {"type": "list", "items": [
+   "시각화·보존이 어려운 구조 — 전통적 전자현미경 준비에서는 맨 내강면만 보임; in situ 보존법으로 두께가 다양한 털 같은(fuzzy) 층 확인(Fig. 9.1, Alcian blue 8GX 염색 — GAG가 산성 다당류). 실시간 in vivo 현미경: 혈관 내강은 이동하는 RBC·WBC의 중심 기둥 + 부동 무세포 혈장 주변부(ESL 영역)(Fig. 9.2). 전신적으로 이 무세포 공간의 혈장은 순환 혈장량의 약 15%로 추정. 측정 두께는 위치·영상 기법에 따라 다름.",
+   "구조(Fig. 9.3): 배양 내피세포에 분자 표지로 규명 — proteoglycan(syndecan 4아형, glypican-1)의 내강 쪽 ectodomain에서 황산화 GAG 사슬(heparan sulfate가 가장 풍부, chondroitin sulfate, dermatan sulfate)이 뻗은 숲 모양. 긴 GAG인 hyaluronan은 내피에 직접 부착(CD44)하거나 chondroitin sulfate와 결합해 바닥을 따라 얽힘. 그 안을 albumin, uromucoid, 항응고제 등 단백과 sphingosine-1 phosphate 등 인지질이 이동 — ESL 두께·장벽 기능 유지에 중요한 것으로 생각됨.",
+   "장벽 기능: gel층의 물리적 특성(WBC 등 큰 세포의 부착·rolling·이동 방지), 정전하 유지(양이온 반발), 내피세포 틈 사이의 단백 부족 체액 공간(혈관내 체액 보유에 유리한 oncotic 압력 구배). 항응고제(antithrombin, TFPI) 함유로 내피 혈전 억제. 전단력 변화 감지·혈관운동 긴장도 조절 — GAG 제거 시 전단 유발 NO 생성(보상성 혈관확장) 소실."
+  ]},
+  {"type": "heading", "level": 2, "text": "Fluid Movement Across the Endothelium (혈관 통과 체액 이동)", "gist": "수정 Starling: COP 대립은 혈관내 vs subglycocalyx; 재흡수는 급성 저혈압 시 잠깐만"},
+  {"type": "list", "items": [
+   "전통 Starling: 혈관내–간질 간 정수압과 COP 균형(+ 반사계수, 혈관 투과성)이 체액 이동 방향 결정.",
+   "수정 Starling(벤치탑 대조 실험 기반): COP의 대립 힘은 혈관내 공간과 단백 부족 subglycocalyx 공간 사이 → 간질 단백은 혈관 통과 체액 이동에 거의 영향 없음. 체액은 급성·대량의 혈관내 정수압 감소 때를 제외하면 모세혈관으로 재흡수되지 않으며, 그 역전도 순 여과가 재확립되기 전 아주 짧음 — 단백이 subglycocalyx로 역확산해 그곳 COP를 높여 모세혈관–subglycocalyx COP 구배 영향이 줄기 때문. → 극심한 hypotension의 짧은 일탈 외에는 고교질 수액 주입 후에도 재흡수는 없다는 개념. 일부 저자는 'no absorption rule'이 임상 경험과 맞지 않는다고 반박.",
+   "In vivo 체액 역학, 특히 ESL이 벗겨진 내피에서의 혈관 통과 체액 이동은 아직 규명 필요 — ESL shedding·변형을 겪는 중환자에 매우 관련 (Ch.11, 185)."
+  ]},
+  {"type": "heading", "level": 2, "text": "Shedding of the ESL (ESL 탈락)", "gist": "원인: 조직 외상·염증·hyperglycemia·혈액희석·hypervolemia·IRI·산화 스트레스·thrombin/plasmin·LPS·수액"},
+  {"type": "table", "title": "ESL shedding 원인·기전", "headers": ["원인", "기전·근거"], "rows": [
+   ["염증 cytokine", "직접 shedding → 부착 수용체 노출, 백혈구 조직 이동(국소 염증에는 적응적, 중증질환에서는 부적응). EG 구성요소 발현도 상향 → 회전율 ↑ → 순환 농도 ↑(생체표지자 해석 시 고려). 비염증성 shedding도 염증 자극: 효소적 EG 제거 → 백혈구 부착·cytokine 생성 ↑; 순환으로 방출된 soluble heparan sulfate, 저분자 hyaluronan도 염증 자극"],
+   ["IRI·산화 스트레스", "EG shedding 유발"],
+   ["응고 단백", "심한 염증에서 증가하는 thrombin·plasmin이 내피세포에서 syndecan ectodomain 절단"],
+   ["세균 성분", "Gram 음성 세포벽 LPS: syndecan shedding 가속 + 내피 발현 상향. 세균 펩타이드 formylmethionyl-leucyl-phenylalanine: EG에서 GAG 탈락"],
+   ["Hyperglycemia", "DM 환자에서 ESL 얇아짐. 건강한 사람 지원자에서 ~288 mg/dl(16 mmol/L)로 유도 시 추정 ESL 부피 ↓, 혈장 hyaluronan ↑, flow-mediated dilation(내피 기능) ↓. 내피세포 배양에서 200 mg/dl(11 mmol/L) 조건으로 EG shedding. 중증 동물(특히 DM)의 hyperglycemia → ESL shedding → 전염증·전응고 상태 기여 가능"],
+   ["소생 수액", "① 혈장 단백 희석 — 혈장 단백은 ESL 안정화; crystalloid 희석이 shedding 유발 가능. 설치류: albumin·plasma 주입이 crystalloid보다 ESL 유지 우수. ② Natriuretic peptide — 대량 crystalloid 급속 주입 시 심방 신전 → 분비; ESL 직접 shedding, 사람에서 수액 후 EG 생체표지자와 함께 상승. 개 출혈성 shock 모델에서는 관계 입증 못 함(표본 작음·ANP assay 민감도)"]
+  ]},
+  {"type": "list", "items": [
+   "Shedding의 결과: 염증 악화, 응고 촉진, 내피 투과성 ↑, 혈관운동 긴장도 조절 장애; 미세순환 기능장애·hemodynamic coherence 결여(거시 혈역학 개선이 미세순환 흐름을 개선하지 못함) 기여. 전신염증(특히 sepsis)에서 잘 알려졌고 MODS로 가는 병태생리 연속선상. 사람 sepsis·심한 외상에서 ESL shedding 지표는 중증도·나쁜 결과와 연관. 지난 10년간 생체표지자 규명·예후 능력·중재 효과 평가 연구 다수."
+  ]},
+  {"type": "heading", "level": 2, "text": "Methods for Detection (검출 방법)", "gist": "순환 EG 생체표지자(hyaluronan, syndecan-1) vs SDF videomicroscopy PBR(5–25 µm 미세혈관)"},
+  {"type": "table", "title": "검출 방법 비교", "headers": ["방법", "원리", "제한"], "rows": [
+   ["순환 EG 생체표지자", "Shedding 시 GAG(hyaluronan)·proteoglycan ectodomain(syndecan-1)이 순환으로 방출 → 혈장·혈청에서 측정", "① 중증질환에서 다른 공급원 가능 — 모든 세포에 존재; hyaluronan은 간질에도 많아 IV 수액 후 림프로 순환에 유입 가능; ② 염증 등 혈액 변화에 반응해 내피 표면 발현 상향; ③ 연구용 assay라 민감도·재현성 다양; ④ 개·고양이용 검증 상용 assay 부족(hyaluronan만 예외). 생체표지자 ↑–ESL 얇아짐–내피 기능장애의 직접 관계는 임상에서 추가 연구 필요"],
+   ["PBR (sidestream darkfield imaging, SDF)", "Videomicroscopy로 미세순환 혈관(직경 5–25 µm) 내 RBC의 측방 이동(PBR) 측정; 정상 ESL이 RBC를 내피에서 분리 → PBR 작음, ESL 손상·얇아지면 RBC가 내피 쪽으로 깊이 침투 → PBR ↑(Fig. 9.2). Bedside 전용 소프트웨어", "사람: 중증질환에서 ESL 얇아짐 확인. 실험동물 모델에서 질환·중재 효과 정량. 개·고양이는 초기 단계 — 건강견·묘 참고치 초록 발표, 건강견 공장 미세혈관 연구, 건강묘 등장성 crystalloid 또는 synthetic colloid 단회 bolus의 PBR 효과 연구(대조군과 유의차 없음, 초록). 전신마취 필요가 임상 적용을 제한"]
+  ]},
+  {"type": "heading", "level": 2, "text": "ESL Shedding in Dogs and Cats (개·고양이 연구)", "gist": "출혈성 shock 모델: crystalloid 80 ml/kg·gelatin 20 ml/kg에서 hyaluronan 상승 가장 뚜렷"},
+  {"type": "table", "title": "수의 연구 요약", "headers": ["연구", "설계", "결과"], "rows": [
+   ["개 무외상 출혈성 shock 모델", "균형 등장성 crystalloid 80 ml/kg, 또는 fresh whole blood·4% succinylated gelatin·저분자 HES 각 20 ml/kg(군당 n=6) IV 20분", "4군 모두 수액 후 여러 시점에서 hyaluronan ↑, crystalloid·gelatin에서 가장 뚜렷. Crystalloid 군은 염증 생체표지자도 유의하게 높음"],
+   ["건강견 수술 중 LRS", "5 ml/kg/hr vs 10 ml/kg/hr (군당 n=19)", "두 군 모두 마취 유도 대비 수액 종료 시 혈장 hyaluronan 유의 상승; 군 간 차이 없음"],
+   ["개 sepsis + MODS (초록)", "n=18 vs 건강 대조 n=20", "혈청 hyaluronan 및 다른 내피 활성화 생체표지자 유의하게 높음"],
+   ["개 septic peritonitis (초록)", "n=8", "혈청 hyaluronan이 IL-6 농도·일일 IV 수액량과 연관"],
+   ["개 SIRS (초록)", "SIRS 27마리 vs 건강 20마리", "Canine syndecan-1 검출 5마리 vs 건강 0; 사람 syndecan-1 kit 일부 시험에서 SIRS 개가 더 높음. 혈청 hyaluronan은 SIRS·건강 간 유의차 없음"],
+   ["고양이 PBR (초록)", "Propofol 마취 하 LRS 또는 HES 10 ml/kg 또는 무수액, 30마리", "군 간·시간 경과 모두 유의차 없음"]
+  ]},
+  {"type": "heading", "level": 2, "text": "Protection of the ESL / Conclusion (보호·결론)", "gist": "Albumin·plasma 외 ADAM17 억제제, S1P, heparin, IV hyaluronan, chondroitin sulfate, sulodexide 연구 중"},
+  {"type": "list", "items": [
+   "ESL 복원·glycocalyx 복구는 활발한 연구 영역. 실험동물 질환 모델에서 혈관 누출 완화, glycocalyx 분해 표지자 ↓, 생존 개선을 보인 후보: albumin·plasma 투여 외에 disintegrin and metalloprotease 17 억제제, sphingosine-1 phosphate, heparin, IV hyaluronan, chondroitin sulfate, sulodexide 등.",
+   "수액 전략 변경(crystalloid 용량 제한, 투여 속도 감속)도 shedding 완화에 유용할 수 있으나 추가 연구 필요.",
+   "결론: 벤치탑·실험동물 연구에서 중증질환이 ESL shedding을 일으키고 그 병태생리 결과가 장기 기능장애에 기여할 가능성이 크다는 강한 근거. 사람 임상에서 EG shedding 생체표지자와 중증도의 관계 확인됐으나 초기 단계, 인과관계 미확인. 수의에서는 ESL shedding 평가에 여러 제한. 연구 진전에 따라 ESL 보호·복구를 위한 중환자 중재 변화가 나타날 가능성."
+  ]}
+ ]
+}

@@ -1,0 +1,145 @@
+{
+ "id": "sacc3-p1-c1",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part I",
+ "part_title": "Key Critical Care Concepts",
+ "chapter_num": 1,
+ "title": "Evaluation and Triage of the Critically Ill Patient",
+ "author": "Erica L. Reineke, VMD, DACVECC",
+ "format": 2,
+ "blocks": [
+  {"type": "callout", "title": "KEY POINTS", "items": [
+   "중환자·입원 환자는 질병 진행이나 합병증으로 갑자기 악화될 수 있다.",
+   "악화 환자의 체계적 접근: 호흡·심혈관·신경계 1차 평가(primary survey) → 즉시 안정화 → 완전한 신체검사·차트 리뷰(secondary survey).",
+   "POC 혈액검사와 초음파를 신체검사와 함께 활용해 악화 원인을 찾고 치료·추가 검사 방향을 정한다."
+  ]},
+  {"type": "heading", "level": 2, "text": "Introduction (개요)", "gist": "저관류·저산소 → 전신염증 → MODS; 가장 위급한 환자부터 평가"},
+  {"type": "list", "items": [
+   "흔한 기저 질환: trauma, sepsis, pancreatitis, 면역매개 질환, neoplasia, pneumonia.",
+   "조직 저관류·저산소 → 전신염증 cascade → multiple organ dysfunction → 사망.",
+   "장기부전 양상 ▸ 호흡(ARDS, PTE) · 심혈관(LV dysfunction, arrhythmia, vasopressor 의존 hypotension) · 위장관(gastric stasis, ileus, hemorrhagic diarrhea, bacterial translocation) · 간기능 장애 · AKI · 응고 이상(DIC → 혈전·출혈).",
+   "여러 중환자를 동시에 봐야 하면 생명을 위협하는 이상(호흡부전 임박, 저혈압, 심한 arrhythmia)이 있는 환자부터 평가하고 생명 구조 처치(IV 수액 bolus, 산소)를 먼저 시작.",
+   "우선순위 판단 근거: tachypnea·호흡 노력 증가, tachycardia, hypotension, mentation 변화, hypoglycemia·acidemia 같은 대사 이상. 간호사의 악화 보고가 핵심."
+  ]},
+  {"type": "table", "title": "Table 1.1 악화를 시사하는 진단 소견", "headers": ["항목", "기준"], "rows": [
+   ["SpO₂ / PaO₂", "SpO₂ <95% 또는 PaO₂ <80 mm Hg"],
+   ["PaCO₂", ">50 mm Hg"],
+   ["SBP", "<90 mm Hg"],
+   ["Lactate", ">2.5 mmol/L"],
+   ["pH", "<7.35"],
+   ["Base deficit", "<−4 mmol/L (개), <−5 mmol/L (고양이)"],
+   ["BG", "<60 mg/dl 또는 >180 mg/dl"],
+   ["Na", ">160 mEq/L 또는 <130 mEq/L"],
+   ["K", ">6.0 mEq/L 또는 <3 mEq/L"],
+   ["iCa", "<0.8 mmol/L"],
+   ["Creatinine", ">2 mg/dl, baseline 대비 0.3 mg/dl 상승, 또는 핍뇨·무뇨 의심"],
+   ["심장", "Cardiac arrhythmias"],
+   ["WBC (×10³)", "<6 또는 >16; band >3%"],
+   ["혈소판", "Thrombocytopenia"],
+   ["PT / PTT", ">25% 연장"]
+  ]},
+  {"type": "table", "title": "Table 1.2 악화를 시사하는 신체검사 소견", "headers": ["항목", "소견"], "rows": [
+   ["Mentation", "Obtunded · stuporous · comatose, 또는 급격한 변화"],
+   ["점막색", "Pale pink, white, injected/dark pink, red"],
+   ["CRT", ">2초 또는 <1초"],
+   ["심박수", "고양이: >220 또는 <160 bpm\n소형견: >160 bpm\n대형견: >100 bpm"],
+   ["호흡수", ">20회/min (개), >40회/min (고양이)\nStridor/stertor"],
+   ["체온", "<100.5°F (38.1°C) 또는 >102.5°F (39.2°C)"],
+   ["맥박", "Femoral/pedal 맥박 부재 또는 약함\n좁거나 넓은 pulse pressure"]
+  ]},
+  {"type": "heading", "level": 2, "text": "Primary Survey — Respiratory (호흡계)", "gist": "SpO₂ <95%(PaO₂ <80) = hypoxemia, PaCO₂ >50 = hypoventilation"},
+  {"type": "list", "items": [
+   "1차 평가 = 호흡·심혈관·신경계의 빠른 평가. 진행 중 병력·수술력·약물·간호 우려사항을 인계받는다.",
+   "호흡수·노력 ↑ → 기도 → 흉부 청진 → 흉벽·횡격막 순으로 평가; 객관적 평가 전까지 mask/flow-by 산소 공급.",
+   "Tachypnea ≠ hypoxemia 단독: hypovolemia, metabolic acidosis, 통증, 복부 팽만 등 비호흡 원인으로도 발생 → 전신 평가 필요.",
+   "무호흡 → 즉시 기관 삽관 + 양압환기; 심정지 여부 평가 후 소생 상태(DNR vs CPR)에 따라 흉부 압박.",
+   "Stertor/stridor + 흡기 노력 ↑ = 상부기도 폐쇄 (brachycephalic, tracheal/mainstem bronchial collapse, laryngeal dysfunction, 경부·두개 외상, 구강안면 수술 후 출혈·부종). 처치: 진정제, 고체온 시 냉각, 항염증제; 심하면 삽관·tracheostomy.",
+   "청진 시 점막색도 확인 — cyanosis는 hypoxemia의 늦고 심각한 징후.",
+   "Dull lung sound → 흉강 질환(pleural space disease)이 가장 흔함; 심한 폐 실질 consolidation도 가능.",
+   "Pleural effusion 원인: SIRS·내피 손상에 의한 누출, 심한 hypoalbuminemia, massive PTE·우심부전, 고양이 fluid overload, 흉부 수술 후.",
+   "Pneumothorax 원인: 개 bulla 파열(자발성), 고양이 심한 asthma, 둔상·관통상, 흉부·횡격막 수술 후, needle thoracocentesis 합병증, 마취·기계환기 barotrauma. 의심 시 POCUS + needle thoracocentesis 즉시.",
+   "호흡음 증가·crackles·wheezes → 폐 실질 질환. 위장관 장애·신경 질환·강한 진통(특히 opioid) 환자는 regurgitation·aspiration pneumonia 고위험(목격 안 되는 경우 흔함). 그 외 ALI/ARDS, fluid overload·CHF, PTE.",
+   "ALI/ARDS 위험인자(수의): SIRS, sepsis, 감염, 연기 흡입, 익수, 심한 외상.",
+   "Lung POCUS로 실질 질환 확인 가능하나 원인 진단의 첫 단계는 흉부 방사선; echo·CT 추가 고려.",
+   "Pulse oximetry ≥95% 정상; <95% (PaO₂ <80 mm Hg에 해당) = hypoxemia. ABG로 hypoxemia(실내 공기 PaO₂ <80 mm Hg)와 hypoventilation(PaCO₂ >50 mm Hg) 구분.",
+   "산소 보충 중이면 PaO₂/FiO₂: <300 ALI 시사, <200 ARDS 시사. ABG 불가 시 자발호흡 개에서 SpO₂/FiO₂ 대체.",
+   "Hypoventilation 원인: 마취 직후, opioid·benzodiazepine 등 호흡억제제, cervical myelopathy, 흉부 외상·통증, 중독, 신경근 질환, CNS 병변.",
+   "Hypoxemia 의심·확진 → 즉시 산소(mask, flow-by, cage) + 반응 평가. SpO₂ 정상(>95%)이어도 tachypnea·호흡 노력 ↑ 환자 모두에 산소로 호흡일 감소. 이뇨제·기관지확장제·항생제는 기저 질환에 따라. Hypoventilation은 원인 교정(호흡억제제 길항, 흉부 손상 진통 등)."
+  ]},
+  {"type": "heading", "level": 2, "text": "Primary Survey — Cardiovascular (심혈관계)", "gist": "Doppler <90 mm Hg, shock index >1.0(개)/>1.6(고양이), lactate >2.5"},
+  {"type": "list", "items": [
+   "저관류 원인 ▸ hypovolemia(구토·역류·설사 손실, 내피 손상·혈관 누출에 의한 third space 손실, 대량 요 손실[post-obstructive diuresis]), 출혈, 심한 hypoalbuminemia, 심질환·심실 기능 장애, arrhythmia, cardiac tamponade, 혈관확장 상태(sepsis, SIRS).",
+   "저관류 신체검사: pale MM, CRT 연장, tachycardia(고양이는 bradycardia 가능), tall·narrow pulse profile, 약하거나 없는 말초 맥박; 흔히 mentation 저하, 약한 심음, 저체온, 차가운 사지.",
+   "혈관확장 상태(sepsis·SIRS): 붉은 MM(주로 개), 짧은 CRT, 낮은 이완기압으로 넓은 말초 맥박.",
+   "말초 맥박 부재 = hypotension(SBP <90 mm Hg)의 특이적 지표; 맥박이 촉지되어도 저혈압 배제 불가 → 혈압 측정.",
+   "직장–지간(뒷다리 3–4번째 발가락 사이) 온도 차 −11.6°F → 개에서 shock 시사.",
+   "보상성 shock 초기는 심박수·맥박질 변화가 경미 → 안정해 보여 치료가 늦어질 수 있음. 병력·이전 측정치와 비교하고, 의심되면 객관적 측정 및/또는 IV 수액 bolus 후 반응 평가.",
+   "객관적 평가: ECG(빈맥·서맥성 arrhythmia — hyperkalemia, 심근 허혈, 복강내 질환, 심질환, CNS 질환에서 발생), 비침습 혈압.",
+   "Doppler 혈압 <90 mm Hg = 낮음, 개·고양이 모두 shock 가능. Shock index(HR ÷ SBP) >1.0(개), >1.6(고양이) → shock 가능성; 보상기에 특히 유용.",
+   "Lactate >2.5 mmol/L → 전신 저관류 시사(sepsis 등 다른 원인도 가능). 어떤 단일 지표도 관류를 정확히 반영하지 못하므로 임상 맥락에서 종합 판단."
+  ]},
+  {"type": "heading", "level": 2, "text": "Primary Survey — Neurologic (신경계)", "gist": "발작·의식 저하는 즉시 처치; Cushing reflex = ICP 상승"},
+  {"type": "list", "items": [
+   "평가 항목: mentation(의식 수준), 뇌간 반사(동공 크기, PLR, 생리적 안진), 운동 능력. Modified Glasgow Coma Scale을 연속 측정해 비교.",
+   "즉시 안정화가 필요한 문제: 발작, stupor·coma 등 의식 변화.",
+   "두개내 원인(TBI, meningoencephalitis, neoplasia) 외 두개외 원인의 신규 발작: 인슐린 투여 당뇨 환자의 급격한 BG 저하(뇌부종), neuroglycopenia(BG <60 mg/dl), 급격한 Na 저하, 뇌출혈·혈전, hepatic encephalopathy, 선천성 PSS 결찰 후, 약물(enrofloxacin, dobutamine).",
+   "발작은 원인과 무관하게 즉시 치료 — 지속 시 hyperthermia·뇌부종·비가역적 뇌손상. 신규 발작 시 BG·전해질 즉시 측정, 차트로 약물 유발 여부 확인.",
+   "ICP 상승 의심: 심하게 변한 의식 상태 — 두개내 질환(TBI, neoplasia, 염증성 뇌질환) 또는 두개외(hepatic encephalopathy). 혈액투석·요로 폐색 해소 후 삼투압 급변으로 disequilibrium syndrome 보고.",
+   "Cushing reflex(bradycardia + hypertension) → ICP 상승; 지속 시 뇌 허혈·foramen magnum herniation.",
+   "처치: 고삼투 제제(mannitol 또는 hypertonic saline), 머리·목 15–30° 거상(정맥 배출 ↑ → 뇌혈액량 ↓); POC 검사(BG, 전해질, HE 의심 시 ammonia); 혈압 측정(hypotension·hypertension 모두 mentation 변화 유발 — 심한 저혈압·CPA 임박 시 뇌 저산소, 고혈압 시 뇌출혈·경색·부종).",
+   "급성 뇌 탈출 의심(decerebrate rigidity: stupor/coma + 앞·뒷다리 신전) → 삽관·기계환기로 PaCO₂를 일시적으로 낮춰 뇌혈관 수축 → ICP ↓ (단기 관리).",
+   "1차 평가·안정화 후 secondary survey: 병력·차트(투여 약물) 검토, 전신 신체검사(복부 촉진으로 급성 복통, 요량으로 oligoanuria·anuria 평가)."
+  ]},
+  {"type": "heading", "level": 2, "text": "Point-of-Care Bloodwork (POC 혈액검사)", "gist": "PCV/TS·BG·혈액가스·lactate·전해질·creatinine; 추세 변화가 합병증 신호"},
+  {"type": "list", "items": [
+   "항목: PCV, refractometer TS, BG, 혈액가스, lactate, 전해질, creatinine. 대부분의 벤치탑 정맥혈 가스분석기로 소량 혈액으로 신속 측정 가능. 추세 변화는 치료 조정·질병 진행·합병증을 시사(예: 술후 심혈관 악화 + 신규 발열 + hypoglycemia → sepsis 의심 → 수술부위·카테터 감염원 조사, 혈액배양, 항생제 시작·조정).",
+   "PCV·TS 동반 감소 = 출혈(흉부·복부 대수술 합병증, DIC, 위장관 출혈·궤양). GI 궤양·출혈은 저관류, 스테로이드, 간부전, 기저 GI 질환(심한 IBD, lymphoma), GI 수술·PSS 결찰 후(portal hypertension)에서 흔함.",
+   "TS 감소(hypoalbuminemia) → 출혈, GI·요로 알부민 손실, 간기능 저하로 생성 감소. 심한 hypoalbuminemia는 흉·복강으로 체액 이동 → hypovolemia (POCUS로 확인). 수액 소생: 등장성 crystalloid 또는 synthetic colloid + canine/human albumin(개) 및/또는 plasma 제제(FFP, frozen, cryopoor).",
+   "Synthetic colloid(hydroxyethyl starch)는 refractometer TS를 왜곡 → COP 또는 serum albumin 측정 권장.",
+   "Synthetic colloid는 USG도 인위적으로 높여 신뢰 불가."
+  ]},
+  {"type": "table", "title": "혈당 이상", "headers": ["구분", "원인", "치료·의미"], "rows": [
+   ["Hypoglycemia\nBG <60 mg/dl", "Sepsis(술후 GI 누출·열개, 절개부·수술부위 감염, aspiration pneumonia, bacterial translocation), toy breed hypoglycemia, insulinoma·insulin 과량, 간부전, xylitol 중독", "50% dextrose 0.25–0.5 g/kg을 멸균수 또는 등장성 crystalloid로 최소 1:3 희석해 bolus + IV 수액에 2.5%–5% dextrose 첨가"],
+   ["Hyperglycemia\nBG >180 mg/dl", "비당뇨 중환자에서 흔함: 낮거나 정상인 insulin, counterregulatory hormone ↑, 말초 insulin 저항, 간 자가조절 이상; catecholamine·steroid, parenteral nutrition", "경미·급성 상승은 급성 증상 없음 → 기저 질환·합병증 조사. 급성 >300 mg/dl은 심한 심혈관·호흡 장애 → 조직 산소운반 장애·CPA 임박 가능"]
+  ]},
+  {"type": "table", "title": "산-염기 이상", "headers": ["구분", "정의·원인", "의미·치료"], "rows": [
+   ["Metabolic acidosis", "pH <7.34, BD <−4 mmol/L(개), <−5 mmol/L(고양이). Hyperlactatemia(lactate >2.5 mmol/L, 관류 저하)와 흔히 동반; DKA, 신부전, RTA, GI bicarbonate 손실(설사)", "치료 반응으로 lactate 정상화 여부 연속 평가 — 정상화 실패는 개에서 나쁜 예후. pH <7.2 → 심근 기능 저하, 혈관확장, hypotension, catecholamine 반응 ↓"],
+   ["Metabolic alkalosis", "pH >7.45. Furosemide, GI 폐색, gastric stasis·regurgitation, NG tube 흡인(chloride 손실)", "0.9% NaCl, hypokalemia 교정, prokinetic(metoclopramide)"]
+  ]},
+  {"type": "table", "title": "전해질 이상", "headers": ["이상", "원인", "평가·치료"], "rows": [
+   ["Na 급변", "Hypernatremia: 호흡(panting)·GI·피부·요로의 저장성 수분 손실\nHyponatremia: SIADH(pneumonia, neoplasia, babesiosis, 두개내 질환, 약물) — 보통 서서히 진행하나 급변 가능", "급격한 상승·하강 모두 신경 증상·발작. Hypernatremia: 저장성 수액(5% dextrose in water, 0.45% NaCl) 비경구 또는 경구·경장 물; 만성이면 최대 0.5–1 mEq/hr로 감소"],
+   ["Hyperkalemia\nK >6 mEq/L", "신부전, 요로 폐색·파열·요누출(비뇨생식기 수술 후), hypoadrenocorticism, 허혈-재관류(ATE 해소), KCl 과보충", "ECG(bradycardia, tented T, wide QRS, atrial standstill). Arrhythmia 시 calcium gluconate 50–100 mg/kg IV over 5분; 추가로 regular insulin 0.2 units/kg IV + 2.5% dextrose 또는 terbutaline 0.01 mg/kg IV. 원인 치료"],
+   ["Hypokalemia\nK <3.0 mEq/L", "K 결핍 IV 수액·경구 섭취 부족(가장 흔함); DKA, 신부전, albuterol 중독, hyperaldosteronism", "2.0–3.0 mEq/L는 심한 증상 드묾; <2.0 mEq/L → 심한 근력 약화 → hypoventilation, arrhythmia. K 보충"],
+   ["Hypocalcemia·hypomagnesemia", "대량 수혈(citrate 독성)", "수혈 환자에서 평가"],
+   ["공통", "—", "기저 질환 진단·치료, 교정 치료, 현재 치료 변경(예: hypernatremia·hyperchloremia 시 0.9% NaCl 중단)"]
+  ], "note": "— = 요약에 해당 내용 없음"},
+  {"type": "list", "title": "신장 기능", "items": [
+   "AKI: creatinine이 baseline 대비 +0.3 mg/dl 변화. 요량 <0.5–1 ml/kg/hr이면 평가 — 혈관내 용적 결핍 시 GFR 감소로 요량 감소하므로 용적 상태와 함께 해석.",
+   "요로 폐색 해소 후(post-obstructive diuresis)·AKI 회복기에는 수액 속도를 넘는 다뇨 → 수액·경구 섭취 조정 없으면 hypovolemia.",
+   "USG: 수액 치료 후 medullary washout으로 저관류에서도 iso/hyposthenuria 가능. USG <1.008–1.012 → 신성 DI(pyelonephritis, pyometra, hypokalemia·hyperkalemia) 또는 중추성 DI, 간부전, 이뇨제.",
+   "추가 검사: CBC, chemistry, UA, 응고검사 — 초기 진단 후에도 급성 악화 시 반복해 감염·장기부전 진단. 패혈증 개 연구에서 약 50%가 응고·신장·간 등 다장기 부전."
+  ]},
+  {"type": "heading", "level": 2, "text": "Point-of-Care Ultrasound (POCUS)", "gist": "흉·복부 FAST <5분; B-line >3/한 lung field 이상, LA:Ao ≥1.5"},
+  {"type": "list", "items": [
+   "적응: 저관류, 호흡곤란, 급성 복부 팽만, 복통 → 1차 평가 후 흉부·복부 FAST(free abdominal·pleural·pericardial fluid). 보통 5분 미만.",
+   "Pleural effusion 확인 → 즉시 needle thoracocentesis(호흡곤란 완화 + 진단). 효액은 세균 현미경 검사, refractometer TS로 transudate/exudate 구분, 출혈성이면 PCV.",
+   "복강 effusion: 육안(hemorrhagic, serosanguineous, sanguineous)·현미경(세균 등) 평가; 출혈성이면 PCV·TS. Septic effusion = 화농성 염증 + 세포내 세균.",
+   "그 외 복수 원인: uroperitoneum(요로 수술·외상 후), bile peritonitis(biliary mucocele 파열, 둔상), pancreatitis, neoplasia, 심한 hypoalbuminemia에 의한 third spacing."
+  ]},
+  {"type": "table", "title": "복수 vs 혈액 비교 지표", "headers": ["의심 질환", "기준", "비고"], "rows": [
+   ["Septic peritonitis", "Effusion–blood lactate 차 >2 mmol/L, glucose 차 <20 mg/dl", "세포내 세균이 안 보일 때 보조. 개 laparotomy 후 복강 drain 액에서는 신뢰 불가"],
+   ["Uroperitoneum", "Effusion creatinine : blood >2:1, 또는 effusion K : blood >1.4 (개), >1.9 (고양이)", "—"],
+   ["Bile peritonitis", "Effusion total bilirubin : blood >2:1", "Bile pigment(녹색·황갈색), acellular mucinous fibrillar 물질"]
+  ], "note": "— = 요약에 해당 내용 없음"},
+  {"type": "list", "title": "흉부·폐 초음파", "items": [
+   "호흡곤란 환자에서 pneumothorax, diaphragmatic hernia, interstitial-alveolar disease 감별.",
+   "Pneumothorax: dull lung sound + glide sign 부재 → 즉시 needle thoracocentesis; 간헐적 천자로 조절 안 되거나 공기가 계속 나오면 thoracostomy tube.",
+   "Interstitial-alveolar disease: 두 개 이상의 lung field에서 B-line >3개 — CHF, fluid overload, pneumonia, 비심인성 부종, ARDS.",
+   "B-line 있으면 focused cardiac ultrasound로 심인성 여부 감별: CHF·fluid overload면 LA 확장(LA:Ao ≥1.5:1); 수축력으로 LV dysfunction(DCM, 중증질환 합병증) 평가. CHF·fluid overload 의심 → furosemide + IV 수액 중단.",
+   "MMVD 개는 LA 확장이 있어도 비심인성 원인일 수 있음 → POCUS는 흉부 방사선·echo를 대체하지 않으며 가능하면 확인. Pneumonia·ARDS 감별은 방사선·CT + endotracheal wash 세포검사·배양으로만 가능."
+  ]},
+  {"type": "heading", "level": 2, "text": "Summary (요약)", "gist": "체계적 접근 + POC 검사·초음파로 원인 파악과 안정화를 동시에"},
+  {"type": "paragraph", "text": "중환자는 다양한 원인으로 갑자기 악화되며 vital sign·대사 상태 변화가 합병증의 신호다. 심혈관·호흡·신경계 변화에 체계적으로 접근해 원인을 찾고, POC 혈액검사·초음파를 신체검사와 함께 평가해 급성 안정화 치료를 이끈다. 이렇게 하면 장기부전과 합병증을 빠르게 다루어 진행과 사망을 막을 수 있다."}
+ ]
+}

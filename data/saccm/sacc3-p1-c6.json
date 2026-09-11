@@ -1,0 +1,103 @@
+{
+ "id": "sacc3-p1-c6",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part I",
+ "part_title": "Key Critical Care Concepts",
+ "chapter_num": 6,
+ "title": "Classification and Initial Management of Shock States",
+ "author": "Armelle de Laforcade, DVM, DACVECC; Deborah C. Silverstein, DVM, DACVECC",
+ "format": 2,
+ "blocks": [
+  {"type": "callout", "title": "KEY POINTS", "items": [
+   "Shock = 부적절한 세포 에너지 생성. 대부분 낮거나 불균등한 혈류에 의한 조직 저관류 → 조직 산소운반(DO₂)의 결정적 감소.",
+   "분류법은 다양하고 한 환자가 여러 유형의 shock을 동시에 가질 수 있다. 흔한 분류: hypovolemic, distributive, cardiogenic, obstructive; metabolic·hypoxic 원인도 인정된다.",
+   "대부분의 shock에서 치료의 근간은 신속한 혈관 확보와 등장성 crystalloid 투여. 특정 수액의 명확한 우위는 입증되지 않았으나, 적절한 용량을 투여하지 못하면 사망률에 크게 기여한다.",
+   "소생 목표(심박수·혈압 정상화, 맥박질·mentation 개선, lactic acidosis 해소)를 두고 환자별로 치료를 조정한다."
+  ]},
+  {"type": "heading", "level": 2, "text": "Definition and Classification (정의·분류)", "gist": "산소 공급–수요 불균형; DO₂ 감소의 4대 기전 + hypoxic·metabolic"},
+  {"type": "list", "items": [
+   "Shock = 산소 공급과 수요의 심한 불균형 → 세포 에너지 생성 부족, 세포 사멸, 다장기 부전. 대부분 낮거나 불균등한 혈류에 의한 저관류로 산소 소비(V̇O₂) 대비 DO₂가 결정적으로 감소.",
+   "대사 이상(cytopathic hypoxia, hypoglycemia, 독소)이나 동맥 산소함량 감소(심한 anemia, 폐 기능장애, methemoglobinemia/CO 중독)도 원인이지만, 더 흔한 것은 4대 기전에 의한 DO₂ 감소: 혈관내 용적 손실(hypovolemic), 혈관 용적 분포 이상(distributive), 이완기 충만 방해(obstructive), 심장 펌프 부전(cardiogenic).",
+   "Gold standard 분류는 없음 — 기전·치료를 나누는 방식의 차이일 뿐. 여러 형태가 흔히 동시 발생. 신체검사 + POC 검사만으로 조기 인지·치료 시작 가능; 신속·적극적 치료, 적절한 모니터링, 기저 원인 제거가 성공의 열쇠.",
+   "병태생리: 세포 에너지 부족 → 막 이온 펌프(Na-K ATPase) 장애, 세포내 부종, 세포 내용물 누출, 세포내 pH 조절 불능 → 전신 acidemia, 내피 기능장애, 염증·항염증 cascade 활성화 → 빠른 인지·치료로 비가역적 장기 손상·사망 예방."
+  ]},
+  {"type": "table", "title": "Box 6.1 Shock의 기능적 분류와 예", "headers": ["분류", "기전", "예"], "rows": [
+   ["Hypovolemic", "순환 혈액량 감소 (DO₂ 부족)", "출혈, 심한 탈수, 외상"],
+   ["Distributive", "전신 혈관저항의 현저한 감소·증가 또는 혈액 분포 이상", "Sepsis, anaphylaxis, catecholamine 과잉(pheochromocytoma, 극심한 공포)"],
+   ["Cardiogenic", "심장 순방향 혈류 감소", "CHF, 부정맥, 약물 과량(마취제, β-blocker, calcium channel blocker)"],
+   ["Obstructive", "이완기 충만·preload 감소", "GDV, 대정맥·대동맥 폐쇄, tension pneumothorax, pericardial tamponade, 높은 PEEP 기계환기"],
+   ["Hypoxic", "동맥혈 산소함량 감소", "Anemia, 심한 폐 질환, CO 중독, methemoglobinemia"],
+   ["Metabolic", "조직의 산소 이용 이상 (세포 대사 기구 장애)", "Hypoglycemia, cyanide 중독, 미토콘드리아 기능장애, sepsis의 cytopathic hypoxia"]
+  ]},
+  {"type": "heading", "level": 2, "text": "Pathophysiology by Type (유형별 병태생리)", "gist": "Hypovolemic 보상 기전(압수용체·화학수용체·RAAS); distributive는 상대적 hypovolemia"},
+  {"type": "table", "title": "순환성 shock 4유형", "headers": ["유형", "병태생리", "아형·원인"], "rows": [
+   ["Hypovolemic", "혈관내 용적 손실 → 장기 관류 부족 → 혐기성 대사(lactate, H⁺, 산소 자유라디칼 축적). 손상·사멸 세포에서 DAMPs(미토콘드리아 DNA, histone, heat shock protein 등) ↑ → pattern recognition receptor를 통해 선천면역 활성화 → 병적 전신염증. 지속 산소 결핍 → 괴사·apoptosis → 말단 장기 손상·MODS", "출혈성, 외상성 출혈성(심한 연조직 손상의 염증 반응으로 미세혈관·내피·혈관운동 이상 악화), 비출혈성 hypovolemic(심한 구토·설사, 비보상 신 손실, 대량 체액 격리), 외상성 비출혈성(광범위 화상, 깊은 피부 병변). 비외상성 출혈 원인: GI 출혈, 응고병증, 혈관 미란"],
+   ["Distributive", "혈관 긴장도 변화·혈관 투과성 ↑에 의한 병적 체액 재분포 → 상대적 hypovolemia", "Septic: sepsis = 감염에 대한 생명 위협 장기 기능장애, 승압제 필요한 지속 hypotension = septic shock(Ch.90); cytokine 매개 내피 기능장애 → 투과성 ↑ + 혈관확장 → 상대적 충만 감소 + 혈관내→간질 이동.\nAnaphylactic: histamine 매개 혈관확장(Ch.141).\nNeurogenic(TBI·척수 손상): 비정상적으로 낮은 교감신경 긴장도 + 길항 없는 부교감 자극 → 혈관확장"],
+   ["Cardiogenic", "수축기·이완기 심기능 장애 → HR ↑, stroke volume ↓, CO ↓, BP ↓, 말초 혈관저항 ↑, 우심방·폐동맥·폐모세혈관쐐기압 ↑(Ch.41) → 조직 관류 ↓ + 폐정맥압 ↑ → pulmonary edema, 호흡 노력 ↑", "—"],
+   ["Obstructive", "심장·대혈관 압박 → 정맥환류·이완기 충만·preload 저하 → CO ↓ → 관류·DO₂ ↓ → 조직 저산소·장기 부전", "심한 위 확장(volvulus 유무 무관; preload ↓), tension pneumothorax·cardiac tamponade(이완기 충만 ↓), 높은 PEEP 환기(정맥환류·CO ↓)"]
+  ], "note": "— = 요약에 해당 내용 없음"},
+  {"type": "list", "title": "Hypovolemic shock의 보상 기전", "items": [
+   "정맥환류·CO 급감 후 수분 내 시작. 압수용체: 경동맥동·대동맥궁의 낮은 압력·신전 → 설인·미주신경을 통해 뇌간 고립로핵으로 가는 자극 발화 감소 → 교감 활성화 탈억제 + 부교감 억제 → 세동맥·정맥 긴장도, 심근 수축력, HR ↑.",
+   "말초 화학수용체(대동맥체·경동맥체): CO₂, H⁺(pH ↓), 그보다 덜하게 PO₂ 변화에 반응 → 혈관수축 + 분당환기량 ↑. 중추 화학수용체(연수 호흡중추): CSF의 CO₂ ↑·pH ↓ 감지 → 호흡수·일회호흡량 ↑.",
+   "심한 hypotension: 순환 catecholamine ↑, β-endorphin 분비(통증 지각 ↓). 수 시간에 걸쳐 모세혈관압 ↓로 간질→혈관내 체액 순 이동(의의는 의문, Ch.11); hyperglycemia의 삼투 효과도 혈관내 용적 보충에 기여 가능.",
+   "신 혈류 ↓ → RAAS 활성화 → norepinephrine·angiotensin II 매개 혈관수축 + aldosterone(Na 저류)·ADH(수분 저류)."
+  ]},
+  {"type": "heading", "level": 2, "text": "Clinical Presentation (임상 양상)", "gist": "보상기 → 비보상기 진행; 개 sepsis는 hyperdynamic→hypodynamic, 고양이는 서맥 가능·폐 취약"},
+  {"type": "table", "title": "Shock의 단계별·종별 임상 소견", "headers": ["상황", "소견"], "rows": [
+   ["보상성 shock (개)", "경~중등도 mental depression, tachycardia, 정상 또는 연장된 CRT, 차가운 사지, 보통~중등도 맥박질, tachypnea, 정상 혈압 (Ch.64). 보상 반응으로 초기 징후가 미묘"],
+   ["비보상성 shock", "보상 기전 실패 → pale MM, 약한 말초 맥박, mentation 저하, 혈압 하강 → 미치료 시 말단 장기 부전(oliguria 등) → 사망"],
+   ["Sepsis/SIRS hyperdynamic (개, 초기)", "Tachycardia, 발열, bounding 말초 맥박, 충혈된 MM — cytokine 매개(nitric oxide 등) 말초 혈관확장 = vasodilatory shock"],
+   ["Sepsis/SIRS hypodynamic (개, 비보상기)", "Cytokine의 심근 효과·심근 허혈로 CO ↓ → tachycardia, pale(± icteric) MM + CRT 연장, hypothermia, 약한 맥박, dull mentation → 미개입 시 장기 손상·사망(Ch.7). 개의 shock organ = GI → ileus, 설사, hematochezia, melena"],
+   ["고양이", "Hyperdynamic 단계는 거의 인지되지 않음. HR 변화 예측 불가 — tachycardia 또는 bradycardia. 전형: pale MM(± icterus), 약한 맥박, 차가운 사지, hypothermia, 전신 쇠약·허탈. 폐가 shock·sepsis에 취약 → 호흡 기능장애 징후 흔함"]
+  ]},
+  {"type": "list", "items": [
+   "동일 환자에 여러 shock이 동시 발생: GDV 개 — 위 내 체액 저류·short gastric 혈관 파열 출혈로 hypovolemic + 대혈관 압박으로 obstructive. Septic peritonitis 개 — cytokine 매개 미토콘드리아 기능장애(metabolic), cytokine 매개 심기능 장애(cardiogenic), 혈관확장(distributive)·상대적 hypovolemia, 심한 체강 삼출·지속 구토/설사 시 절대적 hypovolemia."
+  ]},
+  {"type": "heading", "level": 2, "text": "Diagnostics and Monitoring (진단·모니터링)", "gist": "잘 관류된 환자: CVP 0–6 cm H₂O, 요량 ≥1 ml/kg/hr, MAP 70–100; lactate <2.5, >7 심함"},
+  {"type": "list", "items": [
+   "모든 shock 환자 기본 검사: 정맥·동맥 혈액가스 + lactate, CBC, chemistry, 응고 패널, 혈액형, UA, POCUS(Ch.202, 189). 안정 후 흉·복부 방사선, 복부 초음파, echo.",
+   "필수 모니터링: 지속 ECG, 혈압, pulse oximetry(Ch.181). Tachycardia(·hypotension)의 점진적 해소와 각성 = 심혈관 안정 회복; 지속 tachycardia·mental depression = 불안정 지속. 최선의 모니터링은 철저한 신체검사·잦은 재평가.",
+   "산소 결핍의 크기가 결과의 핵심 예측 인자 → DO₂·조직 관류 최적화가 치료 목표."
+  ]},
+  {"type": "table", "title": "잘 관류된 환자의 지표", "headers": ["항목", "목표"], "rows": [
+   ["CVP", "0–6 cm H₂O"],
+   ["요량", "≥1 ml/kg/hr"],
+   ["MAP", "70–100 mm Hg"],
+   ["체온·HR·심장 리듬·호흡수", "정상"],
+   ["점막", "촉촉하고 분홍, CRT <2초"]
+  ]},
+  {"type": "table", "title": "추가 관류·산소운반 모니터링", "headers": ["지표", "내용"], "rows": [
+   ["Blood lactate", "DO₂·산소 흡수·관류 부족 → hyperlactatemia·acidemia(세포 저산소 중증도 반영). 사람: lactic acidosis 시 다장기 부전 위험·사망률 ↑; 개에서도 사망 예측에 도움. 성견·성묘 정상 <2.5 mmol/L; >7 mmol/L 심한 상승. 정상 신생·유년 동물은 더 높을 수 있음; 채혈·처리 방법이 영향. 소생 중 연속 측정으로 치료 반응·목표 평가 — 변화량이 단일 측정보다 생존 예측에 우수(Ch.61)"],
+   ["심박출량·산소운반 지표 (PAC)", "직접적이나 침습성·위험·불확실한 이득으로 임상에서 드묾. 우심 카테터/폐동맥 카테터(Swan-Ganz, 풍선 유도 열희석)로 CVP, 폐동맥압, 혼합정맥 산소 지표(PvO₂, SvO₂), PCWP, CO 측정 → stroke volume, 확장기말 용적, SVRI, PVRI, CaO₂, CvO₂, DO₂ index, V̇O₂ index, 산소추출률 유도. CO는 보통 열희석; 덜 침습적 방법도 있음(Ch.182, 184)"],
+   ["SvO₂ (혼합정맥 산소포화도)", "전신 조직 산소화(공급/수요) 변화 평가. V̇O₂ 일정 시 SvO₂는 CO, Hb, SaO₂로 결정. DO₂ ↓(낮은 CO, hypoxemia, 심한 anemia) 또는 V̇O₂ ↑(발열, 발작)에서 감소; sepsis hyperdynamic 단계·세포독성 조직 저산소(cyanide 중독)에서 증가. SvO₂ 감소는 악화의 조기 지표; 소생 중 cardiac index 대안. 이상적으로 폐동맥 혈액에서 측정"],
+   ["ScvO₂ (중심정맥 산소포화도)", "PAC 없으면 앞·후대정맥 근위부 중심정맥 카테터에서 측정. 순환부전 중환자에서 ScvO₂ > SvO₂이나 덜 심한 질환에서는 밀접히 평행 → 병적으로 낮은 ScvO₂는 더 낮은 SvO₂ 시사. 사람 중증 sepsis·septic shock EGDT 무작위 연구: 지속 측정 ScvO₂ >70% 유지(+ CVP 8–12 mm Hg 초과, MAP >65 mm Hg, 요량 >0.5 ml/kg/hr)가 ScvO₂ 모니터링 없는 동일 치료보다 사망률 15% 절대 감소. 개 중증 sepsis/septic shock 목표지향 소생(CRT, CVP, BP, lactate, base deficit, ScvO₂) 연구: 높은 ScvO₂ = 낮은 사망 위험. 개 pyometra 유발 sepsis/septic shock 전향 연구: ICU 입원 시 높은 ScvO₂·덜 비정상적인 base deficit가 낮은 사망 위험과 연관. 자연 발생 shock 개에서 더 연구될 때까지 조기 인지 + 적극적 목표지향 소생이 핵심"]
+  ]},
+  {"type": "heading", "level": 2, "text": "Treatment (치료)", "gist": "Cardiogenic 제외 모든 shock은 IV 수액이 근간; shock dose 개 90 ml/kg, 고양이 50 ml/kg 적정"},
+  {"type": "list", "items": [
+   "조기 인지 + 신속한 심혈관계 회복으로 조직 DO₂ 정상화. Cardiogenic 제외 모든 순환성 shock의 근간 = 유효 순환량·조직 관류 회복을 위한 신속 IV 수액.",
+   "혈관 확보 필수이나 혈관 충만 저하·허탈로 어려움 → 초기 소생에 짧고 굵은 카테터를 중심 또는 말초 정맥에. 어렵거나 지연되면 cutdown 또는 IO 카테터(Ch.194, 195)."
+  ]},
+  {"type": "table", "title": "수액 선택", "headers": ["수액", "용량·용법", "비고"], "rows": [
+   ["등장성 replacement crystalloid (LRS, 0.9% NaCl, Normosol R)", "빠르게, 효과 보며 적정; 총량 최대 1 혈액량 (개 90 ml/kg, 고양이 50 ml/kg)", "치료의 근간. 세포외액으로 빠르게 분포 → 주입 30분 후 투여량의 약 25%만 혈관내 잔류 → 이 시점에 추가 소생 필요 가능. 'Shock dose'는 지침일 뿐, 실제 용량은 임상 반응에 따라 적정(volume overload·내피 손상·간질 부종 예방, Ch.11)"],
+   ["Hypotensive resuscitation", "MAP 약 60 mm Hg 목표", "출혈성 shock에서 유익 가능 — 확정적 지혈 전 공격적 수액은 출혈·결과 악화(Ch.71)"],
+   ["Synthetic colloid", "복잡한 shock에서 추가 옵션", "사람에서 부작용 우려로 사용 제한; 개·고양이 연구 제한적"],
+   ["Human albumin", "—", "사람에서 흔히 사용; 개는 면역 반응 가능성 → 위험:이득 분석. Lyophilized canine albumin이 덜 항원성인 천연 colloid 대안"],
+   ["Hypertonic saline (7%–7.5% NaCl)", "응급에서 생명 구제 가능 (Ch.65)", "Synthetic colloid와 병용 시 crystalloid 단독보다 혈역학 개선이 빠르고 총 crystalloid 요구량 ↓"],
+   ["혈액 성분 제제, Hb 기반 산소운반 용액", "심한 출혈 shock 소생에 흔히 사용 (Ch.69, 71)", "—"]
+  ], "note": "— = 요약에 해당 내용 없음"},
+  {"type": "list", "title": "승압제·강심제", "items": [
+   "용적 소생 후에도 hypotension 지속 → vasopressor 또는 inotrope. 사람에서 조기 vasopressor가 fluid overload ↓·결과 개선(특히 septic shock) 근거 증가. DO₂는 CO와 전신 혈관저항에 의존 → 수액·inotrope로 CO 극대화 + vasopressor로 혈관 긴장도 조절(Ch.147, 148).",
+   "흔한 vasopressor: catecholamine(epinephrine, norepinephrine, dopamine), positive inotrope, sympathomimetic phenylephrine; 보조 승압제로 vasopressin, corticosteroid, glucagon."
+  ]},
+  {"type": "list", "title": "Cardiogenic shock", "items": [
+   "조직 관류 ↓ + 폐정맥압 ↑ → pulmonary edema·dyspnea. 산소 보충과 최소 취급이 추가 비보상 예방에 매우 중요. 간단한 신체검사 + POCUS로 심부전과 다른 dyspnea 원인 감별(Ch.189).",
+   "CHF 치료의 근간 = furosemide IV 또는 IM(Part IV). 반복 이뇨제에도 개선 없으면 기저 심장 이상(수축기 기능장애, 이완기 부전, 부정맥) 표적 치료.",
+   "치료 무반응 dyspnea → high flow nasal oxygen, 또는 마취·삽관 후 100% 산소 양압환기로 안정화 → 철저한 신체검사·흉부 방사선·echo."
+  ]},
+  {"type": "list", "title": "요약", "items": [
+   "완전한 병력·검사 없이 신속 결정해야 하는 것이 어려움. Cardiogenic 외 모든 shock에서 IV 수액이 근간. 과소·지연 소생은 나쁜 결과에 기여하나, 과도한 소생도 희석성 응고병증·pulmonary edema 등 해악.",
+   "품종·signalment·신체검사 조합으로 shock 유형 파악; 명확한 소생 목표를 두고 연속 평가하는 것이 성공 관리의 필수."
+  ]}
+ ]
+}

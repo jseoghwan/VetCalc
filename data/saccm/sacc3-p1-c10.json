@@ -1,0 +1,120 @@
+{
+ "id": "sacc3-p1-c10",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part I",
+ "part_title": "Key Critical Care Concepts",
+ "chapter_num": 10,
+ "title": "Hyperthermia and Fever",
+ "author": "James B. Miller, DVM, MS, DACVIM",
+ "format": 2,
+ "blocks": [
+  {"type": "callout", "title": "KEY POINTS", "items": [
+   "체온 조절은 시상하부 preoptic 영역이 담당 — 뇌·말초 온도수용체에 반응해 열 생산·손실을 조절하며 좁은 범위의 체온을 유지한다.",
+   "Hyperthermia = 정상 범위를 넘는 모든 중심 체온 상승. 진성 발열(true fever)은 감염·염증·손상에 대한 정상 반응이자 급성기 반응의 일부로, 시상하부 체온조절 중추가 조절한다.",
+   "다른 hyperthermia는 열 생산과 손실의 불균형 결과이며, 비발열성 hyperthermia는 발열과 진단·치료 접근이 다르다.",
+   "발열은 세균 성장 억제·바이러스 복제 억제로 숙주에 유익할 수 있다. 대부분의 발열·hyperthermia는 체온이 107°F(41.6°C)를 넘지 않으면 생명 위협이 아니다.",
+   "발열은 수분·열량 요구량을 높인다. 발열이 107°F(41.6°C)를 넘지 않는 한 비특이적 치료 전에 정확한 진단을 먼저.",
+   "NSAID·glucocorticoid 모두 해열하지만 후자는 급성기 염증 반응까지 차단한다. 전신 냉각은 역효과일 수 있어 비발열성 hyperthermia나 107°F(41.6°C)에 가까운 발열에 국한.",
+   "감염이 확인·강력 의심되지 않으면 발열 관리에 경험적 항생제를 쓰지 않는다; 배양·감수성에 근거."
+  ]},
+  {"type": "heading", "level": 2, "text": "Temperature Measurement and Thermoregulation (체온 측정·조절)", "gist": "직장 >102.5°F(39.2°C) = 상승; 개 발열의 거의 절반이 비감염성(프랑스 연구)"},
+  {"type": "list", "items": [
+   "스트레스 없는 개·고양이에서 직장 온도 >102.5°F(39.2°C)는 상승. 귀·액와·발가락 사이 측정은 직장보다 낮음. 혈관내 thermistor가 가장 정확하나 임상에서 비실용적.",
+   "모든 체온 상승을 진성 발열·감염으로 단정하고, 항생제 후 해열되면 세균 감염이었다고 가정하거나, 정상 체온이면 감염이 없다고 가정하는 것은 오진·부적절한 치료로 이어짐. 프랑스 후향 연구: 발열 개 50마리 중 거의 절반이 비감염성 원인. 사람 ICU는 최대 70%가 sepsis.",
+   "체온조절 = 열 손실과 생산의 균형; 대사·생리·행동 기전. 중추는 CNS 전방 시상하부(AH) preoptic 영역. 말초·중추 온도수용체가 환경·중심 체온 변화를 감지 → 신경계로 AH에 전달 → set point 대비 낮으면 열 생산 ↑·보존, 높으면 방산(Fig. 10.1). 정상 환경 온도에서 대부분의 체열은 휴식 중에도 근육 활동으로 생산.",
+   "Cachexia, 마취, 심한 신경 장애 환자는 정상 set point 유지나 반응 생성 불가. 신생 개·고양이는 체온조절 중추 미발달 + 근육량 부족 → 높은 환경 온도 필요."
+  ]},
+  {"type": "table", "title": "Fig. 10.1 정상 체온조절 기전", "headers": ["열 획득 (생산 ↑ / 손실 ↓)", "열 손실"], "rows": [
+   ["Catecholamine, thyroxine, 떨림(shivering), 혈관수축, 입모(piloerection), 자세 변화, 따뜻한 환경 찾기", "Panting, 혈관확장, 자세 변화, 시원한 환경 찾기, 발한(perspiration), grooming(고양이)"]
+  ]},
+  {"type": "heading", "level": 2, "text": "Hyperthermia Classification and True Fever (분류·진성 발열)", "gist": "Fever = AH set point 상승; 외인성 pyrogen → 내인성 pyrogen(IL-1, IL-6, TNF-α) → PGE₂"},
+  {"type": "list", "items": [
+   "Hyperthermia = 열 생산·저장 속도 > 손실. Fever = AH set point가 더 높은 온도로 재설정된 hyperthermia만 지칭. 발열 외 hyperthermia는 체온을 올리려는 것이 아니라 생리·병리·약리 변화로 열 획득이 손실을 초과한 것."
+  ]},
+  {"type": "table", "title": "Box 10.1 Hyperthermia 분류", "headers": ["분류", "예"], "rows": [
+   ["진성 발열 (True fever)", "내인성 pyrogen 생성"],
+   ["부적절한 열 방산", "Heat stroke, hyperpyrexic syndrome"],
+   ["운동 유발", "정상 운동, hypocalcemic tetany(eclampsia), 발작 질환"],
+   ["병리·약리적 원인", "AH 내·주변 병변, malignant hyperthermia, 대사항진 질환, monoamine 대사 장애"]
+  ]},
+  {"type": "list", "items": [
+   "진성 발열 = 침입·손상에 대한 정상 반응, 급성기 반응의 일부(그 외: 호중구 수·식세포능 ↑, T·B 림프구 활성 ↑, 간 급성기 단백 ↑, fibroblast 활성 ↑, 수면 ↑). 외인성 pyrogen이 내인성 pyrogen 방출을 유도해 시작(Fig. 10.2).",
+   "외인성 pyrogen(Box 10.2): 감염원·산물, 면역복합체, 조직 염증·괴사, 여러 약물. 체온조절 중추에 대한 직접 효과는 미미하고 주로 숙주의 내인성 pyrogen 방출 유발.",
+   "내인성 pyrogen: 면역세포(주로 대식세포; T·B 림프구, 다른 백혈구도)가 방출하는 cytokine. IL-1, IL-6, TNF-α가 가장 중요하나 최소 11개 cytokine이 발열 유발(Table 10.1). 일부 종양세포도 cytokine 생성. Cytokine이 혈류로 AH에 도달해 혈관 내피세포에 결합 → prostaglandin(주로 PGE₂, 아마 PGF2α) 방출 → set point ↑ → 열 생산·보존으로 중심 체온 ↑.",
+   "손상 시 체온 상승과 함께 세포 보호 cytokine(heat shock protein)도 생성 — 열 포함 여러 손상에 대한 보호."
+  ]},
+  {"type": "table", "title": "Box 10.2 외인성 pyrogen", "headers": ["분류", "예"], "rows": [
+   ["감염원", "세균(생균·사균: Gram 양성·음성), 세균 산물(LPS, streptococcal exotoxin, staphylococcal enterotoxin·단백), 진균(생·사) 및 산물(cryptococcal 다당·단백), 바이러스, rickettsia, 원충"],
+   ["비미생물", "가용성 항원–항체 복합체, 담즙산, 조직 염증·괴사"],
+   ["약물", "Bleomycin, colchicine, tetracycline, hydromorphone(고양이), levamisole(고양이)"]
+  ]},
+  {"type": "table", "title": "Table 10.1 발열 활성 단백 (내인성 pyrogen)", "headers": ["Pyrogen", "주 공급원"], "rows": [
+   ["Cachectin (TNF-α)", "대식세포"],
+   ["Lymphotoxin (TNF-β)", "림프구 (T·B)"],
+   ["IL-1α", "대식세포 및 다른 여러 세포"],
+   ["IL-1β", "대식세포 및 다른 여러 세포"],
+   ["Interferon α", "백혈구 (특히 단핵구/대식세포)"],
+   ["Interferon β", "Fibroblast"],
+   ["Interferon γ", "T 림프구"],
+   ["IL-6", "여러 세포"],
+   ["Macrophage inflammatory protein 1α", "대식세포"],
+   ["Macrophage inflammatory protein 1β", "대식세포"],
+   ["IL-8", "대식세포"]
+  ], "note": "원문 표 텍스트 추출 순서를 재구성함 — 원본 표와 대조 권장"},
+  {"type": "heading", "level": 2, "text": "Inadequate Heat Dissipation (부적절한 열 방산)", "gist": "Heat stroke: 밀폐차 20분 내 >120°F; nRBC 개 사망률 50%; 냉각은 ~103°F(39.4°C)에서 중단"},
+  {"type": "table", "title": "비발열성 hyperthermia 원인별 요점", "headers": ["원인", "특징", "치료"], "rows": [
+   ["Heat stroke (Ch.139)", "고온 환경 노출로 방산보다 빠른 열 부하 — 대형견, 비만, brachycephalic에서 특히. 환기 불량 밀폐 공간(창 닫은 차)에서 급속: 직사광선 밀폐차 내부는 외기 75°F(24°C)에서도 20분 내 >120°F(48°C); 1시간 내 사망 가능. 말초혈 nRBC 있는 심한 개는 적극 치료에도 사망률 50%. 사람(프랑스 폭염 83명 전향): 28일 사망 52%, 2년 71%", "해열제 무반응. 즉시 전신 냉각(장기 손상·사망 예방)"],
+   ["Hyperpyrexic syndrome", "고온다습 환경의 중~고강도 운동(사냥견, 주인과 조깅하는 개). 습한 환경에서 panting 증발 냉각 미미; 격한 운동 시 골격근 혈관확장 + 피부 혈관수축 → 말초 열 손실 저하. 쇠약·비틀거림·허탈까지 계속 달림", "쇠약·거부 징후 시 보호자가 직장 온도 측정: >106°F(41°C) → 즉시 전신 냉각; >107°F(41.6°C) → 영구 장기 손상·사망 가능"],
+   ["운동 유발", "중등도 강도의 지속 운동만으로도 근육 열 생산으로 상승; 극한 더위·습도 아니어도 냉각 필요 수준 도달 가능 — 운동 부족, 두꺼운 undercoat, 과체중, 호흡기 질환 개", "전신 냉각"],
+   ["Eclampsia", "극심한 근육 활동 → 심한 hyperthermia", "Eclampsia 치료 + hyperthermia 시 전신 냉각"],
+   ["발작 (Ch.84)", "지속·군발 발작의 근육 활동", "발작 중단이 우선; 유의한 hyperthermia 시 가능한 한 빨리 전신 냉각"]
+  ]},
+  {"type": "list", "title": "열 손실 기전과 냉각", "items": [
+   "열 손실 4기전: radiation(환경 물체와 전자기적 열 교환), conduction(피부와 직접 접촉한 물체, 상대 온도·구배), convection(체표 위 체액·공기·물 이동), evaporation(액체→기체 전환 에너지, panting).",
+   "냉각법 선택은 중증도·체온·반응에 따라(Box 10.3). 대부분의 수의 환자에서 최선: IV 수액(Ch.68) + 미온수 목욕·헹굼 + 선풍기. 너무 찬물은 말초 혈관수축 → 복사 열 손실 억제 → 냉각 지연. 체온이 정상에 근접(약 103°F [39.4°C])하면 냉각 중단(의인성 hypothermia 예방)."
+  ]},
+  {"type": "table", "title": "Box 10.3 Hyperthermia 환자 냉각 옵션", "headers": ["범주", "방법"], "rows": [
+   ["기본", "산소 + IV 등장성 수액"],
+   ["표면 냉각", "필요 시 털 깎기; 피부·전신에 미온수(손 또는 목욕); 선풍기; 대혈관 부위(경부, 액와, 서혜부) 얼음팩; 병용"],
+   ["내부 냉각", "차가운 등장성 수액 직장 투여; 위 세척; 개방 체강; 복막투석"],
+   ["체외 기법", "—"],
+   ["해열제", "Antiprostaglandin: dipyrone, aminopyrine, COX-2 억제제, 기타 NSAID; dantrolene; glucocorticoid"]
+  ], "note": "— = 요약에 해당 내용 없음"},
+  {"type": "heading", "level": 2, "text": "Pathologic and Pharmacologic Hyperthermia (병리·약리적)", "gist": "Malignant hyperthermia → dantrolene 1–3 mg/kg IV 또는 1–5 mg/kg PO; 고양이 opioid 후 >40°C, 최고 42.5°C"},
+  {"type": "table", "title": "병리·약리적 원인", "headers": ["원인", "내용", "치료"], "rows": [
+   ["시상하부 병변", "체온조절 중추 소실 → 고온·저온 환경 모두에 반응 장애", "—"],
+   ["Malignant hyperthermia", "개·고양이 보고. 흡입마취제(특히 halothane)·근이완제(succinylcholine)가 유발하는 Ca 대사 장애 → 근병증·대사성 열 생산; 극심한 근강직은 있을 수도 없을 수도", "원인 제제 제거 + 전신 냉각. Dantrolene sodium(근이완제, ryanodine 수용체 결합 → 골격근 흥분-수축 연결 억제) 1–3 mg/kg IV 또는 1–5 mg/kg PO"],
+   ["대사항진 질환", "Hyperthyroidism, pheochromocytoma → 대사율 ↑ 또는 혈관수축 → 열 생산 ↑·방산 ↓. 전신 냉각 필요한 심한 hyperthermia는 드묾. 갑상선 호르몬이 시상하부 set point에 직접 작용해 진성 발열 성분도 가능", "—"],
+   ["Opioid (특히 전마취)", "고양이 후향·전향 연구: 대부분 마취 회복 후 1–5시간에 유의한 상승(>40°C), 최고 42.5°C(108.5°F). Guinea pig에서 중추 매개, prostaglandin 무관(NSAID 무반응), naloxone으로 역전", "회복 후 hyperthermia 감시; 적응 시 naloxone 또는 전신 냉각"]
+  ], "note": "— = 요약에 해당 내용 없음"},
+  {"type": "heading", "level": 2, "text": "Benefits and Detriments of Fever (발열의 이득·해악)", "gist": "이득: 세균 철 이용 ↓·바이러스 복제 ↓; 해악: 1°F(0.6°C)당 열량·수분 요구 ~7% ↑, >107°F DIC·장기 손상"},
+  {"type": "list", "title": "이득", "items": [
+   "급성기 반응의 정상 부분 — 어류·파충류 같은 변온동물도 pyrogen에 따뜻한 환경을 찾음. 대부분의 연구에서 발열은 여러 감염병의 이환 기간·사망률 ↓. 많은 세균의 철 이용 능력 ↓(생존·복제에 필요); Pasteurella 감염 토끼에서 NSAID로 발열 차단 시 사망률 유의 ↑. 많은 바이러스는 열에 민감 — herpesvirus 감염 신생견의 체온을 올리면 사망률 유의 ↓. 사람 ICU 감염 환자 대부분 연구에서 발열 있으면 예후 양호. 반면 TBI 등 비감염성 질환의 발열은 나쁜 예후."
+  ]},
+  {"type": "list", "title": "해악", "items": [
+   "조직 대사·산소 소비 ↑ → 정상 이상 1°F(0.6°C)마다 열량·수분 요구 약 7% ↑. 시상하부 식욕 중추 억제(갈증 중추는 보통 무영향). 두부 외상·뇌혈관 사고 환자는 hyperthermia 동반 시 뇌손상 악화 → 전신 냉각 유익 가능.",
+   ">107°F(41.6°C): 세포 산소 소비가 공급 초과 → 세포 기능·완전성 악화 → DIC(혈전·출혈, Ch.101, 105); 뇌(뇌부종 → 혼란·delirium·obtundation·발작·coma), 심장(부정맥), 간(hypoglycemia, hyperbilirubinemia), GI(상피 탈락, endotoxin 흡수, 출혈), 신장(AKI) 손상. 그 외 hypoxemia, hyperkalemia, 골격근 세포용해, tachypnea, metabolic acidosis, tachycardia, 과호흡.",
+   "운동성 heat stroke·malignant hyperthermia: 심한 횡문근융해, hyperkalemia, hypocalcemia, myoglobinemia·myoglobinuria, CPK ↑. 진성 발열이 이 정도 체온에 이르는 일은 드물며, 대개 다른 hyperthermia 원인 → 응급으로 관리."
+  ]},
+  {"type": "heading", "level": 2, "text": "Clinical Approach and Nonspecific Therapy (임상 접근·비특이적 치료)", "gist": ">106°F(41°C)·불안정 → 즉시 안정화·냉각; 안정 환자는 평가 후 치료; NSAID vs glucocorticoid vs phenothiazine"},
+  {"type": "list", "items": [
+   "논리적 접근으로 오판 회피. 불안정하거나 심한 hyperthermia(>106°F [41°C])가 아니면 완전한 병력·신체검사 먼저; 그 경우엔 안정화·즉시 전신 냉각.",
+   "안정 환자: 철저한 신체검사 + 이전 손상·감염, 다른 동물 노출, 동거 동물 질병, 과거 지리적 환경, 최근·현재 약물 문진 → 진성 발열 여부 판단. <106°F(41°C)는 장기간 아니면 보통 생명 위협 아님 → 적절한 임상 평가 전 해열제 금지.",
+   "경~중등도 상승(<107°F)은 드물게 치명적이며 유익할 수 있음(바이러스 복제 억제, 백혈구 기능 ↑, 미생물 철 흡수 ↓). >107°F(41.6°C)는 영구 장기 손상·DIC 위험 유의. 비특이적 치료의 이득 vs 해악 고려; TBI 관련 발열은 결과 개선 위해 다뤄야 함."
+  ]},
+  {"type": "table", "title": "진성 발열의 비특이적 치료", "headers": ["방법", "기전·특징", "주의"], "rows": [
+   ["NSAID (prostaglandin 합성 억제, Ch.158)", "발열 매개체 억제 → 정상 체온조절 허용; 내인성 pyrogen 생성은 차단 안 함. 안정 동물에서 비교적 안전", "Acetylsalicylic acid는 고양이에 독성 가능(COX-2 억제제는 비교적 안전); GI 궤양·신장 질환 동물 금지. 고양이 NSAID 합의 가이드라인 있음. Dipyrone(고양이에 쓰는 주사 NSAID)은 특히 장기 사용 시 골수 억제"],
+   ["전신 냉각 (물·선풍기)", "체온은 내려가나 시상하부는 계속 체온을 올리도록 지시 → 대사율·산소 소비·수분·열량 요구 추가 ↑", "생명 위협 발열이 아니면 역효과"],
+   ["Glucocorticoid", "급성기 반응·발열·적응 반응 대부분 차단", "원인이 비감염성으로 알려져 있고 급성기 반응 차단이 해롭지 않은(오히려 유익한) 환자에 국한 — 발열이 큰 역할을 하고 glucocorticoid가 치료 일부인 면역매개 질환(IMHA, 면역매개 다발관절염)"],
+   ["Phenothiazine", "정상 체온조절 억제 + 말초 혈관확장으로 해열 효과", "진정 효과·hypotension 가능성 고려"]
+  ]},
+  {"type": "heading", "level": 2, "text": "The Febrile ICU Patient (ICU 발열 환자)", "gist": "비감염성 원인 배제 → 감염 부위·병원체 확인; 원내 감염(사람 3%–31%); 항생제는 병원체 확인·강력 의심 시만"},
+  {"type": "list", "items": [
+   "중환자에서 발열은 흔함. 비감염성 원인 배제 후 감염 부위·병원체 결정(Ch.7). 감염성·비감염성 원인이 공존하는 경우가 많아 체계적·포괄적 진단 필요. 면역 기능 변화, 유치 카테터, 침습적 모니터링·치료로 염증·원내 감염 고위험.",
+   "비감염성 원인: phlebitis·thrombophlebitis, 술후 염증, 수혈 후 반응, 외상 후, pancreatitis, hepatitis, cholecystitis, aspiration pneumonitis, ARDS, 종양.",
+   "원내 감염은 신규 발열의 중요 원인 — 수의 발생률 연구 없음, 사람 3%–31%. 흔한 원인 부위: 폐(aspiration 또는 ventilator-associated pneumonia), 혈류, 카테터, 절개부, 요로(Ch.98). 초기 평가: CBC, 흉·복부 영상, 모든 카테터 부위·절개부 정밀 검사. 추가: 혈액, 소변, 기도액, 흉·복수, 술후 절개부, CSF, 관절액, 비루, 설사의 배양·감수성.",
+   "항생제는 특정 병원체가 알려졌거나 강력 의심될 때만 — 미생물 원인 확인 없이 쓰면 세균 내성(Ch.172). SIRS 증거 있는 개는 사망률 높으므로 원인을 빨리 찾아 치료; 그러나 감염이 의심되지 않고 악화·neutropenia가 없으면 항생제 추가·변경은 더 확정적 정보까지 보류."
+  ]}
+ ]
+}

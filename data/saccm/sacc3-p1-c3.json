@@ -1,0 +1,86 @@
+{
+ "id": "sacc3-p1-c3",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part I",
+ "part_title": "Key Critical Care Concepts",
+ "chapter_num": 3,
+ "title": "Hemostasis",
+ "author": "Ronald H. L. Li, DVM, MVetMed, PhD, DACVECC",
+ "format": 2,
+ "blocks": [
+  {"type": "callout", "title": "KEY POINTS", "items": [
+   "혈소판과 손상된 내피의 초기 상호작용이 혈전 형성 개시에 핵심 역할을 한다.",
+   "In vivo에서 응고인자·세포 표면·면역계는 정교하게 연결되며, 이는 cell-based model of coagulation으로 설명된다.",
+   "Thrombin 생성을 조절하는 음성 피드백이 무너지면 과도한 fibrin 침착과 자발적 혈전이 생긴다.",
+   "적절한 fibrinolysis는 지혈에 필수 — 과도하면 출혈, 부족하면 혈전.",
+   "Immunothrombosis는 neutrophil extracellular trap(NET) 형성이 매개하는 선천면역의 중요한 구성요소다."
+  ]},
+  {"type": "heading", "level": 2, "text": "Overview (개요)", "gist": "지혈계 = 혈액·내피·내피하 기질; 항혈전–혈전 균형이 깨지면 출혈 또는 혈전"},
+  {"type": "list", "items": [
+   "지혈계(순환 혈액, 내피, 내피하 기질)는 역동적 병태생리 조건에서도 장기·조직 혈류를 유지. 정상에서는 항혈전·혈전 형성 성질의 미묘한 균형을 유지하고, 혈관 손상 시 빠르게 반응해 과도한 혈액 손실·조직 파괴를 제한.",
+   "많은 중환자는 기저 질환으로 이 균형이 깨져 출혈 또는 혈전으로 나타남."
+  ]},
+  {"type": "heading", "level": 2, "text": "Platelet Structure and Function (혈소판 구조·기능)", "gist": "αIIbβ3가 가장 풍부한 integrin (80,000–100,000개/혈소판)"},
+  {"type": "list", "items": [
+   "혈소판 = 무핵·원반형, megakaryocyte의 세포하 단편; 지혈의 1차 효과 세포.",
+   "주변부: 세포막, 수용체, integrin, 표면 연결 open canalicular system(세포질 깊이 들어간 막 함입 — 분비물 통로, 혈장 물질 흡수·전달), dense tubular system.",
+   "세포막의 비대칭 조성은 신호전달·thrombin 생성에 중요. Lipid raft(콜레스테롤·glycosphingolipid 고농도 소구역)는 integrin·glycoprotein 등 신호 분자를 운반해 신호전달 개시; 급격한 raft 교란 → 불필요한 신호·혈소판 활성화.",
+   "Integrin: 막관통 α·β subunit의 heterodimer, 세포–세포·세포–기질 상호작용 매개. 저친화 → 고친화 상태로 구조 변화해야 세포외기질·fibrinogen에 단단히 부착 후 강한 신호(outside-in signaling). αIIbβ3가 가장 풍부 (80,000–100,000개/혈소판).",
+   "Seven-transmembrane 수용체군 = 주요 agonist 수용체: thrombin 수용체(PAR), ADP 수용체(P2Y1, P2Y12), thromboxane 수용체, PGI₂/PGE₂ 수용체.",
+   "α-granule(혈소판 고유): 지혈·혈전, 염증, 혈관신생, 숙주방어, 분열촉진에 관여하는 막·가용성 단백. Dense granule(lysosome 관련 소기관): 고농도 양이온, polyphosphate, adenosine nucleotide, serotonin·histamine 등 생체활성 아민. 활성화 시 과립 내용물 방출."
+  ]},
+  {"type": "heading", "level": 2, "text": "Primary Hemostasis — 3-Stage Platelet Activation", "gist": "Initiation(vWF–GP1bα) → Extension(αIIbβ3–fibrinogen) → Stabilization(clot retraction)"},
+  {"type": "list", "items": [
+   "1차 지혈 = 내피, 혈소판, 내피의 세포외기질. 목표는 혈전 성장·안정화를 돕는 혈소판 응집체 형성; 조절 실패 시 출혈 또는 혈전성 혈관 폐쇄."
+  ]},
+  {"type": "table", "title": "Fig. 3.1 혈소판 활성화 3단계", "headers": ["단계", "핵심 사건"], "rows": [
+   ["1. Initiation", "혈관 손상 → 내피하 collagen 복합체, fibronectin, laminin, vWF 노출(부착에는 vWF·collagen이 핵심). vWF는 내피 Weibel–Palade body·혈소판 α-granule에 저장, 활성화 시 혈장으로 분비. 병적 전단력 → vWF와 수용체 GP1bα(GP1b-IX-V subunit)의 구조 변화로 결합 친화도 ↑. Collagen에 고정된 혈장 vWF 다량체가 혈소판 포획 → tethering·rolling → 속도 감소하며 결합 증가·강화 → 부착·단층 형성. Collagen·vWF 결합이 혈소판 활성화 유발"],
+   ["2. Extension", "부착된 단층의 추가 활성화: 분비, 형태 변화, procoagulant 막 형성, integrin 활성화. 국소 thrombin 축적과 thromboxane A₂·ADP 분비가 autocrine·paracrine으로 인근 혈소판 동원·활성화. Agonist → inside-out signaling → integrin 활성화(저친화→고친화), 가장 중요한 것은 fibrinogen의 αIIbβ3 결합 → 응집 개시"],
+   ["3. Stabilization", "Integrin을 통한 fibrinogen 단단한 부착 → outside-in signaling → lipid raft 내 integrin 군집·actin/myosin 연결 단백 복합체. Actin/myosin 수축력이 혈소판 간 간격을 좁혀 활성인자 확산을 막고 국소 procoagulant 미세환경 조성; fibrin 침착 시 clot retraction으로 plug 안정화·조기 해리 최소화"]
+  ]},
+  {"type": "heading", "level": 2, "text": "Secondary Hemostasis — Cell-based Model", "gist": "PS 노출 + γ-carboxylation이 전제; Initiation → Amplification → Propagation → Termination"},
+  {"type": "list", "items": [
+   "2차 지혈의 목표 = 안정된 fibrin clot. 연쇄 효소반응으로 thrombin(factor II) 활성화. 전통 cascade: extrinsic·intrinsic 경로 → common 경로(X, V, prothrombin, fibrinogen). 세 경로 개념은 PT·aPTT 등 응고검사로 응고인자 결핍을 선별·해석하는 데 여전히 유용하나, in vivo에서는 응고인자·세포 표면·면역계의 연결을 무시하므로 실제로 일어나지 않음.",
+   "Fig. 3.2: vitamin K 의존 인자 FVII, FX, FIX, FII는 γ-carboxylation으로 Ca 결합·인지질 위 복합체 형성. PT = extrinsic·common 경로 인자 결핍(TF 제외)에 민감; aPTT·ACT = intrinsic·common 경로 인자 결핍 평가.",
+   "In vivo 2차 지혈은 온전한 세포(fibroblast, 혈소판, 백혈구, microparticle)의 외엽 인지질 위에서 진행 — 인지질이 응고 복합체 조립의 docking site."
+  ]},
+  {"type": "table", "title": "세포 표면 응고의 전제 조건 2가지", "headers": ["사건", "내용"], "rows": [
+   ["1. 막 비대칭 붕괴 → 음전하 인지질 노출", "Phosphatidylserine(PS)이 핵심. PS 위치는 flippase·floppase·scramblase가 조절 — 항상성에서는 flippase가 PS를 세포질쪽 엽에 유지; 세포자멸 세포·활성 혈소판에서 scramblase 활성 ↑ → 표면 PS 노출 → tenase(FIXa-FVIIIa)·prothrombinase(FXa-FVa) 조립 부위. Scott syndrome = scramblase 기능·생성 유전자 변이 — 혈소판 기능·응고인자 정상이어도 hemophilia 유사 출혈 소인(개)"],
+   ["2. 응고인자 glutamic acid의 γ-carboxylation", "Vitamin K 의존 carboxylase가 X, IX, VII, II, protein C, protein S의 glutamic acid에 음전하 추가('vitamin K 의존 응고인자') → Ca 결합 → 구조 변화 → 세포 표면 PS와 상호작용. Warfarin은 vitamin K cycle을 차단해 γ-carboxylation 중단 → 항응고"]
+  ]},
+  {"type": "table", "title": "Fig. 3.3 Cell-based model 4단계", "headers": ["단계", "핵심 사건"], "rows": [
+   ["Initiation", "FVII + tissue factor(TF)가 2차 지혈의 주 개시자. 간에서 zymogen FVII 생성 → 혈중 미세 단백분해로 serine protease FVIIa; TF(주로 adventitial fibroblast 합성 막관통 glycoprotein) 없으면 효소 활성 거의 없음. 혈관 손상 시 TF 결합 fibroblast + FVIIa → FVIIa-TF 복합체 → 소량의 FIX·FX 활성화 → FXa가 FV 활성화 → prothrombinase(FXa-FVa) → 소량 prothrombin(FII) → thrombin(FIIa). 혈관 손상이 없어도 혈관 밖에서 지속적으로 일어나는 것으로 추정"],
+   ["Amplification", "혈소판이 혈관을 벗어나 collagen 등 세포외기질에 결합해 초기 plug 형성 → 응고인자 결합 procoagulant 막 제공; 활성 혈소판은 부분 활성화된 FV도 방출. 소량 thrombin의 역할: ① 강력한 혈소판 agonist → 응집·procoagulant 막 극대화, ② FXI, FV, FVIII 활성화(FVIII는 vWF에서 해리). 혈소판 표면 인자 → propagation"],
+   ["Propagation", "활성 혈소판 위 tenase(FIXa-FVIIIa)·prothrombinase(FXa-FVa) 형성으로 대량 thrombin 생성. Initiation의 FIXa 외에 혈소판 결합 FXIa가 FIXa 추가 생성 → tenase → 대량 FXa → prothrombinase → 대량 FIIa. Thrombin이 fibrinogen을 fibrin monomer로 절단 → 중합 → fibrin clot; thrombin이 활성화한 FXIII가 fibrin monomer 교차결합으로 clot 안정화"],
+   ["Termination", "과도한 혈관내 혈전 없이 안정 clot을 만드는 음성 피드백(아래 표)"]
+  ]},
+  {"type": "table", "title": "Thrombin 생성의 음성 피드백 (자연 항응고제)", "headers": ["인자", "생성", "기전·비고"], "rows": [
+   ["TFPI (tissue factor pathway inhibitor)", "내피", "TFPI–FVIIa–FXa–TF 4자 복합체 억제로 응고 조절"],
+   ["Antithrombin (AT)", "간", "Thrombin, FIXa, FXa, FXIa, FXIIa와 몰 복합체 형성; heparin·heparan sulfate 등 glycosaminoglycan이 AT 구조 변화로 촉진. Protein-losing nephropathy·enteropathy의 AT 결핍 → 혈전 위험 ↑"],
+   ["Protein C / Protein S", "Vitamin K 의존", "Protein C는 내피 막관통 단백 thrombomodulin(TM)에 결합한 thrombin이 활성화; 내피 protein C receptor가 추가 증폭. 활성 protein C + 보조인자 protein S → FVa·FVIIIa 단백분해로 응고 억제"]
+  ]},
+  {"type": "heading", "level": 2, "text": "Fibrinolysis (섬유소용해)", "gist": "tPA·uPA → plasmin; 억제는 PAI-1·α2-antiplasmin·TAFI; TXA는 lysine analog"},
+  {"type": "list", "items": [
+   "혈관 병변 치유 후 fibrin clot을 녹여 혈류 재개. 단백분해 단백과 억제 단백의 동적 평형으로 엄격히 조절 — 과도한 fibrin 분해 → 출혈, 부족 → 혈전 확장."
+  ]},
+  {"type": "table", "title": "Fig. 3.4 섬유소용해 활성인자·억제인자", "headers": ["구분", "인자", "특징"], "rows": [
+   ["기질", "Plasminogen", "Plasmin의 zymogen; 주로 간 생성, 신장·뇌 등 조직에도 존재. tPA·uPA가 절단 → 이황화결합 연결 2사슬 plasmin"],
+   ["활성인자", "tPA (tissue-type plasminogen activator)", "내피에서 상시 발현, 신경내분비·부신 chromaffin 세포 등의 소포에도 저장. Thrombin·FXa(응고 cascade agonist), β-adrenergic 제제, histamine, bradykinin 자극 시 빠르게 순환으로 방출. Fibrin 존재 시에만 3자 복합체(tPA–plasminogen–fibrin)로 plasminogen을 활성화 — fibrin의 lysine이 plasminogen의 lysine 결합부위에 결합"],
+   ["활성인자", "uPA (urokinase)", "단일사슬 uPA가 plasmin에 의해 활성화; fibrin 보조인자 불필요. 특정 세포의 uPA 수용체에 결합해 세포 결합 plasminogen 활성화 증진"],
+   ["억제인자", "PAI-1", "가장 중요한 억제제 중 하나. 순환 PAI-1의 주 공급원은 혈소판(내피·평활근·심근세포·간세포·지방세포에서도 생성). tPA·uPA와 비공유 복합체 형성"],
+   ["억제인자", "α2-antiplasmin", "간 생성. Plasminogen에 비공유 결합하거나 fibrin에 교차결합 → plasmin·tPA의 fibrin 결합 차단"],
+   ["억제인자", "TAFI (thrombin-activatable fibrinolysis inhibitor)", "간 생성 zymogen; thrombin/TM 복합체·plasmin이 활성화 → fibrin의 lysine 잔기 제거 → plasminogen 결합·섬유소용해 차단"],
+   ["억제인자 (부)", "α2-macroglobulin, C1-inhibitor, lipoprotein(a)", "—"]
+  ], "note": "항섬유소용해제 tranexamic acid·aminocaproic acid = 합성 lysine 유도체 — plasminogen의 lysine 결합부위에 비가역 결합해 fibrin 상호작용·plasmin 활성화 차단. — = 요약에 해당 내용 없음"},
+  {"type": "heading", "level": 2, "text": "Immunothrombosis (면역혈전)", "gist": "NET(cfDNA + 호중구 과립 단백)가 contact 경로 활성·혈소판 활성·섬유소용해 저해"},
+  {"type": "list", "items": [
+   "선천면역은 호중구·단핵구·수지상세포 활성화로 혈전 형성을 능동 개시·혈소판 활성화. TNF·interleukin 등 염증 사이토카인 → 내피·대식세포의 TF 발현 ↑; 응고인자는 면역세포의 PAR에 결합해 사이토카인 방출 촉진.",
+   "병원체 침입 시 혈관내 fibrin 형성 ↑ = 순환을 통한 전신 파종을 막는 중요한 1차 방어(immunothrombosis). 질병에서 조절 실패 → 과도한 혈전 또는 소모성 응고병증.",
+   "NET = 호중구 과립 단백으로 장식된 cell-free DNA(cfDNA)의 그물 구조; immunothrombosis 발생의 핵심. 최근 사람·고양이 동맥 혈전의 구조 성분으로 확인.",
+   "NET의 혈전 촉진 기전: ① cell-free 이중가닥 DNA가 FXII·high-molecular weight kininogen 등 contact 인자 결합 → contact 경로 활성화; ② cfDNA 그물이 순환 적혈구·혈소판·응고인자(TF, fibrin) 결합으로 clot 강화; ③ NET의 histone이 혈소판 활성화·thrombin 생성 ↑, protein C 활성화 조절로 추가 혈전 효과; ④ DNA–plasmin–fibrin 3자 복합체로 섬유소용해 저해."
+  ]},
+  {"type": "heading", "level": 2, "text": "Summary (요약)", "gist": "Sepsis·전신염증의 과도한 선천면역 반응 → NET·염증-응고 crosstalk로 혈전성·소모성 응고병증"},
+  {"type": "paragraph", "text": "지혈은 zymogen, 단백, 인지질, 혈소판, 면역세포, 내피의 네트워크가 만드는 복잡하고 균형 잡힌 과정이며 정교한 음성 피드백으로 조절된다. 선천면역과 응고계 사이에는 수많은 상호작용이 있어, sepsis·전신염증의 과도한 선천면역 반응은 NET 생성이나 염증–응고 crosstalk를 통해 지혈 조절 실패를 일으켜 혈전성 또는 소모성 응고병증을 유발할 수 있다."}
+ ]
+}

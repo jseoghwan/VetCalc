@@ -1,0 +1,152 @@
+{
+ "id": "sacc3-p1-c2",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part I",
+ "part_title": "Key Critical Care Concepts",
+ "chapter_num": 2,
+ "title": "Physical Examination and Daily Assessment of the Critically Ill Patient",
+ "author": "Timothy B. Hackett, DVM, MS, DACVECC",
+ "format": 2,
+ "blocks": [
+  {"type": "callout", "title": "KEY POINTS", "items": [
+   "중환자의 신체검사는 생명을 위협하는 상태 변화를 감지하는 데 필수적이다.",
+   "철저하고 효율적인 신체검사가 혈액검사·전기진단·영상검사보다 먼저다.",
+   "산소운반(oxygen delivery)과 관련된 생리 변수가 평가의 우선순위를 가진다.",
+   "수의사와 지원 인력은 환자의 현재 문제와 예상 합병증을 고려해 주관적·객관적 소견을 필요한 만큼 자주 기록한다.",
+   "알고리즘·체크리스트는 핵심 변수의 표적화된 문제 지향적 신속 평가로 환자 관리를 향상시킨다.",
+   "이상적인 모니터링 계획은 의인성 손상·불필요한 비용·ICU 자원 오용을 최소화하면서 대사·생리 이상을 조기에 발견한다."
+  ]},
+  {"type": "heading", "level": 2, "text": "Overview (개요)", "gist": "병력 기반 신체검사를 연속 반복; 모니터링 변수는 중재로 이어질 때만 의미"},
+  {"type": "list", "items": [
+   "평가는 병력에 기반한 신체검사로 시작. 빈도는 환자 상태와 팀의 환자 숙지도에 따르며, 철저한 검사는 최소 매일 + 차트·최근 검사 결과 검토. 교대 시 회진 후와 각 근무 중 반복 — 신입 수의사·지원 인력에게 특히 중요.",
+   "연속 신체검사의 목적: 장기 기능 문제를 제때 발견해 장기부전을 막는 표적 중재. 모니터링 변수는 그 변화가 결과에 영향을 주는 중재와 연결될 때만 유용.",
+   "알려진 문제에는 더 잦은 집중 검사가 유용하지만, 중증질환의 역동적·다장기 특성상 전신 검사를 자주 해야 함.",
+   "기술(ABG/VBG, oscillometric 혈압, pulse oximetry, POCUS, CT, 응고검사 등)은 신체검사와 상호보완 — 관류 적절성·수화도는 신체검사보다 잘 측정하는 기술이 아직 없음. HR·혈압도 신체검사와 함께 해석해야 의미.",
+   "검사는 계획적이면서 예기치 않은 응급 변화에 집중. 산소운반 효율에 초점 → 호흡·심장계 우선; 응급 primary survey처럼 ABC(airway, breathing, circulation) 순."
+  ]},
+  {"type": "heading", "level": 2, "text": "Airway and Breathing (기도·호흡)", "gist": "호흡 패턴으로 폐쇄 위치 추정; 환기 부전(hypoventilation)도 호흡부전"},
+  {"type": "table", "title": "호흡 패턴과 의미", "headers": ["패턴", "의미"], "rows": [
+   ["매우 느린 / apneustic 호흡", "호흡정지 임박 → 즉시 평가·안정화"],
+   ["느리고 깊은 호흡", "상부기도 폐쇄, 동적 기도 허탈, 기관지염 등 기류 저항 ↑ (저항 최소화)"],
+   ["흡기 노력 ↑", "Laryngeal 질환, extrathoracic tracheal collapse/폐쇄"],
+   ["호기 노력 ↑", "Intrathoracic 기도 폐쇄·허탈"],
+   ["흡기·호기 모두 노력 ↑", "물리적 폐쇄 (mass, foreign body)"],
+   ["얕고 빠른 restrictive 호흡", "폐 실질 질환·폐섬유화 (탄성 저항 ↑, compliance ↓ 상태에서 분당환기량 유지)"]
+  ], "note": "호흡기 전체를 청진해 최대 강도 지점을 찾으면 폐쇄 위치 파악에 도움"},
+  {"type": "list", "items": [
+   "호흡수·노력 증가도 신속 평가 필요.",
+   "호흡부전 = 가스교환 실패(hypoxemia)뿐 아니라 환기 실패. Hypoventilation은 hypoxemia의 중요 원인이자 치료 가능한 acidosis 원인.",
+   "정상·감소된 호흡수에서 얕은 호흡 → 확진 검사. pH·CO₂는 혈액가스(직접) 또는 end-tidal CO₂(간접)로 추세 추적이 가장 객관적."
+  ]},
+  {"type": "heading", "level": 2, "text": "Circulation (순환)", "gist": "맥박·정맥 팽만·mentation·MM·CRT·청진으로 shock은 신체검사만으로 진단 가능"},
+  {"type": "list", "items": [
+   "순환계 신체 평가: 동맥 맥박 촉진(동기성·질·맥박수), 정맥 팽만, mentation, 점막색·CRT, 심·폐 청진. 전신 관류 부족 = 순환성 shock이며 신체검사만으로 내리는 임상 진단."
+  ]},
+  {"type": "table", "title": "심박수", "headers": ["항목", "개", "고양이"], "rows": [
+   ["정상", "소형견 70–120 beats/min\n대형견 60–120 beats/min", "140–200 beats/min"],
+   ["Sinus tachycardia", ">180 beats/min", ">220 beats/min"],
+   ["Bradycardia", "—", "Shock 시 흔함 (<120 beats/min) → 심정지 임박 가능"]
+  ], "note": "— = 요약에 해당 내용 없음"},
+  {"type": "list", "items": [
+   "Bradycardia: 심박출량 ↓ → 저관류. 중환자에서 드문 소견 — 전해질(hyperkalemia), 신경 질환(ICP ↑), 전도 장애(AV block, sick sinus syndrome), 진통·마취약 부작용. 전체 평가에 ECG 필요.",
+   "Sinus tachycardia: 혈액량 감소·통증·불안·hypoxemia·전신염증에 대한 반응. 일시적으로 심박출량·산소운반 ↑하나 너무 빠르면 이완기 충만 저하 → stroke volume 부족. 불규칙하거나 pulse deficit 동반 시 arrhythmia → ECG."
+  ]},
+  {"type": "table", "title": "점막색", "headers": ["색", "의미"], "rows": [
+   ["Pale / white", "Anemia 또는 shock에 대한 혈관수축 반응"],
+   ["Red", "혈관확장 — 전신염증 상태, hyperthermia"],
+   ["Cyanotic", "심한 hypoxemia (PCV 정상일 때; hemoglobin이 충분해야 임상적으로 보임)"],
+   ["Yellow (icterus)", "Bilirubin ↑ — 간질환, 후간성 질환, 용혈"],
+   ["Brown", "Methemoglobinemia"],
+   ["Cherry red", "CO 중독"],
+   ["Petechiae / 출혈", "혈소판 부족·기능장애; thrombocytopenia는 DIC의 초기 소견"]
+  ]},
+  {"type": "table", "title": "CRT", "headers": ["CRT", "의미"], "rows": [
+   ["1–2초", "정상 — 정상 혈액량·관류"],
+   [">2초", "말초 혈관수축에 의한 저관류 (hypovolemic·cardiogenic shock; 차가운 사지 동반; 심한 hypothermia도 원인)"],
+   ["<1초", "Hyperdynamic 상태·혈관확장 (전신염증, distributive shock, heat stroke·hyperthermia)"]
+  ]},
+  {"type": "list", "title": "정맥 팽만·맥박", "items": [
+   "정맥 팽만 = volume overload, 우심 CHF, 우측 충만압 ↑. Jugular 촉진 또는 lateral saphenous 털을 깎고 관찰: 측와위에서 위쪽 다리 saphenous가 팽만하면 다리를 심장 높이 위로 천천히 올려 그래도 팽만하면 CVP 상승 시사 (volume overload, pericardial effusion, 우심 CHF).",
+   "Hypovolemia의 혈관수축(pale MM, CRT 연장)에서는 정맥 팽만 없음; 양심실 부전의 cardiogenic shock은 pale MM + CRT 연장 + 정맥 팽만.",
+   "Femoral 맥박은 심청진 또는 apex beat 촉진과 동시에. 매 박동에 동기화된 강한 맥박이 정상. 촉진되는 맥박질 = 대체로 pulse pressure(수축기−이완기); 수축기·이완기압이 비정상이어도 pulse pressure는 정상일 수 있음.",
+   "Base deficit·lactate·낮은 혼합정맥 산소포화도가 혈압·신체검사보다 민감한 관류 지표. 다른 지표가 저관류를 시사하면 sepsis 같은 병적 hyperdynamic 상태나 낮은 이완기압 원인 평가 (예: holosystolic murmur + 정상~증가 pulse pressure → PDA의 이완기 runoff).",
+   "Femoral·dorsal pedal 모두 촉진. 한 연구에서 dorsal pedal 맥박 촉지 시 SBP <90 mm Hg 가능 [원문 표기]; 숙련자는 저혈압 환자에서도 촉지 가능.",
+   "불규칙하거나 심청진과 비동기인 맥박 = 유의한 arrhythmia → ECG.",
+   "약한 맥박(중환자에서 흔함): 심박출량 ↓(낮은 stroke volume 또는 수축력 ↓), 말초 혈관수축, pulse pressure ↓. Pulse pressure와 IV 수액 반응을 동시에 평가하면 shock 원인 감별에 도움."
+  ]},
+  {"type": "heading", "level": 2, "text": "Auscultation (청진)", "gist": "근무당 최소 2회 심·폐 청진; 미세한 crackles·stertor는 초기 fluid overload"},
+  {"type": "list", "items": [
+   "심·폐 청진은 근무당 최소 2회. 미세한 호흡음 변화가 fluid overload나 초기 폐 기능장애를 알림.",
+   "비강·후두·기관에서 전 폐야까지 평가. 상기도 stertor·wheezes + 폐의 조용한 crackles → 초기 fluid overload 가능.",
+   "흡기 stridor → laryngeal paralysis; 호기 wheezes → 소기도 허탈·bronchitis.",
+   "Crackles → pneumonia, pulmonary edema, pulmonary hemorrhage, 소기도 질환. Aspiration pneumonia는 cranioventral 폐야에서 정상음이 부잡음으로 바뀜; pulmonary edema는 perihilar에서 시작 가능.",
+   "폐음 감소 → consolidation, pneumothorax, pleural effusion (기립·sternal 자세로 청진하면 fluid line 감지 가능). 폐음 변화 → 흉부 방사선·초음파.",
+   "폐 기능장애 증거가 있으면 pulse oximetry 또는 ABG로 산소화 평가; 호흡 양상·소리 변화 시 즉시 산소화 재평가.",
+   "심청진은 최소 매일 1회, 맥박 촉진과 동시에. 새 murmur·비동기 맥박은 조사. 중환자의 arrhythmia는 심기능 장애의 초기 징후 → 기저 대사·산소운반 이상 교정."
+  ]},
+  {"type": "heading", "level": 2, "text": "Level of Consciousness (의식 수준)", "gist": "Gag reflex 감소 = aspiration 위험; 소실 시 즉시 삽관"},
+  {"type": "list", "items": [
+   "자주 평가. 정상·alert·responsive면 신경·대사 상태 대체로 정상. Obtunded(시각·촉각 자극 반응 저하)는 다양한 합병증·질환 가능.",
+   "Stupor = 통증 자극에만 각성 → 심한 신경·대사 이상. Coma·발작 = 원발 신경 질환 또는 심한 대사 이상(hepatic encephalopathy)에 의한 비정상 뇌 전기활동.",
+   "Gag reflex 감소(의식 저하 또는 원발 신경 결손)는 가장 우려되는 문제 — aspiration pneumonia 고위험. 경구 섭취 중단; 소실 시 기도 보호 위해 즉시 기관 삽관."
+  ]},
+  {"type": "heading", "level": 2, "text": "Temperature (체온)", "gist": "환경성 vs 진성 고체온 구분; 가온은 100°F 도달 시 중단"},
+  {"type": "list", "items": [
+   "자주(가능하면 지속) 모니터링. 케이지 열·heating pad에 의한 환경성 hyperthermia와 원발성 hyperthermia·진성 발열 구분 — 발열은 전신염증·감염 합병증이 흔하므로 빨리 조사.",
+   "Hypothermia도 흔함 — 외부 가온 필요. 마른 담요의 수동 가온이 능동 가온보다 안전; 능동 가온 시 화상·의인성 hyperthermia 주의."
+  ]},
+  {"type": "table", "title": "가온 방법", "headers": ["방법", "비고"], "rows": [
+   ["순환식 온풍 시스템", "능동 재가온에 우수"],
+   ["순환식 온수 담요, 수건에 싼 온수 장갑·병", "—"],
+   ["온수 waterbed (용기에 온수 채우고 두꺼운 비닐)", "수건을 깔아 발톱에 의한 천공 방지; 위에 담요 덮어 열 손실 방지"],
+   ["Heating pad", "저온 설정 + 담요·fleece로 절연, 주의해서 사용"],
+   ["Heat lamp", "화상 방지 위해 30 inches 이상 거리"],
+   ["전기 케이지 드라이어·핸드 드라이어", "젖은 동물에 유용"],
+   ["체온으로 데운 IV 수액", "빠른 투여 속도에서만 유효; 유지 속도에서는 효과 없음"]
+  ], "note": "체온을 정기 측정해 100°F 도달 시 가온 중단; 의인성 hyperthermia·열화상 감시. — = 요약에 해당 내용 없음"},
+  {"type": "heading", "level": 2, "text": "Hydration (수화)", "gist": "관류 지표 ≠ 수화; 일일 체중이 가장 객관적, third space 주의"},
+  {"type": "list", "items": [
+   "관류 지표(MM color, CRT, HR)는 혈관내 용적, 수화 상태는 간질액의 주관적 측정 → 두 구획을 따로 평가해 수액 계획 개별화.",
+   "일일 체중 변화 = 체액 균형 → 가장 객관적인 수화 모니터. 탈수 환자는 회복하며 체중 ↑; 과수화는 점진적 체중 ↑.",
+   "Skin turgor: 탈수 시 감소·tenting 연장; 과수화 시 증가·피하 'jelly-like'. 과수화 보조 징후: 장액성 비루, 말초 부종, chemosis (말초 부종은 vasculitis·hypoproteinemia의 낮은 oncotic pressure에서도). 피하지방량에 영향받아 cachexia·비만에서 평가 어려움.",
+   "Third-space 손실(순환에 기여하지 않는 체강 내 체액): pleural·abdominal effusion은 hypovolemia 진행 중에도 체중을 유지·증가시킴.",
+   "체액 균형은 매일(필요 시 더 자주) 평가 — 음식·물 섭취, 소변, 구토, drain 배액 모두 정확히 측정; 섭취–배출 불일치 시 환자 재평가·수액 계획 변경."
+  ]},
+  {"type": "heading", "level": 2, "text": "Abdominal Palpation and GI Assessment (복부·위장관)", "gist": "연속 촉진·복부 둘레 측정; 혈변 시 GI protectant·항생제 고려"},
+  {"type": "list", "items": [
+   "숨겨진 장기와 감염 합병증 때문에 복부 검사 필수. 연속적인 부드러운 촉진으로 압통 국소화; 마지막 늑골 위치의 복부 둘레 측정은 복부 팽만 조기 발견의 객관적 연속 자료.",
+   "GI 문제는 순환성 shock·중증질환에서 흔함. Effusion, 장기 크기·위치, 불편 부위 평가; 장 내용물은 촉진 + 직장수지검사. GI 손실의 빈도·성상·양 모니터링; 신선혈·소화된 혈액 관찰 시 GI protectant·항생제 고려."
+  ]},
+  {"type": "heading", "level": 2, "text": "Point-of-Care Ultrasound", "gist": "FAST 도입 후 15년 이상; 신체검사·모니터링과 함께 사용"},
+  {"type": "paragraph", "text": "교통사고 개에 대한 FAST 프로토콜 도입 후 15년 이상 지났고, POCUS는 적용 범위가 넓어져 집중 연구 대상이 되었다. 소형 고해상도 장비로 수의학 전반에서 이용 가능하며, 신체검사·모니터링 변수와 함께 급성·중환자 관리의 여러 측면에서 받아들여지고 있다 (상세: Ch.189)."},
+  {"type": "heading", "level": 2, "text": "Kirby's Rule of 20 (모니터링·검사)", "gist": "패혈증 소동물 모니터링 체크리스트 20항목 — 대부분 중환자에 적용"},
+  {"type": "list", "items": [
+   "체크리스트는 신체검사와 필수 진단검사를 결합해 체계적으로 검토, 유의한 변화 누락을 줄임. Kirby's Rule of 20은 패혈증 소동물 환자 모니터링 목록으로 사람 체크리스트 문헌보다 앞서며, 대부분의 중환자에 적용됨.",
+   "최적 관리 = 신체검사·임상 관찰 + 보조 검사·기술 데이터 통합."
+  ]},
+  {"type": "callout", "title": "Box 2.1 Kirby's Rule of 20", "items": [
+   "Fluid balance", "Oncotic pull", "Glucose", "Electrolyte and acid-base balance", "Oxygenation and ventilation", "Mentation", "Perfusion and blood pressure", "Heart rate, rhythm, and contractility", "Albumin levels", "Coagulation", "Red blood cell and hemoglobin concentration", "Renal function", "Immune status, antibiotic dosage and selection, and WBC count", "GI motility and mucosal integrity", "Drug dosages and metabolism", "Nutrition", "Pain control", "Nursing care and patient mobilization", "Wound care and bandage change", "Tender loving care"
+  ]},
+  {"type": "table", "title": "일일 모니터링·검사 항목", "headers": ["항목", "내용"], "rows": [
+   ["Oncotic pull · TP · albumin", "Hypoproteinemia 흔함. TP 최소 매일, albumin 24–48시간마다. Hypoalbuminemia는 합성·천연 colloid 지지 필요 가능. 사람에서 albumin <2 mg/dl [원문 표기]은 사망률 ↑와 연관되나 albumin 수혈로 생존 개선은 없었음.\nCOP(큰 분자의 삼투압, 주로 albumin)는 혈관내 체액 유지; 부족 시 혈관 용적 손실·말초 부종. Colloid osmometer는 드물어 대부분 serum TP로 추정 — 단 주입된 합성 colloid의 굴절률과 COP 상관은 신뢰 불가"],
+   ["Glucose", "Hyper·hypoglycemia가 빠르게 발생 → 정기 측정(빈도는 중증도·기저질환에 따라). 성인 중환자의 hypoglycemia → sepsis 고려. 사람 ICU에서 hyperglycemia는 이환·사망 ↑; 2016 Surviving Sepsis 가이드라인은 BG 상한 180 mg/dl 목표 치료 권고.\n수의 연구(응급 내원 개 660마리, 내원 6시간 내 측정): hyperglycemia(>120 mg/dl) 40.1%, hypoglycemia 9.0%; 사망률 각각 33.3%, 44.6% vs 정상혈당 24.9%"],
+   ["Electrolyte · acid-base", "Na, Cl, K, P, Mg, Ca 모니터링 후 보충·crystalloid 선택으로 정상 범위 유지. 산-염기는 동맥·정맥혈 모두 가능; lactate·전해질과 함께 해석"],
+   ["Oxygenation · ventilation", "호흡부전 = 산소화 실패(hypoxemia) 또는 환기 실패(hypercapnia). Pulse oximetry, end-tidal CO₂, ABG/VBG"],
+   ["RBC · hemoglobin", "동맥혈 산소함량은 대부분 Hb 결합 → anemia는 쉽게 확인되는 산소함량 감소 원인. Hb 매일 평가. 수혈 트리거 hematocrit 보고치 30%–60% (사람·개) — 간섭 요인·적응 기전이 많아 일일 변화와 산소운반 변수를 함께 보고 whole blood·pRBC·Hb 용액 수혈 결정"],
+   ["Blood pressure", "Doppler·oscillometric(간접) 또는 동맥 카테터(직접). 최소 매일; 혈역학 불안정 시 지속 모니터링"],
+   ["Coagulation", "원인: 원발 질환(vitamin K 길항제 중독, 간질환), 동반 문제(von Willebrand disease, NSAID), 후천성(희석성 응고병증, DIC). 검사 선택은 병력·기저질환·가용 검사에 따라; 혈소판 수·기능, 응고인자 기능 평가 가능해야 함"],
+   ["Renal function · urine output", "요량 감소 = 신 관류 부족 또는 급성 신부전. 마취 중·기저질환으로 hypotension 겪은 환자는 AKI 위험; 신독성 약물 흔히 투여. 정상 요량(관류·수화 정상 시) 1–2 ml/kg/hr. 핍뇨·다뇨 모두 섭취·GI·요 손실 측정으로 수액 치료. 유치 요도 카테터는 방광 크기 유지·urine scald 예방 + 요량 모니터링 수단(청결 유지 시 상행 감염 위험 크지 않음). Creatinine·BUN 위기 중 매일; 소변에서 신세뇨관 원주·glucosuria 매일 확인"],
+   ["Immune status · antibiotic · WBC", "세균 감염은 ICU 흔한 합병증. 흔한 병원체 지식·Gram 염색으로 경험적 광범위 비경구 항생제 시작; 배양·감수성 결과로 조정. WBC·감별계수 자주 모니터링(신규·비반응 감염)"],
+   ["Drug dosages · metabolism", "매일 검토. 신·간 기능장애, 신생동물은 대사·분포 변화로 용량 조정; 다제 투여 시 상호작용 고려"],
+   ["Nutrition", "GI 기능장애: 구역·식욕 변화·anorexia부터 점막 완전성 상실, hemorrhagic diarrhea, bacterial translocation, septicemia, 사망까지. 총 섭취량, 구역 행동, POCUS로 위 크기·운동성, 직장수지검사(GI 출혈·변 성상) 정기 평가. 대증 치료: 항구토제, 항궤양, 운동성 조절제, 항생제. 혈역학 안정 후 열량 섭취가 모니터링 변수·치료 목표. 음의 에너지·단백 균형 → 방어력·근력 상실, 내장 위축·기능장애, GI 장벽 붕괴, pneumonia, sepsis, 사망. 장내 영양결핍은 bacterial translocation·이차 sepsis 소인 → 가능하면 경장 급여 우선"]
+  ]},
+  {"type": "heading", "level": 2, "text": "Nursing Care (간호)", "gist": "4–6시간마다 체위 변경; 피부·압박점·습기 점검; 통증·정신 건강"},
+  {"type": "list", "items": [
+   "와위 환자: 4–6시간마다 양측 측와위·sternal로 체위 변경, 깊은 호흡 유도 → 폐 atelectasis 예방.",
+   "피부 자주 평가; 골 돌출부 압박점 정기 점검(decubitus ulcer 예방); 소변·변·배액의 습기 조기 발견(skin scald 예방). 요량·방광 크기 자주 확인 — 신부전 위험·배뇨 장애 신경 질환에서 특히.",
+   "환자 안락 평가는 주관적이나 중요(Ch.131); 적절한 통증 관리 항상 제공(Ch.134). 손으로 직접 접촉하는 것이 질 높은 평가·모니터링에 필수.",
+   "정신 건강도 신체 건강만큼 중요: 편안하고 마른 침구, 부드러운 취급, 보호자 면회. 가능하면 야간 소등·조명 감소로 정상 circadian rhythm 유지. 면회는 환자 태도 개선 + 신체검사로 알 수 없는 정보 제공."
+  ]}
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "id": "sacc3-p1-c5",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part I",
+ "part_title": "Key Critical Care Concepts",
+ "chapter_num": 5,
+ "title": "Post-Cardiac Arrest Care",
+ "author": "Manuel Boller, Dr med vet, MTR, DACVECC; Daniel J. Fletcher, PhD, DVM, DACVECC",
+ "format": 2,
+ "blocks": [
+  {"type": "callout", "title": "KEY POINTS", "items": [
+   "허혈–재관류에 대한 전신 반응, 무산소성 뇌손상, 소생 후 심근 기능장애, 지속되는 유발 병리가 환자별 PCA(post-cardiac arrest) 관리를 결정한다.",
+   "즉각적 PCA 관리 = 최적 환기·산소화·조직 관류 확보로 재정지(rearrest) 예방 + CPA의 가역적 원인 확인·교정.",
+   "ROSC 직후 hypoxemia·hyperoxemia 모두 피하는 controlled reoxygenation: SaO₂/SpO₂ 94%–98% 또는 PaO₂ 80–100 mm Hg.",
+   "혈역학 최적화: IV 수액, 승압제, 강심제, 혈액제제로 MAP ≥80 mm Hg, ScvO₂ ≥70%, lactate <2.5 mmol/L.",
+   "ROSC 후 혼수 지속 + 고급 중환자 관리 가능 시 targeted temperature management(32°C–36°C) 24–48시간 권장.",
+   "추가 신경보호: permissive hypothermia, 서서히 재가온(0.25°C–0.5°C/hr), 삼투 치료, 발작 예방.",
+   "중증 생존 환자는 PCA 관리를 위해 수의 중환자 센터로 의뢰."
+  ]},
+  {"type": "heading", "level": 2, "text": "Overview (개요)", "gist": "ROSC 후 개·고양이 79%가 퇴원 전 사망·안락사; 4가지 병태 + 시간에 따른 우선순위 변화"},
+  {"type": "list", "items": [
+   "Negovsky(1972): 심장·호흡 회복 후 '전신 저산소의 후유증 치료'라는 두 번째 소생 단계가 시작. 사람·수의 CPR 가이드라인 모두 ROSC 후 관리에 별도 섹션.",
+   "근거 ①: 사람 원내 심정지(IHCA)에서 안정된 ROSC 환자의 2/3가 퇴원 생존 실패; 수의에서는 ROSC를 얻은 개·고양이의 79%가 퇴원 전 사망 또는 안락사 → PCA 관리 최적화로 많은 생명 구할 여지. 근거 ②: 새로운 효과적 PCA 치료(특히 소생 후 조절 저체온의 신경보호) 발견; 사람 IHCA 결과 개선의 일부는 소생 후 생존 증가 덕분. PCA 관리 = 포괄적 치료 전략의 마지막 필수 고리.",
+   "두 패러다임: ① 병태생리 표적 — (1) 허혈–재관류(IR) 손상, (2) PCA 뇌손상, (3) PCA 심근 기능장애, (4) 지속되는 유발 병리(Fig. 5.1); ② 시간에 따른 우선순위 — ROSC 직후는 재정지 예방·장기 손상 제한, 이후는 기저 질환 치료·예후 판정·재활."
+  ]},
+  {"type": "table", "title": "Fig. 5.1 Post-cardiac arrest syndrome 4요소", "headers": ["요소", "병태생리", "임상 발현", "잠재적 치료"], "rows": [
+   ["전신 허혈–재관류 반응", "SIRS, 혈관 조절 장애, 응고 ↑, 부신 억제, 조직 산소 공급·이용 장애", "감염 저항 ↓, 지속 조직 저산소–허혈, hypotension, pyrexia, hyperglycemia, 다장기 부전, 감염", "조기 혈역학 최적화, IV 수액, 승압제, 온도 조절, 혈당 조절, 확인된 감염에 항생제"],
+   ["PCA 뇌손상", "뇌혈관 자가조절 장애, 뇌부종(제한적), 허혈 후 신경변성", "Delirium·stupor·coma, 발작, myoclonus, 인지 기능장애, 피질맹, 뇌사", "TTM, 조기 혈역학 최적화, 기도 보호·기계환기, 발작 조절, controlled reoxygenation(SaO₂ 94%–98%)"],
+   ["PCA 심근 기능장애", "우·좌심실 기능장애(myocardial stunning)", "Hypotension, arrhythmia, 심박출량 ↓, 지속 조직 저산소–허혈", "조기 혈역학 최적화, 강심제, TTM"],
+   ["지속 유발 병리", "감염(sepsis, pneumonia), 상부기도 폐쇄, 심혈관 질환(cardiomyopathy), 폐 질환(CHF, ARDS), 혈전색전(PTE), CNS 질환, 중독(과량·독극물), hypovolemia(출혈·탈수), MODS", "원인 특이적; 동반 PCA syndrome으로 복잡", "질환 특이적; 환자 상태·PCA syndrome에 따라; 지지 치료"]
+  ]},
+  {"type": "heading", "level": 2, "text": "Propagating Sustained ROSC (ROSC 유지)", "gist": "재정지가 초기 사망 주원인; lidocaine 2 mg/kg + 30–50 µg/kg/min, epinephrine 0.1–0.5 µg/kg/min"},
+  {"type": "list", "items": [
+   "초기 소생 성공한 개·고양이 대부분이 재정지로 수 시간 내 사망. 관찰연구: 41%가 ROSC 달성, 그중 15%가 20분 내 재정지. 사람: sustained ROSC(≥20분) 환자의 24%가 중앙값 5.4시간 후 재정지.",
+   "ROSC 직후 목표: 자발 순환과 뇌·심근 등 주요 장기 관류 유지, 추가 손상 완화, 재정지 예방. 비침습 혈압·pulse oximetry 등 일반 모니터링이 ROSC 후 유용.",
+   "가역적 원인을 적극 탐색: ALS 중 못 했으면 ROSC 직후 전해질, 혈당, 산-염기, hematocrit, 동맥 산소화, 환기 평가. Hypoxemia, 심한 anemia, hypotension, hyperkalemia·hypocalcemia 교정.",
+   "재정지 리듬: 수의 자료 없음; 사람 연구(n=381)에서 첫 확인 리듬의 76%가 non-shockable."
+  ]},
+  {"type": "table", "title": "ROSC 직후 약물", "headers": ["상황", "약물·용량", "비고"], "rows": [
+   ["VT 지속", "Lidocaine 2 mg/kg IV bolus → 30–50 µg/kg/min CRI", "—"],
+   ["혈관 긴장도·혈압 유지 (ROSC 직후)", "Epinephrine 0.1–0.5 µg/kg/min CRI", "ROSC 후 부신 기능 부족 가능. 생리 파악 후 더 표적화된 catecholamine으로 교체 — 혈관확장엔 norepinephrine, LV 기능장애엔 dobutamine"],
+   ["허혈 후 LV 수축기 기능장애", "Dobutamine 5–10 µg/kg/min CRI", "반복 심혈관 POCUS로 반응 평가"],
+   ["환기 보조 (수동·기계)", "목표 PaCO₂: 개 32–43 mm Hg, 고양이 26–36 mm Hg", "즉각적 PCA 단계에서 흔히 필요"]
+  ], "note": "Sustained ROSC 20–40분 후에는 IR로 인한 추가 장기 손상 완화와 환자 맞춤 지지 치료가 우선. — = 요약에 해당 내용 없음"},
+  {"type": "heading", "level": 2, "text": "Systemic IR Response — Sepsis-like Syndrome", "gist": "MAP 80–120, ScvO₂ >70%, lactate <2.5; 혈당은 엄격 조절 근거 없음; steroid 일상 사용 비권장"},
+  {"type": "list", "items": [
+   "CPA의 전신 허혈 후 ROSC → 전신 IR syndrome('postresuscitation disease', Negovsky, 약 50년 전). 염증·응고·내피 손상 면에서 중증 sepsis와 유사. Adrie 등: 사람 PCA에서 호중구·내피 활성화 + 높은 순환 cytokine(TNF-α, IL-6, IL-9, IL-10) 관찰 → 'sepsis-like syndrome'. 사람에서 (1) 조기 혈역학 최적화, (2) 혈당 조절, (3) CIRCI 개념 연구 중 — 수의 PCA에도 관련 가능; 치료는 고도로 개별화."
+  ]},
+  {"type": "table", "title": "Sepsis-like syndrome 관련 치료", "headers": ["항목", "내용"], "rows": [
+   ["혈역학 최적화 (EGDT 기반)", "Rivers 등의 EGDT(20년 전, 중증 sepsis·septic shock)를 PCA에 적용 — 사전 정의된 생리 목표 달성에 따라 개별 중재 시작·중단, 조기 소생 강조. 조직 산소 공급 ↑(수액, 승압제/강심제, RBC 수혈, 산소) + 산소 요구 ↓(진정, 기계환기, 신경근 차단, 온도 조절). RECOVER 수의 PCA 알고리즘 목표: MAP 높은 정상(80–120 mm Hg), ScvO₂ >70%, lactate <2.5 mmol/L. 혈압 목표가 sepsis보다 높은 이유: 뇌혈관 자가조절 소실, 혈관 주위 부종·혈관내 혈전이 뇌혈류 저해. 혈관확장 지표(injected MM, 짧은 CRT), 맥박질, echo LV 기능도 종합 평가에 포함 → 수액·승압제·강심제를 효과적·안전하게 (Ch.8, 183)"],
+   ["혈당 조절", "심정지 후 hyperglycemia는 사람·개·고양이에서 흔하고 나쁜 결과와 연관. 개 실험: ROSC 초기 경~중등도 hyperglycemia + 총 혈장 insulin 60% 감소; 개에서 ROSC 후 hyperglycemia는 허혈성 뇌손상 악화. 사람에서 엄격 조절(4.4–6.1 mmol/L; 80–110 mg/dl) 시 의인성 hypoglycemia 18%; 엄격 조절의 추가 이득 근거 없어 사람에서 특정 목표 범위 권고 없음. 개·고양이: 의인성 hypoglycemia를 피하며 심한 hyperglycemia에 insulin 투여는 합리적 — IV insulin 조절은 중증 sepsis 권고(Ch.6)에 따름"],
+   ["부신 기능장애 (CIRCI)", "Steroid는 심한 스트레스 반응·혈관 긴장도·내피 투과성 조절에 필수. ROSC 후 CIRCI(상대적 부신 부전)는 사람 연구에서 사망률 ↑와 연관. Septic shock의 저용량 steroid도 논란, PCA에서 직접 근거 부족; 감염·소화성 궤양 위험, 허혈 후 신경 손상 악화 → 일상적 투여 비권장. 단, CPA 후 승압제 의존 shock 개·고양이(CIRCI 확인 여부 무관)에서 저용량 hydrocortisone 1 mg/kg IV → 1 mg/kg IV q6h 또는 0.15 mg/kg/hr IV 주입 고려 가능"]
+  ]},
+  {"type": "heading", "level": 2, "text": "Post-Cardiac Arrest Brain Injury (PCA 뇌손상)", "gist": "손상 대부분은 재관류기에; 뇌 ATP는 2–4분 내 고갈(장·심근 20–40분)"},
+  {"type": "list", "items": [
+   "사람에서 심정지 후 뇌 기능장애가 가장 큰 우려이자 가장 흔한 단일 사망 원인 — 병원 밖 심정지(OHCA) 사망의 2/3, IHCA의 1/5. 소동물은 실험·임상 보고는 있으나 역학 정보 거의 없음. 전신 뇌 IR로 발생.",
+   "명확한 사실 4가지: ① 손상 대부분은 허혈이 아닌 재관류 중 발생 → ROSC 후 개입 기회; ② 세포질·미토콘드리아 Ca 과부하 → protease 활성화 → 신경세포 사멸·ROS 생성; ③ 재관류 시 ROS 폭발 → 지질·단백·핵산 산화로 신경세포 손상 확산, 보호·복구 기전 제한; ④ ROSC 후 저체온은 PCA 뇌 기능장애 감소가 입증됨.",
+   "허혈 vs 재관류: 재관류 과정을 최적화하면 더 긴 허혈도 견딤. IR은 세포 허혈에서 시작되는 연속체. CPA 시작 시 산소 공급 급감; 해당작용으로 제한적 에너지 생성되나 뇌 ATP는 2–4분 내 고갈(장·심근은 20–40분). ATP 고갈 → 막전위 급속 소실 (ECG상 어떤 심전기 활동이든 심근 막전위가 아직 유지되거나 재관류로 회복됐다는 증거). 다량의 Na·Cl·Ca 세포 유입 → 세포 부종·막 파괴; Ca 노출 ↑·산화 스트레스·에너지 고갈 → 미토콘드리아 손상 → 재관류 시 ROS ↑, apoptosis·necrosis. 보호적 재관류 전략(예: cardiopulmonary bypass 재관류): 경한 hypocalcemia 허용, hyperoxemia 회피 — 돼지 실험에서 30분 온허혈 후에도 신경학적 온전 생존."
+  ]},
+  {"type": "table", "title": "신경보호 전략", "headers": ["전략", "내용·목표"], "rows": [
+   ["Controlled reoxygenation", "ROSC 후 다량 ROS 생성 — 보호 기전 고갈 상태에서 hydroxyl radical(•OH), peroxynitrite(ONOO•) → 막 손상, 지질 과산화, DNA 손상, 단백 변성. 빠른 재산소화는 CPR의 필수 목표이나 산소는 ROS 기질. ROSC 직후 동맥 hyperoxemia는 산화성 뇌손상·신경변성 ↑, 신경 기능·생존 악화; 사람 후향 연구에서 hyperoxemia 정도와 비생존이 선형 관계. 개 실험: SpO₂ 94%–96%로 산소 적정이 FiO₂ 1 지속보다 신경 기능 우수·취약 뇌 영역 신경변성 ↓. → FiO₂를 normoxemia(PaO₂ 80–100 mm Hg; SpO₂ 94%–98%)로 적정, hypoxemia·hyperoxemia 모두 회피"],
+   ["Targeted temperature management (TTM)", "원래 mild therapeutic hypothermia; 중심 체온 32–36°C(89.6°F–96.8°F) 조절. 기전: 미토콘드리아 보호, 뇌 대사 ↓, 세포 Ca 유입 저해, 신경 흥분독성 ↓, ROS ↓, apoptosis 완화, 발작 조절 — 다경로 복합 효과. 동물 자료 종합: (1) 경한 저체온은 무산소 뇌손상 ↓; (2) arrest 중 저체온이 가장 강력·지속적; (3) 재관류 후 지연될수록 효과 ↓; (4) 지속 시간이 길수록 보호 ↑; (5) 긴 지속이 지연 개시의 효과 손실을 '구제'.\n사람: 2005 첫 가이드라인 — OHCA 후 무의식 성인, 초기 리듬 VF면 32°C–34°C 12–24시간; 2015 AHA — OHCA·IHCA, 리듬 무관 33°C–36°C, 최소 24시간 일정 유지 강조. RECOVER 2012: CPA 후 혼수 지속 개·고양이는 가능한 한 빨리 중심 체온 32°C–34°C로 24–48시간 유지; 개정판에서 덜 엄격한 범위 + 급속 재가온·hyperthermia 회피 강조 예상. 재가온 0.25°C–0.5°C(0.45°F–0.9°F)/hr. 실제 소동물 PCA 환자는 ROSC 시 대부분 이미 저체온 → 저체온 유도보다 급속 재가온 방지가 목표. 중심 체온 기준이므로 식도 thermocouple을 직장 probe보다 선호(특히 표면 냉각 시 직장–중심 온도 차)"],
+   ["TTM 부작용·관리", "관리·모니터링 부담이 기계환기 수준. 냉각 → 근긴장·떨림 → 산소소비·대사율·호흡수·심박수 ↑ → 진정·삽관·환기 필요; 진정 없는 냉각은 보호 효과 소실 가능. 대사, 산-염기, 전해질, ECG, 약물 배설, 응고, 면역 변화 숙지. 사람 OHCA에서 부작용은 정상체온 관리와 동등, 사망률 영향 없음; 개·고양이·IHCA(sepsis·응고병증 흔함)에서는 다를 수 있음 → 이런 경우 이득·위험 신중히 비교, 낮은 목표(33°C)보다 높은 목표(35°C) 고려"],
+   ["Permissive hypothermia", "CPA 후 자발적 저체온인 소동물을 그대로 두고 ROSC 후 여러 시간에 걸쳐 서서히 정상 중심 체온으로 재가온 — TTM의 대안. TTM의 전체 잠재력은 못 얻어도 허혈 후 급격한 뇌 온도 상승의 해악을 완화. 재가온 0.25°C–0.5°C(0.45°F–0.9°F)/hr. CPA 후 발열·hyperthermia는 신경 결과 악화 → 예방"],
+   ["발작 관리", "개·고양이 PCA 발작은 임상 경험상 발생. 사람에서 CPA 후 첫 3일 발작은 나쁜 결과와 연관; ROSC 후 혼수 지속 환자에서 비경련성 status epilepticus(EEG로만 확인) 흔함. 발작은 뇌 대사·산소 요구 급증 → 감시·치료(Ch.84); 예방적 항경련제 고려 — 혼수·진정 환자에서 비경련성 발작 진단이 어려워 특히 관련"],
+   ["뇌부종·ICP", "세포독성·혈관성 뇌부종은 CPA 후 기술되며 사람에서 나쁜 신경 결과와 연관; 두개내 고혈압(ICH)은 흔하지 않으나 발생 시 뇌관류압·뇌혈류 저하. 개에서 14분 무산소 뇌손상 후 고장액 투여는 뇌부종 ↓하나 생존·신경 기능 개선 없음. Mannitol·hypertonic saline은 연구 부족, 이득·해 모두 미입증 → coma, stupor, decerebrate posture 등 뇌부종 시사 징후 시 고려. ICH 징후는 CPA 중 뇌 허혈의 신경 결손과 겹침"],
+   ["뇌관류압·환기", "PCA 단계 초정상 뇌관류압 유도가 유익 → 임상적으로 의미 있는 ICP ↑·혈류 저항 존재. 개에서 12.5분 미치료 VF 후 소생 1–4시간에 뇌의 50% 이상이 기저 이하 혈류였으나 hypertensive hemodilution(hematocrit 20%, MAP 140 mm Hg) 군은 그렇지 않음. 기전: ICP ↑, 혈관 주위 부종, 혈관내 응고, 자가조절 소실. 짧은 CPA에서는 덜 중요 → 대부분의 수의 임상에서는 덜 공격적인 관류압 목표로 충분.\n지연 허혈 후 첫 수 시간은 뇌동맥의 CO₂ 반응성 소실(PaCO₂ ↑에 혈관확장 없음); 짧은 허혈이나 재관류 후기에는 반응성 유지·회복 → ROSC 후 과환기가 뇌혈류 ↓·신경 결과 악화. Hypoventilation의 조직 pH ↓도 해로울 수 있음 → 둘 다 피하고 normocapnia: 개 PaCO₂ 32–42 mm Hg, 고양이 26–36 mm Hg"]
+  ]},
+  {"type": "heading", "level": 2, "text": "Neurologic Assessment and Prognostication (신경 평가·예후)", "gist": "72시간 전 임상검사만으로 예후 판정 불가; 안락사 결정은 ROSC 후 24–72시간 대기"},
+  {"type": "list", "items": [
+   "ROSC 직후 완전한 신경검사, 초기 2–4시간마다. 교란 인자(진정, 신경근 차단, 발작, 발작 후 상태) 고려해 해석. 개에서 의식·운동·감각·행동 지표의 신경 결손 점수계 사용; TBI용 Modified Glasgow Coma Scale(뇌간 = 뇌신경 반사, 대뇌피질 = 운동 반응·의식 수준)도 체계적 추적에 사용 가능(이 적응증 미검증).",
+   "ROSC 초기 정상 신경 기능 징후(자발 호흡, gag reflex, PLR)는 양호한 예후 시사(수의 근거는 부족). 신경학적 무익 예측은 더 복잡 — 사람 무의식 생존자에서 ROSC 후 72시간 동안 임상 신경검사만으로는 기능 결과 예측력 낮음(치료적 저체온·진정 때문에 일부 지연).",
+   "European Resuscitation Council 예후 알고리즘: 모든 무의식 생존자에 최대 48시간 TTM → 서서히 재가온; ROSC 후 72시간(진정 이탈·잔여 효과 소실)까지 결정적 판정 없음. 5가지 검사: (1) 임상검사, (2) EEG, (3) 체성감각 유발전위(SSEP), (4) 영상, (5) 순환 표지자.",
+   "72시간 후 유해 자극 무반응 + 양측 PLR·각막반사 소실 → 나쁜 결과 예측; 무의식 환자의 SSEP 소실도 강력 예측. 두 고민감 지표(PLR, SSEP)가 없으면 72시간 평가 후 24시간 더 지나 덜 민감한 징후 고려: (1) 높은 순환 neuron-specific enolase, (2) CT/MRI의 미만성 무산소 손상, (3) EEG의 비반응성 burst-suppression 또는 status epilepticus, (4) status myoclonus — 2개 이상이면 나쁜 결과 가능성 높음. 나쁜 지표 없으면 치료 계속·정기 재평가.",
+   "성체 동물·사람의 무산소 뇌손상 회복 시간표는 유사할 가능성 → 재정 제약 없으면 ROSC 후 24–72시간 후에 안락사 결정이 합리적(동반질환에 따라 고비용). 무의식(통증 자극 무반응), PLR, 각막반사 평가가 유용할 수 있음. 적절한 지지 치료 시 회복 잠재력 큼 — Waldrop 등(2004): ROSC 후 신경 이상(dullness, ataxia, circling, 발작, 실명)이 생존자의 90%에서 퇴원 전 해소."
+  ]},
+  {"type": "heading", "level": 2, "text": "Myocardial Dysfunction (심근 기능장애)", "gist": "Myocardial stunning — 가역적, 보통 48시간 내 회복; 연속 echo, dobutamine"},
+  {"type": "list", "items": [
+   "실험·사람에서 잘 기술, 수의 증례보고 1편. 관상동맥 질환 없어도 발생; 뇌손상처럼 저체온으로 완화. 기전 다인성: ① 신경계와 유사한 세포 IR 과정 — 중증도는 허혈 지속·범위와 재관류 조건(저체온·hyperoxia 유무)에 따름; ② 모세혈관 no-reflow — 내피 활성화·부종, 호중구–내피 상호작용, 응고 활성화, 혈소판 응집으로 미세혈관 폐쇄; 모세혈관 주위 부종, 미세혈관 hematocrit·TP ↑에 의한 유변학 변화, 허혈 후 RBC 변형능 ↓·내피 부착·RBC plug; ③ 악화 인자 — arrest 중 epinephrine 투여, 고에너지·monophasic 제세동.",
+   "임상 양상: CVP·폐모세혈관쐐기압 ↑, 좌·우심실 수축기·이완기 기능 ↓(확장기·수축기말 용적 ↑), LV ejection fraction·심박출량 ↓; 심실 빈맥성 부정맥 동반 가능, 심하면 cardiogenic shock. 가역적이며 보통 48시간 내 해소 — 세포 괴사 없는 가역성이 'myocardial stunning'의 근거.",
+   "진단·경과 추적: 연속 echo(비침습). Dobutamine 통상 임상 용량이 사람·돼지에서 LV 기능·심박출량 개선. 부정맥은 중요도에 따라 치료(Cardiac Disorders 섹션)."
+  ]},
+  {"type": "heading", "level": 2, "text": "Persistent Precipitating Pathology (지속 유발 병리)", "gist": "수의 CPA 원인: hypoxemia 36%, shock 18%, anemia 13%; 마취 관련 CPA는 예후 양호"},
+  {"type": "list", "items": [
+   "IHCA(소동물 임상에서 가장 흔한 CPA)는 중증 sepsis, 외상, 호흡부전 등 기존 질환이 유발하며 ROSC 후에도 지속 → PCA 관리·예후에 영향; 유발 요인·동반질환이 PCA 환자군의 변동성을 키움.",
+   "3차 의뢰기관 수의 연구(개·고양이 204마리) CPA 원인: hypoxemia 36%, shock 18%, anemia 13%, arrhythmia 8%, MODS 6%, TBI 5%, anaphylaxis 1%, 기타 21%. 다른 연구: 고양이 CPA에서 외상이 개보다 흔함. 일반 진료에서는 마취 관련 CPA가 가장 흔할 가능성 — 여러 수의 연구에서 ROSC·퇴원 생존율 유의하게 높음.",
+   "사람 IHCA 51,919명(Meaney 등) 원인: hypotension 39%, 급성 호흡부전 37%, 급성 심근경색 10%, 대사/전해질 이상 10%. IHCA 초기 생존자의 검증된 예후 도구: 연령, 초기 리듬, arrest 전 신경 기능, CPR 지속 시간 + 기존 질환(기계환기, 신·간 부전, sepsis, 악성종양, hypotension). Sustained ROSC 후 사망 원인: 동반질환에 의한 치료 중단 36%, 불응성 혈역학 shock 25%, 급사 11%; 신경학적 치료 중단은 IHCA 27% vs OHCA 73%. 개·고양이는 더 큰 데이터 필요.",
+   "IHCA 후 PCA 환자는 다양한 기존 질환의 영향 → 산소화·환기·순환·대사를 지지하는 중환자 원칙의 개별화 접근으로 의미 있는 결과 가능성 실현."
+  ]}
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "id": "sacc3-p1-c8",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part I",
+ "part_title": "Key Critical Care Concepts",
+ "chapter_num": 8,
+ "title": "Oxygen Toxicity",
+ "author": "Duana McBride, BVSc, DACVECC, MVMedSc, FHEA, MRCVS",
+ "format": 2,
+ "blocks": [
+  {"type": "callout", "title": "KEY POINTS", "items": [
+   "산소는 안정한 분자로 3단계 환원을 거쳐 물로 대사된다. Hyperoxia나 병적 상태에서는 불완전 환원으로 활성 산소·질소종(RONS)이 생성된다.",
+   "RONS는 지질(지질 과산화), 핵산, 단백질 손상을 통해 산화 손상과 세포 손상을 일으킨다.",
+   "Hyperoxia에 의한 세포 손상은 주로 호흡기·중추신경·심혈관계에 나타난다.",
+   "Hyperoxia는 sepsis, 기계환기, 심정지 후 등 사람 중환자에서 나쁜 결과와 연관된다.",
+   "항산화제는 기질이 RONS로 산화되는 것을 지연·예방하는 내인성·외인성 화합물로, 산화 손상 방어의 중요 기전이다."
+  ]},
+  {"type": "heading", "level": 2, "text": "Pathophysiology (병태생리)", "gist": "O₂의 90%–95%는 물로 환원, 5%는 부분 환원 → •O₂⁻ → H₂O₂ → 물; Fenton 반응이 가장 세포독성"},
+  {"type": "list", "items": [
+   "O₂ = 외곽 껍질에 짝 없는 전자 2개를 가진 산소 원자 쌍(biradical). 짝 없는 전자는 자유라디칼로 보통 매우 반응성이 높으나, 산소는 두 전자가 평행하게 궤도를 돌아 반응성이 높지 않음.",
+   "RONS는 정상 산소 대사의 자연 부산물로 세포 신호·항상성에 중요. 과잉 축적은 항산화제가 RONS를 안정 분자로 전환해 제한; 내인성·외인성 원인(Box 8.2)으로 산화 손상이 생기면 대사 능력이 고갈되어 위험 수준의 RONS 생성(Fig. 8.1)."
+  ]},
+  {"type": "table", "title": "Box 8.1 정의", "headers": ["용어", "정의"], "rows": [
+   ["Oxygen molecule", "외곽 껍질에 짝 없는 전자 2개를 가진 산소 원자 쌍"],
+   ["Hyperoxia", "조직·장기의 산소 공급 과잉"],
+   ["Hyperoxemia", "동맥혈 산소 분압(PaO₂)이 정상 이상"],
+   ["Free radical", "짝 없는 전자를 1개 이상 가진 반응성 원자·원자단"],
+   ["RONS", "산소 또는 질소를 포함하는 화학적 반응성 종"],
+   ["Antioxidant", "산화를 억제하는 화합물"],
+   ["Oxygen toxicity / oxidative injury", "과도한 조직 산소나 병적 상태로 안정한 산소 분자가 고독성 물질로 변환되어 핵산·단백·지질 손상을 일으키는 것"]
+  ]},
+  {"type": "table", "title": "Box 8.2 산소 독성의 원인", "headers": ["내인성", "외인성"], "rows": [
+   ["호기성 호흡\n항산화 방어 대비 과도한 조직 산소\n식세포작용 중 호중구·대식세포의 NADPH 자유전자 생성\n허혈-재관류 손상\n철, 구리\nHemoglobin → methemoglobin 산화", "전리 방사선\n환경 배경 방사선\n자외선\n공해\nParaquat 중독\nBleomycin 중독"]
+  ]},
+  {"type": "table", "title": "Fig. 8.1 RONS 생성 경로", "headers": ["경로", "내용"], "rows": [
+   ["3단계 산소 환원", "병적 스트레스 없으면 산소의 90%–95%가 물로 환원; 나머지 5%는 부분 환원되어 중간 산물이 세포질·세포 밖으로 누출 → 산화 손상. O₂ → superoxide anion(•O₂⁻; 대부분의 ROS 전구체, 가장 반응성 높은 ROS 중 하나이나 superoxide dismutase·glutathione peroxidase로 빠르게 대사) → dismutation → H₂O₂(짝 없는 전자 없어 자유라디칼은 아니나 고독성) → catalase → 물"],
+   ["Fenton/Haber–Weiss 반응", "모든 산화 경로 중 가장 세포독성. H₂O₂, 철, 구리 가용성에 의존. 산물: hydroxyl free radical(•OH; 가장 독성 강한 ROS 중 하나), hydroxyl anion(OH⁻), singlet oxygen(¹O₂; O₂의 짝 없는 전자 내부 재배열로 생긴 자유라디칼·ROS)"],
+   ["Myeloperoxidase 반응", "H₂O₂ + chloride → hypochlorous acid(HOCl). 호중구 식세포 소포에서 일어나 세균 살상에 중요. HOCl은 자유라디칼이 아닌 ROS이자 자유라디칼 전구체"],
+   ["활성 질소종", "Nitric oxide(NO•) = 강력한 내인성 혈관확장제·세포 전령·혈소판 억제제, 대량이면 세포독성(예: IRI). NO• + •O₂⁻ → peroxynitrite(ONOO⁻; 지질 과산화 개시 가능한 활성 질소종). Peroxynitrite는 비반응성 분자로 재배열될 수 있고 항산화제 역할도"]
+  ]},
+  {"type": "heading", "level": 2, "text": "Cellular Effects of Oxidative Injury (세포 손상)", "gist": "지질(PUFA)이 가장 취약; 단백(cysteine·methionine), 핵산 손상; DAMPs → 염증 악순환"},
+  {"type": "table", "title": "표적별 산화 손상", "headers": ["표적", "기전·결과"], "rows": [
+   ["지질 (지질 과산화, Fig. 8.2)", "불안정한 이중결합·세포막 내 높은 비율로 가장 취약. 주요 세포 손상원 — 세포막 투과성 ↑, 정상 세포 효소 과정 억제, 단백·세포내막·모세혈관·폐포 손상, 폐 surfactant 불활성화. 개시 자유라디칼은 주로 •OH·ONOO⁻(다른 RONS도 가능); PUFA가 주 표적이며 PUFA 손상 → 다른 ROS 생성의 연쇄반응(lipid radical → peroxyl radical → lipid peroxide → alkoxyl radical)"],
+   ["단백질", "Ribosome 번역 억제로 생성 ↓ + 직접적 가역·비가역 산화 손상. 가장 취약한 잔기는 cysteine·methionine — sulfhydryl기 산화로 disulfide bridge 형성 → 여러 단백 불활성화 → 세포 신호·대사 장애"],
+   ["핵산", "DNA·RNA 손상·돌연변이 → 돌연변이 유발·발암·노화에 기여. Hydroxyl radical이 purine·pyrimidine 염기, deoxyribose 골격 손상. 내인성 DNA 복구 기전이 압도되면 돌연변이"],
+   ["염증", "괴사·apoptosis 외에 DAMPs 방출 → 선천면역 pattern recognition receptor → PMN 활성화 → cytokine 방출, 단핵구·호중구 추가 동원. PMN이 염증 반응 자극 + RONS 추가 생성 → 산화 손상의 악순환"]
+  ]},
+  {"type": "heading", "level": 2, "text": "Ischemia-Reperfusion Injury (IRI)", "gist": "Xanthine oxidoreductase 계가 핵심; 재관류 10–30초 후 •O₂⁻·H₂O₂ 생성; 내피·GI 점막 취약"},
+  {"type": "list", "items": [
+   "중환자의 산화 손상원. 사람: 심근경색, 혈전용해, 대동맥 cross-clamping, 심장 bypass 수술, 장기 이식. 수의: GDV 개, 심근 손상 개, 동맥 혈전색전 고양이에서 보고.",
+   "허혈 중: 혐기성 대사 → 세포내 lactate·H⁺ 축적; ATP 의존 막 펌프용 ATP ↓ → K⁺ 순유출, Na⁺·Ca²⁺·Cl⁻ 유입 → 세포 부종. 높은 세포내 Ca²⁺가 초기 IRI의 큰 부분 — apoptosis·괴사, xanthine oxidoreductase 계 활성화(Fig. 8.3). NF-κB 활성화 → 염증 매개체 ↑ → 허혈 부위·재관류 시 백혈구 부착.",
+   "NO•: 생성에 산소 필요 → 허혈 시 NO• 고갈 → 혈관수축·관류 ↓·세포 손상. 재관류 시 NO• 생성 ↑ → 세포독성, 심한 비반응성 혈관확장; 동시에 ROS 방출로 NO• 불활성화; NO• + •O₂⁻ → ONOO⁻ → 추가 손상.",
+   "Xanthine oxidoreductase 계(Fig. 8.3): 허혈 중 ATP → ADP → adenosine → inosine → hypoxanthine; 세포내 Ca²⁺ ↑가 xanthine dehydrogenase → xanthine oxidase 전환 촉매(protease). 재관류 시 산소 공급 급증 + NAD⁺ → xanthine·uric acid 생성(재관류 시작 10–30초 후), NAD⁺ → NADH 환원, H₂O₂·•O₂⁻ 생성(SOD). 내피·GI 점막에 xanthine oxidase가 가장 많아 IRI에 매우 취약.",
+   "흔한 임상 징후: hyperkalemia, acidemia, 관련 부정맥; 'no reflow' 현상(폐쇄 해소 후에도 백혈구 부착, 혈소판–백혈구 응집, 내피 의존 혈관이완 ↓로 관류 감소); myocardial stunning; CNS 변화; GI 징후; MODS."
+  ]},
+  {"type": "heading", "level": 2, "text": "Clinical Effects of Hyperoxia (장기별 영향)", "gist": "폐: 흡수성 무기폐·surfactant 손상·섬유화; 심혈관: NO• ↓ 혈관수축, HR ↓ → CO ↓; CNS: CBF ↓·ICP ↓"},
+  {"type": "table", "title": "Hyperoxia의 장기별 영향", "headers": ["장기", "기전·효과"], "rows": [
+   ["폐 (가장 큰 영향 — 노출 수준 높음)", "높은 항산화 활성에도 폐 실질세포 apoptosis·괴사, 염증, 비심인성 폐부종, 가스교환 장애, 섬유화(다인성). NO• ↑ → 상피·내피에서 ONOO⁻ 형성; 폐 모세혈관 내피 공포화·얇아짐 → 투과성 ↑·간질 부종; DAMPs·PMN → 염증 → SIRS, 폐 염증, 폐포–모세혈관 투과성 ↑. Type I 폐포세포 소실 → type II(surfactant 분비, 산소 저항성)로 대체 → 폐포/모세혈관막 두꺼워짐 → 확산 장애 → 폐섬유화.\n무기폐 기전: ① 100% 산소가 무기폐 방지에 중요한 질소를 치환 → 흡수성 무기폐; ② 폐포 산소 농도 ↑ → 큰 폐포–동맥 산소 구배 → 폐포에서 폐순환으로 빠른 확산; ③ surfactant 관련 단백 하향조절로 surfactant 손상. 무기폐 → 폐포 용량·일회호흡량 ↓, V/Q 불일치 → 산소화·환기 모두 영향.\n점액섬모 청소 ↓, 폐 미생물총·면역 기능 변화 → 2차 감염 소인. 사람: 100% 산소 3시간만으로 점액섬모 청소 ↓, 30시간까지 폐활량·가스 확산 ↓. 종 특이적이며 개·고양이 자료 없음; 임상에서는 교란 질환 고려"],
+   ["심혈관", "NO• 생체이용률 ↓ → 전신 혈관저항 ↑·혈관수축. ROS(특히 •O₂⁻)가 NO•를 억제: ① L-arginine(NO• 전구체) ↓, ② nitric oxide synthase ↓, ③ hemoglobin에서 NO• 방출 ↓. 기타: prostaglandin 등 다른 혈관확장제 ↓, ATP 분비 변화(NO• 생성 변화), 혈관운동 긴장도를 조절하는 적혈구 형태 변화; NO•는 oxyhemoglobin 포화도 ↓에 반응해 방출되므로 hyperoxia가 이를 상쇄.\n혈관수축 → 압수용체가 HR ↓(stroke volume 불변) → CO ↓; 산소 소비 ↓로 동정맥 산소함량 차도 ↓ → hyperoxia에도 세포 산소 공급은 실제로 불변.\n유해: 혈관수축으로 주요 장기(주로 심근·뇌, 그 외 골격근·망막·피부) 관류 ↓. 유익: ICP ↓, septic shock의 혈관확장 상쇄, 설하·간비장·폐계 관류 보존, 실험에서 신 순환 개선"],
+   ["CNS", "혈관수축으로 뇌혈류 ↓, 같은 효과로 ICP ↓. 뇌 흥분독성 ↑ 가능 → 2차 뇌손상에 영향"]
+  ]},
+  {"type": "heading", "level": 2, "text": "Hyperoxia in the Critically Ill (중환자에서의 hyperoxia)", "gist": "기계환기 목표 SpO₂ 88%–92% 또는 PaO₂ 55–80 mm Hg; 심정지 후 hyperoxia 최소화"},
+  {"type": "table", "title": "상황별 근거·권고", "headers": ["상황", "근거", "권고"], "rows": [
+   ["중환자 전반", "사람 중환자에서 hyperoxia는 나쁜 결과와 연관. 메타분석 하위군: 심정지 후, ECMO 필요, 허혈성 뇌졸중, TBI에서 사망률 ↑", "—"],
+   ["기계환기", "Hyperoxia와 사망의 시간·용량 의존 연관 근거 있음; liberal vs conservative(SpO₂ 목표 98% vs 88%) 전략 비교 결과는 상충", "SpO₂ 88%–92% 또는 PaO₂ 55–80 mm Hg 목표"],
+   ["Sepsis", "Hyperoxia가 hyperoxia–염증 악순환 악화 가능. 메타분석 하위군에서 사망률 차이 없음; 최근 RCT 하나는 hyperoxia 군의 사망·중대 부작용 위험 ↑로 중단", "—"],
+   ["심정지 후", "CPA는 심한 hypoxemia와 ROSC 후 재관류 손상. ROSC 후 hyperoxia와 사망·나쁜 신경 결과 연관 연구 다수(상충 결과도 있음)", "PCA 관리에서 hyperoxia 최소화"],
+   ["TBI", "메타분석 하위군에서 hyperoxia 시 사망률 ↑; HBOT + normobaric 산소 병용으로 결과 개선 연구 1편", "현재 HBOT·normobaric 산소 치료의 명확한 이득 없음"]
+  ], "note": "— = 요약에 해당 내용 없음"},
+  {"type": "heading", "level": 2, "text": "Hyperbaric Oxygen Therapy (HBOT)", "gist": "1.5–3.0 ATA 100% O₂; Hb 포화 이상으로 PaO₂ ↑; pneumothorax 금기"},
+  {"type": "list", "items": [
+   "밀폐 챔버에서 1.5–3.0 atmosphere absolute 이상의 가압 100% 산소 치료. Hemoglobin의 포화 가능 산소 용량을 넘어 PaO₂를 올려 혈중 산소함량 ↑.",
+   "원리(Box 8.3 가스 법칙): Dalton — 혼합 가스에서 각 성분은 분압에 비례한 압력(P_total = P₁ + P₂); Boyle — 압력 ↑ 시 가스 부피 ↓(P₁V₁ = P₂V₂) → PAO₂ ↑ 시 부피 ↓로 폐포에 더 많은 산소; Henry(Conc = P·sol)·Fick(V_gas = A/T·D(P₁−P₂), D = sol/MW) — 고농도→저농도 확산 → PAO₂ ↑로 폐포–모세혈관 압력 구배 ↑ → 확산 속도 ↑. Hb가 완전 포화되면 추가 확산 산소가 PaO₂ ↑; Hb에 결합하지 않은 산소는 조직으로 훨씬 쉽게 확산해 Hb가 닿지 않는 부위에도 공급.",
+   "Boyle 법칙은 혈액·조직의 원치 않는 가스 부피 감소에도 중요(감압병·공기색전 치료). 항균, 면역조절, 혈관신생, 혈관수축 효과 가능.",
+   "사람 적응증: 가스 색전, 감압병, CO 중독, cyanide 중독, 허혈·화상 손상, 심한 압궤 손상, 가스 괴저, 당뇨 창상, 방사선 손상, compartment syndrome. TBI·허혈성 뇌손상에 사용됐으나 강한 근거 없음.",
+   "합병증: barotrauma, 감압병, 폐 산소 독성, 발작(뇌 대사 ↓ → 억제성 신경전달물질 GABA ↓; 또는 RONS에 의한 DNA 변성). 개·고양이 230회 HBOT 전향 임상시험: 주요 부작용 없음, 임상적 의미 없는 경미 부작용 76건.",
+   "금기: pneumothorax. 극도로 주의·회피: bulla, 폐 병변, 흉부·귀 수술력, pyrexia, 임신, 상부 호흡기 감염."
+  ]},
+  {"type": "heading", "level": 2, "text": "Antioxidants (항산화제)", "gist": "내인성 효소(SOD·glutathione peroxidase·catalase), 내인성 비효소, 외인성; 중환자에서 사용 근거 없음"},
+  {"type": "list", "items": [
+   "기질 산화를 지연·예방해 산화 손상·DNA 돌연변이·악성 전환·세포 손상 최소화. 항산화제 고갈: CKD, 심장 질환, 간 질환, DM, neoplasia, 중환자."
+  ]},
+  {"type": "table", "title": "항산화제 분류", "headers": ["분류", "예", "비고"], "rows": [
+   ["내인성 항산화 효소", "Superoxide dismutase(SOD), glutathione peroxidase, catalase", "산소 대사 경로를 촉매해 중간 ROS 생성 최소화. SOD: hyperoxia·염증 cytokine(interferon, TNF, interleukin, LPS)이 생성 자극; 3형 — 세포외 SOD, Mn 함유 세포질 SOD, Cu·Zn 함유 미토콘드리아 SOD [원문 표기]; 반감기 매우 짧고 빠른 신 배설로 순환에서 불안정 → 치료적 사용 제한(SOD mimetics 연구 중). Catalase: H₂O₂ → 물 + 산소; 세포외·세포질·미토콘드리아, 특히 간·적혈구에 고농도. Glutathione peroxidase: selenium 함유, ROS·지질 과산화 중 생성된 활성종 제거"],
+   ["내인성 비효소 화합물", "Glutathione, albumin, ferritin, transferrin, ceruloplasmin, haptoglobin, bilirubin, uric acid, coenzyme Q, lipoic acid, vitamin C, vitamin E, selenium, lycopene, melatonin", "—"],
+   ["외인성", "Vitamin C, vitamin E, beta-carotene, phenolics, acetylcysteine, selenium, zinc", "—"]
+  ], "note": "— = 요약에 해당 내용 없음"},
+  {"type": "heading", "level": 2, "text": "Prevention and Treatment (예방·치료)", "gist": "산소를 목표 산소화로 적정 — 경~중등도 hypoxemia(PaO₂ 60–80, SpO₂ 90%–95%)는 허용 가능"},
+  {"type": "list", "items": [
+   "산소 보충을 원하는 산소화 수준으로 적정해 독성 예방(목표치는 여전히 논쟁). 경~중등도 hypoxemia(PaO₂ 60–80 mm Hg 또는 SpO₂ 90%–95%)는 일부 환자에서 잘 견딤. 최소 허용 수준 결정 시 전체 임상 상태와 CO·Hb 등 조직 산소운반의 모든 결정 인자 고려.",
+   "항산화제 고갈이 일부 중증 상태에서 기술되어 산화 손상 위험 중환자에 외인성 보충(ascorbic acid, vitamin E, N-acetylcysteine, silymarin, S-adenosylmethionine) 고려는 논리적이나, RONS를 줄이는 쪽으로 균형이 뒤집히면 RONS의 필수 역할(세포 신호)이 억제될 수 있고 외인성은 내인성과 같은 효과가 아닐 수 있음. 현재 중환자에서 항산화제 사용 근거 없음.",
+   "연구 중 치료: protein kinase·전사인자 조절, chemokine·cytokine·성장인자·수용체·DAMPs 조작 — 임상 적용은 아직 없음."
+  ]}
+ ]
+}

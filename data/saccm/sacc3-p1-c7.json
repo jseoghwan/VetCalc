@@ -1,0 +1,65 @@
+{
+ "id": "sacc3-p1-c7",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part I",
+ "part_title": "Key Critical Care Concepts",
+ "chapter_num": 7,
+ "title": "SIRS, MODS, and Sepsis",
+ "author": "Kaitlyn Rank, DVM; Bernie Hansen, DVM, MS, DACVECC, DACVIM (Internal Medicine)",
+ "format": 2,
+ "blocks": [
+  {"type": "callout", "title": "KEY POINTS", "items": [
+   "SIRS(1992 ACCP/SCCM)는 고/저체온·tachycardia·tachypnea(또는 과호흡)·백혈구 이상 중 2개 이상; sepsis는 원래 '감염에 의한 SIRS'로 정의됐다.",
+   "Sepsis-3(2016)는 sepsis를 '감염에 대한 조절 실패 숙주 반응이 일으킨 생명 위협 장기 기능장애'로 재정의 — 염증 징후가 아닌 장기 기능장애가 핵심.",
+   "장기 기능장애 평가에는 SOFA·qSOFA(사람)가 가장 유용; 개·고양이에서 검증된 중증도 점수는 APPLE(full/fast)이다.",
+   "SIRS 기준은 sepsis에 비특이적이고 예후 예측 민감도가 낮아, SIRS만으로 예후를 말하지 말고 원인 규명 검사를 시작해야 한다.",
+   "MODS의 존재는 결과와 강하게 연관되나, 치료 결정과 예후는 어떤 중증도 지표 하나에만 근거해서는 안 된다."
+  ]},
+  {"type": "heading", "level": 2, "text": "Background (배경)", "gist": "1992 SIRS 정의 → 수의 적용(Purvis 1994, Hardie 1995, Hauptman 1997, Brady, Alves)"},
+  {"type": "list", "items": [
+   "SIRS는 1992년 ACCP/SCCM 합의회의에서 전신염증·sepsis·septic shock 용어 표준화를 위해 도입. 정의: 운동·항암치료 등 다른 원인 없이 고/저체온, tachycardia, tachypnea(또는 과호흡), 백혈구 수 이상 중 2개 이상(Table 7.1). Sepsis = 감염원에 의한 SIRS; severe sepsis, septic shock, MODS도 정의. MODS = 급성 질환 환자에서 개입 없이는 항상성 유지가 불가능한 장기 기능 변화. 'Septicemia' 같은 무의미한 용어를 버리고, 전신 질환 없는 감염 ↔ septic shock의 연속선에서 환자를 층화.",
+   "반려동물 적용: Purvis(1994)·Hardie(1995)가 직장 온도·HR 기준을 경험적으로 수정해 제안. Hauptman(1997): 기관별 정상 범위 cutoff(Table 7.1)를 입원견 350마리에 전향 적용, 4개 중 2개 이상으로 sepsis 진단 — 확인된 감염 + 전신 질환 개(n=30)에서 민감도 97%이나 비감염 320마리 중 1/3 이상이 '4 중 2'를 충족해 sepsis로 오분류(선별 검사로만 평가, 진단·예후 도구로는 미평가).",
+   "Brady 등: 부검 확인 severe sepsis(다장기 세균 혈전 또는 다발성 괴사 + 중증 임상) 고양이 29마리의 사망 12시간 내 소견으로 고양이 특이 cutoff 생성; CBC가 있는 15마리 모두 4개 중 3개 충족 → 고양이 SIRS 임상 진단 역치로 '4 중 3' 권고. 이 두 연구가 이후 SIRS 양성/음성 분류의 근거.",
+   "Alves 등: 검사 확인 canine parvovirus 감염견(세균 sepsis 합병 흔함)에 Hauptman과 약간 다른 cutoff 적용 — '4 중 2' + 점막 이상(CRT 연장 또는 MM 색 이상) 병합 시 정확도 향상(Table 7.1).",
+   "MODS와 사망의 연관(Kenney 등, 2010): septic peritonitis 수술 개 114마리 후향 연구. 사람 SOFA·MODS score에서 직접 외삽한 임의 역치 — 심혈관: 승압제 필요 hypotension; 호흡: 산소 보충; 신장: 수술 전 대비 creatinine 0.5 mg/dl 상승; 간: bilirubin 0.5 mg/dl; 응고: PT 또는 aPTT 참고범위보다 25% 이상 연장 또는 혈소판 ≤100,000/µl. 각 범주는 유무만(가중치 없음), 2개 이상이면 MODS. 중증도 정량 없이도 장기 기능장애 존재 자체가 결과와 유의하게 연관 — 사망 odds ratio: 1개 장기 6.73 ~ 4–5개 장기 18.7."
+  ]},
+  {"type": "table", "title": "Table 7.1 반려동물용 SIRS 기준 예", "headers": ["저자·종·방법", "체온", "HR (bpm)", "호흡수 (/min) / pCO₂ (mm Hg)", "백혈구 (×10³/mm³) / band (%)", "기준"], "rows": [
+   ["ACCP/SCCM — 사람, 합의", ">38°C (100.4°F) 또는 <36°C (96.8°F)", ">90", ">20 / pCO₂ <32", ">12 또는 <4 / band >10", "4 중 2"],
+   ["Purvis — 개/고양이, 의견", ">39.7°C (103.5°F) 또는 <37.8°C (100°F)", ">160 (개), >250 (고양이)", ">20 / pCO₂ <32", ">12 또는 <4 / band >10", "4 중 2"],
+   ["Hardie — 개/고양이, 의견", ">40°C (104°F) 또는 <38°C (100.4°F)", ">120 (개), >140 (고양이)", ">20 / pCO₂ <30 (개), <28 (고양이)", ">18 또는 <5 / band >5", "4 중 2"],
+   ["Hauptman — 개, 관찰연구", ">39°C (102.2°F) 또는 <38°C (100.4°F)", ">120", ">20 / —", ">16 또는 <6 / band >3", "4 중 2"],
+   ["Brady — 고양이, 후향연구", ">39.7°C (103.5°F) 또는 <37.8°C (100°F)", ">225 또는 <140", ">40 / —", ">19.5 또는 <5 / band >5", "4 중 3"],
+   ["Alves — 개, 관찰연구", ">39.4°C (102.9°F) 또는 <37.8°C (100°F)", ">140", ">30 / pCO₂ <32", ">16 또는 <6 / band >3", "4 중 2 + CRT 연장 또는 MM 색 이상"]
+  ], "note": "원문 표 구조가 텍스트 추출에서 흐트러져 행 대응을 재구성함 — 원본 표와 대조 권장. — = 요약에 해당 내용 없음"},
+  {"type": "heading", "level": 2, "text": "Evolution of Definitions (정의의 변천)", "gist": "SIRS의 낮은 특이도·민감도 → PIRO(2001, Sepsis-2) → Sepsis-3(2016) 장기 기능장애 중심"},
+  {"type": "list", "items": [
+   "1992 정의의 한계: 입원 환자에서 SIRS 기준의 감염 특이도 부족, 중증도·예후 예측 민감도 부족. 중증질환(특히 sepsis)의 진행은 염증 자체보다 조절 실패 숙주 반응과 장기 기능장애에 좌우된다는 실험·임상 근거 축적.",
+   "2001 Sepsis-2: 암 병기 TNM을 본뜬 PIRO(Predisposition, Insult/infection, Response, Organ dysfunction) 채택 권고 → 점수계가 개발됐으나 SIRS 염증 기준에 묶여 있어 10년 넘게 엄격한 점수계 부재.",
+   "2016 Sepsis-3: sepsis = 감염에 대한 조절 실패 숙주 반응이 일으킨 생명 위협 장기 기능장애. MODS 용어 자체는 재정의하지 않았으나 진행성 장기 기능장애를 중증질환 발생의 핵심 사건으로 강조. 장기 기능장애가 sepsis syndrome의 특징적 소견이며 점수계로 임상 평가 — SOFA·qSOFA가 가장 유용."
+  ]},
+  {"type": "heading", "level": 2, "text": "Assessment of MODS Severity — SOFA / qSOFA", "gist": "SOFA ≥2 = 사람 sepsis 정의; qSOFA(mentation, SBP ≤100, RR ≥22) ≥2 → 조사"},
+  {"type": "table", "title": "SOFA vs qSOFA", "headers": ["점수", "구성", "해석·근거"], "rows": [
+   ["SOFA (Sequential Organ Failure Assessment)", "1990년대 ICU 환자 전반(sepsis 여부 무관)의 장기 기능장애 평가 도구, Sepsis-3에서 sepsis 환자용으로 재검증. 심폐(혈압, P/F ratio), 신경(Glasgow Coma Score), 신장(creatinine), 간(bilirubin), 응고(혈소판)를 5단계(0–4)로 채점(Fig. 7.1); 환자 점수 = 최고 하위점수. 기존 질환이 없으면 기저 0", "사람 감염 입원 환자에서 점수 2 = 사망 위험 최소 10%; Sepsis-3 이후 감염 환자에서 점수 ≥2 또는 2점 이상 상승 = sepsis.\n개 적용(Ripanti, 2012): 사람 SOFA를 약간 수정해 ICU 입원견 45마리를 3일 연속 전향 평가(40마리 완료; 모두 SIRS 4 중 2 충족). 3일간 SOFA 상승 20마리 중 19 사망, 안정·감소 20마리 중 19 생존. 절반이 감염 확인(septic)이나 septic·non-septic 간 생존·퇴원 시간 차이 없음 → 감염 유무가 아닌 장기 기능장애의 중증도·진행이 생존에 가장 큰 영향"],
+   ["qSOFA (quick SOFA)", "3요소 — mentation 변화, SBP ≤100 mm Hg, 호흡수 ≥22 — 각 1점, 0–3점", "SOFA와 일치도 좋고 검사 불필요, 빠르고 반복 가능 → Sepsis-3에서 ICU 밖 sepsis 선별 도구로 권고; ≥2 = 나쁜 결과 가능성 ↑, sepsis 배제 위한 추가 조사.\n개 연구 2편뿐: Ortolani·Bellis(2021) — 사람 기준 그대로 ICU 입원견 267마리(sepsis 포함 다양)에 후향 적용 → 생존과 무관; lactate 추가 시 사망 예측 민감도 ↑이나 lactate 단독보다 우수하지 않음(사람 혈압·호흡수 cutoff가 개에 부적합, mentation 변화 판별 어려움 가능). 두 번째 연구 — sepsis(SIRS 4 중 2 + 수술적 source control 필요한 감염 부위)견에 적용 → qSOFA 2점은 사망 위험 7배, 술후 합병증 기간·입원 기간 ↑. → sepsis 동물에서 더 가치 있을 수 있으나 전향 연구 필요"]
+  ]},
+  {"type": "heading", "level": 2, "text": "The APPLE Score", "gist": "개·고양이에서 가장 포괄적으로 검증된 중증도 점수 — APPLEfull 최대 80, APPLEfast 최대 50"},
+  {"type": "list", "items": [
+   "Hayes 등이 개(2010)·고양이(2011)에서 개발한 Acute Patient Physiologic and Laboratory Evaluation. 입원 24시간 내 생리 자료를 LOWESS로 범주화 → 단변량 → 다변량 logistic regression으로 사망과의 연관 확인. 예비 변수 개 55개·고양이 41개 → 개 10개(APPLEfull) 또는 5개(APPLEfast)(Fig. 7.2), 고양이 8개 또는 5개(Fig. 7.3). 가중 점수 합 최대 80(full) 또는 50(fast).",
+   "고사망률 ICU 코호트(개 18.4%, 고양이 25.8%) 검증군에서 APPLEfull 생존 예측 AUROC 개 .91, 고양이 .88; APPLEfast 개 .85, 고양이 .76.",
+   "후속 적용: Summers 등 — septic shock 개 37마리(사망률 81.1%)에 APPLEfull·APPLEfast·Survival Prediction Index 후향 적용 → APPLEfull만 예측력 양호(AUROC 0.8). 중복 코호트에서 상대적 부신 부전 의심으로 hydrocortisone 치료받은 septic 개의 APPLEfull이 더 높음(더 중증이라는 임상 판단과 일치). SIRS 충족 중환자견 여러 연구에서 비생존군의 APPLE이 대체로 높음. 외상 후 사망 예측(고양이·개) — 개 연구에서 APPLEfull 31점: 비생존에 민감도 90%, 특이도 84.6%, AUROC 0.912.",
+   "변수 중 일부(연령, 체강액, 체온, 혈당)는 장기 기능장애를 직접 반영하지 않으나 대부분은 신경·심폐·간·신장·지혈계와 직접 관련 → MODS 평가 제공. 가중치가 임상 중증도와 반드시 일치하지는 않음: 개 APPLEfull에서 hyperglycemia(BG >273 mg/dl) 0점 vs 정상 혈당(84–102) 8점; 고양이에서 심한 anemia(PCV <11% full / <16% fast) 0점 vs 입원 PCV 40%에 14점(full)/9점(fast). 다변량 효과 + 개발 집단의 기저 질환 특성(심한 anemia 고양이·심한 hyperglycemia 개가 수혈·insulin으로 생존) 때문일 가능성."
+  ]},
+  {"type": "heading", "level": 2, "text": "Assessment of Animals with SIRS or MODS (평가·접근)", "gist": "SIRS 발견 → 즉시 원인 국소화 검사; 감염 의심 시 배양 + 광범위 항생제 IV 고용량"},
+  {"type": "list", "items": [
+   "2016 재정의에서 SIRS와의 연결은 제거됐으나, 전신염증의 임상적 확인은 사람·개·고양이의 감염성·비감염성 중증질환 선별의 기초. 고/저체온, 원인 불명의 동성 빈맥·서맥, tachypnea — 특히 mentation 저하, MM 색·피부 온도·femoral 맥박질 이상 동반 시 중요.",
+   "SIRS 기준 발견 시 즉시 원인 국소화 검사: 혈액학(SIRS 평가 완성에 필요), 혈청 생화학, lactate, 동맥 혈압, pulse oximetry, 세포검사, 세균 배양, 영상. SIRS의 낮은 결과 특이도 → SIRS 존재만으로 예후 제시 금지; SIRS 충족 동물 다수가 결국 감염 증거 없음(sepsis 비특이적).",
+   "감염 의심 시: 혈액·소변·부위별 배양 채취 + 광범위 항생제 시작. 감염원 불명확 시 흉·복부 POCUS 또는 정밀 초음파 + 체강액·이상 종괴 흡인(세포검사, 배양·감수성); 비뇨생식기(pyelonephritis, pyometra, prostatitis) 검사 + 무균 채뇨(UA, 배양·감수성); 흉부 방사선(pneumonia·폐 종괴 배제; 심한 폐 침윤 시 기도 세척액 배양); CBC(leukocytosis, leukopenia, left shift), 혈액 도말(호중구 독성 변화, 세포내·외 미생물); Rickettsia rickettsii 등 혈청검사; 국소 감염원 없거나 세균성 endocarditis 의심 시 혈액배양(Bartonella alphaproteobacteria growth medium 포함). 환자별 추가: 새 murmur → echo; 관절 삼출·통증 → 관절천자; 경부·요배부 통증 → CSF·척추 방사선.",
+   "경험적 항생제: 임상 의심 + 지역 경험, 침범 장기, 독력, 가능하면 세포검사·Gram 염색 결과. 세균 sepsis 의심 시 IV로 치료 용량 범위 상한, 시간/농도 의존성 원칙 준수. 시간 의존성 항생제는 loading dose 후 CRI로 조직 농도를 목표 균 MIC 이상 유지. 최근 항생제 노출 없는 동물은 널리 쓰는 약(예: E. coli에 fluoroquinolone)이 유효할 수 있으나, 최근 다른 질환으로 항생제 치료받은 동물은 다제내성 위험 ↑ → 초기부터 강화 치료 필요 가능.",
+   "MODS 선별은 신체검사 + CBC 이상을 요구해 더 복잡. 사람의 qSOFA만큼 MODS를 특징짓거나 사망 위험을 추정하는 신뢰할 만한 cage-side 도구는 현재 없음. APPLEfast·APPLEfull이 가장 잘 검증된 반려동물 중증도 평가; 고양이 APPLEfast는 신체검사 + POC 검사로 빠르게 추정 가능(Ch.13). 개 APPLE 둘 다와 고양이 APPLEfull은 생화학 + 양 체강 초음파 필요 → 선별보다 중증도 특성화·예후 예측의 객관적 도구로 더 유용.",
+   "APPLE의 사망률 추정은 한 병원의 2007–2009 자료 기반 — 현재 치료 전략은 매우 다를 수 있음 → 전체 임상 평가에 통합하되 개별 환자의 절대 사망 위험 정량 도구로 오해 금지. 대화형 APPLE 계산기 다운로드 가능."
+  ]},
+  {"type": "heading", "level": 2, "text": "Summary (요약)", "gist": "SIRS = '심각한 무엇인가' 경고; MODS 확인이 결과에 더 정확한 함의"},
+  {"type": "paragraph", "text": "전신염증 반응은 sepsis와 비감염성 중증질환 모두에 흔한 반응이며, 그 존재는 심각한 상황을 경고한다. SIRS 기준과 피부 온도·MM 색·CRT·행동 변화는 신체검사와 기본 혈액학으로 빠르게 확인된다. 외상·화상·cellulitis 등 원인이 명백할 수도 있지만, 원인이 불분명하면 세균 sepsis, 바이러스·원충·rickettsia 감염, pancreatitis, 면역매개 질환, neoplasia를 배제하는 검사를 시작해야 한다. 추가 검사와 APPLE 같은 점수 지표를 함께 적용해 MODS를 확인하는 것이 결과에 더 중요하고 정확한 함의를 가지나, 환자별 치료 결정과 예후는 임상적으로 복잡하며 어떤 중증도 지표 하나에만 근거해서는 안 된다."}
+ ]
+}
