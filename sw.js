@@ -1,8 +1,10 @@
 /* VECC Calculation Tools — service worker
    업데이트 방법: 파일을 수정해 올릴 때 아래 VERSION 숫자를 하나 올리면
    모든 기기가 다음 접속 때 새 파일을 받습니다. */
-const VERSION = 'v10';
+const VERSION = 'v11';
 const CACHE = 'kuvecc-' + VERSION;
+/* 교재·자료 데이터(data/) 저장소. js/data-sync.js가 채우며 VERSION과 무관하게 유지됩니다. */
+const DATA_CACHE = 'kuvecc-data';
 const PRECACHE = [
   './',
   './index.html',
@@ -10,7 +12,7 @@ const PRECACHE = [
   './tools/bloodgas.html',
   './tools/anesthesia.html',
   './tools/saccm.html',
-  './data/saccm/toc.json',
+  './js/data-sync.js',
   './icons/icon-192.png',
   './icons/icon-512.png',
   './icons/apple-touch-icon.png'
@@ -27,7 +29,7 @@ self.addEventListener('install', (e) => {
 self.addEventListener('activate', (e) => {
   e.waitUntil(
     caches.keys()
-      .then((keys) => Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k))))
+      .then((keys) => Promise.all(keys.filter((k) => k !== CACHE && k !== DATA_CACHE).map((k) => caches.delete(k))))
       .then(() => self.clients.claim())
   );
 });
@@ -41,24 +43,19 @@ self.addEventListener('fetch', (e) => {
   const url = new URL(req.url);
   const sameOrigin = url.origin === self.location.origin;
 
-  /* SACCM 요약 데이터(data/saccm/): 저장된 파일이 있으면 즉시 응답하고, 뒤에서 서버의 새 버전을 받아 캐시를 갱신
-     (stale-while-revalidate). 처음 여는 챕터만 네트워크에서 받습니다.
-     주소에 ?fresh 가 붙은 요청(뷰어가 뒤에서 목차 변경을 확인할 때)만 네트워크 우선입니다. */
-  if (sameOrigin && url.pathname.includes('/data/saccm/')) {
-    const key = url.origin + url.pathname;  // ?fresh 같은 쿼리는 떼고 같은 이름으로 저장
-    const offline = () => new Response('', { status: 504, statusText: 'offline' });
-    const fresh = url.searchParams.has('fresh');
-    const network = fetch(key, { cache: fresh ? 'no-store' : 'no-cache' }).then((res) => {
-      if (!res || !res.ok) return res;
-      const copy = res.clone();
-      return caches.open(CACHE).then((c) => c.put(key, copy)).then(() => res, () => res);
-    });
-    if (fresh) {
-      e.respondWith(network.catch(() => caches.open(CACHE).then((c) => c.match(key)).then((hit) => hit || offline())));
-      return;
-    }
-    e.waitUntil(network.catch(() => null));
-    e.respondWith(caches.open(CACHE).then((c) => c.match(key)).then((hit) => hit || network.catch(offline)));
+  /* 데이터 파일(data/): 기기에 저장된 것이 있으면 바로 응답합니다. 새 파일·수정본은 js/data-sync.js가
+     manifest.json을 보고 미리 받아 두므로 여기서는 서버를 기다리지 않습니다.
+     주소에 ?가 붙은 요청(manifest 확인, 동기화 내려받기)만 서버로 바로 보냅니다. */
+  if (sameOrigin && url.pathname.includes('/data/')) {
+    if (url.search) { e.respondWith(fetch(req)); return; }
+    e.respondWith(
+      caches.open(DATA_CACHE).then((cache) =>
+        cache.match(req).then((hit) => hit || fetch(req).then((res) => {
+          if (res && res.ok) cache.put(req, res.clone());
+          return res;
+        }).catch(() => new Response('', { status: 504, statusText: 'offline' })))
+      )
+    );
     return;
   }
 

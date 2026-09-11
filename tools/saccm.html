@@ -209,6 +209,7 @@ td.na{color:var(--muted)}
   </main>
 </div>
 
+<script src="../js/data-sync.js"></script>
 <script>
 (function(){
   const DATA = '../data/saccm/';
@@ -315,7 +316,7 @@ td.na{color:var(--muted)}
     try {
       const c = await fetchChapter(id);
       S.current = id; store.set('saccm:last', id);
-      renderChapter(c);
+      renderChapter(c); S._shown = c;
       if (S.pendingMark) { highlight(S.pendingMark); S.pendingMark = ''; }
       else window.scrollTo({ top: 0 });
     } catch (e) {
@@ -418,41 +419,55 @@ td.na{color:var(--muted)}
   $('#q-clear').addEventListener('click', () => { $('#q').value = ''; search(); $('#q').focus(); });
   window.addEventListener('hashchange', () => open(decodeURIComponent(location.hash.slice(1))));
 
-  function applyToc(text){
-    const t = JSON.parse(text);
+  function applyToc(t){
     S.toc = (t.chapters || []).slice().sort((a, b) => a.num - b.num);
     S.idx = {}; S.toc.forEach((c, i) => S.idx[c.id] = i);
     renderToc();
+    if (S.current) markActive(S.current);
   }
-  /* 목차는 캐시로 먼저 그리고, 뒤에서 서버 목차를 확인해 달라졌을 때만 다시 그림 */
-  async function refreshToc(prev){
-    if (!(navigator.serviceWorker && navigator.serviceWorker.controller)) return;
-    try {
-      const r = await fetch(DATA + 'toc.json?fresh=' + Date.now(), { cache: 'no-cache' });
-      if (!r.ok) return;
-      const text = await r.text();
-      if (text === prev) return;
-      applyToc(text);
-      if (S.toc.some(t => !S.chapters.has(t.id))) S.full = false;
-      if (S.current) markActive(S.current);
-      if ($('#q').value.trim()) search();
-    } catch (e) {}
+  async function loadToc(){
+    const r = await fetch(DATA + 'toc.json');
+    if (!r.ok) throw new Error(r.status);
+    return r.json();
+  }
+
+  /* 새로 올라오거나 바뀐 파일을 미리 받아 둔 뒤(js/data-sync.js), 목차·현재 챕터에 변경이 있으면 반영 */
+  async function checkUpdates(){
+    if (!window.DataSync) return;
+    const res = await DataSync.run({ prefix: 'saccm/' });
+    if (!res.changed.length && !res.removed.length) return;
+    const ids = res.changed.concat(res.removed).map(p => p.replace(/^saccm\//, '').replace(/\.json$/, ''));
+    ids.forEach(id => { if (id !== 'toc') S.chapters.delete(id); });
+    if (S.toc.some(t => !S.chapters.has(t.id))) S.full = false;
+    if (ids.includes('toc')) {
+      try {
+        applyToc(await loadToc());
+        if (!S.idx.hasOwnProperty(S.current)) { S.current = null; open(S.toc[0] && S.toc[0].id); }
+        if ($('#q').value.trim()) search();
+      } catch (e) {}
+    }
+    if (S.current && ids.includes(S.current)) {              // 보고 있던 챕터가 수정됨 → 내용이 실제로 다를 때만 다시 그림
+      const before = JSON.stringify(S._shown || null);
+      try {
+        const c = await fetchChapter(S.current);
+        if (JSON.stringify(c) !== before) { renderChapter(c); S._shown = c; }
+      } catch (e) {}
+    }
   }
 
   (async function init(){
     const want = decodeURIComponent(location.hash.slice(1)) || store.get('saccm:last') || '';
-    if (want) fetchChapter(want).catch(() => {});  // 목차와 동시에 받기 시작
+    if (want) fetchChapter(want).catch(() => {});             // 목차와 동시에 받기 시작
     try {
-      const r = await fetch(DATA + 'toc.json', { cache: 'no-cache' });
-      if (!r.ok) throw new Error(r.status);
-      const text = await r.text();
-      applyToc(text);
+      applyToc(await loadToc());
       open(S.idx.hasOwnProperty(want) ? want : S.toc[0].id);
-      refreshToc(text);
     } catch (e) {
       $('#toc').innerHTML = '<p class="empty">목차 파일(data/saccm/toc.json)을 불러오지 못했습니다.</p>';
       $('#doc').innerHTML = '<p class="state">목차를 불러오지 못해 챕터를 열 수 없습니다. 인터넷 연결을 확인한 뒤 새로고침하세요.</p>';
     }
+    checkUpdates().then(() => {
+      if (!S.toc.length) init();                              // 처음 설치: 업데이트가 끝난 뒤 다시 시도
+    }).catch(() => {});
   })();
 })();
 </script>
