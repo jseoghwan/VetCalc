@@ -1,0 +1,418 @@
+{
+ "id": "sacc3-p6-c66",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part VI",
+ "part_title": "Fluid Therapy",
+ "chapter_num": 66,
+ "title": "Colloid Solutions",
+ "author": "Steven J. Centola, BVMS, MRCVS, DACVECC; Deborah C. Silverstein, DVM, DACVECC",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "교질액은 큰 친수성 분자(>10,000 Da)를 포함해, 혈관 장벽이 온전한 환자에서는 혈관 내피를 쉽게 통과하지 못하고 혈관내에 머문다.",
+    "Hydroxyethyl starch(HES)는 glucose의 합성 분지 중합체로, 미국의 사람·수의학에서 가장 흔히 쓰는 혈장 확장 교질액이다.",
+    "HES는 용액 내 교질 입자 농도, weight-average molecular weight(kDa), number average molecular weight, molar substitution, C2:C6 hydroxyethyl 치환 비율로 특성화된다.",
+    "HES 관련 응고 장애 기전: 혈소판 기능↓, vWF·FVIII:C·factor VIII-related antigen·factor VIII ristocetin cofactor 농도↓, fibrinogen 중합 장애, 희석성 응고병증.",
+    "건강한 상태에서 albumin은 체내 교질삼투압(COP)의 70%–80%를 차지한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "교질삼투압과 개정 Starling 원리",
+   "gist": "정맥단 재흡수는 없음 — 혈장 COP는 여과를 막을 뿐 역전시키지 못함"
+  },
+  {
+   "type": "list",
+   "items": [
+    "목표 ▸ 적절한 혈관내 용적은 CO, 조직 관류, 말초 산소 운반 유지에 중요하나 중환자에서 달성이 어려울 수 있음.",
+    "전통적 Starling 원리 ▸ 모세혈관 세동맥단에서 혈관내→간질 정수압 경사로 여과, 정맥단에서 혈관내 COP↑로 재흡수.",
+    "개정 Starling 원리 ▸ 내피 glycocalyx층, 내피 기저막, 세포외 기질 개념 도입. 경내피 흐름의 결정 인자로 간질액 COP 대신 subglycocalyx COP. 모세혈관 세정맥단 재흡수는 기존 생각처럼 일어나지 않으며, 혈장 COP는 간질로의 여과에 대항하지만 역전시키지는 못함. 혈장 COP > subendothelial glycocalyx COP이면 교질삼투력은 모세혈관 내강으로의 재흡수를 선호.",
+    "Glycocalyx 손상 ▸ SIRS, 과혈량, 당뇨, 수술, 외상, 패혈증에서 관찰; 모세혈관 투과성↑ → 조직 부종 (Ch.9 Endothelial Glycocalyx, Ch.11 Interstitial Edema).",
+    "교질액의 매력 ▸ 저albumin혈증 환자, 혈관 투과성↑ 질환에서 선택 가능; 용적 절약 효과로 의인성 양성 체액 균형 위험 감소에 유익할 수 있음.",
+    "내인성 교질 입자 ▸ albumin, globulin, fibrinogen. 사용 가능한 교질액은 합성 starch, 동종 혈액 제제, 사람 albumin으로 분류 (Table 66.1). 합성 gelatin·dextran은 부작용 때문에 드물게 사용되어 이 장에서 다루지 않음."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "정상 COP (전혈)",
+   "headers": [
+    "종",
+    "COP (mm Hg)"
+   ],
+   "rows": [
+    [
+     "개",
+     "15.3–26.3"
+    ],
+    [
+     "고양이",
+     "17.6–33.1"
+    ],
+    [
+     "사람",
+     "25–27"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "합성 Starch 교질액 (HES)",
+   "gist": "MS·C2:C6↑ → 반감기↑; 개 hetastarch 7.45일; 부작용은 누적 용량"
+  },
+  {
+   "type": "list",
+   "items": [
+    "주 용도 ▸ COP를 올려 소량으로 혈관내 용적을 빠르게 확장(small volume resuscitation).",
+    "합성 ▸ 감자 또는 옥수수 유래 천연 starch인 amylopectin을 hydroxyethyl화 → α-amylase에 의한 빠른 분해 방지. 제품 형태: hetastarch, hexastarch, pentastarch, tetrastarch.",
+    "농도 ▸ 3%, 6%, 10% — 농도가 혈장 확장 용적 효과에 영향.",
+    "분자량 ▸ WAMW = 모든 입자 분자량의 산술평균; NAMW = 입자 분자량의 중앙값(더 정확하나 드물게 보고). WAMW:NAMW = polydispersity index.",
+    "신장 역치 ▸ 분자량이 신장 역치(45–60 kDa) 미만인 HES는 소변으로 빠르게 배설되어 혈관내 교질 효과↓. 역치 초과 분자는 순환 중 α-amylase로 작은 입자로 가수분해된 뒤 결국 소변으로 배설.",
+    "MS ▸ HES 분자의 glucose 단위당 평균 HE 잔기 수 = 치환 정도, 가수분해 전 순환 지속 시간 지표. 예: tetrastarch 0.4(4 치환), pentastarch 0.5(5), hexastarch 0.6(6), hetastarch 0.7(7) — hetastarch 반감기가 가장 긺. 치환 부위 수가 분자 크기·모양과 α-amylase 부착 위치를 결정.",
+    "C2:C6 ▸ HE기는 glucose 단위의 C2·C3·C6 탄소에 치환. C2 치환은 α-amylase 활성을 억제해 순환 반감기 연장. 분자량↑·치환 정도↑·C2:C6↑ → 반감기↑. MS와 치환 패턴이 약동학의 가장 중요한 특성.",
+    "반감기 ▸ hetastarch(6% HES 450/0.75)는 건강한 개 7.45일 vs 사람 12.8일 — 개의 혈청 α-amylase 활성이 더 높기 때문.",
+    "제거 경로 ▸ 1차 신장 배설(70%); 2차 HES가 조직으로 누출 시 간·비장·림프절의 세망내피세포; 3차 담즙 배설.",
+    "근거의 한계 ▸ 연구마다 용량·종류·농도·대상이 다르고, 사람 자료 외삽 시 소동물의 종 특이적 차이가 있을 수 있음.",
+    "부작용 ▸ 일일 주입량보다 누적 용량의 결과: AKI, 응고병증, 전염증 효과, 아나필락시스, 용적 과부하. 사람에서 foamy macrophage syndrome·지연성 소양증 보고(수의 문헌 보고 없음)."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 66.1 흔히 쓰는 교질액의 특성과 권장 최대 일일 용량",
+   "headers": [
+    "제품",
+    "농도",
+    "원료",
+    "COP (mm Hg)",
+    "WAMW (kDa)",
+    "치환도",
+    "C2:C6",
+    "최대 용량/24h"
+   ],
+   "rows": [
+    [
+     "Hespan",
+     "6% HES",
+     "Amylopectin",
+     "32",
+     "450",
+     "0.7",
+     "4.5:1",
+     "20 ml/kg"
+    ],
+    [
+     "Hextend",
+     "6% HES",
+     "Amylopectin",
+     "31",
+     "670",
+     "0.75",
+     "4.6:1",
+     "20 ml/kg"
+    ],
+    [
+     "Pentaspan",
+     "10% HES",
+     "Amylopectin",
+     "36",
+     "260",
+     "0.45",
+     "5:1",
+     "40 ml/kg"
+    ],
+    [
+     "Vetstarch, Voluven 또는 Hydravol",
+     "6% HES",
+     "Amylopectin",
+     "37",
+     "130",
+     "0.4",
+     "9.1",
+     "50 ml/kg"
+    ],
+    [
+     "Fresh frozen plasma",
+     "—",
+     "—",
+     "12.73",
+     "—",
+     "—",
+     "—",
+     "—"
+    ],
+    [
+     "Cryopoor plasma",
+     "—",
+     "—",
+     "14.5",
+     "—",
+     "—",
+     "—",
+     "—"
+    ],
+    [
+     "5% Albumin",
+     "—",
+     "—",
+     "20",
+     "—",
+     "—",
+     "—",
+     "—"
+    ]
+   ],
+   "note": "본문의 hetastarch 표기는 6% HES 450/0.75(Table의 Hespan은 치환도 0.7). — = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "table",
+   "title": "Table 66.2 합성 교질액 약리학적 특성",
+   "headers": [
+    "약어",
+    "의미",
+    "정의"
+   ],
+   "rows": [
+    [
+     "WAMW",
+     "Weight-average molecular weight",
+     "용액 내 모든 입자 분자량의 평균"
+    ],
+    [
+     "NAMW",
+     "Number average molecular weight",
+     "입자 분자량의 중앙값"
+    ],
+    [
+     "MS",
+     "Molar substitutions",
+     "HES 분자의 glucose 단위당 평균 HE 잔기 수"
+    ],
+    [
+     "C2:C6",
+     "C2 대 C6 위치 hydroxyethyl 치환 비율",
+     "HES 분자의 크기·모양과 α-amylase의 가수분해 부착 위치 결정"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "급성 신손상 (AKI)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "기전 1 — 삼투성 신증(osmotic nephrosis) ▸ HES가 근위세뇨관 세포에 재흡수(pinocytosis) → 세포 공포화·부종. 세포내 lysosome 저장 → 세포내 수분 축적, 세포질 부종, 세포 완전성·기능 변화, 세뇨관 손상. Sucrose, dextran, mannitol, LRS, 조영제 투여 후에도 유사 조직 소견이 있고 AKI 없는 환자에서도 관찰되어 신기능상 의미는 불명.",
+    "기전 2 — 고교질삼투성 신기능 장애 ▸ 교질 입자·COP↑ + 사구체 세동맥의 낮은 신관류압 → 사구체 내 교질삼투력 변화 → 사구체 여과↓."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "수의 연구 요약 — 교질액과 AKI",
+   "headers": [
+    "연구",
+    "대상·설계",
+    "결과"
+   ],
+   "rows": [
+    [
+     "Hayes et al.",
+     "개",
+     "HES 투여가 AKI·사망 등 원내 부작용 위험 증가와 독립적으로 연관; 일일 용량이 높을수록 위험↑(용량 의존)"
+    ],
+    [
+     "Sigrist et al.",
+     "비질소혈증 고양이, 6% HES 130/0.4, 후향적",
+     "미치료 고양이 대비 10일 이내(단기)·90일 이내(장기) 혈청 creatinine 증가 없음"
+    ],
+    [
+     "Boyd et al.",
+     "개 비외상성 실험 쇼크 모델: 6% HES 130/0.4, 4% succinylated gelatin vs 신선 전혈, 균형 등장성 정질액",
+     "출혈성 쇼크·재관류 후 succinylated gelatin군에서 세뇨관 손상 요 biomarker 증가가 가장 컸고 세뇨관 상피세포의 뚜렷한 microvesiculation. 이 biomarker는 사람 ICU에서 AKI·신대체요법 필요성을 예측"
+    ],
+    [
+     "Zersen et al.",
+     "저혈압·저COP·수액 과부하 우려로 6% HES 670/0.7을 받은 마취견, 후향적",
+     "마취 후 creatinine은 마취 전보다 낮고 chloride는 높음"
+    ],
+    [
+     "Diniz et al.",
+     "실험견 용적 보충, 6% tetrastarch vs LRS",
+     "tetrastarch가 경폐 열희석법으로 측정한 EVLW 축적이 적음; 두 수액 모두 폐부종·산소화 장애(PaO₂/FiO₂) 없음, creatinine·NGAL(혈장·요) 기준 AKI 없음"
+    ],
+    [
+     "Yozova et al.",
+     "다양한 질환의 개 ICU 환자, 6% HES 130/0.4 vs 등장성 정질액",
+     "혈장 creatinine에 유의한 차이 없음"
+    ],
+    [
+     "Sigrist et al.",
+     "개, 6% HES 130/0.4, IRIS AKI grade",
+     "HES 치료·미치료군 간 AKI 발생률 차이 없음; 단 HES 투여 일수가 투여 후 10일 이내 AKI grade 상승과 유의하게 연관"
+    ]
+   ],
+   "note": "AKI 위험이 높은 더 아픈 개가 장기 교질 지지를 받았는지는 불명. 소동물에서 합성 교질액과 AKI의 확정적 연관을 밝히려면 추가 연구 필요."
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "응고 효과"
+  },
+  {
+   "type": "list",
+   "items": [
+    "기전 ▸ 혈소판 기능↓; vWF, factor VIII coagulant activity, factor VIII-related antigen, factor VIII ristocetin cofactor 농도↓; fibrinogen 중합 장애; 희석성 응고병증. 추가로 factor VIII/vWF 복합체 배설 가속, vWF 매개 혈소판의 subendothelial collagen 구름·부착↓.",
+    "혈소판 수↓ ▸ 희석 효과, 교질삼투에 의한 혈소판 위축, 혈소판 분해↑.",
+    "HES로 코팅된 혈소판 ▸ vWF·fibrinogen에 결합하는 표면 수용체 GPIIb/IIIa 발현·활성화↓ → 부착·응집 기능 장애(표면 결합 fibrinogen 부착↓; 응집에는 인접 혈소판 간 가용성 fibrinogen 리간드 결합 필요).",
+    "섬유소 용해 촉진 ▸ 형성된 혈병에 통합되면 fibrinogen→fibrin 전환 가속 → 혈병 강도↓, FXIII–fibrin 상호작용↓."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "천연 교질액 (Natural Colloids)",
+   "gist": "혈장 22.5 ml/kg → albumin 0.5 g/dl↑로 비효율; CPP가 albumin·COP 최고"
+  },
+  {
+   "type": "table",
+   "title": "동종 혈액·혈장 제제의 교질 관련 특성",
+   "headers": [
+    "제제",
+    "조제·정의",
+    "구성",
+    "적응·비고"
+   ],
+   "rows": [
+    [
+     "신선 전혈",
+     "—",
+     "적혈구, 혈소판, 응고인자 등 혈액 전 성분",
+     "대량 실혈(>50% 혈액량), 혈소판 치료 필요, 전 성분이 유익할 때. 냉장 보관 시 저온에 의한 vWF 수용체 군집화로 혈소판 기능↓ → 간 대식세포 제거↑"
+    ],
+    [
+     "Fresh frozen plasma (FFP)",
+     "채혈 후 8시간 내 적혈구 분리·동결; ≤ –20°C에서 1년 미만 동결",
+     "모든 응고인자, 항응고인자, alpha macroglobulin, albumin, fibrinogen, fibronectin",
+     "교질 효과로 COP를 올리기엔 비효율(아래 참조)"
+    ],
+    [
+     "Frozen plasma",
+     "신선 혈장을 1년 초과 동결하거나 실온 8시간 초과 보관 → 불안정 응고인자(V, VIII) 소실",
+     "응고인자 II, VII, IX, X와 혈장 단백",
+     "—"
+    ],
+    [
+     "Cryoprecipitate (CRYO)",
+     "FFP를 천천히 해동·원심분리 후 상층액 제거, 남은 용액",
+     "vWF, factor VIII, fibrinogen, fibronectin",
+     "von Willebrand disease·hemophilia A에 의한 활동성 출혈 치료, 또는 해당 환자의 수술 전 예방"
+    ],
+    [
+     "Cryopoor plasma (CPP)",
+     "FFP 원심분리 후 제거한 상층액",
+     "albumin, globulin, antithrombin, protein C, protein S, factor II, VII, IX, X",
+     "albumin 보충·교질 지지에 FFP의 합리적 대안"
+    ]
+   ],
+   "note": "기타 혈장 제제: human serum albumin(HSA), canine albumin, intravenous immunoglobulin (Ch.69 Transfusion Medicine). — = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "table",
+   "title": "혈장 제제별 albumin·COP (Culler et al.)",
+   "headers": [
+    "제제",
+    "평균 albumin (g/dl)",
+    "COP (mm Hg)"
+   ],
+   "rows": [
+    [
+     "CPP",
+     "3.17",
+     "14.5"
+    ],
+    [
+     "FFP",
+     "2.89",
+     "12.73"
+    ],
+    [
+     "CRYO",
+     "2.31",
+     "9.8"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "혈장은 COP를 올리는 효율적인 교질이 아님 — 특히 대형 저albumin혈증 개: 혈청 albumin 0.5 g/dl 올리는 데 혈장 22.5 ml/kg 필요 → 사람·개 albumin이 더 논리적·경제적·효과적 선택일 수 있음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Albumin",
+   "gist": "급성·중증 저albumin(<1.5 g/dl); 25% HSA 2 ml/kg 2시간 → 0.1–0.2 ml/kg/hr"
+  },
+  {
+   "type": "list",
+   "items": [
+    "역할 ▸ 체내 COP의 70%–80%. 상처 치유, 항산화제·자유라디칼 제거·운반체, 정상 혈소판 기능 유지.",
+    "적응 ▸ HSA 또는 canine serum albumin(CSA)을 간질 부종 발생 위험이 있는 저albumin혈증 환자에 사용. PLN, PLE, 말기 간부전, 영양불량, 전신 염증 상태가 흔하지만, 일반적으로 외상·패혈증·광범위 수술 같은 치료 가능한 질환에 의한 급성·중증·진행성 저albumin혈증(<1.5 g/dl) 개·고양이로 제한.",
+    "예후 ▸ 저albumin혈증은 중증 질환·패혈성 복막염으로 입원한 개와 사람에서 이환율·사망률↑과 연관.",
+    "CSA 연구 (Craft et al.) ▸ 패혈성 복막염 개에서 투여 2시간 후 albumin, COP, Doppler 혈압↑; 투여 24시간 후에도 미투여군 대비 albumin 상승 유지.",
+    "소생 수액으로서의 albumin ▸ 수의 중환자에서 연구 부족, 사람에서도 논란. SAFE study: ICU 입원 환자에서 4% HSA vs 0.9% saline — 28일 사망률 감소 없음."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Albumin 투여 방법",
+   "headers": [
+    "방법",
+    "용량·계산",
+    "투여"
+   ],
+   "rows": [
+    [
+     "결핍량 계산",
+     "albumin 결핍(g) = 10 × 0.3 × BW(kg) × (목표 albumin – 환자 albumin)",
+     "6–12시간에 걸쳐 투여"
+    ],
+    [
+     "25% HSA",
+     "2 ml/kg IV, 2시간 → 이후 0.1–0.2 ml/kg/hr, 10시간",
+     "총 용량 최대 2 g/kg"
+    ],
+    [
+     "5% albumin 용액 (HSA를 선호 정질액으로 희석, 개·고양이)",
+     "2 ml/kg/hour",
+     "총 10–20 ml/kg/day"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "title": "HSA 과민반응",
+   "items": [
+    "개에서 HSA 투여 후 제I형·제III형 과민반응 관찰 — HSA가 외래 항원으로 순환 항체와 면역복합체 형성 → 동맥·사구체·활막에 침착. 면역복합체 침착의 고전적 조직 병변은 leukocytoclastic vasculitis.",
+    "Powel et al. ▸ 중환자 개 2마리에서 HSA 투여 8–16일 후 면역복합체 침착을 동반한 제III형 과민반응.",
+    "반복 투여 ▸ 항-HSA 항체가 빠르게 생성되어 비권장. Mathews et al.: 2마리가 수개월 간격으로 25% HSA 반복 투여에도 제I형 반응 없었으나, 둘 다 2일 후 진행성 질환으로 안락사되어 지연 반응은 관찰 불가.",
+    "CSA ▸ 면역원성이 낮아 개에서 HSA보다 일반적으로 안전하다고 여겨지나 전향적 연구 필요."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "결론",
+   "items": [
+    "중환자는 혈관내 용적, 수화 지표, 지속 손실, 기저 질환, 동반질환, COP, 예상 합병증에 맞춘 개별 수액 전략이 필요.",
+    "HES는 수의학에서 가장 흔히 쓰는 합성 교질액 — 낮은 COP, 저혈압, 혈관 투과성↑에 의한 간질 부종·제3공간화 동물에서 유익할 수 있으나, glycocalyx·subglycocalyx 공간에 대한 새로운 이해가 향후 교질액 사용을 바꿀 수 있음.",
+    "합성 교질액은 사람에서 응고병증·AKI와 연관되며 반려동물 연구는 진행 중. 개·고양이에서 응고병증·AKI를 일으키는 HES 종류나 용량에 대한 확정 근거는 현재 없음(연구 대상·프로토콜·수액 종류와 용량·투여 시점·동반질환 차이). 종 특이적 변동이 있을 가능성 → 표준화된 대규모 전향적 대조 연구 필요."
+   ]
+  }
+ ]
+}

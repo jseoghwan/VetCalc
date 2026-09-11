@@ -60,5 +60,14 @@
 {"id": "sacc3-p5-c59", "num": 59, "title": "Traditional Acid-Base Analysis", "part": "Part V", "part_title": "Electrolyte and Acid-Base Disturbances"},
 {"id": "sacc3-p5-c60", "num": 60, "title": "Nontraditional Acid-Base Analysis", "part": "Part V", "part_title": "Electrolyte and Acid-Base Disturbances"},
 {"id": "sacc3-p5-c61", "num": 61, "title": "Hyperlactatemia", "part": "Part V", "part_title": "Electrolyte and Acid-Base Disturbances"},
-{"id": "sacc3-p5-c62", "num": 62, "title": "Urine Osmolality and Electrolytes", "part": "Part V", "part_title": "Electrolyte and Acid-Base Disturbances"}
+{"id": "sacc3-p5-c62", "num": 62, "title": "Urine Osmolality and Electrolytes", "part": "Part V", "part_title": "Electrolyte and Acid-Base Disturbances"},
+{"id": "sacc3-p6-c63", "num": 63, "title": "Assessment of Hydration", "part": "Part VI", "part_title": "Fluid Therapy"},
+{"id": "sacc3-p6-c64", "num": 64, "title": "Assessment of Intravascular Volume", "part": "Part VI", "part_title": "Fluid Therapy"},
+{"id": "sacc3-p6-c65", "num": 65, "title": "Crystalloids and Hemoglobin-Based Oxygen-Carrying Solutions", "part": "Part VI", "part_title": "Fluid Therapy"},
+{"id": "sacc3-p6-c66", "num": 66, "title": "Colloid Solutions", "part": "Part VI", "part_title": "Fluid Therapy"},
+{"id": "sacc3-p6-c67", "num": 67, "title": "Daily Intravenous Fluid Therapy", "part": "Part VI", "part_title": "Fluid Therapy"},
+{"id": "sacc3-p6-c68", "num": 68, "title": "Shock Fluids and Fluid Challenge", "part": "Part VI", "part_title": "Fluid Therapy"},
+{"id": "sacc3-p6-c69", "num": 69, "title": "Transfusion Medicine", "part": "Part VI", "part_title": "Fluid Therapy"},
+{"id": "sacc3-p6-c70", "num": 70, "title": "Blood Types, Pretransfusion Compatibility, and Transfusion Reactions", "part": "Part VI", "part_title": "Fluid Therapy"},
+{"id": "sacc3-p6-c71", "num": 71, "title": "Hemorrhagic Shock", "part": "Part VI", "part_title": "Fluid Therapy"}
 ]}

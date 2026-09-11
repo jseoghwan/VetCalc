@@ -1,0 +1,331 @@
+{
+ "id": "sacc3-p6-c64",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part VI",
+ "part_title": "Fluid Therapy",
+ "chapter_num": 64,
+ "title": "Assessment of Intravascular Volume",
+ "author": "Søren R. Boysen, DVM, DACVECC; Kris Gommeren, DMV, MSc, PhD, DECVIM-CA (Internal Medicine), DECVECC",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "저혈량·과혈량 모두 유의한 이환율·사망률과 연관되므로 모든 중환자에서 혈관내 용적 평가가 중요하다.",
+    "Gold standard가 없어 정적 지표(static marker)로 혈관내 용적 상태를 평가하기는 어렵다.",
+    "임상 소견은 용적 이상을 시사할 수 있으나 혈관내 용적 상태나 수액 반응성 예측에 민감하지도 특이적이지도 않다.",
+    "'Fluid bolus'의 보편적 정의가 없어 임상 권고와 연구 간 비교가 어렵다.",
+    "사람에서 passive leg raising(PLR)과 mini-fluid bolus를 병용하면 혈관내 용적 부하 중 과혈량 위험을 줄일 수 있다.",
+    "Frank–Starling 곡선에 기반해 동적 지표(dynamic marker)로 평가하는 수액 반응성(fluid responsiveness)으로 fluid bolus 치료를 안내할 것을 권장한다.",
+    "POCUS는 자발호흡·양압환기 사람 환자에서 용적 상태와 수액 반응성 추정에 유망하나 수의학에서의 가치는 추가 연구가 필요하다.",
+    "특정 통제 상황(예: 부정맥 없는 양압환기 환자)에서는 pulse pressure variation, systolic pressure variation, stroke volume variation이 신뢰할 만한 수액 반응성 동적 지표다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "서론 · ROSE 원칙과 정적/동적 지표",
+   "gist": "용적 상태는 정적 지표(경보용), 수액 반응성은 동적 지표(정밀 조절용)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "배경 ▸ IV 수액의 이점은 입증됐지만 과도한 수액의 해로움도 입증됨 → 초점이 용적 부하에서 정상 혈량·최적 체액 균형 확립으로 이동, 특히 전신 염증·패혈증 환자.",
+    "ROSE 원칙 (Fig. 64.1) ▸ 중환자(사람) 수액 투여 4단계: Resuscitation(분 단위) → Optimization(시간) → Stabilization(일) → Evacuation(주). 과도하게 공격적인 탈소생(deresuscitation) 시 저관류 위험(5단계). 장기 질환 사람 환자 대상이지만 모든 ICU 환자에 적용 가능.",
+    "수액 소생 시 두 가지 핵심 질문 ▸ (1) 혈관내 용적 상태는? (2) fluid bolus에 대한 생리적 반응은?",
+    "정적 지표 ▸ 용적·압력 지표로 전체 심혈관계 체액량 추정. 임상에서 여러 요인의 영향을 받아 부정확 → 정상 범위를 크게 벗어날 때(경보 지표) 주로 사용, 개별 환자의 최적 용적 조절에는 부적합.",
+    "동적 지표 ▸ 심폐 상호작용, PLR, 소량 수액 주입으로 단기 전부하 변화를 유발하고 이어지는 stroke volume 또는 파생값(pulse pressure) 변화를 감시. 수액 반응성 평가와 수액 과부하 합병증 감소 목적.",
+    "POCUS는 정적·동적 모두 평가 ▸ 정적: CVC diameter, LA:Ao; 동적: CVC collapsibility index.",
+    "Eisenhower matrix (Fig. 64.2) ▸ 덜 통제된 환경·긴급(첫인상, 용적 상태): 임상검사, 혈압/lactate, POCUS, focal echocardiography, CVC diameter, CVP. 더 통제된 환경·비긴급(정밀 조절, 용적 반응성): CVC collapsibility, PPV, SPV, SVV. 시간 효율이 높은 기법일수록 정밀도가 낮아 환자 상황에 맞는 기법을 선택."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Fluid bolus의 정의",
+   "gist": "흔한 정의 10–20 ml/kg 등장성 정질액 10–15분 — 실제로는 잘 지켜지지 않음"
+  },
+  {
+   "type": "list",
+   "items": [
+    "역사 (Fig. 64.3) ▸ 초기 저혈량성 쇼크 지침은 순환 혈액량을 기준으로 1시간 내 혈관내 결핍 보충 목표로 80–90 ml/kg/h(개), 50–60 ml/kg/h(고양이). 고장성·고교질삼투성 수액의 등장과 분포 속도·용적 이해로 수액 종류별 지침이 생김 (Ch.68 Shock Fluid Therapy).",
+    "변화 ▸ 과혈량의 해로움, 쇼크 유형 간 병태생리 차이(혈관 투과성·긴장도 변화), 심근 기능 장애를 고려해 더 면밀한 감시와 수액 반응 재평가를 권장.",
+    "미해결 질문 ▸ fluid bolus의 용량? 투여 속도? 재평가 빈도? — 수의·사람 의학 모두 대체로 답이 없음.",
+    "반려동물 정의 ▸ fluid bolus는 흔히 등장성 정질액 10–20 ml/kg을 10–15분에 걸쳐 투여. 임상에서 엄격히 지켜지지 않아 연구 간 비교가 어려움.",
+    "개별화 ▸ 질환·동반질환·유전적 반응 조합이 환자마다 달라 개별 관리가 유익. 프로토콜 치료(특히 sepsis bundle)가 예후를 개선할 수 있으나 이점은 제한적. 환자별 Starling 힘과 Frank–Starling 곡선이 달라 모든 환자에 일률적 bolus 전략은 비현실적이고 많은 환자에게 해로울 가능성.",
+    "평가 빈도의 trade-off ▸ 잦은 평가는 정밀하지만 시간 효율↓·노동↑ — 환자별로 자주 재평가."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "ROSE 단계별 전략 예시",
+   "headers": [
+    "환자",
+    "ROSE 단계",
+    "접근"
+   ],
+   "rows": [
+    [
+     "전신 염증 반응 없이 소화기 손실로 인한 급성 저혈량성 쇼크, 수축기압 40 mm Hg",
+     "Resuscitation",
+     "1차 평가 중 등장성 수액 80 ml/kg/h 시작해도 해로울 가능성 낮음. 첫 bolus 효과 평가를 위해 투여를 늦추면 시간 효율↓"
+    ],
+    [
+     "기계환기 중인 패혈성 쇼크 환자, 안정화되어 승압제 투여 중",
+     "Optimization·Stabilization",
+     "수액 과부하 위험↑ → 소량 fluid challenge와 bolus마다 잦은 재평가가 유익할 가능성"
+    ]
+   ],
+   "note": "단계 간 상당한 중첩이 있으며 모든 환자가 모든 단계를 거치지는 않는다."
+  },
+  {
+   "type": "table",
+   "title": "Fig. 64.4 등장성 정질액 투여 지침",
+   "headers": [
+    "방법",
+    "용량·속도",
+    "효율 / 정밀도"
+   ],
+   "rows": [
+    [
+     "Shock rate",
+     "개 90–80 ml/kg/h\n고양이 60–50 ml/kg/h",
+     "높은 효율 · 낮은 정밀도"
+    ],
+    [
+     "Shock bolus",
+     "10–20 ml/kg, 10–15분",
+     "↓"
+    ],
+    [
+     "Mini bolus",
+     "5 ml/kg, 1–3분",
+     "↓"
+    ],
+    [
+     "Passive leg raising",
+     "—",
+     "↓"
+    ],
+    [
+     "Valsalva effects",
+     "—",
+     "낮은 효율 · 높은 정밀도"
+    ]
+   ],
+   "note": "Shock bolus 시간은 본문 정의(10–20 ml/kg을 10–15분) 기준. 본문의 mini-bolus(fluid challenge)는 3–5 ml/kg을 5분 이내로 기술. — = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Mini-bolus와 Passive Leg Raising",
+   "gist": "개 mini-bolus 3–5 ml/kg 5분 내; PLR은 취소 가능한 가상 bolus"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Mini-bolus (fluid challenge) ▸ 개에서 등장성 정질액 3–5 ml/kg까지 소량을 5분 이내 투여하는 방법이 기술됨 (Ch.68).",
+    "PLR (virtual fluid bolus, 사람) ▸ 다리 정맥계 용적을 중심 순환으로 이동시켜 fluid bolus 효과를 모방. 장점: 실제 수액을 주지 않으므로 반응이 부적절하거나 용적 과부하 징후가 보이면 다리를 내리기만 하면 됨. 일부 수액 반응성 기법과 달리 자발호흡, 부정맥, 저일회호흡량 환기 환자에서도 가능.",
+    "PLR 한계 ▸ 자세 변화가 필요해 깨어 있는 반려동물에서 아드레날린/교감신경 반응 또는 white coat 반응을 유발 → 혈역학 지표에 영향, 가상 bolus 효과 교란. 실용상 마취된 수의 환자로 적용이 제한되며, mini-fluid·PLR challenge 반응을 정밀·신속히 평가하기 어려워 둘 다 임상 적용이 제한됨."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "용적 평가 · 생리와 Gold Standard",
+   "gist": "환류 = (MSFP – RAP)/Rv; 수액은 stressed volume을 올려야 효과"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Unstressed vs stressed volume ▸ 혈액량 대부분은 확장성이 큰 용량 정맥에 있으며 경벽압에 기여하지 않는 부분이 unstressed volume. 경벽압을 0 이상으로 만드는 부분이 stressed volume으로 mean systemic filling pressure(MSFP)의 주 기여자.",
+    "정맥 환류 공식 ▸ venous return = (MSFP – RAP)/Rv. MSFP, 우심방압(RAP), 정맥 흐름 저항(Rv)이 주 구동력 → 환류 증가 방법: (1) RAP↓, (2) Rv↓, (3) MSFP↑.",
+    "RAP↓ ▸ 방법이 제한적; RAP가 너무 낮으면 흉곽 입구에서 정맥 허탈 → Rv↑·환류↓.",
+    "Rv↓ ▸ 정맥 확장·정맥 순응도↑로 가능하나 순응도↑는 stressed volume을 희생해 unstressed volume을 늘려 MSFP↓ → 순효과 불확실.",
+    "MSFP↑ ▸ 정맥 수축 또는 수액 부하. 혈관 수축은 Rv도 올려 환류 증가가 제한적 → 수액 부하를 흔히 사용하나, 효과가 있으려면 RAP보다 stressed volume을 더 크게 올려야 함.",
+    "대정맥 초음파 ▸ 벽이 얇고 탄력적이라 저혈량 시(unstressed 비율↑) 크기↓, 과혈량 시(stressed↑) 팽창 → stressed/unstressed 비율 추적 (Ch.189 POCUS in the ICU).",
+    "Gold standard ▸ thermodilution, lithium dilution CO, pulse contour analysis, transthoracic impedance (Ch.182 Cardiac Output Monitoring). 대부분 침습적이고 특수 장비·훈련이 필요해 임상에서 드물게 사용 → 주로 연구 환경."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "신체검사 · 방사선 · 관류 지표",
+   "gist": "사람 신체검사로 과혈량 감지 민감도 8%; 관류 지표는 경보 신호일 뿐"
+  },
+  {
+   "type": "table",
+   "title": "신체검사상 용적 이상 지표",
+   "headers": [
+    "저혈량 지표",
+    "과혈량 지표"
+   ],
+   "rows": [
+    [
+     "점막 건조, 피부 텐트 지연, 창백, CRT 지연, 사지 냉감, 저체온, 약하거나 촉지 불가한 맥박, 빈맥, 빈호흡, 정맥 허탈, 높은 요비중, 요량 감소",
+     "장액성 콧물, 촉촉한 잇몸, 젤라틴 같은 피부주름, 말초 부종, 도약맥(bounding pulse), 경정맥 팽창, 경정맥 박동 상승, 낮은 요비중, 요량 증가"
+    ]
+   ],
+   "note": "응급·중환자 평가에 필수 요소로 남아 있으나 민감도·특이도가 낮음이 확립됨. 사람에서 신체검사(청진, 경정맥 평가, 말초 부종·복수)의 과혈량 감지 민감도 8%, 특이도 74%. 따라서 신체검사에서 저·과혈량 징후가 보이면 유의한 용적 변화를 시사 → 다른 지표를 더 철저히 평가."
+  },
+  {
+   "type": "list",
+   "items": [
+    "흉부 방사선 ▸ 중증 체액 균형 이상은 감지 가능. 심장 크기·CVC·폐혈관 직경 변화로 저·과혈량을 감지하는 정확도 사람 44%; 외상 고양이에서 저혈량 감지 민감도 19%(1개 연구).",
+    "관류 지표 ▸ 상류(동맥압)·하류(lactate) 관류 지표로 간접 평가하나 혈액량 외 요인에도 영향 (Ch.61 Hyperlactatemia, Ch.181 Hemodynamic Monitoring). 용적 상태를 반영하는 값은 진행된 저·과혈량에서 나타나 미묘한 상태를 놓침 → 긴급도를 알리는 좋은 경보 신호이나 개별 정밀 수액 치료에는 부족."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "보조 초음파 소견",
+   "headers": [
+    "소견",
+    "원리·해석",
+    "주의"
+   ],
+   "rows": [
+    [
+     "폐 초음파 (PLUS) — FALLS protocol (사람)",
+     "수액 bolus를 받지 않은 단순 저혈량성 쇼크 환자는 dry lung; 적절한 수액은 wet lung 없이 저혈량을 교정해야 함. Wet lung = 한 폐 초음파 창에서 B-line 증가(>3). 심인성 쇼크·좌심부전은 초기부터 wet lung 가능성, 분포성 쇼크는 임상적으로 불안정한 채로 수액 부하 중 wet lung 발생 가능성↑",
+     "dry → wet 진행 시 추가 평가와 수액 계획 재평가. Wet lung 원인은 다양(alveolar interstitial syndrome 등) → 기저 원인 확인 (Ch.189)"
+    ],
+    [
+     "담낭벽 부종 (halo sign)",
+     "비특이적이며 아나필락시스와 흔히 연관. 수액 부하 중 나타나면 과혈량 시사 가능",
+     "RAP↑ 동반 과혈량이 원인이면 CVC 확장, 복강 자유액 등 다른 용적 과부하 초음파 소견을 흔히 동반"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "정적 지표 (Static Markers)",
+   "gist": "CVP·PAOP는 용적 예측 불가; CVCd와 좌심방 크기가 POCUS 정적 지표"
+  },
+  {
+   "type": "list",
+   "title": "CVP · PAOP",
+   "items": [
+    "잘 통제된 사람·수의 중환자 병원에서 용적 평가에 흔히 사용했으나, 최근 연구는 둘 다 혈관내 용적을 예측하지 못한다고 시사.",
+    "CVP는 RAP, 심장 충만압, 전부하 변화의 대리 지표로 부적합 — 심실 압력-용적 곡선이 비선형이고 심장·폐·흉강 내압 변화에 영향받음.",
+    "둘 다 침습적, 비교적 고가, 기술적으로 거치가 어렵고 합병증과 연관. 다른 이유로 중심정맥관이 있으면 극단적 CVP 값이나 신뢰할 만한 시간 경과 추세가 중증 저·과혈량 파악에 여전히 도움."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "CVC 직경 (CVCd)",
+   "items": [
+    "사람 ▸ 작거나 납작한 IVC 직경(IVCd)은 저혈량과 상관, 외상·급성 수술 환자의 불량 예후와 연관. 외상 환자에서 수액 소생 후 IVC 확장 불량은 동맥압과 무관하게 혈관내 용적 부족 시사. IVCd는 혈압·심박수보다 쇼크 재발의 더 좋은 예측 인자이며 사람 ECC에서 확립됨.",
+    "개 ▸ CVCd는 용적 상태 및 CVP와 상관. 헌혈로 경도(약 8%)의 임상적으로 감지 불가한 저혈량 시 결과는 유의한 변화 없음~경도 감소로 혼재. 만성 DMVD 개에서 ACVIM stage가 높을수록 체액 저류·과혈량으로 CVCd↑.",
+    "측정 부위 ▸ suprailiac(신장), 우측 늑간(transhepatic), subxiphoid(횡격막) 수준 (Ch.189). 개에서 세 부위 모두 쉽게 평가 가능하나 평가자 간 변동은 subxiphoid가 suprailiac·우측 늑간보다 낮음.",
+    "한계 ▸ 설문에서 많은 수의사가 CVC 평가에 자신이 없고 추가 훈련 필요. 복부 불편감 환자에서 평가 어려울 수 있음."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Cardiac POCUS (간이 심초음파)",
+   "items": [
+    "사람 ▸ 여러 국가에서 중환자 전문의 교육의 표준 — 주로 용적 평가 역할 때문. 용적 상태가 불확실한 환자에서 의사결정 개선·치료 계획 변경. 수축력, 심실 내강 크기, 심실벽 두께, 심방 내강 크기를 주관적으로 점수화하며 최소 훈련으로 습득.",
+    "심실 내강, 특히 심방 내강이 저·과혈량 모두에서 크기 변화를 보임.",
+    "개 ▸ 저혈량 임상 증상이 있는 개는 좌심실·좌심방 내강이 작고 좌심실벽이 두꺼움 — 저혈량 중증도에 비례. 임상 지표가 정상이어도 좌심실 내강이 작으면 최적 이하 용적 상태. 임상 지표보다 용적 변화 감지 민감도가 높음이 개에서 입증.",
+    "고양이 ▸ 용적 고갈(체중의 7%–10%) 후 심실벽↑, 심실·심방 내강↓; 용적 투여 시 좌심방·좌심실 내강↑.",
+    "좌심방 크기 ▸ 개·고양이에서 용적 변화 감지에 아마 가장 민감한 cardiac POCUS 지표. 감소는 저혈량을 강하게 시사하나 폐쇄성 질환 배제 불가; 증가는 과혈량, 중증 부정맥, 울혈성 심질환, 확장성 심근병증에서 가능. 비침습·저렴·반복 가능·신속·응급실에서 사용 가능·최소 훈련.",
+    "현실 ▸ 수의 설문에서 응급 임상의의 절반만 초음파 좌심방 평가에 자신 있음 — 사람 소아 중환자 의사의 절반만 POCUS로 fluid bolus를 안내하는 것과 유사."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "동적 지표 (Dynamic Markers)",
+   "gist": "사람 불안정 ICU 환자 약 50% 비반응; 저혈압 개는 60%–65%가 bolus에 반응"
+  },
+  {
+   "type": "list",
+   "items": [
+    "용적 상태를 알아도 수액 반응 여부나 승압제·양성 변력제 시작 필요성은 예측 못함. 수액 반응성 = fluid challenge 후 관류를 개선하는 능력.",
+    "사람 ▸ 혈역학적으로 불안정한 ICU 소아·성인의 약 50%가 fluid challenge에 반응하지 않음.",
+    "개 (예비 근거) ▸ 저혈압(Doppler 혈압 <90 mm Hg)으로 ECC에 내원한 개의 60%–65%가 fluid bolus에 반응(혈압 정상화로 정의). 기저 원인에 따른 차이는 없었으나 표본이 작고, 혈압 정상화(수액 반응성의 정적 지표) 기준은 일부 반응 개체를 놓쳤을 수 있음 → 더 큰 개·고양이 연구 필요.",
+    "동적 지표 ▸ 알려진 용적·요인이 유발한 용적/압력 변화를 평가 → 추가 fluid challenge에서 이득을 볼지(fluid responder) 아닌지(nonresponder) 판정.",
+    "적용 단계 ▸ 정밀 조절이 목적이므로 optimization·stabilization 단계에 주로, resuscitation 단계에는 덜 사용. 마취·양압환기 중 같은 통제된 환경에서 자주 사용 (Fig. 64.2). 단, 저자들은 resuscitation 단계에서도 CVCCI와 LA:Ao를 흔히 평가해 주관적 기준값을 확보 — 빠르고 주관적 평가가 쉬움."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Frank–Starling · Marik–Phillips 곡선 (Fig. 64.3)",
+   "items": [
+    "패혈성 쇼크 환자는 저혈량성 쇼크 환자보다 과혈량에 더 취약할 수 있음 — 패혈증에서 EVLW 곡선이 좌측 이동.",
+    "수액 반응 환자(a) ▸ bolus 후 EVLW의 유의한 증가 없이 전부하↑ → 최적 전부하 도달까지 SV↑(CO 크게 증가, EVLW 소폭 증가).",
+    "수액 비반응 환자(b) ▸ 전부하 증가가 미미하거나 없어 SV 개선 없음, EVLW는 유의하게 증가(CO 소폭 증가, EVLW 크게 증가).",
+    "환자마다 곡선이 고유하지만 패혈증 환자는 EVLW 축적 경향이 커 더 신중히 조절.",
+    "곡선의 평탄부 환자 ▸ fluid challenge에 비반응, 승압제·양성 변력제가 더 유익할 가능성. 추가 bolus는 SV를 올리지 못하고 해로울 가능성 — 높은 충만압에서 이완기 순응도가 변해 좌심실 압력-용적 곡선이 곡선형이기 때문.",
+    "심방압↑ → 정맥·폐 정수압↑ + natriuretic peptide 분비↑ → 체액이 간질로 이동, 폐·조직 부종↑ (Ch.11). 조직 부종은 산소·대사물 확산 장애, 조직 구조 왜곡, 모세혈관 혈류·림프 배액 방해, 세포 간 상호작용 교란.",
+    "초점이 용적 상태 → 수액 반응성으로 옮겨가면 소량 bolus, PLR 가상 bolus, 폐-심장 상호작용의 Valsalva 원리가 반응성 평가와 과부하 합병증 방지에 더 중요 (Fig. 64.4)."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "동적 지표 비교",
+   "headers": [
+    "지표",
+    "원리",
+    "적용·해석",
+    "한계"
+   ],
+   "rows": [
+    [
+     "PPV · SPV · SVV",
+     "양압환기·전신마취 중 호흡 압력 변화가 폐-심장 상호작용으로 SV·pulse pressure·수축기압 변동 유발 (Fig. 64.5)",
+     "Frank–Starling 곡선의 낮은 위치일수록 호흡 주기 중 변동↑; 반응자가 비반응자보다 변동 큼. 보통 측정 지표 변동 >10%–15%를 수액 반응성으로 정의. 다른 변수가 일정하면 변동이 클수록 추가 bolus 이득 가능성↑",
+     "통제 가능 변수: 일회호흡량, 양성 흡기압, PEEP. 통제 어려운 변수: 자발 호흡 노력, 흉벽 순응도 변화, 심장 질환(부정맥), 우심부전, 복강내압 변화 → 연구 간 직접 비교 어려움. 통제된 환경 전용"
+    ],
+    [
+     "Plethysmographic variability index (PVI)",
+     "PPV·SVV·SPV와 유사 원리; plethysmograph 신호의 곡선하면적 계산",
+     "덜 침습적인 동적 평가 수단이 될 가능성 (사람·수의학에서 최근 평가)",
+     "내장 계산 소프트웨어가 현재 사람용으로만 보정; 신뢰할 만한 신호 필요 → 피부 색소, 혈관 긴장도, 말초 관류에 의존. 불안정 환자 적용 가능성 미확정"
+    ],
+    [
+     "CVC collapsibility index (CVCCI)",
+     "호흡에 따른 흉막내압 변화(Valsalva 원리) → 흡기·호기 간 CVC 직경 변화(%)\nCVCCI = (CVCd max – CVCd min) / CVCd max",
+     "아래 IVCCI·CVCCI 항목 참조",
+     "심기능, 호흡 노력, 복강내압, 압력 artifact의 영향"
+    ],
+    [
+     "VTIAO (advanced cardiac POCUS)",
+     "하행대동맥 면적 × 좌심실 유출로 volume time integral = 1회 박출 혈액 기둥 → CO 직접 계산. Valsalva 원리 또는 mini-fluid bolus 전후 VTIAO 변화 평가",
+     "의식 있는 개에서 VTIAO로 수액 반응성을 정확히 평가한 최근 연구 있음",
+     "높은 숙련도 필요. 대동맥 면적 계산의 작은 오차나 Doppler 각도의 약간 변화가 mini-bolus·Valsalva로 예상되는 변화보다 큰 측정 변화를 유발 (Fig. 64.6)"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "title": "IVCCI (사람) · CVCCI (개)",
+   "items": [
+    "Fat IVC ▸ 넓은 IVC + IVCCI <50% → 과혈량, 울혈성 심질환, 심장눌림증에 의한 높은 CVP와 연관.",
+    "Flat IVC ▸ 좁은 IVC + IVCCI >50% → 낮은 CVP와 상관, 저혈량 시사.",
+    "건강한 성인(사람) 평균 IVCCI 47.3% ± 8.9%.",
+    "처음엔 양압환기 환자에서 시행됐으나 최근 자발호흡 중환자에서도 가능함이 입증. 자발호흡 환자의 반응자/비반응자 구분 역치는 연구마다 다르나, IVCCI ≥ 48%는 민감도 84%, 특이도 90%로 수액 반응성 예측.",
+    "개 ▸ 수의 연구 제한적. 헌혈은 CVCCI 증가와 연관; DMVD의 ACVIM stage 진행은 CVCCI 감소와 연관. 마취·기계환기 개에서 통제된 조건하 CVCCI가 수액 반응성을 예측한 연구 있음 → 유망하나 적용 지침 권고 전 추가 연구 필요."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Gray Zone 접근과 결론",
+   "gist": "Yes–Maybe–No; VTIAO <10.45 cm 비반응, >11.86 cm 반응"
+  },
+  {
+   "type": "list",
+   "items": [
+    "개념 ▸ 수액 반응성 평가의 목적은 추가 bolus가 이로울지(CO↑) 해로울지(용적 과부하) 실시간 결정. 단순 yes/no는 과도한 단순화 — 중증 저혈량은 추가 challenge의 이득/위험비가 높고(resuscitation 단계는 반응성보다 용적 상태가 초점), 뚜렷한 과혈량은 추가 bolus가 해로움. 그 사이에 상당한 중첩.",
+    "정의 ▸ 3단계 결정 트리 Yes – Maybe – No. Gray zone = 반응자·비반응자 분류의 민감도 또는 특이도가 90% 미만인 값 구간 (Fig. 64.7).",
+    "예시 (Fig. 64.7) ▸ VTIAO 10.45 cm 미만 → >90% 신뢰로 fluid nonresponder; 11.86 cm 초과 → >90% 신뢰로 fluid responder. Gray zone 값은 반응을 신뢰성 있게 판정 못함 → 다른 임상 지표와 임상의 판단, 이상적으로 연속 측정해 추세 추적.",
+    "요약 ▸ 측정값이 gray zone에서 멀수록 분류 신뢰도↑.",
+    "결론 ▸ ROSE 원칙으로 수액 치료에 대한 관심이 새로워짐. 용적 평가는 '용적 상태 평가' 또는 '수액 반응성 평가'로 정의하고, 환경 통제 정도에 따라 기법을 선택. 정밀 조절이 중요할수록 소량 bolus, PLR, Valsalva 효과를 고려해 과부하 예방. POCUS는 환경과 무관하게 즉시 정보 제공. 이분법적 사고를 피하고 gray zone 접근으로 임상적으로 의미 있는 저·과혈량을 최소화."
+   ]
+  }
+ ]
+}
