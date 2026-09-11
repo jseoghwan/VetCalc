@@ -1,0 +1,344 @@
+{
+ "id": "sacc3-p2-c25",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part II",
+ "part_title": "Respiratory Disorders",
+ "chapter_num": 25,
+ "title": "Acute Respiratory Distress Syndrome",
+ "author": "Laura Osborne, BVSc Hons, DACVECC; Kate Hopper, BVSc, PhD, DACVECC",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "ARDS는 국소 또는 전신 염증 과정에 대한 반응으로 폐모세혈관 내피 투과성이 증가하여 생기는, 점점 심해지는 폐부종 증후군이다.",
+    "ARDS는 임상 진단이다 — 소인이 되는 내과·외과적 위험 인자가 있는 환자에서 특정 기준을 충족하는 호흡부전이 발생하면 진단한다.",
+    "사망률이 높다. 관리의 핵심은 lung protective ventilation과 기저 위험 인자의 확인·특이적 치료다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Introduction · Pathophysiology (개요·병태생리)",
+   "gist": "염증성 폐 손상 → 투과성 결손 → 단백 풍부 부종·shunt"
+  },
+  {
+   "type": "list",
+   "items": [
+    "정의: 폐에 대한 염증성 손상으로 생기는 중증 저산소성 호흡부전, 사망률 높음.",
+    "원인: 감염이 가장 흔함 — 사람 ARDS의 85% 초과가 폐렴·흡인 폐렴·패혈증.",
+    "진단 gold standard 없음 — 비특이적 기준 충족에 의존하므로 과소진단 가능성.",
+    "발생률: 소동물은 적절한 진단 검사를 하지 않아 알 수 없음; 사람 ICU에서 2%–19% (진단 기준·ICU 환자군 차이 반영)."
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "장벽: 폐포 가스교환면은 type 1 폐포 상피세포와 폐모세혈관 내피가 밀착 — type 1 세포가 폐포막 투과성 기능 유지.",
+    "손상: 염증성 손상이 상피 또는 내피를 손상 → 투과성 결손 → 간질·폐포에 단백 풍부 액체와 염증세포 유입.",
+    "결과: surfactant 기능장애 → atelectasis·폐 역학 변화; 확산 장애 + 폐내 shunt에 의한 venous admixture로 가스교환 장애.",
+    "기원: 국소(원발성 폐질환) 또는 폐외 기원.",
+    "VILI(Chapter 39)가 병태생리를 복잡하게 함 — 조직병리 변화 상당수를 VILI가 만들 수 있으나, lung protective ventilation 보급 후 diffuse alveolar damage 등 부작용 발생은 감소."
+   ],
+   "title": "병태생리"
+  },
+  {
+   "type": "table",
+   "title": "ARDS의 진행 단계",
+   "headers": [
+    "단계",
+    "시기",
+    "주요 소견"
+   ],
+   "rows": [
+    [
+     "Acute exudative phase",
+     "첫 1–7일",
+     "diffuse alveolar damage, hyaline membrane 형성, 호중구 유입\n폐포에 액체·단백·백혈구·적혈구 유입 (상피-내피 장벽 손상)\n폐 innate immune 활성 → alveolar macrophage 자극, 호중구·순환 macrophage 모집\ncytokine·ROS·eicosanoid 방출 → 상피 손상, 단백 분해, surfactant 기능장애, 투과성↑, 국소 미세혈전\n호중구가 중심 역할"
+    ],
+    [
+     "Fibroproliferative phase",
+     "exudative phase 이후 수주\n사람에서 3주 넘게 지속 가능\n섬유화는 발병 48시간 이내에도 시작 가능",
+     "type II 폐포 상피세포 증식, 간질 섬유화, 삼출물 organization\n폐 구조 변형 → compliance 현저히↓\ntype II 증식·간질 비후·폐포/모세혈관망 소실 → 지속 hypoxemia"
+    ],
+    [
+     "회복 (Outcome)",
+     "사람 생존자 대부분 6–12개월 내 거의 정상 폐기능 회복",
+     "호중구 apoptosis, type II → type I 분화, fibroproliferation 종료, 폐포 부종·provisional matrix 재흡수\n폐섬유화는 완전히 해소되지 않을 수 있음\n장기 장애·삶의 질 저하 흔함"
+    ]
+   ],
+   "note": "단계는 이해를 돕기 위한 구분이며 임상 환자에서는 변이와 중첩이 크다."
+  },
+  {
+   "type": "list",
+   "items": [
+    "Volutrauma: 큰 tidal volume·높은 최고 기도압에 의한 폐포 과팽창 — 폐 손상 발생·전파의 핵심 손상으로 지목.",
+    "Atelectrauma: 원위 기도·폐포의 반복적 재모집과 허탈.",
+    "Biotrauma: atelectrauma 등으로 유발되는 염증 매개체 방출.",
+    "Barotrauma: 과도한 압력에 의한 폐포 파열.",
+    "Oxygen toxicity.",
+    "정상 폐 동물 실험에서 큰 tidal volume·높은 최고 기도압 환기가 ARDS와 유사한 임상·생리·조직 이상을 유발."
+   ],
+   "title": "Ventilator-Induced Lung Injury (VILI)"
+  },
+  {
+   "type": "table",
+   "title": "ARDS Phenotypes",
+   "headers": [
+    "구분",
+    "Hypoinflammatory",
+    "Hyperinflammatory"
+   ],
+   "rows": [
+    [
+     "비율",
+     "—",
+     "약 30%"
+    ],
+    [
+     "특징",
+     "—",
+     "쇼크·대사성 산증 유병률↑, 사망률 더 높음"
+    ],
+    [
+     "치료 반응",
+     "PEEP(ALVEOLI trial)·수액 관리(FACCT trial)에 대한 반응이 두 phenotype 간 다름 → 다른 관리 전략 필요 가능",
+     "(좌동)"
+    ]
+   ],
+   "note": "임상 지표와 biomarker로 구분. — = 원문에 해당 내용 없음"
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Causes / Risk Factors (원인·위험 인자)",
+   "gist": "개: 흡인 폐렴(직접), 개·고양이: SIRS·패혈증(간접)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "직접 원인(원발성 폐질환): 폐 상피의 국소 손상.",
+    "간접 원인(폐외 질환): 전신 염증 질환이 혈관 내피를 광범위하게 손상.",
+    "수의 후향 연구 2건: 개에서 흡인 폐렴이 흔한 직접 원인, 개·고양이 모두에서 SIRS·패혈증이 흔한 간접 원인."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 25.1 수의 환자에서 보고된 ARDS 원인",
+   "headers": [
+    "분류",
+    "원인"
+   ],
+   "rows": [
+    [
+     "개·고양이에서 흔히 보고 — 직접(폐)",
+     "Aspiration pneumonia, pneumonia, pulmonary contusions, chest trauma, mechanical ventilation"
+    ],
+    [
+     "개·고양이에서 흔히 보고 — 간접(폐외)",
+     "Sepsis, SIRS, shock, pancreatitis, trauma, acute kidney injury, multiple transfusions"
+    ],
+    [
+     "수의학에서 추가 보고",
+     "Bee envenomation, smoke inhalation, lung lobe torsion, adverse drug reactions, tracheal collapse, paraquat intoxication"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Diagnostic Criteria (진단 기준)",
+   "gist": "임상 기준 진단 — P/F ≤300 VetALI, ≤200 VetARDS"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Diffuse alveolar damage가 병리학적 hallmark이나, 특이적 진단 검사는 없음 — 소동물은 사람 기준을 변형한 임상 기준 사용.",
+    "1994 AECC 기준: (1) 급성 호흡곤란, (2) 흉부 방사선 양측 침윤, (3) hypoxemia, (4) pulmonary artery wedge pressure <18 mm Hg 또는 좌심방 고혈압의 임상 증거 없음. ALI를 연속선상으로 보고 산소화 이상이 더 심하면 ARDS.",
+    "AECC 한계: 임상 진단과 부검 소견 간 신뢰도·타당도 문제.",
+    "2012 Berlin 정의: 혈액가스 측정 시 표준화된 환기 설정 부재 문제를 보완 — ALI 용어 삭제, PEEP 적용 기계환기 환자에서 mild/moderate/severe로 분류.",
+    "2007 Dorothy Russell Havemeyer Working Group(VetALI/VetARDS): 원래 AECC 정의를 반영 — 필수 4기준 (1) 급성 발병(<72 hours) 호흡곤란, (2) 알려진 위험 인자, (3) 폐모세혈관압 증가 없는 폐모세혈관 누출 증거, (4) 비효율적 가스교환 증거. 기도 샘플링의 현실적·비용적 제약으로 diffuse pulmonary inflammation 증거는 선택적 5번째 기준. 경한 hypoxemia(PaO₂/FiO₂ ≤300)는 ALI로 분류."
+   ],
+   "title": "정의의 변천"
+  },
+  {
+   "type": "table",
+   "title": "Table 25.2 Berlin 정의 vs 수의 ALI/ARDS 정의",
+   "headers": [
+    "기준",
+    "Berlin Definition (사람 ARDS)",
+    "Veterinary ALI/ARDS (VetALI/VetARDS)"
+   ],
+   "rows": [
+    [
+     "시기",
+     "알려진 임상적 손상 또는 새롭거나 악화되는 호흡기 증상 1주 이내",
+     "안정 시 빈호흡·노력성 호흡의 급성 발병 (<72 hours)\n알려진 위험 인자"
+    ],
+    [
+     "부종 기원 / 영상",
+     "심부전·수액 과부하로 완전히 설명되지 않는 호흡부전 — 위험 인자 없으면 정수압성 부종 배제 위해 객관적 평가(e.g., echocardiography) 필요\n양측 음영 — 삼출·엽/폐 허탈·결절로 완전히 설명되지 않음 (chest radiograph 또는 CT)",
+     "폐모세혈관압 증가 없는 폐모세혈관 누출 증거ᵃ (다음 중 하나):\na. 흉부 방사선 양측/미만성 침윤 (1 quadrant/lobe 초과)\nb. CT에서 양측 의존성 음영\nc. 전도 기도 내 단백성 액체\nd. 폐혈관외 수분 증가"
+    ],
+    [
+     "산소화*",
+     "Mild: 200 mm Hg < PaO₂/FiO₂ ≤300 mm Hg, PEEP 또는 CPAP ≥5 cm H₂O\nModerate: 100 mm Hg < PaO₂/FiO₂ ≤200 mm Hg, PEEP ≥5 cm H₂O\nSevere: PaO₂/FiO₂ ≤100 mm Hg, PEEP ≥5 cm H₂O",
+     "비효율적 가스교환 증거 (하나 이상):\na. PEEP·CPAP 없이 FiO₂를 알 때 hypoxemia\n  i. PaO₂/FiO₂ ≤300 mm Hg → VetALI, ≤200 mm Hg → VetARDS\n  ii. alveolar–arterial oxygen gradient 증가\n  iii. venous admixture (noncardiac shunt)\nb. dead space ventilation 증가"
+    ],
+    [
+     "추가 기준",
+     "—",
+     "미만성 폐 염증 증거:\na. transtracheal wash/BAL 샘플 호중구증가\nb. transtracheal wash/BAL 염증 biomarker\nc. molecular imaging (PET)"
+    ]
+   ],
+   "note": "* 고도 1000 m 초과 시 보정: PaO₂/FiO₂ × (barometric pressure/760)\nᵃ 심인성 부종 증거 없음 (하나 이상): PAOP <18 mm Hg; echocardiography 포함 좌심부전을 뒷받침하는 임상·진단 증거 없음.\n본문에는 Berlin 분류가 'PEEP of 5 mm Hg'로 표기되어 있음 (표는 cm H₂O). — = 원문에 해당 내용 없음"
+  },
+  {
+   "type": "list",
+   "items": [
+    "VetARDS 정의도 사람 첫 정의처럼 기계환기 동물을 고려하지 않음.",
+    "흉부 영상은 핵심 기준 — CT가 gold standard이나 수의 호흡곤란 환자에서 흔히 시행되지 않음; 흉부 방사선은 ARDS를 과소평가할 수 있음(사람 연구), 전문가 간에도 판독 불일치 흔함.",
+    "VetARDS의 '압력 증가 없는 누출' 검사들은 좌심방압 평가에 이상적이지 않음 — 임상적으로 ARDS 진단된 개 2마리가 부검에서 CHF로 진단된 후향 코호트 보고.",
+    "동맥혈가스는 개에서 항상 가능하지 않고, 호흡곤란 고양이에서는 대체로 불가능.",
+    "SpO₂/FiO₂ (S/F) ratio: 사람에서 ARDS 진단에 검증됨; 개에서 P/F와 S/F ratio 상관성 양호 → hypoxemia의 대리 지표로 소동물 진단에 유용한 대안일 수 있음."
+   ],
+   "title": "수의 기준의 한계"
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Management (치료)",
+   "gist": "폐보호 환기(4–6 ml/kg, plateau <30) + 원인 치료"
+  },
+  {
+   "type": "list",
+   "items": [
+    "ARDS의 hallmark는 refractory hypoxemia — 주로 폐내 shunt에 의한 venous admixture.",
+    "중증 환자는 산소요법에 반응하지 않으나 양압환기(폐포 재모집, shunt fraction 감소)에는 반응할 수 있음.",
+    "기본 전략: lung protective ventilatory support + 기저 임상 위험 인자의 확인·특이적 치료.",
+    "기계환기 필요: 후향 연구 1건에서 VetALI/VetARDS의 개 50%·고양이 80%; 다른 후향 연구에서 임상 ARDS 동물의 86%에서 기계환기 권고.",
+    "고급 기계환기는 Chapter 33 참고."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Lung Protective Ventilation"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Baby lung concept: ARDS CT에서 두 영역 — 비의존성 거의 정상인 폐(건강한 아기 크기, 기계환기로 손상받기 쉬움)와 의존성 경화·허탈 영역(산소화 장애의 주원인). 해부학적이 아닌 기능적 구분이며 VILI와 폐보호 환기의 근거 제공.",
+    "Open lung strategy (Lachmann): 이질적으로 환기되는 폐에서 recruitment maneuver로 허탈 폐를 열고 높은 PEEP로 폐포 안정 유지 → atelectrauma·shear stress 감소.",
+    "Recruitment maneuver 논란: ART trial에서 moderate–severe ARDS 사망률 증가와 연관; PHARLAP trial은 ART trial 이후 조기 중단, 해로운 심혈관 영향 확인; 체계적 문헌고찰 2건 — 산소화 개선·hypoxemia rescue 치료 감소에도 사망률 개선 없고 혈역학 불안정 증가.",
+    "Low tidal volume: open lung concept + baby lung concept에 따른 저 tidal volume이 폐보호 환기의 기초 — tidal volume 4–6 ml/kg predicted body weight, end-inspiratory plateau pressure <30 cm H₂O가 사람 ARDS 사망률 감소. 폐포 과팽창·VILI 방지로 상피-내피 장벽 보존.",
+    "PEEP: 무기폐 단위 재모집·cyclic atelectasis 방지 → FRC 증가, shunt fraction 감소, 덜 독성인 FiO₂로 감량 가능.",
+    "APRV (airway pressure release ventilation): inverse ratio, pressure controlled IMV + 제한 없는 자발호흡, open lung 접근 기반 — refractory hypoxemia 개 1례에서 성공적 관리 보고. 수의에서는 conventional 기계환기가 가장 흔함."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "수액 · 약물 치료"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Conservative fluid management: 내피 투과성 증가로 수액이 폐포 부종을 악화시킬 수 있음 — 사람 ARDS에서 ventilator days 감소."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "약물 치료 근거",
+   "headers": [
+    "약물",
+    "기대 효과·기전",
+    "결과"
+   ],
+   "rows": [
+    [
+     "Corticosteroids",
+     "전염증성 cytokine 생성 억제; fibroblast 증식·collagen 침착 억제로 fibroproliferative stage 진행 예방",
+     "논란·근거 확실성 낮음 — 사망률 증가·감소 연구 혼재, 폐보호 환기 시대의 대규모 결정적 연구 없음\n현재 사람 가이드라인: early moderate–severe ARDS에서 사용 제안"
+    ],
+    [
+     "Inhaled nitric oxide, prostacyclins",
+     "선택적 폐혈관 확장 → V/Q matching·동맥 산소화 개선",
+     "사망률 이득 없음"
+    ],
+    [
+     "Inhaled surfactant",
+     "type II 세포 손상으로 surfactant 양·기능↓ → 표면장력↑·atelectasis 보완",
+     "사망률·기계환기 기간 변화 없음"
+    ],
+    [
+     "N-acetylcysteine",
+     "항산화",
+     "이득 입증 안 됨"
+    ],
+    [
+     "Statins",
+     "항염·면역조절",
+     "조기 사망률·기계환기 기간에 아마도 차이 없음"
+    ],
+    [
+     "Beta-agonists (aerosolized, IV)",
+     "폐포 액체 청소 개선",
+     "실패; 조기 사망률 증가와 연관 가능"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Prognosis (예후)",
+   "gist": "수의 ARDS 사망률 매우 높음 — 개 84%, 고양이 100% 보고"
+  },
+  {
+   "type": "list",
+   "items": [
+    "원인 손상의 성격(직접 폐 손상 vs 폐외)이 환기 보조 반응과 예후에 큰 영향.",
+    "폐보호 환기로 사망률은 유의하게 감소했으나 사람 ARDS 사망률은 여전히 40% 초과.",
+    "장기 기계환기 비용 때문에 선택적 안락사가 많아 수의 환자의 자연 사망률은 불명확."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "수의 보고 예후",
+   "headers": [
+    "보고",
+    "대상",
+    "결과"
+   ],
+   "rows": [
+    [
+     "후향 연구 (장기 기계환기)",
+     "개·고양이",
+     "ARDS 사망률 92%"
+    ],
+    [
+     "증례 보고 다수",
+     "개",
+     "기계환기 없이 생존한 개는 1마리뿐"
+    ],
+    [
+     "증례 보고 2건",
+     "고양이",
+     "1마리 사망, 1마리 안락사"
+    ],
+    [
+     "후향 코호트 (임상 진단 ARDS)",
+     "개·고양이",
+     "case fatality rate 개 84%, 고양이 100% — 대부분 진단 후 24시간 이내 안락사"
+    ],
+    [
+     "후향 평가 29례",
+     "개·고양이",
+     "생존 10%"
+    ]
+   ]
+  }
+ ]
+}

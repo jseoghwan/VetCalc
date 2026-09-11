@@ -1,0 +1,625 @@
+{
+ "id": "sacc3-p2-c29",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part II",
+ "part_title": "Respiratory Disorders",
+ "chapter_num": 29,
+ "title": "Pleural Space Disease",
+ "author": "Bridget M. Lyons, VMD, DACVECC",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "흉막강 이상에는 흉수, 기흉, 흉막 섬유화, 횡격막 탈장·종양 같은 공간점유성 연부조직 구조물이 포함된다.",
+    "흉강천자는 진단적이면서 치료적일 수 있다.",
+    "새로 진단된 흉수 환자의 흡인액은 항상 fluid analysis와 cytology를 시행해야 한다.",
+    "화농성 삼출액은 호기성·혐기성 배양 및 감수성 검사가 필수다.",
+    "삼출액과 혈청의 triglyceride·cholesterol 농도 비교는 chylothorax 진단에 도움이 된다.",
+    "혈흉 환자에서는 심혈관 허탈 징후가 호흡곤란보다 먼저 나타나는 경우가 많다.",
+    "긴장성 기흉은 급속히 치명적일 수 있으므로 흉부 방사선 같은 진단 전에 즉시 흉막강을 배액하고 심혈관 안정을 확보해야 한다.",
+    "외상성 횡격막 탈장의 임상 징후는 즉시 또는 지연되어 나타날 수 있다.",
+    "Point-of-care ultrasound는 흉막강 질환 평가에서 매우 귀중한 초기 진단 도구다.",
+    "재팽창성 폐부종은 드물지만 생명을 위협하는 합병증으로, 허탈된 폐가 빠르게 재팽창하는 모든 환자, 특히 만성 폐 허탈 환자에서 발생할 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Pleural Space (흉막강 해부·생리)",
+   "gist": "림프 배액이 흉막 음압 형성 — 공기·액체 축적 시 폐 확장 제한"
+  },
+  {
+   "type": "list",
+   "items": [
+    "흉막: 흉막강을 덮는 다공성 중간엽 장막. Visceral pleura가 폐를 덮고 폐문에서 반전되어 parietal pleura로 이어져 종격·횡격막·흉벽을 덮음.",
+    "흉막강: visceral·parietal pleura 사이의 잠재 공간 (폐와 흉벽 사이).",
+    "종격: 좌우 흉강을 나누고 심장·기관·식도·대동맥·흉선 포함; 개·고양이는 흔히 fenestrated → 좌우 흉강 교통.",
+    "소량의 액체가 흉막을 통해 계속 누출되어 호흡 중 폐 운동을 도움; 종격·횡격막·parietal pleura 외측면으로 배액되는 림프관이 제거.",
+    "림프관의 액체 펌핑 → 흉막강 음압이 폐를 parietal pleura 쪽으로 당겨 폐 탄성 반동 상쇄 (흉막 모세혈관도 기여 근거). Visceral·parietal pleura의 결속이 음압을 강화 → 평균 흉막내압 −5 cm H₂O.",
+    "흉막 음압은 정상 폐기능에 필수는 아님 — 흉막강이 없는 코끼리, pleurodesis 후 폐기능 장애가 크지 않은 환자.",
+    "다량의 공기·액체·연부조직 축적 → 폐 확장 제한 → tidal volume, total vital capacity, functional residual capacity 감소, hypoxemia·hypoventilation."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Physical Examination (신체검사)",
+   "gist": "paradoxical breathing; 호흡음↓ 액체=복측, 공기=배측"
+  },
+  {
+   "type": "list",
+   "items": [
+    "징후: 빈호흡, 개구호흡, 기침, 목 신전, 팔꿈치 외전, 청색증, 복부 노력이 증가한 짧고 얕은 호흡.",
+    "Paradoxical breathing: 개·고양이 모두 흉막강 질환과 강하게 연관.",
+    "호흡곤란 정도는 흉막강 내 액체·공기·연부조직의 양과 축적 속도에 좌우.",
+    "청진: 액체 축적 시 복측 호흡음 감소, 공기 축적 시 배측 호흡음 감소. 심음은 약해지거나, 일측·국소 질환에서 비정상적으로 크거나 위치 이동.",
+    "발열 없어도 감염성 원인 배제 불가 — pyothorax 고양이의 최대 50%가 내원 시 정상체온 또는 저체온.",
+    "긴장성 기흉: 흉막강 공기의 빠른 축적 → 흉강내압 증가, 정맥 환류 감소 → 심혈관 허탈 징후.",
+    "횡격막 탈장: 흉부에서 borborygmi 청진, 복부 촉진 시 정상적으로 만져지던 장기 부재."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Imaging (영상)",
+   "gist": "POCUS가 초기 진단 — glide sign 소실=기흉, CT가 가장 민감"
+  },
+  {
+   "type": "list",
+   "items": [
+    "흉막강 질환의 신속한 확인에 필수적 도구 — 여러 기법 기술됨 (Chapter 189).",
+    "정식 초음파·다른 영상의 대체는 아니나, 빠르고 최소한의 보정·체위만 필요해 호흡곤란 환자의 이상적 초기 진단."
+   ],
+   "title": "Point-of-care ultrasound (POCUS)"
+  },
+  {
+   "type": "table",
+   "title": "POCUS 소견",
+   "headers": [
+    "소견",
+    "정의",
+    "의미"
+   ],
+   "rows": [
+    [
+     "Hypoechoic fluid",
+     "—",
+     "흉수 (세포 성분이 많은 삼출액은 echogenic swirling)"
+    ],
+    [
+     "Glide sign 소실",
+     "glide sign = visceral·parietal pleura가 서로 미끄러지는 움직임",
+     "기흉"
+    ],
+    [
+     "Lung point",
+     "탐촉자를 흉벽 복측으로 옮기며 glide sign이 다시 나타나는 지점",
+     "기흉 중증도 평가"
+    ],
+    [
+     "Curtain sign 이상",
+     "curtain sign = 폐와 복강 내용물을 구분하는 뚜렷한 수직 경계",
+     "흉막강 질환"
+    ],
+    [
+     "Asynchronous curtain sign",
+     "수직 경계가 복강 내용물과 반대 방향으로 움직임",
+     "기흉"
+    ],
+    [
+     "Double curtain sign",
+     "같은 초음파 창에 수직 경계 2개",
+     "기흉 또는 횡격막 탈장"
+    ],
+    [
+     "흉강 내 복강 장기",
+     "—",
+     "횡격막 탈장 (Fig. 29.1)"
+    ]
+   ],
+   "note": "— = 원문에 해당 내용 없음"
+  },
+  {
+   "type": "list",
+   "items": [
+    "흉막강 질환과 다른 흉강 내 병변의 진단·정량에 유용.",
+    "소량 기흉 검출률이 가장 높은 view: horizontal beam ventrodorsal view, standard vertical beam left lateral view.",
+    "POCUS에서 흉수가 보이면 흉강 구조 가시화를 위해 방사선 촬영 전 흉강천자로 제거하는 것이 이상적; vertical beam 사용 시 ventrodorsal보다 dorsoventral view 선호.",
+    "흉강천자 후에도 팽창하지 않는 둥글고 수축된 폐엽 → fibrosing pleuritis 시사.",
+    "횡격막 탈장 방사선 징후: 흉강 내 가스 찬 복강 장기, 불완전한 횡격막 경계, 흉수, 두측으로 변위된 복강 장기."
+   ],
+   "title": "흉부 방사선"
+  },
+  {
+   "type": "list",
+   "items": [
+    "CT: 기흉·흉수 검출에서 흉부 방사선·POCUS보다 민감.",
+    "방사선·CT 모두 흉막 공기·액체 외에 횡격막 탈장, 종괴, 폐엽 염전 확인 가능.",
+    "사람에서는 CT 특성으로 흉수 유형을 감별하나, 개·고양이에서는 일관되지 않음.",
+    "Thoracoscopy: 흉강 구조 관찰, 생검 채취, 치료적 중재 가능."
+   ],
+   "title": "CT · Thoracoscopy"
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Thoracocentesis (흉강천자)",
+   "gist": "미진단 흉수 또는 호흡곤란 완화 — 최소 cytology·fluid analysis"
+  },
+  {
+   "type": "list",
+   "items": [
+    "흉막강 질환의 귀중한 진단·치료 도구 (Chapter 198).",
+    "적응증: 1) 진단되지 않은 흉수, 2) 다량의 공기·액체에 의한 호흡곤란 완화 목적의 치료적 천자.",
+    "액체가 있으면 초음파로 최적 천자 부위 확인.",
+    "최소한 cytology와 fluid analysis 제출.",
+    "흉수 원인이 알려져 있고 무증상이면 천자를 미루고 임상 징후를 추적할 수 있음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Pleural Effusion (흉수)",
+   "gist": "총단백·유핵세포수로 분류, 원인별로 검사·치료 다름"
+  },
+  {
+   "type": "list",
+   "items": [
+    "전통적으로 총단백 농도와 세포 수로 transudate·modified transudate·exudate 분류 — 범주 간 중첩 있음.",
+    "오래된 누출액은 흉막의 만성 자극으로 총단백·유핵세포수가 증가해 modified transudate로 진행 가능.",
+    "염증 → cytokine 방출 → 중피·내피 투과성 증가 → 단백·세포가 삼출액으로 누출.",
+    "Neutrophilic effusion: 호중구(변성 또는 비변성) >70%. 감염성 원인에서는 보통 변성 호중구 우세; 무균성 삼출액의 우세 세포는 원인에 따라 다름."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 29.1 흉수의 분류",
+   "headers": [
+    "Fluid type",
+    "Total protein",
+    "Total nucleated cell count",
+    "주요 원인 (본문)"
+   ],
+   "rows": [
+    [
+     "Pure transudate",
+     "<2.5 g/dl",
+     "<1000 cells/µl",
+     "개·고양이에서 hypoalbuminemia가 가장 흔함\n흉강: 고양이 좌측 또는 우측 CHF, 개 우측 CHF, 개·고양이 림프관 폐쇄"
+    ],
+    [
+     "Modified transudate",
+     "≥2.5 g/dl",
+     "1000–5000 cells/µl",
+     "CHF, neoplasia, lung lobe torsion, diaphragmatic hernia, vasculitis\n오래된 누출액의 만성 흉막 자극"
+    ],
+    [
+     "Exudate",
+     "≥2.5 g/dl",
+     ">5000 cells/µl",
+     "국소 염증 반응, 출혈, 림프 누출\n염증 원인: 감염(세균, 진균, 바이러스, 원충, 기생충), 종양, 이물, 만성 유미성 삼출(또는 기타 자극 물질), 면역복합체 침착"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Pyothorax (농흉)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "정의: 흉막강 내 패혈성 화농액 축적.",
+    "원인 확인: 개 2%–22%, 고양이 35%–67%에서만 — 흔히 불명.",
+    "개 원인(지역차 있음): 이동성 이물, 관통·둔상성 흉부외상, 혈행·림프 전파, 식도 천공, 기생충 이동, discospondylitis, osteomyelitis, parapneumonic spread, 폐농양 파열, 의인성.",
+    "고양이: 흡인된 구인두 균총의 parapneumonic spread가 가장 흔한 기원; 관통성 흉부 상처, 이물 이동, 기생충 이동도 보고.",
+    "진단: cytology에서 세포내 미생물 확인 시 septic suppurative effusion. 미생물 감염 의심 샘플은 호기성·혐기성 배양·감수성 검사; 진균은 세균보다 드물게 배양되나 cytology가 진균을 시사하면 검사."
+   ],
+   "title": "원인 · 진단"
+  },
+  {
+   "type": "table",
+   "title": "Box 29.1 개·고양이 농흉의 흔한 원인균",
+   "headers": [
+    "분류",
+    "원인균"
+   ],
+   "rows": [
+    [
+     "Aerobes",
+     "Nocardia spp., Streptococcus spp., Corynebacterium spp."
+    ],
+    [
+     "Facultative anaerobes",
+     "Escherichia coli, Pasteurella spp., Actinomyces spp., Staphylococcus spp."
+    ],
+    [
+     "Anaerobes",
+     "Fusobacterium spp., Peptostreptococcus anaerobius, Bacteroides spp., Prevotella spp., Porphyromonas spp., Clostridium spp."
+    ],
+    [
+     "Fungal organisms",
+     "Cryptococcus spp., Candida albicans, Blastomyces dermatitidis"
+    ]
+   ],
+   "note": "Box 원문은 목록 형식이며, 분류 하위 항목의 행 배치는 목록 순서를 따름."
+  },
+  {
+   "type": "list",
+   "items": [
+    "구성: 항균제 + source control.",
+    "항균제: 흔한 분리균 범위와 복합감염 가능성 → 배양 결과 전 경험적 광범위 IV 항균제. 이상적 기간은 불명(환자 특성·원인균·지역 내성 양상에 따라 다름).",
+    "사람 American Association for Thoracic Surgery empyema consensus: 최소 2주 — 문헌상 2–6주 범위, 원인균 감수성·source control 적절성·치료 반응으로 결정.",
+    "Source control: thoracostomy tube 단독 (Chapter 199) 또는 외과적 탐색 병용.",
+    "흉관 제거 기준(제안): 임상 개선, 흉수 생성 <2 ml/kg/day 감소, cytology상 감염 해소. 건강한 개에 실험적으로 넣은 흉관이 4–6일 내 의인성 감염 → 그 전에 제거 권장.",
+    "Pleural lavage: 수의에서 권장되기도 하나 이상적 세척액·용량·dwell time 불명, 사람 empyema에서 standard-of-care 아님.",
+    "흉막내 fibrinolytics·anticoagulants: 보고는 있으나 사람·수의 모두 일상 치료로 권장 안 됨.",
+    "흉관 대신 반복 흉강천자: 사망률이 더 높아 권장 안 됨.",
+    "수술(open thoracotomy 또는 video-assisted thoracoscopy) 적응: loculated fluid, 폐·흉막 농양, 종양 의심, 식도 천공, 관통성 흉부 손상, 내과 치료 실패."
+   ],
+   "title": "치료"
+  },
+  {
+   "type": "list",
+   "items": [
+    "경제적 제약·예후 불량 판단에 따른 안락사로 사망률 해석이 어려움.",
+    "전체 생존율: 개 83% (범위 29%–100%), 고양이 63% (범위 8%–100%).",
+    "재발률: 0%–14%."
+   ],
+   "title": "예후"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Chylothorax (유미흉)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "외관: 식이 지방 함량·만성도·동반 출혈에 따라 흰색 또는 분홍색; 식이 지방이 적거나 장기 식욕부진이면 투명하거나 serosanguinous일 수 있음.",
+    "세포: 보통 작은 림프구 우세; 유미가 흉막을 자극해 시간이 지나면 호중구·macrophage가 두드러질 수 있음.",
+    "Triglyceride: 삼출액 > 혈청, 비율이 흔히 3:1 초과. 삼출액 triglyceride 100 mg/dl cutoff로 유미성·비유미성 감별 가능.",
+    "Cholesterol: 유미성 삼출액은 혈청보다 낮을 것으로 예상.",
+    "원인: CHF, 심막 질환, dirofilariasis, 선천성 심질환, 육아종·협착·종양에 의한 흉관 폐쇄, 외상성 흉관 파열, 선천성 흉관 기형, 전대정맥 혈전증, 폐엽 염전, 횡격막 탈장, 종격 질환. 소인이 흔히 확인되지 않아 idiopathic chylothorax로 진단."
+   ],
+   "title": "진단 · 원인"
+  },
+  {
+   "type": "table",
+   "title": "유미흉 치료",
+   "headers": [
+    "치료",
+    "내용",
+    "결과·비고"
+   ],
+   "rows": [
+    [
+     "기저 질환 치료",
+     "확인된 기저 질환에 맞춤",
+     "—"
+    ],
+    [
+     "Thoracic duct ligation + subphrenic pericardectomy (TDL/SP)",
+     "특발성 유미흉에서 수술이 흔히 적응 — 여러 수술 중 조합이 가장 성공적\nopen 및 video-assisted 접근 모두 기술됨",
+     "성공률 개 60%–100%, 고양이 80%"
+    ],
+    [
+     "Cisterna chyli ablation",
+     "권장되기도 함",
+     "고양이 22마리 후향 연구: TDL/SP에 추가해도 이득 없음"
+    ],
+    [
+     "Indwelling pleural access port",
+     "수술 시 삽입해 반복 배액 용이",
+     "—"
+    ],
+    [
+     "Pleurodesis",
+     "수술 실패 시 고려",
+     "—"
+    ],
+    [
+     "내과적 관리",
+     "특발성에서 시도 가능",
+     "유미가 흉막을 자극해 fibrosing pleuritis 유발 가능 — 예후 더 guarded"
+    ],
+    [
+     "Rutin",
+     "benzopyrone nutraceutical — 림프액 흡수 증가, 혈관 투과성 감소, 림프 내 단백의 macrophage 탐식 증가 이론",
+     "고양이에서 삼출 축적 감소 보고"
+    ],
+    [
+     "Octreotide",
+     "somatostatin analog — 사람 외상성 유미흉에 사용",
+     "수의 종에서는 그만큼 효과 입증 안 됨"
+    ],
+    [
+     "Low fat diet",
+     "흔히 권장",
+     "건강한 개 연구: 유미 지질 함량은 줄었으나 흉관 림프 유량은 감소 안 함 → 권장에 의문"
+    ],
+    [
+     "—",
+     "자연 해소 증례 보고",
+     "—"
+    ]
+   ],
+   "note": "— = 원문에 해당 내용 없음"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Hemothorax (혈흉)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "진단: 흉수 PCV가 말초혈액의 최소 25%.",
+    "원인: 후천성·내인성 응고장애 또는 비응고장애성. 개 비응고장애성 혈흉의 가장 흔한 원인은 종양; 그 외 외상, 폐엽 염전, 기생충 이동, 자발성 혈관 파열, 횡격막 탈장, 흉선 출혈, 의인성(흉강천자, 흉부 수술, 영양관 제거, jugular catheter 장착).",
+    "Hypovolemic shock이 호흡 기능 저하보다 선행 가능 → 심혈관 불안정 환자는 IV 수액·필요 시 혈액제제 (Chapter 69).",
+    "대량 출혈·심혈관 불안정 → autologous blood transfusion 고려.",
+    "응고장애 또는 anticoagulant rodenticide 중독 의심 → fresh frozen plasma, vitamin K.",
+    "출혈이 조절되지 않으면 antifibrinolytics 고려.",
+    "수술: 외상성 혈흉은 관통상·조절 불가 출혈이 없으면 드물게 적응; 다른 비응고장애성 혈흉에서는 필요할 수 있음. 개흉술 후 유의한 혈흉 → 응급 재수술."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Feline Infectious Peritonitis (FIP)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "삼출형 FIP는 고양이 흉수의 흔한 원인 — 복수·심낭삼출 동반 가능.",
+    "삼출액: 보통 점성, 볏짚색, 투명–혼탁, 고단백.",
+    "병리: macrophages·neutrophils·lymphocytes·간헐적 plasma cells로 이루어진 pyogranuloma가 세정맥 주위에 작은 집합을 이루며 삼출과 연관.",
+    "진단은 거의 간단하지 않음 — 단일 검사가 아닌 누적 정보에 근거.",
+    "치료는 대체로 완화적; 거의 예외 없이 치명적이나 최근 항바이러스 치료 발전이 희망적."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "FIP 흉수 검사",
+   "headers": [
+    "검사",
+    "소견",
+    "해석"
+   ],
+   "rows": [
+    [
+     "삼출액 총단백",
+     ">3.5 g/dl",
+     "한 연구: FIP 민감도 87.1%, 특이도 60%\n다른 연구: 양성예측도 94%, 음성예측도 100%"
+    ],
+    [
+     "총 유핵세포수",
+     "보통 낮음 (500–5000/ml)",
+     "비변성 호중구 우세 (세포 유형은 다양할 수 있음)"
+    ],
+    [
+     "삼출액 α1-acid glycoprotein",
+     "—",
+     "FIP와 non-FIP 삼출 감별에 유용"
+    ],
+    [
+     "Rivalta test",
+     "저렴·간단한 cage-side 검사",
+     "음성이면 non-FIP 원인 시사"
+    ],
+    [
+     "Feline coronavirus reverse transcriptase PCR",
+     "높은 viral load 또는 S gene mutation 검출",
+     "FIP 시사 — 위양성·위음성 보고\n장간막 림프절, 비장, 간, 전혈 PCR 병행 시 민감도 증가"
+    ],
+    [
+     "Immunohistochemistry (생검)",
+     "—",
+     "확진"
+    ]
+   ],
+   "note": "— = 원문에 해당 내용 없음"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Neoplastic Effusions · Pleural Neoplasia"
+  },
+  {
+   "type": "list",
+   "items": [
+    "흉수 기전: 혈관 투과성 증가, 흉막·폐 림프관 또는 정맥 폐쇄, 흉막 표면의 세포 잔해 탈락, 흉관 폐쇄·천공, 출혈. 종양으로 기흉도 발생 가능.",
+    "흔한 원발성 흉강 종양: lymphoma, carcinoma, adenocarcinoma; mesothelioma, sarcomas, 전이성 질환도 흉막 이상 유발.",
+    "흉막강 공간점유 병변은 흔히 악성이나 양성 병변과 감별 필요.",
+    "확진: fluid analysis·cytology가 도움이 될 수 있으나 흉부 초음파, CT, 개흉술 또는 thoracoscopy + FNA·생검이 흔히 필요.",
+    "기저 종양 치료 외에 indwelling pleural access port로 장기·완화 관리 — 삼출 배액과 필요 시 강내 항암제 주입."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Bilothorax · Urothorax"
+  },
+  {
+   "type": "table",
+   "title": "담즙흉 vs 요흉",
+   "headers": [
+    "구분",
+    "Bilothorax",
+    "Urothorax"
+   ],
+   "rows": [
+    [
+     "원인",
+     "자발성, 외상성, 의인성 bile pleuritis — 드물지만 개·고양이 보고",
+     "외상의 드문 합병증 — 개 2마리, 고양이 1마리 보고"
+    ],
+    [
+     "진단 기준",
+     "흉수:혈청 bilirubin 농도 비 >1:1",
+     "흉수:혈청 creatinine 농도 비 >1:1"
+    ],
+    [
+     "동반",
+     "bile peritonitis 동반될 수도 안 될 수도",
+     "2례에서 횡격막 파열 동반, 개 1마리는 수술 시 횡격막 온전"
+    ],
+    [
+     "치료",
+     "흉관 내과 관리 성공 개 2마리; 수술 관리 성공 개 3마리·고양이 3마리\n장기 내과 관리는 심혈관 불안정·불량 예후에 기여 가능",
+     "발견 시 수술적 중재 적응"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Pleural Fibrosis (흉막 섬유화)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Fibrosing pleuritis: 흉강 내 염증으로 흉막이 두꺼워져 폐 확장을 제한하는 만성 상태 — 모든 유형의 만성 흉수에 이차 발생 가능.",
+    "수의에서 유미성 삼출과 가장 흔히 연관; 종양, FIP, 농흉, 육아종성 흉막염, 혈흉에 이차 발생도 보고.",
+    "만성 흉수 환자 중 일부에서만 발생하는 이유는 불명.",
+    "치료: decortication이 유일한 효과적 치료 — 기흉, 출혈, 재팽창성 폐부종이 치명적 합병증 가능.",
+    "미만성 질환 예후는 guarded (수의 정보 부족)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Pneumothorax (기흉)",
+   "gist": "긴장성 기흉은 즉시 천자 — 개 자발성 기흉은 수술, 고양이는 내과 관리"
+  },
+  {
+   "type": "table",
+   "title": "기흉의 분류",
+   "headers": [
+    "분류",
+    "정의·기전",
+    "원인"
+   ],
+   "rows": [
+    [
+     "Spontaneous",
+     "알려진 외상·의인성 원인 없이 흉막강에 공기 축적",
+     "개: pulmonary bullae 또는 blebs 파열이 가장 흔함\n고양이: 기도 질환이 가장 흔함\n기타: 종양, lungworms 등 기생충 이동, 폐렴, 이동성 이물, 폐농양, 폐혈전색전증, 토네이도에 의한 기압 변화"
+    ],
+    [
+     "Traumatic",
+     "둔상의 흔한 후유증",
+     "교통사고 개 47%, high-rise syndrome 고양이 20%에서 동반\n관통성 흉부 손상(투사체, 교상, 날카로운 물체)"
+    ],
+    [
+     "Iatrogenic",
+     "—",
+     "흉강천자, 흉부 수술, thoracostomy tube 장착, 폐 FNA, 양압환기 barotrauma, 기관 열상, 영양관 장착"
+    ],
+    [
+     "Infectious",
+     "흉강 내 가스 생성 세균",
+     "—"
+    ],
+    [
+     "Open",
+     "흉벽 손상 (e.g., 관통성 흉부외상)",
+     "—"
+    ],
+    [
+     "Closed",
+     "호흡기, 식도, 종격, 횡격막 병변에서 공기 누출",
+     "—"
+    ],
+    [
+     "Tension",
+     "누출 부위가 흡기 시 일방향 밸브 → 흉막압이 대기압을 넘어 급상승",
+     "흔히 심폐정지로 이어짐"
+    ]
+   ],
+   "note": "— = 원문에 해당 내용 없음"
+  },
+  {
+   "type": "list",
+   "items": [
+    "흉강천자 및/또는 흉관 결정은 기저 원인과 임상 상태에 따라.",
+    "긴장성 기흉: hypoxemia·심혈관 허탈로 급속히 생명 위협 → 의심 시 즉시 흉강천자. 천자로 쉽게 해결되지 않으면 응급 mini-thoracotomy 또는 신속한 흉관 장착 + 삽관·기계환기가 생명을 구할 수 있음.",
+    "준임상적 공기 축적: 천자 불필요할 수 있음 — 공기가 수일–수주에 걸쳐 재흡수되는 동안 경과를 면밀히 추적.",
+    "폐쇄성 외상성·의인성 기흉: 천자 한두 번만 필요할 수 있음.",
+    "중증 폐 병변 동반 동물은 소량의 공기도 호흡곤란에 크게 기여 → 호흡곤란 시 제거.",
+    "천자 후 호흡곤란 재발을 면밀히 모니터링 — 추가 중재 필요 가능."
+   ],
+   "title": "치료"
+  },
+  {
+   "type": "list",
+   "items": [
+    "긴장성 기흉",
+    "양압환기 중 발생한 기흉",
+    "24시간 내 2회 넘는 흉강천자 필요",
+    "음압을 얻을 수 없을 때 (Chapter 199)"
+   ],
+   "title": "Thoracostomy tube 적응증"
+  },
+  {
+   "type": "list",
+   "items": [
+    "흉관 흡인으로 음압이 안 되면 3-chamber 연속 흡인 장치(Pleur-evac, Thora-Seal)에 연결해 지속 음압.",
+    "연속 흡인 장치가 없거나 다른 기관으로 이송 시 Heimlich valve 사용.",
+    "개 자발성 기흉: 수술로 재발 감소·생존율 증가 → 탐색적 수술 적응. 경제적 이유로 수술하지 않으면 autologous blood patch pleurodesis로 공기 누출 해결 성공 보고.",
+    "고양이 자발성 기흉: 내과 관리가 흔히 성공적.",
+    "관통상에 의한 개방성 기흉: 관통 부위를 멸균 밀폐 붕대로 덮고 즉시 흉강천자, 수술 지연 금지.",
+    "예후는 원인에 따라 다르나 전반적으로 양호."
+   ],
+   "title": "흡인 장치 · 원인별 치료 · 예후"
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Diaphragmatic Hernia (횡격막 탈장)",
+   "gist": "징후는 즉시 또는 지연, 안정화 후 수술 — 생존율 81.3%–100%"
+  },
+  {
+   "type": "list",
+   "items": [
+    "선천성 횡격막 탈장: 비정상 배발생 — pleuroperitoneal, peritoneopericardial, hiatal (이 장 범위 밖).",
+    "후천성: 둔상 또는 관통상. 임상 징후는 외상 직후 흔하나 지연될 수 있음.",
+    "호흡곤란: 탈장 장기, 흉수, 동반 흉부 손상에 따라 없음–중증.",
+    "탈장 장기: 간, 위, 소장, 비장, 대망이 가장 흔함; 대장, 담낭, 췌장은 덜 흔함."
+   ],
+   "title": "원인 · 징후"
+  },
+  {
+   "type": "list",
+   "items": [
+    "유의한 흉수 또는 위 탈장 시 흉강천자·gastrocentesis로 수술 전 호흡곤란 완화.",
+    "수술 전 심혈관 안정화 필수.",
+    "수술 시기: 상충 보고 — 최근 보고는 입원–수술 시간, 외상–수술 시간이 사망률에 영향 없음. 단, 환자 상태에 따라 응급 수술 필요 가능.",
+    "즉시 수술 적응: 위 탈장, 교액된 장 또는 기타 장기, 내과적 중재 후에도 적절한 산소화·심혈관 안정 불가, 장기 파열.",
+    "수술 중·후 합병증: 기흉, 출혈, 흡인성 폐렴, 재팽창성 폐부종, 패혈증, 부정맥, 다장기부전, 사망.",
+    "예후: 완전 회복 전반적으로 우수 — 생존율 81.3%–100%. 불량 예후 인자: 동반 연부조직·정형외과 손상, 산소 보충 필요, 마취·수술 시간 증가."
+   ],
+   "title": "치료 · 예후"
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Reexpansion Pulmonary Edema (재팽창성 폐부종)",
+   "gist": "만성 허탈 폐의 급속 재팽창 → 투과성 증가·비심인성 부종"
+  },
+  {
+   "type": "list",
+   "items": [
+    "허탈된 폐가 빠르게 재팽창하는 모든 환자에서 발생 가능한 드문 생명 위협 합병증 — 수의에서 흉강천자, pectus excavatum 교정, 횡격막 탈장 교정 후 보고.",
+    "기전(불명확): 실험 모델에서 만성 허탈 폐 팽창 → 염증세포 유입·산화 손상 → 모세혈관 내피 파괴 → 투과성 증가·비심인성 부종.",
+    "급속 재팽창 → 폐혈관저항 감소·hypoxic pulmonary vasoconstriction 역전으로 국소 관류 증가 → 모세혈관 경벽압 증가, 폐포-모세혈관 기저막 손상 가능.",
+    "폐 허탈 기간이 길수록(72 hours) 발생 증가와 연관.",
+    "사람에서는 흉막압 모니터링으로 안전한 흉막강 배액을 유도.",
+    "발생 시 치료는 대증적, 양압환기가 필요할 수 있음."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,312 @@
+{
+ "id": "sacc3-p2-c27",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part II",
+ "part_title": "Respiratory Disorders",
+ "chapter_num": 27,
+ "title": "Pulmonary Thromboembolism",
+ "author": "Vincent J. Thawley, VMD, DACVECC",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "폐혈전색전증(PTE)은 과응고, 내피 손상, 혈류 정체 중 하나 이상과 연관된 질환의 이차 합병증으로 발생한다.",
+    "생전 진단이 어렵고 예후는 guarded다.",
+    "전신 질환 환자에서 PTE 진단을 뒷받침하는 소견: 빈호흡, hypoxemia, 심초음파상 폐동맥 내 echogenic material 또는 급성 우심실 과부하 증거, D-dimer 농도 증가.",
+    "PTE 진단에 CT pulmonary angiography 사용이 늘고 있다.",
+    "치료는 주로 기저 질환 치료, 산소화 보조, 항응고, 경우에 따라 혈전용해에 의존한다.",
+    "혈역학적으로 불안정한 환자에서는 혈전용해가 권장된다.",
+    "PTE와 연관된 중증 질환 증후군 동물에서는 혈전색전 합병증 예방을 고려해야 한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Introduction (개요)",
+   "gist": "과응고·내피 손상·혈류 정체 질환의 합병증 — 수의에서 과소진단"
+  },
+  {
+   "type": "list",
+   "items": [
+    "폐색전 원인: 지방, 패혈성 색전, 전이성 종양, 기생충(Dirofilaria 또는 Angiostrongylus), 혈전. 혈전은 주로 정맥계·우심에서 형성되어 폐혈관으로 이동.",
+    "용어: 전통적으로 PTE, 최근 의학 문헌은 pulmonary embolism 선호.",
+    "진단: 사람은 주로 고급 CT 영상, 수의는 소인 질환 동물의 임상 징후 인지 + 부합하는 흉부 방사선 소견에 의존하는 경우가 많음.",
+    "부검 확인 어려움: 혈전은 사후 첫 3시간 동안 섬유소 용해로 부피 50% 감소, heparin 투여 시 혈전 형성 억제로 더 감소 → 수의 집단에서 과소진단 가능성.",
+    "생전 인지 어려움: 징후가 여러 심폐 질환과 유사. 초기 보고에서 부검 확진 PTE 개 중 호흡곤란 감별진단에 PTE가 포함된 경우 5% 미만; 후속 연구에서는 관련 호흡 징후 + 혈전색전 소인 질환 개의 65%에서 PTE 의심(인식 증가).",
+    "중증도 스펙트럼: 중증 PTE는 급성 생명 위협 저혈압·심정지; 덜 심하면 hypoxemia·호흡곤란; 미만성 만성 PTE는 폐고혈압의 기전; 사람에서는 일부 무증상.",
+    "전체 사망률은 중증도와 동반 질환에 따라 크게 다름.",
+    "대부분 동반 질환이 원발 질환을 복잡하게 하며 혈전색전 위험을 높임 — 비특이적 징후이므로 소인 질환(Box 27.1) 인지가 중요."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "소인 질환",
+   "headers": [
+    "구분",
+    "연관 질환"
+   ],
+   "rows": [
+    [
+     "개 (PTE 위험 증가)",
+     "Immune-mediated hemolytic anemia, sepsis, neoplasia, amyloidosis, hyperadrenocorticism, protein-losing nephropathy and enteropathy, dilated cardiomyopathy"
+    ],
+    [
+     "고양이 (PTE에서 가장 흔히 발견)",
+     "Neoplasia, cardiomyopathy, pancreatitis"
+    ],
+    [
+     "Box 27.1 PTE 연관 질환",
+     "Immune-mediated hemolytic anemia, neoplasia, sepsis, protein-losing nephropathy/enteropathy, pancreatitis, cardiac disease, hyperadrenocorticism, corticosteroid administration, central catheter use, hemodialysis, total parenteral nutrition, hip replacement surgery (cemented), trauma"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Pathophysiology (병태생리)",
+   "gist": "기계적 폐쇄+혈관수축 → PVR·폐동맥압↑, low V/Q가 저산소혈증 주원인"
+  },
+  {
+   "type": "list",
+   "items": [
+    "과응고 상태와 연관되어 발생 (Chapter 101).",
+    "핵심 반응: 폐혈관저항 증가에 의한 혈역학 변화, 가스교환 이상, 환기 조절 변화, 폐 역학 이상. 폐경색이 임상 양상에 기여하는 경우는 드묾.",
+    "폐순환은 혈관 팽창·동원으로 혈류가 크게 변해도 압력이 오르지 않음 (체순환과 다름).",
+    "색전 → 기계적 폐쇄 + serotonin, thromboxane, thrombin, histamine, prostaglandins, endothelins 방출에 의한 반응성 혈관수축 → 폐혈관상 단면적 감소, 혈관저항 증가, 중등도–중증에서 폐동맥압 상승.",
+    "가스교환 이상 → hypoxic pulmonary vasoconstriction → 폐동맥압 추가 상승.",
+    "중증: afterload 증가, 심실 허혈, 수축력 저하 → 급성 우심실부전 — 사람에서는 잘 기록됐으나 수의에서는 낮은 발생률·불안정 환자 확진 어려움으로 기술이 부족."
+   ],
+   "title": "혈역학"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Hypoxemia가 흔하나 가스교환 영향은 예측 불가 — PaO₂는 색전 정도와 상관하지 않음.",
+    "V/Q mismatch가 주 기전 — 개체 간·같은 환자 내 시간에 따라 변이 큼.",
+    "기전: 폐 일부의 과관류 → low V/Q(high Q) 영역; 혈관 폐쇄 하류의 alveolar dead space. Low V/Q 영역이 hypoxemia에 가장 중요, 심혈관 기능 저하에 의한 낮은 PvO₂가 악화.",
+    "경미한 기여: 폐부종(드묾), atelectasis(폐쇄 부위 원위 surfactant 생성 감소).",
+    "Hypocapnia: 가장 흔한 환기 이상 — hypoxemia, pulmonary irritant C-fibers 활성화, 심혈관 기능 저하에 의한 말초 화학수용체 활성화가 유발."
+   ],
+   "title": "가스교환 · 환기"
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "History · Physical Examination (병력·신체검사)",
+   "gist": "호흡곤란·빈호흡·신경학적 이상(개 1/3 초과) — 없어도 배제 불가"
+  },
+  {
+   "type": "list",
+   "items": [
+    "병력: 노력성 호흡, 빈호흡, 무기력, 신경학적 상태 변화; 기침, 실신, hemoptysis도 가능.",
+    "정신 상태 변화: 사람 PTE의 20% (일과성 hypoxemia 또는 뇌허혈 관련 가능); 개 보고에서 1/3 넘게 신경학적 상태 이상 → 흔한 소견일 수 있음.",
+    "부검에서 폐색전이 확인된 일부 개·고양이는 명백한 호흡곤란·빈호흡이 없었음.",
+    "입원 환자의 색전 위험 판단에 동반 질환·치료 정보 필수.",
+    "사람에서 흔한 흉막성·흉골하 통증은 수의 환자에서 인지되지 않음."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "PTE 연관 임상 증후군 개의 병력",
+   "headers": [
+    "요인",
+    "비율"
+   ],
+   "rows": [
+    [
+     "정맥 카테터 장착",
+     "대부분"
+    ],
+    [
+     "외인성 glucocorticoid 과잉",
+     "절반"
+    ],
+    [
+     "세포독성 약물 사용",
+     "1/3 초과"
+    ],
+    [
+     "최근 수술",
+     "21%"
+    ],
+    [
+     "수혈",
+     "10%"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "개는 전형적으로 빈호흡 또는 과호흡.",
+    "PTE 부합 소견: 호흡수·노력 증가, 빈맥, 우측 심잡음, 관류 불량.",
+    "비정상 폐음이 있을 수 있으나 다른 기저 폐질환이 없으면 청진 정상일 수 있음.",
+    "신체검사 소견은 항상 동반 질환의 영향을 받음."
+   ],
+   "title": "신체검사"
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Diagnostic Testing (진단 검사)",
+   "gist": "CTPA로 확진 — D-dimer 음성은 가능성↓, 정상 방사선도 의심"
+  },
+  {
+   "type": "list",
+   "items": [
+    "소인 질환 병력 + 급성 호흡곤란 및/또는 심혈관 허탈은 PTE를 시사하나 생전 증명은 어려움.",
+    "동물의 PTE 발생률은 사람보다 훨씬 낮아 보이므로 흔한 급성 질환 배제부터 시작.",
+    "평가: 과응고 확인, 폐 폐쇄·응고 이상 지표 확인, 과응고 소인 기저 질환 검사."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "검사별 소견",
+   "headers": [
+    "검사",
+    "소견·유용성",
+    "한계"
+   ],
+   "rows": [
+    [
+     "TEG (viscoelastic)",
+     "과응고 상태 확인 — PTE 의심 환자 평가에 흔히 포함",
+     "CTPA 확진 PTE 개 총 10마리를 포함한 소규모 전향 연구 2건에서 TEG 단독으로는 진단에 불충분"
+    ],
+    [
+     "aPTT · PT",
+     "응고 형성 시간만 평가\n사람: 짧은 aPTT가 정맥 혈전색전 위험 증가와 연관 가능\n수의 소규모 후향 연구: PT 또는 aPTT가 짧은 개가 정상 대조군보다 PTE 의심이 많음",
+     "해당 연구의 PTE는 담당 임상의 판단에 의한 의심이며 영상 확진 아님"
+    ],
+    [
+     "D-dimer",
+     "cross-link된 fibrin 분해산물 — fibrin·fibrinogen 분해산물을 모두 검출하는 FDP보다 fibrin 형성에 특이적\n사람: PTE 가능성 분류의 일상 선별검사; 정상(음성)이면 PTE 가능성 낮음\n사람: 음성 D-dimer로 큰 폐색전 대부분(93%) 배제 가능, subsegmental 색전은 절반만\n개 실험 PTE: 색전 후 2시간 내 정점 → 급감, 48시간에는 대조군과 차이 없음",
+     "비특이적 — 수의에서 많은 질환이 상승 유발\n음성이어도 혈전색전 완전 배제 불가\n측정 시점이 민감도에 영향"
+    ],
+    [
+     "Cardiac troponins",
+     "폐동맥압 증가, 전신 hypoxemia, 관상동맥 저관류, 우심실 압력 증가(벽 신장·허혈)에 의한 심내막하 허혈로 상승 가능\n사람: 위험 층화에 사용; 상승 시 강심제·기계환기 필요 등 복잡한 경과·사망과 연관\n개 실험 PTE: 색전 2시간 후 cTnI 유의하게 증가, PTE 중증도와 상관",
+     "최근 전향 임상 연구: cTnI와 CT 진단 PTE 간 상관 없음"
+    ],
+    [
+     "동맥혈가스",
+     "hypoxemia, hypocapnia",
+     "—"
+    ],
+    [
+     "흉부 방사선",
+     "다른 호흡곤란·hypoxemia 원인, 기저 질환 확인; 일부에서 혈관 폐쇄 관련 이상\n개 PTE 보고 소견: pleural effusion, 폐동맥 윤곽 소실, alveolar infiltrates, cardiomegaly, hyperlucent lung regions, 주폐동맥 확대\n간질·폐포 침윤 = 과관류 또는 atelectasis에 의한 국소·미만성 부종\nFig. 27.1: 근위 폐동맥 확대, 우심 둥글어짐(reverse D) — cor pulmonale 의심",
+     "정상이어도 PTE 배제 불가 — 호흡곤란 + hypoxemia 환자의 정상 방사선은 PTE를 강하게 의심"
+    ],
+    [
+     "심초음파",
+     "사람: 의심이 높을 때 bedside로 rule-in\n소견(폐쇄 정도·PVR·폐동맥압에 따라 다양): 우심실 hypokinesis, 우심실 확장기말 직경 증가, 심실중격 이상 운동, tricuspid regurgitation, 폐고혈압; 폐동맥·우심 내 혈전 직접 관찰\nMcConnell's sign(우심실 중간 자유벽 무운동 + 심첨부 수축 정상): 사람 급성 PTE에 매우 특이적\n비교적 비침습적이라 호흡곤란·PTE 의심 환자 검사에 고려 가능",
+     "소동물에서 발표 자료 부족으로 역할 불명확\n정상 심초음파로 PTE 배제 불가"
+    ],
+    [
+     "CT pulmonary angiography (CTPA)",
+     "과거 확진은 selective pulmonary angiography 또는 ventilation/perfusion scanning 같은 침습적 기법\n사람 PTE 진단 gold standard, 소동물 사용 증가\n확진 소견: 폐동맥 내 intraluminal filling defect; 반대측 내강 불규칙·내강 음영 변화는 의심 소견\n깨어 있는 진정 동물에서 가능 → 삽관 불필요할 수 있음\nVetMousetrap(투명 plexiglass 튜브, 영상 중 산소·IV 라인 접근 가능): 깨어 있는 고양이·소형견 CT — 초록 보고에서 호흡곤란 개 8마리 모두 잘 견디고 영상 양호, 6마리에서 PTE 확진 또는 강한 의심",
+     "—"
+    ]
+   ],
+   "note": "— = 원문에 해당 내용 없음"
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Classification of Acute PTE (분류)",
+   "gist": "사람: PESI/sPESI + 혈역학·우심실 기능·트로포닌으로 조기 사망 위험 층화"
+  },
+  {
+   "type": "list",
+   "items": [
+    "사람에서 급성 PTE의 조기 사망 위험을 층화하고 치료 선택을 안내하는 분류 체계.",
+    "Pulmonary Embolism Severity Index (PESI)·simplified PESI (sPESI): 인구학적 특성, 동반 질환, 기저 신체검사 지표 포함 — 급성 PTE의 30일 내 낮은 사망 위험을 신뢰성 있게 예측.",
+    "PESI·sPESI가 높은 환자는 우심실 기능장애, cardiac troponin 농도 증가, 혈역학 불안정(심정지, 심인성 쇼크, PTE에 의한 지속 저혈압) 증거에 따라 intermediate(submassive PTE) 또는 high risk(massive PTE)로 추가 분류."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 27.1 급성 PTE의 조기 사망 위험",
+   "headers": [
+    "조기 사망 위험",
+    "Hemodynamic instability",
+    "PESI Class III–V 또는 sPESI >0",
+    "우심실 기능장애 · cardiac troponin 상승"
+   ],
+   "rows": [
+    [
+     "High (massive)",
+     "있음",
+     "—",
+     "—"
+    ],
+    [
+     "Intermediate-high (submassive)",
+     "없음",
+     "있음",
+     "둘 다 있음"
+    ],
+    [
+     "Intermediate-low (submassive)",
+     "없음",
+     "있음",
+     "하나만 있거나 둘 다 없음"
+    ],
+    [
+     "Low",
+     "없음",
+     "없음",
+     "—"
+    ]
+   ],
+   "note": "PDF 텍스트에서 표의 +/− 기호가 추출되지 않아, 표 머리글·'Only one or neither present' 칸과 본문 설명으로 채움. — = 추출 불가(원문 표 확인 필요)."
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Treatment · Prophylaxis (치료·예방)",
+   "gist": "산소 + 항응고(LMWH·Xa 억제제), 혈역학 불안정 시 혈전용해"
+  },
+  {
+   "type": "list",
+   "items": [
+    "구성: 혈전 형성에 기여한 기저 동반 질환 확인·관리, 산소 보충, 항응고, 경우에 따라 혈전용해에 의한 재관류."
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "저산소혈증 환자에 적응. 대부분 지속 산소가 필요하므로 nasal cannula, high-flow nasal cannula, oxygen hood, oxygen cage가 적합.",
+    "중증 불응성 hypoxemia 또는 임박한 호흡 피로 → 삽관·기계환기.",
+    "주의: 높은 PEEP·높은 평균 기도압 피하기 — 흉강내 양압이 정맥 환류를 줄여 PTE·우심실 기능장애 환자의 심박출 저하."
+   ],
+   "title": "산소 · 환기"
+  },
+  {
+   "type": "list",
+   "items": [
+    "목적: 혈전 진행 방지, 추가 혈전 사건 가능성 감소.",
+    "사람 가이드라인: 확진 PTE는 중증도와 무관하게 모두 시작; PTE 가능성이 높은 환자는 진단 결과 대기 중 시작.",
+    "기간: 대부분 최소 3개월; 비가역적 혈전 위험 인자나 재발 고위험 환자는 장기 치료 고려.",
+    "수의 항혈전제 consensus guideline: 정맥 혈전색전증 치료에 vitamin K antagonists·platelet inhibitors보다 heparin(unfractionated보다 low molecular weight heparin 선호) 또는 direct Xa inhibitors(e.g., rivaroxaban) 사용 제안.",
+    "예방: 혈전 위험이 높은 immune-mediated hemolytic anemia·protein-losing nephropathy 개, 또는 혈전 위험 인자가 둘 이상일 때 예방적 항혈전 치료 고려."
+   ],
+   "title": "항응고 · 예방"
+  },
+  {
+   "type": "list",
+   "items": [
+    "사람: 재관류 치료는 대체로 massive PTE·조기 사망 고위험 환자에 한정; 심근 손상·우심실 기능장애·호흡 악화 증거가 있는 intermediate risk 환자에도 고려 가능 → 전신 혈전용해제 투여 제안.",
+    "약물: 현재 사람 가이드라인은 1세대 혈전용해제(streptokinase, urokinase)보다 recombinant tissue-type plasminogen activator (rtPA) 선호 (Chapter 166).",
+    "전신 혈전용해가 금기이거나 실패 시: surgical pulmonary embolectomy, catheter로 혈전을 기계적으로 파괴·흡인하거나 rtPA를 직접 전달하는 중재 기법.",
+    "소동물: 실험 연구 외 임상 사용은 기술이 적으나 성공 증례 보고 있음; 저자 기관에서 catheter-directed rtPA를 일부 증례에 좋은 결과로 시도(일화적).",
+    "출혈 위험이 있으므로 이득과 신중히 비교해 사용."
+   ],
+   "title": "혈전용해 (재관류)"
+  }
+ ]
+}

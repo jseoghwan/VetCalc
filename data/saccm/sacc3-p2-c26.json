@@ -1,0 +1,513 @@
+{
+ "id": "sacc3-p2-c26",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part II",
+ "part_title": "Respiratory Disorders",
+ "chapter_num": 26,
+ "title": "Pulmonary Contusions and Hemorrhage",
+ "author": "Sergi Serrano, LV, DVM, DACVECC",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "폐좌상은 둔기 흉부외상 후 흔하다. 간질·폐포 출혈과 실질 파괴로 구성되며, 충격 직후 시작해 손상 후 24–48시간 동안 악화될 수 있다.",
+    "병변은 폐렴·ARDS 같은 합병증이 없으면 보통 3–10일 내에 해소된다.",
+    "임상 징후는 급성·중증일 수도, 외상 후 수 시간에 걸쳐 점진적으로 나타날 수도 있다.",
+    "진단은 외상 병력 + 호흡 변화(빈호흡~중증 호흡곤란) + 부합하는 혈액가스 이상 + 특징적 흉부 방사선 소견에 근거한다. 흉부 초음파·CT는 사용이 늘고 있으며 방사선보다 진단적 이점이 있을 수 있다.",
+    "치료는 대증적 — 산소요법, 신중한 수액 투여, 동반 손상 진통. 중증례는 환기 보조가 필요할 수 있다.",
+    "덜 흔한 폐출혈 원인: 응고장애, 혈전색전증, 감염(바이러스·세균·기생충), 운동유발 출혈, 종양. 비외상성 폐출혈 치료는 기저 질환을 향하며 필요 시 호흡·환기 보조."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Pulmonary Contusions — 개요",
+   "gist": "흉부외상 동물 약 50%에서 발생하는 가장 흔한 흉부 병변"
+  },
+  {
+   "type": "list",
+   "items": [
+    "정의: 둔기 흉부외상(보통 흉곽 compression-decompression 손상)에 의한 폐 간질·폐포 출혈 및 부종.",
+    "원인: 교통사고, 도시 고양이의 고층 낙하가 가장 흔함; 흉부 교상, 다른 동물과의 상호작용(e.g., horse kicks), 사람의 학대, 폭발 충격파.",
+    "사지골절 교통사고 동물의 흉부외상: 개 34%, 38.9%, 57%; 고양이 17%.",
+    "사지 손상 없이도 발생 — 한 연구에서 동반 골절·탈구가 있던 개는 32%뿐.",
+    "외상 후 가장 흔한 흉부 병변 — 흉부 손상 동물의 약 50%. 단독 또는 기흉·흉수·늑골골절·횡격막 파열·부정맥·심낭삼출과 동반.",
+    "초기 징후가 적을 수 있음 — 한 연구에서 흉부 방사선 이상 또는 낮은 PaO₂인 개의 79%가 초진 시 흉부 손상을 시사하는 신체검사 소견 없음.",
+    "흉부 방사선 정보로 ASA grade가 유의하게 상승했다는 연구가 있으나, 방사선 변화도 지연될 수 있음.",
+    "적극적 수액·전신마취가 좌상을 악화시킬 수 있으므로, 초기에 흉부 손상·호흡곤란 징후가 없어도 좌상 가능성을 배제하지 말 것."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Pathophysiology (병태생리)",
+   "gist": "출혈·부종 → V/Q mismatch·true shunt → 저산소혈증"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Spalling effect: 기체–액체 경계면에서 전단·파열 — 충격파 최초 접촉 지점의 폐포 파괴.",
+    "Inertial effect: 저밀도 폐포 조직이 무거운 폐문 구조와 다른 속도로 가속되며 벗겨짐 → 기계적 찢김·열상.",
+    "Implosion effect: 압력파 통과 후 기포의 반동·과팽창 → 과도한 팽창으로 실질 찢김.",
+    "기타: 고속 투사체·폭발 충격파가 실질을 통과하며 폐포 내 출혈; 골절된 늑골의 변위에 의한 실질 손상."
+   ],
+   "title": "손상 기전"
+  },
+  {
+   "type": "list",
+   "items": [
+    "출혈 → 기관지경련, 점액 생성 증가, surfactant 생성 감소로 폐포 허탈.",
+    "외상성 실질 손상 → 염증 반응, 모세혈관 투과성 증가, 단백 풍부 액체 누출.",
+    "혈액으로 찬 폐포는 환기 불량 → V/Q mismatch; 단백 풍부 부종에 의한 폐수분 증가 → compliance 감소.",
+    "돼지 실험: 손상 후 2시간·6시간 모두 true shunt와 low V/Q 영역 존재 — true shunt가 hypoxemia의 주원인. 정상 V/Q 영역 혈류 희생으로 shunt fraction·dead space ventilation 증가; shunt(Q)와 불량·무통기 폐조직 부피가 각각 독립적으로 PaO₂와 상관.",
+    "국소 저산소에 대한 hypoxic pulmonary vasoconstriction, 이후 혈관 울혈·혈전으로 국소 관류 추가 감소 — 일부 환자에서는 무환기 폐의 관류가 줄어 shunt 증가를 최소화.",
+    "결과적으로 hypoxemia로 호흡곤란; 좌상 중증도와 동반 손상에 따라 hypocarbia 또는 hypercarbia.",
+    "초기 수 시간을 생존하면 호흡 이상은 보통 3–7일 내 해소되나, 세균성 폐렴·ARDS(국소·전신 염증 반응) 같은 합병증으로 지연 악화 가능 — 개·고양이에서 빈도는 잘 기술되지 않음.",
+    "사람: 폐좌상이 국소·전신의 심한 면역기능장애 유발, 패혈성 합병증 시 생존율 감소와 연관."
+   ],
+   "title": "생리적 결과"
+  },
+  {
+   "type": "list",
+   "items": [
+    "즉시: 간질 출혈.",
+    "첫 수 시간: 간질 부종, 단핵구·호중구 침윤.",
+    "24시간: 폐포·작은 기도가 단백·적혈구·염증세포로 충만, 정상 구조 소실, 부종 심함. 인접 폐포는 관류 정상이나 부종·surfactant 층 파괴로 compliance↓ → 환기 불량 → V/Q mismatch 증가. 돼지 실험에서 국소 좌상이 surfactant 활성 저하·폐포 직경 감소로 전반적 폐기능장애를 유발.",
+    "48시간: 치유 시작, 림프관 확장·단백 충만; 실질·기도에 fibrin, 세포 잔해, type II 폐포세포 과립, 호중구, macrophage.",
+    "7–10일: 개 폐는 반흔 거의 없이 거의 완전 치유 (다른 연구)."
+   ],
+   "ordered": true,
+   "title": "조직학적 진행 (개 실험 모델)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "임상적으로 영향받은 폐 범위와 임상 징후가 항상 명확히 상관하지는 않음.",
+    "최근 연구 초점: 급성 염증 반응 — 호중구 활성화, Toll-like receptors, type II pneumocyte apoptosis. type II pneumocyte 손상에 의한 전반적 surfactant 기능장애는 치료 표적 가능.",
+    "위 내용물의 silent aspiration 등 다른 폐 손상과의 상호작용이 투과성·염증을 악화시켜 ALI/ARDS·폐렴으로의 진행에 기여 가능."
+   ],
+   "title": "최신 연구"
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Diagnosis (진단)",
+   "gist": "초음파가 선별에 우수(B-line 6개/늑간), 방사선은 12–24시간 지연"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "신체검사"
+  },
+  {
+   "type": "list",
+   "items": [
+    "중증도·손상 후 내원 시간에 따라 빈호흡 또는 호흡곤란.",
+    "청진: 정상이거나 호흡음 증가·crackles·wheezes — 초기 24시간 동안 악화 가능, 흔히 비대칭이며 진짜 일측성일 수 있음.",
+    "기흉 동반 시 청진 해석이 어려우므로 호흡수·노력·청진을 자주 모니터링.",
+    "Hemoptysis(후두 원위부 혈액 객출): 사람에서는 흔하나 소동물에서는 드물고, 보통 중증 폐 병변과 연관.",
+    "골격 손상과 흉부외상의 동반율이 높고 호흡 증상이 초기에 없거나 가려질 수 있으므로 모든 외상 환자에서 좌상을 강하게 의심."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "영상 검사"
+  },
+  {
+   "type": "list",
+   "items": [
+    "다발 흉부 손상이 흔해 신체검사만으로 정확한 진단이 어려움 — 호흡곤란 환자는 영상의 위험-이득을 신중히 고려하고 영상 전에 안정화."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "영상 검사 비교",
+   "headers": [
+    "검사",
+    "특징·소견",
+    "한계"
+   ],
+   "rows": [
+    [
+     "흉부 초음파 (point-of-care)",
+     "최소한의 핸들링·보정 → 불안정 환자에 안전\nalveolar interstitial syndrome·peripheral parenchymal syndrome 모두 좌상 검출 민감도·특이도 높음 — 최근 연구는 늑간당 B-line 6개 cutoff의 alveolar interstitial syndrome 선호\n사람: 입원 시 폐초음파로 둔기외상 후 ARDS 위험 환자 식별; 방사선보다 좌상 선별에 우수, 흉부외상 후 좌상·기흉 평가에서 신체검사·방사선보다 우수\n수의: 연구는 소규모이나 사람과 유사하게 둔기 흉부외상 병변 진단 가치 높음",
+     "다른 검사보다 검사자·장비 의존성 큼 (Chapter 189)"
+    ],
+    [
+     "흉부 방사선",
+     "국소 또는 전반적인 patchy·diffuse 간질 또는 폐포 침윤 (Fig. 26.1: diffuse alveolar pattern; 늑골골절 다발, 피하기종, 종격동기종, 기흉 동반 흔함)\n초기 변화가 심할수록 산소 보충·입원 기간이 길 수 있음",
+     "임상 징후보다 12–24시간 지연 → 좌상이 있어도 정상일 수 있음\n방사선상 중증도와 생존의 관계는 확립 안 됨"
+    ],
+    [
+     "CT",
+     "실험적으로 초기 병변 검출·범위 반영에 방사선보다 민감\n개 실험 모델: CT가 병변 100% 검출 vs 초기 방사선 37%; 6시간 후에도 21% 병변이 방사선에 안 보임; 범위 과소평가 CT 8% vs 방사선 58%\n사람: 좌상 진단 gold standard, 진행·치료 필요 예측 가능",
+     "수의 병원 가용성 부족, 외상 환자에서 진정·마취 필요"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "좌상 부피 20% 이상 → 기계환기 필요의 강한 예측인자 (좌상 부피 ≤20% 환자 8% vs >20% 환자 40%).",
+    "좌상 부피 %는 ARDS 발생의 독립 예측인자 — 중증 좌상의 최적 cutoff 21.5%.",
+    "둔기 폐좌상 환자에서 좌상 부피 20% 이상, 늑골골절 4개 초과, Glasgow Coma Scale 점수 14 초과가 없으면 100%에서 기계환기 불필요; 세 소견이 모두 있으면 100%에서 기계환기 필요 예측.",
+    "CT로 발견되는 occult injury: 무손상 환자와 환기 필요는 비슷하나 입원이 더 길어 — 임상적 의의는 거의 없고 자원·비용만 증가한다는 주장."
+   ],
+   "title": "사람 CT 예측 지표"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "혈액가스 · Pulse Oximetry"
+  },
+  {
+   "type": "list",
+   "items": [
+    "동맥혈가스: 흉부외상의 생리적 영향 평가·모니터링에 가장 객관적 (Chapter 184).",
+    "폐좌상 개에서 hypoxemia 빈도 높으나 보통 경도–중등도 — 가장 심한 증례는 내원 전 사망하기 때문일 수 있음.",
+    "PaCO₂: 실질 손상 중증도, 동반 흉부 손상, 통증·불안, 동반 대사성 산-염기 이상에 따라 hypocarbia 또는 hypercarbia.",
+    "사람: PaO₂/FiO₂가 손상 후 첫 24시간 동안 좌상 폐 부피와 직접 상관, 1주 이후에는 일관되지 않음. 소동물에서는 불명.",
+    "Pulse oximetry: 동맥혈가스가 불가능할 때(e.g., 고양이) 유용한 정량 평가 — 산소화 장애 지표로 덜 정확, 환기 측정 불가, 쇼크 환자에서 신뢰할 만한 측정 어려움.",
+    "Pulse oximeter <95% = hypoxemia, <90% = 중증 hypoxemia (Chapter 16)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Management (치료)",
+   "gist": "대증 치료 — 산소, 신중한 수액, 진통; 환기를 두려워 보류하지 말 것"
+  },
+  {
+   "type": "list",
+   "items": [
+    "초기 triage와 주요 장기계 평가 후 생명 위협 정도에 따라 손상 순위를 정해 관리 (Chapter 1).",
+    "병원 전 처치는 드묾 — 이송 시 동물이 선호하는 자세 또는 가능하면 흉와위 유지.",
+    "산소요법, 신중한 수액요법, 적절한 진통이 핵심."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "산소요법 · 환기"
+  },
+  {
+   "type": "list",
+   "items": [
+    "모든 호흡곤란 환자에 산소 공급 (Chapter 15) — flow-by, nasal oxygen, oxygen cage·hood 흔히 사용.",
+    "High-flow nasal oxygen: 일부 중증 호흡곤란 환자에서 기계환기를 예방 가능 (Chapter 31).",
+    "중증례: 삽관·기계환기 (Chapters 32, 33). 사람에서는 PEEP 동반 pressure-controlled ventilation 선호.",
+    "사람 중증 외상 기계환기 환자에서 좌상 존재가 사망률·재원 기간·폐렴률을 증가시키지 않음 → 환기가 좌상에 생각보다 해롭지 않을 수 있으며, 좌상 악화 우려로 환기를 보류하지 말 것.",
+    "개 연구: 양압환기가 필요했던 폐좌상 개 10마리 중 50%가 이득, 25 kg 초과 개가 생존 가능성 높음 — 신생아·소아용 인공호흡기 부족이 소형 환자 합병증 증가에 기여했을 수 있음.",
+    "사람 중증 흉부외상: alveolar recruitment strategy·low tidal volume이 산소화·폐 통기 증가 (개·고양이 연구 없음).",
+    "조기 high-frequency oscillatory ventilation은 안전·효과적; airway pressure release ventilation은 인공호흡기 관련 폐렴 위험 감소(환기 일수·사망률 변화 없음).",
+    "Extracorporeal membrane oxygenation: 사람 중증 폐좌상에서 좋은 결과. 이 방법과 jet ventilation, selective bronchial intubation, dual-lung ventilation은 사람·수의 모두 일상적으로 사용되지 않음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "수액요법"
+  },
+  {
+   "type": "list",
+   "items": [
+    "흉부외상 환자는 흔히 hypovolemic shock 동반 — 최적 전략은 미해결이나 적절한 관류를 유지하면서 과잉 투여를 피하는 것이 최선일 가능성 (Chapter 68).",
+    "다발 외상에서는 가장 심하게 영향받은 주요 장기계를 기준으로 치료 우선순위 결정.",
+    "수액 종류와 관계없이 폐모세혈관 정수압 상승 → 폐포 내 누출 증가·폐기능 악화 가능. 정해진 용량·속도보다 면밀한 모니터링과 환자 맞춤 조절이 바람직.",
+    "Isotonic crystalloids: 가장 경제적이며 쇼크 소생에 colloid만큼 효과적.",
+    "Hypertonic saline: 돼지 폐좌상 모델에서 isotonic 대비 이득 없음 보고 vs hypertonic saline dextran이 Ringer acetate·saline보다 폐수분 저류↓·PaO₂↑ 보고 — 근거 상충.",
+    "혈액제제·합성 colloid는 기도·간질로 누출되면 폐부종 악화 가능.",
+    "엄격한 수액 제한은 적응증 아니나, 폐좌상 의심 쇼크 환자의 IV 수액은 주의 — 폐기능 악화를 모니터링하며 속도 조절 (Chapters 63, 64)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "진통 · 항생제 · Glucocorticoids"
+  },
+  {
+   "type": "list",
+   "items": [
+    "진통: 동반 손상 통증에 의한 hypoventilation은 심할 수 있어 선제적으로 관리 (Chapter 134) — 심폐기능 저하가 최소인 약물 선호; intercostal·intrapleural·epidural 투여를 전신 opioid와 병용 또는 대체.",
+    "Thoracic epidural analgesia: 수의에서 널리 쓰이지 않으나 사람 늑골골절에서 사망률 감소와 연관.",
+    "Gabapentin: 사람 늑골골절에서 placebo보다 우수하지 않음; 개·고양이 연구 필요.",
+    "항생제: 폐좌상 후 폐렴 발생률이 낮으므로(1%) 내성 제한을 위해 무분별한 사용 피함; 세균성 폐렴 발생 시 기도 세포검사 배양·감수성 결과에 근거 (Chapter 24).",
+    "Glucocorticoids: 뒷받침 자료 적음 — 일부 동물 연구에서 hypoxemia·병변 크기 감소, 다른 연구는 이득 없음. 감염 감수성 증가·위장관 궤양 등 부작용과 예후 개선 효과 부재로 일상적 사용 권장 안 함."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "기타 치료 (연구 단계)",
+   "headers": [
+    "치료",
+    "보고된 효과",
+    "근거"
+   ],
+   "rows": [
+    [
+     "Vitamins C + E 병용",
+     "동맥혈가스 지표 개선, ICU 재원 감소",
+     "사람 임상"
+    ],
+    [
+     "Surfactant",
+     "중증 폐좌상에서 산소화·compliance 개선",
+     "사람 임상"
+    ],
+    [
+     "Dexmedetomidine",
+     "혈역학 개선, 폐포 내 염증세포 감소, cytokine 방출 간섭으로 염증 반응 조절",
+     "실험"
+    ],
+    [
+     "Melatonin",
+     "산화 스트레스 감소로 폐좌상·원격 장기 조직병리 개선",
+     "실험"
+    ],
+    [
+     "Salbutamol",
+     "부종·출혈·백혈구 침윤·total lung injury score 감소 가능",
+     "실험"
+    ]
+   ],
+   "note": "수의 임상 환자에서의 유용성은 알려지지 않음."
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Prognosis — 폐좌상",
+   "gist": "생존율 82% 보고, 기계환기 필요 개는 약 30%만 퇴원"
+  },
+  {
+   "type": "list",
+   "items": [
+    "예후는 좌상 중증도와 동반 흉부·흉부 외 병변에 좌우.",
+    "생존율 82% 보고 — 가장 심한 동물은 내원·진단 전 사망하므로 실제 생존율은 더 낮을 수 있음.",
+    "입원 기간: 수 시간–수일; 산소 보충은 수일–수주 필요할 수 있음.",
+    "기계환기가 필요한 개: 후향 연구 2건에서 약 30%가 퇴원까지 생존 — 새로운 폐보호 환기 전략으로 개선 가능성.",
+    "장기 예후는 연구되지 않았으나 퇴원 생존 동물 대부분은 장기 후유증 없음. 사람에서는 환기가 필요했던 중증 환자도 상당히 회복(운동 후 산소포화도 정상화)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Atraumatic Pulmonary Hemorrhage (비외상성 폐출혈)",
+   "gist": "원인 다양 — 객혈 없어도 배제 불가, 기저 질환 치료가 핵심"
+  },
+  {
+   "type": "list",
+   "items": [
+    "다양한 질환에 이차적으로 발생 (Table 26.1).",
+    "Hemoptysis는 소동물에서 드문 초기 소견 — 없다고 폐출혈을 배제할 수 없음.",
+    "여러 질환으로 기도 세포검사를 받은 고양이 집단에서 63%에 폐출혈 확인 (hemoptysis 발생률은 보고 안 됨)."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 26.1 비외상성 폐출혈의 원인과 예",
+   "headers": [
+    "분류",
+    "하위 분류",
+    "예"
+   ],
+   "rows": [
+    [
+     "Infectious",
+     "Bacterial",
+     "Leptospirosis, Escherichia coli, Streptococcus equi subsp. zooepidemicus"
+    ],
+    [
+     "Infectious",
+     "Fungal",
+     "—"
+    ],
+    [
+     "Infectious",
+     "Mycoplasmal",
+     "—"
+    ],
+    [
+     "Infectious",
+     "Parasitic",
+     "Heartworms (Dirofilaria spp.), lungworms (Angiostrongylus vasorum)"
+    ],
+    [
+     "Infectious",
+     "Viral",
+     "—"
+    ],
+    [
+     "Coagulation abnormalities",
+     "Defects of primary hemostasis",
+     "Thrombocytopathia, severe thrombocytopenia, uremia, hepatic failure"
+    ],
+    [
+     "Coagulation abnormalities",
+     "Defects of secondary hemostasis",
+     "Anticoagulant rodenticide toxicity, von Willebrand disease, hemophilia"
+    ],
+    [
+     "Coagulation abnormalities",
+     "Thromboembolism",
+     "Cushing disease, diabetes mellitus, nephrotic syndrome, glucocorticoid therapy"
+    ],
+    [
+     "Cardiac",
+     "Heart failure\nPulmonary hypertension",
+     "—"
+    ],
+    [
+     "Neoplasia",
+     "Primary\nMetastatic",
+     "—"
+    ],
+    [
+     "Anatomic",
+     "Lung lobe torsion",
+     "—"
+    ],
+    [
+     "Environmental",
+     "Aspiration pneumonia\nForeign body",
+     "—"
+    ],
+    [
+     "Miscellaneous",
+     "Exercise-induced pulmonary hemorrhage in racing Greyhounds",
+     "—"
+    ],
+    [
+     "Miscellaneous",
+     "Pulmonary-renal syndrome",
+     "Glomerulonephritis"
+    ],
+    [
+     "Miscellaneous",
+     "Postseizure",
+     "—"
+    ],
+    [
+     "Iatrogenic",
+     "Fine-needle aspiration\nPercutaneous biopsy",
+     "—"
+    ],
+    [
+     "Toxic",
+     "Envenomations",
+     "Eastern brown snake"
+    ]
+   ],
+   "note": "— = 원문 표에 해당 칸 비어 있음. 표 추출상 von Willebrand disease는 secondary hemostasis 행에, Glomerulonephritis는 Miscellaneous 행에 배치되어 있음(행 대응은 추출 배치 기준)."
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "진단"
+  },
+  {
+   "type": "list",
+   "items": [
+    "확인: hemoptysis 또는 기관·기관지·BAL 세척 세포검사의 출혈.",
+    "진성 hemoptysis를 hematemesis 또는 후두 두측(비강, 구인두) 출혈과 구분.",
+    "세포검사상 급성 출혈: 적혈구·백혈구가 말초혈액과 비슷한 비율; 혈소판은 있을 수 있으나 출혈 후 수 분 내 소실; 수 분–수 시간 내 macrophage의 erythrophagocytosis.",
+    "병력: 쥐약 등 독소 노출, 특정 감염병(heartworms, lungworms, leptospirosis) 유행 지역 거주·여행, envenomation 가능 지역(e.g., 호주 eastern brown snake), 고용량 glucocorticoid 등 병용 약물(특히 폐혈전색전 위험 환자), 만성 질환.",
+    "Signalment: 특정 응고장애 가능성 — e.g., Doberman Pinschers의 von Willebrand disease.",
+    "신체검사: hemoptysis, 호흡곤란, 빈호흡, 기침, 청진 이상(국소·전반 거친 폐음 → crackles, 경화·소기도 충만 부위의 국소 약화음, wheezes). 심잡음·부정맥은 심인성 원인 시사. 전신 질환 가능성으로 전신 신체검사 필수 — petechiae·ecchymoses는 출혈 장애, 발열은 감염·종양 시사. 출혈성 폐렴 관련 세균: Escherichia coli, Streptococcus equi."
+   ],
+   "title": "확인 · 병력 · 신체검사"
+  },
+  {
+   "type": "table",
+   "title": "검사 소견과 시사점",
+   "headers": [
+    "검사",
+    "소견",
+    "시사·비고"
+   ],
+   "rows": [
+    [
+     "검사 항목",
+     "CBC, 생화학, coagulogram, 요검사, 영상 (병력·신체검사에 따라)",
+     "—"
+    ],
+    [
+     "동맥혈가스",
+     "hypoxemia, hypocarbia(중증 시 hypercarbia), alveolar–arterial gradient 증가",
+     "호흡기 기능 장애 최선의 평가 (Chapter 16)\n만성 질환(폐종양, 만성 기관지염, 폐렴)은 PaCO₂ 변화에 대사성 보상; 급성은 흔히 비보상"
+    ],
+    [
+     "흉부 방사선",
+     "간질·폐포·혼합 패턴, 국소·patchy·diffuse 분포\n젊은–중년 개의 말초 간질·폐포 패턴\n후방 또는 전반 reticulonodular 간질 패턴 ± patchy 폐포 경화\n심장 음영 확대·폐울혈",
+     "Angiostrongylus vasorum 특징적\nleptospirosis 연관 가능\nCHF 또는 Dirofilaria spp. — 심장 질환 의심 시 echocardiography가 선택 검사"
+    ],
+    [
+     "혈액학",
+     "정상일 수 있음\nnormocytic normochromic anemia\neosinophilia\nneutrophilia ± left shift",
+     "—\n만성 질환\n기생충 질환\n염증성 질환"
+    ],
+    [
+     "혈소판 수",
+     "정상\n경도–중등도 감소\n중증 감소\n수 충분한데 petechiae",
+     "—\nDIC, angiostrongylosis, 일부 혈전색전증\nimmune-mediated thrombocytopenia\nthrombocytopathia → buccal mucosal bleeding time 또는 혈소판 기능 검사 (Chapter 105)"
+    ],
+    [
+     "PT · aPTT",
+     "응고장애 시 연장\nPT 현저한 연장",
+     "—\nanticoagulant rodenticide 중독 (심한 출혈 시 모든 응고 지표 증가 가능)"
+    ],
+    [
+     "FDP · D-dimer",
+     "증가",
+     "폐혈전색전증 시사 — CT angiography가 더 확정적 (Chapter 27)"
+    ],
+    [
+     "TEG · viscoelastography",
+     "혈전·혈전용해 양쪽 평가",
+     "더 포괄적 지혈 평가 (Chapter 187)"
+    ],
+    [
+     "Fecal Baermann",
+     "—",
+     "A. vasorum 등 lungworm 의심 시"
+    ],
+    [
+     "Heartworm 항원·항체",
+     "—",
+     "유행 지역 거주·여행 개·고양이"
+    ],
+    [
+     "Leptospirosis 검사",
+     "—",
+     "유행 지역에서 폐출혈 + 고질소혈증 및/또는 간손상"
+    ],
+    [
+     "단백뇨 검사",
+     "—",
+     "glomerulonephritis·pulmonary-renal syndrome 확인"
+    ]
+   ],
+   "note": "— = 원문에 해당 내용 없음"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "치료 · 예후"
+  },
+  {
+   "type": "list",
+   "items": [
+    "치료는 궁극적으로 기저 질환을 향함; 호흡 기능 저하가 뚜렷하면 진단 진행 중 대증·경험적 치료.",
+    "산소: 호흡곤란 환자, 특히 동맥혈가스상 hypoxemia 또는 낮은 pulse oximetry 수치인 동물에 공급.",
+    "비침습 산소로 적절한 산소화가 안 되거나, 중증 hypercarbia, 또는 피로 임박한 심한 호흡곤란 → high flow nasal oxygen 또는 양압환기 (Chapters 31, 32).",
+    "수액: 폐좌상과 마찬가지로 심혈관·호흡 상태에 맞춰 조절. 진통·진정은 임상 상태에 따라.",
+    "감염성 원인이 강하게 의심되면 검사 결과 대기 중 경험적 항균·구충 치료가 흔히 필요.",
+    "예후: 입원 시 범위·중증도와 원인에 좌우 — 진단 후 6개월 내 전체 사망률 최대 25% 보고(질병 진행 또는 안락사).",
+    "장기 기능 장애 예측은 어려움 — 확진 전까지 보호자에게 guarded–grave 예후 설명."
+   ]
+  }
+ ]
+}

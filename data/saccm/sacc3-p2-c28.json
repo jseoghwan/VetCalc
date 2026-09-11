@@ -1,0 +1,231 @@
+{
+ "id": "sacc3-p2-c28",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part II",
+ "part_title": "Respiratory Disorders",
+ "chapter_num": 28,
+ "title": "Chest Wall Disease",
+ "author": "Christiana Fischer, BS, VMD, DACVECC; Deborah C. Silverstein, DVM, DACVECC",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "흉벽 해부 구조는 기능적 호흡을 가능하게 하고 흉강 내 구조물을 보호한다.",
+    "흉벽에 영향을 주는 질환: 선천 기형, 종양, 신경계 질환(경추 척수 질환, 신경근육 질환), 외상. 수의 환자에서는 흉벽 외상이 가장 흔한 원인이다.",
+    "진단은 철저한 병력·신체검사 — 호흡 중 흉벽 모양과 움직임을 주의 깊게 관찰. 흉부 영상(방사선 및/또는 CT)도 도움이 된다.",
+    "원인에 따라 환자의 편안함과 폐기능 개선을 위해 내과적 및/또는 외과적 중재가 필요할 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Chest Wall Anatomy and Function (해부·기능)",
+   "gist": "횡격막이 주 흡기근(phrenic nerve, C4–7), 호기는 수동적"
+  },
+  {
+   "type": "list",
+   "items": [
+    "늑골: 개·고양이는 보통 13쌍 — 9쌍은 늑연골로 흉골과 연결, 4쌍의 sternal ribs가 합쳐져 costal arch 형성.",
+    "흉곽 형태: 단두종의 넓은 barrel형부터 sighthound의 깊고 가는 keel형까지 품종별 차이.",
+    "근육: 늑골 외측은 serratus ventralis, latissimus dorsi, scalenus, obliquus abdominis externus의 얇은 근복이 덮음; 흉부 복측은 pectoral muscles, 흉추 배측은 epaxial muscles.",
+    "늑간 혈관·신경: 각 늑골의 caudomedial 측면을 주행 — 흉강천자 시 피할 것 (Chapter 198)."
+   ],
+   "title": "구조"
+  },
+  {
+   "type": "list",
+   "items": [
+    "횡격막: 가장 크고 중요한 호흡근, phrenic nerve 지배 — 흡기 시 수축해 흉강 확장. 주 흡기근이어서 외늑간근만 마비되어도 호흡에 심각한 영향 없음.",
+    "보조 흡기근: 운동 등 능동 호흡 시 external intercostal muscles, scalene, sternomastoids 동원.",
+    "호기: 폐·흉벽의 탄성으로 근육 없이 기저 위치로 돌아가는 수동적 과정. 강한 호기(운동, 기침, 구토) 시 복벽 근육이 횡격막을 두측으로 밀어냄.",
+    "신경 조절: 호흡근 수축 + 연수 호흡중추 신호에 대한 반응 (Chapter 14).",
+    "Phrenic nerve: 경수 phrenic nucleus에서 기시해 cervical nerves 4–7을 거쳐 좌·우 가지로 나뉘어 흉강을 지나 횡격막 지배.",
+    "연수 호흡중추: reticulospinal tracts를 통해 cervical nerves 5–7로 내려가 interneurons와 시냅스 → phrenic nerve로 원심성 신호."
+   ],
+   "title": "호흡 기능 · 신경 지배"
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Diagnosis of Chest Wall Disease (진단)",
+   "gist": "병력·신체검사가 핵심 — 호흡 양상 관찰, CO₂ 모니터링"
+  },
+  {
+   "type": "list",
+   "items": [
+    "병력·신체검사가 진단의 중심.",
+    "호흡 양상: 정상, 노력 증가, 또는 비정상 양상(paradoxical breathing — 흡기 시 복부가 안으로 들어가며 흉벽 바깥 운동 감소).",
+    "늑골·늑간근 손상: 횡격막 기여가 과장되어 흡기 시 복부가 크게 바깥으로 움직임.",
+    "Flail segment: 흉벽 나머지와 반대 방향으로 움직임.",
+    "CO₂ 정기 모니터링: 흉벽 운동 감소에 의한 hypoventilation이 흔함 (Chapter 17).",
+    "영상: 흉부 방사선·CT로 늑골골절, 흉벽 종양, 횡격막 열상·파열, 선천 기형 확인."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Causes of Chest Wall Disease — 선천·종양·외상",
+   "gist": "외상이 가장 흔함 — 늑골골절·flail chest는 통증 관리, 중증 관통상은 개흉술"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "선천 기형 · 종양"
+  },
+  {
+   "type": "list",
+   "items": [
+    "선천 기형은 수의에서 드묾.",
+    "Pectus excavatum: 가장 흔한 선천 흉벽 결손 — 흉골·늑연골의 배측 편위. 유형·정도 다양, 일부는 흉곽 압박이 심해 흉강 용적 감소.",
+    "Pectus excavatum 임상 중증도: 무증상부터 호흡곤란, 기침, 운동불내성, 식욕 감소, 체중 증가 실패, 압박성 심장 후유증까지.",
+    "2018 연구: 단두종에서 임상 중증도 점수와 atypical pectus excavatum 간 강한 양의 상관 → 단두종이 임상적으로 더 영향받을 수 있음.",
+    "Incomplete pentalogy of Cantrell: sternal cleft, peritoneopericardial diaphragmatic hernia, ventral abdominal wall hernia로 이루어진 드문 흉벽 기형 조합 — 수의 보고 있음.",
+    "대부분의 선천 흉벽 기형은 호흡 기능 저하 등 임상 징후 발생 시 수술 필요."
+   ],
+   "title": "선천 기형 (Congenital)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "개·고양이 흉벽 종양은 발생하나 호흡곤란을 일으키는 경우는 드묾.",
+    "대부분 악성 — 흔한 유형: chondrosarcoma, osteosarcoma, fibrosarcoma, 기타 spindle cell tumors.",
+    "횡격막 종양, 보조 호흡근을 침범하는 intramuscular lipoma 보고.",
+    "절제는 임상 징후, 위치, 종양의 생물학적 행동에 따라 결정; 일부는 늑골 절제 필요.",
+    "일반적으로 늑골 6개 넘게 절제하면 흉곽 기능 손상 위험."
+   ],
+   "title": "종양 (Neoplasia)"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "외상 (Trauma)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "원인: 교통사고, 교상, 관통상, 고층 낙하 등.",
+    "흉강 내 장기·혈관 손상 동반 가능 — 흉막강 질환, 폐좌상, 외상성 심근염, 드물게 대기도 손상, 흉부 외 동반 질환이 흉벽 손상 평가를 복잡하게 함."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "외상성 흉벽 손상 비교",
+   "headers": [
+    "손상",
+    "정의·기전",
+    "역학",
+    "진단·치료"
+   ],
+   "rows": [
+    [
+     "Rib fractures",
+     "골편의 직접 폐 손상, 음압 생성 시 통증, flail segment에 의한 호흡 역학 저하로 hypoventilation → hypoxemia 기여\n기침 반사를 자발적으로 억제 → 호흡기 분비물 축적으로 폐렴 조장 가능\n통증과 호흡곤란에 크게 기여",
+     "소동물 늑골골절의 가장 흔한 원인은 외상\n최근 개 연구: 교통사고 56%, 개 교상 44%",
+     "흉부 방사선으로 확인\n초기: 산소 보충 + 통증 관리 (Chapters 15, 134)\n치료 중심은 통증 관리 — 주사 opioids 및/또는 NSAIDs 전신 진통 (Chapters 134, 158); 국소 진통은 환기 부작용 없는 추가 수단"
+    ],
+    [
+     "Flail chest",
+     "연속된 3개 이상 늑골이 각각 배측·복측 모두 골절\nflail 부분이 흡기 시 안으로, 호기 시 밖으로 역설 운동\n초진에서 흔히 보이며 피하기종에 의한 crepitus 동반 (Video 28.1)",
+     "수의 유병률 불명\n후향 연구: 고양이보다 개에서, 교통사고보다 교상에서 더 흔함; 58%에서 기흉 동반",
+     "통증 조절 중심(전신 + 국소)\nflail segment를 아래로 한 측와위 → 분절 안정화·hypoventilation 예방 (양측 flail chest나 실질 질환 시 불가할 수 있음)\nchest wrap도 같은 목적 — 환기를 제한하지 않도록 주의\n내과적 관리로 안정화 안 되거나 다른 손상으로 개흉술 적응 시 수술 교정"
+    ],
+    [
+     "Pseudo-flail injury",
+     "관통성 흉벽 손상으로 늑간근이 찢어져 늑골골절 없거나 적은데도 흉벽 일부가 역설 운동 (완전한 flail segment 아님)",
+     "—",
+     "호흡 역학 영향은 flail chest보다 적으나 관리는 유사"
+    ],
+    [
+     "Penetrating wounds",
+     "공기가 흉강에 들어가면 open pneumothorax(sucking chest wound)\n원인에 따라 폐·심장 등 내장 손상\n흉부 교상은 관통상과 둔상을 모두 유발",
+     "고양이(수술 관리 흉부외상 후향 연구): 개 교상·공격이 가장 흔함\n개: 개·동물 교상, 총상, impalement injuries\n대규모 교상 연구: 흉부 부위 상처 개 35%, 고양이 36%",
+     "중증 관통상 → 외과적 탐색 개흉술\n초기 응급: 신속한 흉강천자 (Chapter 198), 관통 부위 또는 새 부위로 thoracostomy tube (Chapter 199)\n단단한 chest wrap으로 수술 전 기밀 유지 가능 — 흉막강은 반드시 비워진 상태 유지\nimpalement·총상은 수술 계획에 흉부 CT 필요할 수 있음\nNolff 등 증례: 흉부 관통 교상 Dachshund에서 개흉술·좌측 폐엽절제 후 negative pressure wound therapy 성공"
+    ]
+   ],
+   "note": "— = 원문에 해당 내용 없음"
+  },
+  {
+   "type": "list",
+   "items": [
+    "사람 RibScore(Chapman et al.): 방사선 늑골골절 소견 기반 점수 — 사람 외상에서 폐렴, 호흡부전, 기관절개 필요 예측.",
+    "수의에서는 검증되지 않음 — 외상성 늑골골절 개 연구에서 animal trauma triage score는 예후의 강한 예측인자였으나 RibScore·modified RibScore는 아님."
+   ],
+   "title": "예후 점수"
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Spinal Cord and Neuromuscular Disease (척수·신경근육 질환)",
+   "gist": "횡격막 신경지배·흡기근 약화 → hypoventilation, 중증 시 기계환기"
+  },
+  {
+   "type": "list",
+   "items": [
+    "척수·신경근육 질환은 정상 흉벽 운동을 손상(respiratory paralysis) — 횡격막 신경지배를 손상하거나 흡기근을 약화시키는 모든 질환이 hypoventilation 유발 가능 (Chapter 17).",
+    "경추 질환: 호흡근 지배 신경 다수가 cervical nerve roots 4–7에서 기시 — 이 부위 디스크 탈출·경추 골절이 phrenic nerve 운동 축삭을 손상 → 횡격막 수축 실패로 hypoventilation.",
+    "경추 질환 치료 중 개의 호흡부전 위험 인자: 경추 부위 병변, dorsal decompressive laminectomy 치료.",
+    "치료: 이차 hypoxemia 예방 위한 산소, 원발 질환 치료, PaCO₂ 면밀 모니터링. 중증 hypoventilation은 기계환기 적응 (Chapter 32)."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "주요 신경근육 질환 비교",
+   "headers": [
+    "질환",
+    "원인·기전",
+    "임상 징후",
+    "진단·치료·예후"
+   ],
+   "rows": [
+    [
+     "Elapid snake envenomation",
+     "Elapidae(여러 coral snake 종): 미국 남부, 호주, 중남미, 중동, 아시아, 아프리카\n독: neurotoxins, hemolytic toxins, 지혈 이상·출혈 유발 독소, cytotoxins — 호흡계에는 신경독이 가장 극적\n시냅스 전 신경독(phospholipase A₂) → acetylcholine 방출 차단; 시냅스 후 신경독 → acetylcholine receptor 길항",
+     "마비가 빠르게 진행, 교상 직후 활동이 많을수록 더 빠름\n개 마비 전 징후: 구토, 오심, 과다 침흘림, 배뇨·배변, 허탈 → 빠르게(<30 minutes) 통증 없는 마비; 사망 원인은 흉벽·횡격막 운동 감소에 의한 호흡부전이 가장 흔함\n고양이: 빠르고 급성인 상행성 이완성 사지마비, 통각 감소",
+     "항독소 + hypoventilation에 삽관·기계환기; 다른 독소 영향에 따라 대증 치료, 상처 관리, 수혈\nFlorida 후향 연구(개·고양이 14마리): 교상 개 4마리가 hypoventilation으로 환기 필요, 그중 1마리 퇴원 생존; 1마리는 호흡정지로 사망\n유행 지역에서 진행성 LMN 징후 동물은 envenomation을 감별"
+    ],
+    [
+     "Tick paralysis",
+     "미국·호주에서 가장 흔히 보고\n암컷 진드기 타액 신경독이 운동·감각 뉴런에 작용 — 운동 뉴런 원위 분절 탈분극 억제, 신경근 접합부 acetylcholine 방출 차단\n종: 미국 Dermacentor variabilis, Dermacentor andersoni; 호주 Ixodes holocyclus",
+     "진드기 부착 7일 후 시작 — 운동실조 → 빠르게 부전마비·마비, 자율신경 징후\n호주: hypoventilation에 의한 hypercapnia, 후두·인두근 마비에 의한 상기도 폐쇄, Ixodes holocyclus 독소에 의한 심인성 폐부종",
+     "진드기 발견·제거 → 대개 징후 중단; 털 깎기가 필요할 수 있고 살충제 적용\n치료 기간 중 환기 보조 필요 가능\n기계환기 개·고양이 예후 전반적 양호: 환기부전으로 환기 시 90% 생존, 산소화부전 동반 시 53%"
+    ],
+    [
+     "Acute idiopathic polyradiculoneuritis (Coonhound paralysis)",
+     "라쿤에 노출된 사냥견에서 가장 흔함 — 라쿤 타액 물질이 면역매개성 탈수초·축삭 변성 유발\n사람 연구: Campylobacter 동시 감염이 위험 인자 가능\n분변 Campylobacter 양성 개는 발생 가능성 9.4배 (생닭 섭취 유래 가능)",
+     "라쿤 노출 또는 Campylobacter 감염 1주 후 발현\n후지 운동실조·부전마비·반사 저하 → 빠르게 사지부전마비·근긴장 저하",
+     "임상적 의심, 병력, 다른 LMN·사지부전마비 원인(tick paralysis, botulism, MG) 배제로 진단\n주로 대증 치료; 호흡근·횡격막 운동신경 침범 시 기계환기 (Video 28.2: 복식 호흡)"
+    ],
+    [
+     "Botulism",
+     "미리 형성된 Clostridium botulinum 독소 섭취\n개는 type C 독소 — 시냅스 전 acetylcholine 소포의 말단막 융합 차단으로 방출 억제",
+     "부전마비, 운동실조, 호흡부전까지\n뇌신경 이상 — 다른 LMN 질환과 감별에 도움",
+     "주로 대증 치료\n환기부전 또는 흡인성 폐렴에 의한 hypoxemia로 기계환기 필요 가능"
+    ],
+    [
+     "Myasthenia gravis (MG)",
+     "신경근 접합부 acetylcholine receptors의 면역매개 파괴·차단\n선천성 또는 후천성 — 후천성 MG는 개의 가장 흔한 신경근육 질환 중 하나, 고양이는 드묾",
+     "안정 시 정상처럼 보이나 자극 시 징후 뚜렷\n특징: 근육 약화, 빠른 피로, 보폭 짧아짐\nFulminant form: 전신 근육 약화, megaesophagus, 역류, 호흡곤란\n호흡곤란 원인: (1) 흉벽 운동 감소에 의한 hypercapnia 및/또는 megaesophagus에 이은 흡인성 폐렴의 hypoxemia, (2) cholinesterase inhibitor 과량",
+     "추정 진단: 임상 징후, 신경학 검사, edrophonium 등 anticholinesterase 반응 양성\n확진: 혈청 acetylcholine receptor 항체 (immunoprecipitation radioimmunoassay)\n치료: anticholinesterase(i.e., pyridostigmine) + 면역억제 corticosteroids, 기타 면역억제제; plasmapheresis는 fulminant·중증이 아닌 환자에서 더 성공적\n두 호흡곤란 상황 모두 삽관·기계환기 필요 가능\n사람 MG 10%–20%가 기계환기 필요\n수의 후향 연구: 기계환기 필요 중증 MG 개 5마리 중 80%가 기존 폐렴, 1마리만 퇴원 생존"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Obesity (비만)",
+   "gist": "개의 20%–40%가 비만 — 횡격막 이동·흉벽 compliance 감소"
+  },
+  {
+   "type": "list",
+   "items": [
+    "개 집단의 약 20%–40%가 비만.",
+    "환기 결손 요인: 횡격막의 복강 쪽 이동 능력 감소, 호흡일 증가, 흉벽 compliance 전반 감소, 낮은 작동 폐용적.",
+    "사람 obesity hypoventilation syndrome(Pickwickian-type syndrome): 각성 시 동맥 hypoventilation + 비만으로 정의.",
+    "수의 문헌은 없으나 비만 개·고양이에서 유사 증후군이 나타날 수 있음 — 특히 비만 단두종의 호흡기 질환 또는 모든 품종의 전신마취 후."
+   ]
+  }
+ ]
+}
