@@ -1,0 +1,35 @@
+# GitHub Pages 배포 워크플로
+# main에 push할 때마다 data/manifest.json(파일별 지문 목록)을 만든 뒤 사이트 전체를 Pages에 올립니다.
+# 레포 Settings → Pages → Build and deployment → Source를 "GitHub Actions"로 바꿔야 동작합니다.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build data manifest
+        run: python3 scripts/build_manifest.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
