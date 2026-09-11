@@ -213,7 +213,7 @@ td.na{color:var(--muted)}
 (function(){
   const DATA = '../data/saccm/';
   const $ = (s, r=document) => r.querySelector(s), $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
-  const S = { toc: [], idx: {}, chapters: new Map(), full: false, loadingAll: false, current: null, pendingMark: '' };
+  const S = { toc: [], idx: {}, chapters: new Map(), pending: new Map(), full: false, loadingAll: false, current: null, pendingMark: '' };
   const store = { get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } }, set(k,v){ try { localStorage.setItem(k,v); } catch(e){} } };
 
   const esc = (s) => String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
@@ -293,13 +293,17 @@ td.na{color:var(--muted)}
     if (!$('#side').classList.contains('open')) a.scrollIntoView({ block: 'nearest' });
   }
 
-  async function fetchChapter(id){
-    if (S.chapters.has(id)) return S.chapters.get(id);
-    const r = await fetch(DATA + encodeURIComponent(id) + '.json');
-    if (!r.ok) throw new Error(r.status);
-    const c = await r.json();
-    S.chapters.set(id, c);
-    return c;
+  /* 같은 챕터를 동시에 두 번 요청하지 않도록 진행 중인 요청을 공유 */
+  function fetchChapter(id){
+    if (S.chapters.has(id)) return Promise.resolve(S.chapters.get(id));
+    if (!S.pending.has(id)) {
+      const p = fetch(DATA + encodeURIComponent(id) + '.json')
+        .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then((c) => { S.chapters.set(id, c); return c; })
+        .finally(() => S.pending.delete(id));
+      S.pending.set(id, p);
+    }
+    return S.pending.get(id);
   }
 
   async function open(id){
@@ -414,16 +418,37 @@ td.na{color:var(--muted)}
   $('#q-clear').addEventListener('click', () => { $('#q').value = ''; search(); $('#q').focus(); });
   window.addEventListener('hashchange', () => open(decodeURIComponent(location.hash.slice(1))));
 
+  function applyToc(text){
+    const t = JSON.parse(text);
+    S.toc = (t.chapters || []).slice().sort((a, b) => a.num - b.num);
+    S.idx = {}; S.toc.forEach((c, i) => S.idx[c.id] = i);
+    renderToc();
+  }
+  /* 목차는 캐시로 먼저 그리고, 뒤에서 서버 목차를 확인해 달라졌을 때만 다시 그림 */
+  async function refreshToc(prev){
+    if (!(navigator.serviceWorker && navigator.serviceWorker.controller)) return;
+    try {
+      const r = await fetch(DATA + 'toc.json?fresh=' + Date.now(), { cache: 'no-cache' });
+      if (!r.ok) return;
+      const text = await r.text();
+      if (text === prev) return;
+      applyToc(text);
+      if (S.toc.some(t => !S.chapters.has(t.id))) S.full = false;
+      if (S.current) markActive(S.current);
+      if ($('#q').value.trim()) search();
+    } catch (e) {}
+  }
+
   (async function init(){
+    const want = decodeURIComponent(location.hash.slice(1)) || store.get('saccm:last') || '';
+    if (want) fetchChapter(want).catch(() => {});  // 목차와 동시에 받기 시작
     try {
       const r = await fetch(DATA + 'toc.json', { cache: 'no-cache' });
       if (!r.ok) throw new Error(r.status);
-      const t = await r.json();
-      S.toc = (t.chapters || []).slice().sort((a, b) => a.num - b.num);
-      S.toc.forEach((c, i) => S.idx[c.id] = i);
-      renderToc();
-      const want = decodeURIComponent(location.hash.slice(1)) || store.get('saccm:last') || '';
+      const text = await r.text();
+      applyToc(text);
       open(S.idx.hasOwnProperty(want) ? want : S.toc[0].id);
+      refreshToc(text);
     } catch (e) {
       $('#toc').innerHTML = '<p class="empty">목차 파일(data/saccm/toc.json)을 불러오지 못했습니다.</p>';
       $('#doc').innerHTML = '<p class="state">목차를 불러오지 못해 챕터를 열 수 없습니다. 인터넷 연결을 확인한 뒤 새로고침하세요.</p>';
