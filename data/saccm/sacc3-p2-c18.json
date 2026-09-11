@@ -1,0 +1,115 @@
+{"id":"sacc3-p2-c18","book":"Small Animal Critical Care Medicine, 3rd ed.","book_short":"SACCM 3판","part":"Part II","part_title":"Respiratory Disorders","chapter_num":18,"title":"Upper Airway Disease","author":"Dana L. Clarke, VMD, DACVECC","format":2,"blocks":[
+{"type":"callout","title":"KEY POINTS","items":[
+"상부기도 폐쇄는 소동물 호흡곤란의 흔한 원인 — 즉각적인 인지와 치료가 필요하다.",
+"개에서 흔한 원인: 후두 마비, 기관 허탈, 단두종 폐쇄성 기도 증후군(BOAS).",
+"고양이에서는 덜 흔하며 비강 질환, 염증성 후두 질환, 기관·후두 종양이 원인일 수 있다.",
+"진단보다 환자 안정화(산소, 진정, 불안 조절)가 우선 — 추가 스트레스를 피한다.",
+"합병증(고체온, 흡인성 폐렴, 비심인성 폐부종)이 흔하다."
+]},
+{"type":"heading","level":2,"text":"병력·임상 징후","gist":"흡기 stridor·stertor·dysphonia; 고양이는 개구호흡 시 이미 중증"},
+{"type":"list","items":[
+"호흡곤란 환자는 환기·산소화 보상 여력이 소진된 상태 — 보정 같은 작은 스트레스로도 급격히 악화. 원인 확진 전에 산소·항불안제, 필요 시 삽관·기관절개가 먼저.",
+"고양이는 코로 호흡하며 개구호흡·panting은 중증에서만 → 보호자가 늦게 인지; 운동 불내성도 늦게 드러남. 개는 panting으로 반응하나 정상으로 여겨지기 쉬움.",
+"상부기도 범위: 비강·후비공, 비인두·구인두, 후두, 흉곽 입구까지의 기관. 징후는 동적(흡기/호기, 스트레스·활동에 따라) 또는 정적(고정 관강내/외 폐쇄).",
+"부위별 징후 ▸ 앞쪽(비강·후비공·비인두): 콧물, 재채기, 역재채기, 코골이, stertor(저음 코골이 소리, 흡기 및/또는 호기), panting 없이는 편히 못 쉼 ▸ 후두·기관: 기침, 구역(특히 먹고 마실 때), stridor(흡기 고음), 후두·인두 질환은 dysphonia.",
+"기침: 기관·주기관지·후두 질환에 흔하나 하부기도·폐실질·심장 질환도 원인 → 감별 필요. 상부기도 기침은 건성·비생산성, 하부기도·폐실질은 습성·생산성 경향 — 단 보호자는 판단 어려움(가래 삼킴, 소화기성 retching)."
+]},
+{"type":"heading","level":2,"text":"환자 평가","gist":"흉곽 입구 앞 폐쇄 = 흡기 노력·소음, 뒤 = 호기 연장·wheeze; 고체온 감시"},
+{"type":"list","items":[
+"입원 환자도 스트레스·과도한 panting·불안, 삽관·마취 회복 후, 구토·역류 후 폐쇄 발생 가능. 고위험군(단두종, 후두 기능장애, 기관 허탈)은 회복 계획·재삽관/기관절개 준비, 적극적 구역 관리·구토 유발 적은 약물 선택.",
+"청진: 크게 전달되는 상부기도 소음 — 전체 호흡기 청진으로 최대 강도 지점 국소화. 흡기 시 음성 흉강내압 → 흉곽 입구 앞쪽 기도의 경벽압 음성 → 허탈 → 흡기 연장·소음. 호기 시 양성 흉막압 → 흉곽 입구 뒤(흉강내 기관·주기관지) 허탈 → 호기 연장·호기 곤란·wheeze.",
+"응급 호흡곤란 개·고양이 후향 연구: 개의 흡기 곤란, 개·고양이의 흡기 소음이 상부기도 국소화와 유의하게 연관(고양이는 증례 부족). 소음 정도는 폐쇄 중증도와 함께 악화. 전달 소음에도 폐실질 청진 필수(비심인성 폐부종·흡인성 폐렴).",
+"체온 조절: panting·증발 냉각이 주요 방열 수단 → 상부기도 질환은 덥고 습한 환경 불내성, 열사병 위험인자. 후두 마비·단두종에서 고체온·열사병 흔함 → 신속 치료(신장·신경·심혈관·응고 이상 예방). 흡인성 폐렴도 합병증이므로 발열도 고려 (Chapter 10).",
+"중증 폐쇄 징후: 큰 호흡 소음, 현저한 호흡곤란, 고체온, 머리·목 신전(orthopnea), 혀·점막 청색증, 허탈 → 즉시 삽관 또는 응급 기관절개 (Chapter 197)."
+]},
+{"type":"heading","level":2,"text":"안정화","gist":"산소 + 스트레스 최소화(IM 투약), 진정 무효·호흡정지 임박 시 즉시 삽관/기관절개"},
+{"type":"list","items":[
+"폐쇄에 대한 호흡일 → 부종·염증, 스트레스, 진행성 폐쇄의 악순환 → 원인과 무관하게 산소 보충 + 스트레스 최소화. 정맥 카테터·채혈·검사 보정이 산소 요구를 높여 호흡정지 유발 가능 → 카테터가 안전하지 않으면 IM 투약.",
+"산소: oxygen cage가 높은 FiO₂·최소 조작으로 좋으나 상부기도 소음(악화 신호)을 들을 수 없어 위험할 수 있음 (Chapter 15).",
+"불안·불편 조절 필수, 이차 염증 치료 (Chapter 132, Table 18.1). 진정·불안 조절로 호전 없거나 호흡정지 임박 시 급속 도입 후 기관내삽관 또는 기관절개 (Chapters 133·197). 어려운 삽관 예상(후두 허탈·마비, 상부기도 이물, 종양) 시 Cook Airway Exchange Catheter — 초기 산소 주입 + 삽관용 rigid stylet."
+]},
+{"type":"table","title":"Table 18.1 ICU 상부기도 폐쇄 환자 약물","headers":["약물","용량","적응·고려"],"rows":[
+["Acepromazine","0.005–0.02 mg/kg IV\n0.01–0.05 mg/kg IM","항불안. IV 최대 효과까지 15분. 심혈관 불안정 환자 주의"],
+["Butorphanol","0.1–0.5 mg/kg IM 또는 IV","진정, 진해, 진통"],
+["Trazodone","2–5 mg/kg PO q8–12h","항불안. 경구 제형만"],
+["Dexamethasone sodium phosphate","0.05–0.2 mg/kg IM, IV, SC","항염 glucocorticoid. 관류 불량·기도 종양 의심 시 주의(진단 방해 가능)"]
+]},
+{"type":"heading","level":2,"text":"진단","gist":"안전 우선; 진정 후두 검사는 모든 상부기도 환자에 적응, 역설 운동 감별"},
+{"type":"table","title":"Table 18.2 상부기도 폐쇄 환자의 진단 검사","headers":["검사","소견"],"rows":[
+["동맥/정맥 혈액가스","PaCO₂/PvCO₂ 상승 ± 대사성 보상"],
+["동맥 혈액가스","A-a gradient로 hypoxemia에 대한 hypoventilation 기여 배제 (동맥 채혈이 호흡곤란에서 불가능한 경우 많음)"],
+["흉부 방사선","비심인성 폐부종, 기관지폐렴(흡인/감염), 흉강내 기관 허탈, 주기관지 허탈, 기도/폐 종양"],
+["경부 방사선","후두·인두 종괴, 흉곽외 기관 허탈, 방사선 불투과 이물"],
+["상부기도 투시","비인두·기관·기관지 허탈의 동적 평가, 폐엽 탈출"],
+["CT","비강/비인두 영상, bulla, 기관 종양, 폐 전이, 방사선 치료 계획"],
+["진정 후두 검사","편도 외번·충혈·종괴, 후두 구조·기능, 후두 소낭 외번·부종, 염증성/증식성 변화, 후두개 후굴, 연구개 길이·두께·불규칙"],
+["강직/굴곡 내시경","비갑개 증식·염증·진균 plaque·비강 종괴; 비인두 협착·종괴·비갑개·이물; 비인두 허탈; 기관·주기관지 허탈; 기관 이물·육아조직; 기관·기관지 종양"],
+["기도 샘플링 (경기관·기관내·BAL)","기도 세포검사, 호기성 배양·감수성, Mycoplasma 배양·PCR"]
+]},
+{"type":"list","items":[
+"CT·두개골 방사선은 깊은 진정/마취 필요 → 2차 검사. 동적 질환(비인두·후두·기관 허탈)은 진정·마취 CT에서 안 보일 수 있음. 투명 플라스틱 위치 고정 장치(VetMousetrap)로 마취 없이 동적 CT 평가 가능; 고양이 각성 CT로 관강내 기도 종괴·후두 마비·후두기관염 진단.",
+"진정 후두 검사는 후두 질환이 주 병인이 아니어도 모든 상부기도 질환 환자에 적응. 후두 검사 영향 최소 프로토콜: propofol IV 천천히 적정 ± doxapram 1.1–2.2 mg/kg IV, 또는 acepromazine 0.2 mg/kg IM + butorphanol 0.4 mg/kg IM 전처치 20분 후 isoflurane mask 도입. 고용량 acepromazine은 정상견 연구 기반 — 부작용 주의; 중증·손상 환자는 저용량(0.01–0.05 mg/kg)에서 적정 (Chapter 132).",
+"표준 laryngoscope는 혀 견인·후두개 압박으로 왜곡 가능 → 경구 강직/굴곡 내시경 권장(왜곡 없음, 영상 보관). 보조자가 호흡 phase를 알려 역설 후두 운동(흡기 음압으로 피열연골이 안쪽으로 이동)을 정상 기능으로 오인하지 않게 함. 후두개 후굴(후두개가 성문으로 후방 전위)도 드문 원인으로 배제. 연구개 끝은 후두개에 닿거나 몇 mm 이내로 넘어야 정상.",
+"기관지폐렴(흡인·점액섬모 기능장애·만성 하부기도 질환)은 흔한 이차 합병증 (Chapter 24). 세포검사·배양은 항생제 선택에 유용(특히 반복 폐렴)하나 중증 호흡곤란에서는 샘플링 위험·항생제 지연 → 경험적 항생제. 안정 시 경기관·기관내·BAL로 세포검사, 호기성 세균·Mycoplasma 배양."
+]},
+{"type":"heading","level":2,"text":"Brachycephalic Airway Syndrome (BAS/BOAS)","gist":"비강이 흡기 저항 80% → 비공 확장이 수술 핵심; GI 병변 최대 80%"},
+{"type":"list","items":[
+"동의어: brachycephalic (obstructive) airway syndrome. 호발: English Bulldog, Pug, French Bulldog, Boston Terrier. 일차 해부학적 요소: 협착 비공, 연장 연구개; 흔한 추가 요소: 기관 저형성, 비인두 비갑개. 만성 흡기 저항의 이차 합병증: 후두 소낭 외번, 편도 외번, 후두 허탈, 기관 허탈, 만성 소화기 징후, 실신.",
+"정상견 흡기 저항의 약 80%가 코에서 발생 — 협착 비공·과잉 인두 조직·연장 연구개·기관 저형성으로 과장 → 난류·부종·흡기 소음. 징후: 코골이, stertor, stridor, 열·운동 불내성, 침흘림, 구토, 역류. 호발 연령 2–3세 young adult(English Bulldog은 1세부터 보고).",
+"진단: 신호·징후 + 진정 구강 검사(laryngoscope/내시경)로 비공·구인두·후두 — 연구개 길이, 성문 크기·모양, 후두 소낭 외번·후두 허탈. 흉부 방사선: 기관 저형성·기관 허탈·열공 허니아·폐렴(기관지폐렴 중 기관 염증·부종으로 저형성 오진 주의). 투시: 동적 비인두 허탈. 혈액가스: 단두종은 중두·장두종보다 CO₂ 높고 O₂ 낮음.",
+"역굴곡 비인두 내시경: 비인두 염증·허탈, 비인두로 돌출한 비갑개(증상 있는 BAS 개의 약 20%, 그중 80%가 Pug). 기관지경: 수술 대상 BAS 개의 87%에서 기관지 허탈/협착, 후두 허탈과 연관. 상부 소화관 내시경: 식도염·위염·역류·열공 허니아·유문 협착이 최대 80% — 소화기 징후와 호흡 징후 중증도 상관. cTnI 상승 가능(만성 hypoxemia 심근 손상); CRP·haptoglobin은 증가하지 않음(전신 염증 미미).",
+"관리: 1차 — 체중 감량, 흥분·활동 유발 요인 조절, 소화기 징후 약물 치료, 폐실질 질환 치료. 대부분 수술 필요. 비공 확장이 가장 중요(다른 변화는 비공 협착의 이차; 어린 나이에 권장, 술식 무관하게 유의한 개선). 연구개 절제, 외번 소낭 절제, 편도 절제도 필요할 수 있고 후두 허탈 동반 진행 BAS에도 도움. 기관 저형성·기관지 허탈은 수술 예후와 무관. 진행성 후두 허탈: cricoarytenoid lateralization + thyroarytenoid caudolateralization(arytenoid laryngoplasty) — 과거 영구 기관절개만 가능했던 질환."
+]},
+{"type":"heading","level":2,"text":"비강·비인두 질환","gist":"고양이 비인두 polyp(28%) — VBO 권장, Horner 43–57%; NPS는 풍선 확장"},
+{"type":"table","title":"비인두 질환 비교","headers":["질환","특징·원인","징후","진단","치료·예후"],"rows":[
+["Nasopharyngeal polyp","고양이 상부기도 폐쇄의 흔한 원인(비인두 질환 고양이의 28%); 개 3례 보고. 이관·중이 점막 기원 양성 염증성 병변 → 비인두 또는 외이도로 성장. 원인 불명(FHV·FCV·Mycoplasma·Bartonella·Chlamydophila felis 검출 실패)","호흡 소음/stertor, 재채기, 콧물, 연하곤란(체중 감소); 진행 시 호흡곤란","병력, 구인두 검사·연구개 촉진, 이경, 역굴곡 비내시경, 방사선, CT, MRI","내과 무효 → 수술. Traction-avulsion: 가장 단순하나 재발 40%–50%(특히 이도 제거 시) → 이관 polyp·중이 질환은 VBO 권장. Horner 증후군(traction 43%, VBO 57%; 대부분 최대 4주 내 소실), 전정 장애, 안면·설하신경 마비. 술전 청력 결손은 VBO로 회복 안 됨. 세균성 중이·내이염은 장기 항생제; 술후 prednisolone으로 재발 감소 보고(역할 불명확). 예후 양호"],
+["Nasopharyngeal stenosis (NPS)","개·고양이 드묾. 후비공 뒤~연구개 뒤끝 사이 막에 의한 부분/완전 협착. 선천 또는 만성 염증(감염·흡인성 비염), 외상, 종양 이차","수개월 지속: 만성 콧물, stertor, stridor, 운동 불내성, 구역, 중증 시 호흡곤란","CT, 역굴곡 비내시경; barium 조영 rhinography","고양이 연구개 정중 절개 수술. 역굴곡 내시경 확인 시 동시 풍선 확장(angioplasty balloon을 ventral meatus로 순행 또는 코로 넣은 red rubber 내 wire 따라 구강 역행; 후비공 안이 아닌지 확인, ± 투시). 재협착 흔해 반복 확장 필요. 실패 시 stent(수술 또는 투시+역굴곡) — 전례 호흡 개선; 합병증 연하곤란·털 끼임·조직 내성장·장기 콧물, 연구개 stent 미란(피복 stent 개 2례, 4·20개월 후)"],
+["Congenital choanal atresia","고양이 드묾, 개 1례. 비강 뒤쪽(공통 비인두 앞) 뼈/연조직 폐쇄, 편측 또는 양측","콧물, stertor, 운동 불내성, 개구호흡(NPS 유사)","CT, 역굴곡 비내시경","경비 천자 + 일시 stent, 비인두 수술 접근"],
+["비인두 이물·감염","드묾. Cryptococcosis, blastomycosis, 광범위 세균 감염·bulla 골 증식. 이물은 흡입, 구토/역류 역류, 섭취 후 연구개 천공으로 박힘. 보고 이물: 뼈, foam, 소구치, trichobezoar, 식물, 돌, 바늘, 애완 물고기","급성 상부 호흡기 징후, 재채기; 만성화 시 콧물·구취","—","연구개 견인 경구 제거, 역굴곡 basket 회수, 비강 세척, 연구개 경유 수술 절제"]
+],"note":"— = 요약에 해당 내용 없음"},
+{"type":"heading","level":2,"text":"후두 질환","gist":"후두 마비: 흉부 방사선 필수, tie-back 후 흡인성 폐렴 8–33%, 90% 호전"},
+{"type":"heading","level":3,"text":"Laryngeal Paralysis"},
+{"type":"list","items":[
+"반회후두신경 기능장애 → 흡기 시 피열연골 외전 장애 → stridor·호흡곤란. 중~노령 대형·초대형견에 흔함, Labrador Retriever 과대표. 고양이는 훨씬 드묾.",
+"정상견 비강 호흡 시 후두 저항은 6%(반회후두신경 지배 dorsal cricoarytenoideus가 피열연골 외전). 신경 기능장애 → 근 위축 → 흡기 시 성문 협착 → 기류 속도·난류↑, 흡기 근육 노력↑, 동적 후두 허탈 → 폐쇄.",
+"원인: 선천성 탈신경(Bouvier des Flandres, Rottweiler, Dalmatian, Siberian Husky·mix, Bull Terrier, Pyrenean Mountain Dog, Leonberger — Leonberger 외 모두 1세 미만), 외상(경부 외상, 경부·종격·흉부 종양, 갑상선절제·관강외 기관 ring 삽입 의인성), 특발성(대부분 — 전신 말초 다발신경병증의 일부라는 근거 증가), 중증근무력증·갑상선기능저하증(관계 불명확).",
+"징후: 흡기 stridor, 짖는 소리 변화, 운동 불내성, 기침, 구역 — 대부분 양측 마비가 되어야 뚜렷. 침흘림·구토/역류 가능(소화기 징후 없어도 식도 운동장애 배제 불가). 중증: 호흡곤란·청색증·허탈. 운동·스트레스·불안·고온·습도로 악화; 심한 폐쇄·후두 부종은 응급 삽관/기관절개.",
+"마취 전 흉부 방사선 필수(해소 중/무증상 흡인성 폐렴 흔함); 비심인성 폐부종, 심비대, 반회후두신경 침범 흉강내/종격 종양, 열공 허니아, 전이 배제. 식도 운동 평가 고려 — liquid-phase esophagram이 신경학적 상태보다 술후 흡인성 폐렴 예측에 나을 수 있음.",
+"확진: 진정 직접 후두 검사/laryngoscopy(왜곡·역설 운동 주의). 경구 굴곡 비디오 내시경(확대, 혀·후두개 조작 불필요). 20 kg 초과 개에서 경비 굴곡 내시경(저용량 전처치·도입, 비강 lidocaine). 후두 초음파(echolaryngography)·CT도 편측·양측 마비 진단에 성공.",
+"치료: 경증 — 체중 감량, 스트레스·열·습도 회피, 항불안제, 소화기 지지(제산·운동촉진·항구토), 기저 질환(갑상선기능저하·중증근무력증) 치료. 폐쇄 있는 개는 수술 — 목표는 후두 보호 기능 보존하며 성문 확장. 술식 3범주: 배측 성문 확장(편측/양측 arytenoid lateralization), 복측 확장(성대 절제, 부분 후두절제, modified castellated laryngofissure), 배·복측(castellated laryngofissure + 양측 lateralization). 양측 마비여도 편측 tie-back이 더 흔함 — 양측은 사망률·합병증(흡인성 폐렴, 급성 호흡곤란) 증가.",
+"술후 합병증: 흡인성 폐렴 8%–33%(가장 흔함), 기침·구역, 징후 재발, 장액종, 호흡곤란, 급사. 그럼에도 90%에서 호흡 상태·stridor 개선. 후두 마비 + 후두 허탈 동반 소형 비단두종에도 arytenoid lateralization 유효.",
+"고양이: 드물며 징후 유사, 노령(중앙/평균 8–16세), 2세 미만 선천성 산발 보고. 편측 질환 수술 지침 없음. 술후: 일과성 Horner, 호흡곤란, 폐부종, 후두 부종, 폐쇄성 후두 협착; 즉각적 흡인성 폐렴은 2례만."
+]},
+{"type":"heading","level":3,"text":"Laryngeal Collapse"},
+{"type":"list","items":[
+"주로 BAS의 이차 합병증; 후두 마비, 기관 허탈, Norwich Terrier 상부기도 증후군에서도 발생. 만성 음성 관강내압 → 연골 약화, 성문 직경 소실, 호흡일↑, 염증, 폐쇄. 기관 허탈 동반 시 연골연화증이 후두 연골에도 작용할 가능성(추가 연구 필요).",
+"Norwich Terrier 증후군: 성문하 내강 협착, 다양한 후두 허탈, piriform recess 부분/완전 폐색, 과잉 후두 점막, 과잉 배측 인두벽; 유전 기반·등급 체계 연구 중.",
+"등급 ▸ Grade 1: 후두 소낭 외번 ▸ Grade 2: cuneiform process 내측 위치 + aryepiglottic 허탈 ▸ Grade 3: corniculate 연골 허탈.",
+"징후: 다른 후두 질환과 유사 — 소음, 구역, 열·스트레스·흥분 불내성, stridor, 호흡곤란. 초기: 체중 감량, 스트레스·불안 조절, 항염제(corticosteroid 또는 NSAID). 중증·무반응 시 수술: sacculectomy, 편측 arytenoid lateralization, 편측 arytenoid laryngoplasty, ventral laryngotomy; 진행·실패 시 영구 기관절개."
+]},
+{"type":"heading","level":3,"text":"Inflammatory Laryngeal Disease"},
+{"type":"list","items":[
+"염증성/육아종성 후두 질환 — 개·고양이 산발 보고. 추정 원인: 고양이 호흡기 바이러스, 이차 세균 감염, 기관내삽관, 이전 이물, 후두 수술 이차.",
+"경부 방사선: 연조직 음영 증가·후두 협착. 진정 후두 검사: 후두·성대 비후·발적, 피열연골·성문 결절/종괴. 육안으로 종양과 구별 불가 → FNA 또는 가급적 생검·조직병리. 조작·생검 후 염증 악화 시 일시 기관절개 필요할 수 있음.",
+"치료: corticosteroid, 항생제, 폴립양/종괴 병변 debulking; 불응 시 영구 기관절개."
+]},
+{"type":"heading","level":2,"text":"기관 질환","gist":"협착은 절제·debridement·stent; 이물 내시경 회수 개 86%·고양이 40%"},
+{"type":"list","items":[
+"기관 협착/strictures: 관강내(기관내삽관 — cuff 과팽창, 회로 연결한 채 머리·목 재위치로 배측 기관막 손상) 또는 관강외(교상, 차량 외상) 손상, 드묾. 급성: 기종격, 기흉, 피하기종, 호흡곤란. 덜 심한 전층 파열 → 원주형 협착. 이전 수술 반흔·기관 avulsion도 원인. 진단: 흉부 방사선, CT, tracheoscopy. 치료: 기관 절제·문합, 기관지경 괴사조직 debridement, 관강내 stent (Chapter 19). 항응고 살서제 중독의 관강내 출혈·기관 혈종에 의한 협착도 보고.",
+"기관 이물: 기침, 구역, 머리·목 신전, 호흡곤란; 기간은 폐쇄 정도·염증에 따라 다양. 보고: grass awn, 식물, 플라스틱, 돌·자갈, 올빼미 이빨, 고양이 Cuterebra. 경부·흉부 방사선 → tracheoscopy 직접 관찰 + grasping forceps/snare 제거: 성공률 개 86%, 고양이 40%. 실패 시 수술; 고양이 투시 유도 forceps, Foley 풍선, 투시 유도 over-the-wire angioplasty 풍선 회수법도 보고."
+]},
+{"type":"heading","level":2,"text":"상부기도 종양","gist":"비강: 개 암종/육종·고양이 림프종; 후두·기관 종양 중앙 8–9세, 예후 guarded"},
+{"type":"table","title":"부위별 종양","headers":["부위","개","고양이","징후·진단·치료"],"rows":[
+["비강·비인두","비강: 암종(adenocarcinoma, SCC, 미분화 암종), 육종(fibrosarcoma, osteosarcoma, chondrosarcoma). 비인두: lymphoma, MCT, SCC, 미분화 암종, adenocarcinoma, fibrosarcoma, osteosarcoma, spindle cell tumor","비강: lymphoma 최다; 육종(fibro-/osteo-/chondro-/hemangiosarcoma), 암종(adeno-, 미분화), olfactory neuroblastoma. 비인두: lymphoma, adenocarcinoma(드묾)","완전 폐쇄 시에만 폐쇄 징후: 콧물, 흡기 곤란, 개구호흡(고양이), 수면 불가(개). 비강은 수술 margin 어려움 → 전신 화학·방사선(동맥내 화학요법 보조). 비인두 소형·경계 명확은 수술 가능하나 화학·방사선이 더 유익"],
+["후두","chondrosarcoma, extramedullary plasmacytoma, rhabdomyoma, 암종, MCT, SCC, lymphoma, adenocarcinoma, melanoma, granular cell tumor, chondroma; 양성 lipoma·rhabdomyoma 드묾","lymphoma, SCC, 저분화 round cell tumor, 암종, adenocarcinoma","드묾, 중앙 8세; 기침·질식·호흡곤란·목소리 변화, 내원 시 대부분 진행. 염증성/양성 병변과 육안 구별 불가 → 조직병리. 절제 어려움 — 전후두절제 + 영구 기관절개 필요할 수 있고 소형·양성은 성공. 예후 guarded"],
+["기관","osteochondroma 최다; chondrosarcoma, chondroma, adenocarcinoma, 암종, MCT, leiomyoma, extramedullary plasmacytoma, osteosarcoma","lymphoma 최다; 암종, adenocarcinoma, adenoma, SCC, neuroendocrine carcinoma, basal cell carcinoma","후두 종양보다 드묾. 중앙 9세(개 osteochondroma·enchondroma는 2세 미만). 기침, wheeze, 호흡곤란, stridor. 경부·흉부 방사선(후두 뒤~carina 어디든), 각성 비삽관 CT로 범위·폐색 정도, tracheoscopy 생검/brush(소형 환자는 발관 필요 — 위험). 수술 절제, 내시경 snare, 냉동, 방사선, 화학, 고식적 stent"]
+]},
+{"type":"heading","level":2,"text":"합병증과 추가 관리","gist":"고체온·NCPE(미배측)·흡인성 폐렴(전복측); HFNC·CPAP helmet·V-gel"},
+{"type":"list","items":[
+"합병증: 고체온 (Chapter 10), 비심인성 폐부종 (Chapter 23), 흡인성 폐렴 (Chapter 24). 모든 상부기도 환자 체온 밀착 감시; 중증 고체온 능동 냉각 실패 시 호흡·심혈관·신경·신장·응고 이상 → MODS·MOF·DIC (Chapter 7).",
+"마취 전 폐 병변 확인: 비심인성 부종 = 미배측 간질~폐포 침윤, 흡인성 폐렴 = 전복측 간질~폐포 침윤 → 폐렴은 마취 도입 시 기도 샘플링(세포·배양·감수성) + 적절한 항생제. NCPE 치료는 지지적 — 산소, 신중한 crystalloid·colloid; 이뇨제·β-agonist는 폐포액 제거 증가 미입증으로 논란.",
+"HFNC: 고유량 산소 + CPAP, 가온·가습, 일반 nasal prong보다 잘 견딤 (Chapter 31). 전통 산소에 반응 없는 급성 저산소 개에서 기계환기 회피에 유용; 마취 회복 저산소 단두종 지지·호흡곤란 점수 개선(환기 저하·공기연하 관찰).",
+"소아용 CPAP helmet/hood: 일차 폐 기능장애 저산소 개에서 1시간 내 PaO₂·A-a gradient·SpO₂·PaO₂:FiO₂ 개선, 15/17 마리 잘 견딤.",
+"V-gel 성문상 기도 장치: 소아 어려운 삽관용 blind 삽관 설계. 건강한 고양이에서 기계환기 압력 16 cm H₂O까지 유지, 기관내관보다 누출 적음; blind 또는 직접 시야 삽입, 후두·기관 자극 회피, 삽관 후 stridor 감소."
+]}
+]}

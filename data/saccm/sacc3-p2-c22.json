@@ -1,0 +1,78 @@
+{"id":"sacc3-p2-c22","book":"Small Animal Critical Care Medicine, 3rd ed.","book_short":"SACCM 3판","part":"Part II","part_title":"Respiratory Disorders","chapter_num":22,"title":"Pulmonary Hypertension","author":"Lance C. Visser, DVM, MS, DACVIM (Cardiology); Yu Ueda, DVM, PhD, DACVECC","format":2,"blocks":[
+{"type":"callout","title":"KEY POINTS","items":[
+"폐고혈압(PH)은 폐혈류 증가, 폐혈관저항(PVR) 증가, 폐정맥압 증가 또는 이들의 조합으로 생기는 비정상 혈역학 상태이지 그 자체가 질병은 아니다.",
+"PH는 특정 질환의 징후와 예후를 악화시키며 결국 우심부전으로 이어질 수 있다.",
+"숙련된 검사자의 심초음파가 PH 진단의 핵심 임상 도구다.",
+"PH는 6군으로 분류: 1) 폐동맥고혈압(PAH), 2) 좌심 질환, 3) 호흡기 질환/저산소, 4) 폐혈전/혈전색전, 5) 기생충(심장사상충·Angiostrongylus), 6) 다인성/불명확.",
+"임상적으로 유의한 PH의 최적 관리는 기저 질환 확인·치료 + 대부분 PDE5 억제제(sildenafil, tadalafil) 같은 PH 특이 치료.",
+"PDE5 억제제는 좌심 질환/부전(예: MMVD)에 이차적인 PH의 1차 치료가 아니다."
+]},
+{"type":"heading","level":2,"text":"정의·병태생리","gist":"사람 mean PAP ≥25 mm Hg; precapillary(PVR↑) vs postcapillary(LA압↑) → RV 과부하"},
+{"type":"list","items":[
+"PH는 폐혈관 내 압력의 비정상 상승 — 특정 질환의 정의 특성이 아니라 여러 질환의 이환·사망에 기여하는 혈역학·병태생리 상태. 사람: 우심 카테터로 측정한 안정 시 mean PAP ≥25 mm Hg.",
+"Precapillary PH: 폐정맥압 상승 없이 PVR 증가(혈관수축, 폐혈관 질환에 의한 구조 변화, 또는 둘 다). Postcapillary PH(폐정맥 고혈압): 좌심 질환·LA압 상승에 이차 — LA압↑ → 폐정맥압↑ → RV 부하↑. 만성 postcapillary PH(중증 좌심 질환/부전)는 폐동맥 수축·혈관 질환 → PVR↑ → isolated postcapillary('passive') 또는 combined post-/precapillary('reactive') PH.",
+"지속적 PAP 상승 = 폐동맥(세동맥) 수축, 폐동맥 remodeling/혈관 질환(벽 경직, 내피 기능장애, 혈관 염증·혈전, 섬유증)에 의한 PVR↑. 좌-우 shunt의 폐혈류 증가나 만성 폐정맥압 상승도 반응성 혈관수축·혈관 질환으로 PVR↑ 유발.",
+"PVR↑ → RV 후부하↑ → RV 비대(혼합형: 벽 비후 + 확장). RV는 지속적 압력 과부하에 취약 → RV 기능장애/부전 → 우심부전(전신 정맥압↑, 흉수·복수)."
+]},
+{"type":"table","title":"Table 22.1 PH 발생 기전","headers":["기전","원인 예"],"rows":[
+["폐혈류 증가","심장내·외 결함의 좌-우 shunt(PDA, VSD, ASD)"],
+["폐혈관저항 증가","폐동맥(세동맥) 수축, 폐동맥 혈전, 폐 내피 기능장애, 폐혈관 remodeling, 혈관주위 염증, 폐혈관 내강 폐쇄, 혈액 점도 증가, 폐동맥 벽 경직, 폐실질 파괴"],
+["폐정맥압 증가","좌심 질환(MMVD 등), 큰 폐정맥의 압박/협착"]
+],"note":"기전 조합 가능 — 만성 진행성 좌심 질환·폐정맥압 상승 개는 PVR↑(combined post-/precapillary PH) 발생 가능; 좌-우 shunt 개도 PVR↑ 가능."},
+{"type":"heading","level":2,"text":"평가","gist":"Gold standard 우심 카테터; 심초음파는 '확률' 평가 — TRV >3.4 m/s(>46 mm Hg)"},
+{"type":"list","items":[
+"Gold standard: 우심 카테터(PAP 직접 측정, 폐동맥 쐐기압 = LA압 대용, 심박출량 측정·PVR 계산) — 임상에서 드묾. 심초음파 + 지지 소견으로 비침습 평가; 확진이 아닌 확률(낮음/중간/높음) 평가 도구(ACVIM 합의 지침).",
+"심초음파 2요소 ▸ ① PH의 특징적 심장 변화: 심실 구조·기능(RV 비대·수축 기능장애, LV 저충만, 심실중격 편평화), 폐동맥(확장, 혈류 profile 변화), RA/후대정맥(확대) ▸ ② Doppler로 수축기 PAP 추정: RV 유출로 폐쇄 없으면 최대 삼첨판 역류 속도(TRV) → 단순 Bernoulli: 압력차 = 4 × 속도(m/s)².",
+"고전적 중증도(압력차): 경도 30–50, 중등도 50–75, 중증 >75 mm Hg — ACVIM 지침은 임의적·부정확·오도 가능성 지적; 임상 징후 중증도, 심초음파 구조·기능 변화 정도, TRV가 더 정확.",
+"임상적으로 유의한 PH: 임상 징후(Table 22.2) + 숙련 검사자의 심초음파에서 최소 중간 확률 — TRV >3.4 m/s(압력차 >46 mm Hg). 오진·부적절 치료(지속적 영향·해)를 피하기 위한 기준; 심초음파는 항상 임상 맥락·다른 검사와 함께 해석."
+]},
+{"type":"table","title":"Table 22.2 임상적으로 유의한 PH와 연관 가능한 징후","headers":["강력히 시사","가능성 시사"],"rows":[
+["실신(특히 운동·흥분 시)","안정 시 빈호흡"],
+["안정 시 호흡곤란","안정 시 호흡 노력 증가"],
+["활동/운동이 호흡곤란으로 끝남","운동/활동 후 지연되는 빈호흡"],
+["우심부전(심인성 복수)","—"]
+],"note":"어느 것도 PH에 특이적이지 않음 — 임상 맥락에서 해석. — = 요약에 해당 내용 없음"},
+{"type":"heading","level":2,"text":"분류 (ACVIM)","gist":"6군; Group 2(좌심)는 좌심 질환 + 명백한 LA 확대 둘 다 있어야"},
+{"type":"table","title":"Table 22.3 개 PH의 임상 분류","headers":["군","하위 분류·예"],"rows":[
+["Group 1. 폐동맥고혈압 (PAH)","1a 특발성(IPAH), 1b 유전성, 1c 약물·독소 유발, 1d 연관(APAH): 선천 심장 shunt, 폐 혈관염, 폐혈관 아밀로이드 침착, 1e 폐정맥폐쇄질환/폐 모세혈관 혈관종증"],
+["Group 2. 좌심 질환","2a LV 기능장애(개 DCM, 심근염), 2b 판막 질환 — 후천(MMVD, 판막 심내막염), 2c 선천/후천 좌심 유입·유출로 폐쇄 및 선천 심근병(승모판 이형성, 승모판 협착, 대동맥 협착)"],
+["Group 3. 호흡기 질환/저산소","3a 만성 폐쇄성 기도(기관/주기관지 허탈, bronchomalacia), 3b 일차 폐실질 질환 — 간질성 폐질환(섬유성, cryptogenic/이차 organizing pneumonia, 폐포 단백증, 미분류, 호산구성 폐렴/기관지폐병증), 감염성 폐렴·pneumocystis, 미만성 폐 종양, 3c 폐쇄성 수면 무호흡/BOAS, 3d 만성 고지대 노출, 3e 발달성 폐질환, 3f 기타(세기관지 질환, 기관지확장증, 폐기종, 폐절제 후)"],
+["Group 4. 폐혈전/혈전색전 (PT/PTE)","4a 급성, 4b 만성"],
+["Group 5. 기생충","Dirofilaria, Angiostrongylus 감염"],
+["Group 6. 다인성/불명확","6a Group 1–5 중 둘 이상의 명확한 병리 동반, 6b 폐동맥 압박 종괴(종양, 진균 육아종), 6c 기전 불명확한 기타"]
+]},
+{"type":"table","title":"Table 22.4 혈역학 분류·심초음파 소견·임상 분류군","headers":["혈역학 분류","주요 심초음파 소견","임상 분류군"],"rows":[
+["Precapillary PH\n(PVR↑, LA압 정상)","LA 확대 없음; RV·폐동맥·RA/후대정맥 구조·기능 변화 예상","Group 1 PAH*, 3 호흡기/저산소, 4 혈전, 5 기생충, 6 다인성"],
+["Isolated postcapillary PH\n(LA압↑, PVR 정상)","명백한 LA 확대; RV·폐동맥·RA/후대정맥 변화 없음/최소","Group 2 좌심 질환"],
+["Combined post-/precapillary PH\n(LA압↑ + PVR↑)","명백한 LA 확대 + RV·폐동맥·RA/후대정맥 구조·기능 변화 예상","Group 2 좌심 질환, 6 다인성"]
+],"note":"*Shunt 병변은 PVR↑만이 아니라 우심 박출량 증가가 일차 이상일 수 있음."},
+{"type":"list","items":[
+"중~노령견의 무증상 MMVD 유병률이 높으므로 주의: PH를 좌심 질환(MMVD) 이차로 보려면 ① 좌심 질환 확인 + ② 명백한 LA 확대(만성 LA압 상승의 대용 지표) 둘 다 필요. LA 확대 없는 우연히 발견된 무증상 MMVD 개에서는 Group 1(PAH)·Group 3(호흡기/저산소)가 흔함 → Group 2가 아닌 해당 군으로 분류."
+]},
+{"type":"heading","level":2,"text":"임상 소견·진단 평가","gist":"실신·호흡곤란·운동 불내성; 삼첨판 부위 큰 잡음; 원인 불명 실신·복수+CVC 확장 시 심초음파"},
+{"type":"list","items":[
+"징후는 기저 원인 반영, 중증도는 PH 중증도와 대체로 비례. 가장 흔한 시사 징후: 실신(특히 운동 후), 호흡곤란, 운동 불내성. 신체검사: 비정상 호흡음, 빈호흡, 호흡곤란, 청색/창백 점막, 경정맥 확장·박동, 우심부전 복수. 청진: 크거나 분열된 제2심음; 승모판(동반 MMVD)·삼첨판 수축기 잡음 흔함 — MMVD 개에서 삼첨판 부위 큰 잡음은 PH 강력 시사.",
+"심초음파 의뢰 시점: Table 22.2 징후·신체검사·기본 혈액검사·흉부 영상에서 다른 명확한 원인이 없을 때. 흔한 시나리오 — 서맥/빈맥성 부정맥, 중증 심장 질환/부전, 신경 질환, 중증 대사/혈액 이상과 무관한 실신; 원인 불명 복수(변형 누출액) + 후대정맥 확장(PH 이차 우심부전이 더 유력).",
+"중간·높은 확률 개의 추가 진단 평가는 ACVIM 지침 참고; 기저 원인 규명이 최적 관리의 핵심."
+]},
+{"type":"heading","level":2,"text":"관리","gist":"원인 치료 + PDE5i(Group 1·3–5); Group 2는 LA압 저하가 1차, PDE5i는 신중히 0.5 mg/kg"},
+{"type":"list","items":[
+"기저 질환/요인 치료 + PH 특이 치료. 일반 권장: 산소(적응 시, 최소 단기), 심장사상충 예방, 운동 제한, 항공 여행·고지대 회피(산소 없이). 전문의 상담 유익.",
+"PDE5 억제제(PDE5i): cGMP 이화 억제 → 폐혈관 평활근 cGMP 축적 → 평활근 이완, 폐동맥 평활근 비대 억제 → PVR 저하·폐동맥 remodeling 지연(precapillary PH의 일차 목표). 심근 cGMP↑로 심근 기능 증강·심비대 제한 추정.",
+"PDE5i 시작 결정은 숙련 검사자(대개 심장 전문의) 심초음파 기반: PH 시사 징후 + 중간/높은 심초음파 확률(precapillary) — 다른 원인 없는 유의한 우심 remodeling, TRV >3.4 m/s, 또는 둘 다. 충족 시 Group 1·3–5에 고려; Group 6은 개별 판단. 경험적 PDE5i 사용은 권장하지 않음.",
+"Group 2(좌심 질환): PVR↑ 유무(combined vs isolated) 예측 어려움. 1차 치료는 LA압 저하(MMVD: furosemide + pimobendan) + 심부전 관리. PDE5i를 1차로 쓰면 PVR 정상이거나 반응성 좋은 세동맥에서 우심 박출·LA 정맥 환류 급증 → LA·폐정맥·폐모세혈관압↑ → 의인성 폐부종. LA압 저하 후에도 증상 지속하고 좌심부전이 잘 조절되거나 우심부전이 있을 때만 보수적 용량(sildenafil 0.5 mg/kg PO q8h)으로 고려, 호흡수·노력 밀착 감시.",
+"기타 제안 치료(PDE3 억제제 pimobendan·milrinone, tyrosine kinase 억제제 toceranib·imatinib, L-arginine)는 통상 권장하지 않음."
+]},
+{"type":"table","title":"PH 특이 약물","headers":["약물","용량","비고"],"rows":[
+["Sildenafil","1–3 mg/kg PO q8h","고선택적 PDE5i; 징후·삶의 질·운동 능력 개선 보고. 반감기 짧아 q8h 이상적. PDE5A 유전자 다형성이 효과 둔화 가능"],
+["Sildenafil (Group 2, 보수적 시작)","0.5 mg/kg PO q8h","LA압 저하 전략 후 증상 지속 시에만"],
+["Tadalafil","2 mg/kg PO q24h","반감기 길어 q24h; 무작위 이중맹검 pilot에서 sildenafil 대비 징후·삶의 질·결과 차이 없음"]
+]},
+{"type":"heading","level":2,"text":"중환자 관리·예후","gist":"유발 요인 교정 + PDE5i로 RV 후부하↓, 산소, 세심한 수액; dobutamine → norepinephrine"},
+{"type":"list","items":[
+"급성 대상부전(PH 진행 또는 유발 요인 — PTE, 부정맥, 패혈증, 수액 과부하): 우심부전, 저심박출 전신 저혈압, 호흡곤란·hypoxemia로 내원. 초기: 유발 요인 교정 + PDE5i로 RV 후부하 감소; 조속한 호흡·혈역학 소생.",
+"산소 + 세심한 수액 용량 관리로 전부하 최적화(과혈량은 해로움); 혈액량·RV 전부하 최적화 위해 이뇨제가 필요한 경우 많음. 중증 대상부전(RV 수축 기능장애로 심박출 저하): 양성 수축촉진제 — 사람은 저용량 dobutamine이 1차이나 혈관확장으로 전신 저혈압 악화 가능; 지속 저혈압 시 norepinephrine(SVR·RV 수축력↑, Chapter 147).",
+"예후: 원인·중증도에 따라 다양. 일부 가역적이나 대부분 같은 질환의 PH 없는 개보다 생존 악화 — MMVD, 호흡기 질환/저산소에서 입증; PH 이차 우심부전은 더 나쁨.",
+"모니터링: 개별화; 임상 반응(징후·이상 소견 재평가)이 가장 중요. 모든 예에서 반복 심초음파는 논란·불필요할 가능성. PDE5i 후 TRV·추정 PAP 개선이 항상 확인되지는 않음 — 임상 반응이 양호하면 치료 중단·용량 조정 사유 아님."
+]}
+]}

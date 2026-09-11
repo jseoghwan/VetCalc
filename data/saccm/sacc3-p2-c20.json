@@ -1,0 +1,54 @@
+{"id":"sacc3-p2-c20","book":"Small Animal Critical Care Medicine, 3rd ed.","book_short":"SACCM 3판","part":"Part II","part_title":"Respiratory Disorders","chapter_num":20,"title":"Feline Bronchopulmonary Disease","author":"Elizabeth Rozanski, DVM, DACVIM (SA-IM), DACVECC; Gareth J. Buckley, MA, VetMB, MRCVS, DACVECC, DECVECC","format":2,"blocks":[
+{"type":"callout","title":"KEY POINTS","items":[
+"기도 질환은 보통 젊은~중년 고양이에서 발생한다.",
+"기관지폐 질환은 진성 천식부터 기관지확장증까지의 스펙트럼이다.",
+"호기 곤란이 흔한 징후이며, 병력상 기침은 흔히 hairball로 오인된다.",
+"흡입 또는 경구 glucocorticoid가 치료의 근간이다.",
+"기생충 감염과 과민 질환을 배제해야 한다."
+]},
+{"type":"heading","level":2,"text":"개요·병태생리","gist":"천식(가역적 기관지수축, type I 과민) vs 만성 기관지염(기도 비후·점액)"},
+{"type":"list","items":[
+"고양이 호흡곤란은 진정한 응급 — 기도 질환이 흔하나 울혈성 심부전, 흉강 질환, 종양도 흔한 원인. 치료 전 원인을 정확히 판단해야 성공 가능성이 높음.",
+"Feline bronchopulmonary disease = 고양이 기도 질환 스펙트럼의 포괄 용어(feline asthma로도 불림). 상부기도 질환도 포함될 수 있음 — 사람 알레르기 기도 질환의 'unified airway' 개념을 고양이에도 고려.",
+"기도의 제한된 반응 방식: 기도 평활근 비대, 과도한 점액 생성, 기관지수축 → 호흡곤란·기침.",
+"Feline asthma: 과반응성 기도 + 가역적 기관지수축; aeroallergen 감작 후 type I 과민 반응으로 간주(실제 알레르겐은 드물게 확인). Chronic bronchitis: 기도 비후 + 과도한 점액. 일부는 만성 기침 + 간헐적 기관지수축 → 호기말 폐용적↑, 호흡일↑, 호흡 피로.",
+"자극원은 대부분 불명. 실험적으로 Bermuda grass 등 aeroallergen 감작으로 유사 증후군 재현. 환경 유발 요인 알레르기로 추정(미입증); 호산구성 기도 질환 고양이 일부에서 혈청 IgE 상승. 특정 유발 요인 없는 intrinsic asthma도 가능. 소아는 조기 바이러스 감염이 천식 소인 — 고양이 상부 호흡기 바이러스 감염과의 관계 불명. 기생충 감염도 유사 징후."
+]},
+{"type":"heading","level":2,"text":"병력·신체검사","gist":"영양 양호한 젊은~중년 고양이, 호기 곤란·crackle·wheeze, 체온 정상"},
+{"type":"list","items":[
+"첫 발현은 대부분 young adult~중년. 한 보고에서 Siamese 과대표, 대다수는 잡종. 1세 미만은 주로 감염(바이러스·기생충) 또는 비인두 polyp; 노령은 종양(후두 종괴 — 가청 wheeze) 흔함. 평생 질환이므로 노령묘도 이환되나 징후는 보통 어릴 때 시작.",
+"Potassium bromide는 기침·호흡기 질환과 연관 — 호흡기 질환 고양이에서 중단.",
+"신체검사: 영양 상태 양호 + 호흡곤란·기침; 체중 감소·피모 불량·근 소실은 거의 없음. 간헐적 기침만(hairball 오인) 또는 호흡곤란으로 내원. ICU 입원 수준은 air-trapping·기관지수축에 의한 호기 곤란 — 빈호흡으로 흡·호기 시간이 짧아 감지 어려울 수 있음. Crackle·wheeze(기도 내 액체/점액이 매 호흡 허탈·재개방). 심잡음 가능(심장 질환 동반 또는 flow murmur). 활동성 CHF와 달리 직장 체온 정상."
+]},
+{"type":"heading","level":2,"text":"진단","gist":"방사선 기관지·기관지간질 패턴, 우중엽 허탈·과팽창; BAL 호산구 >5% 비정상"},
+{"type":"table","title":"진단 검사","headers":["검사","소견·역할"],"rows":[
+["흉부 방사선","기관지·기관지간질 패턴 최다; 점액전에 의한 우중엽 허탈(Fig. 20.1); 호기 흐름 제한에 의한 air-trapping·과팽창 흔함; 기관지확장증. 완전 정상이면 다른 질환(후두 종괴·마비, 특히 기침·wheeze 병력 없는 노령묘) 고려"],
+["POCUS","B-line 부재 확인 가능하나 고양이 기도 질환에서 평가되지 않음; 소아 천식에서는 폐렴 등 배제에 유용 (Chapter 189)"],
+["심초음파 / NT-proBNP","임상적으로 유의한 심장 질환 배제. 기도 질환에 의한 폐고혈압은 고양이에서 보고 없음(실험적 천식 말에서 보고)"],
+["CT","진단 불명확·동반 질환 우려 시 드물게 사용 (Fig. 20.2: steroid 반응 불량·방사선 이상으로 시행, 중증 기관지확장증)"],
+["혈액가스","동맥혈가스로 hypercarbia·hypoxemia 확인 가능하나 호흡곤란 고양이에서 실제로 매우 어려움; 정맥혈가스로 중증 hypercarbia 확인. 각성 pulse oximetry·end-tidal CO₂는 고양이에서 신뢰 불가. 6분 보행 검사는 시도된 바 없음"],
+["CBC·화학","대개 정상. 일부 순환 호산구 증가(없어도 배제 못 함). 유행 지역은 심장사상충 검사, Baermann 분변 침전으로 폐충. 중증은 혈청 알레르기 검사 고려 — 탈감작은 실험묘에서 유용, 자연 발생 예에서는 미평가"],
+["폐기능 검사 (PFT)","협조 문제로 고양이에서 드묾; 삽관 후 critical care ventilator 연결 시 정적·동적 compliance, 기도 저항 계산 용이 — 기도 샘플링과 병행 가능"],
+["기도 샘플링 (기관내 세척/BAL)","확진 또는 감염·기생충 확인. 알레르기성: 호산구 증가(만성 기관지염은 호중구 침윤); 폐충 유충, 감염 세균. 정상 호산구 비율 논란(최대 17% 제안) — 최근 연구는 >5%를 비정상으로 결론. 삽관 전 상부기도 검사 적응 가능. 샘플링 전 albuterol 또는 terbutaline 전처치로 반사성 기관지수축(심할 수 있음) 최소화. >95%가 일과성 탈포화만으로 견디나 중등~중증 호흡곤란에서는 주의. Tracheobronchoscopy와 병행 가능"]
+]},
+{"type":"heading","level":2,"text":"치료","gist":"알레르겐 제거 + glucocorticoid 지속(중단 금지); 기관지확장제는 발작 시에만"},
+{"type":"list","items":[
+"근간: 잠재 알레르겐 제거(방향제, 담배 연기, 먼지) + 기도 염증 치료. 흔한 두 가지 실수 — steroid 중단 시도, 매일 기관지확장제 처방. 특정 원인을 찾아 제거하지 못하면 glucocorticoid가 근간.",
+"기관지확장제는 기관지수축 징후가 있을 때만 — 매일 사용 시 tachyphylaxis, 불안·초조. Theophylline은 조제 약국 외 구하기 어렵고 고양이에서 효능 제한·약동학 까다로움.",
+"항생제: 호중구성 염증·패혈 과정·이차 감염(Mycoplasma, Bordetella bronchiseptica) 근거 시. 구충: 기생충 감염 근거 또는 폐충(Aelurostrongylus abstrusus) 가능성 시."
+]},
+{"type":"table","title":"약물 용량","headers":["약물","경로","용량","비고"],"rows":[
+["Prednisolone","PO","5 mg/cat q12h → 관해 후 q24h → tapering, 중단하지 않고 2.5 mg 주 2회까지","경구 glucocorticoid 중 가장 흔함"],
+["Fluticasone","MDI + chamber·face mask","110–220 mcg q12h(드물게 더 저용량)","경구 대비 효과 입증, 전신 glucocorticoid 효과 감소(완전 제거는 아님). 거의 모든 고양이가 mask 훈련 가능"],
+["Methylprednisolone acetate (DepoMedrol)","저장형 주사","10–20 mg/cat q2–6주","경구·흡입 불가능/비실용적일 때만"],
+["Albuterol","aerosol","1–2 puffs/cat","급성 위기 시 기관지 확장"],
+["Terbutaline","IV, SQ 또는 IM","0.01 mg/kg","급성 위기 시 기관지 확장; 기도 샘플링 전처치"],
+["Fenbendazole","PO","50 mg/kg × 14일","폐충(Aelurostrongylus abstrusus) 구충"]
+]},
+{"type":"heading","level":2,"text":"예후","gist":"대부분 우수, 'better by morning'; 개선 없으면 진단 재평가"},
+{"type":"list","items":[
+"대부분 우수하나 소수는 기관지수축·점액전에 의한 중증 반복 기도 폐쇄로 치명적일 수 있음.",
+"전형적 질환이면 ICU에서 '아침이면 좋아짐'. 완치가 아닌 만성 환경·약물 관리 필요함을 보호자가 이해해야 함. 응급 치료에 반응 없으면 진단 재평가.",
+"공개: 저자 1인(ER)이 Aerokat chamber 제조사 Trudell Medical의 연구 지원을 받음."
+]}
+]}

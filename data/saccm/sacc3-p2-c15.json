@@ -1,0 +1,48 @@
+{"id":"sacc3-p2-c15","book":"Small Animal Critical Care Medicine, 3rd ed.","book_short":"SACCM 3판","part":"Part II","part_title":"Respiratory Disorders","chapter_num":15,"title":"Oxygen Therapy","author":"Elisa M. Mazzaferro, MS, DVM, PhD, DACVECC","format":2,"blocks":[
+{"type":"callout","title":"KEY POINTS","items":[
+"조직 저산소증은 다양한 중증 질환에서 발생 — 산소 보충은 산소 운반을 개선하고 젖산산증 발생을 줄인다.",
+"PaO₂ <70 mm Hg 또는 room air SpO₂ <93%이면 산소를 보충한다.",
+"비침습적 방법(flow-by, mask, hood, high-flow nasal cannula, oxygen cage)은 산소 농축 환경을 간단히 제공한다.",
+"사람용 high-flow nasal oxygen 장비를 수의 환자에 쓸 수 있으며 중증 hypoxemia에서 산소화를 개선한다.",
+"기관 내 산소 보충은 비강·비침습 방법보다 높은 FiO₂를 주지만 기술적으로 조금 더 어렵고 환자 위험이 크다."
+]},
+{"type":"heading","level":2,"text":"개념·적응증","gist":"Hypoxemia = PaO₂ <80; PaO₂ <70 또는 SpO₂ <93%면 보충"},
+{"type":"list","items":[
+"Hypoxia: 조직 산소 공급 감소. Hypoxemia: 동맥혈 산소화 부족, PaO₂ <80 mm Hg(해수면). Hypoxemia는 CaO₂를 낮춰 조직 저산소증을 유발할 수 있음.",
+"DO₂ = Q(심박출량) × CaO₂ → 심박출량 증가로 hypoxemia 환자의 조직 저산소증 예방 가능.",
+"CaO₂ = [1.34 (ml O₂/g) × SaO₂ (%) × Hb (g/dl)] + [PaO₂ (mm Hg) × 0.003 (ml O₂/dl/mm Hg)] — 대부분 Hb 결합, 소량이 용존(0.003 × PaO₂).",
+"Hypoxemia 원인: hypoventilation, V/Q mismatch, 확산 장애, 흡기 산소 함량 감소, 폐내 shunt (Chapter 16). 패혈증·SIRS·빈혈·산-염기 이상에서는 전신 DO₂ 감소.",
+"FiO₂를 21% 이상으로 올리면 결합·용존 산소 모두 증가 — 단 폐실질 shunt가 없을 때.",
+"적응증: room air에서 PaO₂ <70 mm Hg 또는 SaO₂ <93%, 호흡 노력 증가로 호흡 피로 위험, 심혈관 불안정·빈혈 등 DO₂ 저하 원인.",
+"방법 선택 기준: 환자 요구·내성, 체구, hypoxemia 정도, 목표 FiO₂, 예상 기간, 경험·기술, 장비·모니터링."
+]},
+{"type":"heading","level":2,"text":"가습 (Humidification)","gist":"수 시간 이상 비가습 산소는 점막 건조·감염 위험 — 멸균수 bubble"},
+{"type":"list","items":[
+"비가습 산소를 수 시간 이상 투여하면 비점막 건조·탈수, 호흡 상피 변성, 점액섬모 청소 장애, 감염 위험 증가.",
+"멸균 saline/water 병에 산소를 bubbling해 가습. 상용 bubble humidifier는 편리하나 고유량에서 가습 부족 가능.",
+"High-flow 시스템은 공기-산소 혼합을 가열해 가습 — 비점막 건조 없이 전달."
+]},
+{"type":"heading","level":2,"text":"투여 방법","gist":"Flow-by 25–40% → mask 50–60% → cage 40–50% → nasal 30–70% → tracheal·HFNO"},
+{"type":"table","title":"비침습적 방법","headers":["방법","유량","FiO₂","장점","단점·주의"],"rows":[
+["Flow-by","2–3 L/min, 비공 2 cm 이내","25%–40%","가장 간단, 대부분 잘 견딤, triage 중 사용 가능","주변으로 대량 유출 — 낭비, 장기 사용 부적합"],
+["Face mask","Tight-fit: 8–12 L/min\nLoose-fit: 2–5 L/min(체구·hypoxemia 정도에 따라)","Tight-fit 최대 50%–60%","최소 장비, 치료·평가 동시 가능","Tight-fit 시 CO₂ 재호흡 → 주기적 환기 또는 loose mask로 교체. 각성 환자는 장시간 불내성; 이탈·안구 손상 감시 위해 보조자 필요"],
+["Oxygen hood","E-collar + cling film(전면 일부 개방해 환기). 1–2 L/min으로 충전 후 0.5–1 L/min 유지","30%–40%(체구·collar 밀착도에 따라)","경제적·실용적, 대체로 잘 견딤. 초소형 환자는 collar 안에 통째로 넣어 mini-cage","불내성·고체온 가능; 환기구 없으면 CO₂·습기 축적"],
+["Oxygen cage","Plexiglas box 또는 소아용 incubator 개조; 산소 농도·습도·온도 조절, CO₂ 배출 환기","보통 40%–50% 유지, 최대 60% 이상 가능","비강·hood·flow-by보다 높은 FiO₂; SpO₂·혈압·ECG 연속 모니터링으로 문 너머 관찰 가능","고비용(문 열 때마다 유출). 온도 70°F(22°C) 유지 안 되면 고체온 — ice pack은 cage 안에 두되 환자에 직접 대지 않음(말초 혈관수축으로 악화)"]
+]},
+{"type":"table","title":"침습적 방법","headers":["방법","적응·특징","유량 → FiO₂","주의"],"rows":[
+["Nasal prongs(사람용)","중·대형견. 설치 쉽고 저렴, 대체로 잘 견딤","FiO₂ 불명 — flow-by와 비슷하거나 약간 높고 nasal catheter보다 낮을 것으로 추정","쉽게 빠짐"],
+["Nasal / nasopharyngeal catheter","24시간 이상 필요 시 고려. 2% lidocaine 또는 proparacaine 점막 마취 → 5–10 Fr red rubber/polypropylene catheter. Nasal: 코끝–외안각 길이, ventral meatus로 복내측 삽입. Nasopharyngeal: 하악 ramus 기준으로 측정, 비익 내측·philtrum 배측 압박하며 삽입. 비공 옆 봉합/staple 고정(수염 피함), E-collar 착용, 1 ml 주사기 절단 또는 Christmas tree adapter로 가습 산소 연결","50–150 ml/kg/min → 30%–70%. 한 catheter나 두 catheter 분할이나 총 유량 같으면 기관 FiO₂ 비슷","체구·호흡수·panting·개구호흡에 따라 FiO₂ 변동. 고유량은 자극·재채기 → 국소 마취 재도포 또는 비인두로 전진. 과도한 압력 시 비출혈"],
+["High-flow nasal oxygen","사람용 장비. 의료용 공기+산소 혼합 → 가열·가습 → membrane → 크기별 nasal prong. Prong은 비공 직경의 50% 이하(호기 가스 배출). 다른 비강 방법보다 높은 FiO₂ + CPAP 효과 가능 (Chapter 31)","FiO₂ 21%–100%, flow 25–60 L/min. 임상 시작 권장 유량 0.4–2.0 L/kg/min","—"],
+["Transtracheal catheter\n(through-the-needle, 경피)","비강·hood 불내성, panting·개구호흡, 상부기도 폐쇄. 기계환기까지는 불필요하나 nasal 이상의 FiO₂가 필요한 환자(예: 중증 bronchopneumonia). 후두 근위~흉곽 입구 clipping·무균 준비, 3–5번 기관륜에 2% lidocaine 침윤, #11 blade nick, sternohyoideus 관통 → 'pop' → catheter 삽입(carina 높이까지 가능), 흰 테이프 고정","50–150 ml/kg/min","상부기도 폐쇄에서는 호기 불충분·폐 과팽창 우려 → 기도 확보까지 단기 구명용. 경부 굴곡·피부 주름으로 kinking — 주름은 배측 정중선에 horizontal mattress 봉합"],
+["Tracheal catheter\n(절개 삽입)","깊은 진정 또는 단기 마취(propofol, fentanyl/diazepam) + 2% lidocaine 1–2 mg/kg 국소. 3–5번 기관륜 위 수직 피부 절개, 둔성 박리, 4–5번 기관륜 사이 절개(기관 둘레 50% 이하), grooved director 따라 large-bore 다공 catheter 삽입. 큰 catheter·높은 유량으로 지속적 기도압 제공","50 ml/kg/min → 40%–60%","진정·마취 위험, 기관 내 세균 유입, jet lesion·기관 손상·tracheitis"],
+["Hyperbaric oxygen","100% O₂를 >760 mm Hg에서 → 용존 산소 10%–20% 증가, 순환 불량 손상 조직으로 확산. 중증 연조직 병변(화상·shearing injury·감염·골수염)에 권장","—","고막 파열·기흉 보고. 장비·공간 비용, 가압 후 챔버 개방 불가 — 수의학에서 드묾"]
+],"note":"— = 요약에 해당 내용 없음"},
+{"type":"table","title":"Table 15.1 비강 산소 유량과 기관 내 FiO₂","headers":["총 O₂ 유량 (ml/kg/min)","기관 내 FiO₂ (%)"],"rows":[
+["50","29.8 ± 5.6"],["100","37.3 ± 5.7"],["200*","57.9 ± 12.7"],["400*","77.3 ± 13.5"]
+],"note":"*100 ml/kg/min 초과 유량에서 환자 불편감 흔함. 400 ml/kg/min은 양측 비강 catheter 각 200 ml/kg/min으로 달성."},
+{"type":"heading","level":2,"text":"합병증","gist":"만성 hypercapnia의 hypoxic drive 억제; FiO₂ >50%는 24–72시간 이내"},
+{"type":"list","items":[
+"정상에서는 hypercapnia가 주 호흡 자극. 만성 호흡기 질환·hypercapnia 환자는 hypercapnic drive 감소·소실 → hypoxia 의존. 산소 투여 시 hypoxic drive 억제 → 심한 hypoventilation·호흡부전, 기계환기 필요 가능('blue bloater', 소동물에서는 드묾, 사람 COPD).",
+"산소 독성: 폐 상피에 직접 독성 — FiO₂ >50%를 24–72시간 이상 투여하지 않음 (Chapter 8)."
+]}
+]}

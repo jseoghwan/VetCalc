@@ -1,0 +1,69 @@
+{"id":"sacc3-p2-c16","book":"Small Animal Critical Care Medicine, 3rd ed.","book_short":"SACCM 3판","part":"Part II","part_title":"Respiratory Disorders","chapter_num":16,"title":"Hypoxemia","author":"Steve C. Haskins, DVM, MS, DACVAA, DACVECC (in memoriam); Deborah C. Silverstein, DVM, DACVECC","format":2,"blocks":[
+{"type":"callout","title":"KEY POINTS","items":[
+"Hypoxemia = PaO₂ <80 mm Hg 또는 동맥혈 Hb 포화도 <95%.",
+"청색증이 hypoxemia의 징후로 나타나면 항상 중증 hypoxemia의 늦은 징후다.",
+"Hypoxemia의 원인 3가지: 흡기 산소 농도 저하, hypoventilation, venous admixture.",
+"Venous admixture의 원인 4가지: low V/Q 영역, 소기도·폐포 허탈 또는 침윤(zero V/Q), 확산 장애, 해부학적 우-좌 shunt.",
+"중증도 평가 방법: 신체검사, A-a gradient, PaO₂:FiO₂, SaO₂:FiO₂, oxygenation index, oxygen saturation index."
+]},
+{"type":"heading","level":2,"text":"정의·인지","gist":"PaO₂ <80/SaO₂ <95% = hypoxemia, <60/<90% = 중증; 청색증은 늦은 징후"},
+{"type":"list","items":[
+"Hypoxemia: PaO₂ <80 mm Hg 또는 SaO₂/SpO₂ <95%. 중증(생명 위협 가능): PaO₂ <60 mm Hg 또는 SaO₂/SpO₂ <90%.",
+"PaO₂: 혈장 용존 산소의 분압, 폐가 대기 산소를 혈액으로 옮기는 능력. 해수면 정상 80–110 mm Hg. 폴라로그래피(은 양극/백금 음극) 측정.",
+"산소 함량(ml/100 ml)은 주로 Hb 농도가 결정 — hypoxemia 지표는 아님.",
+"채혈: 폐기능 평가는 동맥혈(정맥혈은 조직 기능 반영). 최대한 혐기적으로 채취, 즉시 분석(공기 노출·주사기 내 대사·플라스틱 확산이 O₂·CO₂ 분압 변화), 항응고제 과다 희석 피함 (Chapter 202).",
+"SpO₂: pulse oximeter는 2파장(660 nm, 940 nm)으로 산소화 Hb만 측정(benchtop oximeter는 다파장). PaO₂와 방향은 같으나 비선형(sigmoid oxyhemoglobin dissociation curve) — ① 정상과 hypoxemia 차이가 포화도 몇 %p, 작은 SpO₂ 변화 = 큰 PaO₂ 변화 ② 중증 hypoxemia도 Hb는 90% 포화 — 미토콘드리아까지 확산을 구동하는 것은 PO₂, SO₂(산소 함량)는 저장고 ③ PaO₂ 100과 500을 구별 못 함(산소 보충 중 추적 한계). 오류 가능 → 임상 징후·동맥혈가스로 확인.",
+"P50 (Fig. 16.1): 말 23.8, 사람 26.8, 개 28.7, 고양이 34.1 mm Hg.",
+"청색증: 점막 회청색. 관찰자 시력·조명(밝은 곳, 형광등보다 백열등에서 잘 보임)에 좌우. 탈산소화 Hb 5 g/dl(동맥혈)이 필요 → Hb 15 g/dl 개는 SaO₂ 67%(PaO₂ 약 37 mm Hg)에서 나타남 = 항상 늦은 징후. Hb 5 g/dl 빈혈 동물은 청색증 전에 hypoxemia로 사망."
+]},
+{"type":"table","title":"Table 16.1 PaO₂와 SaO₂의 상관 (사람·개, 근사치)","headers":["분류","PaO₂ (mm Hg)","SaO₂ (%)"],"rows":[
+["Hyperoxemia",">125","100"],
+["Normoxemia","80–125","95–99"],
+["Hypoxemia","<80","<95"],
+["Severe hypoxemia","<60","<90"],
+["Life-threatening hypoxemia","<30","<40"]
+],"note":"고양이는 곡선이 우측 이동(평균 P50 34) → 같은 PaO₂에서 SaO₂가 더 낮음."},
+{"type":"heading","level":2,"text":"Hypoxemia 기전","gist":"흡기 O₂↓·hypoventilation·venous admixture (+ 정맥 O₂ 함량↓)"},
+{"type":"list","items":[
+"3대 원인: 흡기 산소 농도 저하, hypoventilation, venous admixture. 4번째로 정맥 산소 함량 저하(저심박출·쇼크의 느린 말초 혈류, 발작 등 고추출) — 모세혈관혈 동맥화에 더 많은 산소·시간 필요 → PAO₂·PaO₂ 저하; 실제로는 shunt 분율 감소로 상쇄되는 경우 많음. 중심/혼합 정맥혈 산소로 확인."
+]},
+{"type":"table","title":"Table 16.2 Hypoxemia의 일차 생리적 원인","headers":["원인","인지·예","치료"],"rows":[
+["흡기 산소 저하","장비 점검 — 연결된 장비 오작동(face mask·마취회로·인공호흡기·oxygen cage), 산소 공급 고갈, 고지대(대기 O₂는 어디서나 21%이나 기압↓ → PatmO₂↓; 고지대 거주자는 PaO₂ 낮고 과호흡으로 일부 보상). 산소 농도계로 측정","고지대면 산소 보충. 장비 분리 후 수리/교체"],
+["전신 hypoventilation","PaCO₂ 상승(>45 mm Hg), end-tidal CO₂(보통 PaCO₂보다 약 5 mm Hg 낮음) 또는 중심정맥 PCO₂(약 5 mm Hg 높음). 신경근 기능장애, 기도 폐쇄, 복부 팽만, 흉벽 기능장애, 흉강 점유 병변","산소 보충, 양압환기, 폐쇄 제거/우회, 복부 감압, 흉벽 폐쇄/안정화, 흉강천자"],
+["Venous admixture","Table 16.3 참조","Table 16.3 참조"]
+]},
+{"type":"heading","level":3,"text":"Hypoventilation과 폐포 가스"},
+{"type":"list","items":[
+"폐포 산소 = 공급(흡기 O₂ 농도 × 폐포 분시환기) – 제거(정맥혈 동맥화 = 조직 대사). Hypoventilation → 폐포 O₂ 공급↓ → hypoxemia; 흡기 산소 증가로 매우 효과적으로 예방.",
+"폐포 가스 4종(해수면 room air): 수증기 50 mm Hg(고정, 체온에서 100% 포화), CO₂ 40 mm Hg(뇌간 조절, 종차), O₂ 105 mm Hg, N₂ 560 mm Hg.",
+"PaCO₂ 80 mm Hg로 hypoventilation 시 O₂ 약 65 mm Hg → hypoxemia. 100% O₂ 호흡 후 N₂ 제거되면 N₂ ≈ 0, O₂ ≈ 665 → 이론상 폐포 CO₂ 약 550 mm Hg까지 올라야 PaO₂ <80. 즉 hypoventilation은 room air에서만 hypoxemia 원인, 산소 보충으로 쉽게 해소."
+]},
+{"type":"heading","level":3,"text":"Venous admixture"},
+{"type":"list","items":[
+"정맥혈이 제대로 산소화되지 않고 우측→좌측 순환으로 가는 모든 경로. 정상 폐에도 소량(<5%) 존재.",
+"'V/Q mismatch'는 high/low 형용사 없이 hypoxemia 원인으로 쓰지 않음 — 모든 V/Q mismatch가 hypoxemia를 일으키지는 않음.",
+"대부분의 미만성 폐질환은 여러 기전이 혼재하나 하나가 우세 — 치료 방향이 다름."
+]},
+{"type":"table","title":"Table 16.3 Venous admixture의 기전","headers":["기전","원인","특징·산소 반응"],"rows":[
+["Low V/Q 영역","중등~중증 미만성 폐질환(부종·폐렴·출혈). 소기도 협착(기관지연축·하부기도 벽 액체·상피 부종)이나 폐포 액체로 환기↓(가스교환은 일부 유지); Q 증가(폐혈전색전증)로도 발생","흔함; 국소 hypoventilation과 같아 산소에 매우 잘 반응. 중등도 폐질환의 흔한 기전"],
+["Atelectasis (zero V/Q)","중증~극중증 미만성 폐질환(부종·폐렴·출혈). 기도 액체(누출액·삼출액·혈액) 축적, 장기 횡와(마취·혼수)에서 sigh 없을 때 의존 부위 허탈 = 'physiologic shunt'","흔함; 산소가 가스교환면에 도달 못 해 산소 무반응, PPV·PEEP(기도/경폐압 증가, 깊은 자발호흡)에 반응. 중증 폐질환의 흔한 기전"],
+["확산 장애","중등~중증 미만성 폐질환(산소 독성·연기 흡입·ARDS). Type I 폐포세포 손상 후 두꺼운 type II 세포가 가스교환면을 덮음(type I로 성숙할 때까지)","드묾; 산소에 부분 반응. 간질 부종 자체는 확산 장애가 아니라 기도 협착(low V/Q)·허탈(zero V/Q)로 작용"],
+["우-좌 shunt","우-좌 PDA·VSD, 폐내 A-V 해부학적 shunt — 모든 폐포 우회. 주로 어린 동물의 선천 결함","드묾; 산소·PPV 모두 무반응, 수술 가능한 경우 있음"]
+]},
+{"type":"list","items":[
+"폐 간질 구조(Fig. 16.3): 모세혈관 'active side'(둘레의 2/3–3/4, 기저막이 하나로 합쳐짐)가 가스교환면이고 액체가 고이지 않음. 누출은 두꺼운 'service side'에서 일어나 폐문 쪽 느슨한 간질(세동맥·세정맥·세기관지 주위)로 밀려남 → 압력 축적 후 기도로 터져 나와 기도 협착·표면장력↑(low V/Q) → 소기도·폐포 허탈(zero V/Q)."
+]},
+{"type":"heading","level":2,"text":"Venous admixture 크기 추정","gist":"Room air: A-a gradient·120 rule / O₂ 보충: P/F·S/F·OI / 최정확: shunt 계산"},
+{"type":"list","items":[
+"폐실질 질환에서는 CO₂ 배출보다 산소화가 먼저 실패 → 저탄산혈증 + hypoxemia 공존 흔함(정상 단위가 CO₂는 보상하나 O₂는 못 함). PaCO₂(폐포 분시환기)와 PaO₂(산소화)를 따로 평가; PaO₂의 의미는 PaCO₂·흡기 산소를 참조해야 판단 가능."
+]},
+{"type":"table","title":"산소화 평가 지표","headers":["지표","계산","정상·판정","적용·한계"],"rows":[
+["A-a gradient","PAO₂(폐포 가스 방정식) – PaO₂\nPAO₂ = (PB – PH₂O) × FiO₂ – PaCO₂/RQ (RQ ≈ 0.8)\n해수면 21%: PAO₂ = 150 – PaCO₂","Room air <10 mm Hg 정상, >20 mm Hg = 산소화 효율 저하(venous admixture)","분시환기(PaCO₂) 영향 제거. FiO₂↑ 시 정상값 증가(100% O₂에서 100–150 mm Hg) → room air에서 가장 유용. Hypoventilation은 gradient를 올리지 않음"],
+["PaCO₂ + PaO₂ ('120 rule')","두 값의 합","정상 40 + 80 = 120; <120이면 venous admixture, 차이가 클수록 폐기능 나쁨. 예: PaCO₂ 60·PaO₂ 60 = 120 → 순수 hypoventilation; PaCO₂ 60·PaO₂ 40 = 100 → 폐 기능장애 동반","해수면 부근 21% 호흡 시에만. 고지대는 비례 감소"],
+["PaO₂/FiO₂ (P/F)","PaO₂ ÷ FiO₂(소수)","정상 약 500 (PaO₂ 100/FiO₂ 0.21); 100% O₂면 기대 PaO₂ 500 mm Hg","산소 보충 환자에 사용. Room air에서 PaCO₂ 상승 시 오도 가능 → room air는 120 rule·A-a gradient 사용"],
+["SpO₂/FiO₂ (S/F)","SpO₂ ÷ FiO₂","사람: S/F <315 ↔ P/F <300, S/F <235 ↔ P/F <200","빠르고 비침습·연속, 동맥채혈 합병증 없음. 개(수술 회복, 경~중등 hypoxemia)에서 P/F와 중등~양호한 상관. Pulse oximetry 한계 고려"],
+["Oxygenation index (OI)","MAP × FiO₂ × 100 / PaO₂","낮을수록 좋음; 사람 OI >40 = ECMO 적응","환기 환자, 평균기도압 반영. 사람 신생아 예후 예측"],
+["Oxygen saturation index (OSI)","MAP × FiO₂ × 100 / SpO₂","—","PaO₂를 SpO₂로 대체 — 덜 침습, 연속 측정. 주로 저산소성 호흡부전 신생아 연구"],
+["Venous admixture (shunt) 계산","Qs/Qt = (CcO₂ – CaO₂) / (CcO₂ – CvO₂)\n산소 함량 = (1.34 × Hb × SO₂) + (0.003 × PO₂); 모세혈관 PO₂ = 계산 PAO₂로 가정","정상 <5%; >10% 증가; 중증 미만성 폐질환 >50%","가장 정확. 혼합정맥혈(폐동맥) 필요, 경정맥혈 대용 가능. SO₂는 benchtop oximeter 측정 또는 곡선 외삽. Room air 채혈 → 모든 기전 평가; 100% O₂ → low V/Q 제외·확산 최소화 = 'shunt' 공식(atelectasis + anatomic shunt). FiO₂ 변화·MAP(폐포 개방 상태)에 영향 → 현재 FiO₂·ventilator 설정에서 측정 권장"]
+],"note":"— = 요약에 해당 내용 없음"}
+]}

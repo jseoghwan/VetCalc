@@ -1,0 +1,256 @@
+{
+ "id": "sacc3-p2-c14",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part II",
+ "part_title": "Respiratory Disorders",
+ "chapter_num": 14,
+ "title": "Control of Breathing",
+ "author": "Kate S. Farrell, DVM, DACVECC",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "호흡 중추는 medulla — 호흡 패턴 생성과 수의·불수의 입력의 통합을 담당한다.",
+    "Medulla 내 central pattern generator(CPG)가 group pacemaker로서 호흡의 기본 리듬을 만든다.",
+    "Pontine respiratory group, cortex 등 상위 중추가 호흡 패턴을 변형한다.",
+    "중추 화학수용체는 CO₂·pH를, 말초 화학수용체는 산소까지 감지하며 두 입력이 합쳐져 혈액가스를 정상으로 되돌린다.",
+    "건강한 상태에서는 CO₂가 호흡의 주된 자극 — PaO₂는 50–60 mm Hg 미만으로 떨어져야 환기에 큰 변화가 생긴다.",
+    "폐·기도 수용체와 기타 감각 수용체의 반사도 호흡 패턴을 수정한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "개요",
+   "gist": "CNS가 자동 개시, 상위 중추·불수의 동작·수용체 피드백이 변형"
+  },
+  {
+   "type": "list",
+   "items": [
+    "호흡은 CNS가 자동으로 개시하며 대부분 의식 없이 진행. 뇌간 호흡 중추는 태아기 초기에 발달해 평생 흡기·호기 주기를 생성.",
+    "Medulla 뉴런이 개시·조율하지만, cortex·hypothalamus 등 상위 중추의 명령, 삼킴·기침·재채기 같은 불수의 동작, 중추·말초 화학수용체와 폐실질·기도 수용체의 피드백으로 변형·중단 가능.",
+    "최종적으로 호흡근을 지배하는 motor neuron 활성을 조절 → 폐 가스교환을 대사 요구에 맞춰 O₂·CO₂를 좁은 범위로 유지."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Central Control of Breathing",
+   "gist": "Medulla CPG(pre-Bötzinger)가 리듬 생성, PRG·cortex가 조정"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Respiratory Central Pattern Generator (CPG)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Medulla 내 뉴런 집단이 자발적·주기적 burst를 생성하는 group pacemaker. 뉴런은 medulla 전반에 퍼져 있으나 pre-Bötzinger complex에 집중.",
+    "뉴런은 발화 형태(augmenting·decrementing·constant/plateau)와 호흡 phase로 분류.",
+    "호흡 주기 3 phase ▸ ① 흡기 phase: early inspiratory 뉴런 급격 활성 + inspiratory augmenting 뉴런 ramp 증가 → 흡기근·기도 확장근 방전 ② 후흡기(expiratory phase I): 흡기근 방전 감소·수동 호기, expiratory decrementing 뉴런 감소로 후두 내전근 긴장 저하(호기 흐름의 mechanical brake) ③ 호기(expiratory phase II): 흡기근 활동 없음. 안정 호흡 시 호기는 거의 수동; 운동·강제 호기·고분시환기 시 expiratory augmenting 뉴런이 호기근 활동 지원.",
+    "심장 pacemaker처럼 Na⁺·K⁺·Ca²⁺ 채널이 내재 막 활동에 필요. 주요 신경전달물질: glutamate(흥분), GABA·glycine(억제); acetylcholine·monoamine·neuropeptide는 필수는 아니나 CPG에 큰 영향을 주는 neuromodulator."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Medullary Respiratory Center"
+  },
+  {
+   "type": "table",
+   "title": "Dorsal vs Ventral respiratory group",
+   "headers": [
+    "구분",
+    "Dorsal respiratory group (DRG)",
+    "Ventral respiratory group (VRG)"
+   ],
+   "rows": [
+    [
+     "주 기능",
+     "호흡 주기의 timing",
+     "흡기·호기 뉴런 모두 포함"
+    ],
+    [
+     "구성",
+     "대부분 흡기 뉴런 → 반대측 척수로 투사, phrenic nerve(횡격막) 활성 개시",
+     "4개 집단: caudal VRG(n. retroambigualis·paraambigualis) — 호기 기능, 흡기근 수축력 조절\nrostral VRG(주로 n. ambiguus) — 후두·인두·혀 기도 확장 기능\npre-Bötzinger complex — 중추 패턴 생성 pacemaker\nBötzinger complex(n. retrofacialis 내) — 광범위한 호기 기능"
+    ],
+    [
+     "연관 구조",
+     "양측 medulla, nucleus tractus solitarius 인접 — CN IX·X 내장 구심 종말부. pH·PaO₂·PaCO₂(경동맥·대동맥 화학수용체), 혈압(압수용체), 폐 stretch 정보 수신 → 심폐 반사 통합 장소로 추정",
+     "—"
+    ]
+   ],
+   "note": "— = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Pontine Respiratory Group (PRG) · Apneustic center"
+  },
+  {
+   "type": "list",
+   "items": [
+    "PRG: pons에 위치, medulla 호흡 중추와 다시냅스 연결로 호흡 패턴 미세 조정. 과거 'pneumotaxic center'. 리듬 생성에 필수는 아니나 phase timing·패턴 안정화·리듬 변경에 관여 — 활성 증가 시 흡기 종료 촉진, 실험적 병변 시 흡기 시간 연장.",
+    "PRG는 cortex·hypothalamus·nucleus tractus solitarius 등과 연결 → CNS·말초 감각·심혈관 반사 입력의 coordinating center.",
+    "Apneustic center(caudal pons): 흡기·호기 속도 조율, medulla 흡기 영역으로 흥분성 자극 → 흡기 연장. PRG와 분리 + 미주신경 절단 시 apneusis(길게 헐떡이는 흡기 + 짧고 비효율적 호기). 정상 호흡에서의 역할은 미확립."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Cortex 및 상위 중추"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Cortex·suprapontine 구조 입력으로 수의적 호흡 가능 — 단 동맥혈 가스 변화에 의해 제한. 뇌간 자극을 override하거나 호흡 중추를 완전히 우회해 호흡근 lower motor neuron을 직접 지배 가능.",
+    "불수의 suprapontine 반사: 발성·재채기·기침·삼킴·저작·구토·딸꾹질.",
+    "Hypothalamus·amygdala: hypoxia·hypercapnia·운동·체온 변화·통증·공포·불안·방어 반응 시 호흡 반응 조절."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Descending Pathways",
+   "gist": "척수 백질 하행 → 호흡근 LMN; 흡기 횡격막·흉벽·경부근"
+  },
+  {
+   "type": "list",
+   "items": [
+    "뇌간·cortex·상위 구조 축삭이 척수 백질을 따라 하행해 각 호흡근 lower motor neuron에 직접 작용.",
+    "흡기근: 횡격막, 흉벽근, 일부 경부근. 능동 호기: 복벽·흉벽근. 인두·후두근은 상부 기도 저항 조절."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Chemoreceptors and Response to Blood Gases",
+   "gist": "중추=CO₂/pH(60–80%), 말초=hypoxemia; PaO₂<50–60 시 급증"
+  },
+  {
+   "type": "table",
+   "title": "중추 vs 말초 화학수용체",
+   "headers": [
+    "구분",
+    "중추 화학수용체",
+    "말초 화학수용체"
+   ],
+   "rows": [
+    [
+     "위치",
+     "Medulla 복외측 표면(CN IX·X 기시부 근처); 뇌간·소뇌·hypothalamus·중뇌 등도 후보이나 기여 불명확",
+     "Carotid body(총경동맥 분기부) — 호흡 반응 거의 전담\nAortic body(대동맥궁) — 순환에 더 큰 영향"
+    ],
+    [
+     "감지 자극",
+     "뇌 간질액 pH(주로 PCO₂ 변화, 뇌혈류·대사도 영향). PO₂에는 반응 없음",
+     "PaO₂↓, PaCO₂↑, H⁺↑, 저관류; 혈액 온도 상승도 자극·O₂/CO₂ 반응 증강. 약물·화학물질도 영향"
+    ],
+    [
+     "기전",
+     "CO₂가 BBB 자유 통과(H⁺·HCO₃⁻는 불투과) → CSF·뇌 간질에서 탄산 → H⁺·HCO₃⁻. 단백 적어 완충력 낮음 → pH 크게 하락. PaCO₂↑ 시 뇌혈관 확장으로 CO₂ 확산 증가. 정맥혈·뇌 간질액·CSF PCO₂는 동맥보다 5–10 mm Hg 높음",
+     "Type I(glomus) cell의 K⁺ 채널이 hypoxia 또는 hypoxia 유도 분자(ROS·CO·H₂S)에 억제 → 신경전달물질 분비. 구심로: carotid sinus nerve(CN IX 분지), vagus(aortic body)"
+    ],
+    [
+     "반응 속도·크기",
+     "CO₂ 반응의 약 60%–80% 담당(각성견 연구 63%, 개체차 큼). 정상 상태 PaCO₂·뇌 관류의 monitor",
+     "1–3초 내 신속 반응. PCO₂ 반응은 빠르지만 크기는 중추보다 작음 — 급격·단기 변화 감지"
+    ],
+    [
+     "적응",
+     "PCO₂ 상승 지속 시 수 시간 후 HCO₃⁻ 보상으로 뇌 ECF pH 부분 교정 → 환기 정상화, CO₂ 반응 둔화",
+     "PaO₂ 저하에 반응(O₂ 함량이 아님) → 빈혈·dyshemoglobinemia에는 자극 적음(논란 있음, 빈혈에 의한 직접 자극 증거 일부)"
+    ],
+    [
+     "기타 효과",
+     "해부학적으로 호흡 뉴런과 분리, 인접 CPG와 연결",
+     "서맥, 고혈압, 세기관지 긴장↑, 부신 catecholamine 분비"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "O₂·CO₂·pH 반응의 통합"
+  },
+  {
+   "type": "list",
+   "items": [
+    "건강한 개체에서는 PCO₂가 가장 중요한 인자. PaCO₂ 증가 → 폐포 환기 거의 선형 증가; hypoxemia·대사성 산증이 증폭.",
+    "산소 변화는 건강 시 역할 미미, 진행성 hypoxemia는 환기를 hyperbolic하게 증가. Hypoxemia는 말초 화학수용체 자극(중추에는 무영향)과 상위 통합 부위를 통해 작용.",
+    "PaO₂ <100 mm Hg로 감소 시 폐포 환기 소폭 증가; PaO₂ <50–60 mm Hg가 되어야 큰 변화. PCO₂ 동반 상승 시에는 PaO₂의 작은 감소로도 환기 변화. 운동·대사성 산증도 PCO₂ 상승 없이 hypoxemia 반응 증강.",
+    "만성 hypercapnia 호흡기 질환: CO₂ 반응 둔화, hypoxemia가 주 자극 → 산소 투여 시 환기 drive 감소·심한 hypercapnia(수의학에서 드묾; 사람 COPD의 고전적 예)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Other Sensory Receptors",
+   "gist": "폐·기도 반사(stretch –, irritant +, J +) + 압수용체·근관절·통증/온도 입력"
+  },
+  {
+   "type": "table",
+   "title": "폐·기도 수용체",
+   "headers": [
+    "수용체",
+    "위치·경로",
+    "자극",
+    "반응"
+   ],
+   "rows": [
+    [
+     "Pulmonary stretch receptor\n(slowly adapting)",
+     "기도 평활근; 큰 유수 미주 섬유 → medulla 흡기 영역·pons apneustic center",
+     "과도·지속적 폐 팽창",
+     "흡기 방전 억제·호흡수 감소 = Hering–Breuer inflation reflex\n폐 수축 시 흡기 개시 = deflation reflex"
+    ],
+    [
+     "Irritant receptor\n(rapidly adapting stretch receptor)",
+     "비점막·상부기도·기관지 상피(폐포 가능성); 주로 유수 미주 구심. 비점막은 삼차·후각 경로 → 재채기",
+     "자극성 가스·흡입 먼지·찬 공기·기계/화학 자극; 큰 기도에서는 stretch에도 반응",
+     "기관지수축, 기침, 후두 경련, 점액 분비, 호흡수·깊이 증가"
+    ],
+    [
+     "J receptor\n(juxtacapillary)",
+     "폐 간질, 폐모세혈관 인접; 느린 무수 C fiber(vagus)",
+     "폐모세혈관 팽창, 간질 부종, 폐순환 내 화학물질",
+     "빠르고 얕은 호흡, 극단적으론 무호흡. 좌심부전·간질성 폐질환의 dyspnea 감각과 연관"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "기타 감각 수용체"
+  },
+  {
+   "type": "list",
+   "items": [
+    "호흡기 외 부위의 수용체도 특정 상황에서 호흡 패턴 조정에 기여.",
+    "동맥 압수용체: 주로 심혈관 조절이나 큰 혈압 변동 시 환기 변화 매개 — 대동맥·경동맥동 압수용체가 감지한 현저한 혈압 감소 → 반사성 과호흡, 상당한 혈압 상승 → 저호흡.",
+    "근육·건·관절 수용체: 체성 수용체가 환기에 영향 — 호흡근·늑골 관절 수용체가 호흡근 길이·장력 변화에 반응해 폐용적·호흡일 피드백 제공; 근골격계 구심 섬유는 운동 유발 과호흡에 큰 역할을 할 것으로 추정.",
+    "통증·온도: 통증·온도·촉각·고유감각 수용체가 척수 상행로로 정보 전달 → 호흡 영향. 통각 자극은 초기 무호흡 후 과호흡; 피부 온도 상승도 과호흡 유발."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "호흡 조절 이상",
+   "gist": "CNS 억제제·마취제·opioid·benzodiazepine은 용량 의존 호흡 억제; doxapram은 자극"
+  },
+  {
+   "type": "list",
+   "items": [
+    "호흡 조절계는 정교하게 조율되어 순간순간 대사 요구에 맞춰 환기를 조정하나, 중추·말초 조절 기전에 작용하는 약물·질환은 환기와 혈액가스 유지 능력에 큰 영향.",
+    "CNS 억제를 일으키는 모든 약물은 호흡 억제 가능; 거의 모든 전신마취제가 용량 관련 환기 감소. Opioid·benzodiazepine은 용량 의존적 호흡 억제와 hypoxemia·hypercapnia에 대한 환기 반응 저하가 잘 입증됨.",
+    "호흡 자극제: doxapram(CNS 자극제 — 말초 화학수용체 활성화 + medulla 호흡 중추 자극), aminophylline/theophylline, caffeine, progesterone.",
+    "의인성 원인 외에 기저 질환도 호흡 이상 유발 — hypoventilation 원인은 Chapter 17, 뇌손상·두개내압 상승의 비정상 호흡 패턴은 Chapter 86 참고."
+   ]
+  }
+ ]
+}
