@@ -1,0 +1,181 @@
+{
+ "id": "sacc3-p6-c66",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part VI",
+ "part_title": "Fluid Therapy",
+ "chapter_num": 66,
+ "title": "Transfusion Medicine",
+ "author": "Sarah E. Musulin, DVM, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "전혈(WB)은 그대로 수혈·저장하거나 성분(pRBC·plasma·platelet)으로 분획하여 특정 결핍을 교정한다.",
+    "수혈 결정은 생리적·상황적 수혈 트리거(transfusion trigger)에 근거한다.",
+    "헌혈 프로그램은 공혈동물의 건강·안전·편안함을 보장하면서 안전하고 효과적인 제품을 생산해야 한다.",
+    "혈액은 제한된 자원 — 최적 저장·실용적 재고관리·신중한 배분이 필요하다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "정밀 수혈 (Precision Transfusion)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "결핍된 성분만 공급: 빈혈→pRBC, 응고병증→plasma, 혈소판감소→PLT, 저알부민→albumin. 불필요한 성분·용적을 줄여 부작용 회피.",
+    "대량 출혈에서는 모든 성분(RBC·응고인자·PLT·albumin·fibrinogen)이 소실 → balanced ratio 또는 WB로 보충.",
+    "고용량 정질액(희석성 응고장애·용적과부하)·합성 콜로이드(응고장애·신손상)의 합병증으로, 출혈 환자에서 수혈 제품이 최적 소생 수액으로 재부상."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Massive Transfusion"
+  },
+  {
+   "type": "list",
+   "items": [
+    "정의: 24시간 내 추정 혈액량 이상, 또는 3시간 내 혈액량의 절반을 수혈.",
+    "1:1:1(pRBC:plasma:PLT) 프로토콜은 WB보다 항응고제·첨가물 함량이 많음 → 인의 외상의학에서 WB 사용 재부상."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "빈혈과 RBC 수혈"
+  },
+  {
+   "type": "list",
+   "items": [
+    "만성 빈혈은 적응(심박출량↑, 2,3-DPG↑로 산소 off-loading)으로 내성; 급성 빈혈은 경한 PCV 저하에도 혈역학적 불안정.",
+    "임상적 보상부전 징후: 허약·쉽게 피로·둔화·허탈·빈맥·빈호흡·고젖산혈증. 패혈증·심폐질환·마취/수술 환자는 더 자유로운 트리거 고려.",
+    "보존적(Hb 7–9 g/dl) vs 자유로운(Hb 10–12) 전략 — 2015 메타분석상 보존적 전략이 수혈량·수혈환자수 감소, 사망률·이환율 차이 없음.",
+    "RBC 제품: FWB(실온 24h 보관 가능), SWB(2–6°C 35일), pRBC(2–6°C 35–42일)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "혈소판 수혈"
+  },
+  {
+   "type": "list",
+   "items": [
+    "트리거는 가변적·임상의 의존. 중증 혈소판감소(<50,000/µl) 또는 thrombocytopathic 환자가 출혈하거나 주요 장기/공간(CNS·폐·심근·흉강)에 출혈 시 중재.",
+    "예방적 vs 치료적 수혈 정책에 합의 없음. 대량 출혈의 damage control resuscitation에서 중요.",
+    "제품: 신선(FWB·PRP·PC), 저장(SWB·동결보존 PC·동결건조 PLT). 냉장 PLT가 더 강한 응고 형성 가능성 시사. RBC도 혈류학 개선·ADP/TXA2 방출로 지혈에 기여.",
+    "FWB 10 ml/kg는 PLT 수를 약 10,000/µl 상승."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "혈장 수혈"
+  },
+  {
+   "type": "list",
+   "items": [
+    "주 적응: 응고인자·fibrinogen 보충(간부전, 살서제 중독, vWD, hemophilia A).",
+    "제품: FFP(8h 내 동결, ≤-30°C 1년), FP24, LP(냉장 2주), FP(>1년, 5년). FFP→CRYO(vWF·FVIII 농축)·CPP로 추가 가공.",
+    "비응고병증 환자에서 albumin·anti-protease·면역글로불린 보충 목적의 혈장 사용은 논란(췌장염·parvovirus에 효과 입증 안 됨); ALB 1 g/dl 올리려면 45 ml/kg 필요."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Albumin 수혈"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Albumin은 혈장 주 교질단백 — 혈관내피 무결성 유지, 약물·호르몬 운반, 항산화·항염·항응고.",
+    "인혈청 albumin(HSA): 개에서 type III 과민반응(치명적 사례 포함) 보고 → 사용 우려.",
+    "동결건조 개특이 albumin(CSA): 종특이적·장기 보관 가능, 건강견·패혈성 복막염 환자에서 안전·효과적으로 ALB·COP 상승."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "공혈동물 관리 · 헌혈"
+  },
+  {
+   "type": "list",
+   "items": [
+    "공혈동물: 침착한 성격의 어린 성견/성묘, 수혈·감염병·만성질환 병력 없음. 혈액형 결정 필수, ACVIM(2016) 가이드라인에 따른 감염병 검사.",
+    "개: 진정은 선택적, 50 lb(≈23 kg) 이상, 450–500 ml 채혈; ~4주 간격 가능하나 반복 헌혈 시 철분 결핍 주의.",
+    "고양이: 보통 진정 필요, 제지방체중 5 kg 이상, 약 50 ml 채혈.",
+    "헌혈 전 PCV(개 ≥40%, 고양이 ≥35%)·신체검사. 무균적으로 lidocaine 국소차단 후 경정맥 채혈, 중력 또는 흡인법."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "혈액은행"
+  },
+  {
+   "type": "list",
+   "items": [
+    "냉장 RBC 제품: 전용 냉장고(2–6°C, 온도 알람·일일 회전). Plasma: 실험실급 냉동고(저온·온도 안정). 가정용 냉장/냉동고는 freeze-thaw로 제품 손상.",
+    "재고는 수요를 충족하되 만료 폐기를 최소화 — storage lesion(저장 손상) 우려와 균형. 전산 헌혈/재고 관리 시스템 활용."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 66.1 — 주요 수혈 제품 요약",
+   "headers": [
+    "제품",
+    "저장조건",
+    "주요 적응",
+    "용량"
+   ],
+   "rows": [
+    [
+     "FWB (신선전혈)",
+     "즉시 또는 실온 24h",
+     "대량출혈·혈소판감소/응고병증성 빈혈",
+     "약 20 ml/kg (WB 2 ml/kg → PCV ~1%↑)"
+    ],
+    [
+     "SWB (저장전혈)",
+     "2–6°C, 28–35일",
+     "출혈성 빈혈·응고병증성 빈혈",
+     "WB 공식 준용"
+    ],
+    [
+     "pRBC",
+     "2–6°C, 35–42일",
+     "빈혈",
+     "PCV 상승(%) × 1.5 × BW(kg) ml"
+    ],
+    [
+     "FFP",
+     "≤-30°C, 1년",
+     "응고병증·저알부민혈증",
+     "약 10–20 ml/kg"
+    ],
+    [
+     "CRYO",
+     "≤-30°C, 12개월",
+     "hemophilia A·vWF 결핍·저fibrinogen",
+     "FFP 250 ml 1 unit / 10–12 kg"
+    ],
+    [
+     "Albumin (canine)",
+     "실온, 24개월",
+     "저알부민혈증",
+     "~450 mg/kg → ALB 0.5 g/dl↑"
+    ],
+    [
+     "혈소판 (PRP/PC)",
+     "실온 5일 / 동결보존",
+     "혈소판감소/병증",
+     "WB유래 1 unit / 10 kg"
+    ]
+   ]
+  }
+ ]
+}

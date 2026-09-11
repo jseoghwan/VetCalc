@@ -1,0 +1,131 @@
+{
+ "id": "sacc3-p7-c72",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part VII",
+ "part_title": "Endocrine Disorders",
+ "chapter_num": 72,
+ "title": "Hypoglycemia",
+ "author": "Amie Koenig, DVM, DACVIM (SAIM), DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "정상혈당은 호르몬 의존성·비의존성 기전의 균형으로 유지된다.",
+    "저혈당 기전 ▸ ① 인슐린/인슐린 유사물질 과잉 ② 포도당 소비 과다 ③ 포도당 생산 감소.",
+    "흔한 특정 원인: 외인성 인슐린 과량투여, insulinoma 및 인슐린 유사물질 분비종양, 신생아·toy breed 저혈당, sepsis, hypoadrenocorticism, 중증 간질환.",
+    "Neuroglycopenia → 의식변화·발작·실명/시각이상·기면·허약·운동실조. Adrenergic 자극 → 불안·빈호흡·구토/설사·떨림.",
+    "저혈당 위기의 가장 효과적 치료는 정맥 dextrose이며, 가능한 빨리 음식을 급여한다. insulinoma 등 난치성에는 glucagon CRI."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "정상 포도당 항상성 (Normal Glucose Homeostasis)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "포도당 공급원 3가지 ▸ ① 장내 탄수화물 흡수 ② glycogenolysis(저장형 glycogen 분해) ③ gluconeogenesis(lactate·pyruvate·amino acid·glycerol로부터 생성).",
+    "Insulin(췌장 β세포): gluconeogenesis·glycogenolysis 억제, glycogen 저장, 포도당 흡수·이용 촉진, glucagon 분비 감소.",
+    "혈당 저하 시 glucagon(α세포) 분비 → 간 glycogenolysis·gluconeogenesis ↑ (효과는 일시적).",
+    "Portal vein 수용체가 저혈당을 감지·중계 → epinephrine·cortisol 반응 유도.",
+    "지속 시 cortisol·GH 분비(수시간 후, 효과 더 지속) → lipolysis, 근육 아미노산 방출, 말초 포도당 이용 감소.",
+    "간 포도당 autoregulation + 신경 efferent 신호(norepinephrine)도 추가 방어 기전.",
+    "결국 포도당 이용이 공급을 초과할 때 저혈당 발생; 신생아 제외 대부분 단독 금식만으로는 저혈당이 잘 생기지 않음(다른 기전 동반 필요)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "임상징후 (Clinical Signs)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "뇌는 포도당 의존적(저장·생성 능력 제한) → 저혈당 시 neuroglycopenia 발생. 증상은 저하 정도·속도·지속시간에 좌우.",
+    "Neuroglycopenic signs ▸ 의식저하·둔감, 자극 무반응, 졸림, 허약·기립불능, 운동실조, 실명·시각이상, 발작. 지속 시 영구 뇌손상(특히 실명).",
+    "Adrenergic signs ▸ 보행·발성·안절부절, 떨림, 구토·식욕부진, 빈호흡, 설사, 배뇨; 서맥·순환허탈도 보고.",
+    "만성·재발성 저혈당 환자는 hypoglycemia unawareness(뇌 포도당 흡수 상향조절)로 무증상일 수 있음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "진단 (Diagnosis)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "정의: 혈당 ≤60 mg/dl (증상은 보통 <50 mg/dl에서 발현).",
+    "Whipple's triad ▸ 저혈당 부합 증상 + 낮은 혈당 + 교정 시 증상 소실.",
+    "Handheld glucometer는 과대·과소평가 가능 → Hct 비정상 시 타 방법으로 확인. 채혈부위는 귀 안쪽이 paw pad·점막보다 정확.",
+    "혈청 분리 지연 시 혈구 glycolysis로 pseudohypoglycemia 발생(sodium fluoride tube로 방지).",
+    "확진 후 원인규명: CBC, 화학검사, 요검사, 영상, insulin 수치, 추가 내분비검사."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "원인 (Causes)"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "인슐린·인슐린 유사물질 과잉"
+  },
+  {
+   "type": "list",
+   "items": [
+    "외인성 인슐린 과량: 인슐린 치료 동물(당뇨, 고K혈증·CCB 중독 치료) 어디서나 가능. 고양이>개, 비만, 6 U/주사 초과, 식욕부진·구토 시 위험. 치료 ▸ 인슐린 중단·급여·필요 시 IV dextrose, 재개 시 25–50% 감량. 예후는 치료반응이 가장 중요.",
+    "Insulinoma: 췌장의 인슐린 분비성(대개 악성) 종양, 중년–노령견(고양이도). 허약·허탈 + 중증 저혈당. 진단 ▸ 저혈당 시 insulin 정상/상승, AIGR·영상(US/CT) 보조. 치료 ▸ 외과 절제 + 내과(분할급여, glucocorticoid, diazoxide, octreotide, toceranib); 병기에 따라 생존차 큼.",
+    "Paraneoplastic: hepatoma/HCC, leiomyoma·leiomyosarcoma, 폐·유선·타액선 carcinoma, lymphoma, 흑색종, hemangiosarcoma 등 — 인슐린유사물질 분비·종양 포도당 소비·간기능 저하.",
+    "독성/약물: sulfonylurea(glipizide), xylitol(인슐린 방출 + 간괴사), β-blocker(atenolol), oleander."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "포도당 생산 감소"
+  },
+  {
+   "type": "list",
+   "items": [
+    "신생아·toy/소형견: glycogen 저장 적고 간효소 미성숙 + 뇌 대사 비중 큼. 유발 ▸ 미숙, 모체 쇠약, runt, 감염·백신·운동·위장장애·저체온·금식.",
+    "간질환: PSS, glycogen storage disease, 중증 간염, hepatic lipidosis, cirrhosis, 종양, 독성 — 간기능 ~70% 소실 전까지는 정상혈당 유지.",
+    "Hypocortisolism(hypoadrenocorticism) 및 counterregulatory 호르몬(glucagon·GH·갑상선·catecholamine) 결핍. Addisonian crisis는 수액·glucocorticoid 필요(Ch82 참조)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "포도당 이용 과다"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Sepsis: 흔한 원인. 섭취·간기능 저하 + 비인슐린성 소비 증가(TNF 등 매개). Babesiosis도 저혈당 동반(불량 예후 지표).",
+    "Exercise-induced(hunting dog): 운동 중 근육 포도당 소비 급증 + glycogen 고갈 → 운동 중 소량 빈번 급여.",
+    "Polycythemia·leukocytosis: 주로 in vitro artifact(혈구 소비) — 임상증상 드묾, 신속 검체처리 필요.",
+    "다기전: 일부 독소·anaphylaxis(소비↑·생산↓·세균전위)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "저혈당 위기 치료 (Treatment of Hypoglycemic Crisis)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "1차: IV dextrose. 50% dextrose 0.5–1 ml/kg(0.25–0.5 g/kg)를 ≥1:2 희석하여 5분간 정주(고장성 → phlebitis 주의).",
+    "IV 확보 전·가정에서는 Karo/팬케이크 시럽·꿀을 구강점막 도포(임시 bridge; 일부 삼켜야 효과).",
+    "목표는 증상 소실(정상범위 복귀가 목표는 아님). 보통 1–2분 내 호전.",
+    "안정 후 2.5–5% dextrose CRI(등장액에 50% dextrose 추가). D5W 단독 금지(중증 저Na혈증 위험). >10% 필요 시 central line.",
+    "Insulinoma 의심 시 대량 bolus 주의(추가 인슐린 방출 → 반동성 저혈당). 난치성에는 glucagon CRI(bolus 50 ng/kg → 5–40 ng/kg/min).",
+    "Glucocorticoid(prednisone/dexamethasone): paraneoplastic·내분비성(insulinoma, hypoadrenocorticism) 저혈당에 도움; 감염성 저혈당엔 금기."
+   ]
+  }
+ ]
+}

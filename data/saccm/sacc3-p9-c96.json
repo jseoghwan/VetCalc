@@ -1,0 +1,80 @@
+{
+ "id": "sacc3-p9-c96",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part IX",
+ "part_title": "Infectious Disorders",
+ "chapter_num": 96,
+ "title": "Multidrug-Resistant Infections",
+ "author": "Steven E. Epstein, DVM, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "다제내성균(MDRO)은 수의학에서 점점 흔해지고 있으며(최근 연구상 개·고양이 분리주의 8~31%), 조기 배양·감수성 검사가 진단에 필수적이다.",
+    "MDRO의 존재는 과거 항균제 사용과 강하게 연관된다.",
+    "지역별로 흔한 균종과 감수성 패턴을 파악하는 것이 경험적 치료 선택에 도움이 된다.",
+    "감염내과 전문가 자문이 다제내성 감염 치료의 성공률을 높이는 데 도움이 될 수 있다."
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "다제내성균은 특히 ICU에서 문제가 되며, 교육병원에서 3일 이상 입원한 환자에서 분리 위험이 높아진다. MDR Acinetobacter·Staphylococcus의 원내 유행과 개를 감염원으로 한 사람 Campylobacter jejuni 유행도 보고되었다. 치료 선택지가 제한적이거나 없는(MDR/XDR) 감염이 늘고 있어, 흔한 치료 옵션에 대한 실무 지식이 최적 진료에 중요하다."
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "정의 및 내성 유형"
+  },
+  {
+   "type": "list",
+   "items": [
+    "항균제 내성은 최소억제농도(MIC)로 판정하며, CLSI가 다수의 수의 breakpoint를 제정해 두었다.",
+    "고유내성(intrinsic): 미생물 본래의 특성. 예) Pseudomonas는 항녹농균제를 제외한 대부분의 β-lactam에, 모든 그람음성균은 세포막 미투과로 vancomycin에 내성이다.",
+    "상황내성(circumstantial): 시험관에서는 감수성이나 생체 내에서 무효한 경우로, CNS·전립선·뼈 미침투나 산성뇨에서의 불활성화 등이 원인이다.",
+    "획득내성(acquired): 야생형 대비 표현형 변화로 항균제 효과가 감소한 상태이며, 가장 중요한 유발요인은 과거 항균제 노출이다.",
+    "분류: MDRO는 통상 감수성인 3개 이상 계열에서 각 1개 이상 약제에 비감수성, XDR은 1~2개 계열에만 감수성, PDR(pan drug resistant)은 이용 가능한 모든 항균제에 비감수성인 균이다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "위험요인"
+  },
+  {
+   "type": "list",
+   "items": [
+    "사람 의학의 주요 위험인자: 과거 항균제 사용, ICU 입원, 감염관리 실패, 장기 입원, 최근 수술·침습적 처치, 기계환기, MDR 보균 환자로의 노출·집락.",
+    "개·고양이도 유사하게 기저질환, 과거 항균제 사용, 입원 및 ICU 재원 기간, 수술, 기계환기가 MDRO 검출 증가와 연관된다. 이 위험요인 평가가 escalation/deescalation 전략 선택을 좌우한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Escalation vs Deescalation 전략"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Escalation(단계적 상향): 의심 원인균을 커버하는 좁은 스펙트럼 항균제로 시작한 뒤, 배양·감수성 결과에 따라 유지 또는 변경한다. 대부분의 수의 환자에 권장되는 접근이다.",
+    "Deescalation(단계적 하향): MDR/XDR을 포함해 광범위하게 시작한 뒤 결과가 나오면 스펙트럼을 좁힌다. 조기 적절 커버로 사망률을 낮추는 것이 목적이다.",
+    "수의 중환자에서 deescalation은 중증 패혈증/패혈쇼크 환자나 원내에서 항균제 투여 중 감염된 환자에 한정한다. '항균제를 잘못 고르면 24시간 내 감염/패혈증으로 죽을 만큼 아픈가?'가 판단 기준이며, deescalation 시에는 (안전하다면) 감염조직 배양이 필수다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "주요 다제내성균"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Methicillin 내성 Staphylococcus(MRS): 소동물은 주로 S. pseudintermedius(MRSP)이며 S. aureus는 드물다. mecA 유전자가 변형 penicillin-binding protein을 만들어 ceftaroline을 제외한 모든 β-lactam에 내성(감수성검사 결과와 무관)을 보이고, 개 MRSP의 90% 이상이 4개 이상 추가 계열에도 내성이다.",
+    "MRS의 경험적 deescalation 약제로는 vancomycin(TDM 시행, 5회차 투여 직전 측정, trough >10 mg/L 유지)이나 aminoglycoside(amikacin·gentamicin; AKI 위험·비경구·화농부위 활성 저하 단점)를 쓴다. 정균제(doxycycline·minocycline·chloramphenicol·rifampin)는 경증에서 escalation에 활용하고, vancomycin 내성이거나 경구가 필요하면 linezolid를 최후 수단으로 쓴다.",
+    "Enterococcus: 정상 장내세균이자 중요한 원내감염원. E. faecalis가 더 흔하나 E. faecium이 더 자주 MDR이다. 모든 cephalosporin·clindamycin·통상용량 aminoglycoside에 고유내성이고 fluoroquinolone 활성도 낮으며, 3세대 cephalosporin·fluoroquinolone 사용이 vancomycin 내성 장구균(VRE) 발생과 연관된다.",
+    "병독성이 낮아 배양 양성이라도 집락(표재창상·무증상 세균뇨)으로 판단되면 치료 없이 관찰할 수 있고, 다른 병원체와 공존 시 그 병원체만 치료해도 임상 호전이 가능하다."
+   ]
+  }
+ ]
+}

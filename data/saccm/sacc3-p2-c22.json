@@ -1,0 +1,183 @@
+{
+ "id": "sacc3-p2-c22",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part II",
+ "part_title": "Respiratory Disorders",
+ "chapter_num": 22,
+ "title": "Pulmonary Hypertension",
+ "author": "Lance C. Visser, DVM, MS, DACVIM (Cardiology); Yu Ueda, DVM, PhD, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "PH는 ① 폐혈류 증가, ② 폐혈관 저항(PVR) 증가, ③ 폐정맥압 증가의 단독 또는 조합으로 발생하는 혈역학적 상태(질환 그 자체가 아님).",
+    "PH는 임상소견을 악화시키고 예후를 나쁘게 하며 궁극적으로 우심부전(RHF)을 유발할 수 있다.",
+    "진단의 핵심 도구는 숙련된 술자의 심초음파.",
+    "ACVIM 분류 6군: ① PAH, ② 좌심질환(LHD), ③ 호흡기/저산소, ④ 폐혈전·색전(PT/PTE), ⑤ 기생충(심장사상충·Angiostrongylus), ⑥ 다인성/원인 불명.",
+    "임상적으로 의미 있는 PH 치료의 핵심: 기저질환 치료 + 대부분 PDE5 억제제(sildenafil, tadalafil).",
+    "좌심질환 2차 PH에서 PDE5i는 1차 약물이 아니며 폐부종 유발 위험이 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Definitions"
+  },
+  {
+   "type": "list",
+   "items": [
+    "PH = 폐혈관 내 비정상적 혈압 상승. 사람 기준: 평균 PAP ≥25 mmHg (안정 시, 우심도자).",
+    "Precapillary PH: PVR ↑, 좌심방(LA)압 정상 — 혈관 수축/구조 변화 중심.",
+    "Postcapillary PH (= pulmonary venous hypertension): LA압 ↑ → 폐정맥압 ↑ → RV afterload ↑. 좌심질환 2차.",
+    "만성 postcapillary PH는 반응성 혈관 수축·혈관 질환을 동반해 'combined postcapillary + precapillary PH'로 진행 가능."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Pathophysiology"
+  },
+  {
+   "type": "list",
+   "items": [
+    "PVR 상승 → RV afterload ↑ → RV 혼합형 비대(벽 비후 + 챔버 확장) → 만성화 시 RV dysfunction → 우심부전(흉/복강 삼출, 전신 정맥압 ↑).",
+    "Precapillary 기전: 폐동맥 vasoconstriction, 혈관 remodeling, 내피 기능부전, 염증·혈전, 혈관 강직, 폐 실질 파괴, 점도 ↑.",
+    "좌-우 단락, 만성 좌심질환의 경우 chronically ↑ 폐정맥압 → 반응성 vasoconstriction과 혈관 질환 → PVR ↑."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Assessment"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Gold standard: 우심도자술(PAP, PA wedge pressure, CO 측정 → PVR 계산) — 임상에서는 거의 안 함.",
+    "심초음파는 '확정 진단'이 아닌 PH 확률(낮음/중간/높음) 평가 도구 (ACVIM consensus).",
+    "두 축: ① PH 2차 cardiac 구조·기능 변화(RV 비대/기능저하, LV underfilling, IVS flattening, PA 확장, RA·CdVC 확장), ② Doppler peak TRV → simplified Bernoulli (ΔP = 4 × V²)로 systolic PAP 추정.",
+    "전통적 등급(mild 30–50, moderate 50–75, severe >75 mmHg)은 임의적·부정확. 임상소견 + 구조/기능 변화 + TRV 종합 판단.",
+    "임상적으로 의미 있는 PH: 임상소견 동반 + 중간 이상 확률(TRV >3.4 m/s, ΔP >46 mmHg)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Clinical Findings (Table 22.2)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "강하게 시사: 운동·흥분 시 실신, 안정 시 호흡곤란, 활동 후 호흡곤란, 우심부전(심장성 복수).",
+    "가능성 있음: 안정 시 tachypnea, 안정 시 호흡 노력 증가, 운동 후 지연된 tachypnea.",
+    "신체검사: 비정상 호흡음, dyspnea, 청색증·창백 점막, 경정맥 팽창·박동, 복수.",
+    "청진: loud/split S2; 승모판·삼첨판 systolic murmur — MMVD 개에서 삼첨판 위 큰 잡음은 PH 강력 시사."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "ACVIM Clinical Classification (6 groups)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Group 1 — PAH: 특발성, 유전성, 약물/독성, 동반(선천성 cardiac shunt, vasculitis, vascular amyloid).",
+    "Group 2 — 좌심질환(LHD): DCM, 심근염, MMVD, 판막 endocarditis, mitral/aortic stenosis.",
+    "Group 3 — 호흡기/저산소: 만성 폐쇄성 기도(기관·주기관지 허탈, bronchomalacia), 폐 실질 질환(섬유화, COP, 호산구성, 폐렴), OSA/BOAS, 고지대, 발달성 폐질환.",
+    "Group 4 — PT/PTE: 급성·만성.",
+    "Group 5 — 기생충: Dirofilaria, Angiostrongylus.",
+    "Group 6 — 다인성/원인 불명: 1–5 복합, 폐동맥 압박(종양/진균육아종) 등."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "좌심질환(Group 2) 2차 PH 진단 주의"
+  },
+  {
+   "type": "list",
+   "items": [
+    "심초음파상 ① LHD 증명 + ② 명확한 LA 확장 — 두 조건을 모두 충족해야 LHD 2차 PH로 분류.",
+    "LA 확장은 만성 LA압 상승의 대리 지표.",
+    "무증상 MMVD가 중·고령 개에 흔하므로, LA 확장 없는 PH는 Group 1(PAH) 또는 Group 3(호흡기/저산소) 2차로 분류해야 함."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Diagnostic Evaluation"
+  },
+  {
+   "type": "list",
+   "items": [
+    "임상소견·신검·기본 혈액검사·흉부영상에서 명확한 원인이 없을 때 심초음파 의뢰.",
+    "흔한 시나리오: 부정맥/심한 심질환/신경학적/대사·혈액 이상이 없는 실신, 원인 불명 modified transudate 복수 + CdVC 확장.",
+    "기저 원인을 파악하는 것이 최적 관리에 가장 중요."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Clinical Management"
+  },
+  {
+   "type": "list",
+   "items": [
+    "기본: 기저질환 치료 + PH-specific 치료.",
+    "일반 권고: 산소 보충(단기), 심장사상충 예방, 운동 제한, 항공여행·고지대 회피(보조 산소 없이).",
+    "1차 PH-특이 약물: PDE5 억제제 — cGMP catabolism 억제 → 폐혈관 평활근 이완, 평활근 비대 억제.",
+    "Sildenafil 1–3 mg/kg PO q8h (반감기 짧음).",
+    "Tadalafil 2 mg/kg PO q24h — sildenafil과 동등한 임상 효과 보고.",
+    "PDE5A 다형성이 sildenafil 반응을 둔화시킬 수 있음.",
+    "PDE5i 적응증: 임상소견 + 중간/고확률 precapillary PH(우심 재형성 또는 TRV >3.4 m/s). 경험적 사용은 권장되지 않음.",
+    "Group 1, 3–5에 PDE5i 고려; Group 6은 case-by-case."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "좌심질환 2차 PH 치료"
+  },
+  {
+   "type": "list",
+   "items": [
+    "1차 치료는 LA압 감소(MMVD: furosemide + pimobendan)와 심부전 관리.",
+    "PDE5i를 곧바로 쓰면 RV 출력 ↑ → LA·폐정맥·폐모세혈관압 ↑ → iatrogenic 폐부종 위험.",
+    "LA압 조절에도 증상 지속하거나 우심부전 동반 시 보수적 용량(예: sildenafil 0.5 mg/kg PO q8h) 고려.",
+    "호흡수·호흡 노력 면밀히 모니터링."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Critical Care of Acute PH Decompensation"
+  },
+  {
+   "type": "list",
+   "items": [
+    "유발인자: PTE, 부정맥, 패혈증, fluid overload, PH 자체 진행.",
+    "임상상: 우심부전 + 저혈압(저심박출) ± 호흡곤란·저산소.",
+    "초기: 유발인자 교정 + PDE5i로 RV afterload 감소; 산소 + 세심한 수액 관리(과부하 회피), 필요시 이뇨제로 preload 최적화.",
+    "심한 RV systolic dysfunction → 양성 변력제 — 사람에서 저용량 dobutamine 1차(단, 혈관확장으로 저혈압 악화 위험).",
+    "지속 저혈압 → norepinephrine (SVR + RV 수축력 ↑) 고려."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Prognosis & Monitoring"
+  },
+  {
+   "type": "list",
+   "items": [
+    "원인·중증도에 따라 다양. 일부 가역적이나 대개 동일 질환에서 PH 동반 시 예후 악화.",
+    "MMVD, 호흡기/저산소 2차 PH는 예후 악화. 우심부전 동반 시 더 나쁨.",
+    "환자별 임상 반응 추적이 핵심. 반복 심초음파의 효용은 논쟁적.",
+    "PDE5i 후 TRV·추정 PAP 호전이 항상 보이지 않아도, 임상적 호전이 있으면 약물 유지."
+   ]
+  }
+ ]
+}

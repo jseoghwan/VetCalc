@@ -1,0 +1,161 @@
+{
+ "id": "sacc3-p9-c92",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part IX",
+ "part_title": "Infectious Disorders",
+ "chapter_num": 92,
+ "title": "Infective Endocarditis",
+ "author": "Kristin A. MacDonald, DVM, PhD, DACVIM (Cardiology); Steven E. Epstein, DVM, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "감염성 심내막염(IE)은 드물지만 치명률이 높은 질환으로, 주로 중대형·수컷견의 승모판·대동맥판을 침범한다.",
+    "임상증상이 비특이적이고 여러 장기를 침범할 수 있어 진단이 어렵다.",
+    "사람의 진단기준을 변형한 기준이 개의 IE 진단 보조에 활용된다.",
+    "증식성 병변 내부는 혈류·면역세포 접근이 제한되어 원인균 박멸이 어렵다.",
+    "장기간(수주~1년 이상) 광범위 살균성 항균제 투여가 치료의 근간이다.",
+    "예후는 전반적으로 불량하며, 특히 대동맥판 IE의 예후가 나쁘다.",
+    "대동맥협착 등 고위험견은 시술·처치 전 항균제 예방투여를 고려한다."
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "감염성 심내막염(IE)은 개에서 드물게 발생하지만 울혈성심부전, 면역매개질환(다발관절염·사구체신염), 혈전색전증, 중증 부정맥 등 심각한 합병증을 유발할 수 있다. 초음파심장검사에서 판막의 증식성 병변과 판막부전을 확인하는 것이 진단의 핵심이며, 혈액배양은 항균제 병용투여나 까다로운 균종 감염으로 인해 흔히 음성으로 나온다. 치료는 6~8주 이상의 장기 광범위 항균제 투여이며, 첫 1주는 정맥투여가 이상적이다."
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "병태생리"
+  },
+  {
+   "type": "list",
+   "items": [
+    "손상된 심장판막 내피에 세균이 부착하며 시작되며, 노출된 세포외기질단백·조직인자가 응고를 촉발해 섬유소원·섬유소·혈소판 응괴가 형성되고 세균이 여기에 강하게 결합한다.",
+    "MSCRAMM(미생물표면성분)을 발현하는 Staphylococcus·Streptococcus 등이 부착력이 강해 주요 원인균이 되며, 일부 균은 내피세포 내로 내재화되어 면역계 탐지를 회피한다.",
+    "증식성 병변 내부는 식세포 접근이 제한되어 항균제 침투의 큰 장애물이 된다.",
+    "울혈성심부전(CHF)이 가장 흔한 사망원인으로, 급성·중증 판막부전으로 좌심실 충만압이 급격히 상승해 좌심방 확장 없이도 폐부종이 발생할 수 있다.",
+    "순환면역복합체(IgM·IgG·C3) 침착으로 다발관절염(75%)·사구체신염(36%) 등 면역매개질환이 흔히 동반된다.",
+    "혈전색전증은 부검상 70~80%, 임상적으로는 44%에서 확인되며 신장·비장·심근·뇌·사지 경색이 흔하다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "원인균"
+  },
+  {
+   "type": "list",
+   "items": [
+    "빈도순으로 Staphylococcus spp.(S. aureus, S. pseudintermedius 등), Streptococcus spp., E. coli가 흔한 원인균이다.",
+    "Bartonella spp.(특히 B. vinsonii subsp. berkhoffii)는 배양음성 IE의 중요한 원인으로, 북부캘리포니아 연구에서 개 IE의 28%, 배양음성 사례의 45%를 차지했다.",
+    "Bartonella는 특수배지(BAPGM) 농축배양 후 16S-23S PCR을 병행해야 검출률이 높아지며, 진드기·벼룩이 매개체로 의심된다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "호발 및 소인"
+  },
+  {
+   "type": "list",
+   "items": [
+    "15kg 이상 중대형 수컷견, 5세 이상 중노령견에서 호발하며 래브라도·저먼셰퍼드·복서·골든리트리버가 과다대표된다.",
+    "가장 흔한 주호소는 파행이며, 기면·식욕부진·호흡이상·쇠약·허탈 등 비특이적 증상이 뒤따른다.",
+    "대동맥판협착이 통계적으로 유의한 유일한 구조적 소인이며, 흔한 판막질환인 승모판점액종성변성은 오히려 IE와 잘 연관되지 않는다.",
+    "균혈증의 흔한 원인으로 추간판염, 전립선염, 폐렴, 요로감염, 농피증, 치주질환, 장기유치 중심정맥카테터 등이 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "임상 및 임상병리 소견"
+  },
+  {
+   "type": "list",
+   "items": [
+    "새로 생기거나 강도가 변한 심잡음이 특징적이나 실제로는 41%에서만 확인되며, 이완기잡음과 도약맥은 대동맥판 IE를 시사한다.",
+    "발열은 50~74%에서 확인되나 항균제 병용 시 가려질 수 있고, Bartonella 감염견은 발열 빈도가 낮다.",
+    "부정맥은 40~70%에서 나타나며 심실성부정맥이 가장 흔하고, 대동맥판 IE견의 62%에서 심실부정맥이 보고된다.",
+    "백혈구증가(89%), 혈소판감소·빈혈, D-dimer 상승(87%)·고피브리노겐혈증(83%) 등 과응고 소견, 저알부민혈증(95%)이 흔하다.",
+    "단백뇨 환자의 UPC비 상승(77%)은 항트롬빈 소실에 따른 과응고상태를 시사할 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "진단"
+  },
+  {
+   "type": "list",
+   "items": [
+    "초음파심장검사에서 판막에 부착된 과에코성·불규칙·진동성(shaggy, oscillating) 병변 확인이 진단의 핵심이며, 승모판·대동맥판이 주로 침범된다.",
+    "혈액배양은 항균제 선행 투여로 60~70%가 음성일 수 있어, 서로 다른 정맥에서 30분~1시간 간격으로 3~4회 채혈을 권장하며 16S rDNA PCR을 병용하면 검출률이 33%→61%로 향상된다.",
+    "사람의 변형 Duke criteria를 개에 맞게 변형한 주요·부기준(양성 심초음파, 신규 판막부전, 양성 혈액배양, 발열, 대형견, 대동맥협착, 혈전색전증, 면역매개질환, Bartonella 항체가 ≥1:1024 등)으로 확정/의심/배제 진단을 분류한다."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 95.1 — 원인균별 권장 항균제",
+   "headers": [
+    "원인균",
+    "급성기 치료",
+    "만성기 치료"
+   ],
+   "rows": [
+    [
+     "Methicillin 감수성 Staphylococcus",
+     "ampicillin 또는 ampicillin/sulbactam IV",
+     "amoxicillin-clavulanate PO"
+    ],
+    [
+     "Methicillin 내성 Staphylococcus",
+     "amikacin 또는 vancomycin IV",
+     "doxycycline/chloramphenicol PO(감수성 시), 필요 시 linezolid PO"
+    ],
+    [
+     "Streptococcus spp.",
+     "ampicillin 또는 ampicillin/sulbactam IV",
+     "amoxicillin ± clavulanate PO"
+    ],
+    [
+     "장내세균",
+     "amikacin ± ampicillin/sulbactam IV",
+     "감수성에 따라 결정(피하주사 필요할 수 있음)"
+    ],
+    [
+     "Pseudomonas spp.",
+     "amikacin 또는 piperacillin/tazobactam IV",
+     "감수성에 따라 결정"
+    ],
+    [
+     "Bartonella spp.",
+     "amikacin 20 mg/kg IV ×1–2주",
+     "doxycycline+enrofloxacin ≥6–8주(반응 부족 시 azithromycin 고려)"
+    ],
+    [
+     "배양음성",
+     "amikacin+piperacillin/tazobactam IV",
+     "amoxicillin-clavulanate+enrofloxacin PO"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료 및 예후"
+  },
+  {
+   "type": "list",
+   "items": [
+    "발병 초기 1~2주는 정맥 살균성 광범위 항균제를 투여한 뒤 최소 6~8주 이상 경구 항균제로 전환하며, 총 치료기간이 1년 이상 필요한 경우도 있다.",
+    "항혈전제(아스피린 등)는 사람에서도 출혈위험만 높이고 이득이 없어 권장되지 않으며, 개에서도 근거 부족으로 추천되지 않는다.",
+    "심부전 동반 시 furosemide, ACE억제제, pimobendan 등 표준 심부전 치료를 병행한다.",
+    "대동맥판 IE의 중앙생존기간은 3일에 불과해 승모판 IE(476일)보다 예후가 현저히 나쁘며, 진단 후 5개월 내 92%가 사망했다는 보고도 있다.",
+    "스테로이드 선행투여, 혈소판감소증, 고크레아티닌혈증, 신합병증, 혈전색전증은 조기 심혈관계 사망의 위험인자다."
+   ]
+  }
+ ]
+}

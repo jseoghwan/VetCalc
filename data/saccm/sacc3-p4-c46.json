@@ -1,0 +1,137 @@
+{
+ "id": "sacc3-p4-c46",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part IV",
+ "part_title": "Cardiovascular Disorders",
+ "chapter_num": 46,
+ "title": "Blunt Cardiac Injury",
+ "author": "Maureen S. Oldach, DVM, DACVIM (Cardiology)",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "모든 외상 환자에서 흉부 외상 징후 유무와 관계없이 BCI를 항상 고려해야 한다.",
+    "심근 손상은 외상 환자에서 흔히 간과된다.",
+    "BCI의 가장 흔한 임상 결과는 심실 부정맥이다.",
+    "임상적으로 유의한 부정맥 대부분은 외상 후 24시간 이내 발생하며, 3~4일 내 소실된다.",
+    "cardiac troponin I(cTnI)는 개에서 심근 손상 평가를 위한 민감·특이적 바이오마커이다.",
+    "정상 cTnI(0~0.11 ng/ml) + 정상 입원 ECG → 임상적으로 유의한 심장 외상 배제에 100% 음성 예측값.",
+    "기본 평가 항목: ECG, cTnI, 흉부 방사선·초음파, 심초음파."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "정의 및 병태생리 (Definitions & Pathogenesis)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "BCI = 둔력(blunt force)에 의한 심장 손상. 소동물에서는 교통사고(MVA), 낙상, 발차기가 주요 원인.",
+    "7가지 기전: ① 이완 말기 흉부 직접 충격, ② 정맥 귀환 급증에 의한 전부하 증가, ③ 양방향 압박력, ④ 가속·감속력, ⑤ 폭발력, ⑥ 뇌진탕성 힘, ⑦ 골절 파편에 의한 심장 관통.",
+    "6가지 손상 유형: 심근 파열(myocardial rupture), 심낭 파열(pericardial rupture), 중격 손상(septal injury), 판막 손상(valve rupture), 심근 좌상(myocardial contusion), commotio cordis.",
+    "Myocardial rupture: 대개 고충격 외상 → 혈심낭(hemopericardium) → 갑작스러운 사망. 심낭 동반 파열 시 혈흉.",
+    "Septal injury: 획득성 심내 단락 → CHF 유발 가능. 방실 전도 차단 보고됨.",
+    "Valve rupture: 판막 폐쇄 시가 최대 취약점 → 유두근·판막 첨판·건삭 파열 → 급성 역류 → CHF.",
+    "Myocardial contusion: 조직학적 진단 — 출혈형, 괴사형, 혼합형. 부정맥 기전: electrically silent 영역 유도 → 재진입 회로 → 심실 빈맥부정맥.",
+    "Commotio cordis: 가시적 병리 없이 갑작스러운 심장사. T파 정점 전 15~30 ms 이내 흉벽 충격 → R on T → VF."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "진단 (Diagnosis & Clinical Assessment)"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "신체검사"
+  },
+  {
+   "type": "list",
+   "items": [
+    "조기 박동, 빈맥, 서맥, 리듬 정지 청진 → BCI 시사.",
+    "심음 둔화 → 심낭삼출 또는 흉수.",
+    "경정맥 박동·확장 → 심낭압박, 심한 심근 좌상, 우측 판막 파열.",
+    "새로운 심잡음 → 판막 파열 또는 중격 파열."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "ECG"
+  },
+  {
+   "type": "list",
+   "items": [
+    "단일 입원 ECG만으로는 부정맥 평가 불충분 → 24시간 텔레메트리 권장.",
+    "외상 후 개의 13~17%에서 입원 ECG에서 심실 부정맥 확인; 연속 ECG에서는 96%까지 확인됨.",
+    "치료가 필요한 심각한 부정맥: 외상 환자의 10.6~16%.",
+    "ST 변화, R wave alternans, T파 진폭 증가, 비정상 Q파 등 관찰 가능; ST 하강만으로는 심근 좌상 특이도 낮음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Cardiac Troponin I (cTnI)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "정상 cTnI(0~0.11 ng/ml) + 정상 입원 ECG → 100% 음성 예측값(임상적으로 유의한 심장 외상 배제).",
+    "cTnI > 0.11 ng/ml 또는 부정맥 소견 → 텔레메트리 입원 권고.",
+    "cTnI 상승은 BCI에만 특이적이지 않음 (전신 질환에서도 상승 가능)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "흉부 초음파 및 심초음파"
+  },
+  {
+   "type": "list",
+   "items": [
+    "흉부 POCUS: 모든 외상 환자에서 시행. 심낭삼출·혈흉·심기능 부전 평가.",
+    "심낭삼출 존재 → 심근 파열 가능성 높음.",
+    "심초음파: 새로운 심잡음 또는 원인불명 심박출 감소 시 시행. 판막 역류, 벽 운동 이상, 중격 파열, 심내 혈전 확인."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료 (Treatment)"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "심실 부정맥"
+  },
+  {
+   "type": "list",
+   "items": [
+    "혈역학적으로 유의한 경우에만 치료 — 지속 15~30초 이상 &amp; >150 bpm(개) / >250 bpm(고양이), 또는 실신·허탈 동반.",
+    "1차: Lidocaine 2 mg/kg IV bolus → 최대 4회(총 8 mg/kg). 이후 CRI 50~100 mcg/kg/hr.",
+    "불응 시: Procainamide 2~8 mg/kg IV(3~5분에 걸쳐, 최대 16 mg/kg) → CRI 25~40 mcg/kg/min.",
+    "난치성: Amiodarone 2 mg/kg IV(10분) → 0.8 mg/kg/hr 6시간 → 0.4 mg/kg/hr 18시간; 또는 전기적 심율동전환.",
+    "퇴원 후 지속 부정맥: Sotalol 2 mg/kg PO q12h ± Mexiletine 5~8 mg/kg PO q8h (sotalol + amiodarone 병용 금기).",
+    "고양이: Sotalol 선호. 긴급 시 Lidocaine 0.2~0.75 mg/kg IV 신중 투여(신경독성 위험)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "기타 부정맥 및 합병증"
+  },
+  {
+   "type": "list",
+   "items": [
+    "상심실성 빈맥(>220 bpm 개, >260 bpm 고양이) → 1차 Diltiazem 0.25 mg/kg IV(최대 0.75 mg/kg); 불응: Esmolol 0.05~0.1 mg/kg bolus (심기능 저하 시 금기).",
+    "서맥(3도 AVB 또는 고도 2도 AVB + 임상 징후) → 임시 인공심박동기.",
+    "심낭삼출 + 심낭압박 징후 → 수액 지지 후 즉시 심낭천자.",
+    "심인성 쇼크 또는 급성 CHF → 심초음파 확인 후 치료. 통증 관리: butorphanol보다 buprenorphine 또는 mu agonist 선호. 이뇨제는 신관류 손상 우려 시 주의."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,234 @@
+{
+ "id": "sacc3-p2-c29",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part II",
+ "part_title": "Respiratory Disorders",
+ "chapter_num": 29,
+ "title": "Pleural Space Disease",
+ "author": "Bridget M. Lyons, VMD, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "흉막강 이상에는 흉수, 기흉, 흉막 섬유증, 또는 횡격막 탈장·종양 같은 공간점유성 연조직 구조물이 포함된다.",
+    "흉강천자는 진단적이면서 동시에 치료적일 수 있다.",
+    "새로 진단된 흉수 환자에서는 흡인액에 대해 항상 fluid analysis와 cytology를 시행한다.",
+    "화농성(suppurative) 삼출액은 호기성·혐기성 배양 및 감수성 검사가 필수다.",
+    "삼출액과 혈청의 triglyceride·cholesterol 농도 비교는 chylothorax 진단에 유용하다.",
+    "혈흉 환자에서는 호흡곤란보다 심혈관 허탈 징후가 선행하는 경우가 많다.",
+    "Tension pneumothorax는 급속히 치명적일 수 있으므로 흉부 X-ray 같은 진단에 앞서 즉시 흉막강을 배액하고 심혈관 안정을 확보해야 한다.",
+    "외상성 횡격막 탈장의 임상징후는 즉각적일 수도, 지연될 수도 있다.",
+    "Point-of-care 초음파(POCUS)는 흉막강 질환 평가의 매우 유용한 초기 진단 도구다.",
+    "재팽창성 폐부종(RPE)은 드물지만 생명을 위협하는 합병증으로, 허탈된 폐가 급속히 재팽창하는 모든 환자(특히 만성 폐 허탈)에서 발생할 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "흉막강 (Pleural Space)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "흉막은 흉막강을 둘러싸는 다공성 장막으로, visceral pleura는 폐를 덮고 parietal pleura는 종격·횡격막·흉벽을 덮는다 — 흉막강은 그 사이의 잠재적 공간이다.",
+    "종격은 좌우 hemithorax를 나누며 심장·기관·식도·대동맥·흉선을 포함하고, 개·고양이에서는 종종 fenestrated되어 좌우 교통이 가능하다.",
+    "소량의 액체가 지속적으로 흉막을 통해 누출되어 폐 운동을 윤활하며, 액체는 림프관을 통해 제거된다.",
+    "림프관의 액체 펌핑은 흉막강 음압(평균 약 −5 cmH₂O)을 만들어 폐를 parietal pleura에 밀착시키고 폐의 탄성 반동을 상쇄한다.",
+    "음압이 정상 폐기능에 반드시 필요한 것은 아니다(흉막강이 없는 코끼리, pleurodesis 환자가 그 예).",
+    "다량의 공기·액체·연조직이 축적되면 폐 확장이 제한되어 tidal volume·vital capacity·FRC가 감소하고 hypoxemia·hypoventilation이 발생한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "신체검사"
+  },
+  {
+   "type": "list",
+   "items": [
+    "임상징후로 tachypnea, 개구호흡, 기침, 목 신전, 팔꿈치 외전, 청색증, 짧고 얕은 호흡과 복부 노력 증가가 나타나며, paradoxical breathing이 흉막강 질환과 강하게 연관된다.",
+    "호흡곤란 정도는 흉막강 내 액체·공기·연조직의 양과 축적 속도에 따라 가변적이다.",
+    "액체 축적 시 호흡음이 ventral에서, 공기 축적 시 dorsal에서 감소(muffled)하며 심음도 감소·이동될 수 있다.",
+    "발열이 없다고 감염성 원인을 배제할 수 없다 — pyothorax 고양이의 최대 50%가 내원 시 정상체온 또는 저체온이다.",
+    "Tension pneumothorax는 흉강 내압 증가와 정맥환류 감소로 심혈관 허탈 징후를 일으킨다.",
+    "횡격막 탈장 환자는 흉부에서 borborygmi가 청진되고 복부 촉진 시 정상 장기가 만져지지 않을 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "영상 진단"
+  },
+  {
+   "type": "list",
+   "items": [
+    "POCUS는 최소한의 보정·체위만으로 흉막강 질환을 신속히 식별하는 이상적인 초기 진단 도구이나, 정식 초음파나 다른 영상검사의 대체는 아니다.",
+    "흉수는 hypoechoic fluid로 보이며(세포성 삼출액은 echogenic swirling), 기흉은 glide sign 소실로 확인하고 lung point로 중증도를 평가한다.",
+    "흉부 X-ray에서는 horizontal beam VD view와 vertical beam 좌측위 view가 소량 기흉 검출률이 가장 높다. 흉수가 있으면 X-ray 전에 흉강천자로 제거하는 것이 구조물 시각화에 유리하다.",
+    "흉강천자 후에도 확장되지 않는 둥글고 retracted된 폐엽은 fibrosing pleuritis를 시사한다.",
+    "CT는 기흉·흉수 검출에서 X-ray·POCUS보다 민감하고 횡격막 탈장·종괴·폐엽 염전도 확인하지만, CT 특성으로 개·고양이의 삼출액 유형을 감별하는 것은 일관적이지 않다.",
+    "Thoracoscopy는 흉강 구조 시각화, 생검 채취, 치료적 중재를 가능하게 한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "흉강천자 (Thoracocentesis)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "흉막강 질환의 진단과 치료 모두에 매우 유용한 도구다.",
+    "적응증은 ① 미진단 흉수의 존재, ② 다량의 공기·액체에 의한 호흡곤란 완화를 위한 치료적 천자다.",
+    "최소한 cytology와 fluid analysis용으로 검체를 제출한다.",
+    "원인이 알려져 있고 무증상인 환자에서는 천자를 미루고 임상징후를 추적할 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "흉수 (Pleural Effusion)"
+  },
+  {
+   "type": "paragraph",
+   "text": "흉수는 전통적으로 총단백 농도와 세포수에 따라 transudate, modified transudate, exudate로 분류하며 범주 간 중첩이 존재한다. 순수 누출액은 주로 hypoalbuminemia에서 발생하고 흉부에서는 우심부전(개), 좌·우심부전(고양이), 림프 폐쇄에서도 생긴다. 변형 누출액은 심부전·종양·폐엽 염전·횡격막 탈장·혈관염에서, 또는 만성 누출액이 흉막 자극으로 진행되어 발생한다. 삼출액은 국소 염증·출혈·림프 누출에서 기인하며, 호중구가 70%를 초과하면 neutrophilic으로 분류하고 변성 호중구는 대개 감염성 원인에서 우세하다."
+  },
+  {
+   "type": "table",
+   "title": "Table 29.1 흉수의 분류",
+   "headers": [
+    "삼출액 유형",
+    "총단백",
+    "총 유핵세포수"
+   ],
+   "rows": [
+    [
+     "순수 누출액 (Pure transudate)",
+     "< 2.5 g/dL",
+     "< 1,000 cells/µL"
+    ],
+    [
+     "변형 누출액 (Modified transudate)",
+     "≥ 2.5 g/dL",
+     "1,000–5,000 cells/µL"
+    ],
+    [
+     "삼출액 (Exudate)",
+     "≥ 2.5 g/dL",
+     "> 5,000 cells/µL"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "농흉 (Pyothorax)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "흉막강 내 패혈성 화농액의 축적이며, 기저 원인은 흔히 불명이다(개의 2–22%, 고양이의 35–67%에서만 원인 확인).",
+    "고양이에서는 흡인된 구인두 정상균총의 parapneumonic spread가 가장 흔한 기원이고, 개에서는 이물 이동, 관통·둔상, 혈행·림프 전파, 식도 천공 등이 보고된다.",
+    "진단은 cytology에서 세포내 균을 확인하는 것이며, 호기성·혐기성 배양 및 감수성 검사에 검체를 제출한다.",
+    "치료는 항균제와 source control이다 — 배양 결과를 기다리는 동안 경험적 광범위 정맥 항균제를 사용하며, 사람 empyema 가이드라인은 최소 2주(문헌상 2–6주)를 권장한다.",
+    "Source control은 흉관 삽입 단독 또는 외과적 탐색 병용이다. 흉관 제거 기준은 임상 개선, 액체 생성 < 2 mL/kg/day, cytology상 감염 소실이며, 건강한 개에서 실험적 흉관이 4–6일 내 의인성 감염을 일으켜 그 전 제거가 권장된다.",
+    "반복 흉강천자는 흉관 삽입 대비 사망률이 높아 권장되지 않으며, loculated fluid·폐/흉막 농양·종양 의심·식도 천공·관통상·내과 치료 실패 시 수술이 적응된다.",
+    "전체 생존율은 개 약 83%, 고양이 약 63%이고 재발률은 0–14%다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "유미흉 (Chylothorax)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "유미 삼출액은 식이 지방·만성도·동반 출혈에 따라 백색~분홍색을 띠며, 지방이 적거나 장기 식욕부진 시에는 투명하거나 혈청양일 수 있다.",
+    "작은 림프구가 주로 우세하나, 유미는 흉막을 자극해 시간이 지나면 호중구·대식세포가 증가한다.",
+    "삼출액 triglyceride가 혈청보다 높고 비율이 종종 3:1을 초과하며, 삼출액 TG ≥ 100 mg/dL을 cutoff로 사용할 수 있다. Cholesterol은 삼출액에서 혈청보다 낮다.",
+    "원인은 심부전, 심막질환, 심장사상충, 선천성 심질환, 흉관 폐쇄(육아종·협착·종양), 외상성 흉관 파열, 폐엽 염전, 횡격막 탈장, 종격 질환 등이며, 원인 불명 시 idiopathic chylothorax로 진단한다.",
+    "치료는 기저질환 치료를 우선하며, 특발성에서는 흉관 결찰 + subphrenic pericardectomy(TDL/SP) 조합이 가장 성공적이다(개 60–100%, 고양이 80%). 실패 시 pleurodesis를 고려한다.",
+    "유미는 흉막을 자극해 fibrosing pleuritis(guarded 예후)를 유발할 수 있다. Rutin은 고양이에서 삼출액 감소가 보고되었고, 저지방식은 유미의 지질 함량은 줄이나 흉관 림프 흐름량은 줄이지 못해 권고에 의문이 제기된다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "혈흉 (Hemothorax)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "흉수의 PCV가 말초혈액의 25% 이상일 때 진단한다.",
+    "후천성·내인성 응고병증 또는 비응고병증성 원인으로 발생하며, 개에서 비응고병증성 혈흉의 가장 흔한 원인은 종양이다(그 외 외상, 폐엽 염전, 기생충 이동, 자발성 혈관 파열, 횡격막 탈장, 의인성).",
+    "호흡 손상보다 hypovolemic shock이 선행할 수 있어 정맥수액과 필요 시 혈액제제를 투여하며, 대량 출혈·심혈관 불안정 시 autologous transfusion을 고려한다.",
+    "응고병증이나 쥐약 중독 의심 시 FFP·vitamin K를 투여하고, 출혈 조절이 안 되면 antifibrinolytics를 고려한다. 외상성 혈흉에서 수술은 관통상·조절 불가 출혈 시를 제외하면 드물게 적응된다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "기타 흉수 — FIP·종양·담즙흉·요흉·흉막 섬유증"
+  },
+  {
+   "type": "list",
+   "items": [
+    "FIP(삼출형): 고양이 흉수의 흔한 원인으로, 점성 있는 straw색 고단백 삼출액을 보인다. 진단은 단일 검사가 아닌 누적 정보 기반이며, 삼출액 총단백 > 3.5 g/dL이 보조 지표가 된다. Rivalta test는 저렴한 cage-side 검사로 음성이면 non-FIP를 시사한다.",
+    "종양성 삼출액: 흉강 내 종양이 혈관투과성 증가, 림프관·흉관 폐쇄, 출혈 등으로 흉수를 유발한다. 흔한 원발 종양은 림프종·암종·선암이며, indwelling pleural access port로 배액·강내 항암제 주입의 완화 관리가 가능하다.",
+    "담즙흉(Bilothorax): 드물지만 보고되며, 삼출액:혈청 bilirubin 비 > 1:1이면 합당하다. 장기간 내과 관리는 심혈관 불안정·불량 예후에 기여할 수 있다.",
+    "요흉(Urothorax): 외상의 드문 합병증으로, 삼출액:혈청 creatinine 비 > 1:1이면 합당하며 발견 시 수술이 적응된다.",
+    "흉막 섬유증(Fibrosing pleuritis): 흉강 내 염증으로 흉막이 두꺼워져 폐 확장을 제한하는 만성 상태로, 수의에서는 유미흉과 가장 흔히 연관된다. Decortication이 유일한 효과적 치료이나 기흉·출혈·RPE 같은 치명적 합병증이 가능하며 미만성 질환은 guarded 예후를 갖는다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "기흉 (Pneumothorax)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "기흉은 spontaneous·traumatic·iatrogenic으로, 또한 open·closed·tension으로 분류된다.",
+    "Open PTX는 흉벽 손상(관통상)에서, closed PTX는 호흡기·식도·종격·횡격막 내 병변의 공기 누출에서 발생하며, tension PTX는 누출 부위가 one-way valve로 작용해 흉막압이 대기압을 초과하면서 흔히 심폐정지로 이어진다.",
+    "개의 자발성 PTX는 주로 pulmonary bullae/bleb 파열과 연관되고, 고양이에서는 기도질환이 가장 흔한 원인이다.",
+    "외상성 PTX는 둔상의 흔한 후유증으로 교통사고 개의 47%, 고층 추락 고양이의 20%에서 동반된다.",
+    "Tension PTX 의심 시 즉시 흉강천자를 시행하고, 천자로 쉽게 완화되지 않으면 응급 mini-thoracotomy 또는 흉관 삽입과 삽관·기계환기를 한다.",
+    "흉관 적응증은 tension PTX, 양압환기 중 발생한 PTX, 24시간 내 2회 초과 천자가 필요한 경우, 음압 확보 불가다. 음압이 안 되면 연속 흡인장치(Pleur-evac 등)를, 없으면 Heimlich valve를 사용한다.",
+    "개의 자발성 PTX는 탐색적 수술이 적응된다(재발 감소·생존율 향상). 고양이의 자발성 PTX는 내과 관리가 흔히 성공적이다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "횡격막 탈장 (Diaphragmatic Hernia)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "선천성 DH는 비정상 발생학의 결과(pleuroperitoneal·peritoneopericardial·hiatal)이고, 후천성 DH는 둔상·관통상에서 기인한다.",
+    "임상징후는 외상 직후 또는 지연되어 나타날 수 있으며, 호흡곤란은 탈장된 장기·흉수·동반 흉부 손상에 따라 무증상에서 중증까지 다양하다.",
+    "가장 흔히 탈장되는 장기는 간, 위, 소장, 비장, 대망이다.",
+    "수술 전 심혈관 안정화가 필수이며, 흉강천자·gastrocentesis로 수술 전 호흡곤란을 완화할 수 있다.",
+    "즉시 수술 적응증은 위 탈장, bowel·장기 교액, 내과적 중재 후에도 산소화·심혈관 안정 불가, 장기 파열이다.",
+    "전체 회복 예후는 우수하며(생존율 81–100%), 부정적 예후 인자는 동반 연조직·정형 손상, 보조 산소 필요, 마취·수술 시간 증가다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "재팽창성 폐부종 (Reexpansion Pulmonary Edema)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "허탈된 폐가 급속히 재팽창하는 모든 환자에서 발생할 수 있는 드물지만 생명을 위협하는 합병증으로, 흉강천자·pectus excavatum 교정·횡격막 탈장 교정 후 보고되었다.",
+    "기전은 불명확하나, 만성적으로 허탈된 폐의 팽창이 염증세포 유입·산화 손상으로 모세혈관 내피를 손상시켜 투과성 증가와 비심인성 부종을 유발하는 것으로 추정된다.",
+    "72시간 이상의 폐 허탈이 RPE 발생 위험 증가와 연관되며, 사람에서는 흉막압 모니터링으로 안전한 배액을 유도한다.",
+    "RPE 발생 시 치료는 지지요법이며 양압환기가 필요할 수 있다."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,195 @@
+{
+ "id": "sacc3-p8-c80",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part VIII",
+ "part_title": "Neurologic Disorders",
+ "chapter_num": 80,
+ "title": "Neurological Evaluation of the ICU Patient",
+ "author": "Marguerite F. Knipe, BA, DVM, DACVIM (Neurology)",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "ICU 환자의 신경학적 이상이 원발성(구조적) 병변인지 전신질환에 이차적인지 감별하는 것이 흔한 임상적 딜레마.",
+    "많은 중증질환이 이차적으로 구조적 신경병변을 유발할 수 있다.",
+    "예후 판정은 신경학적 검사에 근거하므로, 검사에 대한 확신과 정확한 해석이 ICU 임상의에게 핵심적이다.",
+    "비대칭적이거나 국소적인 신경학적 결손은 미만성·대칭적 소견보다 구조적 병변을 강하게 시사한다.",
+    "고급 신경진단검사(MRI 등)는 대부분 전신마취를 요하므로, 중증 환자에서는 진단적 이득과 마취 위험을 저울질해야 한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "신경학적 검사 개요"
+  },
+  {
+   "type": "list",
+   "items": [
+    "약물·외상·다발성 질환으로 검사 소견이 자주 혼란스러워지므로, 진정한 신경학적 정상/이상 판별이 어려운 경우가 많다.",
+    "완전한 검사 구성: mentation/전반적 관찰 → gait/posture → cranial nerves → segmental reflexes → proprioceptive placing → palpation → pain sensation/nociception.",
+    "이상적으로는 전 항목을 평가하되, 환자 상태에 따라 임상적 판단으로 제한된 검사를 시행할 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Mentation (의식상태)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "분류: normal → obtunded(mild/moderate/severe) → stuporous/semicomatose(강한 자극에만 반응) → comatose(어떤 자극에도 무반응).",
+    "Localization: 정상 mentation은 정상 대뇌(의식·해석)와 정상 뇌간(RAS, 대뇌를 각성)을 모두 요구. 뇌간 침범 시 대개 CN 결손 동반; CN 결손 없는 의식저하는 대뇌·시상(뇌간보다 상위) 병변 시사.",
+    "Modified Glasgow Coma Scale(MGCS, 3–18점)은 외상성 뇌손상 환자의 생존과 상관관계가 입증된 객관적 monitoring 도구; 비외상성 뇌질환에서는 예후 상관성을 직접 적용하는 데 주의.",
+    "의식저하는 ICU에서 가장 흔한 신경학적 주소 — 통증, 진통/진정제(항경련제, opioid, benzodiazepine 등), 심한 대사이상이 흔한 원인.",
+    "관리: 저혈당 등 대사이상 교정 → 통증 관리 → 진통제 투여 전 평가 및 필요시 감량/보류/부분 길항 → 비대칭·CN 결손 등 구조적 질환 징후 확인."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Gait & Posture"
+  },
+  {
+   "type": "list",
+   "items": [
+    "평가 항목: 보행 가능 여부(모든 사지로 최소 몇 걸음 가능해야 ambulatory), 불가 시 자발적 운동(voluntary movement) 유무, 이환된 사지 범위, circling 방향, head tilt/turn, torticollis, opisthotonus.",
+    "Localization ▸ head tilt: 전정질환 · head turn: 대뇌/시상(동측) 병변 · circling: 대뇌질환(병변쪽) 또는 전정질환(양방향 가능) · decerebrate posture: 중뇌 중증병변(불량~grave 예후) · decerebellate posture: 소뇌병변 · Schiff–Sherrington posture: T3–L7 병변.",
+    "전지+후지 모두 이환 → 뇌, C1–5 또는 C6–T2 척수, 또는 전신 신경근육질환 가능. 후지만 이환 → T2 미측(T3–S2) 병변.",
+    "Paresis(수의적 운동 감소, UMN/LMN 모두 가능) vs weakness(근력 저하, 주로 LMN·신경근접합부·근육 병변)의 개념 구분.",
+    "Can't walk vs won't walk 감별 기법: supported walking(보조보행), owner motivation(보호자 유도), escape motivation(도피 유도), abandonment motivation(examiner가 떠나며 유도)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "전정질환 (Box 83.2)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "공통 규칙: head tilt·rolling·circling·leaning·falling은 병변쪽; nystagmus는 자발적·비체위성·수평/회전성이며 fast phase는 병변 반대쪽; strabismus는 체위성·복외측·동측; generalized ataxia; CN VII 침범 가능.",
+    "말초 전정질환은 위 규칙을 모두 따르나, 중추 전정질환은 규칙을 어길 수 있음(예: head tilt가 병변 반대쪽).",
+    "중추 감별 포인트: mentation 변화(RAS 침범), CN VII 외 다른 CN 이상(동측), 소뇌징후(동측), proprioceptive placing 결손/paresis(동측).",
+    "말초 원인: idiopathic(노령성 전정질환), 감염(otitis media/interna), 종양, 외상(petrous temporal bone), 독성(국소 이독성 약물, aminoglycoside).",
+    "중추 원인: 종양(원발/전이), 감염(OMI 확장, 감염성 뇌염), 염증/면역매개(GME, NME, MUE), 외상, 독성(metronidazole), 혈관성(출혈·경색)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "뇌 국소화 (Box 83.3)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "대뇌/시상(forebrain) 징후: mentation/행동 변화, circling·강박적 이동(병변쪽 또는 미만성이면 양쪽), 발작, 피질맹(반대측 또는 양측), head-pressing, placing 결손(반대측 또는 미만성이면 전체, gait 이상은 경미).",
+    "뇌간(중뇌–연수) 징후: CN III–XII 결손(동측), mentation 변화(RAS), placing 결손·paresis(동측 UMN, 대개 중등도~중증), 호흡이상, decerebrate posture(중증 중뇌병변, 혼수).",
+    "소뇌 징후: generalized ataxia, dysmetria/hypermetria(동측), intention tremor, truncal sway, 진성 전정징후, 다른 구조 침범 없으면 mentation 정상, decerebellate posture.",
+    "뇌질환 환자 관리 시 유의점: 발작(Ch. 84), nonconvulsive status epilepticus, 두개내압 상승(Ch. 85, 191), 흡인성 폐렴, 뇌사 판정."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Cranial Nerves"
+  },
+  {
+   "type": "list",
+   "items": [
+    "주요 반사와 경로 ▸ Menace response(대뇌피질 관여, 다른 반사와 달리 학습·처리 필요) · PLR(구심 CN II–원심 CN III, 중뇌) · trigemino-facial reflex(구심 CN V–원심 CN VII, 교뇌) · corneal reflex(구심 CN V–원심 CN VI/VII, 교뇌) · physiologic nystagmus(구심 CN VIII–원심 CN III/IV/VI) · gag reflex(구심/원심 CN IX·X, 연수).",
+    "CN 결손은 대개 동측 뇌간 또는 말초 CN 병변을 시사. Menace response는 뇌의 다른 부위 병변에도 흔히 영향받아 다른 CN 검사와 함께 구심/원심 감별 필요.",
+    "Troubleshooting ▸ 진정/마취 회복기에는 CN 반사가 소실될 수 있어 약물 영향이 적을 때 재평가 · 무안구/안구외상 환자는 다른 반사로 뇌간 기능 평가 · atropine/glycopyrrolate(산동), benzodiazepine(축동) 등 약물이 동공 소견에 영향."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Proprioceptive Placing"
+  },
+  {
+   "type": "list",
+   "items": [
+    "정상 반응은 말초신경·척수·뇌간·대뇌가 모두 정상이어야 성립 — 가장 비특이적인 검사이며 대부분의 신경학적 질환에서 이상 소견을 보임.",
+    "Localization: 대뇌병변은 반대측(미만성이면 양측) 결손, 뇌간·척수·말초신경 병변은 동측 결손.",
+    "정상 placing이 나오면 비신경학적 원인을 강하게 고려해야 함(경로가 매우 광범위하기 때문).",
+    "False negative(거짓 소실) ▸ 진정/항경련제/진통제/중증 대사이상(대개 대칭성) · 사지 골절·탈구(통증으로 수의적 운동 회피, 예후 판단에 중요하므로 반사·감각을 함께 정밀 평가).",
+    "False positive: struggling하며 균형을 못 잡는 환자."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Segmental Reflexes & UMN/LMN"
+  },
+  {
+   "type": "list",
+   "items": [
+    "전지 반사: biceps(musculocutaneous n.), triceps(radial n., 주 체중지지), flexion/withdrawal(주로 musculocutaneous n.).",
+    "후지 반사: patellar(femoral n., L4–L6, 주 체중지지), gastrocnemius(sciatic n., L6–S1), perineal(pudendal n., S1–S3), flexion/withdrawal(주로 sciatic).",
+    "Cutaneous trunci reflex: 구심 T3–L3, 원심 C8–T1(lateral thoracic n.) — 척수 국소화에 유용.",
+    "UMN 징후: 반사 정상~항진, 근긴장 정상~항진, 폐용성 위축(수주~수개월), paresis/paralysis, placing 결손. LMN 징후: 반사 저하~소실, 근긴장 저하~소실, 신경성 위축(수일~수주), paresis/paralysis, placing 결손.",
+    "척수 국소화(Box 83.6) ▸ C1–C5: 전지·후지 모두 동측 UMN · C6–T2: 전지 LMN + 후지 UMN(동측) · T3–L3: 전지 정상, 후지 UMN(동측) · L4 미측: 전지 정상, 후지 LMN(동측).",
+    "골절 시 반사궁의 지렛대(lever arm) 소실로 신경이 정상이어도 반사가 나오지 않을 수 있음 — 다발성 외상환자에서 피부감각·통증평가를 병행해 신경학적 기능을 판단.",
+    "Spinal shock: 급성 척수손상 직후 병변 미측의 근긴장·분절반사가 일시적으로 소실(주로 flexion/withdrawal); 수시간~수주에 걸쳐 회복. Myelomalacia와 감별 필요 — spinal shock은 반사 소실이 흔히 부분적·비대칭적이며 회복되나, myelomalacia는 양측 완전 소실 + deep pain 소실 + 회복 없음(불량~grave 예후)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Sensation/Nociception"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Superficial pain: 발가락 사이 피부에 유해자극 → 의식적 반응(짖음, 물려는 시도, 자극 응시, 동공산대 등 미묘한 반응 포함) 확인.",
+    "Deep pain: 발가락 위(골막 자극 목표)에 유해자극 → 의식적 반응 확인. Deep pain 소실은 회복 불량과 강하게 연관.",
+    "핵심: 굴곡반사(reflex) 자체가 아니라 '의식적 반응'을 확인해야 함.",
+    "False negative ▸ 무단/공포로 얼어붙은 개체(정상 사지를 함께 자극해 반응성 비교) · opioid/진정제(길항 또는 대기 후 재평가) · 사지를 움직이지 않는 경우(골절 통증, LMN질환 등으로 운동은 불가하나 감각은 보존될 수 있음 — 반드시 의식적 반응 자체를 확인).",
+    "False positive ▸ UMN 반사 항진에 의한 몸통 움직임을 통증반응으로 오인(자극 전 사지를 굴곡시켜 배제) · 불안/발성이 잦은 환자(다른 시점에 반복 평가하여 재현성 확인)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "뇌사 판정 및 보조 진단"
+  },
+  {
+   "type": "list",
+   "items": [
+    "수의학에는 공식적 뇌사 기준이 없음; 사람의 American Academy of Neurology 기준(혼수·뇌간반사 소실·무호흡)이 참고됨. 마취제 잔류·적절한 대기시간이 없다면 판정에 주의.",
+    "BAER(뇌간청각유발반응): 단순 청력검사 이상으로 뇌간기능을 평가; 무파형/flatline 판독 시 농·중이외이질환·기술적 문제를 감별해야 함. 초기 파형만 있고 후기 파형이 없으면 말초 청각경로는 보존, 중추(뇌간) 경로만 손상된 것으로 해석.",
+    "EEG: 마취제가 충분히 배출된 상태에서 electrocerebral inactivity 또는 burst-suppression 소견이 뇌사를 뒷받침. ICU 환경에서는 인공물(ventilator, ECG, 움직임 등)로 판독이 까다로움."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "중증 환자에서 영상검사 판단"
+  },
+  {
+   "type": "list",
+   "items": [
+    "MRI가 실질(parenchymal) 병변 평가에는 CT보다 우수하나 전신마취가 필요 — 중증 환자에서는 마취 위험 대비 진단적 이득을 저울질.",
+    "Sedated CT: 마취 없이 시행 가능하나, 두개골/척추 골절이나 큰 압박성 병변 screening 외에는 실질 병변(염증·혈관성 등, 중증 환자에서 흔한 원인) 발견에 한계.",
+    "예후는 항상 신경학적 검사에 근거 — 영상 소견(정상이든 비정상이든)이 예후를 바꾸지 않으며, 병변의 위치·범위·원인 추정에만 기여.",
+    "영상검사를 고려할 상황 ▸ 전신질환은 호전되었으나 신경학적 결손이 지속(원인에 따라 수주~수개월 소요 가능, 혹은 영구적일 수 있음) · 적절한 전신질환 관리에도 신경학적 결손이 진행 · 결손이 원발 전신질환의 직접적 후유증으로 보기 어려운 경우(예: 저혈당 환자에서 새로운 중추 전정징후) · 두 번째 병변 발견이 보호자의 치료지속 결정에 영향을 줄 수 있는 경우."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "원발성 vs 이차성 신경학적 이상 감별"
+  },
+  {
+   "type": "list",
+   "items": [
+    "이차 신경학적 기능장애를 흔히 동반하는 전신질환(Box 83.8): hepatic encephalopathy, uremic encephalopathy, heat stroke, hypoxia/hypoxemia, hypertension, 전해질이상, hypoglycemia, SIRS/MODS/sepsis, 내분비질환(hypoadrenocorticism, pheochromocytoma, 특히 hyperosmolar 당뇨병).",
+    "구조적 병변 가능성이 높아지는 소견: 비대칭성 결손, CN III–XII 결손.",
+    "이차적 구조적 병변을 유발할 수 있는 질환: 과응고/저응고 상태(IMHA, ITP, SIRS, 갑상선기능저하증, 신증후군, 독성) · 저혈당성 발작/전간중첩증(발작 자체가 피질괴사를 유발해 영구적 발작소가 될 수 있음)."
+   ]
+  }
+ ]
+}

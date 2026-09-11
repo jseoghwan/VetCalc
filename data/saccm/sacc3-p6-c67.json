@@ -1,0 +1,158 @@
+{
+ "id": "sacc3-p6-c67",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part VI",
+ "part_title": "Fluid Therapy",
+ "chapter_num": 67,
+ "title": "Blood Types, Pretransfusion Compatibility, and Transfusion Reactions",
+ "author": "Sarah E. Musulin, DVM, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "개·고양이 혈액형은 종특이적 RBC 항원에 기반 — 수혈 결정에 이해가 필수.",
+    "수혈은 생명을 구하는 치료이나 이상반응·수혈 관련 합병증 위험을 동반.",
+    "수혈 전 적합성 검사: 혈액형 검사, 교차시험(crossmatch), 항체 스크리닝.",
+    "적합성 검사는 일부 면역학적 반응(AHTR)을 예방하나 효능·수혈 후 RBC 생존을 보장하거나 모든 반응을 제거하지 못한다.",
+    "적합성·저장조건·투여기법·모니터링의 최적화가 안전하고 효과적인 수혈의 핵심."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "혈액형 — 개 (Canine)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "DEA(dog erythrocyte antigen) 체계 + 신규 항원 Dal, Kai 1·2.",
+    "DEA 1: 가장 면역원성이 높고 임상적으로 가장 중요. 자연발생 anti-DEA 1 항체는 없으나 감작 발생 → DEA 1(-) 개가 DEA 1(+) 수혈 시 감작, 재노출 시 급성 용혈성 수혈반응(AHTR).",
+    "DEA 3·4·5·7은 single factor·two phenotype. DEA 4는 >99%가 양성(감작 드묾). anti-DEA 3·5·7은 감작 시 지연 청소.",
+    "Dal: 대부분 품종 ~93% 양성이나 Dalmatian·Doberman 등 일부에서 음성. Kai: 한국에서 2016년 처음 확인."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "혈액형 — 고양이 (Feline)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "AB 체계(type A > B > AB 순 빈도). 미국 단/장모종 대부분 type A; Turkish Van·Devon Rex·British Shorthair는 ~50% type B.",
+    "임상적으로 유의한 자연발생 동종항체 존재(type AB는 없음). Type B는 강한 고역가(1:64–1024) anti-A(주로 IgM) → 심한 응집·AHTR·신생아 적혈구용혈.",
+    "→ 고양이는 RBC·혈장 모두 형(type) 일치 수혈 필요. 신규 항원 Mik(2007) 보고."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "수혈 전 적합성 검사"
+  },
+  {
+   "type": "list",
+   "items": [
+    "혈액형 검사(POC kit: 개 DEA 1·4·5·Dal, 고양이 AB), 항체 스크리닝, 교차시험.",
+    "Major crossmatch: 공혈 RBC ↔ 수혈자 혈장. Minor crossmatch: 공혈 혈장 ↔ 수혈자 RBC. 양성 = 용혈/응집(부적합).",
+    "개: 초회 수혈 전 교차시험의 유용성은 논란(초회 수혈에서 AHTR 보고 없음). 단, 4일 이상 경과 후 재수혈 시 교차시험 필수(anti-Dal IgG는 4일째 검출).",
+    "고양이: 자연 동종항체가 있어 첫 수혈 전에도 교차시험 권장(연구 결과는 상충)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "수혈 반응 — 개요"
+  },
+  {
+   "type": "list",
+   "items": [
+    "대규모 후향 연구상 발생률 3.3–28%(개·고양이). 급성(24h 이내) vs 지연(>24h).",
+    "면역학적(항원-항체) 또는 비면역학적(병원체 전파·순환과부하·citrate 독성).",
+    "AVHTM TRACS 가이드라인이 정의·예방·진단·치료의 표준을 제시."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "주요 반응 유형"
+  },
+  {
+   "type": "list",
+   "items": [
+    "용혈성: AHTR(24h 이내, type II·IgM·보체 → 혈관내 용혈·hemoglobinuria·발열·저혈압·DIC·AKI·사망); DHTR(>24h~28일, IgG → 혈관외 용혈·빈혈·고빌리루빈혈증·황달).",
+    "알레르기: type I 과민(보통 1h 내). 경증(혈관부종·두드러기·소양감)~아나필락시스(저혈압·허탈·GI·hemoabdomen). 개 아나필락시스 표지: ALT↑·담낭벽 비후.",
+    "FNHTR(발열성 비용혈): 수혈 중/4h 내 >39°C & 전 대비 +1°C. 수의학에서 가장 흔함, 대개 경증·자한성. Leukoreduction이 발생 감소.",
+    "TRALI: 6h 내 비심인성 폐부종·저산소혈증(PaO2/FiO2 ≤300). 고혈장량 제품과 연관, two-hit 기전.",
+    "TACO: 6h 내 순환과부하 → 정수압성 폐부종(경정맥 확장·기침·crackles). 심·신·폐질환·만성빈혈·대량/급속 수혈이 소인."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Storage Lesion · Leukoreduction"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Storage lesion: 저장 중 생체역학·생화학·면역학적 변화. 인의학 Cochrane(2018)·AABB(2016) — 신선 RBC가 사망을 줄이지 않음(표준발행 권고). 단 중증·지속 빈혈·패혈성 쇼크엔 신선 제품 고려.",
+    "Leukoreduction: inline filter로 WBC±PLT 제거. FNHTR·염증매개체·동종면역·감염전파 감소. 미국 제외 다수국 보편적이나 수의학에선 드묾(비용·물류)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "투여 및 모니터링"
+  },
+  {
+   "type": "list",
+   "items": [
+    "투여 전 라벨(종·혈액형·만료일)·품질(색·응괴·용혈) 확인. 약물 혼합 금지, aggregate filter(170–260 µm; 소량은 18 µm) 필수.",
+    "칼슘 함유액 동시 투여 회피(응괴); LRS는 급속 수혈(≤60분)에서 안전. 저장 RBC는 보통 가온 불필요(저체온·대량·소형 환자 예외).",
+    "초기엔 느린 속도, 한 bag은 4시간 이내 완료. 기준 TPR·PCV·총단백·serum color 측정 후, 수혈 중 TPR·점막색·CRT·혈압·이상반응 징후 모니터; serum color는 ~15분째 재확인(용혈/AHTR 감지)."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 67.1 — 수혈 반응 유형 정리",
+   "headers": [
+    "반응",
+    "시점·정의",
+    "특징 / 치료"
+   ],
+   "rows": [
+    [
+     "AHTR (급성용혈)",
+     "24h 이내, type II·IgM·보체",
+     "혈관내 용혈·hemoglobinuria·발열·저혈압·DIC → 즉시 중단·지지치료"
+    ],
+    [
+     "DHTR (지연용혈)",
+     ">24h ~ 28일, IgG",
+     "혈관외 용혈·빈혈·황달·고빌리루빈혈증 → 지지치료"
+    ],
+    [
+     "알레르기 / 아나필락시스",
+     "보통 1h 내, type I",
+     "두드러기~저혈압·허탈 → diphenhydramine / epinephrine·수액·산소"
+    ],
+    [
+     "FNHTR (발열성 비용혈)",
+     "4h 내 >39°C & +1°C",
+     "가장 흔함·경증 → 보통 antipyretic 불필요, leukoreduction 예방"
+    ],
+    [
+     "TRALI",
+     "6h 내",
+     "비심인성 폐부종·저산소혈증 → 산소~기계환기"
+    ],
+    [
+     "TACO",
+     "6h 내",
+     "순환과부하·정수압성 폐부종 → 수혈 중단·이뇨제·산소"
+    ]
+   ]
+  }
+ ]
+}

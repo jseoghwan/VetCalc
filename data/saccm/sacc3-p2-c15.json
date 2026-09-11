@@ -1,0 +1,231 @@
+{
+ "id": "sacc3-p2-c15",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part II",
+ "part_title": "Respiratory Disorders",
+ "chapter_num": 15,
+ "title": "Oxygen Therapy",
+ "author": "Elisa M. Mazzaferro, MS, DVM, PhD, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "조직 저산소는 다양한 중증 질환에서 발생; 산소 보충은 DO₂를 개선하고 lactic acidosis 발생 감소.",
+    "산소 보충 적응증: PaO₂ <70 mm Hg 또는 SpO₂ <93% (room air), 호흡 노력 증가로 호흡 피로 위험 시.",
+    "비침습 방법: flow-by, mask, hood, high-flow nasal cannula, oxygen cage — 단기·응급 상황에 적합.",
+    "High-flow nasal oxygen은 인의용 장비로 심한 hypoxemia 환자에서 산소화 개선에 효과적.",
+    "Transtracheal O₂는 다른 방법보다 높은 FiO₂ 제공 가능하나 기술적 난이도와 합병증 위험이 크다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "산소 공급의 원리"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Hypoxia = 조직 산소 공급 부족, hypoxemia = PaO₂ <80 mm Hg (해수면).",
+    "DO₂ = Q × CaO₂ — 심박출량 증가로 hypoxemia 환자에서도 조직 hypoxia 예방 가능.",
+    "CaO₂ = [1.34 × SaO₂ × Hb] + [PaO₂ × 0.003] — 산소 보충은 결합·비결합 산소 모두 증가.",
+    "Hypoxemia 원인: hypoventilation, V/Q mismatch, diffusion impairment, low inspired O₂, intrapulmonary shunt.",
+    "Sepsis·SIRS·anemia·산-염기 이상 등 systemic 질환에서 global DO₂ 저하."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "산소 치료 적응증 및 선택 기준"
+  },
+  {
+   "type": "list",
+   "items": [
+    "PaO₂ <70 mm Hg 또는 SaO₂ <93% (room air), 호흡 피로 위험, 심혈관 불안정·빈혈로 인한 낮은 DO₂.",
+    "선택 시 고려: 환자 크기·내성, hypoxemia 정도, 목표 FiO₂, 예상 치료 기간, 술자 경험, 장비·모니터링."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Humidification"
+  },
+  {
+   "type": "list",
+   "items": [
+    "장기 산소 치료 시 비점막 건조·상피 손상·점액섬모 청소 장애·감염 위험 → humidification 필수.",
+    "Sterile saline·water를 통과시키는 bubble humidifier가 가장 간단; 고유량에서는 가습 부족 가능.",
+    "High-flow system은 가열·가습 기능 내장 — 점막 손상 없이 고유량 가능."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "비침습적 방법 (Noninvasive Methods)"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Flow-by Oxygen"
+  },
+  {
+   "type": "list",
+   "items": [
+    "튜브를 비공 2 cm 이내에 두고 2–3 L/min → FiO₂ 25–40%.",
+    "장점: 환자 내성 좋음, 동시에 triage 가능. 단점: 산소 낭비, 장기 사용 부적합."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Face Mask"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Tight-fit mask + 8–12 L/min → FiO₂ 50–60%; loose-fit에서는 2–5 L/min.",
+    "Tight mask 시 CO₂ rebreathing 위험 — 주기적 venting 필요.",
+    "각성 환자는 장시간 견디기 어려움; 눈 손상 방지를 위해 attendant 필요."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Oxygen Hood"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Elizabethan collar + cling film으로 제작 가능, 1–2 L/min 충전 후 0.5–1 L/min 유지 → FiO₂ 30–40%.",
+    "Vent 필수 — 막히면 CO₂·습기·발열 위험. 소형견·신생견에서는 전신을 collar 안에 넣을 수도 있음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Oxygen Cage"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Plexiglas box에 humidified O₂ 공급, FiO₂ 40–50% (최대 60% 이상 가능).",
+    "온도(22°C) 유지 중요 — 과열 시 ice pack 사용(직접 환자 접촉 금지).",
+    "단점: 비용, 문 열 때 O₂ 손실, 환자 직접 접근 제한 — 그러나 SpO₂·BP·ECG 모니터링은 외부에서 가능."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Invasive / 직접 기도 접근 방법"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Nasal Prongs & Nasal/Nasopharyngeal Catheter"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Human nasal prong: 중·대형견에서 사용 가능, FiO₂는 flow-by와 비슷.",
+    "Nasal/nasopharyngeal catheter: 24시간 이상 산소 치료 시 권장. 5–10 Fr red rubber/polypropylene tube를 lateral canthus(비강) 또는 mandible ramus(비인두)까지 premeasure.",
+    "Topical 2% lidocaine으로 비강 마취 후 ventromedial 방향으로 삽입, 비공 주변·측면 maxilla에 suture/staple로 고정.",
+    "Humidified O₂ 필수 — 비점막 건조·자극 방지. 비인두 catheter가 더 높은 FiO₂ 제공.",
+    "재채기·환자 불내성 시 lidocaine 재도포 또는 catheter를 더 깊이 삽입."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 15.1 비강 산소 유량과 기관 내 FiO₂ (개)",
+   "headers": [
+    "Total O₂ flow (ml/kg/min)",
+    "기관 내 FiO₂ (%)"
+   ],
+   "rows": [
+    [
+     "50",
+     "29.8 ± 5.6"
+    ],
+    [
+     "100",
+     "37.3 ± 5.7"
+    ],
+    [
+     "200*",
+     "57.9 ± 12.7"
+    ],
+    [
+     "400*",
+     "77.3 ± 13.5"
+    ]
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "*100 ml/kg/min 이상에서는 환자 불편감 자주 관찰됨. 400 ml/kg/min은 양측 비강 catheter 각 200 ml/kg/min 사용 시 달성."
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "High-Flow Nasal Oxygen (HFNO)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Medical air + O₂를 가열·가습 후 nasal prong으로 전달 — prong 직경은 비공의 50% 이하여야 호기 가스 배출 가능.",
+    "FiO₂ 21–100%, flow 25–60 L/min 조절 가능; 초기 권장 유량 0.4–2.0 L/kg/min.",
+    "다른 비강 방법보다 높은 FiO₂ 제공 및 CPAP 효과 — Chapter 31 참고."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Transtracheal Oxygen"
+  },
+  {
+   "type": "list",
+   "items": [
+    "비강/hood를 견디지 못하는 환자, panting/open-mouth breathing, 상부 기도 폐색 환자에 적합.",
+    "방법 1 — Through-the-needle catheter: 무균 후 lidocaine 침윤 → 3–5 tracheal ring 부위로 천자 → catheter를 기관 내 삽입 후 50–150 ml/kg/min flow.",
+    "방법 2 — 외과적 절개: 진정/단시간 마취 하에 4–5 ring 사이 절개, multifenestrated catheter 삽입. 더 큰 직경, 약간의 CPAP 효과 제공.",
+    "주의: 상부 기도 폐색 환자는 호기 불가로 폐 과팽창 가능 — 단기 구명 용도로만 사용.",
+    "합병증: catheter kinking, 감염, jet lesion, tracheitis."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Hyperbaric Oxygen"
+  },
+  {
+   "type": "list",
+   "items": [
+    "100% O₂를 supraatmospheric(>760 mm Hg) 압력으로 투여 → 혈중 용존 O₂ 10–20% 증가.",
+    "심한 연조직 손상(화상, shearing, 감염, osteomyelitis)에 권장된 적 있으나 수의 영역에서는 드물게 사용.",
+    "합병증: 고막 파열, 기흉. 압력화 후 chamber 개방 불가 — 응급 대응 제한."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "산소 치료 합병증"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Hypercapnia 악화: 만성 hypercapnia 환자에서 hypoxic drive 의존 → O₂ 투여로 hypoventilation·호흡 부전(\"blue bloater\"). 인의 COPD에서 주로 보고.",
+    "Oxygen toxicity: 폐 상피에 직접 손상 — FiO₂ >50%를 24–72시간 이상 지속하지 않는 것이 원칙(Chapter 8 참고).",
+    "Reactive oxygen species 발생, 무기폐(absorption atelectasis), 점막 건조 등."
+   ]
+  },
+  {
+   "type": "callout",
+   "title": "임상 결정 흐름",
+   "items": [
+    "① 적응증 확인(PaO₂/SpO₂, 호흡 노력, DO₂) → ② 환자 상태·필요 FiO₂·예상 기간으로 방법 선택.",
+    "단기·triage: flow-by/mask → 중기: hood/oxygen cage/nasal catheter → 고난도/심한 hypoxemia: HFNO·transtracheal·mechanical ventilation.",
+    "가능하면 humidification 적용; FiO₂ >50%는 가능한 빨리 감량."
+   ]
+  }
+ ]
+}

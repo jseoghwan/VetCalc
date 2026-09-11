@@ -1,0 +1,173 @@
+{
+ "id": "sacc3-p9-c88",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part IX",
+ "part_title": "Infectious Disorders",
+ "chapter_num": 88,
+ "title": "Bacterial Infections",
+ "author": "Stephen Cole, VMD, MS, DACVM (Bacteriology/Mycology, Immunology, Virology)",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "소동물 세균감염은 대개 정상균총이 무균 부위로 유입되어 발생하며, 임상양상은 경증부터 중증까지 매우 다양하다.",
+    "항생제 감수성검사를 동반한 배양이 진단의 gold standard이나, 일부 까다로운 균(Borrelia, Rickettsia, Leptospira 등)은 PCR·면역검사 등 대체법이 필요하다.",
+    "배양 결과 해석 시 오염 가능성을 항상 고려해야 한다.",
+    "철저한 감염관리와 항생제의 적절한 사용이 ICU를 안전하게 운영하는 데 핵심적이다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "서론"
+  },
+  {
+   "type": "paragraph",
+   "text": "세균감염은 입원의 주된 원인(예: 렙토스피라증)이 되기도 하고, 비감염성 문제 치료 중 발생하는 이차 합병증(예: 카테터 부위 감염)이 되기도 한다. 단일균(monomicrobial) 또는 다균(polymicrobial) 감염 모두 가능하며, ICU에서 흔히 마주치는 병원체를 이해하는 것이 모든 중환자 전문의에게 중요하다."
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "세균의 구조와 분류"
+  },
+  {
+   "type": "list",
+   "items": [
+    "그람양성균(보라색 염색): 두꺼운 펩티도글리칸 세포벽과 단일 내막을 가진다.",
+    "그람음성균(분홍색 염색): 얇은 펩티도글리칸층을 내·외막이 감싸며, 외막의 지질다당류(LPS)가 Toll-like receptor 4를 통해 강한 염증반응을 유발한다.",
+    "호기성/통성혐기성 대 절대혐기성으로도 분류하며, 문·강·목·과·속·종 순으로 분류체계가 세분화된다."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 91.1 소동물에서 분리되는 주요 세균",
+   "headers": [
+    "분류",
+    "그람양성균",
+    "그람음성균"
+   ],
+   "rows": [
+    [
+     "호기성/통성혐기성",
+     "Staphylococcus spp., Streptococcus spp., Enterococcus spp., Nocardia spp., Mycobacterium spp.",
+     "Enterobacteriaceae(E. coli, Klebsiella, Enterobacter, Salmonella, Yersinia, Proteus), Pasteurella multocida/canis, Bordetella bronchiseptica, Campylobacter spp."
+    ],
+    [
+     "절대혐기성",
+     "Clostridium spp., Actinomyces spp., Peptostreptococcus spp.",
+     "Fusobacterium spp., Bacteroides spp., Prevotella spp., Capnocytophaga canimorsus"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "진단"
+  },
+  {
+   "type": "list",
+   "items": [
+    "면역검사(ELISA, 면역형광검사), 분자검사(PCR·RT-PCR), 전통적 배양의 세 가지 방법으로 진단한다.",
+    "항생제 감수성검사를 병행한 배양이 진단의 근간이지만, 오염이 흔히 발생하므로 의심 오염균의 임상적 의미를 과대해석하지 않아야 한다.",
+    "비정형 균이 분리된 경우 임상미생물학 전문가와의 상담이 권장된다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "그람양성균"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Staphylococcus / Streptococcus / Enterococcus"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Staphylococcus: 피부·점막의 정상균총. 개는 S. pseudintermedius·S. schleiferi, 고양이는 S. pseudintermedius가 흔하다. 경증(표재성 농피증, 외이염)부터 중증(패혈증, 심내막염, 골수염)까지 다양하며 수술후감염의 가장 흔한 원인균이다. 메티실린내성주 확산으로 치료가 점점 어려워지고 있다.",
+    "Streptococcus: 사슬모양으로 관찰되며 베타(완전)·알파(부분)·감마(비용혈) 용혈로 분류, 베타용혈균이 가장 독성이 강하다. 개·고양이 최다 분리종은 S. canis(베타용혈, 정상균총)로 폐렴·요로감염·창상감염을 일으키고 독소쇼크증후군·괴사성근막염과도 연관된다. 플루오로퀴놀론은 임상효과 부족과 박테리오파지 활성화 우려로 비권장된다. 신흥 병원체 S. equi subsp. zooepidemicus는 보호소에서 출혈성 폐렴 집단발병과 관련이 있다.",
+    "Enterococcus(Group D streptococci): 위장관 정상균총으로 주요 분리종은 E. faecalis(페니실린 감수성, 1차 선택제)와 E. faecium(대개 내성)이다. 세팔로스포린·마크로라이드·설파제·플루오로퀴놀론·저농도 아미노글리코사이드에 선천 내성을 보인다. 요로감염·담관간염·창상감염을 일으키나, 분변 오염 가능성을 항상 고려해 치료 필요성을 신중히 판단해야 한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Actinomycetales · Clostridium"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Actinomyces: 구강 정상균총으로 심부 교상감염을 일으킬 수 있다. 고용량 페니실린(또는 아미노페니실린)을 하루 3회, 장기간 투여하는 것이 권장 치료다.",
+    "Nocardia: 환경에서 유래하는 기회감염균. 트리메토프림-설파메톡사졸이 1차 선택제이며, 참고검사기관에서의 종 동정·감수성검사가 도움이 될 수 있다.",
+    "Mycobacterium: 환경 유래 기회감염균으로 연조직감염이나 화농성흉막염을 일으킬 수 있다. 경험적으로 마크로라이드(clarithromycin)에 리팜핀·클로파지민·프라도플록사신을 병용하며, 종 동정과 감수성검사가 흔히 필요하다. M. tuberculosis·M. bovis 감염도 드물게 보고된다.",
+    "Clostridium spp. / Clostridioides difficile: 포자형성 절대혐기성균으로 위장관 정상균총이다. 관통상으로 접종되면 괴사성 연조직감염이나 가스괴저를 일으킬 수 있다. C. perfringens의 설사 유발 역할은 불분명하며(비설사견에서도 검출), C. difficile 감염은 이전 항생제 노출과 관련된 것으로 추정된다. 진단은 PCR 독소유전자 검출과 ELISA 독소검출을 병행한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "그람음성균"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Enterobacterales(E. coli 등): 위장관 정상균총. E. coli는 요로감염·흡인성폐렴·담관간염 등 다양한 기회감염과 자궁축농증의 가장 흔한 원인균이다. 특정 견종(복서, 프렌치불독)에서는 침습성 E. coli 관련 육아종성 대장염이 보고되며 엔로플록사신(10–20 mg/kg, 24시간마다, 8주)이 권장된다.",
+    "Salmonella enterica: 무증상 배출부터 발열·호중구감소·심한 설사까지 다양하게 나타난다. 생식(raw diet) 급여가 주요 위험요인이며 인수공통감염병이다.",
+    "Yersinia pestis(페스트): 미국 서부 지역에 국한되며, 고양이에서 선페스트(발열·하악림프절병)가 흔하고 폐페스트도 보고된다. 신고대상 질병이다.",
+    "Pseudomonas aeruginosa 등 비발효균: 폐렴·수술삽입물감염 등 기회감염과 목욕 관련 심부피부감염(후모룬쿨증)을 일으킨다. 아미노페니실린·대부분의 세팔로스포린·트리메토프림-설파제·클로람페니콜·테트라사이클린에 선천 내성이며 아미노글리코사이드·플루오로퀴놀론 후천 내성도 흔하다. 항녹농균 베타락탐(세프타지딤, 피페라실린)은 오프라벨 사용으로 생명위협 감염에 한해 입원 중 신중히 사용한다.",
+    "Pasteurella multocida/canis: 구강·상기도 정상균총으로 교상감염과 하기도감염(폐렴)에서 흔히 분리되며, 페니실린·아미노페니실린이 1차 선택제다.",
+    "Bordetella bronchiseptica: 개 전염성호흡기질환복합체의 주요 원인균으로 전파력이 매우 높아 격리와 개인보호구 착용이 필요하다. 배양이 gold standard이며 PCR도 유용하다. 경구 독시사이클린 또는 비경구 엔로플록사신이 폐렴 치료로 권장된다.",
+    "Campylobacter spp.: 정상균총일 수 있으며 어린 동물에서 중증 설사를 유발할 수 있고 인수공통(감염량 매우 낮음)이다. 마크로라이드(에리스로마이신, 타일로신)가 주치료이며 내성 증가로 플루오로퀴놀론은 비권장된다.",
+    "Leptospira interrogans(Pomona, Canicola, Icterohaemorrhagiae 등 혈청형): 백신 미접종견에서 급성신손상의 주요 원인이며 간손상·혈소판감소가 흔히 동반된다. 인수공통감염병이다. 요·혈액 PCR이 gold standard이고, 백신접종력을 고려한 혈청검사(SNAP Lepto 등 현장검사 포함)도 유용하다. 요배출 차단을 위해 독시사이클린을 2주간 투여하며, 급성 입원기에는 정맥용 암피실린이 권장된다.",
+    "Borrelia burgdorferi(라임병): Ixodes 진드기가 매개하며 자가제한적 다발관절염을 일으킨다. ICU에서는 면역복합체 매개 라임신염이 가장 중요한 문제이며 독시사이클린이 1차 선택제다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "마이코플라즈마 및 세포내기생균"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Mycoplasma spp.: 세포벽이 없어(mollicutes) 베타락탐계 항생제에 선천 내성을 보인다. M. haemofelis는 고양이에서 중증 면역매개용혈성빈혈을 유발할 수 있다. 개에서는 M. cynos만 질병과 일관되게 연관되나 건강한 개에서도 흔히 검출된다. 혈액도말 또는 PCR로 진단하며 독시사이클린이 주치료다.",
+    "Rickettsiaceae: 절대세포내기생 매개체전파균으로, 개에서는 A. phagocytophilum, A. platys, E. ewingii, E. canis가 흔하며 무기력·파행·불명열과 혈소판감소를 일으킨다. 로키산홍반열(Rickettsia rickettsii)은 드물지만 혈관내피를 감염시켜 광범위한 점상출혈·부종·쇼크·사망으로 이어질 수 있는 치명적 질환이다. 독시사이클린이 모든 리케차질환의 1차 선택제다.",
+    "Bartonella spp.(B. henselae, B. koehlerae, B. vinsonii 등): 조건성 세포내기생 그람음성균으로 뇌염·심내막염 등 중증 발현이 가능하다. 배양이 gold standard이나 방법이 까다로워 증균배양 후 PCR이 가장 민감하며, 독시사이클린과 플루오로퀴놀론 병용요법이 가장 효과적인 것으로 알려져 있다.",
+    "Brucella spp.: B. canis는 임신한 암컷의 유산, 수컷의 불임·정소염을 일으키며 추간판염의 감별진단에도 포함된다. 성적 전파가 주된 경로이나 수혈을 통한 전파도 가능해 공혈견 검사가 권장된다. B. suis는 야생멧돼지가 많은 지역의 신흥병원체로 B. canis와 혈청교차반응이 없어 별도 검사가 필요하다. 다수 관할구역에서 신고대상이며, 사이클린·아미노글리코사이드·플루오로퀴놀론 병용요법이 시도되나 완전한 제균은 어려운 것으로 알려져 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료와 감염관리"
+  },
+  {
+   "type": "callout",
+   "title": "ICU 감염관리 프로그램의 핵심 요소 (Box 91.1)",
+   "items": [
+    "행정부의 지원",
+    "감염관리를 담당하는 전담 인력(\"챔피언\") 지정",
+    "교육 및 재인증 절차",
+    "고위험 환자의 신속한 식별 방법",
+    "철저한 손위생·장갑 착용 원칙",
+    "상황별 개인보호구 착용 정책",
+    "제조사 사용지침을 준수하는 환경소독 정책"
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "Part XIX(항균요법)에서 다루는 항생제 사용 원칙을 준수해야 하며, 내성 급증에 따라 가능한 한 배양·감수성검사 결과로 치료방향을 정한다.",
+    "IV에서 경구 전환, 디에스컬레이션 등 항생제 스튜어드십 원칙을 일상적으로 실천해야 한다(Chapter 172 참고).",
+    "ICU 내 감염관리는 세균 전파를 막는 데 핵심적이다."
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "세균감염은 소동물 ICU에서 흔히 마주치며 전신 모든 장기계통을 침범할 수 있고 경증부터 중증까지 폭넓게 나타난다. 정확한 진단검사, 표적화된 치료, 철저한 예방조치는 환자의 예후에 상당하고 긍정적인 영향을 줄 수 있다."
+  }
+ ]
+}

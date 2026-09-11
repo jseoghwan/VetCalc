@@ -1,0 +1,156 @@
+{
+ "id": "sacc3-p1-c10",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part I",
+ "part_title": "Key Critical Care Concepts",
+ "chapter_num": 10,
+ "title": "Hyperthermia and Fever",
+ "author": "James B. Miller, DVM, MS, DACVIM",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "체온조절 중심은 시상하부 전외시영역(AH); 중추·말초 thermoreceptor 입력으로 set point를 유지.",
+    "Hyperthermia = 정상 범위 이상의 모든 core temperature 상승. True fever vs 비발열성 hyperthermia 구분이 필수.",
+    "True fever는 acute-phase response의 일부로 set point가 위로 재조정된 상태 — 일반적으로 숙주에 이로움.",
+    "비발열성 hyperthermia는 heat production-loss 불균형의 결과; 진단·치료 접근법이 발열과 다름.",
+    "체온 107°F (41.6°C) 미만의 fever는 보통 생명에 위협적이지 않음. 그 이상에서는 organ 손상·DIC 위험.",
+    "발열은 수분·열량 요구량을 증가시킴 (체온 1°F 상승당 약 7%).",
+    "원인 진단 전 비특이적 fever 치료(NSAID, 글루코코르티코이드)는 가급적 피하고, 107°F 초과 시에만 적극 냉각.",
+    "Total body cooling은 비발열성 hyperthermia 또는 41.6°C에 근접한 fever에 한해 시행 — 일반 fever에는 역효과.",
+    "Antimicrobial 경험적 사용은 감염이 입증·강력 의심될 때만; 균배양·감수성 검사 기반."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "체온조절 (Thermoregulation)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "조절 중심: anterior hypothalamus (AH)의 preoptic area.",
+    "Heat gain: catecholamine·thyroxine 매개 production ↑, vasoconstriction·piloerection·shivering·warm seeking.",
+    "Heat loss: panting, vasodilation, posture 변화, perspiration, grooming(고양이).",
+    "Neonate·cachectic·마취·신경학적 손상 환자는 set point 유지·반응 능력이 저하 — 외부 온도 의존성 ↑."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Hyperthermia 분류"
+  },
+  {
+   "type": "table",
+   "title": "Hyperthermia 분류 (Box 10.1 요약)",
+   "headers": [
+    "분류",
+    "특징"
+   ],
+   "rows": [
+    [
+     "True Fever",
+     "내인성 pyrogen 생성으로 set point 상향 — acute-phase response."
+    ],
+    [
+     "Inadequate Heat Dissipation",
+     "Heat stroke, hyperpyrexic syndrome (고온·고습·운동)."
+    ],
+    [
+     "Exercise-Induced",
+     "정상 운동, eclampsia, prolonged seizure."
+    ],
+    [
+     "Pathologic / Pharmacologic",
+     "AH 병변, malignant hyperthermia, hyperthyroid·pheochromocytoma, opioid·anesthetic."
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "True Fever 기전"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Exogenous pyrogen (감염원·면역복합체·tissue necrosis·약물) → 면역세포가 endogenous pyrogen(IL-1, IL-6, TNF-α 등) 분비.",
+    "Cytokine이 AH 혈관내피에 작용해 PGE2 ↑ → set point 상향.",
+    "Heat shock protein은 동시에 cytoprotective 역할.",
+    "발열은 박테리아 iron 사용 억제·바이러스 복제 억제 등으로 숙주에 이점이 큼 (감염 시 사망률 감소 보고)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Heat Stroke / Hyperpyrexic Syndrome"
+  },
+  {
+   "type": "list",
+   "items": [
+    "원인: 고온환경, 폐쇄공간(차내), brachycephalic·비만·대형견 취약. 닫힌 차 안 온도는 외부 24°C에서도 20분 내 48°C 도달 가능.",
+    "Antipyretic 무효 — 즉각적 total body cooling 필요.",
+    "냉각 방법: IV 등장액, tepid water bath/rinse, fan, 큰 혈관 위 ice pack(목·겨드랑이·서혜부), 직장 내 냉각 fluid.",
+    "차가운 물 사용 시 말초 vasoconstriction으로 오히려 냉각 지연 — tepid water가 권장.",
+    "체온 39.4°C 근접 시 냉각 중단 (iatrogenic hypothermia 예방)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Pathologic / Pharmacologic Hyperthermia"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Malignant hyperthermia: ryanodine receptor 이상으로 흡입마취제·succinylcholine에 반응. 치료는 dantrolene 1–3 mg/kg IV.",
+    "Hyperthyroid·pheochromocytoma 등 hypermetabolic 상태에서 mild hyperthermia.",
+    "Opioid (특히 hydromorphone)는 고양이에서 마취 회복 후 hyperthermia 보고 — naloxone 가역."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Fever의 이점과 해로움"
+  },
+  {
+   "type": "list",
+   "items": [
+    "이점: bacterial iron 이용 ↓, viral 복제 억제, leukocyte 기능 ↑, 감염 환자 예후 개선.",
+    "해로움: 1°F당 약 7% 대사·산소 소비 ↑, 식욕 ↓, 41.6°C 초과 시 DIC·뇌부종·간·신·GI 손상 위험.",
+    "Traumatic brain injury 환자에서는 발열이 예후 악화와 연관 — 적극 냉각 고려."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Febrile 환자 임상 접근"
+  },
+  {
+   "type": "list",
+   "items": [
+    "안정 환자: 병력·신체검사·노출력·약물력 우선. <41°C이면서 단기간이면 경험적 antipyretic 자제.",
+    "불안정 또는 >41°C: 즉각 안정화 + total body cooling.",
+    "Nonspecific 치료는 NSAID 위주 (cyclooxygenase 억제 → PGE2 ↓). COX-2 억제제가 고양이에서 비교적 안전. Glucocorticoid는 비감염성·면역매개 질환에서 선택적으로.",
+    "Phenothiazine은 thermoregulation 억제·혈관확장 효과 — 진정·저혈압 위험 고려."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "ICU에서의 발열"
+  },
+  {
+   "type": "list",
+   "items": [
+    "감염성과 비감염성 원인이 흔히 공존 — 체계적 진단 필수.",
+    "비감염성 흔한 원인: phlebitis, 수술 후 염증, 수혈 반응, 외상, 췌장염, 흡인성 폐렴, ARDS, 종양.",
+    "Nosocomial 감염 흔한 부위: 폐(VAP·흡인), 혈류, catheter, 절개부위, 요로.",
+    "초기 검사: CBC, 흉복부 영상, catheter·incision 평가, 필요 시 혈액·소변·기도·체강·CSF·관절액 culture.",
+    "항생제는 병원체 의심·확인 시 시작. SIRS 동반 환자는 사망률 ↑ — 신속한 source control."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "id": "sacc3-p4-c40",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part IV",
+ "part_title": "Cardiovascular Disorders",
+ "chapter_num": 40,
+ "title": "Ventilator-Associated Pneumonia",
+ "author": "Steven E. Epstein, DVM, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "VAP는 기계환기 개시 ≥48시간 후 발생하는 원내 폐렴으로, 인체의학에서 높은 이환율·사망률과 연관된다.",
+    "주요 발생 기전은 ① 기관내관(ETT) biofilm 형성 + ② 커프 주변 구강·위장관 분비물의 microaspiration이다.",
+    "CDC의 VAC → IVAC → possible/probable VAP 3단계 진단 기준을 수의학에 맞게 수정 적용한다.",
+    "예방 bundle: 철저한 손위생, 조기 이탈 프로토콜, 회로 교체 최소화, 0.12–2% chlorhexidine 구강소독, ETT 커프압 25 cmH₂O 유지.",
+    "경험적 항균제는 7일 치료; MDR 위험 인자 존재 시 carbapenem 고려 후 배양 결과에 따라 좁은 스펙트럼으로 deescalation."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "정의 및 역학"
+  },
+  {
+   "type": "list",
+   "items": [
+    "VAP = 기관내관(ETT) 또는 기관절개관 삽관 ≥48시간 후 발생하는 의료기관 관련 폐렴.",
+    "VAT(ventilator-associated tracheobronchitis): 폐 실질은 침범하지 않으나 VAP와 같은 임상 증상 → 흉부영상 필요.",
+    "인체 ICU에서 VAP는 기계환기 환자의 주요 감염 합병증이며, 개·고양이 기계환기 환자에서도 발생 가능."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "발병 기전"
+  },
+  {
+   "type": "list",
+   "items": [
+    "ETT biofilm: 세균이 관 내에 biofilm 형성 → 항균제 저항성 ↑; 인체 VAP 환자의 70%에서 ETT biofilm과 기도 분비물의 균이 일치.",
+    "Microaspiration: ETT 커프 주변 구강·위장관 분비물이 하기도로 유입; 정상 구강 상재균이 중환자에서 호기성 그람음성균으로 대체됨.",
+    "위 내 세균 역류: H₂차단제/PPI 사용으로 위 집락균 증가 → VAP 위험; 따라서 확인된 GI 궤양이 없으면 위산억제제 루틴 사용 비권장.",
+    "원인균: 호기성 세균(단독 또는 혼합 감염), 그람음성장내세균·Pseudomonas aeruginosa가 흔함; 이전 항균제 사용 시 MDR 균 위험.",
+    "개·고양이 기계환기 환자: 비기계환기 호흡기 질환 환자보다 호기성 그람음성장내세균 비율·항균제 내성률 높음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "진단"
+  },
+  {
+   "type": "paragraph",
+   "text": "CDC의 3단계 기준을 수의학에 맞게 수정 적용한다."
+  },
+  {
+   "type": "list",
+   "items": [
+    "VAC: 안정기(≥2일) 이후 FiO₂ ≥0.20 or PEEP ≥3 cmH₂O 증가가 ≥2일 지속.",
+    "IVAC: VAC + ① 개 체온 <38.1°C 또는 >39.2°C (고양이 <37.8°C 또는 >40.0°C), 또는 WBC ≤6,000 또는 ≥16,000 (고양이 ≤5,000 또는 ≥19,000) + ② 새 항균제 ≥4일 지속.",
+    "Possible VAP: IVAC + 화농성 분비물(neutrophil ≥25, 편평상피 ≤10/저배율시야) 또는 기도 배양 양성.",
+    "Probable VAP: possible VAP 기준 + 정량 배양(ETT aspirate ≥10⁵ CFU/ml, BAL ≥10⁴, PSB ≥10³) 또는 흉막액 배양 양성.",
+    "흉부 X-ray: 새로운 진행성 폐침윤 필수. 폐 POCUS의 subpleural 경화·dynamic air bronchogram도 유용.",
+    "Procalcitonin: 진단 특이도 부족하나 항균제 기간 단축에 도움 가능."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "예방"
+  },
+  {
+   "type": "list",
+   "items": [
+    "교육 및 프로토콜 준수 모니터링: 간호사-환자 비율 낮출수록 VAP 발생률 감소.",
+    "손위생: 기도 접근 전후 알코올 기반 손소독 또는 비누 세척 필수.",
+    "조기 이탈: 프로토콜 기반(간호사 주도 가능) 이탈 → 기계환기 기간 단축 → VAP 위험 감소.",
+    "ETT 회로: 오염 없으면 루틴 교체 불필요(교체 빈도 ↑시 VAP 위험 증가).",
+    "커프압 유지: 25–30 cmH₂O → microaspiration 감소.",
+    "Oral chlorhexidine (0.12–2%): VAP 예방 표준 치료; 하루 2–4회.",
+    "위산억제제(H₂RA/PPI): 기계환기 환자에서 루틴 사용 비권장 (위 집락균 증가·VAP 위험); GI 궤양 확인 시에만 사용.",
+    "Subglottic secretion suctioning: 인체에서 효과 입증; 수의 현장 적용 제한적."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료"
+  },
+  {
+   "type": "list",
+   "items": [
+    "임상적으로 VAP 의심 시 → 기도 샘플 채취 즉시 경험적 항균제 시작(지연 = 사망률 ↑).",
+    "경험적 선택: 지역 역학 자료 기반; MDR 위험 인자(이전 90일 내 항균제 사용, septic shock, ARDS, 입원 ≥5일) 있으면 항슈도모나스 계열(fluoroquinolone, piperacillin-tazobactam, ceftazidime) + 필요 시 MRSA 커버(vancomycin).",
+    "개·고양이: amikacin 및 carbapenem만이 기계환기 호흡기부전 환자 분리균의 >90% 감수성 → MDR 위험 높으면 carbapenem 합리적 선택.",
+    "배양 결과 확인 후 반드시 deescalation.",
+    "치료 기간: 대부분 7일; 발효성 그람음성균(Pseudomonas, Acinetobacter) 배양 시 14–21일 고려.",
+    "흡입 항균제(amikacin, polymyxin): Pseudomonas/Acinetobacter가 aminoglycoside 또는 polymyxin만 감수성일 때 보조적 사용."
+   ]
+  }
+ ]
+}

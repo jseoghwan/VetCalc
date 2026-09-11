@@ -1,0 +1,93 @@
+{
+ "id": "sacc3-p7-c73",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part VII",
+ "part_title": "Endocrine Disorders",
+ "chapter_num": 73,
+ "title": "Diabetes Insipidus",
+ "author": "Melissa A. Claus, DVM, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "치료/미치료 diabetes insipidus(DI) 중환자는 adipsia·hypodipsia로 혈장 Na 농도가 크게 요동칠 위험이 있다.",
+    "입원 중 dysnatremia는 사망률 증가와 연관 → Na 변동 최소화가 치료의 우선순위.",
+    "DDAVP로 치료 중인 central DI 환자는 hyponatremia 위험 → Na 농도·저장성 수액량 면밀 모니터링과 용량 조절 필요.",
+    "후천성 DI 위험인자가 다수 존재. 삼투성 이뇨 없이 hypernatremia + 현저한 다뇨가 동반되면 DI를 의심한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "삼투 조절과 병태생리 (Osmotic Regulation & Pathophysiology)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "DI = 과도한 전해질-free water 소실 → 현저한 희석뇨(>50 ml/kg/day)와 보상적 다음(polydipsia).",
+    "Central DI ▸ AVP 합성·축삭수송·분비의 부족/없음. Nephrogenic DI ▸ 신장 V2 수용체·AQP-2 반응의 저하/없음.",
+    "AVP는 시상하부 magnocellular neuron(supraoptic·paraventricular nuclei)에서 생성→후엽 저장.",
+    "주 분비자극 = 혈장 삼투압 미세 상승(OVLT osmoreceptor 감지); 동시에 thirst도 자극.",
+    "AVP → 신장 집합관 V2 수용체 → AQP-2 채널의 apical 막 융합 → free water 재흡수(요 소실 방지).",
+    "Apelin: AVP에 길항(AVP 방출 감소·AQP-2 삽입 방해) → free water 배설 증가.",
+    "건강한 DI 환자는 polydipsia로 보상; free water 섭취·흡수가 소실을 못 따라갈 때만 hypernatremia 발생."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "중환자에서의 의의 (Implications in the Critically Ill)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "DI 환자는 신장의 free water 조절 피드백에 의존할 수 없어 입원 시 혈장 삼투압·Na 큰 변동 위험.",
+    "수분섭취 부족 원인: 의식저하로 인한 hypodipsia/adipsia, 위장기능장애로 흡수장애, 음수 접근 제한.",
+    "Solute-free water가 없는 IV 정질액 단독 투여 → 미치료 DI에서 빠른 hypernatremia → 뇌부종·osmotic demyelination.",
+    "Dysnatremia(정상범위 내 변동 포함)도 사망률 증가와 연관 → 면밀한 free water 균형 관리가 최우선."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "기진단된 Central DI 관리"
+  },
+  {
+   "type": "list",
+   "items": [
+    "대부분 DDAVP(순수 V2 작용제)로 관리; 입원 중에도 지속 → free water 소실·hypernatremia 예방.",
+    "과도한 경장 수분·저장성 IV 용액 → 진행성 hyponatremia 위험(apelin만으로는 DDAVP 효과 상쇄 어려움).",
+    "최소 1일 1회 전해질 평가, DDAVP 용량을 조절해 normonatremia 유지. 급성 hyponatremia 발생 시 Ch55(Dysnatremia)에 따라 치료."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "기진단된 Nephrogenic DI 관리"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Thiazide 이뇨제 ▸ 역설적으로 총 요량 감소(ECF량·GFR 감소 기전). 단 중환자에선 수분균형 악화 가능 → 지속이 바람직하지 않을 수 있음.",
+    "중단 시 free water 소실 무제한 → adipsic 환자에서 심한 free water 결핍 → 경장/비경구로 보충 필요.",
+    "Free water clearance(CFW) 계산 ▸ CFW = Vu × (1 − ([Na]u + [K]u)/[Na]p). 시간당 보충량 추정, 혈장 Na 반복 재평가."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "의심되는 후천성 DI 관리"
+  },
+  {
+   "type": "list",
+   "items": [
+    "삼투성 이뇨 없이 hypernatremia + 다뇨가 동시에 발생 시 의심(특히 후천성 DI 연관 질환 보유 시).",
+    "확진: free water clearance 양성 + 동반 hypernatremia → central 또는 nephrogenic DI.",
+    "우선 hypernatremia를 안전하게 교정(free water deficit + 진행 중 요손실 보충, Ch55) 후 DDAVP 시험.",
+    "DDAVP 후 2–4시간 urine osmolarity 변화로 감별 ▸ 완전 central DI는 ≥50% 증가, 부분 central/nephrogenic는 9–50%, 무반응이면 nephrogenic DI."
+   ]
+  }
+ ]
+}

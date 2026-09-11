@@ -1,0 +1,92 @@
+{
+ "id": "sacc3-p3-c36",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part III",
+ "part_title": "Advanced Respiratory Support",
+ "chapter_num": 36,
+ "title": "Anesthesia and Monitoring of the Ventilator Patient",
+ "author": "Kimberly Slensky, DVM, DACVECC; Ciara A. Barr, VMD, DACVAA",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "기계환기 중인 수의 환자 대부분은 TIVA(전정맥마취)로 유지되며, 흔히 2가지 이상의 약물 infusion이 동시에 투여된다.",
+    "기계환기 환자의 진정·마취 약물 선택은 환자의 심혈관 안정성 및 필요한 마취 깊이에 따라 결정된다.",
+    "보조 약물(오피오이드, 벤조디아제핀, α-2 작용제)의 사용은 마취 용량을 줄이고 부작용 역전을 가능하게 한다.",
+    "침습적·비침습적 모니터링 모두 환자 상태 최적화에 활용된다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "주요 주사 마취제 (Injectable Anesthetics)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Propofol: GABA_A 수용체 강화 → 빠른 kinetics으로 마취 깊이 조절 용이. 0.1 mg/kg/min IV로 시작. 단점: 용량 의존적 혈관확장·심근억제(저혈압), 고양이에서 장기 사용 시 Heinz body 빈혈 위험, propofol infusion syndrome(드물지만 대사성 산증·부정맥·횡문근융해증). 24시간 이상 고양이 사용 시 대안 고려.",
+    "Alfaxalone: GABA 수용체 결합 → 부드러운 유도. 0.07–0.1 mg/kg/min 사용. 단점: 회복 시 흥분·떨림·청각과민 가능; 고양이 반복 투여 후 clonic muscle activity. 장기 infusion 데이터 부족. 간기능 저하 환자에서 주의.",
+    "Ketamine: NMDA 수용체 길항제 → 교감신경 자극효과(혈압 유지에 유리), 기관지 확장 효과. 단점: 두개내압 상승 환자 금기; 고양이에서 norketamine(활성 대사체) 신장 배설 → 신부전 시 축적 위험; 단독 사용 시 회복 지연.",
+    "Etomidate: 부드러운 유도, CV 영향 최소. 유지 마취로는 부적합(부신피질 억제 최소 6시간, 인간 ICU에서 사망률 증가 보고) — 유도에만 사용."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "보조 약물 (Adjunct Agents)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "오피오이드: 진정 + 진통. Fentanyl(단시간 작용), remifentanil(초단시간, 빠른 회복). 주의: GI ileus(장운동 억제), 심장 미주신경성 서맥, 호흡 억제. Naloxone으로 역전 가능(소량 사용).",
+    "벤조디아제핀(Midazolam 선호): CV·호흡 부작용 최소. Diazepam 장기 infusion은 propylene glycol 독성 위험(젖산혈증·용혈·부정맥). 단독 진정은 불안정하며 건강한 개·고양이에서 흥분 유발 가능. 과다 시 flumazenil 역전.",
+    "Dexmedetomidine(α-2 작용제): 진정·진통, 마취 필요량 감소. 1 µg/kg/hr infusion 시 축적 미미. 기관지확장 없음(폐 보호 가능성). 단점: 혈관수축·반사성 서맥 → 심박출량 감소; 심혈관 불안정 환자에서 주의.",
+    "Acepromazine: 회복 시 dysphoria 치료에 유용. Infusion으로는 사용 불가(지속 작용 + 0.1 mg/kg IV 시 혈압 20-30% 저하). 저혈압 환자 금기.",
+    "신경근 차단제(NMBA): ARDS에서 환자-벤틸레이터 부조화 교정 불가 시 단기 사용. 사분지마비 증후군·중증 다발신경병증 위험. 수의학에서 비일상적 사용."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "마취 계획 수립"
+  },
+  {
+   "type": "list",
+   "items": [
+    "유도 전: 삽관·PPV 장비 정리, 수동 환기 장치(ambu bag) + 산소원 항상 준비, 항콜린제·소생 약물 비치, suction 준비.",
+    "심혈관 불안정 환자(예: 폐렴+패혈성 쇼크): 마취제(propofol/alfaxalone) 최소화 또는 생략, 주로 opioid + benzodiazepine 조합으로 유지.",
+    "심혈관 안정 환자: 마취제 1종 + 보조 약물 1~2종 병용.",
+    "Infusion 시작 시 보조 약물 loading dose 선투여하여 유도제 필요량 감소."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "벤틸레이터 이탈을 위한 마취 감량"
+  },
+  {
+   "type": "list",
+   "items": [
+    "NMBA 먼저 역전(잔류 근육 차단이 자발 호흡 회복 방해).",
+    "이탈 시 과잉 진정 금지: 저환기 유발 가능 → propofol의 용량/속도 의존적 저환기·무호흡 주의.",
+    "반대로 dysphoria 방지도 중요 → propofol은 부드러운 회복 질 제공(이탈 시 장점).",
+    "단시간 작용 약물(remifentanil, propofol) 선택으로 빠른 회복 도모."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "환자 모니터링"
+  },
+  {
+   "type": "list",
+   "items": [
+    "필수 모니터: pulse oximetry(SpO2), capnography(ETCO2), ECG, 혈압(가능한 동맥 카테터 직접 측정), 체온.",
+    "벤틸레이터 시스템 모니터링: 설정값·알람·회로 상태 확인.",
+    "인할란트 마취제는 일반적으로 피함: 저산소성 폐혈관 수축 억제 → hypoxemia 악화; ICU 벤틸레이터는 인할란트 전달 불가."
+   ]
+  }
+ ]
+}

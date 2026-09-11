@@ -1,0 +1,150 @@
+{
+ "id": "sacc3-p4-c45",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part IV",
+ "part_title": "Cardiovascular Disorders",
+ "chapter_num": 45,
+ "title": "Canine Myxomatous Mitral Valve Disease",
+ "author": "Ashley N. Sharpe, DVM; Lance C. Visser, DVM, MS, DACVIM (Cardiology)",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "MMVD는 개에서 가장 흔한 심질환이자 CHF의 가장 흔한 원인; 대부분 긴 무증상기 후 발생.",
+    "좌측 첨부 수축기 심잡음이 특징적 이학적 소견이며, 일부만 CHF로 진행한다.",
+    "에코가 진단·관리·예후 판정에 권장되나, 청진 + 흉부 방사선으로 응급 관리 가능.",
+    "기침 단독은 좌측 CHF의 신뢰할 수 있는 지표가 아니다; 빈호흡 + 큰 심잡음이 더 중요.",
+    "Pimobendan은 심비대가 있는 무증상 MMVD의 CHF 발병을 지연시킨다 (EPIC 연구).",
+    "응급 CHF 관리: 이뇨제(Furosemide) + Pimobendan ± 혈관확장제로 preload 감소 + cardiac output 최적화."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "역학 및 병태생리"
+  },
+  {
+   "type": "list",
+   "items": [
+    "유병률: 10세 이상 소형견(CKCS, Dachshund, Miniature Poodle 등)에서 ~100% 접근.",
+    "소형견(<20 kg): 긴 무증상기(수년); 유의한 심비대 있는 경우 CHF 또는 심장사까지 중앙 시간 2~3년.",
+    "대형견: 심근 기능 저하 동반, 빠른 진행, 예후 불량.",
+    "병태생리: MR → LA 압력·용적 ↑ → 편심성 비대(eccentric hypertrophy) → 신경호르몬 활성화(SNS, RAAS) → 혈관 수축·수분 저류 → 폐정맥압↑ → 폐부종.",
+    "합병증: 건삭 파열(flail leaflet → 급성 폐부종), LA 파열(심낭삼출·탐포나데), 이차성 폐동맥 고혈압, 빈맥부정맥(AF 포함)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "임상 소견 및 신체검사"
+  },
+  {
+   "type": "list",
+   "items": [
+    "우발적 좌측 심잡음(수축기)이 가장 흔한 초기 소견; 잡음 강도는 중증도와 상관 있음.",
+    "주요 주訴: 기침, 빈호흡·호흡 노력 ↑, 운동 불내성, 실신.",
+    "기침은 CHF의 신뢰 지표 아님 (기관지연화증·만성 기관지염 등 동반 흔함).",
+    "수면/안정 호흡수(S/RRR) <30회/분 → 폐부종 배제; S/RRR ≥30회/분 → CHF 고려.",
+    "CHF 시 빈맥 거의 항상 동반; 정상·낮은 심박수 → CHF 가능성 낮음.",
+    "우측 CHF 징후(복수, 경정맥 팽창, 흉막 삼출)도 가능(AF 동반 시 多)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "진단"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "임상 병리 및 바이오마커"
+  },
+  {
+   "type": "list",
+   "items": [
+    "일반 혈액 검사: 비특이적; 스트레스 백혈구상, 비재생성 빈혈 가능.",
+    "생화학: 수동성 간울혈(hepatopathy), 저나트륨혈증·저염소혈증(만성 CHF), 질소혈증(신기능 저하·이뇨제 부작용).",
+    "혈가스: 저산소혈증 + 대사성 산증(조직 저관류 시).",
+    "NT-proBNP: 중증도와 함께 상승; 음성이면 중증 심질환 원인 강하게 배제 가능; 신기능 저하·PH에서도 상승."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "흉부 방사선 (VHS·VLAS)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "VHS(Vertebral Heart Score) ≥11.5 또는 VLAS(Vertebral Left Atrial Size) ≥3.0 → 임상적으로 유의한 심비대.",
+    "CHF 소견: 심인성 폐부종(간질~폐포 음영, 우측 꼬리엽 多), 폐정맥 확장.",
+    "우측/양측 CHF: 흉막 삼출 fissure line, 후대정맥 확장, 복막내 삼출."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "심에코 및 POC 초음파"
+  },
+  {
+   "type": "list",
+   "items": [
+    "LA/Ao 비율(우측 단축 단면, 이완 초기): 가장 편리한 LA 크기 평가; LA/Ao ≥1.6 → 유의한 LA 확장.",
+    "LA 크기 = MR 중증도 대리 지표; LA 비확장 시 좌측 CHF 가능성 낮음.",
+    "POC 폐 초음파: B-라인 다수 → 폐부종 시사 (위양성·위음성 가능; 방사선으로 확인 권장).",
+    "완전 심에코: MMVD 확인(판막 비후·역류), 챔버 크기·기능, LV 충만압 추정, 동반 질환 파악."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "응급 CHF 관리"
+  },
+  {
+   "type": "list",
+   "items": [
+    "산소 공급 + 진정(Butorphanol 0.2~0.4 mg/kg IM/IV ± Acepromazine 0.01~0.02 mg/kg).",
+    "Furosemide 2 mg/kg IV (이상적); q1시간 반복 가능 → 호흡 개선 후 감량. 2~4시간 내 호전 없으면 추가 평가.",
+    "중증 폐부종(거품 토출, X-ray 'white-out') → Furosemide CRI 0.5~1 mg/kg/hr 고려.",
+    "Pimobendan 0.25~0.3 mg/kg PO q8~12h: 강심·혈관확장(전·후부하 감소) → 응급 CHF 표준 치료.",
+    "난치성 CHF → Sodium nitroprusside CRI 1~15 μg/kg/min (또는 Clevidipine CRI 1 μg/kg/min 시작); 혈압 모니터링 필수.",
+    "경구 혈관확장제 대안: Hydralazine 0.5~2.5 mg/kg PO q12h 또는 Amlodipine 0.1~0.2 mg/kg PO q24h.",
+    "심인성 쇼크/표준 치료 불응 → Dobutamine 2.5~10 μg/kg/min CRI (ECG 모니터링).",
+    "수액 투여 금지.",
+    "흉막·복강 삼출 → 흉강/복강천자 시행."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "모니터링"
+  },
+  {
+   "type": "list",
+   "items": [
+    "안정 시/수면 시 호흡수 매시간 측정; S/RRR 지속 감소 또는 <30~40회/분 → 이뇨제 용량 조정.",
+    "기저치: 흉부 방사선, 체중, 혈압, 용적 상태, 혈가스, 신기능·전해질.",
+    "12~24시간마다 재평가; Furosemide 투여 중 BUN·creatinine 상승·체중 감소·저칼륨혈증·대사성 알칼리증 주시.",
+    "심각한 질소혈증(BUN >50 mg/dl, Cre ≥2.5 mg/dl) 또는 체중 >10% 감소 → 이뇨제 조정."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "장기 관리 및 예후"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Furosemide 2~12 mg/kg/day PO (분2회); 최저 유효 용량 유지. 대안: Torsemide 0.1~0.3 mg/kg PO q24h.",
+    "Pimobendan 0.25~0.3 mg/kg PO q12h 지속.",
+    "RAAS 차단: Enalapril/Benazepril 0.5 mg/kg PO q12h + Spironolactone 2 mg/kg/day.",
+    "진행 시 전략: 이뇨제 증량, hydrochlorothiazide 추가, Amlodipine/Hydralazine 추가, pimobendan 증량 (off-label).",
+    "무증상기 치료(EPIC 기준): 잡음 ≥3/6 + LA/Ao ≥1.6 + LV/BW ≥1.7 cm/kg⁰·²⁹⁴ → Pimobendan으로 CHF 발병 지연.",
+    "예후: MMVD 개 다수는 CHF 없이 사망. 첫 CHF 발생 후 양호한 삶의 질 기대 중앙값 6~18개월; 재발 CHF 중앙 생존 9개월."
+   ]
+  }
+ ]
+}

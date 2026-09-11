@@ -1,0 +1,155 @@
+{
+ "id": "sacc3-p4-c50",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part IV",
+ "part_title": "Cardiovascular Disorders",
+ "chapter_num": 50,
+ "title": "Ventricular Tachyarrhythmias",
+ "author": "Romain Pariaut, DVM, DACVIM (Cardiology), DECVIM-CA (Cardiology)",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "Wide QRS 빈맥 + AV 해리·fusion beat·capture beat → VT의 ECG 진단 기준.",
+    "VT의 임상 중증도는 심박수와 지속 시간에 의해 결정된다.",
+    "비심장성 원인: 저산소혈증, 전해질 불균형(저칼륨혈증), 산염기 이상, 약물.",
+    "심장성 원인: Boxer의 ARVC, 도베르만의 확장성 심근증(DCM)이 가장 흔하다.",
+    "항부정맥제는 급사 예방 효과가 입증되지 않았으며, 임상 증상이 있을 때만 사용한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "정의 및 분류"
+  },
+  {
+   "type": "list",
+   "items": [
+    "VT: 연속 3회 이상의 심실 박동, 160–180 bpm 이상 (임상적으로 유의미한 VT는 보통 250 bpm 이상).",
+    "가속성 심실 자주율(AIVR): 생리적 심실 탈출 리듬보다 빠르지만 VT보다 느린 리듬; overdrive suppression으로 두 리듬이 경쟁.",
+    "VT 지속 시간: 비지속성(<30초, 대개 무증상) vs 지속성(≥30초); VT storm = 24시간 내 반복적 지속성 VT.",
+    "형태 분류: 단형성(monomorphic, 가장 흔함) · 다형성(pleomorphic, 2가지 이상 형태) · 다변성(polymorphic, 박동마다 형태 변화)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "ECG 진단"
+  },
+  {
+   "type": "list",
+   "items": [
+    "광폭 QRS 빈맥: 개 >0.07초, 고양이 >0.04초.",
+    "AV 해리: P파와 QRS가 독립적으로 존재 → 가장 신뢰도 높은 VT 기준.",
+    "Fusion beat: 심실 충격 + 동성 충격의 합성 → 중간 형태 QRS.",
+    "Capture beat: 동성 충격이 정상 전도계를 통해 심실 탈분극 → 협폭 QRS, 기대보다 이른 발생.",
+    "VT vs 광폭 QRS SVT 감별: 개·고양이에서 VT가 훨씬 흔함; 병력·임상 소견 필수 (Boxer/Doberman = VT 우선 고려)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "비심장성 원인"
+  },
+  {
+   "type": "list",
+   "items": [
+    "저칼륨혈증: phase 4 탈분극 ↑, 활동전위 연장 → 촉발 활동.",
+    "저마그네슘혈증: Na-K ATPase 기능 저하 → 세포내 K 감소.",
+    "저칼슘·고칼슘혈증, 산염기 이상, 저산소혈증.",
+    "교감신경 항진, 카테콜아민·교감신경 작용 약물.",
+    "GDV·외상·췌장염 후 AIVR: 재관류 부정맥과 유사 기전.",
+    "QT 연장 약물: procainamide, sotalol, domperidone, cisapride, erythromycin; 서맥·저칼륨혈증이 위험 증가."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "심장성 원인"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Boxer ARVC: 성체 발병; VT는 좌각차단 형태(우심실 기원); 운동 불내성·실신. English Bulldog에도 유사 형태.",
+    "Doberman DCM: 심실 부정맥 유병률 92%; 은폐기(2-4년, 급사 위험 ~30%) → 명백기(CHF + 급사 위험 30-50%); VT는 우각차단 형태(좌심실 기원).",
+    "독일 셰퍼드 유전성 VT: 18개월 미만 급사 위험; 다변성·빠른(<300 bpm) 비지속성 VT; EAD 기전.",
+    "기타: 심낭삼출·압전·심근염·심내막염·협착증(SAS, PS); 고양이 HCM·고혈압·갑상선항진증 관련 심비대."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료 접근"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "치료 여부 결정"
+  },
+  {
+   "type": "list",
+   "items": [
+    "지속성·고속(>200–220 bpm) VT → 혈역학적 안정 여부 평가.",
+    "불안정(실신·허탈·저혈압) → 정맥 항부정맥제 ± 전기적 심율동전환.",
+    "안정 환자 → 즉각적 정맥 투여 불필요; 경구 sotalol(특히 Boxer)로 2–3시간 내 반응 가능.",
+    "선행 처치 우선: O2 공급, 전해질 교정, 부정맥 유발 약물 중단."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "불안정 환자 — 정맥 항부정맥제"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Lidocaine(1차): 개 2 mg/kg IV bolus, 필요 시 반복(최대 8 mg/kg), 이후 25-75 μg/kg/min CRI. 고양이는 신경독성 위험으로 주의.",
+    "Procainamide(2차): lidocaine 실패 시.",
+    "Amiodarone(3차): 위 두 약제 실패 시 수성 제제 사용.",
+    "Sotalol: 안정 Boxer에서 경구 투여 유효.",
+    "Esmolol: 고양이 갑상선 기능항진 관련 VT (음성 변력 효과 주의)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "전기적 치료"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Overdrive pacing: 독일 셰퍼드 다변성 VT — 서맥 방지용 심방/심실 페이싱.",
+    "Synchronized cardioversion: 단형성 지속성 VT 실패 시.",
+    "Defibrillation: 심실세동 또는 전기적 폭풍."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "추적 모니터링"
+  },
+  {
+   "type": "list",
+   "items": [
+    "항부정맥제 투여 후 최소 24시간 연속 ECG 모니터링 필수 (부정맥 조절 평가 + 부정맥 유발 효과 감시).",
+    "장기 관리: 24시간 Holter 기록.",
+    "AIVR은 대부분 혈역학적으로 안정적이며 치료 불필요; 불안정해지면 심초음파 실시."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "고양이 VT 특이 사항"
+  },
+  {
+   "type": "list",
+   "items": [
+    "치료 필요 빈맥부정맥은 드물다.",
+    "경구 투여 가능하면 sotalol 우선.",
+    "Lidocaine: 신경독성 위험이 높아 주의."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,161 @@
+{
+ "id": "sacc3-p4-c41",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part IV",
+ "part_title": "Cardiovascular Disorders",
+ "chapter_num": 41,
+ "title": "Mechanisms of Heart Failure",
+ "author": "Mark A. Oyama, DVM, MSCE, DACVIM (cardiology)",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "심부전은 심장이 말초 조직의 대사 요구를 충족시키지 못하거나, 충족시키기 위해 정맥충만압이 비정상적으로 높아야 하는 상태다.",
+    "다양한 기전의 심부전이 공통적으로 신경호르몬 활성화 및 심근 비후를 유발한다.",
+    "Frank–Starling 기전은 심부전에서의 전부하-심박출량 관계와 약물 치료 근거를 이해하는 핵심이다.",
+    "ACVIM 병기 분류(A–D)를 통해 심질환의 임상 진행을 체계적으로 기술한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "정의 및 임상 증상"
+  },
+  {
+   "type": "list",
+   "items": [
+    "심부전 = 심장의 심박출량 부족(전방부전, forward failure) + 정맥충만압 상승에 의한 울혈(후방부전, backward failure)의 조합.",
+    "전방부전: 허약, 운동불내성, 저체온, 의식 저하, 젖산산증, 질소혈증, 핍뇨.",
+    "후방부전(CHF): 폐부종, 흉막삼출, 복수.",
+    "급성기: preload·afterload·수축력·AV 동기화·심박수를 즉각 조절; 만성기: RAAS·SNS 등 신경호르몬 경로 억제가 핵심."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "신경호르몬 기전"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "RAAS (레닌-안지오텐신-알도스테론계)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "심박출량 감소 → 신장 관류 감소 → 마쿨라 덴사의 레닌 분비 → Ang I → Ang II(ACE에 의해 폐혈관에서 전환) → 알도스테론 생성.",
+    "Ang II + 알도스테론: 신장 Na·수분 재흡수 ↑, 심근·혈관 섬유화·리모델링, 갈증·혈관수축 → 체액 과다·CHF 촉진.",
+    "조직(국소) RAAS: 심근 리모델링에 중요; ACE 억제제에도 불구하고 Ang II가 상승 가능."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "SNS (교감신경계)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "급성: norepinephrine·epinephrine → 심박수 ↑, 심박출량 ↑, 근골격계 혈류 ↑ → 단기 생존 이점.",
+    "만성: 베타 수용체 하향 조절, 지속 빈맥, 심근 O₂ 요구 ↑, 심근세포 괴사 → 심장 손상 악화.",
+    "인체 심질환에서 혈청 norepinephrine ↑ = 사망의 주요 위험인자."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "나트륨 이뇨 펩타이드 (ANP·BNP)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "심방(ANP) 및 심실(BNP) 근육이 신장 확장·압력 증가에 반응해 분비 → 나트륨 이뇨·이뇨·혈관 확장.",
+    "RAAS·SNS에 대한 길항계; 심질환 중증도에 비례해 ANP·BNP 증가.",
+    "말기: 나트륨 이뇨 펩타이드 수용체 하향 조절 + 펩타이드 분해 증가 → 효과 상실 → CHF 임상 증상 발현.",
+    "개·고양이 심질환의 진단·병기 결정·예후에 cTNI와 함께 BNP(proBNP) 활용."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Endothelin-1 및 Vasopressin"
+  },
+  {
+   "type": "list",
+   "items": [
+    "ET-1: 혈관내피세포에서 shear stress·Ang II에 반응해 분비 → 강력한 혈관수축·심근 Ca²⁺ 이상·심근세포 독성; 개·고양이 심부전에서 상승.",
+    "Vasopressin(ADH): 압력 수용체 자극으로 분비 → 신장 집합관 자유수 재흡수 ↑ → 희석성 저나트륨혈증(불량 예후 지표) 및 CHF 악화."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "심근 리모델링"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Ang II·norepinephrine·알도스테론 → 심근 비후 및 구조 변화.",
+    "압력 과부하(대동맥 협착, 전신 고혈압) → 구심성 비후(concentric hypertrophy): 근절 병렬 복제 → 심실 벽 두께 ↑; 합병증: 심근 O₂ 요구 ↑, 내막하 허혈, 섬유화.",
+    "용적 과부하(승모판 역류, 확장성 심근증) → 편심성 비후(eccentric hypertrophy): 근절 직렬 복제 → 심실 확장; 합병증: 심실 벽 스트레스 ↑, 심근세포 괴사·슬리피지.",
+    "리모델링 역전이 생존 향상과 연관."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "비정상 Ca²⁺ 처리"
+  },
+  {
+   "type": "list",
+   "items": [
+    "정상: 수축기에 Ca²⁺가 세포 유입 + SR(근소포체)에서 ryanodine 수용체를 통해 Ca²⁺ 방출 → troponin C 결합 → 근절 수축; 이완기에 SERCA2a가 Ca²⁺를 SR로 재흡수(phospholamban에 의해 조절).",
+    "심부전 시: ryanodine 수용체 기능 이상, SERCA2a 발현 감소, phospholamban 상향 조절 → 세포질 Ca²⁺ 분포 이상 → 수축·이완 기능 저하, 부정맥, 세포 사멸."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "비정상 심근 에너지 생성"
+  },
+  {
+   "type": "list",
+   "items": [
+    "심근 O₂·기질 공급 감소 → 허혈·혐기성 대사 → ATP 부족.",
+    "정상: 지방산 주 에너지원; 심부전: 포도당으로 전환(O₂ 소비는 적으나 효율 낮음).",
+    "개의 심근 질환에서 미토콘드리아 산화적 인산화에 필요한 사이토크롬·효소 결핍 확인."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Frank–Starling 기전"
+  },
+  {
+   "type": "list",
+   "items": [
+    "전부하 ↑ → 심실 수축력 ↑(생리적 한계 내에서): 자율 조절 기전.",
+    "운동 시: adrenergic drive → Frank–Starling 곡선 상향·좌이동 → 심박출량 ↑.",
+    "심부전 시: 곡선 하향·우이동 → 전부하 증가에도 심박출량 증가 불충분 → 정맥압 상승·울혈.",
+    "약물 치료의 근거: preload 감소(이뇨제), afterload 감소(ACE 억제제/혈관확장제), 수축력 향상(강심제)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "ACVIM 병기 분류"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Stage A: 심질환 위험군(예: 코커 스파니엘, 캐벌리어 킹 찰스 스파니엘)이나 현재 심질환 없음.",
+    "Stage B1: 심질환(예: 승모판 잡음)이 있으나 심비대·임상 증상 없음.",
+    "Stage B2: 심질환 + 심비대 있으나 임상 증상 없음.",
+    "Stage C: 심질환 관련 임상 증상(현재 또는 과거 CHF).",
+    "Stage D: 표준 치료에 불응하는 말기 CHF."
+   ]
+  }
+ ]
+}

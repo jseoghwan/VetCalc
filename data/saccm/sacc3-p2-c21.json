@@ -1,0 +1,191 @@
+{
+ "id": "sacc3-p2-c21",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part II",
+ "part_title": "Respiratory Disorders",
+ "chapter_num": 21,
+ "title": "Lower Airway Disease in Dogs",
+ "author": "Lynelle R. Johnson, DVM, MS, PhD, DACVIM (SAIM)",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "Bronchitis·bronchomalacia·eosinophilic lung disease·bronchiectasis는 소형·대형견 모두 흔함. Tracheal collapse는 거의 소형견에 국한.",
+    "감염·염증·비만·흡인 손상·심질환 등 악화 요인의 식별이 삶의 질 개선에 핵심.",
+    "Airway collapse 치료의 근간은 cough·기도 자극 유발 stressor를 줄이는 보존적 관리.",
+    "불안·과흥분은 trazodone 등 anxiolytic의 신중한 사용으로 조절.",
+    "감염·염증 해소 후에도 잔존하는 cough에는 narcotic cough suppressant가 필요한 경우 많음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Introduction"
+  },
+  {
+   "type": "list",
+   "items": [
+    "주요 하부 기도 질환: 구조적 질환(tracheal/bronchial collapse, bronchiectasis), 감염, 염증(eosinophilic, lymphocytic, suppurative bronchitis).",
+    "동시 이환이 흔해 ICU 외 추가 정밀 검사가 필요한 경우 많음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Diagnosis of Underlying Conditions"
+  },
+  {
+   "type": "list",
+   "items": [
+    "주된 내원 사유: 보호자의 인내를 넘어선 chronic cough.",
+    "신호자료가 우선순위 결정에 도움 — 어린 개: 감염성(CIRDC), cervical tracheal collapse. 노령견: bronchomalacia ± tracheal collapse, 만성 기관지염.",
+    "Bronchiectasis — 어린 개의 ciliary dyskinesia/eosinophilic lung disease, 노령견의 만성 염증/감염/aspiration에서 관찰.",
+    "신체검사: 기관 자극에 의한 cough 반응 흔함. 폐 청진은 변동적 — increased breath sound이 유일한 이상일 수 있음.",
+    "Bronchomalacia: 흡기·호기 crackle(기도 dynamic open/close). Bronchitis: expiratory wheeze 또는 crackle. 두 질환 모두 abnormal breathing pattern(expiratory push, abdominal effort) — bronchomalacia에서 더 심함.",
+    "확정 진단: 임상검사 + 영상 + 후두 검사 + airway sampling 조합."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Imaging & Airway Sampling"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Bronchiectasis는 일단 방사선상 가시화되면 비가역적인 경우 대부분.",
+    "CT: 미세한 변화 조기 검출 — 폐동맥/기관지 lumen 비율 >2.0 → bronchiectasis 시사.",
+    "다양한 자세 방사선 + cervical view로 동적 기도 직경 변화 평가.",
+    "Fluoroscopy: 실시간 동적 평가에 매우 유용. 기관 kinking, cranial lobe herniation(airway collapse 환자의 ~70%) 검출.",
+    "Bronchoscopy: tracheobronchomalacia 진단 — luminal 직경 >50% 감소 정의(정적 또는 동적, 단일·다발).",
+    "BAL 정상: 대식세포 70–75%, 호중구·호산구·림프구 5–8%. 호중구 내 세균 → 감염; 단, 감염 환자의 25%까지 sepsis 증거 없음 가능.",
+    "Cough 평가 시 호기성·Mycoplasma 배양 권장. Bronchiectasis/suppurative pneumonia에서는 혐기성 배양도."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Standard Treatment"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Cough·기도 자극 유발 요인 제거. Anxiolytic(trazodone) 사용, 더위/습도 회피, harness 사용.",
+    "Extended-release theophylline — expiratory airflow 개선해 cough·호흡일 감소(논란 있음). 부작용: 구토, 흥분.",
+    "Steroid — bronchitis·eosinophilic lung disease에 적응. Airway sampling 없는 상태에서는 신중 — 모든 bronchomalacia에 염증 동반되지 않으며 panting·체중 증가·감염 악화 유발.",
+    "감량 시 재악화 가능, 면역억제로 이차 감염 발생 가능."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Disease Exacerbation"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Infection"
+  },
+  {
+   "type": "list",
+   "items": [
+    "감염원: CIRDC 노출 또는 aspiration. 코르티코스테로이드 투여 환자는 고위험.",
+    "지역 감염이 흔해 CBC·방사선 변화 미미할 수 있음.",
+    "치료: 임상 양상 기반 — doxycycline 3–5 mg/kg PO BID 권고 (Mycoplasma·Bordetella 추정). 식도협착 예방 위해 물/사료 함께 투여.",
+    "7–10일 내 호전 없거나 악화 시 재평가."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Intubation Injury"
+  },
+  {
+   "type": "list",
+   "items": [
+    "마취·삽관 후 1–2일 내 cough 악화 — 소형견에서 흔함.",
+    "Gastric 흡인·치과 재료 흡인 가능성 — CBC + 흉부 X-ray 스크리닝.",
+    "Tracheoscopy는 기흉 위험으로 시행 빈도 낮음. 피하기종/기종격이 있어도 손상 부위 시각화 어려운 경우 많음.",
+    "관리: 진정(gabapentin, trazodone, acepromazine) + cough 억제(butorphanol, hydrocodone). 가정 내 neuroleptanalgesia + 10–14일 모니터링."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Cardiac Enlargement / CHF"
+  },
+  {
+   "type": "list",
+   "items": [
+    "좌심방 비대·심비대의 cough 기여는 논란 — 해부학적 관계상 left cranial/right middle/accessory 기관지 압박 가능성.",
+    "MMVD와 bronchomalacia·만성기관지염 동반이 흔해 인과관계 구분 어려움.",
+    "한 연구: 좌심방 비대 유무에 따른 airway collapse 위치·중증도 차이 없음 → 기도질환이 cough의 주원인일 가능성.",
+    "심잡음·빈호흡·빈맥 + 폐포 침윤이 hilar/caudal → CHF 시사. Furosemide 1–4 mg/kg IV trial 후 24–48시간 후 영상 재평가."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Pulmonary Hypertension"
+  },
+  {
+   "type": "list",
+   "items": [
+    "만성 폐질환은 어떤 종류든 PH 합병 가능 — 폐혈관 저항 증가, 만성·전반적 hypoxic vasoconstriction.",
+    "Pneumonia, brachycephalic syndrome, chronic tracheobronchial disease, 색전성 질환, 간질성 폐질환과 연관.",
+    "Syncope이 비교적 흔한 소견 — 호흡환자의 급성 collapse 발생 시 PH 고려.",
+    "산소 안정화 후 cardiology referral."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Obesity"
+  },
+  {
+   "type": "list",
+   "items": [
+    "ICU 사유는 드물지만 만성 호흡기 질환을 결정적으로 악화.",
+    "흉벽 compliance ↓, 복부 지방으로 횡격막 운동 ↓, 기도 압박 ↑ → airway collapse·염증성 기도질환·brachycephalic·LP 환자에서 특히 치명적.",
+    "드물게 gradual CO₂ retention 적응 → 산소투여 시 ventilatory drive 상실로 호흡곤란 악화 → 산소 중단 시 호전.",
+    "체중관리는 primary vet referral·BCS 기반 칼로리 계산."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Aspiration Injury"
+  },
+  {
+   "type": "list",
+   "items": [
+    "위험인자: megaesophagus·esophagitis, 구토, 의식 저하(마취·발작 후·두부 외상), 후두 기능부전·수술.",
+    "Acid injury가 환기 이상의 주요 원인 — 일부 환자에서 세균성 기여 큼.",
+    "신체검사: rapid shallow breathing·cough. 후두 청진 시 stridor → 후두마비 가능성.",
+    "CBC — 백혈구증가(중증도·band 변동); biochem — 다장기부전 조기 징후 확인.",
+    "Pulse oximetry SpO₂ <95% = PaO₂ <80 mmHg → ABG 고려.",
+    "방사선: cranioventral 폐포 침윤 또는 중엽 침범; 자세·시간 경과로 양상 달라짐. 영상 중증도와 예후의 상관관계는 일관되지 않음.",
+    "급성 흡인 목격·불활성 물질(mineral oil) 흡인 시 즉시 bronchoscopic suction 고려 — 단, 과도한 lavage는 입자물 심부 압입 위험.",
+    "치료: 위·구인두·혐기성·Mycoplasma 표적 항생제 (입원 시 페니실린 + fluoroquinolone parenteral), IV fluid, nebulization. 구토·역류 중이면 coupage 금기.",
+    "Terbutaline 0.01 mg/kg SQ/IM/IV BID–TID — 첫 24–48시간 산성 유도 기관지수축 대응.",
+    "산소 보충 필요 시 고FiO₂·장기 노출 회피 — oxygen toxicity 위험.",
+    "중증 가스교환 이상·호흡일 과다 → 기계환기 필요할 수 있음.",
+    "흡인 원인 적극 교정 필수 — 다발 위험인자에도 생존율 ~75% 보고."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Conclusion"
+  },
+  {
+   "type": "list",
+   "items": [
+    "만성 호흡기 질환은 다양한 사건에 의해 악화 — 산소·진정으로 즉시 안정화 후 검사로 원인 규명.",
+    "기저 inciting event 식별·중재가 재발 방지의 핵심."
+   ]
+  }
+ ]
+}

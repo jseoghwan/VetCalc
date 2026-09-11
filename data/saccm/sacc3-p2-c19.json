@@ -1,0 +1,158 @@
+{
+ "id": "sacc3-p2-c19",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part II",
+ "part_title": "Respiratory Disorders",
+ "chapter_num": 19,
+ "title": "Tracheal Collapse: Management & Indications for Tracheal Stents",
+ "author": "Dana L. Clarke, VMD, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "Tracheal collapse는 진행성·퇴행성 연골 질환 — 노령 toy/소형견(특히 Yorkshire Terrier).",
+    "신호자료·병력·신체검사로 obstructive tracheal collapse 여부를 판단, 영상으로 보조 진단.",
+    "Tracheal stenting은 급·만성 기도 폐색 모두에서 기도 개방성을 회복시키는 최소 침습 중재.",
+    "Stent는 비절제성 obstructive tracheal neoplasia의 효과적 완화 수단.",
+    "주요 합병증: stent fracture, migration, chronic infection, granulation tissue — 환자 선별과 정확한 sizing이 핵심."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Etiology & Pathophysiology"
+  },
+  {
+   "type": "list",
+   "items": [
+    "기관 연골의 glycosaminoglycan·chondroitin·calcium 감소 → 연골 강성 저하·dorsalis trachealis 이완.",
+    "호흡 시 변동하는 내강 압력을 견디지 못해 lumen 협착·collapse.",
+    "반복적 점막 접촉 → 만성 염증·ciliated columnar epithelium 손실 → squamous metaplasia → 기침이 주된 청소 기전.",
+    "Bronchomalacia가 동반되거나 단독 발생 가능.",
+    "고전적 grade I–IV (luminal 25%씩 감소) → 최근에는 chondromalacia(동적 collapse)와 tracheal malformation(grade IV의 '복부 W자형' 정적 폐색)을 별개 질환으로 보는 흐름."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Clinical Signs — Honkers vs Coughers"
+  },
+  {
+   "type": "list",
+   "items": [
+    "위치에 따라 증상 양상이 다름: 흉곽외 기관(흡기 dyspnea), 흉곽내 기관(호기 dyspnea), 흉곽입구(양상 혼합).",
+    "Tracheal malformation은 보통 흉곽입구에 위치 — 정적 또는 동적.",
+    "Honkers(obstructive): 'honking' 호흡음, 흡기 noise, 흡기 노력 ↑, abducted elbow, pectus excavatum, sinus arrhythmia, orthopnea — 열·스트레스·흥분에 악화, 운동 불내성.",
+    "Coughers(non-obstructive): 건성 hacking cough(말기 retch 동반), 호기 abdominal push, 호기 폐음 거칠음, crackles, 'heave line', cough 시 fecal incontinence.",
+    "Nasopharyngeal collapse가 동반될 수 있어 코고는·수면 무호흡 증상 추가 가능."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Diagnostics"
+  },
+  {
+   "type": "list",
+   "items": [
+    "흉부 방사선: 정적 영상의 한계(위치 오진 44%, 누락 8%) — 그러나 흉벽 형상·심비대·LAD·기관지 확장·폐 침윤 평가에 필수. Tracheal malformation의 '복부 연조직 음영' 확인에 중요.",
+    "Fluoroscopy: 호흡주기 전반의 동적 평가 + 폐엽 herniation, 비인두·주 기관지 collapse 동시 평가.",
+    "Tracheal U/S·CT: 양압환기 하 직경 측정·malformation 특성화; VetMousetrap™ 사용 시 awake/light sedation도 가능.",
+    "Echocardiography: 폐고혈압 평가(원발성/이차성) — 폐고혈압 치료가 기침을 완화시킬 수 있음.",
+    "Tracheobronchoscopy(gold standard): 등급 평가·malformation 식별·종양 배제; laryngeal exam도 필수(LP 동반 ~30%).",
+    "ET wash/BAL 세포학·호기성 배양(Pseudomonas, Pasteurella, E. coli, Staphylococci, Enterobacter, Mycoplasma).",
+    "CBC/Chemistry: 염증·간 손상(저산소 이차) 평가; pulse oximetry·ABG로 객관적 평가(중증 시 PaCO₂ ↑)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Medical Management"
+  },
+  {
+   "type": "list",
+   "items": [
+    "약물치료는 임상 증상(기침·염증) 조절이 목적 — 71%가 12개월 이상 약물로 관리 가능.",
+    "응급기: 진정·항불안·산소·진해(hydrocodone 0.25–0.5 mg/kg PO q4–8; butorphanol 0.1–0.3 mg/kg PO q6–12) + 단기 tapering 스테로이드.",
+    "장기 관리: 체중 감량, harness 사용(목줄 X), 열·흥분 회피.",
+    "Bronchodilator(theophylline)는 동반 bronchial collapse/만성 기관지염 시 기침 완화에 도움 — airway obstruction에는 효과 제한적.",
+    "약물 실패·QOL 악화·호흡곤란 미해소 시 수술·중재시술 고려."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Extraluminal Tracheal Rings"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Cervical(또는 근위부 흉곽입구) collapse·약물치료 실패 환자 대상.",
+    "상용 ring(New Generation Devices) 또는 자체제작 polypropylene syringe 변형.",
+    "수술 중 segmental tracheal 혈류·회귀후두신경 손상 주의.",
+    "성공률 75–85%; 합병증: 감염, laryngeal paralysis(10–21%), tracheal necrosis, 진행성 collapse.",
+    "수술 후 수일간 집중 모니터링; 흉곽내 collapse 동반 여부는 생존율에 영향 없음 → 흡기 dyspnea가 심하면 시술 가능."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Tracheal Stenting"
+  },
+  {
+   "type": "list",
+   "items": [
+    "적응증: 어느 부위든 collapse(특히 diffuse), 수술 부적합(laryngeal dysfunction, 치유 우려), 약물 비반응 위기, 절제 불가 tracheal mass·stricture.",
+    "기대 설정 필수: 폐색에는 생명구조 효과 — 그러나 주된 증상이 기침인 경우 효과 제한적이며 평생 진해제 필요.",
+    "초기 biliary wall stent·balloon-expandable stent는 foreshortening·migration·fracture·자극 多 → 현재는 dog-specific(Infiniti Medical) tapered nitinol stent로 개선.",
+    "Sizing은 전신마취 하 진행: marker catheter(esophagus)로 보정 → 20 cmH₂O 흡기 정지에서 최대 직경 측정 → 측정값보다 10–20% 큰 stent 선택; 길이는 cricoid 1 cm 미부 ~ carina 1 cm 두부 사이.",
+    "Fluoroscopy(또는 bronchoscope) 유도; ET tube + adapter로 산소 공급 유지; 75% 전개까지 recapture 가능.",
+    "배치 직후 tracheoscopy로 contact·gap 평가 — gap('gutter')은 추후 점액 정체·만성 감염·granulation의 원인."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Post-Stent Management"
+  },
+  {
+   "type": "list",
+   "items": [
+    "보통 익일 퇴원(폐렴 등 동반질환 시 입원 유지).",
+    "퇴원 처방: 배양 결과 대기 중 항생제, 2–3주 tapering steroid, 정기적 진해제(q6–8).",
+    "Stent가 점막에 통합되는 6–8주간 짧은 건성 기침 예상 — 보호자 사전 설명.",
+    "장기 추적: 흉부 방사선 첫 해 3–4개월마다, 이후 6개월마다; 기침·호흡 변화 시 즉시 영상 + 필요 시 tracheoscopy·ET wash."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Complications"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Stent fracture: 환자 선별·sizing·tapered design·재삽입(stent-in-stent) 기술로 빈도·심각도 감소.",
+    "Migration: 적절히 oversize 시 드묾 — 조기 발견 시 제거·교체.",
+    "Granulation(염증) tissue: gap·점막 통합 불량 부위에서 발생 — 면역억제 용량 스테로이드 + 배양 기반 항생제로 호전; 폐색성으로 진행 시 stent-in-stent.",
+    "만성 감염: 조기 진단(ET wash·배양·tracheoscopy) + 표적 항생제 + 스테로이드; 연 1–2회 치료 필요할 수 있음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Stenting for Tracheal Neoplasia"
+  },
+  {
+   "type": "list",
+   "items": [
+    "비절제성 폐색성 종양·재발 종양·tracheal stricture에서 luminal patency 회복 목적.",
+    "방사선치료 전 안정화 수단으로도 유용.",
+    "수술 전 평가: 흉부 방사선, CT(범위·전이·방사선치료 계획), tracheoscopy + 생검.",
+    "Sizing·시술법은 collapse 시와 유사; 종양에는 uncovered stent, stricture에는 covered stent 고려."
+   ]
+  }
+ ]
+}

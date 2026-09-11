@@ -1,0 +1,120 @@
+{
+ "id": "sacc3-p6-c64",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part VI",
+ "part_title": "Fluid Therapy",
+ "chapter_num": 64,
+ "title": "Daily Intravenous Fluid Therapy",
+ "author": "Natalie Kovak, DVM, DACVECC; Deborah C. Silverstein, DVM, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "일일 정맥수액의 목적: 수분 결핍(deficit) 보충, 유지 수액·전해질 공급, 진행성 손실(ongoing loss) 보충.",
+    "체액 이동은 세포내·외 구획의 정수압·교질삼투압(COP), 혈관내피 투과성, 혈장 삼투압에 의해 결정된다.",
+    "주요 수액: 등장성 정질액, 저장성 정질액, 합성 콜로이드, 자유수(free water) 용액.",
+    "환자별 맞춤 계획 + 잦은 재평가·수정(신체검사·검사실 소견 기반)이 핵심.",
+    "합병증: 간질부종·폐부종, 전해질 불균형."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "체내 수분 분포 (Total Body Water)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "총체수분(TBW) = 비만이 아닌 성견·성묘 체중의 60%; 신생(<12주)은 ECF 비율이 높아 ~80%.",
+    "ICF: TBW의 ~66%, 체중의 40%. Na⁺/K⁺-ATPase(3Na⁺ out : 2K⁺ in)로 유지 — 주 양이온 K⁺, 주 음이온 인산·세포내 단백.",
+    "ECF: TBW의 33%, 체중의 20% → 간질액(ECF의 75%) + 혈관내액(25%). 주 양이온 Na⁺, 주 음이온 Cl⁻·HCO₃⁻."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "체액 이동 원리"
+  },
+  {
+   "type": "list",
+   "items": [
+    "물은 삼투압차에 따라 ICF↔ECF 자유 이동; 소분자는 혈관내↔간질 자유 이동, 세포 진입엔 수송체(단백채널) 필요.",
+    ">10–20 kDa 분자(albumin·globulin·fibrinogen)는 내피를 잘 통과 못해 COP 생성.",
+    "개정 Starling 모델: glycocalyx층 고려 → 간질 COP 영향 미미, 혈관내강–subglycocalyx COP 기울기가 결정.",
+    "glycocalyx 손상 유발: 전신염증·패혈증·허혈재관류·용적과부하."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "수분 손실 유형"
+  },
+  {
+   "type": "list",
+   "items": [
+    "저장성 손실(hypotonic): 고나트륨혈증·고장성 탈수 유발(요붕증·hypotonic third spacing·과도한 헐떡임). 보통 등장성 정질액으로 충분, 심하면 저장성/자유수 — Na 급격 감소 주의(뇌부종).",
+    "등장성 손실(isotonic): 출혈·다뇨성 신부전·구토·설사. ECF 삼투압 불변 → ICF 이동 없음 → 등장성 정질액 보충.",
+    "고장성 손실(hypertonic): 드묾; 저장성 탈수 초래. 부신피질기능저하·이뇨제·third space(흉수·복수). 급격한 Na 변화 시 osmotic demyelination 주의.",
+    "혈관 투과성 증가: 고단백액 누출, ECF 삼투압·ICF 용적엔 영향 거의 없음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "수액 계획 (Fluid Therapy Plan)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "결핍량(ml) = [체중(kg)×1000] × [탈수%/100]; 여기에 진행성 손실(ongoing loss)을 더해 4–24시간에 걸쳐 + 시간당 유지속도로 투여.",
+    "만성 탈수·혈역학 안정 시 등장성 정질액으로 4–24시간에 걸쳐 보충.",
+    "계산 오류 흔한 원인: 탈수 과소/과대평가, 예상보다 큰 손실, 불감손실 증가(헐떡임·발열·다뇨)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "유지 수액 (Maintenance)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "목적: 소변·대변·증발로 잃는 생리적 손실(수분·주요 전해질) 보충.",
+    "유지요구량 ≈ 안정시 에너지요구량(RER), 1 kcal = 1 ml 물.",
+    "RER 공식: 70 × (BW_kg)^0.75 ÷ 24h = ml/hr. 흔히 쓰는 2–4 ml/kg/hr는 과대평가 가능(특히 비만·대형/거대견).",
+    "유지액은 보통 저장성이나 등장성도 가능; 사람 의학에선 저장성 과다 → 의인성 저나트륨혈증 위험 보고."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "수액 종류 (Fluid Type)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "등장성 정질액(Replacement): 삼투압 290–310 mOsm/L. balanced(완충제 함유 → 대사성 산증 교정) vs unbalanced(0.9% NaCl, 산성화 → 대사성 알칼리증에 사용). 투여 후 ~1/3 혈관내, 2/3은 30분 내 간질로 분포.",
+    "0.9% NaCl: Na·Cl 각 154 mEq/L → 대량 시 고염소성 대사성 산증; LRS·Plasma-Lyte 148·Normosol-R는 생리적 K 함유.",
+    "특수 상황: 구토(저염소성 알칼리증)→0.9% NaCl; DKA·중증 간기능부전→LRS 회피(lactate 대사 저하); 신생아→LRS(lactate 연료); 두부외상·뇌압상승→0.9% NaCl(고삼투압).",
+    "Free water(D5W): 자유수 결핍(고나트륨혈증)·자유수 손실(요붕증) 보충. 순수 자유수는 용혈 → dextrose 5%(D5W ~252 mOsm/kg). 자유수 결핍(L) = ([환자Na]÷정상Na − 1) × 0.6 × 체중(kg). 급속 볼루스 금지(뇌부종).",
+    "합성 콜로이드(HES): >10 kDa, 혈관내 COP↑로 용적절약(volume-sparing). CRI 0.5–2 ml/kg/hr. 응고장애·AKI 위험(FDA 2013 black box). hetastarch·tetrastarch 주로 사용."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "합병증 · 모니터링 · 중단"
+  },
+  {
+   "type": "list",
+   "items": [
+    "과용적·혈액희석 위험; 위중 환자는 Na·수분 배설 장애 + 스트레스반응(교감신경·RAAS 활성) → 부종 경향.",
+    "간질부종 결과: 폐 가스교환 저하, 신기능·장운동 저하, 조직 산소화 저하, 수술 감염률 증가.",
+    "모니터링: 1일 2회 이상 신체검사(점막·CRT·맥압·청진), 1일 1회 이상 체중, UOP(정상 1–2 ml/kg/hr), PCV/TP·BUN/Cr·lactate, CVP.",
+    "중단: 근거 부족 — 대부분 급격한 중단이 무해, 느린 weaning은 오히려 재원 연장 가능."
+   ]
+  }
+ ]
+}

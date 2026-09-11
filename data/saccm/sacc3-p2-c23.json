@@ -1,0 +1,223 @@
+{
+ "id": "sacc3-p2-c23",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part II",
+ "part_title": "Respiratory Disorders",
+ "chapter_num": 23,
+ "title": "Pulmonary Edema",
+ "author": "Sophie Adamantos, BVSc, DACVECC, DECVECC; Dez Hughes, BVSc, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "폐부종은 개·고양이의 흔한 호흡곤란 원인.",
+    "두 가지 주요 병태생리: high hydrostatic pressure edema vs increased permeability edema.",
+    "가장 흔한 원인은 cardiogenic edema (좌심성 CHF).",
+    "예후·치료 반응은 기저 원인에 좌우.",
+    "Cardiogenic edema는 loop diuretic에 잘 반응; noncardiogenic은 반응이 떨어짐.",
+    "모든 폐부종 환자에서 수액 투여는 매우 신중하게."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Pathophysiology"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Transvascular fluid flux는 모세혈관 수압, 간질 수압, 모세혈관 COP, glycocalyx 하부 COP, 반사·여과 계수에 의해 결정.",
+    "폐 보호 기전: 비신축성 간질 + 림프 흐름 증가(최대 ~10배). 폐 모세혈관막은 단백 투과가 크므로 림프 배출이 핵심.",
+    "저단백혈증 단독으로는 폐부종을 잘 일으키지 않음 (폐는 COP 보호 효과가 제한적).",
+    "부종은 간질액 형성 속도 > 청소 능력일 때 발생; 수압이 가장 큰 결정인자.",
+    "액체는 우선 peribronchovascular 간질에 축적 → 폐포-기도 상피 접합부에서 alveoli로 유출.",
+    "Glycocalyx는 endotoxemia에서 소실 — 임상 의의 연구는 초기 단계."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "High hydrostatic pressure edema"
+  },
+  {
+   "type": "list",
+   "items": [
+    "폐모세혈관압 상승 → 누출 > 림프 배출 → 부종.",
+    "Cardiogenic edema는 보통 수개월에 걸쳐 점진 진행.",
+    "급성 압력 상승(예: chordae tendineae 파열) 시 부종 급속 형성."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Increased permeability edema"
+  },
+  {
+   "type": "list",
+   "items": [
+    "미세혈관 장벽·폐포 상피 손상 → 단백 풍부한 액체 유출.",
+    "COP 보호 효과 감소로 낮은 수압에서도 부종 형성, 작은 압력 변화로도 부종 가중.",
+    "폐포 상피 손상 시 혈관-폐포 직접 통로 → 빠른 alveolar flooding (ARDS의 가장 심한 형태).",
+    "원인: 폐렴, PTE, ventilator-associated lung injury, ARDS 등.",
+    "림프계의 청소 기여는 미미 — 대부분 fluid는 기관지 순환으로 흡수."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Clinical Presentation"
+  },
+  {
+   "type": "list",
+   "items": [
+    "V/Q mismatch로 저산소 → tachypnea, 호흡곤란.",
+    "산소 공급 + 조용한 환경에서의 회복 시간 제공이 매우 중요. 강제 보정 금지.",
+    "병력 단서: 심질환·잡음·이전 CHF(심인성) / 흡연, 목 졸림, 전기 충격, 두부 외상, 발작(비심인성).",
+    "청진: 폐음 증가, crackles 또는 거친 호흡음 — 호흡 빠르거나 tidal volume 낮으면 듣기 어려움.",
+    "분포 단서: 흡인 폐렴 → cranioventral; 개 cardiogenic → perihilar."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Cardiogenic Edema"
+  },
+  {
+   "type": "list",
+   "items": [
+    "가장 흔한 hydrostatic edema; 좌심성 CHF의 결과.",
+    "개: 중년 대형견 — DCM; 소형견 — MMVD. 임상 신호 — 기침, orthopnea, 운동 불내성, 잡음.",
+    "고양이: HCM·restrictive cardiomyopathy가 흔하고 약 절반에서 폐부종; 전구 증상 없이 호흡곤란 가능.",
+    "CHF 고양이 ~20%는 청진상 정상 — 잡음 23%, gallop 23%; gallop은 잡음보다 CHF에 더 특이적.",
+    "만성 진행 + 체액 저류 → 모세혈관압 ↑ → 부종; 심한 경우 혈관 파열로 분홍색 거품 객담(pink frothy sputum)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Fluid therapy로 인한 폐부종"
+  },
+  {
+   "type": "list",
+   "items": [
+    "정상 심장·폐에서는 드묾 (개 실험: 1시간에 360 mL/kg 결정질액까지 견딤).",
+    "고양이는 더 취약 — 낮은 혈량, 잠재성 심질환 가능성; 요로 폐쇄 고양이에서 bolus 후 또는 잡음/gallop 발생 시 호흡 증상 위험 ↑.",
+    "SIRS·폐 실질 질환 등 위험 인자 동반 시 위험 가중."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Mixed Cause Edema"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Neurogenic Pulmonary Edema(NPE): 두부 외상·발작 후. 두개내압 급상승 → catecholamine surge → SVR ↑ + 폐포모세혈관 누출. 24h 내 발현, 48h 내 해소 경향. 영상은 가변적.",
+    "NPE 후보 기전: 직접 심근 손상, LV compliance 감소, 모세혈관 압력 급상승의 barotrauma(Blast theory), 폐혈관 adrenergic 과민.",
+    "Negative Pressure Pulmonary Edema(NPPE): 상기도 폐쇄(가벼운 견인도 가능). 흉강 음압 ↑ → 우심 정맥환류 ↑, 폐정맥압 ↑, LV afterload ↑ → fluid extravasation. 젊은 동물에 흔함, 48h 내 해소.",
+    "Re-expansion edema: 만성 허탈된 폐엽의 급성 재팽창 후. 외상, 표면활성제 감소, 음압, 산소 free radical, 재관류 손상."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Diagnostics"
+  },
+  {
+   "type": "list",
+   "items": [
+    "흉부 방사선: 전통적이나 심한 호흡곤란 시 스트레스 위험 — 초기 안정화 후 시행, 산소 준비.",
+    "분포 단서: 개 mild cardiogenic → perihilar; 고양이 → patchy/nodular interstitial-alveolar; dorsocaudal → 비심인성 시사(매우 가변적).",
+    "좌심부전 단서: 폐정맥이 폐동맥보다 확장.",
+    "POCUS: B-lines 증가로 폐부종 추정; 다른 폐질환에도 B-lines 가능하지만 급성 호흡곤란에서는 폐부종 시사. LA:Ao 증가는 고양이에서 cardiogenic 가능성 ↑. 숙련 시 방사선보다 민감.",
+    "ABG / SpO₂: 저산소 객관화 가능하나 스트레스 위험 시 비필수. PaO₂/FiO₂로 치료 효과 평가."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Treatment — Oxygen / Ventilation"
+  },
+  {
+   "type": "list",
+   "items": [
+    "원인 치료가 핵심, 일률적 치료 없음. 가장 덜 스트레스적인 방법으로 산소 공급.",
+    "산소 케이지가 이상적(고양이·소형견); mask·flow-by·nasal cannula는 고양이에서 효과 제한.",
+    "High flow nasal oxygen: 비침습; 일부는 진정 필요.",
+    "CPAP < PPV(침습적 인공호흡): 적응증 — SpO₂ <90% 또는 PaO₂ <60 mmHg를 비침습 산소로 해결 못할 때, 또는 hypoventilation(PaCO₂ >55–60).",
+    "호흡근 피로 임박 시 조기 PPV 고려. PPV가 폐부종 해소를 돕거나 늦출 수 있음 — 가역적 심인성 원인에 특히 유용.",
+    "자세: 흉골자세가 무기폐 감소로 환기 향상; 일측 질환은 영향 받는 쪽을 아래로 두되, 일부 환자에서는 더 심한 폐가 위로 가면 저산소 악화 가능."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Medical Therapy"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Cardiogenic edema"
+  },
+  {
+   "type": "list",
+   "items": [
+    "원칙: preload 감소 → 폐모세혈관압 ↓. Regurgitant fraction이 크면 전향 흐름 촉진도.",
+    "Furosemide: 가장 흔히 사용, 빠른 발현.",
+    "개 급성 CHF: 1–2 mg/kg q1h until 호흡 안정 또는 최대 8 mg/kg; 안정되면 빈도·용량 감소.",
+    "생명 위협 폐부종 → bolus + CRI 권장.",
+    "고양이는 furosemide에 더 민감 → 보수적 용량.",
+    "추가 효과: 폐혈관 확장, 기관지 확장, 혈액농축으로 COP ↑ → 폐포액 재흡수 보조.",
+    "Nitroprusside (NO donor): 동맥·정맥 확장. 짧은 반감기 → CRI. 목표 MAP/SBP 10–15 mmHg 감소.",
+    "Nitroprusside 주의: 저혈압에 단독 사용 금기(양성 변력제 병용 필요); V/Q mismatch 악화·reflex tachycardia 가능. 비싸고 구하기 어렵지만 ACVIM MMVD 가이드라인에 포함.",
+    "Nitroglycerin: 주로 정맥확장; tachyphylaxis 빠름(~24h) → 효능 제한 → 더 이상 권장 안 함.",
+    "Pimobendan(PDE inhibitor): cAMP ↑; IV 시 BP ↑, LVEDP ↓ — forward + congestive failure에 유익."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Noncardiogenic edema"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Furosemide 등 hydrostatic pressure 조절제에 반응이 떨어짐. 사람에서는 비심인성에 이뇨 권장 안 함.",
+    "사용한다면 risk-benefit 따져 저용량 furosemide, 저관류 발생 여부 모니터.",
+    "α-adrenergic 길항제는 NPE에 일부 보고; 수의 임상 근거 부족.",
+    "β2-agonist (terbutaline, salbutamol): cAMP로 폐포액 재흡수 — ARDS 사람 연구에서 사망·ventilator-free day 악화 → 일상 사용 권장 안 함."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Fluid Therapy 관리"
+  },
+  {
+   "type": "list",
+   "items": [
+    "수액은 신중하게 제한; 단, 신장·다장기 부전 위험과 균형.",
+    "폐 미세혈관막은 단백 투과 ↑ → albumin·hetastarch 같은 colloid가 빠르게 평형.",
+    "투과성 증가 시 colloid 절반 이상 누출 → 부종 악화 가능; 폐포 청소도 느림 → colloid 사용은 risk-benefit 측면에서 회피 권장."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Prognosis"
+  },
+  {
+   "type": "list",
+   "items": [
+    "원인 다양 → 일반화 어려움.",
+    "기저질환이 가볍거나 일시적이면 비교적 양호; 다장기 질환 + 심한 permeability edema → 예후 나쁨.",
+    "MMVD CHF 개: median 276일, 일부 2–3년 생존. DCM forward failure는 더 나쁨.",
+    "고양이 CHF: 1–1.5년 미만 생존 흔함, median 194일.",
+    "PPV 필요할 정도의 폐부종 → 예후 대체로 나쁨 (재정 요인도 결정에 영향)."
+   ]
+  }
+ ]
+}

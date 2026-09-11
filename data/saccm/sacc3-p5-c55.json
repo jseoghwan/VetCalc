@@ -1,0 +1,256 @@
+{
+ "id": "sacc3-p5-c55",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part V",
+ "part_title": "Electrolyte and Acid-Base Disorders",
+ "chapter_num": 55,
+ "title": "Magnesium and Phosphate Disorders",
+ "author": "Linda G. Martin, DVM, MS, DACVECC; Ashley E. Allen-Durrance, DVM, DACVECC",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "총 체내 마그네슘의 1% 미만이 혈청에 존재하므로, 혈청 Mg 농도가 정상이어도 총 체내 결핍 상태일 수 있다.",
+    "마그네슘 항상성은 장내 흡수와 신장 배설로 조절 — 저마그네슘혈증은 대부분 이 두 기관의 기능 이상이 원인.",
+    "중증 저마그네슘혈증·고마그네슘혈증은 심혈관계와 신경근계 이상을 유발한다.",
+    "중증 저인산혈증은 용혈성 빈혈, 혈소판 기능 저하, 면역 억제, 심근 기능 장애, 신경계 이상을 초래할 수 있다.",
+    "고인산혈증은 주로 신부전과 연관되며, 저칼슘혈증 및 연조직 석회화가 주요 임상 결과다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Magnesium (마그네슘)",
+   "gist": "혈청 Mg는 총량의 1% 미만 — 혈청 농도가 정상이어도 결핍일 수 있음"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "생리"
+  },
+  {
+   "type": "list",
+   "items": [
+    "분포: 뼈 60%, 골격근 20%, 혈청 <1% — 체내 2번째로 풍부한 세포내 양이온(1위 K⁺).",
+    "혈청 Mg 형태: 이온화 ~65%, 단백결합 ~30%, 복합체 ~5%.",
+    "역할: ATP 생성·이용(Na-K-ATPase, Ca-ATPase), 단백질·핵산 합성, 혈관 평활근 긴장도 조절, 림프구 활성화·사이토카인 생성."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "참고치",
+   "headers": [
+    "항목",
+    "개",
+    "고양이"
+   ],
+   "rows": [
+    [
+     "총 Mg (mg/dl)",
+     "1.89–2.51",
+     "1.75–2.99"
+    ],
+    [
+     "Ionized Mg (mmol/L)",
+     "0.43–0.6",
+     "0.43–0.7"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "저마그네슘혈증 vs 고마그네슘혈증"
+  },
+  {
+   "type": "table",
+   "title": "원인·증상·진단 비교",
+   "headers": [
+    "구분",
+    "저마그네슘혈증 (Hypomagnesemia)",
+    "고마그네슘혈증 (Hypermagnesemia)"
+   ],
+   "rows": [
+    [
+     "원인",
+     "섭취↓: 중환자 식이·TPN의 Mg 함량 부족\n소화기 손실: 설사·IBD·단장 증후군\n신장 손실: 이뇨제(furosemide·thiazides·mannitol), aminoglycoside, amphotericin B, cisplatin, DKA, 갑상선항진증",
+     "신부전 (가장 흔함 — AKI > CKD)\n부신피질저하증·부갑상선항진증·갑상선저하증\n과도한 Mg 투여 (cathartics·제산제 과다 사용)"
+    ],
+    [
+     "세포 내 이동",
+     "포도당·인슐린·중탄산염·아미노산 투여, 패혈증·쇼크 시 catecholamine 상승, 수혈(구연산 킬레이트)",
+     "—"
+    ],
+    [
+     "심혈관",
+     "심실빈맥·심실세동·심방세동 등 부정맥 (가장 위험)\nECG: PR 연장·QRS 확장·ST 함몰·T파 peaking",
+     "서맥\nECG: PR 연장·QRS 확장 → 완전방실차단·무수축"
+    ],
+    [
+     "신경근·기타",
+     "근육 떨림·경련·약화\n저칼슘혈증·저칼륨혈증 동반 흔함",
+     "무기력·허탈·근력저하\n저반사증 (초기 징후)\n호흡 마비 (심각)"
+    ],
+    [
+     "진단",
+     "총 혈청 Mg < 1.5 mg/dl 또는 ionized Mg 참고치 이하\n혈청 정상이어도 임상 증상 있으면 치료 고려",
+     "—"
+    ]
+   ],
+   "note": "— = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "치료"
+  },
+  {
+   "type": "table",
+   "title": "저마그네슘혈증",
+   "headers": [
+    "상황",
+    "방법·용량",
+    "비고"
+   ],
+   "rows": [
+    [
+     "경증",
+     "원인 교정 + 경구 보충 (MgCl·Mg gluconate 등) 1–2 mEq/kg/24h",
+     "—"
+    ],
+    [
+     "중등증~중증",
+     "IV 0.25–1 mEq/kg/24h CRI (0.9% NaCl 또는 5% DW)",
+     "신기능 저하 시 50% 감량"
+    ],
+    [
+     "생명 위협 부정맥",
+     "0.15–0.3 mEq/kg IV slow (5–15분)",
+     "—"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "MgSO₄ 투여 시 저칼슘혈증 가능 — 저칼슘혈증 동반 시 MgCl₂ 선택.",
+    "부작용: 저혈압, 방실차단 (대부분 급속 bolus 시)."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "고마그네슘혈증",
+   "headers": [
+    "상황",
+    "방법·용량"
+   ],
+   "rows": [
+    [
+     "공통",
+     "Mg 투여 중단"
+    ],
+    [
+     "경증",
+     "지지요법"
+    ],
+    [
+     "중등증~중증",
+     "IV calcium gluconate 0.5–1.5 ml/kg slow (Mg 길항)"
+    ],
+    [
+     "심각한 신부전",
+     "복막투석/혈액투석"
+    ],
+    [
+     "신경독성 길항",
+     "physostigmine 0.02 mg/kg IV q12h"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Phosphate (인산)",
+   "gist": "중증 저인산(<1 mg/dl)은 용혈·호흡근 약화, 고인산은 저칼슘혈증·연조직 석회화"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "생리"
+  },
+  {
+   "type": "list",
+   "items": [
+    "역할: ATP·GTP·cAMP·phosphocreatine 생성, 세포막 인지질, 2,3-DPG(헤모글로빈 산소 친화도 조절), 산-염기 완충, 골격 구성(hydroxyapatite) — 체내 주요 세포내 음이온.",
+    "분포: 뼈·치아 80–85%, 연조직 14–15%, 세포외액 <1%.",
+    "정상 혈청 phosphate: 2.9–5.3 mg/dl (성견·성묘); 성장기 동물은 더 높음.",
+    "측정: 혈청 또는 헤파린화 혈장 (채혈 후 1시간 내 분리); 12시간 공복 후 채혈 권장 (식후 6–8시간 일시 상승)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "저인산혈증 (Hypophosphatemia)"
+  },
+  {
+   "type": "table",
+   "title": "원인",
+   "headers": [
+    "기전",
+    "예"
+   ],
+   "rows": [
+    [
+     "세포 내 이동 (가장 흔함)",
+     "알칼리혈증·과호흡, 인슐린·포도당 투여, refeeding syndrome, catecholamine, DKA 치료"
+    ],
+    [
+     "장내 흡수↓",
+     "만성 영양 불량, 흡수 장애, 인산 결합 제산제"
+    ],
+    [
+     "신장 배설↑",
+     "이뇨제, 일차성 부갑상선항진증, 삼투성 이뇨(DM, 고삼투압 증후군)"
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "title": "중증도별 증상·치료",
+   "headers": [
+    "중증도",
+    "임상 증상",
+    "치료"
+   ],
+   "rows": [
+    [
+     "경증~중등도\n1–2.5 mg/dl",
+     "무증상인 경우 많음",
+     "경구 보충 (우유 0.032 mmol/ml 인 함유) 또는 원인 교정"
+    ],
+    [
+     "중증\n<1 mg/dl",
+     "용혈성 빈혈, 혈소판 기능↓, 백혈구 기능↓(감염↑), 심근 기능↓, 호흡근 약화(인공호흡기 이탈 어려움), 횡문근융해증, 신경계 증상(실조·발작·혼수)",
+     "sodium/potassium phosphate IV 0.01–0.12 mmol/kg/hr\n4–6시간마다 phosphate·ionized Ca·K⁺ 모니터링"
+    ]
+   ],
+   "note": "LRS에 혼합 금지 — Ca와 침전"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "고인산혈증 (Hyperphosphatemia)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "원인: 신장 배설↓(AKI·CKD·요도 폐색·uroabdomen — 가장 흔함), 세포 외 이동(종양 용해 증후군·횡문근융해증·용혈), 과도한 인산 투여(인산 관장[Fleet] → 특히 고양이에서 치명적), 비타민D 독성(쥐약·항건선 크림).",
+    "임상 증상: 식욕 부진·구역·구토·무력감; 주요 결과 — 저칼슘혈증 유발(tetany·발작), 연조직 석회화(Ca × P product > 58–70 mg²/dl² 시); 부정맥(QT 연장 → torsades de pointes).",
+    "치료: 수액 이뇨로 빠른 교정; 올리고뇨성 AKI → 혈액투석/신대체요법; CKD 장기 관리 — 저인산 식이, 인산 결합제(aluminum hydroxide, calcium carbonate, lanthanum carbonate, sevelamer)."
+   ]
+  }
+ ]
+}

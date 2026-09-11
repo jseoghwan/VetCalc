@@ -1,0 +1,128 @@
+{
+ "id": "sacc3-p7-c78",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part VII",
+ "part_title": "Endocrine Disorders",
+ "chapter_num": 78,
+ "title": "Critical Illness-Related Corticosteroid Insufficiency",
+ "author": "Jamie M. Burkitt Creedon, DVM, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "Cortisol은 염증 조절과 혈관운동 긴장도(vasomotor tone) 유지에 중요.",
+    "CIRCI(Critical Illness-Related Corticosteroid Insufficiency)는 패혈증·패혈성 쇼크 등 일부 중증 환자에서 발생.",
+    "병태생리는 cortisol의 생성·혈장단백 결합·대사·표적조직 반응성 이상이 복합적으로 작용한 결과.",
+    "일부 중증 개·고양이에서도 CIRCI가 있을 것으로 추정.",
+    "사람의 승압제-저항성 패혈성 쇼크에서 저~중등량 corticosteroid가 승압반응 등을 개선시킬 수 있으나, 진단·치료의 최적 방법은 아직 불명확."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "배경 (Background)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "2002년 Annane 등의 French study: 저용량 hydrocortisone + fludrocortisone이 corticotropin 반응이 둔화된 패혈성 쇼크 환자군의 생존율을 개선; 이후 대형 연구들은 재현에 실패.",
+    "CORTICUS(2008, 499명): hydrocortisone군에서 쇼크 회복은 더 빨랐으나 생존 이득은 없었음; 감염 합병증 증가, 목표 대상자 미달로 검정력 부족.",
+    "APROCCHSS(2018, 1241명): hydrocortisone + fludrocortisone이 90일 사망률을 개선(cortisol 반응 여부와 무관); 심각한 이상반응 증가는 없었음.",
+    "ADRENAL(2018, 3658명): hydrocortisone 단독은 90일 생존 차이 없음; 쇼크 회복은 빨랐으나 전체 이상반응은 증가.",
+    "종합하면 저용량·장기 hydrocortisone 요법이 일부 이득을 보이나, 시험마다 결과가 엇갈리고 이상반응 우려도 존재."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "병태생리 (Pathophysiology)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "HPA axis: 시상하부 CRH → 뇌하수체 ACTH → 부신 zona fasciculata/reticularis에서 cortisol 생성; cortisol이 CRH·ACTH 분비에 음성 되먹임.",
+    "혈중 cortisol 대부분은 CBG(corticosteroid-binding globulin)·알부민에 결합; 결합하지 않은 유리형(free) cortisol만 생물학적으로 활성.",
+    "중증질환에서는 ACTH가 낮음에도 총·유리 cortisol이 높아지는 해리 현상 발생 — cytokine·LPS·endothelin이 ACTH 비의존적으로 부신을 자극하고, 간의 CBG·알부민 합성 저하로 유리형 비율이 증가하며, 간·신에서 cortisol 대사도 저하.",
+    "표적조직에서는 glucocorticoid receptor(GR) 구조·수의 변화로 cortisol 저항성이 발생할 수 있음 — CIRCI는 생성·단백결합·대사·조직반응성 이상이 얽힌 복합 병태."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "임상양상 (Clinical Manifestations)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "가장 흔한 소견은 패혈성 쇼크 환자의 승압제-저항성 저혈압.",
+    "사람 연구에서 저용량 corticosteroid 투여 시 혈압 개선이 위약군보다 빠름.",
+    "ACTH 자극에 반응이 불량한 중증 개는 반응이 양호한 개보다 저혈압 위험이 높고, 패혈성 쇼크 개 연구에서 CIRCI 의심군의 사망률이 더 높다는 보고.",
+    "신경·심혈관·소화기·호흡기계 이상이 CIRCI와 연관될 수 있으나 원발 질환에 의한 것인지 구분이 어려움. 진성 부신부전(Addisonian crisis)은 CIRCI에서는 드문 소견(Ch.79 Hypoadrenocorticism 참고)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "진단의 어려움 (Diagnosis)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "사람: 표준 250 µg ACTH 자극검사 또는 resting cortisol이 권고되나, 대형 임상시험들은 cortisol 수치와 hydrocortisone 치료반응 간 뚜렷한 상관관계를 찾지 못함 — 최근 가이드라인은 cortisol 측정 없이 치료를 진행.",
+    "개: 1시간 250 µg ACTH 자극검사에서 delta cortisol ≤3 µg/dL군이 저혈압·사망 위험이 높았음(5 µg/kg cosyntropin 연구도 유사한 결과).",
+    "고양이: 125 µg ACTH 자극검사를 사용하며, 패혈 고양이의 평균 delta cortisol이 정상보다 낮았으나 개체 간 범위가 겹쳐 절단값이 확립되지 않음.",
+    "현재까지 개·고양이에서 CIRCI 진단을 위한 표준화된 검사·절단값은 없음 — cortisol 검사 결과는 CIRCI 진단보다는 질병 중증도의 지표일 가능성이 더 높음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료 (Treatment)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "사람 가이드라인: 적절한 수액·중등도 이상 승압제에도 반응 없는 패혈성 쇼크에서 저용량 hydrocortisone(<400 mg/일) 3일 투여를 고려하나, 근거수준은 낮음(conditional/weak recommendation).",
+    "Fludrocortisone은 권고되지 않음 — 생존 이득이 없고, 유효 용량의 hydrocortisone 사용 시 aldosterone 수용체가 이미 포화되기 때문.",
+    "개·고양이: 무작위 대조 연구 근거 부족. 저자 병원에서는 수액·승압제에 불응하는 패혈성 쇼크에서 hydrocortisone 2.5–3 mg/kg/day CRI를 임상 판단하에 사용하며, 투여 24시간 내 심혈관계 뚜렷한 호전이 있는 경우에만 지속.",
+    "심정지 상황: 사람에서 methylprednisolone/hydrocortisone의 신경학적 예후 개선 근거는 매우 제한적(very low quality); 개·고양이로의 외삽 가능 여부는 불명확."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Fig. 81.1 — 패혈성 쇼크에서 corticosteroid 사용 결정 흐름(요약)",
+   "headers": [
+    "단계",
+    "판단·처치"
+   ],
+   "rows": [
+    [
+     "1단계",
+     "적절한 수액부하에도 저혈압 지속? 아니오 → corticosteroid 투여하지 않음"
+    ],
+    [
+     "2단계",
+     "중등량 승압제에도 저혈압 지속 → hydrocortisone 2.5–3 mg/kg/day 시작"
+    ],
+    [
+     "3단계 (24시간 후)",
+     "승압제 용량 50% 초과 감소? 아니오 → 중단 / 예 → 5일 유지 후 2–3일 tapering, 또는 7일 유지 후 중단"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "예후 (Prognosis)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "사람에서는 ICU 퇴원 후 1주 이내 ACTH·cortisol이 정상 이상 수준으로 회복.",
+    "원발 중증질환에서 생존한 경우 HPA axis 기능 회복 예후는 양호."
+   ]
+  }
+ ]
+}

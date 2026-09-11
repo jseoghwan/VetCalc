@@ -1,0 +1,150 @@
+{
+ "id": "sacc3-p4-c44",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part IV",
+ "part_title": "Cardiovascular Disorders",
+ "chapter_num": 44,
+ "title": "Canine Cardiomyopathy",
+ "author": "Joanna L. Kaplan, DVM; Joshua A. Stern, DVM, PhD, DACVIM (Cardiology)",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "심근증은 개에서 가장 흔한 획득성 심질환 중 하나이며, 주로 대형·초대형 품종에 발생한다.",
+    "DCM: 심장 확장 + 수축 기능 저하 → CHF, 부정맥, 급사.",
+    "유전성이 강하며(Doberman, Great Dane, Irish Wolfhound 등), 이차성 원인(영양, 독소, 빈맥 유발 등)도 배제해야 한다.",
+    "ARVC: 주로 Boxer에서 발생; 심실 부정맥으로 인한 실신·급사가 주요 임상 양상.",
+    "CHF 치료: 산소, 진정, 이뇨제, 강심제, 혈관확장제, 부정맥 치료 포함."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "개요 및 분류"
+  },
+  {
+   "type": "list",
+   "items": [
+    "심근증 = 용적·압력 과부하 없이 발생하는 심근 고유 이상.",
+    "주요 형태: DCM (확장성), ARVC (부정맥원성 우심실), 기타(방실 심근증, Golden Retriever 근이영양증, 심근염, HCM).",
+    "원인 불명 → 특발성으로 분류; 인간의 30~50%는 유전 돌연변이."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "확장성 심근증 (DCM)"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "잠재기(Occult) vs 임상기"
+  },
+  {
+   "type": "list",
+   "items": [
+    "잠재기: 심구조 변화·부정맥 있으나 임상 증상 없음; 급사 위험 존재.",
+    "임상기: 심실·심방 빈맥부정맥, 좌측 CHF(가장 흔함), 우측·양측 CHF.",
+    "주요 증상: 무기력, 식욕 저하, 빈호흡·호흡 노력 ↑, 기침, 쇠약, 실신, 체중 감소, 복부 팽만."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "신체검사 소견"
+  },
+  {
+   "type": "list",
+   "items": [
+    "빈맥, 빈호흡, 약한 맥박 또는 맥박 소실.",
+    "우측 CHF: 경정맥 팽창·박동, 복수, 복부 liquid wave.",
+    "청진: S3 gallop(수축 기능 저하), 좌측 첨부 수축기 심잡음(MR), 불규칙 리듬(VPC, AF).",
+    "폐 청진: 심인성 폐부종 시 crackle, 흉막 삼출 시 폐음 감소."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "진단"
+  },
+  {
+   "type": "list",
+   "items": [
+    "심에코: LV 수축기·이완기 확장, %FS 감소, 좌심실 수축 기능 저하. LA 확장, 우측 비대 가능.",
+    "ECG: VPC, 심실빈맥, 심방세동, 심실·심방 상성 빈맥 등.",
+    "흉부 방사선: 심인성 폐부종(간질·폐포 음영), LV·LA 확장, 폐정맥 확장.",
+    "바이오마커 (Doberman 기준): cTnI >0.22 ng/ml (민감도 79.5%/특이도 84.4%) 또는 NT-proBNP >550 pmol/L → 잠재 DCM 시사; 단, 단독 진단 기준 부적합.",
+    "cTnI >0.34 ng/ml → Doberman 급사 위험 예측 유용."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "품종별 특이사항"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Doberman Pinscher: 유병률 45~63%; 유전성(PDK4 splice mutation, titin missense). 잠재기에 Pimobendan + ACE 억제제 → CHF·급사 지연(~9개월, ~3개월). 조기 스크리닝(심에코 + 24시간 Holter) 권장.",
+    "Great Dane: 성인 발병, 유병률 3.9~11.8%; 좌측 CHF 우세, AF 및 VPC 흔함.",
+    "Irish Wolfhound: 성인 발병; AF가 구조 변화보다 먼저 발생 가능; 우세 유전.",
+    "Newfoundland: 상염색체 우성; AF + 좌측/양측 CHF.",
+    "Standard Schnauzer: 자 1.5세, 암 2.35세 이전 CHF; RBM20 유전자 deletion.",
+    "Toy Manchester Terrier / Portuguese Water Dog: 소아 발병 DCM (열성 유전).",
+    "영양 관련 DCM: 타우린·L-카르니틴 결핍, 곡물 미포함(grain-free) 식이; Golden Retriever 등에서 보고. 원인 식이 변경 시 가역성."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "부정맥원성 우심실 심근증 (ARVC)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "주로 Boxer; 원인: 우심실 심근의 섬유지방 대체(striatin mutation, 우성 불완전 침투).",
+    "임상 양상: 심실 부정맥 → 실신 또는 급사; 일부는 좌측 또는 양측 CHF.",
+    "진단: 24시간 Holter(>300 VPC/24hr → ARVC 강력 시사).",
+    "악성 기준(Box 44.1): HR >180 bpm 심실빈맥, R-on-T, 다형성 VPC, 혈역학적 불안정 임상 증상.",
+    "장기 치료: Sotalol 1~3 mg/kg PO q12h (KCh 차단+β차단), mexiletine 5~8 mg/kg PO q8h; 두 약 병용 시 상승 효과.",
+    "ARVC에서 beta blocker는 단독 효과 불분명; 중증 수축 기능 저하 시 sotalol 주의."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "급성 CHF"
+  },
+  {
+   "type": "list",
+   "items": [
+    "산소 공급 + 진정 (스트레스 최소화).",
+    "Furosemide (이뇨제) + Pimobendan (강심·혈관확장) + ACE 억제제 + Spironolactone.",
+    "심인성 쇼크 → Dobutamine CRI 고려.",
+    "복수·흉막 삼출 → 복강/흉강천자 시행.",
+    "삼출액 성상: modified transudate.",
+    "Fish oil(1200 mg/8 kg BW): 심실 부정맥 및 심장 악액질 보조 치료."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "부정맥 치료 (급성)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "심실빈맥 악성 기준 충족 시 즉시 치료 (Ch. 49, 50 참조).",
+    "Lidocaine IV bolus 2 mg/kg → 혈역학적으로 불안정한 VT 1차 선택.",
+    "Sotalol / mexiletine: 장기 경구 관리."
+   ]
+  }
+ ]
+}

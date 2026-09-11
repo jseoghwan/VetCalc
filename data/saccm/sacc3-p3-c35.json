@@ -1,0 +1,106 @@
+{
+ "id": "sacc3-p3-c35",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part III",
+ "part_title": "Advanced Respiratory Support",
+ "chapter_num": 35,
+ "title": "Ventilator Waveforms",
+ "author": "Matthew S. Mellema, DVM, PhD, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "Ventilator waveform 분석은 기계환기 환자 모니터링 및 문제 해결에 매우 유용한 도구이다.",
+    "Waveform 검사를 통해 회로 누출, 흡인 필요성, 호흡기 역학 변화를 인식할 수 있다.",
+    "장기 기계환기 환자에서는 매 시간마다 waveform을 확인해야 한다.",
+    "환자가 벤틸레이터와 '싸우는' 것처럼 보일 때마다 즉시 waveform을 확인해야 한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Waveform 종류 개요"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Scalar: 시간에 따른 단일 파라미터 변화; 6가지 기본 형태 — square / ascending ramp / descending ramp / sine / exponential rise / exponential decay.",
+    "실용적 분류: ① Square(급격 변화 후 일정 유지) ② Ramp(점진적 변화) ③ Sine(CPAP·자발호흡에 특징적).",
+    "Loop: 두 파라미터 동시 도시; 대표적으로 PV loop(압력-용적), FV loop(유량-용적).",
+    "모니터링 우선순위: 제어 모드에서 종속변수(dependent variable)의 scalar가 호흡 역학 정보를 가장 많이 포함. (예: pressure control → flow·volume scalar 주시)"
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "환기 모드별 Waveform 특성"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Volume control(V-ACV, SIMV-VC): 압력 scalar = 특징적 exponential rise('shark fin'); 흡기 hold 시 PIP에서 Pplat으로 압력 감소(펜들루프트, 폐내 가스 재분포); 유량 scalar = constant(square).",
+    "Pressure control: 압력 scalar = square; 유량 scalar = descending ramp(감속); 용적 = exponential rise.",
+    "SIMV: mandatory breath + 자발호흡 혼합; pressure support 추가 시 자발호흡보다 큰 일회호흡량 달성 가능.",
+    "CPAP: 모든 호흡이 자발호흡 → sine 형태 유량 waveform."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "압력(Pressure) Scalar 해석"
+  },
+  {
+   "type": "list",
+   "items": [
+    "PIP와 Pplat 측정: dynamic compliance(Cdyn) = VT/(PIP−PEEP); static compliance(Cs) = VT/(Pplat−PEEP); Cdyn < Cs (기도저항 때문).",
+    "PIP−Pplat 차이 = 기도저항에 의한 압력 손실 → Raw = (PIP−Pplat)/peak flow rate.",
+    "PEEP 적용 시: 호기 중 압력이 설정 PEEP 이하로 내려가면 환자 호흡 노력·인공물·회로 누출 의미.",
+    "Pressure control에서 PIP 상승 없이 유량/용적 감소 → compliance 감소 또는 기도저항 증가."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "유량(Flow) Scalar 해석"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Descending ramp 유량 패턴: I-time 최적화 가능 — 흡기 유량이 0에 도달 후 호기 시작이 이상적(breath 'c').",
+    "I-time 너무 짧음: 흡기 유량이 0에 미달 후 호기 시작 → flow asynchrony(breath 'b').",
+    "I-time 너무 긺: zero-flow state 발생 후 호기 → double triggering 위험(breath 'd').",
+    "Auto-PEEP 감지: 다음 흡기 전 호기 유량이 0으로 돌아오지 않을 때 → 가스 포획(gas trapping) 존재.",
+    "Sawtooth 패턴(톱니 모양): 기도 내 분비물 → 흡인(suction) 필요."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "용적(Volume) Scalar 및 PV Loop"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Volume scalar: 기울기 = 순간 유량; 흡기 마지막에 용적이 baseline으로 완전히 복귀하지 않으면 가스 포획 또는 회로 누출 의심.",
+    "PV loop: 기울기 = dynamic compliance; compliance 감소 → loop이 x축 방향 회전; 증가 → y축 방향 회전.",
+    "Lower inflection point(LIP): compliance 급증 지점 → 허탈 폐포 재개방; PEEP을 LIP 이상으로 설정하여 atelectrauma 예방.",
+    "Upper inflection point(UIP): compliance 급감 지점 → 폐포 과팽창 위험(volutrauma); PIP를 UIP 미만으로 유지.',\n      \"Beaking: 흡기 말단에 압력 증가 대비 용적 증가 거의 없음 → 폐포 과팽창."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "환자-벤틸레이터 부조화(PVD)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Trigger asynchrony 유형: ① Ineffective triggering(흡기 노력이 호흡 유발 실패 — 흡기 노력에 의한 유량 변화가 pressure scalar보다 flow scalar에서 더 명확히 보임) ② Auto-triggering(환자 노력 없이 호흡 유발 — 부적절 sensitivity, 회로 누출, 분비물, 심장 박동 진동) ③ Double triggering(흡기 노력이 I-time 초과 → 연속 두 호흡 유발 → VT 2배 전달 위험).",
+    "Flow asynchrony: 벤틸레이터 공급 유량 > 환자 수요 시 압력 waveform 볼록(bowing), < 수요 시 오목(scooping).",
+    "PVD 확인 시: trigger threshold, auto-PEEP, 근육 피로/약화, 호흡 drive 저하, 마취 깊이 점검."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,161 @@
+{
+ "id": "sacc3-p6-c63",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part VI",
+ "part_title": "Fluid Therapy",
+ "chapter_num": 63,
+ "title": "Colloid Solutions",
+ "author": "Steven J. Centola, BVMS, MRCVS, DACVECC; Deborah C. Silverstein, DVM, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "콜로이드는 큰 친수성 분자(>10,000 Da)로 내피를 잘 통과하지 못해, 혈관장벽이 온전하면 혈관내에 잔류한다.",
+    "Hydroxyethyl starch(HES)는 포도당의 합성 분지중합체로, 미국 내 가장 흔히 쓰이는 혈장확장 콜로이드.",
+    "HES는 농도·평균분자량(kDa)·몰치환도(MS)·C2:C6 치환비로 특성화된다.",
+    "HES의 응고장애 기전: 혈소판 기능↓, vWF·factor VIII 활성↓, fibrinogen 중합 장애, 희석성 응고병증.",
+    "Albumin은 건강 시 체내 교질삼투압(COP)의 70–80%를 담당한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "교질삼투압(COP)과 Starling 원리"
+  },
+  {
+   "type": "list",
+   "items": [
+    "개정 Starling 원리: 내피 glycocalyx 층이 핵심 — subglycocalyx COP가 간질 COP를 대체해 경내피 흐름 결정.",
+    "정맥쪽 모세혈관에서의 재흡수는 과거 생각만큼 일어나지 않음; 혈장 COP는 간질로의 여과를 '대항'하나 역전시키진 못함.",
+    "정상 COP: 개 15.3–26.3 mmHg, 고양이 17.6–33.1 mmHg(전혈), 사람 25–27 mmHg.",
+    "내인성 콜로이드 입자: albumin, globulin, fibrinogen.",
+    "Glycocalyx 손상(SIRS·패혈증·외상·수술·당뇨·과용적) → 모세혈관 투과성↑·조직부종."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Synthetic Starch Colloids (HES)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "HES = amylopectin(감자/옥수수 유래) 유래, α-amylase 분해 방지 위해 hydroxyethyl화.",
+    "제형: hetastarch, hexastarch, pentastarch, tetrastarch; 농도 3%·6%·10%.",
+    "주 용도: 소용량으로 COP↑ → 빠른 혈관내 용적 확장.",
+    "MS·치환 패턴이 약동학의 핵심 — 큰 MW·높은 치환도·높은 C2:C6 → 반감기 연장(C2 치환이 α-amylase 억제).",
+    "치환도: tetrastarch 0.4 < pentastarch 0.5 < hexastarch 0.6 < hetastarch 0.7(반감기 가장 김).",
+    "신역치(45–60 kDa) 미만은 신속 요배설; 초과분은 α-amylase로 가수분해 후 배설.",
+    "Hetastarch(6% HES 450/0.75) 반감기: 건강한 개 7.45일(사람 12.8일, 개의 높은 amylase 활성 때문).",
+    "배설: 신장 70% + 간·비장·림프절 망상내피계 + 담즙."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 66.1 — 흔히 쓰는 합성 콜로이드와 최대 1일 용량",
+   "headers": [
+    "제품",
+    "제형",
+    "COP (mmHg)",
+    "WAMW (kDa)",
+    "치환도",
+    "최대용량/24h"
+   ],
+   "rows": [
+    [
+     "Hespan",
+     "6% HES",
+     "32",
+     "450",
+     "0.7",
+     "20 mL/kg"
+    ],
+    [
+     "Hextend",
+     "6% HES",
+     "31",
+     "670",
+     "0.75",
+     "20 mL/kg"
+    ],
+    [
+     "Pentaspan",
+     "10% HES",
+     "36",
+     "260",
+     "0.45",
+     "40 mL/kg"
+    ],
+    [
+     "Vetstarch / Voluven / Hydravol",
+     "6% HES",
+     "37",
+     "130",
+     "0.4",
+     "50 mL/kg"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "부작용 — Acute Kidney Injury (AKI)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "부작용은 1일 용량보다 누적 용량에 비례 — AKI·응고병증·전염증효과·아나필락시스·용적과부하.",
+    "기전(가설): 근위세뇨관 세포의 HES 재흡수 → osmotic nephrosis·공포화·종창; hyperoncotic-induced GFR↓.",
+    "수의 연구는 상반: Hayes 등은 개에서 용량의존적 AKI·사망 위험↑ 보고; 다른 연구(고양이·개 ICU)는 유의차 없음.",
+    "현재 소동물에서 합성 콜로이드와 AKI의 명확한 인과·안전 용량은 미확립 — 대규모 전향 연구 필요."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "부작용 — 응고 효과"
+  },
+  {
+   "type": "list",
+   "items": [
+    "혈소판 기능↓, vWF·factor VIII 활성·관련 항원↓, fibrinogen 중합 장애, 희석성 응고병증.",
+    "HES-coated 혈소판: GPIIb/IIIa 발현·활성↓ → 부착·응집 장애.",
+    "응괴 내 통합 시 profibrinolytic 효과 → 응괴 강도↓, FXIII-fibrin 상호작용↓."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Natural Colloids (혈액제제)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Fresh whole blood: 모든 혈액성분 — 대량출혈(>혈액량 50%)·혈소판 필요 시(냉장 보관 시 혈소판 기능↓).",
+    "FFP: 채혈 8시간 내 동결, 모든 응고인자·항응고제·albumin·fibrinogen 함유(≤-20℃ 1년 내).",
+    "Frozen plasma: 1년 초과 동결 시 labile factor V·VIII 소실, II·VII·IX·X은 유지.",
+    "혈장은 비효율적 콜로이드 — albumin 0.5 g/dL 올리려면 22.5 mL/kg 필요 → 저알부민혈증엔 albumin이 합리적.",
+    "Cryoprecipitate(CRYO): vWF·factor VIII·fibrinogen·fibronectin — von Willebrand병·혈우병 A 출혈.",
+    "Cryopoor plasma(CPP): albumin·globulin·antithrombin·protein C/S·factor II·VII·IX·X — albumin·COP가 FFP·CRYO보다 높아 oncotic 지지에 유리."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Albumin"
+  },
+  {
+   "type": "list",
+   "items": [
+    "체내 COP의 70–80% 담당; 항산화·free-radical scavenger·운반·혈소판 기능 유지·창상 치유에 기여.",
+    "적응: 치료 가능한 질환(외상·패혈증·대수술)에 의한 급성·중증·진행성 저알부민혈증(<1.5 g/dL)에 한정.",
+    "CSA(canine serum albumin)는 HSA보다 면역원성↓로 개에서 더 안전한 것으로 간주.",
+    "용량 계산: albumin 결손(g) = 10 × 0.3 × BW(kg) × (목표 − 현재 albumin), 6–12시간에 걸쳐 투여.",
+    "대안: 25% HSA 2 mL/kg를 2시간, 이후 0.1–0.2 mL/kg/hr 10시간(총 2 g/kg까지); 또는 5% albumin 2 mL/kg/hr로 총 10–20 mL/kg/day.",
+    "HSA: type I·III 과민반응(면역복합체성 leukocytoclastic vasculitis) 보고 → 반복 투여 비권장(항-HSA 항체 급속 형성)."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,191 @@
+{
+ "id": "sacc3-p1-c3",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part I",
+ "part_title": "Key Critical Care Concepts",
+ "chapter_num": 3,
+ "title": "Hemostasis",
+ "author": "Ronald H. L. Li, DVM, MVetMed, PhD, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "혈소판–손상 내피 상호작용이 혈전 형성을 개시한다 (1차 지혈).",
+    "응고는 in vivo에서 cell-based model로 진행 — 응고인자·세포 표면·면역계가 긴밀히 연결됨.",
+    "Thrombin 생성의 음성 피드백이 무너지면 과도한 fibrin 침착·자발성 혈전이 발생한다.",
+    "적절한 fibrinolysis는 필수; 과도하면 출혈, 부족하면 혈전.",
+    "Immunothrombosis(NETs)는 선천면역의 일부지만 dysregulation 시 병적 혈전을 만든다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Platelet 구조 핵심"
+  },
+  {
+   "type": "list",
+   "items": [
+    "무핵·디스크형, megakaryocyte의 cytoplasm 단편.",
+    "Open canalicular system: 분비물·물질 교환 통로.",
+    "Lipid raft (콜레스테롤·glycosphingolipid 풍부): integrin/glycoprotein 신호전달 허브.",
+    "Integrin: α/β heterodimer; conformational change로 high-affinity ↔ low-affinity. αIIbβ3가 가장 풍부 (8–10만 copies/platelet).",
+    "Seven-transmembrane 수용체군: PAR (thrombin), P2Y1/P2Y12 (ADP), TXA2, PGI2/PGE2.",
+    "α-granule: 지혈·염증·혈관신생·면역 단백 다수 함유.",
+    "Dense granule: 양이온, polyphosphate, ADP/ATP, serotonin, histamine."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Primary Hemostasis — 3-stage Platelet Activation"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "1. Initiation"
+  },
+  {
+   "type": "list",
+   "items": [
+    "혈관 손상 → subendothelial collagen, fibronectin, laminin, vWF 노출.",
+    "vWF (Weibel–Palade body / α-granule 저장)는 활성화 시 분비.",
+    "고전단력 → vWF-GP1bα 결합 affinity ↑, 혈소판 tethering & rolling.",
+    "속도가 느려지면 결합 강화 → 단층(monolayer) 형성 + 활성화."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "2. Extension"
+  },
+  {
+   "type": "list",
+   "items": [
+    "분비·shape change·procoagulant 막 형성·integrin 활성화 진행.",
+    "국소 thrombin, TXA2, ADP가 autocrine/paracrine으로 인근 혈소판 동원.",
+    "Inside-out signaling으로 αIIbβ3가 활성화 → fibrinogen 결합 → 응집."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "3. Stabilization"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Outside-in signaling으로 lipid raft 내 integrin clustering → actin/myosin과 연결.",
+    "Actin/myosin 수축으로 혈소판 간 간격 좁힘 → 활성인자 확산 차단, procoagulant microenvironment 강화.",
+    "Fibrin 침착 후 clot retraction → premature disaggregation 방지."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Secondary Hemostasis — Cell-based Model"
+  },
+  {
+   "type": "paragraph",
+   "text": "전통적 cascade(extrinsic/intrinsic/common)는 PT·aPTT 해석에 유용하지만 in vivo 실제와 다르다. 실제 응고는 세포(섬유아세포·혈소판·백혈구·microparticle) 표면의 phospholipid에서 일어난다."
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "필수 두 가지 사건"
+  },
+  {
+   "type": "list",
+   "items": [
+    "막 비대칭 붕괴 → phosphatidylserine(PS) 외엽으로 노출 (flippase·floppase·scramblase 조절). Scramblase 결손 = Scott syndrome (혈소판/응고인자 정상이지만 hemophilia 양상 출혈).",
+    "응고인자의 γ-carboxylation: vit-K 의존성 (II, VII, IX, X + Protein C, S). Glutamic acid에 음전하 추가 → Ca²⁺ 결합 → PS와 결합 가능. Warfarin은 vit K cycle 차단으로 항응고."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "4-phase 진행"
+  },
+  {
+   "type": "table",
+   "title": "Cell-based Coagulation Phases",
+   "headers": [
+    "Phase",
+    "핵심 사건"
+   ],
+   "rows": [
+    [
+     "Initiation",
+     "TF-bearing fibroblast + FVIIa → 소량 FIXa, FXa 생성 → 소량 thrombin"
+    ],
+    [
+     "Amplification",
+     "Thrombin이 혈소판 활성화·degranulation, FXI/V/VIII 활성화"
+    ],
+    [
+     "Propagation",
+     "활성 혈소판 위에서 tenase(FIXa-FVIIIa)·prothrombinase(FXa-FVa) 형성 → 대량 thrombin → fibrin 형성, FXIII로 cross-linking"
+    ],
+    [
+     "Termination",
+     "TFPI, AT, Protein C/S(+thrombomodulin)로 thrombin 생성 억제"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Natural Anticoagulants"
+  },
+  {
+   "type": "list",
+   "items": [
+    "TFPI: 내피 분비, TFPI–FVIIa–FXa–TF quaternary complex 억제.",
+    "Antithrombin (AT): 간 합성. Thrombin·FIXa·FXa·FXIa·FXIIa와 복합체 형성. Heparin/heparan sulfate가 conformational change로 효과 ↑. PLN/PLE 환자는 AT 결손 → 혈전 위험.",
+    "Protein C / Protein S: vit K 의존성. Thrombin–thrombomodulin 복합체가 PC 활성화, EPCR로 증폭. APC + PS → Va·VIIIa proteolysis."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Fibrinolysis"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Plasminogen → plasmin (간 합성, 신·뇌에도 존재).",
+    "활성인자: tPA(내피, fibrin 존재 시 활성), uPA(urokinase, uPA 수용체 매개).",
+    "tPA + plasminogen + fibrin의 ternary complex가 핵심.",
+    "Tranexamic acid·aminocaproic acid: lysine analog → plasminogen의 lysine binding site 차단 → plasmin 생성 억제 (항섬유소용해제).",
+    "주요 억제제: PAI-1 (혈소판이 주요 source, tPA·uPA와 복합체 형성), α2-antiplasmin (간 합성).",
+    "TAFI: thrombin/TM 복합체로 활성화, fibrin의 lysine 잔기를 제거해 plasminogen 결합 차단."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Immunothrombosis"
+  },
+  {
+   "type": "list",
+   "items": [
+    "선천면역(호중구·단핵구·수지상세포)이 혈전 형성을 능동적으로 개시.",
+    "TNF·IL이 내피·대식세포의 TF 발현 ↑; 응고인자는 PAR을 통해 면역세포의 사이토카인 분비 유도.",
+    "Pathogen 침입 시 fibrin 형성으로 systemic dissemination 차단 — 보호적 기전.",
+    "NETs(Neutrophil Extracellular Traps): cfDNA + neutrophil granular protein의 web 구조. 사람·고양이 동맥혈전의 구조적 구성요소로 확인됨.",
+    "NETs의 prothrombotic 효과: dsDNA가 FXII·HMWK 결합 → contact pathway 활성, 혈소판/RBC/응고인자 결합으로 혈전 강화, histone이 혈소판 활성화 + protein C 경로 억제, plasmin–DNA–fibrin 복합체로 fibrinolysis 방해.",
+    "Sepsis·SIRS에서 immunothrombosis 조절 실패 → 과도한 혈전 또는 consumptive coagulopathy(DIC) 양상."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Summary"
+  },
+  {
+   "type": "paragraph",
+   "text": "지혈은 zymogen·단백·인지질·혈소판·면역세포·내피의 정교한 균형이다. 음성 피드백 기전이 다층적으로 작동하며, 선천면역과의 cross-talk은 sepsis·전신염증에서 응고병증으로 이어질 수 있다. 임상적으로 PT/aPTT는 cascade model을 반영하지만, 실제 환자의 출혈·혈전 원인을 이해하려면 cell-based model과 immunothrombosis를 함께 고려해야 한다."
+  }
+ ]
+}

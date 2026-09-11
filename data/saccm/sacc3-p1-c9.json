@@ -1,0 +1,162 @@
+{
+ "id": "sacc3-p1-c9",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part I",
+ "part_title": "Key Critical Care Concepts",
+ "chapter_num": 9,
+ "title": "The Endothelial Surface Layer",
+ "author": "Lisa Smart, BVSc, DACVECC, PhD · Deborah C. Silverstein, DVM, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "ESL(Endothelial Surface Layer)은 혈관-혈액·혈관-간질 경계에서 투과성·혈관tone·염증·응고를 조절.",
+    "ESL 손상·shedding은 부종·염증·혈전·vasomotor 이상으로 이어짐.",
+    "중증 환자(sepsis, trauma, IRI)는 ESL 손상 위험이 높고, 장기 dysfunction과 연관.",
+    "검출: 순환 EG biomarker(syndecan-1, hyaluronan 등)와 SDF microscopy로 PBR 측정.",
+    "ESL 보호·복구를 위한 약물·수액 전략은 활발한 연구 단계."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "용어 정리"
+  },
+  {
+   "type": "list",
+   "items": [
+    "ESL = endothelium 전체 표면층(겔형 glycocalyx + immobile plasma).",
+    "EG(endothelial glycocalyx) = ESL 안의 glycocalyx 자체 구조."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "구조와 기능"
+  },
+  {
+   "type": "list",
+   "items": [
+    "ESL은 혈관 내강 표면의 fuzzy/furry 층. 두께는 위치·기법에 따라 다양.",
+    "ESL 내 immobile plasma는 순환 plasma의 ~15%.",
+    "Proteoglycan: syndecan(4종), glypican-1.",
+    "Glycosaminoglycan(sulfated): heparan(가장 많음), chondroitin, dermatan sulfate. Hyaluronan은 long chain.",
+    "Plasma 단백(albumin, anticoagulant)·sphingosine-1-phosphate가 ESL 두께·barrier 유지에 기여.",
+    "기능: ① 물리적 barrier(WBC 부착·이동 방지), ② 음전하 유지, ③ 단백 부족 공간 형성으로 transvascular oncotic gradient 형성, ④ antithrombin·TFPI 결합으로 항응고, ⑤ shear stress 감지·NO·생성으로 vasomotor tone 조절."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "혈관막을 통한 수액 이동 (Revised Starling)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "전통 Starling: 혈관-간질 hydrostatic·COP의 균형이 fluid 이동을 결정.",
+    "Revised Starling: 대립하는 COP는 혈관내 vs ESL 아래(subglycocalyx) 단백 부족 공간 사이에 작동 — 간질 단백은 영향 적음.",
+    "결론적으로 모세혈관으로의 fluid 재흡수는 거의 없고, 급성 hypotension 시에만 짧게 발생.",
+    "Hyperoncotic colloid 투여로도 지속적 재흡수가 일어나지 않는다는 개념 — 단, 임상 경험과 일치하지 않는다는 비판도 존재.",
+    "ESL이 손상된 상태의 in vivo fluid dynamics는 여전히 미해결 과제."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "ESL Shedding의 원인"
+  },
+  {
+   "type": "list",
+   "items": [
+    "조직 외상, 염증, hyperglycemia, hemodilution, hypervolemia.",
+    "염증성 사이토카인은 ESL을 직접 분해해 adhesion 수용체 노출·WBC margination 유도.",
+    "Sepsis: LPS가 syndecan shedding 가속 + 발현 ↑. 세균 펩타이드 fMLP는 GAG 분해.",
+    "IRI·산화 스트레스도 EG shedding 유발.",
+    "Thrombin·plasmin이 syndecan ectodomain 절단.",
+    "Hyperglycemia: 사람 실험에서 ~288 mg/dL 유도 시 ESL 부피 ↓·hyaluronan ↑·flow-mediated dilation ↓.",
+    "수액 치료: 단백 희석 + 심방 stretch로 인한 natriuretic peptide 분비가 직접 shedding."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Shedding의 결과"
+  },
+  {
+   "type": "list",
+   "items": [
+    "혈관 투과성 ↑ → 간질 부종.",
+    "응고 촉진, 염증 propagation.",
+    "Vasomotor 조절 장애.",
+    "Microcirculatory dysfunction — macrohemodynamic 회복에도 미세순환 개선 안 되는 'hemodynamic incoherence'.",
+    "Sepsis·중증 외상 환자에서 ESL biomarker 증가는 illness severity 및 나쁜 결과와 상관."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "ESL Shedding 검출법"
+  },
+  {
+   "type": "table",
+   "title": "Detection Methods",
+   "headers": [
+    "방법",
+    "내용",
+    "한계"
+   ],
+   "rows": [
+    [
+     "순환 EG biomarker",
+     "Hyaluronan, syndecan-1 ectodomain 등을 plasma/serum에서 측정",
+     "EG 외 다른 출처(모든 세포·간질) 가능; 발현 upregulation·림프 유입 영향; 개·고양이 검증 assay는 hyaluronan 정도"
+    ],
+    [
+     "Sidestream Darkfield (SDF) imaging",
+     "Sublingual 미세혈관에서 RBC column 폭의 변동으로 PBR 산출. ESL 손상 시 RBC가 내피 더 가까이 → PBR ↑",
+     "전신마취 필요로 임상 적용 제한; 수의 정상값은 abstract 단계"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "개·고양이 데이터"
+  },
+  {
+   "type": "list",
+   "items": [
+    "출혈성 shock 모델 개: crystalloid 80 ml/kg vs 4% gelatin/HES 20 ml/kg/whole blood — 모든 군에서 hyaluronan ↑, crystalloid·gelatin 군에서 가장 뚜렷. Crystalloid 군은 염증 biomarker도 ↑.",
+    "건강한 개의 술중 LRS 5 vs 10 ml/kg/hr: 양 군 모두 hyaluronan ↑, 군간 차이는 없음.",
+    "Sepsis + MODS 개 18마리: 건강 대조군 대비 hyaluronan 등 endothelial activation marker ↑.",
+    "Septic peritonitis 개 8마리: hyaluronan이 IL-6 농도·일일 IV fluid 양과 상관.",
+    "SIRS 개 27마리: 사람용 syndecan-1 kit에서 SIRS군 농도 ↑; hyaluronan은 차이 없음.",
+    "건강한 고양이 30마리에서 LRS/HES bolus의 PBR 영향 — 군간·시점간 유의차 없음(propofol 마취 하)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "ESL 보호·복구 (연구 단계)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "수액 전략: crystalloid 부피 제한, 천천히 투여 — 임상 검증 필요.",
+    "Albumin·plasma 투여가 crystalloid 단독보다 ESL 보존에 유리(설치류 모델).",
+    "약물 후보: ADAM17 inhibitor, sphingosine-1-phosphate, heparin, IV hyaluronan, chondroitin sulfate, sulodexide 등."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Conclusion"
+  },
+  {
+   "type": "paragraph",
+   "text": "중증 질환은 ESL shedding을 일으키며, 이는 장기 dysfunction의 병태생리에 기여한다. 사람 데이터는 EG biomarker와 illness severity의 관계를 보여주지만 인과 입증은 부족하다. 수의에서는 검출·검증 도구가 제한적이며, ESL을 보호·복구하는 임상 전략은 아직 연구 단계에 있다. 중환자에서 수액 전략(부피 제한·서행 투여, 단백 함유 자연 colloid 활용)이 임상에서 가장 즉시 적용 가능한 방향이다."
+  }
+ ]
+}

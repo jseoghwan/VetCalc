@@ -1,0 +1,262 @@
+{
+ "id": "sacc3-p1-c6",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part I",
+ "part_title": "Key Critical Care Concepts",
+ "chapter_num": 6,
+ "title": "Classification and Initial Management of Shock States",
+ "author": "Armelle de Laforcade, DVM, DACVECC · Deborah C. Silverstein, DVM, DACVECC",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "Shock = 부적절한 세포 에너지 생산 — 대부분 조직 저관류로 DO₂가 critical하게 감소.",
+    "분류는 다양 — hypovolemic · distributive · cardiogenic · obstructive (+ metabolic, hypoxic). 한 환자에서 여러 형태가 동시 발생 가능.",
+    "Cardiogenic을 제외한 모든 shock의 1차 치료 = 빠른 혈관 확보 + isotonic crystalloid. 어떤 fluid가 우월한지는 명확치 않으나 충분한 양을 못 주는 것이 사망률에 크게 기여.",
+    "Resuscitation endpoint(HR·BP·맥박·mentation 정상화, lactic acidosis 해소)로 환자별 적정화."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Definition & Pathophysiology"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Shock = O₂ 공급:수요의 심한 불균형 → 세포에너지 부족 → cell death · 다발성 장기부전.",
+    "DO₂ 감소의 4대 원인: hypovolemic / distributive / obstructive / cardiogenic. 그 외 metabolic(저혈당, cyanide, mitochondrial dysfunction)·hypoxic(빈혈, dysHb) 원인도 존재.",
+    "세포 단계: 에너지 부족 → Na-K ATPase 기능부전 → 세포내 부종·이온 누출·pH 조절 실패 → 전신 acidemia, 내피 dysfunction, 염증/항염증 cascade 활성.",
+    "조기 인지·치료가 비가역적 장기손상을 막는 핵심."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "분류"
+  },
+  {
+   "type": "table",
+   "title": "Box 6.1 — 기능적 shock 분류와 예",
+   "headers": [
+    "분류",
+    "원인 예"
+   ],
+   "rows": [
+    [
+     "Hypovolemic",
+     "Hemorrhage · 심한 탈수 · 외상"
+    ],
+    [
+     "Distributive",
+     "Sepsis · anaphylaxis · catecholamine 과잉 (pheo, 극심한 공포)"
+    ],
+    [
+     "Cardiogenic",
+     "CHF · arrhythmia · 약물 과량(마취제, β-blocker, CCB)"
+    ],
+    [
+     "Obstructive",
+     "GDV · vena cava/aorta 폐색 · tension pneumothorax · 심낭압전 · 고 PEEP 환기"
+    ],
+    [
+     "Hypoxic",
+     "Anemia · 심한 폐질환 · CO 중독 · methemoglobinemia"
+    ],
+    [
+     "Metabolic",
+     "저혈당 · cyanide 중독 · mitochondrial dysfunction · sepsis의 cytopathic hypoxia"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Hypovolemic Shock"
+  },
+  {
+   "type": "list",
+   "items": [
+    "혈관내 용적 손실 → 조직 저관류 → 혐기성 대사 · lactate 축적 · DAMPs 방출 → SIRS-like 반응.",
+    "보상 기전: baroreceptor를 통한 교감신경 활성 → 혈관 수축·심박출량 ↑, RAAS 활성 → Na·H₂O 보존.",
+    "세부 분류: hemorrhagic, traumatic hemorrhagic(+SIRS), 비출혈성(구토·설사·신성 손실·third space), traumatic 비출혈성(광범위 화상·심한 피부 결손)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Distributive Shock"
+  },
+  {
+   "type": "list",
+   "items": [
+    "혈관 tone 변화·혈관 투과성 ↑로 인한 상대적 hypovolemia.",
+    "Septic: cytokine 매개 내피 dysfunction → 투과성 ↑ + vasodilation. 지속적 저혈압 + vasopressor 필요 시 septic shock (Ch 90).",
+    "Anaphylactic: histamine 매개 vasodilation (Ch 141).",
+    "Neurogenic: TBI/척수 손상 → 교감 tone 소실 + parasympathetic 우세."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Cardiogenic Shock"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Systolic·diastolic 심기능 부전 → SV ↓, CO ↓, BP ↓, SVR ↑, 우심압·폐동맥압·PCWP ↑.",
+    "결과: 조직 저관류 + 폐정맥압 ↑ → 폐부종 · 호흡노력 ↑."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Obstructive Shock"
+  },
+  {
+   "type": "list",
+   "items": [
+    "심장·대혈관 압박으로 venous return·diastolic filling·preload 감소.",
+    "원인: GDV(±volvulus), tension pneumothorax, cardiac tamponade, 고 PEEP 기계환기.",
+    "결과는 다른 shock과 동일 — 조직 hypoxia · 장기부전."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "임상 양상"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Compensated: 경미한 mental depression, tachycardia, 정상~지연 CRT, 사지 차가움, 보통 맥박, tachypnea, BP 정상.",
+    "Decompensated: pale MM, 약한 말초 맥박, mentation 저하, BP 저하 → 미치료 시 oliguria → 사망.",
+    "개의 sepsis/SIRS 초기(hyperdynamic): tachycardia, 발열, bounding pulse, hyperemic MM (NO 매개 vasodilation). 진행 시 hypodynamic — pale/icteric MM, CRT 지연, 저체온, 약한 맥박, dull mentation.",
+    "개의 'shock organ' = GI → ileus, 설사, hematochezia, melena.",
+    "고양이는 hyperdynamic phase가 드묾 — bradycardia 또는 tachycardia 모두 가능. 보통 pale MM(±icterus), 약한 맥박, 사지 차가움, 저체온, 전신 weakness/collapse. 고양이는 폐가 shock·sepsis에 취약 → 호흡기 dysfunction 흔함.",
+    "여러 형태가 동시에 — 예: GDV → hypovolemic + obstructive; septic peritonitis → metabolic + cardiogenic + distributive + hypovolemic."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "진단 & 모니터링"
+  },
+  {
+   "type": "list",
+   "items": [
+    "기본: VBG/ABG + lactate, CBC, chem, coagulation panel, blood typing, UA, POCUS.",
+    "안정화 후: 흉부·복부 X-ray, abdominal US, echo.",
+    "지속 ECG, BP, pulse oximetry — Tachycardia·저혈압의 점진적 해소 + mentation 회복 = 성공적 회복 신호.",
+    "최선의 모니터링은 반복적 신체검사."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "관류 양호의 기준",
+   "headers": [
+    "Parameter",
+    "Target"
+   ],
+   "rows": [
+    [
+     "CVP",
+     "0–6 cm H₂O"
+    ],
+    [
+     "UOP",
+     "≥1 ml/kg/hr"
+    ],
+    [
+     "MAP",
+     "70–100 mm Hg"
+    ],
+    [
+     "체온·HR·rhythm·RR",
+     "정상"
+    ],
+    [
+     "MM·CRT",
+     "촉촉한 분홍, CRT <2초"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Lactate"
+  },
+  {
+   "type": "list",
+   "items": [
+    "정상 성견·고양이 <2.5 mmol/L; >7 mmol/L = severely elevated. 신생자/소아는 더 높을 수 있음.",
+    "Lactic acidosis는 사람에서 MOF·사망 위험 ↑; 개에서도 사망 예측.",
+    "단발 측정보다 serial trend가 생존 예측에 우수 (Ch 61).",
+    "샘플 채취·취급이 lactate 농도에 영향."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "SvO₂ / ScvO₂ & Oxygen Transport"
+  },
+  {
+   "type": "list",
+   "items": [
+    "PAC(Swan-Ganz)로 CO·CVP·PAP·PCWP·SvO₂ 측정 → SVRI·DO₂·V̇O₂·O₂ extraction ratio 산출. 임상에서는 침습성·위험·이득 한계로 드묾.",
+    "SvO₂ ↓: DO₂ ↓(낮은 CO, 저산소, 빈혈) 또는 V̇O₂ ↑(발열, 발작). SvO₂ ↑: hyperdynamic sepsis, cytotoxic hypoxia(예: cyanide).",
+    "PAC 없으면 ScvO₂(중심정맥카테터)로 대체. 중증 환자에서 ScvO₂ > SvO₂이지만 trend는 평행.",
+    "사람 severe sepsis early goal-directed therapy: ScvO₂ ≥70% 유지 시 사망률 절대 15% 감소.",
+    "개 sepsis 연구: 높은 ScvO₂·낮은 base deficit이 사망 위험 ↓와 연관."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료"
+  },
+  {
+   "type": "list",
+   "items": [
+    "조기 인지 + 빠른 DO₂ 정상화. Cardiogenic 외 모든 shock의 mainstay = IV fluid.",
+    "Vascular access: 짧고 굵은 catheter를 말초/중심에 거치. 어려우면 cutdown 또는 IO (Ch 194, 195).",
+    "Replacement isotonic crystalloid (LRS, 0.9% NaCl, Normosol-R) — total dose up to one blood volume (개 90 ml/kg, 고양이 50 ml/kg). 빠르게 titration.",
+    "주입 30분 후 약 25%만 혈관내 잔류 → 추가 보충 필요할 수 있음.",
+    "Hemorrhagic shock: 출혈원 통제 전 hypotensive resuscitation (MAP ~60 mm Hg) 고려 — 과한 수액은 출혈·예후 악화 (Ch 71).",
+    "용적 과부하·내피 손상·간질부종 방지 위해 임상 반응에 따라 titration.",
+    "추가 옵션: 합성 colloid, hypertonic saline, 혈액 제제, HBOC. 합성 colloid는 사람에서 유해성 우려로 사용 ↓; 개·고양이 데이터 제한적.",
+    "Human albumin은 개에서 면역반응 위험 — risk:benefit 평가. Lyophilized canine albumin이 덜 항원성 있는 자연 colloid 대안.",
+    "Hypertonic saline 7–7.5%: 응급 상황에서 lifesaving. 합성 colloid와 병용 시 hemodynamic 개선이 빠르고 총 crystalloid 양이 적음.",
+    "혈액 제제: 심한 출혈 환자 (Ch 69, 71).",
+    "수액 후에도 저혈압 지속 → vasopressor/inotrope. 사람에서 조기 vasopressor 사용이 fluid overload 감소·예후 개선(특히 septic shock).",
+    "Vasopressor: catecholamine(epi, norepi, dopamine), 양성 inotrope, phenylephrine. 보조: vasopressin, corticosteroid, glucagon."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Cardiogenic shock 특이사항"
+  },
+  {
+   "type": "list",
+   "items": [
+    "수액은 신중 — 폐부종·호흡곤란 악화 위험. 보충 산소 + 최소 handling.",
+    "POCUS로 다른 dyspnea 원인과 감별 (Ch 189).",
+    "CHF의 mainstay = IV/IM furosemide (Part IV).",
+    "이뇨제 반복 후도 호전 없으면 기저 심질환에 맞는 특이 치료 (systolic dysfunction, diastolic failure, arrhythmia).",
+    "Refractory 환자 → high-flow nasal O₂ 또는 마취·삽관 + 100% O₂ 양압환기로 안정화 후 정밀검사."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Conclusion"
+  },
+  {
+   "type": "paragraph",
+   "text": "Shock 환자의 성공적 관리는 빠른 인지 → 형태 식별 → 적정 수액·필요 시 vasopressor → 명확한 endpoint로 serial 평가의 흐름이다. 과소 또는 과한 resuscitation 모두 해롭다 — 환자 반응에 맞춰 titration하라."
+  }
+ ]
+}
