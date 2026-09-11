@@ -1,0 +1,272 @@
+{
+ "id": "sacc3-p4-c44",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part IV",
+ "part_title": "Cardiovascular Disorders",
+ "chapter_num": 44,
+ "title": "Canine Cardiomyopathy",
+ "author": "Joanna L. Kaplan, DVM; Joshua A. Stern, DVM, PhD, DACVIM (Cardiology)",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "심근증은 개에서 가장 흔한 심질환 중 하나로, 주로 대형·초대형 품종을 침범한다.",
+    "확장성 심근증(DCM)은 심장 확장과 수축기 기능장애로 진단하며 흔히 CHF, 부정맥, 급사로 이어진다.",
+    "DCM은 Doberman Pinscher, Great Dane, Irish Wolfhound, Manchester Terrier(유년형), Portuguese Water dog(유년형)에서 흔히 유전성이다.",
+    "영양성, 바이러스성, 대사성, 약물·독소, 빈맥 유발 DCM 등 이차 원인은 장기 예후와 치료 차이를 바꿀 수 있으므로 특정 증례에서 고려해야 한다.",
+    "부정맥 유발성 우심실 심근증(ARVC)은 Boxer에서 가장 흔하며 심실 부정맥에 의한 실신·급사가 흔하고, 중증형은 좌심 또는 양심실 CHF를 보인다.",
+    "CHF 치료: 산소, 진정, 이뇨제, 수축촉진제, 혈관확장제, 저스트레스 환경, 빈맥성 부정맥 시 항부정맥제."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "개요",
+   "gist": "용적·압력 과부하 질환과 무관한 심근 고유 이상 — DCM·ARVC가 가장 흔함"
+  },
+  {
+   "type": "list",
+   "items": [
+    "정의: 용적·압력 과부하를 일으키는 선천·후천 심질환과 무관한 심근 고유의 이상. 개의 가장 흔한 후천성 심질환 중 하나.",
+    "DCM·ARVC가 가장 흔하고, 그 밖에 방실 근병증, Golden Retriever 근이영양증(사람 Duchenne 근이영양증 유사), 심근염, HCM 보고."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "확장성 심근증 (DCM)",
+   "gist": "대형·초대형견; 잠재기→임상기; 심초음파 확장+수축기능 저하로 진단"
+  },
+  {
+   "type": "list",
+   "items": [
+    "심초음파상 심장 확장 + 수축기 기능장애 + 흔히 이완기 기능장애. 모든 품종 가능하나 대형·초대형견에 최다.",
+    "원인: 일차성 또는 이차성; 원인 미상이면 특발성. 사람은 최소 30%–50%가 유전자 변이 — 일부 견종에서도 원인 변이 발견. Doberman·Great Dane 등 의심 품종의 번식견은 매년 심초음파 + 24시간 보행 ECG 선별 권장.",
+    "이차 원인: 영양성, 감염성·비감염성 심근염, 대사 이상(갑상선 결핍, 부신피질기능저하증), 빈맥 유발 심근증, 약물·독소(doxorubicin의 비가역적 심근 손상 등).",
+    "예후: 기저 원인, 진행 속도, 개입 시기에 좌우. 빈맥 유발 심근증은 부정맥을 적절히 치료하면 리모델링이 가역적일 수 있고, 영양성 DCM도 역전 가능.",
+    "경과: 잠재기(임상 증상 없이 유의한 구조 변화 및/또는 부정맥 — 급사 위험 존재) → 임상기(심실·상실성 빈맥, 심방세동, 좌심 CHF, 드물게 우심·양심실 CHF).",
+    "임상 증상: 기면, 식욕부진, 호흡수·노력 증가, 기침, 허약, 운동 불내성, 전실신·실신, 체중 감소, 복부 팽만.",
+    "신체검사: 둔감, 빈맥, 빈호흡, 호흡 노력 증가·기침, 저역동성·소실 맥박. 우심 CHF 시 경정맥 박동·확장, 복부 팽만, 복수 파동. 청진: 수축기능 저하의 S3 갤럽, 승모판 역류의 좌측 심첨 수축기 잡음, 심실·심방 조기수축·심방세동의 불규칙 리듬. 폐: 심인성 폐부종의 수포음 또는 흉수의 폐음 감소."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "진단"
+  },
+  {
+   "type": "list",
+   "items": [
+    "심초음파: 수축기·이완기 또는 둘 다의 LV 확장 + 수축기(흔히 이완기) 기능장애. LV 크기는 M-mode 또는 2D로 이완기말(최대)·수축기말(최소) 직경 측정; 체중 보정 면적·용적도 사용. 가능하면 품종·체구별 참고범위와 비교.",
+    "수축기능: %FS가 가장 흔함(Fig. 44.1: DCM+AF Doberman에서 FS 11%로 중증 감소). 보조 지표 — %EF, %FAC, sphericity index, E-point-to-septal separation. 컬러·스펙트럼 Doppler로 승모판·삼첨판 역류, 이완기 기능장애 확인. 드물게 우심 확장, 복수, 흉수. DCM + 심방세동 개는 좌심 CHF에 더해 우심 CHF 발현이 더 흔함.",
+    "ECG: 부정맥이 흔함 — 심방·심실 조기수축, 심실·상실성 빈맥, 심방세동. 심초음파 변화 전에 부정맥이 먼저 나타날 수 있어 부정맥 유발 전신 질환 배제 필요. 부정맥 개의 다수가 진단 시 CHF 동반.",
+    "흉부 방사선: 좌심 CHF 확인 — LV·LA 확장, 후배측 폐엽 위주 간질~폐포 패턴(심인성 폐부종), 폐정맥 확장.",
+    "바이오마커 한계: NTproBNP는 신기능장애·폐고혈압·패혈증·전신 고혈압·부적절한 검체 처리로 상승; cTnI는 전신 질환·심장 종양·허혈·기타 심장 손상으로 상승. 민감도·특이도가 낮아 진단 확정·치료 결정에 단독 사용은 비권장."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Doberman Pinscher 잠재성 DCM 바이오마커",
+   "headers": [
+    "표지자",
+    "기준",
+    "민감도",
+    "특이도",
+    "비고"
+   ],
+   "rows": [
+    [
+     "cTnI",
+     ">0.22 ng/ml",
+     "79.5%",
+     "84.4%",
+     "cTnI >0.34 ng/ml는 심비대 Doberman의 급사 위험 예측에 유용할 수 있음; cTnI 상승은 심근염도 시사"
+    ],
+    [
+     "NTproBNP",
+     ">550 pmol/L",
+     "78.6%",
+     "90.4%",
+     "—"
+    ]
+   ],
+   "note": "— = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "품종별 DCM"
+  },
+  {
+   "type": "table",
+   "title": "품종별 특징",
+   "headers": [
+    "품종",
+    "유병률·발병",
+    "유전",
+    "임상 특징"
+   ],
+   "rows": [
+    [
+     "Doberman Pinscher",
+     "북미 유병률 45%–63%(연구별); 성견 발병 약 6세",
+     "PDK4(미토콘드리아 pyruvate dehydrogenase kinase 4) splice site 변이 + titin missense 변이 — 상염색체 우성, 불완전 침투·가변 발현; 동형접합은 중증. NC State에서 유전자 검사 가능; 유럽 계통 의의 불명",
+     "심실 부정맥에 의한 실신·급사, 좌심(드물게 우심·양심실) CHF, 상실성 빈맥·심방세동 흔함"
+    ],
+    [
+     "Great Dane",
+     "3.9%–11.8%; 성견 발병",
+     "일부 가계 성연관",
+     "부정맥 단독, 구조 변화 + CHF(주로 좌심), 또는 둘 다. 심방세동·심실 부정맥 흔함"
+    ],
+    [
+     "Irish Wolfhound",
+     "성견 발병 가족성",
+     "이전 상염색체 열성 보고; 2019년 연구는 북미 집단의 심방세동이 상염색체 우성 시사",
+     "구조 변화·CHF 전에 심방세동 진단이 드물지 않음. 심방 확장이 일차인지 지속 AF의 이차인지 불명; 유럽·북미 집단 발현 차이 가능"
+    ],
+    [
+     "Newfoundland",
+     "—",
+     "일부 가계 상염색체 우성",
+     "심방세동 + 좌심 또는 양심실 CHF"
+    ],
+    [
+     "Standard Schnauzer",
+     "젊은 성견 발병; CHF 발생 수컷 1.5세, 암컷 2.35세",
+     "상염색체 열성; RBM20(RNA binding motif protein 20) frameshift 변이",
+     "—"
+    ],
+    [
+     "Portuguese Water dog",
+     "유년형",
+     "상염색체 열성",
+     "CHF 급속 진행, 생후 2–32주 사망"
+    ],
+    [
+     "Toy Manchester Terrier",
+     "유년형 가족성",
+     "—",
+     "명백한 심질환 징후 없이 1세 미만에 급사"
+    ],
+    [
+     "Golden Retriever (근이영양증)",
+     "—",
+     "X 연관; dystrophin 변이",
+     "근골격 이상에 더해 DCM 위험"
+    ]
+   ],
+   "note": "— = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "영양성 DCM"
+  },
+  {
+   "type": "list",
+   "items": [
+    "모든 품종 가능하나 Golden Retriever, American Cocker Spaniel, Newfoundland가 더 취약.",
+    "Taurine 결핍 기준: 전혈 ≤250 nmol/ml, 혈장 ≤60 nmol/ml. 식이 변경 + taurine·L-carnitine 보충으로 CHF 개를 포함해 다수에서 역전. 일부는 taurine 정상이어도 치료에 반응 → 정상 taurine이 질환을 배제하지 못함.",
+    "FDA 조사: grain-free, 콩류·감자 함량 높은 식이, 품질관리 기준이 덜 엄격한 제조사 제품과 연관. 최근 증가로 DCM 의심 환자 모두 완전한 식이력 청취 — 해당되면 전혈·혈장 taurine 측정, 식이 변경, 경험적 taurine·L-carnitine 보충. 치료 반응이 특발성과 영양성을 구분하는 최선의 확인 검사.",
+    "L-carnitine 결핍: Boxer 한 가계 보고. Dalmatian DCM은 요산 요석 예방용 저단백 식이와 연관."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "DCM 치료 약물",
+   "headers": [
+    "약물",
+    "용량",
+    "비고"
+   ],
+   "rows": [
+    [
+     "Pimobendan (잠재기, LV 확장 시)",
+     "—",
+     "Doberman에서 CHF·급사 발생을 최대 9개월 지연; 다른 품종에도 외삽"
+    ],
+    [
+     "ACE 억제제 (잠재기)",
+     "—",
+     "CHF·급사 발생 최대 3개월 지연"
+    ],
+    [
+     "베타차단제 (carvedilol)",
+     "—",
+     "제한적 연구에서 진행 지연 효과 미입증"
+    ],
+    [
+     "Sotalol",
+     "1–3 mg/kg PO q12h",
+     "K 채널 차단제. 부분 베타차단 작용 → 저용량으로 시작(수축기능 악화 위험); 중증 수축기능 저하에서는 주의 또는 회피. 치료 용량의 베타차단 효과는 한 연구에서 임상적으로 무의미"
+    ],
+    [
+     "Mexiletine",
+     "5–8 mg/kg PO q8h",
+     "Na 채널 차단제. 리듬 조절 향상을 위해 sotalol과 병용(상승 작용) 가능"
+    ],
+    [
+     "Fish oil",
+     "1200 mg / 체중 8 kg",
+     "심실 부정맥 및 CHF의 심장 악액질에 보조"
+    ],
+    [
+     "Taurine",
+     ">25 kg: 1000 mg PO q12h; <25 kg: 500 mg",
+     "영양성 DCM"
+    ],
+    [
+     "L-carnitine",
+     "50 mg/kg PO q8h",
+     "영양성 DCM"
+    ]
+   ],
+   "note": "CHF: 표준 심부전 치료(Ch.41) — furosemide, pimobendan, ACE 억제제, spironolactone; 급성기 산소·진정; 드문 심인성 쇼크에 dobutamine. 유의한 복수·흉수는 천자(대개 변형 누출액). 급성기 악성 기준(Box 44.1) 심실 부정맥은 즉시 치료(Ch.49·50). — = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "list",
+   "title": "Box 44.1 심실 부정맥 악성 기준",
+   "items": [
+    "잦은 발작성 또는 지속성 심실빈맥(HR >180 bpm)",
+    "복잡성 증거: R-on-T, triplet, couplet, bigeminy, trigeminy",
+    "부정맥에 의한 혈역학적 불안정의 임상 징후",
+    "다형성 VPC는 단형성보다 더 우려(심실 심근의 여러 병변 부위 시사)"
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "부정맥 유발성 우심실 심근증 (ARVC)",
+   "gist": "Boxer striatin 변이; Holter VPC >300 진단; sotalol 2–3 mg/kg"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Boxer에 최다. 조직병리: 심근 내 지방 또는 섬유지방 침윤. 원인: striatin 유전자 변이 — 상염색체 우성, 불완전 침투·가변 발현; 동형접합은 LV 확장·수축기능 저하·좌심 CHF 등 중증형 가능. 진단 중앙 연령 6세.",
+    "분류: Type I 무증상 심실 부정맥; Type II 심실 부정맥 + 실신; Type III 심초음파 구조 변화 + CHF 진단.",
+    "심실 부정맥은 주로 우측 기원이나 구조 변화는 흔히 좌측 → 좌심 CHF. 증상: 운동 불내성, 실신, 둔감, 급사. 신체검사: 심실 부정맥·좌심 CHF 관련 소견.",
+    "ECG: 주로 심실 부정맥, 상실성 부정맥·심방세동도 가능(Fig. 44.2: 7세 Boxer VT 260 bpm, lidocaine 2 mg/kg IV 단회 bolus로 동율동 전환). Holter로 심실 이소성 박동의 중증도·빈도 파악 → 항부정맥 치료 지침. 24시간 Holter에서 VPC >300개면 진단, 50–300개는 모호. VPC는 주로 RV 기원, LV 기원도 가능.",
+    "심초음파는 대개 정상; 중증(Type III)에서는 좌심 수축기능 저하·확장으로 DCM phenocopy. 흉부 방사선 대개 정상, 중증에서 심비대·좌심 CHF.",
+    "치료: 임상 결과 중심. Sotalol·mexiletine은 심실 부정맥 수 감소에 안전·효과적이나 급사 위험 감소·생존 연장 여부는 불명. 저자는 sotalol 2–3 mg/kg PO q12h 선호, 필요 시 mexiletine 5–8 mg/kg PO q8h 추가. 적절한 부정맥 관리는 증상 감소·삶의 질 개선.",
+    "예후: 급사 위험은 증가하나 건강견 대비 중앙 생존기간은 유의한 차이 없음. Type III, striatin 동형접합, 좌심 CHF에서 불량."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "기타 심근증",
+   "gist": "개 HCM은 드묾(이차 원인 먼저); 방실 근병증은 영구 심박조율기, 중앙 생존 866일"
+  },
+  {
+   "type": "list",
+   "items": [
+    "HCM: 개에서 드묾 — 전신 고혈압, 심근염, 심장 종양, 부신피질기능항진증, 당뇨 등 LV 비후의 이차 원인을 먼저 고려. Pointer 한 가계에서 유전형 보고.",
+    "방실 근병증: 심방 심근의 대체 섬유화(±지방 변성) → 심방 확장·지속성 심방 정지(atrial standstill); 흔히 심실 심근으로 진행. English Springer Spaniel·Labrador Retriever에 최다. 일부는 심근염, nemaline rod 근병증, 근이영양증과 연관. 서맥 관련 증상(기면, 실신, 운동 불내성, CHF). 치료는 대개 영구 심박조율기. 과거 예후 불량으로 여겼으나 최근 후향 연구에서 조율기 이식 시 중앙 생존 866일, 일부 최대 8년."
+   ]
+  }
+ ]
+}

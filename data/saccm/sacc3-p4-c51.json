@@ -1,0 +1,140 @@
+{
+ "id": "sacc3-p4-c51",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part IV",
+ "part_title": "Cardiovascular Disorders",
+ "chapter_num": 51,
+ "title": "Myocarditis",
+ "author": "Sara R. Brethel, DVM; Meg M. Sleeper, VMD, DACVIM (Cardiology)",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "심근염은 심장을 침범하는 염증 과정으로, 염증은 근세포·간질·혈관계를 포함할 수 있다.",
+    "다양한 질환과 연관된다. 감염원(바이러스, 세균, 원충)은 심근 침입, 심근 독소 생성, 면역매개 질환 활성화로 심근 손상을 일으킬 수 있다.",
+    "물리적 요인(doxorubicin), 기저 대사 질환(요독증), 독소(중금속), 물리적 요인(열사병)과도 연관된다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "개요",
+   "gist": "개·고양이 심부전의 드문 원인; 면역저하·면역미접촉 환자에서 보고 최다; 병력(환경·노출)이 핵심"
+  },
+  {
+   "type": "list",
+   "items": [
+    "개·고양이 심부전의 드문 원인. 임상 양상 다양 — ECG 이상만 있는 무증상부터 심비대·수축기능 저하 유무, 완전한 CHF까지.",
+    "병력(환경·노출)이 위험 판단과 검사 선택에 흔히 결정적. 개 심근염 보고는 면역저하 또는 면역미접촉(immunonaïve) 환자에 최다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "감염성 심근염",
+   "gist": "parvovirus, Chagas(Texas·Louisiana), Staph·Strep, Bartonella"
+  },
+  {
+   "type": "table",
+   "title": "감염성 원인",
+   "headers": [
+    "원인",
+    "특징"
+   ],
+   "rows": [
+    [
+     "Parvovirus (바이러스)",
+     "개 바이러스성 심근염의 최다 원인이나 현재 매우 드묾. 1970년대 말~80년대 초 범유행 시 모체 항체 없는 강아지 — 아주 어린 강아지는 전격 감염, 폐부종으로 급사; 2 to 4개월령은 CHF로 아급성 사망 또는 경도 심근염 후 젊은 성견기에 DCM. 급성 어린 강아지 심근에 호염기성 핵내 봉입체(나이 든 강아지는 없을 수 있음), 노령견은 육안적 심근 반흔. 1980년대 초~중반 이후 드문 보고이나 백신에도 여전히 중요한 심근 손상 원인"
+    ],
+    [
+     "기타 바이러스",
+     "Maxson 등(2001): DCM 개 18마리 + 심근염 개 9마리 심근 PCR(parvovirus, adenovirus 1·2형, herpesvirus) → adenovirus 1형이 DCM 개 1마리에서만 검출, 심근염 개는 0 → DCM·활동성 심근염과 흔히 연관되지 않음. 홍역 바이러스: 면역미접촉 강아지 실험 감염으로 경도 염증 침윤의 심근증 재현. West Nile virus: 2002년(미국 유행 3번째 시즌) 늑대 1·개 1 자연 감염 심근염. 고양이 HCM·DCM·RCM 심근에서 바이러스 유전체 DNA 검출 → 바이러스성 심근염이 후천 질환의 요인일 가능성. FIV 감염 + HCM 고양이에서 심근염 진단 — 인과관계 불명이나 관리 시 고려"
+    ],
+    [
+     "Chagas병 (Trypanosoma cruzi, 원충)",
+     "라틴아메리카 사람 DCM의 주원인, 북미 드묾. 북미 개는 Texas·Louisiana에 최다; 북미 고양이 보고 없음. 매개 곤충 Reduviidae; 보유 숙주 설치류·raccoon·opossum·개·고양이·사람. 감염형 trypomastigote → 숙주 세포 내 번식형 amastigote → 세포 파열까지 증식. 급성: 후층 혈액 도말에서 순환 trypomastigote 관찰 가능, 대부분 급작스런 우심부전 징후(복수, 빈맥, 기면)로 내원. 만성: 수개월~수년 무증상 휴지기 가능, 신경계 손상으로 실조·허약 흔함"
+    ],
+    [
+     "세균",
+     "균혈증·패혈증 시 언제나 가능 — Staphylococcus·Streptococcus 최다. Citrobacter koseri(면역저하 사람의 기회 병원체): 12주령 Boxer 동복 강아지 2마리. Tyzzer병(Bacillus piliformis): 늑대-개 잡종 강아지의 중증 괴사성 심근염. 고양이 Streptococcus canis 2예, 8개월령 중성화 수컷 DSH의 Salmonella typhimurium 1예"
+    ],
+    [
+     "Rickettsia·Bartonella·Borrelia",
+     "Rickettsia rickettsii, Ehrlichia canis, 여러 Bartonella 종 이차 심근염. 심내막염 개 12마리 중 2마리에서 심근염(11마리가 Bartonella vinsonii 아종 혈청 반응). Bartonella 실험 감염 고양이 8마리에서 림프형질세포성 심근염(심질환 증상은 없음). Bartonella는 사람·개 심내막염의 중요 원인, 최근 고양이 심내막염·심근염 증례 보고. Lyme병(Borrelia burgdorferi): 개 심근염 원인으로 거론되나 확인 예 드묾 — Boxer 강아지 10마리의 치명적 화농육아종성 심근염 증례군. 증상 모호·비특이적, 혈청검사는 활동 감염 판정에 신뢰 불가. 사람 Lyme 심근염은 직접 독성 또는 면역매개, 대개 자연 소실"
+    ],
+    [
+     "진균",
+     "극히 드묾, 면역저하 환자"
+    ],
+    [
+     "고양이 심내막심근염",
+     "일과성 발열·침울 고양이군: 부검에서 근괴사·염증세포 침윤, 바이러스 의심되나 미확인. 7년간 고양이 부검 1472예 후향 검토 → 심내막심근염 37예: 평균 사망 연령 3.4세, 62%가 내원 5 to 10일 전 스트레스 사건 병력, 77%에서 간질성 폐렴; 세균·진균 특수염색 음성"
+    ],
+    [
+     "기생충·원충",
+     "Toxoplasma gondii: bradyzoite가 개 심근에 낭 형성 → 만성 감염, 낭 파열 시 심근 괴사·과민 반응; 고양이 심근염 원인으로도 보고. Neospora caninum: 심장·말초근·CNS 등 다조직 감염, 비심장 증상 우세하나 허탈·급사 보고. Trichinella spiralis: 사람 경도 심근염의 흔한 원인; 개 심근염 + 부정맥 최소 1예(Fig. 51.1: 허탈로 내원, 심실 이탈 박동, 기저 SVT 추정)"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "비감염성 심근염",
+   "gist": "doxorubicin 누적 >250 mg/m² 심독성(비가역); catecholamine, 열사병"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Doxorubicin 심독성: 부정맥, 심근 부전 또는 둘 다. 용량 의존적·비가역적, 누적 250 mg/m² 초과에서 더 흔함. 30 mg/m² 2회만 투여한 연구에서도 개의 3%가 심근증. CHF 발생까지 시간은 매우 가변적. 고양이는 투여 후 심근 병리 변화는 있으나 생전 심초음파·ECG 변화 보고 없음.",
+    "기타(수의에서 드물게 인지): 알레르기 반응, 혈관염 등 전신 질환, 방사선·열사병 등 물리적 요인. 다수의 화학물질·약물이 심장 손상·기능장애 유발.",
+    "Catecholamine 독성: 사람 갈색세포종에서 중증 가역성 DCM, norepinephrine 장기 주입 실험동물에서 유사 소견. 심한 공격성·보정·미용 진정 후 급사한 개에서 심근 응고 괴사 — catecholamine 독성 추정.",
+    "면역매개 다발근염의 심장 침범 개 증례 보고."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "진단",
+   "gist": "병력 없으면 확진 어려움; cTnI·백혈구·호산구↑, 부정맥, 수축기능 저하"
+  },
+  {
+   "type": "list",
+   "title": "Box 51.1 심근염 시사 특징",
+   "items": [
+    "병력상 가능(예: doxorubicin 투여 중 종양 환자, Texas 거주 개).",
+    "심질환으로는 특이한 signalment(예: Irish Setter, German Shepherd).",
+    "ECG: 전도 이상 또는 부정맥.",
+    "심초음파: 심근 기능장애(국소일 수 있음) ± 심비대.",
+    "임상병리: 백혈구증가, 호산구증가, cTnI 상승."
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "병력이 명확히 시사하지 않으면(doxorubicin 등) 확진은 어려움. 백혈구증가·호산구증가(특히 기생충성·알레르기성)가 지지 소견. cTnI 상승은 심근세포 손상 증거.",
+    "Chagas 강력 의심 시 T. cruzi 혈청검사가 진단적. T. gondii·N. caninum 연관 심근염은 역가 상승 확인이 도움. 적응 시 바이러스·rickettsia 검사, 세균 의심 시 혈액 배양.",
+    "흉부 방사선: 심장 크기 정상 또는 확대 ± CHF. ECG 다양 — 심실 부정맥·전도 장애 흔함. 심초음파: 전반 또는 국소 수축기능 저하가 최다, 심방·심실 크기 정상 또는 증가.",
+    "심내막심근 생검(사람 gold standard, Fig. 51.2 bioptome): 생전 확진 가능하나 검체가 작아 국소 심근염은 놓칠 수 있음. 부검: 면역조직화학·전자현미경으로 N. caninum 확진; 육안 소견은 무의미하거나 심장 확장·심실 비후·국소 점상출혈·심근 농양. 조직병리에서 근세포 괴사·변성(또는 둘 다) + 염증 침윤이 있으면 국소 또는 미만성 심근염 확진."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료",
+   "gist": "지지요법 1차; CHF는 이뇨제+ACEi; digoxin 저용량; 급성기 NSAID 금기"
+  },
+  {
+   "type": "list",
+   "items": [
+    "대부분 사람 의학·바이러스성 심근염 모델 연구에서 외삽. 지지요법이 1차. CHF 징후 시 이뇨제로 preload 감소 + ACE 억제제로 afterload 감소(Ch.42).",
+    "Digoxin: 실험 심근염에서 전염증 사이토카인 발현·사망률 증가 → 신중하게 저용량. 유의한 수축기능 저하 시 IV dobutamine; 대안으로 pimobendan(수축기능 개선 + afterload 감소).",
+    "불필요한 약물 제거로 알레르기성 심근염 가능성 감소. 면역억제는 일상적으로 유익하지 않으나 전신 자가면역 질환에 의한 심근 기능장애에서는 중요할 수 있음. NSAID는 사람 급성기(첫 2주) 심근 손상 증가로 금기, 이후에는 안전한 듯. 마우스 바이러스성 심근염 모델에서 ACE 억제(captopril)·interferon 유익 → 임상 활용 가능성.",
+    "급성 Chagas: 여러 약제가 T. cruzi 억제하나 진단 시점에는 대개 늦음; 만성은 CHF 대증 치료. N. caninum 심근염 개에서 여러 약제로 치료 성공 보고되나 중증은 흔히 사망. Toxoplasmosis: clindamycin이 개·고양이 선택 약물이나 심장 손상은 비가역적(추정 toxoplasmosis 고양이 1예에서 clindamycin으로 심질환 징후 소실).",
+    "균혈증 증거 시 배양·감수성 결과 대기 중 항생제 — 경험적 치료는 Staphylococcus·Streptococcus에 유효해야 함(Ch.91). Rickettsia 의심 시 역가 결과 대기 중 doxycycline 5 to 10 mg/kg PO 또는 IV q12-24h."
+   ]
+  }
+ ]
+}
