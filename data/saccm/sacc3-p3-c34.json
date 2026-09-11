@@ -1,0 +1,235 @@
+{
+ "id": "sacc3-p3-c34",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part III",
+ "part_title": "Advanced Respiratory Support",
+ "chapter_num": 34,
+ "title": "Jet Ventilation",
+ "author": "Bruno H. Pypendop, DrMedVet, DrVetSci, DACVAA",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "Transtracheal jet ventilation은 응급 환기에, high-frequency jet ventilation은 기관삽관이 불가능하거나 실용적이지 않을 때 환기에 사용할 수 있다.",
+    "High-frequency ventilation은 사강 용적보다 작은 일회환기량으로도 normoxemia·normocapnia를 만들 수 있다.",
+    "High-frequency ventilation은 매우 높은 분당환기량이 필요하다.",
+    "Jet ventilation 중 환기 분포와 일회환기량은 respiratory system compliance보다 기도저항에 더 의존한다.",
+    "Jet ventilation 중에는 일회환기량과 end-tidal CO₂ 농도를 정확히 측정할 수 없다.",
+    "환기·산소화 적절성은 혈액가스 분석으로 평가해야 하며, 특히 장시간 사용 시 그렇다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "개요와 역사",
+   "gist": "고주파 분사로 VT·흉강내압↓ — 기관삽관 없이도 환기 가능"
+  },
+  {
+   "type": "list",
+   "items": [
+    "기원: 1960년대, 순환 영향이 최소인 양압환기를 찾기 위해 탐색 — 기도에 직접 고주파로 가스를 주입하면 VT와 흉강내압이 줄 것이라는 가정.",
+    "High-frequency ventilation 종류: high-frequency oscillation, high-frequency jet ventilation(jet ventilation; 이 장의 주제), high-frequency flow interruption, high-frequency positive pressure ventilation.",
+    "Jet ventilation 역사: 처음 기관지경 검사 중 사용 — 개방형 기관지경에 cannula를 넣고 고압원에서 가스 공급, Venturi 효과로 주변 공기 entrainment. 이후 ventilating laryngoscope, 성대 사이 카테터로 확장. 1970년대 초 마취 중 경피 transtracheal jet ventilation 도입.",
+    "전달 방식: tracheal tube에 연결된 T-piece의 구멍, tracheal tube에 내장된 가는 관, 또는 상기도에 둔 카테터를 통해 고속 가스 펄스 전달.",
+    "전형적 주파수: 100 to 300 breaths/min.",
+    "주 장점: 환자 인터페이스의 유연성 → 기관삽관이 불가능한 상황에서도 환기."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "응급 transtracheal jet ventilation"
+  },
+  {
+   "type": "list",
+   "items": [
+    "적응: tracheal tube를 넣을 수 없을 때 응급 환기.",
+    "구성: 고압 산소원, 밸브, jet injector, 카테터, 비신축성(noncompliant) 튜브로 수용 가능한 가스교환 달성.",
+    "간이 제작: jet injector는 잘라낸 1 ml 주사기로, 밸브는 마취기의 flush valve로 대체 가능.",
+    "호흡수: 12 to 20 breaths/min."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Physics and Physiology",
+   "gist": "1 Hz 이상에서 VT < 사강 — 사강 길이가 CO₂ 제거에 더 중요"
+  },
+  {
+   "type": "list",
+   "items": [
+    "원리: 경폐압(폐포를 팽창시키는 압력)을 정상(steady) 성분과 진동(oscillatory) 성분으로 분리 → 진동 주파수를 올려 낮은 VT에서 eucapnia 유지.",
+    "폐포 derecruitment 제한: tidal excursion(평균 위아래 경폐압 변동)을 줄여 불충분한 폐용적에 의한 derecruitment를 제한할 것으로 기대.",
+    "개의 panting: 기계적 고주파·저VT 환기의 생리적 대응물로 간주, 고주파 환기 가스교환 연구 모델로 사용됨.",
+    "폐포 도달 가스량 결정 요인: jet 통과 가스량, tracheal tube·기도로 entrain된 가스량, 사강 용적.",
+    "주파수↑ → VT↓, 사강 환기↑ → 매우 높은 분당환기량으로만 폐포환기 유지.",
+    "1 Hz(60 breaths/min) 이상: VT가 보통 사강 용적보다 작음.",
+    "VT < 사강 용적의 1.2배: 기존 대류성 가스교환에 비해 CO₂ 제거가 크게 감소, CO₂ 제거에는 사강의 용적보다 길이가 더 큰 영향 → 가능하면 원위(distal)에서 jet 투여가 유리할 수 있음.",
+    "원위 투여의 상충: jet 물리 특성은 jet 직경:튜브(기도) 직경 비, jet 직경:튜브 길이 비, jet 입구 위치, 구동압에 의존. 인젝터는 유량을 최대화하도록 설계 가능하나 원위 jet은 인젝터 최적화가 불가해 효율·유량↓ 가능."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "가스 이동과 환기 분포"
+  },
+  {
+   "type": "list",
+   "items": [
+    "원위 이동: 1회 주입 가스는 기관 직경 몇 배 이상 가지 못하지만, 반복 주입(특히 고주파)으로 이전 가스가 계속 원위로 이동.",
+    "불균일 환기: 가스 농도·공기 공간 용적·압력의 영역 차이. 관성 때문에 보통 미측(caudal) 폐엽이 더 잘 환기되나 전체 가스교환 영향은 미미할 것으로 예상.",
+    "저항 의존: 고주파에서 필요한 고속 가스 흐름 때문에 VT에는 유순도보다 기도저항 변화의 영향이 더 큼(용적 변화가 작음). 환기 분포도 국소 유순도보다 기도저항에 의존 → 기도를 침범하지 않는 폐질환에서 유리할 수 있음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Entrainment와 spillage"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Jet impulse 용적(VT) 결정 요인: 인젝터 형태, entrain된 가스량, jet 압력, back pressure, impulse 지속시간.",
+    "Entrainment 양: 효과적 인젝터는 흡기 초기에 jet 유량의 4–5배까지 entrain(일부 연구는 효과 미미). VT 대비 entrain 분율은 12 to 200 breaths/min 범위에서 호흡수 영향 거의 없음.",
+    "최적화: jet 입구를 endotracheal tube 근위부에 위치. 기전은 인젝터를 나오는 고속 가스의 Venturi 효과.",
+    "시간 제한: entrainment는 흡기 초기(호흡수와 무관하게 처음 0.08 seconds)에만 — 폐가 차면서 기도압↑이 entrainment를 방해·차단.",
+    "Spillage: 나머지 흡기 동안 jet 가스 일부가 폐로 들어가지 않고 기도 입구로 빠져나감(spilt volume). entrainment 중에는 spillage 없음. 호흡수↑ → 흡기시간은 줄지만 entrainment 시간은 거의 일정 → spillage 시간·양↓.",
+    "호기말 양압: 고주파로 호기시간이 짧아 호기말 폐용적↑ → 호기말 압력은 보통 양압 → 흡기 시작 압력↑로 고호흡수에서 entrainment 제한 가능."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Equipment",
+   "gist": "고압 가스원 + solenoid valve, 보통 30–150 breaths/min"
+  },
+  {
+   "type": "list",
+   "items": [
+    "구성: 고압 가스원 + 가스 흐름을 열고 닫는 solenoid valve (상용 장비 다양).",
+    "기본 설정: peak airway pressure, 호흡수, 흡기시간 또는 I:E ratio.",
+    "일부 기종 추가 설정: mean airway pressure, PEEP, minute volume, driving pressure.",
+    "호흡수 범위: 보통 30 to 150 breaths/min, 때로 600 breaths/min까지."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Indications",
+   "gist": "기존 PPV 불가 시 — 기도 수술·기관지경, 개·고양이 기관지경에 사용"
+  },
+  {
+   "type": "list",
+   "items": [
+    "기본 적응: 기계환기가 필요하거나 유익하지만 전통적 PPV를 할 수 없는 상황.",
+    "시술: laryngeal·tracheal surgery, bronchial resection, laryngoscopy, bronchoscopy, 호흡 움직임 제한이 유익한 경우.",
+    "순환성 쇼크 동반 급성 호흡부전: 전통 환기보다 심박출량이 높았다는 제안.",
+    "기도 병변: tracheostomy·장기 삽관에 의한 기관 병변 환자에서 환기가 필요할 때, 후두 개구가 너무 작아 삽관 불가할 때.",
+    "기도 누출: 전통 기계환기보다 peak airway pressure가 낮아 airway leak 상황에서 선호될 수 있다는 제안.",
+    "개·고양이 보고: 흉강내 기관 절제·문합, 기관지경 중 산소화·환기 유지."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "임상 적용 예",
+   "items": [
+    "저자 기관: 주로 소형견·고양이 기관지경 중 산소화·CO₂ 제거 유지 — 기관 내 14- 또는 16-gauge 카테터로 환기, 기관지경은 카테터 옆으로 통과 (Fig. 34.1: 고양이 기관 내 13-gauge 카테터 끝 내시경 사진).",
+    "응급 transtracheal HFJV: cricothyroid membrane을 통해 경피적으로 카테터 삽입 후 목에 고정 — 카테터가 기관 밖으로 이동하면 심한 피하기종."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Disadvantages",
+   "gist": "VT·EtCO₂ 측정 부정확, 과팽창·기관 손상 위험"
+  },
+  {
+   "type": "table",
+   "title": "단점 정리",
+   "headers": [
+    "단점",
+    "내용"
+   ],
+   "rows": [
+    [
+     "VT 측정 곤란",
+     "jet 고속·추가 entrainment로 흡기량 측정 매우 어려움; 개방 기도로의 spillage와 흔히 추가되는 bias flow로 호기량 측정 부정확"
+    ],
+    [
+     "EtCO₂ 신뢰 불가",
+     "이 모드 중 신뢰성 있게 측정 불가 → 큰 VT로 간헐 환기할 때 EtCO₂ 측정 또는 동맥혈가스로 환기 적절성 확인"
+    ],
+    [
+     "심혈관 변동",
+     "흉곽 움직임 진폭 변동, 심박수·전신/폐동맥압의 위상성 변화 → 혈류 변동. 작은 VT로 peak(및 mean) airway pressure가 낮아 영향은 제한적일 것으로 예상되나, 기존 기계환기 대비 비슷·크거나·작을 수 있음"
+    ],
+    [
+     "폐 과팽창",
+     "특히 심한 기관지수축·기타 기도폐쇄 시 짧은 호기시간으로 가스 축적. 정상 폐포압 > 정상 기도압에 의한 hyperinflation(흡·호기 impedance 불균등, 진동 흐름 분포, 호기 유량 제한). 고속 가스는 직선 경로 선호 → 중심기도 형태상 폐 기저부가 첨부보다 과팽창 경향"
+    ],
+    [
+     "기관 손상",
+     "카테터로 기관 내 수 시간 장기 사용 시 내시경상 과혈관, 점액 축적, 국소 출혈, 선형 상피 소실, 미만성 홍반·상피 소실"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Monitoring of Gas Exchange",
+   "gist": "동맥혈가스가 gold standard — 해석 기준은 기존 환기와 동일"
+  },
+  {
+   "type": "list",
+   "items": [
+    "원칙: 모니터링이 기술적으로 어렵지만 기존 기계환기와 같은 원칙 적용.",
+    "Gold standard: 동맥혈가스 분석 — jet ventilation을 장시간 쓸 경우 반드시 가능해야 함.",
+    "해석: PaO₂·PaCO₂의 정상/비정상 기준은 기존 기계환기와 동일."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Ventilator Settings",
+   "gist": "180 breaths/min, 흉곽 움직임이 겨우 보일 정도의 VT"
+  },
+  {
+   "type": "list",
+   "items": [
+    "목표: 적절한 산소화와 CO₂ 제거. jet ventilation 특성상 다양한 상황에서 정상 환기를 만드는 조정 가이드라인 제시가 어려움.",
+    "저자 경험: 180 breaths/min에서 흉곽 움직임이 겨우 감지되는 VT → 보통 적절한 산소화 + normocapnia~중등도 hypocapnia."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "개·고양이 연구 설정",
+   "headers": [
+    "종",
+    "Driving pressure",
+    "I:E ratio",
+    "Frequency",
+    "결과"
+   ],
+   "rows": [
+    [
+     "고양이",
+     "0.33 kg/cm²",
+     "1:2",
+     "140 breaths/min",
+     "경도 과환기"
+    ],
+    [
+     "개",
+     "1.3 to 1.8 kg/cm²",
+     "—",
+     "120 to 150 breaths/min",
+     "고양이와 비슷한 정도의 과환기"
+    ]
+   ],
+   "note": "— = 요약에 해당 내용 없음"
+  }
+ ]
+}

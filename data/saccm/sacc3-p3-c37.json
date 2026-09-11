@@ -1,0 +1,504 @@
+{
+ "id": "sacc3-p3-c37",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part III",
+ "part_title": "Advanced Respiratory Support",
+ "chapter_num": 37,
+ "title": "Nursing Care of the Ventilator Patient",
+ "author": "Simon P. Hagley, BVSc, DACVECC; Steven E. Epstein, DVM, DACVECC",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "장기 환기에는 전문 장비, 24-hour 1:1 간호, 집중 모니터링이 필요하다.",
+    "인공기도의 선택·거치·관리가 환기 환자의 결과에 중요한 역할을 한다.",
+    "Ventilator-associated pneumonia(VAP)는 치명적일 수 있는 합병증이며, 세밀한 관리 전략으로 발생 위험을 줄일 수 있다.",
+    "각 장기 계통을 매일 평가해 계통별 최적 관리를 제공해야 한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "개요",
+   "gist": "장기 환기 합병증 상당수가 간호 문제 — 전담 테크니션·체크리스트"
+  },
+  {
+   "type": "list",
+   "items": [
+    "기간 구분: 단기(<24 hours) 또는 장기(수일~수개월). 단기는 덜 집중적이어도 되나 장기는 전문 관리 필요.",
+    "배경: 대부분 마취 상태라 정상 항상성 기능이 손상 → 간호는 합병증 최소화가 목표. 사람에서 단기 환기가 장기 환기보다 결과가 좋다는 제안.",
+    "간호 관련 장기 환기 합병증: 구강·각막 궤양, tracheal tube 폐쇄·이탈, 감압이 필요한 위확장.",
+    "인력: 사람에서 간호 인력 수준이 낮으면 late-onset(early-onset은 아님) VAP 위험↑ → 이상적으로 환자마다 항상 전담 veterinary technician.",
+    "체크리스트: 간호가 다면적이고 드물게 시행하면 단계 누락 가능 → 이 장 항목으로 체크리스트 작성 권장."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "간호 항목별 주기 한눈에 보기",
+   "headers": [
+    "항목",
+    "주기",
+    "내용"
+   ],
+   "rows": [
+    [
+     "흉부 청진·심혈관 신체검사",
+     "최소 4 hours마다",
+     "이상 조기 발견"
+    ],
+    [
+     "동맥혈가스",
+     "4 to 8 hours마다 (필요 시 더 자주)",
+     "동맥 카테터로 연속 혈압 + 채혈"
+    ],
+    [
+     "Cuff 압력 확인 (HVLP·압력 측정 가능)",
+     "4 hours마다",
+     "cuff 해제·재위치 안 함"
+    ],
+    [
+     "Cuff 해제·재위치 (LVHP 또는 압력 측정 불가)",
+     "4 hours마다",
+     "먼저 구강 관리 + 흡인"
+    ],
+    [
+     "ET tube 고정끈",
+     "4 hours마다 다시 묶기, 24 hours마다 교체",
+     "입술 손상·biofilm 예방"
+    ],
+    [
+     "ET tube 교체",
+     "분비물 많고 가는 tube: 24 to 48 hours마다\n분비물 적거나 굵은 tube: 필요 시",
+     "재삽관은 VAP 위험↑, tube 폐쇄는 최대 14%"
+    ],
+    [
+     "HME 교체",
+     "48 hours보다 자주 일상 교체하지 않음",
+     "오염·폐쇄·기계 고장 시 교체"
+    ],
+    [
+     "Suction canister·tubing",
+     "24 hours마다 교체",
+     "개방·폐쇄식 모두"
+    ],
+    [
+     "구강 관리",
+     "4 hours마다",
+     "chlorhexidine 세정, 궤양·ranula 점검, 혀 보습"
+    ],
+    [
+     "칫솔질",
+     "하루 2회 (고려)",
+     "chlorhexidine 대비 이득은 미확립"
+    ],
+    [
+     "안구 관리 (세척·윤활)",
+     "2 hours마다",
+     "궤양 있으면 광범위 항생제 연고 4 hours마다"
+    ],
+    [
+     "Fluorescein 염색",
+     "24 hours마다",
+     "궤양 평가"
+    ],
+    [
+     "방광 촉진·압박 (단기 환기)",
+     "4 to 6 hours마다",
+     "필요 시 압박 배뇨"
+    ],
+    [
+     "요도 카테터 관리",
+     "8 hours마다",
+     "유치 중인 동안"
+    ],
+    [
+     "결장 촉진",
+     "매일",
+     "변비 평가"
+    ],
+    [
+     "Passive range of motion",
+     "4 hours마다",
+     "지골까지 모든 관절 굴곡·신전"
+    ],
+    [
+     "체위 변경",
+     "4 hours마다 (sternal↔좌우 lateral)\nsternal 유지 시 엉덩이 좌우 2 to 4 hours마다",
+     "산소화가 허용하면"
+    ],
+    [
+     "Ventilator 회로",
+     "육안 오염 시",
+     "일상 교체 불필요"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "General Monitoring",
+   "gist": "연속 ECG·체온·SpO₂·capnography·혈압, 청진 4시간마다"
+  },
+  {
+   "type": "list",
+   "items": [
+    "이상적 모니터링: 연속 ECG, 직장 thermistor(연속 체온), pulse oximetry, capnography, 연속적 혈압 측정 (자세한 내용 Chapter 36).",
+    "동맥 카테터: 연속 혈압 모니터 + 동맥혈가스(4 to 8 hours마다 또는 필요 시 더 자주)."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "체온 이상",
+   "headers": [
+    "상황",
+    "원인",
+    "치료·주의"
+   ],
+   "rows": [
+    [
+     "고체온",
+     "ventilator asynchrony → 근육 노력에 의한 열 생산↑",
+     "ventilator–patient synchrony 개선, 표면 냉각(선풍기, 찬물 분무기), 가습 시스템 끄기·제거 — 가습 제거는 기도 관리에 핵심이므로 짧은 기간만"
+    ],
+    [
+     "저체온",
+     "마취제 부작용",
+     "정도에 따라 순환 온수 담요, forced-air warming device, 담요로 덮어 열손실↓"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Airway Management",
+   "gist": "cuff 압력 >20 cm H₂O 유지·>30 cm H₂O 금지, 4시간마다 점검"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "인공기도와 cuff"
+  },
+  {
+   "type": "list",
+   "items": [
+    "인공기도: ET tube 또는 tracheostomy tube, 대부분 경구 삽관 (Chapter 197).",
+    "위생: 인공기도 환자를 다룰 때마다 먼저 손 위생 + 검사 장갑 — 기도 조작 시 특히 중요(원내감염↓). 삽관은 멸균 장갑, 가능하면 멸균 ET tube.",
+    "Cuff 종류: 수의학에서는 크기상 low-volume high-pressure(LVHP) 또는 high-volume low-pressure(HVLP)로 제한됨 → low-pressure cuff 권장.",
+    "Cuff 압력 기준: >25 cm H₂O는 기관 혈류를 줄여 괴사 유발 가능, >30 cm H₂O는 피할 것. 직접 측정하는 cuff pressure monitoring device(시판 또는 자체 제작) 권장.",
+    "상충: 수의학에서 기관 손상 예방으로 4 hours마다 cuff 해제·재위치 제안 vs American Thoracic Society는 VAP 예방을 위해 cuff 압력 >20 cm H₂O 유지 권장 → 환자별로 기관 괴사 vs VAP 위험 저울질."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "저자 권고: cuff 관리",
+   "headers": [
+    "상황",
+    "관리",
+    "주의"
+   ],
+   "rows": [
+    [
+     "HVLP ET tube + cuff 압력 측정 가능",
+     "cuff 해제·재위치 하지 않음, 4 hours마다 cuff 압력 확인",
+     "—"
+    ],
+    [
+     "LVHP ET tube(예: 고양이·소형견) 또는 cuff 압력 측정 불가",
+     "4 hours마다 cuff 해제·재위치",
+     "해제·재위치 전 구강 관리 + 흡인으로 흡인(aspiration) 위험↓"
+    ]
+   ],
+   "note": "— = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "list",
+   "items": [
+    "ET tube 고정: 비다공성 재료(예: 플라스틱 IV tubing) — 구강 분비물에 노출된 거즈는 세균 배지. 고정끈은 4 hours마다 다시 묶어 입술 손상 예방, 24 hours마다 교체해 biofilm 축적 예방.",
+    "ET tube 교체 결정: 환자별 — 사람에서 재삽관은 VAP 위험↑, 동물에서 ET tube 폐쇄는 최대 14%.",
+    "교체 주기: 삼출성 폐 분비물 + 가는 ET tube는 폐쇄 위험 → 24 to 48 hours마다 교체 이득 가능. 분비물이 많지 않거나 비교적 굵은 tube는 필요 시에만."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Humidification"
+  },
+  {
+   "type": "list",
+   "items": [
+    "필요성: 장기 환기 환자는 기도 가습 필수 — 가습 부족 시 점액 점도↑·농축 → ET tube 폐쇄, 기관 염증, 섬모 기능 저하."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "가습 방법 비교",
+   "headers": [
+    "항목",
+    "Heat and moisture exchanger (HME)",
+    "Heated water humidifier"
+   ],
+   "rows": [
+    [
+     "원리",
+     "수동적 인공 코 — 호기의 열·수분을 포획해 다음 흡기에 되돌림",
+     "호흡회로 inspiratory limb에 설치, 가열된 물 저장소를 지나며 가습 (전통적 gold standard)"
+    ],
+    [
+     "단점",
+     "사강·기류 저항↑; 분비물로 폐쇄 가능 → 분비물이 많거나 끈끈한 환자는 흔히 회피",
+     "과열; inspiratory limb 결로 → 회로 세균 집락 (heated wire circuit로 대부분 예방)"
+    ],
+    [
+     "관리",
+     "오염·폐쇄·기계 고장이 아니면 48 hours보다 자주 일상 교체하지 않음; waveform으로 저항↑(부분 폐쇄) 평가 (Chapter 35)",
+     "결로가 잦으면 회로를 더 자주 교체"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "선택: 이상적 가습기는 불명 — 가용성, 예상 분비물 양, 사강·저항 증가 우려를 고려해 결정."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Airway Suctioning"
+  },
+  {
+   "type": "list",
+   "items": [
+    "필요성: 분비물에 의한 ET tube 폐쇄 예방의 핵심. 마취 환자는 기침 반사가 둔하거나 없음.",
+    "시기: 정기 vs 필요 시 합의 없음 — 가는 ET tube는 흡인이 폐쇄 예방에 도움될 수 있음.",
+    "이상적 카테터: 부드럽고 유연, 원위 구멍 2개 이상, 멸균, ET tube 내경의 50% 이하만 막음."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "개방식 흡인 절차",
+   "ordered": true,
+   "items": [
+    "전산소화: 100% oxygen으로 최소 5 minutes",
+    "인력: 카테터 조작자는 멸균 장갑, 두 번째 사람(비멸균 장갑)이 회로를 ET tube에서 분리",
+    "삽입: ET tube 원위단까지만 — 더 깊으면 기관 염증, 기침 유발, 미주신경성 서맥 위험",
+    "흡인: 빠르게, 1회 pass당 ET tube 내강을 부분 폐쇄하는 시간 10 to 15 seconds 이하",
+    "반복: pass 사이마다 ventilator 재연결, 분비물이 더 나오지 않을 때까지 반복",
+    "세척: 멸균 컵에 부은 멸균 생리식염수로 pass 사이 카테터 세척 — 매번 새 컵 사용(잔여 식염수 용기 오염 방지)"
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "폐쇄식 흡인 카테터: 사용하지 않을 때도 회로와 환자 사이에 유지 — 회로를 열지 않아 오염 위험↓, 대신 회로 사강↑.",
+    "공통: suction canister·tubing은 24 hours마다 교체.",
+    "식염수 주입(논란): 흡인 전 0.9% NaCl 0.1 to 0.2 ml/kg 기도 주입으로 마른 분비물 이동 고려 — 우려는 ET tube 세균 탈락에 의한 VAP 조장·hypoxemia, 이득은 효과적 분비물 제거로 VAP 가능성↓.",
+    "Tracheostomy tube: 위 절차 모두 적용 + 일상 관리 (Chapter 197).",
+    "흡인 위험: 의인성 hypoxemia, 일시적 PEEP 소실에 의한 폐포 허탈, 기관 자극, 서맥, 저혈압 → 연속 pulse oximetry·ECG, hypoxemia·서맥 발생 시 중단하고 회로 재연결."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Oral Care",
+   "gist": "4시간마다 chlorhexidine 세정·흡인, 궤양·ranula 점검"
+  },
+  {
+   "type": "list",
+   "items": [
+    "합병증: 장기 마취 시 구강 궤양, ranula 형성, 위내용물의 구강 역류.",
+    "기전: 마취로 삼킴 반사 억제 → 후구강·인두에 분비물 고임. 삼킴은 정상적으로 구강 세균 축적과 점막 건조를 막음. 삼킴이 없으면 ET tube 주변 분비물에 세균 증식·고임 → VAP 위험↑.",
+    "근거: subglottic suctioning과 selective oral decontamination 중심의 꼼꼼한 구강 관리가 VAP·구강 병변 발생을 줄임.",
+    "혀 보습: 희석 glycerin 적신 거즈와 saline 적신 거즈를 번갈아 사용. 거즈로 혀를 둘러 감지 말 것(ranula 유발). 저자는 거즈를 거치하지 않고 4 hours마다 구강 관리 때 보습."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "구강 관리 절차 (4 hours마다)",
+   "ordered": true,
+   "items": [
+    "손 위생: 손 씻기 + 검사 장갑",
+    "점검: 혀의 ranula 형성 확인 — 생기면 ET tube를 들어 올려 혀 기저부 압박 회피. 혀가 치아 위에 놓이지 않게, mouth gag 사용으로 궤양 예방. 구강 전체 점막 궤양 점검, 발견 시 깊이·크기 기록",
+    "기구 세척: pulse oximeter probe와 mouth gag를 빼서 희석 0.12-2% chlorhexidine 용액으로 세척",
+    "구강 세정: 구강 전용 제품인 0.12-2% chlorhexidine 용액으로 구강 전체 세정",
+    "흡인: 구강·후인두를 부드럽게 흡인해 남은 chlorhexidine과 분비물 제거 — 과도한 자극은 역류 유발 가능",
+    "재배치: mouth gag와 pulse oximeter를 다른 위치에 다시 장착(궤양 예방)"
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "칫솔질: 하루 2회 칫솔질로 구강 세균량↓ 가능 — 고려할 수 있으나 chlorhexidine 소독 대비 추가 이득은 확립되지 않음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Eye Care",
+   "gist": "2시간마다 세척·윤활, fluorescein 24시간마다"
+  },
+  {
+   "type": "list",
+   "items": [
+    "위험: 노출 각막병증·미생물 각막염↑ — 깜박임이 없어 눈물막이 각막에 퍼지지 않음, lagophthalmos가 많음.",
+    "사람 자료: 안구 관리에도 기계환기 소아 최대 25%, 성인 37.5%에서 안구 표면 질환. 궤양 대부분 첫 1주 내, 상당 비율은 시작 48 hours 이내."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "안구 윤활 방법 비교",
+   "headers": [
+    "방법",
+    "내용",
+    "근거·한계"
+   ],
+   "rows": [
+    [
+     "윤활 연고 (반복 윤활)",
+     "멸균 식염수로 정기 세척 후 hyaluronic acid 함유 petroleum 기반 윤활제를 2 hours마다 (Chapter 144)",
+     "개·고양이 두개골 구조가 다양해 moisture chamber 밀봉이 어려워 여전히 standard of care"
+    ],
+    [
+     "Moisture chamber (예: Doggles®, 수경)",
+     "눈을 외부 환경과 완전히 차단 — 눈이 떠 있어도 각막 보호",
+     "사람 ICU meta-analysis에서 윤활 연고보다 노출 각막병증 예방에 우월"
+    ],
+    [
+     "Bandage contact lens",
+     "—",
+     "환기 성인 단일기관 pilot 연구에서 윤활 치료 대비 각막병증 진행 제한·치유 개선; 수의 환자는 일화적 근거뿐, 권장 전 전향 연구 필요"
+    ]
+   ],
+   "note": "— = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "list",
+   "title": "안구 관리 절차",
+   "items": [
+    "2 hours마다: 멸균 식염수 세척 + chemosis·각막 질환·결막염 점검",
+    "24 hours마다: fluorescein 염색으로 궤양 평가",
+    "궤양 없음 ▸ petroleum 기반 윤활제 재점안",
+    "궤양 있음 ▸ 광범위 항생제 연고 4 hours마다; 진행성·깊은 궤양은 Chapter 144",
+    "lagophthalmos·exophthalmos ▸ 일부 환자는 임시 tarsorrhaphy 필요",
+    "안약·연고 ▸ 공용이 아닌 환자 개별 사용 (세균 오염·전파 방지)"
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Urinary Care",
+   "gist": "단기는 4–6시간마다 촉진·압박, 장기는 유치 카테터(8시간마다 관리)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "단기 환기: 방광 촉진 4 to 6 hours마다, 필요 시 압박 배뇨. 배뇨는 기저귀에 받아 무게로 소변량 추적.",
+    "장기 환기: 요도 카테터 이득 가능 — 반복 압박의 압력·외상 회피, 더 정확한 소변량 기록. 체구가 커서 방광 압박이 어려운 동물도 고려.",
+    "위험: 세균뇨(진짜 UTI 또는 카테터 집락). 개 비척수질환에서 유치 카테터 관련 UTI 10% to 20%, 거치 기간이 위험 인자. 흉요추 척수병증 개에서는 유치 vs 간헐 도뇨 vs 압박 배뇨 간 UTI 차이 없음.",
+    "관리: 유치 중에는 8 hours마다 카테터 관리 (Chapter 208)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Gastrointestinal Tract Care",
+   "gist": "PIP ≥30 cm H₂O는 출혈 위험인자 — 최소 setting 사용"
+  },
+  {
+   "type": "list",
+   "items": [
+    "합병증: 식도염, GI 출혈, 설사, 장폐색(ileus), 변비, 위확장, 역류.",
+    "기전: 내장 저관류 — 높은 PEEP에 의한 정맥환류 감소, 순환 catecholamine·염증성 cytokine 증가.",
+    "GI 출혈: 사람에서 최대 47%, 48 hours 넘게 환기한 환자의 3.3%에서 임상적으로 유의한 출혈. 개·고양이는 스트레스성 위궤양이 적어 더 낮을 것. 교정 가능한 위험인자: peak inspiratory pressure 30 cm H₂O 이상 → 적절한 산소화·환기에 필요한 최소 setting 사용."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "경장 영양",
+   "headers": [
+    "항목",
+    "내용"
+   ],
+   "rows": [
+    [
+     "이득",
+     "GI 출혈↓, 장점막 융모 위축 예방 → 세균 전위 위험↓ 가능"
+    ],
+    [
+     "위험",
+     "ileus가 있으면 위식도 역류·흡인성 폐렴↑"
+    ],
+    [
+     "결정",
+     "위험 vs 이득과 예상 환기 기간 고려"
+    ],
+    [
+     "경로",
+     "nasogastric, gastrotomy, jejunostomy tube; esophagostomy tube는 비권장 (식도 이후 급여가 흡인성 폐렴 위험 감소와 연관 가능)"
+    ],
+    [
+     "방법",
+     "지속 주입 또는 간헐 bolus"
+    ],
+    [
+     "위 잔류량 모니터링",
+     "사람에서 논란 — Reignier 등: 조기 경장영양군에서 잔류량 모니터링 생략이 VAP 발생에 영향 없었으나 구토·역류↑. 개·고양이에서 역할 불명"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "설사: 항문 주위를 깨끗하고 건조하게 유지.",
+    "변비: 매일 결장 촉진, 변비 시 관장 필요할 수 있음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Recumbent Patient Care",
+   "gist": "4시간마다 PROM·체위 변경, 기관은 수평 중립 위치"
+  },
+  {
+   "type": "list",
+   "items": [
+    "합병증: 욕창, 조직 괴사, 무기폐, 근육·인대 구축, 국소 의존성 부종.",
+    "침구: 항상 두꺼운 패딩, 사지가 테이블 가장자리에 걸리지 않게. 초대형견은 충분히 큰 테이블이 없으면 바닥에서 환기 고려.",
+    "Passive range of motion: 4 hours마다 지골까지 모든 사지 관절 굴곡·신전.",
+    "ICU-acquired weakness, critical illness neuromyopathy: 사람 장기 환기 후유증이나 임상 수의학에서는 미보고.",
+    "체위 변경: PROM 후 4 hours마다 sternal과 좌우 lateral 교대(산소화가 허용하면). lateral이 불가하면 sternal 유지 + 엉덩이를 오른쪽 아래↔왼쪽 아래로 2 to 4 hours마다.",
+    "주의: 앞쪽 절반이 항상 sternal이면 팔꿈치 궤양·전완부 피부 병변에 특별히 주의."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "테이블 기울기"
+  },
+  {
+   "type": "list",
+   "items": [
+    "사람 권고: 몸통 30 to 45 degrees 상승. 기관이 수평보다 높으면 위식도 역류↓, 낮으면 구인두 분비물의 기관 흡인 예방 가능.",
+    "돼지 sternal 모델: 기관을 수평보다 45 degrees 올린 돼지는 모두 폐렴, 수평보다 10 degrees 낮춘 돼지는 폐렴 없음.",
+    "수의 권고: 기관 45 degrees 상승 환기는 권장할 수 없음 — 추가 연구 전까지 중립 수평 위치가 합리적."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Apparatus Care",
+   "gist": "회로는 멸균 조립, 육안 오염 시에만 교체"
+  },
+  {
+   "type": "list",
+   "items": [
+    "준비: ventilator 회로는 사용 전 멸균, 멸균 장갑 끼고 조립.",
+    "교체 주기 근거: 단일 회로 적정 사용 기간은 미확립. meta-analysis에서 2 days마다 교체가 7 days마다보다 폐렴 위험↑, 일상 교체를 안 해도 VAP odds 증가 없음 → 육안 오염 시에만 교체가 안전해 보임.",
+    "예외: heated water humidifier로 회로 결로가 잦으면 더 자주 교체."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,536 @@
+{
+ "id": "sacc3-p3-c35",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part III",
+ "part_title": "Advanced Respiratory Support",
+ "chapter_num": 35,
+ "title": "Ventilator Waveforms",
+ "author": "Matthew S. Mellema, DVM, PhD, DACVECC",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "Ventilator waveform 분석은 환기 환자의 모니터링과 troubleshooting에 매우 귀중한 도구다.",
+    "Waveform 관찰은 회로 누출, 흡인 필요성, 호흡역학 변화 인식에 결정적일 수 있다.",
+    "장기 기계환기 환자는 매시간 waveform을 확인해야 한다.",
+    "환자가 ventilator와 \"싸우는\" 것처럼 보이면 즉시 waveform을 확인해야 한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "개요",
+   "gist": "waveform + 동맥혈가스 + 환자 관찰 = setting 적절성의 가장 종합적 평가"
+  },
+  {
+   "type": "list",
+   "items": [
+    "장기(>24 hours) IPPV는 심한 호흡 손상 환자의 생명을 구하는 치료, 단기적으로는 일시적 호흡 기능장애(예: 마취 중 호흡 drive 저하)의 지지 수단.",
+    "설정 과정: 모드 선택 → 일반·질환별 가이드라인과 추정 요구에 따라 설정 → 질환 이해·경험적 반응에 따라 조정 → 목표 가스교환에 맞춰 변경.",
+    "Waveform의 역할: 동맥혈가스·환자 관찰과 함께 현재 setting 적절성의 가장 종합적 개관, 질환 상태 모니터링, troubleshooting, patient–ventilator dyssynchrony(PVD) 원인 확인."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Waveform Types",
+   "gist": "scalar(1개 변수 vs 시간)와 loop(2개 변수) — 종속변수 scalar를 주시"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Scalar: 한 변수를 시간에 따라 표시. Loop: 두 변수를 동시에 표시.",
+    "Scalar의 6가지 기본 형태 (Fig. 35.1): square, ascending ramp, descending ramp, sine, exponential rise, exponential decay.",
+    "축 아래 편향: 기준점보다 낮은 값(예: baseline 이하 압력) 또는 방향(예: 환자로 들어가는/나오는 유량).",
+    "경험칙: 종속변수(dependent variable)를 나타내는 scalar가 호흡역학을 가장 직접 반영 — 예: pressure control 모드에서는 flow·volume scalar가 유용하고 pressure scalar는 설정대로 보일 것. 단 PVD에서는 환자 노력이 독립변수 plot에도 미묘한 변화를 일으키므로 이 규칙이 완전히 적용되지 않음."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "실용적 3가지 형태",
+   "headers": [
+    "형태",
+    "의미"
+   ],
+   "rows": [
+    [
+     "Square",
+     "변수가 급격히 변한 뒤 일정 시간 거의 일정 값 유지"
+    ],
+    [
+     "Ramp (exponential 포함)",
+     "변수가 시간에 따라 점진적으로 변함 — 변화율 일정(ramp) 또는 가변(exponential). exponential은 기능적으로 비슷해 흔히 ramp로 묶음"
+    ],
+    [
+     "Sine",
+     "환자 노력의 특징 — CPAP 또는 SIMV의 자발호흡"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "모드별 Waveform",
+   "gist": "VC = shark fin 압력·square 유량, PC = exponential decay 유량"
+  },
+  {
+   "type": "table",
+   "title": "모드별 scalar 특징 (Fig. 35.2, 35.3)",
+   "headers": [
+    "모드",
+    "Pressure",
+    "Flow",
+    "Volume"
+   ],
+   "rows": [
+    [
+     "Volume control (V-ACV, SIMV-VC)",
+     "exponential rise (\"shark fin\")\ninspiratory hold 시 폐내 가스 재분포(pendelluft)로 PIP → Pplat 하강 (hold가 없으면 이 오목부 없음, 설정 VT 도달 시 호기 시작)",
+     "흡기 내내 일정(square) → Raw 평가 가능\n일부 기계는 descending ramp 선택 가능(여러 이점)",
+     "inspiratory hold 시 뚜렷한 plateau"
+    ],
+    [
+     "Pressure control (P-ACV, SIMV-PC)",
+     "특징적 형태를 보이는 쪽이 pressure waveform",
+     "보통 exponential decay",
+     "volume control과 구별 안 될 수 있음\ninspiratory hold 처방 시 plateau"
+    ],
+    [
+     "Pressure support (예: SIMV with PSV)",
+     "—",
+     "흡기 유량이 0에 이르기 전에 peak flow의 설정 %(예: 30% of peak)에서 cycle off",
+     "유량이 낮지만 0이 아닐 때 종료되어 plateau 최소"
+    ]
+   ],
+   "note": "— = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "table",
+   "title": "SIMV breath 4가지 (Fig. 35.4)",
+   "headers": [
+    "Breath",
+    "유형",
+    "Waveform 특징",
+    "VT"
+   ],
+   "rows": [
+    [
+     "a",
+     "SIMV-VC mandatory breath",
+     "shark fin 압력 + square 유량; inspiratory hold 없음 → 목표 VT 도달 시 호기; 흡기 유량 시작 전 환자 노력(trigger) 흔적 없음",
+     "기준"
+    ],
+    [
+     "b",
+     "Spontaneous breath",
+     "sine wave; 양압 breath가 아니므로 압력의 음(−) 부분이 들어오는 유량과 동반",
+     "a보다 작음 (일반적이나 환자 노력·능력에 따라 다름)"
+    ],
+    [
+     "c",
+     "동기화된 patient-triggered, machine-delivered breath",
+     "다음 mandatory breath 시점 근처의 환자 흡기 노력에 맞춰 mandatory와 같은 breath 전달 — 환자 노력은 타이밍만 바꾸고 성격은 바꾸지 않음",
+     "a와 동일"
+    ],
+    [
+     "d",
+     "SIMV with pressure support",
+     "환자의 자발 흡기 노력에 기계가 추가 유량 공급, 설정 흡기 유량(예: 30% of peak flow)에서 중단 → 흡기 유량이 0보다 높은 수준에서 급정지",
+     "b보다 크고 a·c보다 작음 (pressure support를 올리면 같게 가능)"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "SIMV 구조: mandatory breath 직후 환자가 자발호흡할 수 있는 설정 구간이 있고, mandatory breath 직전 짧은 구간의 환자 노력은 다음 breath를 조기 trigger (IMV와 달리 synchronized). 파형 해석을 한 단계 더 복잡하게 함."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Pressure Waveform",
+   "gist": "PIP·Pplat로 유순도·Raw 계산, expiratory hold로 auto-PEEP 정량"
+  },
+  {
+   "type": "list",
+   "items": [
+    "형태: volume control(constant flow)은 exponential rising, pressure control은 square (Fig. 35.5). volume control + exponential decay flow이면 덜 네모지고 둥글게 보임.",
+    "PEEP 적용 시: 호흡 사이 압력이 baseline으로 돌아가지 않고 설정 수준에 머묾. 설정 수준 아래로 압력 저하 = 환자 노력, artifact, 또는 회로 누출."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Inspiratory pause를 이용한 역학 계산 (Fig. 35.5C)",
+   "headers": [
+    "지표",
+    "계산·측정점",
+    "해석"
+   ],
+   "rows": [
+    [
+     "Dynamic compliance (Cdyn)",
+     "tidal volume/(PIP − PEEP); PIP = point a",
+     "회로·Raw 극복 압력(영역 \"1\")이 포함되어 Cs보다 낮음"
+    ],
+    [
+     "Static compliance (Cs)",
+     "tidal volume/(Pplat − PEEP); Pplat = point c",
+     "bulk flow(가스 전달)와 pendelluft가 멈춘 뒤에만 진짜 값 — 필요한 길이의 hold(원문 기호상 <1.5 seconds)를 꺼리는 경우가 많음"
+    ],
+    [
+     "Quasistatic compliance (Cqs)",
+     "짧은 inspiratory hold로 압력이 point b까지 떨어졌을 때의 값으로 계산",
+     "—"
+    ],
+    [
+     "Airway resistance (Raw)",
+     "resistance = driving pressure/flow (PIP 이용)",
+     "—"
+    ]
+   ],
+   "note": "— = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "list",
+   "title": "Mean airway pressure(MAP) 결정 요인",
+   "ordered": true,
+   "items": [
+    "회로·기도 저항을 이기는 압력",
+    "폐를 변형하고 폐포를 팽창시키는 압력",
+    "호기 유량 구간 전체의 압력",
+    "PEEP"
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "MAP 변화: 네 영역 중 하나의 면적(높이·폭)이 늘고 다른 영역이 같은 만큼 줄지 않으면 MAP↑ (Fig. 35.6)."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "압력 scalar로 역학 변화 구분 (Fig. 35.6A)",
+   "headers": [
+    "변화",
+    "PIP",
+    "Pplat",
+    "PIP − Pplat"
+   ],
+   "rows": [
+    [
+     "Raw 증가",
+     "↑",
+     "변화 없음",
+     "↑"
+    ],
+    [
+     "Compliance 감소",
+     "↑",
+     "↑",
+     "변화 없음"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "Expiratory hold: 많은 ventilator에 기능 있음 — gas trapping에 의한 intrinsic PEEP(auto-PEEP)을 정량 (auto-PEEP이 set PEEP보다 클 때).",
+    "예시 (Fig. 35.6B): set PEEP +5 cm H₂O, intrinsic PEEP +5 cm H₂O → total PEEP +10 cm H₂O.",
+    "auto-PEEP의 해: trigger를 어렵게 함 — trigger가 PEEP보다 –2 cm H₂O로 설정되어 있으면 환자는 auto-PEEP 때문에 –2 cm H₂O가 아니라 –7 cm H₂O까지 기도압을 떨어뜨려야 breath가 trigger됨."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Flow Waveform",
+   "gist": "decelerating ramp → PIP↓·I-time 최적화; 호기 유량 0 미복귀 = auto-PEEP"
+  },
+  {
+   "type": "list",
+   "items": [
+    "모드별 형태: volume control은 보통 square 또는 descending ramp(운용자 선택 가능), 자발호흡은 sine, pressure control은 보통 exponential decay.",
+    "Constant flow(square) 장점: 유량에 절대값을 부여하고 압력차를 측정해 저항 계산 가능.",
+    "Constant flow 단점: 같은 VT에서 decelerating ramp보다 PIP가 다소 높음 (Fig. 35.7).",
+    "Decelerating ramp 장점: PIP↓ + waveform 관찰로 inspiratory time(I-time) 미세 조정 가능."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Volume control flow 파형으로 I-time 평가 (Fig. 35.8)",
+   "headers": [
+    "Breath",
+    "Flow 패턴",
+    "I-time",
+    "소견·위험"
+   ],
+   "rows": [
+    [
+     "a",
+     "Constant (square)",
+     "조정 부적합",
+     "inspiratory hold가 없으면 흡기→호기 전환이 항상 급격해 I-time 조정에 도움 안 됨"
+    ],
+    [
+     "b",
+     "Decelerating ramp",
+     "너무 짧음",
+     "flow asynchrony 유발 가능"
+    ],
+    [
+     "c",
+     "Decelerating ramp",
+     "최적",
+     "호기 시작 전 유량이 0까지 완전히 복귀"
+    ],
+    [
+     "d",
+     "Decelerating ramp",
+     "너무 김",
+     "호기 전 뚜렷한 \"zero-flow state\" → double triggering 등 PVD 위험"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "Auto-PEEP 감지 (expiratory hold 없이): 다음 breath 전달 전에 호기 유량이 0으로 돌아오지 않음 = 환자가 이전 breath를 다 내쉬기 전에 다음 breath가 들어옴 (Fig. 35.9). 흉강내 기도 기능장애가 없는 환자에서도 발생 가능."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Volume Waveform",
+   "gist": "정보는 가장 적음 — 기울기 = 순간 유량, 중·후기 호기 수직 낙하 = 누출/포획"
+  },
+  {
+   "type": "list",
+   "items": [
+    "정보량: 대부분 ventilator가 VT 수치를 보여주므로 세 scalar 중 setting 변경으로 이어질 정보가 가장 적음.",
+    "유용성: SIMV에서 자발·mandatory breath의 상대 크기, CPAP 중 환자 노력의 빠른 정성적 파악.",
+    "Flow와의 관계: 둘은 서로에게서 유도됨 — 많은 최신 ventilator는 회로 유량(흔히 flow disruptor + differential pressure transducer)을 측정해 시간 적분으로 용적 계산.",
+    "기울기 해석 (Fig. 35.10A): 기울기 = 순간 유량(ΔV/Δt). a–b 크고 양의 기울기 → flow scalar 큰 양의 편향; b–c 기울기 0 → zero-flow 구간; c–d 용적 급감 → flow scalar 큰 음의 편향. VT도 판독 가능.",
+    "누출·gas trapping: 중기~후기 호기에 volume waveform이 baseline으로 수직 낙하 = flow sensor를 통과해 들어간 용적이 돌아온 용적보다 많음 → 회로 누출 또는 가스가 환자 내 잔류(gas trapping, 흉막강으로의 일방향 흐름)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Pressure–Volume Loops",
+   "gist": "bowing↑ = 저항↑, x축 회전 = 유순도↓, LIP 이상 PEEP·UIP 미만 PIP"
+  },
+  {
+   "type": "list",
+   "items": [
+    "용도: 회로 압력·용적 변화의 동적 관계 — 오래전부터 폐역학 평가에 사용, 최근 20년간 ARDS 보호환기 전략 설계에 중요.",
+    "Mandatory breath loop (Fig. 35.11A): IPPV에서는 폐 팽창 = 회로압↑(inspiratory limb). 자발호흡(또는 음압 ventilator/iron lung)에서는 용적 증가가 회로압↓와 동반 → loop이 시계방향.",
+    "판독 포인트: loop이 압력 0에서 시작하지 않음 = PEEP 적용 중. 최상단(우상단)의 압력·용적 = PIP·VT.",
+    "Cdyn 선: 용적이 변하지 않는 두 점(시작점·흡기말)을 잇는 점선 — 회로 유량이 거의 없어 폐 팽창에 필요한 압력 반영. 이 선의 기울기 = 폐 유순도(pendelluft가 멈출 시간이 없으므로 Cdyn). inspiratory limb이 선에서 휘어져 나간 정도 = 저항 극복에 필요한 추가 압력.",
+    "Patient-triggered loop (Fig. 35.11B): 8자형 — 환자 노력 루프가 좌하단(음영)에 위치. PEEP 값(점선) 아래로 기도압을 떨어뜨리고 trigger threshold 도달 시 기계 breath 진행. 음영 면적 = trigger에 든 환자 일(work) → trigger sensitivity 변경 시 면적 변화. PVD는 다른 위치(예: expiratory limb)에 작은 환자 루프를 만들 수 있음.",
+    "설정 영향: loop 모양은 setting과 완전히 독립적이지 않음 — 같은 VT를 더 빠른 유량으로 주면 compliance 선에서 더 휘어짐."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "PV loop 소견 해석 (Fig. 35.12–35.14)",
+   "headers": [
+    "소견",
+    "의미",
+    "확인·조치"
+   ],
+   "rows": [
+    [
+     "loop이 Cdyn 선에서 더 휘어져 나감 (bowing↑), Cdyn 기울기↓",
+     "기도 또는 회로 저항↑ (Cs와 달리 Cdyn은 유량이 완전히 멈추지 않아 저항 변화에 영향받음)",
+     "ET tube 꺾임·폐쇄, heat-moisture exchanger 폐색, 기도 흡인·기관지확장제 필요 여부"
+    ],
+    [
+     "시작점 고정한 채 x축 쪽으로 회전 (a)",
+     "compliance 감소 (예: 폐부종 발생)",
+     "—"
+    ],
+    [
+     "시작점 고정한 채 y축 쪽으로 회전 (b)",
+     "compliance 증가 (예: 부종 해소)",
+     "—"
+    ],
+    [
+     "inspiratory limb 후반부가 거의 수직",
+     "pressure control에서 일정 흡기압 유지 (Fig. 35.13A)",
+     "모드 특성"
+    ],
+    [
+     "Beaking: inspiratory limb 말단이 부리 모양",
+     "과도한 VT → 폐포 과팽창, 용적 증가 거의 없이 회로압만 상승",
+     "—"
+    ],
+    [
+     "Lower inflection point (LIP)",
+     "폐 유순도가 크게 증가하는 점 — 허탈된 전도·가스교환 단위 다수 개방. 반복 개폐 → atelectrauma",
+     "PEEP을 LIP 관찰 압력 이상으로 올려 atelectrauma 최소화"
+    ],
+    [
+     "Upper inflection point (UIP)",
+     "폐포 과팽창으로 유순도가 크게 감소하는 점 — volutrauma 위험↑",
+     "PIP를 UIP 압력 아래로 유지"
+    ],
+    [
+     "열린·끊긴·불완전한 loop",
+     "회로 누출 (Fig. 35.14B)",
+     "cuff 팽창 확인, 목표 VT 전달 확인, 호흡기→흉막강 공기 누출 가능성"
+    ]
+   ],
+   "note": "— = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "list",
+   "items": [
+    "소형 환자(<2 kg) 주의: 매우 민감한 장비가 아니면 유량(용적) 신호 획득이 어려움 — 신호를 못 잡으면 마지막 값을 계속 그려 압력만 오르고 용적이 완전히 일정한 날카롭고 좁은 수평 beak가 흡기말에 생김 → 진짜 beaking으로 오인 가능. 생물학적 과정이 완전히 선형인 경우는 드묾."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Flow–Volume Loops",
+   "gist": "Raw↑ = 호기지 scooping + peak flow↓, 톱니 모양 = 흡인 필요"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Flow scalar와 관계: 흡기·호기 limb이 x축 위·아래 flow scalar 부분과 대략 같은 모양 (Fig. 35.15) — x축이 시간 vs 용적이라 정확히 일치하진 않지만 정성적으로 유사.",
+    "주 용도: 과도한 기도저항 평가, 다량의 기도 분비물·회로 누출 경고, flow asynchrony 감지.",
+    "표시 방향: ventilator 화면에서는 흡기 limb이 x축 위 (Fig. 35.16). 폐기능검사에서는 호기 limb이 x축 위, 흡기말이 y축에 가장 가깝게(180도 회전) 표시.",
+    "Fig. 35.16 판독: a = 흡기 시작 → b에서 흡기 종료(square 모양 = constant flow volume control). b→c = 호기 시작, peak expiratory flow는 호기 초기에 도달하며 환자 노력 의존(완전 assist-control 마취 환자에선 대개 무관). 이후 노력 비의존 구간(d) — Raw 변화 평가에 가장 중요."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Flow–volume loop 이상 소견 (Fig. 35.17)",
+   "headers": [
+    "소견",
+    "의미",
+    "조치"
+   ],
+   "rows": [
+    [
+     "호기 limb 중·후반부 \"scooped out\" + peak expiratory flow 감소",
+     "Raw의 유의한 증가",
+     "기도 흡인 또는 기관지확장제 필요 여부 확인"
+    ],
+    [
+     "끊긴·불완전한 loop (흡기·호기 용적 불일치)",
+     "회로 누출",
+     "—"
+    ],
+    [
+     "호기 limb 노력 비의존 구간의 톱니(saw-tooth) 모양",
+     "과도한 기도 분비물 — 기관 청진과 함께 기관 흡인 필요성의 가장 신뢰할 만한 지표 (흉부 crackles 청진은 예측력 낮음)",
+     "기관 흡인"
+    ]
+   ],
+   "note": "— = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Patient–Ventilator Dyssynchrony (PVD)",
+   "gist": "4단계(trigger·flow·cycle·호기)로 체계적 평가 — trigger 부조화가 가장 흔함"
+  },
+  {
+   "type": "list",
+   "items": [
+    "명칭: patient–ventilator interactions 또는 patient–ventilator asynchrony라고도 함. 장기 기계환기 환자의 결과에 중요한 기여 요인으로 인식 증가.",
+    "사람에서 trigger asynchrony가 단연 가장 흔한 형태. 여러 PVD가 동시에 나타날 수 있음."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "환자 호흡주기의 4단계 (Fig. 35.18)",
+   "ordered": true,
+   "items": [
+    "Initiation/trigger phase ▸ trigger asynchrony",
+    "Flow delivery phase ▸ flow asynchrony",
+    "Breath termination point ▸ termination(cycling) asynchrony",
+    "Expiratory phase ▸ expiratory asynchrony (auto-PEEP)"
+   ]
+  },
+  {
+   "type": "table",
+   "title": "PVD 유형별 소견과 대처",
+   "headers": [
+    "유형",
+    "Waveform 소견",
+    "원인",
+    "대처"
+   ],
+   "rows": [
+    [
+     "Trigger — Ineffective triggering (Fig. 35.19A)",
+     "환자가 기도압↓와 동시에 유량↑를 만들지만 기계 breath가 trigger되지 않음; 유량의 상대 변화가 커서 pressure scalar보다 flow scalar에서 더 잘 보임 (triggering delay도 동일)",
+     "부적절한 sensitivity 설정; pressure support 수준↑ → 호흡 drive 억제로 빈도↑",
+     "부적절한 trigger threshold, auto-PEEP(PEEPi), 심한 근약화·피로, 호흡 drive↓, 과도하게 깊은 마취 확인 — threshold 조정만으로 모두 교정되지는 않음"
+    ],
+    [
+     "Trigger — Auto-triggering (Fig. 35.19B)",
+     "환자 노력이 아닌 기도압·유량 변화로 breath 전달",
+     "가장 흔히 threshold/sensitivity가 부적절하게 작음; 회로 누출, 회로 내 fluid/secretions, cardiac oscillations; breath 사이 호기 무유량 시간이 길 때 더 흔함",
+     "—"
+    ],
+    [
+     "Trigger — Double triggering (Fig. 35.19C)",
+     "평균 호기시간의 절반 미만 호기시간으로 분리된 2회 breath (\"breath stacking\") → 원하는 VT의 2배 전달, 과팽창·폐포 외상 위험",
+     "환자 흡기 노력이 설정 I-time 이후에도 지속: 매우 높은 환기 요구, 낮은 VT, 너무 짧은 I-time, 너무 높은 flow-cycle threshold",
+     "—"
+    ],
+    [
+     "Flow asynchrony — volume control (constant flow) (Fig. 35.20)",
+     "수동 breath와 비교해 triggered breath의 압력 상승부 \"scooped out\" 오목(a), flow plateau 톱니(b); flow–volume·P-L loop 흡기 limb의 불규칙 오목(c, d)",
+     "신선 가스 공급이 환자에게 너무 빠르거나 느림",
+     "두 유형 breath의 파형이 비슷해질 때까지 흡기 유량↑"
+    ],
+    [
+     "Flow asynchrony — pressure control (variable flow)",
+     "흡기 유량 부족: 흡기 plateau 중 pressure-time scalar \"scooped out\"; 과다: 기도압 초기 overshoot (Fig. 35.21C)",
+     "—",
+     "rise time 조정 — 압력 파형이 거의 square, plateau 오목·overshoot 없게"
+    ],
+    [
+     "Termination — Premature cycling (Fig. 35.21A)",
+     "호기 유량 파형 초기의 급격한 반전 (흔히 압력 파형 오목 동반); 흡기 노력이 충분하면 double triggering으로 이어질 수 있음",
+     "ventilator가 cycle off할 때 환자는 아직 흡기 노력 중",
+     "I-time 또는 VT↑"
+    ],
+    [
+     "Termination — Delayed cycling (Fig. 35.21B)",
+     "중기~후기 흡기 pressure spike; 흡기말 근처 흡기 유량의 급격한 감소",
+     "ventilator가 흡기 유량 전달 중 환자가 능동 호기 시작",
+     "I-time 또는 VT↓"
+    ],
+    [
+     "Expiratory — auto-PEEP (gas trapping)",
+     "호기 유량이 0으로 돌아오지 않음 (Fig. 35.9)",
+     "—",
+     "거의 모두 호기시간을 늘리는 조정: trigger sensitivity, peak flow, flow pattern, rise time, I-time, cycle threshold, I:E ratio, respiratory rate. auto-PEEP을 고려해 PEEP↑ → trigger sensitivity·효율 개선 가능"
+    ]
+   ],
+   "note": "flow asynchrony의 초기 plateau 변화와 delayed cycling의 후기 plateau 변화를 혼동하지 말 것 — 필요한 조정이 매우 다름. — = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Summary",
+   "gist": "매시간 + 싸울 때 즉시 확인, 4단계 체계적 평가"
+  },
+  {
+   "type": "list",
+   "items": [
+    "확인 빈도: 장기 기계환기 환자는 매시간, 환자가 ventilator와 \"싸우는\" 것처럼 보이면 즉시.",
+    "활용: 회로 누출·흡인 필요성·호흡역학 변화 인식, 혈액가스 값의 맥락 제공, 질환 모니터링, 기관지확장제 반응 평가.",
+    "PVD 인식 빈도는 얼마나 자주 찾아보느냐에 크게 좌우 — 4단계 모두를 체계적·단계적으로 평가하면 setting 최적화와 과마취(및 그 부작용) 회피에 도움."
+   ]
+  }
+ ]
+}

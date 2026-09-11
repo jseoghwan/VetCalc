@@ -1,0 +1,350 @@
+{
+ "id": "sacc3-p3-c39",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part III",
+ "part_title": "Advanced Respiratory Support",
+ "chapter_num": 39,
+ "title": "Ventilator Induced Lung Injury",
+ "author": "Lisa Smart, BVSc, DACVECC, PhD; Kate Hopper, BVSc, PhD, DACVECC",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "실험 모델에서 ventilator-induced lung injury(VILI)의 대부분은 높은 흡기말 용적에 의한 신장(stretch) 손상과 관련된다.",
+    "두 번째 기여 요인은 낮은 호기말 용적으로, 폐 재팽창 시 상피 전단(shear) 손상을 일으킬 수 있다.",
+    "Ventilator-associated lung injury는 기계환기 환자의 이환율·사망률에 크게 기여할 수 있다.",
+    "예방 전략은 필요한 기계환기 기간을 줄이고 환자 결과를 개선할 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Definitions",
+   "gist": "VILI = 실험 모델, ventilator-associated = 임상 환자 (혼용됨)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Ventilator-induced lung injury (VILI): 실험 모델에서 기계환기로 생긴 폐 손상.",
+    "Ventilator-associated lung injury: 임상 환자에서 기계환기 사용과 연관된 것으로 여겨지는 폐기능 악화 또는 ARDS 유사 병변 (기저 폐질환 유무 무관).",
+    "용어 합의: 현재 문헌에 합의된 정의 없음, 일반적으로 서로 바꿔 씀.",
+    "범위: PPV는 폐에 상당한 병변을 만들고 기존 폐 기능장애를 악화시킬 수 있음이 잘 입증됨. 이 장은 VILI의 병태생리·임상적 의미·예방을 다루며, 다른 장기 영향이나 VAP(Chapter 40)는 제외."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Mechanisms of VILI",
+   "gist": "volutrauma가 핵심 — barotrauma·atelectrauma·biotrauma 등"
+  },
+  {
+   "type": "table",
+   "title": "Table 39.1 VILI 기전과 수의 환자 예방 전략",
+   "headers": [
+    "기전",
+    "설명",
+    "예방 전략"
+   ],
+   "rows": [
+    [
+     "Barotrauma",
+     "폐포 밖 공기\n• Pneumothorax\n• Pneumomediastinum\n• Subcutaneous emphysema",
+     "plateau airway pressure 최소화\n• 목표 <30 cm H₂O"
+    ],
+    [
+     "Volutrauma",
+     "과팽창에 의한 stretch injury",
+     "TV 최소화\n• 목표 TV <10 ml/kg"
+    ],
+    [
+     "Atelectrauma",
+     "Cyclic recruitment – derecruitment injury",
+     "PEEP 적용"
+    ],
+    [
+     "Mechanical power",
+     "폐로 전달되는 총 에너지 — TV, driving pressure, respiratory rate, flow rate, PEEP 포함",
+     "모든 ventilator setting 최소화 — 폐로 전달되는 모든 에너지가 손상 가능성 있음"
+    ],
+    [
+     "기계환기 중 자발호흡",
+     "자발호흡 중 폐포 팽창·전단 스트레스·atelectrauma 등은 기계 breath와 똑같이 해로움. 양압환기보다 부종 형성을 더 촉진할 수 있음",
+     "적절한 진정, ventilator setting 최적화, ± neuromuscular blockade로 patient–ventilator asynchrony 포함 자발호흡 최소화"
+    ],
+    [
+     "Biotrauma",
+     "손상된 폐에서 염증 매개체 유리 → 전신 염증 → 다장기 기능장애 촉진 가능",
+     "lung-protective ventilation으로 폐손상 제한 + 구인두 분비물 미세흡인 감소 전략"
+    ],
+    [
+     "Oxygen toxicity",
+     "고농도 산소가 직접 폐손상을 일으키고 흡수성 무기폐에 기여",
+     "24 hours 내 FiO₂ 최소화\n• 목표 FiO₂ <0.60"
+    ]
+   ],
+   "note": "TV, tidal volume; PEEP, positive end-expiratory pressure; FiO₂, fraction of inspired oxygen."
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Barotrauma"
+  },
+  {
+   "type": "list",
+   "items": [
+    "실험: 건강한 쥐에서 높은 기도압이 낮은 기도압보다 폐손상↑ — 단 고압의 영향을 고용량의 영향과 분리할 수 없음.",
+    "VILI에서의 정의: 폐포 밖 공기 → 임상적으로 pneumothorax, pneumomediastinum, subcutaneous emphysema.",
+    "사람 ARDS: 높은 기도압(peak inspiratory pressure >40 cm H₂O)이 낮은 기도압보다 pneumothorax 발생↑. 별도 연구에서 plateau pressure <35 cm H₂O 유지 시 ventilator setting과 pneumothorax 간 관계 없음.",
+    "한계: 기도압은 흉벽 팽창에 필요한 압력을 포함해 폐실질 스트레스를 정확히 반영하지 못함 → 폐 팽창압은 transpulmonary pressure가 가장 잘 반영, VILI 위험 평가에 더 나은 지표."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Volutrauma"
+  },
+  {
+   "type": "list",
+   "items": [
+    "핵심: 큰 용적 증가 없는 고압보다 고용적에 의한 stretch injury가 더 해로움.",
+    "쥐 실험: 고용적/고압, 고용적/저압(음압환기), 저용적/고압(흉벽 제한) 비교 → 두 고용적 전략 모두 상당한 폐손상, 저용적/고압은 손상이 훨씬 적음.",
+    "임상 근거: 사람에서 저VT 환기로 결과 개선."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Atelectrauma"
+  },
+  {
+   "type": "list",
+   "items": [
+    "기전: 허탈된 폐포의 반복 개폐가 상피세포를 직접 손상하고 전단 스트레스로 인접 폐포 손상 = cyclic recruitment-derecruitment injury.",
+    "정상 vs 손상 폐: 건강한 폐는 허탈 폐포가 적지만, 손상 폐는 폐포가 점점 불안정해져 팽창 중 모양이 변하고 호기말에 완전 허탈.",
+    "쥐 실험: 고압 + PEEP 없음 → 빠르게 심한 미만성 폐부종. 같은 압력 + PEEP → 훨씬 덜 해로움. PEEP은 반복 허탈·재팽창을 줄여 atelectrauma 최소화."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Mechanical Power"
+  },
+  {
+   "type": "list",
+   "items": [
+    "개념(Gattinoni 등): 환기 중 폐로 전달되는 총 mechanical power(에너지)가 VILI 가능성과 상관될 수 있음.",
+    "Intensity: 폐의 질환 특성이 중요하므로 환기 가능한 폐 면적으로 정규화 권장 — 환기에 참여하는 면적이 작으면 같은 power에서 intensity↑.",
+    "구성: TV, driving pressure, respiratory rate, flow rate, PEEP. 새로운 점은 RR과 PEEP을 VILI 기여 요인으로 포함 — PEEP은 보호적이지만 전달 에너지를 늘려 일부 상황에서 VILI에 기여 가능, RR은 오래 간과되었으나 관심 증가.",
+    "임상 적용: 아직 규명되지 않음 — 모든 setting이 잠재적으로 관련 있다는 인식을 높임."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Spontaneous Breathing"
+  },
+  {
+   "type": "list",
+   "items": [
+    "동적 스트레스: VILI 기전은 호흡 노력 중 폐에 가해지는 동적 스트레스의 산물 — 기계 breath든 자발 노력이든 똑같이 해로울 수 있음.",
+    "부종: 자발 노력으로 흉막압↓ → 폐혈관 transvascular(transmural) pressure↑ → 혈관 팽창 → 부종 형성 촉진.",
+    "해당 상황: 자발호흡 모드, patient–ventilator asynchrony 동물."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Biotrauma"
+  },
+  {
+   "type": "list",
+   "items": [
+    "기전: VILI → 세포 손상·염증 반응 → proinflammatory cytokine 유리 → 다장기 기능장애 촉진, 증가한 cytokine이 다시 VILI 악화(순환 고리).",
+    "의미: 어떤 기전이든 VILI 관련 이환율·사망률은 대부분 뒤따르는 전신 염증(biotrauma)의 결과.",
+    "근거: lung-protective ventilation이 폐손상을 제한하고 다장기 기능장애↓·결과 개선."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Oxygen Toxicity"
+  },
+  {
+   "type": "list",
+   "items": [
+    "관계: PPV와 별개이지만 PPV 환자는 거의 항상 대기 이상의 산소(최대 FiO₂ 100%)를 받음 → VILI 손상에 가산적 효과 가능, 특히 고농도 장기간 (Chapter 8).",
+    "단기: FiO₂ 100% → 흡수성 무기폐, 산소 확산능↓.",
+    "24 hours 초과: FiO₂ 50%–100% → reactive oxygen·nitrogen species 생성↑, ARDS·VILI 유사 병변(간질 부종, hyaline membrane 형성, 폐포막 손상, 점액섬모 기능 변화, 섬유증식).",
+    "용량-시간 관계: 손상은 FiO₂ 수준과 투여 기간에 양의 상관.",
+    "결론: PPV는 폐 용적 변화 제한, 적절한 PEEP, 환자가 견디는 수준까지 FiO₂ 제한의 섬세한 균형."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Histopathology",
+   "gist": "ARDS와 구별 어려움, 의존부 폐에 심함 — 개에서 prone 시 사라짐"
+  },
+  {
+   "type": "list",
+   "items": [
+    "소견: 소기도 상피 온전성↓, type 1 폐포상피 파괴, 폐포·기도 침수, hyaline membrane 형성, 간질 부종, 염증세포 침윤 — ARDS 변화와 구별 어려움 (Chapter 25).",
+    "분포: 대체로 고르지 않으나 의존부(dependent) 폐에서 더 심함(기도 침수·전단 손상 악화 추정). 개 실험에서 prone(sternal) 자세 시 이 분포가 사라짐."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Clinical Relevance",
+   "gist": "개 정상 VT 약 15 ml/kg — 사람 기준 VT는 개에게 너무 낮을 수 있음"
+  },
+  {
+   "type": "list",
+   "items": [
+    "사람 근거: 최근 10년간 높은 VT와 급성 폐손상·호흡부전 발생의 연관성 보고 → 용적 제한·PEEP 중심의 lung-protective 전략 개발.",
+    "ARDSnet: ALI·ARDS에서 VT 6 ml/kg vs 12 ml/kg → 사망률 감소 (저VT군은 PEEP·흡입 산소 농도도 약간 높았음).",
+    "Meta-analysis(성인 ARDS RCT 9건: high PEEP 없는 7건 + high PEEP 2건): 저용적 환기가 사망률 감소와 연관 — 단 high PEEP 없는 7건만 보면 연관 없음.",
+    "비ARDS: 수술 중 환기 meta-analysis에서 저VT(<10 ml/kg)가 폐렴 빈도와 수술 후 환기 지지 필요를 줄임.",
+    "수의 근거: 고용적/저PEEP 환기가 개·고양이 임상 환자에 해롭다거나 lung-protective 전략이 결과에 영향을 준다는 근거는 적음. 개·고양이에서 무엇이 \"고용적\"인지도 불명."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "종별 VT 자료",
+   "headers": [
+    "대상",
+    "VT",
+    "비고"
+   ],
+   "rows": [
+    [
+     "건강한 개·고양이 (자발호흡, 일화적 추정)",
+     "10 to 20 ml/kg",
+     "—"
+    ],
+    [
+     "개 (실험, 정상 자발호흡)",
+     "평균 15 ml/kg",
+     "일화적 기술과 일치, 개체 간 변동 큼"
+    ],
+    [
+     "깨어 있는 사람 (안정 시)",
+     "약 8–9 ml/kg",
+     "개보다 작음"
+    ],
+    [
+     "고양이 (자발호흡)",
+     "약 7–8 ml/kg",
+     "개보다 작음"
+    ],
+    [
+     "건강한 개 단기 PPV",
+     "15 ml/kg vs 10 ml/kg",
+     "15 ml/kg에서 사강 환기 감소 등 폐 기능 개선"
+    ],
+    [
+     "CT 촬영 중 개",
+     "15 ml/kg + PEEP 5 cm H₂O vs 8 ml/kg 및/또는 PEEP 없음",
+     "15 ml/kg + PEEP에서 유순도 개선·무기폐 감소"
+    ]
+   ],
+   "note": "사람의 lung-protective VT 가이드라인은 개에게 너무 낮을 수 있음을 고려해야 함. — = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "수의 임상 관찰 연구 (PPV >24 hours)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "VT: >10 ml/kg 사용이 흔해 보이나 VILI 유병률은 파악되지 않음.",
+    "경추 질환 개 14마리(PPV 전 폐기능 비교적 정상): 2마리가 폐부전 포함 다장기 기능장애로 안락사, 평균 VT 18 ± 5 ml/kg (PEEP 언급 없음).",
+    "Pneumothorax: 5개 case series에서 0% to 28%, 가장 큰 코호트 7%(ARDSnet과 비슷).",
+    "고양이 PPV case series(28%): peak inspiratory pressure >25 cm H₂O 또는 폐실질질환과 pneumothorax 간 연관 없음. 평균 VT 23.7 ± 8.6 ml/kg, VT와의 연관은 조사 안 됨.",
+    "Pneumomediastinum: 고양이 PPV 동반 전신마취 합병증 case series 1건, 흡인성 폐렴으로 PPV 받은 개 1례.",
+    "해석: 폐기능 악화·폐외 가스 등 합병증이 환기 전략 때문인지 기저 폐질환 때문인지 불명 — 실험·사람 근거상 가능하면 lung-protective 전략을 염두에 두어야 함."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Prevention",
+   "gist": "개·고양이 VT 6–12 ml/kg 최저, PEEP, plateau <30 cm H₂O"
+  },
+  {
+   "type": "list",
+   "items": [
+    "기존 전략: VILI 예방 전략 다수는 ARDS의 protective lung ventilation의 일부 (Chapter 33)."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "기계환기 설정별 예방 전략",
+   "headers": [
+    "항목",
+    "권고",
+    "근거·주의"
+   ],
+   "rows": [
+    [
+     "Low tidal volume",
+     "필요한 혈액가스 유지에 필요한 최저 VT 목표 — 개·고양이 6 to 12 ml/kg 범위일 가능성",
+     "사람 ARDS 4 to 6 ml/kg 권고. 개·고양이 최적 목표는 불명, 해부학적 차이로 품종 간 다를 것. 대부분 수의 임상 연구는 >10 ml/kg 사용. 손상 폐에서 특히 중요 — 기능 단위 용적이 크게 줄고, 염증으로 불균일(유순도 낮은 영역·무기폐)해져 유순한 영역이 과팽창 → 가능한 한 VT 제한. 단 저VT는 무기폐 지속·전단 손상 위험↑ → PEEP 필수"
+    ],
+    [
+     "Permissive hypercapnia",
+     "저VT의 흔한 결과인 hypercapnia에서 setting을 올리지 않고 정상보다 높은 PaCO₂ 허용",
+     "VILI 가능성↓ 가능하나 hypercapnia의 생리적 결과가 결과에 영향 줄 수 있음"
+    ],
+    [
+     "PEEP",
+     "어느 정도의 PEEP이 zero end-expiratory pressure보다 나음",
+     "VILI를 줄이는 최소 PEEP은 미확립, 사람에서 흔히 5 to 10 cm H₂O"
+    ],
+    [
+     "Plateau pressure 제한",
+     "<30 cm H₂O 목표 (사람 protective 전략)",
+     "저항에 영향받지 않아 폐에 가해지는 압력을 가장 잘 반영. inspiratory hold로 측정, 측정 중 능동 호흡 노력 없어야 함. high PEEP + auto-PEEP(호기 유출 저항↑, asynchrony, 불완전 호기) + VT → 높은 흡기말 용적 → plateau↑. 시스템 저항이 높지 않으면 PIP를 대리지표로 사용 가능"
+    ],
+    [
+     "Respiratory rate·inspiratory flow",
+     "—",
+     "높은 RR·흡기 유량이 VILI를 촉진할 수 있다는 일부 근거, 정확한 역할은 미정 — 조정으로 PPV 안전성 추가 개선 가능성"
+    ],
+    [
+     "Pressure–volume loop 주관적 분석",
+     "PEEP과 PIP를 하·상 inflection point 사이에 유지하면 유익할 수 있음 (Fig. 35.11)",
+     "inflection point 결정은 복잡해 bedside에서 쉽지 않음. \"beaking\"으로 과팽창 인식에 도움 (Fig. 35.13)"
+    ]
+   ],
+   "note": "— = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "자발호흡과 NMBA"
+  },
+  {
+   "type": "list",
+   "items": [
+    "중증도에 따라: 심한 ARDS에서는 자발 노력이 나쁜 결과와 연관, 덜 심한 폐질환에서는 폐 재모집 개선·횡격막 긴장 개선 등 이득 가능.",
+    "NMBA(사람 ARDS): 자발 노력 제거 연구 결과 상충. 최근 사람 가이드라인 — 가벼운 진정을 견디는 중등도·중증 ARDS에서 일상적 NMBA 반대, 깊은 진정이나 prone 환기가 필요하면 NMBA 사용 합리적."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Advanced Pulmonary Support Techniques"
+  },
+  {
+   "type": "list",
+   "items": [
+    "연구 중(사람 ARDS): partial liquid ventilation, high-frequency oscillatory ventilation, extracorporeal membrane oxygenation, carbon dioxide removal."
+   ]
+  }
+ ]
+}

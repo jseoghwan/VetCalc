@@ -1,0 +1,323 @@
+{
+ "id": "sacc3-p3-c40",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part III",
+ "part_title": "Advanced Respiratory Support",
+ "chapter_num": 40,
+ "title": "Ventilator-Associated Pneumonia",
+ "author": "Steven E. Epstein, DVM, DACVECC",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "Ventilator-associated pneumonia(VAP)는 삽관 최소 48 hours 이후 발생한 전신 염증, 폐기능 악화, 흉부 영상의 새로운·진행성 폐 침윤으로 진단한다.",
+    "VAP의 주 위험인자는 기관내 삽관이며, 발생 시 높은 사망률과 연관된다.",
+    "VAP 예방은 예방 전략을 bundle로 묶어 위험 환자 모두에게 시행할 때 가장 효과적이며, 의료진 교육이 핵심이다.",
+    "VAP 의심 시 하기도 샘플 채취를 포함한 조기 진단을 시행하고 경험적 치료를 시작하며, 배양 결과가 나오면 항균제를 변경한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "정의와 역학",
+   "gist": "삽관·환기 48시간 후 새로 생긴 폐렴 — 사람 약 3%–10%"
+  },
+  {
+   "type": "list",
+   "items": [
+    "정의: 기관내 삽관·기계환기 48 hours 이후 발생하고 삽관 시점에는 없던 폐렴.",
+    "수의 범위: 환기 없이 장기간 삽관만 유지하는 환자도 같은 병인 요인에 노출 → 이 장은 기계환기 여부와 관계없이 기관내 삽관된 마취 개·고양이 전체를 다룸.",
+    "발생률: 수의학 미보고. 사람은 기계환기 환자의 약 3%–10%(감소 추세 보고도 있음). 미국 소아 ICU(2012) ventilator day 1000일당 0.2 and 0.8.",
+    "시기: 환기 기간에 따라 위험이 달라지고 early-onset vs late-onset의 위험인자가 다름. 대부분 동물은 1주 미만 환기 → 대부분 첫 며칠 내 발생 예상, 단 누적 발생률은 삽관 일수와 함께 증가.",
+    "결과: 사람에서 치료 발전에도 사망률↑ 지속, 필요한 환기 기간도 늘려 수의학 사망률에 기여 → 조기 진단·예방이 결과 개선의 핵심."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Pathogenesis",
+   "gist": "ET tube가 주 위험인자 — cuff 너머 미세흡인과 tube 내 biofilm"
+  },
+  {
+   "type": "list",
+   "items": [
+    "병원체 유입 후 경과: cuff를 지난 병원체는 정상 방어로 제거, 하기도 집락, 기관기관지 감염(ventilator-associated tracheobronchitis, VAT), 또는 폐실질 감염 = VAP.",
+    "방어기전 손상: 정상 방어(기침, 점액 청소, 체액성·세포성 면역)가 진정·ET tube로 기침 감소, cuff 팽창에 의한 점액섬모 청소율 저하, 중증질환의 면역 기능 저하·원내감염 감수성↑로 손상. VAP에서 호중구 탐식능 저하, 폐포 내 호중구 protease 상승 근거.",
+    "주 위험인자: ET tube 존재 — 비침습 기계환기 환자는 기관내 삽관 환자보다 VAP 위험이 낮음.",
+    "재삽관: meta-analysis에서 발관 실패 후 재삽관의 VAP odds ratio 7.6 (95% CI 3.6%–15.8%), 계획된 vs 계획되지 않은 발관 간 차이도 보고."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "두 가지 주요 기전"
+  },
+  {
+   "type": "table",
+   "title": "미세흡인과 biofilm",
+   "headers": [
+    "기전",
+    "내용"
+   ],
+   "rows": [
+    [
+     "Microaspiration (cuff 너머)",
+     "cuff 팽창 시 성대 아래·cuff 위(subglottic region)에 분비물 고임. 기관 손상 예방용 high-volume, low-pressure cuff에 생기는 세로 주름을 따라 subglottic fluid의 미세·거대 흡인 → 세균이 tube 내부나 기도로 이동"
+    ],
+    [
+     "Biofilm (tube 내부)",
+     "대부분 polyvinyl chloride인 tube 내면에 세균이 부착해 복잡한 polysaccharide matrix(biofilm) 생성 → 에어로졸 항균제가 아니면 접근 불가. 증식한 세균이 기류·흡인·기관지경 조작으로 하기도로 탈락. 사람 VAP 코호트 70%에서 biofilm과 기관 분비물의 병원체가 동일, biofilm 분리주의 항균제 내성이 더 높음"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "세균의 출처"
+  },
+  {
+   "type": "list",
+   "items": [
+    "외인성: 오염된 호흡 장비, 환경, 의료진 손 (손 위생·장비 관리는 Chapter 37). 적절한 손 위생 시 주 집락원은 내인성 세균일 가능성.",
+    "구강 세균총 변화: 정상 구강은 혼합 세균총, 중증질환에서는 호기성 Gram-negative 우세 — protease·immunoglobulin·효소를 포함한 침을 퍼뜨리는 정상 삼킴(구강 위생)이 없어서. 항균제 투여 환자는 항균제 압력으로 세균총 변화·내성↑.",
+    "수의 연구: 기계환기가 필요한 호흡부전 개·고양이는 덜 심한 호흡기질환 환자보다 하기도 배양에서 호기성 Gram-negative 장내세균 비율↑, 항균제 내성률↑.",
+    "위 기원: 위산 억제제 투여 중환자는 위 집락률↑. 위 집락과 VAP 관계는 찬반 근거가 있어 논란 → probiotic 연구로 이어짐. 사람에서 경장 급여가 VAP 발생과 연관 → 위장관이 잠재적 출처."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "원인균"
+  },
+  {
+   "type": "list",
+   "items": [
+    "주류: 호기성 세균이 대부분. 혐기성 세균·바이러스·진균은 드묾.",
+    "단일 vs 복합 감염: 복합 감염이 단일 감염만큼 흔할 수 있으나 사망률 차이는 입증되지 않음.",
+    "MDR: 초기엔 early-onset VAP가 multidrug-resistant(MDR) 균과 무관하다고 여겼으나 근거 상충. MDR VAP 위험인자 정의는 어렵지만 이전 항균제 사용이 관련. 지역 역학 자료가 예상 병원체 판단에 중요."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Diagnosis",
+   "gist": "VAC → IVAC → possible/probable VAP, 최종 진단엔 흉부 영상 필요"
+  },
+  {
+   "type": "list",
+   "items": [
+    "CDC 감시 체계(2013): 일관된 정의 부족으로 국가 단위 추적이 어려워 ventilator-associated event 감시로 전환 — 3단계: VAC 안에 비감염성·감염 관련(IVAC) 조건, IVAC 안에 possible 또는 probable VAP. 각 단계는 이전 단계를 전제.",
+    "VAC: FiO₂ 또는 PEEP 변화 기준으로 ventilator에서 최소 2 days 안정 후 최소 2 days 산소화 악화. 모든 형태의 VILI(Chapter 39)와 IVAC 포함.",
+    "Fig. 40.1: 전신 염증 기준을 개·고양이에 맞게 수정한 수의용 가이드라인 (SIRS 기준은 Chapter 7). 알고리즘의 VAP 의심 단계에는 흉부 영상이 포함되지 않지만 최종 진단에는 포함."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Fig. 40.1 수의용 수정 CDC ventilator-associated event 기준",
+   "headers": [
+    "단계",
+    "기준"
+   ],
+   "rows": [
+    [
+     "VAC (ventilator-associated condition)",
+     "일일 최소 FiO₂ 또는 PEEP*이 ≥2 calendar days 안정·감소한 뒤 다음 중 하나의 산소화 악화:\n1) 일일 최소 FiO₂가 baseline 대비 ≥0.20 증가가 ≥2 days\n2) 일일 최소 PEEP이 baseline 대비 ≥3 cm H₂O 증가가 ≥2 days\n* 일일 최소값 = 하루 중 ≥1 hour 유지된 최저값; PEEP 0–5 cm H₂O는 동등 취급"
+    ],
+    [
+     "IVAC (infection-related VAC)",
+     "VAC + 다음 두 가지 모두:\n1) 개: 체온 <100.6°F (38.1°C) 또는 >102.6°F (39.2°C), 또는 WBC ≤6,000 cells/µl 또는 ≥16,000 cells/µl\n   고양이: 체온 <100.0°F (37.8°C) 또는 >104.0°F (40.0°C), 또는 WBC ≤5,000 cells/µl 또는 ≥19,000 cells/µl\n2) 새 항균제 시작 후 ≥4 days 지속"
+    ],
+    [
+     "Possible VAP",
+     "IVAC + 다음 중 하나:\n1) 폐·기관지·기관의 화농성 분비물 — 저배율 시야당 호중구 ≥25 (4+ 또는 many), 편평상피세포 ≤10 (≤2+ 또는 few)\n2) sputum, endotracheal aspirate, bronchoalveolar lavage, protected specimen brush의 정성·반정량·정량 배양 양성(정상 호흡기·구강 세균총, coagulase-negative Staphylococcus, Enterococcus spp. 제외) 또는 폐조직에서 어떤 병원체든 배양 양성"
+    ],
+    [
+     "Probable VAP",
+     "IVAC + 다음 중 하나:\n1) possible VAP의 화농성 분비물 + 다음 배양 양성 중 하나 (제외 균은 possible VAP와 동일):\n• Endotracheal aspirate ≥10⁵ CFU/ml\n• Bronchoalveolar lavage ≥10⁴ CFU/ml\n• Protected specimen brush ≥10³ CFU/ml\n• Lung tissue ≥10⁴ CFU/g (모든 균)\n2) 유치 흉관이 아닌 흉막액 배양 양성 또는 감염을 시사하는 폐 조직병리 양성"
+    ]
+   ],
+   "note": "CFU, colony forming units. 본문 표기: 화농성 분비물 기준 호중구 25·편평상피 ≤10 per low power field."
+  },
+  {
+   "type": "table",
+   "title": "Box 40.1 CDC NHSN VAP 감시 정의 (PNU1, 수정)",
+   "headers": [
+    "범주",
+    "기준"
+   ],
+   "rows": [
+    [
+     "영상 (연속 흉부 영상 2회 이상에서 하나 이상)",
+     "새롭고 지속되거나 진행하며 지속되는: infiltrate, consolidation, cavitation\n폐·심장질환이 없는 환자는 확정적 영상 1회도 인정"
+    ],
+    [
+     "징후·증상",
+     "다음 중 하나 이상: 발열, 백혈구감소 또는 백혈구증가\n그리고 다음 중 하나 이상: 새로 생기거나 변한 화농성 객담·호흡기 분비물 증가, 새로 생기거나 악화된 기침·호흡곤란, 가스교환 악화(산소 불포화, 산소 요구↑, ventilator 요구↑), crackles 또는 bronchial breath sounds"
+    ],
+    [
+     "검사실",
+     "다음 중 하나 이상: 혈액·흉막액·폐조직 배양에서 균 확인, 하기도 배양 양성(기준치 Table 40.1) 또는 세포내 세균을 가진 세포 5%, 적절한 조직병리 근거"
+    ]
+   ],
+   "note": "세 범주(영상, 징후·증상, 검사실)를 모두 충족하고 감염 진단 전 tracheostomy 또는 ET tube가 48 hours 넘게 있어야 VAP. 신생아·소아·특정 병원체(예: 진균)는 별도 기준. 연구엔 유용하나 회고적으로 가장 잘 적용되어 개별 환자 임상 결정엔 한계."
+  },
+  {
+   "type": "table",
+   "title": "Table 40.1 배양 검체 정량 기준",
+   "headers": [
+    "채취 방법",
+    "정량 기준"
+   ],
+   "rows": [
+    [
+     "Bronchoscopic bronchoalveolar lavage",
+     "10⁴ CFU/ml"
+    ],
+    [
+     "Blind bronchoalveolar lavage",
+     "10⁴ CFU/ml"
+    ],
+    [
+     "Bronchoscopic protected specimen brush",
+     "10³ CFU/ml"
+    ],
+    [
+     "Blind protected specimen brush",
+     "10³ CFU/ml"
+    ],
+    [
+     "Endotracheal aspirate",
+     "10⁵ CFU/ml"
+    ],
+    [
+     "Lung tissue",
+     "10⁴ CFU/g tissue"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "VAT: VAP와 같은 기원의 기관기관지 감염이지만 폐실질은 침범하지 않음. 같은 임상 징후 가능 → VAT/VAP 임상 기준 충족 시 흉부 영상 적응. VAP 진단엔 새롭거나 진행하는 폐 침윤 필수.",
+    "흉부 방사선: 폐출혈, 무기폐, ARDS를 폐렴 침윤으로 오인할 수 있어 해석 어려움.",
+    "폐 초음파: 체계적 고찰에서 작은 흉막하 경화(subpleural consolidation)와 dynamic air bronchogram이 가장 유용한 징후, 초음파 단독보다 임상 점수 체계가 더 유용. 포함 연구 중 screening 도구로 쓴 것은 없음.",
+    "기도 배양의 한계: endotracheal aspirate는 진짜 감염이 아닌 tube 집락을 반영할 수 있음, 비기관지경 기법은 비감염 부위를 채취할 수 있음, 결과까지 최대 48 to 72 hours.",
+    "Biomarker: 수 시간 내 결과·간호 인력이 비침습 채취 가능한 장점으로 연구 중이나 좋은 진단검사에 필요한 민감도·특이도를 가진 것은 없음. procalcitonin 사용은 생존에 영향 없이 항균제 기간을 단축."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Prevention",
+   "gist": "bundle로 모든 위험 환자에 — 교육·손 위생·조기 weaning·chlorhexidine"
+  },
+  {
+   "type": "list",
+   "items": [
+    "원칙: 단일 조치로는 효과 없음 → 위험 환자에 bundle로 적용. 소아·성인에서 bundle 도입이 VAP 발생률을 낮춤."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Box 40.2 VAP 발생을 줄일 수 있는 예방 조치",
+   "items": [
+    "Nonpharmacologic: 돌봄 인력 교육 프로그램 제공 및 준수 모니터링",
+    "Nonpharmacologic: 엄격한 alcohol 기반 손 위생",
+    "Nonpharmacologic: weaning protocol로 삽관 시간 최소화",
+    "Nonpharmacologic: 오염이 없으면 환기 회로 교체하지 않음",
+    "Nonpharmacologic: subglottic 분비물 흡인",
+    "Nonpharmacologic: ET tube cuff pressure 25 cm H₂O 유지 (본문: 25 to 30 cm H₂O)",
+    "Nonpharmacologic: nurse to patient ratio 최소화",
+    "Pharmacologic: 희석 chlorhexidine으로 구강 관리",
+    "Pharmacologic: 예방적 위 pH 상승 피하기"
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Nonpharmacologic strategies"
+  },
+  {
+   "type": "list",
+   "items": [
+    "교육: ICU 인력 교육으로 발생률↓. 프로토콜 준수 정기 평가·간호사 피드백으로 VAP↓·준수↑, nurse to patient ratio가 낮을수록 준수↑. 기계환기가 흔하지 않은 기관은 증례 시작 시마다 프로토콜 검토.",
+    "손 위생(WHO·CDC 핵심 전략): alcohol 기반 hand rub 포함 적절한 손 위생으로 VAP 위험↓. 환자 접촉 전 손 씻기 또는 alcohol hand rub 후 검사 장갑. 기도·구강을 만지기 직전 손 위생, 다른 부위를 검사한 뒤 기도·구강으로 돌아올 때도 다시.",
+    "삽관 기간: 길수록 누적 위험↑. 프로토콜 기반 weaning은 환기 기간↓·VAP↓, 간호사 주도 프로토콜이 의사 주도보다 환기 기간을 더 줄일 수 있음.",
+    "회로: 적정 사용 기간 미확립. meta-analysis에서 2 days마다 교체가 7 days마다보다 폐렴 위험↑, 일상 교체 안 해도 VAP odds 증가 없음 → 오염이 없으면 일상 교체하지 않음.",
+    "ET tube 종류: tapered-cuff·silver-coated tube는 초기 기대와 달리 임상시험에서 도움 안 됨. 연속 cuff 압력 조절, polyurethane cuff, low-volume low-pressure tube는 추가 연구 필요. 수의학의 현재 유일한 권고는 가능하면 멸균 low-pressure high-volume cuff ET tube.",
+    "Subglottic 흡인: VAP 감소에 강한 근거. cuff 위로 나오는 연속 흡인 포트 tube는 비용 효과가 의문. 사람은 간헐 흡인 권고, 수의학에선 실용적이지 않을 수 있음.",
+    "Cuff 압력: 미세흡인 예방을 위해 25 to 30 cm H₂O 유지, 최적 측정 빈도는 미확립."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Pharmacologic strategies"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Chlorhexidine 구강 소독: VAP 발생률↓, 현재 standard of care. 최적 농도 미정이나 0.12% to 2%에서 좋은 효과, 최적 빈도 미정이나 하루 2~4회 권고. 칫솔질 병용은 체계적 고찰에서 chlorhexidine 단독 대비 이득 없음.",
+    "위 pH 상승(H2RA, PPI): 사람에서 논란 — 이득은 스트레스 관련 점막질환·궤양 감소, 해는 위 세균 집락↑. H2RA vs sucralfate meta-analysis에서 명백한 출혈 치료 효과는 같았으나 H2RA군 위 집락·VAP↑. 개·고양이는 스트레스 궤양이 드물고 사람에서 위 집락이 VAP와 연관 → 모든 종의 기계환기에서 위산 억제제 일상 사용 비권장, 확인된 위장관 궤양에만 사용.",
+    "Probiotics: 위장관의 병원성 세균 집락을 줄이려는 대안 — 일부 연구는 이득, 최근 RCT 포함 일부는 이득 없음. 연구 설계 이질성이 커 확정 권고 전 추가 연구 필요."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Treatment",
+   "gist": "possible VAP 단계에서 즉시 경험적 치료, 대부분 7일 — 배양 후 de-escalation"
+  },
+  {
+   "type": "list",
+   "items": [
+    "시작 시점: 임상적 의심 + 기도 미생물 검체 채취·분석 즉시(알고리즘의 possible VAP 도달 시) — 적절한 항균제 지연은 사망률↑.",
+    "경험적 선택(IDSA): 지역 병원체 분포·감수성에 근거. 지역 가이드라인이 없으면 광범위 항균제.",
+    "항녹농균 약물: IDSA는 높은 유병률 때문에 fluoroquinolone, piperacillin-tazobactam, ceftazidime 등 antipseudomonal 약물을 경험적으로 권고.",
+    "MRSA: 지역에 methicillin-resistant Staphylococcus spp.가 흔하고 호흡기액 세포학에서 Gram-positive cocci가 보이면 vancomycin 경험적 추가 가능.",
+    "수의 연구: 하기도 배양 양성인 호흡부전 개·고양이에서 검사한 모든 호기성 세균에 >90% 효능을 보인 것은 amikacin과 carbapenem뿐 → MDR 위험인자가 있으면 carbapenem이 합리적 경험적 선택.",
+    "Aminoglycoside IV: 감염 폐조직 침투가 나빠 단독요법으로 쓰지 않음.",
+    "De-escalation: 광범위 경험적 치료를 선택했다면 배양·감수성 결과가 나오면 좁고 표적화된 항균제로 반드시 전환."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "MDR 균 위험인자 (있으면 MDR 커버 확대 고려, Chapter 99)",
+   "items": [
+    "90 days 내 항균제 사용",
+    "진단 시 septic shock",
+    "VAP 이전의 ARDS",
+    "VAP 발생 전 5 days 입원"
+   ]
+  },
+  {
+   "type": "table",
+   "title": "치료 기간과 흡입 항균제",
+   "headers": [
+    "항목",
+    "권고",
+    "근거·주의"
+   ],
+   "rows": [
+    [
+     "기본 기간",
+     "적절한 항균제 총 7 days로 대부분 치료 가능",
+     "RCT 4건 모두 단기 치료에 동의. 최대 연구: 8 days vs 15 days 간 사망률·재감염·ventilator-free days·ICU 재원 차이 없음; 재감염 환자에서 8-day군의 MDR 출현이 적음"
+    ],
+    [
+     "fermenting Gram-negative bacillus 배양 시",
+     "14- to 21-day 치료 고려",
+     "Pseudomonas aeruginosa·Acinetobacter spp. 등에 의한 VAP는 8 days만 치료 시 사망률↑"
+    ],
+    [
+     "흡입 항균제 (aminoglycosides, polymyxins)",
+     "aminoglycoside 또는 polymyxin에만 감수성인 Gram-negative bacilli(예: Acinetobacter spp., Pseudomonas aeruginosa)에 의한 VAP에만 추가",
+     "폐 고농도·biofilm 도달 가능, 전신 흡수·독성 회피; 둘 다 신독성 우려; 기계환기 중에는 ultrasonic 또는 vibrating plate nebulizer로 전달 극대화; 일상 사용 시 사망률 개선과의 강한 연관 없음"
+    ]
+   ]
+  }
+ ]
+}

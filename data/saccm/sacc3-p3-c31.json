@@ -1,0 +1,289 @@
+{
+ "id": "sacc3-p3-c31",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part III",
+ "part_title": "Advanced Respiratory Support",
+ "chapter_num": 31,
+ "title": "High-Flow Nasal Oxygen",
+ "author": "Iain Keir, BVMS, DACVECC, DECVECC",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "High flow nasal oxygen(HFNC)은 온도·습도가 조절된 산소를 최대 60 L/min 유량으로 공급한다.",
+    "HFNC의 높은 유량은 환자의 분당환기량(minute volume) 요구를 맞출 수 있다.",
+    "사강 세척(dead space washout) 증가와 대기 공기 희석 감소로 폐포 산소 농도가 개선되고, PEEP 유사 효과도 생긴다.",
+    "흡입가스를 적절히 가온·가습하면 고유량에 대한 환자 내성이 좋아지고 기도 손상이 예방된다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Introduction",
+   "gist": "HFNC = 32–42°C 가온·100% 가습 + FiO₂ 0.21–1.00 고유량"
+  },
+  {
+   "type": "list",
+   "items": [
+    "적응: 표준 비강 캐뉼라나 oxygen cage로 불충분할 때 산소요법을 상향(escalation)하는 방법.",
+    "표준 비강 캐뉼라에 유량만 높인 것이 아님: 의료용 산소/공기를 32°C–42°C로 가온, 상대습도 100%로 가습.",
+    "공급 범위: FiO₂ 0.21–1.00, 유량 최대 60 L/min (KEY POINTS 표기; 서론 본문에는 \"60 ml/min\"으로 표기).",
+    "설정: 온도·FiO₂·유량은 임상의가 설정·조절."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "생리학적 이점 (Box 31.1)",
+   "gist": "흡기 유량 충족·PEEP 유사 효과·산소 희석↓·사강 세척"
+  },
+  {
+   "type": "list",
+   "title": "Box 31.1 Physiological Benefits",
+   "items": [
+    "Heated and humidified oxygen (가온·가습)",
+    "Inspiratory flow demands (흡기 유량 요구 충족)",
+    "Functional reserve capacity (기능적 잔기량)",
+    "Lighter (가벼운 인터페이스)",
+    "Oxygen dilution (산소 희석 감소)",
+    "Washout dead space (사강 세척)"
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "가온·가습 가스 공급"
+  },
+  {
+   "type": "list",
+   "items": [
+    "표준 비강 산소 vs HFNC: 표준은 차갑고 거의 가습되지 않은 산소, HFNC는 능동적으로 가온·가습.",
+    "효과: 고유량 내성↑, 기도 점막 건조·점막 미란·출혈 및 국소 면역 저하에 따른 기회감염 경향 최소화.",
+    "건조 산소 대비: 기도 염증↓, 점액섬모 기능 유지, 점액 청소 개선.",
+    "온도: 체온보다 약간 낮은 흐름 온도가 편안할 수 있음 — 최근 보고에서 흡입가스 31°C가 37°C보다 편안함 개선 (유량 30 L/min, 60 L/min)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "흡기 유량 요구 (Inspiratory Flow Demands)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "HFNC의 주된 직접 이점 — 초기 유량 선택 시 중요한 고려사항.",
+    "표준 비강 캐뉼라 권장 산소 유량: 50–150 ml/kg/min.",
+    "예시: 20-kg, 급성 hypoxemia, 빈호흡(RR 60 breaths/min), minute volume 18 L/min → 150 ml/kg/min(3 L/min) 공급으로는 폐포 산소가 예상만큼 개선되지 않음 = \"flow starvation\"."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "기능적 잔기량 (FRC)과 PEEP 효과"
+  },
+  {
+   "type": "list",
+   "items": [
+    "논란: HFNC가 적용하는 PEEP 양은 논쟁 중. 성인 사람에서 10 L/min당 PEEP 1 mm Hg 보고, 건강한 개에서도 어느 정도 PEEP 근거 있음.",
+    "Daly 등: 건강한 개, Vapotherm 20 L/min·30 L/min에서 경폐압(transpulmonary pressure) 변화.",
+    "Jagodich 등: 건강한 개, Optiflow >1 L/kg/min에서 PEEP 효과.",
+    "효과: PEEP → FRC↑ → 폐 유순도 개선, 일부 환기/관류 이상 교정.",
+    "단순 적용 주의: \"10 L/min당 1 mm Hg\" 규칙은 수의 환자에 과도한 단순화 — 체구, 폐용적·분당환기량 대비 유량, 개구/폐구 호흡(개구 시 압력이 새어 PEEP↓), 캐뉼라 직경:콧구멍 둘레 비가 영향.",
+    "심혈관 영향: PEEP은 특히 혈역학적으로 불안정한 환자에서 해로울 수 있음 — Roca 등(사람 10명)에서 HFNC가 흡기 시 하대정맥 허탈 유발 → 전부하 감소 가능성."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "가벼움 (Lighter)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "캐뉼라 형태: 사람 얼굴용 설계라 개·고양이에 이상적이지 않음 — 봉합(finger trap) + 무독성 접착제로 고정 (Fig. 31.1).",
+    "CPAP 대비: 깊은 진정이 흔히 필요한 밀착형 CPAP mask·hood보다 가볍고 편안 → 순응도↑ → 산소화 개선·호흡일↓ 기대."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "산소 희석 (Oxygen Dilution)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Dunphy 등(건강한 개, RR 8–12 breaths/min): 유량↑에 따라 FiO₂ 용량의존적 증가, 양측 비강 캐뉼라로 FiO₂ 최대 0.8.",
+    "hypoxemic 환자는 RR이 이 범위를 넘는 경우가 많아 분당환기량이 크게 달라짐.",
+    "폐포 산소 농도는 산소 가스 유량 : 분당환기량의 비로 결정 (사강 환기 최소 가정)."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "유량의 수학적 모델링 (21 kg 개)",
+   "headers": [
+    "조건",
+    "분당환기량",
+    "산소 공급",
+    "흡입 산소 총량",
+    "이론적 최대 FiO₂"
+   ],
+   "rows": [
+    [
+     "RR 9 breaths/min, VT 15 ml/kg (건강한 폐)",
+     "2.84 L/min",
+     "양측 비강 캐뉼라 100 ml/kg/min = 2.1 L/min\n나머지 0.74 L는 FiO₂ 0.21",
+     "2.1 L + (0.21 × 0.74) = 2.26 L",
+     "(2.26/2.84 L) × 100 = 80%"
+    ],
+    [
+     "RR 60 breaths/min, VT 10 ml/kg (V/Q mismatch hypoxemia)",
+     "12.6 L/min\n[(0.01 × 21) × 60]",
+     "100 ml/kg/min = 2.1 L/min\n나머지 10.5 L는 대기",
+     "2.1 L + (0.21 × 10.5) = 2.1 L + 2.2 L = 4.3 L",
+     "(4.3/12.6) × 100 = 34%"
+    ],
+    [
+     "RR 60, VT 10 ml/kg",
+     "12.6 L/min",
+     "200 ml/kg/min = 4.2 L/min (100% O₂)\n나머지 8.4 L/min는 대기(21% O₂)",
+     "4.2 + (0.21 × 8.4) = 6.0 L",
+     "(7.3/12.6) × 100 = 58%"
+    ],
+    [
+     "RR 60",
+     "12.6 L/min",
+     "100% O₂ 12.6 L/min (= 분당환기량)",
+     "—",
+     "폐포 산소 농도 거의 100% (이론적)"
+    ],
+    [
+     "—",
+     "—",
+     "분당환기량의 50% 유량, 산소 100%",
+     "—",
+     "폐포 산소 농도 60%"
+    ]
+   ],
+   "note": "3행: 본문에서 흡입 산소 총량은 6.0 L로 계산되나 FiO₂ 식은 7.3/12.6 = 58%로 표기됨(원문 그대로). — = 해당 없음"
+  },
+  {
+   "type": "list",
+   "items": [
+    "결론: 기존 권장 용량의 비강 산소는 부적절한 산소화를 초래할 가능성이 큼 — 이런 환자군에서 비강 캐뉼라가 FiO₂ 0.8까지 준다고 가정하지 말 것.",
+    "유량 원칙: 산소 유량이 분당환기량과 같거나 초과해야 대기 공기에 의한 희석(flow starvation과 유사)을 최소화.",
+    "산소-공기 혼합(blending): HFNC는 산소를 medical air와 혼합 가능 → 흡기 유량 요구를 맞춰 PEEP·폐포 동원을 유지하면서 산소 농도는 최저로 낮춰 산소독성 회피 (Chapter 8, Oxygen Toxicity)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "사강 세척 (Washout Dead Space)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "정상 호흡: 직전 호기 일회환기량의 약 1/3이 상기도에 남아 재호흡됨.",
+    "결과: 새 흡기 혼합가스의 1/3이 O₂ 15%–16%, CO₂ 4%–5% (대기: O₂ 21%, CO₂ 무시할 수준).",
+    "급성 호흡부전: 상기도 재호흡으로 사강 환기↑.",
+    "HFNC: 충분히 높은 유량의 신선 가스를 지속 공급 → 비인두·전도기도 공기 세척 → 해부학적 사강이 산소 풍부 가스로 교체 → 매 호흡이 HFNC 가스만 포함, 호흡 효율↑·호흡일↓."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "소동물 중환자에서의 HFNC",
+   "gist": "hypoxemic 개 6/6 PaO₂ >100 mm Hg, 진정은 1/6만 필요"
+  },
+  {
+   "type": "table",
+   "title": "개 연구 비교",
+   "headers": [
+    "연구",
+    "장비·대상",
+    "유량",
+    "결과"
+   ],
+   "rows": [
+    [
+     "첫 보고 (case series)",
+     "Vapotherm\n표준 비강 산소(bubble humidifier)로 안정화 안 된 hypoxemic 개 6마리 (원발성 폐질환)",
+     "500 ml/kg/min ~ 1500 ml/kg/min 이상",
+     "6/6 PaO₂ >100 mm Hg, 4/6 기저질환 임상적 해소\n모두 nasal prong 내성, 1/6만 진정 필요\n기존 기흉 1례는 HFNC 중단 후에야 해소 → PEEP 효과가 공기누출 지속에 기여 가능성"
+    ],
+    [
+     "Daly 등",
+     "같은 장비(Vapotherm)\n건강한 진정 개",
+     "20 L/min, 30 L/min",
+     "PaO₂ >500 mm Hg (폐포 FiO₂ 100%)\n식도 풍선 카테터로 경폐압(PEEP 대리지표) 측정 → >20 L/min에서 일부 양압 흉강내압, 개체 간 변동 있음"
+    ],
+    [
+     "Jagodich 등",
+     "Optiflow\n건강한 개 (진정·각성)",
+     ">1 L/kg/min",
+     "FiO₂ 95% (저유량 비강 캐뉼라 400 ml/kg/min 시 FiO₂ 72%)\n>1 L/kg/min에서 PEEP 효과"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "실전 적용 지침",
+   "gist": "초기 유량 = 분당환기량, FiO₂ 100%; 목표 SpO₂ 92–95%"
+  },
+  {
+   "type": "table",
+   "title": "Box 31.2 권장 초기 설정",
+   "headers": [
+    "설정",
+    "권장값"
+   ],
+   "rows": [
+    [
+     "유량 (Flow rate)",
+     "환자 분당환기량 = 호흡수 × 일회환기량 (10–15 ml/kg)"
+    ],
+    [
+     "FiO₂",
+     "100%"
+    ],
+    [
+     "온도",
+     "32°C–37°C (체온보다 높지 않게)"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "초기 목표: 가능한 최대량의 산소 공급.",
+    "재계산: 보통 HFNC 30–60분 후 RR↓·산소화 개선 → 분당환기량↓이므로 이 시점에 유량을 다시 계산."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "목표 설정 (Targeting)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "hyperoxia 위험: 분당환기량을 초과할 수 있으므로 시작 후 SpO₂를 자주 측정.",
+    "SpO₂의 한계: 산소-헤모글로빈 해리곡선이 S자형이라 SpO₂ >95%로는 정상 PaO₂(80–110 mm Hg)와 초정상 PaO₂(>110 mm Hg)를 구분 못함 (Chapter 184, Oximetry Monitoring) → SpO₂ 95%–100% 목표 시 산소독성 가능.",
+    "권장 목표: SpO₂ 92%–95% (hyperoxia 최소화 + hypoxia 예방).",
+    "pulse oximeter 신뢰 불가 시: 동맥혈가스로 평가, 목표 PaO₂ 80–110 mm Hg."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "산소 공급량 조절 방법",
+   "items": [
+    "① FiO₂ 고정 + 유량을 분당환기량 대비 %로 조절 ▸ 환자 편안함·내성에 도움될 수 있음",
+    "② 유량 고정 + 설정 FiO₂ 감소 ▸ 고유량의 PEEP 유사 효과 유지",
+    "우열: 두 방법 간 명확한 장점 차이 없음."
+   ]
+  }
+ ]
+}

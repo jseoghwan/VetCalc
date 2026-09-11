@@ -1,0 +1,626 @@
+{
+ "id": "sacc3-p3-c32",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part III",
+ "part_title": "Advanced Respiratory Support",
+ "chapter_num": 32,
+ "title": "Mechanical Ventilation — Core Concepts",
+ "author": "Kate Hopper, BVSc, PhD, DACVECC",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "기계환기의 주 적응증: 산소 공급에도 지속되는 심한 hypoxemia, 적절한 치료에도 지속되는 심한 hypoventilation, 과도한 호흡 노력.",
+    "목표: 가장 덜 공격적인 ventilator setting으로 허용 가능한 동맥혈가스 수치를 유지.",
+    "폐질환 동물은 신경근육질환 동물보다 대체로 더 공격적인 setting이 필요하고 예후가 더 나쁠 수 있다.",
+    "환자별 \"이상적\" ventilator setting은 trial and error로만 찾을 수 있다."
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "기계환기는 음압 또는 양압으로 가스를 이동시킬 수 있으나 임상에서는 양압환기(positive pressure ventilation, PPV)가 가장 흔하다. 이 장은 PPV의 핵심 개념을 개괄한다."
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Physiology",
+   "gist": "산소화와 환기는 별개 과정 — 저항·유순도·사강이 기도압 결정"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Oxygenation: 폐포 → 폐모세혈관으로의 O₂ 이동. 가스교환 표면적과 가스교환 barrier의 섬세한 구조 보존에 주로 의존.",
+    "Ventilation: 폐포로의 신선 가스 이동 — CO₂ 제거의 1차 결정인자.",
+    "관리 원칙: 기계환기 환자에서는 산소화와 환기를 두 개의 별개 과정으로 생각하는 것이 유용."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "흉강내압·저항·유순도·사강"
+  },
+  {
+   "type": "list",
+   "items": [
+    "흉강내압: 자발호흡은 흡기 시 흉벽 확장·횡격막 운동으로 흉막압이 떨어져(더 대기압 이하) 공기 유입. PPV는 기도 양압으로 흡기 흐름 생성.",
+    "Equation of motion (Box 32.1): Pvent + Pmuscles = Elastance × Volume + Resistance × Flow — Pvent: ventilator가 만든 압력, Pmuscles: 흡기근이 만든 압력. Elastance는 compliance의 역수. 시스템(인공기도·폐·흉벽)의 유순도·저항과 흡기 유량·VT의 상호작용을 보여줌.",
+    "Resistance: 주어진 유량을 만드는 데 필요한 압력 — Ohm 법칙: resistance = driving pressure/flow. 기도 허탈·협착, 미만성 기관지수축이 저항↑. 기계환기 중 가장 큰 저항원은 흔히 endotracheal tube.",
+    "Compliance: 폐의 팽창성, 압력 변화당 폐용적 변화 = Δvolume/Δpressure. 환기 환자에서는 전달된 VT/그 VT를 만드는 데 필요한 압력. 고유순도 = 작은 압력으로 큰 용적 증가.",
+    "정상 폐 vs 폐질환: 정상 폐는 유순도가 높아 낮은 기도압으로 충분. 수의학에서 흔한 폐질환은 대부분 유순도↓ → 더 높은 기도압 필요.",
+    "Dead space: 가스교환에 참여하지 않는 VT 부분 — apparatus(Y-piece~환자 코까지 회로 용적, Fig. 32.1), anatomic(코~폐포 수준까지 전도기도), alveolar(환기되나 관류되지 않는 폐포)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "The Ventilator Breath",
+   "gist": "누가 시작·종료하나로 breath 분류, 모드는 CMV·IMV·CSV"
+  },
+  {
+   "type": "table",
+   "title": "Table 32.1 Ventilator Breath Types",
+   "headers": [
+    "Breath type",
+    "시작 (Trigger)",
+    "흡기 유량",
+    "종료 (Cycle)"
+   ],
+   "rows": [
+    [
+     "Mandatory",
+     "Ventilator",
+     "Ventilator",
+     "Ventilator"
+    ],
+    [
+     "Assisted",
+     "Patient",
+     "Ventilator",
+     "Ventilator"
+    ],
+    [
+     "Spontaneous",
+     "Patient",
+     "Patient",
+     "Patient"
+    ],
+    [
+     "Supported",
+     "Patient",
+     "Ventilator",
+     "Patient"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "Spontaneous breath: 환자가 흡기 시작·종료를 모두 담당. 기계가 둘 중 하나라도 통제하면 mandatory.",
+    "Assisted: 환자가 시작한 mandatory breath. Supported: 기계가 baseline 이상으로 흡기를 증강한 spontaneous breath."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Breath patterns (모드 분류 기준)",
+   "ordered": true,
+   "items": [
+    "CMV (Continuous mandatory ventilation): 모든 breath가 mandatory",
+    "IMV (Intermittent mandatory ventilation): mandatory + spontaneous breath",
+    "CSV (Continuous spontaneous ventilation): 모든 breath가 spontaneous"
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "A/C (assist/control): 대부분 최신 ventilator는 환자가 mandatory breath를 trigger할 수 있음(동기화) — 전달되는 모든 breath가 mandatory이면 A/C."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Phase variables (Fig. 32.2)"
+  },
+  {
+   "type": "table",
+   "title": "Phase variables",
+   "headers": [
+    "변수",
+    "정의",
+    "예·주의"
+   ],
+   "rows": [
+    [
+     "Control variable",
+     "pressure·volume·flow 중 기계가 한 breath에서 직접 통제하는 1개 (나머지 2개는 종속변수; 유순도·저항은 환자 고유)",
+     "Pressure-controlled: 설정 기도압 유지, 설정 흡기시간 도달 시 종료 → VT·유량은 설정 압력과 저항·유순도에 따라 결정\nVolume-/flow-controlled(본질적으로 같음): 설정 VT를 설정 흡기시간 동안 전달 → 기도압은 VT·유량과 저항·유순도에 따라 결정"
+    ],
+    [
+     "Cycle variable",
+     "흡기 유량을 종료시키는 변수",
+     "가장 흔한 것은 time (pressure-controlled breath의 cycle variable) — 설정 RR과 I:E ratio로 결정\n흡기시간 약 1초가 흔한 가이드라인, RR이 높은 동물은 더 짧게"
+    ],
+    [
+     "Trigger variable",
+     "흡기를 시작시키는 변수",
+     "자발 노력 없음: time (설정 RR로 결정)\n동기화 시: 회로의 기도압 또는 가스 유량 변화\n적절한 민감도 → 편안함↑, 환자가 RR을 올릴 수 있음; 너무 민감하면 환자 handling 등 비호흡 동작으로 trigger — 피할 것"
+    ],
+    [
+     "Limit variable",
+     "흡기 중 넘을 수 없는 값이지만 breath를 종료하지는 않음 (cycle과 구별)",
+     "예: volume-controlled, pressure-limited breath = 설정 VT를 전달하되 설정 기도압 한계를 넘지 않음"
+    ],
+    [
+     "Baseline variable",
+     "호기 중 통제되는 변수 (expiratory control variable), 대개 기도압",
+     "호기 중 기도압이 대기압보다 높게 유지되면 PEEP"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "환기 모드"
+  },
+  {
+   "type": "list",
+   "items": [
+    "CMV: 운용자가 최소 RR 설정. trigger 민감도가 적절하면 환자가 RR을 올릴 수 있으나 모든 breath는 mandatory. 환자가 trigger 못하면 controlled ventilation, 환자가 스스로 RR을 trigger하면 A/C ventilation (더 흔함).",
+    "IMV/SIMV: 설정 횟수의 mandatory breath + 그 사이 자발호흡. SIMV는 mandatory breath를 환자 흡기 노력에 동기화 — 시간 창 안에 trigger되면 assist, 창 끝까지 없으면 mandatory breath 전달. 운용자는 최소 RR·최소 분당환기량만 통제(최대치는 환자가 결정).",
+    "SIMV 예시 (Fig. 32.3): mandatory rate 10 breaths/min → 총 cycle time 6초, breath cycle time은 그 일부(예: 3초). breath cycle time 중 흡기 노력 감지 시 full mandatory breath(assist-controlled), breath cycle time의 90%가 지나도록 노력이 없으면 controlled breath.",
+    "CSV: 모든 breath를 환자가 trigger·cycle, RR·흡기시간·VT도 환자가 결정. 흔한 형태는 CPAP와 PSV.",
+    "CPAP: 호흡주기 전체에 일정한 양압 → FRC·유순도↑, 가스교환·산소화 개선.",
+    "PSV: 흡기 유량을 설정 흡기압까지 증강 — 호흡 drive는 충분하나 환기 근력이 부족한 환자의 노력↓, ET tube·회로 저항 극복에 도움. 단독 또는 SIMV·CPAP의 자발호흡 보조로 사용. cycle variable은 흡기 유량의 설정 감소치(환자 의존 변수)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "I:E ratio와 호흡수"
+  },
+  {
+   "type": "list",
+   "items": [
+    "초기 RR: 기계 연결 시 정상 RR 15–20 breaths로 시작, 이후 환자에 맞게 변경.",
+    "I:E ratio: 운용자 설정 또는 기계 기본값. 다음 호흡 전 완전 호기를 위해 흔히 1:2.",
+    "RR↑ 시: 필요한 호흡수를 \"끼워 넣기\" 위해 호기시간이 희생됨. 흡기시간 > 호기시간 = reverse(inverse) I:E ratio ventilation — 빠른 RR 등 환자 호흡 패턴으로 발생 가능.",
+    "Inverse I:E 결과: 완전 호기 전 다음 흡기 → breath stacking 또는 intrinsic PEEP. 산소화 개선 전략으로 쓰이기도 함."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "PEEP (Positive End Expiratory Pressure)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "적용: 많은 ventilator에 내장. 없으면 호기 포트에 튜브 연결 → PEEP valve 연결, 또는 튜브 끝을 원하는 깊이의 물에 담금 (깊이 cm = cm H₂O 압력).",
+    "기전: 호기 중 기도 양압 유지 → 폐가 완전히 비지 않고 더 높은 용적·압력으로 \"유지\".",
+    "이점: 허탈 폐포 재모집, 추가 허탈 예방, VILI 감소 → 병든 폐의 산소화 효율↑.",
+    "적정 PEEP: 폐질환 중증도, 임상 반응, 동반질환(예: 저혈압, 두개내압 상승)에 따라 결정 — 최적 PEEP 선택은 사람에서도 미정 (Chapter 33 참고).",
+    "정상 폐: 무기폐 예방을 위해 낮은 PEEP을 흔히 적용.",
+    "주의: 흡기압은 설정 PEEP 위에 더해짐 — 예: PEEP 5 cm H₂O + 흡기 20 cm H₂O → peak airway pressure 25 cm H₂O. 호기 중 흉강내압↑ → 정맥환류 저하 가능.",
+    "모니터링: 모든 환기 환자에 심혈관 모니터링 권장, 높은 PEEP·공격적 setting 시 필수."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Ventilator Settings",
+   "gist": "정상 폐 VT 10–12 ml/kg, 폐질환 6–8 ml/kg — 연결 직후 적정화"
+  },
+  {
+   "type": "list",
+   "items": [
+    "용어: 제조사마다 설정 이름이 달라 표준화되어 있지 않음.",
+    "핵심 설정(거의 모든 기계): RR, VT, 흡기압, 흡기시간, I:E ratio, trigger 민감도, PEEP.",
+    "Volume-controlled: VT(또는 분당환기량) 설정, peak inspiratory pressure는 종속변수. Pressure-controlled: 흡기 기도압 설정, VT는 종속변수.",
+    "직접/간접 설정: I:E ratio는 일부 기계에서 직접 설정, 많은 기계에서는 흡기시간과 RR의 결과.",
+    "Rise time: 기도압이 baseline에서 peak까지 오르는 시간. RR이 빠른 환자는 빠른 rise time, 단 작은 ET tube는 유량 저항↑로 주의."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 32.2 Suggested Initial Ventilator Settings",
+   "headers": [
+    "Setting",
+    "Healthy lungs",
+    "Lung disease"
+   ],
+   "rows": [
+    [
+     "FiO₂",
+     "100%",
+     "100%"
+    ],
+    [
+     "Tidal volume (ml/kg)",
+     "10 to 12",
+     "6 to 8"
+    ],
+    [
+     "Respiratory rate (breaths/min)",
+     "10 to 20",
+     "15 to 30"
+    ],
+    [
+     "Pressure above PEEP (cm H₂O)",
+     "8 to 10",
+     "10 to 15"
+    ],
+    [
+     "PEEP (cm H₂O)",
+     "0 to 5",
+     "5 to 8"
+    ],
+    [
+     "Inspiratory flow rate (L/min)",
+     "40 to 60",
+     "40 to 60"
+    ],
+    [
+     "Inspiratory time (seconds)",
+     "0.8 to 1",
+     "0.8 to 1"
+    ],
+    [
+     "Rise time (seconds)",
+     "0.1 to 0.3",
+     "0.1 to 0.3"
+    ],
+    [
+     "I:E ratio",
+     "1:2",
+     "1:1–1:2"
+    ],
+    [
+     "Inspiratory trigger",
+     "1 to 2 cm H₂O\nor 1 to 2 L/min",
+     "1 to 2 cm H₂O\nor 1 to 2 L/min"
+    ]
+   ],
+   "note": "최적 setting은 예측할 수 없으며 일반 가이드라인일 뿐 — 환기 시작 직후 적정화 필요."
+  },
+  {
+   "type": "list",
+   "items": [
+    "초기 설정 근거: 환자 크기, 기저질환 이해, 일반 가이드라인. 연결 후 환자 평가·데이터 검토 → 적정화.",
+    "VT: 건강한 개·고양이 정상 VT 약 10–15 ml/kg. 심한 폐질환은 낮은 VT가 유익할 수 있음 — 사람 ARDS는 예측체중 4–6 ml/kg 권장(다른 종·질환엔 부적절할 수 있으나 과팽창 회피는 일반적으로 유익).",
+    "Peak airway pressure: 이상적으로 <20 cm H₂O, 정상 폐는 흔히 10 cm H₂O 가까이. 심한 미만성 폐질환은 최대 30 cm H₂O 필요할 수 있음.",
+    "ICU ventilator volume-controlled: VT 외에 유량 설정이 필요할 수 있음 — 유량이 흡기시간 결정, 초기 40 to 60 L/min 후 적정화."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Ventilator Alarms",
+   "gist": "알람은 환자별 값으로 매번 설정 — 극단값으로 끄지 말 것"
+  },
+  {
+   "type": "list",
+   "items": [
+    "설정 원칙: ventilator 셋업마다 환자별 값으로 설정, setting 크게 바뀌면 조정.",
+    "적절히 설정하면 자주 울리지만 극단값으로 설정하고 싶은 유혹을 피할 것 — 분리, 무호흡, 회로 누출, 환자 상태 변화(얕은 마취, 유순도 감소)를 알려 생명을 구함."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 32.3 Suggested Alarm Settings and Common Alarm Triggers",
+   "headers": [
+    "Alarm",
+    "권장 설정",
+    "흔한 원인"
+   ],
+   "rows": [
+    [
+     "Low pressure",
+     "PIP보다 5–10 cm H₂O 낮게",
+     "Patient disconnect\nLeak\nPatient–ventilator dyssynchrony"
+    ],
+    [
+     "High pressure",
+     "PIP보다 10 cm H₂O 높게",
+     "ET tube kink or obstruction\nSmall size ET tube + high inspiratory flow rate\nVC mode: pneumothorax"
+    ],
+    [
+     "Low PEEP/CPAP",
+     "PEEP보다 2 cm H₂O 낮게",
+     "Leak"
+    ],
+    [
+     "Low tidal volume",
+     "원하는 VT보다 10%–15% 낮게",
+     "Leak\nPC mode: patient–ventilator dyssynchrony, decreased compliance, pneumothorax, ET tube obstruction\nVC mode: patient–ventilator dyssynchrony, ET tube obstruction"
+    ],
+    [
+     "Apnea",
+     "무호흡 20 seconds",
+     "자발호흡 모드에서는 mandatory rescue breath 설정 필요"
+    ],
+    [
+     "Low minute ventilation",
+     "원하는 값보다 10%–15% 낮게",
+     "Low tidal volume의 원인들\nSpontaneous breathing modes: low respiratory rate"
+    ]
+   ],
+   "note": "CPAP, continuous positive airway pressure; ET, endotracheal; PC, pressure-control; PIP, peak inspiratory pressure; VC, volume-control. Low/High pressure 행의 dyssynchrony 배치는 추출 텍스트 순서 기준 — 원문 표 확인 권장."
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Indications for Mechanical Ventilation",
+   "gist": "PaO₂ <60 mm Hg·SpO₂ <90%, PaCO₂ >60 mm Hg, 과도한 호흡노력"
+  },
+  {
+   "type": "table",
+   "title": "적응증과 기준",
+   "headers": [
+    "적응증",
+    "기준",
+    "비고"
+   ],
+   "rows": [
+    [
+     "① 산소 공급에도 심한 hypoxemia",
+     "cyanosis, PaO₂ <60 mm Hg 또는 SpO₂ <90% (Chapter 16)",
+     "정맥혈 PO₂로는 hypoxemia 진단 불가\n대부분 원발성 폐질환\nFiO₂ >60% 장기간(24 to 48 hours) → 산소독성·폐손상 → 적절 산소화에 고농도 O₂가 24시간 넘게 필요해도 환기 고려"
+    ],
+    [
+     "② 치료에도 심한 hypoventilation",
+     "PaCO₂ >60 mm Hg + 원발질환 치료에 불응 (Chapter 17)",
+     "혈역학적으로 안정하면 venous PCO₂가 arterial PCO₂를 정확히 반영\n뇌질환은 작은 PCO₂ 상승도 못 견딤 → PaCO₂ >45 mm Hg부터 환기 유익 가능"
+    ],
+    [
+     "③ 과도한 호흡 노력 (임박한 호흡 피로·부전)",
+     "확정 지표 없음 — 임상 판단",
+     "혈액가스가 괜찮아도 탈진 → 호흡정지 가능 → 정지 전 개입"
+    ],
+    [
+     "④ 치료 불응성 심한 혈역학적 손상",
+     "—",
+     "O₂ 소비↓, 좌심 기능 지원 → 근본 조치 동안 지지\n마취는 opioid + benzodiazepine만으로 가능한 경우 많음"
+    ]
+   ],
+   "note": "— = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Hypercapnia 원인: 유효 폐포환기 감소 — 회로 사강↑, 상기도 폐쇄, 진정제 과량, RR·흉벽 운동을 저해하는 신경/신경근육 질환. 앞의 세 가지는 대개 치료에 반응해 환기 불필요.",
+    "환기가 필요한 hypoventilation: 뇌질환, 척수질환, 말초신경병증, 신경근접합부 이상, 원발성 근병증 (이하 neuromuscular disease로 통칭).",
+    "전신마취가 필요한 환자: ET tube 유지·효과적 진통 등 — 마취제가 hypoventilation을 반드시 유발하므로 마취 중 PPV가 이상적.",
+    "심폐소생 후(ROSC): 단기간은 manual ventilation으로 충분할 수 있으나 무호흡, 부적절/불확실한 환기 노력, hypercapnia, 두개내압 상승 우려, 지속적 혈역학 불안정 시 기계환기 유익 (Chapter 5)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Initiation of Mechanical Ventilation",
+   "gist": "100% O₂로 시작, 흉곽 움직임·양측 호흡음 확인, 백업 O₂·수동환기 준비"
+  },
+  {
+   "type": "list",
+   "ordered": true,
+   "items": [
+    "준비: 기계 셋업과 모니터링 준비. 생명 위협 상태면 셋업 중 마취·삽관·manual PPV로 유지.",
+    "초기 설정: Table 32.2 가이드라인 — 원발성 폐질환은 신경근육질환보다 더 높은 PEEP·흡입 산소 농도 필요 예상 (심한 폐질환 프로토콜은 Chapter 33).",
+    "기계 점검: 전원 켜고 인공폐 또는 rebreathing bag으로 작동 확인.",
+    "100% O₂로 시작: 기계 작동·환자 안정 확인 후 FiO₂ 조정. 기계 고장 대비 별도 100% O₂ + 수동환기 수단을 항상 준비.",
+    "연결 직후: 흉벽 움직임 관찰(과도/부족하면 setting 조정), 양측 호흡음 청진 — 양측으로 안 들리면 endobronchial intubation 가능성 → ET tube 후퇴.",
+    "모니터링: ECG, pulse oximetry, EtCO₂, 동맥혈압 평가 → 이상은 즉시 교정. 안정되면 동맥혈가스로 연속 모니터 정확도 확인·setting 조정. 동맥혈가스 없으면 신체검사, venous PCO₂, pulse oximetry로 관리."
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "마취: 심한 신경학적 결손이 없으면 기계환기 시작에 전신마취 필요 (삽관, 부동, 폐 양압 팽창). 기저질환·동반질환을 고려한 유도·유지 계획 (Chapter 36).",
+    "임시 tracheostomy: 호흡 마비 등 ventilator에 저항하지 않는 부동 환자 — 마취제 감량(또는 중단), 정확한 신경학적 평가, 관리 단순화. 신경 기능이 정상인 환자는 tracheostomy가 있어도 전신마취 없이 환기 불가.",
+    "단두종: weaning 과정에 임시 tracheostomy가 유익할 수 있음 (Chapter 38).",
+    "집중 모니터링: 환기 환자는 생존을 전적으로 돌봄 인력에 의존 — 지속적·집중 모니터링 필수."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Goals",
+   "gist": "PaCO₂ 35–50, PaO₂ 80–120 mm Hg를 최소 setting으로"
+  },
+  {
+   "type": "list",
+   "items": [
+    "목표: PaCO₂ 35 to 50 mm Hg, PaO₂ 80 to 120 mm Hg를 가능한 가장 덜 공격적인 setting으로 유지.",
+    "변경 원칙: 한 번에 하나씩 변경해 효과를 정확히 해석.",
+    "기록: ventilator setting과 동시점 동맥혈가스, EtCO₂, pulse oximetry를 꼼꼼히 기록 — 평가·적정화는 이탈 때까지 계속."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "이산화탄소"
+  },
+  {
+   "type": "list",
+   "items": [
+    "PaCO₂: CO₂ 생성에 비례, 폐포 분당환기량에 반비례. 대부분 CO₂ 생성은 비교적 안정 → 분 단위 PaCO₂ 변화는 폐포 분당환기량 변화 때문.",
+    "폐포 분당환기량 = RR × (VT – dead space volume). 총 분당환기량 = RR × VT. 사강↑ → 유효 폐포환기↓ → hypercapnia.",
+    "소형 환자: Y-piece~입 사이 과도한 튜브 길이(긴 ET tube, 연장관, ET tube 끝의 모니터 장치)가 사강을 크게 늘림. ET tube 꺾임·분비물 축적도 유효 환기↓.",
+    "장비 문제가 없으면: hypercapnia = 폐포 분당환기량 부족 → RR 및/또는 VT↑ 후 PCO₂ 재평가. PCO₂가 낮으면 분당환기량↓.",
+    "EtCO₂가 PCO₂와 신뢰성 있게 상관되면 훌륭한 실시간 모니터."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "산소"
+  },
+  {
+   "type": "list",
+   "items": [
+    "1순위: 초기 안정화 후 산소독성 위험을 줄이기 위해 FiO₂를 가능한 빨리 ≤60%로. 감소폭은 측정 PaO₂로 결정, 매 감소 후 PaO₂ 재평가.",
+    "SpO₂ 대체: SpO₂가 PaO₂와 잘 상관되거나 동맥혈이 없으면 pulse oximetry로 대체.",
+    "FiO₂ ≤60% 달성 후: PaO₂가 목표보다 상당히 높으면 PEEP·peak inspired airway pressure 감소 고려.",
+    "100% O₂에도 지속 hypoxemia: PEEP, peak inspired pressure 또는 VT, 및/또는 RR 증가. Prone positioning이 많은 환자에서 폐 기능 극대화 — hypoxemic 동물은 안정될 때까지 sternal recumbency 유지."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Complications",
+   "gist": "심혈관 손상·VILI·VAP·기흉 — 급성 악화 시 기흉 먼저 감별"
+  },
+  {
+   "type": "table",
+   "title": "주요 합병증",
+   "headers": [
+    "합병증",
+    "기전·위험 요인",
+    "예방·대처"
+   ],
+   "rows": [
+    [
+     "Cardiovascular compromise",
+     "흉강내 혈류 장애 — 심혈관 불안정 환자, 공격적 setting 필요 시 흔한 문제",
+     "모든 환기 환자에 심혈관 모니터링 권장, 높은 PEEP·공격적 setting 시 필수"
+    ],
+    [
+     "VILI",
+     "volutrauma, 반복적 폐포 개방·허탈이 주 원인으로 여겨짐",
+     "protective ventilation strategy (Chapter 33)"
+    ],
+    [
+     "VAP",
+     "—",
+     "무균적 기도 처치, 집중 구강 관리, 위 역류 감소 (Chapter 40)\n원내감염·폐기능 변화 지속 모니터, 기도액 정기 cytology·배양·감수성 검사로 조기 발견"
+    ],
+    [
+     "Pneumothorax",
+     "ventilator setting의 기여는 논란 — 사람에서 매우 높은 기도압(plateau airway pressure >35 cm H₂O)에서 더 빈번. 통상적 setting에서는 기도압·PEEP 등과 상관 없음 → 기저 폐질환 결과일 가능성이 더 큼",
+     "setting 크기 최소화가 항상 목표\n편측/양측 thoracostomy tube + 지속 배액 (Chapter 199)\n급성 생명위협 시 응급 thoracotomy로 open pneumothorax 만들어 심폐정지 예방 → 안정 후 thoracostomy tube 장착, 절개부 통상 봉합"
+    ]
+   ],
+   "note": "— = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "list",
+   "items": [
+    "기흉 의심 소견: 산소화 능력 급감, PCO₂ 상승, 흉벽 움직임·유순도 감소, patient–ventilator dyssynchrony → 1차 감별진단. 긴장성 기흉은 빨리 진단·치료 안 하면 PPV 동물에서 급속히 치명적."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Troubleshooting",
+   "gist": "급격한 산소화 저하: 산소 공급·회로 확인 → FiO₂ 100% + sternal"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Patient–ventilator dyssynchrony (\"bucking the ventilator\"): 환자가 기계에 맞서 호흡 — 흔함. 효과적 환기 방해, hypoxemia·hypercapnia·hyperthermia 유발, 호흡일·이환율↑ → 체계적 평가 권장.",
+    "갑작스런 산소화 저하: 기계의 산소 공급 확인, 회로 온전성·처방대로 breath 전달 확인 → hypoxemic이면 즉시 FiO₂ 100% + 호전까지 sternal recumbency.",
+    "갑작스런 PCO₂ 상승: 장비 결함, 환자 문제(기흉, 기도 폐쇄), 부적절 setting이 원인 → 기계 이상 없고 기흉 등 배제되면 분당환기량↑. 일부 protective strategy에서는 hypercapnia 허용 가능(permissive hypercapnia)."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 32.4 Troubleshooting the Ventilator Patient",
+   "headers": [
+    "문제",
+    "원인",
+    "대응"
+   ],
+   "rows": [
+    [
+     "Hypoxemia",
+     "Loss of oxygen supply\nMachine or circuit malfunction\n기저 폐질환 악화\n새 폐질환: pneumothorax, pneumonia, VILI, ARDS",
+     "Increase FiO₂\nSternal positioning\nThoracic auscultation\nVerify machine function\nEvaluate for leaks\nIncreases in PEEP\nIncreases in PIP/tidal volume"
+    ],
+    [
+     "Hypercapnia",
+     "Pneumothorax\nBronchoconstriction\nET tube or airway obstruction\nCircuit leak\nIncreased apparatus dead space\nIncreased alveolar dead space\nAlveolar overdistension\nPulmonary embolism\nInadequate ventilator settings: low VT and/or RR",
+     "Evaluate patient data\nThoracic auscultation\nAssess endotracheal tube\nVerify machine function\nEnsure adequate expiratory time\nIncrease VT and/or RR\n※ 일부 환기 전략에서는 hypercapnia 허용 가능"
+    ],
+    [
+     "Hyperthermia",
+     "Impaired natural cooling mechanisms",
+     "Rule out fever\nActive cooling"
+    ],
+    [
+     "Inappropriate ventilator settings",
+     "환자 노력·요구가 환기 전략으로 충족되지 않음",
+     "Titrate settings to meet patient demands"
+    ],
+    [
+     "Full urinary bladder or colon",
+     "호흡 노력 증가·흥분 유발 가능",
+     "Palpate abdomen or use point of care ultrasound"
+    ],
+    [
+     "Inadequate anesthetic depth",
+     "Inadequate drug dosing",
+     "Assess parameters of anesthetic depth"
+    ]
+   ],
+   "note": "표 행 구분은 추출 텍스트의 열 순서에 따라 재구성. 이 항목들 다수가 patient–ventilator dyssynchrony의 원인이 될 수 있음."
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Prognosis",
+   "gist": "예후는 원발질환이 좌우 — 폐실질질환 weaning 약 30%"
+  },
+  {
+   "type": "table",
+   "title": "질환별 결과 (보고)",
+   "headers": [
+    "대상",
+    "Weaning",
+    "생존·퇴원"
+   ],
+   "rows": [
+    [
+     "개 — 폐실질질환 (산소화 불능)",
+     "약 30%",
+     "약 20% 퇴원"
+    ],
+    [
+     "개 — 두개내·신경근육질환 (같은 연구)",
+     "50% 이상",
+     "40% 퇴원"
+    ],
+    [
+     "개 — aspiration pneumonia",
+     "50%",
+     "—"
+    ],
+    [
+     "개 — ARDS",
+     "8%",
+     "—"
+    ],
+    [
+     "개·고양이 — tick paralysis (호주)",
+     "—",
+     "64% 생존"
+    ],
+    [
+     "개 16마리 — congestive heart failure",
+     "—",
+     "63% 생존"
+    ]
+   ],
+   "note": "— = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "list",
+   "items": [
+    "폐실질질환 vs 1차 hypoventilation: 사람·수의 연구에서 폐실질질환의 weaning률이 더 낮음. 반면 개 58마리 retrospective 연구에서는 폐질환군과 환기부전군 간 결과 차이 없음.",
+    "Puppy (≤12개월): 성견 보고와 비슷한 결과.",
+    "단두종: 다른 품종 대비 weaning·퇴원 예후가 더 나쁘지 않은 것으로 보임.",
+    "고양이: 전반적으로 개보다 weaning 예후가 나쁜 경향, 기저질환에 따라 다름 (Chapter 38)."
+   ]
+  }
+ ]
+}
