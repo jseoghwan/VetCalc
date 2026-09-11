@@ -1,7 +1,7 @@
 /* VECC Calculation Tools — service worker
    업데이트 방법: 파일을 수정해 올릴 때 아래 VERSION 숫자를 하나 올리면
    모든 기기가 다음 접속 때 새 파일을 받습니다. */
-const VERSION = 'v9';
+const VERSION = 'v10';
 const CACHE = 'kuvecc-' + VERSION;
 const PRECACHE = [
   './',
@@ -41,22 +41,24 @@ self.addEventListener('fetch', (e) => {
   const url = new URL(req.url);
   const sameOrigin = url.origin === self.location.origin;
 
-  /* SACCM 요약 데이터(data/saccm/): 새 챕터·수정본이 바로 보이도록 네트워크 우선,
-     4초 안에 응답이 없거나 오프라인이면 저장된 캐시로 응답합니다. */
+  /* SACCM 요약 데이터(data/saccm/): 저장된 파일이 있으면 즉시 응답하고, 뒤에서 서버의 새 버전을 받아 캐시를 갱신
+     (stale-while-revalidate). 처음 여는 챕터만 네트워크에서 받습니다.
+     주소에 ?fresh 가 붙은 요청(뷰어가 뒤에서 목차 변경을 확인할 때)만 네트워크 우선입니다. */
   if (sameOrigin && url.pathname.includes('/data/saccm/')) {
-    e.respondWith(
-      caches.open(CACHE).then((cache) => {
-        const network = fetch(req).then((res) => {
-          if (res && res.ok) cache.put(req, res.clone());
-          return res;
-        });
-        const timeout = new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), 4000));
-        return Promise.race([network, timeout]).catch(() =>
-          cache.match(req, { ignoreSearch: true }).then((cached) => cached || network.catch(() =>
-            new Response('', { status: 504, statusText: 'offline' })))
-        );
-      })
-    );
+    const key = url.origin + url.pathname;  // ?fresh 같은 쿼리는 떼고 같은 이름으로 저장
+    const offline = () => new Response('', { status: 504, statusText: 'offline' });
+    const fresh = url.searchParams.has('fresh');
+    const network = fetch(key, { cache: fresh ? 'no-store' : 'no-cache' }).then((res) => {
+      if (!res || !res.ok) return res;
+      const copy = res.clone();
+      return caches.open(CACHE).then((c) => c.put(key, copy)).then(() => res, () => res);
+    });
+    if (fresh) {
+      e.respondWith(network.catch(() => caches.open(CACHE).then((c) => c.match(key)).then((hit) => hit || offline())));
+      return;
+    }
+    e.waitUntil(network.catch(() => null));
+    e.respondWith(caches.open(CACHE).then((c) => c.match(key)).then((hit) => hit || network.catch(offline)));
     return;
   }
 
