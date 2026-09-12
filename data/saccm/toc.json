@@ -1021,6 +1021,41 @@
    "title": "Critically Ill Geriatric Patients",
    "part": "Part XVII",
    "part_title": "Miscellaneous Disorders"
+  },
+  {
+   "id": "sacc3-p18-c147",
+   "num": 147,
+   "title": "Catecholamines",
+   "part": "Part XVIII",
+   "part_title": "Pharmacology"
+  },
+  {
+   "id": "sacc3-p18-c148",
+   "num": 148,
+   "title": "Vasopressin",
+   "part": "Part XVIII",
+   "part_title": "Pharmacology"
+  },
+  {
+   "id": "sacc3-p18-c149",
+   "num": 149,
+   "title": "Antihypertensives",
+   "part": "Part XVIII",
+   "part_title": "Pharmacology"
+  },
+  {
+   "id": "sacc3-p18-c150",
+   "num": 150,
+   "title": "Pimobendan",
+   "part": "Part XVIII",
+   "part_title": "Pharmacology"
+  },
+  {
+   "id": "sacc3-p18-c151",
+   "num": 151,
+   "title": "Diuretics",
+   "part": "Part XVIII",
+   "part_title": "Pharmacology"
   }
  ]
 }

@@ -1,0 +1,204 @@
+{
+ "id": "sacc3-p18-c149",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part XVIII",
+ "part_title": "Pharmacology",
+ "chapter_num": 149,
+ "title": "Antihypertensives",
+ "author": "Edward S. Cooper, VMD, MS, DACVECC",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "전신 고혈압은 개·고양이에서 흔한 소견이다. 중증 고혈압(수축기혈압 > 180 mmHg)이나 표적장기손상(TOD) 증거가 있으면 즉각적 개입이 필요할 수 있다.",
+    "이차성 전신 고혈압 환자에서는 기저 원인을 찾아 치료하는 것이 고혈압 자체의 치료만큼 중요하다.",
+    "기전이 다른 여러 항고혈압제가 있다 — ACE 억제제, angiotensin II 수용체 차단제, 칼슘채널차단제, adrenergic 길항제, 세동맥 혈관확장제.",
+    "선택은 종, 고혈압의 중증도, 급성 vs 만성 관리 등 여러 요인에 따라 달라진다.",
+    "고혈압 응급의 급성 관리는 fenoldopam, nitroprusside, hydralazine, labetalol 같은 주사제로, 만성 관리는 amlodipine, enalapril/benazepril, telmisartan 같은 약물로 한다.",
+    "혈압 강하는 조절된 방식으로 해야 한다 — 만성 고혈압을 급성으로 정상화하면 조직 저관류가 생길 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료 적응",
+   "gist": "반복 SBP > 140 또는 단일 SBP > 180 + TOD"
+  },
+  {
+   "type": "list",
+   "items": [
+    "응급실·ICU에서 수축기혈압(SBP) 상승은 흔한 소견이며, 가장 어려운 점은 상황성(병원 측정 스트레스에 이차적)인지 진짜 전신 고혈압(SHT)인지 판단하는 것이다.",
+    "치료 적응: 반복(2회 초과) 측정에서 SBP > 140 mmHg, 또는 단일 측정에서 중증 상승 SBP > 180 mmHg이면서 표적장기손상(TOD)이 있는 경우.",
+    "대부분의 SHT는 전신 질환에 이차적이므로 기저 원인의 규명·치료가 관리의 최우선이다. 유발 질환·기전과 환자 종이 약물 선택에 영향을 준다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "경구 항고혈압제",
+   "gist": "개 1차는 ACEi, 고양이 1차는 amlodipine"
+  },
+  {
+   "type": "table",
+   "title": "TABLE 149.1 기전별 경구 항고혈압제와 권장 용량",
+   "headers": ["기전", "약물", "개 용량", "고양이 용량"],
+   "rows": [
+    ["ACE 억제제", "Enalapril", "0.25–0.5 mg/kg q12h-24h", "0.25–0.5 mg/kg q12h-24h"],
+    ["ACE 억제제", "Benazepril", "0.25–0.5 mg/kg q12h-24h", "0.25–0.5 mg/kg q12h"],
+    ["Angiotensin 수용체 차단제", "Telmisartan", "1–3 mg/kg q24h", "1 mg/kg q24h"],
+    ["Aldosterone 길항제", "Spironolactone", "1–2 mg/kg q12h", "1–2 mg/kg q12h"],
+    ["칼슘채널차단제", "Amlodipine", "0.1–0.4 mg/kg q12h-24h", "0.625–1.25 mg/cat q24h"],
+    ["α1 길항제", "Prazosin", "0.5–2 mg/kg q8h-12h", "0.25–0.5 mg/cat q12h-24h"],
+    ["α1 길항제", "Phenoxybenzamine", "0.25 mg/kg q12h\n0.5 mg/kg q24h", "2.5 mg/cat q8h-12h\n0.5 mg/kg q12h-24h"],
+    ["α1 길항제", "Acepromazine", "0.5–2 mg/kg q8h", "0.5–2 mg/kg q8h"],
+    ["β 길항제", "Atenolol", "0.25–1.0 mg/kg q12h-24h", "6.25–12.5 mg/cat q12h-24h"],
+    ["β 길항제", "Propranolol", "0.2–1.0 mg/kg q8h", "2.5–5.0 mg/cat q8h"],
+    ["세동맥 혈관확장제", "Hydralazine", "0.5–2.0 mg/kg q12h", "2.5 mg/cat q12h-24h"]
+   ],
+   "note": "Phenoxybenzamine은 원문 표에 두 줄의 용량이 함께 기재되어 있어 둘 다 표기함."
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "ACE 억제제 (ACEi)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "기전: angiotensin I → angiotensin II(ATII) 전환 억제로 RAAS를 차단. ATII는 강력한 혈관수축제이며 직접적으로, 그리고 aldosterone 방출 자극을 통해 나트륨·수분 보유를 촉진한다.",
+    "효과: 혈관·정맥 확장과 혈장량 감소로 SBP 감소. ATII의 원심성 세동맥 우선 수축을 막아 사구체 단백 소실(단백뇨)도 줄인다. 혈관확장 물질 bradykinin의 대사도 감소시켜 혈관긴장도를 추가로 낮춘다.",
+    "적응: RAAS 증가가 알려졌거나 의심되는 SHT — 특히 만성신장질환·사구체질환 관련. 이 때문에 개에서 SHT의 1차 선택으로 흔히 고려된다.",
+    "약물: enalapril, benazepril이 가장 흔하며 ramipril, lisinopril 사용도 보고되었다. ACEi 단독으로 SBP가 충분히 낮아지지 않으면 추가 약물이 필요할 수 있다.",
+    "고양이: 1차 약물로 권장되지 않는다 — 혈압을 충분히·일관되게 낮추지 못하는 것으로 보이나, benazepril은 칼슘채널차단제와 병용 시 도움이 될 수 있다.",
+    "부작용: 대체로 내성이 좋다. 가장 큰 우려는 원심성 세동맥의 우선 확장으로 사구체 여과압이 떨어져 GFR·신기능이 악화될 가능성 — 동반 탈수, 이뇨제 병용, 중증 질소혈증이 없으면 임상적으로 유의한 creatinine 상승 위험은 비교적 낮다. 한 연구에서 CKD 고양이에게 benazepril 30일 투여 후 24%에서 creatinine이 30% 초과 상승했으나 장기 생존에는 영향이 없어 보였다.",
+    "aldosterone 억제를 통한 고칼륨혈증도 가능하나, spironolactone 같은 aldosterone 길항제와 병용해도 임상적으로 유의할 가능성은 낮다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Angiotensin 수용체 차단제 (ARB)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "기전: ATII 생성을 막는 대신 ATII의 수용체 활성화를 차단. ACE와 무관한 경로로 생성된 ATII까지 차단하고 bradykinin 대사에는 영향을 주지 않는 점이 ACEi와의 차이 — 그 외 약리 효과는 유사하다.",
+    "개 근거: 단백소실성 신병증 후향 연구에서 telmisartan(0.5–2.0 mg/kg)과 enalapril 또는 benazepril 병용이 각각의 단독 요법보다 혈압·단백뇨를 더 유의하게 감소시켰다. ARB 단독군과 ACEi 단독군 사이에는 유의한 차이가 없었다.",
+    "개 근거: 단백뇨성 CKD 환자에서 telmisartan 1 mg/kg q24h은 기저에 고혈압이 있던 개의 60%에서 SBP를 160 mmHg 미만으로 낮췄다.",
+    "고양이 근거: 무작위·전향적·눈가림 대조시험에서 telmisartan 1.5–2.0 mg/kg가 14일·28일에 위약 대비 SBP를 유의하게 감소시켰다(중앙값 24 mmHg 감소). 유의한 부작용은 보고되지 않았다. 다른 연구에서 telmisartan은 건강한 고양이의 혈압을 낮췄으나 losartan은 그렇지 않았다. 이를 근거로 유의한 단백뇨가 있는 고양이에서 단독요법으로 고려할 수 있다는 제안이 있다.",
+    "부작용: ACEi와 유사한 프로파일이 예상되므로 중증 탈수·질소혈증 환자에서는 피하거나 신중히 사용한다. 전반적으로 보고된 부작용은 매우 적다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Aldosterone 길항제"
+  },
+  {
+   "type": "list",
+   "items": [
+    "기전: spironolactone은 원위곡세뇨관·집합관에서 aldosterone 작용을 차단하는 선택적 길항제. Aldosterone은 나트륨·수분 보유와 칼륨·산 분비를 촉진하고, 만성 노출 시 전염증성으로 섬유화·혈관 재형성(특히 사구체)을 유발할 수 있다.",
+    "적응: 주 적응증은 고aldosterone증. 고양이에서 드물게, 개에서는 매우 드물게 보이며, 고나트륨혈증과 중증 저칼륨혈증이 동반된 고혈압 고양이에서 의심하는 것이 합리적이다.",
+    "부작용: 주된 것은 고칼륨혈증이나 ACEi·ARB·β차단제와 병용하지 않으면 발생 가능성은 낮다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "칼슘채널차단제 (CCB)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "기전: 심장 조직·혈관 평활근세포로의 칼슘 유입 감소. Dihydropyridine 계열(amlodipine, nicardipine)은 혈관 평활근에 상대적 선택성이 있어 혈관 이완과 전신혈관저항 감소를 유발한다. 심장 전도에 대한 영향은 최소지만 혈압 감소로 반사성 빈맥이 유발될 수 있다.",
+    "고양이: amlodipine besylate가 SHT 관리의 1차 선택 — 특발성이든 신질환 이차성이든. ACEi보다 효과적이며 여러 연구에서 SBP 감소가 28–55 mmHg로 보고되었다.",
+    "고양이 시작 용량: 총 용량 0.625 mg~1.25 mg q24h, 더 중증 고혈압(> 200 mmHg)에는 높은 쪽 용량. Amlodipine 단독에 불응하면 ARB 또는 ACEi 추가가 필요할 수 있다.",
+    "개: 1차는 대개 ACEi이며, SBP를 더 낮추기 위한 병용 약물로 CCB가 필요한 경우가 있다.",
+    "부작용: 반사성 서맥(원문 표기 — 기전 설명에서는 반사성 빈맥), 허약, 무기력, 식욕 감소. 사구체 내에서 원심성보다 구심성 세동맥을 우선 확장시켜 사구체내압을 올리고 단백뇨를 악화시킬 수 있어, 개에서 amlodipine 단독 사용은 권장되지 않는다(ACEi 병용이 이 효과를 상쇄)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Adrenergic 길항제"
+  },
+  {
+   "type": "list",
+   "items": [
+    "배경: 교감신경계는 혈관긴장도(주로 α1), 심박수·수축력(주로 β1)을 조절하고 나트륨·수분 보유와 순환용적에도 관여하므로, 기저 기전이 교감신경성일 때 adrenergic 길항제가 역할을 할 수 있다.",
+    "α1 길항제: prazosin, phenoxybenzamine은 혈관 평활근 이완을 유도한다. 개의 일반적 SHT 관리에서 보조 역할이 가능하지만 주된 적용은 pheochromocytoma 환자. 주사 가능한 선택지로 acepromazine도 고려할 수 있다. 고양이의 SHT 관리에는 통상 사용하지 않는다. 부작용은 과도한 저혈압과 위장관 장애.",
+    "β 길항제: atenolol은 선택적 β1, propranolol은 비선택적 β 길항제. 둘 다 심박수·수축력을 낮추고 renin 방출과 말초혈관저항을 감소시킨다. Atenolol은 고양이에서 갑상선기능항진증 연관 SHT의 보조제로 더 자주 쓰인다. 개에서는 불응성 SHT의 보조제로, 특히 반사성 빈맥이나 pheochromocytoma 이차 빈맥이 있을 때 쓸 수 있다. 부작용은 과도한 서맥과 고칼륨혈증.",
+    "Labetalol: 주사용 혼합 α·β 길항제로 급성 중증 고혈압 관리에 탐색되었다. 혈관확장을 유도하면서 동반 반사성 빈맥을 막는다. 개두술·부신절제술을 받는 개(급성 SHT 위험군)의 수술 중·후 관리 연구에서 중앙값 1.1 mg/kg/hr(범위 0.2–3.4)을 사용해 심박수 변화 없이 혈압을 유의하게 감소시켰다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "세동맥 혈관확장제"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Hydralazine: 평활근 세포내 칼슘 대사를 변화시켜 혈관확장을 유도한다(기전은 완전히 규명되지 않음). 개·고양이 SHT의 1차 약물이 아니고 만성 관리의 보조제로도 드물게 쓰이지만, 강력한 혈관확장 효과·빠른 발현·주사제 제형 때문에 긴급·응급 고혈압에서 가장 자주 사용된다. 부작용은 과도하고 비가역적인 저혈압, 반사성 빈맥, 나트륨·수분 보유, 위장관 장애.",
+    "Sodium nitroprusside (SNP): nitric oxide 방출로 강력한 혈관확장 — NO가 혈관 평활근으로 빠르게 확산해 칼슘 유입, actin/myosin 활성화, 수축력을 감소시킨다. 주사제이며 반감기가 짧아 SBP를 세밀하게 적정할 수 있어 고혈압 위기에 이상적이다.",
+    "SNP 주의: 고용량을 장시간 투여할 때 cyanide·thiocyanate 생성이 가장 큰 문제이며, 대사·제거가 감소하는 중증 간·신질환 환자에서 cyanide 독성 위험이 증가한다. 급격한 혈압 변화와 독성 징후(대사성 산증, 침울, 혼미, 발작)를 면밀히 감시한다. 독성 우려, 공급 감소, 높은 비용으로 최근 수의학에서 사용이 제한되었다.",
+    "Nitroglycerin (IV): 기전·부작용은 유사하나 cyanide·thiocyanate 생성 우려가 없다. 개 실험 모델에서 전신혈관저항·평균동맥압·대동맥압 감소가 확인되었다. 임상 경험은 제한적이며, 울혈성 심부전 개 3마리에 1–6 mcg/kg/min 범위로 사용한 증례군이 보고되었고 부작용은 없었다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Fenoldopam"
+  },
+  {
+   "type": "list",
+   "items": [
+    "기전: 선택적 dopamine-1 수용체 작용제. 말초·신장 혈관확장, 나트륨 배설 증가, GFR 증가를 유도한다.",
+    "특징: 주사제이며 반감기가 짧아 급성 고혈압 위기에 적용 가능성이 있다. 사람에서는 특히 신질환이 동반된 환자의 응급 약물 중 하나다.",
+    "수의학: 이 목적으로 직접 연구된 바는 없으나 건강한 개·고양이와 급성신손상 환자에서 연구되었다. 수의 SHT 관리에서의 역할을 정하려면 추가 연구가 필요하다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료 목표와 위험도별 접근",
+   "gist": "첫 1시간 10%, 이후 수 시간에 걸쳐 15% 감소"
+  },
+  {
+   "type": "table",
+   "title": "고혈압 위험도별 관리",
+   "headers": ["분류", "정의", "접근"],
+   "rows": [
+    ["고혈압 위기 (crisis/emergency)", "중증 고혈압(SBP 180 mmHg, 원문 표기) + 명백한 TOD 증거 (특히 안구·신경계)", "적정 가능한 주사제로 신속하고 면밀한 SBP 조절 — fenoldopam, hydralazine, nitroprusside, nitroglycerin, labetalol. 주사제가 없으면 발현이 빠른 경구 hydralazine·amlodipine이 허용 가능한 대안(적정이 어려워 면밀한 감시 필요). 위기 해소 후에는 장기 관리 계획으로 전환"],
+    ["고혈압 긴급 (urgency)", "고위험의 지속적 SBP 상승(SBP > 180 mmHg)이나 TOD 증거는 없음", "응급보다 완만하게(시간 단위가 아니라 며칠~1주) 조절. 경구제로 충분하며 amlodipine 또는 hydralazine(± ACEi 또는 ARB)이 주된 초기 선택. 과도하게 빠른 강하를 피하려 최소 1–2주는 초기 용량을 유지해 정상상태·효과를 확인"],
+    ["비긴급 (nonurgent)", "TOD 위험이 낮음~중간인 지속적 SHT (SBP > 140 이면서 < 180 mmHg)", "1차 약물 단독요법(고양이 amlodipine, 개 enalapril)이 합리적이며 7–10일 후 재검. 목표(최소 < 160, 최적 < 140 mmHg) 달성 시 유지하고 4–6개월 후 재검. SBP가 여전히 > 160이면 증량 또는 약물 추가. SBP < 120이거나 저혈압 징후가 있으면 용량·빈도 감량. 조정 후에는 목표 도달까지 7–10일마다 재검"]
+   ]
+  },
+  {
+   "type": "list",
+   "title": "감압 속도",
+   "items": [
+    "어떤 약물을 쓰든 혈압이 너무 빠르거나 급격하게 떨어지지 않도록 신중한 적정과 감시가 필요하다. SHT로 자가조절 설정점이 이동한 상태라면 '정상' 혈압에서도 조직 관류가 감소할 수 있다.",
+    "권장 속도: 첫 1시간에 SBP 10% 감소, 이후 수 시간에 걸쳐 15% 추가 감소. 이상적으로는 추가 TOD 위험을 줄이기 위해 SBP < 180 mmHg에 도달.",
+    "사람의 고혈압 응급에서는 nicardipine, clevidipine 같은 주사용 CCB가 사용되지만 개·고양이의 임상 자료는 거의 없다."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "TABLE 149.2 고혈압 응급에 사용하는 약물",
+   "headers": ["기전", "약물", "개 용량", "고양이 용량"],
+   "rows": [
+    ["칼슘채널차단제", "Amlodipine", "0.2–0.6 mg/kg PO q24h", "0.625–1.25 mg/cat q24h"],
+    ["α1 길항제", "Acepromazine", "0.05–0.1 mg/kg IV/SC", "0.05–0.1 mg/kg IV/SC"],
+    ["α·β 길항제", "Labetalol", "0.25 mg/kg IV loading\n25 mcg/kg/min CRI", "미상(Unknown)"],
+    ["세동맥 혈관확장제", "Hydralazine", "0.1 mg/kg IV loading\n1.5–5.0 mcg/kg/min IV CRI", "1–2.5 mg/cat SC\n0.2 mg/kg IV 또는 IM\n0.5–2.0 mg/kg PO q12h"],
+    ["세동맥 혈관확장제", "Nitroprusside", "1–3 mcg/kg/min IV CRI", "1–2 mcg/kg/min IV CRI"],
+    ["세동맥 혈관확장제", "Nitroglycerin", "1–5 mcg/kg/min", "1–6 mcg/kg/min IV CRI"],
+    ["Dopamine 작용제", "Fenoldopam", "0.1 mcg/kg/min에서 시작, 10분마다 0.1씩 증량, 최대 1.6 mcg/kg/min", "0.1 mcg/kg/min에서 시작, 10분마다 0.1씩 증량, 최대 1.6 mcg/kg/min"]
+   ]
+  }
+ ]
+}
