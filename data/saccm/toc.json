@@ -755,6 +755,90 @@
 "title": "Acute Hemolytic Disorders",
 "part": "Part X",
 "part_title": "Hematologic Disorders"
+},
+{
+"id": "sacc3-p11-c109",
+"num": 109,
+"title": "Acute Abdominal Pain",
+"part": "Part XI",
+"part_title": "Intraabdominal Disorders"
+},
+{
+"id": "sacc3-p11-c110",
+"num": 110,
+"title": "Acute Pancreatitis",
+"part": "Part XI",
+"part_title": "Intraabdominal Disorders"
+},
+{
+"id": "sacc3-p11-c111",
+"num": 111,
+"title": "Acute Cholecystitis",
+"part": "Part XI",
+"part_title": "Intraabdominal Disorders"
+},
+{
+"id": "sacc3-p11-c112",
+"num": 112,
+"title": "Hepatitis and Cholangiohepatitis",
+"part": "Part XI",
+"part_title": "Intraabdominal Disorders"
+},
+{
+"id": "sacc3-p11-c113",
+"num": 113,
+"title": "Hepatic Failure",
+"part": "Part XI",
+"part_title": "Intraabdominal Disorders"
+},
+{
+"id": "sacc3-p11-c114",
+"num": 114,
+"title": "Portal Hypertension",
+"part": "Part XI",
+"part_title": "Intraabdominal Disorders"
+},
+{
+"id": "sacc3-p11-c115",
+"num": 115,
+"title": "Portosystemic Shunt Management",
+"part": "Part XI",
+"part_title": "Intraabdominal Disorders"
+},
+{
+"id": "sacc3-p11-c116",
+"num": 116,
+"title": "Acute Gastroenteritis",
+"part": "Part XI",
+"part_title": "Intraabdominal Disorders"
+},
+{
+"id": "sacc3-p11-c117",
+"num": 117,
+"title": "Gastrointestinal Hemorrhage",
+"part": "Part XI",
+"part_title": "Intraabdominal Disorders"
+},
+{
+"id": "sacc3-p11-c118",
+"num": 118,
+"title": "Regurgitation and Vomiting",
+"part": "Part XI",
+"part_title": "Intraabdominal Disorders"
+},
+{
+"id": "sacc3-p11-c119",
+"num": 119,
+"title": "Diarrhea",
+"part": "Part XI",
+"part_title": "Intraabdominal Disorders"
+},
+{
+"id": "sacc3-p11-c120",
+"num": 120,
+"title": "Peritonitis",
+"part": "Part XI",
+"part_title": "Intraabdominal Disorders"
 }
 ]
 }

@@ -1,0 +1,218 @@
+{
+ "id": "sacc3-p11-c116",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part XI",
+ "part_title": "Intraabdominal Disorders",
+ "chapter_num": 116,
+ "title": "Acute Gastroenteritis",
+ "author": "Adesola Odunayo, DVM, MS, DACVECC",
+ "renumbered_from": 113,
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "위장관염(gastroenteritis, GE)은 넓게는 위장관의 염증으로 정의된다.",
+    "임상징후는 비특이적이며 구토, 설사, 식욕저하(hyporexia) 또는 식욕부진을 포함한다.",
+    "대부분 특정 원인이 밝혀지지 않지만, 임상징후의 더 중요한 원인을 배제하기 위한 진단검사는 시행해야 한다.",
+    "GE는 대개 자기제한적이며 대부분의 동물이 지지요법으로 무난히 회복한다.",
+    "지지요법을 받는 개·고양이 GE의 예후는 일반적으로 매우 좋다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "개요",
+   "gist": "위·소장·대장 염증 임상증후군; 급성 GE는 거의 항상 자기제한적(2–5일)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "입원 개·고양이에서 흔한 진단. 위·소장·대장의 염증으로 구토, 설사, 복통, 오심, 식욕부진이 조합되어 나타나는 임상증후군.",
+    "원발성(유발 원인 미확인) 또는 다른 질환에 이차성(Table 116.1). 대부분 원인이 규명되지 않고 대개 1주 이내 증상 소실되며 빠르고 무난히 회복. ICU 환자는 원발 질환, 투여 약물, 입원 스트레스, 동반 질환에 이차적으로 GE 발생 가능.",
+    "급성 vs 만성 ▸ 만성 GE는 수 주~수 년에 걸쳐 증상이 호전·악화 반복. 급성 GE는 거의 항상 자기제한적이며 지지요법으로 2–5일에 소실. 이 장은 중환자의 급성 GE에 초점.",
+    "역학 ▸ 고양이보다 개에서 더 흔함. 원발성 GE는 연령 소인 없어 보이나 일부 이차성 GE(기생충성 장염, parvovirus 장염)는 어리거나 중년 환자에서 더 흔함. 한 수의 연구에서 외래 내원 개의 약 12%가 GE로 진단."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "병태생리",
+   "gist": "세균 침습·장독소(NetE, NetF, α·β toxin) → 점막 손상·분비성 설사·전위; AHDS"
+  },
+  {
+   "type": "list",
+   "items": [
+    "세균성 원인(Clostridial spp., Staphylococcus spp., Salmonella spp.) ▸ 위장관 상피세포를 공격해 세포 사멸 — 장세포 직접 침습 또는 상피세포 사이에 삽입된 수지상세포를 통해. 이후 염증 과정 시작 → 사이토카인, 호중구, 대식세포, T·B 세포 방출 → 정상 장내 세균총 감소, 병원체 증식.",
+    "장독소 ▸ Clostridium spp. 등 일부 세균은 장독소(NetE, NetF, alpha toxin, beta toxin) 생성. 결장에서 기능해 점막 손상과 분비성 설사 유발; 조절 경로를 불활성화해 세포 자멸사와 점막 궤양. 세균 전위 → 균혈증·패혈증 가능.",
+    "AHDS ▸ C. perfringens가 개의 급성 출혈성 설사 증후군(AHDS) 발생에 관여 가능(한 연구는 반대). 급성 출혈성 설사, 탈수, 식욕부진이 특징; 심한 체액 소실로 저혈량증, 세균 전위로 패혈증이 빠르게 발생 가능.",
+    "비세균성 원인 ▸ 자극·염증에 의한 장세포 사멸(독소); 직접적 장세포 파괴와 사이토카인 매개 염증(바이러스·기생충); 궤양에 의한 염증(약물, 종양, 이물 폐색)."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 116.1 개·고양이 이차성 GE의 주요 원인",
+   "headers": ["분류", "예"],
+   "rows": [
+    ["감염 — 세균", "Campylobacter spp., Clostridia spp., Escherichia coli, Salmonella spp."],
+    ["감염 — 진균", "Histoplasma capsulatum, Prototheca spp., Pythium spp."],
+    ["감염 — 기생충", "Ancylostoma spp., Physaloptera spp., Strongyloides spp., Tritrichomonas, Toxocara canis, Toxocara cati, Toxascaris leonina"],
+    ["감염 — 원충", "Cryptosporidium parvum, Giardia spp."],
+    ["감염 — 바이러스", "Canine parvovirus, canine coronavirus, canine norovirus, canine distemper virus, canine vesivirus, feline parvovirus, feline leukemia virus, feline immunodeficiency virus"],
+    ["전신 질환", "담낭염/담관간염, 음식 알레르기, 이물 폐색, 간질환, 부신피질기능저하증, 신장질환, 종양(위장관·비위장관 기원), 췌장염, 문맥전신단락, 전립선염, 신우신염, 자궁축농증, 패혈증"],
+    ["독소", "진달래(azalea), 초콜릿, 비료, 마카다미아 너트, Poinsettia spp., rhododendron, 소철(sago palm), 각종 약물"],
+    ["약물", "항생제, glucocorticoid, NSAID"],
+    ["기타", "식이 부주의(dietary indiscretion)"]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "병력과 신체검사",
+   "gist": "급성 구토·설사·식욕저하; 관류 불량 환자는 진단 전 소생 우선; AFAST로 복수 배제"
+  },
+  {
+   "type": "list",
+   "items": [
+    "병력 ▸ 대부분 급성~최급성(수 시간~수 일) 발병의 구토, 설사, 식욕저하/부진, 기력저하. 소장성 설사(양 증가, 빈도 경미 증가, 흑색변) vs 대장성 설사(이급후중, 혈변, 점액, 빈도 증가). 식욕은 변화 없을 수도, 식욕부진일 수도 있음. 기저 원인에 따라 다뇨·다음, 독성물질 노출, 아픈 동물 접촉, 최근 약물 사용 병력이 중요.",
+    "신체검사 ▸ 기간·중증도에 따라 완전히 정상일 수 있음. 흔한 이상: 탈수(점막 건조, 피부 탄력 저하, 안구 함몰), 오심(입맛 다심, 과다 유연), 설사(항문 주위 오염; 직장검사에서 혈액 유무와 함께 설사 확인). 복통도 가능하나 촉진 과정에 익숙해지도록 약 30초~1분간 촉진한 뒤 판단.",
+    "중증 ▸ 관류 불량/저혈량증 징후(개 빈맥, 고양이 서맥, 약한 대퇴맥박, CRT 연장, 사지 냉감, lactate 상승, 저혈압; Ch.68). 관류 불량 환자는 추가 진단 전에 우선 소생.",
+    "덜 흔한 소견 ▸ 빈호흡·호흡곤란(복통, 흡인성 폐렴, ARDS에 의함). 심한 탈수·관류 불량으로 의식 변화(둔감, 혼미), 전신 심한 쇠약.",
+    "AFAST ▸ 신체검사의 일부로 시행해 복강 삼출(복막염, 저알부민혈증에서 가능) 배제. 호흡기 징후 시 TFAST로 폐·흉강 초기 평가 (Ch.189)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "진단 검사",
+   "gist": "배제 진단; 최소 PCV/TS·혈당; AHDS는 PCV↑·TS 정상~↓; 복수는 패혈성 복막염 평가"
+  },
+  {
+   "type": "list",
+   "items": [
+    "GE는 배제 진단 → 구토·설사·식욕부진의 다른 원인 배제 검사 중요. 경증은 검사 불필요할 수 있으나 감별 목록이 길어 대개 포괄적 검사 권장.",
+    "최소 검사 ▸ 모든 환자에서 PCV/HCT + 총고형물(TS), 혈당. GE 특히 AHDS 개는 PCV/HCT 상승 + TS 정상 또는 저하가 흔함. 전해질(혈당 포함)은 즉각적 중재가 필요한 정보 제공 — 전해질 이상은 섭취 감소, 장관 소실, 신전성 질소혈증, 순환 용적 회복을 위한 신경호르몬 기전으로 발생; 외래 관리 가능하나 중증은 입원. 저혈당은 특히 미성숙 동물, 위장관 세균 전위에 의한 패혈증, 종양수반 질환에서.",
+    "중등도~중증 ▸ 완전한 전신 평가: CBC, 혈청 생화학, 요검사. cPL 고려 가능하나 개 췌장염에 완전히 민감·특이하지 않음 — cPL 상승은 canine parvovirus 장염, GDV, 급성 신손상 등에서도 보고. 기저 혈청 cortisol ▸ 재발성 위장관 징후, 스트레스 백혈구상 없이 내원, 특징적 전해질 이상이 있는 동물에서 부신피질기능저하증 배제.",
+    "영상 ▸ 복부 방사선은 비특이적 소견(GE에 부합하는 액체 찬 장관)이 많지만 위장관 이물 폐색 배제에 중요. 복부 초음파는 장기 세부 평가와 방사선에서 놓친 질환 확인에 더 유용. 유리 복수는 AFAST 또는 초음파 시 채취 → 염증세포 내 세균(드물게 진균) 확인으로 패혈성 복막염 평가(Ch.120); 패혈성 복막염은 수술 응급. 빈호흡·호흡곤란 시 흉부 방사선(흡인성 폐렴, 전이, 기타 폐질환).",
+    "분변검사 ▸ 설사 환자 모두에서 포괄적 분변검사 고려: 원심분리법(선충란) + 직접도말(원충, Giardia spp.). Giardia 항원은 SNAP Giardia 검사로도 확인. 기타: 분변 배양(Salmonella spp.), clostridial enterotoxin ELISA, canine parvovirus ELISA(고양이 범백혈구감소증 진단에도 사용 가능).",
+    "추가 검사 ▸ 병력, 시그널먼트, 지역, 이전 검사 결과, 치료 반응에 따라: 내시경 + 위장관 생검, 혈액/요 감염성 질환 검사, 요 배양, 시험적 개복 + 생검."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료 — 입원 기준·수액·제토제",
+   "gist": "저혈량 즉시 IV 수액; dextrose 0.25–0.5 g/kg(≥1:3 희석) → 2.5–5% CRI; 재수화 6–24h; 제토제 24–72h"
+  },
+  {
+   "type": "list",
+   "items": [
+    "대부분 지지요법에 잘 반응; 상태·중증도에 따라 외래 또는 ICU. ICU 입원 대상 ▸ 중등도~중증 GE 징후: 저혈량증 또는 중등도~중증 탈수, 저혈당, 심한 전해질 이상, 잦은 구토 병력, 상당한 지속 소실.",
+    "수액 ▸ 저혈량증은 즉시 IV 수액요법(Ch.68). 저혈당 환자: dextrose 0.25–0.5 g/kg를 최소 1:3 희석해 IV, 충분히 소생된 후 dextrose 2.5–5% 주입 이어감. 탈수 환자: 등장성 대체 수액으로 6–24시간에 걸쳐 재수화(Ch.67); 많은 환자가 재수화 후 호전. 수액 계획에 유지 요구량과 지속 소실 보충 포함. 잦은 신체검사와 검사 수치 밀착 감시.",
+    "제토제 ▸ 구토가 주 징후이면 첫 24–72시간 사용(Ch.174). 이득: 환자 편안함 개선, 조기 장관영양 도입, 식도염 위험 감소, 흡인성 폐렴 위험 감소.",
+    "Maropitant ▸ NK-1 수용체 길항제; NK-1 수용체 결합으로 substance P(구토 병태생리에 중요) 억제. 중추·말초 원인 구토 모두에 효과적. 제조사: 5일 사용 후 약물 축적 방지를 위해 48시간 중단 후 필요 시 재개 권장.",
+    "Ondansetron·dolasetron ▸ serotonin(5-HT3) 길항제, 강력한 제토 작용. Metoclopramide·phenothiazine계 ▸ 오심에 사용 가능하나 5-HT3 길항제·NK1 길항제보다 효과 떨어질 수 있음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료 — 위장관 보호제",
+   "gist": "GUE 증거(토혈·흑색변)·역류성 식도염에만; PPI 1 mg/kg q12h; esomeprazole > famotidine CRI > pantoprazole"
+  },
+  {
+   "type": "list",
+   "items": [
+    "GE에서 위장관 보호제 사용은 논란(Ch.153). 자주 쓰이지만 ACVIM 합의문(개·고양이 위장관 보호제의 합리적 투여 지지)은 수의학에서 과다 사용된다고 시사. 합의문은 위장관 궤양·미란(GUE) 동물에는 치료를 권장했으나 GE에서의 일상적 사용 권고는 없음 → GE 동물에서는 위장관 출혈 증거(토혈, 흑색변) 또는 역류성 식도염이 있을 때만 사용. 보호제를 제토제로 사용하지 말 것.",
+    "표준 용량에서 PPI(omeprazole, pantoprazole)가 H2 수용체 길항제(famotidine, cimetidine)보다 개·고양이 GUE 치료에 우수. PPI는 1 mg/kg IV 또는 PO q12h에서 가장 효과적. H2 길항제는 구하기 쉽고 저렴하며 음식과 함께 투여 가능.",
+    "저자의 임상 선호: 가능하면 esomeprazole; 없으면 famotidine CRI가 개의 위산 억제에 pantoprazole보다 우수해 보임. Famotidine CRI는 임상 환자에서 조사되지 않았으나 pantoprazole 대비 우수한 성능으로 GUE 징후 동물에서 고려 권장.",
+    "PPI + H2 길항제 병용은 성능이 열등해 권장하지 않음.",
+    "피복제 ▸ sucralfate(0.5–1 g/kg PO q8h), barium(0.5–1 ml/kg PO q8–12h)의 역할도 논란. 대조연구에서 sucralfate를 H2 길항제와 병용해도 급성 십이지장 궤양, 스트레스 출혈, 역류성 식도염 치료에 유의한 이득 없음. 피복제 역시 GUE 임상징후가 있는 환자에만."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "산 억제제 비교 연구",
+   "headers": ["연구", "비교 약물·용량", "결과"],
+   "rows": [
+    ["건강 Beagle 교차연구 (IV)", "Famotidine CRI(부하 1 mg/kg → 8 mg/kg/day) vs pantoprazole 1 mg/kg IV q12h", "Famotidine CRI가 위내 pH를 유의하게 더 높임"],
+    ["건강견 IV 비교연구", "Famotidine CRI(부하 1 mg/kg → 8 mg/kg/day) vs pantoprazole 1 mg/kg IV q12h vs esomeprazole 1 mg/kg IV q12h", "Esomeprazole > famotidine CRI > pantoprazole. Pantoprazole은 사람 위십이지장 궤양 치료 목표를 모든 치료일에 충족하지 못함"],
+    ["고양이 경구 비교연구", "Esomeprazole 1 mg/kg PO q12h vs lansoprazole 1 mg/kg PO q12h vs dexlansoprazole 6 mg/kg PO q12h", "Esomeprazole이 우수"]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료 — 항생제",
+   "gist": "비패혈성 설사(AHDS)에 항생제 비적응; 전신 감염 징후 시에만 경험적 항생제"
+  },
+  {
+   "type": "list",
+   "items": [
+    "설사 동물에서 potentiated penicillin·metronidazole은 세균 원인(Clostridium spp.) 치료, 세균 전위 대응, 임상 경과 단축 목적으로 역사적으로 사용. 그러나 AHDS 개의 최근 연구들은 비패혈성 개의 설사 치료에 항생제가 적응되지 않는다고 결론. 그럼에도 수의 GE 환자에서 여전히 자주 사용.",
+    "사람 ▸ 자기제한적 경과와 일상적 항생제의 근거 부족으로 대부분의 GE 환자에 항생제 미투여. 부작용: 장내 세균총 교란, 항생제 후 salmonellosis, C. difficile 관련 설사, 내성균 발생. 사람 지침은 발열성 설사(발열 + 혈변), 1주 초과 지속 증상, 면역억제 환자에 경험적 항생제 권장. 수의 환자에서 추가 연구 필요.",
+    "전신 감염 징후(발열, 저혈압, 백혈구감소증, 좌방편위 또는 독성 변화를 동반한 백혈구증가증, 저혈당, 면역억제)가 있는 GE 소동물은 경험적 항생제 투여 (Ch.91)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료 — 진통",
+   "gist": "중등도~중증은 opioid(순수 μ는 ileus·역류 → 운동촉진제 병용); buprenorphine 0.01–0.03; gabapentin 5–10; NSAID 회피"
+  },
+  {
+   "type": "list",
+   "items": [
+    "복통 원인 ▸ 위장관 점막 염증, 체액·가스 축적에 의한 장관 팽창, ileus, 복막염, 동반 질환(췌장염). 신속한 인지·치료가 필수. 징후: 빈맥, 고혈압, 다룰 때 공격성, 복부 촉진 시 불편, 움직이기 꺼림 등. 객관적 통증 점수 체계(Ch.131)가 통증 확인과 치료 반응 지침에 도움.",
+    "Opioid ▸ 중등도~중증 통증의 기본(Ch.155). 순수 μ 작용제(fentanyl, hydromorphone, methadone)는 매우 효과적이나 ileus 유발 가능성이 높고 역류를 새로 일으키거나 지속시킬 수 있음 → 운동촉진제(metoclopramide, cisapride, azithromycin, erythromycin; Ch.174) 병용으로 위장관 운동성 영향 최소화.",
+    "Buprenorphine(부분 μ 작용제) 0.01–0.03 mg/kg IV 또는 설하 ▸ 경도~중등도 통증에 우수; 경험적으로 순수 μ 작용제보다 역류 적음.",
+    "경도 통증 ▸ 구토가 멎고 경구 투약 가능하면 gabapentin 5–10 mg/kg PO q8–12h 등 경구 진통제 고려. NSAID는 위장관 궤양 위험으로 위장관 징후 동물에서 회피."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료 — 프로바이오틱스",
+   "gist": "설사 회복 단축 경향(3.5±2.2일 vs metronidazole 4.6±2.4 vs 위약 4.8±2.9); FDA 미규제"
+  },
+  {
+   "type": "list",
+   "items": [
+    "위장관 미생물총은 숙주 건강 유지에 중요 — 영양 섭취, 생리·대사 기능, 숙주 면역반응에 영향. 프로바이오틱스(생균)의 효과: 병원성 미생물 억제, 숙주 면역·대사 조절, 장 장벽 기능 개선. GE 동물은 분변 microbiome이 변화 → 미생물총 조절이 잠재적 치료 표적.",
+    "사람 ▸ 설사 환자에서 증상 기간 단축·배변 횟수 감소 근거. 수의 ▸ 여러 연구가 긍정적 임상 결과를 근거로 급성 GE에 프로바이오틱스 권장. 한 연구: GE 개가 위약보다 프로바이오틱스로 설사 회복 더 빠름. 다른 연구: 허용 가능한 분변 경도 도달까지 프로바이오틱스 3.5 ± 2.2일 vs metronidazole 4.6 ± 2.4일 vs 위약 4.8 ± 2.9일 — 통계적 유의성은 없었으나 항생제의 이득이 낮음을 부각하고 프로바이오틱스가 더 빠른 임상 회복으로 이어지는 듯함.",
+    "제품 ▸ 균종·농도·제형(과립, 페이스트, 캡슐, 용액)이 다양. 효과를 위해 균이 해당 제형에서 생존하고, 위장관 통과를 견디며, 숙주 장에 정착할 수 있어야 함. 건강보조식품으로 분류되어 FDA 규제 없음; 사람·동물용 모두 효능 입증 불요 → 제품 선택 시 유의. 부작용은 드묾."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료 — 영양·기타 지지요법",
+   "gist": "12–24h 금식 후 조기 재급여(저지방 GI식); 24–72h 후에도 식욕부진 시 NG/NE tube; fenbendazole 50 mg/kg q24h 3일"
+  },
+  {
+   "type": "list",
+   "items": [
+    "조기 장관영양이 중요. 제토제로 구토를 조절하는 동안 12–24시간 금식 가능하나 가능한 한 빨리 재급여 시작. 많은 환자가 빠르게 반응해 격려로 소량 섭취 시작. 재급여는 소화 쉬운 저지방 위장관 처방식(Hills I/D low fat, Purina EN, Royal Canin GI low fat) 권장.",
+    "중증이거나 24–72시간 치료 후에도 식욕부진이 지속되나 심한 구토·오심이 더 이상 없는 환자 ▸ 비위관 또는 비식도관 설치(Ch.126) 후 적절한 액상 사료로 보조 급여. 고양이는 간지질증 예방을 위해 가능한 한 빨리 장관영양. 처음에는 느린 볼루스 또는 CRI로 소량 투여, 내약성에 따라 증량해 RER 도달.",
+    "구충 ▸ 분변검사 결과와 무관하게 모든 GE 환자에서 광범위 구충제 고려 — fenbendazole 50 mg/kg PO q24h 3일, 3주 및 3개월 후 반복. 구토가 멎고 음식·경구 투약을 견딜 때 시작.",
+    "운동촉진제 ▸ ileus 또는 역류 환자에서 고려: metoclopramide 1–2 mg/kg/day, cisapride 0.1–0.5 mg/kg PO q8–12h, azithromycin 0.5–1 mg/kg IV q8h 또는 1–2 mg/kg IV q8–12h (원문 표기).",
+    "지사제(loperamide 등) ▸ 흔히 사용하지 않으며, ABCB1 변이 가능 품종에서는 심각한 신경독성 위험으로 비권장. 입원 환자는 수액·전해질 농도 감시 및 필요 시 보충."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "예후",
+   "gist": "원발성 급성 GE는 지지요법으로 매우 양호, 2–5일 내 소실; 이차성은 원인에 따름"
+  },
+  {
+   "type": "list",
+   "items": [
+    "원발성 급성 GE ▸ 지지요법으로 일반적으로 매우 좋음. 대부분 2–5일 내 증상 소실, 장기 후유증 없이 정상 활동 복귀.",
+    "이차성 GE ▸ 기저 원인에 따라 다름."
+   ]
+  }
+ ]
+}
