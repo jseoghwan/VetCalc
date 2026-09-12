@@ -80,5 +80,10 @@
 {"id": "sacc3-p7-c79", "num": 79, "title": "Hypothyroid Crisis in the Dog", "part": "Part VII", "part_title": "Endocrine Disorders"},
 {"id": "sacc3-p7-c80", "num": 80, "title": "Pheochromocytoma", "part": "Part VII", "part_title": "Endocrine Disorders"},
 {"id": "sacc3-p7-c81", "num": 81, "title": "Critical Illness-Related Corticosteroid Insufficiency", "part": "Part VII", "part_title": "Endocrine Disorders"},
-{"id": "sacc3-p7-c82", "num": 82, "title": "Hypoadrenocorticism", "part": "Part VII", "part_title": "Endocrine Disorders"}
+{"id": "sacc3-p7-c82", "num": 82, "title": "Hypoadrenocorticism", "part": "Part VII", "part_title": "Endocrine Disorders"},
+{"id": "sacc3-p8-c83", "num": 83, "title": "Neurological Evaluation of the ICU Patient", "part": "Part VIII", "part_title": "Neurologic Disorders"},
+{"id": "sacc3-p8-c84", "num": 84, "title": "Seizures and Status Epilepticus", "part": "Part VIII", "part_title": "Neurologic Disorders"},
+{"id": "sacc3-p8-c85", "num": 85, "title": "Intracranial Hypertension", "part": "Part VIII", "part_title": "Neurologic Disorders"},
+{"id": "sacc3-p8-c86", "num": 86, "title": "Tetanus", "part": "Part VIII", "part_title": "Neurologic Disorders"},
+{"id": "sacc3-p8-c87", "num": 87, "title": "Hepatic Encephalopathy", "part": "Part VIII", "part_title": "Neurologic Disorders"}
 ]}
