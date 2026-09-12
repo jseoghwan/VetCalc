@@ -1,7 +1,7 @@
 {
-  "name": "VECC Calculation Tools",
-  "short_name": "VECC Calc",
-  "description": "Veterinary Emergency & Critical Care 임상 계산기 · 프로토콜",
+  "name": "Vet-ECC Hub",
+  "short_name": "VECC Hub",
+  "description": "Veterinary Emergency & Critical Care Protocols & Calculators",
   "lang": "ko",
   "start_url": "./index.html",
   "scope": "./",
