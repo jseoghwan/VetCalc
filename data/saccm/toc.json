@@ -1,998 +1,1026 @@
 {
-"chapters": [
-{
-"id": "sacc3-p1-c1",
-"num": 1,
-"title": "Evaluation and Triage of the Critically Ill Patient",
-"part": "Part I",
-"part_title": "Key Critical Care Concepts"
-},
-{
-"id": "sacc3-p1-c2",
-"num": 2,
-"title": "Physical Examination and Daily Assessment of the Critically Ill Patient",
-"part": "Part I",
-"part_title": "Key Critical Care Concepts"
-},
-{
-"id": "sacc3-p1-c3",
-"num": 3,
-"title": "Hemostasis",
-"part": "Part I",
-"part_title": "Key Critical Care Concepts"
-},
-{
-"id": "sacc3-p1-c4",
-"num": 4,
-"title": "Cardiopulmonary Resuscitation",
-"part": "Part I",
-"part_title": "Key Critical Care Concepts"
-},
-{
-"id": "sacc3-p1-c5",
-"num": 5,
-"title": "Post-Cardiac Arrest Care",
-"part": "Part I",
-"part_title": "Key Critical Care Concepts"
-},
-{
-"id": "sacc3-p1-c6",
-"num": 6,
-"title": "Classification and Initial Management of Shock States",
-"part": "Part I",
-"part_title": "Key Critical Care Concepts"
-},
-{
-"id": "sacc3-p1-c7",
-"num": 7,
-"title": "SIRS, MODS, and Sepsis",
-"part": "Part I",
-"part_title": "Key Critical Care Concepts"
-},
-{
-"id": "sacc3-p1-c8",
-"num": 8,
-"title": "Oxygen Toxicity",
-"part": "Part I",
-"part_title": "Key Critical Care Concepts"
-},
-{
-"id": "sacc3-p1-c9",
-"num": 9,
-"title": "Endothelial Surface Layer",
-"part": "Part I",
-"part_title": "Key Critical Care Concepts"
-},
-{
-"id": "sacc3-p1-c10",
-"num": 10,
-"title": "Hyperthermia and Fever",
-"part": "Part I",
-"part_title": "Key Critical Care Concepts"
-},
-{
-"id": "sacc3-p1-c11",
-"num": 11,
-"title": "Interstitial Edema",
-"part": "Part I",
-"part_title": "Key Critical Care Concepts"
-},
-{
-"id": "sacc3-p1-c12",
-"num": 12,
-"title": "Patient Suffering in the Intensive Care Unit",
-"part": "Part I",
-"part_title": "Key Critical Care Concepts"
-},
-{
-"id": "sacc3-p1-c13",
-"num": 13,
-"title": "Predictive Scoring Systems in Veterinary Medicine",
-"part": "Part I",
-"part_title": "Key Critical Care Concepts"
-},
-{
-"id": "sacc3-p2-c14",
-"num": 14,
-"title": "Control of Breathing",
-"part": "Part II",
-"part_title": "Respiratory Disorders"
-},
-{
-"id": "sacc3-p2-c15",
-"num": 15,
-"title": "Oxygen Therapy",
-"part": "Part II",
-"part_title": "Respiratory Disorders"
-},
-{
-"id": "sacc3-p2-c16",
-"num": 16,
-"title": "Hypoxemia",
-"part": "Part II",
-"part_title": "Respiratory Disorders"
-},
-{
-"id": "sacc3-p2-c17",
-"num": 17,
-"title": "Hypoventilation",
-"part": "Part II",
-"part_title": "Respiratory Disorders"
-},
-{
-"id": "sacc3-p2-c18",
-"num": 18,
-"title": "Upper Airway Disease",
-"part": "Part II",
-"part_title": "Respiratory Disorders"
-},
-{
-"id": "sacc3-p2-c19",
-"num": 19,
-"title": "Tracheal Collapse: Management and Indications for Tracheal Stents",
-"part": "Part II",
-"part_title": "Respiratory Disorders"
-},
-{
-"id": "sacc3-p2-c20",
-"num": 20,
-"title": "Feline Bronchopulmonary Disease",
-"part": "Part II",
-"part_title": "Respiratory Disorders"
-},
-{
-"id": "sacc3-p2-c21",
-"num": 21,
-"title": "Canine Lower Airway Disease",
-"part": "Part II",
-"part_title": "Respiratory Disorders"
-},
-{
-"id": "sacc3-p2-c22",
-"num": 22,
-"title": "Pulmonary Hypertension",
-"part": "Part II",
-"part_title": "Respiratory Disorders"
-},
-{
-"id": "sacc3-p2-c23",
-"num": 23,
-"title": "Pulmonary Edema",
-"part": "Part II",
-"part_title": "Respiratory Disorders"
-},
-{
-"id": "sacc3-p2-c24",
-"num": 24,
-"title": "Pneumonia",
-"part": "Part II",
-"part_title": "Respiratory Disorders"
-},
-{
-"id": "sacc3-p2-c25",
-"num": 25,
-"title": "Acute Respiratory Distress Syndrome",
-"part": "Part II",
-"part_title": "Respiratory Disorders"
-},
-{
-"id": "sacc3-p2-c26",
-"num": 26,
-"title": "Pulmonary Contusions and Hemorrhage",
-"part": "Part II",
-"part_title": "Respiratory Disorders"
-},
-{
-"id": "sacc3-p2-c27",
-"num": 27,
-"title": "Pulmonary Thromboembolism",
-"part": "Part II",
-"part_title": "Respiratory Disorders"
-},
-{
-"id": "sacc3-p2-c28",
-"num": 28,
-"title": "Chest Wall Disease",
-"part": "Part II",
-"part_title": "Respiratory Disorders"
-},
-{
-"id": "sacc3-p2-c29",
-"num": 29,
-"title": "Pleural Space Disease",
-"part": "Part II",
-"part_title": "Respiratory Disorders"
-},
-{
-"id": "sacc3-p2-c30",
-"num": 30,
-"title": "Respiratory Distress Look-Alikes",
-"part": "Part II",
-"part_title": "Respiratory Disorders"
-},
-{
-"id": "sacc3-p3-c31",
-"num": 31,
-"title": "High-Flow Nasal Oxygen",
-"part": "Part III",
-"part_title": "Advanced Respiratory Support"
-},
-{
-"id": "sacc3-p3-c32",
-"num": 32,
-"title": "Mechanical Ventilation — Core Concepts",
-"part": "Part III",
-"part_title": "Advanced Respiratory Support"
-},
-{
-"id": "sacc3-p3-c33",
-"num": 33,
-"title": "Mechanical Ventilation — Advanced Concepts",
-"part": "Part III",
-"part_title": "Advanced Respiratory Support"
-},
-{
-"id": "sacc3-p3-c34",
-"num": 34,
-"title": "Jet Ventilation",
-"part": "Part III",
-"part_title": "Advanced Respiratory Support"
-},
-{
-"id": "sacc3-p3-c35",
-"num": 35,
-"title": "Ventilator Waveforms",
-"part": "Part III",
-"part_title": "Advanced Respiratory Support"
-},
-{
-"id": "sacc3-p3-c36",
-"num": 36,
-"title": "Anesthesia and Monitoring of the Ventilator Patient",
-"part": "Part III",
-"part_title": "Advanced Respiratory Support"
-},
-{
-"id": "sacc3-p3-c37",
-"num": 37,
-"title": "Nursing Care of the Ventilator Patient",
-"part": "Part III",
-"part_title": "Advanced Respiratory Support"
-},
-{
-"id": "sacc3-p3-c38",
-"num": 38,
-"title": "Discontinuing Mechanical Ventilation",
-"part": "Part III",
-"part_title": "Advanced Respiratory Support"
-},
-{
-"id": "sacc3-p3-c39",
-"num": 39,
-"title": "Ventilator Induced Lung Injury",
-"part": "Part III",
-"part_title": "Advanced Respiratory Support"
-},
-{
-"id": "sacc3-p3-c40",
-"num": 40,
-"title": "Ventilator-Associated Pneumonia",
-"part": "Part III",
-"part_title": "Advanced Respiratory Support"
-},
-{
-"id": "sacc3-p4-c41",
-"num": 41,
-"title": "Mechanisms of Heart Failure",
-"part": "Part IV",
-"part_title": "Cardiovascular Disorders"
-},
-{
-"id": "sacc3-p4-c42",
-"num": 42,
-"title": "Ventricular Failure and Myocardial Infarction",
-"part": "Part IV",
-"part_title": "Cardiovascular Disorders"
-},
-{
-"id": "sacc3-p4-c43",
-"num": 43,
-"title": "Feline Cardiomyopathy",
-"part": "Part IV",
-"part_title": "Cardiovascular Disorders"
-},
-{
-"id": "sacc3-p4-c44",
-"num": 44,
-"title": "Canine Cardiomyopathy",
-"part": "Part IV",
-"part_title": "Cardiovascular Disorders"
-},
-{
-"id": "sacc3-p4-c45",
-"num": 45,
-"title": "Canine Myxomatous Mitral Valve Disease",
-"part": "Part IV",
-"part_title": "Cardiovascular Disorders"
-},
-{
-"id": "sacc3-p4-c46",
-"num": 46,
-"title": "Blunt Cardiac Injury",
-"part": "Part IV",
-"part_title": "Cardiovascular Disorders"
-},
-{
-"id": "sacc3-p4-c47",
-"num": 47,
-"title": "Pericardial Diseases",
-"part": "Part IV",
-"part_title": "Cardiovascular Disorders"
-},
-{
-"id": "sacc3-p4-c48",
-"num": 48,
-"title": "Bradyarrhythmias and Conduction Disturbances",
-"part": "Part IV",
-"part_title": "Cardiovascular Disorders"
-},
-{
-"id": "sacc3-p4-c49",
-"num": 49,
-"title": "Supraventricular Tachyarrhythmias",
-"part": "Part IV",
-"part_title": "Cardiovascular Disorders"
-},
-{
-"id": "sacc3-p4-c50",
-"num": 50,
-"title": "Ventricular Tachyarrhythmias",
-"part": "Part IV",
-"part_title": "Cardiovascular Disorders"
-},
-{
-"id": "sacc3-p4-c51",
-"num": 51,
-"title": "Myocarditis",
-"part": "Part IV",
-"part_title": "Cardiovascular Disorders"
-},
-{
-"id": "sacc3-p4-c52",
-"num": 52,
-"title": "Cardiac Biomarkers",
-"part": "Part IV",
-"part_title": "Cardiovascular Disorders"
-},
-{
-"id": "sacc3-p4-c53",
-"num": 53,
-"title": "Systemic Hypertension",
-"part": "Part IV",
-"part_title": "Cardiovascular Disorders"
-},
-{
-"id": "sacc3-p4-c54",
-"num": 54,
-"title": "Cardiopulmonary Bypass",
-"part": "Part IV",
-"part_title": "Cardiovascular Disorders"
-},
-{
-"id": "sacc3-p5-c55",
-"num": 55,
-"title": "Sodium Disorders",
-"part": "Part V",
-"part_title": "Electrolyte and Acid-Base Disturbances"
-},
-{
-"id": "sacc3-p5-c56",
-"num": 56,
-"title": "Potassium Disorders",
-"part": "Part V",
-"part_title": "Electrolyte and Acid-Base Disturbances"
-},
-{
-"id": "sacc3-p5-c57",
-"num": 57,
-"title": "Calcium Disorders",
-"part": "Part V",
-"part_title": "Electrolyte and Acid-Base Disturbances"
-},
-{
-"id": "sacc3-p5-c58",
-"num": 58,
-"title": "Magnesium and Phosphate Disorders",
-"part": "Part V",
-"part_title": "Electrolyte and Acid-Base Disturbances"
-},
-{
-"id": "sacc3-p5-c59",
-"num": 59,
-"title": "Traditional Acid-Base Analysis",
-"part": "Part V",
-"part_title": "Electrolyte and Acid-Base Disturbances"
-},
-{
-"id": "sacc3-p5-c60",
-"num": 60,
-"title": "Nontraditional Acid-Base Analysis",
-"part": "Part V",
-"part_title": "Electrolyte and Acid-Base Disturbances"
-},
-{
-"id": "sacc3-p5-c61",
-"num": 61,
-"title": "Hyperlactatemia",
-"part": "Part V",
-"part_title": "Electrolyte and Acid-Base Disturbances"
-},
-{
-"id": "sacc3-p5-c62",
-"num": 62,
-"title": "Urine Osmolality and Electrolytes",
-"part": "Part V",
-"part_title": "Electrolyte and Acid-Base Disturbances"
-},
-{
-"id": "sacc3-p6-c63",
-"num": 63,
-"title": "Assessment of Hydration",
-"part": "Part VI",
-"part_title": "Fluid Therapy"
-},
-{
-"id": "sacc3-p6-c64",
-"num": 64,
-"title": "Assessment of Intravascular Volume",
-"part": "Part VI",
-"part_title": "Fluid Therapy"
-},
-{
-"id": "sacc3-p6-c65",
-"num": 65,
-"title": "Crystalloids and Hemoglobin-Based Oxygen-Carrying Solutions",
-"part": "Part VI",
-"part_title": "Fluid Therapy"
-},
-{
-"id": "sacc3-p6-c66",
-"num": 66,
-"title": "Colloid Solutions",
-"part": "Part VI",
-"part_title": "Fluid Therapy"
-},
-{
-"id": "sacc3-p6-c67",
-"num": 67,
-"title": "Daily Intravenous Fluid Therapy",
-"part": "Part VI",
-"part_title": "Fluid Therapy"
-},
-{
-"id": "sacc3-p6-c68",
-"num": 68,
-"title": "Shock Fluids and Fluid Challenge",
-"part": "Part VI",
-"part_title": "Fluid Therapy"
-},
-{
-"id": "sacc3-p6-c69",
-"num": 69,
-"title": "Transfusion Medicine",
-"part": "Part VI",
-"part_title": "Fluid Therapy"
-},
-{
-"id": "sacc3-p6-c70",
-"num": 70,
-"title": "Blood Types, Pretransfusion Compatibility, and Transfusion Reactions",
-"part": "Part VI",
-"part_title": "Fluid Therapy"
-},
-{
-"id": "sacc3-p6-c71",
-"num": 71,
-"title": "Hemorrhagic Shock",
-"part": "Part VI",
-"part_title": "Fluid Therapy"
-},
-{
-"id": "sacc3-p7-c72",
-"num": 72,
-"title": "The Diabetic Patient in the ICU",
-"part": "Part VII",
-"part_title": "Endocrine Disorders"
-},
-{
-"id": "sacc3-p7-c73",
-"num": 73,
-"title": "Diabetic Ketoacidosis",
-"part": "Part VII",
-"part_title": "Endocrine Disorders"
-},
-{
-"id": "sacc3-p7-c74",
-"num": 74,
-"title": "Hyperglycemic Hyperosmolar Syndrome",
-"part": "Part VII",
-"part_title": "Endocrine Disorders"
-},
-{
-"id": "sacc3-p7-c75",
-"num": 75,
-"title": "Hypoglycemia",
-"part": "Part VII",
-"part_title": "Endocrine Disorders"
-},
-{
-"id": "sacc3-p7-c76",
-"num": 76,
-"title": "Diabetes Insipidus",
-"part": "Part VII",
-"part_title": "Endocrine Disorders"
-},
-{
-"id": "sacc3-p7-c77",
-"num": 77,
-"title": "Syndrome of Inappropriate Antidiuretic Hormone",
-"part": "Part VII",
-"part_title": "Endocrine Disorders"
-},
-{
-"id": "sacc3-p7-c78",
-"num": 78,
-"title": "Thyroid Storm",
-"part": "Part VII",
-"part_title": "Endocrine Disorders"
-},
-{
-"id": "sacc3-p7-c79",
-"num": 79,
-"title": "Hypothyroid Crisis in the Dog",
-"part": "Part VII",
-"part_title": "Endocrine Disorders"
-},
-{
-"id": "sacc3-p7-c80",
-"num": 80,
-"title": "Pheochromocytoma",
-"part": "Part VII",
-"part_title": "Endocrine Disorders"
-},
-{
-"id": "sacc3-p7-c81",
-"num": 81,
-"title": "Critical Illness-Related Corticosteroid Insufficiency",
-"part": "Part VII",
-"part_title": "Endocrine Disorders"
-},
-{
-"id": "sacc3-p7-c82",
-"num": 82,
-"title": "Hypoadrenocorticism",
-"part": "Part VII",
-"part_title": "Endocrine Disorders"
-},
-{
-"id": "sacc3-p8-c83",
-"num": 83,
-"title": "Neurological Evaluation of the ICU Patient",
-"part": "Part VIII",
-"part_title": "Neurologic Disorders"
-},
-{
-"id": "sacc3-p8-c84",
-"num": 84,
-"title": "Seizures and Status Epilepticus",
-"part": "Part VIII",
-"part_title": "Neurologic Disorders"
-},
-{
-"id": "sacc3-p8-c85",
-"num": 85,
-"title": "Intracranial Hypertension",
-"part": "Part VIII",
-"part_title": "Neurologic Disorders"
-},
-{
-"id": "sacc3-p8-c86",
-"num": 86,
-"title": "Tetanus",
-"part": "Part VIII",
-"part_title": "Neurologic Disorders"
-},
-{
-"id": "sacc3-p8-c87",
-"num": 87,
-"title": "Hepatic Encephalopathy",
-"part": "Part VIII",
-"part_title": "Neurologic Disorders"
-},
-{
-"id": "sacc3-p9-c88",
-"num": 88,
-"title": "Hospital-Associated Infections and Zoonoses",
-"part": "Part IX",
-"part_title": "Infectious Disorders"
-},
-{
-"id": "sacc3-p9-c89",
-"num": 89,
-"title": "Febrile Neutropenia",
-"part": "Part IX",
-"part_title": "Infectious Disorders"
-},
-{
-"id": "sacc3-p9-c90",
-"num": 90,
-"title": "Sepsis and Septic Shock",
-"part": "Part IX",
-"part_title": "Infectious Disorders"
-},
-{
-"id": "sacc3-p9-c91",
-"num": 91,
-"title": "Bacterial Infections",
-"part": "Part IX",
-"part_title": "Infectious Disorders"
-},
-{
-"id": "sacc3-p9-c92",
-"num": 92,
-"title": "Fungal Infections",
-"part": "Part IX",
-"part_title": "Infectious Disorders"
-},
-{
-"id": "sacc3-p9-c93",
-"num": 93,
-"title": "Viral Infections",
-"part": "Part IX",
-"part_title": "Infectious Disorders"
-},
-{
-"id": "sacc3-p9-c94",
-"num": 94,
-"title": "Canine Parvovirus Infection",
-"part": "Part IX",
-"part_title": "Infectious Disorders"
-},
-{
-"id": "sacc3-p9-c95",
-"num": 95,
-"title": "Infective Endocarditis",
-"part": "Part IX",
-"part_title": "Infectious Disorders"
-},
-{
-"id": "sacc3-p9-c96",
-"num": 96,
-"title": "Urosepsis",
-"part": "Part IX",
-"part_title": "Infectious Disorders"
-},
-{
-"id": "sacc3-p9-c97",
-"num": 97,
-"title": "Necrotizing Soft-Tissue Infections",
-"part": "Part IX",
-"part_title": "Infectious Disorders"
-},
-{
-"id": "sacc3-p9-c98",
-"num": 98,
-"title": "Catheter-Related Bloodstream Infection",
-"part": "Part IX",
-"part_title": "Infectious Disorders"
-},
-{
-"id": "sacc3-p9-c99",
-"num": 99,
-"title": "Multi-Drug Resistant Infections",
-"part": "Part IX",
-"part_title": "Infectious Disorders"
-},
-{
-"id": "sacc3-p9-c100",
-"num": 100,
-"title": "Infectious Disease Control in the ICU",
-"part": "Part IX",
-"part_title": "Infectious Disorders"
-},
-{
-"id": "sacc3-p10-c101",
-"num": 101,
-"title": "Hypercoagulable States",
-"part": "Part X",
-"part_title": "Hematologic Disorders"
-},
-{
-"id": "sacc3-p10-c102",
-"num": 102,
-"title": "Feline Aortic Thromboembolism",
-"part": "Part X",
-"part_title": "Hematologic Disorders"
-},
-{
-"id": "sacc3-p10-c103",
-"num": 103,
-"title": "Platelet Disorders",
-"part": "Part X",
-"part_title": "Hematologic Disorders"
-},
-{
-"id": "sacc3-p10-c104",
-"num": 104,
-"title": "Coagulopathy in the ICU",
-"part": "Part X",
-"part_title": "Hematologic Disorders"
-},
-{
-"id": "sacc3-p10-c105",
-"num": 105,
-"title": "Management of the Bleeding Patient in the ICU",
-"part": "Part X",
-"part_title": "Hematologic Disorders"
-},
-{
-"id": "sacc3-p10-c106",
-"num": 106,
-"title": "Anemia in the ICU",
-"part": "Part X",
-"part_title": "Hematologic Disorders"
-},
-{
-"id": "sacc3-p10-c107",
-"num": 107,
-"title": "Dyshemoglobinemia",
-"part": "Part X",
-"part_title": "Hematologic Disorders"
-},
-{
-"id": "sacc3-p10-c108",
-"num": 108,
-"title": "Acute Hemolytic Disorders",
-"part": "Part X",
-"part_title": "Hematologic Disorders"
-},
-{
-"id": "sacc3-p11-c109",
-"num": 109,
-"title": "Acute Abdominal Pain",
-"part": "Part XI",
-"part_title": "Intraabdominal Disorders"
-},
-{
-"id": "sacc3-p11-c110",
-"num": 110,
-"title": "Acute Pancreatitis",
-"part": "Part XI",
-"part_title": "Intraabdominal Disorders"
-},
-{
-"id": "sacc3-p11-c111",
-"num": 111,
-"title": "Acute Cholecystitis",
-"part": "Part XI",
-"part_title": "Intraabdominal Disorders"
-},
-{
-"id": "sacc3-p11-c112",
-"num": 112,
-"title": "Hepatitis and Cholangiohepatitis",
-"part": "Part XI",
-"part_title": "Intraabdominal Disorders"
-},
-{
-"id": "sacc3-p11-c113",
-"num": 113,
-"title": "Hepatic Failure",
-"part": "Part XI",
-"part_title": "Intraabdominal Disorders"
-},
-{
-"id": "sacc3-p11-c114",
-"num": 114,
-"title": "Portal Hypertension",
-"part": "Part XI",
-"part_title": "Intraabdominal Disorders"
-},
-{
-"id": "sacc3-p11-c115",
-"num": 115,
-"title": "Portosystemic Shunt Management",
-"part": "Part XI",
-"part_title": "Intraabdominal Disorders"
-},
-{
-"id": "sacc3-p11-c116",
-"num": 116,
-"title": "Acute Gastroenteritis",
-"part": "Part XI",
-"part_title": "Intraabdominal Disorders"
-},
-{
-"id": "sacc3-p11-c117",
-"num": 117,
-"title": "Gastrointestinal Hemorrhage",
-"part": "Part XI",
-"part_title": "Intraabdominal Disorders"
-},
-{
-"id": "sacc3-p11-c118",
-"num": 118,
-"title": "Regurgitation and Vomiting",
-"part": "Part XI",
-"part_title": "Intraabdominal Disorders"
-},
-{
-"id": "sacc3-p11-c119",
-"num": 119,
-"title": "Diarrhea",
-"part": "Part XI",
-"part_title": "Intraabdominal Disorders"
-},
-{
-"id": "sacc3-p11-c120",
-"num": 120,
-"title": "Peritonitis",
-"part": "Part XI",
-"part_title": "Intraabdominal Disorders"
-},
-{
-"id": "sacc3-p12-c121",
-"num": 121,
-"title": "Acute Kidney Injury",
-"part": "Part XII",
-"part_title": "Urogenital Disorders"
-},
-{
-"id": "sacc3-p12-c122",
-"num": 122,
-"title": "Chronic Kidney Disease",
-"part": "Part XII",
-"part_title": "Urogenital Disorders"
-},
-{
-"id": "sacc3-p12-c123",
-"num": 123,
-"title": "Kidney Transplantation",
-"part": "Part XII",
-"part_title": "Urogenital Disorders"
-},
-{
-"id": "sacc3-p13-c124",
-"num": 124,
-"title": "Nutritional Assessment",
-"part": "Part XIII",
-"part_title": "Nutrition"
-},
-{
-"id": "sacc3-p13-c125",
-"num": 125,
-"title": "Nutritional Modulation of Critical Illness",
-"part": "Part XIII",
-"part_title": "Nutrition"
-},
-{
-"id": "sacc3-p13-c126",
-"num": 126,
-"title": "Enteral Nutrition",
-"part": "Part XIII",
-"part_title": "Nutrition"
-},
-{
-"id": "sacc3-p13-c127",
-"num": 127,
-"title": "Parenteral Nutrition",
-"part": "Part XIII",
-"part_title": "Nutrition"
-},
-{
-"id": "sacc3-p14-c128",
-"num": 128,
-"title": "Traumatic Brain Injury",
-"part": "Part XIV",
-"part_title": "Trauma"
-},
-{
-"id": "sacc3-p14-c129",
-"num": 129,
-"title": "Wound Management",
-"part": "Part XIV",
-"part_title": "Trauma"
-},
-{
-"id": "sacc3-p14-c130",
-"num": 130,
-"title": "Thermal Burn Injury",
-"part": "Part XIV",
-"part_title": "Trauma"
-},
-{
-"id": "sacc3-p15-c131",
-"num": 131,
-"title": "Pain Assessment",
-"part": "Part XV",
-"part_title": "Anesthesia and Pain Management"
-},
-{
-"id": "sacc3-p15-c132",
-"num": 132,
-"title": "Sedation of the Critically Ill Patient",
-"part": "Part XV",
-"part_title": "Anesthesia and Pain Management"
-},
-{
-"id": "sacc3-p15-c133",
-"num": 133,
-"title": "Anesthesia in the Critically Ill Patient",
-"part": "Part XV",
-"part_title": "Anesthesia and Pain Management"
-},
-{
-"id": "sacc3-p15-c134",
-"num": 134,
-"title": "Analgesia and Constant Rate Infusions",
-"part": "Part XV",
-"part_title": "Anesthesia and Pain Management"
-},
-{
-"id": "sacc3-p15-c135",
-"num": 135,
-"title": "Physical Rehabilitation for the Critical Care Patient",
-"part": "Part XV",
-"part_title": "Anesthesia and Pain Management"
-},
-{
-"id": "sacc3-p15-c136",
-"num": 136,
-"title": "Integrative Veterinary Medicine for the Intensive Care Unit Patient",
-"part": "Part XV",
-"part_title": "Anesthesia and Pain Management"
-},
-{
-"id": "sacc3-p16-c137",
-"num": 137,
-"title": "Smoke Inhalation",
-"part": "Part XVI",
-"part_title": "Environmental Emergencies"
-},
-{
-"id": "sacc3-p16-c138",
-"num": 138,
-"title": "Hypothermia",
-"part": "Part XVI",
-"part_title": "Environmental Emergencies"
-},
-{
-"id": "sacc3-p16-c139",
-"num": 139,
-"title": "Heat Stroke",
-"part": "Part XVI",
-"part_title": "Environmental Emergencies"
-},
-{
-"id": "sacc3-p16-c140",
-"num": 140,
-"title": "Drowning and Submersion Injury",
-"part": "Part XVI",
-"part_title": "Environmental Emergencies"
-},
-{
-"id": "sacc3-p17-c141",
-"num": 141,
-"title": "Anaphylaxis",
-"part": "Part XVII",
-"part_title": "Miscellaneous Disorders"
-},
-{
-"id": "sacc3-p17-c142",
-"num": 142,
-"title": "Gas Embolism",
-"part": "Part XVII",
-"part_title": "Miscellaneous Disorders"
-}
-]
+ "chapters": [
+  {
+   "id": "sacc3-p1-c1",
+   "num": 1,
+   "title": "Evaluation and Triage of the Critically Ill Patient",
+   "part": "Part I",
+   "part_title": "Key Critical Care Concepts"
+  },
+  {
+   "id": "sacc3-p1-c2",
+   "num": 2,
+   "title": "Physical Examination and Daily Assessment of the Critically Ill Patient",
+   "part": "Part I",
+   "part_title": "Key Critical Care Concepts"
+  },
+  {
+   "id": "sacc3-p1-c3",
+   "num": 3,
+   "title": "Hemostasis",
+   "part": "Part I",
+   "part_title": "Key Critical Care Concepts"
+  },
+  {
+   "id": "sacc3-p1-c4",
+   "num": 4,
+   "title": "Cardiopulmonary Resuscitation",
+   "part": "Part I",
+   "part_title": "Key Critical Care Concepts"
+  },
+  {
+   "id": "sacc3-p1-c5",
+   "num": 5,
+   "title": "Post-Cardiac Arrest Care",
+   "part": "Part I",
+   "part_title": "Key Critical Care Concepts"
+  },
+  {
+   "id": "sacc3-p1-c6",
+   "num": 6,
+   "title": "Classification and Initial Management of Shock States",
+   "part": "Part I",
+   "part_title": "Key Critical Care Concepts"
+  },
+  {
+   "id": "sacc3-p1-c7",
+   "num": 7,
+   "title": "SIRS, MODS, and Sepsis",
+   "part": "Part I",
+   "part_title": "Key Critical Care Concepts"
+  },
+  {
+   "id": "sacc3-p1-c8",
+   "num": 8,
+   "title": "Oxygen Toxicity",
+   "part": "Part I",
+   "part_title": "Key Critical Care Concepts"
+  },
+  {
+   "id": "sacc3-p1-c9",
+   "num": 9,
+   "title": "Endothelial Surface Layer",
+   "part": "Part I",
+   "part_title": "Key Critical Care Concepts"
+  },
+  {
+   "id": "sacc3-p1-c10",
+   "num": 10,
+   "title": "Hyperthermia and Fever",
+   "part": "Part I",
+   "part_title": "Key Critical Care Concepts"
+  },
+  {
+   "id": "sacc3-p1-c11",
+   "num": 11,
+   "title": "Interstitial Edema",
+   "part": "Part I",
+   "part_title": "Key Critical Care Concepts"
+  },
+  {
+   "id": "sacc3-p1-c12",
+   "num": 12,
+   "title": "Patient Suffering in the Intensive Care Unit",
+   "part": "Part I",
+   "part_title": "Key Critical Care Concepts"
+  },
+  {
+   "id": "sacc3-p1-c13",
+   "num": 13,
+   "title": "Predictive Scoring Systems in Veterinary Medicine",
+   "part": "Part I",
+   "part_title": "Key Critical Care Concepts"
+  },
+  {
+   "id": "sacc3-p2-c14",
+   "num": 14,
+   "title": "Control of Breathing",
+   "part": "Part II",
+   "part_title": "Respiratory Disorders"
+  },
+  {
+   "id": "sacc3-p2-c15",
+   "num": 15,
+   "title": "Oxygen Therapy",
+   "part": "Part II",
+   "part_title": "Respiratory Disorders"
+  },
+  {
+   "id": "sacc3-p2-c16",
+   "num": 16,
+   "title": "Hypoxemia",
+   "part": "Part II",
+   "part_title": "Respiratory Disorders"
+  },
+  {
+   "id": "sacc3-p2-c17",
+   "num": 17,
+   "title": "Hypoventilation",
+   "part": "Part II",
+   "part_title": "Respiratory Disorders"
+  },
+  {
+   "id": "sacc3-p2-c18",
+   "num": 18,
+   "title": "Upper Airway Disease",
+   "part": "Part II",
+   "part_title": "Respiratory Disorders"
+  },
+  {
+   "id": "sacc3-p2-c19",
+   "num": 19,
+   "title": "Tracheal Collapse: Management and Indications for Tracheal Stents",
+   "part": "Part II",
+   "part_title": "Respiratory Disorders"
+  },
+  {
+   "id": "sacc3-p2-c20",
+   "num": 20,
+   "title": "Feline Bronchopulmonary Disease",
+   "part": "Part II",
+   "part_title": "Respiratory Disorders"
+  },
+  {
+   "id": "sacc3-p2-c21",
+   "num": 21,
+   "title": "Canine Lower Airway Disease",
+   "part": "Part II",
+   "part_title": "Respiratory Disorders"
+  },
+  {
+   "id": "sacc3-p2-c22",
+   "num": 22,
+   "title": "Pulmonary Hypertension",
+   "part": "Part II",
+   "part_title": "Respiratory Disorders"
+  },
+  {
+   "id": "sacc3-p2-c23",
+   "num": 23,
+   "title": "Pulmonary Edema",
+   "part": "Part II",
+   "part_title": "Respiratory Disorders"
+  },
+  {
+   "id": "sacc3-p2-c24",
+   "num": 24,
+   "title": "Pneumonia",
+   "part": "Part II",
+   "part_title": "Respiratory Disorders"
+  },
+  {
+   "id": "sacc3-p2-c25",
+   "num": 25,
+   "title": "Acute Respiratory Distress Syndrome",
+   "part": "Part II",
+   "part_title": "Respiratory Disorders"
+  },
+  {
+   "id": "sacc3-p2-c26",
+   "num": 26,
+   "title": "Pulmonary Contusions and Hemorrhage",
+   "part": "Part II",
+   "part_title": "Respiratory Disorders"
+  },
+  {
+   "id": "sacc3-p2-c27",
+   "num": 27,
+   "title": "Pulmonary Thromboembolism",
+   "part": "Part II",
+   "part_title": "Respiratory Disorders"
+  },
+  {
+   "id": "sacc3-p2-c28",
+   "num": 28,
+   "title": "Chest Wall Disease",
+   "part": "Part II",
+   "part_title": "Respiratory Disorders"
+  },
+  {
+   "id": "sacc3-p2-c29",
+   "num": 29,
+   "title": "Pleural Space Disease",
+   "part": "Part II",
+   "part_title": "Respiratory Disorders"
+  },
+  {
+   "id": "sacc3-p2-c30",
+   "num": 30,
+   "title": "Respiratory Distress Look-Alikes",
+   "part": "Part II",
+   "part_title": "Respiratory Disorders"
+  },
+  {
+   "id": "sacc3-p3-c31",
+   "num": 31,
+   "title": "High-Flow Nasal Oxygen",
+   "part": "Part III",
+   "part_title": "Advanced Respiratory Support"
+  },
+  {
+   "id": "sacc3-p3-c32",
+   "num": 32,
+   "title": "Mechanical Ventilation — Core Concepts",
+   "part": "Part III",
+   "part_title": "Advanced Respiratory Support"
+  },
+  {
+   "id": "sacc3-p3-c33",
+   "num": 33,
+   "title": "Mechanical Ventilation — Advanced Concepts",
+   "part": "Part III",
+   "part_title": "Advanced Respiratory Support"
+  },
+  {
+   "id": "sacc3-p3-c34",
+   "num": 34,
+   "title": "Jet Ventilation",
+   "part": "Part III",
+   "part_title": "Advanced Respiratory Support"
+  },
+  {
+   "id": "sacc3-p3-c35",
+   "num": 35,
+   "title": "Ventilator Waveforms",
+   "part": "Part III",
+   "part_title": "Advanced Respiratory Support"
+  },
+  {
+   "id": "sacc3-p3-c36",
+   "num": 36,
+   "title": "Anesthesia and Monitoring of the Ventilator Patient",
+   "part": "Part III",
+   "part_title": "Advanced Respiratory Support"
+  },
+  {
+   "id": "sacc3-p3-c37",
+   "num": 37,
+   "title": "Nursing Care of the Ventilator Patient",
+   "part": "Part III",
+   "part_title": "Advanced Respiratory Support"
+  },
+  {
+   "id": "sacc3-p3-c38",
+   "num": 38,
+   "title": "Discontinuing Mechanical Ventilation",
+   "part": "Part III",
+   "part_title": "Advanced Respiratory Support"
+  },
+  {
+   "id": "sacc3-p3-c39",
+   "num": 39,
+   "title": "Ventilator Induced Lung Injury",
+   "part": "Part III",
+   "part_title": "Advanced Respiratory Support"
+  },
+  {
+   "id": "sacc3-p3-c40",
+   "num": 40,
+   "title": "Ventilator-Associated Pneumonia",
+   "part": "Part III",
+   "part_title": "Advanced Respiratory Support"
+  },
+  {
+   "id": "sacc3-p4-c41",
+   "num": 41,
+   "title": "Mechanisms of Heart Failure",
+   "part": "Part IV",
+   "part_title": "Cardiovascular Disorders"
+  },
+  {
+   "id": "sacc3-p4-c42",
+   "num": 42,
+   "title": "Ventricular Failure and Myocardial Infarction",
+   "part": "Part IV",
+   "part_title": "Cardiovascular Disorders"
+  },
+  {
+   "id": "sacc3-p4-c43",
+   "num": 43,
+   "title": "Feline Cardiomyopathy",
+   "part": "Part IV",
+   "part_title": "Cardiovascular Disorders"
+  },
+  {
+   "id": "sacc3-p4-c44",
+   "num": 44,
+   "title": "Canine Cardiomyopathy",
+   "part": "Part IV",
+   "part_title": "Cardiovascular Disorders"
+  },
+  {
+   "id": "sacc3-p4-c45",
+   "num": 45,
+   "title": "Canine Myxomatous Mitral Valve Disease",
+   "part": "Part IV",
+   "part_title": "Cardiovascular Disorders"
+  },
+  {
+   "id": "sacc3-p4-c46",
+   "num": 46,
+   "title": "Blunt Cardiac Injury",
+   "part": "Part IV",
+   "part_title": "Cardiovascular Disorders"
+  },
+  {
+   "id": "sacc3-p4-c47",
+   "num": 47,
+   "title": "Pericardial Diseases",
+   "part": "Part IV",
+   "part_title": "Cardiovascular Disorders"
+  },
+  {
+   "id": "sacc3-p4-c48",
+   "num": 48,
+   "title": "Bradyarrhythmias and Conduction Disturbances",
+   "part": "Part IV",
+   "part_title": "Cardiovascular Disorders"
+  },
+  {
+   "id": "sacc3-p4-c49",
+   "num": 49,
+   "title": "Supraventricular Tachyarrhythmias",
+   "part": "Part IV",
+   "part_title": "Cardiovascular Disorders"
+  },
+  {
+   "id": "sacc3-p4-c50",
+   "num": 50,
+   "title": "Ventricular Tachyarrhythmias",
+   "part": "Part IV",
+   "part_title": "Cardiovascular Disorders"
+  },
+  {
+   "id": "sacc3-p4-c51",
+   "num": 51,
+   "title": "Myocarditis",
+   "part": "Part IV",
+   "part_title": "Cardiovascular Disorders"
+  },
+  {
+   "id": "sacc3-p4-c52",
+   "num": 52,
+   "title": "Cardiac Biomarkers",
+   "part": "Part IV",
+   "part_title": "Cardiovascular Disorders"
+  },
+  {
+   "id": "sacc3-p4-c53",
+   "num": 53,
+   "title": "Systemic Hypertension",
+   "part": "Part IV",
+   "part_title": "Cardiovascular Disorders"
+  },
+  {
+   "id": "sacc3-p4-c54",
+   "num": 54,
+   "title": "Cardiopulmonary Bypass",
+   "part": "Part IV",
+   "part_title": "Cardiovascular Disorders"
+  },
+  {
+   "id": "sacc3-p5-c55",
+   "num": 55,
+   "title": "Sodium Disorders",
+   "part": "Part V",
+   "part_title": "Electrolyte and Acid-Base Disturbances"
+  },
+  {
+   "id": "sacc3-p5-c56",
+   "num": 56,
+   "title": "Potassium Disorders",
+   "part": "Part V",
+   "part_title": "Electrolyte and Acid-Base Disturbances"
+  },
+  {
+   "id": "sacc3-p5-c57",
+   "num": 57,
+   "title": "Calcium Disorders",
+   "part": "Part V",
+   "part_title": "Electrolyte and Acid-Base Disturbances"
+  },
+  {
+   "id": "sacc3-p5-c58",
+   "num": 58,
+   "title": "Magnesium and Phosphate Disorders",
+   "part": "Part V",
+   "part_title": "Electrolyte and Acid-Base Disturbances"
+  },
+  {
+   "id": "sacc3-p5-c59",
+   "num": 59,
+   "title": "Traditional Acid-Base Analysis",
+   "part": "Part V",
+   "part_title": "Electrolyte and Acid-Base Disturbances"
+  },
+  {
+   "id": "sacc3-p5-c60",
+   "num": 60,
+   "title": "Nontraditional Acid-Base Analysis",
+   "part": "Part V",
+   "part_title": "Electrolyte and Acid-Base Disturbances"
+  },
+  {
+   "id": "sacc3-p5-c61",
+   "num": 61,
+   "title": "Hyperlactatemia",
+   "part": "Part V",
+   "part_title": "Electrolyte and Acid-Base Disturbances"
+  },
+  {
+   "id": "sacc3-p5-c62",
+   "num": 62,
+   "title": "Urine Osmolality and Electrolytes",
+   "part": "Part V",
+   "part_title": "Electrolyte and Acid-Base Disturbances"
+  },
+  {
+   "id": "sacc3-p6-c63",
+   "num": 63,
+   "title": "Assessment of Hydration",
+   "part": "Part VI",
+   "part_title": "Fluid Therapy"
+  },
+  {
+   "id": "sacc3-p6-c64",
+   "num": 64,
+   "title": "Assessment of Intravascular Volume",
+   "part": "Part VI",
+   "part_title": "Fluid Therapy"
+  },
+  {
+   "id": "sacc3-p6-c65",
+   "num": 65,
+   "title": "Crystalloids and Hemoglobin-Based Oxygen-Carrying Solutions",
+   "part": "Part VI",
+   "part_title": "Fluid Therapy"
+  },
+  {
+   "id": "sacc3-p6-c66",
+   "num": 66,
+   "title": "Colloid Solutions",
+   "part": "Part VI",
+   "part_title": "Fluid Therapy"
+  },
+  {
+   "id": "sacc3-p6-c67",
+   "num": 67,
+   "title": "Daily Intravenous Fluid Therapy",
+   "part": "Part VI",
+   "part_title": "Fluid Therapy"
+  },
+  {
+   "id": "sacc3-p6-c68",
+   "num": 68,
+   "title": "Shock Fluids and Fluid Challenge",
+   "part": "Part VI",
+   "part_title": "Fluid Therapy"
+  },
+  {
+   "id": "sacc3-p6-c69",
+   "num": 69,
+   "title": "Transfusion Medicine",
+   "part": "Part VI",
+   "part_title": "Fluid Therapy"
+  },
+  {
+   "id": "sacc3-p6-c70",
+   "num": 70,
+   "title": "Blood Types, Pretransfusion Compatibility, and Transfusion Reactions",
+   "part": "Part VI",
+   "part_title": "Fluid Therapy"
+  },
+  {
+   "id": "sacc3-p6-c71",
+   "num": 71,
+   "title": "Hemorrhagic Shock",
+   "part": "Part VI",
+   "part_title": "Fluid Therapy"
+  },
+  {
+   "id": "sacc3-p7-c72",
+   "num": 72,
+   "title": "The Diabetic Patient in the ICU",
+   "part": "Part VII",
+   "part_title": "Endocrine Disorders"
+  },
+  {
+   "id": "sacc3-p7-c73",
+   "num": 73,
+   "title": "Diabetic Ketoacidosis",
+   "part": "Part VII",
+   "part_title": "Endocrine Disorders"
+  },
+  {
+   "id": "sacc3-p7-c74",
+   "num": 74,
+   "title": "Hyperglycemic Hyperosmolar Syndrome",
+   "part": "Part VII",
+   "part_title": "Endocrine Disorders"
+  },
+  {
+   "id": "sacc3-p7-c75",
+   "num": 75,
+   "title": "Hypoglycemia",
+   "part": "Part VII",
+   "part_title": "Endocrine Disorders"
+  },
+  {
+   "id": "sacc3-p7-c76",
+   "num": 76,
+   "title": "Diabetes Insipidus",
+   "part": "Part VII",
+   "part_title": "Endocrine Disorders"
+  },
+  {
+   "id": "sacc3-p7-c77",
+   "num": 77,
+   "title": "Syndrome of Inappropriate Antidiuretic Hormone",
+   "part": "Part VII",
+   "part_title": "Endocrine Disorders"
+  },
+  {
+   "id": "sacc3-p7-c78",
+   "num": 78,
+   "title": "Thyroid Storm",
+   "part": "Part VII",
+   "part_title": "Endocrine Disorders"
+  },
+  {
+   "id": "sacc3-p7-c79",
+   "num": 79,
+   "title": "Hypothyroid Crisis in the Dog",
+   "part": "Part VII",
+   "part_title": "Endocrine Disorders"
+  },
+  {
+   "id": "sacc3-p7-c80",
+   "num": 80,
+   "title": "Pheochromocytoma",
+   "part": "Part VII",
+   "part_title": "Endocrine Disorders"
+  },
+  {
+   "id": "sacc3-p7-c81",
+   "num": 81,
+   "title": "Critical Illness-Related Corticosteroid Insufficiency",
+   "part": "Part VII",
+   "part_title": "Endocrine Disorders"
+  },
+  {
+   "id": "sacc3-p7-c82",
+   "num": 82,
+   "title": "Hypoadrenocorticism",
+   "part": "Part VII",
+   "part_title": "Endocrine Disorders"
+  },
+  {
+   "id": "sacc3-p8-c83",
+   "num": 83,
+   "title": "Neurological Evaluation of the ICU Patient",
+   "part": "Part VIII",
+   "part_title": "Neurologic Disorders"
+  },
+  {
+   "id": "sacc3-p8-c84",
+   "num": 84,
+   "title": "Seizures and Status Epilepticus",
+   "part": "Part VIII",
+   "part_title": "Neurologic Disorders"
+  },
+  {
+   "id": "sacc3-p8-c85",
+   "num": 85,
+   "title": "Intracranial Hypertension",
+   "part": "Part VIII",
+   "part_title": "Neurologic Disorders"
+  },
+  {
+   "id": "sacc3-p8-c86",
+   "num": 86,
+   "title": "Tetanus",
+   "part": "Part VIII",
+   "part_title": "Neurologic Disorders"
+  },
+  {
+   "id": "sacc3-p8-c87",
+   "num": 87,
+   "title": "Hepatic Encephalopathy",
+   "part": "Part VIII",
+   "part_title": "Neurologic Disorders"
+  },
+  {
+   "id": "sacc3-p9-c88",
+   "num": 88,
+   "title": "Hospital-Associated Infections and Zoonoses",
+   "part": "Part IX",
+   "part_title": "Infectious Disorders"
+  },
+  {
+   "id": "sacc3-p9-c89",
+   "num": 89,
+   "title": "Febrile Neutropenia",
+   "part": "Part IX",
+   "part_title": "Infectious Disorders"
+  },
+  {
+   "id": "sacc3-p9-c90",
+   "num": 90,
+   "title": "Sepsis and Septic Shock",
+   "part": "Part IX",
+   "part_title": "Infectious Disorders"
+  },
+  {
+   "id": "sacc3-p9-c91",
+   "num": 91,
+   "title": "Bacterial Infections",
+   "part": "Part IX",
+   "part_title": "Infectious Disorders"
+  },
+  {
+   "id": "sacc3-p9-c92",
+   "num": 92,
+   "title": "Fungal Infections",
+   "part": "Part IX",
+   "part_title": "Infectious Disorders"
+  },
+  {
+   "id": "sacc3-p9-c93",
+   "num": 93,
+   "title": "Viral Infections",
+   "part": "Part IX",
+   "part_title": "Infectious Disorders"
+  },
+  {
+   "id": "sacc3-p9-c94",
+   "num": 94,
+   "title": "Canine Parvovirus Infection",
+   "part": "Part IX",
+   "part_title": "Infectious Disorders"
+  },
+  {
+   "id": "sacc3-p9-c95",
+   "num": 95,
+   "title": "Infective Endocarditis",
+   "part": "Part IX",
+   "part_title": "Infectious Disorders"
+  },
+  {
+   "id": "sacc3-p9-c96",
+   "num": 96,
+   "title": "Urosepsis",
+   "part": "Part IX",
+   "part_title": "Infectious Disorders"
+  },
+  {
+   "id": "sacc3-p9-c97",
+   "num": 97,
+   "title": "Necrotizing Soft-Tissue Infections",
+   "part": "Part IX",
+   "part_title": "Infectious Disorders"
+  },
+  {
+   "id": "sacc3-p9-c98",
+   "num": 98,
+   "title": "Catheter-Related Bloodstream Infection",
+   "part": "Part IX",
+   "part_title": "Infectious Disorders"
+  },
+  {
+   "id": "sacc3-p9-c99",
+   "num": 99,
+   "title": "Multi-Drug Resistant Infections",
+   "part": "Part IX",
+   "part_title": "Infectious Disorders"
+  },
+  {
+   "id": "sacc3-p9-c100",
+   "num": 100,
+   "title": "Infectious Disease Control in the ICU",
+   "part": "Part IX",
+   "part_title": "Infectious Disorders"
+  },
+  {
+   "id": "sacc3-p10-c101",
+   "num": 101,
+   "title": "Hypercoagulable States",
+   "part": "Part X",
+   "part_title": "Hematologic Disorders"
+  },
+  {
+   "id": "sacc3-p10-c102",
+   "num": 102,
+   "title": "Feline Aortic Thromboembolism",
+   "part": "Part X",
+   "part_title": "Hematologic Disorders"
+  },
+  {
+   "id": "sacc3-p10-c103",
+   "num": 103,
+   "title": "Platelet Disorders",
+   "part": "Part X",
+   "part_title": "Hematologic Disorders"
+  },
+  {
+   "id": "sacc3-p10-c104",
+   "num": 104,
+   "title": "Coagulopathy in the ICU",
+   "part": "Part X",
+   "part_title": "Hematologic Disorders"
+  },
+  {
+   "id": "sacc3-p10-c105",
+   "num": 105,
+   "title": "Management of the Bleeding Patient in the ICU",
+   "part": "Part X",
+   "part_title": "Hematologic Disorders"
+  },
+  {
+   "id": "sacc3-p10-c106",
+   "num": 106,
+   "title": "Anemia in the ICU",
+   "part": "Part X",
+   "part_title": "Hematologic Disorders"
+  },
+  {
+   "id": "sacc3-p10-c107",
+   "num": 107,
+   "title": "Dyshemoglobinemia",
+   "part": "Part X",
+   "part_title": "Hematologic Disorders"
+  },
+  {
+   "id": "sacc3-p10-c108",
+   "num": 108,
+   "title": "Acute Hemolytic Disorders",
+   "part": "Part X",
+   "part_title": "Hematologic Disorders"
+  },
+  {
+   "id": "sacc3-p11-c109",
+   "num": 109,
+   "title": "Acute Abdominal Pain",
+   "part": "Part XI",
+   "part_title": "Intraabdominal Disorders"
+  },
+  {
+   "id": "sacc3-p11-c110",
+   "num": 110,
+   "title": "Acute Pancreatitis",
+   "part": "Part XI",
+   "part_title": "Intraabdominal Disorders"
+  },
+  {
+   "id": "sacc3-p11-c111",
+   "num": 111,
+   "title": "Acute Cholecystitis",
+   "part": "Part XI",
+   "part_title": "Intraabdominal Disorders"
+  },
+  {
+   "id": "sacc3-p11-c112",
+   "num": 112,
+   "title": "Hepatitis and Cholangiohepatitis",
+   "part": "Part XI",
+   "part_title": "Intraabdominal Disorders"
+  },
+  {
+   "id": "sacc3-p11-c113",
+   "num": 113,
+   "title": "Hepatic Failure",
+   "part": "Part XI",
+   "part_title": "Intraabdominal Disorders"
+  },
+  {
+   "id": "sacc3-p11-c114",
+   "num": 114,
+   "title": "Portal Hypertension",
+   "part": "Part XI",
+   "part_title": "Intraabdominal Disorders"
+  },
+  {
+   "id": "sacc3-p11-c115",
+   "num": 115,
+   "title": "Portosystemic Shunt Management",
+   "part": "Part XI",
+   "part_title": "Intraabdominal Disorders"
+  },
+  {
+   "id": "sacc3-p11-c116",
+   "num": 116,
+   "title": "Acute Gastroenteritis",
+   "part": "Part XI",
+   "part_title": "Intraabdominal Disorders"
+  },
+  {
+   "id": "sacc3-p11-c117",
+   "num": 117,
+   "title": "Gastrointestinal Hemorrhage",
+   "part": "Part XI",
+   "part_title": "Intraabdominal Disorders"
+  },
+  {
+   "id": "sacc3-p11-c118",
+   "num": 118,
+   "title": "Regurgitation and Vomiting",
+   "part": "Part XI",
+   "part_title": "Intraabdominal Disorders"
+  },
+  {
+   "id": "sacc3-p11-c119",
+   "num": 119,
+   "title": "Diarrhea",
+   "part": "Part XI",
+   "part_title": "Intraabdominal Disorders"
+  },
+  {
+   "id": "sacc3-p11-c120",
+   "num": 120,
+   "title": "Peritonitis",
+   "part": "Part XI",
+   "part_title": "Intraabdominal Disorders"
+  },
+  {
+   "id": "sacc3-p12-c121",
+   "num": 121,
+   "title": "Acute Kidney Injury",
+   "part": "Part XII",
+   "part_title": "Urogenital Disorders"
+  },
+  {
+   "id": "sacc3-p12-c122",
+   "num": 122,
+   "title": "Chronic Kidney Disease",
+   "part": "Part XII",
+   "part_title": "Urogenital Disorders"
+  },
+  {
+   "id": "sacc3-p12-c123",
+   "num": 123,
+   "title": "Kidney Transplantation",
+   "part": "Part XII",
+   "part_title": "Urogenital Disorders"
+  },
+  {
+   "id": "sacc3-p13-c124",
+   "num": 124,
+   "title": "Nutritional Assessment",
+   "part": "Part XIII",
+   "part_title": "Nutrition"
+  },
+  {
+   "id": "sacc3-p13-c125",
+   "num": 125,
+   "title": "Nutritional Modulation of Critical Illness",
+   "part": "Part XIII",
+   "part_title": "Nutrition"
+  },
+  {
+   "id": "sacc3-p13-c126",
+   "num": 126,
+   "title": "Enteral Nutrition",
+   "part": "Part XIII",
+   "part_title": "Nutrition"
+  },
+  {
+   "id": "sacc3-p13-c127",
+   "num": 127,
+   "title": "Parenteral Nutrition",
+   "part": "Part XIII",
+   "part_title": "Nutrition"
+  },
+  {
+   "id": "sacc3-p14-c128",
+   "num": 128,
+   "title": "Traumatic Brain Injury",
+   "part": "Part XIV",
+   "part_title": "Trauma"
+  },
+  {
+   "id": "sacc3-p14-c129",
+   "num": 129,
+   "title": "Wound Management",
+   "part": "Part XIV",
+   "part_title": "Trauma"
+  },
+  {
+   "id": "sacc3-p14-c130",
+   "num": 130,
+   "title": "Thermal Burn Injury",
+   "part": "Part XIV",
+   "part_title": "Trauma"
+  },
+  {
+   "id": "sacc3-p15-c131",
+   "num": 131,
+   "title": "Pain Assessment",
+   "part": "Part XV",
+   "part_title": "Anesthesia and Pain Management"
+  },
+  {
+   "id": "sacc3-p15-c132",
+   "num": 132,
+   "title": "Sedation of the Critically Ill Patient",
+   "part": "Part XV",
+   "part_title": "Anesthesia and Pain Management"
+  },
+  {
+   "id": "sacc3-p15-c133",
+   "num": 133,
+   "title": "Anesthesia in the Critically Ill Patient",
+   "part": "Part XV",
+   "part_title": "Anesthesia and Pain Management"
+  },
+  {
+   "id": "sacc3-p15-c134",
+   "num": 134,
+   "title": "Analgesia and Constant Rate Infusions",
+   "part": "Part XV",
+   "part_title": "Anesthesia and Pain Management"
+  },
+  {
+   "id": "sacc3-p15-c135",
+   "num": 135,
+   "title": "Physical Rehabilitation for the Critical Care Patient",
+   "part": "Part XV",
+   "part_title": "Anesthesia and Pain Management"
+  },
+  {
+   "id": "sacc3-p15-c136",
+   "num": 136,
+   "title": "Integrative Veterinary Medicine for the Intensive Care Unit Patient",
+   "part": "Part XV",
+   "part_title": "Anesthesia and Pain Management"
+  },
+  {
+   "id": "sacc3-p16-c137",
+   "num": 137,
+   "title": "Smoke Inhalation",
+   "part": "Part XVI",
+   "part_title": "Environmental Emergencies"
+  },
+  {
+   "id": "sacc3-p16-c138",
+   "num": 138,
+   "title": "Hypothermia",
+   "part": "Part XVI",
+   "part_title": "Environmental Emergencies"
+  },
+  {
+   "id": "sacc3-p16-c139",
+   "num": 139,
+   "title": "Heat Stroke",
+   "part": "Part XVI",
+   "part_title": "Environmental Emergencies"
+  },
+  {
+   "id": "sacc3-p16-c140",
+   "num": 140,
+   "title": "Drowning and Submersion Injury",
+   "part": "Part XVI",
+   "part_title": "Environmental Emergencies"
+  },
+  {
+   "id": "sacc3-p17-c141",
+   "num": 141,
+   "title": "Anaphylaxis",
+   "part": "Part XVII",
+   "part_title": "Miscellaneous Disorders"
+  },
+  {
+   "id": "sacc3-p17-c142",
+   "num": 142,
+   "title": "Gas Embolism",
+   "part": "Part XVII",
+   "part_title": "Miscellaneous Disorders"
+  },
+  {
+   "id": "sacc3-p17-c143",
+   "num": 143,
+   "title": "Subcutaneous Emphysema",
+   "part": "Part XVII",
+   "part_title": "Miscellaneous Disorders"
+  },
+  {
+   "id": "sacc3-p17-c144",
+   "num": 144,
+   "title": "Ocular Disease in the Intensive Care Unit",
+   "part": "Part XVII",
+   "part_title": "Miscellaneous Disorders"
+  },
+  {
+   "id": "sacc3-p17-c145",
+   "num": 145,
+   "title": "Critically Ill Neonatal and Pediatric Patients",
+   "part": "Part XVII",
+   "part_title": "Miscellaneous Disorders"
+  },
+  {
+   "id": "sacc3-p17-c146",
+   "num": 146,
+   "title": "Critically Ill Geriatric Patients",
+   "part": "Part XVII",
+   "part_title": "Miscellaneous Disorders"
+  }
+ ]
 }
