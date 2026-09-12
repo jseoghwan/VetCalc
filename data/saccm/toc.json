@@ -888,6 +888,27 @@
 "title": "Parenteral Nutrition",
 "part": "Part XIII",
 "part_title": "Nutrition"
+},
+{
+"id": "sacc3-p14-c128",
+"num": 128,
+"title": "Traumatic Brain Injury",
+"part": "Part XIV",
+"part_title": "Trauma"
+},
+{
+"id": "sacc3-p14-c129",
+"num": 129,
+"title": "Wound Management",
+"part": "Part XIV",
+"part_title": "Trauma"
+},
+{
+"id": "sacc3-p14-c130",
+"num": 130,
+"title": "Thermal Burn Injury",
+"part": "Part XIV",
+"part_title": "Trauma"
 }
 ]
 }
