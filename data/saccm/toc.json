@@ -839,6 +839,55 @@
 "title": "Peritonitis",
 "part": "Part XI",
 "part_title": "Intraabdominal Disorders"
+},
+{
+"id": "sacc3-p12-c121",
+"num": 121,
+"title": "Acute Kidney Injury",
+"part": "Part XII",
+"part_title": "Urogenital Disorders"
+},
+{
+"id": "sacc3-p12-c122",
+"num": 122,
+"title": "Chronic Kidney Disease",
+"part": "Part XII",
+"part_title": "Urogenital Disorders"
+},
+{
+"id": "sacc3-p12-c123",
+"num": 123,
+"title": "Kidney Transplantation",
+"part": "Part XII",
+"part_title": "Urogenital Disorders"
+},
+{
+"id": "sacc3-p13-c124",
+"num": 124,
+"title": "Nutritional Assessment",
+"part": "Part XIII",
+"part_title": "Nutrition"
+},
+{
+"id": "sacc3-p13-c125",
+"num": 125,
+"title": "Nutritional Modulation of Critical Illness",
+"part": "Part XIII",
+"part_title": "Nutrition"
+},
+{
+"id": "sacc3-p13-c126",
+"num": 126,
+"title": "Enteral Nutrition",
+"part": "Part XIII",
+"part_title": "Nutrition"
+},
+{
+"id": "sacc3-p13-c127",
+"num": 127,
+"title": "Parenteral Nutrition",
+"part": "Part XIII",
+"part_title": "Nutrition"
 }
 ]
 }

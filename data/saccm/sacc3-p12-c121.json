@@ -1,0 +1,481 @@
+{
+ "id": "sacc3-p12-c121",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part XII",
+ "part_title": "Urogenital Disorders",
+ "chapter_num": 121,
+ "title": "Acute Kidney Injury",
+ "author": "Catherine E. Langston, DVM, DACVIM; Adam E. Eatroff, DVM, DACVIM (SAIM)",
+ "format": 2,
+ "renumbered_from": 118,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "혈역학적 손상(volume responsive, 이른바 prerenal) AKI는 빠르게 회복될 수 있으나, 실질(intrinsic) 손상은 회복에 수 주~수 개월이 걸린다.",
+    "정상 신관류 회복·유지에 필요한 수준을 넘는 공격적 정맥수액은 신기능 개선보다 수액과부하 합병증을 초래할 가능성이 더 크다.",
+    "신대체요법(RRT)은 전격성 AKI의 요독·산염기·전해질·수액과부하 후유증을 관리하는 가장 효율적인 수단이다.",
+    "다뇨성 AKI 또는 AKI 회복기에는 대량 요배설로 극심한 체액 손실이 생길 수 있다.",
+    "AKI 사망률은 높다(약 50%). 무뇨·핍뇨성 AKI는 다뇨성 AKI보다 예후가 나쁘다.",
+    "입원한 개에서 혈청·혈장 creatinine의 작은 상승도 나쁜 임상 결과와 연관될 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "정의와 병기 분류",
+   "gist": "creatinine 150%↑ 또는 0.3 mg/dl↑도 사망률과 연관; IRIS 병기"
+  },
+  {
+   "type": "list",
+   "items": [
+    "AKI: 임상적으로 검출되지 않는 아세포 수준 손상부터 요독소 축적과 수분·전해질·산염기 조절 이상을 초래하는 전격성 배설부전까지의 스펙트럼.",
+    "사람 병기체계: RIFLE + AKIN → 통합된 KDIGO가 현재 표준 (GFR·creatinine의 소폭 상대 변화와 요량 기준).",
+    "입원 개·고양이(수정 AKIN 적용): 기저치 대비 혈장 creatinine 150% 이상 또는 0.3 mg/dl 이상 상승 → 원내 사망률 증가. 입원 환자에서 신기능 바이오마커를 면밀히 추적해야 한다.",
+    "실제 소동물 임상의 AKI는 대부분 지역사회 획득형으로, creatinine이 현저히 상승한 중증 신기능 이상 상태로 내원한다.",
+    "수의용 IRIS 병기체계: 예후 상관 연구는 부족하지만 여러 연구에서 증례 층화에 사용."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 121.1 IRIS AKI 병기 (개)",
+   "headers": [
+    "Grade",
+    "Creatinine (mg/dl)",
+    "임상 기술"
+   ],
+   "rows": [
+    [
+     "Stage I",
+     "<1.6",
+     "비질소혈증성 AKI:\n• 병력·임상·검사·영상으로 확인된 AKI, 임상적 핍뇨/무뇨, volume responsiveness 그리고/또는\n• 48시간 이내 비질소혈증 범위에서 creatinine 0.3 mg/dl(26.4 mmol/L) 진행성 상승 그리고/또는\n• 측정된 핍뇨(<1 ml/kg/hr) 또는 6시간 이상 무뇨"
+    ],
+    [
+     "Stage II",
+     "1.6–2.5",
+     "경증 AKI:\n• 확인된 AKI와 정체 또는 진행성 질소혈증\n• 48시간 이내 creatinine 0.3 mg/dl(26.4 mmol/L) 진행성 상승, 또는 volume responsiveness\n• 측정된 핍뇨(<1 ml/kg/hr) 또는 6시간 이상 무뇨"
+    ],
+    [
+     "Stage III",
+     "2.6–5.0",
+     "중등도~중증 AKI: 확인된 AKI와 질소혈증·기능부전의 심화"
+    ],
+    [
+     "Stage IV",
+     "5.0–10.0",
+     "중등도~중증 AKI"
+    ],
+    [
+     "Stage V",
+     ">10.0",
+     "중등도~중증 AKI"
+    ]
+   ],
+   "note": "Volume responsive = 6시간에 걸쳐 요생성 >1 ml/kg/hr로 증가 그리고/또는 48시간 이내 creatinine이 기저치로 감소. 각 병기는 요생성(핍뇨성/비핍뇨성)과 RRT 필요 여부로 다시 하위 분류. 26.4 mmol/L은 원문 표기."
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "원인",
+   "gist": "혈역학적·실질·신후성 — 중첩 흔하고 원인 미확인도 많음"
+  },
+  {
+   "type": "table",
+   "title": "고전적 분류",
+   "headers": [
+    "분류",
+    "기전·예",
+    "경과"
+   ],
+   "rows": [
+    [
+     "혈역학적 (prerenal)",
+     "신관류 감소, 과도한 혈관수축",
+     "유발 원인 제거 시 빠르게 가역적; 허혈이 길어지면 실질 손상으로 이행"
+    ],
+    [
+     "신실질 (intrinsic)",
+     "감염병, 독소(Box 121.1), 신장 침범 전신질환",
+     "유발 원인 제거가 대개 유일한 직접 치료"
+    ],
+    [
+     "신후성 (postrenal)",
+     "요도폐색, 양측 요관폐색, 반대측 무기능 신장의 일측 폐색, 요로 파열",
+     "요흐름 회복·축적뇨 제거로 요독소 빠르게 감소; 폐색이 길어지면 실질 손상"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "고양이: 폐색성 calcium oxalate 결석·dried solidified blood 결석(신·요관), 요관협착, circumcaval ureter 증가 추세 — AKI 양상이나 CKD 요소가 상당히 섞일 수 있음.",
+    "세 기전이 중첩되는 경우가 흔하고, 모든 AKI에서 원인이 규명되지는 않는다."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Box 121.1 신독성 잠재력이 있는 물질",
+   "headers": [
+    "분류",
+    "물질"
+   ],
+   "rows": [
+    [
+     "항균제",
+     "aminoglycosides, aztreonam, carbapenems, cephalosporins, penicillins, polymyxins, quinolones, rifampin, sulfonamides, tetracyclines, vancomycin"
+    ],
+    [
+     "항진균·항암·항바이러스",
+     "amphotericin B / cisplatin·carboplatin, doxorubicin, methotrexate / acyclovir, foscarnet"
+    ],
+    [
+     "항원충제",
+     "dapsone, pentamidine, sulfadiazine, thiacetarsamide, trimethoprim-sulfamethoxazole"
+    ],
+    [
+     "기타 치료약물",
+     "acetaminophen, allopurinol, ACE 억제제, 항우울제, apomorphine, cimetidine, deferoxamine, dextran-40, 이뇨제, ε-aminocaproic acid, EDTA, 지질강하제, lithium, methoxyflurane, NSAIDs, penicillamine, 인 함유 요산성화제, streptokinase, 삼환계 항우울제, vitamin D 유사체"
+    ],
+    [
+     "면역억제제",
+     "azathioprine, calcineurin 억제제(cyclosporine, tacrolimus), interleukin-2"
+    ],
+    [
+     "내인성 물질",
+     "hemoglobin, myoglobin"
+    ],
+    [
+     "중금속",
+     "antimony, arsenic, bismuth salts, cadmium, chromium, copper, gold, lead, mercury, nickel, silver, thallium, uranium"
+    ],
+    [
+     "유기화합물",
+     "carbon tetrachloride 등 염소화 탄화수소, chloroform, ethylene glycol, 제초제, 살충제, 용매"
+    ],
+    [
+     "기타 비치료성",
+     "벌독, diphosphonate, calcium 길항제, gallium nitrate, 포도·건포도, 불법약물, 백합(lilies), 버섯, 조영제, 뱀독, sodium fluoride, 과인산 비료, vitamin D 함유 살서제"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "병태생리",
+   "gist": "5단계: insult→initiation→extension→maintenance→recovery"
+  },
+  {
+   "type": "list",
+   "ordered": true,
+   "title": "고전적 5단계 (실험적 허혈 모델 기준 — 다인성 실제 질환과 다를 수 있음)",
+   "items": [
+    "Insult phase: 신손상의 첫 단계.",
+    "Initiation phase: 세포 손상 시작 — 이 시기 개입하면 진행을 막을 수 있으나 아세포 수준이라 생화학적으로 드러나지 않음.",
+    "Extension phase: 세포 손상 → 세포사; 생화학적 이상과 임상 증상 발현.",
+    "Maintenance phase: 세포사와 재생이 동시 진행 — 회복 가능성·기간은 이 균형에 좌우. 원인 제거는 기존 손상을 되돌리지 못하나 재생 쪽으로 균형을 옮길 수 있음.",
+    "Recovery phase: GFR·세뇨관 기능 개선; 수 주~수 개월."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "임상 발현",
+   "gist": "비특이 병력; 수화 평가는 부정확; 저혈압보다 고혈압이 더 흔함"
+  },
+  {
+   "type": "list",
+   "items": [
+    "병력: 무기력·구토·설사·식욕부진(비특이적; 구토·설사는 요독성 장염 또는 수액과부하성 위장관 부종). 핍뇨·무뇨 또는 다뇨. 다뇨 시 보상성 다음이 있으나 요독증이 심하면 갈증 반응 소실. 드묾: 발작·실신·실조·호흡곤란.",
+    "신체검사: 탈수가 흔하지만 신체검사 기반 수화 평가는 부정확 — 정상·과수화 환자를 탈수로 오분류하는 일이 흔함.",
+    "요독증 시사 소견: 구취, 구강궤양, 혀끝 괴사, 공막충혈, 서맥, 피하 반상출혈, 말초부종. 신장 종대·통증 → 신우신염·폐색성 요로질환·종양 침윤. 직장검사 흑색변(요독성 위장염, 스트레스성 점막질환, 지혈 이상).",
+    "저혈압: 혈량 부족, 심기능 이상(고칼륨혈증·산혈증·전신염증), 혈관긴장도 변화. 그러나 내원 시·입원 중 고혈압이 더 흔함 — 수액과부하에 의한 세포외액·혈액량 증가 또는 혈관기능이상; 망막출혈·박리를 일으킬 수 있음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "진단",
+   "gist": "등장뇨 1.007–1.015, 고 anion gap; EG 결정뇨·고에코 피질; MAT 1:800"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "임상병리"
+  },
+  {
+   "type": "list",
+   "items": [
+    "요검사는 채취 직후 시행. 실질성 부전에서 요비중은 흔히 등장뇨(1.007–1.015). 요시험지: 당뇨(고혈당 없이), 단백뇨, 빌리루빈뇨, 혈색소뇨. 요 pH는 대개 산성(urease 생성균 감염 시 예외).",
+    "요침사: 이형 적혈구(사구체질환), 농뇨, 원주(대개 과립원주; 적혈구·백혈구 원주는 드묾). 다량의 calcium oxalate 결정 → ethylene glycol 중독 지지(소수는 정상에서도 관찰). In-house Romanowsky 염색은 혈구 형태·세균 확인에 유용.",
+    "요 세균배양: 대부분의 AKI에서 시행 — 특히 농뇨·세균뇨·백혈구증가·발열 시.",
+    "혈액: 헤마토크릿↑(혈액농축) 또는 ↓(위장관 출혈·용혈). 혈소판 정상~감소; 요독증·leptospirosis 등은 혈소판 수가 정상이어도 협부점막출혈시간을 연장(혈소판기능이상). 심한 백혈구증가 → 감염성 원인·합병증 의심.",
+    "BUN/creatinine 비: 위장관 출혈·탈수 시 높고, AKI 초기에는 낮을 수 있음.",
+    "이온화 Ca: 정상~낮음(고칼슘혈증이 원인이 아닌 한). Ethylene glycol 중독은 심한 고인산혈증 + oxalate 킬레이션으로 현저한 이온화 저칼슘혈증.",
+    "Anion gap: 대개 높음(배설되지 못한 유기·무기산); 초기나 저알부민혈증 시 정상 가능. 질소혈증 없이(또는 그 전에) 높은 anion gap → ethylene glycol 중독 지지."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "영상"
+  },
+  {
+   "type": "table",
+   "title": "영상 소견과 시사점",
+   "headers": [
+    "소견",
+    "시사점·비고"
+   ],
+   "rows": [
+    [
+     "방사선",
+     "신장 실루엣 정상 또는 종대(기저 CKD 없을 때). 신·요관결석 — 폐색성 요관결석은 검출 한계보다 작을 수 있음"
+    ],
+    [
+     "초음파 일반",
+     "신장 정상~종대, 실질 구조 정상 (예외: 종양 침윤, CKD 위 AKI, 심한 수신증). 신주위 액체는 다양한 원인에서 흔함"
+    ],
+    [
+     "신우 확장",
+     "폐색. 신우신염과도 연관되어 왔으나 병리진단적 소견은 아님"
+    ],
+    [
+     "미만성 피질 비후 + 신주위 저에코 halo",
+     "림프육종 (피질·수질 저에코 결절도 흔함)"
+    ],
+    [
+     "고에코 신피질(수질은 덜), medullary rim sign",
+     "Ethylene glycol 중독(oxalate 침착). Medullary rim sign은 비특이적"
+    ],
+    [
+     "정맥신우조영술",
+     "요관폐색·낮은 GFR에서는 조영제 섭취 불량으로 도움 안 됨"
+    ],
+    [
+     "Antegrade pyelography",
+     "GFR에 의존하지 않음 — 초음파로 확진 안 되는 요관폐색 의심 시 더 나은 선택"
+    ],
+    [
+     "CT / MRI",
+     "CT는 신구조·폐색 특성 파악에 유용(신우조영술 병용 시 특히). MRI는 통상 사용하지 않음"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "기타 진단"
+  },
+  {
+   "type": "list",
+   "items": [
+    "GFR 측정(iohexol clearance, 내인성 creatinine clearance, scintigraphy): 비용·가용성 문제, 초기 치료에서는 creatinine 등 대리지표로 충분해 활용도 낮음.",
+    "Ethylene glycol: 즉각적 특이 치료가 필요한 응급. In-house 키트는 노출 후 시간 경과 시 위음성 → 대리 지표(고 anion gap 산증, 현저한 calcium oxalate 결정뇨, 고에코 신피질 + medullary rim sign)가 중요. 인위적 고젖산혈증도 추가 단서.",
+    "기타 감염: Rocky Mountain spotted fever(Rickettsia rickettsii), Ehrlichia canis, Lyme(Borrelia burgdorferi), Babesia spp., Leishmania spp. 혈청·PCR — 양성이 AKI 인과를 증명하지는 않음.",
+    "세침흡인 세포검사: 림프육종 확인(위음성 잦음; 출혈 위험 낮음). 조직검사: 원인 확인 또는 비특이 소견 — 중년~노령 개·고양이의 경도 사구체경화·간질섬유화는 회복 예측력 없음; 심한 요독증에서 생검 후 중대 출혈 위험 높음."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Leptospirosis 검사",
+   "headers": [
+    "검사",
+    "특징·해석"
+   ],
+   "rows": [
+    [
+     "MAT (혈청학)",
+     "여러 serovar 역가; 교차반응 큼. 발병 초기 7–10일 음성 가능, 과거 노출·백신 위양성 흔함 → 초기 음성 시 2–4주 후 4배 상승으로 확인. 적절한 증상 + 최근 백신접종 없으면 단일 역가 1:800 이상도 노출 시사. 검사실 간 해석 불일치 큼; serovar Autumnalis는 백신 serovar·다른 질환과 평행 상승하므로 1:800 초과여도 강한 임상적 의심 필요"
+    ],
+    [
+     "ELISA",
+     "병원성 leptospire에만 존재한다고 여겨지는 LipL32 외막 항체 검출"
+    ],
+    [
+     "POC 면역크로마토그래피",
+     "실험 감염견에서 IgM을 MAT·ELISA보다 더 이르게, 더 높은 정확도로 검출"
+    ],
+    [
+     "PCR (혈액·요)",
+     "신속·조기 진단"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료 — 수액요법",
+   "gist": "관류 정상화 후 추가 수액은 과부하(>10% 체중); 체중 하루 2회"
+  },
+  {
+   "type": "list",
+   "items": [
+    "치료의 축: 기저 질환 교정(확인된 경우) + 요독증 후유증 최소화 지지요법.",
+    "세포외액 결핍·저혈압은 균형 crystalloid로 교정; 수액 종류는 전해질 감시로 결정(용질·자유수 균형이 환자마다 다름).",
+    "Colloid: 핍뇨·무뇨 의심 시 총 투여량 감소 목적으로 고려 가능하나 crystalloid 대비 이득 미입증. 사람에서 고장성 colloid(특히 starch)는 신손상·사망 위험 증가와 연관.",
+    "수액과부하(대개 기저 체중의 10% 초과 축적) 회피가 핵심 — 나쁜 결과와의 연관 근거 충분. 초기 수액 결핍 추정은 탈수 평가에 근거(Ch.67).",
+    "관류 불량 시 혈압·정맥 젖산·정맥 산소포화도를 지표로 초기 수 시간 내 정상 관류 회복 목표(Ch.68). 관류 지표가 정상화되었는데도 핍뇨·무뇨 지속 → 추가 수액은 요생성보다 과부하 초래.",
+    "유지 수액의 양·조성: 요량·요조성 + 감지성 손실(구토·설사·위흡인) + 불감손실(호흡·대변; 12–29 ml/kg/day, 종·활동성·체온에 따라). 요 전해질은 POC 분석기로 측정 가능(Ch.62).",
+    "수액 이뇨로 GFR을 올리려는 시도는 대개 무익하며 과부하를 부름. 시간 단위 체중 변동은 체액 균형 변화를 반영. 비경구 약물·영양·카테터 flush(CVP 측정 포함)의 수액량도 포함해야 중립 균형 유지.",
+    "무뇨 + 정상수화: 불감손실만 보충 — 실제로는 약물·영양·flush만으로 초과되는 일이 많음. 수액과부하 진단 시 모든 수액 중단; 수액과부하 + 핍뇨/무뇨 = RRT의 명확한 적응증.",
+    "감시: 객관적 지표(체중, 혈압, 정맥 젖산, 정맥 산소포화도) 기준; 피부긴장도·타액은 부정확. 체중은 최소 하루 2회. CVP는 수액과부하와 상관이 완전하지 않아 논란 — 저자들은 사용하지 않음."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "요량 측정·분류",
+   "headers": [
+    "항목",
+    "내용"
+   ],
+   "rows": [
+    [
+     "측정 방법",
+     "유치 요도카테터 + 폐쇄식 수집, 자연배뇨 수집, 대사케이지, 침구·모래 무게(요 1 ml = 1 g), 배뇨 전후 체중"
+    ],
+    [
+     "무뇨",
+     "없음~무시할 정도"
+    ],
+    [
+     "핍뇨",
+     "<0.5 ml/kg/hr"
+    ],
+    [
+     "다뇨",
+     ">2 ml/kg/hr"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료 — 이뇨제·산염기·전해질·혈압",
+   "gist": "이뇨제 예후 근거 없음; K⁺는 RRT만 실질 감소; Ca gluconate 0.5–1.5 ml/kg"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "이뇨제"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Furosemide·mannitol의 이득은 대부분 이론적·실험 모델 수준; 확립된 AKI의 예후 개선 임상 근거는 사람·동물 모두 거의 없음. 사람 loop 이뇨제 RCT 메타분석: 통계적으로 유의하지 않은 사망률 증가 경향.",
+    "이뇨제 반응성 = 손상이 덜 심하고 예후가 나을 수 있다는 표지라는 견해. 그러나 요량이 늘어도 심한 요독증·산염기·전해질 이상이 지속되면 RRT 필요성은 남음.",
+    "수의학에서는 RRT 접근성이 낮아 이뇨제가 용적 관리의 1차 수단 — 핍뇨·무뇨 → 정상 요량·다뇨 전환 시 과부하 예방과 필요한 비경구 약물·영양 투여가 가능해짐."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "산염기·전해질"
+  },
+  {
+   "type": "list",
+   "items": [
+    "대사성 산증 흔함(bicarbonate 재흡수·H⁺ 배설 감소 + 관류 저하성 젖산산증). 치료: 관류 회복 + 알칼리 보충(대개 정맥 sodium bicarbonate; 용량·부작용은 Ch.59). 초회 후 연속 정맥혈 가스로 용량 결정.",
+    "RRT를 통한 bicarbonate 공급은 주입만큼 효과적이면서 수액 부하를 피함. 사람 AKI에서 알칼리 보충 RCT 근거는 없으나 RRT 불가한 수의 AKI에서는 혈액가스 감시하에 권장.",
+    "고칼륨혈증: 즉각적 생명 위협. ECG — 서맥, 뾰족한 T파, QT 단축, QRS 확대, 작거나 넓거나 소실된 P파 → 중증 시 sine wave·심실세동·심정지. 응급 약물(Ch.56)은 대부분 세포 내 이동·안정막전위 상승이라 효과가 완만·일시적 — 전격성 AKI에서 K⁺ 부하를 실질적으로 줄이는 것은 RRT 또는 신배설 기능 회복뿐.",
+    "이온화 저칼슘혈증은 흔하나 tetany 등 증상은 드묾. 증상 시 인과의 침착을 피하기 위해 증상 조절 최소 용량만: calcium gluconate 10% 0.5–1.5 ml/kg IV, 20–30분에 걸쳐, 주입 중 ECG 감시."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "혈압"
+  },
+  {
+   "type": "list",
+   "items": [
+    "저혈압·고혈압 모두 발생. 저혈압 치료는 이 장 범위 밖(수액 결핍 보충은 위 참조).",
+    "고혈압: 원인 치료. 저자 경험상 대부분 체액 상태 변화(의인성 과부하 또는 RAAS 활성화에 의한 심한 Na 저류 — 후자는 급성 사구체병증에서 흔함) → 고혈압 확인 시점 대비 음의 체액 균형이 가장 효과적: 정맥수액 제한·중단, loop 이뇨제 또는 RRT로 제거.",
+    "체액 균형 교정 후(또는 교정 불가 판단 후)에도 지속 시: amlodipine besylate가 가장 흔히 쓰이고 효과적. 경구 제형만 있으나 직장 투여 가능; 정상 혈압 목표로 시간 단위 적정."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "치료 — 위장관·영양·RRT·회복기",
+   "gist": "항구토제 전 환자; PPI > H2; 회복기 다뇨 하루 10–25%씩 감량"
+  },
+  {
+   "type": "list",
+   "items": [
+    "항구토제: 중증 AKI 전 환자에서 구토 여부와 무관하게 권장(Ch.154). Metoclopramide는 신기능 저하 시 청소율 감소로 신경학적 부작용 가능; 요독증 사람에서 ondansetron(5-HT3 길항제)보다, 신기능 정상 추정 구토견에서 maropitant보다 열등.",
+    "항분비제(H2 길항제, PPI; Ch.153): 전통적 권고이나 고양이의 위산 분비량·위내 pH는 과분비 상태와 부합하지 않음. 그럼에도 사람 AKI의 높은 위장관 출혈 빈도·사망 연관으로 고위험 환자에서 고려. 사람 메타분석에서 스트레스성 점막 출혈 예방에 PPI > H2 길항제; 신기능 저하 시 H2 길항제 축적 가능성까지 고려하면 PPI 선호.",
+    "영양: 사람 핍뇨·무뇨 환자에서 질소균형·생존 개선, 요생성 유지 환자에서는 질소균형만 개선. 장관 영양 선호(구토·장마비로 제한 잦음) — 구토 없으면 식도·위·공장 급여 장치(Ch.126), 구토 조절 안 되면 부분/완전 비경구영양(Ch.127). 무뇨·핍뇨에서는 영양제의 용적·삼투압이 상대적 금기가 될 수 있음(과잉 수분·용질 제거 수단이 없는 한).",
+    "인 결합제(aluminum hydroxide, sevelamer carbonate, lanthanum carbonate)를 장관 급여와 함께 투여하면 인 흡수↓ — AKI에서 인 조절의 예후 이득은 미확인.",
+    "RRT(Ch.178): 요독·산염기·전해질·체액 후유증 관리에 가장 효과적 — 전격성 증례에서 약물 치료는 불완전·일시적. 비용·가용성 제약으로 대부분의 보호자·수의사에게 비현실적.",
+    "회복기 다뇨: 핍뇨·무뇨 → 다뇨 전환(leptospirosis·폐색성 질환에서 특히 흔함). 요량·체중·관류 지표 감시로 탈수 회피; 필요 수액 속도가 수의학의 어떤 상황보다 체중당 높은 경우가 많음. 고정 속도에서 질소혈증·체중 안정 시 하루 10–25%씩 감량 — 요량이 상응해 줄고 체중·관류 지표 안정이면 계속. 수 주 지속 가능."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "특이 치료",
+   "gist": "Lepto: penicillin G/ampicillin 22 mg/kg q8h; 보균 doxycycline 5 mg/kg q12h"
+  },
+  {
+   "type": "table",
+   "title": "원인별 특이 치료",
+   "headers": [
+    "원인",
+    "치료",
+    "비고"
+   ],
+   "rows": [
+    [
+     "Leptospiremia",
+     "penicillin G 또는 ampicillin 22 mg/kg q8h (1차); doxycycline도 효과적",
+     "보균 상태 제거: doxycycline 5 mg/kg q12h 2주"
+    ],
+    [
+     "상부 요로 폐색",
+     "수술적 또는 최소침습 감압(stent, subcutaneous ureteral bypass device)",
+     "요관폐색은 자연 소실되기도 함"
+    ],
+    [
+     "Ethylene glycol",
+     "4-methylpyrazole(4-MP, Antizol-Vet) 또는 alcohol",
+     "섭취 직후 투여해야 효과; 신독성 손상에 쓸 수 있는 해독제는 거의 없음"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "예후",
+   "gist": "사망률 개 45%·고양이 53.1%; 생존자 다수 CKD; 다뇨성이 양호"
+  },
+  {
+   "type": "table",
+   "title": "예후 지표",
+   "headers": [
+    "항목",
+    "개",
+    "고양이"
+   ],
+   "rows": [
+    [
+     "사망률 (메타분석)",
+     "45%",
+     "53.1%"
+    ],
+    [
+     "생존 후 CKD",
+     "약 60% (정상 신기능 회복 40%)",
+     "50%"
+    ],
+    [
+     "Leptospirosis 생존율",
+     "약 82–86% (한 연구)",
+     "—"
+    ]
+   ],
+   "note": "수의 AKI 사망률은 사람 문헌과 유사. 다뇨성 환자가 핍뇨·무뇨 환자보다 예후 양호. — = 요약에 해당 내용 없음"
+  }
+ ]
+}

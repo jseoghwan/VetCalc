@@ -1,0 +1,207 @@
+{
+ "id": "sacc3-p13-c125",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part XIII",
+ "part_title": "Nutrition",
+ "chapter_num": 125,
+ "title": "Nutritional Modulation of Critical Illness",
+ "author": "Daniel L. Chan, DVM, DACVECC, DECVECC, DACVIM(Nutrition), FHEA, MRCVS",
+ "format": 2,
+ "renumbered_from": 122,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "특정 비타민, 아미노산, 다가불포화지방산 같은 영양소는 염증과 면역반응을 조절한다.",
+    "질환의 영양학적 조절(치료 영양, therapeutic nutrition)은 반려동물에 유용한 전략일 수 있으나, 어떤 영양소를 어떤 용량으로 어떤 환자군에 써야 이득인지 밝혀질 때까지는 신중해야 한다 — 특히 사람에서의 근거가 점점 약해지고 있다.",
+    "치료 영양의 효능에는 상당한 종 차이가 있을 수 있어 일부 접근은 수의 환자에서 유용성이 떨어질 수 있다.",
+    "따라서 중증 소동물의 질환 조절을 위한 새로운 전략을 평가하는 추가 연구가 필요하다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "개요",
+   "gist": "영양소의 약리 효과로 질환을 조절하는 ‘치료 영양’; 수의 중환자 임상 시험은 아직 없음"
+  },
+  {
+   "type": "list",
+   "items": [
+    "중증 동물에서 영양지원의 역할은 확립되었으나 대개 지지요법으로만 간주됨. 특정 영양소의 약리적 특성이 인식되며 영양 치료 자체가 질환 경과를 바꾸고 결과를 개선할 수 있는지 연구 — ‘치료 영양’.",
+    "비타민, 아미노산, 다가불포화지방산, 심지어 dextrose 함량도 염증·면역반응을 조절. 사람 중환자 연구의 표적: 대사 경로, 염증, 면역계 — 위장관 점막 장벽 기능, 세포 방어 기능, 국소·전신 염증의 3가지 핵심 표적 개선 여부로 기질을 평가.",
+    "동물에서 이득이 입증된 영역: CKD(단백·인 제한), 심장질환(taurine, omega-3 지방산). 사람 중환자에서 glutamine·omega-3·항산화제가 이환·사망을 개선하는지는 근거가 상충."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Omega-3 지방산",
+   "gist": "3·5계열 eicosanoid, NF-κB·TLR4 억제, resolvin; 수의 중환자 자료 없음"
+  },
+  {
+   "type": "list",
+   "items": [
+    "염증의 지질 매개체는 cyclooxygenase, 5-lipoxygenase, cytochrome P450의 3경로에서 합성되며 PUFA(arachidonic acid[AA], EPA, γ-linolenic acid)를 기질로 사용. AA 대사 → 강력한 전염증성 2·4계열 eicosanoid·leukotriene·thromboxane.",
+    "고전적 기전: 세포막의 omega-6(AA)을 omega-3(EPA, DHA)로 치환 → phospholipase 절단·산화 시 덜 염증성인 3·5계열 eicosanoid 생성.",
+    "그 이상의 항염 작용: 유전자 발현 조절, 핵수용체 리간드로 하류 사건 조절, 핵심 전사인자 조절. EPA는 NF-κB(다수의 전염증 매개체·선천면역 효과기 발현 조절) 활성을 여러 수준에서 억제; 유리 EPA·DHA는 endotoxin에 의한 Toll-like receptor 4 활성화도 억제. EPA·DHA는 염증 억제·소멸에 관여하는 resolvin·protectin의 기질 — 염증 소멸은 능동적·정교한 과정.",
+    "임상 근거는 전적으로 사람: 급성 폐손상 인공호흡 환자에서 EPA/DHA + 항산화제 장관 보충이 한때 유익하다고 여겨졌고 초기 패혈증에서 결과 개선 보고. 그러나 비경구영양으로 정맥 투여 시 근거 불확실 — 메타분석에서 사망·감염·ICU 재원에 유의한 이득 없음, 전체 입원 단축은 약한 근거. ARDS 환자에 권고할지 불확실. 패혈증 RCT 메타분석: 전체 사망·감염 합병증에 유의한 효과 없음(단, 인공호흡 기간은 현저히 단축). 수의 중환자 자료 없음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "항산화제",
+   "gist": "3계통; N-acetylcysteine은 Cochrane에서 안전성·유용성 의문"
+  },
+  {
+   "type": "list",
+   "items": [
+    "산화 스트레스는 종양, 심장질환, 외상, 화상, 중증 췌장염, 패혈증, 중증질환 등 많은 질환의 공통 특징. 염증 상태에서 호중구·대식세포·호산구가 ROS·RNS를 다량 생성; 항산화 방어 고갈 시 자유라디칼에 취약(DNA·미토콘드리아 손상). 항산화제 고갈 정도는 사람에서 질환 중증도를 반영; 산화 스트레스는 염증 촉진자이자 다장기부전의 핵심 인자."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "항산화제 분류",
+   "headers": [
+    "계통",
+    "예"
+   ],
+   "rows": [
+    [
+     "항산화 단백질",
+     "albumin, haptoglobin, ceruloplasmin"
+    ],
+    [
+     "효소성 항산화제",
+     "superoxide dismutase, glutathione peroxidase, catalase"
+    ],
+    [
+     "비효소성(소분자) 항산화제",
+     "ascorbate(vitamin C), α-tocopherol(vitamin E), glutathione, selenium, lycopene, β-carotene"
+    ]
+   ],
+   "note": "N-acetylcysteine은 glutathione의 강력한 전구체 — ROS 제거, glutathione 지속 생성, 염증성 사이토카인 전사 차단"
+  },
+  {
+   "type": "list",
+   "items": [
+    "사람 근거 혼재: 여러 메타분석에서 항산화 미량영양소(단독·병합·칵테일)가 사망 위험 감소·인공호흡 의존 감소와 연관; 다른 분석은 ICU·입원 기간, 신기능, 인공호흡 의존에 효과 없음. 사망 감소 효과는 예상 사망률이 가장 높은 집단에서 뚜렷했고, 중환자군과 대조군의 사망률 차이가 10% 미만이면 차이 검출 불가.",
+    "Cochrane 리뷰(성인 패혈증·SIRS의 N-acetylcysteine): 정맥 NAC 보조요법의 안전성·유용성에 의문; 기껏해야 사망·합병증 감소에 무효. 증상 발현 24시간 후 투여는 심혈관 억제 우려. (Cochrane은 분석이 매우 보수적이어서 중환자 신규 중재를 지지하는 일이 드묾.)",
+    "수의 실험 모델에서 긍정적 결과: 울혈성 심부전, 급성 췌장염, GDV, 신장이식, gentamicin 신독성, acetaminophen 독성. 고양이에서 vitamin E 단독은 양파 분말·propylene glycol에 의한 Heinz body 빈혈을 막지 못했으나, vitamin E + cysteine은 acetaminophen 투여 후 methemoglobin 생성 감소. 자연발생 질환(만성 판막질환, 신기능부전)에서도 일부 긍정적 결과. 수의 중환자에서의 항산화제 사용은 미발표."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "면역조절 영양소 — arginine·glutamine",
+   "gist": "조건부 필수; arginine은 중증 패혈증 금기 가능; glutamine RCT 사망 경향"
+  },
+  {
+   "type": "list",
+   "items": [
+    "아미노산은 단백 합성 기질이자 면역세포 기능 유지, 상처 치유·조직 회복에 관여; glutamine은 장세포(점막 장벽 지지)와 면역세포의 선호 연료. 심한 외상·감염·염증 후에는 arginine·glutamine 수요를 숙주 합성이 감당하지 못해 ‘조건부 필수’가 되어 식이로 공급해야 함 → 질환 중 보충이 결과를 개선하리라는 가설. 손상·조직 회복·급속 세포 증식기에는 nucleotide도 고갈되어 속도 제한 인자가 될 수 있음."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Arginine vs Glutamine",
+   "headers": [
+    "구분",
+    "Arginine",
+    "Glutamine"
+   ],
+   "rows": [
+    [
+     "역할",
+     "polyamine 합성(세포 성장·증식), proline 합성(상처 치유), nitric oxide 전구체(면역세포 신호)",
+     "순환 중 가장 풍부한 유리 아미노산; 사람 중증질환에서 급속 고갈 — 결핍 시 숙주 방어 손상·결과 악화"
+    ],
+    [
+     "기전",
+     "광범위 손상·수술 후 골수 유래 미성숙 세포가 arginase-1 생성 → arginine 결핍 → T림프구 기능 억제. omega-3와 함께 보충 시 T세포 수·기능 개선",
+     "(1) 조직 보호(heat shock protein, 장 장벽 유지, apoptosis↓) (2) 항염·면역조절(사이토카인↓, NF-κB 억제) (3) 대사 기능 보존(insulin 감수성·ATP 합성↑) (4) 항산화(glutathione 생성↑) (5) inducible NOS 활성 감쇠"
+    ],
+    [
+     "사람 근거",
+     "대수술 후 보충 시 감염 합병증↓, 재원 기간↓(표준 영양지원 대비)",
+     "비경구영양 환자에 glutamine 보충을 권고할 정도로 근거가 강했으나, 최대 규모 RCT(장기부전 ≥2개 + 인공호흡 중환자 1200명 초과; 고용량 glutamine·항산화제 vs 위약)에서 glutamine군 사망 증가 경향, 장기부전·감염률에 효과 없음, 항산화제도 효과 없음. 원인 미확인 — 기존 연구보다 훨씬 높은 용량, 혈역학 안정 전 쇼크 환자 포함(대부분의 권고는 심혈관 안정 후 영양지원 시작)"
+    ],
+    [
+     "주의",
+     "중증 패혈증에서는 금기 가능성 — 과도한 NO 합성 촉진, 혈관긴장도 악화, 장기 관류 감소",
+     "수의 권고 없음(근거 부족, 비경구 glutamine 가용성 제한; 북미에서는 비상용, 연구 대부분 유럽·아시아)"
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "title": "수의 glutamine 연구",
+   "headers": [
+    "연구",
+    "결과"
+   ],
+   "rows": [
+    [
+     "methotrexate 투여 고양이 — 장관 glutamine",
+     "장 투과성 감소·임상 증상 개선 없음"
+    ],
+    [
+     "방사선 점막염 — 장관 glutamine (혈장 glutamine·PGE2)",
+     "측정 가능한 이득 없음 (두 시험 모두 부적절한 용량 또는 장관 투여 형태가 원인일 수 있음)"
+    ],
+    [
+     "Ohno 등 — 개 실험적 수술 후 장마비 모델",
+     "glutamine군에서 간소화기 이동성 수축 회복 시간 유의 단축(glutathione 유지로 수술 손상·염증·산화 스트레스 상쇄 가설). 위절제 후 장마비 단축·수술 스트레스 보호 가능 → 자연발생 장운동 장애 개 연구 필요"
+    ],
+    [
+     "Kang 등 — 고용량 methylprednisolone sodium succinate 면역억제 모델",
+     "비경구 L-alanyl-L-glutamine이 면역억제(호중구 산화폭발·탐식능 억제) 완화 → 개에서 비경구 glutamine의 면역조절 효과 시사"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Nucleotides",
+   "gist": "DNA·RNA·ATP 구성단위; 손상 시 고갈 → 면역·위장관 세포 영향; 설치류 근거 위주, 수의 연구 없음"
+  },
+  {
+   "type": "list",
+   "items": [
+    "저분자 세포내 화합물(pyrimidine·purine) — DNA, RNA, ATP, 핵심 조효소 합성의 기본 단위; de novo 합성 또는 회수·재활용. 질환·손상 시 조직 치유에 필요한 급속 세포 증식으로 고갈 → 식이 보충이 세포 증식·분화를 지지.",
+    "가장 영향받는 세포는 면역계·위장관 세포 → ‘면역강화 식이’에 흔히 포함. 근거는 대부분 전임상·설치류 모델: 장 회복 촉진, 솔가장자리 효소 활성 회복, 장 장벽 개선(장기 식욕부진 동물에서 특히 중요할 수 있음); 장내 세균총, 위장관 미세순환, 면역, 염증에도 긍정적. 명확한 해로움 없이 잠재 이득이 많아 확정 근거 없이도 면역강화 칵테일에 포함 — 효과가 상승적인지 개별 성분의 합인지 불명. 수의 중환자 연구 없음."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Probiotics",
+   "gist": "균주·종 특이적; 사람 VAP 감소는 입증, 사망률 이득 없음; 수의 시험 없음"
+  },
+  {
+   "type": "list",
+   "items": [
+    "충분량 섭취 시 숙주 건강에 긍정적 영향을 주는 생균. 주장되는 이득: 독성 세균 대사물 감소, 특정 비타민 생성 증가, 세균 정착 저항 강화, 숙주 방어 강화, 감염 기간 단축·병원체 감수성 감소. 기전: 위장관 장벽 기능 회복; 숙주 항균 펩타이드(defensin, cathelicidin) 유도·프로바이오틱 항균 인자(bacteriocin, microsin) 방출·상피 부착 경쟁을 통한 세균총 변화; 면역조절. Lactobacillus 등은 mucin 생성을 자극해 병원균 침입·부착 억제.",
+    "효과는 용량 의존적이며 균주·종 특이적. 사람용: Lactobacillus, Bifidobacterium, Streptococcus 종; 동물 사료 승인: Bacillus, Enterococcus, Lactobacillus 군.",
+    "우려: 장구균 등이 전파 가능한 항균제 내성 결정인자(plasmid) 보유 가능; 항생제 내성 유전자 전달, 장에서 다른 부위로의 전위, 숙주 세균총과의 상호작용에 의한 부작용의 이론적 위험. 중환자 사용은 논란이며 지침은 추가 안전성 시험을 권고. 사람 중환자에서 균혈증은 미보고이나 면역억제 환자에서 프로바이오틱 균주 감염의 단일 증례 보고 존재.",
+    "사람 중환자 용도: 항생제 연관 설사, Clostridium difficile 감염, 인공호흡기 연관 폐렴(VAP). Saccharomyces boulardii(효모)는 C. difficile 독소를 분해하는 protease를 생성하고 독소에 대한 IgA 분비를 자극. VAP 예방 유일 메타분석: VAP 발생률·ICU 재원 유의 감소. 지금까지 감염 합병증 감소만 입증, 전체 사망률 이득 없음.",
+    "수의: 중환자 시험 없음. 위장관 증상 개는 시험 있음 — 개 특이적 프로바이오틱 칵테일(Lactobacillus spp. 3균주) + 신단백 식이의 전향 위약대조 시험에서 식이 변경 후 임상 증상이 극적으로 개선되었으나 프로바이오틱 추가 이득은 없음. 다른 연구의 면역 지표·세균총 개선은 대부분 건강견 대상 — 중증 개의 임상 증상 개선 여부 불확실."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "결론",
+   "gist": "어떤 영양소·용량·환자군인지 밝혀질 때까지 신중; 종 차이·안전성·순도·효능이 핵심 과제"
+  },
+  {
+   "type": "list",
+   "items": [
+    "영양학적 질환 조절은 여전히 잠재적으로 유용하나, 구체적 영양소·용량·대상군이 밝혀질 때까지 신중해야 하며 종 차이가 유용성을 떨어뜨릴 가능성이 특히 우려됨.",
+    "일반 권고 전에 안전성·순도·효능이라는 핵심 문제를 해결해야 함. 영양소-질환 상호작용 이해가 깊어지면 중증 질환을 조절하는 특정 영양소를 찾아낼 수 있고, 일부 질환 치료가 영양 치료에 크게 의존하게 될 수도 있음."
+   ]
+  }
+ ]
+}
