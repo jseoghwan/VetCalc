@@ -1,0 +1,332 @@
+{
+ "id": "sacc3-p15-c134",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part XV",
+ "part_title": "Anesthesia and Pain Management",
+ "chapter_num": 134,
+ "title": "Analgesia and Constant Rate Infusions",
+ "author": "Jane Quandt, BS, DVM, MS, DACVAA, DACVECC",
+ "format": 2,
+ "renumbered_from": 131,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "진통은 여러 약물 계열, 투여 경로, 기법으로 달성할 수 있다.",
+    "임상의는 통증의 종류와 중증도에 맞는 적절한 진통 치료 계획을 세울 수 있어야 한다.",
+    "치료 반응을 자주 평가하고 필요 시 추가 진통제로 적절히 치료한다.",
+    "다중 또는 병합 진통 요법은 중환자에게 유익할 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "진통 원칙",
+   "gist": "소생 후 가능한 한 빨리, 이상적으로는 선제적; 단일 약물로는 불충분 → 다중 병합; 자주 재평가"
+  },
+  {
+   "type": "list",
+   "items": [
+    "진통은 전반적 안녕과 회복 속도·질에 긍정적. 목표는 통증이 견딜 만하면서도 보호적 측면(골절지 사용 억제 등)은 남는 상태. 계열: 아편유사제, NSAID, α2 작용제(Ch.157), 국소마취제, NMDA 길항제, benzodiazepine, phenothiazine. 경로: IV, SC, IM, 경막외, 경점막, 경피, 경구, 관절내, 흉막내, 복강내, 국소 침윤. 용량은 Table 134.1.",
+    "ICU에서는 평가·소생 후 가능한 한 빨리 투여(Ch.131) — 단, 진통이 기저 질환·혈역학 상태를 가릴 수 있으므로 기저 질환을 함께 다룸. 이상적으로는 통증 발생 전(선제적 진통; 필요 약물량↓) — 수술·침습 시술 전 특히 중요하나 외상·응급에서는 어려움.",
+    "통증 경로가 복잡해 단일 약물로는 용량을 아무리 높여도 완전 완화가 어려움 → 여러 계열 병용(다중 수용체, 발현·지속 차이 보완): 아편유사제 + NSAID, 국소마취제(lidocaine patch) + 아편유사제, 경막외 + 전신 아편유사제. 어떤 요법이든 자주 재평가; 스토익한 환자에서는 진통제 투여 자체가 진단적."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "아편유사제",
+   "gist": "순수 μ는 진통 상한 없음; naloxone 저용량 0.004 mg/kg; butorphanol 0.05–0.1로 부분 길항"
+  },
+  {
+   "type": "list",
+   "items": [
+    "중추 작용으로 통각 정보의 CNS 유입 제한 → 중추 과민 감소. 발현 빠르고 안전·가역·강력해 중환자에 흔히 사용; 약동학 변화로 IV 서서히 적정. 4계열: 순수 작용제(현저한 진통), 부분 작용제(같은 수용체, 덜 뚜렷), 작용-길항제(한 수용체 작용·다른 수용체 길항), 길항제(naloxone; 결합만 하고 효과 없음, 경쟁적 치환으로 길항). 부분 작용제 buprenorphine·혼합 작용-길항제 butorphanol은 용량 상단에서 최대 효과 → 심한 통증·불충분 시 추가 투여 무효; 순수 μ 작용제(morphine, hydromorphone, fentanyl, remifentanil)는 진통 상한 없음.",
+    "부작용: 용량 상단에서 호흡 억제·서맥(중환자에서 고용량 신중). morphine·meperidine은 histamine 방출(급속 IV 시 혈관확장성 중증 저혈압). 위마비·장마비 → 구토·역류·흡인(둔화·진정·쇠약·중증 환자에서 특히); 위 팽만은 복부 질환(췌장염 — 췌장 분비 자극)에서 우려 → 12–24시간 초과 투여 시 간헐·지속 위 감압(비위관·식도루·위루관) 또는 운동촉진제(metoclopramide).",
+    "고양이: 안전하게 사용 가능. morphine·hydromorphone은 과흥분·초조 가능; 산동 발현이 적절한 진통과 상관 — 산동 후 계속 투여하면 불쾌감·초조. buprenorphine(혼합 부분 μ 작용제)도 효과적.",
+    "Remifentanil: 직접 μ 작용, 초단시간 — 장기 주입 후에도 빠른 회복; 혈액·조직 비특이 esterase 대사로 간·신 기능과 무관 → 중증 간 손상 개·고양이의 마취 중·ICU CRI 진통. 개 3 mcg/kg IV 후 CRI 0.1–0.3 mcg/kg/min; 중단 후 5–20분 내 회복(주입 기간 무관). 종료 시 통증 지속이면 추가 진통; CRI는 강력한 호흡 억제(저환기 감시; 심하면 naloxone·기계환기; 회복 후 지속 안 함). 고양이 >1 mcg/kg/min은 불쾌감·광적 운동.",
+    "Fentanyl: IV 30분, IM·SC 최대 2시간; CRI로 흔히 적정; 경피 patch(Duragesic). Methadone: NMDA 길항 효과 겸비 — l-이성체는 완전 μ 작용, d-이성체는 NMDA 길항(중추 감작·이차 통각과민 예방 가능); 중등도~중증 통증에 효과 적정; 개·고양이 0.2–1.0 mg/kg IV 또는 IM.",
+    "Simbadol(buprenorphine 1.8 mg/ml): 고양이 FDA 승인, 수술 후 통증 — 0.24 mg/kg SC q24h 최대 3일; 경구 경점막 투여도 안전. 저용량 0.12 mg/kg은 지속 짧음(소형·쇠약 고양이). 부작용: 고체온, 저혈압, 서맥·빈맥; 길항 어려움.",
+    "길항: naloxone(순수 길항제)은 CNS 억제·호흡 억제·서맥을 되돌리나 진정·진통 소실로 급성 통증·흥분·각성 섬망·공격성·통각과민 유발 → 저용량 0.004 mg/kg IV 서서히 적정하면 진통 유지하며 CNS 억제만 길항. 작용 20–30분(개·고양이 빠른 대사) → 장시간 작용 아편유사제 길항 시 재마취(renarcotization) 위험. butorphanol 0.05–0.1 mg/kg IV는 μ 작용제의 진정·호흡 억제 길항 — κ 작용으로 진통 완전 소실 없음(추가 진통 가능). buprenorphine은 수용체에서 치환이 어려워 길항이 쉽지 않음(Ch.155)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "NSAID",
+   "gist": "순수 COX-2 억제제 없음; 저혈압·신질환·GI 주의; 발현 45–60분; robenacoxib 2 mg/kg SC"
+  },
+  {
+   "type": "list",
+   "items": [
+    "염증이 통증에 크게 관여 → 말초 염증 감소로 CNS 통증 입력↓(중추 과민 악화 완화). 시판: carprofen(Rimadyl), deracoxib(Deramaxx), meloxicam(Metacam), etodolac(Etogesic), tepoxalin(Zubrin), robenacoxib(Onsior). COX 억제 — COX-1은 기저 prostaglandin(위점액, 혈소판, 지혈), COX-2는 염증 부위(일부 기저 생성도). 순수 COX-2 억제제는 없고 COX-1 억제 정도가 다양 → 저혈압, 저혈량, 기존 신질환(신혈관 수축 → 신기능 악화), GI 질환·위궤양에서 신중.",
+    "경구는 가능하면 음식과 함께(위궤양↓). 주술기에는 혈소판 기능 저하로 출혈↑ → 신중. 주사제(carprofen, meloxicam)는 금식·구역·구토·의식 저하로 경구가 어려운 환자에 유리. 발현은 느리나(45–60분) 장시간 진통. Carprofen q12h; deracoxib·meloxicam·etodolac은 1일 1회.",
+    "Onsior(robenacoxib): 고양이 특이 COX-2 억제제, 안전 지수 높음; 진통·항염·해열, 염증 조직에 선택적 분포, 임상 권장량에서 COX-1 보존. SC 견갑골 사이 2 mg/kg 또는 PO 6 mg/cat q24h(2.5–6 kg), 12 mg/cat q24h(6.1–12 kg) 3일. 말기 반감기 1.9시간, 효과 22시간 지속.",
+    "아편유사제와 병용 가능; corticosteroid 병용은 COX-1 억제의 GI 부작용 증강으로 비권장(Ch.158)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "α2 작용제·경피·NMDA·acepromazine",
+   "gist": "medetomidine 1–10 mcg/kg(dex는 절반); fentanyl patch 개 ≤24h; ketamine 0.1–1 mg/kg"
+  },
+  {
+   "type": "table",
+   "title": "기타 진통 계열",
+   "headers": [
+    "계열",
+    "작용·용량",
+    "주의"
+   ],
+   "rows": [
+    [
+     "α2 작용제 (dexmedetomidine·medetomidine)",
+     "CNS 수용체 결합 → 진정, 말초 혈관수축, 서맥, 호흡 억제, 이뇨, 근이완, 진통. Dexmedetomidine = medetomidine의 우선성 활성 이성체(용량 다름; dexmedetomidine은 medetomidine의 절반). 간 대사, 불활성 대사물 요 배설; 발현 빠름. 진정이 진통(약 30–90분)보다 오래 지속. Medetomidine 저용량 1–10 mcg/kg IV는 안정 환자에 안전, 아편유사제와 상승작용으로 진통 최대 4시간; 고용량은 고통받는 동물의 진정·소시술(방사선 자세). 심혈관 안정 환자 CRI: 부하 1 mcg/kg IV 후 1–3 mcg/kg/hr. Atipamezole로 진통·진정·호흡 억제 길항 — IM·SC 선호(IV는 급격한 저혈압·공격성)",
+     "말초 α2 활성화 → 혈관수축·SVR↑ → 고혈압·반사성 서맥(항콜린제는 고혈압 악화) — 중환자가 견디지 못할 수 있음. MK-467(Vatinoxan): 혈액뇌장벽을 통과하지 않는 말초 α2 길항제 — 진정·진통 유지하며 말초 심혈관 효과 차단; 분말을 생리식염수에 2 mg/ml로 녹여 같은 주사기에 혼합, IM·IV; 150 µg/kg이 medetomidine 투여견의 심혈관 안정 개선(Ch.157)"
+    ],
+    [
+     "경피 fentanyl patch",
+     "장기 진통; 발현·정상상태 농도 변동 큼 → 효과 발현까지 전신 진통 병행(개 최대 24시간). 고양이는 6–12시간에 치료 농도, 약 5일 유지. 12–24시간 후에도 통증이면 추가 진통. 25·75·100 mcg 제형(용량 Table 134.1)",
+     "흡수는 피부 혈류·털·비만에 영향, 저혈량·저체온 시 크게 변함; 모든 동물이 치료 농도에 도달하지는 않음. 절단·변형 금지; 사용 후 patch의 인간 남용 가능성 → 폐기 교육"
+    ],
+    [
+     "Lidoderm 5% lidocaine patch",
+     "1999년 FDA 승인(대상포진 후 신경통). 10×14 cm patch에 lidocaine 700 mg(접착제 g당 50 mg). 온전한 피부 침투로 진통(완전 감각 차단은 아님); 24시간 착용 가능, 무감각·촉각·온도 감각 소실 없음; 30분 내 치료 농도. 크기에 맞게 절단 가능, 독성 혈중농도가 생기지 않아 연속 사용 가능. 삭모·세척 후 수술용 스테이플로 고정 가능(fentanyl patch 스테이플은 미평가). 일화적으로 개·고양이의 심한 찰과·타박·절개 진통(독성 미관찰). Lidocaine patch(국소) + fentanyl patch(전신) 동시 적용으로 다중 진통",
+     "국소 피부염 감시(사람 최다 부작용은 일과성 발진·소양)"
+    ],
+    [
+     "NMDA 길항제 (ketamine)",
+     "수용체의 여러 결합부 차단 → 진통·기억상실·정신모방·신경보호. 비경쟁 길항으로 척수 후각 wide-dynamic-range 뉴런의 과장 반응·wind-up·중추 감작 예방 → 중추 과민 역전; C 섬유 통각 입력 차단. PO·SC·IM·IV. 심혈관 억제 최소, 후두 보호반사 보존, 아편유사제보다 환기 억제 적음. 개·고양이 아마취 용량 0.1–1 mg/kg IV 후 CRI 2 mcg/kg/min → 마취·깊은 진정 없이 진통. 경구 8–12 mg/kg PO q6h(개) — 화상 통증",
+     "진전·진정; 교감 긴장도↑로 심박출량↑"
+    ],
+    [
+     "Acepromazine",
+     "0.01–0.05 mg/kg IV(총 3 mg 이하); 단독 진통 없음 → 아편유사제와 병용해 항불안·진정. IV라도 진정 발현까지 최대 15분 → 전 효과 확인 전 반복 금지. 혈역학 안정·호흡 적절 ICU 환자에서 저용량 0.005–0.01 mg/kg은 안전",
+     "혈관확장 → 심한 저혈압·저체온 → 중환자 신중"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "국소마취제",
+   "gist": "bupivacaine 2 mg/kg q6h(고양이 절반); 최대 lidocaine 4·bupivacaine 1–2 mg/kg; Nocita"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Lidocaine·bupivacaine: 특정 신경 경로와 신경섬유(통각 섬유 포함)의 활동전위 전달 차단. 국소 주사(소교상), 늑간신경 차단, 흉강내·복강내 투여. 0.5% bupivacaine 2 mg/kg q6h — 골절·췌장염 등 통증 질환, 개흉·흉관 설치 시술.",
+    "늑간 차단(늑골 골절): bupivacaine 1–1.5 mg/kg q6h(1일차 4 mg/kg 초과 금지)를 늑골 후연 추간공 부위에. 흉관을 통해 흉막강 투여(흉부 수술·흉관 자체 통증). 췌장염·복통: bupivacaine 2 mg/kg(식염수 희석) q6h 복강내 — 무균 설치한 임시 butterfly catheter; 복수가 있으면 희석되어 무효일 수 있음.",
+    "무균술 필수; 약물이 목표 부위에 퍼지도록 체위. Lidocaine 작열감 감소: sodium bicarbonate(1 mEq/ml) 1–2 : lidocaine 8–9; bupivacaine은 1:30.",
+    "Bupivacaine 부작용: 부정맥·심박출량↓ → 기존 생명 위협 부정맥 동물에 금기; 선택적 심독성이라 고양이는 개 용량의 절반. 심낭절제 환자의 흉막내 bupivacaine은 심독성 위험으로 신중(건강견에서는 심낭 개방 여부와 무관하게 안전했으나 심혈관 불안정 환자 미평가). 흉막내 투여는 횡격막 마비로 환기 방해 가능 → 호흡 예비력이 한계인 동물에서 회피.",
+    "독성: lidocaine >10–20 mg/kg, bupivacaine >4 mg/kg — 발작, 부정맥, 빈맥, 심혈관 허탈. 대부분 종의 안전 최대 용량 lidocaine 4 mg/kg, bupivacaine 1–2 mg/kg. Epinephrine(지속 연장)은 중환자에서 심장 자극·혈관수축성 허혈 위험으로 회피.",
+    "Nocita: 다소포성 리포솜 bupivacaine 서방 주사 — 개 수술 부위 단회 침윤(수 시간에 걸쳐 방출), 고양이 발톱제거 말초신경 차단. Moving needle 기법(바늘을 hub 근처까지 넣고 빼면서 주입, 다양한 각도로 반복해 창상 전체·전 층에 침윤). 5.3 mg/kg으로 개에서 최대 72시간 진통; 생리식염수 1:1 희석으로 범위 확대 가능."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "경막외 진통",
+   "gist": "1 ml/5 kg으로 L1까지; 중환자는 저용량 국소마취제; 카테터 총량 ≤6 ml(대형견), 1–332시간 유지"
+  },
+  {
+   "type": "list",
+   "items": [
+    "몸 뒤쪽 절반 진통; 용량·용적에 따라 전지도 가능(1 ml/5 kg → 제1요추까지, 더 많으면 두측 확산). 저농도 국소마취제는 운동 결손 없이 진통; 고용량은 완전 마취 + 후지 운동 마비, 혈관확장 → 저혈압 → 중환자는 저용량. 경막외 아편유사제는 운동 기능 보존(통각 입력 감소, 완전 소실은 아님). 마취 요구량↓, 심폐 영향·과진정 없이 진통.",
+    "금기: 골반부 외상(지표 소실), 패혈증, 응고병증, CNS 질환, 주사 부위 피부 감염, 저혈량 쇼크, 심한 비만.",
+    "경막외 카테터: 반복 천자 없이 지속 진통; 두측 전진으로 전지·흉부 진통 개선. 단회 주사와 같은 지표로 마취·깊은 진정 하 무균 설치·유지(기술적으로 어려움). 위치 확인은 측면 방사선·투시(방사선 비투과 카테터가 아니면 저용량 조영제 주입). 1–332시간 안전 유지 보고; 대형견 총 주입량 6 ml 이하(Table 134.2).",
+    "부작용: 구토, 요 저류(방광 압박 배출 또는 유치 요도카테터), 소양, 삭모 부위 모발 성장 지연. 카테터 합병증: 이탈, 분비물, 분변 오염, 라인·필터 파손, 국소 피부염 — 발생 시 제거 권장; 대증 치료.",
+    "지주막하 오주입: 개는 경막낭이 요천추 공간 전에 끝나 가능성 낮음; 고양이는 요천추 공간을 지나서 끝나므로 주의. 천자되면 무보존제 제형을 원 용량의 50–75%로 감량 투여(경막 보호가 없어 신경근 접근성↑)."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 134.2 경막외 용량",
+   "headers": [
+    "약물",
+    "개 용량·지속",
+    "고양이 용량·지속",
+    "장점",
+    "주의"
+   ],
+   "rows": [
+    [
+     "Morphine (무보존제)",
+     "0.1–0.4 mg/kg, 최대 용적 6 ml; 발현 20–60분, 지속 6–24시간",
+     "0.16 mg/kg; 지속 20시간",
+     "지용성, 장시간; 전신 투여보다 오래 지속; naloxone 길항 가능",
+     "무보존제 제형 사용"
+    ],
+    [
+     "Buprenorphine",
+     "0.003–0.006 mg/kg",
+     "0.003–0.006 mg/kg",
+     "무보존제; schedule II 아님; 높은 지용성",
+     "길항 어려움"
+    ],
+    [
+     "Bupivacaine",
+     "0.5–2 mg/kg(상단은 일과성 마비 가능); 발현·지속은 morphine과 유사",
+     "0.5–1 mg/kg; 지속 20시간",
+     "morphine보다 요 저류 가능성 낮음",
+     "—"
+    ]
+   ],
+   "note": "경막외 카테터 용량: morphine 0.1 mg/kg, bupivacaine 0.05–0.12 mg/kg, buprenorphine 0.003–0.006 mg/kg. 카테터 주입은 천천히(급속 주입 시 구토). CRI: morphine 0.3 mg/kg q24h 또는 bupivacaine 0.2–0.3 mg/kg q24h를 syringe pump로 서서히; bupivacaine CRI는 근력 약화 가능 — 과도하면 즉시 중단·감량. — = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "list",
+   "title": "미추(coccygeal) 경막외",
+   "items": [
+    "요도폐색 고양이의 요도·음경 진통·이완: 국소마취제로 회음·음경·요도·결장·항문 마취(음부·골반·미측 신경 차단, 후지 운동 보존). 2% lidocaine(epinephrine 없음) 0.1–0.2 ml/kg — 발현 5분, 지속 60분; 주입 저항 최소, 공기 주입 금지(기포 → 불완전 차단); 5분 내 이완 없으면 2회차, 최대 2회(두측 확산 → 후지 약화·마비 방지). 합병증: 주사 부위 감염, 차단 실패, 전신 흡수(저용량이라 심각 가능성 낮음). 상대적 금기: 응고 장애, 패혈증, 주사 부위 농피증, 심한 저혈압·저혈량, 해부학적 이상. 난산 질분만, 꼬리 절단, degloving, 회음 시술에도 사용."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "CRI",
+   "gist": "syringe pump; morphine 0.15–0.5 부하 → 0.1–1 mg/kg/hr; ketamine 10 → 2 mcg/kg/min; MLK"
+  },
+  {
+   "type": "list",
+   "items": [
+    "CRI는 유효 혈장 농도 유지에 유리; 흡입제 저혈압을 못 견디면 CRI로 마취 유지도 가능. 수술 중 CRI를 회복기로 이어 적정(자극 종료 후 대개 감량). 정확한 투여를 위해 모두 syringe pump.",
+    "Morphine CRI 0.1–1 mg/kg/hr: histamine 방출 방지를 위해 부하 0.15–0.5 mg/kg IV를 희석해 5–10분에 걸쳐 투여 후 시작. 0.12 mg/kg/hr CRI는 개복술 개에서 IM morphine 1 mg/kg q4h와 유사한 효과. 경로 무관 서맥·저체온·헐떡임 가능 → 부작용 시 fentanyl·oxymorphone·hydromorphone CRI. 마취 고위험 중환자에서 fentanyl + propofol은 심혈관 보존 마취로 흡입제 최소화(서맥은 항콜린제).",
+    "Butorphanol: 부하 0.1 mg/kg 후 0.03–0.4 mg/kg/hr IV. Lidocaine: 부하 1–2 mg/kg 후 0.025 mg/kg/min IV; 2–3 mg/kg/hr까지 보고. α2 작용제 CRI로 진통 강화·흡입제 절감.",
+    "Ketamine 저용량: wind-up 예방, 불쾌감·환각 없음; 개 수술 중·후 진통 — 부하 0.5 mg/kg IV 직후 CRI 10 mcg/kg/min → 회복·수술 후 2 mcg/kg/min.",
+    "MLK: morphine 3.3 + lidocaine 50 + ketamine 10 mcg/kg/min (개) — 따로 또는 한 백에 혼합; 상승작용·다중 수용체로 진통 강화. Ketamine은 설치류·사람에서 morphine 내성 약화·역전 → 아편유사제 절감, 단독보다 우수. 제조: morphine sulfate 10 mg + 2% lidocaine 150 mg + ketamine 30 mg을 LRS 500 ml 백에, 10 ml/kg/hr. 고양이 lidocaine CRI는 심폐 억제로 신중(가능하면 회피) — 중환자에서 특히.",
+    "Fentanyl-lidocaine-ketamine: 개 난소절제에서 lidocaine 2 mg/kg 5분 후 CRI 50 mcg/kg/min + fentanyl 4 mcg/kg 5분 후 CRI 8 mcg/kg/hr — lidocaine은 진통을 강화하지 않았으나 회복에 악영향 없음. Lidocaine은 허혈-재관류 손상 의심견에 더 유용: 허혈 중 Na⁺/Ca²⁺ 교환·Ca²⁺ 축적 억제, hydroxyl radical 제거, 과립구 superoxide 방출↓, PMN 활성화·허혈 조직 이동·내피 기능이상↓.",
+    "결론: 진통은 중환자 치료의 필수 요소; 통증 존재·반응 평가가 어렵고 생리 효과가 있으므로 계열·경로를 신중히 선택. 서로 다른 계열의 저용량 다중 요법이 더 안전하고 효과적일 수 있음."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 134.1 흔히 쓰는 진통제",
+   "headers": [
+    "약물",
+    "용량"
+   ],
+   "rows": [
+    [
+     "Acepromazine",
+     "0.01–0.05 mg/kg IM, IV q3-6h; 대형견 총 3 mg 초과 금지"
+    ],
+    [
+     "Atipamezole (α2 길항)",
+     "0.05–0.2 mg/kg IM, IV, SC"
+    ],
+    [
+     "Bupivacaine",
+     "신경 차단 1–2 mg/kg SC q6h"
+    ],
+    [
+     "Nocita",
+     "5.3 mg/kg SC 창상 침윤"
+    ],
+    [
+     "Buprenorphine",
+     "0.005–0.02 mg/kg IM, IV q6-8h; 고양이 0.01–0.02 mg/kg q6-8h PO; Simbadol 0.12–0.24 mg/kg SC q24h 3일 (고양이)"
+    ],
+    [
+     "Butorphanol",
+     "0.1–0.4 mg/kg IM, IV q1-4h; μ 작용제 부분 길항 0.05–0.1 mg/kg IV; CRI 부하 0.1 mg/kg IV, 유지 0.03–0.4 mg/kg/hr IV"
+    ],
+    [
+     "Carprofen",
+     "2–4 mg/kg SC (단회)"
+    ],
+    [
+     "Cyproheptadine",
+     "개 0.3–2 mg/kg PO q12h; 고양이 2 mg/cat PO q12h"
+    ],
+    [
+     "Deracoxib",
+     "개 1–2 mg/kg PO q24h; 수술 후 통증 3–4 mg/kg PO q24h, 7일 초과 금지"
+    ],
+    [
+     "Dexmedetomidine",
+     "1–5 mcg/kg IV q4h; 부하 1 mcg/kg IV, 유지 0.5–3 mcg/kg/hr IV CRI"
+    ],
+    [
+     "Etodolac",
+     "개 5–15 mg/kg PO q24h"
+    ],
+    [
+     "Fentanyl",
+     "개: 부하 2 mcg/kg IV, 유지 2–5 mcg/kg/hr CRI; 고양이: 부하 1 mcg/kg IV, 유지 1–4 mcg/kg/hr CRI"
+    ],
+    [
+     "Fentanyl patch",
+     "고양이·개 <5 kg 25 mcg; 개 5–10 kg 25 mcg; 10–20 kg 50 mcg; 20–30 kg 75 mcg; >30 kg 100 mcg"
+    ],
+    [
+     "Gabapentin",
+     "1.25–4 mg/kg PO q24h"
+    ],
+    [
+     "Hydromorphone HCl",
+     "개 0.05–0.2 mg/kg IM·SC; 0.05–0.1 mg/kg IV q2-4h. 고양이 0.05–0.1 mg/kg IM·SC q3-4h; 0.03–0.05 mg/kg IV q3-4h"
+    ],
+    [
+     "Indomethacin",
+     "안전 용량 미확립"
+    ],
+    [
+     "Ketamine",
+     "진정 없는 진통 0.1–1 mg/kg IV; 부하 0.5 mg/kg IV; 수술 중 유지 10 mcg/kg/min IV CRI; 수술 후 2 mcg/kg/min CRI 24시간"
+    ],
+    [
+     "Lidocaine",
+     "신경 차단 1–2 mg/kg SC; 부하 1–2 mg/kg IV; 유지 2–3 mg/kg/hr IV CRI"
+    ],
+    [
+     "2% Lidocaine",
+     "신경 차단 1–2 mg/kg SC"
+    ],
+    [
+     "Lidocaine patch",
+     "동물 용량 미확립; patch당 lidocaine 700 mg; 유의한 전신 흡수 없음; 부위 크기에 맞게 절단"
+    ],
+    [
+     "Meloxicam",
+     "0.1–0.2 mg/kg IV 또는 SC (단회)"
+    ],
+    [
+     "Methadone",
+     "0.2–1.0 mg/kg IV 또는 IM"
+    ],
+    [
+     "Morphine",
+     "개 0.25–1 mg/kg IM q4-6h"
+    ],
+    [
+     "Morphine sulfate",
+     "개 0.5–2 mg/kg IM, SC q4h; 고양이 0.05–0.4 mg/kg IM, SC q3-6h; 부하 0.15–0.5 mg/kg IV 서서히(histamine 방출 회피); 유지 0.1–1 mg/kg/hr CRI"
+    ],
+    [
+     "Naloxone (아편유사제 길항)",
+     "0.002–0.1 mg/kg IM, IV 또는 SC"
+    ],
+    [
+     "Oxymorphone",
+     "개 0.03–0.1 mg/kg IM·IV q2-4h; 고양이 0.01–0.05 mg/kg IM·IV q2-4h"
+    ],
+    [
+     "Remifentanil",
+     "3 mcg/kg IV 후 CRI 0.1–0.3 mcg/kg/min"
+    ],
+    [
+     "Tepoxalin",
+     "개 10 mg/kg PO q24h"
+    ],
+    [
+     "MLK infusion",
+     "morphine 3.3 + lidocaine 50 + ketamine 10 mcg/kg/min; 제조: morphine sulfate 10 mg + 2% lidocaine 150 mg + ketamine 30 mg을 LRS 500 ml에; 10 ml/kg/hr"
+    ]
+   ]
+  }
+ ]
+}

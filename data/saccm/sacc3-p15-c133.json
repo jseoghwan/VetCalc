@@ -1,0 +1,447 @@
+{
+ "id": "sacc3-p15-c133",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part XV",
+ "part_title": "Anesthesia and Pain Management",
+ "chapter_num": 133,
+ "title": "Anesthesia in the Critically Ill Patient",
+ "author": "Jane Quandt, BS, DVM, MS, DACVAA, DACVECC",
+ "format": 2,
+ "renumbered_from": 130,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "마취 관련 합병증을 최소화하려면 마취 전 중증 동물의 상태를 적절히 안정화하는 것이 필수다.",
+    "문제를 예견하고 마취 유도 전에 적절하고 효율적인 치료 계획을 세워야 한다.",
+    "손상된 중증 환자에서는 마취약 용량을 건강한 환자의 절반으로 줄일 수 있는 경우가 많다.",
+    "단일 약물의 해로운 효과를 최소화하기 위해 균형 마취 기법을 고려해야 한다.",
+    "마취된 중증 동물의 집중 감시가 필수다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "안정화",
+   "gist": "IV 카테터 ≥2; PCV >25%; TP ≤3.5·Alb ≤2 g/dl은 colloid; FFP 6–20 ml/kg"
+  },
+  {
+   "type": "list",
+   "items": [
+    "중환자는 생리 변화와 예비력 감소로 마취약의 약동·약력이 달라짐 — 스트레스 최소화와 산소 공급 최적화가 이득. 불안정 상태의 유도는 합병증 위험↑.",
+    "마취 전 적응에 따라 연속 신체검사, 영상, 혈액화학, CBC, 응고, 산염기, 혈당, 젖산 평가; 탈수·저혈량과 체액·산염기·전해질 결핍은 이상적으로 유도 전 교정.",
+    "정맥 접근 필수(마취 중 저혈압 흔함). IM·SC는 탈수·저혈량·관류 불량·저체온 시 흡수 지연 → IV 선호. 카테터를 둘 이상(말초 여러 개 또는 중심정맥); 수술 후 연속 채혈·비경구영양이 예상되면 회복 전 중심정맥 라인. 수액 속도 요구 차이와 승압제·sodium bicarbonate·혈액제제 간 비적합성 때문에 불안정 환자는 유도 전 최소 2개. 혈액제제와 PN은 전용 라인(오염·세균 증식 우려; Ch.127). 마취 전·중 가온 수액; 쇼크 bolus는 가장 짧고 굵은 카테터(말초 요측피정맥). 전신마취 후 동맥 카테터 권장(직접 혈압, 동맥혈 가스).",
+    "PCV >25%가 적절한 산소운반에 필요; 마취 중 PCV가 3–5% 감소하므로 소량 실혈도 수혈 사유가 될 수 있음. 저단백혈증(TP ≤3.5 g/dl 및/또는 albumin ≤2 g/dl)은 colloid로 COP(정상 18–24 mm Hg) 유지·부종·혈관 누출 예방; 마취 전 COP 측정이 colloid 필요성·종료 시점 판단에 도움. 선택지: Hetastarch, VetStarch, 동결건조 개 albumin 5 g(0.9% 식염수로 재구성), 종 특이 혈장. 고분자 HES(Hetastarch)는 용량 의존적 응고 저해 → 저응고·저단백 수술 환자에서 제한; VetStarch(저분자 tetrastarch)는 응고 영향이 훨씬 적으나 고위험 저응고 환자에서는 최소화(Ch.66). HES는 사람 신손상 연관 — 신질환·고위험 동물에서 회피 권장. 소형·저응고·저알부민 환자는 FFP 6–20 ml/kg; 대형 환자는 albumin 1 g/dl 올리는 데 약 45 ml/kg이 필요해 크기·비용이 제한.",
+    "기저 대사 질환 평가: 신부전은 신관류 유지에 더 높은 수액 속도, 마취 중 요량 감시, 신장 배설 약물(고양이 ketamine) 주의. 간질환은 포도당·albumin 생성↓, P-450 대사 변화, 응고인자↓. 심잡음은 판막질환 시사 — 보상 능력↓, 수액 과부하 회피, 혈압 감시(마취성 저혈압 → 비대상). 현재 복용 약물(NSAID, 이뇨제, 항경련제, 심장약) 확인."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "전처치와 유도",
+   "gist": "μ 작용제 + midazolam/acepromazine 0.005–0.01; maropitant 1 mg/kg IV; 사전 산소화"
+  },
+  {
+   "type": "list",
+   "items": [
+    "전처치는 심한 통증이나 극도로 사나운 경우가 아니면 불필요할 수 있음. 필요 시 μ 작용제(hydromorphone, morphine, methadone[NMDA 비경쟁 억제제이기도 함]) + midazolam 또는 저용량 acepromazine(0.005–0.01 mg/kg) IM — acepromazine은 심한 저혈압 때문에 정상 동물보다 낮은 용량. κ 작용제 butorphanol·부분 μ 작용제 buprenorphine은 심한 통증에 불충분. 사납지만 취약한 고양이·소형견: alfaxalone + 아편유사제 + benzodiazepine — α2 작용제·해리성 약물보다 심혈관 영향 적음(대형견은 IM 용적 문제). μ 작용제 + α2/해리제 IM은 중환자(대개 둔화되어 다루기 쉬움)에서 드물게 적응. 항콜린제는 서맥 치료 시에만.",
+    "마취 시간 최소화(유도 전 삭모 등). 유도 전 수 분간 사전 산소화(호흡곤란·어려운 기도에서 삽관 여유). 유도 전 ECG·혈압 감시 설치(유도 중 부정맥·저혈압·허탈 감지); 중증에서는 atropine·epinephrine 등 심정지 약물을 가까이.",
+    "유도: 용량을 절반으로 줄이는 경우 많음(Table 133.1); IV로 서서히 효과 적정, 삽관에 필요한 최소량. 균형 마취; 국소 차단·경막외로 전신마취량 감소. 삽관은 항상(환기 능력·흡인 방지). 중환자는 금식 여부 불확실·역류 위험 — 유도 전 maropitant 1 mg/kg IV(개·고양이). 후두경, 다양한 크기의 튜브, 체구에 맞는 회로 준비·점검; 저환기·무호흡·흉부 시술 시 양압환기 준비.",
+    "이상적으로는 심혈관·신경계가 적응할 시간을 주는 느린 전환이나, 중환자는 적절히 반응하지 못할 수 있어 치료적 개입 준비 필수 — 호흡곤란 환자는 신속 삽관으로 기도 확보·100% 산소 환기."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "유도제",
+   "gist": "propofol·thiopental은 ICP↓; alfaxalone 1–2 mg/kg 60초; etomidate 부신 억제; ketofol"
+  },
+  {
+   "type": "table",
+   "title": "유도제 비교",
+   "headers": [
+    "약물",
+    "특징",
+    "주의"
+   ],
+   "rows": [
+    [
+     "Thiopental / Propofol",
+     "신속 유도(발현 약 30초, IV). 지속 thiopental 10–15분, propofol 5–10분(짧아 선호 가능). diazepam·midazolam 병용 시 이완↑·총량↓. ICP·안압 감소 → 두부외상 유도에 적응",
+     "부정맥·저혈압·무호흡 가능(간헐 양압환기 필요). 진통 없음 → 수술 전 진통제 추가. PropoFlo 28은 고양이 미승인(benzyl alcohol 보존제; 고양이는 glucuronic acid 포합 능력 낮음) — 건강 고양이에서는 안전 사용 보고. 고양이는 대사·배설이 느려 반복·주입 시 회복 지연, Heinz body 증가 → 쇠약·간 장애 고양이에서 PropoFlo 28 회피가 신중"
+    ],
+    [
+     "Alfaxalone",
+     "합성 신경활성 스테로이드; 빠른 대사·제거; 용량 의존 저환기·무호흡이나 안전역 넓음. CRI 가능, 근이완 좋음, 빠른 회복; 지속 14–50분. 마취 고위험견에서 1–2 mg/kg IV 60초에 걸쳐 투여 시 수용 가능한 유도·순조로운 회복; fentanyl CRI와 안전 병용",
+     "회복 시 흥분(발 젓기, 근연축, 격렬한 움직임) — 진정으로 개선. 고양이는 유도는 순조로우나 회복 시 발 젓기·떨림, 용량↑일수록 회복 질↓; propofol보다 지남력 상실·불안"
+    ],
+    [
+     "Etomidate",
+     "심혈관 영향 최소 → 심혈관 불안정 환자에 매력적",
+     "단독 사용 금지(구역·근간대경련) → benzodiazepine 또는 아편유사제 IV 선투여. 고양이 반복 사용 시 propylene glycol 용매로 용혈. 사람 중환자에서 부신 기능이상(24–48시간) → 이환·사망↑ 논란; hydrocortisone 치료는 결과에 영향 없음 → 패혈성 쇼크에서 신중 사용 권고"
+    ],
+    [
+     "Ketamine",
+     "대개 benzodiazepine과 병용. 중추 교감 반응·내인성 catecholamine 방출로 심박·혈압·심박출량↑. NMDA 수용체 길항제(원문: agonist)로 말초·체성 진통",
+     "단독 시 발작 유발 가능. 수축력↑로 HCM에서 주의. 직접 심근 억제 → 내인성 catecholamine 반응이 줄어든 쇠약 환자에서 저혈압·불안정"
+    ],
+    [
+     "Ketofol (ketamine + propofol)",
+     "공동 유도로 용량·부작용↓; propofol의 무진통·무호흡·근연축을 ketamine이 보완(진통·지속 연장). (1) ketamine 200 mg(100 mg/ml) + propofol 200 mg(10 mg/ml) 혼합 0.5 ml/kg IV(혼합액 최대 12시간) 또는 (2) ketamine 2 mg/kg IV 후 별도 주사기 propofol 2 mg/kg IV",
+     "맥박수·MAP가 더 높고 삽관·유도 질 우수"
+    ],
+    [
+     "아편유사제 (안정 환자의 점진적 유도)",
+     "neuroleptanalgesia(hydromorphone·methadone·fentanyl + diazepam/midazolam) + propofol·alfaxalone·ketamine으로 유도. Remifentanil: 직접 μ 작용, 초단시간; 제거가 간·신 기능과 무관(혈액·조직 비특이 esterase) → 간·신 손상 동물에 적합; 장시간 주입 후에도 회복 매우 빠름(개 5–20분). 개 3 mcg/kg IV 후 CRI 0.1–0.3 mcg/kg/min(생리식염수 희석)",
+     "remifentanil 종료 시 통증 지속이면 추가 진통제; CRI는 강력한 호흡 억제(기계환기 필요 가능, 회복 후 지속 안 함). 고양이 >1 mcg/kg/min은 불쾌감·광적 운동. Methadone: μ 작용 + NMDA 비경쟁 억제 + NE·serotonin 재흡수↓; 서맥; serotonin 조절제 병용 시 serotonin 증후군 감시"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "items": [
+    "다중 약물 균형 마취(hydromorphone, midazolam, ketamine, lidocaine): 발현은 느리나 진통 제공·심혈관 보존. 유도 용량이 CRI의 부하 용량이 됨. 개 진통 CRI 병용: morphine 3.3 mcg/kg/min + lidocaine 50 mcg/kg/min + ketamine 10 mcg/kg/min. Lidocaine은 자유라디칼 제거·진통·항부정맥으로 손상 장기·재관류 손상·심실 부정맥 완화 가능; 고양이 lidocaine CRI는 심혈관 억제로 비권장.",
+    "Propofol 단독은 유해자극에 대한 혈역학 반응을 막지 못해 대수술에 비권장; 개에서 lidocaine·ketamine과 TIVA 병용 가능. 음성 변시·변력 + 정맥확장 → 혈압↓.",
+    "비장 질환(종양·파열)·복강경 예정: acepromazine·thiopental·propofol은 비장 종대(파열·출혈↑)와 hematocrit 감소 → 회피; hydromorphone·dexmedetomidine은 비장 크기 증가 없음."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Table 133.1 마취약과 용량",
+   "headers": [
+    "분류",
+    "약물",
+    "용량",
+    "비고"
+   ],
+   "rows": [
+    [
+     "항콜린제",
+     "Atropine",
+     "0.04 mg/kg IM, 0.02 mg/kg IV",
+     "분비물 점도↑, 해부학적 사강↑, 심박수↑, 심근 일·산소소비↑ 가능"
+    ],
+    [
+     "항콜린제",
+     "Glycopyrrolate",
+     "0.01 mg/kg IM, IV",
+     "혈액뇌장벽·태반 통과 안 함"
+    ],
+    [
+     "μ 작용제",
+     "Morphine",
+     "0.2–2 mg/kg IM, SC; CRI 0.1–0.3 부하 후 0.1 mg/kg/hr",
+     "naloxone으로 완전 길항; 진통; 호흡 억제·서맥; CV 영향 최소; CRI 시작 전 항콜린제; 고양이 고체온 감시 (μ 작용제 공통)"
+    ],
+    [
+     "μ 작용제",
+     "Oxymorphone",
+     "0.05–0.2 mg/kg IM, IV, SC",
+     "—"
+    ],
+    [
+     "μ 작용제",
+     "Meperidine",
+     "2–5 mg/kg IM, SC",
+     "—"
+    ],
+    [
+     "μ 작용제",
+     "Hydromorphone",
+     "0.05–0.2 mg/kg IV, IM, SC; CRI 0.025–0.05 mg/kg IV 부하 후 0.01–0.04 mg/kg/hr",
+     "—"
+    ],
+    [
+     "μ 작용제",
+     "Fentanyl",
+     "0.005–0.05 mg/kg IM, IV, SC; CRI 개: 부하 5–10 mcg/kg 후 2–10 mcg/kg/hr; 고양이: 부하 5 mcg/kg 후 2–10 mcg/kg/hr",
+     "—"
+    ],
+    [
+     "μ 작용제",
+     "Remifentanil",
+     "3 mcg/kg IV; CRI 0.1–0.3 mcg/kg/min",
+     "—"
+    ],
+    [
+     "μ 작용제 + NMDA 길항제",
+     "Methadone",
+     "0.2–1 mg/kg IV, IM",
+     "서맥 가능; 만성·신경병증성 통증에 좋음"
+    ],
+    [
+     "부분 μ 작용제",
+     "Buprenorphine",
+     "0.005–0.02 mg/kg IM, IV",
+     "발현 느림, 길항 어려움; 중등도 통증에 좋음"
+    ],
+    [
+     "κ 작용제/μ 길항제",
+     "Butorphanol",
+     "0.1–0.8 mg/kg IM, IV, SC; CRI 0.1–0.2 mg/kg IV 부하 후 0.1–0.2 mg/kg/hr",
+     "μ 작용제 부분 길항; CV 영향 최소; 심한 통증에 부적합"
+    ],
+    [
+     "아편유사제 길항제",
+     "Naloxone",
+     "0.002–0.02 mg/kg IM, IV",
+     "μ 작용제 효과 완전 길항"
+    ],
+    [
+     "해리성",
+     "Ketamine",
+     "4–11 mg/kg IV, IM; CRI 0.5 mg/kg IV 부하 후 0.1–1 mg/kg/hr",
+     "타액 분비; 심박수↑; ICP·안압↑; 진통; 고양이 신장 배설"
+    ],
+    [
+     "해리성",
+     "Tiletamine-zolazepam (Telazol)",
+     "2–4 mg/kg IM, IV",
+     "위와 동일"
+    ],
+    [
+     "Ketofol",
+     "Ketamine/propofol 1:1",
+     "ketamine 200 mg + propofol 200 mg 혼합 0.5 mg/kg IV(원문 표기; 본문은 0.5 ml/kg) 또는 ketamine 2 mg/kg 후 propofol 2 mg/kg IV",
+     "삽관·유도 질 우수; 맥박수·MAP 더 좋음"
+    ],
+    [
+     "Benzodiazepine",
+     "Diazepam",
+     "0.2–0.5 mg/kg IM, IV; CRI 0.1–0.5 mg/kg/hr",
+     "다른 약물 필요량↓; 경한 진정·근이완; 항경련; 진통 없음; propylene glycol 함유"
+    ],
+    [
+     "Benzodiazepine",
+     "Midazolam",
+     "0.07–0.4 mg/kg IM, IV; CRI 0.1–0.5 mg/kg/hr",
+     "위와 동일"
+    ],
+    [
+     "Phenothiazine",
+     "Acepromazine",
+     "0.01–0.1 mg/kg IM, IV; 총량 3 mg 이하",
+     "혈관확장; 작용 길다; 진통 없음"
+    ],
+    [
+     "Barbiturate",
+     "Thiopental",
+     "4–20 mg/kg IV",
+     "심혈관·호흡 억제; 신속 유도; ICP·안압↓; 산증·저단백혈증 시 효과 증강"
+    ],
+    [
+     "Barbiturate",
+     "Methohexital",
+     "4–10 mg/kg IV",
+     "위와 동일"
+    ],
+    [
+     "—",
+     "Propofol",
+     "2–8 mg/kg IV; CRI 0.05–0.4 mg/kg/min",
+     "속효·단시간; 호흡 억제; 말초 혈관확장; 심근 억제; 진통 없음; 용적 결핍·심혈관 손상 시 주의(심한 억제); 고양이 Heinz body 빈혈"
+    ],
+    [
+     "—",
+     "Etomidate",
+     "0.5–4 mg/kg IV",
+     "심혈관 안정 유지; 단독 사용 안 함; 단회 bolus 후 2–6시간 부신피질 억제; propylene glycol 함유"
+    ],
+    [
+     "α2 작용제",
+     "Dexmedetomidine",
+     "3–40 mcg/kg IM, IV; CRI 1 mcg/kg IV 부하 후 0.5–2 mcg/kg/hr",
+     "심혈관 억제; 구토 가능; 좋은 진정·진통; butorphanol·ketamine 병용 가능"
+    ],
+    [
+     "α2 길항제",
+     "Atipamezole",
+     "0.04–0.5 mg/kg IM, IV",
+     "—"
+    ],
+    [
+     "Neuroleptanalgesic",
+     "아편유사제 + 진정제 병용",
+     "—",
+     "진통; 소음 민감; 심혈관 안정 유지"
+    ],
+    [
+     "—",
+     "Alfaxalone",
+     "2–5 mg/kg IV; CRI 0.1–0.2 mg/kg/min",
+     "회복 개선에 진정 필요할 수 있음"
+    ],
+    [
+     "—",
+     "Lidocaine",
+     "CRI 1–2 mg/kg IV 부하 후 1–3 mg/kg/hr",
+     "고양이 비권장"
+    ],
+    [
+     "흡입마취제",
+     "Isoflurane / Sevoflurane / Nitrous oxide",
+     "—",
+     "용량 의존 심혈관 억제·말초 혈관확장; 깊이 빠르게 조절; 저산소혈증 가능; iso·sevo는 흡수·회복 빠름; N₂O는 폐쇄 가스 공간에서 주의"
+    ],
+    [
+     "신경근차단제",
+     "Atracurium",
+     "0.1 mg/kg IV 또는 CRI 3–8 mcg/kg/min IV",
+     "—"
+    ],
+    [
+     "신경근차단제",
+     "Cisatracurium",
+     "0.1 mg/kg IV; 추가 0.02–0.04 mg/kg IV",
+     "—"
+    ],
+    [
+     "Aminosteroid NMB",
+     "Rocuronium / Vecuronium",
+     "0.6 mg/kg IV / 0.1 mg/kg IV",
+     "—"
+    ],
+    [
+     "NMB 길항제",
+     "Neostigmine",
+     "0.04–0.06 mg/kg IV",
+     "서맥 예방 위해 atropine 0.02 mg/kg IV 병용"
+    ],
+    [
+     "Aminosteroid NMB 길항제",
+     "Sugammadex",
+     "8 mg/kg IV",
+     "심부 차단도 길항; 심혈관 부작용 없음"
+    ]
+   ],
+   "note": "— = 요약에 해당 내용 없음"
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "유지 마취",
+   "gist": "iso/sevo; 저혈압 시 CRI 유지(ketamine-propofol, MLK); CRI는 회복기까지"
+  },
+  {
+   "type": "list",
+   "items": [
+    "삽관 후 isoflurane·sevoflurane으로 유지(가장 흔함) — 둘 다 심혈관·호흡 억제, 발현·회복 빠르고 농도 변경 신속.",
+    "흡입제의 저혈압을 견디지 못하면 CRI 유지: 고양이 난소절제에서 ketamine-propofol 또는 ketamine-propofol-dexmedetomidine IV 유도 후 ketamine-propofol 주입 유지 — 부작용 없음, dexmedetomidine군이 더 깊은 진정. 개는 morphine-lidocaine-ketamine CRI로 진통·흡입제 절감; 추가 μ 작용제 CRI(fentanyl, oxymorphone, hydromorphone), α2 작용제 CRI. 수술 중 CRI는 회복기로 이어 적정 가능한 진통 제공(자극이 끝나면 대개 감량)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "신경근차단제(NMB)",
+   "gist": "마취·진통 없음 → 양압환기 필수; atracurium 3–5분·20–30분; TOF 10%↑에서 neostigmine"
+  },
+  {
+   "type": "list",
+   "items": [
+    "용도: 균형 마취의 양압환기 보조, ICU 기계환기(환자-환기기 비동조·자발 호흡·근운동 억제, 가스교환 개선, 역비 환기), ICP 상승·파상풍·약물 과량·발작의 근연축 관리; 수술에서는 골격근 이완, 흉강내 수술 중 호흡 노력 조절, 안과 수술의 안구 고정, 어려운 기도 삽관.",
+    "마취·진통 작용 없음 → 통증·의식이 충분히 차단된 상태에서만 투여; 양압환기 필수. 작용 시간은 저체온·산염기·전해질 이상(중환자에서 흔함)에 영향. 간헐 IV bolus 또는 CRI — 간헐 bolus는 빈감작 조절, 축적 감시, 진통·기억상실 제공, 장기·과도 차단 합병증 제한에 유리. 회로 고장 시 자발 호흡 불가 → 지속 감독 필수. 선호는 비탈분극 NMB: aminosteroid계와 benzylisoquinolinium계."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "비탈분극 NMB 비교",
+   "headers": [
+    "약물",
+    "발현·지속",
+    "제거",
+    "용량",
+    "비고"
+   ],
+   "rows": [
+    [
+     "Atracurium (benzylisoquinolinium)",
+     "3–5분 발현, 20–30분 지속; CRI 중단 후 1–2시간 내 회복(장기 기능 무관)",
+     "효소 비의존 — 혈장 ester 가수분해 + Hofmann 제거(체온·pH에서 자연 분해) → 신생아·중증 간·신 장애에 적응",
+     "재투여 0.1 mg/kg IV 또는 CRI 3–8.0 mcg/kg/min IV; 임상 용량 0.1–0.30 mg/kg IV에서 histamine 방출은 문제 안 됨",
+     "중간 작용, 심혈관 영향 최소. 유도 프로토콜에 포함 가능(기침·Valsalva에 의한 안압·ICP·복압 상승 회피, 불안정 동물의 빠른 환기 조절): (1) 계산량의 1/10–1/6 분할 투여 후 3–6분 뒤 나머지 + 유도제, 또는 (2) 단회 bolus 후 3분 뒤 근력 약화 시작 시 유도제. 부작용: laudanosine(Hofmann 대사물; CNS 흥분 — 극고용량·간부전 시 우려), 장기 사용 시 지속성 근력 약화, CRI 장기 시 내성. 개에서 sevoflurane 병용 시 propofol CRI보다 차단 약 15분 연장"
+    ],
+    [
+     "Cisatracurium",
+     "초회 27.2±9.3분; 추가 용량 비축적",
+     "atracurium 이성체 — 제거·laudanosine 생성 유사; 신장·간 배설(개에서 간 배설은 덜 중요)",
+     "0.1 mg/kg IV; 유지 추가 0.02–0.04 mg/kg IV (개)",
+     "심혈관 영향 거의 없음, histamine 방출 경향↓, atracurium보다 강력. 부작용 미보고; 장기 사용 시 지속 약화; laudanosine은 저혈압·발작(신·간 질환견에서 더 가능)"
+    ],
+    [
+     "Vecuronium (aminosteroid)",
+     "5분 발현, 30분 지속",
+     "간 대사 + 신장 배설; 동결건조 분말 재구성",
+     "0.1 mg/kg IV",
+     "심혈관 영향 최소, histamine 방출 없음"
+    ],
+    [
+     "Rocuronium (aminosteroid)",
+     "더 빠른 발현, 유사한 지속",
+     "주로 간 대사",
+     "0.6 mg/kg IV",
+     "위와 동일"
+    ]
+   ],
+   "note": "benzylisoquinolinium계에는 doxacurium·mivacurium도 있음(더 흔히 사용되는 계열). 상세는 Hall 등, Lukasik, Keegan 참조"
+  },
+  {
+   "type": "list",
+   "title": "NMB 감시와 길항",
+   "items": [
+    "말초신경 자극기 감시 권장 — 최소 용량 사용과 환기·마취 중단 전 신경근 기능 회복 확인. 골격근 움직임·호흡 노력 관찰 + 경피 전기자극 twitch 반응 측정; 흔한 신경: 안면·척골·경골·표재 비골신경. 효과 소실 시 흉벽 순응도↓, 환기 저항↑, 같은 일회호흡량에서 최고 흡기압↑; 안진·동공 확대·안검반사. 회복 평가: Wright 호흡계로 일회호흡량, 환기 양상, 연하 능력, SpO₂, EtCO₂. 잔류 약화는 생명 위협 가능 — 의심 시 길항제.",
+    "Acceleromyography(AMG): 최대 차단 정도·발현 시간·회복을 정량 — train-of-four 자극 바늘을 신경 위에, 가속도 센서를 발에 두어 유발 twitch를 객관적으로 측정.",
+    "길항: 항상 필요하지는 않으나 중환자의 호흡근 기능 개선을 위해 고려. Neostigmine(항콜린에스테라제) — TOF에서 twitch가 전혀 없으면 시도 금지; 성공하려면 twitch 높이가 기저의 최소 10%. acetylcholine 축적의 muscarinic 효과(서맥, 타액, 기관지 분비↑, 평활근 수축, 배변·배뇨, 저혈압)는 atropine·glycopyrrolate 병용으로 최소화. 최대 효과 7–10분, 지속 60–70분; 0.04–0.06 mg/kg IV + glycopyrrolate 0.01 mg/kg IV.",
+    "Sugammadex 8 mg/kg IV: γ-cyclodextrin, aminosteroid계(vecuronium·rocuronium)를 혈중에서 포접해 심부 차단도 2분 이내 길항; 결합이 강하고 오래 지속, 복합체는 생물학적 불활성으로 신장 배설. 항콜린에스테라제의 한계(심부 차단에 효과 제한, 심혈관 부작용) 없음; 다른 스테로이드 약물·내인성 스테로이드 포접 우려."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "마취 감시",
+   "gist": "MAP >60(신관류); SpO₂는 PaO₂ <~140까지 100% — 동맥혈 가스가 표준; 요량 1–2 ml/kg/hr"
+  },
+  {
+   "type": "list",
+   "items": [
+    "ECG: 심박·리듬 변화, 악성 부정맥(외상·비장 질환·패혈성 복막염·저산소·GDV에서 더 흔함). MAP >60 mm Hg 유지(신관류). 관류 지표(CRT, 점막색, 맥박 질) 지속 감시. 마취 깊이: 안구 위치, 동공 크기, 턱 긴장도, 자극 반응, 심박·혈압·호흡수.",
+    "SpO₂: 헤모글로빈 포화·산소화 정보이나 산소 보충 환자는 산소화 능력이 비정상이어도 정상값 가능 — PaO₂가 약 140 mm Hg 미만으로 떨어져야 100% 미만으로 읽힘 → 100% 산소 호흡 환자의 상당한 산소화 저하를 못 잡음 → 동맥혈 가스가 중환자 마취의 표준(Ch.16; 산소화·환기·포화·산염기·전해질).",
+    "Capnography: 환기 적절성·심박출량 지표; 식도 삽관, 회로 분리, 심정지(CO₂ 미검출) 감시(Ch.190).",
+    "요량 1–2 ml/kg/hr 목표; 신장 장애·혈액량 부족 환자는 유치 요도카테터 고려. 체액 균형 = 마취 중 투여량 vs 측정 손실(기존 결핍 고려); CVP는 도움되나 한계(Ch.181). PCV·TP·COP 자주(급변); colloid 삼투압계 없으면 TP로 평가하되 합성 colloid는 반영 안 됨. 혈당: 소아, 패혈증, 당뇨, 중증 간질환. 체온 지속 감시(마취약이 체온조절 교란, 저체온은 회복 지연)."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "수술 중 저혈압",
+   "gist": "MAP <60·SBP <90: 흡입제↓ → crystalloid 10–20 ml/kg → dobutamine/dopamine"
+  },
+  {
+   "type": "list",
+   "ordered": true,
+   "title": "치료 순서",
+   "items": [
+    "흡입마취제 투여 감소(억제·혈관확장 특성).",
+    "수액 bolus: crystalloid(K⁺ 무보충) 10–20 ml/kg IV 15–20분 또는 colloid 5–10 ml/kg IV 10–20분; 효과 없으면 총 투여량을 고려하며 소량 bolus 반복.",
+    "지속 시 변력제/승압제: dobutamine 또는 dopamine CRI 2–10 mcg/kg/min IV(반감기 짧음; 병용 가능). 빈맥 감시 — 속도 감소 또는 다른 약물 추가.",
+    "기타: ephedrine 0.05–0.5 mg/kg IV 단회 bolus, norepinephrine 0.1–1 mcg/kg/min CRI, vasopressin 1–5 mU/kg/min CRI. 첫 약제가 실패하면 유지한 채 둘째 약제 추가(norepinephrine + dopamine/dobutamine, vasopressin 병용 가능; Ch.147·148).",
+    "여전히 저혈압이면 흡입제 중단 후 주사제로 유지: μ 작용제(fentanyl·morphine) CRI + ketamine + lidocaine; 일부는 fentanyl 간헐 bolus 또는 CRI만으로 충분. 마취된 고양이에서 lidocaine CRI는 심혈관 억제로 비권장."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "회복과 요약",
+   "gist": "ICU에서 변력·승압 지속; 건조·보온·조용한 곳; 떨림은 포도당·산소 요구↑ → 산소·보온; 진통 필수"
+  },
+  {
+   "type": "list",
+   "items": [
+    "회복기에도 지속적 심혈관 지원·감시·지지·진통 필수; 변력·승압 지원은 ICU에서 지속. 건조·보온, 조용하고 스트레스 없는 곳에서 지속 감시. 떨림은 포도당·산소 요구 급증 → 멈출 때까지 산소·보온(강제 온풍 담요); 산염기·전해질·PCV·TP·혈당 감시.",
+    "진통 필수 — 쇠약으로 전형적 통증 반응이 없어도 신중히 적절하게 치료(통증 → 이화, 창상 치유 지연, 패혈증, 원내 질환; Ch.134).",
+    "요약: 마취 전 적극적 안정화, 상시 적절한 감시; 수술 후 승압·변력 지속, 적절한 수액, 진통, 산소, 혈압 감시, 간호로 생존 개선."
+   ]
+  }
+ ]
+}

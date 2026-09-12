@@ -909,6 +909,48 @@
 "title": "Thermal Burn Injury",
 "part": "Part XIV",
 "part_title": "Trauma"
+},
+{
+"id": "sacc3-p15-c131",
+"num": 131,
+"title": "Pain Assessment",
+"part": "Part XV",
+"part_title": "Anesthesia and Pain Management"
+},
+{
+"id": "sacc3-p15-c132",
+"num": 132,
+"title": "Sedation of the Critically Ill Patient",
+"part": "Part XV",
+"part_title": "Anesthesia and Pain Management"
+},
+{
+"id": "sacc3-p15-c133",
+"num": 133,
+"title": "Anesthesia in the Critically Ill Patient",
+"part": "Part XV",
+"part_title": "Anesthesia and Pain Management"
+},
+{
+"id": "sacc3-p15-c134",
+"num": 134,
+"title": "Analgesia and Constant Rate Infusions",
+"part": "Part XV",
+"part_title": "Anesthesia and Pain Management"
+},
+{
+"id": "sacc3-p15-c135",
+"num": 135,
+"title": "Physical Rehabilitation for the Critical Care Patient",
+"part": "Part XV",
+"part_title": "Anesthesia and Pain Management"
+},
+{
+"id": "sacc3-p15-c136",
+"num": 136,
+"title": "Integrative Veterinary Medicine for the Intensive Care Unit Patient",
+"part": "Part XV",
+"part_title": "Anesthesia and Pain Management"
 }
 ]
 }
