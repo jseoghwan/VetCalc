@@ -1133,6 +1133,41 @@
    "title": "Cannabinoid Medicine in Intensive Care Unit Patients",
    "part": "Part XVIII",
    "part_title": "Pharmacology"
+  },
+  {
+   "id": "sacc3-p18-c163",
+   "num": 163,
+   "title": "Anticonvulsants",
+   "part": "Part XVIII",
+   "part_title": "Pharmacology"
+  },
+  {
+   "id": "sacc3-p18-c164",
+   "num": 164,
+   "title": "Antiplatelet Drugs",
+   "part": "Part XVIII",
+   "part_title": "Pharmacology"
+  },
+  {
+   "id": "sacc3-p18-c165",
+   "num": 165,
+   "title": "Anticoagulants",
+   "part": "Part XVIII",
+   "part_title": "Pharmacology"
+  },
+  {
+   "id": "sacc3-p18-c166",
+   "num": 166,
+   "title": "Thrombolytic Agents",
+   "part": "Part XVIII",
+   "part_title": "Pharmacology"
+  },
+  {
+   "id": "sacc3-p18-c167",
+   "num": 167,
+   "title": "Hemostatic Drugs",
+   "part": "Part XVIII",
+   "part_title": "Pharmacology"
   }
  ]
 }

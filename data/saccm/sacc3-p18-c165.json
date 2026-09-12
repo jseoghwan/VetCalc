@@ -1,0 +1,265 @@
+{
+ "id": "sacc3-p18-c165",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part XVIII",
+ "part_title": "Pharmacology",
+ "chapter_num": 165,
+ "title": "Anticoagulants",
+ "author": "Benjamin M. Brainard, VMD, DACVAA, DACVECC; Amy Dixon-Jimenez, DVM, MS, DACVIM (Cardiology)",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "동물은 심장·대사·감염·유전·염증 질환에 이차적으로 과응고 상태에 취약해질 수 있다.",
+    "지혈은 여러 혈장 단백, 세포 인자, 혈관 내피 사이의 정교하게 조절되는 상호작용이다.",
+    "항응고제는 응고 경로의 서로 다른 단계를 늦추거나 억제해 최종적으로 fibrin 형성을 억제한다.",
+    "Unfractionated heparin은 antithrombin과 함께 factor IIa·Xa 활성을 억제하고, 저분자량 heparin은 주로 factor Xa 활성을 손상시킨다.",
+    "Vitamin K 길항제(coumarin 유도체)는 응고인자 II, VII, IX, X의 생성을 손상시킨다.",
+    "Thrombin이나 factor Xa 활성을 직접 억제하는 항응고제는 수의 환자에서 전망이 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "병태생리",
+   "gist": "정상 내피는 TFPI·heparan sulfate·protein C로 혈전 억제"
+  },
+  {
+   "type": "list",
+   "title": "내피의 항혈전 기전",
+   "items": [
+    "내피세포 표면 자체가 항혈전성이며 음전하 표면으로 혈소판 부착을 억제한다.",
+    "Tissue factor pathway inhibitor(TFPI)가 내피세포 표면에 국재해, 생체 혈전 형성의 중요한 개시자인 tissue factor(TF)와 factor VIIa의 전응고 상호작용을 감소시킨다.",
+    "내피세포는 혈관확장제와 혈소판 활성화를 감소·억제하는 물질(prostacyclin[PGI2], ecto-adenosine diphosphatase, nitric oxide)을 능동적으로 분비한다.",
+    "내피 glycocalyx가 혈관 내피세포의 내강면을 덮고 있으며, selectin과 다른 신호 분자 외에 glycosaminoglycan인 heparan sulfate를 고정해 antithrombin(AT)의 항응고 활성을 촉진한다 — heparan sulfate의 존재는 AT에 의한 thrombin, factor Xa, factor IXa 억제를 현저히 증강한다.",
+    "Protein C도 내인성 응고 억제자다. Thrombin이 내피 표면의 thrombomodulin에 결합하면 활성화 protein C가 생성되고, 보조인자 protein S와 함께 factor Va·VIIIa를 불활성화해 fibrin 형성을 줄인다.",
+    "내피세포는 vWF, collagen, 섬유아세포, TF 같은 전혈전 물질이 순환 내 세포·혈장 단백과 접촉하는 것을 막는 물리적 장벽도 형성한다."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "응고 경로 모델",
+   "items": [
+    "응고에 참여하는 혈장 단백은 비활성 순환 형태에서 활성화되어야 한다. 대부분의 가용성 응고인자는 순차적으로 활성화되는 serine protease이며 최종적으로 prothrombin에서 thrombin이 형성된다.",
+    "외인성(TF) 경로: TF와 factor VIIa의 상호작용으로 응고를 개시한다. 임상적으로 prothrombin time(PT)이 factor VII와 공통 경로를 평가한다.",
+    "내인성(접촉 활성화) 경로: 음전하 표면(체내 유치 정맥 카테터 등)과의 상호작용으로 혈관 내 factor XII가 활성화되고 factor XI, IX, VIII이 순차 활성화된다. 이 경로에는 zymogen prekallikrein과 전하를 띤 표면에 결정적 결합 부위를 갖는 보조인자 high-molecular-weight kininogen도 필요하다. 임상적으로 aPTT가 내인성·공통 경로 요소를 평가한다.",
+    "공통 경로: factor Xa와 Va의 순차 활성화로 구성되며 함께 prothrombin(factor II)에서 thrombin을, 최종적으로 fibrinogen(factor I)에서 fibrin을 형성한다.",
+    "세포 기반 모델: 생체 응고의 대부분이 외인성 경로로 개시된다는 근거에 따라 개시(initiation)·증폭(amplification)·전파(propagation)의 3단계로 혈전 형성을 기술하며, 응고 개시에서 TF의 역할과 혈전 형성 지지를 위한 전응고 표면(흔히 활성화된 혈소판 표면)의 필요성을 강조한다.",
+    "TF를 발현하는 세포는 통상 혈관 외에 있지만, 순환 세포(단핵구, 신생물 세포, 내피·혈소판·단핵구에서 방출된 microparticle)도 TF를 발현해 혈관 내에서 응고를 활성화할 수 있다.",
+    "개시: 소량의 factor VII가 활성형으로 혈관 내를 순환하다가 TF 보유 세포에 노출되면 빠르게 TF–FVIIa 복합체를 형성하고, 이 복합체가 더 많은 FVII를 FVIIa로 전환하는 것을 촉매한다. FVIIa–TF 복합체는 소량의 FVa, FIXa, FXa 생성을 지원하고, FXa–FVa 복합체(prothrombinase)의 작용으로 소량의 thrombin이 형성된다.",
+    "증폭: thrombin과 FIXa가 TF 보유 세포 표면에서 근처 혈소판으로 확산한다. Thrombin이 혈소판 표면 수용체에 결합하면 표면이 전응고성이 되고 혈소판 형태가 변하며 전응고인자를 함유한 과립이 방출된다. Thrombin은 FXIa·FVa 생성도 촉진하고, 중요하게 순환 vWF–FVIII 복합체를 분리해 둘 다 응고에 참여할 수 있게 한다.",
+    "전파: 혈소판 표면에서 직접 일어난다. FVIIIa와 FIXa가 tenase 복합체를 형성해 다량의 FXa를 만들고, FXa가 FVa와 상호작용해 prothrombin 분해로 thrombin을 생성한다. 불활성화되지 않으면 thrombin이 fibrinogen에서 fibrin 형성을 촉진하고 FXIa·tenase 복합체 형성에 추가 양성 자극을 되먹임한다. Fibrin 분자는 FXIIIa에 의해 교차결합되어 손상 부위를 덮는 기질을 형성한다."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "혈전 형성 조건과 혈전 종류",
+   "items": [
+    "혈전 형성은 내피 손상, 전신 과응고, 그리고/또는 혈류 변화(정체 포함)가 있을 때 촉진된다 — 1856년 Virchow가 처음 기술한 결정 요인이다.",
+    "동맥 혈전: 대개 고전단 조건에서 형성되며 fibrin 가닥으로 뭉친 혈소판을 포함한다(white clot).",
+    "정맥 혈전: 저전단 조건에서 형성되며 대부분 fibrin과 적혈구로 구성된다(red clot).",
+    "따라서 동맥 혈전 예방 요법은 전통적으로 혈소판 기능을 낮추는 약물을 포함했고, 항응고제는 혈장 응고계에 직접 작용해 사람에서 정맥 혈전의 성장 억제·예방에 고전적으로 사용된다. 정맥·동맥 모두를 표적으로 하려면 항응고제와 항혈소판제의 병용이 적응될 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "적응증과 진단의 한계",
+   "gist": "PT·aPTT는 과응고 검출에 최적화되지 않음"
+  },
+  {
+   "type": "list",
+   "items": [
+    "항응고제는 과응고를 유발하는 질환에서 혈전 예방에 적응된다. 다만 소동물에서 과응고 진단이 어렵고, 진단되더라도 적절한 약물·용량·모니터링에 대한 정보가 부족하다.",
+    "전통적 응고 검사(PT, aPTT)는 과응고 검출에 최적화되어 있지 않으며, 값이 짧아지는 것이 과응고를 시사한다는 근거는 없다.",
+    "AT 활성과 fibrinogen 농도는 내인성 응고 억제자의 소실이나 혈전 형성 기질의 증가를 보여줄 수 있고, fibrin 분해산물과 D-dimer는 과도한 섬유소용해를 검출할 수 있으나, 이들 검사는 개·고양이에서 과응고의 민감한 지표가 아니다.",
+    "점탄성 응고 검사(TEG)는 전혈의 혈전 형성 중 변화를 기술해 전반적 지혈을 평가하는 방법이며, 면역매개 용혈성 빈혈(IMHA), 신생물, DIC 개에서 저응고·과응고를 식별하는 데 사용되었다.",
+    "혈전 형성과 연관되어 항응고 요법의 적응이 될 수 있는 질환: 폐혈전색전증, 문맥 혈전, 비장 정맥 혈전, 대정맥 혈전, 대동맥 혈전색전증, 신생물, IMHA, 전신 염증 상태, sepsis, DIC, 단백소실성 장병증, 단백소실성 신병증(PLN), 간질환, 부신피질기능항진증, 의인성 상태.",
+    "최근 합의문: 혈전 형성 고위험 상태로 개의 IMHA와 PLN, 고양이의 좌심방 확대 또는 좌심방 내 낮은 혈류 속도를 동반한 심근증이 포함된다. 또한 위험 요인이 둘 이상인 개·고양이는 고위험으로 간주되어 항응고 요법에서 이득을 볼 수 있다.",
+    "항응고제는 기존 혈전을 용해하거나 분해를 가속하지 않는다는 점이 중요하다. 기존 혈전의 확장은 막을 수 있으나 혈전은 통상 체내 섬유소용해계 또는 혈전용해제의 국소·전신 투여를 포함한 내과·외과적 관리로 분해된다.",
+    "사람과 소동물에서 혈전 예방에 가장 흔히 쓰이는 항응고제는 heparin, 경구 anti-Xa 길항제, vitamin K 길항제(coumarin 유도체)다."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "TABLE 165.1 개·고양이 항응고제의 보고된 용량",
+   "headers": ["약물", "종", "용량", "비고"],
+   "rows": [
+    ["Warfarin", "개", "0.22 mg/kg PO q12-24h", "PT 또는 INR로 조정"],
+    ["Warfarin", "고양이", "0.06–0.09 mg/kg PO q24h", "PT 모니터링"],
+    ["Unfractionated heparin", "개", "150–300 U/kg SC q8h\n30–50 U/kg/hr IV CRI\n500 U/kg SC q8-12h", "목표 aPTT 또는 anti-Xa 활성에 맞춰 조정 (anti-Xa 활성 0.35–0.7 U/ml 권장)"],
+    ["Unfractionated heparin", "고양이", "50–300 U/kg SC q6-8h\n250 U/kg SC q6h", "SC 요법 시작 전에 IV 부하 용량을 줄 수 있음"],
+    ["저분자량 heparin", "개", "Dalteparin 100–175 U/kg SC q12h\nEnoxaparin 0.8 mg/kg SC q6h", "최적 투여 간격은 미상. Anti-Xa 활성 0.5–1.0 U/ml 권장"],
+    ["저분자량 heparin", "고양이", "Dalteparin 100–200 U/kg SC q6-8h\nEnoxaparin 1.5 mg/kg SC q6-12h", "—"],
+    ["Rivaroxaban", "개", "0.5–1 mg/kg PO q12-24h", "항혈소판 요법과 병용할 때는 1 mg/kg을 초과하지 않도록 권장"],
+    ["Rivaroxaban", "고양이", "0.5–1 mg/kg PO q12-24h", "항혈소판 요법과 병용할 때는 1 mg/kg을 초과하지 않도록 권장"],
+    ["Apixaban", "개", "0.3–0.4 mg/kg PO q8-12h", "광범위하게 연구되지 않음, 신질환에서는 감량"],
+    ["Apixaban", "고양이", "0.1–0.2 mg/kg PO q12h", "광범위하게 연구되지 않음, 신질환에서는 감량"]
+   ],
+   "note": "— = 요약에 해당 내용 없음."
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Vitamin K 길항제 (Warfarin)",
+   "gist": "FVII 반감기 6.2시간 — 첫 징후는 PT 연장"
+  },
+  {
+   "type": "list",
+   "items": [
+    "위치: 사람에서 정맥·동맥 혈전 예방에 오래 사용되어 온 가장 흔한 경구 항응고제다. 경구 투여 시 흡수가 좋고 단백결합이 높으며 순환 반감기가 길다(37시간).",
+    "수의학: 최적 용량과 적응 질환에 대한 정보가 적고, 최근 합의문은 개·고양이에서 일상적 사용을 권장하지 않았다.",
+    "기전: 간의 vitamin K epoxide reductase 활성을 억제한다. FII·FVII·FIX·FX는 간에서 비활성 zymogen으로 생성되어 vitamin K 존재 하에 carboxylation으로 변형되어야 칼슘에 결합해 응고에 참여할 수 있다. 이 과정에서 vitamin K는 vitamin K epoxide로 전환되고, vitamin K epoxide reductase가 이를 활성형으로 환원해야 한다. Warfarin이 있으면 vitamin K가 재순환되지 못해 vitamin K와 의존 응고인자가 빠르게 고갈된다.",
+    "FVII의 반감기가 가장 짧아(6.2시간) warfarin 활성의 첫 임상 징후는 PT 연장이다.",
+    "Protein C·S도 vitamin K를 필요로 하므로 warfarin은 항응고·전응고 효과를 모두 가질 수 있다. 사람에서 warfarin 시작 후 protein C·S 활성이 빠르게 감소해 일시적 전응고 상태가 생기며, 이 기간의 혈전 형성을 막기 위해 warfarin 시작 시 비경구 heparin(UFH 또는 LMWH)을 함께 쓴다.",
+    "개 용량: 통상 0.22 mg/kg PO q12h로 시작한다. 동맥 혈전색전 질환 개에게 INR 2.0–3.0을 목표로 조정해 투여한 연구에서 보행 기능이 개선되어 효과적 치료로 간주되었다.",
+    "고양이 용량: 권장 시작 용량은 0.06–0.09 mg/kg PO q24h. 다양한 원인(주로 심근증)의 동맥 혈전색전 질환 고양이에서 warfarin 치료군의 중앙 생존기간은 항응고제를 받지 않은 고양이와 비슷하거나 더 짧았고, 치명적 출혈을 포함한 이상 출혈 사건 발생률이 높았다.",
+    "전반적으로 개·고양이에서 warfarin 효능에 관한 발표 연구가 부족하다.",
+    "부작용: 가장 흔한 것은 출혈이며 중증일 수 있다. 위장관·요로에서 발생할 수 있고 두개내나 폐 실질에서도 생길 수 있으며, 모두 빠르게 생명을 위협할 수 있다.",
+    "모니터링: 초기에는 주 단위로 PT 측정 또는 INR 산정이 필요하다. INR은 환자의 PT, 검사실 참고 평균 PT, thromboplastin 시약의 상대 강도(international sensitivity index, ISI)로 계산해 검사실 내·간 변이와 시약 강도 차이를 보정하므로 검사실 간 비교가 가능하다. 사람에서 INR 2.0–4.0이 치료 범위로 간주되며 결과에 따라 용량을 조정한다.",
+    "INR 사용은 수의 환자에서 검증되지 않았으나 warfarin 치료 개의 유지 관리에 적용이 보고되었다. 소동물 환자에서 요구되는 집중적 모니터링에 보호자가 따라올 수 있는지도 실제 사용을 제한한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Heparin",
+   "gist": "UFH는 anti-Xa:anti-IIa 1:1, LMWH는 4:1"
+  },
+  {
+   "type": "list",
+   "title": "총론",
+   "items": [
+    "Heparin은 혈전 성장 억제와 혈전 예방에 수의학에서 가장 자주 선택되는 항응고제이며 IV 또는 SC로 투여할 수 있다.",
+    "소·대동물에서 약력학을 평가한 수의 연구는 많으나 특정 질환의 최적 용량에 대한 직접적 예후 기반 정보는 더 제한적이다.",
+    "최근 합의는 개·고양이에서 UFH와 LMWH 중 어느 것을 쓸지 강한 권고를 내리지 않았으나, 예측 가능한 생체이용률과 안전성 때문에 두 종 모두에서 LMWH가 선호될 수 있다."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "UFH vs LMWH",
+   "headers": ["항목", "Unfractionated heparin (UFH)", "저분자량 heparin (LMWH)"],
+   "rows": [
+    ["구성", "분자량 5000–30,000 Da의 이질적 glycosaminoglycan 혼합물", "평균 분자량 5000 Da 내외의 glycosaminoglycan만 포함(이 작은 범위 내에서 이질적 분포)"],
+    ["AT 결합 pentasaccharide", "분자의 약 1/3이 보유", "제제 분자의 25%–30%가 보유"],
+    ["작용", "고분자량 분획이 AT와 큰 3원 복합체를 형성해 FIIa·FXa를 불활성화 (anti-Xa:anti-IIa = 1:1). AT 결합 후 FIXa·FXa·FXIa·FXIIa·FIIa를 억제하며 FIIa·FXa에 가장 강한 효과", "FIIa 억제에 필요한 AT·FIIa 동시 결합이 불가능하나 FXa에 대한 AT 친화도를 증강 (anti-Xa:anti-IIa = 4:1). 주 효과는 FXa"],
+    ["결합·생체이용률", "단백결합이 높고 내피세포·대식세포·혈소판 표면에도 결합해 생체이용률이 변동. AT 활성이 감소한 상태에서는 활성도 낮음", "단백결합이 높지 않고 내피세포에 쉽게 결합하지 않아 생체이용률이 더 예측 가능(사람에서 SC 주사 후 100%에 근접)"],
+    ["투여 빈도·제거", "—", "제거 반감기가 더 길어(3–6시간) 사람에서 12–24시간마다 투여. 주로 신장으로 배설되어 신기능 손상 환자에서 주의 필요"],
+    ["역전", "Protamine sulfate로 1:1 비율로 결합해 역전 가능", "Anti-Xa 활성이 완전히 중화되지 않아 protamine sulfate로 일부만 역전 가능"],
+    ["출혈", "—", "사람에서 UFH보다 주요 출혈 사건이 적음"]
+   ],
+   "note": "Heparin은 AT의 기존 성질을 증강해 작용하므로 간접 항응고제로 간주되며, 내피세포 표면에서 TFPI 방출을 유발하는 직접 항응고 효과도 있다(질환 상태에서 이 기전의 중요성은 현재 알려지지 않음). 수의학에서 가장 자주 쓰이는 LMWH는 dalteparin(Fragmin)과 enoxaparin(Lovenox)이다. 사람에서 낮은 AT 활성은 선천·후천 AT 결핍, 임신, 중증 화상, 간질환, 신증후군, sepsis, estrogen 사용, 특정 항암제 사용과 연관되며, 개에서는 신증후군과 패혈성 복막염에서 낮은 AT 활성이 보고되었다. — = 요약에 해당 내용 없음."
+  },
+  {
+   "type": "list",
+   "title": "모니터링 목표",
+   "items": [
+    "Heparin은 통상 aPTT를 모니터링해 정상·기저치의 1.5–2.0배를 목표로 용량을 조정한다. 이 목표는 사람 의학에서 외삽한 것이며, 한 수의 연구는 개에서 (anti-Xa 활성에 근거해) 기저 aPTT의 1.2–1.5배라는 더 보수적 목표를 제시한다.",
+    "생체 내에서 aPTT와 heparin의 anti-Xa 활성의 관계는 단순하지 않고, 투여 경로, 환자 개체 변이, 검사실 방법론에 영향을 받는 것으로 보인다.",
+    "활성 순환 heparin의 양은 혈장 anti-Xa 활성 측정으로 가장 정확히 감시된다. 사람의 UFH 용량 권고는 anti-Xa 활성에 근거하며 치료 목표 범위는 0.35–0.7 U/ml다.",
+    "LMWH도 anti-Xa 활성에 연계된다 — 예방 목적(기존 혈전이 없으나 혈전 위험을 높이는 시술을 받는 환자)의 제안 범위는 0.1–0.3 U/ml, 혈전이 확인되거나 미세혈전 증거(허혈성 피부 병변 등)가 있는 사람의 치료 목표 범위는 0.5–1.0 U/ml다. Anti-Xa 활성은 일반적으로 투여 4–6시간 후에 측정한다.",
+    "수의학에서는 특정 질환의 혈전 예방·치료를 위한 이들 약물의 효능과 이상적 anti-Xa 활성 수준이 광범위하게 연구되지 않았으나, 과응고 질환 환자에서는 전체적으로 더 높은 UFH 용량이 필요할 수 있다는 근거가 있다. 변형 점탄성 응고 검사와 thrombin 생성 검사가 대안적 모니터링 방법이 될 수 있다."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "개 용량 근거",
+   "items": [
+    "UFH의 예측 불가능한 생체이용률 때문에 개의 혈전 예방 경험적 권고는 150–300 U/kg SC q8h로 다양하다.",
+    "건강한 개에게 UFH 250–500 U/kg을 투여한 연구에서는 연구한 모든 용량에서 목표 anti-Xa 활성에 도달했으나, 500 U/kg SC q8h로 투여했을 때 일부 개에서 혈종이 형성되었다.",
+    "IMHA 개는 목표 anti-Xa 활성을 얻기 위해 더 높은 용량(> 300 U/kg SC)이나 더 잦은 투여(q6h)가 필요할 수 있다. IMHA 개 18마리 연구에서 300 U/kg SC q6h 투여는 치료 시작 후 첫 40시간 뒤 44%에서 치료 추정 anti-Xa 활성(0.35 U/ml)을 달성했다.",
+    "급성 염증이 있는 동물에서도 UFH가 다른 급성기 단백에 결합하는 경향 때문에 더 높은 용량이 필요할 수 있다.",
+    "다른 IMHA 개 연구에서 anti-Xa 활성 0.35–0.7 U/ml를 목표로 개별 조정한 UFH 투여가 고정 용량 투여보다 높은 생존율과 연관되어, 해당 활성 범위를 목표로 하는 것의 이득을 시사했다.",
+    "정맥 혈전 위험이 있다고 판단된 개에서 고용량 UFH(900 U/kg/day IV CRI)는 6마리 중 4마리에서 출혈을 유발했고, 더 낮은 용량(300 U/kg/day CRI)은 목표 anti-Xa 활성에 도달하지 못했다."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "고양이 용량 근거",
+   "items": [
+    "UFH 연구가 제한적이다. 심장질환 고양이는 동맥 혈전색전증 위험이 있으나 이 질환에서 어떤 UFH 프로토콜의 효과도 평가한 연구가 없다.",
+    "경험적 UFH 용량은 50–300 U/kg SC q6-8h 범위다. 건강한 고양이에게 250 U/kg SC q6h를 5일간 투여한 경우 대부분의 고양이에서 연구 기간 대부분 동안 치료 범위(0.35–0.7 U/ml)의 anti-Xa 활성이 나왔다."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "LMWH 용량 근거",
+   "items": [
+    "개·고양이에서 연구되었으나 최적 용량과 투여 간격은 아직 알려지지 않았고, 임상에서는 약가도 고려 사항이다.",
+    "개: TF 유발 DIC 모델에서 dalteparin을 IV CRI로 투여해 anti-Xa 활성 0.6–0.9 U/ml를 만들었고 목표 달성이 덜 심한 혈액학적 변화와 연관되었다.",
+    "ICU 개 연구에서 dalteparin 100 U/kg SC q12h는 혈장 anti-Xa 활성 0.5 U/ml 초과를 달성하지 못했다. Dalteparin 175 U/kg SC q12h를 사용한 다른 연구는 투여 2·4시간 후 평균 혈장 anti-Xa 활성이 0.5–1.0 U/ml였으나, 과도한 항응고 없이 투여 간격 전체에서 치료 농도를 유지하려면 더 낮은 용량을 더 자주 주는 것이 나을 것이라고 제시했다.",
+    "Enoxaparin 0.8 mg/kg SC q6h를 받은 개는 연구 기간(36시간) 동안 0.5–2.0 U/ml 범위의 일관된 anti-Xa 활성을 보였다.",
+    "고양이: dalteparin과 enoxaparin 모두 흡수·제거가 빨라 잦은 주사가 필요하다. 고양이에서 dalteparin의 SC 주사 후 생체이용률은 약 100%다.",
+    "Dalteparin 100 U/kg SC q12h는 목표 anti-Xa 활성(0.3–0.6 U/ml)을 신뢰성 있게 만들지 못했고, 75 U/kg SC q6h는 주사 2시간 후 0.5–1.0 U/ml의 일시적 활성을 만들었다.",
+    "다른 연구도 고양이에서 치료 범위 유지를 위해 잦은 투여가 필요함을 확인했다 — dalteparin 150 U/kg SC q4h와 enoxaparin 1.5 mg/kg SC q6h가 건강한 고양이에서 목표 anti-Xa 활성을 신뢰성 있게 달성했다.",
+    "Dalteparin은 고양이에서 내성이 좋으나 동맥 혈전색전 질환의 발생 예방, 중증도 감소, 빈도 감소를 입증하지는 못했다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "직접 thrombin 억제제",
+   "gist": "Fibrin 결합 thrombin에도 작용하며 AT 보조인자 불필요"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Thrombin의 두 부위 중 하나에 결합하는 소분자로, 사람에서 heparin 유발 혈소판감소증이나 기타 heparin 관련 합병증을 경험한 환자를 중심으로 동맥·정맥 혈전 예방에 적응된다.",
+    "약물: argatroban(상품명 없음), dabigatran(Pradaxa), lepirudin(Refludan), bivalirudin(Angiomax), ximelagatran(Exanta).",
+    "특징: fibrin에 결합된 thrombin과 순환 thrombin 모두에 활성이 있고 이 억제에 AT를 보조인자로 필요로 하지 않는다. Warfarin만큼 약물 상호작용이 많지 않고 INR로 집중 모니터링할 필요가 없어 혈전 예방의 매력적 대안이다.",
+    "Dabigatran은 심방세동 사람에서 혈전색전증·뇌졸중 예방에 warfarin에 비열등함이 확인되었으나 약가가 여전히 제한적이다.",
+    "Argatroban은 IV 투여가 가능하며 개의 실험적 심폐우회 모델에서 연구되어, 심폐우회 회로 사용 중 안전하며 응고계 활성화를 감소시키는 것으로 나타났다.",
+    "수의 종에서 직접 thrombin 억제제 사용에 대한 발표된 임상 연구는 없다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Factor Xa 억제제",
+   "gist": "Rivaroxaban 최고 효과 1.5–2시간, 고양이는 3시간"
+  },
+  {
+   "type": "list",
+   "title": "Rivaroxaban",
+   "items": [
+    "사람에서 전고관절치환술 후 정맥 혈전색전증 예방과 심방세동 환자의 뇌졸중 예방으로 승인된 경구 FXa 억제제 계열이며, UFH·LMWH와 달리 FXa 억제 활성에 AT를 필요로 하지 않는다.",
+    "Rivaroxaban(Xarelto)은 직접 FXa 억제제로 사람에서 경구 투여 후 생체이용률이 약 80%다. ROCKET AF 연구에서 심방세동 환자의 뇌졸중·전신 혈전색전증 예방에 warfarin에 비열등했고, 두개내 출혈과 치명적 출혈 위험은 더 낮았다.",
+    "개·고양이 혈액의 in vitro 연구에서 사람과 유사한 항응고 효과가 확인되었다.",
+    "개: 건강한 비글 24마리에서 경구 2 mg/kg PO q12h 또는 q24h를 1–2회 투여했을 때 내성이 좋았고, 최고 항응고 효과는 투여 1.5–2시간 후에 나타났다. 2 mg/kg PO q8h는 24시간 동안 확인 가능한 항응고 활성을 유지했다.",
+    "모니터링: FXa 억제 활성의 gold standard는 발색 anti-Xa 검사다. PT와 TEG 결과가 anti-FXa 활성과 상관할 수 있으며, 저자들은 PT 값과 TEG의 R 값이 1.5–1.9배 연장되는 것이 치료 농도와 상관한다고 결론지었다. 활성화에 더 낮은 농도의 TF를 사용하는 희석 PT 검사가 rivaroxaban의 존재·항응고 효과 판정에 더 민감할 수 있다.",
+    "고양이: 건강한 고양이에 1, 2.5, 5 mg PO(대략 0.2, 0.5, 1 mg/kg)의 표준 용량을 투여해 용량 의존적 anti-Xa 활성과 혈장 약물 농도가 확인되었고, 2.5 또는 5 mg 단회 투여 후 24시간까지 항응고 효과가 유지되었다. 최대 항응고 효과는 경구 투여 3시간 후에 나타났고, 2.5·5 mg군이 사람 목표 혈장 농도(140–260 ng/ml)에 도달할 가능성이 가장 높았으나 투여 간격의 첫 6–8시간에 한정되었다.",
+    "임상 근거: 병든 개·고양이를 대상으로 한 대조 전향 시험은 아직 없다(진행 중). 증례군에서 폐혈전색전증 개 2마리와 전신 혈전 개 2마리를 치료했고 출혈과 연관된 주요·경미한 이상사건이 없었으며, 다른 항응고제가 효과가 없었던 상황에서 임상징후 완화에 효과적으로 보였다.",
+    "Rivaroxaban 0.7 mg/kg PO q24h는 pacemaker lead 혈전에 이차적인 전대정맥 증후군 개에서 clopidogrel과 병용되었고, 원발성으로 추정되는 IMHA 개 소규모 코호트에서는 0.9 mg/kg PO q24h가 사용되었다."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Apixaban",
+   "items": [
+    "또 다른 경구 FXa 억제제로 사람에서 안전해 보이며 수용 가능한 이상사건 프로파일을 갖는다.",
+    "사람의 in vitro 모델에서 TF 응고 경로를 통한 thrombin 생성을 막아 혈소판 응집도 억제할 수 있음이 확인되었다.",
+    "심부정맥혈전이 있거나 무릎 치환술 후 전신 혈전색전증 예방이 필요한 사람에서 현재 사용되는 항응고제와 동등하거나 우수한 효과를 보였다.",
+    "개·고양이에서 경구 투여 후 평가되었으며, 높은 생체이용률과 짧은 반감기를 보였고 FXa 활성이 혈장 약물 농도와 직접적인 역관계로 억제되었다.",
+    "Anti-Xa 약물은 수의 종에서 매력적이고 안전한 경구 항응고 수단이 될 수 있으나, 적응증과 안전성 프로파일을 더 정의하려면 전향 연구가 필요하다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "결론",
+   "gist": "최적 약물·용량·모니터링 목표 모두 미확립"
+  },
+  {
+   "type": "list",
+   "items": [
+    "응고 이상은 소동물 임상에서 흔히 만난다. 과응고·혈전과 연관된 질환으로 IMHA, 단백소실성 장병증, PLN, 신생물, 전신 염증, 부신피질기능항진증, 심장질환이 있다.",
+    "이들 질환에 가장 효과적인 항응고제와 용량 요법은 아직 대조 전향 연구로 규명되지 않았다.",
+    "또한 항응고 요법 모니터링의 선택 검사와 aPTT·anti-Xa 활성·TEG의 이상적 목표값도 아직 밝혀지지 않았다.",
+    "새로운 항응고제가 등장하면서 혈전의 치료·예방이 수의 종에 더 맞춤화될 수 있을 것이다."
+   ]
+  }
+ ]
+}
