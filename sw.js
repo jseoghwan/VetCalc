@@ -1,7 +1,7 @@
 /* VECC Calculation Tools — service worker
    업데이트 방법: 파일을 수정해 올릴 때 아래 VERSION 숫자를 하나 올리면
    모든 기기가 다음 접속 때 새 파일을 받습니다. */
-const VERSION = 'v17';
+const VERSION = 'v18';
 const CACHE = 'kuvecc-' + VERSION;
 /* 교재·자료 데이터(data/) 저장소. js/data-sync.js가 채우며 VERSION과 무관하게 유지됩니다. */
 const DATA_CACHE = 'kuvecc-data';
