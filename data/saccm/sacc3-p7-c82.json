@@ -1,13 +1,35 @@
-{"id":"sacc3-p7-c82","book":"Small Animal Critical Care Medicine, 3rd ed.","book_short":"SACCM 3판","part":"Part VII","part_title":"Endocrine Disorders","chapter_num":82,"title":"Hypoadrenocorticism","author":"Jamie M. Burkitt Creedon, DVM, DACVECC","format":2,"blocks":[
-{"type":"callout","title":"KEY POINTS","items":[
+{
+"id": "sacc3-p7-c82",
+"book": "Small Animal Critical Care Medicine, 3rd ed.",
+"book_short": "SACCM 3판",
+"part": "Part VII",
+"part_title": "Endocrine Disorders",
+"chapter_num": 82,
+"title": "Hypoadrenocorticism",
+"author": "Jamie M. Burkitt Creedon, DVM, DACVECC",
+"format": 2,
+"blocks": [
+{
+"type": "callout",
+"title": "KEY POINTS",
+"items": [
 "원발성 hypoadrenocorticism(Addison's disease)은 부신 기능부전, 이차성은 뇌하수체·시상하부 기능 이상에 의함.",
 "젊은–중년 암컷 개에서 호발, 고양이는 드묾. 일부 품종이 과다대표되나 잡종견도 많음.",
 "확진은 ACTH stimulation test, 이상적으로 내인성 ACTH 농도 측정을 병행.",
 "위기 동물 치료: 적극적이고 적절한 수액 소생 후 호르몬 보충.",
 "ECG 변화를 일으키는 고칼륨혈증은 생명을 위협할 수 있어 신속히 치료.",
-"평생 호르몬 보충 시 장기 예후는 매우 좋음."]},
-{"type":"heading","level":2,"text":"생리 · 분류","gist":"원발성은 대개 glucocorticoid+mineralocorticoid 결핍, 이차성은 전해질 이상 드묾"},
-{"type":"list","items":[
+"평생 호르몬 보충 시 장기 예후는 매우 좋음."
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "생리 · 분류",
+"gist": "원발성은 대개 glucocorticoid+mineralocorticoid 결핍, 이차성은 전해질 이상 드묾"
+},
+{
+"type": "list",
+"items": [
 "Cortisol ▸ glucocorticoid. 일주기에 따라 소량, 생리적 스트레스 시 다량 분비. 탄수화물·지질·단백 대사 조절, 면역 기능 조절, catecholamine 생산과 adrenergic receptor 기능 보장.",
 "HPA axis ▸ 시상하부 CRH → 뇌하수체 전엽 ACTH → 부신피질 zona fasciculata·zona reticularis에서 cortisol 생성·분비 → CRH·ACTH에 음성 되먹임.",
 "Aldosterone ▸ zona glomerulosa에서 분비되는 mineralocorticoid. 정상 혈량 유지와 신장 K 배설 증강.",
@@ -15,91 +37,349 @@
 "Aldosterone은 고칼륨혈증에 직접 반응해 분비되며 ACTH에는 최소한만 반응.",
 "원발성(Addison's disease) ▸ 부신 기능 이상. 대부분 glucocorticoid·mineralocorticoid 모두 결핍. Atypical 원발성은 glucocorticoid만 결핍 — 이후 mineralocorticoid 결핍으로 진행 가능, 드물게 mineralocorticoid 결핍이 먼저 발생.",
 "이차성 ▸ 시상하부(CRH) 또는 뇌하수체(ACTH) 기능 이상. Aldosterone은 주로 renin-angiotensin과 혈청 K로 조절되므로 전형적 원발성의 전해질 이상이 대개 없음.",
-"개에서 드물고 고양이에서 매우 드묾. 더 흔한 질환들과 임상상이 비슷함."]},
-{"type":"heading","level":2,"text":"발생 대상 · 원인","gist":"개 평균 발병 약 4세, 암컷·중성화 위험↑; 원발성은 대부분 면역매개 추정"},
-{"type":"table","title":"발생 대상","headers":["항목","개","고양이"],"rows":[
-["나이","젊은–중년, 평균 발병 약 4 years (2 months령부터 노령견까지 보고). Glucocorticoid 단독 결핍은 전형적 형태보다 발병 시 나이가 많을 수 있음","젊은–중년, 1 to 14 years"],
-["성별","암컷 > 수컷 (일부 품종은 성 소인 없음). 중성화 개가 intact보다 위험 높음","성 소인 없음"],
-["품종","보고마다 다름: Portuguese Water Dog, Standard Poodle, Great Dane, Bearded Collie, West Highland White·Wheaton·Cairn Terrier, Cocker Spaniel, Rottweiler","거의 모두 잡종묘"],
-["기타","—","원발성은 드묾. Glucocorticoid 단독 hypoadrenocorticism 고양이 보고 1건"]],
-"note":"— = 요약에 해당 내용 없음"},
-{"type":"table","title":"원인","headers":["유형","원인"],"rows":[
-["원발성","자연 발생은 원인 불명이나 대부분 면역매개로 추정 — 사람은 부신피질의 면역매개 파괴, 일부 개에서 스테로이드 합성 효소 자가항체 발견, 조직학적으로 위축·백혈구 침윤·섬유화.\n기타: 수술적 부신적출, 종양·감염체의 부신 침윤, 외상·출혈·저관류, 의인성(mitotane, trilostane, ketoconazole)"],
-["이차성","흔히 의인성 — 장기 glucocorticoid 치료 후 중단 (장기 투여가 시상하부·뇌하수체에 음성 되먹임 → ACTH 감소 → 부신피질 위축).\n기타: 시상하부·뇌하수체 종양, 면역매개 hypophysitis, 외상, 뇌하수체 절제"]]},
-{"type":"heading","level":2,"text":"임상 양상","gist":"수일–수주의 비특이 증상; 전형적 위기는 허탈·쇼크·서맥·저체온"},
-{"type":"list","items":[
+"개에서 드물고 고양이에서 매우 드묾. 더 흔한 질환들과 임상상이 비슷함."
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "발생 대상 · 원인",
+"gist": "개 평균 발병 약 4세, 암컷·중성화 위험↑; 원발성은 대부분 면역매개 추정"
+},
+{
+"type": "table",
+"title": "발생 대상",
+"headers": [
+"항목",
+"개",
+"고양이"
+],
+"rows": [
+[
+"나이",
+"젊은–중년, 평균 발병 약 4 years (2 months령부터 노령견까지 보고). Glucocorticoid 단독 결핍은 전형적 형태보다 발병 시 나이가 많을 수 있음",
+"젊은–중년, 1 to 14 years"
+],
+[
+"성별",
+"암컷 > 수컷 (일부 품종은 성 소인 없음). 중성화 개가 intact보다 위험 높음",
+"성 소인 없음"
+],
+[
+"품종",
+"보고마다 다름: Portuguese Water Dog, Standard Poodle, Great Dane, Bearded Collie, West Highland White·Wheaton·Cairn Terrier, Cocker Spaniel, Rottweiler",
+"거의 모두 잡종묘"
+],
+[
+"기타",
+"—",
+"원발성은 드묾. Glucocorticoid 단독 hypoadrenocorticism 고양이 보고 1건"
+]
+],
+"note": "— = 요약에 해당 내용 없음"
+},
+{
+"type": "table",
+"title": "원인",
+"headers": [
+"유형",
+"원인"
+],
+"rows": [
+[
+"원발성",
+"자연 발생은 원인 불명이나 대부분 면역매개로 추정 — 사람은 부신피질의 면역매개 파괴, 일부 개에서 스테로이드 합성 효소 자가항체 발견, 조직학적으로 위축·백혈구 침윤·섬유화.\n기타: 수술적 부신적출, 종양·감염체의 부신 침윤, 외상·출혈·저관류, 의인성(mitotane, trilostane, ketoconazole)"
+],
+[
+"이차성",
+"흔히 의인성 — 장기 glucocorticoid 치료 후 중단 (장기 투여가 시상하부·뇌하수체에 음성 되먹임 → ACTH 감소 → 부신피질 위축).\n기타: 시상하부·뇌하수체 종양, 면역매개 hypophysitis, 외상, 뇌하수체 절제"
+]
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "임상 양상",
+"gist": "수일–수주의 비특이 증상; 전형적 위기는 허탈·쇼크·서맥·저체온"
+},
+{
+"type": "list",
+"items": [
 "임상상이 흔히 모호하고 신장·위장관 질환 등과 비슷. 전형적 증상과 초기 검사가 비특이적이며 많은 환자가 전형적 증상을 모두 갖지는 않음.",
 "병력 ▸ 수일–수주간 식욕 감소, 무기력, GI 장애, 체중감소. 토혈·혈변·흑색변 형태의 GI 출혈 가능. PU/PD, 쇠약, 떨림, 통증, 근경련 등. 증상이 모호해 특별한 전조 없이 급성 위기로 내원하기도 함.",
 "신체검사 ▸ hypoaldosteronism 동반 여부와 중증도·기간에 따라 다름. 가장 흔함: 무기력, 쇠약, 불량한 체형·피모, 탈수.",
 "전형적 Addisonian crisis (glucocorticoid + mineralocorticoid 결핍) ▸ 허탈, 저혈량 쇼크, GI 출혈, 복통, 서맥(상대적 또는 절대적), 저체온이 흔함.",
-"이차성·atypical 원발성 ▸ 혈관내 용적과 정상 전해질을 유지할 aldosterone이 있어 위기 가능성이 낮음."]},
-{"type":"heading","level":2,"text":"임상병리 · ECG · 영상","gist":"Na:K <28:1, 고K 거의 항상, 저Na 약 80%, USG <1.030"},
-{"type":"table","title":"임상병리 소견","headers":["항목","소견","비고"],"rows":[
-["Na:K ratio","정상 27:1 to 40:1 → 전형적 원발성(aldosterone 결핍) 치료 전 대개 <28:1","Glucocorticoid 단독 결핍은 전해질 변화 가능성 낮음. 낮은 Na:K는 신부전·신후성 폐색, 중증 GI 질환, 기생충 감염, 임신, 체강 삼출 등에서도 가능."],
-["전해질","고칼륨혈증 거의 항상; 저나트륨혈증 약 80% (Addisonian 개)","—"],
-["질소혈증·고인산혈증","대부분 내원 시 존재","일반적으로 저혈량에 기인"],
-["요비중","대부분 부적절하게 낮음 (<1.030)","Na 보유 부족에 따른 신수질 washout; mineralocorticoid 보충으로 농축 능력 회복"],
-["빈혈","경도–중등도, 대개 비재생성 (cortisol의 골수 영양 효과 결여)","심한 GI 출혈 동반 시 중증 빈혈(비재생성일 수 있음). 탈수·혈액농축으로 초기에 가려질 수 있음."],
-["백혈구","'Reverse stress leukogram': 상대·절대 호중구감소, 림프구증가, 호산구증가","중증질환에서 흔한 호중구증가·림프구감소도 가능. 아픈 동물의 정상 leukogram이나 reverse stress leukogram은 의심을 높임."],
-["Glucose","저혈당 (중증 가능)","고혈당도 보고되어 진단을 배제하지 않음"],
-["Calcium","총·이온화 고칼슘혈증","기전 불명"],
-["산-염기","대사성 산증 흔함","주로 aldosterone이 증강하는 신세뇨관 H⁺ 배설 감소"],
-["기타","저알부민혈증, 저콜레스테롤혈증","—"]],
-"note":"가장 흔한 소견: Na/K ratio 감소, 부적절하게 낮은 USG를 동반한 질소혈증, 빈혈, 중증도에 비해 림프구가 높고 호중구가 낮은 leukogram. — = 요약에 해당 내용 없음"},
-{"type":"list","items":[
+"이차성·atypical 원발성 ▸ 혈관내 용적과 정상 전해질을 유지할 aldosterone이 있어 위기 가능성이 낮음."
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "임상병리 · ECG · 영상",
+"gist": "Na:K <28:1, 고K 거의 항상, 저Na 약 80%, USG <1.030"
+},
+{
+"type": "table",
+"title": "임상병리 소견",
+"headers": [
+"항목",
+"소견",
+"비고"
+],
+"rows": [
+[
+"Na:K ratio",
+"정상 27:1 to 40:1 → 전형적 원발성(aldosterone 결핍) 치료 전 대개 <28:1",
+"Glucocorticoid 단독 결핍은 전해질 변화 가능성 낮음. 낮은 Na:K는 신부전·신후성 폐색, 중증 GI 질환, 기생충 감염, 임신, 체강 삼출 등에서도 가능."
+],
+[
+"전해질",
+"고칼륨혈증 거의 항상; 저나트륨혈증 약 80% (Addisonian 개)",
+"—"
+],
+[
+"질소혈증·고인산혈증",
+"대부분 내원 시 존재",
+"일반적으로 저혈량에 기인"
+],
+[
+"요비중",
+"대부분 부적절하게 낮음 (<1.030)",
+"Na 보유 부족에 따른 신수질 washout; mineralocorticoid 보충으로 농축 능력 회복"
+],
+[
+"빈혈",
+"경도–중등도, 대개 비재생성 (cortisol의 골수 영양 효과 결여)",
+"심한 GI 출혈 동반 시 중증 빈혈(비재생성일 수 있음). 탈수·혈액농축으로 초기에 가려질 수 있음."
+],
+[
+"백혈구",
+"'Reverse stress leukogram': 상대·절대 호중구감소, 림프구증가, 호산구증가",
+"중증질환에서 흔한 호중구증가·림프구감소도 가능. 아픈 동물의 정상 leukogram이나 reverse stress leukogram은 의심을 높임."
+],
+[
+"Glucose",
+"저혈당 (중증 가능)",
+"고혈당도 보고되어 진단을 배제하지 않음"
+],
+[
+"Calcium",
+"총·이온화 고칼슘혈증",
+"기전 불명"
+],
+[
+"산-염기",
+"대사성 산증 흔함",
+"주로 aldosterone이 증강하는 신세뇨관 H⁺ 배설 감소"
+],
+[
+"기타",
+"저알부민혈증, 저콜레스테롤혈증",
+"—"
+]
+],
+"note": "가장 흔한 소견: Na/K ratio 감소, 부적절하게 낮은 USG를 동반한 질소혈증, 빈혈, 중증도에 비해 림프구가 높고 호중구가 낮은 leukogram. — = 요약에 해당 내용 없음"
+},
+{
+"type": "list",
+"items": [
 "ECG ▸ 저혈량 증상 또는 확인된 고칼륨혈증 환자에서 시행. Hypoadrenal 환자는 고칼륨혈증 유무와 관계없이 서맥 가능. 고칼륨혈증 시: 서맥, P파 감소·소실, 'tented' T파, 넓거나 기괴한 QRS, 심실세동, 무수축. 기타 부정맥도 보고.",
 "방사선 ▸ 소심장(microcardia), 폐혈관 크기 감소, 작은 후대정맥, 소간증. Addisonian crisis 개의 약 80%가 하나 이상 보임.",
-"복부 초음파 ▸ 정상보다 부신 두께 감소 가능."]},
-{"type":"heading","level":2,"text":"진단","gist":"ACTH stimulation(개 250·고양이 125 mcg) + 내인성 ACTH"},
-{"type":"table","title":"ACTH stimulation test 프로토콜","headers":["프로토콜","개","고양이"],"rows":[
-["표준 (cosyntropin)","250 mcg per dog, IM 또는 IV; 투여 전·60 minutes 후 cortisol","125 mcg per cat, IM 권장; 투여 전·30·60 minutes 후 cortisol"],
-["저용량 (cosyntropin)","1 mcg/kg 또는 5 mcg/kg IV — 표준 검사만큼 효과적으로 보임","—"],
-["ACTH gel (cosyntropin 없을 때)","2.2 IU/kg IM; 투여 전·2 hours 후 cortisol","2.2 IU/kg IM; 투여 전·1·2 hours 후 cortisol"]],
-"note":"— = 요약에 해당 내용 없음"},
-{"type":"list","items":[
+"복부 초음파 ▸ 정상보다 부신 두께 감소 가능."
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "진단",
+"gist": "ACTH stimulation(개 250·고양이 125 mcg) + 내인성 ACTH"
+},
+{
+"type": "table",
+"title": "ACTH stimulation test 프로토콜",
+"headers": [
+"프로토콜",
+"개",
+"고양이"
+],
+"rows": [
+[
+"표준 (cosyntropin)",
+"250 mcg per dog, IM 또는 IV; 투여 전·60 minutes 후 cortisol",
+"125 mcg per cat, IM 권장; 투여 전·30·60 minutes 후 cortisol"
+],
+[
+"저용량 (cosyntropin)",
+"1 mcg/kg 또는 5 mcg/kg IV — 표준 검사만큼 효과적으로 보임",
+"—"
+],
+[
+"ACTH gel (cosyntropin 없을 때)",
+"2.2 IU/kg IM; 투여 전·2 hours 후 cortisol",
+"2.2 IU/kg IM; 투여 전·1·2 hours 후 cortisol"
+]
+],
+"note": "— = 요약에 해당 내용 없음"
+},
+{
+"type": "list",
+"items": [
 "내인성 ACTH ▸ 원발성 vs 이차성 감별, 특히 전해질이 정상인 hypoadrenal 환자에서 중요. 내인성 ACTH 낮음 → 이차성(mineralocorticoid 결핍 발생 가능성 낮음). 전해질 정상 + 내인성 ACTH 증가 → atypical 원발성(mineralocorticoid 결핍으로 진행 가능 → 전해질 면밀 모니터링).",
 "내인성 ACTH 검체는 외인성 ACTH 투여 전 기저 cortisol 검체와 함께 채혈.",
 "외인성 glucocorticoid ▸ 대부분 기저·자극 cortisol과 내인성 ACTH에 영향 → 최근 스테로이드 투여 병력이 있으면 glucocorticoid를 보류하고 대증 치료하면서 검사를 미룸.",
-"위기 환자 ▸ 무엇보다 수액 소생이 먼저. 스테로이드 투여 전에 내인성 ACTH 채혈과 ACTH stimulation test를 마치는 것이 적절."]},
-{"type":"table","title":"선별 검사","headers":["검사","해석","한계"],"rows":[
-["기저(basal·resting) cortisol","단일 혈장·혈청 cortisol >2 mcg/dl이면 hypoadrenocorticism 가능성 낮음 (HPA axis를 바꾸는 약물 미투여 시). 현재 가장 흔한 선별 검사","많은 정상 개도 <2 mcg/dl. 채혈 전 불쾌한 소음(wet-dry vacuum) 노출(연속·간헐)도 <2 mcg/dl인 정상 개 수를 바꾸지 못함"],
-["Na:K ratio + 림프구 수","낮은 Na:K + 상대적으로 높은 림프구 수가 Na:K 단독보다 정확","—"],
-["컴퓨터 모델","일상 CBC, 생화학, 기저 cortisol을 통합해 Na:K + 림프구 조합보다 정확히 예측","—"],
-["요 Na (저Na 개, pilot)","Hypoadrenocorticism 개는 요 Na <30 mmol/L일 가능성이 낮아 비부신 질환 저Na 개와 구분","Pilot study"],
-["Cortisol:ACTH ratio","원발성 hypoadrenocorticism 선별","Addison's disease를 모방하는 비부신 질환에서 특히 위양성 가능"],
-["Plasma aldosterone/plasma renin activity ratio","전형적 vs atypical 원발성 구분","—"]],
-"note":"합성 ACTH가 비쌀 수 있어 확진 검사 시행 여부 결정을 위한 선별법이 연구됨. — = 요약에 해당 내용 없음"},
-{"type":"heading","level":2,"text":"치료 — 수액 · 고칼륨혈증","gist":"Na 130–140 mEq/L 균형 전해질액이 0.9% NaCl보다 적절할 수 있음"},
-{"type":"list","items":[
+"위기 환자 ▸ 무엇보다 수액 소생이 먼저. 스테로이드 투여 전에 내인성 ACTH 채혈과 ACTH stimulation test를 마치는 것이 적절."
+]
+},
+{
+"type": "table",
+"title": "선별 검사",
+"headers": [
+"검사",
+"해석",
+"한계"
+],
+"rows": [
+[
+"기저(basal·resting) cortisol",
+"단일 혈장·혈청 cortisol >2 mcg/dl이면 hypoadrenocorticism 가능성 낮음 (HPA axis를 바꾸는 약물 미투여 시). 현재 가장 흔한 선별 검사",
+"많은 정상 개도 <2 mcg/dl. 채혈 전 불쾌한 소음(wet-dry vacuum) 노출(연속·간헐)도 <2 mcg/dl인 정상 개 수를 바꾸지 못함"
+],
+[
+"Na:K ratio + 림프구 수",
+"낮은 Na:K + 상대적으로 높은 림프구 수가 Na:K 단독보다 정확",
+"—"
+],
+[
+"컴퓨터 모델",
+"일상 CBC, 생화학, 기저 cortisol을 통합해 Na:K + 림프구 조합보다 정확히 예측",
+"—"
+],
+[
+"요 Na (저Na 개, pilot)",
+"Hypoadrenocorticism 개는 요 Na <30 mmol/L일 가능성이 낮아 비부신 질환 저Na 개와 구분",
+"Pilot study"
+],
+[
+"Cortisol:ACTH ratio",
+"원발성 hypoadrenocorticism 선별",
+"Addison's disease를 모방하는 비부신 질환에서 특히 위양성 가능"
+],
+[
+"Plasma aldosterone/plasma renin activity ratio",
+"전형적 vs atypical 원발성 구분",
+"—"
+]
+],
+"note": "합성 ACTH가 비쌀 수 있어 확진 검사 시행 여부 결정을 위한 선별법이 연구됨. — = 요약에 해당 내용 없음"
+},
+{
+"type": "heading",
+"level": 2,
+"text": "치료 — 수액 · 고칼륨혈증",
+"gist": "Na 130–140 mEq/L 균형 전해질액이 0.9% NaCl보다 적절할 수 있음"
+},
+{
+"type": "list",
+"items": [
 "응급·ICU로 내원한 Addison 환자는 위기일 가능성이 높음 → 가장 중요한 치료는 적절한 IV 수액. 신체검사와 집중 모니터링에 따라 쇼크 치료 (Chapter 6, 68).",
 "0.9% NaCl ▸ 수분·Na로 결손을 보충하고 K가 없어 전통적으로 권장.",
 "그러나 저Na 환자는 혈청 Na가 너무 빨리 오르면 심한 신경학적 결과 가능 — hypoadrenocorticism 치료 개에서 보고 (Chapter 55).",
 "→ Na 농도가 낮은(130 to 140 mEq/L) 균형 전해질 용액이 더 적절할 가능성. Na 급변 위험을 줄일 뿐 아니라 리터당 K 4 or 5 mEq를 포함함에도 0.9% NaCl보다 혈청 K를 더 빨리 낮춤.",
 "유효순환량 회복과 사구체 여과 개선이 신장의 K 제거를 도움. 잦은 혈청 전해질 측정과 신경학적 검사로 치료 조정.",
 "고칼륨혈증 ▸ 생명을 위협하는 부정맥 가능 — ECG 변화가 있으면 신속 치료. 심실세동·무수축은 비순환 리듬으로 즉시 CPR (Chapter 4).",
-"저혈당이 흔하므로 고칼륨혈증에 insulin을 쓸 때는 충분한 dextrose 보충과 함께 신중히. 최근 연구: Addisonian 개 16마리의 고칼륨혈증을 수액과 hydrocortisone만으로 관리. 구체적 전략은 Chapter 56."]},
-{"type":"heading","level":2,"text":"치료 — 초기 호르몬 보충","gist":"DOCP 2.2 mg/kg IM/SC 1회 또는 hydrocortisone CRI; glucocorticoid 병용"},
-{"type":"paragraph","text":"내인성 ACTH 측정과 ACTH stimulation test 후, 급성 부신 위기가 강하게 의심되면 mineralocorticoid 치료 시작. Glucocorticoid 보충도 위기 중 적절하며 대개 장기적으로도 필요."},
-{"type":"table","title":"초기 호르몬 보충","headers":["약물","경로","용량","비고"],"rows":[
-["Desoxycorticosterone pivalate (DOCP)","IM 또는 SC","2.2 mg/kg once","Aldosterone 결핍 확인 또는 낮은 Na:K 환자의 mineralocorticoid 보충"],
-["Hydrocortisone (mineralocorticoid 목적)","IV CRI","0.5 to 0.625 mg/kg/hour","Mineralocorticoid·glucocorticoid 활성이 동등 — 응급 환자에서 더 빠른 mineralocorticoid 효과. 30마리 증례군에서 12 to 24 hours 내 고칼륨혈증 빠르게 해소."],
-["Fludrocortisone","PO","0.02 mg/kg q24h","경구 제형만 있어 구토 시 어려움. 고칼륨혈증 조절에 부족한 용량에서도 흔히 의인성 hyperadrenocorticism 유발."],
-["Hydrocortisone (glucocorticoid)","IV","초기 1.25 mg/kg once → 0.5 to 1 mg/kg q6h, 점감","내인성 cortisol에 가장 가까움"],
-["Prednisolone","IV","초기 1 to 2 mg/kg → 0.5 to 1 mg/kg q8h, 점감","—"],
-["Dexamethasone","IV","초기 0.1 mg/kg → 0.05 mg/kg q12-24h, 점감","—"]],
-"note":"Hydrocortisone, prednisolone, dexamethasone 모두 주사제가 있고 어느 것이든 효과적. — = 요약에 해당 내용 없음"},
-{"type":"heading","level":2,"text":"지지 치료 · 반응 시간","gist":"개는 수 시간 내 반응, 고양이는 3–5일 걸릴 수 있음"},
-{"type":"list","items":[
+"저혈당이 흔하므로 고칼륨혈증에 insulin을 쓸 때는 충분한 dextrose 보충과 함께 신중히. 최근 연구: Addisonian 개 16마리의 고칼륨혈증을 수액과 hydrocortisone만으로 관리. 구체적 전략은 Chapter 56."
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "치료 — 초기 호르몬 보충",
+"gist": "DOCP 2.2 mg/kg IM/SC 1회 + glucocorticoid 병용"
+},
+{
+"type": "paragraph",
+"text": "내인성 ACTH 측정과 ACTH stimulation test 후, 급성 부신 위기가 강하게 의심되면 mineralocorticoid 치료 시작. Glucocorticoid 보충도 위기 중 적절하며 대개 장기적으로도 필요."
+},
+{
+"type": "table",
+"title": "초기 호르몬 보충",
+"headers": [
+"약물",
+"경로",
+"용량",
+"비고"
+],
+"rows": [
+[
+"Desoxycorticosterone pivalate (DOCP)",
+"IM 또는 SC",
+"2.2 mg/kg once",
+"Aldosterone 결핍 확인 또는 낮은 Na:K 환자의 mineralocorticoid 보충"
+],
+[
+"Hydrocortisone (mineralocorticoid 목적)",
+"IV CRI",
+"0.5 to 0.625 mg/kg/hour",
+"Mineralocorticoid·glucocorticoid 활성이 동등 — 응급 환자에서 더 빠른 mineralocorticoid 효과. 30마리 증례군에서 12 to 24 hours 내 고칼륨혈증 빠르게 해소."
+],
+[
+"Fludrocortisone",
+"PO",
+"0.02 mg/kg q24h",
+"경구 제형만 있어 구토 시 어려움. 고칼륨혈증 조절에 부족한 용량에서도 흔히 의인성 hyperadrenocorticism 유발."
+],
+[
+"Hydrocortisone (glucocorticoid)",
+"IV",
+"초기 1.25 mg/kg once → 0.5 to 1 mg/kg q6h, 점감",
+"내인성 cortisol에 가장 가까움"
+],
+[
+"Prednisolone",
+"IV",
+"초기 1 to 2 mg/kg → 0.5 to 1 mg/kg q8h, 점감",
+"—"
+],
+[
+"Dexamethasone",
+"IV",
+"초기 0.1 mg/kg → 0.05 mg/kg q12-24h, 점감",
+"—"
+]
+],
+"note": "Hydrocortisone, prednisolone, dexamethasone 모두 주사제가 있고 어느 것이든 효과적. — = 요약에 해당 내용 없음"
+},
+{
+"type": "heading",
+"level": 2,
+"text": "지지 치료 · 반응 시간",
+"gist": "개는 수 시간 내 반응, 고양이는 3–5일 걸릴 수 있음"
+},
+{
+"type": "list",
+"items": [
 "저혈당은 필요에 따라 교정.",
 "GI 장애 ▸ 위 보호제, 진토제.",
 "복통·근육통 ▸ opioid 진통제 적합. NSAID는 GI 장애·질소혈증 환자에서 피해야 하므로 hypoadrenal crisis에서는 일반적으로 사용하지 않음.",
 "흡인성 폐렴, sepsis 등 동반질환은 적절히 치료.",
-"반응 시간 ▸ 고양이는 개보다 느림. 개는 수 시간 내 반응이 보일 수 있으나 고양이는 뚜렷한 개선까지 3 to 5 days 걸릴 수 있음."]},
-{"type":"heading","level":2,"text":"동반 질환 · 예후","gist":"면역매개 질환·거대식도 동반 가능; 위기 극복 후 평생 보충 시 예후 매우 좋음"},
-{"type":"list","items":[
+"반응 시간 ▸ 고양이는 개보다 느림. 개는 수 시간 내 반응이 보일 수 있으나 고양이는 뚜렷한 개선까지 3 to 5 days 걸릴 수 있음."
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "동반 질환 · 예후",
+"gist": "면역매개 질환·거대식도 동반 가능; 위기 극복 후 평생 보충 시 예후 매우 좋음"
+},
+{
+"type": "list",
+"items": [
 "동반 면역매개 질환 보고 ▸ 면역매개 혈구감소증, 갑상선기능저하증, 중증근무력증, 건성각결막염, 백반증 — 원발성의 면역매개 병인을 지지.",
 "거대식도 ▸ 조절되지 않은 hypoadrenocorticism 개에서 흔함(연관 기전 불명). 전형적 형태와 glucocorticoid 단독 결핍 모두 보고. 대개 hypoadrenocorticism 치료로 해소.",
 "자연 발생 원발성 ▸ 초기 위기를 넘기면 적절한 평생 mineralocorticoid·glucocorticoid 보충으로 개·고양이 모두 예후 매우 좋음.",
 "Atypical 원발성(전해질·뇌하수체 기능 정상인 부신부전) ▸ 많은 수가 aldosterone 결핍이 됨 → 생명 위협 위기를 피하려면 잦은 재검, 전해질 평가, 보호자 모니터링 필요.",
-"이차성 ▸ 평생 glucocorticoid 치료로 잘 조절."]}
-]}
+"이차성 ▸ 평생 glucocorticoid 치료로 잘 조절."
+]
+}
+]
+}

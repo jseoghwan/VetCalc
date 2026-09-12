@@ -1,5 +1,18 @@
-{"id":"sacc3-p8-c84","book":"Small Animal Critical Care Medicine, 3rd ed.","book_short":"SACCM 3판","part":"Part VIII","part_title":"Neurologic Disorders","chapter_num":84,"title":"Seizures and Status Epilepticus","author":"Chai-Fei Li, DVM, DACVIM (Neurology); Karen M. Vernau, DVM, MAS, DACVIM (Neurology)","format":2,"blocks":[
-{"type":"callout","title":"KEY POINTS","items":[
+{
+"id": "sacc3-p8-c84",
+"book": "Small Animal Critical Care Medicine, 3rd ed.",
+"book_short": "SACCM 3판",
+"part": "Part VIII",
+"part_title": "Neurologic Disorders",
+"chapter_num": 84,
+"title": "Seizures and Status Epilepticus",
+"author": "Chai-Fei Li, DVM, DACVIM (Neurology); Karen M. Vernau, DVM, MAS, DACVIM (Neurology)",
+"format": 2,
+"blocks": [
+{
+"type": "callout",
+"title": "KEY POINTS",
+"items": [
 "Epilepsy는 두개내 원인에 의한 모든 유형의 재발성 발작을 말하며, 원인에 따라 idiopathic epilepsy와 structural epilepsy로 분류.",
 "발작은 형태로도 분류: focal 또는 generalized. Generalized가 가장 흔함.",
 "Status epilepticus(SE)는 생명을 위협하는 신경학적 응급이며 응급 병원의 흔한 주소.",
@@ -7,30 +20,89 @@
 "발작 질환이 있는 모든 동물에게 완전한 병력, 신체검사, 신경학적 검사, minimum database를 권장.",
 "필요에 따라 EEG, MRI 또는 CT, 뇌척수액 분석, 혈청학, 생검으로 두개내 질환을 추가 조사.",
 "발작 관리의 기본은 적절한 항경련제 선택과 투여로 발작을 조절하는 것. 기저 질환이 있으면 함께 치료.",
-"SE와 동반된 발작은 최대한 빨리 멈춰야 함."]},
-{"type":"heading","level":2,"text":"역학","gist":"평생 발작 빈도 추정 개 0.5–5.7%, 고양이 0.5–1.0%"},
-{"type":"list","items":[
+"SE와 동반된 발작은 최대한 빨리 멈춰야 함."
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "역학",
+"gist": "평생 발작 빈도 추정 개 0.5–5.7%, 고양이 0.5–1.0%"
+},
+{
+"type": "list",
+"items": [
 "개·고양이 발작의 역학은 알려져 있지 않음 — 집단 기반 연구가 어려워 대부분 병원군이나 의뢰 기반 수의대 병원 자료에 근거. 특정 순종 집단이나 연구용 개 콜로니 자료는 해당 집단 밖으로 일반화할 수 없음.",
 "유병률·발생률 자료는 없지만 발작 질환은 개·고양이에서 흔하고 개가 고양이보다 흔하다는 데 이견이 없음. 평생 발작 빈도 추정: 개 0.5% to 5.7%, 고양이 0.5% to 1.0%.",
 "SE의 집단 유병률은 불명. 한 보고에서 개의 SE와 cluster seizure가 전체 입원의 0.44%.",
-"2015년 수의 신경과 전문의와 비전문가가 International Veterinary Epilepsy Task Force(IVETF)를 구성해 반려동물 발작의 용어, 정의, 분류, 지침을 정립."]},
-{"type":"heading","level":2,"text":"정의","gist":"SE = 연속 발작 또는 의식 회복 없는 2회 이상 발작이 5분 이상 지속"},
-{"type":"table","title":"용어 정의","headers":["용어","정의"],"rows":[
-["Seizure","(과거) 대뇌피질에서 기원하는 동기적·과도한 전기적 신경 방전에 의한 발작성 대뇌 장애의 임상적 발현. (개정) 반드시 뇌전증성일 필요는 없는 모든 갑작스럽고 짧으며 일과성인 사건"],
-["Reactive seizure","대개 대사성·독성인 일과성 기능 장애에 대한 정상 뇌의 자연스러운 반응. 유발 원인을 제거·교정하면 대개 가역적 (예: 저혈당)"],
-["Epileptic seizure","뇌 신경세포의 과도한 동기적 뇌전증 활동의 발현"],
-["Epilepsy","24-hour period 내 최소 2회 이상의 비유발성 뇌전증 발작(유형 불문)이 재발하는 것으로, 뇌전증 발작 소인을 만드는 뇌 질환에 의함"],
-["Cluster seizures","24-hour period 내 2회 이상의 발작"],
-["Status epilepticus","즉각적 치료가 필요한 신경학적 응급. 사람·동물 모두 보편적으로 인정된 정의는 없으나, 일반적으로 '연속적인 발작, 또는 그 사이에 의식이 완전히 회복되지 않는 2회 이상의 개별 발작이 최소 5 minutes 지속'"]]},
-{"type":"heading","level":2,"text":"분류","gist":"원인별 idiopathic/structural; 형태별 focal/generalized (EEG가 아닌 임상 관찰 기준)"},
-{"type":"list","items":[
+"2015년 수의 신경과 전문의와 비전문가가 International Veterinary Epilepsy Task Force(IVETF)를 구성해 반려동물 발작의 용어, 정의, 분류, 지침을 정립."
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "정의",
+"gist": "SE = 연속 발작 또는 의식 회복 없는 2회 이상 발작이 5분 이상 지속"
+},
+{
+"type": "table",
+"title": "용어 정의",
+"headers": [
+"용어",
+"정의"
+],
+"rows": [
+[
+"Seizure",
+"(과거) 대뇌피질에서 기원하는 동기적·과도한 전기적 신경 방전에 의한 발작성 대뇌 장애의 임상적 발현. (개정) 반드시 뇌전증성일 필요는 없는 모든 갑작스럽고 짧으며 일과성인 사건"
+],
+[
+"Reactive seizure",
+"대개 대사성·독성인 일과성 기능 장애에 대한 정상 뇌의 자연스러운 반응. 유발 원인을 제거·교정하면 대개 가역적 (예: 저혈당)"
+],
+[
+"Epileptic seizure",
+"뇌 신경세포의 과도한 동기적 뇌전증 활동의 발현"
+],
+[
+"Epilepsy",
+"24-hour period 내 최소 2회 이상의 비유발성 뇌전증 발작(유형 불문)이 재발하는 것으로, 뇌전증 발작 소인을 만드는 뇌 질환에 의함"
+],
+[
+"Cluster seizures",
+"24-hour period 내 2회 이상의 발작"
+],
+[
+"Status epilepticus",
+"즉각적 치료가 필요한 신경학적 응급. 사람·동물 모두 보편적으로 인정된 정의는 없으나, 일반적으로 '연속적인 발작, 또는 그 사이에 의식이 완전히 회복되지 않는 2회 이상의 개별 발작이 최소 5 minutes 지속'"
+]
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "분류",
+"gist": "원인별 idiopathic/structural, 형태별 focal/generalized"
+},
+{
+"type": "list",
+"items": [
 "원인별 ▸ (1) Idiopathic epilepsy: 기저 원인을 찾을 수 없고 구조적 원인(structural epilepsy)의 증거가 없음. 유전적으로 결정되었거나 높은 품종 유병률에 근거해 유전적으로 의심됨. (2) Structural epilepsy: 기저의 기질적 두개내 질환에 의한 뇌전증.",
 "형태별 분류는 EEG 특성이 아니라 임상 관찰에 근거.",
 "Focal seizure ▸ 한쪽 대뇌반구의 병소에서 기원해 대개 국소·구역적 증상 — 씹기, 핥기, 방어적·공격적 행동 같은 불수의·강박 행동 포함. 과거 partial seizure로 불렸고 발작 중 의식 변화 유무로 simple/complex partial로 세분했으나, 의식 평가가 주관적이어서 의미가 없다고 보아 더 이상 권장하지 않음.",
 "Generalized seizure ▸ 개·고양이에서 가장 잘 알려진 형태이며 tonic-clonic이 가장 흔함. Tonic, clonic, myoclonic 형태도 있음.",
-"Tonic-clonic ▸ 의식 소실. Tonic 기: 근긴장 증가로 사지·머리가 신전되어 옆으로 넘어짐. Clonic 기: 사지의 신전·굴곡이 교대하고 과장된 저작 운동 가능. 대개 배뇨, 배변, 유연 동반."]},
-{"type":"heading","level":2,"text":"병태생리","gist":"과동기성 피질 활동; SE는 발작을 끝내는 항상성 기전의 실패"},
-{"type":"list","items":[
+"Tonic-clonic ▸ 의식 소실. Tonic 기: 근긴장 증가로 사지·머리가 신전되어 옆으로 넘어짐. Clonic 기: 사지의 신전·굴곡이 교대하고 과장된 저작 운동 가능. 대개 배뇨, 배변, 유연 동반."
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "병태생리",
+"gist": "과동기성 피질 활동; SE는 발작을 끝내는 항상성 기전의 실패"
+},
+{
+"type": "list",
+"items": [
 "뇌전증 발작은 대뇌피질의 과동기성(hypersynchronous) 전기 활동에서 기원. 정상 뇌도 다양한 두개내·두개외 자극에 발작을 일으킬 수 있으며, 항상성이 압도되면 피질 흥분성이 변하고 발작 역치가 낮아짐.",
 "발작 역치가 낮은 정상 동물은 피로, 발열, 발정, 광자극 등 여러 요인으로 발작이 유발될 수 있음.",
 "Kindling ▸ 실험적으로 쥐 대뇌피질에 경련하 자극을 반복하면 시간이 지나며 generalized seizure가 생기는 현상.",
@@ -39,83 +111,254 @@
 "시냅스 외 요인이 발작의 확산·유지에 중요할 수 있음. 흥분성 신경전달물질(glutamate, aspartate, acetylcholine) 과잉이나 억제성 신경전달물질 GABA의 길항이 SE에 기여할 수 있음.",
 "실험동물에서 SE가 30 to 45 minutes 지속되면 뇌손상 발생. 임상 환자에서는 훨씬 짧은 시간에도 손상이 생길 가능성. SE는 특히 대사율이 높은 뇌 영역에서 신경세포 괴사를 일으킬 수 있음.",
 "초기 SE ▸ 뇌혈류 증가가 뇌에 보호적일 수 있음. 후기 SE ▸ 혈압 저하와 함께 뇌혈류가 감소하는 동시에 뇌 대사율(포도당·산소 소비)은 증가 → ATP 고갈과 젖산 축적 → 신경세포 괴사.",
-"SE의 전신 문제 ▸ 저산소혈증, 고체온, 흡인성 폐렴, 전신 젖산 산증, 고칼륨혈증, 저혈당, 쇼크, 심부정맥, 신경성 폐부종, 급성 신손상."]},
-{"type":"heading","level":2,"text":"원인","gist":"Reactive vs 두개내(진행성·비진행성) 구분이 치료를 좌우"},
-{"type":"table","title":"발작의 원인 분류","headers":["구분","내용"],"rows":[
-["Reactive seizure","체외 기원(예: 독소)과 체내이면서 신경계 외 기원(예: 간질환)으로 나뉨. 뇌 전반에 영향을 주므로 generalized seizure로 나타날 수 있음"],
-["두개내 — 진행성","염증(예: granulomatous meningoencephalitis), 종양, 영양 이상(예: thiamine 결핍), 감염, 기형(예: 수두증), 외상. 대부분 발작 사이에도 신경학적으로 비정상이고 증상이 진행하나, 발작이 오랫동안 유일한 증상일 수 있음"],
-["두개내 — 비진행성","Idiopathic epilepsy(유전성 뇌전증, 유전 의심 뇌전증, 원인 불명 뇌전증으로 세분), 더 이상 활동성이 아닌 과거의 대뇌 질환(감염, 외상성 병변)"]],
-"note":"Reactive seizure와 뇌전증 발작을 일으키는 두개내 질환의 구분이 필수 — reactive seizure와 진행성 두개내 질환은 발작 조절뿐 아니라 기저 질환 치료가 필요."},
-{"type":"list","items":[
-"Idiopathic epilepsy ▸ 개는 대개 6 months to 5 years에 발병. 여러 품종에서 유전성 뇌전증이 알려졌거나 의심됨. 뇌의 기능적 문제에 의한 발작이므로 generalized이고 대칭적. 기저 원인은 진행하지 않더라도 뇌전증 자체(빈도·기간·중증도)는 시간이 지나며 악화될 수 있음."]},
-{"type":"table","title":"SE 관련 연구 결과","headers":["연구","결과"],"rows":[
-["SE 개 50마리 코호트","Idiopathic epilepsy 28%, structural epilepsy 32%, 전신 손상·생리적 스트레스 이차 12%. 44%는 SE 기왕력 없음. 많은 수가 안락사되어 사망률은 보고되지 않음"],
-["Idiopathic epilepsy 개의 SE","59%가 1회 이상 SE를 경험. Idiopathic epilepsy + SE인 개가 idiopathic epilepsy만 있는 개보다 생존 기간이 짧았음"],
-["SE 또는 cluster seizure 개","Granulomatous meningoencephalitis, 입원 6 hours 후에도 발작 조절 불량, partial seizure로 나타나는 SE에서 결과가 나빴음. 59%가 사망하거나 안락사"]],
-"note":"SE의 임상 특징을 평가한 수의 연구가 적어 기저 원인이나 단·장기 결과를 일반화할 수 없음."},
-{"type":"heading","level":2,"text":"진단 계획","gist":"병력·신체·신경학적 검사 + minimum database가 모든 발작 환자에 필요"},
-{"type":"list","items":[
+"SE의 전신 문제 ▸ 저산소혈증, 고체온, 흡인성 폐렴, 전신 젖산 산증, 고칼륨혈증, 저혈당, 쇼크, 심부정맥, 신경성 폐부종, 급성 신손상."
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "원인",
+"gist": "Reactive vs 두개내(진행성·비진행성) 구분이 치료를 좌우"
+},
+{
+"type": "table",
+"title": "발작의 원인 분류",
+"headers": [
+"구분",
+"내용"
+],
+"rows": [
+[
+"Reactive seizure",
+"체외 기원(예: 독소)과 체내이면서 신경계 외 기원(예: 간질환)으로 나뉨. 뇌 전반에 영향을 주므로 generalized seizure로 나타날 수 있음"
+],
+[
+"두개내 — 진행성",
+"염증(예: granulomatous meningoencephalitis), 종양, 영양 이상(예: thiamine 결핍), 감염, 기형(예: 수두증), 외상. 대부분 발작 사이에도 신경학적으로 비정상이고 증상이 진행하나, 발작이 오랫동안 유일한 증상일 수 있음"
+],
+[
+"두개내 — 비진행성",
+"Idiopathic epilepsy(유전성 뇌전증, 유전 의심 뇌전증, 원인 불명 뇌전증으로 세분), 더 이상 활동성이 아닌 과거의 대뇌 질환(감염, 외상성 병변)"
+]
+],
+"note": "Reactive seizure와 뇌전증 발작을 일으키는 두개내 질환의 구분이 필수 — reactive seizure와 진행성 두개내 질환은 발작 조절뿐 아니라 기저 질환 치료가 필요."
+},
+{
+"type": "list",
+"items": [
+"Idiopathic epilepsy ▸ 개는 대개 6 months to 5 years에 발병. 여러 품종에서 유전성 뇌전증이 알려졌거나 의심됨. 뇌의 기능적 문제에 의한 발작이므로 generalized이고 대칭적. 기저 원인은 진행하지 않더라도 뇌전증 자체(빈도·기간·중증도)는 시간이 지나며 악화될 수 있음."
+]
+},
+{
+"type": "table",
+"title": "SE 관련 연구 결과",
+"headers": [
+"연구",
+"결과"
+],
+"rows": [
+[
+"SE 개 50마리 코호트",
+"Idiopathic epilepsy 28%, structural epilepsy 32%, 전신 손상·생리적 스트레스 이차 12%. 44%는 SE 기왕력 없음. 많은 수가 안락사되어 사망률은 보고되지 않음"
+],
+[
+"Idiopathic epilepsy 개의 SE",
+"59%가 1회 이상 SE를 경험. Idiopathic epilepsy + SE인 개가 idiopathic epilepsy만 있는 개보다 생존 기간이 짧았음"
+],
+[
+"SE 또는 cluster seizure 개",
+"Granulomatous meningoencephalitis, 입원 6 hours 후에도 발작 조절 불량, partial seizure로 나타나는 SE에서 결과가 나빴음. 59%가 사망하거나 안락사"
+]
+],
+"note": "SE의 임상 특징을 평가한 수의 연구가 적어 기저 원인이나 단·장기 결과를 일반화할 수 없음."
+},
+{
+"type": "heading",
+"level": 2,
+"text": "진단 계획",
+"gist": "병력·신체·신경학적 검사 + minimum database가 모든 발작 환자에 필요"
+},
+{
+"type": "list",
+"items": [
 "발작 질환은 본질적으로 기저 질환의 발현이며, 기저 질환을 진단·치료할 때 치료가 가장 효과적 → 신속히 정확한 진단을 확립. Idiopathic epilepsy처럼 원인을 찾지 못하는 경우도 있음.",
 "병력 ▸ 일반 병력과 함께 발작 특이 병력: 발병 연령, 빈도, 발작 양상, 발작 사이 행동, 시간적 연관(예: 먹거나 먹지 않은 것과의 관계). 보호자 설명을 보완하는 발작 영상이 유용.",
 "연령 ▸ 발병 연령이 원인 추정에 필요. 5 years 이상의 개는 대개 원발 뇌종양 같은 후천성 발작 질환.",
 "품종 ▸ 유전성 뇌전증이 보고된 품종(Beagle, German Shepherd, Poodle 등). 두개내 종양 유병률이 높은 품종(Boxer), 염증성 질환이 많은 품종(Maltese).",
 "신체검사 ▸ 뇌에 영향을 줄 수 있는 전신 문제나 국소 문제(예: 두개골 종괴)를 찾기 위해 모든 발작 환자에서 중요.",
 "신경학적 검사 ▸ Idiopathic epilepsy는 발작 사이 소견이 대개 정상. Reactive seizure나 진행성 두개내 질환·structural epilepsy는 발작 사이에도 이상이 있을 수 있음. 발작 후 수일간 신경학적으로 비정상일 수 있으므로, 결손을 진행성 두개내 질환에 귀속시키려면 여러 번의 연속 신경학적 검사가 필요할 수 있음.",
-"Minimum database ▸ 입원 시 모든 발작 동물에게 CBC, 혈청 생화학, 24-hour 공복 혈당, 요검사 권장. 일부에서는 혈청 triglyceride와 식전·식후 담즙산으로 기저 대사 문제(문맥전신단락, 고중성지방혈증) 평가. 전신·두개내 질환이 의심되면 흉부 방사선과 복부 초음파로 이차 종양·전신 감염 선별."]},
-{"type":"table","title":"두개내 질환의 추가 검사","headers":["검사","용도·방법"],"rows":[
-["EEG","발작 질환이 발작성 사건의 원인일 수 있을 때, 비정상 소견이 발작과 비발작성 발작성 사건의 감별에 도움. 개·고양이는 진정 하에 약 30 minutes 기록. 최근 기기 발전으로 일부 수의 기관에서 장기 보행형(ambulatory) EEG 기록을 제공. 약물로 발작의 외적 발현이 없어질 수 있으므로 특히 SE 치료 중인 환자의 항경련 치료 평가에 유용. 향후 발작 분류와 항경련 효과 평가, 지속적 두개내 EEG 감시로 활용될 가능성"],
-["MRI / CT","급성 두부 외상이나 급성 두개내 출혈이 의심되지 않는 한 MRI 선호. 둘 다 비침습적이며 진행성 두개내 문제의 위치·범위·유형에 대한 진단 정보를 가장 많이 제공하고, 발작 질환의 기저 원인 규명에 도움"],
-["뇌척수액(CSF) 분석","이상적으로 MRI·CT 이후 채취하며 대개 cisterna magna에서. 천자 위험이 있어 모든 두개내 질환 환자에서 채취하지는 않음 (Chapter 206). 대부분 확진보다는 진단을 뒷받침하나, 일부 감염(예: Cryptococcus neoformans)과 종양(예: lymphoma)에서는 진단적 — 대부분의 두개내 검사에서 필수적인 부분"],
-["기타","생검(세포검사·조직병리), 혈청학"]]},
-{"type":"heading","level":2,"text":"치료 계획","gist":"현실적 목표는 완전 소실이 아니라 수용 가능한 수준으로 줄이기"},
-{"type":"list","items":[
+"Minimum database ▸ 입원 시 모든 발작 동물에게 CBC, 혈청 생화학, 24-hour 공복 혈당, 요검사 권장. 일부에서는 혈청 triglyceride와 식전·식후 담즙산으로 기저 대사 문제(문맥전신단락, 고중성지방혈증) 평가. 전신·두개내 질환이 의심되면 흉부 방사선과 복부 초음파로 이차 종양·전신 감염 선별."
+]
+},
+{
+"type": "table",
+"title": "두개내 질환의 추가 검사",
+"headers": [
+"검사",
+"용도·방법"
+],
+"rows": [
+[
+"EEG",
+"발작 질환이 발작성 사건의 원인일 수 있을 때, 비정상 소견이 발작과 비발작성 발작성 사건의 감별에 도움. 개·고양이는 진정 하에 약 30 minutes 기록. 최근 기기 발전으로 일부 수의 기관에서 장기 보행형(ambulatory) EEG 기록을 제공. 약물로 발작의 외적 발현이 없어질 수 있으므로 특히 SE 치료 중인 환자의 항경련 치료 평가에 유용. 향후 발작 분류와 항경련 효과 평가, 지속적 두개내 EEG 감시로 활용될 가능성"
+],
+[
+"MRI / CT",
+"급성 두부 외상이나 급성 두개내 출혈이 의심되지 않는 한 MRI 선호. 둘 다 비침습적이며 진행성 두개내 문제의 위치·범위·유형에 대한 진단 정보를 가장 많이 제공하고, 발작 질환의 기저 원인 규명에 도움"
+],
+[
+"뇌척수액(CSF) 분석",
+"이상적으로 MRI·CT 이후 채취하며 대개 cisterna magna에서. 천자 위험이 있어 모든 두개내 질환 환자에서 채취하지는 않음 (Chapter 206). 대부분 확진보다는 진단을 뒷받침하나, 일부 감염(예: Cryptococcus neoformans)과 종양(예: lymphoma)에서는 진단적 — 대부분의 두개내 검사에서 필수적인 부분"
+],
+[
+"기타",
+"생검(세포검사·조직병리), 혈청학"
+]
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "치료 계획",
+"gist": "현실적 목표는 완전 소실이 아니라 수용 가능한 수준으로 줄이기"
+},
+{
+"type": "list",
+"items": [
 "원인과 무관하게 발작 조절은 적절한 항경련제의 선택과 투여에 기반. 기저 질환이 있으면 동시에 치료.",
 "부작용이 특정 약물의 유용성을 제한할 수 있으므로 작용 기전과 약물 상호작용의 이해가 필수. 약물 선택은 투여할 종에서의 약동학 연구 결과에 근거해야 함.",
 "항경련 치료의 목표는 모든 발작 활동의 근절이나 거의 달성되지 않음 → 현실적 목표는 동물에게 참기 어렵거나 받아들일 수 없는 부작용 없이, 보호자가 수용 가능한 수준으로 발작의 중증도·빈도·기간을 줄이는 것.",
 "2015 IVETF 합의문 ▸ 6 months마다 2회를 초과하는 발작 빈도에서 유지 항경련 치료 개시를 제안. 저자들은 6 weeks에 1회를 초과할 때 항경련제를 고려하는 것이 더 현실적인 지침이라고 봄.",
 "즉각적 단기(급성) 항경련 치료 ▸ SE, cluster seizure, 일부 중독에 의한 발작 관리에 필요. 만성(유지) 항경련 치료 ▸ 뇌전증 관리에 사용.",
-"각 발작이 kindling과 mirror focus 형성 등으로 추가 발작 가능성을 높일 수 있으므로, 발작 질환에서 항경련제를 일찍 시작할수록 조절이 효과적."]},
-{"type":"heading","level":2,"text":"Status epilepticus 치료","gist":"응급 안정화 + 약물치료; 외적 증상이 없어도 뇌에서는 발작이 계속될 수 있음"},
-{"type":"list","items":[
+"각 발작이 kindling과 mirror focus 형성 등으로 추가 발작 가능성을 높일 수 있으므로, 발작 질환에서 항경련제를 일찍 시작할수록 조절이 효과적."
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "Status epilepticus 치료",
+"gist": "응급 안정화 + 약물치료; 외적 증상이 없어도 뇌에서는 발작이 계속될 수 있음"
+},
+{
+"type": "list",
+"items": [
 "목표는 최대한 빨리 발작을 멈추는 것. 수의학에서는 ICU에서 원격 EEG 감시를 일상적으로 하지 않아 외적 신체 발현의 소실로 치료 효과를 평가 → 임상 징후가 뚜렷하지 않아도 뇌에서는 발작 활동이 계속되어 결과에 악영향을 줄 수 있음.",
 "SE에 대한 대조·이중맹검·위약 대조 임상시험이 없어 권고는 지침일 뿐 (Table 84.1).",
 "치료는 즉각적 응급 평가·처치(기도, 호흡, 심혈관 기능, 체온, 혈당, 혈압)와 약물 치료로 구분.",
-"SE나 cluster seizure로 입원한 동물은 뇌부종이 있을 수 있어 mannitol 투여를 고려 (Chapter 85)."]},
-{"type":"table","title":"Table 84.1 개·고양이 SE 항경련제","headers":["약물","용량","비고"],"rows":[
-["Diazepam (first-line)","IV bolus: 0.5–1.0 mg/kg, 필요에 따라 2–3회 반복\nCRI: 0.5–1 mg/kg/hr (12 hours; 발작 재발 시 24 hours)\nPer rectum: 0.5–1 mg/kg (phenobarbital 병용 중이면 2 mg/kg)\nIntranasal: 1 mg/kg (atomizer 사용)","IV 주사·주입은 중심정맥으로 투여. 보호자에게 가정 내 PR 투여를 교육할 수 있음. IN보다 PR 권장"],
-["Midazolam (first-line)","IV bolus: 0.2 mg/kg, 2–3회 반복 가능\nCRI: 0.2–0.4 mg/kg/hr (12 hours; 재발 시 24 hours)\nIN: 0.2 mg/kg (atomizer 사용)","Per rectum 경로는 권장하지 않음"],
-["Phenobarbital (diazepam 또는 midazolam과 병용)","2–4 mg/kg IV every 20–30 minutes, 총 loading 18–20 mg/kg까지\n조절되면 유지 3–5 mg/kg IV/IM/PO q12h (24–48 hr)","Benzodiazepine의 뇌내 농도가 낮아진 뒤 발작 재발을 막기 위해 병용. 경구약을 안전하게 견딜 수 있게 되면 즉시 q12h 경구 항경련 치료 재개·시작"],
-["Levetiracetam (diazepam 또는 midazolam과 병용)","30–60 mg/kg IV\n40 mg/kg PR\n이후 30 mg/kg q8h PO 또는 IV","Benzodiazepine 뇌내 농도 저하 후 재발 방지를 위해 병용. SE가 치료된 뒤 cluster seizure나 추가 SE를 막기 위해 투여"],
-["Propofol (third-line)","2–8 mg/kg 느린 IV bolus — 총량의 25%씩 30 seconds마다 원하는 효과에 도달할 때까지\nCRI 고려 0.1–0.4 mg/kg/min (12 hours; 재발 시 24 hours)","생리적 지표의 엄격한 모니터링 필요. 기계환기가 필요할 수 있음"],
-["Pentobarbital (fourth option)","6–15 mg/kg IV 느린 bolus → CRI 0.5–2 mg/kg/hr","생리적 지표의 엄격한 모니터링 필요"]]},
-{"type":"heading","level":3,"text":"Benzodiazepine"},
-{"type":"list","items":[
+"SE나 cluster seizure로 입원한 동물은 뇌부종이 있을 수 있어 mannitol 투여를 고려 (Chapter 85)."
+]
+},
+{
+"type": "table",
+"title": "Table 84.1 개·고양이 SE 항경련제",
+"headers": [
+"약물",
+"용량",
+"비고"
+],
+"rows": [
+[
+"Diazepam (first-line)",
+"IV bolus: 0.5–1.0 mg/kg, 필요에 따라 2–3회 반복\nCRI: 0.5–1 mg/kg/hr (12 hours; 발작 재발 시 24 hours)\nPer rectum: 0.5–1 mg/kg (phenobarbital 병용 중이면 2 mg/kg)\nIntranasal: 1 mg/kg (atomizer 사용)",
+"IV 주사·주입은 중심정맥으로 투여. 보호자에게 가정 내 PR 투여를 교육할 수 있음. IN보다 PR 권장"
+],
+[
+"Midazolam (first-line)",
+"IV bolus: 0.2 mg/kg, 2–3회 반복 가능\nCRI: 0.2–0.4 mg/kg/hr (12 hours; 재발 시 24 hours)\nIN: 0.2 mg/kg (atomizer 사용)",
+"Per rectum 경로는 권장하지 않음"
+],
+[
+"Phenobarbital (diazepam 또는 midazolam과 병용)",
+"2–4 mg/kg IV every 20–30 minutes, 총 loading 18–20 mg/kg까지\n조절되면 유지 3–5 mg/kg IV/IM/PO q12h (24–48 hr)",
+"Benzodiazepine의 뇌내 농도가 낮아진 뒤 발작 재발을 막기 위해 병용. 경구약을 안전하게 견딜 수 있게 되면 즉시 q12h 경구 항경련 치료 재개·시작"
+],
+[
+"Levetiracetam (diazepam 또는 midazolam과 병용)",
+"30–60 mg/kg IV\n40 mg/kg PR\n이후 30 mg/kg q8h PO 또는 IV",
+"Benzodiazepine 뇌내 농도 저하 후 재발 방지를 위해 병용. SE가 치료된 뒤 cluster seizure나 추가 SE를 막기 위해 투여"
+],
+[
+"Propofol (third-line)",
+"2–8 mg/kg 느린 IV bolus — 총량의 25%씩 30 seconds마다 원하는 효과에 도달할 때까지\nCRI 고려 0.1–0.4 mg/kg/min (12 hours; 재발 시 24 hours)",
+"생리적 지표의 엄격한 모니터링 필요. 기계환기가 필요할 수 있음"
+],
+[
+"Pentobarbital (fourth option)",
+"6–15 mg/kg IV 느린 bolus → CRI 0.5–2 mg/kg/hr",
+"생리적 지표의 엄격한 모니터링 필요"
+]
+]
+},
+{
+"type": "heading",
+"level": 3,
+"text": "Benzodiazepine"
+},
+{
+"type": "list",
+"items": [
 "Diazepam과 midazolam이 개·고양이 SE의 1차 약물. GABA receptor에 결합해 신경 과분극을 강화하고 신경 발화를 줄임.",
 "Diazepam은 지용성으로 IV, IN, PR 투여 시 뇌로 빠르게 들어감. Midazolam은 수용성.",
 "작용 시간이 짧으므로 뇌내 농도가 낮아질 때 발작·SE 재발을 막기 위해 유지 항경련제(phenobarbital, levetiracetam)를 함께 투여. 이미 복용 중이 아닌 동물은 loading dose 후 유지 용량.",
 "Midazolam ▸ IV가 선호되지만 IV 확보가 안 되면 IN(atomizer)이나 IM 가능. PR diazepam과 IN midazolam을 비교한 연구에서 IN midazolam이 더 우수할 수 있음. Midazolam의 PR 투여는 혈장 농도가 가변적·불규칙해 SE 치료에 권장하지 않음.",
-"SE가 지속되거나 추가 발작이 생기면 diazepam·midazolam을 추가 bolus 하거나 CRI 사용. 일반적으로 12 hours CRI를 권장하고, SE·cluster seizure가 잘 조절되지 않으면 24 hours."]},
-{"type":"heading","level":3,"text":"Barbiturate"},
-{"type":"list","items":[
+"SE가 지속되거나 추가 발작이 생기면 diazepam·midazolam을 추가 bolus 하거나 CRI 사용. 일반적으로 12 hours CRI를 권장하고, SE·cluster seizure가 잘 조절되지 않으면 24 hours."
+]
+},
+{
+"type": "heading",
+"level": 3,
+"text": "Barbiturate"
+},
+{
+"type": "list",
+"items": [
 "신경막의 Na·K 전달을 방해해 GABA 작용을 강화.",
 "SE에 쓰는 대부분 약물의 반감기가 짧아 유지 항경련제가 치료의 일부여야 함. Phenobarbital과 levetiracetam이 가장 흔히 쓰임 — 둘 다 IV 투여가 가능하기 때문.",
 "Pentobarbital ▸ benzodiazepine으로 SE 치료가 실패하면 2차 약물로 쓸 수 있으나 항경련 효과가 제한적. Bolus 후 CRI로 투여. 진정, 호흡 억제, 저혈압, 사망을 일으킬 수 있음.",
 "깊게 진정·마취된 동물은 기도 유지를 위해 삽관해야 하며, 심박수·혈압·산소화 등 생리 지표를 정기적 또는 지속적으로 감시. 따라서 발작의 운동 활동을 멈추거나 줄이되 가능한 한 마취는 피하도록 용량을 신중히 적정.",
-"회복기에는 pentobarbital에서 회복 중인지 아직 발작 중인지 구분하기 어려울 수 있음."]},
-{"type":"heading","level":3,"text":"Levetiracetam (Keppra)"},
-{"type":"list","items":[
+"회복기에는 pentobarbital에서 회복 중인지 아직 발작 중인지 구분하기 어려울 수 있음."
+]
+},
+{
+"type": "heading",
+"level": 3,
+"text": "Levetiracetam (Keppra)"
+},
+{
+"type": "list",
+"items": [
 "사람에서 1998년부터 경구 발작 치료에 사용되었고 비경구 제형은 2000년대 초부터 승인.",
 "항경련 작용은 synaptic vesicular protein(SV2A) 결합에 의한 신경전달물질 유리 억제로 추정. 전압작동 calcium channel 억제 등 다른 기전도 있을 수 있음.",
 "SE 또는 급성 반복 발작 개 연구 ▸ IV diazepam 후 levetiracetam(30 mg/kg 또는 60 mg/kg IV) 투여 시 반응률 56%, 위약군 10%. 통계적으로 유의하지는 않았으나 IV levetiracetam은 개 SE 치료에 안전하고 잠재적으로 효과적이라고 봄.",
-"개방표지 연구 ▸ IV·PR diazepam과 IV phenobarbital 치료 후 rectal levetiracetam 40 mg/kg을 추가한 개가 받지 않은 개보다 발작 조절이 더 좋았음."]},
-{"type":"heading","level":3,"text":"Propofol"},
-{"type":"list","items":[
+"개방표지 연구 ▸ IV·PR diazepam과 IV phenobarbital 치료 후 rectal levetiracetam 40 mg/kg을 추가한 개가 받지 않은 개보다 발작 조절이 더 좋았음."
+]
+},
+{
+"type": "heading",
+"level": 3,
+"text": "Propofol"
+},
+{
+"type": "list",
+"items": [
 "속효성 지용성 전신마취제로 개·고양이 SE 관리의 3차 약물. 항경련 효과는 GABA agonist 작용에 의한 것으로 추정.",
 "동물과 사람의 SE에 사용한 증례군이 있으나, 사람과 한 마리 개에서 발작이 사용과 연관되어 논란이 있음.",
-"한 연구에서 propofol로 치료한 사람 SE 환자가 midazolam으로 치료한 환자보다 사망률이 높았음."]},
-{"type":"heading","level":2,"text":"만성 발작 질환","gist":"종별 약동학에 맞는 약물 선택 — 고양이는 자료가 특히 부족"},
-{"type":"list","items":[
+"한 연구에서 propofol로 치료한 사람 SE 환자가 midazolam으로 치료한 환자보다 사망률이 높았음."
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "만성 발작 질환",
+"gist": "종별 약동학에 맞는 약물 선택 — 고양이는 자료가 특히 부족"
+},
+{
+"type": "list",
+"items": [
 "성공적인 항경련 치료는 해당 종에서 정의된 치료 범위 내로 혈장 농도를 유지하는 데 달려 있음 → 제거가 느린 항경련제를 사용해야 함.",
 "항경련제의 제거 반감기는 종 간 차이가 상당히 큼. 사람에서 쓰는 항경련제 중 개·고양이에 적합한 것은 적으며 주로 약동학의 종 차이 때문. 고양이는 많은 항경련제의 약동학 자료와 임상 경험이 부족.",
-"선택은 투여할 종에서 알려진 약동학적 특성에 근거 (Chapter 163 참조)."]}
-]}
+"선택은 투여할 종에서 알려진 약동학적 특성에 근거 (Chapter 163 참조)."
+]
+}
+]
+}

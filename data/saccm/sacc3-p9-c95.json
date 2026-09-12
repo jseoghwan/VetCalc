@@ -1,30 +1,70 @@
-{"id":"sacc3-p9-c95","book":"Small Animal Critical Care Medicine, 3rd ed.","book_short":"SACCM 3판","part":"Part IX","part_title":"Infectious Disorders","chapter_num":95,"title":"Infective Endocarditis","author":"Kristin A. MacDonald, DVM, PhD, DACVIM (Cardiology); Steven E. Epstein, DVM, DACVECC","format":2,"blocks":[
-{"type":"callout","title":"KEY POINTS","items":[
+{
+"id": "sacc3-p9-c95",
+"book": "Small Animal Critical Care Medicine, 3rd ed.",
+"book_short": "SACCM 3판",
+"part": "Part IX",
+"part_title": "Infectious Disorders",
+"chapter_num": 95,
+"title": "Infective Endocarditis",
+"author": "Kristin A. MacDonald, DVM, PhD, DACVIM (Cardiology); Steven E. Epstein, DVM, DACVECC",
+"format": 2,
+"blocks": [
+{
+"type": "callout",
+"title": "KEY POINTS",
+"items": [
 "감염성 심내막염(infective endocarditis, IE)은 드물지만 사망률이 높은 질환.",
 "증상이 비특이적이고 여러 장기가 침범될 수 있어 진단이 어려움.",
 "사람 의학에서 가져온 기준을 활용하면 진단 능력을 높일 수 있음.",
 "IE에 동반되는 증식성(vegetative) 병변 때문에 원인균의 박멸이 어려움.",
 "항균 치료는 장기간 살균성 약물 투여로 구성.",
 "IE 환자의 예후는 불량.",
-"고위험 환자(예: subaortic stenosis)가 수술이나 치과 처치를 받을 때 예방적 항균제를 고려."]},
-{"type":"heading","level":2,"text":"개요","gist":"주로 승모판·대동맥판; 중–대형 수컷 개에서 가장 흔함"},
-{"type":"list","items":[
+"고위험 환자(예: subaortic stenosis)가 수술이나 치과 처치를 받을 때 예방적 항균제를 고려."
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "개요",
+"gist": "주로 승모판·대동맥판; 중–대형 수컷 개에서 가장 흔함"
+},
+{
+"type": "list",
+"items": [
 "IE는 개에서 드물고 흔히 치명적인 질환으로 보통 승모판 및/또는 대동맥판을 침범. 중–대형견 수컷이 가장 흔히 이환. 고양이 IE는 한 대학병원 증례의 0.01% 미만으로 보고.",
 "중증 후유증 ▸ 울혈성 심부전, 다발관절염이나 사구체신염 같은 면역매개 질환, 혈전색전증(무균성 또는 패혈성), 중증 부정맥.",
 "심초음파로 증식성 판막 병변과 판막 폐쇄부전을 확인하는 것이 진단의 핵심이며 추가 기준이 임상 진단을 뒷받침.",
 "혈액배양은 세균 원인 규명과 감수성 평가에 중요하나, 동시 항균제 사용이나 까다로운 균 감염 때문에 흔히 음성.",
-"치료는 6 to 8 weeks의 장기 광범위 항균제이며, 첫 1주는 이상적으로 정맥 투여."]},
-{"type":"heading","level":2,"text":"병태생리 — 부착과 내피 침습","gist":"손상된 내피에 세균 부착 → fibrin 응괴에 갇혀 식세포·항균제 접근 차단"},
-{"type":"list","items":[
+"치료는 6 to 8 weeks의 장기 광범위 항균제이며, 첫 1주는 이상적으로 정맥 투여."
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "병태생리 — 부착과 내피 침습",
+"gist": "손상된 내피에 세균 부착 → fibrin 응괴에 갇혀 식세포·항균제 접근 차단"
+},
+{
+"type": "list",
+"items": [
 "IE 형성의 유발 사건은 손상된 심장판막 내피 표면에 세균이 부착하는 것 (Fig. 95.1). 기계적 병변(subaortic stenosis, 심도자 시술)이나 염증성 질환이 내피 내 세균 정착을 촉진.",
 "손상된 내피가 세포외기질 단백, thromboplastin, tissue factor를 노출시켜 응고를 유발. Fibrinogen, fibrin, 혈소판 단백을 포함한 응괴가 형성되어 세균을 강하게 결합.",
 "Fibrinogen 결합이 손상 내피에 대한 1차 부착을 매개하고, 이어지는 fibronectin 결합이 내피세포의 내재화와 국소 염증·응고 촉진 반응을 유발. 염증은 세균과 fibronectin을 세포외기질에 결합시키는 integrin의 내피 발현을 유도.",
 "일부 세균(Staphylococcus aureus 등)은 fibronectin 결합 단백을 가지고 있어 숙주 세포에 의한 능동적 내재화를 유발할 수 있음.",
 "IE를 흔히 일으키는 균은 손상 판막에 가장 잘 부착하는 균 — microbial surface components recognizing adhesive matrix molecule이라는 특수 수용체를 발현하며 Staphylococcus와 Streptococcus spp.가 여기 해당. 이들은 tissue factor 생산을 유발하고 혈소판 응집을 유도할 수 있음.",
 "혈소판은 살균 단백을 방출하지만 IE를 일으키는 세균 다수가 이에 내성. S. aureus와 Bartonella spp.는 내피세포 내로 들어가 면역계의 인지를 피할 수 있음.",
-"세균은 판막 조직을 파괴하고 증식성 병변을 키우는 효소를 분비할 수 있음. Fibrin성 병변 안에 뭉쳐 식세포 접근이 거의 없는 세균의 '치료적 은신처'가 숙주 방어를 제한하고 항균제 침투에 큰 장벽이 됨."]},
-{"type":"heading","level":2,"text":"병태생리 — 후유증","gist":"CHF가 가장 흔한 후유증·사인; 급성이라 좌심방 확장 전 폐부종"},
-{"type":"list","items":[
+"세균은 판막 조직을 파괴하고 증식성 병변을 키우는 효소를 분비할 수 있음. Fibrin성 병변 안에 뭉쳐 식세포 접근이 거의 없는 세균의 '치료적 은신처'가 숙주 방어를 제한하고 항균제 침투에 큰 장벽이 됨."
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "병태생리 — 후유증",
+"gist": "CHF가 가장 흔한 후유증·사인; 급성이라 좌심방 확장 전 폐부종"
+},
+{
+"type": "list",
+"items": [
 "울혈성 심부전(CHF) ▸ 개·고양이 모두에서 IE의 가장 흔한 후유증이자 가장 흔한 사인. 빠르게 진행하는 이 독력 강한 질환에서 급성 심부전이 흔한 양상.",
 "승모판이나 대동맥판 손상으로 대개 심한 판막 폐쇄부전이 생겨 좌심 용적 과부하와 좌심실 확장기말 용적·압력 증가를 초래.",
 "대부분 급성·중증 폐쇄부전과 좌심실 충만압의 급격한 상승을 일으켜, 흔히 좌심방 확장이 생기기 전에 폐포 침수를 동반한 전격성 폐부종을 유발. 방사선에서 뚜렷한 심비대가 없어도 폐정맥이 확장되는 것이 전형. 이런 급성 증례에서는 폐모세혈관 쐐기압 측정이 좌심부전 확인에 유용할 수 있음.",
@@ -33,9 +73,18 @@
 "개 IE에서 면역매개 질환이 흔함 ▸ 다발관절염 75%, 사구체신염 36%. 파행이 있는 개는 면역매개 다발관절염이나 패혈성 관절염 평가를 위해 관절액 분석·배양을 시행하고, 단백뇨가 있으면 사구체신염 진단을 뒷받침하기 위해 요 단백:크레아티닌비를 평가.",
 "혈전색전증(패혈성·무균성) ▸ 개 IE의 흔한 후유증으로 병리학적으로 70% to 80%에서 확인되었고 생전에 임상적으로 의심된 것은 44%. 사람처럼 개도 승모판 IE에서 혈전색전 질환이 더 잘 생김.",
 "사람 IE의 혈전색전 최고 위험 인자 ▸ 승모판 침범, 1 to 1.5 cm를 넘는 크고 유동적인 증식 병변, 항균 치료 중 병변 크기 증가.",
-"경색은 개에서 신장과 비장이 가장 흔하고 이어 심근, 뇌, 사지. 혈관성 뇌병증은 사람 IE의 약 1/3에서 발생하나 개에서는 드묾. 중추신경 혈전색전은 사람·개 모두 중대뇌동맥에서 가장 흔하며 뇌 허혈과 지속 시 허혈성 괴사를 초래."]},
-{"type":"heading","level":2,"text":"발생 · 소인 인자","gist":"Subaortic stenosis가 유일하게 유의한 소인 구조 심질환"},
-{"type":"list","items":[
+"경색은 개에서 신장과 비장이 가장 흔하고 이어 심근, 뇌, 사지. 혈관성 뇌병증은 사람 IE의 약 1/3에서 발생하나 개에서는 드묾. 중추신경 혈전색전은 사람·개 모두 중대뇌동맥에서 가장 흔하며 뇌 허혈과 지속 시 허혈성 괴사를 초래."
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "발생 · 소인 인자",
+"gist": "Subaortic stenosis가 유일하게 유의한 소인 구조 심질환"
+},
+{
+"type": "list",
+"items": [
 "개에서 드문 질환으로 수의대 병원 의뢰견의 추정 발생률 0.05% to 6.6%이며 고양이에서는 드묾.",
 "대부분 15 kg을 넘는 중–대형견이고 대개 중년–노령(한 연구에서 75% 이상이 5 years 초과)이며 수컷 소인.",
 "과다대표 품종 ▸ Labrador Retriever, German Shepherd, Boxer, Golden Retriever.",
@@ -45,33 +94,90 @@
 "개의 흔한 균혈증 원인 ▸ 추간판염, 전립선염, 폐렴, 요로감염, 농피증, 치주질환, 장기 유치 중심정맥 카테터.",
 "면역억제의 역할은 논란 ▸ 한 연구에서 18마리 중 1마리(5%)만 최근 면역억제 치료를 받았으나, 더 이전 연구에서는 45마리 중 17마리(38%)가 경과 중 corticosteroid를 받았음.",
 "치과 예방처치는 오랫동안 소인으로 의심되었으나, 직전 3 months 내 치과·구강 수술 처치나 구강 감염과 IE의 연관이 없다는 연구로 부정됨. 다만 더 최근 조사에서 32마리 개의 입과 IE 병변에서 동일한 Enterococcus spp. 7종이 확인됨.",
-"예방적 항균제 ▸ subaortic 또는 판막성 aortic stenosis가 있는 개에 권장하며, 치과 처치나 수술을 받는 다른 선천성 심질환에서도 고려 가능. 1세대 cephalosporin이나 ticarcillin 같은 광범위 항균제를 처치 1 hour 전과 처치 중에 투여할 수 있음."]},
-{"type":"heading","level":2,"text":"원인균","gist":"Staphylococcus > Streptococcus > E. coli; Bartonella는 배양 음성 IE의 주원인"},
-{"type":"list","items":[
+"예방적 항균제 ▸ subaortic 또는 판막성 aortic stenosis가 있는 개에 권장하며, 치과 처치나 수술을 받는 다른 선천성 심질환에서도 고려 가능. 1세대 cephalosporin이나 ticarcillin 같은 광범위 항균제를 처치 1 hour 전과 처치 중에 투여할 수 있음."
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "원인균",
+"gist": "Staphylococcus > Streptococcus > E. coli; Bartonella"
+},
+{
+"type": "list",
+"items": [
 "빈도순 흔한 원인 ▸ Staphylococcus spp.(S. aureus, S. pseudintermedius, coagulase 음성 Staphylococcus), Streptococcus spp.(S. canis, S. bovis), Escherichia coli.",
 "덜 흔한 분리균 ▸ Enterococcus spp., Pseudomonas spp., Erysipelothrix rhusiopathiae, Enterobacter spp., Pasteurella spp., Corynebacterium spp., Proteus spp.",
 "드문 원인 ▸ Bordetella avium 유사균, Erysipelothrix tonsillarum, Actinomyces turicensis, Blastomyces dermatitidis, Mycobacterium spp.",
 "Bartonella spp. ▸ 사람과 개에서 배양 음성 IE의 중요한 원인으로 부상. 북부 California 거주 개 IE의 28%, 혈액배양 음성 개의 45%가 원인. 다른 지역보다 유병률이 이례적으로 높을 수 있으나 IE 개에서 bartonellosis 검사의 중요성을 보여줌.",
 "Bartonella vinsonii spp. berkhoffii가 개 IE를 일으키는 가장 중요한 종. 덜 흔한 종 ▸ B. clarridgeiae, B. washoensis, B. quintana, B. rochalimae, B. clarridgeiae 유사종, B. koehlerae.",
 "개에서 Bartonella spp.는 주로 대동맥판을 침범하고 승모판은 덜 침범. 임상 특징은 전통적 세균에 의한 IE와 다르지 않으며, 저자의 경험상 전통적 세균 IE 개가 Bartonella spp.와 동시 감염되지는 않음.",
-"여러 역학 연구에서 진드기와 벼룩이 Bartonella spp.의 매개체일 가능성이 제시됨. Bartonella spp.에 의한 IE 개는 Anaplasma phagocytophilum, Ehrlichia canis, Rickettsia rickettsii에 대한 동시 혈청반응이 흔하므로, Bartonella 항원에 혈청반응이 있는 개는 진드기 매개 질환 역가도 의뢰해야 함."]},
-{"type":"heading","level":2,"text":"임상 · 검사 이상","gist":"심잡음 89–96%이나 '새로운' 잡음은 41%뿐; 백혈구증가 89%"},
-{"type":"list","items":[
+"여러 역학 연구에서 진드기와 벼룩이 Bartonella spp.의 매개체일 가능성이 제시됨. Bartonella spp.에 의한 IE 개는 Anaplasma phagocytophilum, Ehrlichia canis, Rickettsia rickettsii에 대한 동시 혈청반응이 흔하므로, Bartonella 항원에 혈청반응이 있는 개는 진드기 매개 질환 역가도 의뢰해야 함."
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "임상 · 검사 이상",
+"gist": "심잡음 89–96%이나 '새로운' 잡음은 41%뿐; 백혈구증가 89%"
+},
+{
+"type": "list",
+"items": [
 "심잡음 ▸ IE 개의 대부분(89% to 96%)에서 청진. 새롭거나 변화한(강도 증가) 잡음이 전형적 이상이나 한 연구에서 새로운 잡음이 있던 개는 41%뿐이었음.",
 "확장기 잡음과 bounding 대퇴 맥박은 대동맥판 IE를 강하게 의심하게 함 — 다만 확장기 잡음은 대개 강도가 낮아 식별이 어려울 수 있음.",
 "발열 ▸ 항상은 아니지만 흔함(50% to 74%). 동시 항균 치료로 가려질 수 있으며 한 연구에서 개의 80%가 항균제를 투여받고 있었음. Bartonella spp. 감염 개는 다른 원인균보다 발열 가능성이 낮음.",
 "부정맥 ▸ 흔함(40% 70%). 빈도순으로 심실 부정맥, 상심실성 빈맥, 3도 방실차단(대동맥판 IE의 판막륜 주위 농양 때문), 심방세동. 대동맥판 IE 개가 특히 부정맥에 취약해 보이며 한 연구에서 62%가 심실 부정맥.",
-"CHF ▸ 환자의 거의 절반에 존재. 폐문 주위–미배측 폐 침윤으로 진단되며, 급성 경과 때문에 한 연구에서 75%는 좌심방 확장이 없었음. CHF 발생은 승모판 IE와 대동맥판 IE 사이에 차이가 없음."]},
-{"type":"table","title":"임상병리 이상","headers":["항목","소견"],"rows":[
-["백혈구","백혈구증가가 가장 흔한 이상 — 한 증례군에서 89%. 대개 성숙 호중구증가와 단핵구증가"],
-["빈혈·혈소판","경증–중증 혈소판감소 및/또는 빈혈(대개 경증·비재생성)이 개의 절반에서 흔함"],
-["응고","응고 촉진 상태의 증거가 흔함 — 측정한 개의 87%에서 D-dimer 또는 fibrin degradation product 상승, 83%에서 고fibrinogen혈증"],
-["혈청 생화학","저알부민혈증(95%), 간효소 활성 상승, 산증"],
-["신장","IE 개의 최소 절반에서 신장 합병증 — 신전성·신성 질소혈증, 사구체신염, 신우신염, 신장 혈전. 한 증례군에서 약 1/3이 중등도–중증 신부전"],
-["요검사","방광염(60%), 단백뇨(50% to 60%), 혈뇨(18% to 62%)"],
-["UPC","단백뇨 개에서 신장을 통한 과도한 단백 소실 여부 확인에 필요 — antithrombin III 소실로 과응고 상태가 될 수 있음. 측정한 개의 77%에서 상승했고 그중 58%는 중등도–중증 상승. 과응고 증거가 있으면 항응고·항혈소판 치료가 적응이 될 수 있음"]]},
-{"type":"heading","level":2,"text":"진단 — 심초음파","gist":"내피면에 부착되었으나 구별되는 고에코·요동하는 불규칙 종괴"},
-{"type":"list","items":[
+"CHF ▸ 환자의 거의 절반에 존재. 폐문 주위–미배측 폐 침윤으로 진단되며, 급성 경과 때문에 한 연구에서 75%는 좌심방 확장이 없었음. CHF 발생은 승모판 IE와 대동맥판 IE 사이에 차이가 없음."
+]
+},
+{
+"type": "table",
+"title": "임상병리 이상",
+"headers": [
+"항목",
+"소견"
+],
+"rows": [
+[
+"백혈구",
+"백혈구증가가 가장 흔한 이상 — 한 증례군에서 89%. 대개 성숙 호중구증가와 단핵구증가"
+],
+[
+"빈혈·혈소판",
+"경증–중증 혈소판감소 및/또는 빈혈(대개 경증·비재생성)이 개의 절반에서 흔함"
+],
+[
+"응고",
+"응고 촉진 상태의 증거가 흔함 — 측정한 개의 87%에서 D-dimer 또는 fibrin degradation product 상승, 83%에서 고fibrinogen혈증"
+],
+[
+"혈청 생화학",
+"저알부민혈증(95%), 간효소 활성 상승, 산증"
+],
+[
+"신장",
+"IE 개의 최소 절반에서 신장 합병증 — 신전성·신성 질소혈증, 사구체신염, 신우신염, 신장 혈전. 한 증례군에서 약 1/3이 중등도–중증 신부전"
+],
+[
+"요검사",
+"방광염(60%), 단백뇨(50% to 60%), 혈뇨(18% to 62%)"
+],
+[
+"UPC",
+"단백뇨 개에서 신장을 통한 과도한 단백 소실 여부 확인에 필요 — antithrombin III 소실로 과응고 상태가 될 수 있음. 측정한 개의 77%에서 상승했고 그중 58%는 중등도–중증 상승. 과응고 증거가 있으면 항응고·항혈소판 치료가 적응이 될 수 있음"
+]
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "진단 — 심초음파",
+"gist": "내피면에 부착되었으나 구별되는 고에코·요동하는 불규칙 종괴"
+},
+{
+"type": "list",
+"items": [
 "개 IE 진단의 초석은 심초음파(ECHO) 또는 부검에서 증식성 판막 병변을 확인하는 것.",
 "병태특이적 소견 ▸ 심장 내피면에 부착되어 있으나 그와 구별되는, 고에코의 요동하는(oscillating) 불규칙한(shaggy) 종괴 (Fig. 95.2). Oscillating은 병변이 기저 판막 구조와 독립적으로 고빈도로 움직인다는 뜻으로, 증식 병변의 심초음파 진단을 강하게 뒷받침.",
 "소동물에서는 거의 승모판과 대동맥판만 침범. 미란성이거나 증식이 거의 없는 병변은 덜 흔하고 ECHO에서 관찰이 어려울 수 있음.",
@@ -79,26 +185,77 @@
 "Color flow Doppler에서 중등도–중증 대동맥판 폐쇄부전이 있으면 대동맥판 IE를 의심하고 판첨을 꼼꼼히 확인해야 함.",
 "대동맥판 폐쇄부전의 중증도 ▸ color flow Doppler의 역류 jet 길이, 좌측 심첨 5-chamber view의 continuous wave Doppler에서 폐쇄부전의 기울기(가파르면 중증), 만성 증례에서는 좌심실 편심성 비대의 정도로 추정.",
 "IE가 급성이면 좌심방 확대나 좌심실 편심성 비대가 없을 수 있음. 대동맥판 IE 개가 충분히 오래 생존하면 만성 중증 대동맥판 폐쇄부전에 이차적으로 심근 부전이 흔히 발생.",
-"심근 농양은 심근이나 판막륜에 이질적이고 두꺼워진 고에코 부위·종괴로 보일 수 있음. 농양이 파열되면 두 방 사이에 누공이나 중격 결손이 보일 수 있음."]},
-{"type":"heading","level":2,"text":"진단 — 혈액배양 · 기준","gist":"다른 정맥에서 3–4개 검체를 30–60분 간격으로 채취"},
-{"type":"list","items":[
+"심근 농양은 심근이나 판막륜에 이질적이고 두꺼워진 고에코 부위·종괴로 보일 수 있음. 농양이 파열되면 두 방 사이에 누공이나 중격 결손이 보일 수 있음."
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "진단 — 혈액배양 · 기준",
+"gist": "다른 정맥에서 3–4개 검체를 30–60분 간격으로 채취"
+},
+{
+"type": "list",
+"items": [
 "혈액·요 배양은 중요하나 개의 대다수(80%)가 항균제를 사용 중이어서 흔히 음성(60% to 70%).",
 "채취 방법 ▸ 서로 다른 정맥 부위에서 최소 30 minutes to 1 hour 간격으로 3–4개 검체(각 5 to 10 ml)를 무균적으로 채취해 호기 배양 의뢰. 항균제를 투여했다면 약물 농도의 추정 trough 시점에 채혈.",
 "혈중 세균 농도가 매우 낮으므로(5 to 10 bacteria/ml 미만) 환자 크기에 맞춰 임상적으로 가능하다면 충분한 양을 채취하는 것이 중요.",
 "혈액배양과 16S rDNA PCR을 병행하면 IE 의심 개의 61%에서 세균이 확인되어 각각 단독(33%, 39%)보다 높았음 — 진단율을 높이는 매력적 선택.",
-"Bartonella spp.는 까다로워 배지에서 거의 자라지 않으므로 통상 배양은 권장하지 않음. Bartonella alpha proteobacteria growth medium(BAPGM)에서 최소 1주 배양 후 최대 5주간 한천 배양이 필요할 수 있음. BAPGM에서 7 days 전증균 후 16S-23S ITS 부위를 표적하는 고민감도 PCR을 병행하면 여러 체액에서 Bartonella 감염의 정량이 가능."]},
-{"type":"table","title":"Box 95.1 개 IE 진단을 위한 제안 기준","headers":["구분","내용"],"rows":[
-["주요 기준 1 — 심초음파 양성","증식성·요동하는 병변 / 미란성 병변 / 농양"],
-["주요 기준 2","새로운 판막 폐쇄부전"],
-["주요 기준 3","Subaortic stenosis가 없는 상태에서 경도를 넘는 대동맥판 폐쇄부전(AI)"],
-["주요 기준 4 — 혈액배양 양성","양성 혈액배양 2개, 또는 흔한 피부 오염균이면 3개 이상"],
-["부수 기준","1. 발열\n2. 중–대형견(>15 kg)\n3. Subaortic stenosis\n4. 혈전색전 질환\n5. 면역매개 질환(다발관절염, 사구체신염)\n6. 주요 기준을 충족하지 않는 양성 혈액배양\n7. Bartonella 혈청 역가 ≥1:1024"],
-["Definite","판막의 병리 소견 / 주요 기준 2개 / 주요 1개 + 부수 2개"],
-["Possible","주요 1개 + 부수 1개 / 부수 3개"],
-["Unlikely","다른 진단이 내려짐 / 치료 4 days 미만에 해소 / 부검에서 증거 없음"]],
-"note":"Modified Duke criteria를 개에 맞게 수정한 것. 임상적 의심이 큰 possible 증례는 가능하면 경식도 ECHO로 판막 형태를 더 평가하거나 며칠 뒤 경흉부 ECHO를 반복. Bartonella 혈청반응이 높으면(1:1024 초과) Bartonella에 의한 IE의 추가 부수 기준이 될 수 있음. Bartonella는 내피세포·적혈구 내에 살아 혈청 직접 PCR은 수율이 낮고 위음성이 잦음 — bartonellosis 개 61마리 중 직접 PCR은 8마리(13%)만 양성이었으나, 특수 증균 배지에서 최대 1개월 장기 배양 후에는 61마리 중 40마리가 PCR 양성."},
-{"type":"heading","level":2,"text":"치료 — 항균제","gist":"IV 1–2주 후 경구로 최소 6–8주; 용량은 권장 범위 상단"},
-{"type":"list","items":[
+"Bartonella spp.는 까다로워 배지에서 거의 자라지 않으므로 통상 배양은 권장하지 않음. Bartonella alpha proteobacteria growth medium(BAPGM)에서 최소 1주 배양 후 최대 5주간 한천 배양이 필요할 수 있음. BAPGM에서 7 days 전증균 후 16S-23S ITS 부위를 표적하는 고민감도 PCR을 병행하면 여러 체액에서 Bartonella 감염의 정량이 가능."
+]
+},
+{
+"type": "table",
+"title": "Box 95.1 개 IE 진단을 위한 제안 기준",
+"headers": [
+"구분",
+"내용"
+],
+"rows": [
+[
+"주요 기준 1 — 심초음파 양성",
+"증식성·요동하는 병변 / 미란성 병변 / 농양"
+],
+[
+"주요 기준 2",
+"새로운 판막 폐쇄부전"
+],
+[
+"주요 기준 3",
+"Subaortic stenosis가 없는 상태에서 경도를 넘는 대동맥판 폐쇄부전(AI)"
+],
+[
+"주요 기준 4 — 혈액배양 양성",
+"양성 혈액배양 2개, 또는 흔한 피부 오염균이면 3개 이상"
+],
+[
+"부수 기준",
+"1. 발열\n2. 중–대형견(>15 kg)\n3. Subaortic stenosis\n4. 혈전색전 질환\n5. 면역매개 질환(다발관절염, 사구체신염)\n6. 주요 기준을 충족하지 않는 양성 혈액배양\n7. Bartonella 혈청 역가 ≥1:1024"
+],
+[
+"Definite",
+"판막의 병리 소견 / 주요 기준 2개 / 주요 1개 + 부수 2개"
+],
+[
+"Possible",
+"주요 1개 + 부수 1개 / 부수 3개"
+],
+[
+"Unlikely",
+"다른 진단이 내려짐 / 치료 4 days 미만에 해소 / 부검에서 증거 없음"
+]
+],
+"note": "Modified Duke criteria를 개에 맞게 수정한 것. 임상적 의심이 큰 possible 증례는 가능하면 경식도 ECHO로 판막 형태를 더 평가하거나 며칠 뒤 경흉부 ECHO를 반복. Bartonella 혈청반응이 높으면(1:1024 초과) Bartonella에 의한 IE의 추가 부수 기준이 될 수 있음. Bartonella는 내피세포·적혈구 내에 살아 혈청 직접 PCR은 수율이 낮고 위음성이 잦음 — bartonellosis 개 61마리 중 직접 PCR은 8마리(13%)만 양성이었으나, 특수 증균 배지에서 최대 1개월 장기 배양 후에는 61마리 중 40마리가 PCR 양성."
+},
+{
+"type": "heading",
+"level": 2,
+"text": "치료 — 항균제",
+"gist": "IV 1–2주 후 경구로 최소 6–8주; 용량은 권장 범위 상단"
+},
+{
+"type": "list",
+"items": [
 "치료의 근간은 조기 항균제 투여. 초기 선택은 각 병원·지역의 흔한 균종과 감수성, 그리고 감염원(어떤 균인지 시사)에 근거.",
 "사람 의학에서는 적극적(광범위·살균성) 정맥 항균제와 함께 환자의 최대 절반이 판막 치환 수술을 받음. 개는 판막 치환이 거의 시행되지 않아 치료가 만성 항균제에 국한되며, 이것이 높은 사망률에 기여할 가능성.",
 "장기 살균성 항균제가 치료의 근간. 증식 병변 내 혈관이 없고 fibrin 그물에 단단히 싸인 세균에 대한 숙주 방어가 손상되어 있어 1년 넘게 항균제를 지속하는 경우도 흔함.",
@@ -112,32 +269,88 @@
 "일부 임상의는 경구 대신 외래 피하 투여를 제안하나, 생체이용률과 혈중 농도가 높은 경구 항균제 대비 뚜렷한 이점은 없음. 예외는 내성 감염의 만성 치료에서 정맥 1–2주 후 imipenem 같은 carbapenem을 피하 투여하는 경우이나, 이 약물은 피하 투여 시 불편감을 줄 수 있음.",
 "중단 시점 판단이 어려운 경우가 많음 — 병변이 무균이 되어도 침범 판막에 잔여 비후가 남는 경우가 흔하기 때문. 심초음파와 함께 CBC, (이전에 양성이었다면) 요·혈액 배양 재검, 체온을 연속 감시해 반응을 추적.",
 "이전 균 분리·MIC가 없는 동물에서 항균 치료 첫 주 후에도 요동하는 증식 병변이 개선되지 않으면 더 공격적이고 내성인 균일 수 있어 항균제 교체나 추가가 필요할 수 있음.",
-"만성 치료 중 요동하는 종괴, 재발 발열, 백혈구증가, 추적 요·혈액 배양 양성이 있으면 다른 조합으로라도 만성 치료를 지속해야 함."]},
-{"type":"table","title":"Table 95.1 개 IE의 흔한 원인균과 권장 치료","headers":["원인균","권장 항균제"],"rows":[
-["Methicillin 감수성 Staphylococcus spp.","급성: ampicillin 또는 ampicillin/sulbactam IV\n만성: amoxicillin with clavulanic acid PO"],
-["Methicillin 내성 Staphylococcus spp.","급성: amikacin IV 또는 vancomycin IV\n만성: 감수성이 있으면 doxycycline 또는 chloramphenicol PO. 다른 경구 선택지가 없으면 linezolid PO 고려 필요할 수 있음"],
-["Streptococcus spp.","급성: ampicillin 또는 ampicillin/sulbactam IV\n만성: amoxicillin ± clavulanic acid PO"],
-["장내 균종(enteric species)","급성: amikacin 및/또는 ampicillin/sulbactam IV\n만성: 감수성에 따라, 피하 주사가 필요할 수 있음"],
-["Pseudomonas spp.","급성: amikacin 또는 piperacillin/tazobactam IV\n만성: 감수성에 따라, 피하 주사가 필요할 수 있음"],
-["Bartonella spp.","급성: amikacin 20 mg/kg IV × 1–2 weeks\n만성: doxycycline AND enrofloxacin >6–8 weeks; 반응이 없으면 azithromycin 5 mg/kg PO q24h × 7 days 후 격일 추가 가능"],
-["배양 음성","급성: amikacin + piperacillin/tazobactam IV\n만성: amoxicillin with clavulanic acid + enrofloxacin PO"]],
-"note":"용량은 권장 범위의 상단을 기준으로 하되 신질환 등 환자 요인을 고려. 급성 치료 지침은 대개 7–14 days 적용 후 만성으로 전환."},
-{"type":"list","title":"Bartonella 치료","items":[
+"만성 치료 중 요동하는 종괴, 재발 발열, 백혈구증가, 추적 요·혈액 배양 양성이 있으면 다른 조합으로라도 만성 치료를 지속해야 함."
+]
+},
+{
+"type": "table",
+"title": "Table 95.1 개 IE의 흔한 원인균과 권장 치료",
+"headers": [
+"원인균",
+"권장 항균제"
+],
+"rows": [
+[
+"Methicillin 감수성 Staphylococcus spp.",
+"급성: ampicillin 또는 ampicillin/sulbactam IV\n만성: amoxicillin with clavulanic acid PO"
+],
+[
+"Methicillin 내성 Staphylococcus spp.",
+"급성: amikacin IV 또는 vancomycin IV\n만성: 감수성이 있으면 doxycycline 또는 chloramphenicol PO. 다른 경구 선택지가 없으면 linezolid PO 고려 필요할 수 있음"
+],
+[
+"Streptococcus spp.",
+"급성: ampicillin 또는 ampicillin/sulbactam IV\n만성: amoxicillin ± clavulanic acid PO"
+],
+[
+"장내 균종(enteric species)",
+"급성: amikacin 및/또는 ampicillin/sulbactam IV\n만성: 감수성에 따라, 피하 주사가 필요할 수 있음"
+],
+[
+"Pseudomonas spp.",
+"급성: amikacin 또는 piperacillin/tazobactam IV\n만성: 감수성에 따라, 피하 주사가 필요할 수 있음"
+],
+[
+"Bartonella spp.",
+"급성: amikacin 20 mg/kg IV × 1–2 weeks\n만성: doxycycline AND enrofloxacin >6–8 weeks; 반응이 없으면 azithromycin 5 mg/kg PO q24h × 7 days 후 격일 추가 가능"
+],
+[
+"배양 음성",
+"급성: amikacin + piperacillin/tazobactam IV\n만성: amoxicillin with clavulanic acid + enrofloxacin PO"
+]
+],
+"note": "용량은 권장 범위의 상단을 기준으로 하되 신질환 등 환자 요인을 고려. 급성 치료 지침은 대개 7–14 days 적용 후 만성으로 전환."
+},
+{
+"type": "list",
+"title": "Bartonella 치료",
+"items": [
 "개의 Bartonella spp. 감염에 가장 우수한 항균제는 정의되지 않았으나 doxycycline, azithromycin, fluoroquinolone, amoxicillin/clavulanate, aminoglycoside가 사용됨.",
 "사람 Bartonella IE에서 최소 2 weeks의 aminoglycoside 치료가 생존을 개선하는 것으로 확인. 중증·생명을 위협하는 Bartonella IE 개에서는 신장 수치를 면밀히 감시하고 정맥 수액을 신중히 투여하면서 aminoglycoside의 적극적 사용이 필요할 수 있음.",
-"Azithromycin은 위 약물들에 비해 최소 살균 활성이 가장 낮아 보이고 내성이 빠르게 생기기 쉬우므로, bartonellosis의 1차 단독 치료로 써서는 안 됨."]},
-{"type":"heading","level":2,"text":"치료 — 항응고 · 심부전","gist":"IE 활동기에는 항혈전 치료를 시작할 적응이 없음"},
-{"type":"list","items":[
+"Azithromycin은 위 약물들에 비해 최소 살균 활성이 가장 낮아 보이고 내성이 빠르게 생기기 쉬우므로, bartonellosis의 1차 단독 치료로 써서는 안 됨."
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "치료 — 항응고 · 심부전",
+"gist": "IE 활동기에는 항혈전 치료를 시작할 적응이 없음"
+},
+{
+"type": "list",
+"items": [
 "항응고 치료는 현재 권장하지 않음 — 사람 IE에서 aspirin 치료 시 출혈이 늘어나는 경향이 있었고, 증식 병변 해소나 색전 사건 감소의 이득은 없었음.",
 "사람에서 항혈전 치료 사용은 다소 논란이 있으나, 최근 유럽 지침 요약은 두개내 출혈 위험 증가 때문에 'IE 활동기 동안 항혈전 약물(혈전용해제, 항응고제, 항혈소판제)을 시작할 적응은 없다'고 기술.",
 "사람에서 색전 합병증 예방에는 조기 진단, 신속한 항균 치료, 조기 수술로 이득을 볼 환자의 신중한 선별이 여전히 핵심. 수술은 10 mm를 넘는 증식 병변이 있거나 항균 치료에도 혈전색전이 재발하는 고위험 환자에서 흔히 선택 치료.",
 "개에서 항응고제가 IE의 혈전색전 합병증에 미치는 영향에 대한 자료가 없어, 저자는 사람 결과를 외삽해 개 IE에 항응고제를 권장하지 않음 — 심장사상충 개의 혈전색전 합병증 감소에 항응고제를 권장하지 않는 것과 마찬가지.",
-"심부전 치료 ▸ furosemide, ACE inhibitor, pimobendan을 포함한 표준 요법이 승모판·대동맥판 IE 개에 적절 (Chapter 41). 중증 승모판·대동맥판 IE에 의한 급성 전격성 심부전 환자에서는 비경구 혈관확장제가 필요할 수 있음."]},
-{"type":"heading","level":2,"text":"예후","gist":"대동맥판 IE 중앙 생존 3일 vs 승모판 476일"},
-{"type":"list","items":[
+"심부전 치료 ▸ furosemide, ACE inhibitor, pimobendan을 포함한 표준 요법이 승모판·대동맥판 IE 개에 적절 (Chapter 41). 중증 승모판·대동맥판 IE에 의한 급성 전격성 심부전 환자에서는 비경구 혈관확장제가 필요할 수 있음."
+]
+},
+{
+"type": "heading",
+"level": 2,
+"text": "예후",
+"gist": "대동맥판 IE 중앙 생존 3일 vs 승모판 476일"
+},
+{
+"type": "list",
+"items": [
 "대동맥판 IE 개는 예후가 grave하며 한 연구의 중앙 생존은 3 days로, 승모판 IE 개의 476 days와 대비.",
 "Bartonella IE 개도 거의 대동맥판만 침범하므로 생존 기간이 짧음.",
 "대동맥판 IE 개의 다른 증례군에서도 유사한 결과 — 첫 주 사망 33%, 진단 후 5 months 이내 사망 92%.",
 "조기 심혈관 사망의 다른 위험 인자 ▸ 치료 전 glucocorticoid 투여, 혈소판감소, 높은 혈청 creatinine, 신장 합병증, 혈전색전 질환.",
-"진단 직후 사망은 대개 CHF 또는 치명적 부정맥에 의한 심장 급사. 치료 첫 주 내 다른 사인으로 신부전, 폐출혈, 중증 신경 질환."]}
-]}
+"진단 직후 사망은 대개 CHF 또는 치명적 부정맥에 의한 심장 급사. 치료 첫 주 내 다른 사인으로 신부전, 폐출혈, 중증 신경 질환."
+]
+}
+]
+}
