@@ -1,0 +1,58 @@
+{"id":"sacc3-p9-c88","book":"Small Animal Critical Care Medicine, 3rd ed.","book_short":"SACCM 3판","part":"Part IX","part_title":"Infectious Disorders","chapter_num":88,"title":"Hospital-Associated Infections and Zoonoses","author":"Shelley C. Rankin, BSc (Hons), PhD","format":2,"blocks":[
+{"type":"callout","title":"KEY POINTS","items":[
+"병원연관감염(hospital-associated infection, HAI)은 입원 48시간 이후, 더 구체적으로는 사전 잠복이 확인되지 않은 채 3병일째 또는 그 이후에 진단되는 감염 사건.",
+"ICU 환자의 HAI 위험 인자: 기저질환의 중증도, 재원 기간 연장, 기계환기, 유치 장치, 항균제 사용.",
+"병원체의 저장소에는 사람, 동물, 매개물(fomite), 기류, 물, 사료, 곤충, 설치류가 포함되며, 병원 내 전파는 주로 직원의 손을 통해 일어남.",
+"수의 병원에서 생물보안·감염예방 프로그램 확립이 우선순위가 되어야 함.",
+"인수공통감염(zoonosis)의 가장 단순한 정의는 척추동물에서 사람으로 자연 전파되는 모든 질병 또는 감염.",
+"다제내성(MDR) 세균이 HAI의 흔한 원인.",
+"Carbapenem-resistant Enterobacteriaceae(CRE)는 신흥 HAI 병원체로, ICU 입원 동물에 대한 매우 심각한 위협으로 간주해야 함."]},
+{"type":"heading","level":2,"text":"정의 · 배경","gist":"CDC 기준: 입원 48시간 이후 또는 3병일째 이후 진단된 감염"},
+{"type":"list","items":[
+"병원에서 얻은 모든 질병을 nosocomial이라 함. 최근에는 지역사회 획득과 병원 획득을 더 잘 구분하기 위한 새 정의가 제안됨.",
+"Healthcare-associated infection(HCAI) ▸ 환자가 의료를 받는 동안 획득한 감염으로, 2002년 Siegman-Igra 등과 Friedman 등이 제안. 두 정의는 서로 다르며 Friedman 등의 정의가 더 자주 사용됨.",
+"Nosocomial infection은 현재 일반적으로 HAI라 부르며, 널리 인정되는 미국 CDC 지침에 따라 입원 48시간 이후, 더 구체적으로는 사전 잠복이 확인되지 않은 채 3병일째 또는 그 이후에 진단된 감염 사건으로 정의.",
+"48시간 이후 검출된 MDR 균이 모두 의료 관련 획득은 아니라는 최근 연구가 있으며, 수의학에서는 향후 정의 수정이 필요할 가능성.",
+"아픈 동물의 입원은 HAI 위험을 높일 수 있고, 수의학에서 위험을 줄이기 위한 여러 정책이 제안됨.",
+"4개 수의 중환자실의 증후군 감시 자료 ▸ 병원 내 발생 사건이 개의 16.3%, 고양이의 12%로 흔함. 감염 원인 여부를 전제하지 않고 증후군만 기록했으므로, 검사실 확진이 없어 실제 HAI 비율을 과대 또는 과소 평가할 수 있음."]},
+{"type":"heading","level":2,"text":"개·고양이의 HAI","gist":"내인성 균총 vs 외인성 유래 — 외인성이 예방에 더 유리"},
+{"type":"list","items":[
+"최초 보고 중 하나 ▸ 1978년 New York State College of Veterinary Medicine ICU의 개들과 고양이 1마리에서 발생한 Klebsiella 감염. 이후 잘 특성화된 연구는 적고 다수가 여러 Salmonella enterica serovar를 원인으로 하는 대동물 시설 중심.",
+"개·고양이 HAI 원인으로 제시된 균 ▸ Serratia marcescens, Salmonella spp., Clostridium perfringens, Acinetobacter baumannii, Escherichia coli, Clostridioides difficile. 다만 수의 ICU에 특화된 새 연구는 매우 적음.",
+"ICU HAI 원인균은 환자 자신의 내인성 균총 또는 외인성 원천에서 기원한다고 봄. 내인성 유래 HAI는 항암화학요법, glucocorticoid 치료, 항균 치료를 받는 환자에서 발생할 수 있음. 외인성 감염은 전체 전파율을 낮추기 위한 표준 또는 특이적 예방 조치로 더 쉽게 예방.",
+"사람 의학의 최근 보고 ▸ CDC의 HAI 정의가 실제로 의료기관에서 획득된 감염의 비율을 과대평가할 수 있음. 이유로는 검체 채취 지연, 입원 시 선별검사 부재, 일부 감염의 잠복기 차이 등이 제시됨. 일부 지역사회 획득 감염은 입원 48시간 내에 확인되지 않을 수 있음.",
+"따라서 예방 가능성이 있는 '병원에서 획득된 감염'과 단지 '병원에서 발견된 감염'을 구분하는 것이 중요. 내인성 감염을 HAI 총수에 포함하면 ICU 획득 감염 비율이 과대평가됨.",
+"수의학의 HAI 자료 검토 ▸ 요로감염, 수술부위감염, 혈류감염, 폐렴, 설사의 병인·진단·치료·예방 전략에 대한 정보를 제공.",
+"1989년 Murtaugh와 Mason이 특히 큰 교육·의뢰 병원에 병원감염관리위원회 설치를 제안. 일부 기관이 수용했으나 수의 병원 감염관리에 대한 국가·국제 표준은 아직 없음. 2015년 Veterinary Clinics of North America: Small Animal Practice가 감염관리 특집호를 출간해 소동물 진료에서 HAI를 줄이는 실용적 지침을 제공."]},
+{"type":"heading","level":2,"text":"위험 인자","gist":"사람에서 가장 널리 보고된 위험 인자는 기저질환의 중증도"},
+{"type":"table","title":"HAI 위험 인자","headers":["구분","인자"],"rows":[
+["잘 알려진 인자 (사람에서 외삽)","재원 기간 연장, 기계환기, 유치 장치(혈관내·요도 카테터, 비위관·기관내관)"],
+["환자 내재적 인자","인구학적 특성(나이, 성별, 중성화 여부), 동반질환, 기저질환의 중증도(사람에서 가장 널리 보고된 위험 인자)"],
+["환자 특이 상태","전반적 건강·면역 상태, 호흡 상태, 신경 상태, 수화 상태"],
+["ICU에서 가장 중요한 인자","외상 — 특히 개방 골절과 연관될 때, 그리고 항균제 사용"],
+["Ruple-Czerniak 등이 확인한 연관 인자","정맥 카테터 삽입, 수술 처치, 주술기 외 항균제 투여, 항궤양제 투여, 재원 기간"]],
+"note":"수의학에서는 정의가 불분명하나 사람 연구에서 외삽 가능. Suthar 등의 개체 기반 전파 모델: 의료 종사자와의 접촉에 의한 전파가 흔했고, ICU·입원 병동·회복실이 병원 내 다른 장소보다 집락화 전파에 더 큰 영향."},
+{"type":"heading","level":2,"text":"항균제 내성 병원체","gist":"ESBL·AmpC가 문제; 재원 6일 초과가 MDR E. coli 보균 위험"},
+{"type":"list","items":[
+"동물 HAI 분리균의 내성 범위가 넓어지고 있다는 추측이 많으나, 수의학에는 그런 자료를 수집하는 능동 HAI 감시 체계가 없음. 발표된 자료들은 항생제 내성균이 관리 효과를 떨어뜨린다는 데 일치.",
+"수의 시설 HAI 병원체의 내성 양상 추세에 대한 자료는 부족. CDC의 National Healthcare Safety Network에 보고되는 사람 의료 감시 자료가 수의 환자 HAI 병원체를 예측하는 데 활용될 수 있음. 동물 분리균의 지역 감시가 더 바람직하나, 자료가 없으면 사람 감시 자료로부터의 외삽이 권장됨.",
+"β-lactam 항생제와 β-lactamase 억제제에 대한 내성이 점점 흔해져 이 약물들의 임상적 스펙트럼을 줄일 위험. 특히 extended-spectrum β-lactamase(ESBL)와 plasmid 매개 AmpC 효소를 생산하는 균이 임상에서 독특한 문제.",
+"ESBL 생산균은 항균제 사용이 잦고 환자 상태가 위중한 병원 구역에서 흔히 발견되며 이환율·사망률을 높임."]},
+{"type":"table","title":"입원 중 내성균 획득 위험 인자 (개)","headers":["대상","위험 인자"],"rows":[
+["MDR E. coli 보균","6 days를 초과하는 입원\n입원 전 cephalosporin 치료\n1 day 미만의 cephalosporin 치료\n입원 중 metronidazole 치료"],
+["MDR E. coli 및 methicillin-resistant Staphylococcus aureus(MRSA) 획득","3 days를 초과하는 재원"]]},
+{"type":"heading","level":2,"text":"인수공통감염 · ICU","gist":"장내 병원체·Leptospira·MRSP·CRE — 양방향 전파를 모두 고려"},
+{"type":"list","items":[
+"많은 병원감염 병원체가 인수공통 병원체로 잘 알려져 있으므로, 감염관리 정책은 동물→사람과 사람→동물 전파를 모두 다뤄야 함.",
+"장내 병원체 ▸ Campylobacter, Salmonella, Clostridioides difficile이 ICU 동물에서 흔히 분리되며, 모두 ICU 환경에서 병원 내 집단발생을 일으킨 바 있음.",
+"병원성 Leptospira 종 ▸ 사람을 감염시킬 수 있고, ICU에서 감염되었거나 배출 중인 동물과 함께 수용된 동물에게 HAI를 일으킬 수 있음.",
+"E. coli ▸ ICU 개·고양이 요로감염의 가장 흔한 원인이며 많은 균주가 광범위한 항균제에 내성.",
+"C. difficile과 Enterococcus 종은 신흥 인수공통 병원체로 간주되며, 일부 수의 포도상구균 — 특히 methicillin-resistant S. pseudintermedius(MRSP)와 methicillin-resistant S. schleiferi(MRSS) — 도 마찬가지.",
+"Vancomycin-resistant Enterococcus faecium(VRE) ▸ 개·고양이 HAI 원인으로 보고된 바는 없으나 개의 요로감염에서 확인되었고, 미국·유럽 수의대 병원 감시에서 건강한 개의 VRE 보균이 확인됨. 수의 ICU에서 2 to 9 days 항균제 치료를 받은 개는 다제내성 enterococci를 다량 보유.",
+"CRE ▸ 반려동물 수의학에서의 출현은 불가피했으며 이제 중증 동물에 대한 매우 심각한 위협으로 간주해야 함. CDC는 이 균들을 긴급 공중보건 위협으로 지정 — carbapenem뿐 아니라 대개 다른 거의 모든 항균제 계열에도 내성이기 때문.",
+"전통적으로 사람에만 저장소가 있다고 여겨진 병원체에 동물이 감염·집락화되었다는 보고가 전반적으로 증가. 특히 의료 환경에서의 이런 '공유' 경향은 중요한 공중보건 문제이며, 수의 병원에서 동물을 돌보는 사람이 저장소가 되어 MDR·병원성 병원체를 개·고양이와 공유할 가능성도 있음."]},
+{"type":"heading","level":2,"text":"결론","gist":"개별 위험 인자 평가는 어려워도 전파 위험은 최소화할 수 있음"},
+{"type":"list","items":[
+"병원, 특히 ICU에서의 감염성 병원체 전파의 중요성은 아무리 강조해도 지나치지 않음.",
+"수의학에서 개별 동물 환자의 HAI 발생에 대한 내재적 위험 인자는 평가하기 어렵지만, 병원성·MDR 병원체의 전파 위험은 가능한 한 최소화할 수 있고 또 그래야 함."]}
+]}

@@ -1,0 +1,82 @@
+{"id":"sacc3-p9-c99","book":"Small Animal Critical Care Medicine, 3rd ed.","book_short":"SACCM 3판","part":"Part IX","part_title":"Infectious Disorders","chapter_num":99,"title":"Multi-Drug Resistant Infections","author":"Steven E. Epstein, DVM, DACVECC","format":2,"blocks":[
+{"type":"callout","title":"KEY POINTS","items":[
+"다제내성(MDR) 균은 수의학에서 점점 흔해지고 있으며, 진단에는 조기 배양·감수성 검사가 결정적.",
+"MDR 균의 존재는 이전 항균제 사용과 강하게 연관.",
+"가능성 높은 균과 그 감수성 양상에 대한 지역적 지식이 경험적 치료 결정에 도움.",
+"감염내과 전문가와의 상의가 MDR 감염의 치료 성공을 최적화하는 데 도움이 될 수 있음."]},
+{"type":"heading","level":2,"text":"개요","gist":"최근 개·고양이 연구에서 분리 빈도 8–31%; 3일 초과 입원과 연관"},
+{"type":"list","items":[
+"MDR 균은 수의학에서 점점 우려가 커지고 있으며, 최근 개·고양이 대규모 연구에서 분리 빈도가 8% to 31%. 보균과 가장 강하게 연관된 인자 중 하나가 이전 항균제 사용.",
+"수의 ICU의 개·고양이에서도 자주 확인되며, 교육병원에서 3 days를 넘겨 입원한 환자에서 MDR 균(MDRO) 분리와의 연관이 보고.",
+"ICU에서 MDR 균 가능성은 경험적 항균제 선택의 주요 고려사항이며, 최근 수의 병원에서 MDR Acinetobacter와 Staphylococcus spp. 유행이 기록되어 여러 과제를 낳음.",
+"최근 개를 감염원으로 확인한 사람의 MDR Campylobacter jejuni 유행도 보고.",
+"ICU 임상의는 치료 선택지가 제한되거나 없는 균(MDR 또는 광범위 약제내성[XDR])에 의한 감염을 더 흔히 접하게 되므로, 가장 흔한 치료 선택지에 대한 실무 지식이 최적 진료에 결정적."]},
+{"type":"table","title":"내성의 유형","headers":["유형","정의·예"],"rows":[
+["Intrinsic resistance (내재 내성)","해당 미생물의 고유 특성으로 항균제나 계열의 활성이 없음. 예: Pseudomonas aeruginosa는 항녹농균용으로 특별히 설계된 소수를 제외한 대부분의 β-lactam에 내성. 모든 그람음성균은 세포막을 통과하지 못하는 vancomycin에 내성"],
+["Circumstantial resistance (상황적 내성)","In vitro 검사는 감수성을 예측하지만 in vivo에서는 임상적 효과가 없는 경우. 감염 부위(중추신경계, 전립선, 뼈) 침투 실패나 국소 pH에 의한 작용 불능(산성 요에서 불활성화) 때문"],
+["Acquired resistance (획득 내성)","야생형과 비교해 미생물의 표현형이 변해 항균제의 효과가 떨어짐. 여러 기전으로 발생하며, 수의학에서 가장 중요한 기전 중 하나는 이전 항균제 노출. 많은 MDRO의 발생으로 이어짐"]],
+"note":"항균제 내성은 미생물을 죽이거나 증식을 억제하는 능력의 저하를 뜻하며, 실무적으로는 분리균을 여러 항균제에 대해 in vitro로 검사해 최소억제농도를 구함. Clinical and Laboratory Standards Institute가 내성·감수성을 판정하는 여러 수의 breakpoint를 정립."},
+{"type":"table","title":"내성 등급 표준 용어 (ECDC·CDC)","headers":["용어","정의"],"rows":[
+["MDRO (multidrug-resistant organism)","보통 감수성을 보이는 3개 이상 계열에서 각각 최소 1개 약물에 감수성이 없는 균"],
+["XDR (extensively drug resistant)","1–2개 계열에만 감수성이 있는 균"],
+["PDR (pan drug resistant)","현재 이용 가능한 알려진·허가된 모든 항균제에 감수성이 없는 균"]]},
+{"type":"heading","level":2,"text":"위험 인자","gist":"이전 항균제 사용, ICU 입원, 재원 기간, 수술, 기계환기"},
+{"type":"list","items":[
+"MDR 감염 위험이 있는 환자를 식별하는 것이 중환자에서 경험적 항균제 선택과 치료에 가장 중요.",
+"사람의 주요 위험 인자(MDR 그람음성·그람양성 감염) ▸ 이전 항균제 사용, ICU 입원, 감염관리 실패, 장기 재원, 최근 수술·침습 시술, 기계환기, MDR 균 집락화 또는 집락화된 환자에 대한 노출.",
+"수의학의 자료는 적으나 위험 인자는 사람과 같을 가능성이 큼. 개·고양이에서 소인 질환, 이전 항균제 사용, 재원 기간, ICU 재원 기간, 수술 처치, 기계환기가 MDR 균 확인 증가와 연관.",
+"이 위험 인자들을 평가하면 해당 환자에 escalation과 deescalation 중 어느 접근이 적절한지 판단하는 데 도움."]},
+{"type":"heading","level":2,"text":"Escalation vs deescalation","gist":"수의 환자 대부분은 escalation — deescalation은 중증 sepsis나 원내 감염에 한정"},
+{"type":"table","title":"두 가지 접근","headers":["접근","내용"],"rows":[
+["Escalation","의심 감염을 일으키는 균을 커버할 가능성이 높은 좁은 스펙트럼 항균제를 선택. 배양·감수성 결과가 나오면 감수성이 예측되면 계속하고 내성이 확인되면 변경"],
+["Deescalation","MDR·XDR 균을 포함해 해당 감염과 가장 흔히 연관된 모든 균을 커버하도록 광범위 항균제를 경험적으로 투여(생명을 위협하는 진균 감염이 의심되지 않는 한 대개 세균 감염에 한정). 배양·감수성 결과가 나오면 가능한 한 스펙트럼을 좁힘"]],
+"note":"Deescalation의 근거는 적절한 경험적 커버를 조기에 달성해 사망률을 낮추고 MDRO 발생을 막는 것."},
+{"type":"list","items":[
+"사람에서 deescalation이 권장되는 대상 ▸ MDRO 위험이 있는 폐렴 환자, 중증 sepsis나 패혈성 쇼크 환자. 수의 문헌은 부족하나 폐렴과 sepsis 징후가 있는 개·고양이에 유사한 접근이 권장됨.",
+"Deescalation은 사람 ICU에서 실행 가능함이 입증되었고 MDR 균 보균을 늘리지 않는 것으로 확인.",
+"수의학에서는 대부분의 환자가 escalation 접근을 받아야 함. 수의 중환자 진료에서 deescalation은 대개 중증 sepsis/패혈성 쇼크 환자, 또는 항균제 투여 중 병원 내에서 감염이 생긴 환자에 한정.",
+"실무적 판단 기준 ▸ '이 환자가 충분히 아파서, 내가 잘못된 항균제를 고르면 앞으로 24 hours 내에 감염·sepsis로 죽을 수 있는가?' 답이 예이면 deescalation을 시행.",
+"Deescalation을 쓴다면 환자 안전을 해치지 않는 범위에서 감염 조직의 배양 확보를 필수로 간주해야 함 — 그람 염색과 세포검사가 경험적 치료를 안내 (Chapter 172)."]},
+{"type":"heading","level":2,"text":"Methicillin-resistant Staphylococcus","gist":"mecA 유전자 → ceftaroline 외 모든 β-lactam에 내성(감수성 결과와 무관)"},
+{"type":"list","items":[
+"소동물의 포도상구균 감염은 Staphylococcus pseudintermedius일 가능성이 가장 높고 Staphylococcus aureus는 드묾. 여러 coagulase 음성 종도 임상적으로 중요.",
+"주된 내성 기전은 methicillin 내성을 부여하는 mecA 유전자 획득 — 변형된 penicillin-binding protein을 만들어 감수성 검사 결과와 관계없이 ceftaroline을 제외한 β-lactam 전체에 내성.",
+"검사실에서 methicillin 대신 oxacillin으로 검사할 수 있으나 β-lactam 전체에 대한 내성 판정에서는 동등.",
+"MRS는 다른 계열에 대한 동시 MDR과 흔히 연관.",
+"건강한 개의 MRSP 집락화는 드물지만(<10%), 농피증 개에서는 유병률이 높으며 이는 이전 항균제 사용과 관련될 가능성이 큼. 시간이 지나며 건강한 개의 MRSP 빈도가 증가해, 이전에 항균제를 쓰지 않은 환자의 감염에서도 이 균이 생길 우려가 있음.",
+"개·고양이의 MRSA는 드물며, 한 연구에서는 전통적으로 가축에서 발견되는 균주와 연관되어 수의 종 사이 및 사람으로의 인수공통 전파 가능성의 중요성을 보여줌.",
+"MRS가 의심되면 배양·감수성 검사가 필수 — 개 MRSP 분리주의 90% 이상이 최소 4개 이상의 추가 항균제 계열의 대표 약물에 내성이었음. β-lactam 외에 clindamycin, fluoroquinolone, macrolide, trimethoprim-sulfonamide에도 흔히 내성."]},
+{"type":"table","title":"MRS의 치료 선택지","headers":["약물","용도·특징"],"rows":[
+["Vancomycin","동시 내성률이 높아 deescalation 접근을 취한다면 경험적으로 흔히 사용 (Chapter 177). 저자의 ICU에서는 경험적 vancomycin 사용 시 배양·감수성 검사와 치료약물 농도 감시를 함께 시작해 내성 발생을 예방. 정상상태 도달 시(대개 5번째 투여 직전) 혈중 농도 측정을 권장하며, 내성 발생을 피하기 위해 trough 농도를 10 mg/L 초과로 유지하도록 용량 조절"],
+["Aminoglycoside (주로 amikacin, gentamicin)","수의학에서 vancomycin의 대안. 많은 MRS에 효과적. 단점: 장기 사용이나 저혈압 동반 시 급성 신손상 위험 증가, 비경구 투여만 가능, 화농성 물질·세포 잔해에서 활성 저하. 그럼에도 MRS 의심 시 경험적 치료로 vancomycin의 받아들일 만한 대안이며 가능하면 이쪽을 사용해야 함"],
+["Tetracycline(doxycycline, minocycline), chloramphenicol, rifampin","정균성이며 escalation 접근(예: 표재성 감염의 건강한 환자)에 유용할 수 있음. 진료 지역의 MRS 내성 양상을 미리 아는 것이 어느 약물이 효과적일지 판단에 도움"],
+["Linezolid","Vancomycin 내성 Staphylococcus이거나 경구 치료가 필요할 때 대개 선택 약물. 저자의 기관과 한 증례 보고에서 개의 MRSP를 성공적으로 치료했으나 최후 수단으로만 사용해야 함"]]},
+{"type":"heading","level":2,"text":"Enterococcus","gist":"E. faecalis가 더 흔하고 E. faecium이 더 자주 MDR; 집락화면 치료가 불필요할 수도"},
+{"type":"list","items":[
+"Enterococci는 위장관의 정상 그람양성 구균. 가장 흔히 확인되는 두 종은 Enterococcus faecalis와 Enterococcus faecium. 원내감염의 중요한 원인이며 수의 시설의 표면에서 흔히 분리됨. E. faecalis가 더 흔히 분리되나 E. faecium이 MDR인 경우가 더 많음.",
+"내재 내성 수준이 높음 ▸ 모든 cephalosporin, clindamycin, 그리고 독성 없이 도달 가능한 혈중 농도의 aminoglycoside에 내성. Fluoroquinolone도 활성이 낮고 E. faecium은 일부 carbapenem에도 내성.",
+"사람에서 3세대 cephalosporin과 fluoroquinolone 사용이 vancomycin 내성 Enterococcus 발생과 연관.",
+"획득 내성은 주로 aminoglycoside 변형 효소 획득이나 penicillin-binding protein 변화에 의하며, 각각 고농도 aminoglycoside 내성과 모든 penicillin·carbapenem 내성을 부여.",
+"Enterococci는 병원성이 높지 않아 배양에서 분리되었다고 반드시 치료해야 하는 것은 아님. 감염이 아니라 집락화가 의심되면(표재 창상, 무증상 세균뇨) 치료하지 않고 감시할 수 있음.",
+"MDR Enterococcus가 다른 병원체와 공존하면 Enterococcus를 치료하지 않고 다른 균을 표적해도 임상적 해소가 가능 — 사람의 복강내 sepsis에서 수술은 하되 enterococcal 항균제 없이 치료한 사례로 확인되었으나 이를 평가한 수의 연구는 없음."]},
+{"type":"table","title":"MDR Enterococcus의 치료","headers":["선택지","내용"],"rows":[
+["Ampicillin + gentamicin","두 약물의 상승 작용에 근거 — ampicillin이 세포벽을 교란해 gentamicin이 세포질로 들어가 단백 합성을 방해. 통상 감수성 검사에서 두 약물 모두 내성으로 예측되어도 이 상승 효과는 얻을 수 있으며, in vivo 유효 여부 판단에는 고농도 내성에 대한 특수 검사가 필요. 최소억제농도가 ampicillin 64 mg/L 이하, gentamicin ≤500 mg/L이면 이 병용을 사용 가능. Amikacin이나 tobramycin은 ampicillin과 상승 작용이 없어 Enterococcus 치료에 쓰지 않음"],
+["Vancomycin","위 병용이 불가능하면 권장. MRS와 마찬가지로 vancomycin 내성 Enterococcus를 만나거나 장기 경구 치료가 필요하면 linezolid 사용 가능"]]},
+{"type":"heading","level":2,"text":"Pseudomonas aeruginosa","gist":"내재 내성이 매우 높음; amikacin 또는 carbapenem을 경험적으로"},
+{"type":"list","items":[
+"비발효 그람음성균으로 의료 환경에 널리 존재하며 사람 ICU에서 클론 감염 유행이 관찰됨.",
+"내재 내성 수준이 매우 높아 ticarcillin, piperacillin, ceftazidime, carbapenem을 제외한 대부분의 β-lactam에 내성. 효과가 알려진 다른 계열은 aminoglycoside와 fluoroquinolone.",
+"획득 내성이 자주 발생하며 세 가지 주요 기전 ▸ efflux pump나 막 구조 변화로 세포내 약물 유입 감소, 항균제를 변형·파괴하는 효소, 항균제 표적의 변형(DNA gyrase 돌연변이). 이들은 흔히 aminoglycoside, fluoroquinolone, β-lactam에 대한 내성으로 이어짐.",
+"치료 ▸ MDR P. aeruginosa에는 흔히 amikacin이나 carbapenem을 사용. 대규모 사람 연구에서 P. aeruginosa의 감수성률이 amikacin에 가장 높았고(90%), meropenem에는 83%가 내성이었음 → P. aeruginosa가 의심되면 amikacin이나 carbapenem을 경험적으로 사용할 수 있음.",
+"어떤 carbapenem이 이상적인지는 불분명 — meropenem과 imipenem은 carbapenem 내성 발생과 연관되었고, 더 새로운 항녹농균 carbapenem인 doripenem이 사람 의학에서 더 자주 사용됨.",
+"MDR·XDR P. aeruginosa에 대한 병용 요법의 역할은 불분명 — 일부 연구는 상승 효과를, 다른 연구는 길항 효과를 보여 병용 요법을 일상적으로 권장하지는 않음."]},
+{"type":"heading","level":2,"text":"β-lactamase 생산 그람음성균","gist":"ESBL은 carbapenem이 선호 치료; carbapenemase 생산균은 XDR"},
+{"type":"list","items":[
+"β-lactamase 획득은 그람음성균의 가장 흔한 획득 내성 기전 중 하나. β-lactamase는 β-lactam의 β-lactam 고리를 가수분해해 파괴하는 효소 (Chapter 173) → penicillin, aminopenicillin, carboxypenicillin, 좁은 스펙트럼 cephalosporin에 내성을 부여.",
+"β-lactamase 억제제(sulbactam, tazobactam, clavulanic acid)와 결합한 β-lactam은 이 균들에 효과가 유지되며, 여러 3세대 cephalosporin과 carbapenem도 이 효소가 있어도 안정적.",
+"Extended-spectrum β-lactamase(ESBL) ▸ 300가지가 넘는 변종이 있으며 수의 환자의 Enterobacterales 목 분리주에서도 확인되고 있음. 위 항균제들에 더해 3세대 cephalosporin도 가수분해하지만 carbapenem은 안정적.",
+"ESBL은 주로 E. coli, Klebsiella pneumoniae, Enterobacter spp.에서 확인. ESBL E. coli는 최근 개 연구의 검사 분리주 중 2%–4%에서 발견되어 중요성이 커지고 있음.",
+"ESBL 생산균의 이상적 경험적 치료에 대한 무작위 대조 시험 자료는 없으나 carbapenem이 선호 치료로 간주. 배양에서 감수성이 확인되면 fluoroquinolone이나 aminoglycoside를 대안으로 사용 가능.",
+"Carbapenemase ▸ Enterobacterales가 획득 내성의 한 형태로 진화시킴. 이 균들은 XDR로 간주되며 β-lactam 계열 전체에 내성. 반려동물에서 carbapenemase 생산균은 2013년 처음 기록되었고 현재 세계 여러 나라의 개에서 분리됨.",
+"Fluoroquinolone·aminoglycoside 동시 내성 때문에 치료 선택지가 흔히 제한적. 현재 권장 치료는 없으나 사람 의학에서는 tigecycline, colistin 같은 polymyxin, 또는 fosfomycin을 다른 약물과 병용하는 선택지가 있음. 이런 균을 만나면 감염내과 전문가와의 상의를 권장."]}
+]}

@@ -85,5 +85,18 @@
 {"id": "sacc3-p8-c84", "num": 84, "title": "Seizures and Status Epilepticus", "part": "Part VIII", "part_title": "Neurologic Disorders"},
 {"id": "sacc3-p8-c85", "num": 85, "title": "Intracranial Hypertension", "part": "Part VIII", "part_title": "Neurologic Disorders"},
 {"id": "sacc3-p8-c86", "num": 86, "title": "Tetanus", "part": "Part VIII", "part_title": "Neurologic Disorders"},
-{"id": "sacc3-p8-c87", "num": 87, "title": "Hepatic Encephalopathy", "part": "Part VIII", "part_title": "Neurologic Disorders"}
+{"id": "sacc3-p8-c87", "num": 87, "title": "Hepatic Encephalopathy", "part": "Part VIII", "part_title": "Neurologic Disorders"},
+{"id": "sacc3-p9-c88", "num": 88, "title": "Hospital-Associated Infections and Zoonoses", "part": "Part IX", "part_title": "Infectious Disorders"},
+{"id": "sacc3-p9-c89", "num": 89, "title": "Febrile Neutropenia", "part": "Part IX", "part_title": "Infectious Disorders"},
+{"id": "sacc3-p9-c90", "num": 90, "title": "Sepsis and Septic Shock", "part": "Part IX", "part_title": "Infectious Disorders"},
+{"id": "sacc3-p9-c91", "num": 91, "title": "Bacterial Infections", "part": "Part IX", "part_title": "Infectious Disorders"},
+{"id": "sacc3-p9-c92", "num": 92, "title": "Fungal Infections", "part": "Part IX", "part_title": "Infectious Disorders"},
+{"id": "sacc3-p9-c93", "num": 93, "title": "Viral Infections", "part": "Part IX", "part_title": "Infectious Disorders"},
+{"id": "sacc3-p9-c94", "num": 94, "title": "Canine Parvovirus Infection", "part": "Part IX", "part_title": "Infectious Disorders"},
+{"id": "sacc3-p9-c95", "num": 95, "title": "Infective Endocarditis", "part": "Part IX", "part_title": "Infectious Disorders"},
+{"id": "sacc3-p9-c96", "num": 96, "title": "Urosepsis", "part": "Part IX", "part_title": "Infectious Disorders"},
+{"id": "sacc3-p9-c97", "num": 97, "title": "Necrotizing Soft-Tissue Infections", "part": "Part IX", "part_title": "Infectious Disorders"},
+{"id": "sacc3-p9-c98", "num": 98, "title": "Catheter-Related Bloodstream Infection", "part": "Part IX", "part_title": "Infectious Disorders"},
+{"id": "sacc3-p9-c99", "num": 99, "title": "Multi-Drug Resistant Infections", "part": "Part IX", "part_title": "Infectious Disorders"},
+{"id": "sacc3-p9-c100", "num": 100, "title": "Infectious Disease Control in the ICU", "part": "Part IX", "part_title": "Infectious Disorders"}
 ]}
