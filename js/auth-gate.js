@@ -40,7 +40,6 @@
     try {
       res = await fetch(ENDPOINT, { redirect: 'manual', cache: 'no-store', credentials: 'same-origin' });
     } catch (e) {
-      // 네트워크 자체가 안 됨 → 오프라인으로 간주
       const age = Date.now() - lastOk();
       if (!lastOk() || age > GRACE_DAYS * 864e5) {
         lock('접근 확인이 필요합니다',
@@ -48,13 +47,14 @@
       }
       return;
     }
-    if (res.type === 'opaqueredirect' || res.status === 401 || res.status === 403) {
-      lock('로그인이 필요합니다',
-           '이메일로 코드를 받아 다시 로그인해 주세요. 접근 권한이 해지된 경우에는 담당자에게 문의해 주세요.', true);
-      return;
+    if (res.ok) {
+      try {
+        const id = await res.json();
+        if (id && id.email) { markOk(); return; }
+      } catch (e) {}
     }
-    if (res.ok) { markOk(); return; }
-    // 그 밖의 응답(일시적 오류 등)은 막지 않습니다.
+    lock('로그인이 필요합니다',
+         '이메일로 코드를 받아 다시 로그인해 주세요. 접근 권한이 해지된 경우에는 담당자에게 문의해 주세요.', true);
   }
 
   if (location.search.indexOf('login=') === -1) check();
