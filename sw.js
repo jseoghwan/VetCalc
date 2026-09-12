@@ -1,7 +1,7 @@
 /* VECC Calculation Tools — service worker
    업데이트 방법: 파일을 수정해 올릴 때 아래 VERSION 숫자를 하나 올리면
    모든 기기가 다음 접속 때 새 파일을 받습니다. */
-const VERSION = 'v14';
+const VERSION = 'v15';
 const CACHE = 'kuvecc-' + VERSION;
 /* 교재·자료 데이터(data/) 저장소. js/data-sync.js가 채우며 VERSION과 무관하게 유지됩니다. */
 const DATA_CACHE = 'kuvecc-data';
@@ -14,6 +14,7 @@ const PRECACHE = [
   './tools/anesthesia.html',
   './tools/saccm.html',
   './js/data-sync.js',
+  './js/auth-gate.js',
   './icons/icon-192.png',
   './icons/icon-512.png',
   './icons/apple-touch-icon.png'
@@ -43,6 +44,10 @@ self.addEventListener('fetch', (e) => {
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
   const sameOrigin = url.origin === self.location.origin;
+
+  /* Cloudflare Access 경로와 ?login= 주소는 항상 서버로 보냅니다(캐시하지 않음).
+     js/auth-gate.js의 접근 확인과 로그인 이동이 여기에 걸리면 동작하지 않습니다. */
+  if (sameOrigin && (url.pathname.startsWith('/cdn-cgi/') || url.searchParams.has('login'))) return;
 
   /* 데이터 파일(data/): 기기에 저장된 것이 있으면 바로 응답합니다. 새 파일·수정본은 js/data-sync.js가
      manifest.json을 보고 미리 받아 두므로 여기서는 서버를 기다리지 않습니다.
