@@ -1,0 +1,214 @@
+{
+ "id": "sacc3-p18-c171",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part XVIII",
+ "part_title": "Pharmacology",
+ "chapter_num": 171,
+ "title": "Antitoxins and Antivenoms",
+ "author": "Robert A. Armentano, DVM, DACVIM; Michael Schaer, DVM, DACVIM, DACVECC",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "소동물 의학에서 주로 사용되는 antitoxin(tetanus, tick)은 지역에 따라 달라진다.",
+    "Antivenom은 독사 교상 치료에 가장 흔히 사용된다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "총론",
+   "gist": "수동 면역 — Fc 부분이 알레르기 반응의 주 원인"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Antivenom과 antitoxin은 과면역화된 공여 동물에서 유래한 중화 항체다. 중환자 개·고양이에서 이들 항체 투여가 도움이 되는 상태가 여럿 있으며, tetanus antitoxin과 독사 antivenom이 개·고양이에서 가장 흔히 쓰이는 제품이다.",
+    "기전: 능동 면역으로 공여 동물에서 항체를 생산하고 수 주~수 개월 후 공여자의 혈액을 채취해 면역글로불린을 특정 성분으로 분리, 수혜자에게 수동 면역을 제공한다.",
+    "제조 방식: 전체 IgG antivenom은 ammonium 또는 sodium sulfate 침전을 이용해 공여자 혈청 단백(Fc 부분)이 남은 항체 분획을 만드는데, 이 Fc 부분이 수혜자의 알레르기 반응에 흔히 기여한다.",
+    "F(ab')2와 Fab 제제는 각각 pepsin과 papain 및 효소적 기법을 사용해 Fc 성분이 없는 더 순수한 제품을 얻는다.",
+    "역가는 국제 생물학적 표준으로 시험한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Tetanus Antitoxin",
+   "gist": "권장 100–1000 U/kg — 이미 신경 조직에 결합한 독소에는 무효"
+  },
+  {
+   "type": "list",
+   "items": [
+    "제품: 전 세계에 여러 말 유래 제품이 있다. 영국·미국의 수의 환자용으로는 Tetanus Antitoxin Behring(Intervet UK)과 Tetanus Antitoxin(Colorado Serum Company)이 있다. 사람용 제품(human tetanus immune globulin)도 개·고양이에 off-label로 사용되어 왔다.",
+    "주의: phenol을 함유한 제품은 고양이에서 anaphylaxis 유발 가능성이 높아 이 종에는 권장되지 않는다.",
+    "적응·한계: tetanus 임상징후를 보이는 동물의 회복률을 높이는 치료 목적이며, 항생제·근이완제와 수액·창상 관리를 포함한 일반 지지 요법과 병용해야 한다. 혈류를 순환하는 유리 독소를 결합·중화하지만 이미 신경 조직에 결합한 독소에는 효과가 없다.",
+    "부작용: anaphylaxis가 예상되는 약물 이상반응이다. 과민반응 고위험 동물을 식별하기 위한 피내 검사 결과는 위음성·위양성이 모두 발생할 수 있어 antitoxin·antivenom에서 항상 신뢰할 만하지 않다.",
+    "과민반응 보고: Adamantos와 Boag의 개 9마리 보고에서 부분 용량을 투여받은 1마리만 경미한 과민반응을 보였다. 다른 개 16마리 보고에서는 과민반응 징후가 없었고, Burkitt 등은 IV로 투여받은 개 29마리 중 4마리에서 과민반응 징후가 발생했다고 보고했다.",
+    "용량: 권장 범위는 100–1000 U/kg. 여러 보고에서 개에 사용된 용량은 IV로 10–1900 U/kg 범위였다. 고양이 tetanus 증례보고에서는 사람 tetanus antitoxin 100 U/kg를 IM 투여한 사례가 기술되었다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Tick Antitoxin",
+   "gist": "호주에서는 표준 치료 — 미국에는 제품 없음"
+  },
+  {
+   "type": "list",
+   "items": [
+    "역학: 진드기 마비는 호주에서 개·고양이의 흔한 질환이며, 미국에서 발생하는 증후군은 개에만 영향을 준다. 호주의 매개체는 Ixodes holocyclus, 미국은 Dermacentor 진드기다.",
+    "특징: 빠르게 진행하는 하위운동신경 신경병이 특징이다. 치료는 지지 요법과 진드기 제거이며, 호주에서는 tick antitoxin 투여도 포함된다.",
+    "미국: 북미의 개·고양이는 진드기 제거 후 빠르게 회복하고 통상 호흡 마비가 없어 거의 필요하지 않아 tick antitoxin 제품이 없다.",
+    "제품: 최근까지 Commonwealth Serum Laboratories가 생산했으나 중단했다. 호주에서 현재 이용 가능한 제품은 Canine Antitick Serum(Lismore Supreme Serums), Canine Paralysis Tick Antiserum(North Coast Serum Products), AVSL–Ixodes Holocyclus Antivenom(Australian Veterinary Serum Laboratories)이다. 항혈청은 I. holocyclus의 독에 과면역된 개에서 제조하며 용량은 제품에 따라 다르다. 주된 이상반응은 anaphylaxis다.",
+    "근거: 호주의 진드기 마비 치료에서 tick antitoxin 혈청 요법의 이득 유무를 뒷받침하는 근거는 현재까지 제한적이나, 현재 호주에서는 진드기 마비 동물에 투여하는 것이 표준 치료로 간주된다.",
+    "투여: 개는 일반적으로 IV, 고양이는 IM 또는 복강내로 투여한다. 개의 IV 투여 제안 프로토콜 하나는 용량을 0.9% 생리식염수와 1:1로 희석해 총 용량을 1시간에 걸쳐 주입하면서 적절히 환자를 감시하는 것이다.",
+    "이상반응: Atwell과 Campbell 연구에서 tick antitoxin 혈청에 대한 전신 이상반응이 개보다 고양이에서 더 많았고, 반응 대부분이 저호흡과 서맥을 일으키는 다양한 심혈관·신경 과정을 포함하는 Bezold–Jarisch 반사와 관련될 수 있었다. 이 연구는 atropine이 이상반응 수를 유의하게 감소시켰다고 결론지었다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Botulism Antitoxin",
+   "gist": "사람용 heptavalent BAT에 serotype C 항독소 3000 U 함유"
+  },
+  {
+   "type": "list",
+   "items": [
+    "질환: 개는 Clostridium botulinum에 감염되어 C·D형 외독소에 의한 botulism이 생길 수 있다. 이 균은 강력한 신경독소를 생산하는 혐기성 그람양성 포자 형성 막대균이다.",
+    "발생: 음식·물에 미리 형성된 botulinum 독소를 섭취하거나, 체내 혐기 조직에서 clostridia 포자가 발아해 성장하며 독소를 생산할 때 발생한다. 개는 독소에 비교적 저항성이 있다고 보고되지만 일단 섭취하면 임상 질환이 생길 수 있다.",
+    "중증도: 심한 하위운동신경 신경병이 생길 수 있어 생명을 위협할 수 있다. 가장 중증 유형은 호흡근을 침범해 독소 효과가 약해질 때까지 인공호흡 지지가 필요하다.",
+    "치료: 개용으로 승인된 C형 botulinum antitoxin이 없어 전통적으로 지지 요법이었다. 다만 사람용으로 말에서 만든 heptavalent antitoxin(BAT)이 C형 독소에 효과적이며, 말 혈장에서 유래한 F(ab')2 면역글로불린 분획을 함유하고 serotype C 항독소 3000 단위를 포함한다.",
+    "근거: 사람, guinea pig, 원숭이에서 효능이 입증되었다. 개에서의 적용 정보는 없어 보호자에게 가능한 부작용(특히 anaphylaxis) 목록을 제공한 뒤 동의를 받아 off-label로 사용해야 하며, anaphylactoid 반응에 대비해 epinephrine을 준비해 두는 것이 권고된다.",
+    "브라질에서 Clostridium botulinum C·D형 antitoxin을 개에 성공적으로 사용한 보고가 있다.",
+    "저자 경험: 이 절을 쓴 뒤 저자 중 한 명이 보호자 동의 하에 pentavalent 말 유래 botulism antitoxin을 off-label로 사용했는데, 첫 5분간 용량의 일부만 투여받은 개에서 anaphylaxis가 발생해 epinephrine으로 성공적으로 치료했다 — 따라서 신중한 투여가 강력히 권장된다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Black Widow Spider Antivenom",
+   "gist": "1바이알에 최소 6000 antivenom 단위"
+  },
+  {
+   "type": "list",
+   "items": [
+    "역학: 고양이의 black widow 교상 보고 발생률은 매우 낮고 개에서는 보고된 교상이 없다. 이는 고양이가 이 독에 매우 민감하고 개는 고양이·사람보다 이 신경독소에 덜 민감하기 때문으로 보인다.",
+    "임상: 주된 징후는 거의 통증이 없는 교상 직후 빠르게 따라오는 중증 통증이다. 가장 심한 독액 주입에서는 사망할 수 있다.",
+    "치료: calcium gluconate 투여가 징후의 강도를 줄인다는 보고가 있으나, 사람용 상용 antivenom이 고양이에서 매우 효과적임이 확인되었다. 저자 중 한 명(MS)도 고양이에 사용해 투여 후 몇 시간 내 임상징후의 매우 인상적인 빠른 반전과 정상 회복을 얻었다. 다른 지지 요법으로 morphine, barbiturate, glucocorticoid가 있다.",
+    "제품: Antivenin(Latrodectus mactans)은 black widow 독에 면역된 건강한 말의 혈청에서 얻은 독 중화 globulin의 동결 용액을 건조해 만든 멸균 비발열성 제제이며, 마우스 생물학적 검정으로 표준화된다. 각 바이알은 최소 6000 antivenom 단위를 함유한다.",
+    "투여 예: Twedt 등은 고양이의 black widow 독액 주입 치료에 사용했는데, antivenom 건조물 전량을 동봉 희석액으로 재구성한 뒤 0.9% 생리식염수 50 ml가 든 50 ml 주사기에 넣어 IV로 15분에 걸쳐 투여했고 2시간 후 긍정적 결과가 확인되었다.",
+    "투여 전 피내 검사는 앞서 기술한 모든 한계를 가지며 유용성이 제한적이다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Scorpion Antivenom (Anascorp)",
+   "gist": "사람에서 1–4시간 내 징후 해소 — 수의 문헌 없음"
+  },
+  {
+   "type": "list",
+   "items": [
+    "종: 전갈은 거미강이며 미국에서 공중보건상 우려가 되는 종은 bark scorpion(Centruroides exilicauda)이다. 꼬리 끝의 telson에 두 개의 독샘과 침이 있다.",
+    "독의 작용: 신경 조직의 전압의존성 칼륨·나트륨 채널을 차단한다. 사람(특히 소아)과 개·고양이에서 전신 독액 증상을 일으킬 수 있다.",
+    "임상: 개·고양이는 특히 취약하다. 자침에 의한 국소 염증은 최소지만 전신 효과가 중대하며 안구진탕, 감각이상, 연관통, 근경련이 나타난다. 그 외 과도한 침 분비, 빈맥, 발열, 고혈압, 호흡기 분비 증가가 있다. 사람에서는 횡문근융해증이 보고되었다.",
+    "사람 치료 경과: 최근까지 증상이 있는 사람은 중환자실에 입원해 고용량 benzodiazepine과 opioid를 받았고, 호흡 손상이 있으면 독 효과가 소실될 때까지 때로 수일간 환기 지지가 필요했다.",
+    "Anascorp: 2011년 8월 출시된 F(ab')2 anti-Centruroides antivenom(Centruroides [Scorpion] Immune F(ab')2 [Equine] Injection)으로 사람에서 치료 후 1–4시간 내 징후를 효과적으로 해소한다. 전갈 독으로 면역된 말의 혈장에서 만들며, F(ab')2 분획이 독소를 결합·중화해 표적 조직에서의 재분배와 체외 제거를 촉진한다.",
+    "조성: Centruroides noxius, C. limpidus, C. limpidus tecomanus, C. suffusus의 독으로 구성되며 F(ab')2 함량은 85% 이상이다. 각 바이알은 0.9% 생리식염수 5.0 ml로 재구성하고 단백은 24 mg/ml 이하, 중화 단위는 150 mouse LD50 units 이상을 함유한다(LD50은 마우스 50%를 치사시키는 독 양).",
+    "수의 사용: 개·고양이에서 Anascorp 사용을 기술한 수의 문헌은 없다. 높은 비용이 동물 사용의 주요 걸림돌일 것이다.",
+    "사람 초기 치료법: ① 3바이알을 동봉된 생리식염수 희석액 5 ml로 재구성 ② 합친 뒤 생리식염수로 총 50 ml까지 추가 희석 ③ 10분에 걸쳐 IV 주입. 이후 과민반응을 면밀히 관찰하며, 사람에서 보고된 반응은 구토, 발열, 발진, 구역, 두통, 콧물, 근육통, 피로, 기침, 설사, 무기력이다. 과민반응은 응급 치료가 필요한 anaphylaxis 정도까지 심할 수 있고, 드문 지연 반응으로 혈청병도 발생했다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Pit Viper Antivenom",
+   "gist": "교상 후 4시간 내가 최적, 24시간 이후에도 효과 가능"
+  },
+  {
+   "type": "list",
+   "title": "적응과 시점",
+   "items": [
+    "다가 crotalid antivenom 사용이 미국에서 중등도~중증 pit viper 독액 주입 치료의 근간이며, 사용 여부는 비용 감당과 공급 가능성에 좌우된다.",
+    "효과: 적절한 용량을 적시에 투여하면 부종 확산을 제한하고 응고이상을 역전시키며 신경병 진행을 멈춘다. 다만 독이 조직에 즉각적인 necrotoxic 효과를 내기 때문에 국소 조직 괴사는 역전시키지 못한다.",
+    "시점: 중등도~중증 사람에서 조기 IV 투여가 필수적이며 취약한 동물 피해자에게도 같다. 교상 후 4시간 내가 최적이지만 독액 주입 후 24시간 이상까지도 효과적일 수 있다.",
+    "예후: 다량의 독이 혈관이 풍부한 심부 연조직이나 동맥·정맥에 직접 주입되면 적극적인 antivenom 치료에도 첫 몇 시간 내 사망할 수 있다. 지속적 독액 작용과 재발하는 임상징후가 관찰되어 통상적인 초기 수일 치료를 넘어선 추가 요법이 필요한 경우도 있다."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "미국에서 이용 가능한 pit viper antivenom 제품",
+   "headers": ["제품", "형태·유래", "특징·용량"],
+   "rows": [
+    ["Antivenin (Crotalidae) Polyvalent (ACP)", "전체 IgG + 말 혈청 albumin (면역된 말의 완전 면역글로불린 150 kDa과 albumin)", "사람 교상 치료에 40년 넘게 사용. Ammonium sulfate 침전 공정이 비효율적이어서 venom 특이 IgG 외에 albumin, α·β-globulin, IgM 같은 이종 단백 오염물이 남고 이것이 알레르기성의 주원인. 개의 첫 12–24시간 권장 초기 용량은 독액 주입 중증도, 보호자의 재정 한계, 임상의 판단에 따라 1–10 바이알. 건조물로 판매되어 등장 식염수로 재구성해야 하며 용해에 최대 90분이 걸릴 수 있으나, 희석액을 넣고 따뜻한 수돗물 아래에서 병을 부드럽게 굴리면 20분 내 용해된다"],
+    ["VenomVet (Antivenin Crotalidae Polyvalent Equine Origin)", "F(ab')2 분획", "개에서 초기 1–2 바이알 후 2–4시간 뒤 1–2 바이알 추가가 효과적. IgG보다 빠르고 F(ab)1보다 느리게 제거된다. 저자(MS)는 초기 안정화 용량 후 2–4시간에 걸친 CRI 기법을 사용해 효과적이었다"],
+    ["Rattler Antivenin (Mg biologics)", "IgG (ACP와 유사하게 추가 말 혈청 항원 포함)", "Eastern·Western diamondback rattlesnake, water moccasin, copperhead, prairie·Mojave rattlesnake에 효과적인 다가 제품. 액상으로 제공되며 1–2회(50 ml) 용량으로 효과적이라고 주장. 해동한 제품은 필터를 통해 20–60분에 걸쳐 IV 전달. ACP와 마찬가지로 추가 말 단백이 Fab·F(ab')2 제품보다 제1·3형 과민반응 소인을 더 흔히 만든다"],
+    ["CroFab (Crotalidae Polyvalent Immune Fab [Ovine])", "Fab1, 양(ovine) 면역", "면역글로불린에서 Fab 분자를 절단해 더 작고(50 kDa) 덜 항원성이며 albumin도 제거. 단점은 혈류에서 더 빠르게 제거되어 반복 투여가 흔히 필요한 것. 한 사람 연구는 부종·응고 이상 진행에 따라 6시간마다 3회 또는 임상 판단에 따라 재투여를 권고. 손으로 흔들 때 재구성 시간 중앙값 3–6.8분이며 한 연구는 용해 시간을 0.9–1.1분으로 줄일 수 있음을 보였다. 개 용량 권고는 대부분 경험적이며 1~수 바이알로 다양. 짧은 작용시간과 높은 비용으로 수의 환자에서 선호도가 낮다"],
+    ["Antivipmyn (Polivalent Anti-snake Fabotherapic, 멕시코)", "F(ab')2 다가, 말 유래", "북미 뱀 교상에 효과적. 개에서 초기 1–2 바이알 후 2–4시간 뒤 1–2 바이알 추가가 효과적. 미국에서 구하려면 USDA 수입 허가와 주 수의사의 승인이 필요"],
+    ["PoliVet-ICP (Instituto Clodomiro Picado, 코스타리카)", "말 유래 다중특이 전체 IgG", "ACP와 달리 과잉 단백이 없다. 면역에 사용된 뱀(Bothrops asper, Crotalus durissus)이 북미 종은 아니지만 흔한 북미 pit viper 독에 대한 효과는 저해되지 않으며, 전체 이득과 위험은 알려지지 않았다. 1 ml가 B. asper 독 2.5 mg 이상과 C. durissus 독 2.0 mg 이상을 중화한다. 제조사 권장 소동물 용량은 경증 4 바이알 이상, 중등증 8 바이알, 중증 16 바이알. 미국에서 구하려면 USDA 수입 허가와 주 수의사 승인이 필요"]
+   ],
+   "note": "여섯 제품 모두 개에서 독 중화에 임상적으로 효과적이다. 개의 용량 일정은 중증도 분류표와 실험 연구에 기반한 사람 프로토콜에서 경험적으로 차용되었고, 사람 용량은 마우스 in vivo 실험 결과에서 외삽되었다. 주입된 독의 정확한 양과 조직에서의 이후 흡수를 알 수 없으므로 경험적 치료가 사용되며 임상 경험이 매우 중요하다."
+  },
+  {
+   "type": "list",
+   "title": "Fab CRI 기법",
+   "items": [
+    "Bush 등은 사람 환자에서 Fab antivenom을 지속 주입(CRI)으로 사용한 경험을 기술했다.",
+    "주입 속도는 24시간당 2–4 바이알(평균 3.1±0.4 바이알/일)로 혈액학적 이상의 조절·역전을 목표로 했다.",
+    "Fab 주입 기간은 독액 주입 시점으로부터 6–14일이었고, 이후 혈액학적 수치가 정상화되었거나 정상화 중이었으며 계속 그 추세를 보였다.",
+    "결론: CRI 방식이 고위험 환자에서 Fab 치료 없이 관찰하거나 필요시 투여하는 것보다 더 안전하고 효과적이며 비용 효율적일 수 있다."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "과민반응",
+   "items": [
+    "Anaphylaxis는 제품이 말·양 유래이므로 드물지만 생명을 위협할 수 있는 합병증이다. 구토, 침 흘림, 안절부절못함, 두드러기, 안면 소양감 같은 조기 징후는 즉시 치료해야 한다.",
+    "최적 주입 속도는 알려지지 않았으나, 환자가 어떤 제품이든 견디는 한 전체 용량을 비교적 빠르게 1시간에 걸쳐 투여할 수 있다.",
+    "발생률: F(ab')2를 투여받은 개 272마리 연구에서 급성 과민반응이 0.7%에서 관찰되었고, 다른 연구들은 7%와 6%의 급성 반응을 보고했다. 또 다른 연구는 3 바이알 투여 시 급성 과민반응이 없었으나 6 바이알 투여 시 13%의 과민반응이 있었다고 보고했다. Fab 전향 임상시험에서는 antivenin 관련 급성 반응이 치료 개의 6%에서 발생했다.",
+    "혈청병(제3형 과민반응): 사람에서 더 드문 합병증으로, 발열, 무기력, 구역, 설사, 림프절 확대, 피부병증이 특징인 지연 면역복합체 반응이며 antivenom 투여 후 3일~2주에 걸쳐 발생할 수 있다. ACP를 받은 사람의 혈청병 위험은 80%이고 발생률은 투여 용량에 비례한다.",
+    "사람과 달리 개에서는 혈청병이 드물게만 보고되었는데, 더 낮은 용량 투여나 환자 면역계의 인식 부족 때문일 수 있다. 한 증례보고는 개에서 제1형과 제3형 과민반응을 모두 기록했다.",
+    "Fab 전향 임상시험은 Fab 치료가 독 효과를 효과적으로 안정화·종료시켰음을 보였고, 1 바이알 단독과 초기 0.5 바이알 후 6시간 뒤 0.5 바이알 투여 사이에 차이는 없었다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Coral Snake Antivenom",
+   "gist": "Coralmyn 또는 Anticoral Antivenom을 수입 허가로 사용"
+  },
+  {
+   "type": "list",
+   "items": [
+    "공급 상황: 과거 Wyeth Pharmaceuticals를 통해 이용 가능했던 IgG coral snake antivenom은 FDA 유효기간 연장으로 공급이 제한되어 수의학에서 더 이상 사용되지 않고 사람 환자에게만 제공된다.",
+    "일반적으로 coral snake antivenom은 구하기 어렵다 — 독을 채취할 coral snake를 충분히 확보하기 어렵고, 뱀 1마리당 독량이 적고, 사육 중 건강을 유지하기 어렵기 때문이다.",
+    "대체 제품: Coralmyn(Polivalent Anticoral Fabotherapic, Instituto Bioclon, 멕시코시티)과 Anticoral Antivenom(Instituto Clodomiro Picado, 코스타리카 대학)은 USDA 수입 허가를 신청하고 주 수의사의 승인을 받아 미국에서 구할 수 있었다. Coralmyn은 희석액으로 재구성이 필요한 동결건조 형태이고 Anticoral Antivenom은 바로 쓸 수 있는 액상이다."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Coralmyn",
+   "items": [
+    "조성: 멕시코·중미·콜롬비아에 서식하는 Micrurus nigrocinctus(black-banded coral snake)의 독으로 생산한 말 유래 다클론 F(ab')2 분획 antivenom이다.",
+    "근거: 이 독은 강한 신경독 효과를 가져 미국 남부의 coral snake 종(Micrurus fulvius 동부 coral snake, Micrurus tener 텍사스 coral snake)의 독과 동일한 의학적 의의를 갖는다. 마우스 연구에서 M. fulvius와 M. tener 독 모두의 중화 효능이 확립되었다.",
+    "전체 IgG 제품보다 이종 단백이 적지만 알레르기 반응이 여전히 발생할 수 있으며 드물다.",
+    "저자 경험: 개 4마리와 고양이 2마리에 사용해 인공호흡 지지 필요 회피와 환자 생존으로 평가된 유익한 결과를 얻었다. 다만 관찰적 결과이고 짝지은 대조군이 없어, 치료하지 않은 개에서도 인공호흡 지지를 피할 수 있었을 가능성을 배제할 수 없다. 그럼에도 저자들의 경험은 우호적이었다.",
+    "투여: 제조사는 재구성 제품을 0.9% 생리식염수 250 ml에 희석해 4시간에 걸쳐 투여하도록 권장하지만, 저자들은 자동 주입 주사기를 사용해 재구성한 10 ml 용량을 30–45분에 걸쳐 주사했고 이 제한된 집단에서 부작용 없이 안전했다.",
+    "용량: 제품 설명서의 사람 권장 바이알 수는 2–9개이지만, 재정 제약(2019년 수의 사용 기준 바이알당 약 300달러)으로 저자들은 환자당 1–2 바이알로 제한했다."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "Anticoral Antivenom",
+   "items": [
+    "코스타리카 대학 Instituto Clodomiro Picado에서 생산하며, 정제된 말 면역글로불린으로 만들고 보존제로 0.25% phenol을 함유한다.",
+    "동부 coral snake에 효과가 입증되었다.",
+    "액상과 동결건조 형태가 모두 있으며, 동결건조 제품의 유효기간은 5년, 액상은 2°C~8°C에서 3년간 보관할 수 있다.",
+    "저자 중 한 명(MS)이 지난 4년간 사용했으며 Coralmyn과 동등하게 안전하고 효과적이다."
+   ]
+  }
+ ]
+}

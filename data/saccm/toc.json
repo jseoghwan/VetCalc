@@ -1168,6 +1168,34 @@
    "title": "Hemostatic Drugs",
    "part": "Part XVIII",
    "part_title": "Pharmacology"
+  },
+  {
+   "id": "sacc3-p18-c168",
+   "num": 168,
+   "title": "Antiarrhythmic Agents",
+   "part": "Part XVIII",
+   "part_title": "Pharmacology"
+  },
+  {
+   "id": "sacc3-p18-c169",
+   "num": 169,
+   "title": "Inhaled Medications",
+   "part": "Part XVIII",
+   "part_title": "Pharmacology"
+  },
+  {
+   "id": "sacc3-p18-c170",
+   "num": 170,
+   "title": "Complications of Chemotherapeutic Agents",
+   "part": "Part XVIII",
+   "part_title": "Pharmacology"
+  },
+  {
+   "id": "sacc3-p18-c171",
+   "num": 171,
+   "title": "Antitoxins and Antivenoms",
+   "part": "Part XVIII",
+   "part_title": "Pharmacology"
   }
  ]
 }
