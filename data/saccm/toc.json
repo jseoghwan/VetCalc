@@ -951,6 +951,48 @@
 "title": "Integrative Veterinary Medicine for the Intensive Care Unit Patient",
 "part": "Part XV",
 "part_title": "Anesthesia and Pain Management"
+},
+{
+"id": "sacc3-p16-c137",
+"num": 137,
+"title": "Smoke Inhalation",
+"part": "Part XVI",
+"part_title": "Environmental Emergencies"
+},
+{
+"id": "sacc3-p16-c138",
+"num": 138,
+"title": "Hypothermia",
+"part": "Part XVI",
+"part_title": "Environmental Emergencies"
+},
+{
+"id": "sacc3-p16-c139",
+"num": 139,
+"title": "Heat Stroke",
+"part": "Part XVI",
+"part_title": "Environmental Emergencies"
+},
+{
+"id": "sacc3-p16-c140",
+"num": 140,
+"title": "Drowning and Submersion Injury",
+"part": "Part XVI",
+"part_title": "Environmental Emergencies"
+},
+{
+"id": "sacc3-p17-c141",
+"num": 141,
+"title": "Anaphylaxis",
+"part": "Part XVII",
+"part_title": "Miscellaneous Disorders"
+},
+{
+"id": "sacc3-p17-c142",
+"num": 142,
+"title": "Gas Embolism",
+"part": "Part XVII",
+"part_title": "Miscellaneous Disorders"
 }
 ]
 }
