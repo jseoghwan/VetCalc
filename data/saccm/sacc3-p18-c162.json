@@ -1,0 +1,161 @@
+{
+ "id": "sacc3-p18-c162",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part XVIII",
+ "part_title": "Pharmacology",
+ "chapter_num": 162,
+ "title": "Cannabinoid Medicine in Intensive Care Unit Patients",
+ "author": "Narda G. Robinson, DO, DVM, MS, FAAMA",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "수의 시장용으로 생산된 어떤 식물성 제제도 Cannabis sativa만큼 연구 검증을 받지 않았다.",
+    "수의사는 delta-9 tetrahydrocannabinol(THC) 함량이 높은 품종에 의한 독성에는 익숙하지만, 주로 cannabidiol(CBD)을 함유한 대마(hemp) 형태의 치료 효과에는 덜 익숙할 수 있다.",
+    "중환자에서 CBD와 미량의 THC의 잠재적 이로운 효과로 항산화, 항염, 신경보호 효과가 있다.",
+    "현재 북미의 어떤 수의 면허 기관도 수의사가 FDA 미승인 대마 기반 제품을 판매·처방하는 것을 지지하지 않는다.",
+    "동일한 기준이 cannabis만이 아니라 모든 식물성 의약품에 적용되어야 하며, 여기에는 우수 제조 관행, 대상 종에서 안전성·효과의 근거가 있는 성분, 제품 내용과 품질의 투명성이 포함된다.",
+    "수의 의료에서 cannabinoid 의학을 합리적·효과적으로 적용하려면 임상의가 식물학, cannabinoid 화학, endocannabinoid 계의 생리를 교육받아야 한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "규제 현황",
+   "gist": "THC < 0.3% 건조중량의 hemp만 2018 Farm Bill로 규제 해제"
+  },
+  {
+   "type": "list",
+   "items": [
+    "미국 연방법상 마리화나는 Controlled Substances Act에 따라 schedule I 규제물질로 지정되어 있으며, 예외는 2018 Farm Bill 통과로 최근 규제가 해제된 'hemp'(건조중량 기준 THC < 0.3%인 Cannabis sativa L)다.",
+    "연방법과 주법의 처리가 다르다. 미국 절반 이상의 주가 엄격한 지침 아래 사람의 의료용 마리화나 사용을 허용하는 법을 통과시켰고 추가로 여러 주가 기호용 사용을 허용했으나, 사람 사용을 합법화한 주법은 동물의 cannabis 사용에는 적용되지 않는다.",
+    "AVMA 개요('Cannabis as Drug, Food, or Supplement in Veterinary Medicine')의 결론: 현행 연방·주법 아래 동물용으로 승인되지 않았거나 FDA extra-label 규정에 부합하게 동물·사람용으로 승인되지 않은 'hemp' 또는 기타 cannabis 유래 제품을 투여·조제·처방·권고하는 수의사는 이상사건이 발생할 경우 법적 위험이 커진다. 이상사건에는 의도하지 않은 효과(부작용)뿐 아니라 의도한 치료 효과를 내지 못하는 경우도 포함된다. 해당 질환을 치료할 승인 약물이 있는데 치료 계획에서 선택되지 않았거나 관련 표준 진료가 부재한 경우 법적 위험이 더 높아질 수 있다.",
+    "규제 환경은 변하고 있으나 집필 시점에 수의사가 환자를 위해 cannabis 제품을 처방·판매할 명확한 경로는 없다.",
+    "연구 환경: schedule I 분류로 인한 cannabis 연구 금지는 2014년 Obama 대통령의 Farm Bill 발효로 완화되었다. 이 법의 수정 조항이 연구 목적의 hemp(비도취성 cannabis) 생산을 합법화하고 학술기관의 실험·임상시험을 허용했다.",
+    "동물에게 cannabis를 투여하는 것의 공중보건 영향은 중개연구·공중보건·식품안전 측면의 함의를 가지므로 추가 검토가 필요하다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "수의 연구의 한계",
+   "gist": "제품 성분 비공개·배치 간 변이가 핵심 문제"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Farm Bill 발효 후 여러 기관에서 설문, 종설, endocannabinoid 리간드·수용체 분포 특성 규명, 약동학 분석, 그리고 골관절염·발작 장애 개의 1상·2상 임상시험 등이 수행되었다.",
+    "상업용 제제를 다룬 대부분의 수의 연구가 겪는 근본 문제는 성분에 대한 명확성 부족이다. 식물 추출물의 화학 프로파일은 배치마다 크게 달라질 수 있어 연구자는 배치 간 변이를 확인하기 위한 독립 분석을 수행해야 한다.",
+    "일부 연구는 제한된 수의 cannabinoid(통상 CBD)만 있는 제품의 효과를 보고, 다른 연구는 자연 발생 cannabinoid·terpene·flavonoid 등 전체 스펙트럼을 포함한 hemp 추출물을 시험한다.",
+    "연구비 부족으로 일부 연구자가 제품 제조사의 재정 지원을 받게 되고, 저자 중 한 명 이상이 후원사·제품 공급사와 재정적 관계를 가질 가능성도 있다.",
+    "가장 곤란하고 간과되는 문제는 제조사가 독점 정보라는 이유로 제품 성분 공개를 거부할 때 발생한다 — 성분을 비밀로 두면 물질 자체에 대한 위험과 불확실성이 생기고, 서로 다른 제형의 안전성·효과를 비교하는 과학자의 능력도 저해된다.",
+    "규제 집행·감독이 약하거나 없어 상업용 수의 hemp 보조제에 여러 품질관리 문제가 생겼다. 연구자가 고려해야 할 다른 요인으로 오해를 유발하는 표기, 잘못된 추출 기법, 제품 불안정·분해·오염, 각 단위의 성분·안전성을 인증하는 기관의 의심스러운 자격이 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "용어와 화학",
+   "gist": "Cannabis 유래, 마리화나는 THC 높음, 산업용 hemp는 CBD 주성분"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Cannabis는 Cannabis sativa 식물에서 유래한 제품을 가리킨다. 마리화나는 cannabis의 한 형태로 도취 물질 delta-9 tetrahydrocannabinol(THC)을 상당량 함유한다.",
+    "THC가 극히 낮거나 없는 cannabis 품종(chemovar)은 산업용 hemp로 분류되며 CBD가 주된 cannabinoid 성분이다. 보호자가 동물을 위해 찾는 주된 제형은 산업용 hemp로 만든 오일 추출물, 식용 제품, 캡슐이다.",
+    "Cannabinoid의 세 가지 범주: 식물에서 유래한 phytocannabinoid, 내인성 생물활성 지질인 endocannabinoid(omega-3·omega-6 지방산 유래), 그리고 수의학에서 자리를 잡지 못한 합성 cannabinoid.",
+    "Phytocannabinoid는 수백 종에 이르며 cannabis에서 생화학적으로 가장 풍부한 활성 성분이고, terpene과 flavonoid는 훨씬 적은 양으로 존재한다.",
+    "Terpene(흔히 essential oil로 불림): 식물에 풍미와 향을 제공하며 약리 활성이 cannabinoid의 작용을 증강하거나 상호작용할 수 있다. Cannabinoid와 유사하게 친유성이어서 신경 조직을 투과할 수 있고, 세포막, 뉴런·근육 조직의 이온채널, 수용체(신경전달물질·G 단백 연결), 2차 전달자 계, 효소에서 작용한다. 최근까지 치료적 영향이 간과되었으나 비교적 낮은 농도에서도 강력한 효과를 낼 수 있음이 연구로 확인되었다.",
+    "Flavonoid(cannflavin으로 불림): 식물에 색소를 제공하고 항산화 가치를 갖는다. 특히 cannflavin A와 B는 강한 항염 활성을 보이며, cannflavin A는 aspirin보다 PGE2를 30배 더 억제하지만 COX-1·COX-2는 유의하게 억제하지 않는다. Cannabis의 다른 flavonoid로 apigenin과 quercetin이 있다.",
+    "Cannabinoid 연구가 활발히 성장했음에도 각 성분의 단독 및 조합 시 구체적 약리 효과에 대한 근거는 종을 통틀어 여전히 희박하다."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "TABLE 162.1 Cannabis의 활성 화학 성분 요약",
+   "headers": ["범주", "대표 예", "약리적 의의·효과"],
+   "rows": [
+    ["Phytocannabinoid", "Delta-9-tetrahydrocannabinol(THC) — 마리화나에 비교적 고농도로 존재\nCannabidiol(CBD) — hemp에 고농도로 존재\n그 외 100종 이상의 cannabinoid가 더 낮은 농도로 존재", "THC: 도취성, THC 독성의 원인, 진통·식욕 촉진·신경보호\nCBD: 비도취성, 항발작·진통·항불안·항염\n기타: 다양한 이로운 효과, CBD·THC보다 연구가 덜 됨"],
+    ["Terpene과 Terpenoid", "β-Caryophyllene, Myrcene, Limonene, Linalool, Humulene, α-Pinene", "항불안, 항진균, 항신생물, 항바이러스, 항암, 항염, 항고혈당, 항기생충, 항산화, 항미생물"],
+    ["Flavonoid", "Cannaflavins, Apigenin, Quercitin, Catechins", "항산화, 항염, 항우울"]
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "Phytocannabinoid와 산(acid) 형태",
+   "gist": "가열·건조·시간 경과가 산 형태를 탈카복실화"
+  },
+  {
+   "type": "list",
+   "items": [
+    "지금까지 가장 주목받은 cannabinoid: THC, CBD, cannabinol, cannabigerol, tetrahydrocannabivarin, cannabichromene과 각각의 산 형태(THCA, CBDA, cannabigerolic acid, tetrahydrocannabivarin acid), 그리고 delta-8 tetrahydrocannabinol, cannabidivarin, cannabinovarin.",
+    "산 형태는 살아 있거나 가공되지 않은 식물에 존재하며 살충·항생 성질을 통해 식물의 건강에 역할을 한다. 가열, 건조, 시간 경과가 산을 탈카복실화해 더 강력한 cannabinoid 형태를 만든다.",
+    "산 형태의 임상 효과는 탈카복실화된 형태와 다르지만 아직 모르는 것이 많다. 예를 들어 THCA는 중성(탈카복실화) 형태인 THC보다 도취성이 덜하다. CBD의 자연 형태인 CBDA는 항염·항암 효과로 주목받고 있다.",
+    "개에서 THCA와 CBDA의 흡수·제거 특성은 각각 THC·CBD와 달라서 hemp 추출물을 설계·투여할 때 고려가 필요하다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "THC",
+   "gist": "CB1·CB2의 부분 작용제 — CBD는 아님"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Cannabis의 도취 효과는 주로 THC에서 비롯된다. 많은 수의 임상의, 특히 응급·중환자 진료에 종사하는 이들은 delta-9 THC 함량이 훨씬 높은 약물의 독성 치료 경험 때문에 동물을 THC로 치료하는 발상을 경계할 수 있다.",
+    "THC 독성의 징후: 침울 또는 초조, 과다 침 분비, 저체온, 산동, 구토, 요실금, 서맥 또는 빈맥, 진전, 실조, 발작, 혼수.",
+    "그러나 적절한 농도의 THC는 CBD를 포함한 다른 cannabinoid가 갖지 못한 특유의 약리적 가능성을 지닌다. 중환자에서 THC는 항산화, 항염, 신경보호 효과를 제공하며, 이는 NSAID의 대안으로서의 역할 가능성과 염증성 장질환·신경 질환 같은 상태에서의 임상적 가치를 시사한다.",
+    "가장 주목할 점은 THC가 endocannabinoid 계(ECS) 수용체 CB1·CB2에 부분 작용제로 직접 작용한다는 것이며 CBD는 그렇지 않다. ECS는 다른 내인성 신경조절계와 마찬가지로 리간드·수용체·효소로 구성된다. THC는 ECS에 대한 효과를 통해 경직, 통증, 기분, 식욕, 초조의 병태생리적 측면을 조절한다.",
+    "CB1 수용체: 뉴런 조직의 시냅스전·후 위치에 존재하며, 상대적 밀도와 위치가 특정 부위에서 THC가 신경 전달에 영향을 줄 수 있는 정도를 반영한다. 예를 들어 solitary tract 핵에 존재하는 것이 항구토 효과를 설명할 가능성이 높다. 시상하부, 기저핵, 소뇌, 척수 운동뉴런, 그리고 눈, 교감신경절, 장 신경계에도 나타난다. 뉴런 외 조직으로는 면역계(골수, 비장, 흉선, 편도), 심장, 폐, 부신, 신장, 간, 장, 전립선, 췌장, 정소, 난소, 태반이 있다.",
+    "CB2 수용체: 주로 골수, 흉선, 비장, 편도, T·B 림프구, 단핵구, 자연살해세포, 다형핵세포, mast cell 등 면역 조직에 존재한다.",
+    "CB1과 CB2 모두 화학 전달자의 방출을 조절하고 세포 이동 양상을 바꾸며 chemokine·cytokine 생성을 변화시켜, 세포 행동·이동을 상향 또는 하향조절함으로써 면역 기능을 변화시킨다.",
+    "고농도 THC는 마리화나 중독(THC 독성)으로 알려진 생리적 혼란을 유발한다. 중환자 임상의는 사람에서 심방세동이나 심실세동으로 가장 자주 나타나는, 생명을 위협할 수 있는 마리화나 연관 부정맥에도 경계를 유지해야 한다.",
+    "CBD 제품에 대한 규제 집행·감시가 없는 상황에서 소동물이 THC에 오염된 CBD 제제를 장기 섭취해 예상치 못하게 THC 독성을 보일 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "CBD와 약물 상호작용",
+   "gist": "CBD는 CYP3A4 강력 억제 — 전체 약물의 약 1/4이 이 경로"
+  },
+  {
+   "type": "list",
+   "title": "CBD",
+   "items": [
+    "Cannabis의 주된 비도취성 phytocannabinoid다. ECS 수용체에 대한 친화도가 매우 낮고 대신 TRPV1, 5HT1A 등 다른 수용체계와 수용체 비의존적 효과를 통해 작용한다.",
+    "Cannabinoid 수용체의 음성 알로스테릭 조절을 통해 THC의 작용제 활성을 길항할 수도 있다.",
+    "THC와 마찬가지로 항염, 신경보호, 항산화 효과를 제공한다. 그 외 언급되는 치료 효과로 진통, 항균, 항당뇨, 항구토, 항불안, 혈관이완, 골 성장 자극이 있다."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "약물 상호작용",
+   "items": [
+    "식물성 약제는 약물 대사 경로를 방해해 병용 약물의 제거 속도를 바꿀 수 있다. CBD와 THC 모두 cytochrome P-450 효소에 영향을 주어 일부는 억제하고 일부는 유도한다.",
+    "CBD는 전체 의약품의 약 1/4을 대사하는 cytochrome P-450 효소군(CYP3A4)의 강력한 억제제여서, benzodiazepine, macrolide, 칼슘채널차단제, cyclosporine, 항히스타민제 등의 약물 농도를 높일 수 있다.",
+    "CYP2D6 억제를 통해 베타차단제, 삼환계 항우울제, 선택적 serotonin 재흡수 억제제, opioid의 순환 농도도 높일 수 있다.",
+    "개의 cannabis 사용 집단에서 가장 중요한 점으로, CBD는 여러 항경련제의 혈청 농도를 유의하게 바꿀 수 있고 일부 경우 간기능 검사 이상을 유발할 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "수의 cannabinoid 의학의 전망",
+   "gist": "GMP·안전한 성분·성분 투명성이 전제"
+  },
+  {
+   "type": "list",
+   "items": [
+    "수의 환자에게 cannabis의 진정한 가치를 가려내는 일은 약리적 특성만으로 되지 않는다.",
+    "한 cannabis 연구자의 지적: 과학자·소비자·동물 애호가로서 제조사가 우수 제조 지침을 따르고 동물에게 안전한 성분을 쓰며 제품 성분을 투명하게 공개하도록 압력을 가해야 하고, 제조사는 경험담이 아니라 과학에 근거한 용량 요법을 제시해야 한다.",
+    "또한 지방정부, 주로 주 수의·약사 위원회가 수의 전문가가 반려동물용 cannabis 제품을 논의·권고하고 경우에 따라 처방할 수 있도록 법령 문구를 채택하게 압력을 가해야 하며, 수의 전문직이 이 주제를 스스로 교육하도록 장려해야 한다."
+   ]
+  }
+ ]
+}
