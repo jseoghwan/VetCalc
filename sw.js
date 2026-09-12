@@ -1,10 +1,11 @@
 /* VECC Calculation Tools — service worker
    업데이트 방법: 파일을 수정해 올릴 때 아래 VERSION 숫자를 하나 올리면
    모든 기기가 다음 접속 때 새 파일을 받습니다. */
-const VERSION = 'v13';
+const VERSION = 'v14';
 const CACHE = 'kuvecc-' + VERSION;
 /* 교재·자료 데이터(data/) 저장소. js/data-sync.js가 채우며 VERSION과 무관하게 유지됩니다. */
 const DATA_CACHE = 'kuvecc-data';
+const cacheable = (res) => res && (res.type === 'opaque' || (res.ok && !res.redirected));
 const PRECACHE = [
   './',
   './index.html',
@@ -51,7 +52,7 @@ self.addEventListener('fetch', (e) => {
     e.respondWith(
       caches.open(DATA_CACHE).then((cache) =>
         cache.match(req).then((hit) => hit || fetch(req).then((res) => {
-          if (res && res.ok) cache.put(req, res.clone());
+          if (cacheable(res)) cache.put(req, res.clone());
           return res;
         }).catch(() => new Response('', { status: 504, statusText: 'offline' })))
       )
@@ -63,7 +64,7 @@ self.addEventListener('fetch', (e) => {
     caches.open(CACHE).then((cache) =>
       cache.match(req, { ignoreSearch: sameOrigin }).then((cached) => {
         const network = fetch(req).then((res) => {
-          if (res && (res.ok || res.type === 'opaque')) cache.put(req, res.clone());
+          if (cacheable(res)) cache.put(req, res.clone());
           return res;
         }).catch(() => null);
         if (cached) { return cached; }
