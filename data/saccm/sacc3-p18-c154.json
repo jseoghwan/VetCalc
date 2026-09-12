@@ -1,0 +1,195 @@
+{
+ "id": "sacc3-p18-c154",
+ "book": "Small Animal Critical Care Medicine, 3rd ed.",
+ "book_short": "SACCM 3판",
+ "part": "Part XVIII",
+ "part_title": "Pharmacology",
+ "chapter_num": 154,
+ "title": "Antiemetics and Prokinetics",
+ "author": "Michael D. Willard, DVM, MS, DACVIM (Internal Medicine); Ralph C. Harvey, DVM, MS, DACVAA",
+ "format": 2,
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "KEY POINTS",
+   "items": [
+    "수질 구토중추(MVC)는 뇌의 국소적·구분된 영역이 아니라 medulla 전체에 퍼져 있을 가능성이 높다.",
+    "중추 작용 항구토제가 말초 작용 항구토제보다 효과적이며, 그중 MVC에 작용하는 약물이 chemoreceptor trigger zone(CRTZ)에만 작용하는 약물보다 대개 더 효과적이다.",
+    "Maropitant(neurokinin-1 길항제)은 개·고양이에서 매우 효과적이며 피하주사 시의 통증 외에는 부작용이 거의 없다.",
+    "Serotonin(5-HT3) 수용체 길항제 ondansetron과 dolasetron은 개·고양이에서 대개 효과적이고 부작용이 적다.",
+    "Metoclopramide는 CRTZ에 작용하는 dopamine 수용체 길항제이며 위장 운동 촉진제이기도 하다. 때때로 이상 행동, 심지어 구토(과도한 위장 운동 촉진 활성 때문일 가능성)를 유발할 수 있고, 고양이에서는 개보다 효과가 떨어지는 경향이 있다.",
+    "Promazine 유도체(chlorpromazine, prochlorperazine)는 효과적인 중추 작용 항구토제이나 α-adrenergic 차단 활성으로 진정과 저혈압을 유발할 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "항구토제 사용 원칙",
+   "gist": "NK-1 길항제를 제외하면 위장관 폐색에서는 대개 무효"
+  },
+  {
+   "type": "list",
+   "items": [
+    "적응: 구토로 에너지·수분·전해질 항상성 유지가 어려울 때, 또는 구역으로 삶의 질이 나빠질 때가 주된 적응증이다.",
+    "구토하는 모든 환자에게 항구토제를 줄 필요는 없다 — 기저 질환 치료의 효과를 평가하기 위해 하루 1–2회 구토를 허용하는 것이 더 적절한 경우도 있다.",
+    "전형적 적응증: opioid 전투약 전, 췌장염, 위염, 장염, 복막염, 간질환, 신부족, 차멀미. 흡인성 폐렴 위험 환자에서도 사용한다.",
+    "Neurokinin-1(NK-1) 수용체 길항제를 제외하면 위장관 폐색 환자에서는 대개 효과가 없다.",
+    "활발히 구토하는 환자에서는 비경구 투여가 대개 선호된다 — 경구 투여는 흡수 전에 토해버리면 무효가 된다.",
+    "의학적·인도적 우려를 다루기 위한 적용이 늘고 있으나, 특정 대상군 기준 없이 위장관 보호제와 항구토제를 일상적으로 예방 투여하는 것은 인의·수의학 모두에서 의문이 제기되었다."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "TABLE 154.1 개·고양이에 흔히 사용되는 중추 작용 항구토제",
+   "headers": ["약물", "용량", "특별 고려사항"],
+   "rows": [
+    ["Maropitant", "1 mg/kg SC q24h 또는 2 mg/kg PO q24h\n개: 차멀미에 8 mg/kg PO q24h, 최대 2일\n고양이: 차멀미에도 1 mg/kg SC, IV, PO q24h", "개·고양이에 승인된 항구토제"],
+    ["Ondansetron", "0.1–1 mg/kg IV, PO q8-12h", "—"],
+    ["Granisetron", "0.1–0.5 mg/kg IV q8-24h", "—"],
+    ["Dolasetron", "0.6–1 mg/kg IV, SC, PO q12-24h", "—"],
+    ["Metoclopramide", "0.1–0.5 mg/kg IV, IM, PO q8-12h\n또는 구역에 1–2 mg/kg/24hr CRI", "위장 운동 촉진제\n과용량 시 extrapyramidal 효과 유발 가능. Phaeochromocytoma 환자에서는 주의\n참고: 위식도 역류/장폐색 치료에는 0.4 mg/kg IV 부하 후 0.3 mg/kg/hr IV"],
+    ["Chlorpromazine", "개: 0.5 mg/kg IV, IM, SC q6-8h\n고양이: 0.2–0.4 mg/kg IM, SC q6-8h", "저혈압과 진정 유발 가능\nPhaeochromocytoma 환자에서는 주의"],
+    ["Prochlorperazine", "0.1–0.5 mg/kg IV, IM, SC q8-12h", "저혈압과 진정 유발 가능\nPhaeochromocytoma 환자에서는 주의"]
+   ],
+   "note": "본문에서는 maropitant를 개에서 1 mg/kg IV 또는 SC, 또는 2 mg/kg PO q24h로 최대 5일 연속 투여하고, 차멀미 예방 경구 용량 8 mg/kg은 이동 2시간 전에 투여하며, 신질환 연관 구토 예방에는 4 mg/kg PO를 쓴다고 기술한다. Chlorpromazine은 본문에서 0.1–0.5 mg/kg IV, SC, IM q6-8h로 기재. — = 요약에 해당 내용 없음."
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Neurokinin-1 수용체 길항제 (Maropitant)"
+  },
+  {
+   "type": "list",
+   "items": [
+    "기전: 중추신경계와 위장관 말초 NK-1 수용체에서 substance P의 작용을 차단한다. 개·고양이에 승인되어 있고 안전하며 매우 효과적인 약물로 간주된다.",
+    "용량: 개는 통상 1 mg/kg IV 또는 SC, 또는 2 mg/kg PO q24h로 최대 5일 연속. 차멀미 예방 경구 용량은 8 mg/kg q24h(이동 2시간 전). 고양이는 차멀미 예방에도 1 mg/kg(IV, SC, PO). 신질환 연관 구토 예방 용량은 4 mg/kg PO. 고양이에서 경구 제품과 경로는 extra-label이다.",
+    "IV 투여: 말초 관류가 불량한 환자와 피하주사 통증을 피하려는 경우에 쓴다. 다만 IV 투여로 일시적 저혈압이 생길 수 있고 acepromazine을 함께 받은 환자에서 가장 뚜렷하므로 1–2분에 걸쳐 천천히 주사한다.",
+    "SC 통증: 실온 보관에서 형성되는 cyclodextrin 분해산물 때문이며, 주사제를 냉장 보관하면 SC 주사 통증이 줄어든다. IV 경로는 SC 주사 통증을 피할 수 있다.",
+    "약동학: IV·SC 투여 후 혈장 반감기는 경로와 무관하게 비슷하지만 혈장 청소는 고양이에서 훨씬 길다. 간에서 광범위한 초회 대사를 받으므로 생체이용률이 SC 90%, 경구 23%–37%(급여에 영향받지 않음)로 차이가 크다. 용량 변화에 따라 비선형 동태를 보일 수 있다.",
+    "주의: 11주 미만 강아지에게 투여하면 골수 저형성을 유발한다고 보고되었다.",
+    "임상 효과: opioid 전투약 전에 투여해 수술 전후 구토를 예방할 수 있고, 자발적 섭식 복귀를 개선해 섭식 개시 시점과 섭취량을 모두 늘린다. Parvovirus 장염, 항암제(doxorubicin, cisplatin) 연관 구역, 차멀미 등 다양한 자발 질환의 구토 예방에 효과적이며, 고양이에서 1 mg/kg SC·PO·IV로 xylazine 유발 구토를 예방한다. 다만 역류(regurgitation)는 예방하지 못한다.",
+    "기타 효과: 항구토 외에 진해, 항염, 신경보호, 간보호 효과가 있다고 생각되나 이 목적의 임상적 유용성은 입증되지 않았다. 항암치료 환자의 설사 감소가 보고되었고 항종양 활성 가능성도 제시되었다. 개·고양이의 내장통을 줄이는 것으로 보이며, 마취 중 sevoflurane의 최소폐포농도 요구량을 용량 비의존적으로 중등도 감소시킨다. NK-1과 substance P는 불안, 영역 침입, 스트레스·유해·혐오 자극에 대한 반응 등 여러 정서 행동에 관여한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "5-HT3 수용체 길항제"
+  },
+  {
+   "type": "list",
+   "items": [
+    "약물: ondansetron, granisetron, dolasetron. 사람의 항암치료 연관 구역 완화를 위해 개발되었다. Serotonin(5-HT3) 수용체의 경쟁적 차단제이며, 이 수용체는 말초(장 미주신경 구심 입력 담당)와 중추(CRTZ와 MVC) 모두에 존재한다.",
+    "Ondansetron은 10년 넘게 수의학에서 off-label로 사용되어 왔고, metoclopramide나 promazine 치료에 반응하지 않는 환자(예: parvovirus 장염 강아지)에서 구토를 효과적으로 멈췄다는 경험적 보고가 있다.",
+    "Ondansetron: 간에서 대사되며 통상 0.1–1.0 mg/kg IV q8-12h로 투여한다. 사람에서 저용량·고용량에서는 구토를 억제하지만 중간 용량에서는 구토를 오히려 강화하는 특이한 성질이 있다(사람에서 metoclopramide도 같은 양상이 확인되었다).",
+    "Dolasetron: 널리 분포하는 carbonyl reductase에 의해 활성 분획(hydrodolasetron)으로 대사되고 간 P-450 효소로 제거된다. 개·고양이에 통상 0.6–1 mg/kg SC, IV, PO q12-24h로 투여한다. 고양이의 약동학 프로파일은 1일 1회 투여가 불충분함을 시사한다.",
+    "공통 특성: 항구토 효과가 약물이 혈중에서 사라진 후에도 남아 q8-24h 투여만 필요하다. 최종적으로 요와 담즙으로 제거된다.",
+    "안전성: 사람에서 안전역이 넓고 개·고양이에서 부작용이 드물어 보인다. 사람의 부작용으로 변비, 설사, 졸음이 있을 수 있다. Dolasetron에서 QT 간격 연장이 보고되었으나 수의학에서의 중요성은 의문스럽다. 약물 상호작용은 최소이며, ondansetron은 tramadol의 효능을 감소시킨다고 보고되었다. 개에서 ondansetron이 일시적 대변 실금을 유발한다는 경험적 보고가 있다.",
+    "병용·경로: 위장관에 5-HT3 수용체가 많으므로 serotonin 억제제를 경구 투여하면 말초·중추 항구토 효과를 모두 낼 수 있다는 제안이 있다. Dolasetron은 경구 투여 시 생체이용률이 좋다고 보고되었다. Dolasetron 또는 ondansetron을 metoclopramide와 병용하면 다른 항구토제에 저항성인 항암 유발 구역에 흔히 효과적이다. Ondansetron은 고양이에서 dexmedetomidine을 전투약으로 쓸 때 유발되는 구토 예방에 효과적이지만 dexmedetomidine과 동시에 투여해야 한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Metoclopramide"
+  },
+  {
+   "type": "list",
+   "items": [
+    "기전: 항dopamine 활성과 5-HT3 수용체 차단 능력으로 CRTZ의 강력한 차단제가 된다. 다만 고양이는 dopamine 수용체가 적다고 생각되며, 이것이 이 종에서 효과가 떨어져 보이는 이유일 수 있다.",
+    "용량: 통상 0.1–0.5 mg/kg IV, SC, PO. 위 배출을 촉진하고 위식도 역류를 감소시키는 위장 운동 촉진 활성도 있으나 이 작용을 얻으려면 현저히 더 높은 용량이 필요할 수 있다.",
+    "한계: 두 기전의 조합으로 매우 효과적일 것 같지만, 임상에서는 구토 자극이 강한 환자(중증 췌장염, 신부전)에서 불충분한 경우가 많다. 지속 주입으로 투여하면 효과를 높일 수 있다.",
+    "IV 용량 구분: 항구토 목적에는 낮은 용량(1–2 mg/kg q24h)이 대개 충분하지만, 위 운동 촉진과 위식도 역류 예방에는 더 높은 용량이 필요하다(0.4 mg/kg IV 부하 후 0.3 mg/kg/hr IV).",
+    "빛에 민감하므로 정맥 수액용액은 효능 손실을 막기 위해 덮어야 한다.",
+    "사람의 항암치료에서는 저용량 dexamethasone 병용이 효과를 높일 수 있으나 개·고양이에서 비판적으로 평가되지 않았다.",
+    "배설·독성: 신장으로 배설되므로 GFR이 상당히 감소한 환자에서는 주의해야 한다. 신기능 이상이나 과용량으로 혈중 농도가 높아지면 extrapyramidal 징후(행동 변화, 환각으로 보이는 행동)가 나타날 수 있고, amphetamine 중독과 유사한 임상징후(과활동, 광란 행동)를 보일 수 있다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "Promazine 유도체"
+  },
+  {
+   "type": "list",
+   "items": [
+    "특성: 광범위하고 저렴한 중추 작용 항구토제로, 내이 문제를 제외한 대부분의 구역 원인에 효과적이다. 항dopamine·항히스타민 효과로 CRTZ를 차단하고 고용량에서는 MVC도 차단한다. 항콜린·항경련(antispasmodic)·α-adrenergic 차단 효과도 있다.",
+    "약물·용량: 소동물에서 항구토제로 가장 흔히 쓰이는 것은 chlorpromazine, prochlorperazine, acepromazine이다. Chlorpromazine은 통상 0.1–0.5 mg/kg IV, SC, IM q6-8h, prochlorperazine은 개에서 0.1–0.5 mg/kg IV, IM, SC q8-12h.",
+    "항구토 효과는 통상 진정을 일으키는 용량보다 낮은 용량에서 나타나지만, 다양한 정도의 혈관확장으로 저혈압이 생길 수 있다 — 탈수·저혈압 환자에게 처방할 때 주의하고 동시 정맥 수액요법이 필요할 수 있다.",
+    "심혈관: 중심정맥압을 올리고 심박수를 변화(서맥 또는 빈맥)시킨다고 보고되었으며, 개에서 항부정맥 성질을 가진다.",
+    "발작 역치를 낮춘다고 한때 여겨졌으나 이는 반박되었다.",
+    "간에서 대사되므로 상당한 간 기능부족 환자, 특히 선천성 문맥전신 단락 환자에서 중추신경 징후를 유발할 수 있다.",
+    "상호작용: prochlorperazine과 아마 다른 promazine 유도체를 metoclopramide와 동시에 사용하지 말라는 제안이 있다 — extrapyramidal 효과를 강화할 수 있기 때문(임상적 중요성은 불확실). Phaeochromocytoma 환자에서도 신중히 사용해야 한다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "항콜린제와 기타 약물"
+  },
+  {
+   "type": "list",
+   "items": [
+    "Aminopentamide(0.01–0.03 mg/kg IM, SC, PO q8-12h): 개에서 항구토제로 사용되어 온 항콜린제. 뇌의 구토중추와 미주신경을 통한 상부 위장관에 콜린성 수용체(후자는 muscarinic)가 있는데, aminopentamide가 어느 수용체에 작용하는지는 불확실하다. 다른 항콜린제가 위장관에 미치는 전형적 부작용(마비, 팽만)은 비교적 적어 보인다.",
+    "Aminopentamide는 임상적으로 metoclopramide보다 효과가 떨어져 보이며 5-HT3·NK-1 길항제보다는 확실히 열등하다. 다른 항콜린제(atropine, propantheline, glycopyrrolate)는 효과가 더 낮거나 부작용(위장관 운동 억제가 더 큼)이 더 많은 경향이다. 녹내장, 심근증, 빈맥성 부정맥, 고혈압, myasthenia gravis, 위식도 역류가 있는 동물에서는 주의해 사용한다.",
+    "Trimethobenzamide: 항dopamine 성질이 있으나 개에서 비교적 약한 항구토제로 보인다.",
+    "스테로이드: 특히 dexamethasone과 methylprednisolone이 항암치료나 전신마취를 받는 사람의 구역 예방에 사용되었다. 고양이의 효능 자료는 제한적이나, 염증성 장질환으로 진단된 구토 고양이에서의 흔한 사용과 겉보기 효과는 일차적 항구토 작용의 가능성을 제기한다. 사람에서는 주로 metoclopramide 등 다른 약물과 병용해 항구토 목적으로 쓴다.",
+    "Megestrol acetate와 gabapentin: 강력한 구토 유발 항암 프로토콜을 받으면서 병용 항구토 요법으로도 구토가 충분히 조절되지 않는 사람에서 보조제로 사용되었다. 수의학에서 이 목적의 사용은 보고되지 않았으나 전통적 치료에 저항하는 중증 사례에서 고려할 수 있다.",
+    "Opioid: 동물 구토 모델에서 mu-opioid 수용체는 구토와 항구토를 모두 매개한다. 혼합 작용 opioid 작용제/길항제인 butorphanol은 butorphanol+dexmedetomidine 병용을 받는 고양이에서 구토를 억제하고, 개에서 cisplatin의 구토 유발 작용을 억제한다.",
+    "Propofol: 항구토를 포함한 다양한 비마취 효과가 있으며, 마취 유도·유지에 사용하면 사람 환자에서 구토가 감소했다.",
+    "Phenobarbital: 'limbic epilepsy'와 sialomegaly 환자 일부가 phenobarbital에 반응하는 것으로 보여 항구토 활성이 있을 수 있다는 견해가 있으나, 개·고양이에서 이를 명확히 확인하거나 부정하는 연구는 없다.",
+    "침술: 사람에서 수술 후 구역을 줄인다고 보고되었다.",
+    "말초 작용 항구토제: 염증성 점막 병변을 진정시키는 약물(bismuth subsalicylate, barium sulfate)이나 소화불량을 완화하는 약물(제산제)로 구토를 완화할 수 있으나, 앞서 논의한 다른 약물들보다 대개 훨씬 효과가 낮다."
+   ]
+  },
+  {
+   "type": "heading",
+   "level": 2,
+   "text": "위장 운동 촉진제 (Prokinetics)",
+   "gist": "5-HT4 작용제가 수의학에서 가장 효과적인 계열"
+  },
+  {
+   "type": "paragraph",
+   "text": "Prokinetic 약물은 내강 내용물의 구강측→항문측 이동을 촉진한다. 수의학에서는 주로 위 배출과 결장 배출을 촉진하는 데 쓴다."
+  },
+  {
+   "type": "table",
+   "title": "Prokinetic 약물과 용량",
+   "headers": ["계열", "약물", "용량", "특징"],
+   "rows": [
+    ["5-HT4 작용제", "Cisapride", "개: 0.5–1.0 mg/kg PO q8-24h\n고양이: 2.5–5 mg/cat PO q8-12h", "이 계열의 주력 약물. 위 배출을 촉진하면서 위식도 괄약근 압력을 동시에 증가"],
+    ["5-HT4 작용제", "Mosapride", "0.25–1 mg/kg PO q12h", "일본에서 이용 가능. Cisapride와 유사하나 결장 운동성에 대한 효과는 최소. IV 투여가 가능해 많은 중환자에서 유리할 수 있음"],
+    ["5-HT4 작용제", "Tegaserod", "0.05–0.1 mg/kg PO q12h", "유럽에서 이용 가능. 주로 결장 운동성을 증가"],
+    ["5-HT4 작용제", "Prucalopride", "0.01–0.2 mg/kg PO q12h", "유럽에서 이용 가능. 위와 결장 운동성을 모두 증가시킬 수 있음"],
+    ["Cholinomimetic", "Bethanechol", "5–15 mg/dog PO q8-12h", "Muscarinic 수용체에 결합하는 진정한 cholinomimetic. 위장관 전체의 운동성에 영향"],
+    ["Cholinomimetic", "Ranitidine", "1–2 mg/kg PO 또는 IV q12h", "Acetylcholinesterase 억제. 결장 운동성보다 위 배출 촉진에 더 효과적으로 보임"],
+    ["Cholinomimetic", "Nizatidine", "2.5–5 mg/kg PO 또는 IV q12h", "Acetylcholinesterase 억제. 결장 운동성보다 위 배출 촉진에 더 효과적으로 보임"],
+    ["Motilin 수용체 작용제", "Erythromycin", "0.5–1 mg/kg PO 또는 IV q8h", "하부 식도 괄약근 압력과 소·대장 연동운동을 증가. 지속 사용 시 내성 발생 우려"],
+    ["Dopamine 길항제", "Metoclopramide", "Prokinesis: 0.4 mg/kg IV 부하 후 0.3 mg/kg/hr\n간헐 투여: 0.2–0.5 mg/kg PO, SC, IM q6-8h", "중등도로 효과적인 위 운동 촉진제. 구역 예방 용량(1–2 mg/kg/24hr)보다 높은 용량이 필요. Phaeochromocytoma 환자에서는 금기"],
+    ["Prostaglandin 유사체", "Misoprostol", "— (Ch.153 참고)", "결장 운동성을 증가시키는 것으로 보이며 반응하지 않는 변비 환자에 사용되어 왔음"]
+   ],
+   "note": "— = 요약에 해당 내용 없음."
+  },
+  {
+   "type": "list",
+   "title": "Cisapride 상세",
+   "items": [
+    "공급: 사람에서는 더 이상 사용할 수 없으나 수의사는 조제약국을 통해 구할 수 있다. 위식도 역류, 위 배출 불량, 만성 변비 치료에 이 계열의 주된 약물로 쓰여 왔다.",
+    "약동학: 경구 투여 후 흡수가 좋고 주로 간의 초회 대사로 제거된다(따라서 중증 간 기능부족 동물에서 제거가 지연될 수 있다). 고양이에서 경구 생체이용률은 약 30%.",
+    "효과: 위식도 역류와 위 배출 지연 환자에서 metoclopramide보다 효과적이다.",
+    "Megaesophagus: 식도 운동성을 높이려는 목적으로 자주 쓰이지만 횡문근에는 효과가 없다. 위식도 괄약근 긴장을 높이므로 이런 환자에서 역류를 악화시킬 수 있다(위식도 역류가 역류의 주된 기여 요인인 경우는 예외).",
+    "변비: 경증~중등도 특발성 변비 고양이에서는 효과적이었으나 중증에서는 반응이 좋지 않다.",
+    "소장: 소장 운동성도 증가시키지만, 위중한 수술 후 환자 상당수가 경구 투약을 견디지 못해 소동물에서 이 효과가 주요하게 적용되지는 못했다.",
+    "안전성: 심장 전도에 대한 영향으로 사람에서 여러 사망 사례의 원인이 되었으나 개·고양이에서 사망은 보고되지 않았다. 다른 부작용도 드물어 보인다."
+   ]
+  },
+  {
+   "type": "list",
+   "title": "기타 prokinetic",
+   "items": [
+    "Metoclopramide는 수의학에서 아마 가장 흔히 쓰이는 prokinetic이다. 작용 기전은 다소 논란이 있고 dopamine 수용체 이상의 기전이 관여하는 것으로 보이며, 소장 평활근의 acetylcholine 감수성을 높일 수 있다. Cisapride가 더 효과적인 prokinetic이지만 metoclopramide는 지속 IV 주입이 가능해 일부 환자에서 유리하다.",
+    "Azithromycin이 prokinetic으로 경험적으로 사용되었으나 전향적 연구는 부족하다."
+   ]
+  }
+ ]
+}

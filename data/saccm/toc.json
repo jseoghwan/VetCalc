@@ -1056,6 +1056,48 @@
    "title": "Diuretics",
    "part": "Part XVIII",
    "part_title": "Pharmacology"
+  },
+  {
+   "id": "sacc3-p18-c152",
+   "num": 152,
+   "title": "Appetite Stimulants",
+   "part": "Part XVIII",
+   "part_title": "Pharmacology"
+  },
+  {
+   "id": "sacc3-p18-c153",
+   "num": 153,
+   "title": "Gastrointestinal Protectants",
+   "part": "Part XVIII",
+   "part_title": "Pharmacology"
+  },
+  {
+   "id": "sacc3-p18-c154",
+   "num": 154,
+   "title": "Antiemetics and Prokinetics",
+   "part": "Part XVIII",
+   "part_title": "Pharmacology"
+  },
+  {
+   "id": "sacc3-p18-c155",
+   "num": 155,
+   "title": "Opioid Agonists and Naloxone",
+   "part": "Part XVIII",
+   "part_title": "Pharmacology"
+  },
+  {
+   "id": "sacc3-p18-c156",
+   "num": 156,
+   "title": "Benzodiazepines",
+   "part": "Part XVIII",
+   "part_title": "Pharmacology"
+  },
+  {
+   "id": "sacc3-p18-c157",
+   "num": 157,
+   "title": "α2-Agonists and Antagonists",
+   "part": "Part XVIII",
+   "part_title": "Pharmacology"
   }
  ]
 }
