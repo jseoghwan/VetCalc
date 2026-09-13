@@ -30,6 +30,68 @@
    "freq": "q12h",
    "default": true,
    "note": "원문 q12–24h, 비경구 3–5일 후 경구 2–4주"
+  },
+  {
+   "species": "dog",
+   "label": "티아민 결핍",
+   "route": "IV/IM/SC",
+   "low": 50,
+   "high": 100,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h; 3–5일 후 PO로 전환; IV는 서서히"
+  },
+  {
+   "species": "dog",
+   "label": "에틸렌글리콜 중독",
+   "route": "IV",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/animal",
+   "freq": "q6h",
+   "note": "서서히 IV"
+  },
+  {
+   "species": "dog",
+   "label": "재급식 증후군 보조",
+   "route": "SC",
+   "low": 10,
+   "high": 100,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "재급식 기간 동안"
+  },
+  {
+   "species": "cat",
+   "label": "티아민 결핍",
+   "route": "IV/IM/SC",
+   "low": 50,
+   "high": 100,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h; 3–5일 후 PO로 전환; IV는 서서히"
+  },
+  {
+   "species": "cat",
+   "label": "에틸렌글리콜 중독",
+   "route": "IV",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/animal",
+   "freq": "q6h",
+   "note": "서서히 IV"
+  },
+  {
+   "species": "cat",
+   "label": "재급식 증후군 보조",
+   "route": "SC",
+   "low": 10,
+   "high": 100,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "재급식 기간 동안"
   }
  ],
  "strengths": [
@@ -52,8 +114,16 @@
   {
    "form": "tablet",
    "mg": 500
+  },
+  {
+   "form": "injection",
+   "mgml": 100
+  },
+  {
+   "form": "injection",
+   "mgml": 500
   }
  ],
- "compounding": null,
+ "compounding": "알칼리성 약물(바르비투르산염·탄산염 등)·산화/환원제와 혼합 금지",
  "reviewed": null
 }

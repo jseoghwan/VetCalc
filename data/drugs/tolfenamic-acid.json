@@ -60,6 +60,48 @@
    "unit": "mg/kg",
    "freq": "q24h",
    "note": "식사와 함께, 3–5일"
+  },
+  {
+   "species": "dog",
+   "label": "급성 통증 (a)",
+   "route": "IM/SC",
+   "low": 4,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "3–5일, 주사는 첫 용량만 권장"
+  },
+  {
+   "species": "dog",
+   "label": "급성 통증 (b) 주사 단회",
+   "route": "SC",
+   "low": 4,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "필요 시 24시간 후 1회 반복 가능"
+  },
+  {
+   "species": "cat",
+   "label": "급성 통증",
+   "route": "IM/SC",
+   "low": 4,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "3–5일, 주사는 첫 용량만 권장"
+  },
+  {
+   "species": "cat",
+   "label": "항염·상부호흡기질환 보조",
+   "route": "SC",
+   "low": 4,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "3–5일, 주사는 단회 또는 1회 반복"
   }
  ],
  "strengths": [
@@ -74,6 +116,10 @@
   {
    "form": "tablet",
    "mg": 60
+  },
+  {
+   "form": "injection",
+   "mgml": 40
   }
  ],
  "compounding": null,

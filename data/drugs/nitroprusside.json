@@ -1,0 +1,72 @@
+{
+ "id": "nitroprusside",
+ "name": "Nitroprusside",
+ "brand": [
+  "Nitropress",
+  "Nipride RTU"
+ ],
+ "class": "혈관확장제",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "고혈압 위기",
+   "route": "CRI",
+   "low": 0.5,
+   "high": 3.5,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "0.5부터 시작, 5분마다 증량"
+  },
+  {
+   "species": "dog",
+   "label": "급성 심부전 보조 (초기)",
+   "route": "CRI",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "note": "10–30분마다 0.5–1 증량, 최대 10–15 mcg/kg/min, 대개 2–3에서 호전"
+  },
+  {
+   "species": "cat",
+   "label": "고혈압 위기",
+   "route": "CRI",
+   "low": 0.5,
+   "high": 3.5,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "0.5부터 시작, 5분마다 증량"
+  },
+  {
+   "species": "cat",
+   "label": "급성 심부전 보조 (초기)",
+   "route": "CRI",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "note": "10–30분마다 0.5–1 증량, 최대 10–15 mcg/kg/min, 대개 2–3에서 호전"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 0.2
+  },
+  {
+   "form": "injection",
+   "mgml": 0.5
+  },
+  {
+   "form": "injection",
+   "mgml": 25
+  }
+ ],
+ "compounding": "D5W에만 희석(타 약물 혼합 금지), 차광, 조제 후 24시간 안정",
+ "reviewed": null
+}

@@ -1,0 +1,62 @@
+{
+ "id": "testosterone",
+ "name": "Testosterone",
+ "brand": [
+  "Depo-Testosterone",
+  "Aveed"
+ ],
+ "class": "안드로겐 호르몬",
+ "tags": [
+  "endocrine",
+  "urinary"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "테스토스테론 반응성 요실금 (수컷; cypionate)",
+   "route": "IM",
+   "low": 2.2,
+   "high": 2.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "30–45일마다 반복; phenylpropanolamine 병용 가능"
+  },
+  {
+   "species": "dog",
+   "label": "발정 억제 (enanthate/cypionate)",
+   "route": "IM",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "5일마다 반복; 거의 권장되지 않음"
+  },
+  {
+   "species": "dog",
+   "label": "위임신 유선 비대 감소 (enanthate/cypionate)",
+   "route": "IM",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "거의 권장되지 않음"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 100
+  },
+  {
+   "form": "injection",
+   "mgml": 200
+  },
+  {
+   "form": "injection",
+   "mgml": 250
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

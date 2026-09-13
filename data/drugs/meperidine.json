@@ -1,0 +1,57 @@
+{
+ "id": "meperidine",
+ "name": "Meperidine",
+ "brand": [
+  "Demerol"
+ ],
+ "class": "오피오이드 작용제 진통제",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "진통",
+   "route": "IM/SC",
+   "low": 3,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "최대 11 mg/kg 보고, 진통 지속 30분–2시간"
+  },
+  {
+   "species": "dog",
+   "label": "마취 전투약 (a)",
+   "route": "IM",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "아트로핀 0.04 mg/kg IM 20분 전 투여 후"
+  },
+  {
+   "species": "dog",
+   "label": "마취 전투약 (b) 심박조율기 장착",
+   "route": "IM",
+   "low": 3,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "수술 전후 통증",
+   "route": "IM/SC",
+   "low": 2,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "고양이에서는 일반적으로 비권장, 진통 지속 30분–1시간 이상"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

@@ -60,6 +60,28 @@
    "unit": "mg/kg",
    "freq": "q24h",
    "note": "28일 연구, CKD 동반 고양이 포함"
+  },
+  {
+   "species": "dog",
+   "label": "연부조직 수술 후 통증·염증 (label)",
+   "route": "SC",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "최대 3일; 첫 용량은 수술 약 45분 전; 주사 부위 교대"
+  },
+  {
+   "species": "cat",
+   "label": "정형·중성화 수술 후 통증·염증 (label)",
+   "route": "SC",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "최대 3일; 첫 용량은 수술 약 30분 전; 주사 부위 교대"
   }
  ],
  "strengths": [
@@ -78,8 +100,12 @@
   {
    "form": "tablet",
    "mg": 40
+  },
+  {
+   "form": "injection",
+   "mgml": 20
   }
  ],
- "compounding": null,
+ "compounding": "다른 약물과 혼합 금지 (배합 연구 없음)",
  "reviewed": null
 }

@@ -1,0 +1,75 @@
+{
+ "id": "tranexamic-acid",
+ "name": "Tranexamic Acid",
+ "brand": [
+  "Cyklokapron",
+  "Lysteda"
+ ],
+ "class": "항섬유소용해제 (지혈 보조)",
+ "tags": [
+  "antithrombotic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "출혈 보조 치료 부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "2분에 걸쳐 IV"
+  },
+  {
+   "species": "dog",
+   "label": "출혈 보조 치료 CRI",
+   "route": "CRI",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "3시간 동안"
+  },
+  {
+   "species": "dog",
+   "label": "Angiostrongylus 관련 과섬유소용해 조절",
+   "route": "IV",
+   "low": 10,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "15–20분에 걸쳐 IV, TEG 결과에 따라 6–8시간 후 반복"
+  },
+  {
+   "species": "dog",
+   "label": "구토 유발",
+   "route": "IV",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "IV 볼루스, 20–40 mg/kg는 효과 불균일"
+  },
+  {
+   "species": "cat",
+   "label": "종양 절제 수술 중 출혈 조절",
+   "route": "IV",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "마취 유도 시 IV 볼루스"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 100
+  }
+ ],
+ "compounding": "혈액과 혼합 금지, 페니실린계(penicillin G·ampicillin·piperacillin)와 비혼합",
+ "reviewed": null
+}

@@ -1,0 +1,51 @@
+{
+ "id": "tobramycin",
+ "name": "Tobramycin",
+ "brand": [
+  "Nebcin"
+ ],
+ "class": "아미노글리코사이드 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "감수성 감염",
+   "route": "IV/IM/SC",
+   "low": 9,
+   "high": 14,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "혈중 농도 모니터링 권장"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염",
+   "route": "IV/IM/SC",
+   "low": 5,
+   "high": 8,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "혈중 농도 모니터링 권장"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 10
+  },
+  {
+   "form": "injection",
+   "mgml": 40
+  },
+  {
+   "form": "vial",
+   "mg": 1200
+  }
+ ],
+ "compounding": "덱스트로스·알코올 용액과 비혼합, 베타락탐계와 혼합 시 in vitro 불활성화",
+ "reviewed": null
+}

@@ -141,6 +141,118 @@
    "unit": "mg/kg",
    "freq": "q12h",
    "note": "31–61일"
+  },
+  {
+   "species": "dog",
+   "label": "저프로트롬빈혈증 (label)",
+   "route": "IM/SC",
+   "low": 0.25,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "원문 빈도 미명시; 2세대 살서제는 상한 용량"
+  },
+  {
+   "species": "cat",
+   "label": "저프로트롬빈혈증 (label)",
+   "route": "IM/SC",
+   "low": 0.25,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "원문 빈도 미명시; 2세대 살서제는 상한 용량"
+  },
+  {
+   "species": "dog",
+   "label": "살서제 중독, 출혈 환자 (a)",
+   "route": "IV",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "서서히 IV; 가능한 빨리 경구로 전환"
+  },
+  {
+   "species": "cat",
+   "label": "살서제 중독, 출혈 환자 (a)",
+   "route": "IV",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "서서히 IV; 가능한 빨리 경구로 전환"
+  },
+  {
+   "species": "dog",
+   "label": "살서제 중독, 출혈 환자 초기 (b)",
+   "route": "SC",
+   "low": 2.5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "이후 5 mg/kg/day PO 분할"
+  },
+  {
+   "species": "cat",
+   "label": "살서제 중독, 출혈 환자 초기 (b)",
+   "route": "SC",
+   "low": 2.5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "이후 5 mg/kg/day PO 분할"
+  },
+  {
+   "species": "dog",
+   "label": "간질환 출혈, 침습적 시술 전",
+   "route": "SC",
+   "low": 0.5,
+   "high": 1.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "2–3회 투여"
+  },
+  {
+   "species": "cat",
+   "label": "간질환 출혈, 침습적 시술 전",
+   "route": "SC",
+   "low": 0.5,
+   "high": 1.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "2–3회 투여"
+  },
+  {
+   "species": "cat",
+   "label": "간질환 출혈 초기 (증례)",
+   "route": "SC",
+   "low": 3.7,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "이후 1–2 mg/kg PO q12h"
+  },
+  {
+   "species": "dog",
+   "label": "남조류 간부전 초기 (증례)",
+   "route": "SC",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "이후 4 mg/kg SC q8h 2일"
+  },
+  {
+   "species": "dog",
+   "label": "남조류 간부전 유지 (증례)",
+   "route": "SC",
+   "low": 4,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "2일간"
   }
  ],
  "strengths": [
@@ -167,8 +279,16 @@
   {
    "form": "chewable tablet",
    "mg": 50
+  },
+  {
+   "form": "injection",
+   "mgml": 2
+  },
+  {
+   "form": "injection",
+   "mgml": 10
   }
  ],
- "compounding": null,
+ "compounding": "대부분 IV 사용 금기로 기재; 주사액 경구 투여 가능",
  "reviewed": null
 }

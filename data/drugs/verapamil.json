@@ -1,0 +1,64 @@
+{
+ "id": "verapamil",
+ "name": "Verapamil",
+ "brand": [
+  "Calan",
+  "Verelan"
+ ],
+ "class": "칼슘 채널 차단제 (항부정맥)",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "상심실성 빈맥",
+   "route": "IV",
+   "low": 0.05,
+   "high": 0.05,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "1–2분에 걸쳐 IV, ECG 감시, 무효 시 5–10분마다 반복(총 0.15 mg/kg까지)"
+  },
+  {
+   "species": "dog",
+   "label": "상심실성 빈맥 유지 CRI",
+   "route": "CRI",
+   "low": 2,
+   "high": 10,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "상심실성 빈맥",
+   "route": "IV",
+   "low": 0.025,
+   "high": 0.025,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "1–2분에 걸쳐 IV, ECG 감시, 무효 시 5–10분마다 반복(총 0.15 mg/kg까지)"
+  },
+  {
+   "species": "cat",
+   "label": "상심실성 빈맥 유지 CRI",
+   "route": "CRI",
+   "low": 2,
+   "high": 10,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 2.5
+  }
+ ],
+ "compounding": "0.45% NaCl+중탄산나트륨 라인에 첨가 시 결정 침전 가능",
+ "reviewed": null
+}

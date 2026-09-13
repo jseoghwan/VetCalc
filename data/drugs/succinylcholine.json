@@ -1,0 +1,48 @@
+{
+ "id": "succinylcholine",
+ "name": "Succinylcholine",
+ "brand": [
+  "Anectine"
+ ],
+ "class": "탈분극성 신경근 차단제",
+ "tags": [
+  "respiratory"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "신경근 차단",
+   "route": "IV",
+   "low": 0.3,
+   "high": 0.4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "현재는 드물게 사용"
+  },
+  {
+   "species": "cat",
+   "label": "신경근 차단 (a)",
+   "route": "IV",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "현재는 드물게 사용"
+  },
+  {
+   "species": "cat",
+   "label": "신경근 차단 (b)",
+   "route": "IV",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "현재는 드물게 사용"
+  }
+ ],
+ "strengths": [],
+ "compounding": "sodium bicarbonate·thiopental과 물리적 혼합 불가",
+ "reviewed": null
+}

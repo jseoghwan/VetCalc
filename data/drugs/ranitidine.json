@@ -50,6 +50,28 @@
    "unit": "mg/kg",
    "freq": "q12h",
    "note": "위산 억제 효과 미미(연구)"
+  },
+  {
+   "species": "dog",
+   "label": "식도염·궤양·위염·위장운동 촉진",
+   "route": "IV/IM/SC",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h; IV는 서서히(최대 25 mg/min); 효과 근거 부족"
+  },
+  {
+   "species": "cat",
+   "label": "식도염·궤양·결장운동 촉진",
+   "route": "IV",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "서서히 IV"
   }
  ],
  "strengths": [
@@ -72,8 +94,12 @@
   {
    "form": "tablet",
    "mg": 300
+  },
+  {
+   "form": "injection",
+   "mgml": 25
   }
  ],
- "compounding": null,
+ "compounding": "일반 수액과 혼합 시 48시간 안정; 사람은 2.5 mg/mL로 희석 권장",
  "reviewed": null
 }

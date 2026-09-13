@@ -1,0 +1,44 @@
+{
+ "id": "prochlorperazine",
+ "name": "Prochlorperazine",
+ "brand": [
+  "Compazine",
+  "Compro"
+ ],
+ "class": "페노티아진계 진토제",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "진토",
+   "route": "SC",
+   "low": 0.1,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–8h; 충분한 수화 유지"
+  },
+  {
+   "species": "cat",
+   "label": "진토",
+   "route": "SC",
+   "low": 0.1,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–8h; 충분한 수화 유지"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 5
+  }
+ ],
+ "compounding": "파라벤 보존제 함유 약물·희석제와 혼합 금지",
+ "reviewed": null
+}

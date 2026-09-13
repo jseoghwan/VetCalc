@@ -1,0 +1,48 @@
+{
+ "id": "norepinephrine",
+ "name": "Norepinephrine",
+ "brand": [
+  "Levophed"
+ ],
+ "class": "알파·베타 아드레날린 승압제",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "수액 후 지속 저혈압 (초기)",
+   "route": "CRI",
+   "low": 0.05,
+   "high": 0.1,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "효과까지 증량, 최대 1–2 mcg/kg/min"
+  },
+  {
+   "species": "dog",
+   "label": "이소플루란 유발 저혈압",
+   "route": "CRI",
+   "low": 0.1,
+   "high": 2,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "note": "평균 유효 0.44 mcg/kg/min"
+  },
+  {
+   "species": "cat",
+   "label": "수액 후 지속 저혈압 (초기)",
+   "route": "CRI",
+   "low": 0.05,
+   "high": 0.1,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "효과까지 증량, 최대 1–2 mcg/kg/min"
+  }
+ ],
+ "strengths": [],
+ "compounding": "D5W(또는 D5W+0.9% NaCl) 희석, 생리식염수 단독 희석은 산화로 비권장, 변색·침전 시 폐기",
+ "reviewed": null
+}

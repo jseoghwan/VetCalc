@@ -1,0 +1,100 @@
+{
+ "id": "magnesium",
+ "name": "Magnesium Sulfate",
+ "brand": [],
+ "class": "전해질 보충제(마그네슘)",
+ "tags": [
+  "cardio",
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "중증 저마그네슘혈증 부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 18.5,
+   "high": 37,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "= 0.15–0.3 mEq/kg; 10–20분에 걸쳐 서서히 IV, 희석 후"
+  },
+  {
+   "species": "dog",
+   "label": "중증 저마그네슘혈증 유지",
+   "route": "CRI",
+   "low": 92,
+   "high": 123,
+   "unit": "mg/kg/day",
+   "freq": "cri",
+   "default": true,
+   "note": "= 0.75–1 mEq/kg/day, 12–24시간에 걸쳐; 첫날 이후 감량 고려"
+  },
+  {
+   "species": "dog",
+   "label": "불응성 심실부정맥",
+   "route": "IV",
+   "low": 18.5,
+   "high": 37,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "원문 0.15–0.3 mEq/kg; 5–15분에 걸쳐 IV; CPR 중 일상 사용 비권장"
+  },
+  {
+   "species": "cat",
+   "label": "중증 저마그네슘혈증 부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 18.5,
+   "high": 37,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "= 0.15–0.3 mEq/kg; 10–20분에 걸쳐 서서히 IV, 희석 후"
+  },
+  {
+   "species": "cat",
+   "label": "중증 저마그네슘혈증 유지",
+   "route": "CRI",
+   "low": 92,
+   "high": 123,
+   "unit": "mg/kg/day",
+   "freq": "cri",
+   "default": true,
+   "note": "= 0.75–1 mEq/kg/day, 12–24시간에 걸쳐; 첫날 이후 감량 고려"
+  },
+  {
+   "species": "cat",
+   "label": "불응성 심실부정맥",
+   "route": "IV",
+   "low": 18.5,
+   "high": 37,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "원문 0.15–0.3 mEq/kg; 5–15분에 걸쳐 IV"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 10
+  },
+  {
+   "form": "injection",
+   "mgml": 20
+  },
+  {
+   "form": "injection",
+   "mgml": 40
+  },
+  {
+   "form": "injection",
+   "mgml": 80
+  },
+  {
+   "form": "injection",
+   "mgml": 500
+  }
+ ],
+ "compounding": "50% 제제는 20% 이하로 희석 후 투여(D5W·0.9% NaCl); 칼슘 글루코네이트와 농도 의존적 배합 주의",
+ "reviewed": null
+}

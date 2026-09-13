@@ -19,6 +19,17 @@
    "freq": "q6h",
    "default": true,
    "note": "원문 q6–8h; 경구 생체이용률 낮음"
+  },
+  {
+   "species": "cat",
+   "label": "진토 (xylazine 투여 전)",
+   "route": "IM",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "xylazine 1시간 전; SC·동맥내 투여 금지"
   }
  ],
  "strengths": [
@@ -33,8 +44,16 @@
   {
    "form": "tablet",
    "mg": 50
+  },
+  {
+   "form": "injection",
+   "mgml": 25
+  },
+  {
+   "form": "injection",
+   "mgml": 50
   }
  ],
- "compounding": null,
+ "compounding": "알칼리성 용액과 혼합 시 침전",
  "reviewed": null
 }

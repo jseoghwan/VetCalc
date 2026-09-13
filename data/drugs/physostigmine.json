@@ -1,0 +1,40 @@
+{
+ "id": "physostigmine",
+ "name": "Physostigmine",
+ "brand": [],
+ "class": "콜린에스테라제 억제제",
+ "tags": [
+  "behavior"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "이버멕틴 중독 CNS 증상 일시 역전 (진단 보조)",
+   "route": "IV",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/animal",
+   "freq": "once",
+   "default": true,
+   "note": "원문 1 mg/dog"
+  },
+  {
+   "species": "dog",
+   "label": "기면증/탈력발작 유발 검사",
+   "route": "IV",
+   "low": 0.025,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "저용량부터 시작"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 1
+  }
+ ],
+ "compounding": "희석 없이 Y-site로 투여, 수액에 혼합 금지",
+ "reviewed": null
+}

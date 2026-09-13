@@ -1,0 +1,42 @@
+{
+ "id": "phenylephrine",
+ "name": "Phenylephrine",
+ "brand": [
+  "Neo-Synephrine"
+ ],
+ "class": "알파 아드레날린 작용제(승압제)",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "저혈압",
+   "route": "CRI",
+   "low": 1,
+   "high": 3,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "최대 10 mcg/kg/min까지 사용 보고"
+  },
+  {
+   "species": "cat",
+   "label": "저혈압",
+   "route": "CRI",
+   "low": 1,
+   "high": 2,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 10
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

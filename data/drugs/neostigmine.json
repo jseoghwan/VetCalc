@@ -1,0 +1,86 @@
+{
+ "id": "neostigmine",
+ "name": "Neostigmine",
+ "brand": [
+  "Bloxiverz",
+  "Prostigmin"
+ ],
+ "class": "부교감신경 흥분제(항콜린에스테라제)",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "중증근무력증 진단",
+   "route": "IV/IM/SC",
+   "low": 0.01,
+   "high": 0.05,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "IV는 1분 이상 서서히"
+  },
+  {
+   "species": "dog",
+   "label": "중증근무력증 치료 (경구 불가 시)",
+   "route": "IM/SC",
+   "low": 0.04,
+   "high": 0.04,
+   "unit": "mg/kg",
+   "freq": "q6h"
+  },
+  {
+   "species": "dog",
+   "label": "신경근차단 역전 (a)",
+   "route": "IV",
+   "low": 0.01,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "1분 이상 서서히, 아트로핀/글리코피롤레이트 병용"
+  },
+  {
+   "species": "dog",
+   "label": "신경근차단 역전 (b)",
+   "route": "IV",
+   "low": 0.02,
+   "high": 0.07,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "아트로핀 0.03 mg/kg IV 병용"
+  },
+  {
+   "species": "cat",
+   "label": "중증근무력증 진단",
+   "route": "IV/IM/SC",
+   "low": 0.01,
+   "high": 0.05,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "IV는 1분 이상 서서히"
+  },
+  {
+   "species": "cat",
+   "label": "중증근무력증 치료 (경구 불가 시)",
+   "route": "IM/SC",
+   "low": 0.04,
+   "high": 0.04,
+   "unit": "mg/kg",
+   "freq": "q6h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 0.5
+  },
+  {
+   "form": "injection",
+   "mgml": 1
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

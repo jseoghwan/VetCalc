@@ -1,0 +1,54 @@
+{
+ "id": "melarsomine",
+ "name": "Melarsomine",
+ "brand": [
+  "Immiticide",
+  "Diroban"
+ ],
+ "class": "비소계 심장사상충 성충 구제제",
+ "tags": [
+  "antimicrobial",
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "심장사상충 3회 프로토콜 1차 (AHS)",
+   "route": "IM",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "요추(L3–L5) 등쪽근 깊은 IM; 1개월 후 2회 추가; 안전역 좁음, 용량 신중 계산"
+  },
+  {
+   "species": "dog",
+   "label": "심장사상충 3회 프로토콜 2·3차 (AHS)",
+   "route": "IM",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "24시간 간격 2회, 좌우 교대; 이후 6–8주 엄격한 안정"
+  },
+  {
+   "species": "dog",
+   "label": "심장사상충 Class 1–2 2회 프로토콜 (label)",
+   "route": "IM",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "24시간 간격 2회; AHS 비권장"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "vial",
+   "mg": 50
+  }
+ ],
+ "compounding": "제공 희석액(멸균수) 2 mL로 재조제 → 25 mg/mL",
+ "reviewed": null
+}

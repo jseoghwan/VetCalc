@@ -1,0 +1,139 @@
+{
+ "id": "meropenem",
+ "name": "Meropenem",
+ "brand": [
+  "Merrem IV"
+ ],
+ "class": "카바페넴계 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "다제내성 요로감염",
+   "route": "SC",
+   "low": 8.5,
+   "high": 8.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "다제내성 요로감염",
+   "route": "IV",
+   "low": 8.5,
+   "high": 8.5,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "서서히 IV"
+  },
+  {
+   "species": "dog",
+   "label": "다제내성 전신·연부조직 감염 (Enterobacterales) (a)",
+   "route": "SC",
+   "low": 8.5,
+   "high": 8.5,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "다제내성 전신·연부조직 감염 (Enterobacterales) (b)",
+   "route": "IV",
+   "low": 24,
+   "high": 24,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "다제내성 전신·연부조직 감염 (P. aeruginosa, MIC≈1) (a)",
+   "route": "SC",
+   "low": 12,
+   "high": 12,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "다제내성 전신·연부조직 감염 (P. aeruginosa, MIC≈1) (b)",
+   "route": "IV",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 0.37,
+   "high": 0.37,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "P. aeruginosa 약동학 연구"
+  },
+  {
+   "species": "dog",
+   "label": "P. aeruginosa 감염 CRI",
+   "route": "CRI",
+   "low": 0.38,
+   "high": 0.38,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "혈장 농도 1 µg/mL 유지 목표"
+  },
+  {
+   "species": "dog",
+   "label": "E. coli 육아종성 대장염",
+   "route": "SC",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "최소 6주"
+  },
+  {
+   "species": "cat",
+   "label": "다제내성 요로감염",
+   "route": "IV/IM/SC",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "다제내성 전신·연부조직 감염 (Enterobacteriaceae)",
+   "route": "IV/IM/SC",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 10
+  },
+  {
+   "form": "injection",
+   "mgml": 20
+  },
+  {
+   "form": "vial",
+   "mg": 500
+  },
+  {
+   "form": "vial",
+   "mg": 1000
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

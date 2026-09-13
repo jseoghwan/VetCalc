@@ -202,6 +202,48 @@
    "unit": "mg/kg",
    "freq": "q48h",
    "note": "원문 2–7일마다"
+  },
+  {
+   "species": "dog",
+   "label": "염증·알레르기 질환 (label)",
+   "route": "IM/SC",
+   "low": 0.11,
+   "high": 0.22,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "효과 7–15일 지속, 재발 시 반복 또는 경구 전환"
+  },
+  {
+   "species": "dog",
+   "label": "피부 질환 (label)",
+   "route": "IM/SC",
+   "low": 0.22,
+   "high": 0.22,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "효과 7–15일 지속"
+  },
+  {
+   "species": "cat",
+   "label": "염증·알레르기 질환 (label)",
+   "route": "IM/SC",
+   "low": 0.11,
+   "high": 0.22,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "효과 7–15일 지속, 재발 시 반복 또는 경구 전환"
+  },
+  {
+   "species": "cat",
+   "label": "피부 질환 (label)",
+   "route": "IM/SC",
+   "low": 0.22,
+   "high": 0.22,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "효과 7–15일 지속"
   }
  ],
  "strengths": [
@@ -212,6 +254,22 @@
   {
    "form": "tablet",
    "mg": 1.5
+  },
+  {
+   "form": "injection",
+   "mgml": 2
+  },
+  {
+   "form": "injection",
+   "mgml": 6
+  },
+  {
+   "form": "injection",
+   "mgml": 10
+  },
+  {
+   "form": "injection",
+   "mgml": 40
   }
  ],
  "compounding": null,

@@ -1,0 +1,224 @@
+{
+ "id": "methadone",
+ "name": "Methadone",
+ "brand": [
+  "Dolophine",
+  "Methadose"
+ ],
+ "class": "오피오이드 작용제 진통제",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "진통 간헐 투여",
+   "route": "IV/IM/SC",
+   "low": 0.1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q4h",
+   "default": true,
+   "note": "원문 q4–8h"
+  },
+  {
+   "species": "dog",
+   "label": "척추 수술 후 진통",
+   "route": "IV",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q4h"
+  },
+  {
+   "species": "dog",
+   "label": "부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "진통 CRI",
+   "route": "CRI",
+   "low": 0.12,
+   "high": 0.12,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "60 mg/500 mL 수액을 1 mL/kg/h, 케타민·리도카인 병용 가능"
+  },
+  {
+   "species": "dog",
+   "label": "정형외과 수술 전투약 (a)",
+   "route": "IM",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "아세프로마진 0.03 mg/kg IM 병용"
+  },
+  {
+   "species": "dog",
+   "label": "정형외과 수술 전투약 (b) 진정·진통",
+   "route": "IM",
+   "low": 0.7,
+   "high": 0.7,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "중성화 수술 전투약",
+   "route": "IM",
+   "low": 0.3,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "아세프로마진 0.05 mg/kg 또는 메데토미딘 10 mcg/kg 병용"
+  },
+  {
+   "species": "dog",
+   "label": "수술 전후 통증 (덱스메데토미딘 1 mcg/kg IV 선행)",
+   "route": "IV",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "이소플루란 MAC 감소 (아세프로마진 0.02 mg/kg 병용)",
+   "route": "IM",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "진정 강화·수술 후 진통 (메데토미딘 2.5 mcg/kg IV 후)",
+   "route": "IV",
+   "low": 0.3,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "진통 간헐 투여",
+   "route": "IV/IM/SC",
+   "low": 0.05,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q4h",
+   "default": true,
+   "note": "원문 q4–6h"
+  },
+  {
+   "species": "cat",
+   "label": "진통 SC",
+   "route": "SC",
+   "low": 0.2,
+   "high": 0.6,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "5시간 간격으로 최대 3회 반복 가능"
+  },
+  {
+   "species": "cat",
+   "label": "부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "진통 CRI",
+   "route": "CRI",
+   "low": 0.12,
+   "high": 0.12,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "60 mg/500 mL 수액을 1 mL/kg/h, 케타민·리도카인 병용 가능"
+  },
+  {
+   "species": "cat",
+   "label": "마취 전투약",
+   "route": "IV/IM/SC",
+   "low": 0.1,
+   "high": 0.6,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "마취 전투약 IM 병용 (a) 아세프로마진·덱스메데토미딘 5 mcg/kg·틸레타민/졸라제팜",
+   "route": "IM",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "마취 전투약 IM 병용 (b) 덱스메데토미딘 3–4 mcg/kg",
+   "route": "IM",
+   "low": 0.3,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "수술 전후 통증 IM 병용 (a) 메데토미딘 20 mcg/kg 또는 아세프로마진 0.05 mg/kg",
+   "route": "IM",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "수술 전후 통증 IM 병용 (b) 덱스메데토미딘 15 mcg/kg + 알팍살론/케타민 3 mg/kg",
+   "route": "IM",
+   "low": 0.3,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유도 전 (케타민 0.3 mg/kg IM 병용)",
+   "route": "IM",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "유도 20분 전"
+  },
+  {
+   "species": "cat",
+   "label": "수술 전 진통 (아세프로마진 0.02 mg/kg SC 병용)",
+   "route": "SC",
+   "low": 0.6,
+   "high": 0.6,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "중성화 후 약 6시간 진통"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 10
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

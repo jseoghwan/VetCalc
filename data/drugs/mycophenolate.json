@@ -89,6 +89,37 @@
    "freq": "q12h",
    "default": true,
    "note": "증례 보고 2례, 고양이 사용 비권장 의견 있음"
+  },
+  {
+   "species": "dog",
+   "label": "면역매개성 용혈성 빈혈",
+   "route": "IV",
+   "low": 8,
+   "high": 12,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "프레드니솔론 병용"
+  },
+  {
+   "species": "dog",
+   "label": "원인불명 수막뇌척수염",
+   "route": "IV",
+   "low": 10,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "코르티코스테로이드 병용, 시린지 펌프로 20분 주입"
+  },
+  {
+   "species": "dog",
+   "label": "중증 근무력증",
+   "route": "IV",
+   "low": 15,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "희석 후 2–4시간 주입, 연하 가능 시까지 후 PO 전환"
   }
  ],
  "strengths": [
@@ -99,8 +130,12 @@
   {
    "form": "tablet",
    "mg": 500
+  },
+  {
+   "form": "vial",
+   "mg": 500
   }
  ],
- "compounding": null,
+ "compounding": "제조사: 다른 약물·희석제와 혼합 또는 동시 투여 금지",
  "reviewed": null
 }

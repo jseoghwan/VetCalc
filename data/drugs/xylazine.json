@@ -1,0 +1,123 @@
+{
+ "id": "xylazine",
+ "name": "Xylazine",
+ "brand": [
+  "Rompun",
+  "AnaSed"
+ ],
+ "class": "알파-2 아드레날린 작용제 (진정·진통)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "진정·전마취 (label) IV",
+   "route": "IV",
+   "low": 1.1,
+   "high": 1.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "label 용량은 과다로 간주, 저용량 extra-label 고려"
+  },
+  {
+   "species": "dog",
+   "label": "진정·전마취 (label) IM/SC",
+   "route": "IM/SC",
+   "low": 1.1,
+   "high": 2.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "label 용량은 과다로 간주, 저용량 extra-label 고려"
+  },
+  {
+   "species": "dog",
+   "label": "전마취제",
+   "route": "IV/IM/SC",
+   "low": 0.2,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "진통 보조",
+   "route": "IV/IM/SC",
+   "low": 0.05,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "진정·전마취 (label) IV",
+   "route": "IV",
+   "low": 1.1,
+   "high": 1.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "label 용량은 과다로 간주, 저용량 extra-label 고려"
+  },
+  {
+   "species": "cat",
+   "label": "진정·전마취 (label) IM/SC",
+   "route": "IM/SC",
+   "low": 2.2,
+   "high": 2.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "label 용량은 과다로 간주, 저용량 extra-label 고려"
+  },
+  {
+   "species": "cat",
+   "label": "구토 유발",
+   "route": "IM/SC",
+   "low": 0.4,
+   "high": 1.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "CRTZ 표적 독소에는 무효, 구토 후 요힘빈·톨라졸린·아티파메졸로 역전 가능"
+  },
+  {
+   "species": "cat",
+   "label": "전마취제",
+   "route": "IV/IM/SC",
+   "low": 0.2,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "진통 보조",
+   "route": "IV/IM/SC",
+   "low": 0.05,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "항불안",
+   "route": "IV/IM",
+   "low": 0.05,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 20
+  },
+  {
+   "form": "injection",
+   "mgml": 100
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

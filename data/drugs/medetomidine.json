@@ -1,0 +1,230 @@
+{
+ "id": "medetomidine",
+ "name": "Medetomidine",
+ "brand": [
+  "Domitor"
+ ],
+ "class": "α2-아드레날린 작용제(진정·진통)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "경도 진정·전마취 (단독)",
+   "route": "IV/IM/SC",
+   "low": 5,
+   "high": 20,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "중등도 진정 (단독)",
+   "route": "IV/IM/SC",
+   "low": 20,
+   "high": 40,
+   "unit": "mcg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "깊은 진정 (단독)",
+   "route": "IV/IM/SC",
+   "low": 30,
+   "high": 80,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "고용량 위험, 병용 프로토콜 고려"
+  },
+  {
+   "species": "dog",
+   "label": "진정 (부토르파놀 병용)",
+   "route": "IM",
+   "low": 20,
+   "high": 20,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "butorphanol 0.3 mg/kg IM 병용"
+  },
+  {
+   "species": "dog",
+   "label": "전마취 (부토르파놀+알팍살론 병용)",
+   "route": "IM",
+   "low": 5,
+   "high": 5,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "butorphanol 0.3 mg/kg IM 후 alfaxalone 1–2.5 mg/kg IM"
+  },
+  {
+   "species": "dog",
+   "label": "전마취 (부토르파놀 병용, 세보플루란 절감)",
+   "route": "IM",
+   "low": 24,
+   "high": 24,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "butorphanol 0.24 mg/kg IM 병용"
+  },
+  {
+   "species": "dog",
+   "label": "전마취 (모르핀/메타돈 병용)",
+   "route": "IV",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "morphine 0.3 또는 methadone 0.3 mg/kg IV 병용, propofol 유도 전"
+  },
+  {
+   "species": "dog",
+   "label": "진정·삽관 (알팍살론+부토르파놀 병용)",
+   "route": "IM",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "alfaxalone 2.5 mg/kg + butorphanol 0.25 mg/kg IM 병용"
+  },
+  {
+   "species": "dog",
+   "label": "진정 (부토르파놀/메타돈 병용, 같은 주사기)",
+   "route": "IM",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "butorphanol 0.4 또는 methadone 0.4 mg/kg; 20–30분에 최대 진정"
+  },
+  {
+   "species": "dog",
+   "label": "불응성 발작 (증례)",
+   "route": "CRI",
+   "low": 0.016,
+   "high": 0.016,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "문맥단락 결찰 후 증례"
+  },
+  {
+   "species": "cat",
+   "label": "경도 진정·전마취 (단독)",
+   "route": "IV/IM/SC",
+   "low": 5,
+   "high": 30,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "중등도 진정 (단독)",
+   "route": "IV/IM/SC",
+   "low": 30,
+   "high": 50,
+   "unit": "mcg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "깊은 진정 (단독)",
+   "route": "IV/IM/SC",
+   "low": 50,
+   "high": 80,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "100 mcg/kg까지 사용 보고; 80 mcg/kg로 대부분 충분"
+  },
+  {
+   "species": "cat",
+   "label": "경도 진정 (오피오이드 병용)",
+   "route": "IM",
+   "low": 20,
+   "high": 20,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "butorphanol 0.4 mg/kg / methadone 0.5 mg/kg / buprenorphine 20 mcg/kg 중 하나 병용"
+  },
+  {
+   "species": "cat",
+   "label": "중등도 진정 (부토르파놀 병용)",
+   "route": "IM",
+   "low": 50,
+   "high": 50,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "butorphanol 0.4 mg/kg 같은 주사기"
+  },
+  {
+   "species": "cat",
+   "label": "깊은 진정·마취 (케타민 병용)",
+   "route": "IM",
+   "low": 60,
+   "high": 60,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "ketamine 10 mg/kg ± morphine 0.2 mg/kg 같은 주사기"
+  },
+  {
+   "species": "cat",
+   "label": "전신마취 (케타민 병용)",
+   "route": "IM/SC",
+   "low": 80,
+   "high": 80,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "ketamine 2.5–7.5 mg/kg 같은 주사기; 3–4분 내 마취, 20–50분 지속"
+  },
+  {
+   "species": "cat",
+   "label": "Kitty Magic (a)",
+   "route": "IM",
+   "low": 20,
+   "high": 40,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "ketamine 2–4 mg/kg + butorphanol 0.2–0.4 mg/kg 또는 buprenorphine 0.006–0.012 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "Kitty Magic (b)",
+   "route": "IM",
+   "low": 70,
+   "high": 80,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "ketamine 5 mg/kg + butorphanol 0.4 mg/kg 또는 buprenorphine 0.02 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "전신마취 (알팍살론 병용) (a)",
+   "route": "IM/SC",
+   "low": 40,
+   "high": 40,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "15–20분 후 alfaxalone 2.5–5 mg/kg IV"
+  },
+  {
+   "species": "cat",
+   "label": "전신마취 (알팍살론 병용) (b)",
+   "route": "IM",
+   "low": 20,
+   "high": 20,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "butorphanol 0.2 mg/kg + alfaxalone 5 mg/kg 같은 주사기; 소형 환자 한정"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 1
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

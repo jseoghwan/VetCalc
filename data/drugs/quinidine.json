@@ -25,6 +25,17 @@
    "high": 16,
    "unit": "mg/kg",
    "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "심방세동 동율동 전환 (기저 심장병 없음)",
+   "route": "IM",
+   "low": 6,
+   "high": 11,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "quinidine gluconate; 빠른 심실 반응 시 digoxin/베타차단제 병용"
   }
  ],
  "strengths": [
@@ -41,6 +52,6 @@
    "mg": 324
   }
  ],
- "compounding": null,
+ "compounding": "IV 시 매우 서서히(1 mL/min); D5W 10–40 mL로 희석 가능",
  "reviewed": null
 }

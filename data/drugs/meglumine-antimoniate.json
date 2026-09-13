@@ -1,0 +1,42 @@
+{
+ "id": "meglumine-antimoniate",
+ "name": "Meglumine Antimoniate",
+ "brand": [
+  "Glucantime"
+ ],
+ "class": "항원충제(리슈만편모충증)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "리슈만편모충증 (a)",
+   "route": "SC",
+   "low": 100,
+   "high": 100,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "4주; allopurinol 병용 권장"
+  },
+  {
+   "species": "dog",
+   "label": "리슈만편모충증 (b)",
+   "route": "SC",
+   "low": 50,
+   "high": 75,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "4–8주; 반감기 짧아 더 효과적일 수 있음"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 300
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

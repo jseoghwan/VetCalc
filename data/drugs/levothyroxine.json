@@ -62,6 +62,17 @@
    "high": 0.1,
    "unit": "mg/animal",
    "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "점액수종 혼수",
+   "route": "IV",
+   "low": 0.001,
+   "high": 0.009,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "중앙값 0.005 mg/kg IV q12h; 심장질환 시 저용량, 서서히 IV"
   }
  ],
  "strengths": [
@@ -180,8 +191,32 @@
   {
    "form": "tablet",
    "mg": 1
+  },
+  {
+   "form": "injection",
+   "mgml": 0.02
+  },
+  {
+   "form": "injection",
+   "mgml": 0.04
+  },
+  {
+   "form": "injection",
+   "mgml": 0.1
+  },
+  {
+   "form": "vial",
+   "mg": 0.1
+  },
+  {
+   "form": "vial",
+   "mg": 0.2
+  },
+  {
+   "form": "vial",
+   "mg": 0.5
   }
  ],
- "compounding": null,
+ "compounding": "다른 약물·IV 수액과 혼합 금지",
  "reviewed": null
 }

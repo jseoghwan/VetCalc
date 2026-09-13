@@ -48,14 +48,58 @@
    "high": 20,
    "unit": "mg/kg",
    "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "다제내성 세균 감염",
+   "route": "IV",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h; PO와 동일 용량 IV 가능(약동학 근거)"
+  },
+  {
+   "species": "dog",
+   "label": "불응성 노카르디아증",
+   "route": "IV",
+   "low": 8,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "다제내성 세균 감염",
+   "route": "IV",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h; PO와 동일 용량 IV 가능"
+  },
+  {
+   "species": "cat",
+   "label": "불응성 노카르디아증",
+   "route": "IV",
+   "low": 8,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q12h"
   }
  ],
  "strengths": [
   {
    "form": "tablet",
    "mg": 600
+  },
+  {
+   "form": "injection",
+   "mgml": 2
   }
  ],
- "compounding": null,
+ "compounding": "0.9% NaCl·D5W·LR 배합 가능; 다른 약물과 별도 투여, 투여 전후 라인 플러시",
  "reviewed": null
 }

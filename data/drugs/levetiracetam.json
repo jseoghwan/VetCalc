@@ -99,6 +99,46 @@
    "unit": "mg/kg",
    "freq": "q8h",
    "note": "총 60–75 mg/kg/day 3회 분할"
+  },
+  {
+   "species": "dog",
+   "label": "간질중첩증·군발발작",
+   "route": "IV",
+   "low": 30,
+   "high": 60,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "5–15분에 걸쳐 IV"
+  },
+  {
+   "species": "dog",
+   "label": "군발발작 가정 투여 (벤조디아제핀 불충분 시)",
+   "route": "SC",
+   "low": 60,
+   "high": 60,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "반응성 발작 부하 용량",
+   "route": "IV",
+   "low": 60,
+   "high": 60,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "이후 20 mg/kg PO q8h 유지"
+  },
+  {
+   "species": "cat",
+   "label": "간질",
+   "route": "IV",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true
   }
  ],
  "strengths": [
@@ -117,6 +157,22 @@
   {
    "form": "tablet",
    "mg": 1000
+  },
+  {
+   "form": "injection",
+   "mgml": 5
+  },
+  {
+   "form": "injection",
+   "mgml": 10
+  },
+  {
+   "form": "injection",
+   "mgml": 15
+  },
+  {
+   "form": "injection",
+   "mgml": 100
   }
  ],
  "compounding": null,

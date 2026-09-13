@@ -20,6 +20,48 @@
    "freq": "q24h",
    "default": true,
    "note": "분만 예정일 며칠 전 중단"
+  },
+  {
+   "species": "dog",
+   "label": "장기 번식 억제",
+   "route": "IM",
+   "low": 2.5,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "5개월마다 반복"
+  },
+  {
+   "species": "dog",
+   "label": "Alopecia X (포메라니안 연구)",
+   "route": "SC",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "4주마다 4회"
+  },
+  {
+   "species": "cat",
+   "label": "행동 문제 (중성화 수컷 마킹, 최후 수단)",
+   "route": "IM/SC",
+   "low": 5,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "연 3–4회"
+  },
+  {
+   "species": "cat",
+   "label": "장기 번식 억제",
+   "route": "IM",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "5개월마다 반복"
   }
  ],
  "strengths": [
@@ -34,6 +76,18 @@
   {
    "form": "tablet",
    "mg": 10
+  },
+  {
+   "form": "injection",
+   "mgml": 150
+  },
+  {
+   "form": "injection",
+   "mgml": 160
+  },
+  {
+   "form": "injection",
+   "mgml": 400
   }
  ],
  "compounding": null,

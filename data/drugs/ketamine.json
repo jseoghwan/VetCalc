@@ -1,0 +1,361 @@
+{
+ "id": "ketamine",
+ "name": "Ketamine",
+ "brand": [
+  "Ketaset",
+  "Ketalar",
+  "Ketaject",
+  "VetaKet"
+ ],
+ "class": "해리성 전신마취제; NMDA 길항 진통 보조",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "마취 보조: medetomidine·hydromorphone 병용 (야외 중성화)",
+   "route": "IM",
+   "low": 4.5,
+   "high": 4.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "medetomidine 0.04 mg/kg + hydromorphone 0.09 mg/kg 혼합 IM"
+  },
+  {
+   "species": "dog",
+   "label": "전마취·유도: diazepam 병용",
+   "route": "IV",
+   "low": 5.5,
+   "high": 5.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "diazepam 0.28 mg/kg 병용"
+  },
+  {
+   "species": "dog",
+   "label": "전마취·유도: midazolam 병용",
+   "route": "IV",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "midazolam 0.5 mg/kg 병용"
+  },
+  {
+   "species": "dog",
+   "label": "전마취: dexmedetomidine+opioid 병용 (거세)",
+   "route": "IM",
+   "low": 3,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "dexmedetomidine 15 mcg/kg + buprenorphine/butorphanol/hydromorphone 단회 IM"
+  },
+  {
+   "species": "dog",
+   "label": "전마취: xylazine 후",
+   "route": "IM",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "xylazine 1 mg/kg IM 직후; 지속 ≈24분"
+  },
+  {
+   "species": "dog",
+   "label": "전마취: medetomidine 병용",
+   "route": "IM",
+   "low": 5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "medetomidine 40 mcg/kg IM 병용; atipamezole 길항 금지"
+  },
+  {
+   "species": "dog",
+   "label": "전마취: medetomidine·butorphanol 전처치 15분 후",
+   "route": "IM",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "atipamezole 길항 금지"
+  },
+  {
+   "species": "dog",
+   "label": "부하 용량 (진통 CRI 전)",
+   "route": "IV",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "진통 보조 CRI (a)",
+   "route": "CRI",
+   "low": 0.1,
+   "high": 0.6,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "부하 0.5 mg/kg IV 후"
+  },
+  {
+   "species": "dog",
+   "label": "수술 중 진통 CRI (b)",
+   "route": "CRI",
+   "low": 10,
+   "high": 20,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "note": "부하 0.5 mg/kg IV 후"
+  },
+  {
+   "species": "dog",
+   "label": "수술 후 진통 CRI (c)",
+   "route": "CRI",
+   "low": 2,
+   "high": 10,
+   "unit": "mcg/kg/min",
+   "freq": "cri"
+  },
+  {
+   "species": "dog",
+   "label": "부하 용량: lidocaine 병용 CRI 전 (d)",
+   "route": "IV",
+   "low": 0.5,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "lidocaine 1.5–2 mg/kg IV 병용"
+  },
+  {
+   "species": "dog",
+   "label": "lidocaine 병용 CRI (d)",
+   "route": "CRI",
+   "low": 0.03,
+   "high": 0.1,
+   "unit": "mg/kg/min",
+   "freq": "cri",
+   "note": "lidocaine 25–100 mcg/kg/min 병용"
+  },
+  {
+   "species": "dog",
+   "label": "부하 용량: lidocaine·dexmedetomidine 병용 CRI 전 (e)",
+   "route": "IV",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "lidocaine 2 mg/kg + dexmedetomidine 1 mcg/kg IV 병용"
+  },
+  {
+   "species": "dog",
+   "label": "KLD 수술 중 CRI (e)",
+   "route": "CRI",
+   "low": 40,
+   "high": 40,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "note": "lidocaine 100 mcg/kg/min + dexmedetomidine 3 mcg/kg/h 병용"
+  },
+  {
+   "species": "dog",
+   "label": "KLD 수술 후 CRI (e)",
+   "route": "CRI",
+   "low": 10,
+   "high": 10,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "note": "수술 후 4시간; lidocaine 25 mcg/kg/min + dexmedetomidine 1 mcg/kg/h 병용"
+  },
+  {
+   "species": "dog",
+   "label": "KLF CRI (f)",
+   "route": "CRI",
+   "low": 0.6,
+   "high": 0.6,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "note": "lidocaine 3 mg/kg/h + fentanyl 3.6 mcg/kg/h 병용; 부하 없음"
+  },
+  {
+   "species": "dog",
+   "label": "MLK CRI (g)",
+   "route": "CRI",
+   "low": 10,
+   "high": 10,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "note": "morphine 3.3–4 mcg/kg/min + lidocaine 50 mcg/kg/min 병용"
+  },
+  {
+   "species": "dog",
+   "label": "DMLK CRI (h)",
+   "route": "CRI",
+   "low": 0.6,
+   "high": 0.6,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "note": "dexmedetomidine 0.5 mcg/kg/h + morphine 0.2 mg/kg/h + lidocaine 3 mg/kg/h 병용"
+  },
+  {
+   "species": "dog",
+   "label": "난치성 간질중첩증",
+   "route": "IV",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "볼루스"
+  },
+  {
+   "species": "cat",
+   "label": "보정 (label)",
+   "route": "IM",
+   "low": 11,
+   "high": 11,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "진단·소수술 (label)",
+   "route": "IM",
+   "low": 22,
+   "high": 33,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "근이완 불필요 시; 마취 지속 ≈30–45분"
+  },
+  {
+   "species": "cat",
+   "label": "전마취·유도: diazepam 병용",
+   "route": "IV",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "diazepam 0.25 mg/kg 병용"
+  },
+  {
+   "species": "cat",
+   "label": "dexmedetomidine+opioid 병용 (거세) (i)",
+   "route": "IM",
+   "low": 3,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "dexmedetomidine 25 mcg/kg + butorphanol 0.2 mg/kg 또는 hydromorphone 0.05 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "dexmedetomidine+butorphanol 병용 (거세) (ii)",
+   "route": "IM",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "dexmedetomidine 10 mcg/kg + butorphanol 0.2 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "dexmedetomidine+methadone 병용 (난소절제) (iii)",
+   "route": "IM",
+   "low": 3,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "dexmedetomidine 15 mcg/kg + methadone 0.3 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "butorphanol·midazolam 병용",
+   "route": "IM",
+   "low": 3,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "butorphanol 0.4 mg/kg + midazolam 0.4 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "opioid·medetomidine·midazolam 병용 (강한 진정)",
+   "route": "IM",
+   "low": 1,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "butorphanol 0.2 mg/kg + medetomidine 0.015–0.02 mg/kg + midazolam 0.05–0.2 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "부하 용량 (진통 CRI 전)",
+   "route": "IV",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "진통 보조 CRI (a)",
+   "route": "CRI",
+   "low": 0.1,
+   "high": 0.6,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "부하 0.5 mg/kg IV 후"
+  },
+  {
+   "species": "cat",
+   "label": "수술 중 진통 CRI (b)",
+   "route": "CRI",
+   "low": 10,
+   "high": 20,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "note": "부하 0.5 mg/kg IV 후"
+  },
+  {
+   "species": "cat",
+   "label": "수술 후 진통 CRI (b)",
+   "route": "CRI",
+   "low": 2,
+   "high": 10,
+   "unit": "mcg/kg/min",
+   "freq": "cri"
+  },
+  {
+   "species": "cat",
+   "label": "MLK CRI (c)",
+   "route": "CRI",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "note": "LRS 500 mL에 morphine 10 mg + lidocaine 120 mg + ketamine 100 mg, 10 mL/kg/h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 10
+  },
+  {
+   "form": "injection",
+   "mgml": 50
+  },
+  {
+   "form": "injection",
+   "mgml": 100
+  }
+ ],
+ "compounding": "멸균수·D5W·NS로 희석 가능; barbiturate·diazepam과 같은 주사기/백 혼합 비권장(침전); 침전 보이면 사용 금지",
+ "reviewed": null
+}

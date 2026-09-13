@@ -1,0 +1,49 @@
+{
+ "id": "oxacillin",
+ "name": "Oxacillin",
+ "brand": [
+  "Bactocill"
+ ],
+ "class": "항포도상구균 페니실린",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "감수성 감염",
+   "route": "IV/IM/SC",
+   "low": 22,
+   "high": 40,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염",
+   "route": "IV/IM/SC",
+   "low": 22,
+   "high": 40,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "vial",
+   "mg": 1000
+  },
+  {
+   "form": "vial",
+   "mg": 2000
+  },
+  {
+   "form": "vial",
+   "mg": 10000
+  }
+ ],
+ "compounding": "아미노글리코사이드와 같은 주사기·라인 혼합 금지, 칼슘염·테트라사이클린과 비혼합",
+ "reviewed": null
+}

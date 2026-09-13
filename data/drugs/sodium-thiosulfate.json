@@ -1,0 +1,45 @@
+{
+ "id": "sodium-thiosulfate",
+ "name": "Sodium Thiosulfate",
+ "brand": [],
+ "class": "해독제 (비소·시안화물)",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "시안화물 중독",
+   "route": "IV",
+   "low": 150,
+   "high": 500,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "25% 용액; sodium nitrite 10–20 mg/kg IV 후 투여; bolus 또는 CRI"
+  },
+  {
+   "species": "cat",
+   "label": "시안화물 중독",
+   "route": "IV",
+   "low": 150,
+   "high": 500,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "25% 용액; sodium nitrite 10–20 mg/kg IV 후 투여; bolus 또는 CRI"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 100
+  },
+  {
+   "form": "injection",
+   "mgml": 250
+  }
+ ],
+ "compounding": "hydroxocobalamin과 혼합 불가; sodium nitrite와 같은 라인 순차 투여 가능",
+ "reviewed": null
+}

@@ -245,6 +245,94 @@
    "unit": "mg/kg",
    "freq": "q24h",
    "note": "5–10일"
+  },
+  {
+   "species": "dog",
+   "label": "조충 (Taenia·Echinococcus·Dipylidium 등)",
+   "route": "SC",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "Sparganum proliferum",
+   "route": "SC",
+   "low": 7.5,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2일간; 원문 7.5 또는 25 mg/kg"
+  },
+  {
+   "species": "dog",
+   "label": "연어중독 흡충 (Nanophyetus) 보조",
+   "route": "SC",
+   "low": 10,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "복강 유충 조충증 (증례)",
+   "route": "SC",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "조충 구제 (label) <2.3 kg",
+   "route": "IM/SC",
+   "low": 11.4,
+   "high": 11.4,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "0.2 mL"
+  },
+  {
+   "species": "cat",
+   "label": "조충 구제 (label) 2.3–4.5 kg",
+   "route": "IM/SC",
+   "low": 22.7,
+   "high": 22.7,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "0.4 mL"
+  },
+  {
+   "species": "cat",
+   "label": "조충 구제 (label) ≥5 kg",
+   "route": "IM/SC",
+   "low": 34.1,
+   "high": 34.1,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "0.6 mL, 최대 용량"
+  },
+  {
+   "species": "cat",
+   "label": "조충 (Taenia·Echinococcus·Dipylidium 등)",
+   "route": "SC",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "Sparganum proliferum",
+   "route": "SC",
+   "low": 7.5,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2일간; 원문 7.5 또는 25 mg/kg"
   }
  ],
  "strengths": [
@@ -259,6 +347,10 @@
   {
    "form": "tablet",
    "mg": 600
+  },
+  {
+   "form": "injection",
+   "mgml": 56.8
   }
  ],
  "compounding": null,

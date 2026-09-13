@@ -1,0 +1,199 @@
+{
+ "id": "midazolam",
+ "name": "Midazolam",
+ "brand": [
+  "Versed"
+ ],
+ "class": "벤조디아제핀계 진정·항경련제",
+ "tags": [
+  "anticonvulsant"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "마취 전투약·공동 유도",
+   "route": "IV/IM/SC",
+   "low": 0.1,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "케타민·아세프로마진·오피오이드·α2 작용제 등과 병용"
+  },
+  {
+   "species": "dog",
+   "label": "공동 유도 (a) 프로포폴·케타민 병용",
+   "route": "IV",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "프로포폴 전 투여 시 경도–중등도 흥분 가능"
+  },
+  {
+   "species": "dog",
+   "label": "공동 유도 (b) 프로포폴·알팍살론 병용",
+   "route": "IV",
+   "low": 0.3,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "공동 유도 (c) 부토르파놀 0.2 mg/kg IV + 알팍살론",
+   "route": "IV",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "공동 유도 (d) 알팍살론 용량 감소",
+   "route": "IV",
+   "low": 0.4,
+   "high": 0.4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "무호흡 발생 증가"
+  },
+  {
+   "species": "dog",
+   "label": "전투약 모르핀 0.5 mg/kg ± 아세프로마진 병용",
+   "route": "IM",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "전투약 알팍살론 5 mg/kg + 모르핀 0.4 mg/kg 병용",
+   "route": "IM",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "진정 (부토르파놀 0.2 mg/kg IV 병용, 초음파 검사)",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "간질 중첩증 (a)",
+   "route": "IV/IM",
+   "low": 0.1,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "IM은 IV보다 고용량 필요할 수 있음, 무반응 시 0.5 mg/kg까지 2회 반복 가능"
+  },
+  {
+   "species": "dog",
+   "label": "간질 중첩증 (b) 범위",
+   "route": "IV/IM",
+   "low": 0.07,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "재발 시 재볼루스 후 CRI 고려"
+  },
+  {
+   "species": "dog",
+   "label": "간질 중첩증 CRI",
+   "route": "CRI",
+   "low": 0.25,
+   "high": 0.4,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "범위 0.1–2.5 mg/kg/h, 저용량에서 시작해 증량"
+  },
+  {
+   "species": "cat",
+   "label": "마취 전투약",
+   "route": "IV/IM/SC",
+   "low": 0.1,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "부토르파놀 병용 시 불안·공격성 가능"
+  },
+  {
+   "species": "cat",
+   "label": "공동 유도 (a) 프로포폴 2 mg/kg IV 후",
+   "route": "IV",
+   "low": 0.2,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "공동 유도 (b) 알팍살론 0.25 mg/kg IV 1분 후",
+   "route": "IV",
+   "low": 0.08,
+   "high": 0.08,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "진정 (a) 케타민 14 mg/kg 병용",
+   "route": "IM",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "진정 약 33분"
+  },
+  {
+   "species": "cat",
+   "label": "진정 (b) 메데토미딘 0.05 mg/kg 병용 후 케타민 10 mg/kg IM",
+   "route": "IM",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "중성화 오피오이드 비사용 프로토콜 (케타민·덱스메데토미딘 병용)",
+   "route": "IM",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "IV 카테터 장착 진정 (알팍살론 1.5 mg/kg + 하이드로모르폰 0.1 mg/kg 병용)",
+   "route": "IM",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "등근육 IM"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 1
+  },
+  {
+   "form": "injection",
+   "mgml": 5
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

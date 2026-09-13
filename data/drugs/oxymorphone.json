@@ -1,0 +1,44 @@
+{
+ "id": "oxymorphone",
+ "name": "Oxymorphone",
+ "brand": [
+  "Numorphan",
+  "Opana"
+ ],
+ "class": "오피오이드 작용제",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "급성 통증·진정·전처치",
+   "route": "IV/IM/SC",
+   "low": 0.05,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "필요 시 1–6시간마다 반복, 진정제 병용 가능"
+  },
+  {
+   "species": "cat",
+   "label": "급성 통증·진정·전처치",
+   "route": "IV/IM/SC",
+   "low": 0.05,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "필요 시 1–6시간마다 반복, 진정제 병용 가능"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 1
+  }
+ ],
+ "compounding": "바르비투르산염·디아제팜과 혼합 시 물리적 비적합",
+ "reviewed": null
+}

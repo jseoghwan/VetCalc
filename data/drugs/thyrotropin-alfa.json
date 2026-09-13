@@ -1,0 +1,43 @@
+{
+ "id": "thyrotropin-alfa",
+ "name": "Thyrotropin Alfa",
+ "brand": [
+  "Thyrogen"
+ ],
+ "class": "갑상선자극호르몬 (rhTSH)",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "TSH 자극 검사 (rhTSH)",
+   "route": "IV",
+   "low": 0.075,
+   "high": 0.15,
+   "unit": "mg/animal",
+   "freq": "once",
+   "default": true,
+   "note": "원문 75–150 µg/dog; 병발 질환·약물 복용 시 고용량 권장; 투여 전·6시간 후 T4 측정"
+  },
+  {
+   "species": "cat",
+   "label": "TSH 자극 검사 (rhTSH)",
+   "route": "IV",
+   "low": 0.025,
+   "high": 0.025,
+   "unit": "mg/animal",
+   "freq": "once",
+   "default": true,
+   "note": "원문 25 µg/cat; 투여 전·6시간 후 T4 측정"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "vial",
+   "mg": 1.1
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,79 @@
+{
+ "id": "vecuronium",
+ "name": "Vecuronium",
+ "brand": [
+  "Norcuron"
+ ],
+ "class": "비탈분극성 신경근 차단제",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "신경근 차단 (a)",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "연장 필요 시 0.05 mg/kg IV 추가, 초기 최대 0.2 mg/kg(회복 지연)"
+  },
+  {
+   "species": "dog",
+   "label": "신경근 차단 (b) 부분 차단",
+   "route": "IV",
+   "low": 0.025,
+   "high": 0.025,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "5초에 걸쳐 IV, 0.05 mg/kg에서 완전 마비 보고"
+  },
+  {
+   "species": "dog",
+   "label": "유지 CRI (프로포폴-펜타닐 마취)",
+   "route": "CRI",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "유지 CRI (흡입마취+펜타닐 CRI)",
+   "route": "CRI",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg/h",
+   "freq": "cri"
+  },
+  {
+   "species": "cat",
+   "label": "신경근 차단",
+   "route": "IV",
+   "low": 0.02,
+   "high": 0.04,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 1
+  },
+  {
+   "form": "vial",
+   "mg": 10
+  },
+  {
+   "form": "vial",
+   "mg": 20
+  }
+ ],
+ "compounding": "0.9% NaCl·D5W·LR로 희석 가능, 알칼리성 약물(바르비투르산염)·중탄산나트륨과 혼합 시 침전",
+ "reviewed": null
+}

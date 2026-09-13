@@ -28,6 +28,17 @@
    "freq": "q24h",
    "default": true,
    "note": "인체 용량 외삽; 실용적으로 ½정 단위로 올림"
+  },
+  {
+   "species": "dog",
+   "label": "메토트렉세이트 과량 (증례)",
+   "route": "IV",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/animal",
+   "freq": "q6h",
+   "default": true,
+   "note": "13 kg 개 증례, 6회 투여"
   }
  ],
  "strengths": [
@@ -46,8 +57,32 @@
   {
    "form": "tablet",
    "mg": 25
+  },
+  {
+   "form": "injection",
+   "mgml": 10
+  },
+  {
+   "form": "vial",
+   "mg": 50
+  },
+  {
+   "form": "vial",
+   "mg": 100
+  },
+  {
+   "form": "vial",
+   "mg": 200
+  },
+  {
+   "form": "vial",
+   "mg": 350
+  },
+  {
+   "form": "vial",
+   "mg": 500
   }
  ],
- "compounding": null,
+ "compounding": "LR·링거·0.9% NaCl 희석 가능; fluorouracil 함유 용액과 배합 금지; 멸균수 재조제 시 즉시 투여(정균수 재조제 시 7일 안정)",
  "reviewed": null
 }

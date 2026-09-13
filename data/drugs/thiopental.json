@@ -1,0 +1,76 @@
+{
+ "id": "thiopental",
+ "name": "Thiopental",
+ "brand": [
+  "Pentothal"
+ ],
+ "class": "초단시간 작용 티오바르비투르산염 마취제",
+ "tags": [
+  "anticonvulsant"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "마취 유도 (label)",
+   "route": "IV",
+   "low": 13.2,
+   "high": 26.4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "효과 볼 때까지 투여; 마취 지속시간에 따라"
+  },
+  {
+   "species": "dog",
+   "label": "마취 유도 (a)",
+   "route": "IV",
+   "low": 12,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "⅓ 급속 투여 후 나머지는 효과 볼 때까지; 반복 시 축적"
+  },
+  {
+   "species": "dog",
+   "label": "마취 유도 (b)",
+   "route": "IV",
+   "low": 15,
+   "high": 17,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유도 (label)",
+   "route": "IV",
+   "low": 13.2,
+   "high": 26.4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "효과 볼 때까지 투여; 마취 지속시간에 따라"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유도 (a)",
+   "route": "IV",
+   "low": 12,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "⅓ 급속 투여 후 나머지는 효과 볼 때까지; 반복 시 축적"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유도 (b)",
+   "route": "IV",
+   "low": 9,
+   "high": 11,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true
+  }
+ ],
+ "strengths": [],
+ "compounding": "멸균수·0.9% NaCl·D5W로만 희석(5 g 바이알+100 mL=5%, +200 mL=2.5%); 재구성 후 24시간 내 폐기; LR·atropine·glycopyrrolate·morphine 등과 혼합 불가",
+ "reviewed": null
+}

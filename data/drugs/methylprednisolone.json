@@ -103,6 +103,48 @@
    "freq": "q24h",
    "default": true,
    "note": "7일 후 최저 유효량으로 점감"
+  },
+  {
+   "species": "dog",
+   "label": "아나필락시스 보조 (sodium succinate)",
+   "route": "IV",
+   "low": 2,
+   "high": 6,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "1–2 mg/kg/min 이하 속도, 에피네프린 대체 아님"
+  },
+  {
+   "species": "dog",
+   "label": "항염 (acetate, label)",
+   "route": "IM",
+   "low": 2,
+   "high": 120,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "평균 20 mg/마리, 품종·중증도에 따라; 필요 시 주 1회 반복"
+  },
+  {
+   "species": "cat",
+   "label": "아나필락시스 보조 (sodium succinate)",
+   "route": "IV",
+   "low": 2,
+   "high": 6,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "1–2 mg/kg/min 이하 속도, 에피네프린 대체 아님"
+  },
+  {
+   "species": "cat",
+   "label": "항염 (acetate, label)",
+   "route": "IM",
+   "low": 10,
+   "high": 20,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "평균 10 mg/마리; 필요 시 주 1회 반복"
   }
  ],
  "strengths": [
@@ -129,6 +171,38 @@
   {
    "form": "tablet",
    "mg": 32
+  },
+  {
+   "form": "injection",
+   "mgml": 20
+  },
+  {
+   "form": "injection",
+   "mgml": 40
+  },
+  {
+   "form": "injection",
+   "mgml": 80
+  },
+  {
+   "form": "vial",
+   "mg": 40
+  },
+  {
+   "form": "vial",
+   "mg": 125
+  },
+  {
+   "form": "vial",
+   "mg": 500
+  },
+  {
+   "form": "vial",
+   "mg": 1000
+  },
+  {
+   "form": "vial",
+   "mg": 2000
   }
  ],
  "compounding": null,

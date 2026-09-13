@@ -32,6 +32,46 @@
    "freq": "q8h",
    "default": true,
    "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "감수성 전신 감염",
+   "route": "IV",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "연어 중독(Neorickettsia) 보조",
+   "route": "IV",
+   "low": 7,
+   "high": 7,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "3–5일"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 전신 감염",
+   "route": "IV",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "연어 중독(Neorickettsia) 보조",
+   "route": "IV",
+   "low": 7,
+   "high": 7,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "3–5일"
   }
  ],
  "strengths": [
@@ -42,8 +82,20 @@
   {
    "form": "tablet",
    "mg": 500
+  },
+  {
+   "form": "injection",
+   "mgml": 100
+  },
+  {
+   "form": "injection",
+   "mgml": 200
+  },
+  {
+   "form": "injection",
+   "mgml": 300
   }
  ],
- "compounding": null,
+ "compounding": "pH 6 초과·칼슘 함유 수액에서 불안정(단기형 기준)",
  "reviewed": null
 }

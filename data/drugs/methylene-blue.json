@@ -1,0 +1,67 @@
+{
+ "id": "methylene-blue",
+ "name": "Methylene Blue",
+ "brand": [
+  "ProvayBlue"
+ ],
+ "class": "해독제(메트헤모글로빈혈증 치료)",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "중증 메트헤모글로빈혈증 (중독)",
+   "route": "IV",
+   "low": 1,
+   "high": 1.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "1% 용액, 수 분에 걸쳐 서서히 IV, 필요 시 신중히 반복(Heinz 소체 빈혈 주의)"
+  },
+  {
+   "species": "dog",
+   "label": "페나조피리딘 중독 메트헤모글로빈혈증",
+   "route": "IV",
+   "low": 4,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "증례 보고 1건"
+  },
+  {
+   "species": "dog",
+   "label": "췌장 도세포 종양 수술 중 염색",
+   "route": "IV",
+   "low": 3,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "총 250 mL(D5W 권장)로 희석, 30–40분 주입"
+  },
+  {
+   "species": "cat",
+   "label": "중증 메트헤모글로빈혈증",
+   "route": "IV",
+   "low": 1,
+   "high": 1.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "단회, 수 분에 걸쳐 서서히 IV; 고양이 극히 신중(종종 금기)"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 5
+  },
+  {
+   "form": "injection",
+   "mgml": 10
+  }
+ ],
+ "compounding": "D5W 50 mL로 희석 가능, 0.9% NaCl 희석 금지(용해도 저하)",
+ "reviewed": null
+}

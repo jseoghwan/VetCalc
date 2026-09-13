@@ -1,0 +1,73 @@
+{
+ "id": "remifentanil",
+ "name": "Remifentanil",
+ "brand": [
+  "Ultiva"
+ ],
+ "class": "초단시간 작용 오피오이드 진통제",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 1,
+   "high": 1,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "심한 서맥 위험으로 볼루스는 보통 생략"
+  },
+  {
+   "species": "dog",
+   "label": "전신마취 보조 진통 CRI",
+   "route": "CRI",
+   "low": 0.1,
+   "high": 0.3,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "µg/kg/MINUTE; 중단 후 추가 진통 고려"
+  },
+  {
+   "species": "cat",
+   "label": "부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "심한 서맥 위험으로 볼루스는 보통 생략"
+  },
+  {
+   "species": "cat",
+   "label": "전신마취 보조 진통 CRI",
+   "route": "CRI",
+   "low": 0.2,
+   "high": 0.4,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "µg/kg/MINUTE"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "vial",
+   "mg": 1
+  },
+  {
+   "form": "vial",
+   "mg": 2
+  },
+  {
+   "form": "vial",
+   "mg": 5
+  }
+ ],
+ "compounding": "1 mg당 희석액 1 mL로 재조제(≈1 mg/mL) 후 20–250 µg/mL로 추가 희석; 희석 없이 투여 금지",
+ "reviewed": null
+}

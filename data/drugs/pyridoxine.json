@@ -47,6 +47,72 @@
    "freq": "q24h",
    "default": true,
    "note": "d-penicillamine과 병행"
+  },
+  {
+   "species": "dog",
+   "label": "이소니아지드(INH) 중독",
+   "route": "IV",
+   "low": 71,
+   "high": 71,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "5–10% 용액으로 30–60분 주입; INH 섭취량 알면 1:1 mg 투여; B-complex 주사제 사용 금지"
+  },
+  {
+   "species": "dog",
+   "label": "독성물질 대사 보조인자 (에틸렌글리콜 등)",
+   "route": "IV",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "독성물질 대사 보조인자 (에틸렌글리콜 등)",
+   "route": "IV",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "크리미딘 중독",
+   "route": "IV",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "크리미딘 중독",
+   "route": "IV",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "Gyromitra 버섯 중독 급성 발작 보조",
+   "route": "IV",
+   "low": 75,
+   "high": 150,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "Gyromitra 버섯 중독 급성 발작 보조",
+   "route": "IV",
+   "low": 75,
+   "high": 150,
+   "unit": "mg/kg",
+   "freq": "once"
   }
  ],
  "strengths": [
@@ -61,8 +127,12 @@
   {
    "form": "tablet",
    "mg": 100
+  },
+  {
+   "form": "injection",
+   "mgml": 100
   }
  ],
- "compounding": null,
+ "compounding": "희석 없이 또는 일반 수액에 첨가 가능; 알칼리·산화성 용액, 철염과 배합 불가",
  "reviewed": null
 }

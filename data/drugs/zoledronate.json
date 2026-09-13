@@ -1,0 +1,73 @@
+{
+ "id": "zoledronate",
+ "name": "Zoledronate",
+ "brand": [
+  "Zometa",
+  "Reclast"
+ ],
+ "class": "비스포스포네이트 (고칼슘혈증·골통증)",
+ "tags": [
+  "endocrine",
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "악성 고칼슘혈증 보조 (a)",
+   "route": "IV",
+   "low": 4,
+   "high": 4,
+   "unit": "mg/animal",
+   "freq": "once",
+   "default": true,
+   "note": "15분에 걸쳐 IV 주입 (mg/kg 아님, 마리당)"
+  },
+  {
+   "species": "dog",
+   "label": "악성 고칼슘혈증 보조 (b)",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.32,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "15분에 걸쳐 IV 주입"
+  },
+  {
+   "species": "dog",
+   "label": "골육종 골통증 완화",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "15분에 걸쳐 IV 주입, 원문 4주마다 반복"
+  },
+  {
+   "species": "cat",
+   "label": "골침습성 구강 편평세포암 보조",
+   "route": "IV",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "15분에 걸쳐 IV 주입, 원문 28일마다 반복"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 0.04
+  },
+  {
+   "form": "injection",
+   "mgml": 0.05
+  },
+  {
+   "form": "injection",
+   "mgml": 0.8
+  }
+ ],
+ "compounding": "Ca·Mg 함유 수액(LRS, Plasmalyte, Ringer's)과 혼합 금지; 0.9% NaCl 또는 D5W로 희석, 전용 IV 라인 사용",
+ "reviewed": null
+}

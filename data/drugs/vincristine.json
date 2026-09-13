@@ -1,0 +1,33 @@
+{
+ "id": "vincristine",
+ "name": "Vincristine",
+ "brand": [
+  "Oncovin",
+  "Vincasar PFS"
+ ],
+ "class": "항암제 (빈카 알칼로이드)",
+ "tags": [
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "면역매개성 혈소판감소증 보조",
+   "route": "IV",
+   "low": 0.02,
+   "high": 0.02,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "IV 볼루스 1회, 글루코코르티코이드 병용"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 1
+  }
+ ],
+ "compounding": "0.9% NaCl·D5W로 희석 가능, furosemide와 비혼합",
+ "reviewed": null
+}

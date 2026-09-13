@@ -50,6 +50,38 @@
    "freq": "q12h",
    "default": true,
    "note": "고양이 간독성 주의, 수 주간 지속"
+  },
+  {
+   "species": "dog",
+   "label": "단백동화제 소형견 (label)",
+   "route": "IM",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/animal",
+   "freq": "once",
+   "default": true,
+   "note": "deep IM; 필요 시 주 1회 반복"
+  },
+  {
+   "species": "dog",
+   "label": "단백동화제 대형견 (label)",
+   "route": "IM",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "deep IM; 필요 시 주 1회 반복"
+  },
+  {
+   "species": "cat",
+   "label": "단백동화제 (label)",
+   "route": "IM",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/animal",
+   "freq": "once",
+   "default": true,
+   "note": "deep IM; 필요 시 주 1회 반복; 고양이 간독성 주의"
   }
  ],
  "strengths": [],

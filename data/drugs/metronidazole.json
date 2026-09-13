@@ -259,6 +259,56 @@
    "unit": "mg/kg",
    "freq": "q8h",
    "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "중증 혐기성 감염 (패혈증)",
+   "route": "IV",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "클로스트리듐 장염 (PO 불가 시)",
+   "route": "IV",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "5일"
+  },
+  {
+   "species": "dog",
+   "label": "수술 전 예방 (결장직장 수술)",
+   "route": "IV",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "30–60분 주입, 수술 약 1시간 전 완료, 세파졸린 병용"
+  },
+  {
+   "species": "cat",
+   "label": "중증 혐기성 감염 (패혈증)",
+   "route": "IV",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "수술 전 예방 (결장직장 수술)",
+   "route": "IV",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "30–60분 주입, 수술 약 1시간 전 완료, 세파졸린 병용"
   }
  ],
  "strengths": [
@@ -273,8 +323,12 @@
   {
    "form": "tablet",
    "mg": 500
+  },
+  {
+   "form": "injection",
+   "mgml": 5
   }
  ],
- "compounding": null,
+ "compounding": "제조사: 다른 약물과 혼합 금지, 주입 중 다른 IV 수액은 가능하면 중단",
  "reviewed": null
 }

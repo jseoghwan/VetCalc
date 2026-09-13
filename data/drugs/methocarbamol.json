@@ -64,6 +64,90 @@
    "per": "day",
    "default": true,
    "note": "q8–12h 분할; 5일 내 무반응 시 중단"
+  },
+  {
+   "species": "dog",
+   "label": "근육 경련 중등도 초회 (label)",
+   "route": "IV",
+   "low": 44,
+   "high": 44,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "2 mL/min 이하 속도"
+  },
+  {
+   "species": "dog",
+   "label": "스트리크닌·파상풍 중증 초회 (label)",
+   "route": "IV",
+   "low": 55,
+   "high": 220,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "절반 급속 투여 후 나머지, 총 누적 330 mg/kg 초과 금지"
+  },
+  {
+   "species": "dog",
+   "label": "중독성 근진전 보조 볼루스",
+   "route": "IV",
+   "low": 40,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "서서히 IV(3–5분), 필요 시 반복"
+  },
+  {
+   "species": "dog",
+   "label": "중독성 근진전 CRI",
+   "route": "CRI",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "초기 속도, 효과에 맞춰 조절(증례 8.8–12.2 mg/kg/h)"
+  },
+  {
+   "species": "cat",
+   "label": "근육 경련 중등도 초회 (label)",
+   "route": "IV",
+   "low": 44,
+   "high": 44,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "2 mL/min 이하 속도"
+  },
+  {
+   "species": "cat",
+   "label": "스트리크닌·파상풍 중증 초회 (label)",
+   "route": "IV",
+   "low": 55,
+   "high": 220,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "절반 급속 투여 후 나머지, 총 누적 330 mg/kg 초과 금지"
+  },
+  {
+   "species": "cat",
+   "label": "중독성 근진전 보조 볼루스",
+   "route": "IV",
+   "low": 40,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "서서히 IV(3–5분), 필요 시 반복"
+  },
+  {
+   "species": "cat",
+   "label": "중독성 근진전 CRI",
+   "route": "CRI",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "초기 속도, 효과에 맞춰 조절(증례 8.8–12.2 mg/kg/h)"
   }
  ],
  "strengths": [
@@ -74,8 +158,12 @@
   {
    "form": "tablet",
    "mg": 750
+  },
+  {
+   "form": "injection",
+   "mgml": 100
   }
  ],
- "compounding": null,
+ "compounding": "D5W 또는 0.9% NaCl로 4 mg/mL 희석 시 실온 6일 안정",
  "reviewed": null
 }

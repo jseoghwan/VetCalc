@@ -89,6 +89,123 @@
    "unit": "mg/kg",
    "freq": "q24h",
    "note": "4주"
+  },
+  {
+   "species": "dog",
+   "label": "급성 구토 예방·치료 (label)",
+   "route": "IV/SC",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "IV는 1–2분에 걸쳐(4개월 이상); SC는 2개월 이상; 최대 5일 연속"
+  },
+  {
+   "species": "dog",
+   "label": "항암제·구토 유발 약물 전 예방 (label)",
+   "route": "IV/SC",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "투여 45–60분 전 1회"
+  },
+  {
+   "species": "dog",
+   "label": "수술 전후 구토 예방 (모르핀 사용 시)",
+   "route": "IV/SC",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "모르핀 1시간 이상 전; 최대 5일"
+  },
+  {
+   "species": "dog",
+   "label": "진통·MAC 감소 (전마취 시)",
+   "route": "SC",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "진통·MAC 감소 부하 용량 (CRI 전) (a)",
+   "route": "IV",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "진통·MAC 감소 (a)",
+   "route": "CRI",
+   "low": 0.03,
+   "high": 0.03,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "진통·MAC 감소 부하 용량 (CRI 전) (b)",
+   "route": "IV",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "진통·MAC 감소 (b)",
+   "route": "CRI",
+   "low": 0.15,
+   "high": 0.15,
+   "unit": "mg/kg/h",
+   "freq": "cri"
+  },
+  {
+   "species": "cat",
+   "label": "구토 치료 (label)",
+   "route": "IV/SC",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "4개월 이상; IV는 1–2분에 걸쳐; 최대 5일 연속"
+  },
+  {
+   "species": "cat",
+   "label": "구토·멀미 예방",
+   "route": "SC",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "진통·MAC 감소 (수술 중)",
+   "route": "IV",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "CRI 병용 시 부하 용량"
+  },
+  {
+   "species": "cat",
+   "label": "진통·MAC 감소",
+   "route": "CRI",
+   "low": 100,
+   "high": 100,
+   "unit": "mcg/kg/h",
+   "freq": "cri",
+   "default": true
   }
  ],
  "strengths": [
@@ -107,8 +224,12 @@
   {
    "form": "tablet",
    "mg": 160
+  },
+  {
+   "form": "injection",
+   "mgml": 10
   }
  ],
- "compounding": null,
+ "compounding": "다른 약물과 같은 주사기·IV 라인 혼합 금지(pantoprazole과 침전 보고); 냉장 보관 시 SC 통증 감소",
  "reviewed": null
 }

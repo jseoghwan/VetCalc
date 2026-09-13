@@ -1,0 +1,43 @@
+{
+ "id": "tolazoline",
+ "name": "Tolazoline",
+ "brand": [
+  "Tolazine"
+ ],
+ "class": "알파 아드레날린 길항제 (자일라진 길항)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "자일라진 효과 역전",
+   "route": "IV",
+   "low": 2,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "서서히 IV(약 1 mL/초), 고농도(100 mg/mL)로 정확 용량 주의"
+  },
+  {
+   "species": "cat",
+   "label": "자일라진 효과 역전",
+   "route": "IV",
+   "low": 2,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "서서히 IV(약 1 mL/초), 고농도(100 mg/mL)로 정확 용량 주의"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 100
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

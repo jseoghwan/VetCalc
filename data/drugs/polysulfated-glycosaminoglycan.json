@@ -1,0 +1,32 @@
+{
+ "id": "polysulfated-glycosaminoglycan",
+ "name": "Polysulfated Glycosaminoglycan",
+ "brand": [
+  "Adequan"
+ ],
+ "class": "연골보호제 (다황산 글리코사미노글리칸)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "cat",
+   "label": "연골보호 (관절염)",
+   "route": "IM",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q72h",
+   "default": true,
+   "note": "원문 3–5일 간격, 총 4회; 일화적 경험만"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 100
+  }
+ ],
+ "compounding": "다른 약물·용매와 혼합 금지 (제조사)",
+ "reviewed": null
+}

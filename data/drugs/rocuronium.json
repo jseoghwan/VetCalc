@@ -1,0 +1,61 @@
+{
+ "id": "rocuronium",
+ "name": "Rocuronium",
+ "brand": [
+  "Zemuron"
+ ],
+ "class": "비탈분극성 신경근 차단제",
+ "tags": [
+  "respiratory"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "신경근 차단 부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "신경근 차단 CRI",
+   "route": "CRI",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "안과 시술 시 안구 중앙 위치",
+   "route": "IV",
+   "low": 0.03,
+   "high": 0.05,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "isoflurane 병용"
+  },
+  {
+   "species": "cat",
+   "label": "신경근 차단",
+   "route": "IV",
+   "low": 0.3,
+   "high": 0.6,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 10
+  }
+ ],
+ "compounding": "0.9% NaCl·D5W·LR로 희석 가능; amphotericin B·hydrocortisone·diazepam·thiopental·furosemide 등과 혼합 불가",
+ "reviewed": null
+}

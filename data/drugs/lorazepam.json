@@ -51,6 +51,17 @@
    "unit": "mg/animal",
    "freq": "q12h",
    "note": "원문 q12–24h"
+  },
+  {
+   "species": "dog",
+   "label": "간질중첩증",
+   "route": "IV",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "서서히 IV(사람 기준 2 mg/분 이하); 직장 투여 금지"
   }
  ],
  "strengths": [
@@ -65,8 +76,16 @@
   {
    "form": "tablet",
    "mg": 2
+  },
+  {
+   "form": "injection",
+   "mgml": 2
+  },
+  {
+   "form": "injection",
+   "mgml": 4
   }
  ],
- "compounding": null,
+ "compounding": "IV 주입 시 D5W·생리식염수로 0.1–0.2 mg/mL 희석, 12시간 내 사용; 점도 높아 잘 혼합, 결정 형성 관찰",
  "reviewed": null
 }

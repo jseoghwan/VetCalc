@@ -1,0 +1,120 @@
+{
+ "id": "octreotide",
+ "name": "Octreotide",
+ "brand": [
+  "Sandostatin"
+ ],
+ "class": "소마토스타틴 유사체",
+ "tags": [
+  "endocrine",
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "인슐린종 급성기 (a)",
+   "route": "SC",
+   "low": 20,
+   "high": 40,
+   "unit": "mcg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "인슐린종 장기 (a)",
+   "route": "SC",
+   "low": 2,
+   "high": 4,
+   "unit": "mcg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "인슐린종 (b)",
+   "route": "SC",
+   "low": 0.01,
+   "high": 0.04,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "원문 10–40 µg/dog q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "가스트린종",
+   "route": "SC",
+   "low": 1,
+   "high": 20,
+   "unit": "mcg/kg",
+   "freq": "q8h",
+   "note": "원문 1일 3–4회"
+  },
+  {
+   "species": "dog",
+   "label": "괴사성 이동성 홍반(글루카곤종)",
+   "route": "SC",
+   "low": 2,
+   "high": 2,
+   "unit": "mcg/kg",
+   "freq": "q12h",
+   "note": "최대 3.7 mcg/kg q6h까지 증량"
+  },
+  {
+   "species": "dog",
+   "label": "아마톡신 중독 (초기)",
+   "route": "IV",
+   "low": 0.01,
+   "high": 0.02,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "원문 10–20 µg/dog, 이후 10–20 µg/dog/h IV CRI"
+  },
+  {
+   "species": "cat",
+   "label": "유미흉",
+   "route": "SC",
+   "low": 10,
+   "high": 10,
+   "unit": "mcg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 1일 3회"
+  },
+  {
+   "species": "cat",
+   "label": "가스트린종 (장기)",
+   "route": "SC",
+   "low": 10,
+   "high": 10,
+   "unit": "mcg/kg",
+   "freq": "q8h",
+   "note": "2 → 4 mcg/kg q8h 각 2회 투여 후 증량"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 0.05
+  },
+  {
+   "form": "injection",
+   "mgml": 0.1
+  },
+  {
+   "form": "injection",
+   "mgml": 0.2
+  },
+  {
+   "form": "injection",
+   "mgml": 0.5
+  },
+  {
+   "form": "injection",
+   "mgml": 1
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

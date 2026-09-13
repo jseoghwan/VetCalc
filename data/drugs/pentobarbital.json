@@ -1,0 +1,89 @@
+{
+ "id": "pentobarbital",
+ "name": "Pentobarbital",
+ "brand": [
+  "Nembutal"
+ ],
+ "class": "바르비투르산염",
+ "tags": [
+  "anticonvulsant"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "난치성 발작 (벤조디아제핀 불응)",
+   "route": "IV",
+   "low": 3,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "효과까지 서서히 IV, 삽관 필요할 수 있음"
+  },
+  {
+   "species": "dog",
+   "label": "발작 조절 후 유지 CRI",
+   "route": "CRI",
+   "low": 0.5,
+   "high": 5,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "6시간 이상 조절 후 서서히 감량"
+  },
+  {
+   "species": "dog",
+   "label": "기계환기 중 진정 유지",
+   "route": "CRI",
+   "low": 1,
+   "high": 3,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "note": "이탈 약 12시간 전 프로포폴로 전환"
+  },
+  {
+   "species": "cat",
+   "label": "난치성 발작 (벤조디아제핀 불응)",
+   "route": "IV",
+   "low": 3,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "효과까지 서서히 IV, 삽관 필요할 수 있음"
+  },
+  {
+   "species": "cat",
+   "label": "발작 조절 후 유지 CRI",
+   "route": "CRI",
+   "low": 0.5,
+   "high": 5,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "6시간 이상 조절 후 서서히 감량"
+  },
+  {
+   "species": "cat",
+   "label": "기계환기 중 진정 유지",
+   "route": "CRI",
+   "low": 1,
+   "high": 3,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "note": "이탈 약 12시간 전 프로포폴로 전환"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 50
+  },
+  {
+   "form": "injection",
+   "mgml": 64.8
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -97,6 +97,17 @@
    "high": 50,
    "unit": "mg/animal",
    "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "라임 보렐리아증",
+   "route": "IV",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "원문 1일 1–2회, 30일; 10분 이상 주입"
   }
  ],
  "strengths": [
@@ -155,8 +166,12 @@
   {
    "form": "tablet",
    "mg": 135
+  },
+  {
+   "form": "vial",
+   "mg": 100
   }
  ],
- "compounding": null,
+ "compounding": "멸균수 5 mL로 재조제 후 즉시 NaCl·D5W·LR 등으로 추가 희석, 대부분 약물과 배합 불가(주입 전후 식염수 플러시)",
  "reviewed": null
 }

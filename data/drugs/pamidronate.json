@@ -1,0 +1,104 @@
+{
+ "id": "pamidronate",
+ "name": "Pamidronate",
+ "brand": [
+  "Aredia"
+ ],
+ "class": "비스포스포네이트",
+ "tags": [
+  "endocrine",
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "난치성 고칼슘혈증",
+   "route": "IV",
+   "low": 1.3,
+   "high": 2.3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "0.9% NaCl 150–250 mL 희석, 2–4시간 주입, 21–28일마다 반복 가능"
+  },
+  {
+   "species": "dog",
+   "label": "비타민 D 중독 고칼슘혈증",
+   "route": "IV",
+   "low": 1.3,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "0.9% NaCl 250 mL 희석, 2시간 주입, 3일 후 반복 가능"
+  },
+  {
+   "species": "dog",
+   "label": "골육종 통증 완화",
+   "route": "IV",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "0.9% NaCl 250 mL 희석, 2시간 주입, 28일마다"
+  },
+  {
+   "species": "cat",
+   "label": "난치성 고칼슘혈증",
+   "route": "IV",
+   "low": 1.3,
+   "high": 2.3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "0.9% NaCl 150–250 mL 희석, 2–4시간 주입, 21–28일마다 반복 가능"
+  },
+  {
+   "species": "cat",
+   "label": "비타민 D 중독 고칼슘혈증",
+   "route": "IV",
+   "low": 1.3,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "0.9% NaCl 250 mL 희석, 2시간 주입, 3일 후 반복 가능"
+  },
+  {
+   "species": "cat",
+   "label": "골육종 통증 완화",
+   "route": "IV",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "0.9% NaCl 250 mL 희석, 2시간 주입, 28일마다"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 3
+  },
+  {
+   "form": "injection",
+   "mgml": 6
+  },
+  {
+   "form": "injection",
+   "mgml": 9
+  },
+  {
+   "form": "vial",
+   "mg": 30
+  },
+  {
+   "form": "vial",
+   "mg": 60
+  },
+  {
+   "form": "vial",
+   "mg": 90
+  }
+ ],
+ "compounding": "칼슘 함유 수액(LRS 등)과 혼합 금지, 전용 라인으로 0.45%/0.9% NaCl 또는 D5W 사용",
+ "reviewed": null
+}

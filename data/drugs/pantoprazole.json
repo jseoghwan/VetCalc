@@ -1,0 +1,44 @@
+{
+ "id": "pantoprazole",
+ "name": "Pantoprazole",
+ "brand": [
+  "Protonix",
+  "Pantoloc"
+ ],
+ "class": "프로톤펌프 억제제",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "위산 억제",
+   "route": "IV",
+   "low": 0.7,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "15분 이상 IV 주입"
+  },
+  {
+   "species": "cat",
+   "label": "위산 억제",
+   "route": "IV",
+   "low": 0.7,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "15분 이상 IV 주입"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "vial",
+   "mg": 40
+  }
+ ],
+ "compounding": "0.9% NaCl 10 mL로 재조제, 15분 주입 시 100 mL 추가 희석(≈0.4 mg/mL), 마로피탄트와 같은 라인 투여 시 침전",
+ "reviewed": null
+}

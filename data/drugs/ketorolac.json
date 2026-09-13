@@ -1,0 +1,36 @@
+{
+ "id": "ketorolac",
+ "name": "Ketorolac",
+ "brand": [
+  "Toradol"
+ ],
+ "class": "비스테로이드성 소염진통제(NSAID)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "수술 후 진통",
+   "route": "IV/IM",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "수술 전 투여 후 필요시 q6h 반복; 개용 승인 NSAID 권장"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 15
+  },
+  {
+   "form": "injection",
+   "mgml": 30
+  }
+ ],
+ "compounding": "같은 주사기에 다른 약물과 혼합 금지",
+ "reviewed": null
+}

@@ -48,6 +48,37 @@
    "high": 0.25,
    "unit": "mg/kg",
    "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "급성 통증",
+   "route": "IV/IM/SC",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1회 투여; 최대 3일까지 1일 1회 반복 가능"
+  },
+  {
+   "species": "dog",
+   "label": "만성 통증 (장기 비경구)",
+   "route": "IV/IM/SC",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "급성 통증",
+   "route": "SC",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "최대 3일 연속"
   }
  ],
  "strengths": [
@@ -62,6 +93,10 @@
   {
    "form": "capsule",
    "mg": 200
+  },
+  {
+   "form": "injection",
+   "mgml": 100
   }
  ],
  "compounding": null,

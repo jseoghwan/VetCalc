@@ -1,0 +1,161 @@
+{
+ "id": "tiletamine-zolazepam",
+ "name": "Tiletamine/Zolazepam",
+ "brand": [
+  "Telazol"
+ ],
+ "class": "주사 마취제·진정제 복합",
+ "tags": [
+  "anticonvulsant",
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "진단 목적 보정 (label)",
+   "route": "IM",
+   "low": 6.6,
+   "high": 9.9,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "label 용량은 대부분 과량; 저용량 고려"
+  },
+  {
+   "species": "dog",
+   "label": "단시간 소시술 (label)",
+   "route": "IM",
+   "low": 9.9,
+   "high": 13.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "추가 투여 시 초기량 미만; 총 26.4 mg/kg 초과 금지"
+  },
+  {
+   "species": "dog",
+   "label": "마취 유도 (label)",
+   "route": "IV",
+   "low": 2.2,
+   "high": 4.4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "30–45초에 걸쳐 서서히; 총 4.4 mg/kg 초과 금지; 흡입마취로 유지"
+  },
+  {
+   "species": "dog",
+   "label": "마취 유도",
+   "route": "IV",
+   "low": 3,
+   "high": 4.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "isoflurane으로 유지"
+  },
+  {
+   "species": "dog",
+   "label": "공격적인 개 (a)",
+   "route": "IM",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "오피오이드+medetomidine+midazolam 진정 불충분 시"
+  },
+  {
+   "species": "dog",
+   "label": "공격적인 개 (b)",
+   "route": "IM",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "오피오이드 병용; 경험적"
+  },
+  {
+   "species": "cat",
+   "label": "치과·농양·이물 제거 (label)",
+   "route": "IM",
+   "low": 9.7,
+   "high": 11.9,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "label 용량은 대부분 과량; 저용량 고려"
+  },
+  {
+   "species": "cat",
+   "label": "경증~중등 진통 필요 소시술 (label)",
+   "route": "IM",
+   "low": 10.6,
+   "high": 12.5,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "난소자궁절제·발톱제거 (label)",
+   "route": "IM",
+   "low": 14.3,
+   "high": 15.8,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "총 72 mg/kg 초과 금지"
+  },
+  {
+   "species": "cat",
+   "label": "경증 통증 시술 IV",
+   "route": "IV",
+   "low": 2,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "경증 통증 시술 IM",
+   "route": "IM",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "butorphanol·dexmedetomidine으로 재구성 병용 가능"
+  },
+  {
+   "species": "cat",
+   "label": "중등~중증 통증 시술",
+   "route": "IM",
+   "low": 3,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "methadone 0.2 mg/kg IM 병용"
+  },
+  {
+   "species": "cat",
+   "label": "헌혈 전 진정",
+   "route": "IM",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "공격적인 고양이 보정",
+   "route": "IM",
+   "low": 3,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "오피오이드 병용; 경험적"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "vial",
+   "mg": 500
+  }
+ ],
+ "compounding": "멸균수 5 mL로 재구성 → 각 50 mg/mL (합산 100 mg/mL)",
+ "reviewed": null
+}

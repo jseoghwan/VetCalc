@@ -30,6 +30,28 @@
    "freq": "q8h",
    "default": true,
    "note": "원문 q8–12h; 드물게 사용"
+  },
+  {
+   "species": "dog",
+   "label": "중증근무력증 (연하 불가 시) CRI",
+   "route": "CRI",
+   "low": 0.01,
+   "high": 0.03,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "중환자·연하 불가 환자"
+  },
+  {
+   "species": "cat",
+   "label": "중증근무력증 (연하 불가 시) CRI",
+   "route": "CRI",
+   "low": 0.01,
+   "high": 0.03,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "개와 동일 용량 (드물게 사용)"
   }
  ],
  "strengths": [
@@ -40,6 +62,10 @@
   {
    "form": "tablet",
    "mg": 180
+  },
+  {
+   "form": "injection",
+   "mgml": 5
   }
  ],
  "compounding": null,

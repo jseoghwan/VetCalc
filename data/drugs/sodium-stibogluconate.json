@@ -1,0 +1,32 @@
+{
+ "id": "sodium-stibogluconate",
+ "name": "Sodium Stibogluconate",
+ "brand": [
+  "Pentostam"
+ ],
+ "class": "항리슈만편모충제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "피부 리슈만편모충증",
+   "route": "IV/SC",
+   "low": 30,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "3–4주; IV 시 5분 이상 서서히; 부작용 시 격일 투여"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 100
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

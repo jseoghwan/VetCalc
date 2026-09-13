@@ -1,0 +1,159 @@
+{
+ "id": "mannitol",
+ "name": "Mannitol",
+ "brand": [
+  "Osmitrol"
+ ],
+ "class": "삼투성 이뇨제",
+ "tags": [
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "핍뇨성 급성 신손상",
+   "route": "IV",
+   "low": 250,
+   "high": 500,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "10–20분에 걸쳐 서서히 IV; 권고 범위 0.25–1 g/kg"
+  },
+  {
+   "species": "dog",
+   "label": "핍뇨성 급성 신손상 반복 볼루스",
+   "route": "IV",
+   "low": 250,
+   "high": 500,
+   "unit": "mg/kg",
+   "freq": "q4h",
+   "note": "원문 q4–6h; 이뇨 반응 시; 1일 총 2 g/kg 초과 금지"
+  },
+  {
+   "species": "dog",
+   "label": "핍뇨성 급성 신손상 (이뇨 반응 후)",
+   "route": "CRI",
+   "low": 60,
+   "high": 120,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "삼투성 이뇨 (label)",
+   "route": "IV",
+   "low": 1500,
+   "high": 2000,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "30분에 걸쳐 IV"
+  },
+  {
+   "species": "dog",
+   "label": "급성 녹내장 (국소제 불응)",
+   "route": "IV",
+   "low": 500,
+   "high": 1000,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "10–20분에 걸쳐 IV; 권고 범위 0.5–2 g/kg; 투여 후 1–4시간 음수 제한"
+  },
+  {
+   "species": "dog",
+   "label": "뇌부종·두개내압 상승",
+   "route": "IV",
+   "low": 500,
+   "high": 1000,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 q6–8h 필요 시 반복; 15–20분에 걸쳐 IV; CRI 비권장"
+  },
+  {
+   "species": "cat",
+   "label": "핍뇨성 급성 신손상",
+   "route": "IV",
+   "low": 250,
+   "high": 500,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "10–20분에 걸쳐 서서히 IV; 권고 범위 0.25–1 g/kg"
+  },
+  {
+   "species": "cat",
+   "label": "핍뇨성 급성 신손상 반복 볼루스",
+   "route": "IV",
+   "low": 250,
+   "high": 500,
+   "unit": "mg/kg",
+   "freq": "q4h",
+   "note": "원문 q4–6h; 이뇨 반응 시; 1일 총 2 g/kg 초과 금지"
+  },
+  {
+   "species": "cat",
+   "label": "핍뇨성 급성 신손상 (이뇨 반응 후)",
+   "route": "CRI",
+   "low": 60,
+   "high": 120,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "삼투성 이뇨 (label)",
+   "route": "IV",
+   "low": 1500,
+   "high": 2000,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "30분에 걸쳐 IV"
+  },
+  {
+   "species": "cat",
+   "label": "급성 녹내장 (국소제 불응)",
+   "route": "IV",
+   "low": 500,
+   "high": 1000,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "10–20분에 걸쳐 IV; 권고 범위 0.5–2 g/kg; 투여 후 1–4시간 음수 제한"
+  },
+  {
+   "species": "cat",
+   "label": "뇌부종·두개내압 상승",
+   "route": "IV",
+   "low": 500,
+   "high": 1000,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 q6–8h 필요 시 반복; 15–20분에 걸쳐 IV; CRI 비권장"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 50
+  },
+  {
+   "form": "injection",
+   "mgml": 100
+  },
+  {
+   "form": "injection",
+   "mgml": 150
+  },
+  {
+   "form": "injection",
+   "mgml": 200
+  },
+  {
+   "form": "injection",
+   "mgml": 250
+  }
+ ],
+ "compounding": "다른 약물과 혼합 비권장; 결정 용해 확인(가온, 5 µm 인라인 필터 권장); 혈액제제와 같은 라인 투여 금지",
+ "reviewed": null
+}

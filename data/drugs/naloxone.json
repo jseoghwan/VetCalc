@@ -1,0 +1,137 @@
+{
+ "id": "naloxone",
+ "name": "Naloxone",
+ "brand": [
+  "Narcan"
+ ],
+ "class": "오피오이드 길항제(해독제)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "오피오이드 길항",
+   "route": "IV/IM/SC",
+   "low": 0.001,
+   "high": 0.04,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "중증 시 0.1–0.2 mg/kg까지; IV는 필요 시 2–3분마다 반복; IM/SC는 효과 5분 지연"
+  },
+  {
+   "species": "dog",
+   "label": "오피오이드 길항 CRI",
+   "route": "CRI",
+   "low": 1,
+   "high": 4,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "신생아 호흡 억제 (모체 오피오이드)",
+   "route": "IV/IM/SC",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "필요 시 반복"
+  },
+  {
+   "species": "dog",
+   "label": "CPR 중 오피오이드 중독·최근 투여",
+   "route": "IV",
+   "low": 0.04,
+   "high": 0.04,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "경막외 모르핀 후 요저류",
+   "route": "IV",
+   "low": 0.01,
+   "high": 0.04,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "오피오이드 길항",
+   "route": "IV/IM/SC",
+   "low": 0.001,
+   "high": 0.04,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "중증 시 0.1–0.2 mg/kg까지; IV는 필요 시 2–3분마다 반복; IM/SC는 효과 5분 지연"
+  },
+  {
+   "species": "cat",
+   "label": "오피오이드 길항 CRI",
+   "route": "CRI",
+   "low": 1,
+   "high": 4,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "신생아 호흡 억제 (모체 오피오이드)",
+   "route": "IV/IM/SC",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "필요 시 반복"
+  },
+  {
+   "species": "cat",
+   "label": "CPR 중 오피오이드 중독·최근 투여",
+   "route": "IV",
+   "low": 0.04,
+   "high": 0.04,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "경막외 모르핀 후 요저류",
+   "route": "IV",
+   "low": 0.01,
+   "high": 0.04,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "마취 후 고체온 보조",
+   "route": "IV/IM/SC",
+   "low": 0.01,
+   "high": 0.02,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "41.1°C 초과 시, 30분 내 정상화"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 0.4
+  },
+  {
+   "form": "injection",
+   "mgml": 1
+  },
+  {
+   "form": "injection",
+   "mgml": 5
+  }
+ ],
+ "compounding": "아황산염·중아황산염 함유 용액, 알칼리성 용액과 혼합 금지",
+ "reviewed": null
+}

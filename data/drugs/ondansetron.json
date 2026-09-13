@@ -70,6 +70,108 @@
    "unit": "mg/kg",
    "freq": "q6h",
    "note": "원문 q6–12h"
+  },
+  {
+   "species": "dog",
+   "label": "진토",
+   "route": "IV",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "서서히 IV, 원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "진토 (저용량 대안)",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "항암제 유발 구토",
+   "route": "IV",
+   "low": 0.3,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "항암제 30분 전 서서히 IV, q8–12h 반복 가능"
+  },
+  {
+   "species": "dog",
+   "label": "파보바이러스 구토",
+   "route": "IV",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "서서히 IV"
+  },
+  {
+   "species": "dog",
+   "label": "전정증후군 오심",
+   "route": "IV",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "서서히 IV"
+  },
+  {
+   "species": "cat",
+   "label": "급성 구토",
+   "route": "IV/IM/SC",
+   "low": 0.1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "서서히 IV, 원문 q6–12h"
+  },
+  {
+   "species": "cat",
+   "label": "CKD 구토 IRIS 1–2기",
+   "route": "IV/SC",
+   "low": 0.1,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "서서히 IV, 원문 q6–12h"
+  },
+  {
+   "species": "cat",
+   "label": "CKD 구토 IRIS 3기",
+   "route": "IV/SC",
+   "low": 0.05,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "서서히 IV, 원문 q6–12h"
+  },
+  {
+   "species": "cat",
+   "label": "CKD 구토 IRIS 4기",
+   "route": "IV/SC",
+   "low": 0.025,
+   "high": 0.05,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "서서히 IV, 원문 q6–12h"
+  },
+  {
+   "species": "cat",
+   "label": "덱스메데토미딘/부프레노르핀 전처치 구토 예방",
+   "route": "IM",
+   "low": 0.22,
+   "high": 0.22,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "같은 주사기에 혼합"
   }
  ],
  "strengths": [
@@ -80,6 +182,10 @@
   {
    "form": "tablet",
    "mg": 8
+  },
+  {
+   "form": "injection",
+   "mgml": 2
   }
  ],
  "compounding": null,

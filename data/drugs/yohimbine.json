@@ -1,0 +1,64 @@
+{
+ "id": "yohimbine",
+ "name": "Yohimbine",
+ "brand": [
+  "Yobine",
+  "Antagonil"
+ ],
+ "class": "알파-2 아드레날린 길항제 (자일라진 역전)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "자일라진 역전 (label)",
+   "route": "IV",
+   "low": 0.11,
+   "high": 0.11,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "서서히 IV"
+  },
+  {
+   "species": "dog",
+   "label": "아미트라즈 중독 역전·예방 IV",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "아티파메졸 불가 시"
+  },
+  {
+   "species": "dog",
+   "label": "아미트라즈 중독 역전·예방 IM",
+   "route": "IM",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "아티파메졸 불가 시"
+  },
+  {
+   "species": "cat",
+   "label": "자일라진 포함 마취 조합 역전",
+   "route": "IV",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "시술 종료 시"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 2
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

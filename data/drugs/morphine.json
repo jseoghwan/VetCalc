@@ -1,0 +1,138 @@
+{
+ "id": "morphine",
+ "name": "Morphine",
+ "brand": [
+  "Duramorph",
+  "Infumorph",
+  "Astramorph PF"
+ ],
+ "class": "오피오이드 작용제 진통제",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "진통 간헐 투여",
+   "route": "IV/IM/SC",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q2h",
+   "default": true,
+   "note": "IV는 서서히; 쇠약 시 감량, 극심한 통증 시 증량; 흔히 2시간 후 재투여"
+  },
+  {
+   "species": "dog",
+   "label": "부하 용량 (CRI 전)",
+   "route": "IV/IM",
+   "low": 0.3,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "IV는 서서히"
+  },
+  {
+   "species": "dog",
+   "label": "진통 CRI",
+   "route": "CRI",
+   "low": 0.1,
+   "high": 1,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "반응·부작용에 따라 조절"
+  },
+  {
+   "species": "dog",
+   "label": "마취 전투약·수술 전후 진정 병용",
+   "route": "IM",
+   "low": 0.1,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "아세프로마진·미다졸람·덱스메데토미딘·케타민 등 병용; 쇠약 시 0.05 mg/kg"
+  },
+  {
+   "species": "dog",
+   "label": "MLK 저용량 CRI (MAC 감소)",
+   "route": "CRI",
+   "low": 3.3,
+   "high": 3.3,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "note": "리도카인 50 mcg/kg/min + 케타민 10 mcg/kg/min 병용"
+  },
+  {
+   "species": "dog",
+   "label": "DMLK CRI",
+   "route": "CRI",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "note": "덱스메데토미딘 0.5 mcg/kg/h + 리도카인 3 mg/kg/h + 케타민 0.6 mg/kg/h, 수액에 혼합"
+  },
+  {
+   "species": "cat",
+   "label": "진통 간헐 투여",
+   "route": "IV/IM/SC",
+   "low": 0.1,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "q2h",
+   "default": true,
+   "note": "원문 q2–4h 필요 시; 흔히 3시간 후 재투여"
+  },
+  {
+   "species": "cat",
+   "label": "진통 CRI",
+   "route": "CRI",
+   "low": 0.05,
+   "high": 0.1,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 0.5
+  },
+  {
+   "form": "injection",
+   "mgml": 1
+  },
+  {
+   "form": "injection",
+   "mgml": 2
+  },
+  {
+   "form": "injection",
+   "mgml": 4
+  },
+  {
+   "form": "injection",
+   "mgml": 5
+  },
+  {
+   "form": "injection",
+   "mgml": 8
+  },
+  {
+   "form": "injection",
+   "mgml": 10
+  },
+  {
+   "form": "injection",
+   "mgml": 25
+  },
+  {
+   "form": "injection",
+   "mgml": 50
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

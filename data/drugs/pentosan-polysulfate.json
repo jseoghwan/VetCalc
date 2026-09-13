@@ -1,0 +1,48 @@
+{
+ "id": "pentosan-polysulfate",
+ "name": "Pentosan Polysulfate",
+ "brand": [
+  "Cartrophen-Vet",
+  "Elmiron"
+ ],
+ "class": "골관절염 질환조절제·항염",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "퇴행성 관절질환 파행·통증",
+   "route": "SC",
+   "low": 3,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "5–7일 간격 총 4회"
+  },
+  {
+   "species": "cat",
+   "label": "골관절염 연골보호",
+   "route": "IM/SC",
+   "low": 3,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "주 1회 4주간"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 100
+  },
+  {
+   "form": "injection",
+   "mgml": 250
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

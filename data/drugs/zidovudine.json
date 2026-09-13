@@ -20,6 +20,17 @@
    "freq": "q12h",
    "default": true,
    "note": "고용량은 비재생성 빈혈 주의"
+  },
+  {
+   "species": "cat",
+   "label": "FeLV·FIV 보조 치료",
+   "route": "SC",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "희석 후(4 mg/mL), 고용량은 비재생성 빈혈 주의"
   }
  ],
  "strengths": [
@@ -30,8 +41,12 @@
   {
    "form": "tablet",
    "mg": 300
+  },
+  {
+   "form": "injection",
+   "mgml": 10
   }
  ],
- "compounding": null,
+ "compounding": "SC 투여 시 국소 자극 방지 위해 4 mg/mL로 희석 권장(D5W·0.9% NaCl·LR 호환)",
  "reviewed": null
 }

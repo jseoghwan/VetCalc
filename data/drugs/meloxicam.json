@@ -71,6 +71,38 @@
    "freq": "q24h",
    "default": true,
    "note": "14일 내 반응 없으면 중단; 최소 유효 용량으로 감량"
+  },
+  {
+   "species": "dog",
+   "label": "골관절염 통증·염증 초회 (label)",
+   "route": "IV/SC",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "첫날 1회, 이후 0.1 mg/kg PO q24h"
+  },
+  {
+   "species": "cat",
+   "label": "수술 후 통증·염증 (label)",
+   "route": "SC",
+   "low": 0.3,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "단회 투여, 추가 NSAID 투여 금지"
+  },
+  {
+   "species": "cat",
+   "label": "수술 후 경도–중등도 통증 예방",
+   "route": "SC",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "수술 전 1회, 이후 0.05 mg/kg PO q24h 최대 4회"
   }
  ],
  "strengths": [
@@ -89,6 +121,10 @@
   {
    "form": "tablet",
    "mg": 15
+  },
+  {
+   "form": "injection",
+   "mgml": 5
   }
  ],
  "compounding": null,

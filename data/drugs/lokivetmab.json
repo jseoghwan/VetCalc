@@ -1,0 +1,54 @@
+{
+ "id": "lokivetmab",
+ "name": "Lokivetmab",
+ "brand": [
+  "Cytopoint"
+ ],
+ "class": "항IL-31 단클론항체(아토피 소양증)",
+ "tags": [
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "알레르기·아토피 피부염 (label)",
+   "route": "SC",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "최소 용량; 필요 시 4–8주마다 반복"
+  },
+  {
+   "species": "dog",
+   "label": "아토피 피부염 (최소 용량)",
+   "route": "SC",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "월 1회"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 10
+  },
+  {
+   "form": "injection",
+   "mgml": 20
+  },
+  {
+   "form": "injection",
+   "mgml": 30
+  },
+  {
+   "form": "injection",
+   "mgml": 40
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -69,9 +69,68 @@
    "high": 15,
    "unit": "mg/kg",
    "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "감수성 감염 (label) (a)",
+   "route": "IV/IM",
+   "low": 11,
+   "high": 11,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "IV 시 0.9% NaCl·D5W 희석 후 서서히 주입; 최대 12일"
+  },
+  {
+   "species": "dog",
+   "label": "감수성 감염 (label) (b)",
+   "route": "IV/IM",
+   "low": 22,
+   "high": 22,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "IV 시 희석 후 서서히 주입"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (label) (a)",
+   "route": "IV/IM",
+   "low": 11,
+   "high": 11,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "IV 시 0.9% NaCl·D5W 희석 후 서서히 주입; 최대 12일"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (label) (b)",
+   "route": "IV/IM",
+   "low": 22,
+   "high": 22,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "IV 시 희석 후 서서히 주입"
   }
  ],
- "strengths": [],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 25
+  },
+  {
+   "form": "injection",
+   "mgml": 50
+  },
+  {
+   "form": "injection",
+   "mgml": 100
+  },
+  {
+   "form": "injection",
+   "mgml": 300
+  }
+ ],
  "compounding": null,
  "reviewed": null
 }

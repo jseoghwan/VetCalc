@@ -1,0 +1,103 @@
+{
+ "id": "sufentanil",
+ "name": "Sufentanil",
+ "brand": [
+  "Sufenta"
+ ],
+ "class": "오피오이드 작용제",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "진통 부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "서서히 IV; 비만 시 제지방 체중 기준"
+  },
+  {
+   "species": "dog",
+   "label": "진통 CRI",
+   "route": "CRI",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mcg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "효과에 따라 조절"
+  },
+  {
+   "species": "dog",
+   "label": "진통 고용량 부하 (CRI 전)",
+   "route": "IV",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "서서히 IV"
+  },
+  {
+   "species": "dog",
+   "label": "진통 고용량 CRI",
+   "route": "CRI",
+   "low": 2,
+   "high": 4,
+   "unit": "mcg/kg/h",
+   "freq": "cri"
+  },
+  {
+   "species": "cat",
+   "label": "진통 부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "서서히 IV; 비만 시 제지방 체중 기준"
+  },
+  {
+   "species": "cat",
+   "label": "진통 CRI",
+   "route": "CRI",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mcg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "효과에 따라 조절"
+  },
+  {
+   "species": "cat",
+   "label": "진통 고용량 부하 (CRI 전)",
+   "route": "IV",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "서서히 IV"
+  },
+  {
+   "species": "cat",
+   "label": "진통 고용량 CRI",
+   "route": "CRI",
+   "low": 2,
+   "high": 4,
+   "unit": "mcg/kg/h",
+   "freq": "cri"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 0.05
+  }
+ ],
+ "compounding": "D5W와 혼합 가능; lorazepam·phenytoin·thiopental과 혼합 불가",
+ "reviewed": null
+}

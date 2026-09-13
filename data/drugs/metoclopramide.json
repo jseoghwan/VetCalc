@@ -62,6 +62,156 @@
    "unit": "mg/kg",
    "freq": "q8h",
    "note": "최대 q6h까지 가능"
+  },
+  {
+   "species": "dog",
+   "label": "진토·위 운동 촉진",
+   "route": "IV/IM/SC",
+   "low": 0.2,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–8h; 위 운동 촉진 시 식전 30–60분"
+  },
+  {
+   "species": "dog",
+   "label": "화학요법 유발 구토 (고용량)",
+   "route": "IM/SC",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "간격 원문 미기재"
+  },
+  {
+   "species": "dog",
+   "label": "진토·위 운동 촉진 CRI",
+   "route": "CRI",
+   "low": 0.04,
+   "high": 0.09,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "= 1–2 mg/kg/day"
+  },
+  {
+   "species": "dog",
+   "label": "모르핀 유발 오심·구토 감소",
+   "route": "SC",
+   "low": 0.2,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "모르핀 투여 30–45분 전"
+  },
+  {
+   "species": "dog",
+   "label": "부하 용량 (CRI 전) 후두마비 수술 역류 감소",
+   "route": "IV",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "후두마비 수술 중 역류·흡인 감소 CRI",
+   "route": "CRI",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "note": "수술 중"
+  },
+  {
+   "species": "dog",
+   "label": "후두마비 수술 후 CRI",
+   "route": "CRI",
+   "low": 0.083,
+   "high": 0.083,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "note": "총 치료 24시간"
+  },
+  {
+   "species": "dog",
+   "label": "위염·유문 경련 등 구토·운동 저하 (a)",
+   "route": "IV/IM/SC",
+   "low": 0.25,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "최대 q6h까지 가능"
+  },
+  {
+   "species": "dog",
+   "label": "위염·유문 경련 등 구토·운동 저하 (b)",
+   "route": "IV/IM/SC",
+   "low": 0.17,
+   "high": 0.33,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "최대 q6h까지 가능"
+  },
+  {
+   "species": "dog",
+   "label": "이차성 무유증 유즙 분비 촉진",
+   "route": "SC",
+   "low": 0.1,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "옥시토신 병용"
+  },
+  {
+   "species": "dog",
+   "label": "단두종 기도 수술 역류 감소",
+   "route": "SC",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "파모티딘 1 mg/kg IV/SC 병용, 전투약"
+  },
+  {
+   "species": "cat",
+   "label": "위 운동 촉진",
+   "route": "SC",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "자일라진 유발 구토 감소",
+   "route": "IM",
+   "low": 0.2,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "위염·유문 경련 등 구토·운동 저하 (a)",
+   "route": "IV/IM/SC",
+   "low": 0.25,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "최대 q6h까지 가능"
+  },
+  {
+   "species": "cat",
+   "label": "위염·유문 경련 등 구토·운동 저하 (b)",
+   "route": "IV/IM/SC",
+   "low": 0.17,
+   "high": 0.33,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "최대 q6h까지 가능"
   }
  ],
  "strengths": [
@@ -72,6 +222,10 @@
   {
    "form": "tablet",
    "mg": 10
+  },
+  {
+   "form": "injection",
+   "mgml": 5
   }
  ],
  "compounding": null,

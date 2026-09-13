@@ -32,6 +32,27 @@
    "unit": "mcg/kg",
    "freq": "once",
    "note": "이후 매일 50 mcg/kg씩 증량"
+  },
+  {
+   "species": "dog",
+   "label": "심장사상충 예방 ProHeart 6 (label)",
+   "route": "SC",
+   "low": 0.17,
+   "high": 0.17,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "조제 현탁액 0.05 mL/kg; 6개월 지속, 노출 지속 시 6개월마다 재투여; 투여 후 30분 관찰"
+  },
+  {
+   "species": "dog",
+   "label": "심장사상충 예방 ProHeart 12 (label)",
+   "route": "SC",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "조제 현탁액 0.05 mL/kg; 12개월 지속, 노출 지속 시 12개월마다 재투여; 투여 후 30분 관찰"
   }
  ],
  "strengths": [
@@ -58,8 +79,20 @@
   {
    "form": "chewable tablet",
    "mg": 1.44
+  },
+  {
+   "form": "vial",
+   "mg": 598
+  },
+  {
+   "form": "vial",
+   "mg": 889
+  },
+  {
+   "form": "vial",
+   "mg": 4444
   }
  ],
- "compounding": null,
+ "compounding": "ProHeart 6/12 조제 시 제공된 전용 희석액만 사용, 첨부문서의 조제 지침 준수",
  "reviewed": null
 }

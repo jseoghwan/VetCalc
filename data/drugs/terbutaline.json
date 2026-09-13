@@ -81,6 +81,48 @@
    "unit": "mg/kg",
    "freq": "q8h",
    "note": "초기 용량, 분만 예정 48시간 전 중단"
+  },
+  {
+   "species": "dog",
+   "label": "고칼륨혈증",
+   "route": "IV",
+   "low": 0.01,
+   "high": 0.01,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "5–10분에 걸쳐 IV"
+  },
+  {
+   "species": "cat",
+   "label": "천식 발작 (status asthmaticus)",
+   "route": "IV/IM/SC",
+   "low": 0.01,
+   "high": 0.01,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "IV는 서서히; 가정 관리 시 SC/IM만"
+  },
+  {
+   "species": "cat",
+   "label": "기관세척·BAL 전 기관지연축 예방",
+   "route": "IM/SC",
+   "low": 0.01,
+   "high": 0.01,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "경구 불내성 시; 시술 12–24시간 전부터, 마지막 투여는 마취 2–4시간 전"
+  },
+  {
+   "species": "cat",
+   "label": "고칼륨혈증",
+   "route": "IV",
+   "low": 0.01,
+   "high": 0.01,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "5–10분에 걸쳐 서서히 IV"
   }
  ],
  "strengths": [
@@ -91,6 +133,10 @@
   {
    "form": "tablet",
    "mg": 5
+  },
+  {
+   "form": "injection",
+   "mgml": 1
   }
  ],
  "compounding": null,

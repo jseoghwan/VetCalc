@@ -31,6 +31,66 @@
    "freq": "q6h",
    "default": true,
    "note": "5–7일, 경구는 전신 흡수 안 됨(장내 감염만)"
+  },
+  {
+   "species": "dog",
+   "label": "그람양성 전신 중증 감염 (a)",
+   "route": "IV",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "30–60분에 걸쳐 IV, 원문 q6–8h"
+  },
+  {
+   "species": "dog",
+   "label": "그람양성 전신 중증 감염 (b) 부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 3.5,
+   "high": 3.5,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "그람양성 전신 중증 감염 (b) CRI",
+   "route": "CRI",
+   "low": 1.5,
+   "high": 1.5,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "그람양성 전신 중증 감염 (a)",
+   "route": "IV",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "30–60분에 걸쳐 IV, 원문 q6–8h"
+  },
+  {
+   "species": "cat",
+   "label": "그람양성 전신 중증 감염 (b) 부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 3.5,
+   "high": 3.5,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "그람양성 전신 중증 감염 (b) CRI",
+   "route": "CRI",
+   "low": 1.5,
+   "high": 1.5,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true
   }
  ],
  "strengths": [
@@ -41,8 +101,32 @@
   {
    "form": "capsule",
    "mg": 250
+  },
+  {
+   "form": "injection",
+   "mgml": 5
+  },
+  {
+   "form": "vial",
+   "mg": 500
+  },
+  {
+   "form": "vial",
+   "mg": 750
+  },
+  {
+   "form": "vial",
+   "mg": 1000
+  },
+  {
+   "form": "vial",
+   "mg": 5000
+  },
+  {
+   "form": "vial",
+   "mg": 10000
   }
  ],
- "compounding": null,
+ "compounding": "500 mg 바이알은 멸균수 10 mL(1 g은 20 mL)로 재구성 후 D5W·LR·0.9% NaCl 100 mL 이상(1 g은 200 mL)으로 희석",
  "reviewed": null
 }

@@ -1,0 +1,134 @@
+{
+ "id": "propofol",
+ "name": "Propofol",
+ "brand": [
+  "PropoFlo",
+  "Diprivan",
+  "Rapanofal"
+ ],
+ "class": "주사 마취제 (마취 유도·TIVA)",
+ "tags": [
+  "anticonvulsant"
+ ],
+ "doses": [
+  {
+   "species": "cat",
+   "label": "마취 유도 (label) 전처치 없음/acepromazine/butorphanol/oxymorphone",
+   "route": "IV",
+   "low": 8,
+   "high": 13.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "60–90초에 걸쳐; 효과 볼 때까지"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유도 (label) xylazine 전처치",
+   "route": "IV",
+   "low": 7,
+   "high": 12,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "60–90초에 걸쳐"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유지 간헐 주사 (label) 전처치 없음/acepromazine/butorphanol/oxymorphone",
+   "route": "IV",
+   "low": 1.1,
+   "high": 4.4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "필요 시 반복; 30–60초에 걸쳐"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유지 간헐 주사 (label) xylazine 전처치",
+   "route": "IV",
+   "low": 1.1,
+   "high": 2.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "필요 시 반복; 30–60초에 걸쳐"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유지 간헐 주사 (label) acepromazine+butorphanol/opioid",
+   "route": "IV",
+   "low": 1.1,
+   "high": 3.3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "필요 시 반복; 30–60초에 걸쳐"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유도",
+   "route": "IV",
+   "low": 2,
+   "high": 8,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "약 60초에 걸쳐 효과 볼 때까지; 전처치 시 25% 이상 감량"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유지 CRI (TIVA)",
+   "route": "CRI",
+   "low": 100,
+   "high": 500,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "원문 0.1–0.5 mg/kg/min; 단독 장기 CRI 시 회복 지연"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유도 propofol/ketamine TIVA",
+   "route": "IV",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "ketamine 2 mg/kg IV 병용"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유지 propofol/ketamine TIVA CRI",
+   "route": "CRI",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "note": "ketamine 10 mg/kg/h CRI 병용"
+  },
+  {
+   "species": "cat",
+   "label": "난치성 간질중첩증 초기 볼루스",
+   "route": "IV",
+   "low": 2,
+   "high": 8,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "난치성 간질중첩증 CRI",
+   "route": "CRI",
+   "low": 100,
+   "high": 250,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "note": "원문 0.1–0.25 mg/kg/min; 6–12시간 유지 후 점감"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 10
+  }
+ ],
+ "compounding": "다른 약물·수액과 혼합 금지; 희석 필요 시 D5W만, 2 mg/mL 미만으로 희석 금지",
+ "reviewed": null
+}

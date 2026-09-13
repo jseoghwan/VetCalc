@@ -1,0 +1,101 @@
+{
+ "id": "piperacillin-tazobactam",
+ "name": "Piperacillin/Tazobactam",
+ "brand": [
+  "Zosyn"
+ ],
+ "class": "광범위 페니실린/베타락탐분해효소 억제제 복합 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "세균성 패혈증 (a)",
+   "route": "IV",
+   "low": 40,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "30분에 걸쳐 IV"
+  },
+  {
+   "species": "cat",
+   "label": "세균성 패혈증 (a)",
+   "route": "IV",
+   "low": 40,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "30분에 걸쳐 IV"
+  },
+  {
+   "species": "dog",
+   "label": "부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 3,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 3,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "세균성 패혈증 CRI (b)",
+   "route": "CRI",
+   "low": 3.2,
+   "high": 3.2,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "세균성 패혈증 CRI (b)",
+   "route": "CRI",
+   "low": 3.2,
+   "high": 3.2,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "vial",
+   "mg": 2250
+  },
+  {
+   "form": "vial",
+   "mg": 3375
+  },
+  {
+   "form": "vial",
+   "mg": 4500
+  },
+  {
+   "form": "vial",
+   "mg": 40500
+  },
+  {
+   "form": "injection",
+   "mgml": 45
+  },
+  {
+   "form": "injection",
+   "mgml": 67.5
+  }
+ ],
+ "compounding": "다른 약물과 혼합·동일 주사기 사용 금지 (제조사)",
+ "reviewed": null
+}

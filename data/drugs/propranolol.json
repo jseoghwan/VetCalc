@@ -120,6 +120,38 @@
    "high": 5,
    "unit": "mg/animal",
    "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "부정맥",
+   "route": "IV",
+   "low": 0.02,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "0.02 mg/kg로 시작, 2–3분에 걸쳐 서서히; 효과까지 적정, 최대 0.1 mg/kg; IV 용량은 경구의 약 10%"
+  },
+  {
+   "species": "cat",
+   "label": "부정맥",
+   "route": "IV",
+   "low": 0.02,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "0.02 mg/kg로 시작, 2–3분에 걸쳐 서서히; 효과까지 적정, 최대 0.1 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "중증 갑상선중독증 보조",
+   "route": "IV",
+   "low": 0.02,
+   "high": 0.02,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "1분에 걸쳐 서서히"
   }
  ],
  "strengths": [],

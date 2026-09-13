@@ -31,6 +31,68 @@
    "freq": "q6h",
    "default": true,
    "note": "원문 q6–8h; 드물게 사용"
+  },
+  {
+   "species": "dog",
+   "label": "심실빈맥 IV 볼루스",
+   "route": "IV",
+   "low": 2,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "2–5분에 걸쳐 서서히; 최대 누적 20 mg/kg"
+  },
+  {
+   "species": "dog",
+   "label": "심실빈맥 CRI",
+   "route": "CRI",
+   "low": 20,
+   "high": 50,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "볼루스 성공 후"
+  },
+  {
+   "species": "dog",
+   "label": "심실빈맥 (CRI 불가 시)",
+   "route": "IM",
+   "low": 7,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 q6–8h"
+  },
+  {
+   "species": "dog",
+   "label": "상심실성 빈맥 급성 (a)",
+   "route": "IV",
+   "low": 6,
+   "high": 8,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "3분에 걸쳐; AV 결절 전도 억제제 사용 후"
+  },
+  {
+   "species": "dog",
+   "label": "상심실성 빈맥 급성 (b)",
+   "route": "IM",
+   "low": 6,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "심실빈맥·상심실성 빈맥 급성",
+   "route": "IV",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "20분에 걸쳐 서서히 IV"
   }
  ],
  "strengths": [
@@ -57,6 +119,14 @@
   {
    "form": "tablet",
    "mg": 750
+  },
+  {
+   "form": "injection",
+   "mgml": 100
+  },
+  {
+   "form": "injection",
+   "mgml": 500
   }
  ],
  "compounding": null,
