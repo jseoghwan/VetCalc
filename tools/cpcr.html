@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <title>CPCR · VECC</title>
-<meta name="description" content="RECOVER 2024 기반 CPCR — 체중별 약물 용량·제세동 에너지, 2분 압박 주기 타이머, BLS·ALS 요약">
+<meta name="description" content="RECOVER 2024 기반 CPCR 계산 — 체중별 약물 용량·제세동 에너지, BLS·ALS 요약, ROSC 후 목표">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#4453A3">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -217,20 +217,6 @@ table.ref tr.cur td{background:var(--accent-soft);color:var(--accent-ink);font-w
 <style>
 /* cpcr-specific */
 .tile .v.lg{font-size:26px}
-.timer{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;padding:12px 14px}
-@media (max-width:560px){.timer{grid-template-columns:1fr}}
-.clock{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:52px;font-weight:600;line-height:1;letter-spacing:-.02em;color:var(--ink)}
-.clock.pause{color:var(--warn)}
-.clock.idle{color:var(--muted)}
-.tmeta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:12.5px;color:var(--muted);margin-top:6px}
-.tmeta b{color:var(--ink-2)}
-.tstate{font-size:14px;font-weight:700;color:var(--accent-ink);background:var(--accent-soft);border-radius:8px;padding:8px 12px;line-height:1.5}
-.tstate.warn{color:var(--warn);background:var(--warn-soft)}
-.tstate small{display:block;font-weight:500;color:var(--ink-2);font-size:12px;margin-top:2px}
-.tbtns{display:flex;flex-wrap:wrap;gap:8px;padding:0 14px 12px}
-.tbtns button{flex:1 1 120px;border:1.5px solid var(--line-strong);background:var(--surface);color:var(--ink);font:inherit;font-size:14px;font-weight:700;padding:11px 12px;border-radius:9px;cursor:pointer;min-height:46px}
-.tbtns button.go{background:var(--accent);border-color:var(--accent);color:#fff}
-.tbtns button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .rhy{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 14px 12px}
 @media (max-width:480px){.rhy{grid-template-columns:1fr}}
 .rhy button{border:1.5px solid var(--line-strong);background:var(--surface);color:var(--ink-2);font:inherit;text-align:left;padding:10px 13px;border-radius:9px;cursor:pointer;line-height:1.45}
@@ -238,13 +224,6 @@ table.ref tr.cur td{background:var(--accent-soft);color:var(--accent-ink);font-w
 .rhy button span{font-size:12px;color:var(--muted)}
 .rhy button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent)}
 .rhy button[aria-pressed="true"] b,.rhy button[aria-pressed="true"] span{color:#fff}
-.step .lg{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-2);font:inherit;font-size:11.5px;font-weight:700;padding:4px 9px;border-radius:999px;cursor:pointer;white-space:nowrap;min-height:28px}
-.step .lg:hover{background:var(--accent);border-color:var(--accent);color:#fff}
-.logbox{padding:0 14px 12px;font-size:12.5px}
-.logbox ol{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:4px;max-height:260px;overflow-y:auto}
-.logbox li{display:grid;grid-template-columns:auto 1fr;gap:10px;border-bottom:1px dashed var(--line);padding:4px 0;line-height:1.5}
-.logbox li .tm{font-family:"IBM Plex Mono",monospace;color:var(--accent-ink);font-weight:600}
-.logbox .none{color:var(--muted);padding:8px 0}
 .mini{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;padding:0 14px 12px}
 .mini .m{border:1px dashed var(--line-strong);border-radius:8px;padding:8px 11px;font-size:12.5px;line-height:1.55;color:var(--ink-2)}
 .mini .m b{display:block;color:var(--ink);font-size:13px}
@@ -266,7 +245,7 @@ table.ref tr.cur td{background:var(--accent-soft);color:var(--accent-ink);font-w
     </div>
   </div>
   <nav class="tabs" role="tablist" aria-label="페이지">
-    <button class="tab" role="tab" id="tab-run" data-panel="p-run" aria-selected="true"><span class="dot"></span>CPR 진행</button>
+    <button class="tab" role="tab" id="tab-run" data-panel="p-run" aria-selected="true"><span class="dot"></span>용량 계산</button>
     <button class="tab" role="tab" id="tab-bls" data-panel="p-bls" aria-selected="false"><span class="dot"></span>BLS</button>
     <button class="tab" role="tab" id="tab-als" data-panel="p-als" aria-selected="false"><span class="dot"></span>ALS 약물</button>
     <button class="tab" role="tab" id="tab-rosc" data-panel="p-rosc" aria-selected="false"><span class="dot"></span>ROSC 후</button>
@@ -291,23 +270,7 @@ table.ref tr.cur td{background:var(--accent-soft);color:var(--accent-ink);font-w
     <div class="rx-foot"><span class="grow">용량은 RECOVER 2024 권고. 제세동 J은 장비에서 가장 가까운 설정값으로.</span></div>
   </aside>
 
-  <div class="sec"><span class="kicker">Timer</span><h2>2분 압박 주기</h2><span class="note">주기 사이 중단은 10초 이내 — 시간이 끝나면 자동으로 다음 주기가 시작됩니다</span></div>
-  <div class="card">
-    <div class="timer">
-      <div>
-        <div class="clock idle" id="clock">2:00</div>
-        <div class="tmeta"><span>주기 <b id="cyc">1</b></span><span>총 경과 <b id="tot">0:00</b></span><span id="epi-due"></span></div>
-      </div>
-      <div class="tstate" id="tstate">시작을 누르면 2분 압박 주기가 돌아갑니다.<small>압박 100–120/분 · 흉곽 폭의 1/3–1/2 · 완전한 반동 · 환기 10회/분</small></div>
-    </div>
-    <div class="tbtns">
-      <button type="button" class="go" id="t-go">시작</button>
-      <button type="button" id="t-next">주기 종료</button>
-      <button type="button" id="t-reset">리셋</button>
-    </div>
-  </div>
-
-  <div class="sec"><span class="kicker">Rhythm</span><h2>리듬 확인 후 ALS</h2><span class="note">리듬 평가는 주기 사이 중단에만 — 압박 중 ECG는 해석하지 않습니다</span></div>
+  <div class="sec"><span class="kicker">Rhythm</span><h2>리듬 확인 후 ALS</h2><span class="note">리듬 평가는 2분 주기 사이 중단에만 — 압박 중 ECG는 해석하지 않습니다</span></div>
   <div class="card">
     <div class="rhy">
       <button type="button" data-rhy="non" aria-pressed="true"><b>Asystole · PEA</b><span>비제세동 리듬 — 무수축, 무맥성 전기활동</span></button>
@@ -315,15 +278,6 @@ table.ref tr.cur td{background:var(--accent-soft);color:var(--accent-ink);font-w
     </div>
     <div class="steps" id="rhy-steps"></div>
     <div class="callout ref" id="rhy-note"></div>
-  </div>
-
-  <div class="sec"><span class="kicker">Record</span><h2>투여 기록</h2><span class="note">버튼을 누른 시각이 CPR 시작 기준으로 기록됩니다</span></div>
-  <div class="card">
-    <div class="logbox"><ol id="log"></ol></div>
-    <div class="tbtns" style="padding-top:0">
-      <button type="button" id="log-copy">기록 복사</button>
-      <button type="button" id="log-clear">기록 지우기</button>
-    </div>
   </div>
 
   <div class="foot">
@@ -416,7 +370,6 @@ table.ref tr.cur td{background:var(--accent-soft);color:var(--accent-ink);font-w
 
   <div class="sec"><h2>가역 원인 — 확인·조치</h2><span class="note">주기 사이에 팀에서 하나씩 소리내어 확인</span></div>
   <div class="card">
-    <div class="chk" id="chk-ht"></div>
     <div class="steps" id="ht-steps"></div>
   </div>
 </section>
@@ -514,11 +467,10 @@ table.ref tr.cur td{background:var(--accent-soft);color:var(--accent-ink);font-w
   const $ = (s, r=document) => r.querySelector(s), $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
   const store = { get(k,d){ try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch(e){ return d; } }, set(k,v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} } };
   const fmt = (n, d=0) => (n == null || !isFinite(n)) ? '—' : (Math.round(n * Math.pow(10,d)) / Math.pow(10,d)).toLocaleString('en-US', { maximumFractionDigits: d });
-  const ms = (s) => { s = Math.max(0, Math.round(s)); return Math.floor(s/60) + ':' + String(s%60).padStart(2,'0'); };
   /* 소용량은 자릿수를 늘려 표시 */
   const vol = (mL) => mL == null || !isFinite(mL) ? '—' : mL < 1 ? fmt(mL,2) : mL < 10 ? fmt(mL,2) : fmt(mL,1);
 
-  const S = Object.assign({ species:'dog', bw:0, defib:'bi', cepi:1, catr:0.5, rhy:'non', ht:[], criDrug:'epi', criDose:0.2, criConc:'' }, store.get('cpcr:draft', {}));
+  const S = Object.assign({ species:'dog', bw:0, defib:'bi', cepi:1, catr:0.5, rhy:'non', criDrug:'epi', criDose:0.2, criConc:'' }, store.get('cpcr:draft', {}));
   const save = () => store.set('cpcr:draft', S);
   const ok = () => S.bw > 0;
 
@@ -584,8 +536,7 @@ table.ref tr.cur td{background:var(--accent-soft);color:var(--accent-ink);font-w
         const d = byId(key);
         if (d) val = ok() ? `${vol(dVol(d))} mL<small>${fmt(dTotal(d), d.d < 0.05 ? 3 : 2)} ${d.u.split('/')[0]}</small>` : '';
       }
-      const label = key ? `<button type="button" class="lg" data-log="${key}">기록</button>` : '';
-      return `<div class="step"><span class="n">${i+1}</span><div class="t"><b>${x.b}</b><span>${x.s}</span></div><span class="v">${val || label ? val : ''}${label ? ' ' + label : ''}</span></div>`;
+      return `<div class="step"><span class="n">${i+1}</span><div class="t"><b>${x.b}</b><span>${x.s}</span></div><span class="v">${val}</span></div>`;
     }).join('');
     $('#rhy-note').innerHTML = S.rhy === 'non'
       ? '무수축·PEA에서는 제세동을 하지 않습니다. Epinephrine을 두 주기마다, atropine은 1회만.'
@@ -632,11 +583,7 @@ table.ref tr.cur td{background:var(--accent-soft);color:var(--accent-ink);font-w
     { k:'trauma',  n:'Trauma', s:'출혈·기흉·뇌손상 동반 여부' }
   ];
   function renderHT(){
-    $('#chk-ht').innerHTML = HT.map(h => `<button type="button" class="bad" data-ht="${h.k}" aria-pressed="${S.ht.includes(h.k)}">${h.n}</button>`).join('');
-    const on = HT.filter(h => S.ht.includes(h.k));
-    $('#ht-steps').innerHTML = on.length
-      ? on.map((h,i) => `<div class="step bad"><span class="n">!</span><div class="t"><b>${h.n}</b><span>${h.s}</span></div><span class="v"></span></div>`).join('')
-      : `<div class="step"><span class="n">–</span><div class="t"><b>해당하는 원인을 눌러 두세요</b><span>확인한 원인이 목록으로 남아 팀에서 공유하기 쉽습니다</span></div><span class="v"></span></div>`;
+    $('#ht-steps').innerHTML = HT.map(h => `<div class="step"><span class="n">·</span><div class="t"><b>${h.n}</b><span>${h.s}</span></div><span class="v"></span></div>`).join('');
   }
 
   /* ---------------- ROSC 후 ---------------- */
@@ -676,80 +623,6 @@ table.ref tr.cur td{background:var(--accent-soft);color:var(--accent-ink);font-w
          <div class="tile accent"><span class="k">펌프</span><span class="v">${mlH != null ? fmt(mlH,1) : '—'}<small>mL/h</small></span><span class="r">${conc > 0 ? `희석 농도 ${conc} mg/mL` : '희석 후 농도를 입력하세요'}</span></div>`;
   }
 
-  /* ---------------- 타이머 ---------------- */
-  const CYCLE = 120, PAUSE = 10;
-  let T = { on:false, phase:'comp', left:CYCLE, cycle:1, total:0, id:null }, wake = null, ac = null;
-  const LOG = store.get('cpcr:log', []);
-
-  function beep(times, freq){
-    try {
-      ac = ac || new (window.AudioContext || window.webkitAudioContext)();
-      for (let i = 0; i < times; i++) {
-        const o = ac.createOscillator(), g = ac.createGain(), t0 = ac.currentTime + i * 0.22;
-        o.frequency.value = freq; o.connect(g); g.connect(ac.destination);
-        g.gain.setValueAtTime(0.0001, t0); g.gain.exponentialRampToValueAtTime(0.25, t0 + 0.01);
-        g.gain.exponentialRampToValueAtTime(0.0001, t0 + 0.16);
-        o.start(t0); o.stop(t0 + 0.18);
-      }
-    } catch(e){}
-    try { navigator.vibrate && navigator.vibrate(times > 1 ? [120,80,120,80,120] : [90]); } catch(e){}
-  }
-  async function lock(){ try { if ('wakeLock' in navigator && !wake) wake = await navigator.wakeLock.request('screen'); } catch(e){} }
-  function unlock(){ try { wake && wake.release(); } catch(e){} wake = null; }
-
-  function tick(){
-    T.left--; T.total++;
-    if (T.left <= 0) {
-      if (T.phase === 'comp') { T.phase = 'pause'; T.left = PAUSE; beep(3, 880); }
-      else { T.phase = 'comp'; T.left = CYCLE; T.cycle++; beep(1, 620); }
-    } else if (T.phase === 'comp' && T.left === 10) { beep(1, 520); }
-    renderTimer();
-  }
-  function start(){ if (T.on) return; T.on = true; T.id = setInterval(tick, 1000); lock(); beep(1, 620); renderTimer(); }
-  function pause(){ T.on = false; clearInterval(T.id); T.id = null; unlock(); renderTimer(); }
-  function reset(){ pause(); T = { on:false, phase:'comp', left:CYCLE, cycle:1, total:0, id:null }; renderTimer(); }
-  function nextCycle(){ T.phase = 'comp'; T.left = CYCLE; T.cycle++; beep(1, 620); if (!T.on) start(); else renderTimer(); }
-
-  function renderTimer(){
-    const c = $('#clock');
-    c.textContent = ms(T.left);
-    c.className = 'clock' + (T.phase === 'pause' ? ' pause' : T.on ? '' : ' idle');
-    $('#cyc').textContent = T.cycle;
-    $('#tot').textContent = ms(T.total);
-    const epiDue = T.phase === 'comp' && T.cycle % 2 === 1;
-    $('#epi-due').innerHTML = epiDue ? '<span class="chip v">이번 주기 · epinephrine</span>' : '';
-    const st = $('#tstate');
-    if (T.phase === 'pause') {
-      st.className = 'tstate warn';
-      st.innerHTML = '압박 중단 — 리듬 확인 · 압박자 교대<small>10초 안에 다음 주기가 자동으로 시작됩니다. 맥박은 리듬과 함께만 확인.</small>';
-    } else if (!T.on && T.total === 0) {
-      st.className = 'tstate';
-      st.innerHTML = '시작을 누르면 2분 압박 주기가 돌아갑니다.<small>압박 100–120/분 · 흉곽 폭의 1/3–1/2 · 완전한 반동 · 환기 10회/분</small>';
-    } else if (!T.on) {
-      st.className = 'tstate';
-      st.innerHTML = '일시정지<small>기록은 유지됩니다. 시작을 누르면 이어서 진행합니다.</small>';
-    } else {
-      st.className = 'tstate';
-      st.innerHTML = `압박 중 · 주기 ${T.cycle}<small>${epiDue ? 'Epinephrine 투여 주기 — 두 주기(3–5분)마다' : '이번 주기는 epinephrine을 건너뜁니다'} · 압박 중 ECG는 판독하지 않음</small>`;
-    }
-    $('#t-go').textContent = T.on ? '일시정지' : (T.total === 0 ? '시작' : '이어서');
-    $('#t-go').classList.toggle('go', !T.on);
-  }
-
-  /* ---------------- 기록 ---------------- */
-  function logAdd(txt){ LOG.unshift({ t:T.total, txt }); store.set('cpcr:log', LOG.slice(0,80)); renderLog(); }
-  function renderLog(){
-    $('#log').innerHTML = LOG.length
-      ? LOG.map(e => `<li><span class="tm">${ms(e.t)}</span><span>${e.txt}</span></li>`).join('')
-      : '<li class="none">아직 기록이 없습니다 — 순서 카드의 “기록” 버튼을 누르면 시각과 함께 남습니다.</li>';
-  }
-  function logText(key){
-    if (key === 'defib1' || key === 'defib2') return `제세동 ${fmt(dJ(key === 'defib1'))} J (${S.defib === 'bi' ? 'biphasic' : 'monophasic'})`;
-    const d = DRUGS.find(x => x.id === key); if (!d) return key;
-    const v = dVol(d), tot = dTotal(d);
-    return `${d.n} ${fmt(tot, d.d < 0.05 ? 3 : 2)} ${d.u.split('/')[0]}${v != null ? ` (${vol(v)} mL)` : ''}`;
-  }
-
   /* ---------------- 이벤트 ---------------- */
   function syncInputs(){
     $('#bw').value = S.bw || '';
@@ -781,33 +654,14 @@ table.ref tr.cur td{background:var(--accent-soft);color:var(--accent-ink);font-w
     S.species = b.dataset.sp; syncInputs(); renderAll();
   }));
   $('#p-run').addEventListener('click', (e) => {
-    const r = e.target.closest('.rhy button'); if (r) { S.rhy = r.dataset.rhy; syncInputs(); renderRhythm(); save(); return; }
-    const l = e.target.closest('button[data-log]'); if (l) { if (!ok()) return; logAdd(logText(l.dataset.log)); }
+    const r = e.target.closest('.rhy button'); if (!r) return;
+    S.rhy = r.dataset.rhy; syncInputs(); renderRhythm(); save();
   });
-  $('#chk-ht').addEventListener('click', (e) => {
-    const b = e.target.closest('button[data-ht]'); if (!b) return;
-    const k = b.dataset.ht; S.ht = S.ht.includes(k) ? S.ht.filter(x => x !== k) : S.ht.concat(k);
-    renderHT(); save();
-  });
-  $('#t-go').addEventListener('click', () => T.on ? pause() : start());
-  $('#t-next').addEventListener('click', nextCycle);
-  $('#t-reset').addEventListener('click', reset);
-  $('#log-clear').addEventListener('click', () => { LOG.length = 0; store.set('cpcr:log', []); renderLog(); });
-  $('#log-copy').addEventListener('click', () => {
-    if (!LOG.length) return;
-    const head = `CPR 기록 · ${S.species === 'dog' ? 'DOG' : 'CAT'} ${S.bw || '?'} kg · 총 ${ms(T.total)}`;
-    const body = LOG.slice().reverse().map(e => `${ms(e.t)}  ${e.txt}`).join('\n');
-    const txt = head + '\n' + body + (S.ht.length ? '\n가역 원인: ' + HT.filter(h => S.ht.includes(h.k)).map(h => h.n).join(', ') : '');
-    const done = () => { const b = $('#log-copy'); b.textContent = '복사됨'; setTimeout(() => { b.textContent = '기록 복사'; }, 1600); };
-    if (navigator.clipboard) navigator.clipboard.writeText(txt).then(done).catch(() => {});
-    else { const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); done(); } catch(e){} ta.remove(); }
-  });
-  document.addEventListener('visibilitychange', () => { if (!document.hidden && T.on) lock(); });
 
   $$('.tab').forEach(t => t.addEventListener('click', () => showTab(t.id)));
   function showTab(id){ $$('.tab').forEach(t => { const on = t.id === id; t.setAttribute('aria-selected', String(on)); $('#' + t.dataset.panel).classList.toggle('active', on); }); }
 
-  syncInputs(); renderAll(); renderTimer(); renderLog();
+  syncInputs(); renderAll();
 })();
 </script>
 <script>
