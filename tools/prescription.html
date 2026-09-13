@@ -277,7 +277,7 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
 
   <div class="search">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-    <input type="search" id="q" placeholder="약물 검색 — 성분명·한글·상품명·계열" autocomplete="off" aria-label="약물 검색" aria-controls="sugg" aria-expanded="false">
+    <input type="search" id="q" placeholder="약물 검색 — 성분명·상품명·계열" autocomplete="off" aria-label="약물 검색" aria-controls="sugg" aria-expanded="false">
     <div class="sugg" id="sugg" role="listbox" hidden></div>
   </div>
 
@@ -415,7 +415,7 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
     if (!t) { sugg.hidden = true; q.setAttribute('aria-expanded','false'); return; }
     const hits = S.index.filter(d => [d.name, d.name_ko, d.class, ...(d.brand||[]), ...(d.tags||[])].join(' ').toLowerCase().includes(t)).slice(0, 12);
     sugg.innerHTML = hits.length
-      ? hits.map((d,i) => `<button type="button" role="option" data-id="${esc(d.id)}"${i===0?' class="hot"':''}><b>${esc(d.name)}</b><span class="ko">${esc(d.name_ko||'')}</span><span class="cls">${esc(d.class||'')}</span></button>`).join('')
+      ? hits.map((d,i) => `<button type="button" role="option" data-id="${esc(d.id)}"${i===0?' class="hot"':''}><b>${esc(d.name)}</b>${d.brand&&d.brand.length?`<span class="ko">${esc(d.brand.join(', '))}</span>`:''}<span class="cls">${esc(d.class||'')}</span></button>`).join('')
       : `<div class="empty" style="border:0;padding:12px 14px;text-align:left">일치하는 약물이 없습니다. DB에 아직 없는 약물일 수 있습니다.</div>`;
     hot = hits.length ? 0 : -1;
     sugg.hidden = false; q.setAttribute('aria-expanded','true');
@@ -521,10 +521,10 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
                <div class="tile${c.err!=null&&Math.abs(c.err)>=10?' warn':''}"><span class="k">실제 1회 용량</span><span class="v">${sig(c.actual)}<small>mg</small></span><span class="r">표준 대비 ${c.err>=0?'+':''}${fmt(c.err,1)}%</span></div>`)
             : `<div class="tile"><span class="k">정제 수</span><span class="v">—</span><span class="r">보유 규격을 입력하세요</span></div><div class="tile"><span class="k">실제 1회 용량</span><span class="v">—</span><span class="r">&nbsp;</span></div>`}
         </div>`;
-    const compWarn = d.compounding && /안정성|피함|불확실/.test(d.compounding) && it.mode === 'suspension' ? `<div class="callout warn" style="margin:0 14px 12px"><b>조제 현탁액 주의</b> — ${esc(d.compounding)}</div>` : '';
+    const compWarn = d.compounding && it.mode === 'suspension' ? `<div class="callout warn" style="margin:0 14px 12px"><b>조제 현탁액 주의</b> — ${esc(d.compounding)}</div>` : '';
     const info = `<dl class="rx-info" ${it.open?'':'hidden'} id="info-${it.uid}">
-        <dt>적응증</dt><dd>${esc(d.indication||'—')}</dd>
-        <dt>금기·주의</dt><dd>${esc(d.contraindication||'—')}</dd>
+        ${d.indication?`<dt>적응증</dt><dd>${esc(d.indication)}</dd>`:''}
+        ${d.contraindication?`<dt>금기·주의</dt><dd>${esc(d.contraindication)}</dd>`:''}
         ${d.adverse?`<dt>부작용</dt><dd>${esc(d.adverse)}</dd>`:''}
         <dt>용량 (${S.species==='dog'?'개':'고양이'})</dt><dd class="doses">${ds.length?ds.map((x,i)=>`<div class="${i===it.doseIdx?'cur':''}"><span class="lb">${esc(x.label||'표준')}</span>${x.low===x.high?sig(x.low):sig(x.low)+'–'+sig(x.high)} ${unitLabel(x.unit)} ${esc(x.route||'PO')} ${esc(x.freq)}${x.note?` <span class="lb">· ${esc(x.note)}</span>`:''}</div>`).join(''):'<div>요약에 해당 종 용량 없음</div>'}</dd>
         ${d.monitoring?`<dt>모니터링</dt><dd>${esc(d.monitoring)}</dd>`:''}
@@ -533,7 +533,7 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
       </dl>`;
     return `<article class="rx" data-uid="${it.uid}">
       <div class="rx-head">
-        <div class="nm"><h3>${esc(d.name)} <span class="ko">${esc(d.name_ko||'')}</span> ${chips}</h3><span class="cls">${esc(d.class||'')}</span></div>
+        <div class="nm"><h3>${esc(d.name)} ${chips}</h3><span class="cls">${esc(d.class||'')}</span></div>
         <div class="acts">
           <button type="button" class="ico" data-act="info" aria-expanded="${it.open}" aria-controls="info-${it.uid}" aria-label="약물 정보" title="약물 정보"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></button>
           <button type="button" class="ico danger" data-act="remove" aria-label="${esc(d.name)} 삭제" title="삭제"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
