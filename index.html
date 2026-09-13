@@ -44,18 +44,14 @@ a{color:inherit;text-decoration:none}
 .top .sub{font-size:12.5px;color:var(--muted)}
 .sec{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:18px 0 8px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
-.card{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow);min-height:86px}
+.card{display:flex;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);min-height:56px}
 .card:hover{border-color:var(--line-strong)}
 .card:focus-visible{outline:2px solid var(--venous);outline-offset:2px}
-.card .ic{width:36px;height:36px;border-radius:9px;flex-shrink:0;display:grid;place-items:center;font-weight:700;font-size:13px;letter-spacing:.02em}
-.card .ic.v{background:var(--venous-soft);color:var(--venous-ink)}
-.card .ic.a{background:var(--arterial-soft);color:var(--arterial-ink)}
-.card .ic.g{background:var(--surface-2);color:var(--muted)}
-.card h3{font-size:15px;font-weight:700}
-.card p{margin:3px 0 0;font-size:13px;color:var(--ink-2);line-height:1.5}
-.card .tags{margin-top:6px;display:flex;gap:4px;flex-wrap:wrap}
-.tag{font-size:11px;font-weight:600;padding:1px 7px;border-radius:999px;background:var(--surface-2);color:var(--ink-2)}
+.card h3{display:flex;align-items:center;gap:9px;font-size:15px;font-weight:700}
+.card h3::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--venous);flex-shrink:0}   /* 계산기 파랑 */
+.card.t h3::before{background:var(--arterial)}                                                              /* 교재 빨강 */
 .card.soon{opacity:.6;box-shadow:none;border-style:dashed}
+.card.soon h3::before{background:var(--line-strong)}
 .note{margin-top:22px;padding:12px 14px;border-left:3px dashed var(--line-strong);font-size:12.5px;color:var(--muted);line-height:1.6}
 .note b{color:var(--ink-2)}
 .foot{margin-top:28px;font-size:11.5px;color:var(--muted)}
@@ -76,45 +72,15 @@ a{color:inherit;text-decoration:none}
 
   <div class="sec">계산기</div>
   <div class="grid">
-    <a class="card" href="tools/bloodgas.html">
-      <div class="ic v">BG</div>
-      <div>
-        <h3>Blood Gas Analysis</h3>
-        <div class="tags"><span class="tag">VBGA</span><span class="tag">ABGA</span></div>
-      </div>
-    </a>
-        <a class="card" href="tools/anesthesia.html">
-      <div class="ic v">Rx</div>
-      <div>
-        <h3>Anesthesia Drugs</h3>
-        <div class="tags"><span class="tag">Bolus</span><span class="tag">CRI</span><span class="tag">CPCR</span></div>
-      </div>
-    </a>
-    <a class="card" href="tools/prescription.html">
-      <div class="ic v">Px</div>
-      <div>
-        <h3>Prescription</h3>
-        <div class="tags"><span class="tag">경구 처방</span><span class="tag">조제 계산</span><span class="tag">약물 DB</span></div>
-      </div>
-    </a>
-    <div class="card soon" aria-disabled="true">
-      <div class="ic g">+</div>
-      <div>
-        <h3>추가 예정</h3>
-        <p>다음 계산기·프로토콜은 이 자리에 카드로 추가됩니다.</p>
-      </div>
-    </div>
+    <a class="card" href="tools/bloodgas.html"><h3>Blood Gas Analysis</h3></a>
+    <a class="card" href="tools/anesthesia.html"><h3>Anesthesia Drugs</h3></a>
+    <a class="card" href="tools/prescription.html"><h3>Prescription</h3></a>
+    <div class="card soon" aria-disabled="true"><h3>추가 예정</h3></div>
   </div>
 
   <div class="sec">교재 요약</div>
   <div class="grid">
-    <a class="card" href="tools/saccm.html">
-      <div class="ic a">SA</div>
-      <div>
-        <h3>SACCM 3판 요약</h3>
-        <div class="tags"><span class="tag">핵심 요점</span><span class="tag">표 정리</span><span class="tag">본문 검색</span></div>
-      </div>
-    </a>
+    <a class="card t" href="tools/saccm.html"><h3>SACCM 3판 요약</h3></a>
   </div>
 
   <div class="sec">참고 자료</div>
