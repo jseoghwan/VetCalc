@@ -1,7 +1,6 @@
 {
  "id": "rivaroxaban",
  "name": "Rivaroxaban",
- "name_ko": "리바록사반",
  "brand": [
   "Xarelto"
  ],
@@ -10,9 +9,6 @@
   "cardio",
   "antithrombotic"
  ],
- "indication": "개·고양이 혈전색전증 치료·예방 — 경구 투여 가능하고 약동학이 안정적이어서 미분획 heparin 대안",
- "contraindication": "과민증, 조절되지 않는 출혈, 중증 간질환·응고병증 동반 간질환, 유의한 신장애(중등도 신장애는 감량). 출혈 경향 환자 주의. 수술 최소 24시간 전 중단, 지혈 확인 후 재개. 중단 시 점진적 감량 권고",
- "adverse": "출혈",
  "doses": [
   {
    "species": "dog",
@@ -82,7 +78,6 @@
    "mg": 20
   }
  ],
- "monitoring": "출혈 징후; 필요 시 anti-FXa 활성",
  "compounding": null,
  "reviewed": null
 }

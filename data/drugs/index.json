@@ -3,18 +3,10 @@
   {
    "id": "clopidogrel",
    "name": "Clopidogrel",
-   "name_ko": "클로피도그렐",
+   "brand": [
+    "Plavix"
+   ],
    "class": "항혈소판제 (thienopyridine, P2Y12 억제)",
-   "tags": [
-    "cardio",
-    "antithrombotic"
-   ]
-  },
-  {
-   "id": "rivaroxaban",
-   "name": "Rivaroxaban",
-   "name_ko": "리바록사반",
-   "class": "항응고제 (직접 Xa 억제제)",
    "tags": [
     "cardio",
     "antithrombotic"
@@ -23,7 +15,9 @@
   {
    "id": "pimobendan",
    "name": "Pimobendan",
-   "name_ko": "피모벤단",
+   "brand": [
+    "Vetmedin"
+   ],
    "class": "Inodilator (PDE3 억제·Ca 감작)",
    "tags": [
     "cardio"
@@ -32,11 +26,26 @@
   {
    "id": "ramipril",
    "name": "Ramipril",
-   "name_ko": "라미프릴",
+   "brand": [
+    "Altace",
+    "Vasotop"
+   ],
    "class": "ACE 억제제",
    "tags": [
     "cardio",
     "renal"
+   ]
+  },
+  {
+   "id": "rivaroxaban",
+   "name": "Rivaroxaban",
+   "brand": [
+    "Xarelto"
+   ],
+   "class": "항응고제 (직접 Xa 억제제)",
+   "tags": [
+    "cardio",
+    "antithrombotic"
    ]
   }
  ]

@@ -1,7 +1,6 @@
 {
  "id": "pimobendan",
  "name": "Pimobendan",
- "name_ko": "피모벤단",
  "brand": [
   "Vetmedin"
  ],
@@ -9,9 +8,6 @@
  "tags": [
   "cardio"
  ],
- "indication": "개 CHF(DCM·MMVD) 치료; 무증상 stage B2 MMVD(심비대 기준 충족 시) 및 전임상 DCM에서 CHF 지연; 고양이 수축기능 저하 동반 심부전(extra-label)",
- "contraindication": "과민증; 반월판 협착 등 심박출량 증가가 부적절한 상태는 상대적 금기; 조절 안 되는 부정맥 주의. 6개월 미만·선천성 심질환·당뇨 등 대사질환에서는 평가 안 됨",
- "adverse": "드묾 — 식욕부진·설사 등 위장관 증상",
  "doses": [
   {
    "species": "dog",
@@ -73,7 +69,6 @@
    "mg": 10
   }
  ],
- "monitoring": "안정 시 호흡수, 심박·리듬(ECG), 혈압, 흉부 청진·방사선, 심초음파",
- "compounding": "조제 현탁액은 안정성 불확실 — 안정성 자료 없으면 피함 (정제 분할 권장)",
+ "compounding": "조제 현탁액 안정성 자료 없음 — 정제 분할 권장",
  "reviewed": null
 }
