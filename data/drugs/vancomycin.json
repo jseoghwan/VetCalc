@@ -1,0 +1,48 @@
+{
+ "id": "vancomycin",
+ "name": "Vancomycin",
+ "brand": [
+  "Vancocin"
+ ],
+ "class": "글리코펩타이드 항생제",
+ "tags": [
+  "antimicrobial",
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "C. difficile 장염 (metronidazole 불응)",
+   "route": "PO",
+   "low": 10,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "5–7일, 경구는 전신 흡수 안 됨(장내 감염만)"
+  },
+  {
+   "species": "cat",
+   "label": "C. difficile 장염 (metronidazole 불응)",
+   "route": "PO",
+   "low": 10,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "5–7일, 경구는 전신 흡수 안 됨(장내 감염만)"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 125
+  },
+  {
+   "form": "capsule",
+   "mg": 250
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

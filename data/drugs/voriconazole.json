@@ -1,0 +1,75 @@
+{
+ "id": "voriconazole",
+ "name": "Voriconazole",
+ "brand": [
+  "Vfend"
+ ],
+ "class": "2세대 트리아졸 항진균제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "콕시디오이데스증",
+   "route": "PO",
+   "low": 4,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "자가 대사 유도로 증량 필요할 수 있음"
+  },
+  {
+   "species": "dog",
+   "label": "전신 아스페르길루스증",
+   "route": "PO",
+   "low": 4,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "자가 대사 유도로 증량 필요할 수 있음"
+  },
+  {
+   "species": "dog",
+   "label": "비강 아스페르길루스증 (수술 후)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 3.3,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "아스페르길루스증 부하 용량",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/animal",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "아스페르길루스증 유지",
+   "route": "PO",
+   "low": 12.5,
+   "high": 12.5,
+   "unit": "mg/animal",
+   "freq": "q72h",
+   "default": true,
+   "note": "10 mg/kg/day에서 심한 독성 보고"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 200
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

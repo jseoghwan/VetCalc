@@ -1,0 +1,88 @@
+{
+ "id": "zonisamide",
+ "name": "Zonisamide",
+ "brand": [
+  "Zonegran"
+ ],
+ "class": "항경련제 (sulfonamide계)",
+ "tags": [
+  "anticonvulsant"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "발작 조절 (phenobarbital 미투여)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "발작 조절 (phenobarbital 병용)",
+   "route": "PO",
+   "low": 7,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "발작 조절 단독요법",
+   "route": "PO",
+   "low": 2.5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "phenobarbital 불응성 보조요법 (a)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "원문 q12–24h"
+  },
+  {
+   "species": "cat",
+   "label": "phenobarbital 불응성 보조요법 (b)",
+   "route": "PO",
+   "low": 6,
+   "high": 17,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "증례 보고"
+  },
+  {
+   "species": "cat",
+   "label": "phenobarbital 불응성 보조요법 (c)",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "긴 반감기 고려 시 적절"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 25
+  },
+  {
+   "form": "capsule",
+   "mg": 50
+  },
+  {
+   "form": "capsule",
+   "mg": 100
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

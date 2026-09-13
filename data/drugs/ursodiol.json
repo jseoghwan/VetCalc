@@ -1,0 +1,62 @@
+{
+ "id": "ursodiol",
+ "name": "Ursodiol",
+ "brand": [
+  "Actigall",
+  "URSO"
+ ],
+ "class": "담즙산 이담제·간보호제",
+ "tags": [
+  "hepatic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "담즙 슬러지·담즙정체·만성 간염 보조",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "식사와 함께, 1일 2회 분할 가능"
+  },
+  {
+   "species": "cat",
+   "label": "담즙정체성 질환 보조",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "식사와 함께, 1일 2회 분할 가능"
+  },
+  {
+   "species": "cat",
+   "label": "림프구성 담관염",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "식사와 함께"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 250
+  },
+  {
+   "form": "capsule",
+   "mg": 300
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

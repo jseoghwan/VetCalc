@@ -1,0 +1,37 @@
+{
+ "id": "zidovudine",
+ "name": "Zidovudine",
+ "brand": [
+  "Retrovir"
+ ],
+ "class": "항레트로바이러스제 (뉴클레오시드 역전사효소 억제제)",
+ "tags": [
+  "antimicrobial",
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "cat",
+   "label": "FeLV/FIV 보조 치료",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "고용량은 비재생성 빈혈 주의"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 300
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}
