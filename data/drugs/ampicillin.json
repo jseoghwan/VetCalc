@@ -1,0 +1,112 @@
+{
+ "id": "ampicillin",
+ "name": "Ampicillin",
+ "brand": [
+  "Polyflex",
+  "Omnipen",
+  "Princillin"
+ ],
+ "class": "아미노페니실린 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "호흡기·요로·피부 감염, trihydrate (label)",
+   "route": "IM/SC",
+   "low": 6.6,
+   "high": 6.6,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "label 용량은 대부분 임상의가 부족하다고 봄; 해열 후 48–72시간 지속"
+  },
+  {
+   "species": "cat",
+   "label": "호흡기·요로·피부 감염, trihydrate (label)",
+   "route": "IM/SC",
+   "low": 6.6,
+   "high": 6.6,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "label 용량은 대부분 임상의가 부족하다고 봄; 해열 후 48–72시간 지속"
+  },
+  {
+   "species": "dog",
+   "label": "패혈증 경험적·전신 감염, sodium",
+   "route": "IV",
+   "low": 20,
+   "high": 40,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–8h; 그람음성 보강 항생제 병용; Enterococcus는 40–100 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "패혈증 경험적·전신 감염, sodium",
+   "route": "IV",
+   "low": 20,
+   "high": 40,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–8h; 그람음성 보강 항생제 병용; Enterococcus는 40–100 mg/kg"
+  },
+  {
+   "species": "dog",
+   "label": "렙토스피라증 (doxycycline 불가 시)",
+   "route": "IV",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q6h"
+  },
+  {
+   "species": "dog",
+   "label": "Streptococcus canis 심내막염 급성기",
+   "route": "IV",
+   "low": 20,
+   "high": 40,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 q6–8h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "vial",
+   "mg": 125
+  },
+  {
+   "form": "vial",
+   "mg": 250
+  },
+  {
+   "form": "vial",
+   "mg": 500
+  },
+  {
+   "form": "vial",
+   "mg": 1000
+  },
+  {
+   "form": "vial",
+   "mg": 2000
+  },
+  {
+   "form": "vial",
+   "mg": 3000
+  },
+  {
+   "form": "vial",
+   "mg": 10000
+  },
+  {
+   "form": "vial",
+   "mg": 25000
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

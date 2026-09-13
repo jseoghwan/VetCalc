@@ -1,0 +1,67 @@
+{
+ "id": "cosyntropin",
+ "name": "Cosyntropin",
+ "brand": [
+  "Cortrosyn"
+ ],
+ "class": "호르몬 진단제 (ACTH 자극검사)",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "ACTH 자극검사 – 부신피질기능항진증 선별",
+   "route": "IV",
+   "low": 5,
+   "high": 5,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "최대 250 µg/dog; 투여 60분 후 cortisol 채혈"
+  },
+  {
+   "species": "dog",
+   "label": "ACTH 자극검사 – 부신피질기능저하증 선별",
+   "route": "IV",
+   "low": 1,
+   "high": 1,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "투여 60분 후 cortisol 채혈"
+  },
+  {
+   "species": "dog",
+   "label": "ACTH 자극검사 – mitotane/trilostane 치료 모니터링",
+   "route": "IV",
+   "low": 1,
+   "high": 1,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "5 µg/kg과 약리학적으로 동등"
+  },
+  {
+   "species": "cat",
+   "label": "ACTH 자극검사 – 부신기능 선별",
+   "route": "IV",
+   "low": 5,
+   "high": 5,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "투여 60–75분 후 cortisol 채혈; 과거 용량 125 µg/cat IV"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 0.25
+  },
+  {
+   "form": "vial",
+   "mg": 0.25
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

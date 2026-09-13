@@ -1,0 +1,89 @@
+{
+ "id": "cefotetan",
+ "name": "Cefotetan",
+ "brand": [
+  "Cefotan"
+ ],
+ "class": "2세대 세팔로스포린(세파마이신) 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "감수성 감염 (a)",
+   "route": "IV",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "신부전 시 q24–48h로 연장"
+  },
+  {
+   "species": "dog",
+   "label": "감수성 감염 (b)",
+   "route": "SC",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "수술(위장관) 예방적 항생제",
+   "route": "IV",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "절개 30–60분 전; 수술 중 재투여 불필요"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (a)",
+   "route": "IV",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "신부전 시 q24–48h로 연장"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (b)",
+   "route": "SC",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "수술(위장관) 예방적 항생제",
+   "route": "IV",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "절개 30–60분 전; 수술 중 재투여 불필요"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "vial",
+   "mg": 1000
+  },
+  {
+   "form": "vial",
+   "mg": 2000
+  },
+  {
+   "form": "vial",
+   "mg": 10000
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

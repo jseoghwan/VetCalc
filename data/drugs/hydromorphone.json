@@ -1,0 +1,221 @@
+{
+ "id": "hydromorphone",
+ "name": "Hydromorphone",
+ "brand": [
+  "Dilaudid"
+ ],
+ "class": "오피오이드 작용제 진통제",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "진통",
+   "route": "IV/IM/SC",
+   "low": 0.05,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q2h",
+   "default": true,
+   "note": "원문 q2–4h"
+  },
+  {
+   "species": "dog",
+   "label": "부하 용량 (CRI 전, 진통)",
+   "route": "IV",
+   "low": 0.025,
+   "high": 0.05,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "진통 CRI",
+   "route": "CRI",
+   "low": 0.03,
+   "high": 0.03,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "진정·전투약 (a, 아세프로마진 병용)",
+   "route": "IM",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "아세프로마진 0.02–0.05 mg/kg 병용"
+  },
+  {
+   "species": "dog",
+   "label": "진정·전투약 (b, 덱스메데토미딘 병용)",
+   "route": "IM",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "덱스메데토미딘 3.5 mcg/kg 병용"
+  },
+  {
+   "species": "dog",
+   "label": "사나운·공격적 개 진정·보정",
+   "route": "IM",
+   "low": 0.1,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "아세프로마진 0.05 mg/kg 병용; 최대 효과 ≈15분"
+  },
+  {
+   "species": "dog",
+   "label": "대체 마취 유도 (중환자)",
+   "route": "IV",
+   "low": 0.05,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "서서히 효과 볼 때까지; 이후 디아제팜 0.02 mg/kg IV(혼합 금지)"
+  },
+  {
+   "species": "dog",
+   "label": "마취 (a, 중성화 수술)",
+   "route": "IM",
+   "low": 0.09,
+   "high": 0.09,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "메데토미딘 40 mcg/kg + 케타민 4.5 mg/kg 병용"
+  },
+  {
+   "species": "dog",
+   "label": "마취 볼루스 (b, 이소플루란 병용)",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "마취 CRI (b, 이소플루란 병용)",
+   "route": "CRI",
+   "low": 0.02,
+   "high": 0.1,
+   "unit": "mg/kg/h",
+   "freq": "cri"
+  },
+  {
+   "species": "dog",
+   "label": "구토 유발",
+   "route": "IM",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "아포모르핀·로피니롤이 더 확실"
+  },
+  {
+   "species": "cat",
+   "label": "진통",
+   "route": "IV/IM/SC",
+   "low": 0.05,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q2h",
+   "default": true,
+   "note": "원문 q2–6h"
+  },
+  {
+   "species": "cat",
+   "label": "부하 용량 (CRI 전, 진통)",
+   "route": "IV",
+   "low": 0.025,
+   "high": 0.025,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "진통 CRI",
+   "route": "CRI",
+   "low": 0.01,
+   "high": 0.05,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "하한부터 시작"
+  },
+  {
+   "species": "cat",
+   "label": "진정 (알팍살론·미다졸람 병용)",
+   "route": "IM",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "알팍살론 1.5 mg/kg + 미다졸람 0.2 mg/kg 병용"
+  },
+  {
+   "species": "cat",
+   "label": "전투약 (아세프로마진 병용)",
+   "route": "IM",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "아세프로마진 0.05–0.2 mg/kg 병용"
+  },
+  {
+   "species": "cat",
+   "label": "대체 마취 유도 (중환자)",
+   "route": "IV",
+   "low": 0.05,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "서서히 효과 볼 때까지; 이후 디아제팜 0.02 mg/kg IV(혼합 금지)"
+  },
+  {
+   "species": "cat",
+   "label": "마취 (덱스메데토미딘·케타민 병용)",
+   "route": "IM",
+   "low": 0.05,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "덱스메데토미딘 15–20 mcg/kg + 케타민 5–8 mg/kg 병용"
+  },
+  {
+   "species": "cat",
+   "label": "구토 유발",
+   "route": "SC",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 1
+  },
+  {
+   "form": "injection",
+   "mgml": 2
+  },
+  {
+   "form": "injection",
+   "mgml": 4
+  },
+  {
+   "form": "injection",
+   "mgml": 10
+  }
+ ],
+ "compounding": "IV 수액 혼합 시 25°C 차광 24시간 안정; 디아제팜·케타민과 혼합 금지",
+ "reviewed": null
+}

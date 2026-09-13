@@ -72,6 +72,56 @@
    "unit": "mg/kg",
    "freq": "q24h",
    "note": "총 12개월; 부작용 시 반감"
+  },
+  {
+   "species": "dog",
+   "label": "난치성 VT·SVT·심방조동 부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "polysorbate 80-free 제제(Nexterone); 10분에 걸쳐 IV; 중심정맥·인라인 필터 권장"
+  },
+  {
+   "species": "dog",
+   "label": "난치성 VT·SVT·심방조동 CRI 초기 6시간",
+   "route": "CRI",
+   "low": 0.8,
+   "high": 0.8,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "6시간 후 0.5 mg/kg/h로 감량"
+  },
+  {
+   "species": "dog",
+   "label": "난치성 VT·SVT·심방조동 CRI 유지 (6시간 이후)",
+   "route": "CRI",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg/h",
+   "freq": "cri"
+  },
+  {
+   "species": "dog",
+   "label": "심폐정지 시 볼러스 (연구 범위)",
+   "route": "IV",
+   "low": 3,
+   "high": 12,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "12.5–15 mg/kg IV에서 심근수축력 저하"
+  },
+  {
+   "species": "dog",
+   "label": "심폐정지 시 CRI (연구 범위)",
+   "route": "CRI",
+   "low": 0.05,
+   "high": 18,
+   "unit": "mg/kg/h",
+   "freq": "cri"
   }
  ],
  "strengths": [
@@ -86,6 +136,18 @@
   {
    "form": "tablet",
    "mg": 400
+  },
+  {
+   "form": "injection",
+   "mgml": 1.5
+  },
+  {
+   "form": "injection",
+   "mgml": 1.8
+  },
+  {
+   "form": "injection",
+   "mgml": 50
   }
  ],
  "compounding": "조제 현탁액(5 mg/mL) 냉장 91일 안정 자료 있음 — 차광 보관",

@@ -1,0 +1,63 @@
+{
+ "id": "isoproterenol",
+ "name": "Isoproterenol",
+ "brand": [
+  "Isuprel"
+ ],
+ "class": "베타 아드레날린 작용제; 서맥·방실차단 치료",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "동정지·동서맥·완전 방실차단 (a)",
+   "route": "CRI",
+   "low": 0.04,
+   "high": 0.08,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "희석 후 효과 볼 때까지 주입"
+  },
+  {
+   "species": "dog",
+   "label": "심박출·조직관류 증강 (b)",
+   "route": "CRI",
+   "low": 0.02,
+   "high": 0.5,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "note": "혈압 면밀 감시"
+  },
+  {
+   "species": "cat",
+   "label": "동정지·동서맥·완전 방실차단 (a)",
+   "route": "CRI",
+   "low": 0.04,
+   "high": 0.08,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "희석 후 효과 볼 때까지 주입"
+  },
+  {
+   "species": "cat",
+   "label": "심박출·조직관류 증강 (b)",
+   "route": "CRI",
+   "low": 0.02,
+   "high": 0.5,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "note": "혈압 면밀 감시"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 0.2
+  }
+ ],
+ "compounding": "CRI: 0.2 mg/mL 주사액 1–10 mL를 D5W·NS·LRS 500 mL에 희석(0.4–4 mcg/mL); 직접 IV 시 1 mL를 10 mL로 희석; 중탄산나트륨·aminophylline과 혼합 불가; 단회 사용 후 폐기",
+ "reviewed": null
+}

@@ -53,6 +53,47 @@
    "unit": "mg/kg",
    "freq": "q8h",
    "note": "고양이에서는 효과 낮음"
+  },
+  {
+   "species": "dog",
+   "label": "항히스타민 (알레르기·아나필락시스·수혈반응 등)",
+   "route": "IV/IM/SC",
+   "low": 0.5,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "원문 간격 미기재; IV는 25 mg/분 이하 또는 10–15분 주입(사람 기준)"
+  },
+  {
+   "species": "dog",
+   "label": "멀미 예방·진토",
+   "route": "IM",
+   "low": 2,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "cat",
+   "label": "항히스타민 (알레르기·아나필락시스·수혈반응 등)",
+   "route": "IV/IM/SC",
+   "low": 0.5,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "원문 간격 미기재; IV는 25 mg/분 이하 또는 10–15분 주입(사람 기준)"
+  },
+  {
+   "species": "cat",
+   "label": "멀미 예방·진토",
+   "route": "IM",
+   "low": 2,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "고양이에서는 효과 낮음"
   }
  ],
  "strengths": [
@@ -91,8 +132,12 @@
   {
    "form": "tablet",
    "mg": 50
+  },
+  {
+   "form": "injection",
+   "mgml": 50
   }
  ],
- "compounding": null,
+ "compounding": "amphotericin B·ampicillin·대부분 cephalosporin·dexamethasone·diazepam·furosemide·pantoprazole·phenobarbital과 비호환",
  "reviewed": null
 }

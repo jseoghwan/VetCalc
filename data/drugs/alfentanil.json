@@ -1,0 +1,132 @@
+{
+ "id": "alfentanil",
+ "name": "Alfentanil",
+ "brand": [
+  "Alfenta"
+ ],
+ "class": "초단시간 작용 오피오이드 작용제",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "마취 전 처치",
+   "route": "IV",
+   "low": 5,
+   "high": 10,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "비만 시 제지방 체중 기준"
+  },
+  {
+   "species": "dog",
+   "label": "진통 부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mcg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "진통 CRI",
+   "route": "CRI",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "두개내 질환 수술 중 진통 CRI",
+   "route": "CRI",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mcg/kg/min",
+   "freq": "cri"
+  },
+  {
+   "species": "dog",
+   "label": "마취 유도 (a) propofol 2 mg/kg 병용",
+   "route": "IV",
+   "low": 2.1,
+   "high": 10,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "전처치 후"
+  },
+  {
+   "species": "dog",
+   "label": "마취 유도 (b) midazolam 병용",
+   "route": "IV",
+   "low": 1,
+   "high": 40,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "전처치 후"
+  },
+  {
+   "species": "dog",
+   "label": "마취 유지 CRI (a) propofol 0.4 mg/kg/min 병용",
+   "route": "CRI",
+   "low": 1,
+   "high": 1,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "note": "1 mcg/kg/min 이하; 별도 펌프"
+  },
+  {
+   "species": "dog",
+   "label": "마취 유지 CRI (b) midazolam 병용",
+   "route": "CRI",
+   "low": 4,
+   "high": 5,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "note": "별도 펌프"
+  },
+  {
+   "species": "dog",
+   "label": "마취 보조 볼러스",
+   "route": "IV",
+   "low": 2,
+   "high": 5,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "20분마다 반복"
+  },
+  {
+   "species": "cat",
+   "label": "마취 중 진통 보조 부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 5,
+   "high": 10,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "propofol 유도 후"
+  },
+  {
+   "species": "cat",
+   "label": "마취 중 진통 보조 CRI",
+   "route": "CRI",
+   "low": 0.8,
+   "high": 1,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "propofol과 병용"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 0.5
+  }
+ ],
+ "compounding": "80 mcg/mL 이하 농도로 0.9% NaCl·D5W·D5NS·LRS 희석 호환",
+ "reviewed": null
+}

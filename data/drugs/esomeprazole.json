@@ -29,6 +29,27 @@
    "unit": "mg/kg",
    "freq": "q12h",
    "default": true
+  },
+  {
+   "species": "dog",
+   "label": "위산 분비 억제",
+   "route": "IV",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "서서히 IV(3분 이상)"
+  },
+  {
+   "species": "dog",
+   "label": "마취 중 위식도 역류 예방",
+   "route": "IV",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "3분에 걸쳐 IV; 유도 1–1.5시간 전, cisapride 1 mg/kg IV 병용"
   }
  ],
  "strengths": [
@@ -51,8 +72,16 @@
   {
    "form": "capsule",
    "mg": 49.3
+  },
+  {
+   "form": "vial",
+   "mg": 20
+  },
+  {
+   "form": "vial",
+   "mg": 40
   }
  ],
- "compounding": null,
+ "compounding": "3분 IV 주사 시 0.9% NaCl로만 재용해; 10–30분 점적 시 LRS·D5W 가능; 투여 전후 라인 플러시, 타 약물 혼합 금지",
  "reviewed": null
 }

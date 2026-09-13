@@ -1,0 +1,89 @@
+{
+ "id": "amphotericin-b",
+ "name": "Amphotericin B",
+ "brand": [
+  "Fungizone",
+  "Abelcet",
+  "AmBisome"
+ ],
+ "class": "폴리엔계 항진균제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "전신 진균감염, deoxycholate(conventional)",
+   "route": "IV",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q48h",
+   "default": true,
+   "note": "격일(실제 주 3회); D5W 1:50 희석 후 4–6시간 서서히 IV; 누적 9–12 mg/kg; 수화 유지"
+  },
+  {
+   "species": "dog",
+   "label": "전신 진균감염, 지질복합체 ABLC(Abelcet)",
+   "route": "IV",
+   "low": 1,
+   "high": 3.3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "D5W 1 mg/mL 희석, 2시간 IV; 투여 간격 원문 미기재; 누적 8–12(–30) mg/kg; 신질환 시 지질 제형 권장"
+  },
+  {
+   "species": "dog",
+   "label": "전신 진균감염, 리포솜(AmBisome) (a)",
+   "route": "IV",
+   "low": 3.3,
+   "high": 3.3,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "3일간 (누적 10 mg/kg)"
+  },
+  {
+   "species": "dog",
+   "label": "전신 진균감염, 리포솜(AmBisome) (b)",
+   "route": "IV",
+   "low": 3,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1·2·3·10일 또는 1·2·3·4·10일 투여 (누적 12–15 mg/kg)"
+  },
+  {
+   "species": "cat",
+   "label": "전신 진균감염, deoxycholate(conventional)",
+   "route": "IV",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "q48h",
+   "default": true,
+   "note": "격일(실제 주 3회); D5W 1:50 희석 후 4–6시간 서서히 IV; 누적 6–9 mg/kg(4–16)"
+  },
+  {
+   "species": "cat",
+   "label": "전신 진균감염, 지질 제형",
+   "route": "IV",
+   "low": 1,
+   "high": 3.3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "1–2시간 IV; 투여 간격 원문 미기재; 누적 ≈12 mg/kg"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 5
+  },
+  {
+   "form": "vial",
+   "mg": 50
+  }
+ ],
+ "compounding": "conventional: 50 mg 바이알에 멸균수(정균제 없음) 10 mL → 5 mg/mL, D5W로 1:50(0.1 mg/mL) 희석; 0.9% NaCl·LRS·전해질과 비호환(침전); SC 투여 시 0.45% NaCl/2.5% dextrose 350–500 mL에 희석",
+ "reviewed": null
+}

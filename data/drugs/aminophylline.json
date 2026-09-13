@@ -1,0 +1,41 @@
+{
+ "id": "aminophylline",
+ "name": "Aminophylline",
+ "brand": [],
+ "class": "메틸잔틴계 기관지확장제 (PDE 억제제)",
+ "tags": [
+  "respiratory"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "기관지확장",
+   "route": "IV/IM",
+   "low": 3,
+   "high": 11,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–12h (개는 고용량·q6–8h); IV push 금지, 수 분 이상 서서히; 가능하면 경구 theophylline으로 전환"
+  },
+  {
+   "species": "cat",
+   "label": "기관지확장",
+   "route": "IV/IM",
+   "low": 3,
+   "high": 11,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "고양이는 저용량 q12h; IV push 금지, 수 분 이상 서서히"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 25
+  }
+ ],
+ "compounding": "일반 IV 수액과 호환, 10% fructose·invert sugar와 비호환; amikacin·dobutamine·epinephrine·morphine 등과 혼합 비호환",
+ "reviewed": null
+}

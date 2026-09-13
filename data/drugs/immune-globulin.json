@@ -1,0 +1,61 @@
+{
+ "id": "immune-globulin",
+ "name": "Immune Globulin (Human), Intravenous",
+ "brand": [
+  "Gamunex-C",
+  "Gammagard",
+  "Privigen",
+  "Octagam"
+ ],
+ "class": "사람 정맥 면역글로불린(IVIG); 면역조절제",
+ "tags": [
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "면역매개 질환 (ITP·IMHA 등) 구제 요법",
+   "route": "IV",
+   "low": 500,
+   "high": 1500,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "원문 0.5–1.5 g/kg; 6–12시간에 걸쳐 IV 주입"
+  },
+  {
+   "species": "dog",
+   "label": "면역매개 혈소판감소증 (ITP) 단회 보조",
+   "route": "IV",
+   "low": 500,
+   "high": 500,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "원문 0.5 g/kg (6%); 6–12시간에 걸쳐 IV 주입"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 50
+  },
+  {
+   "form": "injection",
+   "mgml": 100
+  },
+  {
+   "form": "injection",
+   "mgml": 200
+  },
+  {
+   "form": "vial",
+   "mg": 5000
+  },
+  {
+   "form": "vial",
+   "mg": 10000
+  }
+ ],
+ "compounding": "일반적으로 다른 약물과 혼합 금지; 일부 제품(Gammaked, Privigen)은 D5W 희석 가능. 동결건조 제품은 멸균수·D5W·생리식염수로 재구성, 흔들지 말 것(거품)",
+ "reviewed": null
+}

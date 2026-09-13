@@ -1,0 +1,93 @@
+{
+ "id": "gentamicin",
+ "name": "Gentamicin",
+ "brand": [
+  "Gentocin",
+  "Garamycin"
+ ],
+ "class": "아미노글리코사이드 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "감수성 감염 (정상 신기능)",
+   "route": "IV/IM/SC",
+   "low": 9,
+   "high": 14,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "중증·면역저하 시 상한 사용"
+  },
+  {
+   "species": "dog",
+   "label": "감수성 감염 (신기능 저하, ClCr 0.15–0.7)",
+   "route": "IV/IM/SC",
+   "low": 9,
+   "high": 14,
+   "unit": "mg/kg",
+   "freq": "q48h",
+   "note": "ClCr 0.4–0.7 시 원문 q36–48h; ClCr <0.15 사용 비권장"
+  },
+  {
+   "species": "dog",
+   "label": "그레이하운드·사이트하운드 (a)",
+   "route": "IV",
+   "low": 6,
+   "high": 6,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "그레이하운드·사이트하운드 (b)",
+   "route": "IM/SC",
+   "low": 9,
+   "high": 9,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (정상 신기능)",
+   "route": "IV/IM/SC",
+   "low": 5,
+   "high": 8,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (신기능 저하, ClCr 0.15–0.7)",
+   "route": "IV/IM/SC",
+   "low": 5,
+   "high": 8,
+   "unit": "mg/kg",
+   "freq": "q48h",
+   "note": "ClCr 0.4–0.7 시 원문 q36–48h; ClCr <0.15 사용 비권장"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 5
+  },
+  {
+   "form": "injection",
+   "mgml": 10
+  },
+  {
+   "form": "injection",
+   "mgml": 40
+  },
+  {
+   "form": "injection",
+   "mgml": 100
+  }
+ ],
+ "compounding": "베타락탐계와 혼합 금지(in vitro 불활성화)",
+ "reviewed": null
+}

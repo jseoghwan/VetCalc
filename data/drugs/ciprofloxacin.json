@@ -56,6 +56,28 @@
    "high": 30,
    "unit": "mg/kg",
    "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "감수성 감염",
+   "route": "IV",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "서서히 IV(희석 후)"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염",
+   "route": "IV",
+   "low": 20,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "서서히 IV(희석 후)"
   }
  ],
  "strengths": [
@@ -78,8 +100,12 @@
   {
    "form": "tablet",
    "mg": 1000
+  },
+  {
+   "form": "injection",
+   "mgml": 2
   }
  ],
- "compounding": null,
+ "compounding": "IV 전 D5W·NS·LRS로 1–2 mg/mL 희석; 희석액(0.5–2 mg/mL) 실온·냉장 14일 안정",
  "reviewed": null
 }

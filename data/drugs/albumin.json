@@ -1,0 +1,88 @@
+{
+ "id": "albumin",
+ "name": "Albumin (Human / Canine)",
+ "brand": [
+  "Albuked",
+  "Albutein",
+  "Flexbumin",
+  "Plasbumin"
+ ],
+ "class": "천연 단백 콜로이드",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "저알부민혈증 (사람 알부민)",
+   "route": "IV",
+   "low": 500,
+   "high": 1250,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "0.9% NaCl로 10%까지 희석, 수혈 필터로 12시간에 걸쳐 투여; 결핍량 = 10×(목표-현재 알부민)×kg×0.3"
+  },
+  {
+   "species": "dog",
+   "label": "저혈압 서서히 IV push (사람 알부민 25%)",
+   "route": "IV",
+   "low": 500,
+   "high": 1000,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "평균 0.5 g/kg(2 mL/kg), 최대 1 g/kg(4 mL/kg); 시험 용량 후 아나필락시스 감시"
+  },
+  {
+   "species": "dog",
+   "label": "저혈량성 쇼크 (개 알부민 16%)",
+   "route": "IV",
+   "low": 2500,
+   "high": 5000,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "1 mL/min 속도로 총량까지"
+  },
+  {
+   "species": "dog",
+   "label": "저알부민혈증 (개 알부민 5%)",
+   "route": "IV",
+   "low": 800,
+   "high": 800,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "6시간에 걸쳐 IV"
+  },
+  {
+   "species": "dog",
+   "label": "저알부민혈증 (개 알부민 5%) 일일 최대",
+   "route": "CRI",
+   "low": 2000,
+   "high": 2000,
+   "unit": "mg/kg/day",
+   "freq": "cri",
+   "default": true,
+   "note": "임상 상태에 따라 최대 2 g/kg/day"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 50
+  },
+  {
+   "form": "injection",
+   "mgml": 200
+  },
+  {
+   "form": "injection",
+   "mgml": 250
+  },
+  {
+   "form": "vial",
+   "mg": 5000
+  }
+ ],
+ "compounding": "개 알부민 5 g 동결건조: 0.9% NaCl 30 mL → 16%, 100 mL → 5%; 멸균수 사용 금지; 다른 약물·혈액제제와 혼합 금지",
+ "reviewed": null
+}

@@ -1,0 +1,160 @@
+{
+ "id": "buprenorphine",
+ "name": "Buprenorphine",
+ "brand": [
+  "Buprenex",
+  "Simbadol",
+  "Zorbium"
+ ],
+ "class": "오피오이드 부분 작용제 (진통제)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "진통 일반",
+   "route": "IV/IM",
+   "low": 5,
+   "high": 30,
+   "unit": "mcg/kg",
+   "freq": "q4h",
+   "default": true,
+   "note": "원문 q4–6h; 경증 통증은 q8–12h; SC는 흡수 불규칙으로 비권장"
+  },
+  {
+   "species": "dog",
+   "label": "부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 5,
+   "high": 10,
+   "unit": "mcg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "진통 CRI",
+   "route": "CRI",
+   "low": 2,
+   "high": 4,
+   "unit": "mcg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "PK 연구: 부하 15 mcg/kg IV 후 2.5 mcg/kg/h 6시간"
+  },
+  {
+   "species": "dog",
+   "label": "수술 후 진통",
+   "route": "IV/IM",
+   "low": 10,
+   "high": 20,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "필요 시 10 mcg/kg 3–4시간 후 또는 20 mcg/kg q5–6h 반복"
+  },
+  {
+   "species": "dog",
+   "label": "수술 후 진통 (Simbadol 사용)",
+   "route": "IV/IM",
+   "low": 20,
+   "high": 20,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "아세프로마진 0.02 mg/kg IM 병용 전처치"
+  },
+  {
+   "species": "dog",
+   "label": "마취 전 투여 (a)",
+   "route": "IM",
+   "low": 20,
+   "high": 20,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "아세프로마진 또는 덱스메데토미딘과 동일 주사기"
+  },
+  {
+   "species": "dog",
+   "label": "마취 전 투여 (b)",
+   "route": "IM",
+   "low": 40,
+   "high": 40,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "덱스메데토미딘 15 mcg/kg + 케타민 3 mg/kg 병용"
+  },
+  {
+   "species": "cat",
+   "label": "수술 후 통증 (Simbadol 1.8 mg/mL, label)",
+   "route": "SC",
+   "low": 0.24,
+   "high": 0.24,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "최대 3일; 첫 투여는 수술 약 1시간 전; 고농도 제제로 가정 투약 금지"
+  },
+  {
+   "species": "cat",
+   "label": "진통 일반·수술 후",
+   "route": "IV/IM",
+   "low": 10,
+   "high": 30,
+   "unit": "mcg/kg",
+   "freq": "q4h",
+   "default": true,
+   "note": "원문 q4–8h; 심한 통증은 고용량"
+  },
+  {
+   "species": "cat",
+   "label": "부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 5,
+   "high": 10,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "개 용량 준용(고양이 보고 없음)"
+  },
+  {
+   "species": "cat",
+   "label": "진통 CRI",
+   "route": "CRI",
+   "low": 2,
+   "high": 4,
+   "unit": "mcg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "개 용량 준용(고양이 보고 없음)"
+  },
+  {
+   "species": "cat",
+   "label": "마취 전 투여 (a)",
+   "route": "IM",
+   "low": 0.01,
+   "high": 0.03,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "메데토미딘 0.1 mg/kg(또는 덱스메데토미딘 0.05–0.08 mg/kg) + 케타민 10 mg/kg 병용"
+  },
+  {
+   "species": "cat",
+   "label": "마취 전 투여 (b)",
+   "route": "IM",
+   "low": 20,
+   "high": 20,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "아세프로마진 또는 덱스메데토미딘과 동일 주사기"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 0.3
+  },
+  {
+   "form": "injection",
+   "mgml": 1.8
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

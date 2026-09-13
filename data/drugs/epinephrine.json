@@ -1,0 +1,153 @@
+{
+ "id": "epinephrine",
+ "name": "Epinephrine",
+ "brand": [
+  "Adrenalin",
+  "EpiPen"
+ ],
+ "class": "알파·베타 아드레날린 작용제 (승압·심폐소생·아나필락시스)",
+ "tags": [
+  "cardio",
+  "respiratory"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "아나필락시스양 쇼크 (label)",
+   "route": "IM/SC",
+   "low": 0.1,
+   "high": 0.5,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "1 mg/mL 용액 0.1–0.5 mL 총량"
+  },
+  {
+   "species": "dog",
+   "label": "CPR 저용량 (RECOVER)",
+   "route": "IV",
+   "low": 0.01,
+   "high": 0.01,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "3–5분마다(BLS 격주기) 반복"
+  },
+  {
+   "species": "dog",
+   "label": "CPR 고용량 (10분 이상 지속 시)",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "아나필락시스 초기",
+   "route": "IM",
+   "low": 0.01,
+   "high": 0.01,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "1 mg/mL 용액; 최대 0.3 mg(<40 kg)/0.5 mg(>40 kg); 5–15분마다 반복 가능; SC 피함"
+  },
+  {
+   "species": "dog",
+   "label": "아나필락시스 쇼크 CRI",
+   "route": "CRI",
+   "low": 0.05,
+   "high": 0.05,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "note": "서서히 IV 점적, 반응에 따라 조절"
+  },
+  {
+   "species": "dog",
+   "label": "마취 중 저혈압 CRI",
+   "route": "CRI",
+   "low": 0.125,
+   "high": 2,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "다른 처치 실패 시에만"
+  },
+  {
+   "species": "cat",
+   "label": "아나필락시스양 쇼크 (label)",
+   "route": "IM/SC",
+   "low": 0.1,
+   "high": 0.5,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "1 mg/mL 용액 0.1–0.5 mL 총량"
+  },
+  {
+   "species": "cat",
+   "label": "CPR 저용량 (RECOVER)",
+   "route": "IV",
+   "low": 0.01,
+   "high": 0.01,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "3–5분마다(BLS 격주기) 반복"
+  },
+  {
+   "species": "cat",
+   "label": "CPR 고용량 (10분 이상 지속 시)",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "아나필락시스 초기",
+   "route": "IM",
+   "low": 0.01,
+   "high": 0.01,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "1 mg/mL 용액; 최대 0.3 mg(<40 kg); 5–15분마다 반복 가능; SC 피함"
+  },
+  {
+   "species": "cat",
+   "label": "아나필락시스 쇼크 CRI",
+   "route": "CRI",
+   "low": 0.05,
+   "high": 0.05,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "note": "서서히 IV 점적, 반응에 따라 조절"
+  },
+  {
+   "species": "cat",
+   "label": "마취 중 저혈압 CRI",
+   "route": "CRI",
+   "low": 0.125,
+   "high": 2,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "다른 처치 실패 시에만"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 0.1
+  },
+  {
+   "form": "injection",
+   "mgml": 0.5
+  },
+  {
+   "form": "injection",
+   "mgml": 1
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

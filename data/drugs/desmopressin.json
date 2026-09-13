@@ -62,6 +62,86 @@
    "freq": "q8h",
    "default": true,
    "note": "원문 q8–12h; 반응 변동 가능"
+  },
+  {
+   "species": "dog",
+   "label": "중추성 요붕증 (0.1 mg/mL 비강액 사용)",
+   "route": "SC",
+   "low": 0.1,
+   "high": 0.2,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "원문 1일 1–2회"
+  },
+  {
+   "species": "dog",
+   "label": "vWD 1형·VII인자 결핍 수술 전 예방",
+   "route": "IV/SC",
+   "low": 1,
+   "high": 1,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "수술 30분–1시간 전; 지속 ≈2시간; 수혈 준비"
+  },
+  {
+   "species": "dog",
+   "label": "아스피린 유발 응고장애 (a)",
+   "route": "IV",
+   "low": 0.3,
+   "high": 1,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "15–30분에 걸쳐 IV"
+  },
+  {
+   "species": "dog",
+   "label": "아스피린 유발 응고장애 (b)",
+   "route": "SC",
+   "low": 3,
+   "high": 3,
+   "unit": "mcg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "에를리히증 관련 출혈",
+   "route": "SC",
+   "low": 1,
+   "high": 1,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "note": "3일간; 증례보고"
+  },
+  {
+   "species": "dog",
+   "label": "만성 간질환 관련 지혈장애",
+   "route": "SC",
+   "low": 3,
+   "high": 3,
+   "unit": "mcg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "유선종양 수술 보조",
+   "route": "IV",
+   "low": 1,
+   "high": 1,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "생리식염수 희석; 수술 30분 전 및 24시간 후"
+  },
+  {
+   "species": "cat",
+   "label": "중추성 요붕증 (0.1 mg/mL 비강액 사용)",
+   "route": "SC",
+   "low": 0.002,
+   "high": 0.005,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "원문 2–5 µg/cat 1일 1–2회"
   }
  ],
  "strengths": [
@@ -76,8 +156,12 @@
   {
    "form": "tablet",
    "mg": 0.2
+  },
+  {
+   "form": "injection",
+   "mgml": 0.004
   }
  ],
- "compounding": null,
+ "compounding": "SC/IV 용량은 0.1 mg/mL 비강액 제품 기준; IV infusion 시 NS 10–50 mL 희석 후 15–30분 서서히 주입",
  "reviewed": null
 }

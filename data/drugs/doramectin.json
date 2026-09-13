@@ -1,0 +1,43 @@
+{
+ "id": "doramectin",
+ "name": "Doramectin",
+ "brand": [
+  "Dectomax"
+ ],
+ "class": "아버멕틴계 구충제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "전신성 모낭충증 초기 용량",
+   "route": "SC",
+   "low": 300,
+   "high": 300,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "이후 600 mcg/kg SC 주 1회 유지; MDR1 변이견 주의"
+  },
+  {
+   "species": "cat",
+   "label": "노토에드레스 개선충증",
+   "route": "SC",
+   "low": 200,
+   "high": 300,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "단회 또는 주 1회 2–3회"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 10
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -84,6 +84,17 @@
    "high": 5,
    "unit": "mg/animal",
    "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "마취 중 위식도역류·흡인 예방 (조제 주사)",
+   "route": "IV",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "에소메프라졸 1 mg/kg IV 병용, 마취 11.5시간 전; 또는 NS 100–150 mL 희석 후 마취 유도 90분 전부터 주입"
   }
  ],
  "strengths": [],

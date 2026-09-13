@@ -1,0 +1,63 @@
+{
+ "id": "edetate-calcium-disodium",
+ "name": "Edetate Calcium Disodium (CaEDTA)",
+ "brand": [
+  "Calcium Disodium Versenate"
+ ],
+ "class": "중금속 킬레이트제 (납·아연 중독 해독제)",
+ "tags": [
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "납·아연 중독",
+   "route": "SC",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "5% 포도당으로 10 mg/mL 희석; 5일; 1일 2 g/마리 초과 금지"
+  },
+  {
+   "species": "dog",
+   "label": "납 중독 (1일 총량, 4분할 q6h)",
+   "route": "IV",
+   "low": 75,
+   "high": 75,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "5% (50 mg/mL) 용액으로 서서히 IV; 4분할 q6h, 2–5일; 1일 최대 2000 mg"
+  },
+  {
+   "species": "cat",
+   "label": "납·아연 중독",
+   "route": "SC",
+   "low": 27.5,
+   "high": 27.5,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "5% 포도당 15 mL 희석; 5일"
+  },
+  {
+   "species": "cat",
+   "label": "납 중독 (1일 총량, 4분할 q6h)",
+   "route": "IV",
+   "low": 75,
+   "high": 75,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "5% (50 mg/mL) 용액으로 서서히 IV; 4분할 q6h, 2–5일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 200
+  }
+ ],
+ "compounding": "SC 투여 시 보통 5% 포도당으로 1% 용액 희석; Ringer·LRS·amphotericin B·10% 포도당과 비호환",
+ "reviewed": null
+}

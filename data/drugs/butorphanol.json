@@ -32,6 +32,278 @@
    "unit": "mg/kg",
    "freq": "q6h",
    "note": "원문 q6–12h, base 기준"
+  },
+  {
+   "species": "dog",
+   "label": "진해 (label)",
+   "route": "SC",
+   "low": 0.055,
+   "high": 0.055,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 q6–12h; 0.11 mg/kg까지 증량 가능; 보통 7일 이내"
+  },
+  {
+   "species": "dog",
+   "label": "진통",
+   "route": "IV/IM/SC",
+   "low": 0.2,
+   "high": 0.4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "0.1–0.5 mg/kg도 사용; 진통 지속 1시간 미만, 진정 2–4시간"
+  },
+  {
+   "species": "dog",
+   "label": "부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "진통 CRI",
+   "route": "CRI",
+   "low": 0.1,
+   "high": 0.24,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "최대 0.4 mg/kg/h(진정 유발 가능)"
+  },
+  {
+   "species": "dog",
+   "label": "진정 보조 (아세프로마진 병용)",
+   "route": "IV/IM",
+   "low": 0.3,
+   "high": 0.4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "아세프로마진 0.02 mg/kg"
+  },
+  {
+   "species": "dog",
+   "label": "진정 보조 (덱스메데토미딘 병용, 심초음파)",
+   "route": "IM",
+   "low": 0.4,
+   "high": 0.4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "덱스메데토미딘 5–10 mcg/kg; 심혈관 질환 시 주의; 실험적으로 0.15 mg/kg + 덱스메데토미딘 0.01 mg/kg IM도 보고"
+  },
+  {
+   "species": "dog",
+   "label": "진정 보조 (메데토미딘 병용)",
+   "route": "IM",
+   "low": 0.4,
+   "high": 0.4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "메데토미딘 2.5 mcg/kg; 20–30분 진정"
+  },
+  {
+   "species": "dog",
+   "label": "주사 마취 (메데토미딘+알팍살론 병용)",
+   "route": "IM",
+   "low": 0.25,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "메데토미딘 2.5–5 mcg/kg + 알팍살론 1–2.5 mg/kg"
+  },
+  {
+   "species": "dog",
+   "label": "진정 보조 (메데토미딘±미다졸람 병용)",
+   "route": "IM",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "메데토미딘 0.001–0.02 mg/kg ± 미다졸람 0.05–0.2 mg/kg"
+  },
+  {
+   "species": "dog",
+   "label": "진정·유도 보조 (미다졸람±알팍살론 병용)",
+   "route": "IV",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "미다졸람 0.1–0.2 mg/kg IV 후속(±알팍살론 2 mg/kg IV)"
+  },
+  {
+   "species": "dog",
+   "label": "뮤 작용제 오피오이드 부분 역전",
+   "route": "IV",
+   "low": 0.05,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "진통은 완전 역전되지 않음"
+  },
+  {
+   "species": "cat",
+   "label": "진통 (label)",
+   "route": "SC",
+   "low": 0.4,
+   "high": 0.4,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "최대 1일 4회, 2일까지"
+  },
+  {
+   "species": "cat",
+   "label": "진통",
+   "route": "IV/IM/SC",
+   "low": 0.1,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "진통 지속 1–2시간 이하"
+  },
+  {
+   "species": "cat",
+   "label": "부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "수술 후 진통 CRI",
+   "route": "CRI",
+   "low": 0.1,
+   "high": 0.2,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "케타민 CRI 병용 흔함"
+  },
+  {
+   "species": "cat",
+   "label": "덱스메데토미딘 유발 구토 예방",
+   "route": "IM",
+   "low": 0.1,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "덱스메데토미딘과 동시 투여"
+  },
+  {
+   "species": "cat",
+   "label": "진정 보조 (덱스메데토미딘 병용)",
+   "route": "IM",
+   "low": 0.4,
+   "high": 0.4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "덱스메데토미딘 10 mcg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "진정 보조 (미다졸람+케타민 병용)",
+   "route": "IM",
+   "low": 0.4,
+   "high": 0.4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "미다졸람 0.4 mg/kg + 케타민 3 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "진정 (알팍살론 병용, SC)",
+   "route": "SC",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "알팍살론 3 mg/kg 동일 주사기; 갑상선기능항진 고양이 연구"
+  },
+  {
+   "species": "cat",
+   "label": "진정 (알팍살론 병용, IM) (a)",
+   "route": "IM",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "알팍살론 2 mg/kg(빠른 깊은 진정) 또는 5 mg/kg(영상)"
+  },
+  {
+   "species": "cat",
+   "label": "진정 (알팍살론 병용, IM) (b)",
+   "route": "IM",
+   "low": 0.4,
+   "high": 0.4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "알팍살론 2–3 mg/kg; 채혈·헌혈"
+  },
+  {
+   "species": "cat",
+   "label": "진정 (알팍살론 병용, IM) (c)",
+   "route": "IM",
+   "low": 0.3,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "알팍살론 3 mg/kg; 극상근 주사가 더 우수"
+  },
+  {
+   "species": "cat",
+   "label": "주사 마취 유도 (덱스메데토미딘+알팍살론 병용)",
+   "route": "IM",
+   "low": 0.3,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "덱스메데토미딘 25 mcg/kg + 알팍살론 2 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "단기 마취 (덱스메데토미딘+알팍살론 또는 케타민 병용)",
+   "route": "IM",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "덱스메데토미딘 10 mcg/kg + 알팍살론 3 mg/kg 또는 케타민 5 mg/kg; 거세 시 덱스메데토미딘 25 mcg/kg + 케타민 3 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "단기 보정 (덱스메데토미딘±케타민 병용)",
+   "route": "IM",
+   "low": 0.3,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "덱스메데토미딘 5 mcg/kg ± 케타민 3 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "주사 마취 (메데토미딘+알팍살론 병용)",
+   "route": "IM",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "메데토미딘 20 mcg/kg + 알팍살론 5 mg/kg; 진통 약 1시간"
+  },
+  {
+   "species": "cat",
+   "label": "뮤 작용제 오피오이드 부분 역전",
+   "route": "IV",
+   "low": 0.05,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "진통은 완전 역전되지 않음"
   }
  ],
  "strengths": [
@@ -46,6 +318,14 @@
   {
    "form": "tablet",
    "mg": 10
+  },
+  {
+   "form": "injection",
+   "mgml": 2
+  },
+  {
+   "form": "injection",
+   "mgml": 10
   }
  ],
  "compounding": null,

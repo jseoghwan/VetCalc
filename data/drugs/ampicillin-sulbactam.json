@@ -1,0 +1,89 @@
+{
+ "id": "ampicillin-sulbactam",
+ "name": "Ampicillin/Sulbactam",
+ "brand": [
+  "Unasyn"
+ ],
+ "class": "베타락타마제 억제제 병용 아미노페니실린",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "중환자 경험적 항생제",
+   "route": "IV",
+   "low": 22,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–8h; 용량은 ampicillin+sulbactam 합산; 그람음성 보강 항생제 병용"
+  },
+  {
+   "species": "cat",
+   "label": "중환자 경험적 항생제",
+   "route": "IV",
+   "low": 22,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–8h; 용량은 ampicillin+sulbactam 합산; 그람음성 보강 항생제 병용"
+  },
+  {
+   "species": "dog",
+   "label": "amoxicillin/clavulanate 감수성 감염 (경구 불가 시)",
+   "route": "IV/IM/SC",
+   "low": 22,
+   "high": 22,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "cat",
+   "label": "amoxicillin/clavulanate 감수성 감염 (경구 불가 시)",
+   "route": "IV/IM/SC",
+   "low": 22,
+   "high": 22,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "수술 예방적 항생제",
+   "route": "IV",
+   "low": 22,
+   "high": 22,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "절개 ≈1시간 전; 수술 중 2시간마다 재투여 가능"
+  },
+  {
+   "species": "cat",
+   "label": "수술 예방적 항생제",
+   "route": "IV",
+   "low": 22,
+   "high": 22,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "절개 ≈1시간 전; 수술 중 2시간마다 재투여 가능"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "vial",
+   "mg": 1500
+  },
+  {
+   "form": "vial",
+   "mg": 3000
+  },
+  {
+   "form": "vial",
+   "mg": 15000
+  }
+ ],
+ "compounding": "IV: 멸균수 또는 0.9% NaCl로 30 mg/mL 재용해 시 냉장 72시간·실온 8시간 안정, 5–20분 서서히 IV 또는 0.9% NaCl 50–100 mL에 희석해 15–30분; IM: 1.5 g에 3.2 mL(멸균수 또는 0.5–2% lidocaine), 1시간 내 투여",
+ "reviewed": null
+}

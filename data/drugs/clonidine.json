@@ -52,6 +52,48 @@
    "freq": "q12h",
    "default": true,
    "note": "원문 1일 2–3회; PO 또는 SC; 4차 선택"
+  },
+  {
+   "species": "dog",
+   "label": "마취 전 투약",
+   "route": "IV",
+   "low": 6,
+   "high": 10,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "에토미데이트/할로탄 마취 전"
+  },
+  {
+   "species": "dog",
+   "label": "성장호르몬 결핍 진단검사",
+   "route": "IV",
+   "low": 10,
+   "high": 10,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "검사 프로토콜은 실험실 확인"
+  },
+  {
+   "species": "dog",
+   "label": "난치성 IBD 보조 지사",
+   "route": "SC",
+   "low": 5,
+   "high": 10,
+   "unit": "mcg/kg",
+   "freq": "q12h",
+   "note": "원문 1일 2–3회; 구토 유발 가능"
+  },
+  {
+   "species": "cat",
+   "label": "난치성 IBD 보조 지사",
+   "route": "SC",
+   "low": 5,
+   "high": 10,
+   "unit": "mcg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 1일 2–3회; 4차 선택"
   }
  ],
  "strengths": [
@@ -66,8 +108,16 @@
   {
    "form": "tablet",
    "mg": 0.3
+  },
+  {
+   "form": "injection",
+   "mgml": 0.1
+  },
+  {
+   "form": "injection",
+   "mgml": 0.5
   }
  ],
- "compounding": null,
+ "compounding": "500 µg/mL 제제는 희석 후 사용",
  "reviewed": null
 }

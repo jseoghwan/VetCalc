@@ -1,0 +1,76 @@
+{
+ "id": "caspofungin",
+ "name": "Caspofungin",
+ "brand": [
+  "Cancidas"
+ ],
+ "class": "에키노칸딘계 항진균제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "Aspergillus deflectus 감염",
+   "route": "IV",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "0.9% NaCl 250 mL 희석, 1시간 주입; 증례 보고"
+  },
+  {
+   "species": "cat",
+   "label": "비강·안와 아스페르길루스증 (a)",
+   "route": "IV",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "14–22일; 0.9% NaCl 20 mL 희석, 1시간 주입"
+  },
+  {
+   "species": "cat",
+   "label": "비강·안와 아스페르길루스증 (b) 부하 용량",
+   "route": "IV",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "비강·안와 아스페르길루스증 (b) 유지",
+   "route": "IV",
+   "low": 0.75,
+   "high": 0.75,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "부하 1 mg/kg 후; 2–3주; 대안 1 mg/kg q72h"
+  },
+  {
+   "species": "cat",
+   "label": "비강·안와 아스페르길루스증 (b) 유지 대안",
+   "route": "IV",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q72h",
+   "note": "부하 1 mg/kg 후"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "vial",
+   "mg": 50
+  },
+  {
+   "form": "vial",
+   "mg": 70
+  }
+ ],
+ "compounding": "LRS 또는 NaCl 함유 수액에 희석해 서서히 주입; 포도당 함유 수액에서 불안정; 타 약물과 혼합·동시 주입 금지",
+ "reviewed": null
+}

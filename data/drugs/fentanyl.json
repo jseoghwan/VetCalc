@@ -1,0 +1,178 @@
+{
+ "id": "fentanyl",
+ "name": "Fentanyl",
+ "brand": [
+  "Sublimaze"
+ ],
+ "class": "오피오이드 진통제 (마약류)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "수술 전후 진통 부하 용량 (CRI 전) (a)",
+   "route": "IV",
+   "low": 10,
+   "high": 10,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "수술 전후 진통 CRI (a)",
+   "route": "CRI",
+   "low": 10,
+   "high": 10,
+   "unit": "mcg/kg/h",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "수술 전후 진통 부하 용량 (CRI 전) (b)",
+   "route": "IV",
+   "low": 2,
+   "high": 10,
+   "unit": "mcg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "수술 전후 진통 CRI (b)",
+   "route": "CRI",
+   "low": 2,
+   "high": 10,
+   "unit": "mcg/kg/h",
+   "freq": "cri"
+  },
+  {
+   "species": "dog",
+   "label": "단회 볼루스 (CRI 없이)",
+   "route": "IV/IM/SC",
+   "low": 5,
+   "high": 8,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "지속 매우 짧음; 1–2시간 간격 재투여 필요"
+  },
+  {
+   "species": "dog",
+   "label": "응급 중증 통증 적정 볼루스",
+   "route": "IV",
+   "low": 10,
+   "high": 50,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "효과 용량까지 적정 후 해당 용량을 시간당 CRI로"
+  },
+  {
+   "species": "dog",
+   "label": "응급 중증 통증 CRI",
+   "route": "CRI",
+   "low": 10,
+   "high": 50,
+   "unit": "mcg/kg/h",
+   "freq": "cri",
+   "note": "적정된 유효 볼루스 용량을 시간당으로; NSAID 병용"
+  },
+  {
+   "species": "dog",
+   "label": "마취제(단독) 볼루스",
+   "route": "IV/IM/SC",
+   "low": 20,
+   "high": 40,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "다른 심혈관·호흡 억제제 병용 시 감량"
+  },
+  {
+   "species": "dog",
+   "label": "마취 중 MAC 감소·진통 CRI",
+   "route": "CRI",
+   "low": 5,
+   "high": 20,
+   "unit": "mcg/kg/h",
+   "freq": "cri",
+   "note": "개는 최대 40 mcg/kg/h까지"
+  },
+  {
+   "species": "cat",
+   "label": "수술 전후 진통 부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 5,
+   "high": 5,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "수술 전후 진통 CRI",
+   "route": "CRI",
+   "low": 5,
+   "high": 5,
+   "unit": "mcg/kg/h",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "단회 볼루스 (CRI 없이)",
+   "route": "IV/IM/SC",
+   "low": 5,
+   "high": 8,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "지속 매우 짧음; 1–2시간 간격 재투여 필요"
+  },
+  {
+   "species": "cat",
+   "label": "응급 중증 통증 적정 볼루스",
+   "route": "IV",
+   "low": 10,
+   "high": 50,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "효과 용량까지 적정 후 해당 용량을 시간당 CRI로"
+  },
+  {
+   "species": "cat",
+   "label": "응급 중증 통증 CRI",
+   "route": "CRI",
+   "low": 10,
+   "high": 50,
+   "unit": "mcg/kg/h",
+   "freq": "cri",
+   "note": "적정된 유효 볼루스 용량을 시간당으로; NSAID 병용"
+  },
+  {
+   "species": "cat",
+   "label": "마취제(단독) 볼루스",
+   "route": "IV/IM/SC",
+   "low": 20,
+   "high": 40,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "다른 심혈관·호흡 억제제 병용 시 감량"
+  },
+  {
+   "species": "cat",
+   "label": "마취 중 MAC 감소·진통 CRI",
+   "route": "CRI",
+   "low": 5,
+   "high": 20,
+   "unit": "mcg/kg/h",
+   "freq": "cri"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 0.05
+  }
+ ],
+ "compounding": "생리식염수·D5W와 호환",
+ "reviewed": null
+}

@@ -1,0 +1,61 @@
+{
+ "id": "etomidate",
+ "name": "Etomidate",
+ "brand": [
+  "Amidate"
+ ],
+ "class": "주사 마취 유도제",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "마취 유도",
+   "route": "IV",
+   "low": 0.5,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "최대 4 mg/kg 보고; 적절한 전처치 필요(구토·근간대 경련 감소)"
+  },
+  {
+   "species": "dog",
+   "label": "마취 유도 (벤조디아제핀 ± 저용량 케타민 전투여 시)",
+   "route": "IV",
+   "low": 0.25,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유도",
+   "route": "IV",
+   "low": 0.5,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "최대 4 mg/kg 보고; 적절한 전처치 필요(구토·근간대 경련 감소)"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유도 (벤조디아제핀 ± 저용량 케타민 전투여 시)",
+   "route": "IV",
+   "low": 0.25,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 2
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

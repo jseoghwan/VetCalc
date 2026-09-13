@@ -50,6 +50,114 @@
    "unit": "mg/kg",
    "freq": "q8h",
    "note": "IV 볼루스 후, 3일"
+  },
+  {
+   "species": "dog",
+   "label": "군발발작·간질중첩증 볼러스",
+   "route": "IV",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "10분마다 최대 3회 반복 가능"
+  },
+  {
+   "species": "dog",
+   "label": "군발발작·간질중첩증 CRI",
+   "route": "CRI",
+   "low": 0.1,
+   "high": 2,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "용액 내 결정화·PVC 튜브 흡착 주의"
+  },
+  {
+   "species": "dog",
+   "label": "골격근 경련 단기 관리",
+   "route": "IV",
+   "low": 0.5,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "메트로니다졸 중독 보조 (초기 볼러스)",
+   "route": "IV",
+   "low": 0.43,
+   "high": 0.43,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "이후 0.43 mg/kg PO q8h 3일"
+  },
+  {
+   "species": "dog",
+   "label": "스트리크닌 중독 (a)",
+   "route": "IV",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "서서히 IV"
+  },
+  {
+   "species": "dog",
+   "label": "스트리크닌 중독 (b) IV 후 이어서",
+   "route": "IM",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "마취 전 투약 (다른 진정제와 병용)",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "타국 제품 승인 용량 0.2–0.6 mg/kg"
+  },
+  {
+   "species": "dog",
+   "label": "마취 유도제와 병용",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "마취 전 투약 (다른 진정제와 병용)",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "UK 제품 승인 용량 0.2–0.6 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "채혈 보정 (케타민 10 mg/cat 병용)",
+   "route": "IV",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/animal",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유도제와 병용",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true
   }
  ],
  "strengths": [
@@ -64,8 +172,12 @@
   {
    "form": "tablet",
    "mg": 10
+  },
+  {
+   "form": "injection",
+   "mgml": 5
   }
  ],
- "compounding": null,
+ "compounding": "제조사는 다른 약물·수액과 혼합 및 희석 주입을 권장하지 않음(결정 형성 가능); 케타민과 동일 주사기 혼합 시 침전 가능",
  "reviewed": null
 }

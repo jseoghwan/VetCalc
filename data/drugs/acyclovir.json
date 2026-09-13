@@ -19,6 +19,17 @@
    "freq": "q6h",
    "default": true,
    "note": "5일"
+  },
+  {
+   "species": "dog",
+   "label": "파보바이러스 예방 (강아지, 실험적)",
+   "route": "IV",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "5일간"
   }
  ],
  "strengths": [
@@ -33,8 +44,16 @@
   {
    "form": "tablet",
    "mg": 800
+  },
+  {
+   "form": "injection",
+   "mgml": 50
+  },
+  {
+   "form": "vial",
+   "mg": 500
   }
  ],
- "compounding": null,
+ "compounding": "재용해 시 파라벤 함유 정균수 사용 금지; ≤7 mg/mL로 희석 시 25°C 24시간 안정",
  "reviewed": null
 }

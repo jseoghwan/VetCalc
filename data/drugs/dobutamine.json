@@ -1,0 +1,102 @@
+{
+ "id": "dobutamine",
+ "name": "Dobutamine",
+ "brand": [
+  "Dobutrex"
+ ],
+ "class": "베타 아드레날린성 강심제",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "저심박출·급성 심부전 단기 치료",
+   "route": "CRI",
+   "low": 2,
+   "high": 15,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "저용량에서 시작해 증량; 문헌상 1–5에서 최대 40 mcg/kg/min"
+  },
+  {
+   "species": "dog",
+   "label": "MMVD 심부전 stage C 급성 관리",
+   "route": "CRI",
+   "low": 2.5,
+   "high": 10,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "note": "2.5에서 시작, 필요 시 10까지 증량"
+  },
+  {
+   "species": "dog",
+   "label": "MMVD 심부전 stage D 급성 관리",
+   "route": "CRI",
+   "low": 1,
+   "high": 15,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "note": "1에서 시작, 15–30분마다 증량, 최대 ≈10–15; 12–48시간 사용"
+  },
+  {
+   "species": "dog",
+   "label": "전신마취 중 저혈압 (a) propofol",
+   "route": "CRI",
+   "low": 5,
+   "high": 5,
+   "unit": "mcg/kg/min",
+   "freq": "cri"
+  },
+  {
+   "species": "dog",
+   "label": "전신마취 중 저혈압 (b) isoflurane",
+   "route": "CRI",
+   "low": 2,
+   "high": 12,
+   "unit": "mcg/kg/min",
+   "freq": "cri"
+  },
+  {
+   "species": "cat",
+   "label": "저심박출·급성 심부전 단기 치료",
+   "route": "CRI",
+   "low": 1,
+   "high": 5,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "5 mcg/kg/min 초과 시 발작 보고"
+  },
+  {
+   "species": "cat",
+   "label": "전신마취 중 저혈압",
+   "route": "CRI",
+   "low": 2,
+   "high": 20,
+   "unit": "mcg/kg/min",
+   "freq": "cri"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 1
+  },
+  {
+   "form": "injection",
+   "mgml": 2
+  },
+  {
+   "form": "injection",
+   "mgml": 4
+  },
+  {
+   "form": "injection",
+   "mgml": 12.5
+  }
+ ],
+ "compounding": "5 mg/mL 이하로 희석 후 투여(D5W·0.9% NaCl·LRS 호환); 6×체중(kg) mg을 0.9% NaCl 총 100 mL로 만들면 1 mL/h = 1 mcg/kg/min",
+ "reviewed": null
+}

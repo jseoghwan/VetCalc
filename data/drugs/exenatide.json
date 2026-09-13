@@ -1,0 +1,33 @@
+{
+ "id": "exenatide",
+ "name": "Exenatide",
+ "brand": [
+  "Byetta",
+  "Bydureon"
+ ],
+ "class": "GLP-1 수용체 작용제 (당뇨 보조)",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "cat",
+   "label": "당뇨 보조 (속효성 IR)",
+   "route": "SC",
+   "low": 1,
+   "high": 1,
+   "unit": "mcg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "글라진 인슐린·저탄수화물 식이 병용; 급여 전 투여; 인슐린 주사 부위와 2.5 cm 이상 떨어뜨림; IR/ER 비호환"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 0.25
+  }
+ ],
+ "compounding": "IR 제제는 인슐린과 혼합 금지; IR 희석은 역가·안정성 미확인으로 비권장",
+ "reviewed": null
+}

@@ -21,9 +21,72 @@
    "freq": "q12h",
    "default": true,
    "note": "미국 내 경구 제형 단종"
+  },
+  {
+   "species": "dog",
+   "label": "마취 중 저혈압 (a)",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "희석 후 목표 혈압까지 소량씩 증량 볼루스; 지속 15–60분"
+  },
+  {
+   "species": "dog",
+   "label": "마취 중 저혈압 (b) CRI",
+   "route": "CRI",
+   "low": 5,
+   "high": 10,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "마취 중 저혈압 (a)",
+   "route": "IV",
+   "low": 0.15,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "전해질액·생리식염수 5 mL에 희석 후 소량씩 증량 볼루스"
+  },
+  {
+   "species": "cat",
+   "label": "마취 중 저혈압 (b) CRI",
+   "route": "CRI",
+   "low": 5,
+   "high": 10,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true
   }
  ],
- "strengths": [],
- "compounding": null,
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 4.7
+  },
+  {
+   "form": "injection",
+   "mgml": 5
+  },
+  {
+   "form": "injection",
+   "mgml": 9.4
+  },
+  {
+   "form": "injection",
+   "mgml": 47
+  },
+  {
+   "form": "injection",
+   "mgml": 50
+  }
+ ],
+ "compounding": "50 mg/mL 제제는 D5W·0.9% NaCl·LRS로 1:10 희석 가능; 5 mg/mL 프리믹스 제제는 희석 금지",
  "reviewed": null
 }

@@ -32,6 +32,28 @@
    "unit": "mg/kg",
    "freq": "q12h",
    "note": "반 정 단위로 내림"
+  },
+  {
+   "species": "dog",
+   "label": "수술 후 통증 (label)",
+   "route": "SC",
+   "low": 4.4,
+   "high": 4.4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "수술 약 2시간 전 투여"
+  },
+  {
+   "species": "cat",
+   "label": "수술 후 통증",
+   "route": "IV/SC",
+   "low": 4,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "마취 유도 시 수술 전 투여 권장; 고양이는 extra-label, 지속 투여 극히 주의"
   }
  ],
  "strengths": [
@@ -58,6 +80,10 @@
   {
    "form": "tablet",
    "mg": 100
+  },
+  {
+   "form": "injection",
+   "mgml": 50
   }
  ],
  "compounding": "조제 현탁액(5 mg/mL) 21일 안정, 차광 보관 필요",

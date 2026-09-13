@@ -50,6 +50,37 @@
    "unit": "mg/kg",
    "freq": "q12h",
    "default": true
+  },
+  {
+   "species": "dog",
+   "label": "악성고열·스트레스증후군 급성 발작",
+   "route": "IV",
+   "low": 0.2,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "홉(hops) 섭취 관련 MH 유사 증후군",
+   "route": "IV",
+   "low": 2,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "섭취 후 가능한 빨리"
+  },
+  {
+   "species": "cat",
+   "label": "기능성 요도폐색 (외요도 긴장 증가)",
+   "route": "IV",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "prazosin 병용 가능"
   }
  ],
  "strengths": [
@@ -64,8 +95,16 @@
   {
    "form": "capsule",
    "mg": 100
+  },
+  {
+   "form": "vial",
+   "mg": 20
+  },
+  {
+   "form": "vial",
+   "mg": 250
   }
  ],
- "compounding": null,
+ "compounding": "주사용 분말은 NS·D5W와 비호환",
  "reviewed": null
 }

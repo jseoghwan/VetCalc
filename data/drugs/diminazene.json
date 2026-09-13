@@ -1,0 +1,27 @@
+{
+ "id": "diminazene",
+ "name": "Diminazene",
+ "brand": [
+  "Berenil RTU"
+ ],
+ "class": "항원충제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "바베시아 감염",
+   "route": "IM",
+   "low": 3.5,
+   "high": 3.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "효능 가변적·독성 예측 어려움(CNS 증상)"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

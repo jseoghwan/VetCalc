@@ -94,6 +94,32 @@
    ]
   },
   {
+   "id": "aglepristone",
+   "name": "Aglepristone",
+   "brand": [
+    "Alizin",
+    "Alizine"
+   ],
+   "class": "프로게스테론 수용체 길항제",
+   "tags": [
+    "endocrine"
+   ]
+  },
+  {
+   "id": "albumin",
+   "name": "Albumin (Human / Canine)",
+   "brand": [
+    "Albuked",
+    "Albutein",
+    "Flexbumin",
+    "Plasbumin"
+   ],
+   "class": "천연 단백 콜로이드",
+   "tags": [
+    "cardio"
+   ]
+  },
+  {
    "id": "albuterol",
    "name": "Albuterol",
    "brand": [
@@ -115,6 +141,28 @@
    "class": "비스포스포네이트 (골흡수 억제제)",
    "tags": [
     "endocrine"
+   ]
+  },
+  {
+   "id": "alfaxalone",
+   "name": "Alfaxalone",
+   "brand": [
+    "Alfaxan"
+   ],
+   "class": "정맥 마취제 (신경스테로이드)",
+   "tags": [
+    "analgesic"
+   ]
+  },
+  {
+   "id": "alfentanil",
+   "name": "Alfentanil",
+   "brand": [
+    "Alfenta"
+   ],
+   "class": "초단시간 작용 오피오이드 작용제",
+   "tags": [
+    "analgesic"
    ]
   },
   {
@@ -177,6 +225,18 @@
    ]
   },
   {
+   "id": "amikacin",
+   "name": "Amikacin",
+   "brand": [
+    "Amikin",
+    "Amiglyde-V"
+   ],
+   "class": "아미노글리코사이드 항생제",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
    "id": "aminocaproic-acid",
    "name": "Aminocaproic Acid",
    "brand": [
@@ -185,6 +245,15 @@
    "class": "항섬유소용해제 (지혈제)",
    "tags": [
     "antithrombotic"
+   ]
+  },
+  {
+   "id": "aminophylline",
+   "name": "Aminophylline",
+   "brand": [],
+   "class": "메틸잔틴계 기관지확장제 (PDE 억제제)",
+   "tags": [
+    "respiratory"
    ]
   },
   {
@@ -235,6 +304,18 @@
    ]
   },
   {
+   "id": "amoxicillin-clavulanate",
+   "name": "Amoxicillin/Clavulanate",
+   "brand": [
+    "Clavamox",
+    "Augmentin"
+   ],
+   "class": "β-lactam 항생제 (potentiated aminopenicillin)",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
    "id": "amoxicillin",
    "name": "Amoxicillin",
    "brand": [
@@ -249,13 +330,38 @@
    ]
   },
   {
-   "id": "amoxicillin-clavulanate",
-   "name": "Amoxicillin/Clavulanate",
+   "id": "amphotericin-b",
+   "name": "Amphotericin B",
    "brand": [
-    "Clavamox",
-    "Augmentin"
+    "Fungizone",
+    "Abelcet",
+    "AmBisome"
    ],
-   "class": "β-lactam 항생제 (potentiated aminopenicillin)",
+   "class": "폴리엔계 항진균제",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
+   "id": "ampicillin-sulbactam",
+   "name": "Ampicillin/Sulbactam",
+   "brand": [
+    "Unasyn"
+   ],
+   "class": "베타락타마제 억제제 병용 아미노페니실린",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
+   "id": "ampicillin",
+   "name": "Ampicillin",
+   "brand": [
+    "Polyflex",
+    "Omnipen",
+    "Princillin"
+   ],
+   "class": "아미노페니실린 항생제",
    "tags": [
     "antimicrobial"
    ]
@@ -319,6 +425,18 @@
    ]
   },
   {
+   "id": "atipamezole",
+   "name": "Atipamezole",
+   "brand": [
+    "Antisedan",
+    "Revertidine"
+   ],
+   "class": "α2 아드레날린 길항제 (진정 역전)",
+   "tags": [
+    "analgesic"
+   ]
+  },
+  {
    "id": "atovaquone",
    "name": "Atovaquone",
    "brand": [
@@ -328,6 +446,26 @@
    "class": "항원충제 (hydroxynaphthoquinone)",
    "tags": [
     "antimicrobial"
+   ]
+  },
+  {
+   "id": "atracurium",
+   "name": "Atracurium",
+   "brand": [
+    "Tracrium"
+   ],
+   "class": "비탈분극성 신경근 차단제",
+   "tags": [
+    "analgesic"
+   ]
+  },
+  {
+   "id": "atropine",
+   "name": "Atropine",
+   "brand": [],
+   "class": "항콜린제·해독제",
+   "tags": [
+    "cardio"
    ]
   },
   {
@@ -376,6 +514,18 @@
    "tags": [
     "cardio",
     "renal"
+   ]
+  },
+  {
+   "id": "betamethasone",
+   "name": "Betamethasone (Systemic)",
+   "brand": [
+    "BetaVet",
+    "Celestone Soluspan"
+   ],
+   "class": "장기 작용 글루코코르티코이드",
+   "tags": [
+    "immuno"
    ]
   },
   {
@@ -447,6 +597,19 @@
    "tags": [
     "gi",
     "immuno"
+   ]
+  },
+  {
+   "id": "buprenorphine",
+   "name": "Buprenorphine",
+   "brand": [
+    "Buprenex",
+    "Simbadol",
+    "Zorbium"
+   ],
+   "class": "오피오이드 부분 작용제 (진통제)",
+   "tags": [
+    "analgesic"
    ]
   },
   {
@@ -535,6 +698,16 @@
    ]
   },
   {
+   "id": "calcium",
+   "name": "Calcium, IV (Gluconate / Chloride / Borogluconate)",
+   "brand": [],
+   "class": "칼슘 보충제 (주사)",
+   "tags": [
+    "endocrine",
+    "cardio"
+   ]
+  },
+  {
    "id": "cannabidiol",
    "name": "Cannabidiol",
    "brand": [
@@ -607,6 +780,17 @@
    ]
   },
   {
+   "id": "caspofungin",
+   "name": "Caspofungin",
+   "brand": [
+    "Cancidas"
+   ],
+   "class": "에키노칸딘계 항진균제",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
    "id": "cefaclor",
    "name": "Cefaclor",
    "brand": [
@@ -631,12 +815,69 @@
    ]
   },
   {
+   "id": "cefazolin",
+   "name": "Cefazolin",
+   "brand": [
+    "Ancef",
+    "Kefzol",
+    "Zolicef"
+   ],
+   "class": "1세대 세팔로스포린 항생제",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
+   "id": "cefepime",
+   "name": "Cefepime",
+   "brand": [
+    "Maxipime"
+   ],
+   "class": "4세대 세팔로스포린 항생제",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
    "id": "cefixime",
    "name": "Cefixime",
    "brand": [
     "Suprax"
    ],
    "class": "3세대 세팔로스포린 (경구)",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
+   "id": "cefotaxime",
+   "name": "Cefotaxime",
+   "brand": [
+    "Claforan"
+   ],
+   "class": "3세대 세팔로스포린 항생제",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
+   "id": "cefotetan",
+   "name": "Cefotetan",
+   "brand": [
+    "Cefotan"
+   ],
+   "class": "2세대 세팔로스포린(세파마이신) 항생제",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
+   "id": "cefovecin",
+   "name": "Cefovecin",
+   "brand": [
+    "Convenia"
+   ],
+   "class": "3세대 세팔로스포린 항생제 (장기 지속형)",
    "tags": [
     "antimicrobial"
    ]
@@ -650,6 +891,43 @@
     "Cefpoderm"
    ],
    "class": "3세대 세팔로스포린 (경구)",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
+   "id": "ceftazidime",
+   "name": "Ceftazidime",
+   "brand": [
+    "Ceptaz",
+    "Fortaz",
+    "Tazicef"
+   ],
+   "class": "3세대 세팔로스포린 항생제 (항녹농균)",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
+   "id": "ceftiofur-sodium",
+   "name": "Ceftiofur Sodium",
+   "brand": [
+    "Naxcel",
+    "Ceftiflex"
+   ],
+   "class": "3세대 세팔로스포린 항생제",
+   "tags": [
+    "antimicrobial",
+    "urinary"
+   ]
+  },
+  {
+   "id": "ceftriaxone",
+   "name": "Ceftriaxone",
+   "brand": [
+    "Rocephin"
+   ],
+   "class": "3세대 세팔로스포린 항생제",
    "tags": [
     "antimicrobial"
    ]
@@ -733,6 +1011,18 @@
    "class": "1세대 항히스타민제",
    "tags": [
     "respiratory"
+   ]
+  },
+  {
+   "id": "chlorpromazine",
+   "name": "Chlorpromazine",
+   "brand": [
+    "Thorazine"
+   ],
+   "class": "페노티아진계 진정·진토제",
+   "tags": [
+    "gi",
+    "behavior"
    ]
   },
   {
@@ -874,6 +1164,18 @@
    ]
   },
   {
+   "id": "cloprostenol",
+   "name": "Cloprostenol",
+   "brand": [
+    "Estrumate",
+    "estroPLAN"
+   ],
+   "class": "프로스타글란딘 F2α 유사체",
+   "tags": [
+    "endocrine"
+   ]
+  },
+  {
    "id": "clorazepate",
    "name": "Clorazepate",
    "brand": [
@@ -932,6 +1234,17 @@
    ]
   },
   {
+   "id": "cosyntropin",
+   "name": "Cosyntropin",
+   "brand": [
+    "Cortrosyn"
+   ],
+   "class": "호르몬 진단제 (ACTH 자극검사)",
+   "tags": [
+    "endocrine"
+   ]
+  },
+  {
    "id": "crofelemer",
    "name": "Crofelemer",
    "brand": [
@@ -941,6 +1254,18 @@
    "class": "지사제",
    "tags": [
     "gi"
+   ]
+  },
+  {
+   "id": "cyclophosphamide",
+   "name": "Cyclophosphamide",
+   "brand": [
+    "Cytoxan",
+    "Neosar"
+   ],
+   "class": "항암제 (알킬화제)",
+   "tags": [
+    "immuno"
    ]
   },
   {
@@ -1001,6 +1326,17 @@
    "class": "항원충제 (coccidiostat)",
    "tags": [
     "antimicrobial"
+   ]
+  },
+  {
+   "id": "deferoxamine",
+   "name": "Deferoxamine",
+   "brand": [
+    "Desferal"
+   ],
+   "class": "철 킬레이트제 (철 중독 해독)",
+   "tags": [
+    "gi"
    ]
   },
   {
@@ -1149,6 +1485,39 @@
    ]
   },
   {
+   "id": "dimercaprol",
+   "name": "Dimercaprol (BAL)",
+   "brand": [
+    "BAL in Oil"
+   ],
+   "class": "중금속 킬레이트제",
+   "tags": [
+    "renal"
+   ]
+  },
+  {
+   "id": "diminazene",
+   "name": "Diminazene",
+   "brand": [
+    "Berenil RTU"
+   ],
+   "class": "항원충제",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
+   "id": "dinoprost",
+   "name": "Dinoprost",
+   "brand": [
+    "Lutalyse"
+   ],
+   "class": "프로스타글란딘 F2α (임신중절·자궁축농증)",
+   "tags": [
+    "endocrine"
+   ]
+  },
+  {
    "id": "diphenhydramine",
    "name": "Diphenhydramine",
    "brand": [
@@ -1173,6 +1542,28 @@
    "tags": [
     "gi",
     "respiratory"
+   ]
+  },
+  {
+   "id": "dipyrone",
+   "name": "Dipyrone",
+   "brand": [
+    "Zimeta"
+   ],
+   "class": "NSAID 계열 진통·해열제 (metamizole)",
+   "tags": [
+    "analgesic"
+   ]
+  },
+  {
+   "id": "dobutamine",
+   "name": "Dobutamine",
+   "brand": [
+    "Dobutrex"
+   ],
+   "class": "베타 아드레날린성 강심제",
+   "tags": [
+    "cardio"
    ]
   },
   {
@@ -1212,6 +1603,40 @@
    ]
   },
   {
+   "id": "dopamine",
+   "name": "Dopamine",
+   "brand": [
+    "Intropin"
+   ],
+   "class": "아드레날린성·도파민성 강심·승압제",
+   "tags": [
+    "cardio"
+   ]
+  },
+  {
+   "id": "doramectin",
+   "name": "Doramectin",
+   "brand": [
+    "Dectomax"
+   ],
+   "class": "아버멕틴계 구충제",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
+   "id": "doxapram",
+   "name": "Doxapram",
+   "brand": [
+    "Dopram-V",
+    "Respiram"
+   ],
+   "class": "중추신경·호흡 자극제",
+   "tags": [
+    "respiratory"
+   ]
+  },
+  {
    "id": "doxepin",
    "name": "Doxepin",
    "brand": [
@@ -1238,6 +1663,29 @@
    ]
   },
   {
+   "id": "edetate-calcium-disodium",
+   "name": "Edetate Calcium Disodium (CaEDTA)",
+   "brand": [
+    "Calcium Disodium Versenate"
+   ],
+   "class": "중금속 킬레이트제 (납·아연 중독 해독제)",
+   "tags": [
+    "renal"
+   ]
+  },
+  {
+   "id": "edrophonium",
+   "name": "Edrophonium",
+   "brand": [
+    "Tensilon",
+    "Enlon"
+   ],
+   "class": "항콜린에스테라제 (중증근무력증 진단·근이완 역전)",
+   "tags": [
+    "immuno"
+   ]
+  },
+  {
    "id": "enalapril",
    "name": "Enalapril",
    "brand": [
@@ -1248,6 +1696,17 @@
    "tags": [
     "cardio",
     "renal"
+   ]
+  },
+  {
+   "id": "enoxaparin",
+   "name": "Enoxaparin",
+   "brand": [
+    "Lovenox"
+   ],
+   "class": "저분자량 헤파린 항응고제",
+   "tags": [
+    "antithrombotic"
    ]
   },
   {
@@ -1276,6 +1735,19 @@
    ]
   },
   {
+   "id": "epinephrine",
+   "name": "Epinephrine",
+   "brand": [
+    "Adrenalin",
+    "EpiPen"
+   ],
+   "class": "알파·베타 아드레날린 작용제 (승압·심폐소생·아나필락시스)",
+   "tags": [
+    "cardio",
+    "respiratory"
+   ]
+  },
+  {
    "id": "epsiprantel",
    "name": "Epsiprantel",
    "brand": [
@@ -1285,6 +1757,17 @@
    "tags": [
     "antimicrobial",
     "gi"
+   ]
+  },
+  {
+   "id": "ertapenem",
+   "name": "Ertapenem",
+   "brand": [
+    "Invanz"
+   ],
+   "class": "카바페넴계 항생제",
+   "tags": [
+    "antimicrobial"
    ]
   },
   {
@@ -1300,6 +1783,17 @@
    "tags": [
     "antimicrobial",
     "gi"
+   ]
+  },
+  {
+   "id": "esmolol",
+   "name": "Esmolol",
+   "brand": [
+    "Brevibloc"
+   ],
+   "class": "초단시간 작용 베타1 차단제 (심실성 부정맥)",
+   "tags": [
+    "cardio"
    ]
   },
   {
@@ -1346,6 +1840,29 @@
    "class": "비스테로이드성 소염진통제 (NSAID)",
    "tags": [
     "analgesic"
+   ]
+  },
+  {
+   "id": "etomidate",
+   "name": "Etomidate",
+   "brand": [
+    "Amidate"
+   ],
+   "class": "주사 마취 유도제",
+   "tags": [
+    "analgesic"
+   ]
+  },
+  {
+   "id": "exenatide",
+   "name": "Exenatide",
+   "brand": [
+    "Byetta",
+    "Bydureon"
+   ],
+   "class": "GLP-1 수용체 작용제 (당뇨 보조)",
+   "tags": [
+    "endocrine"
    ]
   },
   {
@@ -1410,6 +1927,29 @@
    ]
   },
   {
+   "id": "fenoldopam",
+   "name": "Fenoldopam",
+   "brand": [
+    "Corlopam"
+   ],
+   "class": "도파민 D1 작용제; 항고혈압제 (급성 신손상 보조)",
+   "tags": [
+    "renal",
+    "cardio"
+   ]
+  },
+  {
+   "id": "fentanyl",
+   "name": "Fentanyl",
+   "brand": [
+    "Sublimaze"
+   ],
+   "class": "오피오이드 진통제 (마약류)",
+   "tags": [
+    "analgesic"
+   ]
+  },
+  {
    "id": "ferrous-sulfate",
    "name": "Ferrous Sulfate",
    "brand": [
@@ -1430,6 +1970,17 @@
    "class": "2세대 항히스타민제",
    "tags": [
     "respiratory"
+   ]
+  },
+  {
+   "id": "filgrastim",
+   "name": "Filgrastim (G-CSF)",
+   "brand": [
+    "Neupogen"
+   ],
+   "class": "과립구 집락 자극인자 (호중구감소증 보조)",
+   "tags": [
+    "immuno"
    ]
   },
   {
@@ -1491,6 +2042,18 @@
    ]
   },
   {
+   "id": "flumazenil",
+   "name": "Flumazenil",
+   "brand": [
+    "Romazicon"
+   ],
+   "class": "벤조디아제핀 길항제",
+   "tags": [
+    "anticonvulsant",
+    "behavior"
+   ]
+  },
+  {
    "id": "flumethasone",
    "name": "Flumethasone",
    "brand": [
@@ -1546,6 +2109,18 @@
    ]
   },
   {
+   "id": "fomepizole",
+   "name": "Fomepizole",
+   "brand": [
+    "Antizol",
+    "Antizol-Vet"
+   ],
+   "class": "에틸렌글리콜 중독 해독제",
+   "tags": [
+    "renal"
+   ]
+  },
+  {
    "id": "fosfomycin",
    "name": "Fosfomycin",
    "brand": [
@@ -1595,6 +2170,18 @@
    ]
   },
   {
+   "id": "gentamicin",
+   "name": "Gentamicin",
+   "brand": [
+    "Gentocin",
+    "Garamycin"
+   ],
+   "class": "아미노글리코사이드 항생제",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
    "id": "glipizide",
    "name": "Glipizide",
    "brand": [
@@ -1626,6 +2213,32 @@
    "class": "삼투압제 (경구)",
    "tags": [
     "renal"
+   ]
+  },
+  {
+   "id": "glycopyrrolate",
+   "name": "Glycopyrrolate",
+   "brand": [
+    "Robinul"
+   ],
+   "class": "항콜린제(항무스카린제)",
+   "tags": [
+    "cardio",
+    "respiratory"
+   ]
+  },
+  {
+   "id": "gonadorelin",
+   "name": "Gonadorelin",
+   "brand": [
+    "Cystorelin",
+    "Fertagyl",
+    "Factrel",
+    "GONABreed"
+   ],
+   "class": "성선자극호르몬 방출호르몬(GnRH)",
+   "tags": [
+    "endocrine"
    ]
   },
   {
@@ -1716,6 +2329,17 @@
    ]
   },
   {
+   "id": "hydromorphone",
+   "name": "Hydromorphone",
+   "brand": [
+    "Dilaudid"
+   ],
+   "class": "오피오이드 작용제 진통제",
+   "tags": [
+    "analgesic"
+   ]
+  },
+  {
    "id": "hydroxychloroquine",
    "name": "Hydroxychloroquine",
    "brand": [
@@ -1801,6 +2425,28 @@
    ]
   },
   {
+   "id": "imidocarb",
+   "name": "Imidocarb",
+   "brand": [
+    "Imizol"
+   ],
+   "class": "항원충제(바베시아·사이타욱스준)",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
+   "id": "imipenem-cilastatin-sodium",
+   "name": "Imipenem/Cilastatin Sodium",
+   "brand": [
+    "Primaxin"
+   ],
+   "class": "카바페넴계 항생제",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
    "id": "imipramine",
    "name": "Imipramine",
    "brand": [
@@ -1810,6 +2456,20 @@
    "tags": [
     "behavior",
     "urinary"
+   ]
+  },
+  {
+   "id": "immune-globulin",
+   "name": "Immune Globulin (Human), Intravenous",
+   "brand": [
+    "Gamunex-C",
+    "Gammagard",
+    "Privigen",
+    "Octagam"
+   ],
+   "class": "사람 정맥 면역글로불린(IVIG); 면역조절제",
+   "tags": [
+    "immuno"
    ]
   },
   {
@@ -1826,6 +2486,17 @@
    ]
   },
   {
+   "id": "iohexol",
+   "name": "Iohexol",
+   "brand": [
+    "Omnipaque"
+   ],
+   "class": "비이온성 요오드계 조영제; GFR 측정",
+   "tags": [
+    "renal"
+   ]
+  },
+  {
    "id": "irbesartan",
    "name": "Irbesartan",
    "brand": [
@@ -1834,6 +2505,18 @@
    "class": "안지오텐신 II 수용체 차단제 (ARB)",
    "tags": [
     "cardio",
+    "renal"
+   ]
+  },
+  {
+   "id": "iron-dextran",
+   "name": "Iron Dextran",
+   "brand": [
+    "Uniferon",
+    "InFeD"
+   ],
+   "class": "철분 주사제; 조혈제",
+   "tags": [
     "renal"
    ]
   },
@@ -1847,6 +2530,17 @@
    "class": "항결핵제 (antimycobacterial)",
    "tags": [
     "antimicrobial"
+   ]
+  },
+  {
+   "id": "isoproterenol",
+   "name": "Isoproterenol",
+   "brand": [
+    "Isuprel"
+   ],
+   "class": "베타 아드레날린 작용제; 서맥·방실차단 치료",
+   "tags": [
+    "cardio"
    ]
   },
   {
@@ -1888,6 +2582,20 @@
    ]
   },
   {
+   "id": "ketamine",
+   "name": "Ketamine",
+   "brand": [
+    "Ketaset",
+    "Ketalar",
+    "Ketaject",
+    "VetaKet"
+   ],
+   "class": "해리성 전신마취제; NMDA 길항 진통 보조",
+   "tags": [
+    "analgesic"
+   ]
+  },
+  {
    "id": "ketoconazole",
    "name": "Ketoconazole",
    "brand": [
@@ -1905,6 +2613,17 @@
     "Ketofen"
    ],
    "class": "NSAID (propionic acid 계)",
+   "tags": [
+    "analgesic"
+   ]
+  },
+  {
+   "id": "ketorolac",
+   "name": "Ketorolac",
+   "brand": [
+    "Toradol"
+   ],
+   "class": "비스테로이드성 소염진통제(NSAID)",
    "tags": [
     "analgesic"
    ]
@@ -1992,6 +2711,18 @@
    ]
   },
   {
+   "id": "lidocaine",
+   "name": "Lidocaine",
+   "brand": [
+    "Xylocaine"
+   ],
+   "class": "국소마취제·항부정맥제(Class IB)·진통 보조",
+   "tags": [
+    "cardio",
+    "analgesic"
+   ]
+  },
+  {
    "id": "lincomycin",
    "name": "Lincomycin",
    "brand": [
@@ -2037,6 +2768,17 @@
    "class": "ACE 억제제",
    "tags": [
     "cardio"
+   ]
+  },
+  {
+   "id": "lokivetmab",
+   "name": "Lokivetmab",
+   "brand": [
+    "Cytopoint"
+   ],
+   "class": "항IL-31 단클론항체(아토피 소양증)",
+   "tags": [
+    "immuno"
    ]
   },
   {
@@ -2102,6 +2844,27 @@
    ]
   },
   {
+   "id": "magnesium",
+   "name": "Magnesium Sulfate",
+   "brand": [],
+   "class": "전해질 보충제(마그네슘)",
+   "tags": [
+    "cardio",
+    "endocrine"
+   ]
+  },
+  {
+   "id": "mannitol",
+   "name": "Mannitol",
+   "brand": [
+    "Osmitrol"
+   ],
+   "class": "삼투성 이뇨제",
+   "tags": [
+    "renal"
+   ]
+  },
+  {
    "id": "marbofloxacin",
    "name": "Marbofloxacin",
    "brand": [
@@ -2138,6 +2901,17 @@
    ]
   },
   {
+   "id": "medetomidine",
+   "name": "Medetomidine",
+   "brand": [
+    "Domitor"
+   ],
+   "class": "α2-아드레날린 작용제(진정·진통)",
+   "tags": [
+    "analgesic"
+   ]
+  },
+  {
    "id": "medroxyprogesterone",
    "name": "Medroxyprogesterone",
    "brand": [
@@ -2160,6 +2934,30 @@
    "tags": [
     "endocrine",
     "behavior"
+   ]
+  },
+  {
+   "id": "meglumine-antimoniate",
+   "name": "Meglumine Antimoniate",
+   "brand": [
+    "Glucantime"
+   ],
+   "class": "항원충제(리슈만편모충증)",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
+   "id": "melarsomine",
+   "name": "Melarsomine",
+   "brand": [
+    "Immiticide",
+    "Diroban"
+   ],
+   "class": "비소계 심장사상충 성충 구제제",
+   "tags": [
+    "antimicrobial",
+    "cardio"
    ]
   },
   {
@@ -2201,6 +2999,28 @@
    ]
   },
   {
+   "id": "meperidine",
+   "name": "Meperidine",
+   "brand": [
+    "Demerol"
+   ],
+   "class": "오피오이드 작용제 진통제",
+   "tags": [
+    "analgesic"
+   ]
+  },
+  {
+   "id": "meropenem",
+   "name": "Meropenem",
+   "brand": [
+    "Merrem IV"
+   ],
+   "class": "카바페넴계 항생제",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
    "id": "metergoline",
    "name": "Metergoline",
    "brand": [
@@ -2225,6 +3045,18 @@
    "class": "비구아나이드계 혈당강하제",
    "tags": [
     "endocrine"
+   ]
+  },
+  {
+   "id": "methadone",
+   "name": "Methadone",
+   "brand": [
+    "Dolophine",
+    "Methadose"
+   ],
+   "class": "오피오이드 작용제 진통제",
+   "tags": [
+    "analgesic"
    ]
   },
   {
@@ -2286,6 +3118,17 @@
    "class": "중추성 근이완제",
    "tags": [
     "analgesic"
+   ]
+  },
+  {
+   "id": "methylene-blue",
+   "name": "Methylene Blue",
+   "brand": [
+    "ProvayBlue"
+   ],
+   "class": "해독제(메트헤모글로빈혈증 치료)",
+   "tags": [
+    "cardio"
    ]
   },
   {
@@ -2357,6 +3200,17 @@
    "class": "Class IB 항부정맥제",
    "tags": [
     "cardio"
+   ]
+  },
+  {
+   "id": "midazolam",
+   "name": "Midazolam",
+   "brand": [
+    "Versed"
+   ],
+   "class": "벤조디아제핀계 진정·항경련제",
+   "tags": [
+    "anticonvulsant"
    ]
   },
   {
@@ -2433,6 +3287,19 @@
    ]
   },
   {
+   "id": "morphine",
+   "name": "Morphine",
+   "brand": [
+    "Duramorph",
+    "Infumorph",
+    "Astramorph PF"
+   ],
+   "class": "오피오이드 작용제 진통제",
+   "tags": [
+    "analgesic"
+   ]
+  },
+  {
    "id": "moxidectin",
    "name": "Moxidectin",
    "brand": [
@@ -2458,6 +3325,28 @@
    ]
   },
   {
+   "id": "nalbuphine",
+   "name": "Nalbuphine",
+   "brand": [
+    "Nubain"
+   ],
+   "class": "오피오이드 부분 작용제 진통제",
+   "tags": [
+    "analgesic"
+   ]
+  },
+  {
+   "id": "naloxone",
+   "name": "Naloxone",
+   "brand": [
+    "Narcan"
+   ],
+   "class": "오피오이드 길항제(해독제)",
+   "tags": [
+    "analgesic"
+   ]
+  },
+  {
    "id": "naltrexone",
    "name": "Naltrexone",
    "brand": [
@@ -2479,6 +3368,18 @@
    "tags": [
     "antimicrobial",
     "hepatic"
+   ]
+  },
+  {
+   "id": "neostigmine",
+   "name": "Neostigmine",
+   "brand": [
+    "Bloxiverz",
+    "Prostigmin"
+   ],
+   "class": "부교감신경 흥분제(항콜린에스테라제)",
+   "tags": [
+    "gi"
    ]
   },
   {
@@ -2528,6 +3429,18 @@
    ]
   },
   {
+   "id": "nitroprusside",
+   "name": "Nitroprusside",
+   "brand": [
+    "Nitropress",
+    "Nipride RTU"
+   ],
+   "class": "혈관확장제",
+   "tags": [
+    "cardio"
+   ]
+  },
+  {
    "id": "nizatidine",
    "name": "Nizatidine",
    "brand": [
@@ -2539,6 +3452,17 @@
    ]
   },
   {
+   "id": "norepinephrine",
+   "name": "Norepinephrine",
+   "brand": [
+    "Levophed"
+   ],
+   "class": "알파·베타 아드레날린 승압제",
+   "tags": [
+    "cardio"
+   ]
+  },
+  {
    "id": "oclacitinib",
    "name": "Oclacitinib",
    "brand": [
@@ -2547,6 +3471,18 @@
    "class": "JAK 억제제 (항소양·항염증제)",
    "tags": [
     "immuno"
+   ]
+  },
+  {
+   "id": "octreotide",
+   "name": "Octreotide",
+   "brand": [
+    "Sandostatin"
+   ],
+   "class": "소마토스타틴 유사체",
+   "tags": [
+    "endocrine",
+    "gi"
    ]
   },
   {
@@ -2620,6 +3556,17 @@
    ]
   },
   {
+   "id": "oxacillin",
+   "name": "Oxacillin",
+   "brand": [
+    "Bactocill"
+   ],
+   "class": "항포도상구균 페니실린",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
    "id": "oxazepam",
    "name": "Oxazepam",
    "brand": [
@@ -2644,6 +3591,18 @@
    ]
   },
   {
+   "id": "oxymorphone",
+   "name": "Oxymorphone",
+   "brand": [
+    "Numorphan",
+    "Opana"
+   ],
+   "class": "오피오이드 작용제",
+   "tags": [
+    "analgesic"
+   ]
+  },
+  {
    "id": "oxytetracycline",
    "name": "Oxytetracycline",
    "brand": [
@@ -2654,6 +3613,30 @@
    "class": "테트라사이클린계 항생제",
    "tags": [
     "antimicrobial"
+   ]
+  },
+  {
+   "id": "pamidronate",
+   "name": "Pamidronate",
+   "brand": [
+    "Aredia"
+   ],
+   "class": "비스포스포네이트",
+   "tags": [
+    "endocrine",
+    "analgesic"
+   ]
+  },
+  {
+   "id": "pantoprazole",
+   "name": "Pantoprazole",
+   "brand": [
+    "Protonix",
+    "Pantoloc"
+   ],
+   "class": "프로톤펌프 억제제",
+   "tags": [
+    "gi"
    ]
   },
   {
@@ -2687,6 +3670,29 @@
    "class": "천연 페니실린 (경구)",
    "tags": [
     "antimicrobial"
+   ]
+  },
+  {
+   "id": "pentobarbital",
+   "name": "Pentobarbital",
+   "brand": [
+    "Nembutal"
+   ],
+   "class": "바르비투르산염",
+   "tags": [
+    "anticonvulsant"
+   ]
+  },
+  {
+   "id": "pentosan-polysulfate",
+   "name": "Pentosan Polysulfate",
+   "brand": [
+    "Cartrophen-Vet",
+    "Elmiron"
+   ],
+   "class": "골관절염 질환조절제·항염",
+   "tags": [
+    "analgesic"
    ]
   },
   {
@@ -2736,6 +3742,17 @@
    ]
   },
   {
+   "id": "phenylephrine",
+   "name": "Phenylephrine",
+   "brand": [
+    "Neo-Synephrine"
+   ],
+   "class": "알파 아드레날린 작용제(승압제)",
+   "tags": [
+    "cardio"
+   ]
+  },
+  {
    "id": "phenylpropanolamine",
    "name": "Phenylpropanolamine",
    "brand": [
@@ -2746,6 +3763,15 @@
    "class": "교감신경 흥분제 (α-작용제)",
    "tags": [
     "urinary"
+   ]
+  },
+  {
+   "id": "physostigmine",
+   "name": "Physostigmine",
+   "brand": [],
+   "class": "콜린에스테라제 억제제",
+   "tags": [
+    "behavior"
    ]
   },
   {
@@ -2773,6 +3799,17 @@
    ]
   },
   {
+   "id": "piperacillin-tazobactam",
+   "name": "Piperacillin/Tazobactam",
+   "brand": [
+    "Zosyn"
+   ],
+   "class": "광범위 페니실린/베타락탐분해효소 억제제 복합 항생제",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
    "id": "piperazine",
    "name": "Piperazine",
    "brand": [],
@@ -2791,6 +3828,17 @@
    "tags": [
     "analgesic",
     "immuno"
+   ]
+  },
+  {
+   "id": "polysulfated-glycosaminoglycan",
+   "name": "Polysulfated Glycosaminoglycan",
+   "brand": [
+    "Adequan"
+   ],
+   "class": "연골보호제 (다황산 글리코사미노글리칸)",
+   "tags": [
+    "analgesic"
    ]
   },
   {
@@ -2901,6 +3949,18 @@
    ]
   },
   {
+   "id": "prochlorperazine",
+   "name": "Prochlorperazine",
+   "brand": [
+    "Compazine",
+    "Compro"
+   ],
+   "class": "페노티아진계 진토제",
+   "tags": [
+    "gi"
+   ]
+  },
+  {
    "id": "promethazine",
    "name": "Promethazine",
    "brand": [
@@ -2921,6 +3981,19 @@
    "tags": [
     "urinary",
     "gi"
+   ]
+  },
+  {
+   "id": "propofol",
+   "name": "Propofol",
+   "brand": [
+    "PropoFlo",
+    "Diprivan",
+    "Rapanofal"
+   ],
+   "class": "주사 마취제 (마취 유도·TIVA)",
+   "tags": [
+    "anticonvulsant"
    ]
   },
   {
@@ -3032,6 +4105,17 @@
    ]
   },
   {
+   "id": "remifentanil",
+   "name": "Remifentanil",
+   "brand": [
+    "Ultiva"
+   ],
+   "class": "초단시간 작용 오피오이드 진통제",
+   "tags": [
+    "analgesic"
+   ]
+  },
+  {
    "id": "rifampin",
    "name": "Rifampin",
    "brand": [
@@ -3075,6 +4159,17 @@
    "class": "NSAID (COX-2 선택적)",
    "tags": [
     "analgesic"
+   ]
+  },
+  {
+   "id": "rocuronium",
+   "name": "Rocuronium",
+   "brand": [
+    "Zemuron"
+   ],
+   "class": "비탈분극성 신경근 차단제",
+   "tags": [
+    "respiratory"
    ]
   },
   {
@@ -3157,12 +4252,43 @@
    ]
   },
   {
+   "id": "sodium-stibogluconate",
+   "name": "Sodium Stibogluconate",
+   "brand": [
+    "Pentostam"
+   ],
+   "class": "항리슈만편모충제",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
+   "id": "sodium-thiosulfate",
+   "name": "Sodium Thiosulfate",
+   "brand": [],
+   "class": "해독제 (비소·시안화물)",
+   "tags": [
+    "gi"
+   ]
+  },
+  {
    "id": "sotalol",
    "name": "Sotalol",
    "brand": [
     "Betapace"
    ],
    "class": "Class III 항부정맥제 (β차단)",
+   "tags": [
+    "cardio"
+   ]
+  },
+  {
+   "id": "spironolactone-benazepril",
+   "name": "Spironolactone/Benazepril",
+   "brand": [
+    "Cardalis"
+   ],
+   "class": "알도스테론 길항제/ACE 억제제 복합제",
    "tags": [
     "cardio"
    ]
@@ -3177,17 +4303,6 @@
    "tags": [
     "cardio",
     "renal"
-   ]
-  },
-  {
-   "id": "spironolactone-benazepril",
-   "name": "Spironolactone/Benazepril",
-   "brand": [
-    "Cardalis"
-   ],
-   "class": "알도스테론 길항제/ACE 억제제 복합제",
-   "tags": [
-    "cardio"
    ]
   },
   {
@@ -3213,6 +4328,17 @@
    ]
   },
   {
+   "id": "succinylcholine",
+   "name": "Succinylcholine",
+   "brand": [
+    "Anectine"
+   ],
+   "class": "탈분극성 신경근 차단제",
+   "tags": [
+    "respiratory"
+   ]
+  },
+  {
    "id": "sucralfate",
    "name": "Sucralfate",
    "brand": [
@@ -3221,6 +4347,17 @@
    "class": "위점막 보호제",
    "tags": [
     "gi"
+   ]
+  },
+  {
+   "id": "sufentanil",
+   "name": "Sufentanil",
+   "brand": [
+    "Sufenta"
+   ],
+   "class": "오피오이드 작용제",
+   "tags": [
+    "analgesic"
    ]
   },
   {
@@ -3238,23 +4375,23 @@
    ]
   },
   {
-   "id": "sulfadimethoxine",
-   "name": "Sulfadimethoxine",
-   "brand": [
-    "Albon"
-   ],
-   "class": "설폰아미드 항생제",
-   "tags": [
-    "antimicrobial"
-   ]
-  },
-  {
    "id": "sulfadimethoxine-ormetoprim",
    "name": "Sulfadimethoxine/Ormetoprim",
    "brand": [
     "Primor"
    ],
    "class": "강화 설폰아미드 항생제",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
+   "id": "sulfadimethoxine",
+   "name": "Sulfadimethoxine",
+   "brand": [
+    "Albon"
+   ],
+   "class": "설폰아미드 항생제",
    "tags": [
     "antimicrobial"
    ]
@@ -3346,6 +4483,19 @@
    ]
   },
   {
+   "id": "testosterone",
+   "name": "Testosterone",
+   "brand": [
+    "Depo-Testosterone",
+    "Aveed"
+   ],
+   "class": "안드로겐 호르몬",
+   "tags": [
+    "endocrine",
+    "urinary"
+   ]
+  },
+  {
    "id": "tetracycline",
    "name": "Tetracycline",
    "brand": [],
@@ -3377,6 +4527,49 @@
    ]
   },
   {
+   "id": "thiopental",
+   "name": "Thiopental",
+   "brand": [
+    "Pentothal"
+   ],
+   "class": "초단시간 작용 티오바르비투르산염 마취제",
+   "tags": [
+    "anticonvulsant"
+   ]
+  },
+  {
+   "id": "thyrotropin-alfa",
+   "name": "Thyrotropin Alfa",
+   "brand": [
+    "Thyrogen"
+   ],
+   "class": "갑상선자극호르몬 (rhTSH)",
+   "tags": [
+    "endocrine"
+   ]
+  },
+  {
+   "id": "thyrotropin-releasing-hormone",
+   "name": "Thyrotropin-Releasing Hormone (TRH)",
+   "brand": [],
+   "class": "갑상선자극호르몬 방출호르몬",
+   "tags": [
+    "endocrine"
+   ]
+  },
+  {
+   "id": "tiletamine-zolazepam",
+   "name": "Tiletamine/Zolazepam",
+   "brand": [
+    "Telazol"
+   ],
+   "class": "주사 마취제·진정제 복합",
+   "tags": [
+    "anticonvulsant",
+    "analgesic"
+   ]
+  },
+  {
    "id": "tinidazole",
    "name": "Tinidazole",
    "brand": [
@@ -3402,6 +4595,17 @@
    ]
   },
   {
+   "id": "tobramycin",
+   "name": "Tobramycin",
+   "brand": [
+    "Nebcin"
+   ],
+   "class": "아미노글리코사이드 항생제",
+   "tags": [
+    "antimicrobial"
+   ]
+  },
+  {
    "id": "toceranib",
    "name": "Toceranib",
    "brand": [
@@ -3410,6 +4614,17 @@
    "class": "티로신 키나아제 억제제 항암제",
    "tags": [
     "immuno"
+   ]
+  },
+  {
+   "id": "tolazoline",
+   "name": "Tolazoline",
+   "brand": [
+    "Tolazine"
+   ],
+   "class": "알파 아드레날린 길항제 (자일라진 길항)",
+   "tags": [
+    "analgesic"
    ]
   },
   {
@@ -3472,6 +4687,18 @@
    "class": "비정형 아편유사 진통제",
    "tags": [
     "analgesic"
+   ]
+  },
+  {
+   "id": "tranexamic-acid",
+   "name": "Tranexamic Acid",
+   "brand": [
+    "Cyklokapron",
+    "Lysteda"
+   ],
+   "class": "항섬유소용해제 (지혈 보조)",
+   "tags": [
+    "antithrombotic"
    ]
   },
   {
@@ -3568,6 +4795,41 @@
    ]
   },
   {
+   "id": "vecuronium",
+   "name": "Vecuronium",
+   "brand": [
+    "Norcuron"
+   ],
+   "class": "비탈분극성 신경근 차단제",
+   "tags": [
+    "analgesic"
+   ]
+  },
+  {
+   "id": "verapamil",
+   "name": "Verapamil",
+   "brand": [
+    "Calan",
+    "Verelan"
+   ],
+   "class": "칼슘 채널 차단제 (항부정맥)",
+   "tags": [
+    "cardio"
+   ]
+  },
+  {
+   "id": "vincristine",
+   "name": "Vincristine",
+   "brand": [
+    "Oncovin",
+    "Vincasar PFS"
+   ],
+   "class": "항암제 (빈카 알칼로이드)",
+   "tags": [
+    "immuno"
+   ]
+  },
+  {
    "id": "voriconazole",
    "name": "Voriconazole",
    "brand": [
@@ -3592,6 +4854,30 @@
    ]
   },
   {
+   "id": "xylazine",
+   "name": "Xylazine",
+   "brand": [
+    "Rompun",
+    "AnaSed"
+   ],
+   "class": "알파-2 아드레날린 작용제 (진정·진통)",
+   "tags": [
+    "analgesic"
+   ]
+  },
+  {
+   "id": "yohimbine",
+   "name": "Yohimbine",
+   "brand": [
+    "Yobine",
+    "Antagonil"
+   ],
+   "class": "알파-2 아드레날린 길항제 (자일라진 역전)",
+   "tags": [
+    "analgesic"
+   ]
+  },
+  {
    "id": "zidovudine",
    "name": "Zidovudine",
    "brand": [
@@ -3601,6 +4887,19 @@
    "tags": [
     "antimicrobial",
     "immuno"
+   ]
+  },
+  {
+   "id": "zoledronate",
+   "name": "Zoledronate",
+   "brand": [
+    "Zometa",
+    "Reclast"
+   ],
+   "class": "비스포스포네이트 (고칼슘혈증·골통증)",
+   "tags": [
+    "endocrine",
+    "analgesic"
    ]
   },
   {

@@ -1,0 +1,51 @@
+{
+ "id": "dipyrone",
+ "name": "Dipyrone",
+ "brand": [
+  "Zimeta"
+ ],
+ "class": "NSAID 계열 진통·해열제 (metamizole)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "수술 전후 진통",
+   "route": "IV",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "수술 직전 또는 직후; 단독 진통제로 부적합"
+  },
+  {
+   "species": "cat",
+   "label": "수술 후 진통 (a)",
+   "route": "IV",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "수술 후 진통 (b)",
+   "route": "IV",
+   "low": 12.5,
+   "high": 12.5,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 500
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

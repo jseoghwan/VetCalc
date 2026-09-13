@@ -1,0 +1,72 @@
+{
+ "id": "iron-dextran",
+ "name": "Iron Dextran",
+ "brand": [
+  "Uniferon",
+  "InFeD"
+ ],
+ "class": "철분 주사제; 조혈제",
+ "tags": [
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "철결핍성 빈혈",
+   "route": "IM",
+   "low": 10,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "주 1회 반복 가능 또는 경구 철제로 전환"
+  },
+  {
+   "species": "dog",
+   "label": "EPO/DPO 병용 철 보충",
+   "route": "IM",
+   "low": 10,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "최대 300 mg/dog; 월 1회 이하"
+  },
+  {
+   "species": "cat",
+   "label": "EPO/DPO 병용 철 보충",
+   "route": "IM",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/animal",
+   "freq": "once",
+   "default": true,
+   "note": "≈10 mg/kg; 월 1회 이하"
+  },
+  {
+   "species": "cat",
+   "label": "신생 고양이 일과성 철결핍 빈혈 예방",
+   "route": "IM",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "생후 18일에 투여"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 50
+  },
+  {
+   "form": "injection",
+   "mgml": 100
+  },
+  {
+   "form": "injection",
+   "mgml": 200
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

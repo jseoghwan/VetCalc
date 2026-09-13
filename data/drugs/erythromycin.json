@@ -53,6 +53,28 @@
    "unit": "mg/kg",
    "freq": "q8h",
    "note": "고양이 결장 운동 촉진 효과 불확실"
+  },
+  {
+   "species": "dog",
+   "label": "위장운동 촉진",
+   "route": "IV",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "서서히 IV(20–60분)"
+  },
+  {
+   "species": "cat",
+   "label": "위장운동 촉진",
+   "route": "IV",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "서서히 IV(20–60분); 고양이 결장 운동 효과 불확실"
   }
  ],
  "strengths": [
@@ -74,6 +96,10 @@
   },
   {
    "form": "tablet",
+   "mg": 500
+  },
+  {
+   "form": "vial",
    "mg": 500
   }
  ],

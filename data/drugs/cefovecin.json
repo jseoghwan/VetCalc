@@ -1,0 +1,95 @@
+{
+ "id": "cefovecin",
+ "name": "Cefovecin",
+ "brand": [
+  "Convenia"
+ ],
+ "class": "3세대 세팔로스포린 항생제 (장기 지속형)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "피부 감염 (label)",
+   "route": "SC",
+   "low": 8,
+   "high": 8,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "반응 불충분 시 7일(S. intermedius)/14일(S. canis) 후 재투여, 최대 2회"
+  },
+  {
+   "species": "dog",
+   "label": "피부·연부조직 감염",
+   "route": "SC",
+   "low": 8,
+   "high": 8,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "필요 시 14일 간격, 최대 3회 추가"
+  },
+  {
+   "species": "dog",
+   "label": "UTI·치은/치주 감염",
+   "route": "SC",
+   "low": 8,
+   "high": 8,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "라임병",
+   "route": "SC",
+   "low": 8,
+   "high": 8,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "14일 후 2차 투여"
+  },
+  {
+   "species": "cat",
+   "label": "피부 감염 (label)",
+   "route": "SC",
+   "low": 8,
+   "high": 8,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "단회 투여, 약 7일 유효농도 유지"
+  },
+  {
+   "species": "cat",
+   "label": "피부·연부조직 감염",
+   "route": "SC",
+   "low": 8,
+   "high": 8,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "필요 시 14일 후 2차 투여"
+  },
+  {
+   "species": "cat",
+   "label": "UTI·치은/치주 감염",
+   "route": "SC",
+   "low": 8,
+   "high": 8,
+   "unit": "mg/kg",
+   "freq": "once"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "vial",
+   "mg": 800
+  },
+  {
+   "form": "injection",
+   "mgml": 80
+  }
+ ],
+ "compounding": "멸균수 10 mL로 재구성 → 80 mg/mL",
+ "reviewed": null
+}

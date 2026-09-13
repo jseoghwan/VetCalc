@@ -1,0 +1,64 @@
+{
+ "id": "chlorpromazine",
+ "name": "Chlorpromazine",
+ "brand": [
+  "Thorazine"
+ ],
+ "class": "페노티아진계 진정·진토제",
+ "tags": [
+  "gi",
+  "behavior"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "진토·진정",
+   "route": "IM/SC",
+   "low": 0.2,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–8h"
+  },
+  {
+   "species": "dog",
+   "label": "진토·진정 IV",
+   "route": "IV",
+   "low": 0.05,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 q6–8h; 저용량부터 효과 보며 증량, 혈압 감시"
+  },
+  {
+   "species": "cat",
+   "label": "진토·진정",
+   "route": "IM/SC",
+   "low": 0.2,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–8h"
+  },
+  {
+   "species": "cat",
+   "label": "진토·진정 IV",
+   "route": "IV",
+   "low": 0.025,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 q6–8h; 저용량부터 효과 보며 증량, 혈압 감시"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 25
+  }
+ ],
+ "compounding": "알칼리성 용액과 혼합 시 산화됨",
+ "reviewed": null
+}

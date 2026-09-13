@@ -82,6 +82,177 @@
    "unit": "mg/kg",
    "freq": "q24h",
    "note": "1~2회/일, 6–8시간 간격"
+  },
+  {
+   "species": "dog",
+   "label": "심부전 부종·급성 비염증성 조직부종 (label)",
+   "route": "IV/IM",
+   "low": 2.75,
+   "high": 5.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1일 1–2회(6–8시간 간격); 불응 시 2.2 mg/kg씩 증량"
+  },
+  {
+   "species": "dog",
+   "label": "급성 CHF (stage C MMVD) 초기",
+   "route": "IV/IM",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "이후 2 mg/kg IV/IM 매시간, 4시간 총 8 mg/kg까지"
+  },
+  {
+   "species": "dog",
+   "label": "급성 심인성·폐부종 볼루스",
+   "route": "IV/IM/SC",
+   "low": 1,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q2h",
+   "note": "원문 q1–2h 반복 조정; SC 주의; 최대 12 mg/kg/day"
+  },
+  {
+   "species": "dog",
+   "label": "급성 심인성·폐부종 CRI",
+   "route": "CRI",
+   "low": 0.66,
+   "high": 1,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "초기 볼루스 후; 12–24시간 초과 시 주의"
+  },
+  {
+   "species": "dog",
+   "label": "사구체 질환 + 폐부종·고칼륨혈증",
+   "route": "IV/IM",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 q6–12h; 0.5–1 mg/kg씩 증량 가능"
+  },
+  {
+   "species": "dog",
+   "label": "부하 용량 (CRI 전, 사구체 질환)",
+   "route": "IV",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "사구체 질환 CRI",
+   "route": "CRI",
+   "low": 2,
+   "high": 15,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "note": "2 mg/kg IV 부하 후"
+  },
+  {
+   "species": "dog",
+   "label": "중등도–중증 고칼슘혈증",
+   "route": "IV/SC",
+   "low": 2,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h; 용적 확장 후 사용; SC 주의"
+  },
+  {
+   "species": "dog",
+   "label": "핍뇨성 AKI CRI (a)",
+   "route": "CRI",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg/h",
+   "freq": "cri"
+  },
+  {
+   "species": "dog",
+   "label": "핍뇨성 AKI 초기 볼루스 (b)",
+   "route": "IV",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "30–60분 내 반응 없으면 최대 4 mg/kg"
+  },
+  {
+   "species": "dog",
+   "label": "핍뇨성 AKI CRI (b)",
+   "route": "CRI",
+   "low": 0.1,
+   "high": 2,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "note": "볼루스 후 반응에 따라 조정"
+  },
+  {
+   "species": "dog",
+   "label": "사이클로포스파마이드 출혈성 방광염 예방",
+   "route": "IV",
+   "low": 0.5,
+   "high": 2.2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "항암 치료 기간 동안"
+  },
+  {
+   "species": "cat",
+   "label": "심부전 부종·급성 비염증성 조직부종 (label)",
+   "route": "IV/IM",
+   "low": 2.75,
+   "high": 5.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1일 1–2회(6–8시간 간격); 불응 시 2.2 mg/kg씩 증량"
+  },
+  {
+   "species": "cat",
+   "label": "중증 급성 심인성·폐부종",
+   "route": "IV/IM/SC",
+   "low": 1,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "q2h",
+   "note": "원문 q1–2h 반복 조정; SC 주의; 호흡수 감소 시 급감량"
+  },
+  {
+   "species": "cat",
+   "label": "핍뇨성 AKI CRI (a)",
+   "route": "CRI",
+   "low": 0.25,
+   "high": 1,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "핍뇨성 AKI 초기 볼루스 (b)",
+   "route": "IV",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "효과 있으면 0.25–1 mg/kg/h CRI 시작"
+  },
+  {
+   "species": "cat",
+   "label": "핍뇨성 AKI CRI (b)",
+   "route": "CRI",
+   "low": 0.25,
+   "high": 1,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "note": "볼루스 후 반응에 따라 조정"
   }
  ],
  "strengths": [
@@ -104,6 +275,14 @@
   {
    "form": "tablet",
    "mg": 80
+  },
+  {
+   "form": "injection",
+   "mgml": 10
+  },
+  {
+   "form": "injection",
+   "mgml": 50
   }
  ],
  "compounding": null,

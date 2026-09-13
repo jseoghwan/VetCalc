@@ -1,0 +1,73 @@
+{
+ "id": "fomepizole",
+ "name": "Fomepizole",
+ "brand": [
+  "Antizol",
+  "Antizol-Vet"
+ ],
+ "class": "에틸렌글리콜 중독 해독제",
+ "tags": [
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "에틸렌글리콜 중독 초기",
+   "route": "IV",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "에틸렌글리콜 중독 12·24시간 후",
+   "route": "IV",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "초기 투여 12시간·24시간 후 각 1회"
+  },
+  {
+   "species": "dog",
+   "label": "에틸렌글리콜 중독 36시간 후",
+   "route": "IV",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "필요 시 5 mg/kg 추가 가능"
+  },
+  {
+   "species": "cat",
+   "label": "에틸렌글리콜 중독 초기",
+   "route": "IV",
+   "low": 125,
+   "high": 125,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "서서히 IV; 섭취 3시간 이내 치료 필요"
+  },
+  {
+   "species": "cat",
+   "label": "에틸렌글리콜 중독 12·24·36시간 후",
+   "route": "IV",
+   "low": 31.25,
+   "high": 31.25,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "초기 투여 12·24·36시간 후 각 1회"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 1000
+  }
+ ],
+ "compounding": "D5W 또는 0.9% NaCl 희석 시 실온·냉장 24시간 이상 안정",
+ "reviewed": null
+}

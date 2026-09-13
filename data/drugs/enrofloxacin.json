@@ -90,6 +90,38 @@
    "per": "day",
    "default": true,
    "note": "또는 분할 q12h; 최대 5 mg/kg/day(망막독성), 최대 30일"
+  },
+  {
+   "species": "dog",
+   "label": "감수성 세균 감염 (label) 초회 후 경구 전환",
+   "route": "IM",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "2.27% 주사제; 이후 경구 치료"
+  },
+  {
+   "species": "dog",
+   "label": "감수성 세균 감염 (extra-label)",
+   "route": "IV/IM/SC",
+   "low": 10,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "2.27% 주사제; SC는 희석 필수, IV는 서서히"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 세균 감염 (extra-label)",
+   "route": "IV/IM",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "5 mg/kg/day 초과 금지(망막 독성); 개용 2.27% 주사제 사용"
   }
  ],
  "strengths": [
@@ -116,8 +148,16 @@
   {
    "form": "tablet",
    "mg": 136
+  },
+  {
+   "form": "injection",
+   "mgml": 22.7
+  },
+  {
+   "form": "injection",
+   "mgml": 100
   }
  ],
- "compounding": null,
+ "compounding": "0.9% NaCl·LRS·Plasma-Lyte·HES와 1:1 희석 시 물리적 비호환; Ca·Mg 함유 수액과 접촉 금지(폐 미세침전); IV 필요 시 별도 라인으로 희석 없이; 100 mg/mL 대동물 제품의 소동물 사용은 강력히 비권장",
  "reviewed": null
 }

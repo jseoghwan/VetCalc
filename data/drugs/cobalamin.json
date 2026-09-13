@@ -81,6 +81,27 @@
    "freq": "q24h",
    "default": true,
    "note": "12주"
+  },
+  {
+   "species": "dog",
+   "label": "시안화물 중독 보조 (히드록소코발라민)",
+   "route": "IV",
+   "low": 75,
+   "high": 150,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "7.5분 IV infusion; 시아노코발라민은 이 적응증에 사용 불가"
+  },
+  {
+   "species": "dog",
+   "label": "만성 장병증 (히드록소코발라민)",
+   "route": "IM",
+   "low": 0.25,
+   "high": 1,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "원문 간격 미기재; IGS 견에서 1 mg/dog 격월 투여 보고"
   }
  ],
  "strengths": [
@@ -91,8 +112,20 @@
   {
    "form": "chewable tablet",
    "mg": 1
+  },
+  {
+   "form": "injection",
+   "mgml": 1
+  },
+  {
+   "form": "injection",
+   "mgml": 3
+  },
+  {
+   "form": "injection",
+   "mgml": 5
   }
  ],
- "compounding": null,
+ "compounding": "시아노코발라민 주사는 일반 IV 수액과 호환; 덱스트로스·아스코르브산·phytonadione·알칼리/강산성 용액과 비호환",
  "reviewed": null
 }

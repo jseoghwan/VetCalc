@@ -30,12 +30,60 @@
    "freq": "q12h",
    "default": true,
    "note": "원문 q12–24h"
+  },
+  {
+   "species": "dog",
+   "label": "진토 단회",
+   "route": "IV",
+   "low": 0.02,
+   "high": 0.4,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "진토",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h"
+  },
+  {
+   "species": "cat",
+   "label": "진토",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h"
+  },
+  {
+   "species": "cat",
+   "label": "진토 (IM)",
+   "route": "IM",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q8h"
   }
  ],
  "strengths": [
   {
    "form": "tablet",
    "mg": 1
+  },
+  {
+   "form": "injection",
+   "mgml": 0.1
+  },
+  {
+   "form": "injection",
+   "mgml": 1
   }
  ],
  "compounding": null,

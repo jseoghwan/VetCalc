@@ -1,0 +1,101 @@
+{
+ "id": "ceftiofur-sodium",
+ "name": "Ceftiofur Sodium",
+ "brand": [
+  "Naxcel",
+  "Ceftiflex"
+ ],
+ "class": "3세대 세팔로스포린 항생제",
+ "tags": [
+  "antimicrobial",
+  "urinary"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "UTI (E. coli·Proteus) (label)",
+   "route": "SC",
+   "low": 2.2,
+   "high": 2.2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "5–14일"
+  },
+  {
+   "species": "dog",
+   "label": "UTI",
+   "route": "SC",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "원문 q12–24h"
+  },
+  {
+   "species": "dog",
+   "label": "신생아 패혈증",
+   "route": "SC",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "최대 5일"
+  },
+  {
+   "species": "dog",
+   "label": "감수성 감염 (MIC ≤4 µg/mL)",
+   "route": "IV/SC",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "UTI",
+   "route": "SC",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h"
+  },
+  {
+   "species": "cat",
+   "label": "신생아 패혈증",
+   "route": "SC",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "최대 5일"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (MIC ≤4 µg/mL)",
+   "route": "IV/SC",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "vial",
+   "mg": 1000
+  },
+  {
+   "form": "vial",
+   "mg": 4000
+  },
+  {
+   "form": "injection",
+   "mgml": 50
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

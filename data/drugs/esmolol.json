@@ -1,0 +1,89 @@
+{
+ "id": "esmolol",
+ "name": "Esmolol",
+ "brand": [
+  "Brevibloc"
+ ],
+ "class": "초단시간 작용 베타1 차단제 (심실성 부정맥)",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 0.25,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "2–5분에 걸쳐 IV; 중증 심부전·승모판 역류 시 부하 생략"
+  },
+  {
+   "species": "dog",
+   "label": "저용량 초기·간헐 볼루스",
+   "route": "IV",
+   "low": 0.05,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "5분마다 반복, 누적 최대 0.5 mg/kg"
+  },
+  {
+   "species": "dog",
+   "label": "심실성 부정맥 CRI",
+   "route": "CRI",
+   "low": 10,
+   "high": 200,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "10분마다 상향 조절 가능; 심부전 시 낮은 속도"
+  },
+  {
+   "species": "cat",
+   "label": "부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 0.25,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "2–5분에 걸쳐 IV; 중증 심부전·승모판 역류 시 부하 생략"
+  },
+  {
+   "species": "cat",
+   "label": "저용량 초기·간헐 볼루스",
+   "route": "IV",
+   "low": 0.05,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "5분마다 반복, 누적 최대 0.5 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "심실성 부정맥 CRI",
+   "route": "CRI",
+   "low": 10,
+   "high": 200,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "10분마다 상향 조절 가능; 심부전 시 낮은 속도"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 10
+  },
+  {
+   "form": "injection",
+   "mgml": 20
+  }
+ ],
+ "compounding": "D5W·LRS·생리식염수(또는 혼합액)로 희석 가능",
+ "reviewed": null
+}

@@ -1,0 +1,131 @@
+{
+ "id": "cefotaxime",
+ "name": "Cefotaxime",
+ "brand": [
+  "Claforan"
+ ],
+ "class": "3세대 세팔로스포린 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "감수성 감염 (통상)",
+   "route": "IV/IM/SC",
+   "low": 40,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "감수성 감염 (범위)",
+   "route": "IV/IM/SC",
+   "low": 20,
+   "high": 80,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 q6–12h; 수막염은 고용량"
+  },
+  {
+   "species": "dog",
+   "label": "감수성 감염 (대안)",
+   "route": "IV/IM/SC",
+   "low": 20,
+   "high": 40,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 q6–12h"
+  },
+  {
+   "species": "dog",
+   "label": "부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 3.2,
+   "high": 3.2,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "감수성 감염 CRI",
+   "route": "CRI",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (통상)",
+   "route": "IV/IM/SC",
+   "low": 40,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (범위)",
+   "route": "IV/IM/SC",
+   "low": 20,
+   "high": 80,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 q6–12h; 수막염은 고용량"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (대안)",
+   "route": "IV/IM/SC",
+   "low": 20,
+   "high": 40,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 q6–12h"
+  },
+  {
+   "species": "cat",
+   "label": "부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 3.2,
+   "high": 3.2,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 CRI",
+   "route": "CRI",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "vial",
+   "mg": 500
+  },
+  {
+   "form": "vial",
+   "mg": 1000
+  },
+  {
+   "form": "vial",
+   "mg": 2000
+  },
+  {
+   "form": "vial",
+   "mg": 10000
+  }
+ ],
+ "compounding": "아미노글리코사이드와 혼합 금지",
+ "reviewed": null
+}

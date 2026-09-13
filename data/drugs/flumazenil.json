@@ -1,0 +1,62 @@
+{
+ "id": "flumazenil",
+ "name": "Flumazenil",
+ "brand": [
+  "Romazicon"
+ ],
+ "class": "벤조디아제핀 길항제",
+ "tags": [
+  "anticonvulsant",
+  "behavior"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "벤조디아제핀·졸피뎀 중독 길항",
+   "route": "IV",
+   "low": 0.01,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "0.01 mg/kg부터 시작, 필요 시 반복"
+  },
+  {
+   "species": "dog",
+   "label": "틸레타민/졸라제팜 마취 길항",
+   "route": "IV",
+   "low": 0.04,
+   "high": 0.06,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "벤조디아제핀·졸피뎀 중독 길항",
+   "route": "IV",
+   "low": 0.01,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "0.01 mg/kg부터 시작, 필요 시 반복"
+  },
+  {
+   "species": "cat",
+   "label": "틸레타민/졸라제팜 마취 길항",
+   "route": "IV",
+   "low": 0.04,
+   "high": 0.06,
+   "unit": "mg/kg",
+   "freq": "once"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 0.1
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

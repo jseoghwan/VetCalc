@@ -39,6 +39,26 @@
    "unit": "mg/animal",
    "freq": "q8h",
    "note": "무기한; 효과 의문"
+  },
+  {
+   "species": "dog",
+   "label": "과섬유소용해로 인한 출혈 (증례)",
+   "route": "IV",
+   "low": 33,
+   "high": 33,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "활동성 출혈 (종양·수술 후 등)",
+   "route": "IV",
+   "low": 17.5,
+   "high": 17.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "평균 용량 ≈17.5 mg/kg; 개는 사람보다 고용량 필요할 수 있음"
   }
  ],
  "strengths": [
@@ -49,8 +69,12 @@
   {
    "form": "tablet",
    "mg": 1000
+  },
+  {
+   "form": "injection",
+   "mgml": 250
   }
  ],
- "compounding": null,
+ "compounding": "0.9% NaCl·D5W·LRS로 희석 호환",
  "reviewed": null
 }

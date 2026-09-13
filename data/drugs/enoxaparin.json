@@ -1,0 +1,57 @@
+{
+ "id": "enoxaparin",
+ "name": "Enoxaparin",
+ "brand": [
+  "Lovenox"
+ ],
+ "class": "저분자량 헤파린 항응고제",
+ "tags": [
+  "antithrombotic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "혈전 예방 (a)",
+   "route": "SC",
+   "low": 0.8,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–8h"
+  },
+  {
+   "species": "dog",
+   "label": "혈전 예방 (b)",
+   "route": "SC",
+   "low": 0.8,
+   "high": 0.8,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "모든 품종에서 치료적 anti-Xa 농도에 도달하지 못할 수 있음"
+  },
+  {
+   "species": "cat",
+   "label": "혈전 예방",
+   "route": "SC",
+   "low": 0.75,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–12h; q6h가 가장 일정한 anti-Xa 활성"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 100
+  },
+  {
+   "form": "injection",
+   "mgml": 150
+  }
+ ],
+ "compounding": "다른 약물과 혼합·동시 투여 금지",
+ "reviewed": null
+}

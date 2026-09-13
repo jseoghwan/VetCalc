@@ -20,6 +20,17 @@
    "freq": "q24h",
    "default": true,
    "note": "15 mg/kg 초과 금지; 장기 투여 시 최소 유효량으로 감량; 5 kg 미만 정확 투여 불가"
+  },
+  {
+   "species": "dog",
+   "label": "골관절염 통증·염증 (label)",
+   "route": "SC",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "견갑배측 1회 주사; 정제 투여는 24시간 후 시작"
   }
  ],
  "strengths": [
@@ -50,6 +61,10 @@
   {
    "form": "tablet",
    "mg": 600
+  },
+  {
+   "form": "injection",
+   "mgml": 100
   }
  ],
  "compounding": null,

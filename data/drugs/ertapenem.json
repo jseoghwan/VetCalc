@@ -1,0 +1,41 @@
+{
+ "id": "ertapenem",
+ "name": "Ertapenem",
+ "brand": [
+  "Invanz"
+ ],
+ "class": "카바페넴계 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "감수성 감염 (다제내성 확인 시만)",
+   "route": "IV/SC",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (다제내성 확인 시만)",
+   "route": "IV/SC",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "vial",
+   "mg": 1000
+  }
+ ],
+ "compounding": "주사용수 또는 0.9% NaCl 10 mL로 재용해 후 즉시 0.9% NaCl 50 mL 백에 이송; 포도당 함유 희석액 사용 금지",
+ "reviewed": null
+}

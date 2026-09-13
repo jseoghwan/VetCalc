@@ -1,0 +1,81 @@
+{
+ "id": "dopamine",
+ "name": "Dopamine",
+ "brand": [
+  "Intropin"
+ ],
+ "class": "아드레날린성·도파민성 강심·승압제",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "중증 저혈압·쇼크",
+   "route": "CRI",
+   "low": 5,
+   "high": 20,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "초기 2.5–5 mcg/kg/min에서 효과까지 증량; 사전 용량 보충 필요"
+  },
+  {
+   "species": "dog",
+   "label": "isoflurane 유발 저혈압",
+   "route": "CRI",
+   "low": 7,
+   "high": 10,
+   "unit": "mcg/kg/min",
+   "freq": "cri"
+  },
+  {
+   "species": "cat",
+   "label": "중증 저혈압·쇼크",
+   "route": "CRI",
+   "low": 5,
+   "high": 20,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "초기 2.5–5 mcg/kg/min에서 증량; 고양이 연구는 10에서 시작해 2.5–5씩 증량"
+  },
+  {
+   "species": "cat",
+   "label": "isoflurane 유발 저혈압",
+   "route": "CRI",
+   "low": 7,
+   "high": 10,
+   "unit": "mcg/kg/min",
+   "freq": "cri"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 0.8
+  },
+  {
+   "form": "injection",
+   "mgml": 1.6
+  },
+  {
+   "form": "injection",
+   "mgml": 3.2
+  },
+  {
+   "form": "injection",
+   "mgml": 40
+  },
+  {
+   "form": "injection",
+   "mgml": 80
+  },
+  {
+   "form": "injection",
+   "mgml": 160
+  }
+ ],
+ "compounding": "희석 후 투여(0.9% NaCl·D5W·LRS 호환); 6×체중(kg) mg을 0.9% NaCl 총 100 mL로 만들면 1 mL/h = 1 mcg/kg/min",
+ "reviewed": null
+}

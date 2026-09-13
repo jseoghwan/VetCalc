@@ -1,0 +1,68 @@
+{
+ "id": "amikacin",
+ "name": "Amikacin",
+ "brand": [
+  "Amikin",
+  "Amiglyde-V"
+ ],
+ "class": "아미노글리코사이드 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "감수성 감염·경험적 치료",
+   "route": "IV/IM/SC",
+   "low": 15,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "신기능 저하 시 용량 유지·간격 연장; IV는 희석 후 30분 이상"
+  },
+  {
+   "species": "dog",
+   "label": "패혈증 초기",
+   "route": "IV",
+   "low": 20,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "희석 후 30분 이상"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염·경험적 치료",
+   "route": "IV/IM/SC",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "고양이는 독성에 더 민감; 신기능 저하 시 간격 연장"
+  },
+  {
+   "species": "cat",
+   "label": "패혈증 초기",
+   "route": "IV",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "희석 후 30분 이상"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 50
+  },
+  {
+   "form": "injection",
+   "mgml": 250
+  }
+ ],
+ "compounding": "IV 시 0.9% NaCl·D5W·LRS에 0.25–5 mg/mL로 희석해 30분 이상 투여(실온 24시간·냉장 60일 안정); 베타락탐과 같은 주사기/백 혼합 금지",
+ "reviewed": null
+}

@@ -1,0 +1,93 @@
+{
+ "id": "atipamezole",
+ "name": "Atipamezole",
+ "brand": [
+  "Antisedan",
+  "Revertidine"
+ ],
+ "class": "α2 아드레날린 길항제 (진정 역전)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "덱스메데토미딘·메데토미딘 역전 (CPR 시)",
+   "route": "IV",
+   "low": 100,
+   "high": 100,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "덱스메데토미딘 10 mcg/kg 기준; 고용량 투여 시 증량"
+  },
+  {
+   "species": "dog",
+   "label": "구강점막 α2 작용제 역전 (a)",
+   "route": "IM",
+   "low": 100,
+   "high": 100,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "실험 조건(데토미딘 겔)"
+  },
+  {
+   "species": "dog",
+   "label": "구강점막 α2 작용제 역전 (b)",
+   "route": "IM",
+   "low": 0.16,
+   "high": 0.16,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "증례 보고; 0.04 mg/kg IM도 유효"
+  },
+  {
+   "species": "dog",
+   "label": "아미트라즈 중독",
+   "route": "IM",
+   "low": 50,
+   "high": 50,
+   "unit": "mcg/kg",
+   "freq": "q4h",
+   "note": "원문 필요 시 q4–6h 반복"
+  },
+  {
+   "species": "cat",
+   "label": "덱스메데토미딘·메데토미딘 역전 (CPR 시)",
+   "route": "IV",
+   "low": 100,
+   "high": 100,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "덱스메데토미딘 10 mcg/kg 기준; 고용량 투여 시 증량(예: 125–200 mcg/kg IM)"
+  },
+  {
+   "species": "cat",
+   "label": "덱스메데토미딘 CRI 중단 후 역전",
+   "route": "IM",
+   "low": 15,
+   "high": 30,
+   "unit": "mcg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "자일라진(구토 유발) 역전",
+   "route": "IV/IM",
+   "low": 25,
+   "high": 50,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "IV는 서서히"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 5
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

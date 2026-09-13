@@ -107,6 +107,17 @@
    "high": 5,
    "unit": "mg/kg",
    "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "전신 진균증 (크립토코쿠스·블라스토·히스토플라스마)",
+   "route": "IV",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h; 1–2시간에 걸쳐 IV; CNS·안구 감염 시 최대 15 mg/kg q12h"
   }
  ],
  "strengths": [
@@ -125,8 +136,12 @@
   {
    "form": "tablet",
    "mg": 200
+  },
+  {
+   "form": "injection",
+   "mgml": 2
   }
  ],
- "compounding": null,
+ "compounding": "주사액에 첨가물 추가 금지",
  "reviewed": null
 }

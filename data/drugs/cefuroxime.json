@@ -31,6 +31,64 @@
    "freq": "q8h",
    "default": true,
    "note": "원문 q8–12h, 일화적 용량"
+  },
+  {
+   "species": "dog",
+   "label": "감수성 감염 (MIC ≤4 µg/mL)",
+   "route": "IM/SC",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "감수성 감염 (MIC ≤1 µg/mL)",
+   "route": "SC",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "수술 예방적 항생제",
+   "route": "IV",
+   "low": 20,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "서서히 IV(3–5분 이상), 수술 ≈30분 전; 수술 중 1.5–3시간마다 반복"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (MIC ≤4 µg/mL)",
+   "route": "IM/SC",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (MIC ≤1 µg/mL)",
+   "route": "SC",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "수술 예방적 항생제",
+   "route": "IV",
+   "low": 20,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "서서히 IV(3–5분 이상), 수술 ≈30분 전; 수술 중 1.5–3시간마다 반복"
   }
  ],
  "strengths": [
@@ -45,8 +103,24 @@
   {
    "form": "tablet",
    "mg": 500
+  },
+  {
+   "form": "vial",
+   "mg": 750
+  },
+  {
+   "form": "vial",
+   "mg": 1500
+  },
+  {
+   "form": "vial",
+   "mg": 7500
+  },
+  {
+   "form": "vial",
+   "mg": 225000
   }
  ],
- "compounding": null,
+ "compounding": "아미노글리코사이드·시프로플록사신·라니티딘과 비혼합",
  "reviewed": null
 }

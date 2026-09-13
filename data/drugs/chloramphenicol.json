@@ -58,6 +58,27 @@
    "high": 50,
    "unit": "mg/animal",
    "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "감수성 감염",
+   "route": "IV/IM/SC",
+   "low": 40,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "IV는 1분 이상에 걸쳐"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염",
+   "route": "IV/IM/SC",
+   "low": 12.5,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
   }
  ],
  "strengths": [
@@ -72,8 +93,16 @@
   {
    "form": "tablet",
    "mg": 1000
+  },
+  {
+   "form": "vial",
+   "mg": 1000
+  },
+  {
+   "form": "injection",
+   "mgml": 100
   }
  ],
- "compounding": null,
+ "compounding": "1 g 바이알을 멸균수 또는 D5W 10 mL로 재구성(100 mg/mL)",
  "reviewed": null
 }

@@ -1,0 +1,74 @@
+{
+ "id": "cloprostenol",
+ "name": "Cloprostenol",
+ "brand": [
+  "Estrumate",
+  "estroPLAN"
+ ],
+ "class": "프로스타글란딘 F2α 유사체",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "자궁축농증 보조 치료",
+   "route": "SC",
+   "low": 1,
+   "high": 1,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "카베르골린 5 µg/kg PO 병용, 7일; 무반응 시 단독 7일 연장"
+  },
+  {
+   "species": "dog",
+   "label": "임신 중절 (a)",
+   "route": "SC",
+   "low": 1,
+   "high": 2.5,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "note": "4–7일; 임신 30일 이후"
+  },
+  {
+   "species": "dog",
+   "label": "임신 중절 (b)",
+   "route": "SC",
+   "low": 1,
+   "high": 2.5,
+   "unit": "mcg/kg",
+   "freq": "q48h",
+   "note": "3회; 투여 15분 전 아트로핀 등 항콜린제로 부작용 경감"
+  },
+  {
+   "species": "dog",
+   "label": "임신 중절 (c, 35–45일)",
+   "route": "SC",
+   "low": 1,
+   "high": 1,
+   "unit": "mcg/kg",
+   "freq": "q48h",
+   "note": "생리식염수 10배 희석 후 1·3일차; 카베르골린 5 µg/kg PO 병용 7일"
+  },
+  {
+   "species": "cat",
+   "label": "개방형 자궁축농증 보조 치료",
+   "route": "SC",
+   "low": 5,
+   "high": 5,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "3일; 항생제 병용"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 0.25
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

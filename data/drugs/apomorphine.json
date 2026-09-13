@@ -20,12 +20,31 @@
    "freq": "once",
    "default": true,
    "note": "6.5 mg 정제 1정/26 kg"
+  },
+  {
+   "species": "dog",
+   "label": "구토 유발",
+   "route": "IV/IM/SC",
+   "low": 0.01,
+   "high": 0.04,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "IV가 가장 빠름, SC, IM 순"
   }
  ],
  "strengths": [
   {
    "form": "tablet",
    "mg": 6.5
+  },
+  {
+   "form": "injection",
+   "mgml": 1
+  },
+  {
+   "form": "injection",
+   "mgml": 10
   }
  ],
  "compounding": "조제 제제 차광 보관, 오토클레이브 금지",

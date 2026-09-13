@@ -1,0 +1,107 @@
+{
+ "id": "deferoxamine",
+ "name": "Deferoxamine",
+ "brand": [
+  "Desferal"
+ ],
+ "class": "철 킬레이트제 (철 중독 해독)",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "중증 철 중독",
+   "route": "CRI",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "최대 속도(up to); 빠른 주입 시 부정맥·저혈압; 24시간 이내 권장"
+  },
+  {
+   "species": "dog",
+   "label": "중증 철 중독 (IV infusion 불가 시)",
+   "route": "IM",
+   "low": 40,
+   "high": 40,
+   "unit": "mg/kg",
+   "freq": "q4h",
+   "default": true,
+   "note": "원문 q4–8h; 혈청 철 <300 µg/dL까지"
+  },
+  {
+   "species": "dog",
+   "label": "심정지 시 철 이온 킬레이트 (실험적) (a)",
+   "route": "IV/IM/SC",
+   "low": 5,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "심정지 시 철 이온 킬레이트 (실험적) (b)",
+   "route": "IV/IM",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q2h",
+   "note": "2회 후 24시간 동안 1일 3회"
+  },
+  {
+   "species": "cat",
+   "label": "중증 철 중독",
+   "route": "CRI",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "최대 속도(up to); 빠른 주입 시 부정맥·저혈압; 24시간 이내 권장"
+  },
+  {
+   "species": "cat",
+   "label": "중증 철 중독 (IV infusion 불가 시)",
+   "route": "IM",
+   "low": 40,
+   "high": 40,
+   "unit": "mg/kg",
+   "freq": "q4h",
+   "default": true,
+   "note": "원문 q4–8h; 혈청 철 <300 µg/dL까지"
+  },
+  {
+   "species": "cat",
+   "label": "심정지 시 철 이온 킬레이트 (실험적) (a)",
+   "route": "IV/IM/SC",
+   "low": 5,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "심정지 시 철 이온 킬레이트 (실험적) (b)",
+   "route": "IV/IM",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q2h",
+   "note": "2회 후 24시간 동안 1일 3회"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "vial",
+   "mg": 500
+  },
+  {
+   "form": "vial",
+   "mg": 2000
+  }
+ ],
+ "compounding": "멸균수로 재용해 후 즉시 사용; 타 약물과 혼합 금지; IV infusion 시 NS·LRS·D5W로 추가 희석; 혼탁 시 사용 금지",
+ "reviewed": null
+}

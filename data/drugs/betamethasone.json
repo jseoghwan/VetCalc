@@ -1,0 +1,33 @@
+{
+ "id": "betamethasone",
+ "name": "Betamethasone (Systemic)",
+ "brand": [
+  "BetaVet",
+  "Celestone Soluspan"
+ ],
+ "class": "장기 작용 글루코코르티코이드",
+ "tags": [
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "조산 강아지 폐 성숙 (모견 투여)",
+   "route": "IM",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "배란 후 55–57일 모견에 투여"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 6
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -159,6 +159,26 @@
    "high": 2,
    "unit": "mg/kg",
    "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "위장관 운동 촉진",
+   "route": "IV",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "위장관 운동 촉진",
+   "route": "IV",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true
   }
  ],
  "strengths": [
@@ -173,8 +193,12 @@
   {
    "form": "tablet",
    "mg": 600
+  },
+  {
+   "form": "vial",
+   "mg": 500
   }
  ],
- "compounding": null,
+ "compounding": "500 mg 바이알 멸균수 4.8 mL 재용해(100 mg/mL) 후 250–500 mL 호환 수액에 희석, 1–3시간 IV 주입; 희석액 실온 24시간·냉장 7일 안정",
  "reviewed": null
 }

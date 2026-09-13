@@ -248,6 +248,17 @@
    "unit": "mg/kg",
    "freq": "q24h",
    "note": "최소 3–4주"
+  },
+  {
+   "species": "dog",
+   "label": "렙토스피라증 (경구 불가 시)",
+   "route": "IV",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "2주; 서서히 IV 주입(사람: 0.5 mg/mL 희석, 1시간 이상)"
   }
  ],
  "strengths": [
@@ -298,8 +309,16 @@
   {
    "form": "tablet",
    "mg": 150
+  },
+  {
+   "form": "vial",
+   "mg": 100
+  },
+  {
+   "form": "vial",
+   "mg": 200
   }
  ],
- "compounding": null,
+ "compounding": "D5W·0.9% NaCl·LRS 호환; 서서히 IV 주입(사람: 0.5 mg/mL로 희석해 1시간 이상)",
  "reviewed": null
 }

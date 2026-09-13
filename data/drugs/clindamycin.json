@@ -159,6 +159,58 @@
    "unit": "mg/kg",
    "freq": "once",
    "note": "수술 60분 전"
+  },
+  {
+   "species": "dog",
+   "label": "전신 감염 (패혈증 등)",
+   "route": "IV",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "희석 후 10–60분 이상 서서히 IV; 그람음성 커버 위해 추가 항생제 필요"
+  },
+  {
+   "species": "dog",
+   "label": "수술 예방적 항생제 (베타락탐 금기 시)",
+   "route": "IV",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "희석 후 서서히 IV, 절개 30분 전 완료"
+  },
+  {
+   "species": "cat",
+   "label": "전신 감염 (패혈증 등)",
+   "route": "IV",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "희석 후 10–60분 이상 서서히 IV; 그람음성 커버 위해 추가 항생제 필요"
+  },
+  {
+   "species": "cat",
+   "label": "수술 예방적 항생제 (베타락탐 금기 시)",
+   "route": "IV",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "희석 후 서서히 IV, 절개 30분 전 완료"
+  },
+  {
+   "species": "cat",
+   "label": "톡소플라즈마증",
+   "route": "IV",
+   "low": 10,
+   "high": 12,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "희석 후 서서히 IV; 경구 가능 시 전환, 총 4주"
   }
  ],
  "strengths": [
@@ -189,8 +241,12 @@
   {
    "form": "capsule",
    "mg": 300
+  },
+  {
+   "form": "injection",
+   "mgml": 150
   }
  ],
- "compounding": null,
+ "compounding": "원액 IV 볼루스 금지; 희석(최종 ≤18 mg/mL) 후 최대 30 mg/min로 주입. D5W·NS·LRS 등에서 24시간 이상 안정",
  "reviewed": null
 }

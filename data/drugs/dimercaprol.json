@@ -1,0 +1,43 @@
+{
+ "id": "dimercaprol",
+ "name": "Dimercaprol (BAL)",
+ "brand": [
+  "BAL in Oil"
+ ],
+ "class": "중금속 킬레이트제",
+ "tags": [
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "비소 중독",
+   "route": "IM",
+   "low": 2.5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q4h",
+   "default": true,
+   "note": "처음 2일 q4h, 이후 회복까지 q12h; 5 mg/kg는 첫날 급성 환자에만"
+  },
+  {
+   "species": "cat",
+   "label": "비소 중독",
+   "route": "IM",
+   "low": 2.5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q4h",
+   "default": true,
+   "note": "처음 2일 q4h, 이후 회복까지 q12h; 5 mg/kg는 첫날 급성 환자에만"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 100
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

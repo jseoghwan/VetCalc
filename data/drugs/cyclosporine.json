@@ -291,6 +291,17 @@
    "unit": "mg/kg",
    "freq": "q12h",
    "note": "prednisone 병용"
+  },
+  {
+   "species": "cat",
+   "label": "알레르기성 피부염 (경구 불가 시)",
+   "route": "SC",
+   "low": 2.5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "원문 q24h–격일"
   }
  ],
  "strengths": [
@@ -309,8 +320,12 @@
   {
    "form": "capsule",
    "mg": 100
+  },
+  {
+   "form": "injection",
+   "mgml": 50
   }
  ],
- "compounding": null,
+ "compounding": "주사제는 LRS·NS·D5W와 호환; 인체용 용액은 플라스틱에 흡착 가능",
  "reviewed": null
 }

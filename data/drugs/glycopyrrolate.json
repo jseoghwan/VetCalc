@@ -1,0 +1,120 @@
+{
+ "id": "glycopyrrolate",
+ "name": "Glycopyrrolate",
+ "brand": [
+  "Robinul"
+ ],
+ "class": "항콜린제(항무스카린제)",
+ "tags": [
+  "cardio",
+  "respiratory"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "마취 보조 (label)",
+   "route": "IV/IM/SC",
+   "low": 0.011,
+   "high": 0.011,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "마취 전투약 (extra-label)",
+   "route": "IV/IM/SC",
+   "low": 0.005,
+   "high": 0.01,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "최저 0.003 mg/kg 보고"
+  },
+  {
+   "species": "dog",
+   "label": "미주신경성 서맥 감별 검사",
+   "route": "IV",
+   "low": 0.01,
+   "high": 0.01,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "미주신경성 서맥 치료",
+   "route": "IV",
+   "low": 0.005,
+   "high": 0.01,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "IM/SC 시 최대 0.02 mg/kg"
+  },
+  {
+   "species": "dog",
+   "label": "유기인계·카바메이트 중독 무스카린 증상",
+   "route": "IV",
+   "low": 0.01,
+   "high": 0.02,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "필요 시 반복"
+  },
+  {
+   "species": "cat",
+   "label": "마취 보조 (label)",
+   "route": "IV/IM/SC",
+   "low": 0.011,
+   "high": 0.011,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "마취 전투약 (extra-label)",
+   "route": "IV/IM/SC",
+   "low": 0.005,
+   "high": 0.01,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "최저 0.003 mg/kg 보고"
+  },
+  {
+   "species": "cat",
+   "label": "미주신경성 서맥 감별 검사",
+   "route": "IV",
+   "low": 0.01,
+   "high": 0.01,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "미주신경성 서맥 치료",
+   "route": "IV",
+   "low": 0.005,
+   "high": 0.01,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "IM/SC 시 최대 0.02 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "유기인계·카바메이트 중독 무스카린 증상",
+   "route": "IV",
+   "low": 0.01,
+   "high": 0.02,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "필요 시 반복"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 0.2
+  }
+ ],
+ "compounding": "LRS 백에 첨가 시 급속 가수분해(라인 통해 투여는 가능); 알칼리성 약물과 비적합",
+ "reviewed": null
+}

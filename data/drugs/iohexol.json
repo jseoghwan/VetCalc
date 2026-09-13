@@ -1,0 +1,109 @@
+{
+ "id": "iohexol",
+ "name": "Iohexol",
+ "brand": [
+  "Omnipaque"
+ ],
+ "class": "비이온성 요오드계 조영제; GFR 측정",
+ "tags": [
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "GFR 추정 (a)",
+   "route": "IV",
+   "low": 129,
+   "high": 658,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "300 mg I/mL 제제; 약 1분에 걸쳐 IV"
+  },
+  {
+   "species": "dog",
+   "label": "GFR 추정 (b)",
+   "route": "IV",
+   "low": 64.7,
+   "high": 64.7,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "1분에 걸쳐 IV"
+  },
+  {
+   "species": "dog",
+   "label": "GFR 추정 (c) 비질소혈증",
+   "route": "IV",
+   "low": 90,
+   "high": 90,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "요오드 함량 기준 (mg I/kg)"
+  },
+  {
+   "species": "dog",
+   "label": "GFR 추정 (c) 질소혈증",
+   "route": "IV",
+   "low": 45,
+   "high": 45,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "요오드 함량 기준 (mg I/kg)"
+  },
+  {
+   "species": "cat",
+   "label": "GFR 추정 (a) 비질소혈증",
+   "route": "IV",
+   "low": 90,
+   "high": 90,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "요오드 함량 기준 (mg I/kg)"
+  },
+  {
+   "species": "cat",
+   "label": "GFR 추정 (a) 질소혈증",
+   "route": "IV",
+   "low": 45,
+   "high": 45,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "요오드 함량 기준 (mg I/kg)"
+  },
+  {
+   "species": "cat",
+   "label": "GFR 추정 (b)",
+   "route": "IV",
+   "low": 647,
+   "high": 647,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "투여 후 생리식염수 1 mL 플러시"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 140
+  },
+  {
+   "form": "injection",
+   "mgml": 180
+  },
+  {
+   "form": "injection",
+   "mgml": 240
+  },
+  {
+   "form": "injection",
+   "mgml": 300
+  },
+  {
+   "form": "injection",
+   "mgml": 350
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

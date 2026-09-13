@@ -1,0 +1,288 @@
+{
+ "id": "alfaxalone",
+ "name": "Alfaxalone",
+ "brand": [
+  "Alfaxan"
+ ],
+ "class": "정맥 마취제 (신경스테로이드)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "마취 유도, 전처치 없음 (label)",
+   "route": "IV",
+   "low": 1.5,
+   "high": 4.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "≈60초에 걸쳐 to effect; 전처치 시 23–50% 감량(평균 1.1–1.7 mg/kg); 무호흡 주의"
+  },
+  {
+   "species": "dog",
+   "label": "마취 유지 볼러스, 전처치 있음 (label)",
+   "route": "IV",
+   "low": 1.2,
+   "high": 1.4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "6–8분 추가 마취; 필요 시 반복"
+  },
+  {
+   "species": "dog",
+   "label": "마취 유지 볼러스, 전처치 없음 (label)",
+   "route": "IV",
+   "low": 1.5,
+   "high": 2.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "6–8분 추가 마취; 필요 시 반복"
+  },
+  {
+   "species": "dog",
+   "label": "마취 유도, 전처치 없음 (extra-label)",
+   "route": "IV",
+   "low": 3,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "서서히 to effect"
+  },
+  {
+   "species": "dog",
+   "label": "마취 유도, 전처치 있음 (extra-label)",
+   "route": "IV",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "medetomidine+butorphanol 전처치 시 평균 0.8 mg/kg"
+  },
+  {
+   "species": "dog",
+   "label": "마취 유지 볼러스 (10분당), 전처치 없음",
+   "route": "IV",
+   "low": 1.3,
+   "high": 1.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "10분마다 반복"
+  },
+  {
+   "species": "dog",
+   "label": "마취 유지 볼러스 (10분당), 전처치 있음",
+   "route": "IV",
+   "low": 1,
+   "high": 1.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "10분마다 반복"
+  },
+  {
+   "species": "dog",
+   "label": "마취 유지 CRI, 전처치 없음",
+   "route": "CRI",
+   "low": 8,
+   "high": 9,
+   "unit": "mg/kg/h",
+   "freq": "cri"
+  },
+  {
+   "species": "dog",
+   "label": "마취 유지 CRI, 전처치 있음",
+   "route": "CRI",
+   "low": 6,
+   "high": 7,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "마취 유지 CRI, 전처치·유도 후 (extra-label)",
+   "route": "CRI",
+   "low": 0.16,
+   "high": 0.2,
+   "unit": "mg/kg/min",
+   "freq": "cri",
+   "note": "시작점, 반응에 따라 조정"
+  },
+  {
+   "species": "dog",
+   "label": "단기 처치 진정 IM (dexmedetomidine+methadone 병용)",
+   "route": "IM",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "산소 보충 필요; 두 용량 간 차이 없음"
+  },
+  {
+   "species": "dog",
+   "label": "깊은 진정/얕은 마취 IM (medetomidine+butorphanol 병용)",
+   "route": "IM",
+   "low": 1,
+   "high": 2.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "5 mg/kg는 심한 저산소혈증; 소형견에 한함(주사량)"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유도, 전처치 없음 (label)",
+   "route": "IV",
+   "low": 2.2,
+   "high": 9.7,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "≈60초에 걸쳐 to effect; 전처치 시 10–43% 감량(평균 2.3–3.6 mg/kg)"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유지 볼러스, 전처치 있음 (label)",
+   "route": "IV",
+   "low": 1.1,
+   "high": 1.3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "7–8분 추가 마취; 필요 시 반복"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유지 볼러스, 전처치 없음 (label)",
+   "route": "IV",
+   "low": 1.4,
+   "high": 1.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "3–5분 추가 마취; 필요 시 반복"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유도 (extra-label)",
+   "route": "IV",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "전처치 유무 무관"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유지 볼러스 (10분당), 전처치 없음",
+   "route": "IV",
+   "low": 1.6,
+   "high": 1.8,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "10분마다 반복"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유지 볼러스 (10분당), 전처치 있음",
+   "route": "IV",
+   "low": 1.1,
+   "high": 1.3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "10분마다 반복"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유지 CRI, 전처치 없음",
+   "route": "CRI",
+   "low": 10,
+   "high": 11,
+   "unit": "mg/kg/h",
+   "freq": "cri"
+  },
+  {
+   "species": "cat",
+   "label": "마취 유지 CRI, 전처치 있음",
+   "route": "CRI",
+   "low": 7,
+   "high": 8,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "마취 유지 CRI, 전처치·유도 후 (extra-label)",
+   "route": "CRI",
+   "low": 0.16,
+   "high": 0.2,
+   "unit": "mg/kg/min",
+   "freq": "cri",
+   "note": "시작점, 반응에 따라 조정"
+  },
+  {
+   "species": "cat",
+   "label": "단기 처치 진정 SC (butorphanol 병용)",
+   "route": "SC",
+   "low": 3,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "45분 후 최대 진정; 혈압 감시"
+  },
+  {
+   "species": "cat",
+   "label": "단기 처치 진정 IM (a) dexmedetomidine+butorphanol 병용",
+   "route": "IM",
+   "low": 1,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "3 mg/kg(dexmed 10 mcg/kg) 또는 1 mg/kg(dexmed 5 mcg/kg)"
+  },
+  {
+   "species": "cat",
+   "label": "단기 처치 진정 IM (b) hydromorphone+midazolam 병용",
+   "route": "IM",
+   "low": 1.5,
+   "high": 1.5,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "헌혈 진정 IM (butorphanol 병용)",
+   "route": "IM",
+   "low": 2,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "심초음파 진정 IM (methadone ± ketamine 병용)",
+   "route": "IM",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "깊은 진정/얕은 마취 IM 단독",
+   "route": "IM",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "대퇴사두근 깊게 주사; 주사량 커서 통증"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 10
+  }
+ ],
+ "compounding": "다른 약물과 혼합 금지(label); 보존제 함유 제형을 butorphanol 등과 같은 주사기에 섞으면 혼탁 보고",
+ "reviewed": null
+}

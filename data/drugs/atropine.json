@@ -1,0 +1,237 @@
+{
+ "id": "atropine",
+ "name": "Atropine",
+ "brand": [],
+ "class": "항콜린제·해독제",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "마취 전 투여",
+   "route": "IV/IM",
+   "low": 0.02,
+   "high": 0.04,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "노령·쇠약 동물 0.01 mg/kg"
+  },
+  {
+   "species": "dog",
+   "label": "마취 전 투여 (label)",
+   "route": "IV/IM/SC",
+   "low": 0.06,
+   "high": 0.06,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "현재 권장되지 않음"
+  },
+  {
+   "species": "dog",
+   "label": "CPR 서맥·무수축 (미주신경 긴장)",
+   "route": "IV",
+   "low": 0.04,
+   "high": 0.04,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "BLS 2주기(4분)마다 반복 가능"
+  },
+  {
+   "species": "dog",
+   "label": "아트로핀 반응 검사 (a)",
+   "route": "IV",
+   "low": 0.04,
+   "high": 0.04,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "15분 후 ECG"
+  },
+  {
+   "species": "dog",
+   "label": "아트로핀 반응 검사 (b)",
+   "route": "SC",
+   "low": 0.04,
+   "high": 0.04,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "30분 후 ECG"
+  },
+  {
+   "species": "dog",
+   "label": "유기인제·카바메이트 중독 시험 용량",
+   "route": "IV",
+   "low": 0.02,
+   "high": 0.02,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "심박 증가·산동 시 OP 중독 가능성 낮음"
+  },
+  {
+   "species": "dog",
+   "label": "유기인제·카바메이트 중독 치료 (a)",
+   "route": "IV/IM/SC",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "¼ IV, 나머지 IM/SC; 필요 시 반복"
+  },
+  {
+   "species": "dog",
+   "label": "유기인제·카바메이트 중독 치료 (b)",
+   "route": "IV",
+   "low": 0.025,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "증상 소실까지 반복(보통 3–4시간 간격); 중증은 ¼ IM/서서히 IV, 나머지 SC"
+  },
+  {
+   "species": "dog",
+   "label": "무스카린성 버섯 중독",
+   "route": "IV/IM/SC",
+   "low": 0.04,
+   "high": 0.04,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "¼ IV, 나머지 IM/SC; 필요 시 증량·반복"
+  },
+  {
+   "species": "cat",
+   "label": "마취 전 투여",
+   "route": "IV/IM",
+   "low": 0.02,
+   "high": 0.04,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "노령·쇠약 동물 0.01 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "마취 전 투여 (label)",
+   "route": "IV/IM/SC",
+   "low": 0.06,
+   "high": 0.06,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "현재 권장되지 않음"
+  },
+  {
+   "species": "cat",
+   "label": "CPR 서맥·무수축 (미주신경 긴장)",
+   "route": "IV",
+   "low": 0.04,
+   "high": 0.04,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "BLS 2주기(4분)마다 반복 가능"
+  },
+  {
+   "species": "cat",
+   "label": "아트로핀 반응 검사 (a)",
+   "route": "IV",
+   "low": 0.04,
+   "high": 0.04,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "15분 후 ECG"
+  },
+  {
+   "species": "cat",
+   "label": "아트로핀 반응 검사 (b)",
+   "route": "SC",
+   "low": 0.04,
+   "high": 0.04,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "30분 후 ECG"
+  },
+  {
+   "species": "cat",
+   "label": "유기인제·카바메이트 중독 시험 용량",
+   "route": "IV",
+   "low": 0.02,
+   "high": 0.02,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "심박 증가·산동 시 OP 중독 가능성 낮음"
+  },
+  {
+   "species": "cat",
+   "label": "유기인제·카바메이트 중독 치료 (a)",
+   "route": "IV/IM/SC",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "¼ IV, 나머지 IM/SC; 필요 시 반복"
+  },
+  {
+   "species": "cat",
+   "label": "유기인제·카바메이트 중독 치료 (b)",
+   "route": "IV",
+   "low": 0.025,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "증상 소실까지 반복(보통 3–4시간 간격); 중증은 ¼ IM/서서히 IV, 나머지 SC"
+  },
+  {
+   "species": "cat",
+   "label": "무스카린성 버섯 중독",
+   "route": "IV/IM/SC",
+   "low": 0.04,
+   "high": 0.04,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "¼ IV, 나머지 IM/SC; 필요 시 증량·반복"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 0.05
+  },
+  {
+   "form": "injection",
+   "mgml": 0.1
+  },
+  {
+   "form": "injection",
+   "mgml": 0.3
+  },
+  {
+   "form": "injection",
+   "mgml": 0.4
+  },
+  {
+   "form": "injection",
+   "mgml": 0.5
+  },
+  {
+   "form": "injection",
+   "mgml": 0.54
+  },
+  {
+   "form": "injection",
+   "mgml": 0.6
+  },
+  {
+   "form": "injection",
+   "mgml": 0.8
+  },
+  {
+   "form": "injection",
+   "mgml": 1
+  },
+  {
+   "form": "injection",
+   "mgml": 15
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

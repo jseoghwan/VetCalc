@@ -99,6 +99,65 @@
    "freq": "q12h",
    "default": true,
    "note": "원문 q12–24h; amlodipine·ACEi 이후 3–4차 약물"
+  },
+  {
+   "species": "dog",
+   "label": "중증 급성 전신 고혈압 (a)",
+   "route": "IV",
+   "low": 0.5,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "부하 용량 (CRI 전, 고혈압) (b)",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "중증 급성 고혈압 CRI (b)",
+   "route": "CRI",
+   "low": 1.5,
+   "high": 5,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "중증 급성 전신 고혈압 (a)",
+   "route": "SC",
+   "low": 1,
+   "high": 2.5,
+   "unit": "mg/animal",
+   "freq": "once",
+   "default": true,
+   "note": "수축기 혈압 미감소 시 15–30분 후 반복 가능"
+  },
+  {
+   "species": "cat",
+   "label": "부하 용량 (CRI 전, 고혈압) (b)",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "중증 급성 고혈압 CRI (b)",
+   "route": "CRI",
+   "low": 1.5,
+   "high": 5,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true
   }
  ],
  "strengths": [
@@ -117,8 +176,12 @@
   {
    "form": "tablet",
    "mg": 100
+  },
+  {
+   "form": "injection",
+   "mgml": 20
   }
  ],
- "compounding": null,
+ "compounding": "10% 포도당·과당액과 혼합 시 비적합",
  "reviewed": null
 }

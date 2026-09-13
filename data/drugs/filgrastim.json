@@ -1,0 +1,47 @@
+{
+ "id": "filgrastim",
+ "name": "Filgrastim (G-CSF)",
+ "brand": [
+  "Neupogen"
+ ],
+ "class": "과립구 집락 자극인자 (호중구감소증 보조)",
+ "tags": [
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "호중구감소증 보조",
+   "route": "SC",
+   "low": 5,
+   "high": 10,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "자가항체 형성 방지 위해 5일 이내 펄스 요법"
+  },
+  {
+   "species": "cat",
+   "label": "호중구감소증 보조",
+   "route": "SC",
+   "low": 5,
+   "high": 10,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "자가항체 형성 방지 위해 5일 이내 펄스 요법"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 0.3
+  },
+  {
+   "form": "injection",
+   "mgml": 0.6
+  }
+ ],
+ "compounding": "D5W로만 희석(생리식염수 희석 금지, 침전); 5 µg/mL 미만 희석 금지, 5–15 µg/mL 시 알부민 2 mg/mL 첨가",
+ "reviewed": null
+}

@@ -1,0 +1,64 @@
+{
+ "id": "fenoldopam",
+ "name": "Fenoldopam",
+ "brand": [
+  "Corlopam"
+ ],
+ "class": "도파민 D1 작용제; 항고혈압제 (급성 신손상 보조)",
+ "tags": [
+  "renal",
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "급성 신손상(비다뇨성) 보조 CRI",
+   "route": "CRI",
+   "low": 0.8,
+   "high": 0.8,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "5시간 지속"
+  },
+  {
+   "species": "dog",
+   "label": "고혈압 응급 CRI",
+   "route": "CRI",
+   "low": 0.1,
+   "high": 1.6,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "note": "0.1로 시작, 15분마다 0.1씩 증량, 최대 1.6"
+  },
+  {
+   "species": "cat",
+   "label": "급성 신손상(핍뇨·무뇨) 보조 CRI",
+   "route": "CRI",
+   "low": 0.1,
+   "high": 1,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "2시간 지속; 건강묘 0.5에서 배뇨량 증가"
+  },
+  {
+   "species": "cat",
+   "label": "고혈압 응급 CRI",
+   "route": "CRI",
+   "low": 0.1,
+   "high": 1.6,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "note": "0.1로 시작, 15분마다 0.1씩 증량, 최대 1.6"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 10
+  }
+ ],
+ "compounding": "10 mg/mL 원액을 0.9% NaCl 또는 D5W로 60 µg/mL로 희석(30 mg/500 mL); 정밀 주입펌프로 CRI",
+ "reviewed": null
+}

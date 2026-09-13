@@ -1,0 +1,142 @@
+{
+ "id": "doxapram",
+ "name": "Doxapram",
+ "brand": [
+  "Dopram-V",
+  "Respiram"
+ ],
+ "class": "중추신경·호흡 자극제",
+ "tags": [
+  "respiratory"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "마취 중·후 호흡 자극 – 흡입마취 (label)",
+   "route": "IV",
+   "low": 1.1,
+   "high": 1.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "필요 시 15–20분 후 반복"
+  },
+  {
+   "species": "dog",
+   "label": "마취 중·후 호흡 자극 – 바르비투르산 마취 (label)",
+   "route": "IV",
+   "low": 5.5,
+   "high": 11,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "필요 시 15–20분 후 반복"
+  },
+  {
+   "species": "dog",
+   "label": "신생 강아지 호흡 자극 (label)",
+   "route": "SC",
+   "low": 1,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "설하·제대정맥도 가능; 필요 시 15–20분 후 반복"
+  },
+  {
+   "species": "dog",
+   "label": "신생아 호흡 자극 (extra-label)",
+   "route": "IV/IM",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "0.1 mL/마리"
+  },
+  {
+   "species": "dog",
+   "label": "후두 기능 평가",
+   "route": "IV",
+   "low": 0.25,
+   "high": 2.5,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "acepromazine 진정 감소",
+   "route": "IV",
+   "low": 1.25,
+   "high": 1.25,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "acepromazine 0.05 mg/kg IM 30분 후"
+  },
+  {
+   "species": "cat",
+   "label": "마취 중·후 호흡 자극 – 흡입마취 (label)",
+   "route": "IV",
+   "low": 1.1,
+   "high": 1.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "필요 시 15–20분 후 반복"
+  },
+  {
+   "species": "cat",
+   "label": "마취 중·후 호흡 자극 – 바르비투르산 마취 (label)",
+   "route": "IV",
+   "low": 5.5,
+   "high": 11,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "필요 시 15–20분 후 반복"
+  },
+  {
+   "species": "cat",
+   "label": "신생 새끼고양이 호흡 자극 (label)",
+   "route": "SC",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "설하도 가능; 필요 시 15–20분 후 반복"
+  },
+  {
+   "species": "cat",
+   "label": "신생아 호흡 자극 (extra-label)",
+   "route": "IV/IM",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "0.1 mL/마리"
+  },
+  {
+   "species": "cat",
+   "label": "후두 기능 평가",
+   "route": "IV",
+   "low": 0.25,
+   "high": 2.5,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "acepromazine 진정 감소",
+   "route": "IV",
+   "low": 1.25,
+   "high": 1.25,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "개 연구 기반"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 20
+  }
+ ],
+ "compounding": "D5W·0.9% NaCl 호환; 알칼리성 용액(thiopental·aminophylline·중탄산나트륨)과 혼합 금지",
+ "reviewed": null
+}

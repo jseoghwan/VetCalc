@@ -1,0 +1,112 @@
+{
+ "id": "ceftazidime",
+ "name": "Ceftazidime",
+ "brand": [
+  "Ceptaz",
+  "Fortaz",
+  "Tazicef"
+ ],
+ "class": "3세대 세팔로스포린 항생제 (항녹농균)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "녹농균 감염 (PK/PD 2) IV",
+   "route": "IV",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "녹농균 감염 (PK/PD 2) IM/SC",
+   "route": "IM/SC",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "녹농균 감염 (PK/PD 1)",
+   "route": "IV/IM/SC",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q4h"
+  },
+  {
+   "species": "dog",
+   "label": "부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 4.4,
+   "high": 4.4,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "녹농균 감염 CRI",
+   "route": "CRI",
+   "low": 4.1,
+   "high": 4.1,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염",
+   "route": "IM",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "녹농균은 q2–4h 또는 CRI 필요"
+  },
+  {
+   "species": "cat",
+   "label": "부하 용량 (CRI 전)",
+   "route": "IV",
+   "low": 4.4,
+   "high": 4.4,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "녹농균 감염 CRI",
+   "route": "CRI",
+   "low": 4.1,
+   "high": 4.1,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "vial",
+   "mg": 500
+  },
+  {
+   "form": "vial",
+   "mg": 1000
+  },
+  {
+   "form": "vial",
+   "mg": 2000
+  },
+  {
+   "form": "vial",
+   "mg": 6000
+  }
+ ],
+ "compounding": "중탄산나트륨으로 희석 금지; 젠타마이신·반코마이신·판토프라졸·라니티딘과 비혼합",
+ "reviewed": null
+}

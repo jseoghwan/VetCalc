@@ -1,0 +1,41 @@
+{
+ "id": "cyclophosphamide",
+ "name": "Cyclophosphamide",
+ "brand": [
+  "Cytoxan",
+  "Neosar"
+ ],
+ "class": "항암제 (알킬화제)",
+ "tags": [
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "cat",
+   "label": "항암 (다제 프로토콜 일부)",
+   "route": "IV",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "다제 항암 프로토콜의 일부; 반복 주기는 프로토콜에 따름 (개는 mg/m² 기준만 기재)"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "vial",
+   "mg": 500
+  },
+  {
+   "form": "vial",
+   "mg": 1000
+  },
+  {
+   "form": "vial",
+   "mg": 2000
+  }
+ ],
+ "compounding": "D5W·NS·LRS 등 다수 IV 수액과 호환",
+ "reviewed": null
+}

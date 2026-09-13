@@ -1,0 +1,94 @@
+{
+ "id": "aglepristone",
+ "name": "Aglepristone",
+ "brand": [
+  "Alizin",
+  "Alizine"
+ ],
+ "class": "프로게스테론 수용체 길항제",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "임신 중절 (교배 후 45일 이내)",
+   "route": "SC",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "24시간 간격 2회; 목덜미 SC, 부위당 최대 5 mL"
+  },
+  {
+   "species": "dog",
+   "label": "분만 유도 (LH surge 후 60일)",
+   "route": "SC",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "24시간 간격 2회; 58일 이전 금지"
+  },
+  {
+   "species": "dog",
+   "label": "자궁축농증 보조 (a)",
+   "route": "SC",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1·2일 투여 후 7·8일, 14·15일… 반복; 항생제 병용"
+  },
+  {
+   "species": "dog",
+   "label": "자궁축농증 보조 (b)",
+   "route": "SC",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1·2·8일 투여, cloprostenol 3–7일 병용"
+  },
+  {
+   "species": "cat",
+   "label": "임신 중절 (45일 이내)",
+   "route": "SC",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "2회; 일부 연구 15 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "자궁축농증",
+   "route": "SC",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1·2·7·14일 투여; 항생제 병용"
+  },
+  {
+   "species": "cat",
+   "label": "유선 섬유선종성 과형성",
+   "route": "SC",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1·2·7일 투여, 이후 주 1회 증상 소실까지"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 30
+  }
+ ],
+ "compounding": "오일/알코올 기제 — 다른 약물과 혼합 금지",
+ "reviewed": null
+}

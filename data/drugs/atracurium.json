@@ -1,0 +1,93 @@
+{
+ "id": "atracurium",
+ "name": "Atracurium",
+ "brand": [
+  "Tracrium"
+ ],
+ "class": "비탈분극성 신경근 차단제",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "수술 중 근이완·기관 삽관",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "추가 0.1 mg/kg IV, 20–30분 이상 간격; 양압환기 필수"
+  },
+  {
+   "species": "dog",
+   "label": "부하 용량 (CRI 전, 기계환기 호흡근 마비)",
+   "route": "IV",
+   "low": 0.2,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "기계환기 호흡근 마비 CRI",
+   "route": "CRI",
+   "low": 3,
+   "high": 9,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "부하 5분 후 시작; D5W 또는 0.9% NaCl 희석, 타 약물과 혼합 금지"
+  },
+  {
+   "species": "dog",
+   "label": "안과 수술 안구 중앙 위치",
+   "route": "IV",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "전신마취 하; 필요 시 0.1 mg/kg IV 추가"
+  },
+  {
+   "species": "cat",
+   "label": "IV 마취 중 보조 근이완",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "추가 0.1 mg/kg IV, 20–30분 이상 간격; 양압환기 필수"
+  },
+  {
+   "species": "cat",
+   "label": "부하 용량 (CRI 전, 기계환기 호흡근 마비)",
+   "route": "IV",
+   "low": 0.2,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "기계환기 호흡근 마비 CRI",
+   "route": "CRI",
+   "low": 3,
+   "high": 9,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true,
+   "note": "부하 5분 후 시작; D5W 또는 0.9% NaCl 희석, 타 약물과 혼합 금지"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 10
+  }
+ ],
+ "compounding": "0.9% NaCl·D5W 희석 가능; 알칼리성 약물·용액(바르비투르, 중탄산)과 혼합 시 침전",
+ "reviewed": null
+}

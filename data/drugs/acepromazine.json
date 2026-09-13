@@ -41,6 +41,98 @@
    "freq": "q8h",
    "default": true,
    "note": "둔감(obtunded) 고양이에는 비권장"
+  },
+  {
+   "species": "dog",
+   "label": "진정·진토·수술 전 처치 (label)",
+   "route": "IV/IM/SC",
+   "low": 0.55,
+   "high": 1.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "label 용량은 필요량보다 10–100배 높음, 저용량 권장"
+  },
+  {
+   "species": "cat",
+   "label": "진정·진토·수술 전 처치 (label)",
+   "route": "IV/IM/SC",
+   "low": 1.1,
+   "high": 2.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "label 용량은 필요량보다 10–100배 높음, 저용량 권장"
+  },
+  {
+   "species": "dog",
+   "label": "진정·보정 (extra-label)",
+   "route": "IV/IM/SC",
+   "low": 0.01,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "서서히 IV; 총량 최대 3 mg/dog (일부 4 mg)"
+  },
+  {
+   "species": "cat",
+   "label": "진정·보정 (extra-label)",
+   "route": "IV/IM/SC",
+   "low": 0.01,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "서서히 IV"
+  },
+  {
+   "species": "dog",
+   "label": "마취 전 처치",
+   "route": "IV/IM/SC",
+   "low": 0.02,
+   "high": 0.05,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "IV는 저용량; 오피오이드 병용 시 0.02–0.03"
+  },
+  {
+   "species": "cat",
+   "label": "마취 전 처치",
+   "route": "IV/IM/SC",
+   "low": 0.02,
+   "high": 0.05,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "IV는 저용량; 오피오이드 병용 시 0.02–0.03"
+  },
+  {
+   "species": "dog",
+   "label": "진정 (tranquilization/sedation)",
+   "route": "IV/IM/SC",
+   "low": 0.03,
+   "high": 0.125,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "IV는 저용량"
+  },
+  {
+   "species": "cat",
+   "label": "진정 (tranquilization/sedation)",
+   "route": "IV/IM/SC",
+   "low": 0.03,
+   "high": 0.125,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "IV는 저용량"
+  },
+  {
+   "species": "cat",
+   "label": "요도폐색 보조 (수컷)",
+   "route": "IM",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "의식저하 고양이 금기"
   }
  ],
  "strengths": [
@@ -51,6 +143,10 @@
   {
    "form": "tablet",
    "mg": 25
+  },
+  {
+   "form": "injection",
+   "mgml": 10
   }
  ],
  "compounding": null,

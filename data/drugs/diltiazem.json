@@ -68,6 +68,48 @@
    "high": 45,
    "unit": "mg/animal",
    "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "급성 상심실성 빈맥 (a)",
+   "route": "IV",
+   "low": 0.05,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "2분에 걸쳐 IV; 5분 간격으로 최대 2회 반복 가능"
+  },
+  {
+   "species": "dog",
+   "label": "급성 상심실성 빈맥 (b)",
+   "route": "IV",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "2–5분에 걸쳐 IV; 필요 시 총 0.5 mg/kg까지 증량"
+  },
+  {
+   "species": "dog",
+   "label": "급성 상심실성 빈맥 재발 시 CRI",
+   "route": "CRI",
+   "low": 2,
+   "high": 6,
+   "unit": "mcg/kg/min",
+   "freq": "cri",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "급성 상심실성 빈맥",
+   "route": "IV",
+   "low": 0.125,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "2분에 걸쳐 IV; 15분 간격 반복, 누적 최대 0.75 mg/kg"
   }
  ],
  "strengths": [
@@ -86,6 +128,14 @@
   {
    "form": "tablet",
    "mg": 120
+  },
+  {
+   "form": "injection",
+   "mgml": 5
+  },
+  {
+   "form": "vial",
+   "mg": 25
   }
  ],
  "compounding": "속방·서방 제형은 호환되지 않음",

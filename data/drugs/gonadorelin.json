@@ -1,0 +1,83 @@
+{
+ "id": "gonadorelin",
+ "name": "Gonadorelin",
+ "brand": [
+  "Cystorelin",
+  "Fertagyl",
+  "Factrel",
+  "GONABreed"
+ ],
+ "class": "성선자극호르몬 방출호르몬(GnRH)",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "GnRH 자극검사 (거세 vs 잠복고환 감별)",
+   "route": "IM",
+   "low": 0.05,
+   "high": 0.05,
+   "unit": "mg/animal",
+   "freq": "once",
+   "default": true,
+   "note": "투여 전·2–3시간 후 채혈; 원문 50 µg/dog"
+  },
+  {
+   "species": "dog",
+   "label": "정액 품질 개선",
+   "route": "IM",
+   "low": 1,
+   "high": 3,
+   "unit": "mcg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "낭종성 난소 질환",
+   "route": "IM",
+   "low": 3.3,
+   "high": 3.3,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "note": "3일간"
+  },
+  {
+   "species": "cat",
+   "label": "난소 잔존조직 검출 (OHE 후)",
+   "route": "IM",
+   "low": 0.025,
+   "high": 0.025,
+   "unit": "mg/animal",
+   "freq": "once",
+   "default": true,
+   "note": "원문 25 µg/cat, 경로 미명시(제제는 IM/IV); 1–2주 후 프로게스테론 >1 ng/mL 시 잔존"
+  },
+  {
+   "species": "cat",
+   "label": "수컷 불임·성욕 감소·고환 하강",
+   "route": "IM",
+   "low": 1,
+   "high": 1,
+   "unit": "mcg/kg",
+   "freq": "q48h",
+   "note": "원문 2–3일 간격, 경로 미명시(제제는 IM/IV)"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 0.043
+  },
+  {
+   "form": "injection",
+   "mgml": 0.05
+  },
+  {
+   "form": "injection",
+   "mgml": 0.1
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

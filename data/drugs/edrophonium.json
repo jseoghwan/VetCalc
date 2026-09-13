@@ -1,0 +1,64 @@
+{
+ "id": "edrophonium",
+ "name": "Edrophonium",
+ "brand": [
+  "Tensilon",
+  "Enlon"
+ ],
+ "class": "항콜린에스테라제 (중증근무력증 진단·근이완 역전)",
+ "tags": [
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "중증근무력증 반응 검사",
+   "route": "IV",
+   "low": 0.1,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "atropine 0.02–0.04 mg/kg IV 준비"
+  },
+  {
+   "species": "dog",
+   "label": "비탈분극성 근이완제 역전",
+   "route": "IV",
+   "low": 0.25,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "저용량부터; 직전 atropine 0.02–0.04 mg/kg IV 권장"
+  },
+  {
+   "species": "cat",
+   "label": "중증근무력증 반응 검사",
+   "route": "IV",
+   "low": 0.2,
+   "high": 0.5,
+   "unit": "mg/animal",
+   "freq": "once",
+   "default": true,
+   "note": "atropine 0.02–0.04 mg/kg IV 준비"
+  },
+  {
+   "species": "cat",
+   "label": "비탈분극성 근이완제 역전",
+   "route": "IV",
+   "low": 0.25,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "저용량부터; 직전 atropine 0.02–0.04 mg/kg IV 권장"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 10
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

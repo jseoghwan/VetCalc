@@ -1,0 +1,52 @@
+{
+ "id": "imidocarb",
+ "name": "Imidocarb",
+ "brand": [
+  "Imizol"
+ ],
+ "class": "항원충제(바베시아·사이타욱스준)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "cat",
+   "label": "Cytauxzoon felis",
+   "route": "IM",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "14일 후 반복; 아트로핀 전처치 고려; 아토바쿠온+아지스로마이신이 우선"
+  },
+  {
+   "species": "cat",
+   "label": "고양이 바베시아증 (large Babesia)",
+   "route": "IM",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "독시사이클린 병용 가능; B. felis에는 효과 없음"
+  },
+  {
+   "species": "cat",
+   "label": "고양이 헤모플라스마증 (독시사이클린 불내성 시)",
+   "route": "IM",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "2주 간격 최소 2회"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 120
+  }
+ ],
+ "compounding": "다른 약물과 혼합 금지",
+ "reviewed": null
+}

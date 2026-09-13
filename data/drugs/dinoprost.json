@@ -1,0 +1,164 @@
+{
+ "id": "dinoprost",
+ "name": "Dinoprost",
+ "brand": [
+  "Lutalyse"
+ ],
+ "class": "프로스타글란딘 F2α (임신중절·자궁축농증)",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "임신중절 단독 (a) 25–30일 이후",
+   "route": "SC",
+   "low": 80,
+   "high": 100,
+   "unit": "mcg/kg",
+   "freq": "q12h",
+   "note": "최소 1일 2회; 첫날은 절반 용량; 6일 이상 확인될 때까지"
+  },
+  {
+   "species": "dog",
+   "label": "임신중절 카베르골린 병용 (b-i) 25일부터",
+   "route": "SC",
+   "low": 0.025,
+   "high": 0.025,
+   "unit": "mg/kg",
+   "freq": "q48h"
+  },
+  {
+   "species": "dog",
+   "label": "임신중절 카베르골린 병용 (b-ii) 27일 이후",
+   "route": "IM",
+   "low": 0.03,
+   "high": 0.03,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "6–9일"
+  },
+  {
+   "species": "dog",
+   "label": "임신중절 미소프로스톨 병용 (b-iii) 초기 3일",
+   "route": "SC",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "3일 후 0.2 mg/kg q8h로 증량"
+  },
+  {
+   "species": "dog",
+   "label": "임신중절 미소프로스톨 병용 (b-iii) 3일 이후",
+   "route": "SC",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "효과 볼 때까지"
+  },
+  {
+   "species": "dog",
+   "label": "자궁축농증 (a) 1일차",
+   "route": "SC",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2일차 0.2, 3–7일차 0.25 mg/kg"
+  },
+  {
+   "species": "dog",
+   "label": "자궁축농증 (a) 2일차",
+   "route": "SC",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "자궁축농증 (a) 3–7일차",
+   "route": "SC",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "E. coli 항생제 병용"
+  },
+  {
+   "species": "dog",
+   "label": "자궁축농증 (b)",
+   "route": "SC",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "7일"
+  },
+  {
+   "species": "dog",
+   "label": "자궁축농증 (c)",
+   "route": "SC",
+   "low": 250,
+   "high": 250,
+   "unit": "mcg/kg",
+   "freq": "q12h",
+   "note": "자궁 크기 정상화까지(보통 3–5일)"
+  },
+  {
+   "species": "dog",
+   "label": "자궁축농증 카베르골린 병용 (e)",
+   "route": "IM/SC",
+   "low": 0.025,
+   "high": 0.03,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "임신중절 (33일부터)",
+   "route": "IM",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "허탈·구토·설사 가능"
+  },
+  {
+   "species": "cat",
+   "label": "자궁축농증 1일차",
+   "route": "SC",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "이후 0.25 mg/kg q24h 5일"
+  },
+  {
+   "species": "cat",
+   "label": "자궁축농증 2일차 이후",
+   "route": "SC",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "5일; 살균성 항생제 병용"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 5
+  },
+  {
+   "form": "injection",
+   "mgml": 12.5
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

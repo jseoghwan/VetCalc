@@ -1,0 +1,152 @@
+{
+ "id": "calcium",
+ "name": "Calcium, IV (Gluconate / Chloride / Borogluconate)",
+ "brand": [],
+ "class": "칼슘 보충제 (주사)",
+ "tags": [
+  "endocrine",
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "저칼슘혈증 증상 (테타니·발작)",
+   "route": "IV",
+   "low": 5,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "원소 칼슘 기준; 10–30분 서서히 IV; 글루콘산칼슘 10% 0.54–1.61 mL/kg, 염화칼슘 10% 0.18–0.55 mL/kg"
+  },
+  {
+   "species": "dog",
+   "label": "테타니 교정 후 단기 유지 CRI",
+   "route": "CRI",
+   "low": 2.5,
+   "high": 3.5,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "원소 칼슘 기준; LRS 또는 0.9% NaCl 희석"
+  },
+  {
+   "species": "dog",
+   "label": "고칼륨혈증 심독성",
+   "route": "IV",
+   "low": 4.65,
+   "high": 9.3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "원소 칼슘 기준(글루콘산칼슘 10% 0.5–1 mL/kg); 10–20분 서서히; 효과 10–15분"
+  },
+  {
+   "species": "dog",
+   "label": "비폐쇄성 난산 보조 (a)",
+   "route": "IV",
+   "low": 9,
+   "high": 9,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "원소 칼슘 기준(≈1 mL/kg 글루콘산칼슘 10%); 20 kg 이상은 총 180 mg; 서서히 주입"
+  },
+  {
+   "species": "dog",
+   "label": "비폐쇄성 난산 보조 (b)",
+   "route": "IV",
+   "low": 3.8,
+   "high": 3.8,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "원소 칼슘 기준 중앙값(0.41 mL/kg 글루콘산칼슘 10%); 서서히"
+  },
+  {
+   "species": "dog",
+   "label": "비폐쇄성 난산 보조 (c)",
+   "route": "IV",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "원소 칼슘 기준(0.2 mL/kg 글루콘산칼슘 10%); 서서히"
+  },
+  {
+   "species": "cat",
+   "label": "저칼슘혈증 증상 (테타니·발작)",
+   "route": "IV",
+   "low": 5,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "원소 칼슘 기준; 10–30분 서서히 IV; 글루콘산칼슘 10% 0.54–1.61 mL/kg, 염화칼슘 10% 0.18–0.55 mL/kg"
+  },
+  {
+   "species": "cat",
+   "label": "테타니 교정 후 단기 유지 CRI",
+   "route": "CRI",
+   "low": 2.5,
+   "high": 3.5,
+   "unit": "mg/kg/h",
+   "freq": "cri",
+   "default": true,
+   "note": "원소 칼슘 기준; LRS 또는 0.9% NaCl 희석"
+  },
+  {
+   "species": "cat",
+   "label": "고칼륨혈증 심독성",
+   "route": "IV",
+   "low": 4.65,
+   "high": 9.3,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "원소 칼슘 기준(글루콘산칼슘 10% 0.5–1 mL/kg); 10–20분 서서히; 효과 10–15분"
+  },
+  {
+   "species": "cat",
+   "label": "비폐쇄성 난산 보조 (a)",
+   "route": "IV",
+   "low": 9,
+   "high": 9,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "원소 칼슘 기준(≈1 mL/kg 글루콘산칼슘 10%); 서서히 주입"
+  },
+  {
+   "species": "cat",
+   "label": "비폐쇄성 난산 보조 (b)",
+   "route": "IV",
+   "low": 3.8,
+   "high": 3.8,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "원소 칼슘 기준 중앙값(0.41 mL/kg 글루콘산칼슘 10%); 서서히"
+  },
+  {
+   "species": "cat",
+   "label": "비폐쇄성 난산 보조 (c)",
+   "route": "IV",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "원소 칼슘 기준(0.2 mL/kg 글루콘산칼슘 10%); 서서히"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "injection",
+   "mgml": 9.3
+  },
+  {
+   "form": "injection",
+   "mgml": 20.7
+  },
+  {
+   "form": "injection",
+   "mgml": 27.3
+  }
+ ],
+ "compounding": "원소 칼슘 mg/mL 기준: 글루콘산칼슘 10%(100 mg/mL)=9.3, 글루콘산칼슘 23%(230 mg/mL)=20.7, 염화칼슘 10%(100 mg/mL)=27.3; 글루콘산칼슘은 0.9% NaCl·LRS·D5–20% 희석 가능",
+ "reviewed": null
+}

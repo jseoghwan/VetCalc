@@ -39,6 +39,28 @@
    "unit": "mg/kg",
    "freq": "q8h",
    "default": true
+  },
+  {
+   "species": "dog",
+   "label": "진토·항히스타민 (멀미 예방·치료)",
+   "route": "IV/IM",
+   "low": 4,
+   "high": 8,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "IV 시 50 mg당 0.9% 생리식염수 10 mL 희석, 2분에 걸쳐 투여"
+  },
+  {
+   "species": "cat",
+   "label": "진토·항히스타민",
+   "route": "IV/IM",
+   "low": 4,
+   "high": 8,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "IV 시 50 mg당 0.9% 생리식염수 10 mL 희석, 2분에 걸쳐 투여"
   }
  ],
  "strengths": [
@@ -49,8 +71,12 @@
   {
    "form": "tablet",
    "mg": 50
+  },
+  {
+   "form": "injection",
+   "mgml": 50
   }
  ],
- "compounding": null,
+ "compounding": "IV 시 50 mg당 0.9% 생리식염수 10 mL 희석 후 2분에 걸쳐 투여",
  "reviewed": null
 }

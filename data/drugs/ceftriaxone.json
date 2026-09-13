@@ -1,0 +1,67 @@
+{
+ "id": "ceftriaxone",
+ "name": "Ceftriaxone",
+ "brand": [
+  "Rocephin"
+ ],
+ "class": "3세대 세팔로스포린 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "감수성 감염",
+   "route": "IM/SC",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "원문 1일 1–2회"
+  },
+  {
+   "species": "dog",
+   "label": "라임병",
+   "route": "IV/SC",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "14–30일"
+  },
+  {
+   "species": "dog",
+   "label": "감염성 심내막염 (S. canis)",
+   "route": "IV",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "2주 후 경구 항생제로 전환"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염",
+   "route": "IM/SC",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "라임병",
+   "route": "IV/SC",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "14–30일"
+  }
+ ],
+ "strengths": [],
+ "compounding": "칼슘 함유 용액(LRS 등)과 혼합·Y-site 동시투여 금지(침전); IV는 10–40 mg/mL로 30분 이상 주입",
+ "reviewed": null
+}

@@ -40,6 +40,16 @@
    "freq": "q8h",
    "default": true,
    "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "녹내장·대사성 알칼리증 보조",
+   "route": "IV",
+   "low": 4,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true
   }
  ],
  "strengths": [
@@ -53,6 +63,10 @@
   },
   {
    "form": "capsule",
+   "mg": 500
+  },
+  {
+   "form": "vial",
    "mg": 500
   }
  ],

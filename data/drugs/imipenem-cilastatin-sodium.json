@@ -1,0 +1,43 @@
+{
+ "id": "imipenem-cilastatin-sodium",
+ "name": "Imipenem/Cilastatin Sodium",
+ "brand": [
+  "Primaxin"
+ ],
+ "class": "카바페넴계 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "감수성 감염",
+   "route": "IV",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–8h"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염",
+   "route": "IV",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–8h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "vial",
+   "mg": 500
+  }
+ ],
+ "compounding": "희석액 10 mL로 재구성 후 반드시 추가 희석하여 투여; 용액 색 투명~황색 모두 역가 동일",
+ "reviewed": null
+}
