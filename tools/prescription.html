@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>경구 처방·조제 · VECC</title>
-<meta name="description" content="약물 DB 기반 경구 처방 작성과 조제(분말·캡슐·현탁액) 계산 — 개/고양이">
+<title>처방·조제 · VECC</title>
+<meta name="description" content="약물 DB 기반 경구·주사(IV/IM/SC/CRI) 처방 작성과 조제·주사량 계산 — 개/고양이">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#4453A3">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -164,6 +164,11 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
 .ibtn[aria-expanded="true"]{background:var(--accent-soft);color:var(--accent-ink);border-color:transparent}
 .ibtn:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
 .rx-body{padding:12px 14px 2px}
+.routebar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 12px}
+.routebar .rt{font-size:12px;color:var(--muted)}
+.seg.route button{min-width:44px;padding:3px 10px}
+.tile .v.sm{font-size:16px;white-space:normal}
+.tile .k{flex-wrap:wrap}
 .rx-body .igroup{grid-template-columns:repeat(6,1fr);gap:10px 8px}
 .rx-body .f2{grid-column:span 2}.rx-body .f3{grid-column:span 3}.rx-body .f4{grid-column:span 4}.rx-body .f6{grid-column:1 / -1}
 .rx-body .field input,.rx-body .field select{font-size:15px;padding:7px 8px}
@@ -282,7 +287,7 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
   </div>
 
   <div class="rx-list" id="rx-list"></div>
-  <div class="empty" id="rx-empty">위 검색창에서 약물을 골라 처방에 추가하세요.<br><b>표준 용량</b>이 채워지고, 보유 규격을 넣으면 조제량이 계산됩니다.</div>
+  <div class="empty" id="rx-empty">위 검색창에서 약물을 골라 처방에 추가하세요.<br><b>표준 용량</b>이 채워지고, 카드에서 경로(PO·IV·IM·SC·CRI)를 고른 뒤 보유 규격·농도를 넣으면 조제량·주사량이 계산됩니다.</div>
 
   <div class="callout ref" style="margin-top:22px">계산값은 <b>표준 용량 × 체중</b>(mg/마리 단위는 체중 무관)입니다. 정제 수는 반올림 단위(설정)로 올림·내림한 뒤 실제 1회 용량과 표준 대비 오차를 함께 보여줍니다.</div>
 </section>
@@ -321,7 +326,7 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
 </section>
 
 <div class="foot">
-  <span>약물 DB는 과에서 정리한 표준 용량이며 개·고양이 경구 투여 기준입니다. 미검토 표시가 있는 약물은 확인 후 사용하세요.</span>
+  <span>약물 DB는 과에서 정리한 표준 용량이며 개·고양이 경구·주사(IV/IM/SC/CRI) 기준입니다. 미검토 표시가 있는 약물은 확인 후 사용하세요.</span>
   <span>임상 판단의 보조 도구이며 최종 결정은 담당 수의사에게 있습니다.</span>
 </div>
 </main>
@@ -353,23 +358,31 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
   const S = {
     index: [], drugs: new Map(), pending: new Map(),
     species: 'dog', bw: 0, days: 7, alias: '',
-    items: [],            // [{uid, id, doseIdx, val, unit, freq, daily, form, strength, mode:'tablet'|'suspension', volume, open}]  daily: val이 1일 총량(per:"day")
+    items: [],            // [{uid, id, route, doseIdx, val, unit, freq, daily, form, strength, mode, volume, conc, vialMg, criVol, criRate, open}]
     settings: Object.assign({ freq:'q', round:0.5 }, store.get(K.settings, {})),
-    units: store.get(K.units, {}),           // {id:{species:unit}} 약물별로 마지막에 고른 표시 단위
-    overrides: store.get(K.overrides, {}),   // {id:{species:{val,unit,freq,daily,label}}}
-    stock: store.get(K.stock, {}),           // {id:{form,strength,mode,volume}}
-    saved: store.get(K.saved, [])            // [{ts,alias,species,bw,days,items:[…]}]
+    units: store.get(K.units, {}),           // {id:{"dog"|"dog|IV":unit}} 약물·종·경로별 마지막 표시 단위 (PO는 종만)
+    overrides: store.get(K.overrides, {}),   // {id:{"dog"|"dog|IV"|"dog|CRI":{val,unit,freq,daily,label}}}
+    stock: store.get(K.stock, {}),           // {id:{form,strength,mode,volume,conc,vialMg,criVol,criRate}}
+    saved: store.get(K.saved, [])
   };
   let uidSeq = 1;
 
-  /* ---------- 단위·간격 ---------- */
-  const FREQ = { q24h:{h:24,sid:'SID',n:1}, q12h:{h:12,sid:'BID',n:2}, q8h:{h:8,sid:'TID',n:3}, q6h:{h:6,sid:'QID',n:4}, q48h:{h:48,sid:'격일',n:0.5}, q72h:{h:72,sid:'3일마다',n:1/3}, once:{h:0,sid:'1회',n:0} };
-  const freqLabel = (f) => !FREQ[f] ? f : (S.settings.freq === 'sid' ? FREQ[f].sid : (f === 'once' ? '1회' : f));
+  /* ---------- 경로·단위·간격 ---------- */
+  const ROUTES = ['PO','IV','IM','SC','CRI'];
+  const routeLabel = (r) => r === 'CRI' ? 'CRI' : r;
+  const isCRI = (r) => r === 'CRI';
+  const doseHasRoute = (x, r) => r === 'PO' ? (x.route || 'PO') === 'PO' : r === 'CRI' ? x.route === 'CRI' : String(x.route || '').split('/').includes(r);
+  const FREQ = { q24h:{h:24,sid:'SID',n:1}, q12h:{h:12,sid:'BID',n:2}, q8h:{h:8,sid:'TID',n:3}, q6h:{h:6,sid:'QID',n:4}, q4h:{h:4,sid:'q4h',n:6}, q2h:{h:2,sid:'q2h',n:12}, q48h:{h:48,sid:'격일',n:0.5}, q72h:{h:72,sid:'3일마다',n:1/3}, once:{h:0,sid:'1회',n:0} };
+  const freqLabel = (f) => f === 'cri' ? 'CRI' : !FREQ[f] ? f : (S.settings.freq === 'sid' ? FREQ[f].sid : (f === 'once' ? '1회' : f));
   const freqN = (f) => FREQ[f] ? FREQ[f].n : 1;
-  const normFreq = (f) => FREQ[f] ? f : (String(f).startsWith('q12') ? 'q12h' : 'q24h');   // "q12–24h" 같은 표기는 첫 값을 기본으로
+  const normFreq = (f) => f === 'cri' ? 'cri' : FREQ[f] ? f : (String(f).startsWith('q12') ? 'q12h' : 'q24h');
   const UNITS = ['mg/kg','mcg/kg','mg/animal'];
-  const unitLabel = (u) => ({ 'mg/kg':'mg/kg', 'mcg/kg':'µg/kg', 'mg/animal': S.species === 'cat' ? 'mg/cat' : 'mg/dog' })[u] || u;
-  /* 1회 mg 로 환산. 체중이 없으면 per-kg 단위는 null */
+  const CUNITS = ['mg/kg/h','mcg/kg/h','mcg/kg/min','mg/kg/min','mg/kg/day'];
+  const unitLabel = (u) => ({ 'mg/kg':'mg/kg', 'mcg/kg':'µg/kg', 'mg/animal': S.species === 'cat' ? 'mg/cat' : 'mg/dog', 'mcg/kg/h':'µg/kg/h', 'mcg/kg/min':'µg/kg/min' })[u] || u;
+  const isDaily = (x) => !!x && x.per === 'day';
+  const dailyN = (f) => { const n = freqN(f); return n >= 1 ? n : 1; };
+  const unitTag = (u, daily) => unitLabel(u) + (daily ? '/day' : '');
+  /* 1회 mg 환산 (bolus). 체중 없으면 per-kg 단위는 null */
   function toMg(val, unit, bw){
     if (!(val > 0)) return null;
     if (unit === 'mg/animal') return val;
@@ -382,8 +395,19 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
     if (!(bw > 0)) return null;
     return unit === 'mcg/kg' ? mg / bw * 1000 : mg / bw;
   }
+  /* CRI: mg/h 환산 */
+  function toMgH(val, unit, bw){
+    if (!(val > 0) || !(bw > 0)) return null;
+    switch (unit) { case 'mg/kg/h': return val * bw; case 'mcg/kg/h': return val * bw / 1000; case 'mcg/kg/min': return val * bw * 60 / 1000; case 'mg/kg/min': return val * bw * 60; case 'mg/kg/day': return val * bw / 24; }
+    return null;
+  }
+  function fromMgH(mgh, unit, bw){
+    if (mgh == null || !(bw > 0)) return null;
+    switch (unit) { case 'mg/kg/h': return mgh / bw; case 'mcg/kg/h': return mgh / bw * 1000; case 'mcg/kg/min': return mgh / bw * 1000 / 60; case 'mg/kg/min': return mgh / bw / 60; case 'mg/kg/day': return mgh / bw * 24; }
+    return null;
+  }
   const fmt = (n, d) => n == null || !isFinite(n) ? '—' : (Math.round(n * Math.pow(10, d)) / Math.pow(10, d)).toString();
-  const sig = (n) => n == null || !isFinite(n) ? '—' : (n >= 100 ? fmt(n,1) : n >= 10 ? fmt(n,2) : n >= 0.1 ? fmt(n,3) : fmt(n,5));   // 18.75 같은 입력 정밀도를 잃지 않게
+  const sig = (n) => n == null || !isFinite(n) ? '—' : (n >= 100 ? fmt(n,1) : n >= 10 ? fmt(n,2) : n >= 0.1 ? fmt(n,3) : fmt(n,5));
   const tfmt = (t) => { const r = Math.round(t * 100) / 100; const w = Math.floor(r), f = Math.round((r - w) * 100) / 100; if (f === 0) return String(w); const fr = f === 0.5 ? '½' : f === 0.25 ? '¼' : f === 0.75 ? '¾' : null; return fr ? (w ? w + fr : fr) : fmt(r, 2); };
 
   /* ---------- 데이터 ---------- */
@@ -404,12 +428,12 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
     const j = await r.json();
     S.index = (j.drugs || []).slice().sort((a,b) => a.name.localeCompare(b.name));
   }
-  function dosesFor(d, sp){ return (d.doses || []).filter(x => x.species === sp); }
-  function defaultDoseIdx(d, sp){ const ds = dosesFor(d, sp); const i = ds.findIndex(x => x.default); return i < 0 ? 0 : i; }
-  /* per:"day" — low/high가 1회 용량이 아니라 1일 총량. 앱이 선택한 간격의 하루 횟수로 나눠 1회 용량을 계산한다 */
-  const isDaily = (x) => !!x && x.per === 'day';
-  const dailyN = (f) => { const n = freqN(f); return n >= 1 ? n : 1; };   // once·q48h·q72h는 나누지 않음 (1일 총량 개념이 맞지 않음)
-  const unitTag = (u, daily) => unitLabel(u) + (daily ? '/day' : '');
+  function dosesFor(d, sp, route){ return (d.doses || []).filter(x => x.species === sp && doseHasRoute(x, route || 'PO')); }
+  function routesFor(d, sp){ return ROUTES.filter(r => (d.doses || []).some(x => x.species === sp && doseHasRoute(x, r))); }
+  function defaultDoseIdx(d, sp, route){ const ds = dosesFor(d, sp, route); const i = ds.findIndex(x => x.default); return i < 0 ? 0 : i; }
+  const ovKey = (sp, route) => route === 'PO' ? sp : sp + '|' + route;   // 기존 저장값(PO)과 호환
+  const getOv = (id, sp, route) => (S.overrides[id] || {})[ovKey(sp, route)];
+  const splitKey = (k) => { const [sp, r] = k.split('|'); return { sp, route: r || 'PO' }; };
 
   /* ---------- 검색 ---------- */
   const q = $('#q'), sugg = $('#sugg');
@@ -417,7 +441,7 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
   function search(){
     const t = q.value.trim().toLowerCase();
     if (!t) { sugg.hidden = true; q.setAttribute('aria-expanded','false'); return; }
-    const hits = S.index.filter(d => [d.name, d.name_ko, d.class, ...(d.brand||[]), ...(d.tags||[])].join(' ').toLowerCase().includes(t)).slice(0, 12);
+    const hits = S.index.filter(d => [d.name, d.class, ...(d.brand||[]), ...(d.tags||[])].join(' ').toLowerCase().includes(t)).slice(0, 12);
     sugg.innerHTML = hits.length
       ? hits.map((d,i) => `<button type="button" role="option" data-id="${esc(d.id)}"${i===0?' class="hot"':''}><b>${esc(d.name)}</b>${d.brand&&d.brand.length?`<span class="ko">${esc(d.brand.join(', '))}</span>`:''}<span class="cls">${esc(d.class||'')}</span></button>`).join('')
       : `<div class="empty" style="border:0;padding:12px 14px;text-align:left">일치하는 약물이 없습니다. DB에 아직 없는 약물일 수 있습니다.</div>`;
@@ -436,20 +460,20 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
   document.addEventListener('click', (e) => { if (!e.target.closest('.search')) sugg.hidden = true; });
 
   /* ---------- 항목 추가/삭제 ---------- */
-  function itemFromDrug(d, sp){
-    const ov = (S.overrides[d.id] || {})[sp];
+  function applyStock(it, d){
     const st = S.stock[d.id] || {};
-    const di = defaultDoseIdx(d, sp);
-    const base = dosesFor(d, sp)[di];
-    const it = { uid: uidSeq++, id: d.id, doseIdx: di, open: false,
-      form: st.form || (d.strengths && d.strengths[0] ? d.strengths[0].form : 'tablet'),
-      strength: st.strength || (d.strengths && d.strengths[0] ? d.strengths[0].mg : ''),
-      mode: st.mode || 'tablet', volume: st.volume || '' };
-    if (ov) { it.val = ov.val; it.unit = ov.unit; it.freq = ov.freq; it.daily = !!ov.daily; it.doseIdx = -1; }
-    else if (base) { it.val = base.low; it.unit = base.unit; it.freq = normFreq(base.freq); it.daily = isDaily(base); }
-    else { it.val = ''; it.unit = 'mg/kg'; it.freq = 'q24h'; it.daily = false; }
-    const pu = (S.units[d.id] || {})[sp];
-    if (pu && pu !== it.unit) { const v = fromMg(toMg(+it.val, it.unit, S.bw), pu, S.bw); if (v != null) { it.val = +sig(v); it.unit = pu; } }
+    const inj = (d.strengths || []).filter(s => s.form === 'injection'), vial = (d.strengths || []).filter(s => s.form === 'vial'), oral = (d.strengths || []).filter(s => s.form !== 'injection' && s.form !== 'vial');
+    it.form = st.form || (oral[0] ? oral[0].form : 'tablet');
+    it.strength = st.strength || (oral[0] ? oral[0].mg : '');
+    it.mode = st.mode || 'tablet'; it.volume = st.volume || '';
+    it.conc = st.conc || (inj[0] ? inj[0].mgml : ''); it.vialMg = st.vialMg || (vial[0] ? vial[0].mg : '');
+    it.criVol = st.criVol || 50; it.criRate = st.criRate || '';
+  }
+  function itemFromDrug(d, sp){
+    const rs = routesFor(d, sp);
+    const it = { uid: uidSeq++, id: d.id, route: rs[0] || 'PO', doseIdx: 0, open: false };
+    applyStock(it, d);
+    applyDose(it, -1, d);
     return it;
   }
   async function addDrug(id){
@@ -459,31 +483,60 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
     S.items.push(itemFromDrug(d, S.species));
     render(); saveDraft();
   }
-  function applyDose(it, idx){                     // 종 변경·용량 선택 시 표준값으로 되돌림
-    const d = S.drugs.get(it.id); const ds = dosesFor(d, S.species);
-    if (idx === -1) { const ov = (S.overrides[it.id]||{})[S.species]; if (ov) { it.val = ov.val; it.unit = ov.unit; it.freq = ov.freq; it.daily = !!ov.daily; it.doseIdx = -1; return; } idx = defaultDoseIdx(d, S.species); }
+  function applyDose(it, idx, dd){                 // 종·경로 변경, 용량 선택 시 표준값으로 되돌림
+    const d = dd || S.drugs.get(it.id); const ds = dosesFor(d, S.species, it.route);
+    if (idx === -1) {
+      const ov = getOv(it.id, S.species, it.route);
+      if (ov) { it.val = ov.val; it.unit = ov.unit; it.freq = ov.freq; it.daily = !!ov.daily; it.doseIdx = -1; return; }
+      idx = defaultDoseIdx(d, S.species, it.route);
+    }
     const b = ds[idx];
     if (b) { it.val = b.low; it.unit = b.unit; it.freq = normFreq(b.freq); it.daily = isDaily(b); it.doseIdx = idx; }
-    else { it.val = ''; it.daily = false; it.doseIdx = 0; }
+    else { it.val = ''; it.unit = isCRI(it.route) ? 'mg/kg/h' : 'mg/kg'; it.freq = isCRI(it.route) ? 'cri' : 'q24h'; it.daily = false; it.doseIdx = 0; }
+    const pu = (S.units[it.id] || {})[ovKey(S.species, it.route)];
+    if (pu && pu !== it.unit && b) {
+      const v = isCRI(it.route) ? fromMgH(toMgH(+it.val, it.unit, S.bw), pu, S.bw) : fromMg(toMg(+it.val, it.unit, S.bw), pu, S.bw);
+      if (v != null) { it.val = +sig(v); it.unit = pu; }
+    }
   }
 
   /* ---------- 계산 ---------- */
   function calc(it){
-    const d = S.drugs.get(it.id); const ds = dosesFor(d, S.species); const b = it.doseIdx >= 0 ? ds[it.doseIdx] : null;
-    const bw = S.bw, daily = !!it.daily, inMg = toMg(+it.val, it.unit, bw);   // 입력값의 mg 환산 (daily면 1일 총량)
+    const d = S.drugs.get(it.id); const ds = dosesFor(d, S.species, it.route); const b = it.doseIdx >= 0 ? ds[it.doseIdx] : null;
+    const bw = S.bw, route = it.route;
+    if (isCRI(route)) {
+      const mgh = toMgH(+it.val, it.unit, bw);
+      const out = { cri:true, mgh, base:b, range:null, warn:null };
+      if (b && b.low !== b.high) out.range = { lo: toMgH(b.low, b.unit, bw), hi: toMgH(b.high, b.unit, bw) };
+      if (mgh != null && out.range && (mgh < out.range.lo - 1e-9 || mgh > out.range.hi + 1e-9)) out.warn = '표준 범위 밖';
+      else if (mgh != null && b && b.low === b.high && Math.abs(mgh - toMgH(b.low, b.unit, bw)) > 1e-9) out.warn = '표준과 다름';
+      const conc = +it.conc, vol = +it.criVol, rate = +it.criRate;
+      if (mgh != null && conc > 0) {
+        out.pureMlh = mgh / conc; out.mgDay = mgh * 24;
+        if (vol > 0 && rate > 0) { out.hours = vol / rate; out.drugMg = mgh * out.hours; out.drugMl = out.drugMg / conc; out.dilMl = vol - out.drugMl; out.concFinal = out.drugMg / vol; }
+      }
+      return out;
+    }
+    const daily = !!it.daily, inMg = toMg(+it.val, it.unit, bw);
     const n = freqN(it.freq), days = it.freq === 'once' ? 1 : Math.max(1, S.days|0);
     const divN = daily ? dailyN(it.freq) : 1;
-    const mg = inMg == null ? null : inMg / divN;                              // 1회 용량 mg
+    const mg = inMg == null ? null : inMg / divN;
     const dosesTotal = it.freq === 'once' ? 1 : Math.max(1, Math.round(n * days));
     const total = mg == null ? null : mg * dosesTotal;
-    const out = { mg, n, days, dosesTotal, total, base: b, range: null, warn: null, daily, divN, dailyMg: daily ? inMg : null };
-    if (b && b.low !== b.high) out.range = { lo: toMg(b.low, b.unit, bw), hi: toMg(b.high, b.unit, bw) };   // 표준 범위 (daily면 1일 총량 기준)
+    const out = { mg, n, days, dosesTotal, total, base: b, range: null, warn: null, daily, divN, dailyMg: daily ? inMg : null, inj: route !== 'PO' };
+    if (b && b.low !== b.high) out.range = { lo: toMg(b.low, b.unit, bw), hi: toMg(b.high, b.unit, bw) };
     if (inMg != null && out.range && (inMg < out.range.lo - 1e-9 || inMg > out.range.hi + 1e-9)) out.warn = '표준 범위 밖';
     else if (inMg != null && b && b.low === b.high && Math.abs(inMg - toMg(b.low, b.unit, bw)) > 1e-9) out.warn = '표준과 다름';
     if (daily && !(n >= 1)) out.warn = out.warn || '1일 총량 용량은 하루 1회 이상 간격에서만 계산';
+    if (route !== 'PO') {                                   // 주사: mL·vial
+      const conc = +it.conc, vialMg = +it.vialMg;
+      if (mg != null && conc > 0) { out.ml = mg / conc; out.totalMl = total / conc; out.mlDay = it.freq === 'once' ? out.ml : out.ml * n; }
+      if (total != null && vialMg > 0) { out.vialRaw = total / vialMg; out.vials = Math.ceil(out.vialRaw - 1e-9); }
+      return out;
+    }
     const st = +it.strength;
     if (total != null && st > 0) {
-      if (it.mode === 'suspension') {                       // 규격 = mg/mL 원액이 아니라, 정제를 갈아 총 mL로 만든다
+      if (it.mode === 'suspension') {
         const vol = +it.volume;
         const rawT = total / st, r = S.settings.round, T = Math.max(r, Math.round(rawT / r) * r);
         out.T = T; out.rawT = rawT;
@@ -491,7 +544,7 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
       } else {
         const rawT = total / st, r = S.settings.round, T = Math.max(r, Math.round(rawT / r) * r);
         out.T = T; out.rawT = rawT;
-        out.actual = dosesTotal ? T * st / dosesTotal : null;   // 정제를 갈아 dosesTotal포로 나눌 때 1포 용량
+        out.actual = dosesTotal ? T * st / dosesTotal : null;
         out.perDoseT = T / dosesTotal;
       }
       if (out.actual != null && mg) out.err = (out.actual - mg) / mg * 100;
@@ -500,27 +553,58 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
   }
 
   /* ---------- 렌더 ---------- */
+  function doseOptText(x){
+    return `${esc(x.label||'표준')} — ${x.low===x.high?sig(x.low):sig(x.low)+'–'+sig(x.high)} ${unitTag(x.unit, isDaily(x))} ${isCRI(x.route)?'CRI':esc(x.route||'PO')+' '+freqLabel(normFreq(x.freq))}`;
+  }
   function renderItem(it){
-    const d = S.drugs.get(it.id); const ds = dosesFor(d, S.species); const c = calc(it);
-    const ov = (S.overrides[it.id]||{})[S.species];
-    const unitOpts = UNITS.map(u => `<option value="${u}"${it.unit===u?' selected':''}>${unitTag(u, it.daily)}</option>`).join('');
-    const freqOpts = Object.keys(FREQ).filter(f => !it.daily || FREQ[f].n >= 1 || it.freq === f).map(f => `<option value="${f}"${it.freq===f?' selected':''}>${freqLabel(f)}</option>`).join('');   // 1일 총량 항목은 하루 1회 이상 간격만
+    const d = S.drugs.get(it.id); const routes = routesFor(d, S.species); const ds = dosesFor(d, S.species, it.route); const c = calc(it);
+    const ov = getOv(it.id, S.species, it.route);
+    const cri = isCRI(it.route), inj = !cri && it.route !== 'PO';
+    const unitList = cri ? CUNITS : UNITS;
+    const unitOpts = unitList.map(u => `<option value="${u}"${it.unit===u?' selected':''}>${unitTag(u, it.daily)}</option>`).join('');
+    const freqOpts = Object.keys(FREQ).filter(f => !it.daily || FREQ[f].n >= 1 || it.freq === f).map(f => `<option value="${f}"${it.freq===f?' selected':''}>${freqLabel(f)}</option>`).join('');
     const doseOpts = [
       ...(ov ? [`<option value="-1"${it.doseIdx===-1?' selected':''}>내 기본값 — ${sig(ov.val)} ${unitTag(ov.unit, ov.daily)} ${freqLabel(ov.freq)}</option>`] : []),
-      ...ds.map((x,i) => `<option value="${i}"${it.doseIdx===i?' selected':''}>${esc(x.label||'표준')} — ${x.low===x.high?sig(x.low):sig(x.low)+'–'+sig(x.high)} ${unitTag(x.unit, isDaily(x))} ${freqLabel(normFreq(x.freq))}</option>`)
+      ...ds.map((x,i) => `<option value="${i}"${it.doseIdx===i?' selected':''}>${doseOptText(x)}</option>`)
     ].join('');
     const noSp = !ds.length && !ov;
-    const strengthOpts = (d.strengths||[]).map(s => `<option value="${s.mg}">${s.mg} mg ${esc(s.form)}</option>`).join('');
-    const isCustom = it.doseIdx === -1 ? false : (c.base ? (+it.val !== +c.base.low || it.unit !== c.base.unit || it.freq !== normFreq(c.base.freq)) : +it.val > 0);   // DB 표준값에서 손댔는지
+    const strengths = d.strengths || [];
+    const strengthOpts = strengths.filter(s => s.form !== 'injection' && s.form !== 'vial').map(s => `<option value="${s.mg}">${s.mg} mg ${esc(s.form)}</option>`).join('');
+    const concOpts = strengths.filter(s => s.form === 'injection').map(s => `<option value="${s.mgml}">${s.mgml} mg/mL</option>`).join('');
+    const vialOpts = strengths.filter(s => s.form === 'vial').map(s => `<option value="${s.mg}">${s.mg} mg vial</option>`).join('');
+    const isCustom = it.doseIdx === -1 ? false : (c.base ? (+it.val !== +c.base.low || it.unit !== c.base.unit || (!cri && it.freq !== normFreq(c.base.freq))) : +it.val > 0);
     const chips = [
       d.reviewed ? `<span class="chip ok">검토 ${esc(d.reviewed)}</span>` : `<span class="chip warn">미검토</span>`,
       it.daily ? `<span class="chip na">1일 총량</span>` : '',
       it.doseIdx === -1 ? `<span class="chip v">내 기본값</span>` : '',
       c.warn ? `<span class="chip high">${c.warn}</span>` : ''
     ].join('');
-    const tiles = c.mg == null
-      ? `<div class="tiles"><div class="tile"><span class="k">1회 용량</span><span class="v">—</span><span class="r">${it.unit==='mg/animal'?'용량을 입력하세요':'체중과 용량을 입력하세요'}</span></div></div>`
-      : `<div class="tiles">
+    const routeSeg = `<div class="seg sm route" role="group" aria-label="투여 경로">${routes.map(r => `<button type="button" data-route="${r}" aria-pressed="${it.route===r}">${routeLabel(r)}</button>`).join('')}</div>`;
+    let tiles;
+    if (cri) {
+      tiles = c.mgh == null
+        ? `<div class="tiles"><div class="tile"><span class="k">시간당 용량</span><span class="v">—</span><span class="r">체중과 용량을 입력하세요</span></div></div>`
+        : `<div class="tiles">
+          <div class="tile accent${c.warn?' bad':''}"><span class="k">시간당 용량</span><span class="v">${sig(c.mgh)}<small>mg/h</small></span><span class="r">${c.range?`표준 ${sig(c.range.lo)}–${sig(c.range.hi)} mg/h`:(c.base?`표준 ${sig(toMgH(c.base.low,c.base.unit,S.bw))} mg/h`:'&nbsp;')} · 1일 ${sig(c.mgDay!=null?c.mgDay:c.mgh*24)} mg</span></div>
+          <div class="tile"><span class="k">원액 속도</span><span class="v">${c.pureMlh!=null?sig(c.pureMlh):'—'}<small>mL/h</small></span><span class="r">${+it.conc>0?`${it.conc} mg/mL 희석 없이`:'농도를 입력하세요'}</span></div>
+          ${c.drugMl != null
+            ? `<div class="tile accent${c.dilMl<0?' bad':''}"><span class="k">조제 <small>${it.criVol} mL · ${it.criRate} mL/h</small></span><span class="v sm">약 ${sig(c.drugMl)}<small>mL</small></span><span class="r">+ 희석액 ${c.dilMl>=0?sig(c.dilMl):'—'} mL${c.dilMl<0?' · 원액보다 진함 — 속도↑ 또는 총량↓':''}</span></div>
+               <div class="tile"><span class="k">지속 시간</span><span class="v">${sig(c.hours)}<small>h</small></span><span class="r">${sig(c.concFinal)} mg/mL · 약 ${sig(c.drugMg)} mg</span></div>`
+            : `<div class="tile"><span class="k">조제</span><span class="v">—</span><span class="r">희석 총량과 펌프 속도를 입력하세요</span></div><div class="tile"><span class="k">지속 시간</span><span class="v">—</span><span class="r">&nbsp;</span></div>`}
+        </div>`;
+    } else if (inj) {
+      tiles = c.mg == null
+        ? `<div class="tiles"><div class="tile"><span class="k">1회 용량</span><span class="v">—</span><span class="r">${it.unit==='mg/animal'?'용량을 입력하세요':'체중과 용량을 입력하세요'}</span></div></div>`
+        : `<div class="tiles">
+          <div class="tile accent${c.warn?' bad':''}"><span class="k">1회 용량 <small>${it.route} ${freqLabel(it.freq)}</small></span><span class="v">${sig(c.mg)}<small>mg</small></span><span class="r">${c.daily?`1일 ${sig(c.dailyMg)} mg ÷ ${c.divN}회 · `:''}${c.range?`표준 ${sig(c.range.lo)}–${sig(c.range.hi)} mg`:(c.base?`표준 ${sig(toMg(c.base.low,c.base.unit,S.bw))} mg`:'&nbsp;')}</span></div>
+          <div class="tile accent"><span class="k">1회 주사량</span><span class="v">${c.ml!=null?sig(c.ml):'—'}<small>mL</small></span><span class="r">${+it.conc>0?`${it.conc} mg/mL`:'농도를 입력하세요'}${c.mlDay!=null&&it.freq!=='once'?` · 1일 ${sig(c.mlDay)} mL`:''}</span></div>
+          <div class="tile"><span class="k">총 필요량</span><span class="v">${sig(c.total)}<small>mg</small></span><span class="r">${it.freq==='once'?'단회 투여':c.n<1?`${freqLabel(it.freq)} × ${c.days}일 = ${c.dosesTotal}회`:`${c.n}회/일 × ${c.days}일 = ${c.dosesTotal}회`}${c.totalMl!=null?` · ${sig(c.totalMl)} mL`:''}</span></div>
+          <div class="tile"><span class="k">바이알</span><span class="v">${c.vials!=null?c.vials:'—'}<small>${c.vials!=null?'개':''}</small></span><span class="r">${+it.vialMg>0?`${it.vialMg} mg vial × ${sig(c.vialRaw)}`:'바이알 규격 입력 시 계산'}</span></div>
+        </div>`;
+    } else {
+      tiles = c.mg == null
+        ? `<div class="tiles"><div class="tile"><span class="k">1회 용량</span><span class="v">—</span><span class="r">${it.unit==='mg/animal'?'용량을 입력하세요':'체중과 용량을 입력하세요'}</span></div></div>`
+        : `<div class="tiles">
           <div class="tile accent${c.warn?' bad':''}"><span class="k">1회 용량 <small>${freqLabel(it.freq)}</small></span><span class="v">${sig(c.mg)}<small>mg</small></span><span class="r">${c.daily?`1일 ${sig(c.dailyMg)} mg ÷ ${c.divN}회`+(c.range?` · 표준 ${sig(c.range.lo)}–${sig(c.range.hi)} mg/일`:(c.base?` · 표준 ${sig(toMg(c.base.low,c.base.unit,S.bw))} mg/일`:'')):(c.range?`표준 ${sig(c.range.lo)}–${sig(c.range.hi)} mg`:(c.base?`표준 ${sig(toMg(c.base.low,c.base.unit,S.bw))} mg`:'&nbsp;'))}</span></div>
           <div class="tile"><span class="k">총 필요량</span><span class="v">${sig(c.total)}<small>mg</small></span><span class="r">${it.freq==='once'?'단회 투여':c.n<1?`${freqLabel(it.freq)} × ${c.days}일 = ${c.dosesTotal}회`:`${c.n}회/일 × ${c.days}일 = ${c.dosesTotal}회`}</span></div>
           ${c.T != null ? (it.mode === 'suspension'
@@ -530,16 +614,36 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
                <div class="tile${c.err!=null&&Math.abs(c.err)>=10?' warn':''}"><span class="k">실제 1회 용량</span><span class="v">${sig(c.actual)}<small>mg</small></span><span class="r">표준 대비 ${c.err>=0?'+':''}${fmt(c.err,1)}%</span></div>`)
             : `<div class="tile"><span class="k">정제 수</span><span class="v">—</span><span class="r">보유 규격을 입력하세요</span></div><div class="tile"><span class="k">실제 1회 용량</span><span class="v">—</span><span class="r">&nbsp;</span></div>`}
         </div>`;
-    const compWarn = d.compounding && it.mode === 'suspension' ? `<div class="callout warn" style="margin:0 14px 12px"><b>조제 현탁액 주의</b> — ${esc(d.compounding)}</div>` : '';
+    }
+    const compWarn = d.compounding && ((!inj && !cri && it.mode === 'suspension') || inj || cri) ? `<div class="callout warn" style="margin:0 14px 12px"><b>${inj||cri?'조제·희석 주의':'조제 현탁액 주의'}</b> — ${esc(d.compounding)}</div>` : '';
+    const allDs = (d.doses || []).filter(x => x.species === S.species);
     const info = `<dl class="rx-info" ${it.open?'':'hidden'} id="info-${it.uid}">
-        ${d.indication?`<dt>적응증</dt><dd>${esc(d.indication)}</dd>`:''}
-        ${d.contraindication?`<dt>금기·주의</dt><dd>${esc(d.contraindication)}</dd>`:''}
-        ${d.adverse?`<dt>부작용</dt><dd>${esc(d.adverse)}</dd>`:''}
-        <dt>용량 (${S.species==='dog'?'개':'고양이'})</dt><dd class="doses">${ds.length?ds.map((x,i)=>`<div class="${i===it.doseIdx?'cur':''}"><span class="lb">${esc(x.label||'표준')}</span>${x.low===x.high?sig(x.low):sig(x.low)+'–'+sig(x.high)} ${unitTag(x.unit, isDaily(x))} ${esc(x.route||'PO')} ${esc(x.freq)}${x.note?` <span class="lb">· ${esc(x.note)}</span>`:''}</div>`).join(''):'<div>요약에 해당 종 용량 없음</div>'}</dd>
-        ${d.monitoring?`<dt>모니터링</dt><dd>${esc(d.monitoring)}</dd>`:''}
+        <dt>용량 (${S.species==='dog'?'개':'고양이'})</dt><dd class="doses">${allDs.length?allDs.map((x)=>`<div class="${ds[it.doseIdx]===x?'cur':''}"><span class="lb">${esc(x.label||'표준')}</span>${x.low===x.high?sig(x.low):sig(x.low)+'–'+sig(x.high)} ${unitTag(x.unit, isDaily(x))} ${esc(x.route||'PO')} ${esc(x.freq)}${x.note?` <span class="lb">· ${esc(x.note)}</span>`:''}</div>`).join(''):'<div>요약에 해당 종 용량 없음</div>'}</dd>
         ${d.compounding?`<dt>조제</dt><dd>${esc(d.compounding)}</dd>`:''}
-        <dt>규격</dt><dd>${(d.strengths||[]).map(s=>`${s.mg} mg ${esc(s.form)}`).join(' · ')||'—'}${d.brand&&d.brand.length?` <span style="color:var(--muted)">(${esc(d.brand.join(', '))})</span>`:''}</dd>
+        <dt>규격</dt><dd>${strengths.map(s=>s.form==='injection'?`${s.mgml} mg/mL 주사`:s.form==='vial'?`${s.mg} mg vial`:`${s.mg} mg ${esc(s.form)}`).join(' · ')||'—'}${d.brand&&d.brand.length?` <span style="color:var(--muted)">(${esc(d.brand.join(', '))})</span>`:''}</dd>
       </dl>`;
+    const fields = cri ? `
+          <div class="field f6 plain"><label><span>표준 용량 선택</span><span class="u">${ds.length}개</span></label><select data-f="doseIdx"${noSp?' disabled':''}>${doseOpts||'<option value="0">—</option>'}</select><span class="ref">${c.base&&c.base.note?esc(c.base.note):(it.doseIdx===-1&&ov?'내가 저장한 기본값':'&nbsp;')}</span></div>
+          <div class="field f2"><label><span>용량</span><span class="u">${isCustom?'수정됨':'표준'}</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="val" value="${esc(it.val)}"><span class="ref">${c.base?(c.base.low===c.base.high?`표준 ${sig(c.base.low)}`:`표준 ${sig(c.base.low)}–${sig(c.base.high)}`)+' '+unitLabel(c.base.unit):'&nbsp;'}</span></div>
+          <div class="field f2 plain"><label><span>단위</span></label><select data-f="unit">${unitOpts}</select><span class="ref">${!(S.bw>0)?'체중 필요':'&nbsp;'}</span></div>
+          <div class="field f2"><label><span>농도</span><span class="u">mg/mL</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="conc" value="${esc(it.conc)}" list="cc-${it.uid}"><datalist id="cc-${it.uid}">${concOpts}</datalist><span class="ref">${strengths.filter(s=>s.form==='injection').map(s=>s.mgml).join(' / ')||'—'} mg/mL</span></div>
+          <div class="field f3"><label><span>희석 총량</span><span class="u">mL</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="criVol" value="${esc(it.criVol)}" list="cv-${it.uid}"><datalist id="cv-${it.uid}"><option value="20"><option value="50"><option value="100"><option value="250"><option value="500"></datalist><span class="ref">시린지·백 총 부피</span></div>
+          <div class="field f3"><label><span>펌프 속도</span><span class="u">mL/h</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="criRate" value="${esc(it.criRate)}" placeholder="0"><span class="ref">원하는 주입 속도</span></div>`
+      : inj ? `
+          <div class="field f6 plain"><label><span>표준 용량 선택</span><span class="u">${ds.length}개</span></label><select data-f="doseIdx"${noSp?' disabled':''}>${doseOpts||'<option value="0">—</option>'}</select><span class="ref">${c.base&&c.base.note?esc(c.base.note):(it.doseIdx===-1&&ov?'내가 저장한 기본값':'&nbsp;')}</span></div>
+          <div class="field f2"><label><span>${it.daily?'1일 총량':'용량'}</span><span class="u">${isCustom?'수정됨':'표준'}</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="val" value="${esc(it.val)}"><span class="ref">${c.base?(c.base.low===c.base.high?`표준 ${sig(c.base.low)}`:`표준 ${sig(c.base.low)}–${sig(c.base.high)}`)+' '+unitTag(c.base.unit, isDaily(c.base)):'&nbsp;'}</span></div>
+          <div class="field f2 plain"><label><span>단위</span></label><select data-f="unit">${unitOpts}</select><span class="ref">${it.unit!=='mg/animal'&&!(S.bw>0)?'체중 필요':'&nbsp;'}</span></div>
+          <div class="field f2 plain"><label><span>간격</span></label><select data-f="freq">${freqOpts}</select><span class="ref">${it.freq==='once'?'일수 무시':freqN(it.freq)<1?(it.freq==='q48h'?'2일에 1회':'3일에 1회'):`하루 ${freqN(it.freq)}회`+(it.daily?' 분할':'')}</span></div>
+          <div class="field f3"><label><span>농도</span><span class="u">mg/mL</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="conc" value="${esc(it.conc)}" list="cc-${it.uid}"><datalist id="cc-${it.uid}">${concOpts}</datalist><span class="ref">${strengths.filter(s=>s.form==='injection').map(s=>s.mgml).join(' / ')||'—'} mg/mL${vialOpts?' · 분말은 재구성 농도':''}</span></div>
+          <div class="field f3"><label><span>바이알 규격</span><span class="u">mg/vial</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="vialMg" value="${esc(it.vialMg)}" list="vv-${it.uid}" placeholder="선택"><datalist id="vv-${it.uid}">${vialOpts}</datalist><span class="ref">${strengths.filter(s=>s.form==='vial').map(s=>s.mg).join(' / ')||'—'} mg</span></div>`
+      : `
+          <div class="field f6 plain"><label><span>표준 용량 선택</span><span class="u">${ds.length}개</span></label><select data-f="doseIdx"${noSp?' disabled':''}>${doseOpts||'<option value="0">—</option>'}</select><span class="ref">${c.base&&c.base.note?esc(c.base.note):(it.doseIdx===-1&&ov?'내가 저장한 기본값':'&nbsp;')}</span></div>
+          <div class="field f2"><label><span>${it.daily?'1일 총량':'용량'}</span><span class="u">${isCustom?'수정됨':'표준'}</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="val" value="${esc(it.val)}"><span class="ref">${c.base?(c.base.low===c.base.high?`표준 ${sig(c.base.low)}`:`표준 ${sig(c.base.low)}–${sig(c.base.high)}`)+' '+unitTag(c.base.unit, isDaily(c.base)):'&nbsp;'}</span></div>
+          <div class="field f2 plain"><label><span>단위</span></label><select data-f="unit">${unitOpts}</select><span class="ref">${it.unit!=='mg/animal'&&!(S.bw>0)?'체중 필요':'&nbsp;'}</span></div>
+          <div class="field f2 plain"><label><span>간격</span></label><select data-f="freq">${freqOpts}</select><span class="ref">${it.freq==='once'?'일수 무시':freqN(it.freq)<1?(it.freq==='q48h'?'2일에 1회':'3일에 1회'):`하루 ${freqN(it.freq)}회`+(it.daily?' 분할':'')}</span></div>
+          <div class="field f2"><label><span>보유 규격</span><span class="u">mg/T</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="strength" value="${esc(it.strength)}" list="st-${it.uid}"><datalist id="st-${it.uid}">${strengthOpts}</datalist><span class="ref">${strengths.filter(s=>s.form!=='injection'&&s.form!=='vial').map(s=>s.mg).join(' / ')||'—'} mg</span></div>
+          <div class="field ${it.mode==='suspension'?'f2':'f4'} plain"><label><span>조제 형태</span></label><select data-f="mode"><option value="tablet"${it.mode==='tablet'?' selected':''}>분말·캡슐 (포 분할)</option><option value="suspension"${it.mode==='suspension'?' selected':''}>현탁액 (총 mL)</option></select><span class="ref">&nbsp;</span></div>
+          ${it.mode==='suspension'?`<div class="field f2"><label><span>총 부피</span><span class="u">mL</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="volume" value="${esc(it.volume)}" placeholder="0"><span class="ref">정제 전량을 이 부피로</span></div>`:''}`;
     return `<article class="rx" data-uid="${it.uid}">
       <div class="rx-head">
         <div class="nm"><h3>${esc(d.name)} ${chips}</h3><span class="cls">${esc(d.class||'')}</span></div>
@@ -550,16 +654,9 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
       </div>
       ${info}
       <div class="rx-body">
-        ${noSp ? `<div class="callout warn" style="margin:0 0 12px"><b>${S.species==='dog'?'개':'고양이'} 용량이 DB에 없습니다.</b> 직접 입력하거나 종을 확인하세요.</div>` : ''}
-        <div class="igroup">
-          <div class="field f6 plain"><label><span>표준 용량 선택</span><span class="u">${ds.length}개</span></label><select data-f="doseIdx"${noSp?' disabled':''}>${doseOpts||'<option value="0">—</option>'}</select><span class="ref">${c.base&&c.base.note?esc(c.base.note):(it.doseIdx===-1&&ov?'내가 저장한 기본값':'&nbsp;')}</span></div>
-          <div class="field f2"><label><span>${it.daily?'1일 총량':'용량'}</span><span class="u">${isCustom?'수정됨':'표준'}</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="val" value="${esc(it.val)}"><span class="ref">${c.base?(c.base.low===c.base.high?`표준 ${sig(c.base.low)}`:`표준 ${sig(c.base.low)}–${sig(c.base.high)}`)+' '+unitTag(c.base.unit, isDaily(c.base)):'&nbsp;'}</span></div>
-          <div class="field f2 plain"><label><span>단위</span></label><select data-f="unit">${unitOpts}</select><span class="ref">${it.unit!=='mg/animal'&&!(S.bw>0)?'체중 필요':'&nbsp;'}</span></div>
-          <div class="field f2 plain"><label><span>간격</span></label><select data-f="freq">${freqOpts}</select><span class="ref">${it.freq==='once'?'일수 무시':freqN(it.freq)<1?(it.freq==='q48h'?'2일에 1회':'3일에 1회'):`하루 ${freqN(it.freq)}회`+(it.daily?' 분할':'')}</span></div>
-          <div class="field f2"><label><span>보유 규격</span><span class="u">mg/T</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="strength" value="${esc(it.strength)}" list="st-${it.uid}"><datalist id="st-${it.uid}">${strengthOpts}</datalist><span class="ref">${(d.strengths||[]).map(s=>s.mg).join(' / ')||'—'} mg</span></div>
-          <div class="field ${it.mode==='suspension'?'f2':'f4'} plain"><label><span>조제 형태</span></label><select data-f="mode"><option value="tablet"${it.mode==='tablet'?' selected':''}>분말·캡슐 (포 분할)</option><option value="suspension"${it.mode==='suspension'?' selected':''}>현탁액 (총 mL)</option></select><span class="ref">&nbsp;</span></div>
-          ${it.mode==='suspension'?`<div class="field f2"><label><span>총 부피</span><span class="u">mL</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="volume" value="${esc(it.volume)}" placeholder="0"><span class="ref">정제 전량을 이 부피로</span></div>`:''}
-        </div>
+        <div class="routebar">${routeSeg}<span class="rt">${cri?'지속 주입 — 농도·희석·속도로 조제량 계산':inj?'주사 — 농도(mg/mL)로 주사량 계산':'경구 — 보유 규격으로 조제량 계산'}</span></div>
+        ${noSp ? `<div class="callout warn" style="margin:0 0 12px"><b>${S.species==='dog'?'개':'고양이'} ${routeLabel(it.route)} 용량이 DB에 없습니다.</b> 직접 입력하거나 종·경로를 확인하세요.</div>` : ''}
+        <div class="igroup">${fields}</div>
       </div>
       ${tiles}
       ${compWarn}
@@ -579,33 +676,34 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
   }
   function renderBar(){
     $('#bar').hidden = !S.items.length || $('#tab-rx').getAttribute('aria-selected') !== 'true';
-    const okN = S.items.filter(it => calc(it).mg != null).length;
+    const okN = S.items.filter(it => { const c = calc(it); return c.cri ? c.mgh != null : c.mg != null; }).length;
     $('#bar-sum').innerHTML = `<b>${S.species==='dog'?'DOG':'CAT'}</b> ${S.bw>0?S.bw+' kg':'체중 없음'} · ${S.items.length}개 약물${okN<S.items.length?` · ${S.items.length-okN}개 계산 대기`:''}`;
   }
+  function saveStock(it){ S.stock[it.id] = { form: it.form, strength: it.strength, mode: it.mode, volume: it.volume, conc: it.conc, vialMg: it.vialMg, criVol: it.criVol, criRate: it.criRate }; store.set(K.stock, S.stock); }
   $('#rx-list').addEventListener('input', (e) => {
     const f = e.target.dataset.f; if (!f) return;
-    if (e.target.tagName === 'SELECT') return;            // select는 아래 change에서만 처리 (input에서 먼저 다시 그리면 change가 유실됨)
+    if (e.target.tagName === 'SELECT') return;            // select는 change에서만 처리
     const it = S.items.find(x => x.uid === +e.target.closest('.rx').dataset.uid); if (!it) return;
     it[f] = e.target.value;
-    if (['strength','volume'].includes(f)) S.stock[it.id] = { form: it.form, strength: it.strength, mode: it.mode, volume: it.volume }, store.set(K.stock, S.stock);
-    if (['val','strength','volume'].includes(f)) { updateItem(it); renderBar(); return; }   // 숫자 입력 중에는 카드 전체를 다시 그리지 않음 (포커스 유지)
+    if (['strength','volume','conc','vialMg','criVol','criRate'].includes(f)) saveStock(it);
+    if (['val','strength','volume','conc','vialMg','criVol','criRate'].includes(f)) { updateItem(it); renderBar(); return; }
     render(); saveDraft();
   });
   $('#rx-list').addEventListener('change', (e) => {
-    const f = e.target.dataset.f; if (!f) return;
+    const f = e.target.dataset.f; if (!f || e.target.tagName !== 'SELECT') return;   // 숫자 input의 change(blur)는 무시 — 다시 그리면 옆 칸 입력이 끊김
     const it = S.items.find(x => x.uid === +e.target.closest('.rx').dataset.uid); if (!it) return;
     if (f === 'doseIdx') { applyDose(it, +e.target.value); }
-    else if (f === 'unit') {                         // 단위 바꾸면 값 환산
-      const mg = toMg(+it.val, it.unit, S.bw); it.unit = e.target.value;
-      const v = fromMg(mg, it.unit, S.bw); if (v != null) it.val = +sig(v);
-      S.units[it.id] = S.units[it.id] || {}; S.units[it.id][S.species] = it.unit; store.set(K.units, S.units);
+    else if (f === 'unit') {
+      const nu = e.target.value;
+      const v = isCRI(it.route) ? fromMgH(toMgH(+it.val, it.unit, S.bw), nu, S.bw) : fromMg(toMg(+it.val, it.unit, S.bw), nu, S.bw);
+      it.unit = nu; if (v != null) it.val = +sig(v);
+      S.units[it.id] = S.units[it.id] || {}; S.units[it.id][ovKey(S.species, it.route)] = it.unit; store.set(K.units, S.units);
     }
     else if (f === 'freq') { it.freq = e.target.value; }
-    else if (f === 'mode') { it.mode = e.target.value; S.stock[it.id] = { form: it.form, strength: it.strength, mode: it.mode, volume: it.volume }; store.set(K.stock, S.stock); }
-    else if (f === 'val') { it.val = e.target.value; }
+    else if (f === 'mode') { it.mode = e.target.value; saveStock(it); }
     render(); saveDraft();
   });
-  function updateItem(it){                           // 값 입력 중 타일만 갱신
+  function updateItem(it){
     const art = $(`.rx[data-uid="${it.uid}"]`); if (!art) return;
     const tmp = document.createElement('div'); tmp.innerHTML = renderItem(it);
     ['.tiles','.rx-foot'].forEach(sel => { const a = $(sel, art), b = $(sel, tmp); if (a && b) a.replaceWith(b); });
@@ -614,17 +712,19 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
     saveDraft();
   }
   $('#rx-list').addEventListener('click', (e) => {
+    const rb = e.target.closest('button[data-route]');
+    if (rb) { const it = S.items.find(x => x.uid === +rb.closest('.rx').dataset.uid); if (it && it.route !== rb.dataset.route) { it.route = rb.dataset.route; applyDose(it, -1); render(); saveDraft(); } return; }
     const b = e.target.closest('button[data-act]'); if (!b) return;
     const it = S.items.find(x => x.uid === +b.closest('.rx').dataset.uid); if (!it) return;
     const act = b.dataset.act;
     if (act === 'remove') { S.items = S.items.filter(x => x !== it); }
     else if (act === 'info') { it.open = !it.open; }
-    else if (act === 'reset') { delete (S.overrides[it.id]||{})[S.species]; if (S.overrides[it.id] && !Object.keys(S.overrides[it.id]).length) delete S.overrides[it.id]; store.set(K.overrides, S.overrides); applyDose(it, defaultDoseIdx(S.drugs.get(it.id), S.species)); toast('DB 표준 용량으로 되돌렸습니다'); }
+    else if (act === 'reset') { const k = ovKey(S.species, it.route); if (S.overrides[it.id]) { delete S.overrides[it.id][k]; if (!Object.keys(S.overrides[it.id]).length) delete S.overrides[it.id]; } store.set(K.overrides, S.overrides); applyDose(it, defaultDoseIdx(S.drugs.get(it.id), S.species, it.route)); toast('DB 표준 용량으로 되돌렸습니다'); }
     else if (act === 'setdefault') {
       if (!(+it.val > 0)) { toast('용량을 먼저 입력하세요'); return; }
       const c = calc(it);
       S.overrides[it.id] = S.overrides[it.id] || {};
-      S.overrides[it.id][S.species] = { val: +it.val, unit: it.unit, freq: it.freq, daily: !!it.daily, label: c.base ? (c.base.label||'') : '' };
+      S.overrides[it.id][ovKey(S.species, it.route)] = { val: +it.val, unit: it.unit, freq: it.freq, daily: !!it.daily, label: c.base ? (c.base.label||'') : '' };
       store.set(K.overrides, S.overrides); it.doseIdx = -1; toast('내 기본값으로 저장했습니다');
     }
     render(); renderSettings(); saveDraft();
@@ -638,7 +738,7 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
   function setSpecies(sp, silent){
     S.species = sp;
     $$('.top .seg button[data-sp]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.sp === sp)));
-    S.items.forEach(it => applyDose(it, -1));
+    S.items.forEach(it => { const d = S.drugs.get(it.id); const rs = routesFor(d, sp); if (!rs.includes(it.route)) it.route = rs[0] || it.route; applyDose(it, -1); });
     if (!silent) { render(); saveDraft(); }
   }
 
@@ -653,28 +753,40 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
 
   /* ---------- 임시 저장(draft) ---------- */
   function saveDraft(){ store.set(K.draft, { species: S.species, bw: S.bw, days: S.days, alias: S.alias, items: S.items.map(({uid, open, ...r}) => r) }); }
+  function reviveItem(r){ const it = Object.assign({ uid: uidSeq++, open: false, route: 'PO' }, r); const d = S.drugs.get(it.id); if (d && !routesFor(d, S.species).includes(it.route)) it.route = routesFor(d, S.species)[0] || 'PO'; if (it.conc === undefined) applyStock(it, d); return it; }
   async function restoreDraft(){
     const d = store.get(K.draft, null); if (!d) return;
     S.bw = d.bw || 0; S.days = d.days || 7; S.alias = d.alias || '';
     $('#bw').value = S.bw || ''; $('#days').value = S.days; $('#alias').value = S.alias;
     setSpecies(d.species || 'dog', true);
     const items = [];
-    for (const r of (d.items || [])) { try { await fetchDrug(r.id); items.push(Object.assign({ uid: uidSeq++, open: false }, r)); } catch(e){} }
+    for (const r of (d.items || [])) { try { await fetchDrug(r.id); items.push(reviveItem(r)); } catch(e){} }
     S.items = items;
   }
 
   /* ---------- 저장·복사 ---------- */
   function rxText(){
     const lines = [`[${S.alias || '처방'}] ${S.species==='dog'?'개':'고양이'} ${S.bw>0?S.bw+' kg':''} · ${S.days}일`.replace(/\s+·/,' ·')];
-    S.items.forEach(it => {
+    const po = S.items.filter(it => it.route === 'PO'), inj = S.items.filter(it => it.route !== 'PO');
+    const line = (it) => {
       const d = S.drugs.get(it.id), c = calc(it);
-      let l = `- ${d.name} ${sig(+it.val)} ${unitTag(it.unit, it.daily)} PO ${freqLabel(it.freq)}`;
+      if (c.cri) {
+        let l = `- ${d.name} ${sig(+it.val)} ${unitLabel(it.unit)} CRI`;
+        if (c.mgh != null) l += ` → ${sig(c.mgh)} mg/h`;
+        if (c.drugMl != null) l += ` / ${it.conc} mg/mL 원액 ${sig(c.drugMl)} mL + 희석액 ${sig(c.dilMl)} mL = ${it.criVol} mL, ${it.criRate} mL/h (${sig(c.hours)}h)`;
+        else if (c.pureMlh != null) l += ` / ${it.conc} mg/mL 원액 ${sig(c.pureMlh)} mL/h`;
+        return l;
+      }
+      let l = `- ${d.name} ${sig(+it.val)} ${unitTag(it.unit, it.daily)} ${it.route} ${freqLabel(it.freq)}`;
       if (c.mg != null) l += c.daily ? ` → 1일 ${sig(c.dailyMg)} mg ÷ ${c.divN} = 1회 ${sig(c.mg)} mg` : ` → 1회 ${sig(c.mg)} mg`;
+      if (c.inj) { if (c.ml != null) l += ` = ${sig(c.ml)} mL (${it.conc} mg/mL)`; if (c.vials != null) l += ` / ${it.vialMg} mg vial × ${c.vials}`; return l; }
       if (c.T != null) l += it.mode === 'suspension'
         ? ` / ${it.strength} mg T × ${tfmt(c.T)} → ${it.volume||'?'} mL${c.conc?` (${sig(c.conc)} mg/mL, 1회 ${sig(c.mlPer)} mL)`:''}`
         : ` / ${it.strength} mg T × ${tfmt(c.T)} → ${c.dosesTotal}포 (1포 ${sig(c.actual)} mg${c.err!=null?`, ${c.err>=0?'+':''}${fmt(c.err,1)}%`:''})`;
-      lines.push(l);
-    });
+      return l;
+    };
+    if (po.length) { if (inj.length) lines.push('[경구]'); po.forEach(it => lines.push(line(it))); }
+    if (inj.length) { lines.push('[주사·CRI]'); inj.forEach(it => lines.push(line(it))); }
     return lines.join('\n');
   }
   $('#btn-copy').addEventListener('click', async () => {
@@ -689,12 +801,13 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
     S.saved.unshift(rec); S.saved = S.saved.slice(0, 50); store.set(K.saved, S.saved);
     $('#cnt-saved').textContent = S.saved.length; toast('저장했습니다');
   });
+  const unitTxt = (u, sp, daily) => (({ 'mg/animal': sp==='cat'?'mg/cat':'mg/dog', 'mcg/kg':'µg/kg', 'mcg/kg/h':'µg/kg/h', 'mcg/kg/min':'µg/kg/min' })[u] || u) + (daily ? '/day' : '');
   function renderSaved(){
     const host = $('#saved-list'); $('#cnt-saved').textContent = S.saved.length;
     $('#saved-empty').hidden = !!S.saved.length;
     host.innerHTML = S.saved.map((r, i) => {
       const dt = new Date(r.ts); const ds = `${dt.getFullYear()}-${String(dt.getMonth()+1).padStart(2,'0')}-${String(dt.getDate()).padStart(2,'0')} ${String(dt.getHours()).padStart(2,'0')}:${String(dt.getMinutes()).padStart(2,'0')}`;
-      const names = r.items.map(x => { const d = S.index.find(y => y.id === x.id); return `${d ? d.name : x.id} ${sig(+x.val)} ${x.unit==='mg/animal'?(r.species==='cat'?'mg/cat':'mg/dog'):x.unit==='mcg/kg'?'µg/kg':x.unit}${x.daily?'/day':''} ${freqLabel(x.freq)}`; }).join(' · ');
+      const names = r.items.map(x => { const d = S.index.find(y => y.id === x.id); const rt = x.route && x.route !== 'PO' ? ' ' + x.route : ''; return `${d ? d.name : x.id} ${sig(+x.val)} ${unitTxt(x.unit, r.species, x.daily)}${rt}${x.route==='CRI'?'':' '+freqLabel(x.freq)}`; }).join(' · ');
       return `<div class="it"><div class="t"><h3>${esc(r.alias||'처방')} <span class="chip na">${r.species==='dog'?'DOG':'CAT'}${r.bw>0?' '+r.bw+' kg':''} · ${r.days}일</span></h3><p>${esc(names)}</p></div><span class="dt">${ds}</span><div class="acts"><button type="button" class="ibtn primary" data-i="${i}" data-act="load">불러오기</button><button type="button" class="ibtn danger" data-i="${i}" data-act="del">삭제</button></div></div>`;
     }).join('');
   }
@@ -705,7 +818,7 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
     S.bw = r.bw; S.days = r.days; S.alias = r.alias; $('#bw').value = S.bw || ''; $('#days').value = S.days; $('#alias').value = S.alias;
     setSpecies(r.species, true);
     const items = [];
-    for (const x of r.items) { try { await fetchDrug(x.id); items.push(Object.assign({ uid: uidSeq++, open: false }, x)); } catch(e){} }
+    for (const x of r.items) { try { await fetchDrug(x.id); items.push(reviveItem(x)); } catch(e){} }
     S.items = items; render(); saveDraft(); showTab('tab-rx'); toast('불러왔습니다');
   });
 
@@ -717,17 +830,17 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
   function renderSettings(){
     $$('.set [data-set]').forEach(b => b.setAttribute('aria-pressed', String(String(S.settings[b.dataset.set]) === b.dataset.val)));
     const rows = [];
-    Object.entries(S.overrides).forEach(([id, bySp]) => Object.entries(bySp).forEach(([sp, o]) => {
-      const d = S.index.find(x => x.id === id);
-      rows.push(`<div class="r"><b>${esc(d?d.name:id)}</b><span class="sp">${sp==='dog'?'개':'고양이'}</span><span class="d">${sig(o.val)} ${o.unit==='mg/animal'?(sp==='cat'?'mg/cat':'mg/dog'):o.unit==='mcg/kg'?'µg/kg':o.unit}${o.daily?'/day':''} ${freqLabel(o.freq)}</span>${o.label?`<span class="sp">${esc(o.label)}</span>`:''}<button type="button" class="ibtn danger" data-ov="${esc(id)}" data-sp="${sp}">지우기</button></div>`);
+    Object.entries(S.overrides).forEach(([id, byKey]) => Object.entries(byKey).forEach(([k, o]) => {
+      const d = S.index.find(x => x.id === id); const { sp, route } = splitKey(k);
+      rows.push(`<div class="r"><b>${esc(d?d.name:id)}</b><span class="sp">${sp==='dog'?'개':'고양이'} · ${route}</span><span class="d">${sig(o.val)} ${unitTxt(o.unit, sp, o.daily)} ${route==='CRI'?'CRI':freqLabel(o.freq)}</span>${o.label?`<span class="sp">${esc(o.label)}</span>`:''}<button type="button" class="ibtn danger" data-ov="${esc(id)}" data-k="${esc(k)}">지우기</button></div>`);
     }));
     $('#ov-list').innerHTML = rows.join(''); $('#ov-empty').hidden = !!rows.length;
-    const st = Object.entries(S.stock).filter(([,v]) => +v.strength > 0).map(([id, v]) => { const d = S.index.find(x => x.id === id); return `<div class="r"><b>${esc(d?d.name:id)}</b><span class="d">${esc(v.strength)} mg/T</span><span class="sp">${v.mode==='suspension'?'현탁액'+(v.volume?` · ${esc(v.volume)} mL`:''):'분말·캡슐'}</span><button type="button" class="ibtn danger" data-stock="${esc(id)}">지우기</button></div>`; });
+    const st = Object.entries(S.stock).filter(([,v]) => +v.strength > 0 || +v.conc > 0).map(([id, v]) => { const d = S.index.find(x => x.id === id); const parts = []; if (+v.strength > 0) parts.push(`${esc(v.strength)} mg/T`); if (+v.conc > 0) parts.push(`${esc(v.conc)} mg/mL`); if (+v.vialMg > 0) parts.push(`${esc(v.vialMg)} mg vial`); return `<div class="r"><b>${esc(d?d.name:id)}</b><span class="d">${parts.join(' · ')}</span><span class="sp">${+v.strength>0?(v.mode==='suspension'?'현탁액'+(v.volume?` · ${esc(v.volume)} mL`:''):'분말·캡슐'):''}</span><button type="button" class="ibtn danger" data-stock="${esc(id)}">지우기</button></div>`; });
     $('#stock-list').innerHTML = st.join(''); $('#stock-empty').hidden = !!st.length;
   }
   $('#p-set').addEventListener('click', (e) => {
     const b = e.target.closest('button[data-ov],button[data-stock]'); if (!b) return;
-    if (b.dataset.ov) { delete S.overrides[b.dataset.ov][b.dataset.sp]; if (!Object.keys(S.overrides[b.dataset.ov]).length) delete S.overrides[b.dataset.ov]; store.set(K.overrides, S.overrides); S.items.filter(it => it.id === b.dataset.ov && it.doseIdx === -1).forEach(it => applyDose(it, defaultDoseIdx(S.drugs.get(it.id), S.species))); }
+    if (b.dataset.ov) { const id = b.dataset.ov, k = b.dataset.k; if (S.overrides[id]) { delete S.overrides[id][k]; if (!Object.keys(S.overrides[id]).length) delete S.overrides[id]; } store.set(K.overrides, S.overrides); const { sp, route } = splitKey(k); S.items.filter(it => it.id === id && it.doseIdx === -1 && it.route === route && S.species === sp).forEach(it => applyDose(it, defaultDoseIdx(S.drugs.get(it.id), S.species, it.route))); }
     else { delete S.stock[b.dataset.stock]; store.set(K.stock, S.stock); }
     renderSettings(); render(); saveDraft();
   });
