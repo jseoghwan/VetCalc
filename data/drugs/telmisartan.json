@@ -1,0 +1,82 @@
+{
+ "id": "telmisartan",
+ "name": "Telmisartan",
+ "brand": [
+  "Semintra",
+  "Micardis"
+ ],
+ "class": "ARB (안지오텐신 수용체 차단제)",
+ "tags": [
+  "cardio",
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "CKD 단백뇨",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "최대 3 mg/kg q24h"
+  },
+  {
+   "species": "dog",
+   "label": "고혈압",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "고혈압 초기 14일 (label)",
+   "route": "PO",
+   "low": 1.5,
+   "high": 1.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "이후 2 mg/kg q24h"
+  },
+  {
+   "species": "cat",
+   "label": "고혈압 유지 (label)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "저혈압 시 0.5 mg/kg씩 감량, 최소 0.5 mg/kg q24h"
+  },
+  {
+   "species": "cat",
+   "label": "CKD 단백뇨",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "경구액"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 20
+  },
+  {
+   "form": "tablet",
+   "mg": 40
+  },
+  {
+   "form": "tablet",
+   "mg": 80
+  }
+ ],
+ "compounding": "Semintra 경구액 10 mg/mL(미국)·4 mg/mL(EU)",
+ "reviewed": null
+}

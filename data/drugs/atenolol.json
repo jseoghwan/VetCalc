@@ -1,0 +1,99 @@
+{
+ "id": "atenolol",
+ "name": "Atenolol",
+ "brand": [
+  "Tenormin"
+ ],
+ "class": "β1 차단제",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "β차단 (빈맥성 부정맥·폐쇄성 심질환)",
+   "route": "PO",
+   "low": 0.25,
+   "high": 1.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "실용적으로 6.25–50 mg/dog q12h; 저용량 시작"
+  },
+  {
+   "species": "dog",
+   "label": "ARVC (boxer)",
+   "route": "PO",
+   "low": 0.3,
+   "high": 0.6,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "mexiletine 5–8 mg/kg q8h 병용"
+  },
+  {
+   "species": "cat",
+   "label": "β차단 (HCM 등)",
+   "route": "PO",
+   "low": 6.25,
+   "high": 6.25,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "¼ of 25 mg; 증량 시 아침 12.5/저녁 6.25"
+  },
+  {
+   "species": "cat",
+   "label": "갑상선항진 빈맥",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "IRIS CKD II",
+   "route": "PO",
+   "low": 0.19,
+   "high": 0.19,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "q12–24h"
+  },
+  {
+   "species": "cat",
+   "label": "IRIS CKD III",
+   "route": "PO",
+   "low": 0.125,
+   "high": 0.125,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "q12–24h"
+  },
+  {
+   "species": "cat",
+   "label": "IRIS CKD IV",
+   "route": "PO",
+   "low": 0.06,
+   "high": 0.06,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  }
+ ],
+ "compounding": "정제 분할·분쇄 가능; 현탁액은 무설탕 비히클",
+ "reviewed": null
+}

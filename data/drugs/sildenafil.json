@@ -1,0 +1,84 @@
+{
+ "id": "sildenafil",
+ "name": "Sildenafil",
+ "brand": [
+  "Revatio",
+  "Viagra"
+ ],
+ "class": "PDE5 억제제",
+ "tags": [
+  "cardio",
+  "respiratory"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "폐고혈압",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "최대 3 mg/kg q8h"
+  },
+  {
+   "species": "dog",
+   "label": "선천성 거대식도",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "Eisenmenger",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "전임상 MMVD",
+   "route": "PO",
+   "low": 1,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "폐고혈압",
+   "route": "PO",
+   "low": 0.25,
+   "high": 1.6,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "증례 보고 범위"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 20
+  },
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

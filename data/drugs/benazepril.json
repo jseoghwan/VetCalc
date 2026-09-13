@@ -1,0 +1,109 @@
+{
+ "id": "benazepril",
+ "name": "Benazepril",
+ "brand": [
+  "Fortekor",
+  "Lotensin"
+ ],
+ "class": "ACE 억제제",
+ "tags": [
+  "cardio",
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "심부전 보조",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "0.5–1 mg/kg q24h까지 증량 가능"
+  },
+  {
+   "species": "dog",
+   "label": "심부전 stage C",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "단백뇨",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "0.5 mg/kg/day씩 증량, 최대 2 mg/kg/day(분할 가능)"
+  },
+  {
+   "species": "dog",
+   "label": "고혈압",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "q12–24h 시작, 최대 2 mg/kg q12h"
+  },
+  {
+   "species": "cat",
+   "label": "CKD 단백뇨",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "고혈압 보조",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "amlodipine으로 조절 안 될 때"
+  },
+  {
+   "species": "cat",
+   "label": "HCM 심부전 보조",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "q12–24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 2.5
+  },
+  {
+   "form": "tablet",
+   "mg": 5
+  },
+  {
+   "form": "tablet",
+   "mg": 20
+  },
+  {
+   "form": "tablet",
+   "mg": 10
+  },
+  {
+   "form": "tablet",
+   "mg": 40
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

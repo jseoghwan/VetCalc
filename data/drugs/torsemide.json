@@ -1,0 +1,56 @@
+{
+ "id": "torsemide",
+ "name": "Torsemide",
+ "brand": [
+  "Demadex"
+ ],
+ "class": "루프 이뇨제",
+ "tags": [
+  "cardio",
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "심부전 보조 이뇨",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "furosemide 총 일일량의 5–10%로 시작"
+  },
+  {
+   "species": "cat",
+   "label": "심부전 보조 이뇨",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "furosemide 총 일일량의 5–10%로 시작"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 5
+  },
+  {
+   "form": "tablet",
+   "mg": 10
+  },
+  {
+   "form": "tablet",
+   "mg": 20
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

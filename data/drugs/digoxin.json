@@ -1,0 +1,77 @@
+{
+ "id": "digoxin",
+ "name": "Digoxin",
+ "brand": [
+  "Lanoxin"
+ ],
+ "class": "강심배당체",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "AF·CHF (신기능 정상)",
+   "route": "PO",
+   "low": 0.0025,
+   "high": 0.005,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "최대 0.25 mg/dog q12h; 혈중농도로 조절"
+  },
+  {
+   "species": "dog",
+   "label": "DCM",
+   "route": "PO",
+   "low": 0.003,
+   "high": 0.003,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "0.008–0.011 mg/kg/day도 사용"
+  },
+  {
+   "species": "cat",
+   "label": "DCM·AF (3–6 kg)",
+   "route": "PO",
+   "low": 0.03125,
+   "high": 0.03125,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "0.125 mg 정제의 ¼; HCM 금기"
+  },
+  {
+   "species": "cat",
+   "label": "DCM·AF (<3 kg)",
+   "route": "PO",
+   "low": 0.03125,
+   "high": 0.03125,
+   "unit": "mg/animal",
+   "freq": "q48h",
+   "note": "0.125 mg 정제의 ¼ 격일"
+  },
+  {
+   "species": "cat",
+   "label": "DCM·AF (>6 kg)",
+   "route": "PO",
+   "low": 0.03125,
+   "high": 0.03125,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "¼정 q12–24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 0.125
+  },
+  {
+   "form": "tablet",
+   "mg": 0.25
+  }
+ ],
+ "compounding": "제조사 간 생체이용률 차이 — 브랜드 교체 피함",
+ "reviewed": null
+}

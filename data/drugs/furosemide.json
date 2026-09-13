@@ -1,0 +1,111 @@
+{
+ "id": "furosemide",
+ "name": "Furosemide",
+ "brand": [
+  "Lasix",
+  "Salix"
+ ],
+ "class": "루프 이뇨제",
+ "tags": [
+  "cardio",
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "CHF 경구 유지 (통상 시작)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "효과 보며 조절"
+  },
+  {
+   "species": "dog",
+   "label": "CHF 경구 범위",
+   "route": "PO",
+   "low": 1,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "경증 1 mg/kg q24h ~ 중증 5 mg/kg q8h"
+  },
+  {
+   "species": "dog",
+   "label": "부종 (label)",
+   "route": "PO",
+   "low": 2.2,
+   "high": 5.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1~2회/일, 6–8시간 간격; 불응 시 2.2 mg/kg씩 증량"
+  },
+  {
+   "species": "dog",
+   "label": "고칼슘혈증 보조",
+   "route": "PO",
+   "low": 2,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "q8–12h, 볼륨 확장 후"
+  },
+  {
+   "species": "dog",
+   "label": "고혈압 보조",
+   "route": "PO",
+   "low": 1,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "q8–24h"
+  },
+  {
+   "species": "cat",
+   "label": "CHF 경구 유지",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "범위 1 mg/kg 2~3일마다 ~ 2 mg/kg q8–12h, 최대 7 mg/kg q12h; 실용적으로 6.25 mg 단위"
+  },
+  {
+   "species": "cat",
+   "label": "부종 (label)",
+   "route": "PO",
+   "low": 2.2,
+   "high": 5.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1~2회/일, 6–8시간 간격"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 12.5
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 20
+  },
+  {
+   "form": "tablet",
+   "mg": 40
+  },
+  {
+   "form": "tablet",
+   "mg": 80
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

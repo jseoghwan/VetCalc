@@ -1,0 +1,85 @@
+{
+ "id": "aspirin",
+ "name": "Aspirin",
+ "brand": [],
+ "class": "NSAID·항혈소판제",
+ "tags": [
+  "antithrombotic",
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "항혈전",
+   "route": "PO",
+   "low": 2,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "이상적 용량 불명"
+  },
+  {
+   "species": "dog",
+   "label": "IMHA (clopidogrel 병용)",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "진통·해열 (buffered)",
+   "route": "PO",
+   "low": 10,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "20–30 mg/kg q8–12h도; FDA 승인 NSAID 우선"
+  },
+  {
+   "species": "cat",
+   "label": "항혈전 저용량",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "q72h",
+   "default": true,
+   "note": "clopidogrel이 우월"
+  },
+  {
+   "species": "cat",
+   "label": "항혈전 고용량",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q72h",
+   "note": "2~3일마다"
+  },
+  {
+   "species": "cat",
+   "label": "진통·해열",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q72h",
+   "note": "2~3일마다; 실용적으로 81 mg의 ½~1정 월·수·금"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 81
+  },
+  {
+   "form": "tablet",
+   "mg": 325
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

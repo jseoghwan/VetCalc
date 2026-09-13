@@ -1,0 +1,74 @@
+{
+ "id": "sotalol",
+ "name": "Sotalol",
+ "brand": [
+  "Betapace"
+ ],
+ "class": "Class III 항부정맥제 (β차단)",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "심실성 부정맥 (± SVT)",
+   "route": "PO",
+   "low": 1,
+   "high": 3.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "대개 2–2.5 mg/kg; 저용량 시작"
+  },
+  {
+   "species": "dog",
+   "label": "ARVC 단독",
+   "route": "PO",
+   "low": 1.5,
+   "high": 3.5,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "ARVC + mexiletine",
+   "route": "PO",
+   "low": 1.5,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "mexiletine 5–7.5 mg/kg q8h 병용"
+  },
+  {
+   "species": "cat",
+   "label": "심실성 부정맥 (± SVT)",
+   "route": "PO",
+   "low": 1,
+   "high": 3.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "대개 2–2.5 mg/kg"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 80
+  },
+  {
+   "form": "tablet",
+   "mg": 120
+  },
+  {
+   "form": "tablet",
+   "mg": 160
+  },
+  {
+   "form": "tablet",
+   "mg": 240
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

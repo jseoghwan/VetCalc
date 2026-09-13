@@ -1,6 +1,53 @@
 {
  "drugs": [
   {
+   "id": "amlodipine",
+   "name": "Amlodipine",
+   "brand": [
+    "Norvasc",
+    "Amodip"
+   ],
+   "class": "칼슘채널 차단제",
+   "tags": [
+    "cardio",
+    "renal"
+   ]
+  },
+  {
+   "id": "aspirin",
+   "name": "Aspirin",
+   "brand": [],
+   "class": "NSAID·항혈소판제",
+   "tags": [
+    "antithrombotic",
+    "analgesic"
+   ]
+  },
+  {
+   "id": "atenolol",
+   "name": "Atenolol",
+   "brand": [
+    "Tenormin"
+   ],
+   "class": "β1 차단제",
+   "tags": [
+    "cardio"
+   ]
+  },
+  {
+   "id": "benazepril",
+   "name": "Benazepril",
+   "brand": [
+    "Fortekor",
+    "Lotensin"
+   ],
+   "class": "ACE 억제제",
+   "tags": [
+    "cardio",
+    "renal"
+   ]
+  },
+  {
    "id": "clopidogrel",
    "name": "Clopidogrel",
    "brand": [
@@ -10,6 +57,63 @@
    "tags": [
     "cardio",
     "antithrombotic"
+   ]
+  },
+  {
+   "id": "digoxin",
+   "name": "Digoxin",
+   "brand": [
+    "Lanoxin"
+   ],
+   "class": "강심배당체",
+   "tags": [
+    "cardio"
+   ]
+  },
+  {
+   "id": "diltiazem",
+   "name": "Diltiazem",
+   "brand": [
+    "Cardizem"
+   ],
+   "class": "칼슘채널 차단제 (non-DHP)",
+   "tags": [
+    "cardio"
+   ]
+  },
+  {
+   "id": "enalapril",
+   "name": "Enalapril",
+   "brand": [
+    "Enacard",
+    "Vasotec"
+   ],
+   "class": "ACE 억제제",
+   "tags": [
+    "cardio",
+    "renal"
+   ]
+  },
+  {
+   "id": "furosemide",
+   "name": "Furosemide",
+   "brand": [
+    "Lasix",
+    "Salix"
+   ],
+   "class": "루프 이뇨제",
+   "tags": [
+    "cardio",
+    "renal"
+   ]
+  },
+  {
+   "id": "mexiletine",
+   "name": "Mexiletine",
+   "brand": [],
+   "class": "Class IB 항부정맥제",
+   "tags": [
+    "cardio"
    ]
   },
   {
@@ -46,6 +150,67 @@
    "tags": [
     "cardio",
     "antithrombotic"
+   ]
+  },
+  {
+   "id": "sildenafil",
+   "name": "Sildenafil",
+   "brand": [
+    "Revatio",
+    "Viagra"
+   ],
+   "class": "PDE5 억제제",
+   "tags": [
+    "cardio",
+    "respiratory"
+   ]
+  },
+  {
+   "id": "sotalol",
+   "name": "Sotalol",
+   "brand": [
+    "Betapace"
+   ],
+   "class": "Class III 항부정맥제 (β차단)",
+   "tags": [
+    "cardio"
+   ]
+  },
+  {
+   "id": "spironolactone",
+   "name": "Spironolactone",
+   "brand": [
+    "Aldactone"
+   ],
+   "class": "알도스테론 길항 이뇨제",
+   "tags": [
+    "cardio",
+    "renal"
+   ]
+  },
+  {
+   "id": "telmisartan",
+   "name": "Telmisartan",
+   "brand": [
+    "Semintra",
+    "Micardis"
+   ],
+   "class": "ARB (안지오텐신 수용체 차단제)",
+   "tags": [
+    "cardio",
+    "renal"
+   ]
+  },
+  {
+   "id": "torsemide",
+   "name": "Torsemide",
+   "brand": [
+    "Demadex"
+   ],
+   "class": "루프 이뇨제",
+   "tags": [
+    "cardio",
+    "renal"
    ]
   }
  ]

@@ -1,0 +1,100 @@
+{
+ "id": "spironolactone",
+ "name": "Spironolactone",
+ "brand": [
+  "Aldactone"
+ ],
+ "class": "알도스테론 길항 이뇨제",
+ "tags": [
+  "cardio",
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "CHF 보조 (MMVD)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "음식과 함께"
+  },
+  {
+   "species": "dog",
+   "label": "CHF 보조 범위",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "q12–24h; 0.5–4 mg/kg 보고"
+  },
+  {
+   "species": "dog",
+   "label": "전임상 MMVD",
+   "route": "PO",
+   "low": 2,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "benazepril 병용"
+  },
+  {
+   "species": "dog",
+   "label": "복수",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "7–10일 반응 없으면 증량, 최대 4 mg/kg/day"
+  },
+  {
+   "species": "dog",
+   "label": "고혈압 보조",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "심근병증",
+   "route": "PO",
+   "low": 1.7,
+   "high": 3.3,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "pilot study"
+  },
+  {
+   "species": "cat",
+   "label": "고혈압 보조",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  }
+ ],
+ "compounding": "정제 분쇄 현탁액 60일 안정성 보고",
+ "reviewed": null
+}

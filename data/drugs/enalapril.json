@@ -1,0 +1,120 @@
+{
+ "id": "enalapril",
+ "name": "Enalapril",
+ "brand": [
+  "Enacard",
+  "Vasotec"
+ ],
+ "class": "ACE 억제제",
+ "tags": [
+  "cardio",
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "심부전 (label)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "2주 후 부족하면 0.5 mg/kg q12h; 많은 임상의는 처음부터 q12h"
+  },
+  {
+   "species": "dog",
+   "label": "단백뇨 (비질소혈증)",
+   "route": "PO",
+   "low": 0.25,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "보통 0.5 mg/kg q12h 시작"
+  },
+  {
+   "species": "dog",
+   "label": "단백뇨 (질소혈증)",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "7일 후 악화 없으면 0.5"
+  },
+  {
+   "species": "dog",
+   "label": "CKD 고혈압",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "최대 2 mg/kg q12h"
+  },
+  {
+   "species": "cat",
+   "label": "CHF 보조",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "실용적으로 1.25–2.5 mg/cat q24h"
+  },
+  {
+   "species": "cat",
+   "label": "단백뇨 (비질소혈증)",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "q12–24h; 보통 0.25 mg/kg q12h"
+  },
+  {
+   "species": "cat",
+   "label": "단백뇨 (질소혈증)",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "q12–24h"
+  },
+  {
+   "species": "cat",
+   "label": "고혈압 보조",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 1
+  },
+  {
+   "form": "tablet",
+   "mg": 2.5
+  },
+  {
+   "form": "tablet",
+   "mg": 5
+  },
+  {
+   "form": "tablet",
+   "mg": 10
+  },
+  {
+   "form": "tablet",
+   "mg": 20
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

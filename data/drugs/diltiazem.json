@@ -1,0 +1,93 @@
+{
+ "id": "diltiazem",
+ "name": "Diltiazem",
+ "brand": [
+  "Cardizem"
+ ],
+ "class": "칼슘채널 차단제 (non-DHP)",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "만성 SVT (속방정)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "최대 3 mg/kg q8h"
+  },
+  {
+   "species": "dog",
+   "label": "AF 심실률 조절 (속방정)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "총 7–9 mg/kg/day 필요한 경우 많음"
+  },
+  {
+   "species": "dog",
+   "label": "AF 심실률 조절 (서방제)",
+   "route": "PO",
+   "low": 2,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "AF + digoxin 병용 (서방 ER)",
+   "route": "PO",
+   "low": 3,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "또는 속방 1 mg/kg q8h"
+  },
+  {
+   "species": "cat",
+   "label": "HCM·SVT (속방정)",
+   "route": "PO",
+   "low": 7.5,
+   "high": 15,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "2~3회/일"
+  },
+  {
+   "species": "cat",
+   "label": "HCM·SVT (서방제)",
+   "route": "PO",
+   "low": 30,
+   "high": 45,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 30
+  },
+  {
+   "form": "tablet",
+   "mg": 60
+  },
+  {
+   "form": "tablet",
+   "mg": 90
+  },
+  {
+   "form": "tablet",
+   "mg": 120
+  }
+ ],
+ "compounding": "속방·서방 제형은 호환되지 않음",
+ "reviewed": null
+}
