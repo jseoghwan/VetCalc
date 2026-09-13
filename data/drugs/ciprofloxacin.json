@@ -1,0 +1,85 @@
+{
+ "id": "ciprofloxacin",
+ "name": "Ciprofloxacin",
+ "brand": [
+  "Cipro"
+ ],
+ "class": "Fluoroquinolone 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "감수성 감염",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "경구 생체이용률 변동 큼"
+  },
+  {
+   "species": "dog",
+   "label": "세균성 농피증",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "요로감염",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염",
+   "route": "PO",
+   "low": 20,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "요로감염",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 250
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 750
+  },
+  {
+   "form": "tablet",
+   "mg": 1000
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

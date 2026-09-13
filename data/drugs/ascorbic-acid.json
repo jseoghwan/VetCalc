@@ -1,0 +1,77 @@
+{
+ "id": "ascorbic-acid",
+ "name": "Ascorbic Acid",
+ "brand": [
+  "Cecon"
+ ],
+ "class": "비타민 C (항산화제)",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "독소 유발 메트헤모글로빈혈증 보조 (항산화)",
+   "route": "PO",
+   "low": 30,
+   "high": 33,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "독소 유발 메트헤모글로빈혈증 보조 (항산화)",
+   "route": "PO",
+   "low": 30,
+   "high": 33,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "capsule",
+   "mg": 250
+  },
+  {
+   "form": "tablet",
+   "mg": 250
+  },
+  {
+   "form": "capsule",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  },
+  {
+   "form": "capsule",
+   "mg": 1000
+  },
+  {
+   "form": "tablet",
+   "mg": 1000
+  },
+  {
+   "form": "capsule",
+   "mg": 1500
+  },
+  {
+   "form": "tablet",
+   "mg": 1500
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

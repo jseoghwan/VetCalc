@@ -1,0 +1,33 @@
+{
+ "id": "apomorphine",
+ "name": "Apomorphine",
+ "brand": [
+  "Apokyn",
+  "Emedog"
+ ],
+ "class": "구토 유발제 (dopamine 작용제)",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "구토 유도",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "6.5 mg 정제 1정/26 kg"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 6.5
+  }
+ ],
+ "compounding": "조제 제제 차광 보관, 오토클레이브 금지",
+ "reviewed": null
+}

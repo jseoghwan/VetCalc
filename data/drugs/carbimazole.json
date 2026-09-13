@@ -1,0 +1,94 @@
+{
+ "id": "carbimazole",
+ "name": "Carbimazole",
+ "brand": [
+  "Vidalta"
+ ],
+ "class": "항갑상선제",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "cat",
+   "label": "갑상선기능항진증 초기 (속방정)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "cat",
+   "label": "갑상선기능항진증 유지 (속방정)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "일부 고양이는 1일 1회 가능"
+  },
+  {
+   "species": "cat",
+   "label": "갑상선기능항진증 (서방정)",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "매일 같은 시각"
+  },
+  {
+   "species": "cat",
+   "label": "갑상선기능항진증 중등도 (서방정)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "TT4 50–100 nmol/L"
+  },
+  {
+   "species": "cat",
+   "label": "갑상선기능항진증 조정 범위 (서방정)",
+   "route": "PO",
+   "low": 10,
+   "high": 25,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "5 mg 단위 조정, 정제 분할 불가"
+  },
+  {
+   "species": "cat",
+   "label": "갑상선기능항진증 격일 투여 (서방정)",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/animal",
+   "freq": "q48h",
+   "note": "10 mg/day 미만 필요 시"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 5
+  },
+  {
+   "form": "tablet",
+   "mg": 10
+  },
+  {
+   "form": "tablet",
+   "mg": 15
+  },
+  {
+   "form": "tablet",
+   "mg": 20
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

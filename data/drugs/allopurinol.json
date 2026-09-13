@@ -1,0 +1,88 @@
+{
+ "id": "allopurinol",
+ "name": "Allopurinol",
+ "brand": [
+  "Zyloprim"
+ ],
+ "class": "잔틴산화효소 억제제",
+ "tags": [
+  "urinary",
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "요산염 결석 용해",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "최대 4주; 저퓨린 식이 병용"
+  },
+  {
+   "species": "dog",
+   "label": "요산염 결석 예방",
+   "route": "PO",
+   "low": 5,
+   "high": 7,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h; 장기 고용량 시 잔틴 결석 주의"
+  },
+  {
+   "species": "dog",
+   "label": "리슈만편모충증 (a, 안티몬제 병용)",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "6–12개월"
+  },
+  {
+   "species": "dog",
+   "label": "리슈만편모충증 (b, miltefosine 병용)",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "6–12개월"
+  },
+  {
+   "species": "dog",
+   "label": "리슈만편모충증 (c, 단독요법)",
+   "route": "PO",
+   "low": 5,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "2–24개월; 신기능 저하 시 5 mg/kg q12h로 시작"
+  },
+  {
+   "species": "cat",
+   "label": "리슈만편모충증",
+   "route": "PO",
+   "low": 10,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12h 또는 q24h, 장기"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 300
+  }
+ ],
+ "compounding": "조제 현탁액(20 mg/mL) 60일 안정 자료 있음 — 차광 보관",
+ "reviewed": null
+}

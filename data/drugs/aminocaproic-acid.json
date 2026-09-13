@@ -1,0 +1,56 @@
+{
+ "id": "aminocaproic-acid",
+ "name": "Aminocaproic Acid",
+ "brand": [
+  "Amicar"
+ ],
+ "class": "항섬유소용해제 (지혈제)",
+ "tags": [
+  "antithrombotic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "그레이하운드 수술 후 지연성 출혈 예방",
+   "route": "PO",
+   "low": 500,
+   "high": 500,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "default": true,
+   "note": "수술 당일 밤부터 5일; ≈15.6–17.5 mg/kg"
+  },
+  {
+   "species": "dog",
+   "label": "우심방 종괴에 의한 심낭삼출",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 1일 3–4회"
+  },
+  {
+   "species": "dog",
+   "label": "퇴행성 척수병증 보조",
+   "route": "PO",
+   "low": 500,
+   "high": 500,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "무기한; 효과 의문"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 1000
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

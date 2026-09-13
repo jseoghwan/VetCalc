@@ -1,0 +1,71 @@
+{
+ "id": "diazepam",
+ "name": "Diazepam",
+ "brand": [
+  "Valium",
+  "Diastat"
+ ],
+ "class": "벤조디아제핀",
+ "tags": [
+  "behavior",
+  "anticonvulsant"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "상황성 불안",
+   "route": "PO",
+   "low": 0.5,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "필요시, 사건 30분–1시간 전"
+  },
+  {
+   "species": "dog",
+   "label": "불안 장애 (fluoxetine 병용)",
+   "route": "PO",
+   "low": 0.3,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "4주"
+  },
+  {
+   "species": "dog",
+   "label": "기능성 요도폐색/요도괄약근 긴장항진",
+   "route": "PO",
+   "low": 2,
+   "high": 10,
+   "unit": "mg/animal",
+   "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "Metronidazole 중독 보조",
+   "route": "PO",
+   "low": 0.43,
+   "high": 0.43,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "IV 볼루스 후, 3일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 2
+  },
+  {
+   "form": "tablet",
+   "mg": 5
+  },
+  {
+   "form": "tablet",
+   "mg": 10
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

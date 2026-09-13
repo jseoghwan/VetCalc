@@ -1,0 +1,68 @@
+{
+ "id": "cholestyramine",
+ "name": "Cholestyramine",
+ "brand": [
+  "Questran",
+  "Prevalite"
+ ],
+ "class": "담즙산 결합 수지",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "담즙산성 설사",
+   "route": "PO",
+   "low": 2000,
+   "high": 3000,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "Vincristine 과량",
+   "route": "PO",
+   "low": 100,
+   "high": 100,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "5일"
+  },
+  {
+   "species": "dog",
+   "label": "NSAID 노출 감소",
+   "route": "PO",
+   "low": 2500,
+   "high": 2500,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "물 20 mL에 희석 후 위관 투여"
+  },
+  {
+   "species": "dog",
+   "label": "Cholecalciferol 중독",
+   "route": "PO",
+   "low": 300,
+   "high": 1000,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "4일, 활성탄 투여 사이에"
+  },
+  {
+   "species": "cat",
+   "label": "NSAID 노출 감소",
+   "route": "PO",
+   "low": 1000,
+   "high": 1000,
+   "unit": "mg/animal",
+   "freq": "once",
+   "default": true,
+   "note": "flunixin 주사 직전 1회 (실험적)"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

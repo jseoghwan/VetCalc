@@ -1,0 +1,63 @@
+{
+ "id": "ammonium-chloride",
+ "name": "Ammonium Chloride",
+ "brand": [],
+ "class": "요 산성화제",
+ "tags": [
+  "urinary"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "요 산성화 (a)",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "요 산성화 (b, 중독 관리 보조)",
+   "route": "PO",
+   "low": 100,
+   "high": 100,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "암모니아 내성 검사 (경구)",
+   "route": "PO",
+   "low": 100,
+   "high": 100,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "최대 3 g; 12시간 절식; 기저 암모니아 상승 시 시행 금지"
+  },
+  {
+   "species": "cat",
+   "label": "요 산성화",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "암모니아 내성 검사 (경구)",
+   "route": "PO",
+   "low": 100,
+   "high": 100,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "최대 3 g; 절식; 기저 암모니아 상승 시 시행 금지"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

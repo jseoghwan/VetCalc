@@ -1,0 +1,40 @@
+{
+ "id": "cortisone",
+ "name": "Cortisone",
+ "brand": [],
+ "class": "글루코코르티코이드",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "부신피질기능저하증 장기 치료 (초기)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h; fludrocortisone과 병용"
+  },
+  {
+   "species": "dog",
+   "label": "부신피질기능저하증 유지",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "원문 q12–24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 25
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

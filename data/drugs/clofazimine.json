@@ -1,0 +1,48 @@
+{
+ "id": "clofazimine",
+ "name": "Clofazimine",
+ "brand": [
+  "Lamprene"
+ ],
+ "class": "항마이코박테리아제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "비결핵 마이코박테리아·나병양 육아종",
+   "route": "PO",
+   "low": 4,
+   "high": 8,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "4주, 다제 병용"
+  },
+  {
+   "species": "cat",
+   "label": "비결핵 마이코박테리아·고양이 나병 (mg/kg)",
+   "route": "PO",
+   "low": 4,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "원문 q24–48h; 4주, 다제 병용"
+  },
+  {
+   "species": "cat",
+   "label": "비결핵 마이코박테리아·고양이 나병 (mg/cat)",
+   "route": "PO",
+   "low": 25,
+   "high": 50,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "원문 q24–48h; 4주, 다제 병용"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

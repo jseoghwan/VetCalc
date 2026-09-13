@@ -1,0 +1,75 @@
+{
+ "id": "bromides",
+ "name": "Bromides",
+ "brand": [
+  "KBroVet-CA1"
+ ],
+ "class": "항경련제 (bromide)",
+ "tags": [
+  "anticonvulsant"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "특발성 뇌전증 (label)",
+   "route": "PO",
+   "low": 25,
+   "high": 68,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "KBr 기준 (NaBr은 15% 감량), 시험 중앙값 37 mg/kg/day"
+  },
+  {
+   "species": "dog",
+   "label": "뇌전증 부하 용량 (1)",
+   "route": "PO",
+   "low": 32,
+   "high": 32,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "7일 (총 450 mg/kg, 14회 분할)"
+  },
+  {
+   "species": "dog",
+   "label": "뇌전증 부하 용량 (2)",
+   "route": "PO",
+   "low": 600,
+   "high": 600,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "총 부하량, 17–48시간에 걸쳐 5–10회 분할 투여, 유지 30 mg/kg/day 병행"
+  },
+  {
+   "species": "dog",
+   "label": "뇌전증 유지",
+   "route": "PO",
+   "low": 30,
+   "high": 40,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "또는 2회 분할, 증량은 5 mg/kg 미만 단위"
+  },
+  {
+   "species": "dog",
+   "label": "뇌전증 유지, phenobarbital 병용 시 초기",
+   "route": "PO",
+   "low": 15,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "chewable tablet",
+   "mg": 250
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 500
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,79 @@
+{
+ "id": "chloramphenicol",
+ "name": "Chloramphenicol",
+ "brand": [
+  "Chloromycetin",
+  "Viceton"
+ ],
+ "class": "Amphenicol계 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "GI·폐·요로 감염 (label)",
+   "route": "PO",
+   "low": 55,
+   "high": 55,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "감수성 감염 (a)",
+   "route": "PO",
+   "low": 25,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 q6–8h; 임상 소실 후 3–5일 지속"
+  },
+  {
+   "species": "dog",
+   "label": "감수성 감염 (b)",
+   "route": "PO",
+   "low": 40,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "일부 감염은 60 mg/kg q8h까지"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염",
+   "route": "PO",
+   "low": 12.5,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (실용 용량)",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/animal",
+   "freq": "q12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 250
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 1000
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

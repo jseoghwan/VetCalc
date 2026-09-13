@@ -1,0 +1,223 @@
+{
+ "id": "azathioprine",
+ "name": "Azathioprine",
+ "brand": [
+  "Imuran",
+  "Azasan"
+ ],
+ "class": "면역억제제 (purine 길항제)",
+ "tags": [
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "면역억제 초기 (일반)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1–4주 후 격일 유지로 감량"
+  },
+  {
+   "species": "dog",
+   "label": "면역억제 유지 (일반)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q48h"
+  },
+  {
+   "species": "dog",
+   "label": "IBD 초기",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2주"
+  },
+  {
+   "species": "dog",
+   "label": "IBD 감량 단계",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q48h",
+   "note": "2–4주"
+  },
+  {
+   "species": "dog",
+   "label": "IBD 유지",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q48h"
+  },
+  {
+   "species": "dog",
+   "label": "IMHA/IMT 초기 (글루코코르티코이드 병용)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2–3주 후 격일로 감량"
+  },
+  {
+   "species": "dog",
+   "label": "IMHA/IMT 유지",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q48h"
+  },
+  {
+   "species": "dog",
+   "label": "중증근무력증 보조 초기",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2주 후 q48h"
+  },
+  {
+   "species": "dog",
+   "label": "중증근무력증 보조 유지",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q48h"
+  },
+  {
+   "species": "dog",
+   "label": "항문주위 누공 초기",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "prednisone 병용"
+  },
+  {
+   "species": "dog",
+   "label": "항문주위 누공 감량 단계",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q48h",
+   "note": "12주"
+  },
+  {
+   "species": "dog",
+   "label": "항문주위 누공 유지",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q48h",
+   "note": "12개월"
+  },
+  {
+   "species": "dog",
+   "label": "만성 간염 초기 (스테로이드 병용)",
+   "route": "PO",
+   "low": 2.2,
+   "high": 2.2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1–2주 후 q48h"
+  },
+  {
+   "species": "dog",
+   "label": "만성 간염 유지",
+   "route": "PO",
+   "low": 2.2,
+   "high": 2.2,
+   "unit": "mg/kg",
+   "freq": "q48h"
+  },
+  {
+   "species": "dog",
+   "label": "면역매개성 사구체질환 초기",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1–2주"
+  },
+  {
+   "species": "dog",
+   "label": "면역매개성 사구체질환 유지",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q48h"
+  },
+  {
+   "species": "dog",
+   "label": "면역매개성 다발성 관절염 초기",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2주"
+  },
+  {
+   "species": "dog",
+   "label": "면역매개성 다발성 관절염 유지",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q48h"
+  },
+  {
+   "species": "dog",
+   "label": "MUE 초기 (스테로이드 병용)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2주 후 q48h"
+  },
+  {
+   "species": "dog",
+   "label": "MUE 유지",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q48h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 75
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  }
+ ],
+ "compounding": "조제 현탁액(50 mg/mL, 60일 안정) 차광 보관, 알칼리성 pH에서 불안정 (최적 pH 5.5–6.5)",
+ "reviewed": null
+}

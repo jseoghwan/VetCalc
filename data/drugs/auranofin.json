@@ -1,0 +1,61 @@
+{
+ "id": "auranofin",
+ "name": "Auranofin",
+ "brand": [
+  "Ridaura"
+ ],
+ "class": "경구 금제제 (면역억제제)",
+ "tags": [
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "면역매개성 피부질환 (난치성)",
+   "route": "PO",
+   "low": 0.05,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "최대 9 mg/day/dog, 반응까지 6–12주"
+  },
+  {
+   "species": "dog",
+   "label": "골육종 보조 요법 (<15 kg)",
+   "route": "PO",
+   "low": 6,
+   "high": 6,
+   "unit": "mg/animal",
+   "freq": "q72h"
+  },
+  {
+   "species": "dog",
+   "label": "골육종 보조 요법 (>15 kg)",
+   "route": "PO",
+   "low": 9,
+   "high": 9,
+   "unit": "mg/animal",
+   "freq": "q72h"
+  },
+  {
+   "species": "cat",
+   "label": "면역매개성 피부질환 (천포창·호산구성 육아종 등)",
+   "route": "PO",
+   "low": 0.2,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "정확한 용량 위해 재조제 필요"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 3
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

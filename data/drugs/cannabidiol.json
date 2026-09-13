@@ -1,0 +1,37 @@
+{
+ "id": "cannabidiol",
+ "name": "Cannabidiol",
+ "brand": [
+  "Epidiolex"
+ ],
+ "class": "칸나비노이드",
+ "tags": [
+  "analgesic",
+  "anticonvulsant"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "골관절염",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "뇌전증 보조",
+   "route": "PO",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "기존 치료에 추가"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

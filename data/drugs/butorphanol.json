@@ -1,0 +1,53 @@
+{
+ "id": "butorphanol",
+ "name": "Butorphanol",
+ "brand": [
+  "Stadol",
+  "Torbutrol",
+  "Torbugesic"
+ ],
+ "class": "오피오이드 부분작용제·진해제",
+ "tags": [
+  "respiratory",
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "진해 (label)",
+   "route": "PO",
+   "low": 0.55,
+   "high": 0.55,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–12h, base 기준, 보통 7일 이내"
+  },
+  {
+   "species": "dog",
+   "label": "진해 증량 (label)",
+   "route": "PO",
+   "low": 1.1,
+   "high": 1.1,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 q6–12h, base 기준"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 1
+  },
+  {
+   "form": "tablet",
+   "mg": 5
+  },
+  {
+   "form": "tablet",
+   "mg": 10
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

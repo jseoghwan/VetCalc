@@ -1,0 +1,196 @@
+{
+ "id": "clindamycin",
+ "name": "Clindamycin",
+ "brand": [
+  "Antirobe",
+  "Cleocin",
+  "Clintabs"
+ ],
+ "class": "Lincosamide 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "피부·치과 감염 (label)",
+   "route": "PO",
+   "low": 5.5,
+   "high": 33,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "최대 28일; 3–4일 내 무반응 시 중단"
+  },
+  {
+   "species": "dog",
+   "label": "골수염 (label)",
+   "route": "PO",
+   "low": 11,
+   "high": 33,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "최소 28일"
+  },
+  {
+   "species": "dog",
+   "label": "표재성 농피증",
+   "route": "PO",
+   "low": 5.5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "표재성 농피증 (PK 근거 1일 1회)",
+   "route": "PO",
+   "low": 11,
+   "high": 11,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "심부 농피증",
+   "route": "PO",
+   "low": 11,
+   "high": 11,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "원문 q12–24h; 임상 소실 후 1주 이상"
+  },
+  {
+   "species": "dog",
+   "label": "치과 처치 전 예방",
+   "route": "PO",
+   "low": 11,
+   "high": 22,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "원문 q12–24h, 처치 전 5일"
+  },
+  {
+   "species": "dog",
+   "label": "수술 전 예방 (β-lactam 금기 시)",
+   "route": "PO",
+   "low": 5,
+   "high": 11,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "수술 60분 전"
+  },
+  {
+   "species": "dog",
+   "label": "Babesia gibsoni (i)",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "diminazene 후 8일째부터 21일"
+  },
+  {
+   "species": "dog",
+   "label": "Babesia gibsoni (ii) atovaquone 내성",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "평균 6주; diminazene·imidocarb 병용"
+  },
+  {
+   "species": "dog",
+   "label": "Babesia gibsoni (iii)",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "metronidazole·doxycycline 병용, 30–90일"
+  },
+  {
+   "species": "dog",
+   "label": "Hepatozoon canis",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "14일; TMS·pyrimethamine 병용"
+  },
+  {
+   "species": "dog",
+   "label": "Neospora·Toxoplasma",
+   "route": "PO",
+   "low": 12.5,
+   "high": 12.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "2주 이상"
+  },
+  {
+   "species": "cat",
+   "label": "피부·치과 감염 (label)",
+   "route": "PO",
+   "low": 11,
+   "high": 33,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "최대 14일"
+  },
+  {
+   "species": "cat",
+   "label": "난치성 전신 감염 (경구 최대)",
+   "route": "PO",
+   "low": 33,
+   "high": 33,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "수술 전 예방 (β-lactam 금기 시)",
+   "route": "PO",
+   "low": 11,
+   "high": 11,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "수술 60분 전"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "capsule",
+   "mg": 75
+  },
+  {
+   "form": "tablet",
+   "mg": 75
+  },
+  {
+   "form": "capsule",
+   "mg": 150
+  },
+  {
+   "form": "tablet",
+   "mg": 150
+  },
+  {
+   "form": "capsule",
+   "mg": 300
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

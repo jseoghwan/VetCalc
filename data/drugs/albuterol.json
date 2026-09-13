@@ -1,0 +1,42 @@
+{
+ "id": "albuterol",
+ "name": "Albuterol",
+ "brand": [
+  "Proventil",
+  "Ventolin",
+  "ProAir"
+ ],
+ "class": "β2 작용제 기관지확장제",
+ "tags": [
+  "respiratory"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "기관지확장",
+   "route": "PO",
+   "low": 0.02,
+   "high": 0.05,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h; 저용량부터 시작"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 2
+  },
+  {
+   "form": "tablet",
+   "mg": 4
+  },
+  {
+   "form": "tablet",
+   "mg": 8
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

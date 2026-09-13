@@ -1,0 +1,56 @@
+{
+ "id": "dimenhydrinate",
+ "name": "Dimenhydrinate",
+ "brand": [
+  "Dramamine",
+  "Gravol",
+  "Driminate"
+ ],
+ "class": "1세대 항히스타민제 (진토제)",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "멀미 예방·치료 / 항히스타민",
+   "route": "PO",
+   "low": 4,
+   "high": 8,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "전정질환 구토·오심",
+   "route": "PO",
+   "low": 25,
+   "high": 50,
+   "unit": "mg/animal",
+   "freq": "q8h"
+  },
+  {
+   "species": "cat",
+   "label": "멀미 예방·치료 / 항히스타민",
+   "route": "PO",
+   "low": 4,
+   "high": 8,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "chewable tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

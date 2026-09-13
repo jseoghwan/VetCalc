@@ -1,0 +1,43 @@
+{
+ "id": "dichlorphenamide",
+ "name": "Dichlorphenamide",
+ "brand": [
+  "Keveyis"
+ ],
+ "class": "탄산탈수효소 억제제",
+ "tags": [
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "녹내장 보조",
+   "route": "PO",
+   "low": 2,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "cat",
+   "label": "녹내장 보조",
+   "route": "PO",
+   "low": 0.5,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 50
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

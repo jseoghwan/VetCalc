@@ -1,0 +1,180 @@
+{
+ "id": "azithromycin",
+ "name": "Azithromycin",
+ "brand": [
+  "Zithromax",
+  "Zmax"
+ ],
+ "class": "Macrolide 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "감수성 감염",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "3–7일"
+  },
+  {
+   "species": "dog",
+   "label": "Babesia gibsoni/microti (atovaquone 병용)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "10일"
+  },
+  {
+   "species": "dog",
+   "label": "Theileriosis (atovaquone 병용)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "10일"
+  },
+  {
+   "species": "dog",
+   "label": "크립토스포리듐증",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "5–7일"
+  },
+  {
+   "species": "dog",
+   "label": "GI 운동 촉진",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "Cyclosporine 유발 치은 증식 감소",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "4–6주"
+  },
+  {
+   "species": "dog",
+   "label": "유두종증",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "10일"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "3–7일"
+  },
+  {
+   "species": "cat",
+   "label": "상부호흡기 감염 초기",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "5일 후 q72h 유지"
+  },
+  {
+   "species": "cat",
+   "label": "상부호흡기 감염 유지",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q72h",
+   "note": "총 6–8주 지속"
+  },
+  {
+   "species": "cat",
+   "label": "Bartonella 감염",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "21일"
+  },
+  {
+   "species": "cat",
+   "label": "크립토스포리듐증",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "보통 수 주"
+  },
+  {
+   "species": "cat",
+   "label": "Cytauxzoonosis (atovaquone 병용)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "10일"
+  },
+  {
+   "species": "cat",
+   "label": "톡소플라즈마증",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "최소 4주"
+  },
+  {
+   "species": "cat",
+   "label": "GI 운동 촉진",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 250
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 600
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

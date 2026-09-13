@@ -1,0 +1,39 @@
+{
+ "id": "activated-charcoal",
+ "name": "Activated Charcoal",
+ "brand": [
+  "ToxiBan",
+  "Actidose"
+ ],
+ "class": "경구 흡착제",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "독소 섭취 보조 (첫 용량)",
+   "route": "PO",
+   "low": 1000,
+   "high": 2000,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "최대 5 g/kg 보고; 장간순환 독소는 sorbitol 없이 q4–8h 24–48시간 반복"
+  },
+  {
+   "species": "cat",
+   "label": "독소 섭취 보조 (첫 용량)",
+   "route": "PO",
+   "low": 1000,
+   "high": 2000,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "최대 5 g/kg 보고; 장간순환 독소는 sorbitol 없이 q4–8h 24–48시간 반복"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

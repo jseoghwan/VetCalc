@@ -1,0 +1,178 @@
+{
+ "id": "cephalexin",
+ "name": "Cephalexin",
+ "brand": [
+  "Rilexine",
+  "Keflex"
+ ],
+ "class": "1세대 cephalosporin 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "피부 감염 (label)",
+   "route": "PO",
+   "low": 22,
+   "high": 22,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "28일"
+  },
+  {
+   "species": "dog",
+   "label": "피부 감염 (a)",
+   "route": "PO",
+   "low": 15,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "임상 소실 후 7일(표재성)/14일(심부) 지속"
+  },
+  {
+   "species": "dog",
+   "label": "피부 감염 (b)",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "최대 3주"
+  },
+  {
+   "species": "dog",
+   "label": "피부 감염 (c)",
+   "route": "PO",
+   "low": 15,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "표재성 15일 이상, 심부 28일 이상"
+  },
+  {
+   "species": "dog",
+   "label": "요로감염 (a)",
+   "route": "PO",
+   "low": 12,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "요로감염 (b)",
+   "route": "PO",
+   "low": 15,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "14일"
+  },
+  {
+   "species": "dog",
+   "label": "산발성 세균성 방광염 (c)",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "10일"
+  },
+  {
+   "species": "cat",
+   "label": "피부 감염 (a)",
+   "route": "PO",
+   "low": 22,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "임상 소실 후 7일(표재성)/14일(심부) 지속"
+  },
+  {
+   "species": "cat",
+   "label": "상처·농양·농피증 (b)",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "상처·농양 5일, 농피증 14일 이상"
+  },
+  {
+   "species": "cat",
+   "label": "요로감염 (a)",
+   "route": "PO",
+   "low": 12,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "하부 요로감염 (b)",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "10–14일"
+  },
+  {
+   "species": "cat",
+   "label": "산발성 세균성 방광염 (c)",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "10일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "chewable tablet",
+   "mg": 75
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 150
+  },
+  {
+   "form": "capsule",
+   "mg": 250
+  },
+  {
+   "form": "tablet",
+   "mg": 250
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 300
+  },
+  {
+   "form": "capsule",
+   "mg": 333
+  },
+  {
+   "form": "capsule",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 600
+  },
+  {
+   "form": "capsule",
+   "mg": 750
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

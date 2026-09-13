@@ -1,0 +1,73 @@
+{
+ "id": "clonidine",
+ "name": "Clonidine",
+ "brand": [
+  "Catapres",
+  "Duraclon"
+ ],
+ "class": "α2 아드레날린 작용제",
+ "tags": [
+  "behavior",
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "상황성 공포·분리불안 보조",
+   "route": "PO",
+   "low": 0.01,
+   "high": 0.05,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "최대 1일 2회; 필요 시 유발 1.5–2시간 전 투여"
+  },
+  {
+   "species": "dog",
+   "label": "상황성 공포·분리불안 보조 (중앙 유효 용량)",
+   "route": "PO",
+   "low": 0.017,
+   "high": 0.026,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "최대 1일 2회"
+  },
+  {
+   "species": "dog",
+   "label": "난치성 IBD 지사 보조",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mcg/kg",
+   "freq": "q12h",
+   "note": "원문 1일 2–3회; PO 또는 SC"
+  },
+  {
+   "species": "cat",
+   "label": "난치성 IBD 지사 보조",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mcg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 1일 2–3회; PO 또는 SC; 4차 선택"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 0.1
+  },
+  {
+   "form": "tablet",
+   "mg": 0.2
+  },
+  {
+   "form": "tablet",
+   "mg": 0.3
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

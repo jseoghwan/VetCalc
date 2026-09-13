@@ -1,0 +1,48 @@
+{
+ "id": "dextromethorphan",
+ "name": "Dextromethorphan",
+ "brand": [
+  "Delsym",
+  "Robitussin"
+ ],
+ "class": "NMDA 수용체 길항제 (진해제)",
+ "tags": [
+  "respiratory",
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "알레르기 피부염 자해 행동 감소",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "보조 진통",
+   "route": "PO",
+   "low": 0.5,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–8h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 10
+  },
+  {
+   "form": "capsule",
+   "mg": 15
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

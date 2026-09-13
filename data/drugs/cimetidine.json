@@ -1,0 +1,55 @@
+{
+ "id": "cimetidine",
+ "name": "Cimetidine",
+ "brand": [
+  "Tagamet"
+ ],
+ "class": "H2 차단제",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "식도염·위염·궤양",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–8h"
+  },
+  {
+   "species": "cat",
+   "label": "식도염·위염·궤양",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–8h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 200
+  },
+  {
+   "form": "tablet",
+   "mg": 300
+  },
+  {
+   "form": "tablet",
+   "mg": 400
+  },
+  {
+   "form": "tablet",
+   "mg": 800
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

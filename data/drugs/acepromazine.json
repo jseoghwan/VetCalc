@@ -1,0 +1,58 @@
+{
+ "id": "acepromazine",
+ "name": "Acepromazine",
+ "brand": [
+  "PromAce"
+ ],
+ "class": "페노티아진계 진정제/신경안정제",
+ "tags": [
+  "behavior",
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "진정·멀미 진토·마취전 투약 (label)",
+   "route": "PO",
+   "low": 0.55,
+   "high": 2.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "필요시 반복; 대부분 임상의는 label 용량이 과다하다고 봄"
+  },
+  {
+   "species": "dog",
+   "label": "진정·신경안정 (경구, extra-label)",
+   "route": "PO",
+   "low": 0.55,
+   "high": 2.2,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "반복 시 원문 q6–12h; 고용량 끝은 과다 의견 있음"
+  },
+  {
+   "species": "cat",
+   "label": "수컷 요도폐색 보조",
+   "route": "PO",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "default": true,
+   "note": "둔감(obtunded) 고양이에는 비권장"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 10
+  },
+  {
+   "form": "tablet",
+   "mg": 25
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,60 @@
+{
+ "id": "acetaminophen",
+ "name": "Acetaminophen",
+ "brand": [
+  "Tylenol"
+ ],
+ "class": "해열진통제 (비-NSAID)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "진통·해열",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "장기(>5일) 사용 시 저용량으로 q12h 고려; 고양이 금기"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "chewable tablet",
+   "mg": 80
+  },
+  {
+   "form": "capsule",
+   "mg": 160
+  },
+  {
+   "form": "tablet",
+   "mg": 160
+  },
+  {
+   "form": "capsule",
+   "mg": 325
+  },
+  {
+   "form": "tablet",
+   "mg": 325
+  },
+  {
+   "form": "capsule",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 650
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

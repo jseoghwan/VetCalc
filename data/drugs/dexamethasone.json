@@ -1,0 +1,127 @@
+{
+ "id": "dexamethasone",
+ "name": "Dexamethasone",
+ "brand": [
+  "Azium",
+  "Dexasone",
+  "Decadron"
+ ],
+ "class": "글루코코르티코이드",
+ "tags": [
+  "immuno",
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "항염 (label)",
+   "route": "PO",
+   "low": 0.25,
+   "high": 1.25,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "1일 1회 또는 2회 분할"
+  },
+  {
+   "species": "dog",
+   "label": "항염 (extra-label)",
+   "route": "PO",
+   "low": 0.05,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "초기 항염",
+   "route": "PO",
+   "low": 0.07,
+   "high": 0.14,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "원문 mg/kg/day, 경로 미기재"
+  },
+  {
+   "species": "cat",
+   "label": "항염 (label)",
+   "route": "PO",
+   "low": 0.125,
+   "high": 0.5,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "1일 1회 또는 2회 분할"
+  },
+  {
+   "species": "cat",
+   "label": "항염 (extra-label)",
+   "route": "PO",
+   "low": 0.05,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "초기 항염",
+   "route": "PO",
+   "low": 0.14,
+   "high": 0.28,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "원문 mg/kg/day, 경로 미기재"
+  },
+  {
+   "species": "cat",
+   "label": "과민성 피부염",
+   "route": "PO",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "주사액(4 mg/mL) 경구 투여"
+  },
+  {
+   "species": "cat",
+   "label": "HDDS-UCCR 검사(자택)",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 0.5
+  },
+  {
+   "form": "tablet",
+   "mg": 0.75
+  },
+  {
+   "form": "tablet",
+   "mg": 1
+  },
+  {
+   "form": "tablet",
+   "mg": 1.5
+  },
+  {
+   "form": "tablet",
+   "mg": 2
+  },
+  {
+   "form": "tablet",
+   "mg": 4
+  },
+  {
+   "form": "tablet",
+   "mg": 6
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

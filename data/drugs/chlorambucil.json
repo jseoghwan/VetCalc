@@ -1,0 +1,53 @@
+{
+ "id": "chlorambucil",
+ "name": "Chlorambucil",
+ "brand": [
+  "Leukeran"
+ ],
+ "class": "알킬화 항암제·면역억제제",
+ "tags": [
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "림프종 (cyclophosphamide 대체)",
+   "route": "PO",
+   "low": 1.4,
+   "high": 1.4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "cyclophosphamide와 같은 스케줄로 1회; 그 외 개 용량은 mg/m2"
+  },
+  {
+   "species": "cat",
+   "label": "면역억제 (초기)",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "2 mg 정제 통째 사용 시 >4 kg q48h, <4 kg q72h"
+  },
+  {
+   "species": "cat",
+   "label": "저등급 GI 림프종·CLL (c)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/animal",
+   "freq": "q48h",
+   "note": "원문 q48–72h, prednisolone 병용"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 2
+  }
+ ],
+ "compounding": "조제 현탁액(2 mg/mL) 냉장 7일만 안정 — 실온에서 급속 분해; 조제 캡슐 역가 편차 큼",
+ "reviewed": null
+}

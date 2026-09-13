@@ -1,0 +1,109 @@
+{
+ "id": "clarithromycin",
+ "name": "Clarithromycin",
+ "brand": [
+  "Biaxin"
+ ],
+ "class": "Macrolide 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "감수성 감염",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "개 나병양 육아종 (중증·난치)",
+   "route": "PO",
+   "low": 15,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1일 총량, q8–12h 분할; rifampin 병용, 4–8주"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염",
+   "route": "PO",
+   "low": 7.5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "고양이 나병·비결핵 마이코박테리아 (a)",
+   "route": "PO",
+   "low": 7.5,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "pradofloxacin + rifampin 또는 clofazimine 병용"
+  },
+  {
+   "species": "cat",
+   "label": "고양이 나병·비결핵 마이코박테리아 (b)",
+   "route": "PO",
+   "low": 62.5,
+   "high": 62.5,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "다제 병용"
+  },
+  {
+   "species": "cat",
+   "label": "Nocardia (N nova) 감염",
+   "route": "PO",
+   "low": 62.5,
+   "high": 125,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "amoxicillin ± doxycycline 병용"
+  },
+  {
+   "species": "cat",
+   "label": "H pylori 4제 요법 (a)",
+   "route": "PO",
+   "low": 7.5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "14일"
+  },
+  {
+   "species": "cat",
+   "label": "H pylori 3제 요법 (b)",
+   "route": "PO",
+   "low": 7.5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "14–21일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 250
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 1000
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

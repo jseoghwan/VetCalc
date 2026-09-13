@@ -1,0 +1,65 @@
+{
+ "id": "afoxolaner",
+ "name": "Afoxolaner",
+ "brand": [
+  "NexGard"
+ ],
+ "class": "이속사졸린계 외부기생충 구제제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "귀진드기(Otodectes) 감염",
+   "route": "PO",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "1회 또는 월 1회 2개월; label 벼룩·진드기 용량은 최소 2.5 mg/kg 월 1회"
+  },
+  {
+   "species": "cat",
+   "label": "귀진드기(Otodectes) 감염",
+   "route": "PO",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "단회"
+  },
+  {
+   "species": "cat",
+   "label": "벼룩 감염 (실험 조건)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "단회"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "chewable tablet",
+   "mg": 11.3
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 28.3
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 68
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 136
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

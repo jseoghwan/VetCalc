@@ -1,0 +1,92 @@
+{
+ "id": "amiodarone",
+ "name": "Amiodarone",
+ "brand": [
+  "Cordarone",
+  "Nexterone",
+  "Pacerone"
+ ],
+ "class": "Class III 항부정맥제",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "심방세동·심실성 부정맥 (a)",
+   "route": "PO",
+   "low": 5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1일 총량 (분할 횟수 불명); 경구 용량 확립 안 됨"
+  },
+  {
+   "species": "dog",
+   "label": "심방세동·심실성 부정맥 (b) 부하",
+   "route": "PO",
+   "low": 8,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "1주"
+  },
+  {
+   "species": "dog",
+   "label": "심방세동·심실성 부정맥 (b) 유지",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "부하 1주 후"
+  },
+  {
+   "species": "dog",
+   "label": "T. cruzi 감염 부하 1단계",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "7일; itraconazole 병용"
+  },
+  {
+   "species": "dog",
+   "label": "T. cruzi 감염 부하 2단계",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "14일"
+  },
+  {
+   "species": "dog",
+   "label": "T. cruzi 감염 유지",
+   "route": "PO",
+   "low": 7.5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "총 12개월; 부작용 시 반감"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 200
+  },
+  {
+   "form": "tablet",
+   "mg": 400
+  }
+ ],
+ "compounding": "조제 현탁액(5 mg/mL) 냉장 91일 안정 자료 있음 — 차광 보관",
+ "reviewed": null
+}

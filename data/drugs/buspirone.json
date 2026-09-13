@@ -1,0 +1,57 @@
+{
+ "id": "buspirone",
+ "name": "Buspirone",
+ "brand": [
+  "BuSpar"
+ ],
+ "class": "항불안제 (azapirone)",
+ "tags": [
+  "behavior"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "경도 불안·공포 보조치료",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h, 최대 2 mg/kg 보고"
+  },
+  {
+   "species": "dog",
+   "label": "경도 불안·공포 보조치료 (최대 용량 한도)",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "cat",
+   "label": "불안·공포, 소변 스프레이, 과잉 그루밍",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "불안·공포, 소변 스프레이, 과잉 그루밍 (실용)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 7.5,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "5 mg 정제 기준"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

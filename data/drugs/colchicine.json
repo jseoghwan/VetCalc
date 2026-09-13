@@ -1,0 +1,57 @@
+{
+ "id": "colchicine",
+ "name": "Colchicine",
+ "brand": [
+  "Colcrys",
+  "Mitigare"
+ ],
+ "class": "항염증제 (항섬유화)",
+ "tags": [
+  "hepatic",
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "간경변·섬유증, 샤페이열, 아밀로이드증 보조",
+   "route": "PO",
+   "low": 0.03,
+   "high": 0.03,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "성견 샤페이 시작 용량",
+   "route": "PO",
+   "low": 0.3,
+   "high": 0.3,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "0.6 mg 정제 ½; 4–5일마다 0.3 mg씩 증량"
+  },
+  {
+   "species": "dog",
+   "label": "성견 샤페이 목표 용량 (최대)",
+   "route": "PO",
+   "low": 0.6,
+   "high": 0.6,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "GI 부작용 시 감량·일시 중단"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 0.6
+  },
+  {
+   "form": "tablet",
+   "mg": 0.6
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

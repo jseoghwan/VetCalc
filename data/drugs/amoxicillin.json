@@ -1,0 +1,226 @@
+{
+ "id": "amoxicillin",
+ "name": "Amoxicillin",
+ "brand": [
+  "Amoxi-Tabs",
+  "Amoxi-Drops",
+  "Bimox",
+  "Amoxil"
+ ],
+ "class": "β-lactam 항생제 (aminopenicillin)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "호흡기·요로·GI·연부조직·피부 감염 (label)",
+   "route": "PO",
+   "low": 11,
+   "high": 11,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "5–7일"
+  },
+  {
+   "species": "dog",
+   "label": "전신 감염",
+   "route": "PO",
+   "low": 11,
+   "high": 22,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "산발성 세균성 방광염",
+   "route": "PO",
+   "low": 11,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h, 3–5일"
+  },
+  {
+   "species": "dog",
+   "label": "재발성 세균성 방광염",
+   "route": "PO",
+   "low": 11,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h, 3–5일 (지속·재발 시 1–2주)"
+  },
+  {
+   "species": "dog",
+   "label": "라임병 (Borreliosis)",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "30일"
+  },
+  {
+   "species": "dog",
+   "label": "Helicobacter 3제 요법 (a)",
+   "route": "PO",
+   "low": 11,
+   "high": 11,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "3주"
+  },
+  {
+   "species": "dog",
+   "label": "Helicobacter 3제 요법 (b)",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "2주"
+  },
+  {
+   "species": "dog",
+   "label": "Helicobacter 3제 요법 (c)",
+   "route": "PO",
+   "low": 22,
+   "high": 22,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "3주"
+  },
+  {
+   "species": "cat",
+   "label": "상부호흡기·요로·GI·피부 감염 (label) (a)",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "5–7일"
+  },
+  {
+   "species": "cat",
+   "label": "상부호흡기·요로·GI·피부 감염 (label) (b)",
+   "route": "PO",
+   "low": 11,
+   "high": 22,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "5–7일"
+  },
+  {
+   "species": "cat",
+   "label": "전신 감염",
+   "route": "PO",
+   "low": 11,
+   "high": 22,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "산발성 세균성 방광염",
+   "route": "PO",
+   "low": 11,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h, 3–5일"
+  },
+  {
+   "species": "cat",
+   "label": "재발성 세균성 방광염",
+   "route": "PO",
+   "low": 11,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h, 3–5일 (지속·재발 시 1–2주)"
+  },
+  {
+   "species": "cat",
+   "label": "Helicobacter 3제 요법",
+   "route": "PO",
+   "low": 11,
+   "high": 22,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "3주"
+  },
+  {
+   "species": "cat",
+   "label": "Helicobacter 4제 요법",
+   "route": "PO",
+   "low": 10,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "2주"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 125
+  },
+  {
+   "form": "tablet",
+   "mg": 150
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 200
+  },
+  {
+   "form": "tablet",
+   "mg": 200
+  },
+  {
+   "form": "capsule",
+   "mg": 250
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 250
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 400
+  },
+  {
+   "form": "tablet",
+   "mg": 400
+  },
+  {
+   "form": "capsule",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 775
+  },
+  {
+   "form": "tablet",
+   "mg": 875
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,71 @@
+{
+ "id": "acarbose",
+ "name": "Acarbose",
+ "brand": [
+  "Precose",
+  "Glucobay"
+ ],
+ "class": "α-glucosidase 억제제 (경구 혈당강하제)",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "당뇨병 보조 (초기)",
+   "route": "PO",
+   "low": 12.5,
+   "high": 25,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "식사 직전 투여, 매 식사마다"
+  },
+  {
+   "species": "dog",
+   "label": "당뇨병 보조 (2주 후 증량)",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "반응 불충분 시"
+  },
+  {
+   "species": "dog",
+   "label": "당뇨병 보조 (추가 증량, >10–25 kg)",
+   "route": "PO",
+   "low": 100,
+   "high": 100,
+   "unit": "mg/animal",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "당뇨병 보조",
+   "route": "PO",
+   "low": 12.5,
+   "high": 12.5,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "식사와 함께"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

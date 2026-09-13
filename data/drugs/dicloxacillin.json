@@ -1,0 +1,66 @@
+{
+ "id": "dicloxacillin",
+ "name": "Dicloxacillin",
+ "brand": [
+  "Dicloxin",
+  "Dynapen"
+ ],
+ "class": "β-lactam 항생제 (항포도상구균 penicillin)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "감수성 감염",
+   "route": "PO",
+   "low": 20,
+   "high": 40,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "포도상구균 농피증 (label)",
+   "route": "PO",
+   "low": 11,
+   "high": 22,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "중증 시 최대 55 mg/kg q8h"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염",
+   "route": "PO",
+   "low": 20,
+   "high": 40,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "포도상구균 농피증 (label)",
+   "route": "PO",
+   "low": 11,
+   "high": 22,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "중증 시 최대 55 mg/kg q8h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 250
+  },
+  {
+   "form": "capsule",
+   "mg": 500
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

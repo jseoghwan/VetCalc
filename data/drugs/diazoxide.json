@@ -1,0 +1,27 @@
+{
+ "id": "diazoxide",
+ "name": "Diazoxide",
+ "brand": [
+  "Proglycem"
+ ],
+ "class": "혈당상승제 (K-ATP 채널 개방제)",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "인슐린종 등 종양성 저혈당 보조",
+   "route": "PO",
+   "low": 5,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "초기 5 mg/kg, 효과에 따라 최대 30 mg/kg까지 점증"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

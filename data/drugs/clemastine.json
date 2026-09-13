@@ -1,0 +1,47 @@
+{
+ "id": "clemastine",
+ "name": "Clemastine",
+ "brand": [
+  "Dayhist"
+ ],
+ "class": "1세대 항히스타민제",
+ "tags": [
+  "respiratory"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "항히스타민 (통상)",
+   "route": "PO",
+   "low": 0.05,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "개에서 경구 생체이용률 낮음"
+  },
+  {
+   "species": "dog",
+   "label": "항히스타민 (고용량, 일화적)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "항히스타민",
+   "route": "PO",
+   "low": 0.34,
+   "high": 0.68,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "0.68 mg/cat이 더 효과적"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

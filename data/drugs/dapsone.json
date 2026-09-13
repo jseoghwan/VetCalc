@@ -1,0 +1,45 @@
+{
+ "id": "dapsone",
+ "name": "Dapsone",
+ "brand": [],
+ "class": "항마이코박테리아제 (sulfone)",
+ "tags": [
+  "immuno",
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "피부 혈관염 등 면역조절",
+   "route": "PO",
+   "low": 1,
+   "high": 1.1,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "관해 후 최저 빈도로 점감"
+  },
+  {
+   "species": "dog",
+   "label": "갈색 은둔 거미 교상 보조",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "10–14일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

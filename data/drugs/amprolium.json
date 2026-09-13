@@ -1,0 +1,81 @@
+{
+ "id": "amprolium",
+ "name": "Amprolium",
+ "brand": [
+  "AmproMed",
+  "Corid",
+  "Amprol"
+ ],
+ "class": "항콕시듐제 (thiamine 유사체)",
+ "tags": [
+  "antimicrobial",
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "코시듐증, 20% 산제 (소형견 <10 kg)",
+   "route": "PO",
+   "low": 60,
+   "high": 100,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "7–12일, 젤라틴 캡슐에 담아 투여"
+  },
+  {
+   "species": "dog",
+   "label": "코시듐증, 20% 산제 (대형 강아지 >10 kg)",
+   "route": "PO",
+   "low": 110,
+   "high": 200,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "7–12일, 젤라틴 캡슐에 담아 투여"
+  },
+  {
+   "species": "dog",
+   "label": "코시듐증, 20% 산제 사료 첨가 (강아지·모견)",
+   "route": "PO",
+   "low": 250,
+   "high": 300,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "7–12일"
+  },
+  {
+   "species": "dog",
+   "label": "코시듐증, sulfadimethoxine 병용",
+   "route": "PO",
+   "low": 150,
+   "high": 150,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "14일"
+  },
+  {
+   "species": "cat",
+   "label": "코시듐증, 20% 산제",
+   "route": "PO",
+   "low": 60,
+   "high": 100,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "7일"
+  },
+  {
+   "species": "cat",
+   "label": "코시듐증, sulfadimethoxine 병용",
+   "route": "PO",
+   "low": 150,
+   "high": 150,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "14일"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

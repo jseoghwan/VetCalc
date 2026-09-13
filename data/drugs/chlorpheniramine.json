@@ -1,0 +1,67 @@
+{
+ "id": "chlorpheniramine",
+ "name": "Chlorpheniramine",
+ "brand": [
+  "Chlor-Trimeton"
+ ],
+ "class": "1세대 항히스타민제",
+ "tags": [
+  "respiratory"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "소양증·경도 진정 (mg/kg)",
+   "route": "PO",
+   "low": 0.2,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h; 0.5 mg/kg 최대"
+  },
+  {
+   "species": "dog",
+   "label": "소양증·경도 진정 (mg/dog)",
+   "route": "PO",
+   "low": 2,
+   "high": 8,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "원문 1일 2–3회; 2 mg 단위로 반올림"
+  },
+  {
+   "species": "cat",
+   "label": "소양증·경도 진정",
+   "route": "PO",
+   "low": 1,
+   "high": 4,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "원문 1일 2–3회"
+  },
+  {
+   "species": "cat",
+   "label": "소양증·경도 진정 (흔한 용량)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "일부는 1일 1회로 조절 가능"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 4
+  },
+  {
+   "form": "tablet",
+   "mg": 12
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

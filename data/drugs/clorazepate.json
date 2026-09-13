@@ -1,0 +1,92 @@
+{
+ "id": "clorazepate",
+ "name": "Clorazepate",
+ "brand": [
+  "Tranxene"
+ ],
+ "class": "벤조디아제핀",
+ "tags": [
+  "anticonvulsant",
+  "behavior"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "간질 보조 (a)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1.5,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "보통 phenobarbital과 병용"
+  },
+  {
+   "species": "dog",
+   "label": "간질 보조 (b)",
+   "route": "PO",
+   "low": 1,
+   "high": 2.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "보통 phenobarbital과 병용"
+  },
+  {
+   "species": "dog",
+   "label": "공포·공포증 보조 (a)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "fluoxetine 병용, 4주 후 중단"
+  },
+  {
+   "species": "dog",
+   "label": "공포·공포증 보조 (b)",
+   "route": "PO",
+   "low": 0.55,
+   "high": 2.2,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "최대 q8h"
+  },
+  {
+   "species": "cat",
+   "label": "불안·강박행동",
+   "route": "PO",
+   "low": 0.2,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h"
+  },
+  {
+   "species": "cat",
+   "label": "발작 (phenobarbital 대안)",
+   "route": "PO",
+   "low": 3.75,
+   "high": 7.5,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "원문 1일 1–2회"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 3.75
+  },
+  {
+   "form": "tablet",
+   "mg": 7.5
+  },
+  {
+   "form": "tablet",
+   "mg": 15
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

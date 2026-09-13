@@ -1,0 +1,43 @@
+{
+ "id": "crofelemer",
+ "name": "Crofelemer",
+ "brand": [
+  "Canalevia-CA1",
+  "Mytesi"
+ ],
+ "class": "지사제",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "항암제 유발 설사 ≤63.6 kg (label)",
+   "route": "PO",
+   "low": 125,
+   "high": 125,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "3일"
+  },
+  {
+   "species": "dog",
+   "label": "항암제 유발 설사 >63.6 kg (label)",
+   "route": "PO",
+   "low": 250,
+   "high": 250,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "3일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 125
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

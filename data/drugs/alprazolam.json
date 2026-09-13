@@ -1,0 +1,70 @@
+{
+ "id": "alprazolam",
+ "name": "Alprazolam",
+ "brand": [
+  "Xanax",
+  "Niravam"
+ ],
+ "class": "벤조디아제핀",
+ "tags": [
+  "behavior"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "불안장애·공포증 보조",
+   "route": "PO",
+   "low": 0.02,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–12h 필요시; 초기 0.02–0.05 mg/kg; 급성 공포는 자극 30–60분 전"
+  },
+  {
+   "species": "cat",
+   "label": "불안장애·공포증·부적절 배설/마킹 보조",
+   "route": "PO",
+   "low": 0.125,
+   "high": 0.25,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–24h; 공포증은 자극 30–60분 전"
+  },
+  {
+   "species": "cat",
+   "label": "병원 이동 전 진정 보조",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "출발 1시간 전"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 0.25
+  },
+  {
+   "form": "tablet",
+   "mg": 0.5
+  },
+  {
+   "form": "tablet",
+   "mg": 1
+  },
+  {
+   "form": "tablet",
+   "mg": 2
+  },
+  {
+   "form": "tablet",
+   "mg": 3
+  }
+ ],
+ "compounding": "조제 현탁액(1 mg/mL) 60일 안정 자료 있음 — 차광 보관",
+ "reviewed": null
+}

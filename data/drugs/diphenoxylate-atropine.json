@@ -1,0 +1,64 @@
+{
+ "id": "diphenoxylate-atropine",
+ "name": "Diphenoxylate/Atropine",
+ "brand": [
+  "Lomotil"
+ ],
+ "class": "오피오이드 작용제/항콜린제 (지사제)",
+ "tags": [
+  "gi",
+  "respiratory"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "지사 (a)",
+   "route": "PO",
+   "low": 0.05,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 1일 3–4회; 용량은 diphenoxylate 성분 기준"
+  },
+  {
+   "species": "dog",
+   "label": "지사 (b)",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "용량은 diphenoxylate 성분 기준"
+  },
+  {
+   "species": "dog",
+   "label": "진해",
+   "route": "PO",
+   "low": 0.2,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h; 용량은 diphenoxylate 성분 기준"
+  },
+  {
+   "species": "cat",
+   "label": "지사",
+   "route": "PO",
+   "low": 0.08,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "고양이에는 일반적으로 비권장; 용량은 diphenoxylate 성분 기준"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 2.5
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

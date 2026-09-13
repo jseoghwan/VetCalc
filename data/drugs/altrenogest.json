@@ -1,0 +1,28 @@
+{
+ "id": "altrenogest",
+ "name": "Altrenogest",
+ "brand": [
+  "Regu-Mate",
+  "Matrix"
+ ],
+ "class": "경구 프로게스틴",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "황체기능 부전",
+   "route": "PO",
+   "low": 0.05,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "2.2 mg/mL 경구액"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

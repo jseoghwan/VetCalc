@@ -1,0 +1,98 @@
+{
+ "id": "clonazepam",
+ "name": "Clonazepam",
+ "brand": [
+  "Klonopin"
+ ],
+ "class": "Benzodiazepine",
+ "tags": [
+  "behavior",
+  "anticonvulsant"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "항불안",
+   "route": "PO",
+   "low": 0.1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 1일 2–3회까지; 저용량에서 시작"
+  },
+  {
+   "species": "dog",
+   "label": "항불안 (고용량)",
+   "route": "PO",
+   "low": 2.2,
+   "high": 2.2,
+   "unit": "mg/kg",
+   "freq": "q6h"
+  },
+  {
+   "species": "dog",
+   "label": "발작·수면장애 보조",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "원문 1일 2–3회까지 (최대 q6h)"
+  },
+  {
+   "species": "dog",
+   "label": "발작·수면장애 보조 (고용량)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "항불안",
+   "route": "PO",
+   "low": 0.02,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 1일 2회까지; 저용량에서 시작"
+  },
+  {
+   "species": "cat",
+   "label": "발작 보조",
+   "route": "PO",
+   "low": 0.02,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "원문 1일 2회까지"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 0.125
+  },
+  {
+   "form": "tablet",
+   "mg": 0.25
+  },
+  {
+   "form": "tablet",
+   "mg": 0.5
+  },
+  {
+   "form": "tablet",
+   "mg": 1
+  },
+  {
+   "form": "tablet",
+   "mg": 2
+  }
+ ],
+ "compounding": "조제 현탁액 차광 보관 (0.1 mg/mL, 60일 안정)",
+ "reviewed": null
+}

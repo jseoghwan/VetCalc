@@ -1,0 +1,132 @@
+{
+ "id": "cabergoline",
+ "name": "Cabergoline",
+ "brand": [
+  "Dostinex",
+  "Galastop"
+ ],
+ "class": "도파민 작용제/프로락틴 억제제",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "위임신·유즙분비 억제",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "4–6일 연속"
+  },
+  {
+   "species": "dog",
+   "label": "발정 유도 (a)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "note": "발정전기 시작 2–8일 후까지 또는 14–42일"
+  },
+  {
+   "species": "dog",
+   "label": "발정 유도 (b)",
+   "route": "PO",
+   "low": 0.6,
+   "high": 0.6,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "note": "발정전기 2일 후까지 또는 최대 42일"
+  },
+  {
+   "species": "dog",
+   "label": "자궁축농증 보조 (cloprostenol 병용)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "note": "7일"
+  },
+  {
+   "species": "dog",
+   "label": "임신중절 (임신 35–45일)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "note": "7일, cloprostenol 병용; 미종결 시 12일까지"
+  },
+  {
+   "species": "dog",
+   "label": "임신중절 (임신 22–23일)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "note": "10일"
+  },
+  {
+   "species": "dog",
+   "label": "유선종양 수술 전 처치",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "note": "수술 5–7일 전, 원문 간격 미명시"
+  },
+  {
+   "species": "cat",
+   "label": "위임신·유즙분비 억제",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "임신중절 (a, 교미 30일 후)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "note": "7–13일, cloprostenol 병용"
+  },
+  {
+   "species": "cat",
+   "label": "임신중절 (b, 임신 25–42일)",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mcg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "유선종양 수술 전 처치",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "note": "수술 5–7일 전, 원문 간격 미명시"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 0.5
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

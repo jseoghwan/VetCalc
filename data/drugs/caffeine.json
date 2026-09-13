@@ -1,0 +1,27 @@
+{
+ "id": "caffeine",
+ "name": "Caffeine",
+ "brand": [
+  "Cafcit"
+ ],
+ "class": "CNS 자극제 (methylxanthine)",
+ "tags": [
+  "respiratory"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "폐렴 보조치료",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "단회 약동학 연구 용량, caffeine base 기준"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

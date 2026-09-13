@@ -1,0 +1,92 @@
+{
+ "id": "cisapride",
+ "name": "Cisapride",
+ "brand": [],
+ "class": "위장관 운동 촉진제",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "위장관 운동 촉진 (초기)",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h; 식전 30분"
+  },
+  {
+   "species": "dog",
+   "label": "위장관 운동 촉진 (증량 최대)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "내약성 있으면 점진 증량"
+  },
+  {
+   "species": "cat",
+   "label": "위장관 운동 촉진 (a) 초기",
+   "route": "PO",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "식전 15–30분"
+  },
+  {
+   "species": "cat",
+   "label": "위장관 운동 촉진 (a) 증량 최대",
+   "route": "PO",
+   "low": 7.5,
+   "high": 7.5,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "대형 고양이"
+  },
+  {
+   "species": "cat",
+   "label": "위장관 운동 촉진 (b) q8h",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "cat",
+   "label": "위장관 운동 촉진 (b) q12h",
+   "route": "PO",
+   "low": 1.5,
+   "high": 1.5,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "위장관 운동 촉진 (c) <5 kg",
+   "route": "PO",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/animal",
+   "freq": "q8h"
+  },
+  {
+   "species": "cat",
+   "label": "위장관 운동 촉진 (c) >5 kg",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "q8h"
+  }
+ ],
+ "strengths": [],
+ "compounding": "조제 현탁액 차광 보관 (상품 정제 없음, 원료 분말로 조제)",
+ "reviewed": null
+}

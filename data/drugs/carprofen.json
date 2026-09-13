@@ -1,0 +1,65 @@
+{
+ "id": "carprofen",
+ "name": "Carprofen",
+ "brand": [
+  "Rimadyl",
+  "Carprieve",
+  "Novox",
+  "Vetprofen"
+ ],
+ "class": "NSAID",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "소염·진통 1일 1회 (label)",
+   "route": "PO",
+   "low": 4.4,
+   "high": 4.4,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "반 정 단위로 내림"
+  },
+  {
+   "species": "dog",
+   "label": "소염·진통 1일 2회 분할 (label)",
+   "route": "PO",
+   "low": 2.2,
+   "high": 2.2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "반 정 단위로 내림"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "chewable tablet",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 75
+  },
+  {
+   "form": "tablet",
+   "mg": 75
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  }
+ ],
+ "compounding": "조제 현탁액(5 mg/mL) 21일 안정, 차광 보관 필요",
+ "reviewed": null
+}

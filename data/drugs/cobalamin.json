@@ -1,0 +1,98 @@
+{
+ "id": "cobalamin",
+ "name": "Cobalamin",
+ "brand": [
+  "Cobalequin"
+ ],
+ "class": "비타민 B12",
+ "tags": [
+  "gi",
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "B12 결핍 (a) 1–10 kg",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "cyanocobalamin 기준"
+  },
+  {
+   "species": "dog",
+   "label": "B12 결핍 (a) 10–20 kg",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "cyanocobalamin 기준"
+  },
+  {
+   "species": "dog",
+   "label": "B12 결핍 (a) >20 kg",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "cyanocobalamin 기준"
+  },
+  {
+   "species": "dog",
+   "label": "B12 결핍 (b) <20 kg",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "대안 체중 구분"
+  },
+  {
+   "species": "dog",
+   "label": "B12 결핍 (b) >20 kg",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "대안 체중 구분"
+  },
+  {
+   "species": "dog",
+   "label": "Imerslund-Gräsbeck 증후군",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "cyanocobalamin 기준; 비글 3두 보고"
+  },
+  {
+   "species": "cat",
+   "label": "B12 결핍",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "12주"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "chewable tablet",
+   "mg": 0.25
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 1
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

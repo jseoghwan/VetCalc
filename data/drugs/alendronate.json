@@ -1,0 +1,58 @@
+{
+ "id": "alendronate",
+ "name": "Alendronate",
+ "brand": [
+  "Fosamax"
+ ],
+ "class": "비스포스포네이트 (골흡수 억제제)",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "난치성 고칼슘혈증·골종양 통증 (a)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "공복 투여; 개 사용 경험 적음"
+  },
+  {
+   "species": "dog",
+   "label": "난치성 고칼슘혈증·골종양 통증 (b)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "공복 투여"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 5
+  },
+  {
+   "form": "tablet",
+   "mg": 10
+  },
+  {
+   "form": "tablet",
+   "mg": 35
+  },
+  {
+   "form": "tablet",
+   "mg": 40
+  },
+  {
+   "form": "tablet",
+   "mg": 70
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

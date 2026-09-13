@@ -1,0 +1,67 @@
+{
+ "id": "diclazuril",
+ "name": "Diclazuril",
+ "brand": [
+  "Protazil",
+  "Clinacox"
+ ],
+ "class": "항원충제 (triazine계, 항콕시듐제)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "콕시듐증 (Cystoisospora) (a)",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "콕시듐증 (Cystoisospora) (c)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "포유류용 제품 기준"
+  },
+  {
+   "species": "cat",
+   "label": "콕시듐증 (Cystoisospora) (a)",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "콕시듐증 (Cystoisospora) (b) 자묘",
+   "route": "PO",
+   "low": 0.625,
+   "high": 0.625,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "원문: 양용 액제 1 mL(2.5 mg)/4 kg"
+  },
+  {
+   "species": "cat",
+   "label": "콕시듐증 (Cystoisospora) (c)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "포유류용 제품 기준"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

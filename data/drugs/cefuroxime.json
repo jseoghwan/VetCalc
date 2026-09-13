@@ -1,0 +1,52 @@
+{
+ "id": "cefuroxime",
+ "name": "Cefuroxime",
+ "brand": [
+  "Ceftin",
+  "Zinacef"
+ ],
+ "class": "2세대 cephalosporin 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "감수성 감염 (경구)",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h, 일화적 용량"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (경구)",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h, 일화적 용량"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 125
+  },
+  {
+   "form": "tablet",
+   "mg": 250
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,71 @@
+{
+ "id": "dantrolene",
+ "name": "Dantrolene",
+ "brand": [
+  "Dantrium",
+  "Ryanodex",
+  "Revonto"
+ ],
+ "class": "골격근 이완제",
+ "tags": [
+  "urinary"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "홉 섭취 MH 유사 증후군",
+   "route": "PO",
+   "low": 3.5,
+   "high": 3.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "섭취 후 최대한 빨리"
+  },
+  {
+   "species": "dog",
+   "label": "횡문근융해 보조",
+   "route": "PO",
+   "low": 1.5,
+   "high": 1.5,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "기능성 요도 폐색",
+   "route": "PO",
+   "low": 1,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "cat",
+   "label": "기능성 요도 폐색",
+   "route": "PO",
+   "low": 0.5,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 25
+  },
+  {
+   "form": "capsule",
+   "mg": 50
+  },
+  {
+   "form": "capsule",
+   "mg": 100
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

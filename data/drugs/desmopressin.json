@@ -1,0 +1,83 @@
+{
+ "id": "desmopressin",
+ "name": "Desmopressin",
+ "brand": [
+  "DDAVP",
+  "Nocdurna"
+ ],
+ "class": "합성 바소프레신(ADH) 유사체",
+ "tags": [
+  "endocrine",
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "중추성 요붕증 <5 kg",
+   "route": "PO",
+   "low": 0.05,
+   "high": 0.05,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "7일 후 평가; 조절 안 되면 q8h로"
+  },
+  {
+   "species": "dog",
+   "label": "중추성 요붕증 5–20 kg",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "7일 후 평가; 조절 안 되면 q8h로"
+  },
+  {
+   "species": "dog",
+   "label": "중추성 요붕증 >20 kg",
+   "route": "PO",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "7일 후 평가; 조절 안 되면 q8h로"
+  },
+  {
+   "species": "dog",
+   "label": "중추성 vs 신성 요붕증 감별",
+   "route": "PO",
+   "low": 0.05,
+   "high": 0.2,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "0.1 또는 0.2 mg 정제 ½–1정; 5–7일"
+  },
+  {
+   "species": "cat",
+   "label": "중추성 요붕증",
+   "route": "PO",
+   "low": 0.025,
+   "high": 0.05,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h; 반응 변동 가능"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 0.0553
+  },
+  {
+   "form": "tablet",
+   "mg": 0.1
+  },
+  {
+   "form": "tablet",
+   "mg": 0.2
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

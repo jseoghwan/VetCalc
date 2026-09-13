@@ -1,0 +1,108 @@
+{
+ "id": "bismuth-subsalicylate",
+ "name": "Bismuth Subsalicylate",
+ "brand": [
+  "Pepto-Bismol",
+  "Kaopectate"
+ ],
+ "class": "지사제·위장관 보호제",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "급성 설사·GI 코팅",
+   "route": "PO",
+   "low": 4.4,
+   "high": 35,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 1일 3–4회 (q6–8h), 17.5 mg/mL 현탁액 0.25–2 mL/kg"
+  },
+  {
+   "species": "dog",
+   "label": "Helicobacter 3제 요법 (b), <5 kg",
+   "route": "PO",
+   "low": 65.5,
+   "high": 65.5,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "262 mg 정제 ¼정, 2주"
+  },
+  {
+   "species": "dog",
+   "label": "Helicobacter 3제 요법 (b), 5–9.9 kg",
+   "route": "PO",
+   "low": 131,
+   "high": 131,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "262 mg 정제 ½정, 2주"
+  },
+  {
+   "species": "dog",
+   "label": "Helicobacter 3제 요법 (b), 10–24.9 kg",
+   "route": "PO",
+   "low": 262,
+   "high": 262,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "262 mg 정제 1정, 2주"
+  },
+  {
+   "species": "dog",
+   "label": "Helicobacter 3제 요법 (b), >25 kg",
+   "route": "PO",
+   "low": 524,
+   "high": 524,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "262 mg 정제 2정, 2주"
+  },
+  {
+   "species": "dog",
+   "label": "Helicobacter 3제 요법 (c)",
+   "route": "PO",
+   "low": 3.85,
+   "high": 3.85,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 q6–8h, 3주, 현탁액 0.22 mL/kg"
+  },
+  {
+   "species": "cat",
+   "label": "설사",
+   "route": "PO",
+   "low": 8.8,
+   "high": 17.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "3일 이내, 현탁액 0.5–1 mL/kg"
+  },
+  {
+   "species": "cat",
+   "label": "Helicobacter 4제 요법",
+   "route": "PO",
+   "low": 65.5,
+   "high": 65.5,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "262 mg 정제 ¼정, 2주"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "chewable tablet",
+   "mg": 262
+  },
+  {
+   "form": "tablet",
+   "mg": 262
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

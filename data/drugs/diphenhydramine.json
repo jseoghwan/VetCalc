@@ -1,0 +1,98 @@
+{
+ "id": "diphenhydramine",
+ "name": "Diphenhydramine",
+ "brand": [
+  "Benadryl",
+  "Vetadryl",
+  "Banophen",
+  "Diphenhist"
+ ],
+ "class": "1세대 항히스타민제",
+ "tags": [
+  "respiratory",
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "항히스타민 (알레르기·과민반응 보조)",
+   "route": "PO",
+   "low": 2,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "멀미 예방 / 진토",
+   "route": "PO",
+   "low": 2,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "cat",
+   "label": "항히스타민 (알레르기·과민반응 보조)",
+   "route": "PO",
+   "low": 2,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "cat",
+   "label": "멀미 예방 / 진토",
+   "route": "PO",
+   "low": 2,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "고양이에서는 효과 낮음"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "chewable tablet",
+   "mg": 10
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 12.5
+  },
+  {
+   "form": "tablet",
+   "mg": 12.5
+  },
+  {
+   "form": "capsule",
+   "mg": 25
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 30
+  },
+  {
+   "form": "capsule",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

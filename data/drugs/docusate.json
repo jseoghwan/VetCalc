@@ -1,0 +1,59 @@
+{
+ "id": "docusate",
+ "name": "Docusate",
+ "brand": [
+  "Colace",
+  "Surfak"
+ ],
+ "class": "계면활성 변 연화제",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "변 연화",
+   "route": "PO",
+   "low": 25,
+   "high": 100,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "원문 1일 1–2회; 대형견 최대 240–250 mg 1일 1회"
+  },
+  {
+   "species": "cat",
+   "label": "변 연화",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 50
+  },
+  {
+   "form": "capsule",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "capsule",
+   "mg": 240
+  },
+  {
+   "form": "capsule",
+   "mg": 250
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,90 @@
+{
+ "id": "cyproheptadine",
+ "name": "Cyproheptadine",
+ "brand": [
+  "Periactin"
+ ],
+ "class": "1세대 항히스타민제",
+ "tags": [
+  "gi",
+  "respiratory"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "식욕 촉진",
+   "route": "PO",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "세로토닌 증후군 보조",
+   "route": "PO",
+   "low": 1.1,
+   "high": 1.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "필요 시 1–6시간마다 반복"
+  },
+  {
+   "species": "dog",
+   "label": "항히스타민",
+   "route": "PO",
+   "low": 0.5,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "식욕 촉진 (a)",
+   "route": "PO",
+   "low": 1,
+   "high": 4,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h; 중단 시 점감"
+  },
+  {
+   "species": "cat",
+   "label": "식욕 촉진 (b)",
+   "route": "PO",
+   "low": 0.2,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "항히스타민",
+   "route": "PO",
+   "low": 2,
+   "high": 4,
+   "unit": "mg/animal",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "세로토닌 증후군 보조",
+   "route": "PO",
+   "low": 2,
+   "high": 4,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "필요 시 4–6시간마다 반복"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 4
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

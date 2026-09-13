@@ -1,0 +1,78 @@
+{
+ "id": "carnitine",
+ "name": "Carnitine",
+ "brand": [
+  "Carnitor"
+ ],
+ "class": "영양제 (L-카르니틴)",
+ "tags": [
+  "cardio",
+  "hepatic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "DCM 관련 심근 카르니틴 결핍 (a)",
+   "route": "PO",
+   "low": 100,
+   "high": 200,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h, 반응까지 2–4개월"
+  },
+  {
+   "species": "dog",
+   "label": "DCM 보조 (코커스패니얼, taurine 병용) (b)",
+   "route": "PO",
+   "low": 1000,
+   "high": 1000,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "원문 1일 2–3회, taurine 500 mg 병용"
+  },
+  {
+   "species": "dog",
+   "label": "전신성 카르니틴 결핍",
+   "route": "PO",
+   "low": 50,
+   "high": 100,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "cat",
+   "label": "중증 간 지방증 보조",
+   "route": "PO",
+   "low": 250,
+   "high": 500,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 250
+  },
+  {
+   "form": "capsule",
+   "mg": 300
+  },
+  {
+   "form": "tablet",
+   "mg": 330
+  },
+  {
+   "form": "capsule",
+   "mg": 400
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

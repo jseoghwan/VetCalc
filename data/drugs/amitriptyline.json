@@ -1,0 +1,151 @@
+{
+ "id": "amitriptyline",
+ "name": "Amitriptyline",
+ "brand": [
+  "Elavil"
+ ],
+ "class": "삼환계 항우울제",
+ "tags": [
+  "behavior",
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "불안장애 보조 (초기)",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "2–4주 후 1 mg/kg씩 증량, 최대 4 mg/kg q12h; 중단 시 2–3주 감량"
+  },
+  {
+   "species": "dog",
+   "label": "소양증 보조",
+   "route": "PO",
+   "low": 1,
+   "high": 2.2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "≈33% 반응"
+  },
+  {
+   "species": "dog",
+   "label": "만성·신경병증성 통증 보조",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "만성·신경병증성 통증 보조 (고용량)",
+   "route": "PO",
+   "low": 3,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "시도 가능 상한"
+  },
+  {
+   "species": "cat",
+   "label": "특발성 방광염 (a)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 12.5,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "야간 투여"
+  },
+  {
+   "species": "cat",
+   "label": "특발성 방광염 (b)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "야간 투여"
+  },
+  {
+   "species": "cat",
+   "label": "행동장애(불안·공포·자해) 보조",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "저용량부터 증량"
+  },
+  {
+   "species": "cat",
+   "label": "소양증 보조 (a)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 12.5,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "2.5 mg/cat부터 증량"
+  },
+  {
+   "species": "cat",
+   "label": "소양증 보조 (b)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 7.5,
+   "unit": "mg/animal",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "만성·신경병증성 통증 보조 (a)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 12.5,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "만성·신경병증성 통증 보조 (b)",
+   "route": "PO",
+   "low": 1,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "원문 q12–24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 10
+  },
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 75
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 150
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

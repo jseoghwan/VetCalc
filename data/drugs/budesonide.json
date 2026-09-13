@@ -1,0 +1,87 @@
+{
+ "id": "budesonide",
+ "name": "Budesonide",
+ "brand": [
+  "Entocort EC",
+  "Uceris"
+ ],
+ "class": "국소 작용 글루코코르티코이드",
+ "tags": [
+  "gi",
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "만성 염증성 장병증 보조 (3–7 kg)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "조제 필요"
+  },
+  {
+   "species": "dog",
+   "label": "만성 염증성 장병증 보조 (7.1–15 kg)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "조제 필요"
+  },
+  {
+   "species": "dog",
+   "label": "만성 염증성 장병증 보조 (15.1–30 kg)",
+   "route": "PO",
+   "low": 3,
+   "high": 3,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "3 mg 시판 캡슐, 조절 후 감량·격일 투여"
+  },
+  {
+   "species": "dog",
+   "label": "만성 염증성 장병증 보조 (>30 kg)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "조제 필요"
+  },
+  {
+   "species": "cat",
+   "label": "만성 염증성 장병증 보조",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.75,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "재조제 필요, 장용 코팅 과립 손상 금지"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 3
+  },
+  {
+   "form": "tablet",
+   "mg": 6
+  },
+  {
+   "form": "capsule",
+   "mg": 9
+  },
+  {
+   "form": "tablet",
+   "mg": 9
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

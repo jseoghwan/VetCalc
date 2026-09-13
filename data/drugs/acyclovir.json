@@ -1,0 +1,40 @@
+{
+ "id": "acyclovir",
+ "name": "Acyclovir",
+ "brand": [
+  "Zovirax"
+ ],
+ "class": "뉴클레오시드계 항바이러스제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "신생자견 헤르페스바이러스 감염 보조",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "5일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 200
+  },
+  {
+   "form": "tablet",
+   "mg": 400
+  },
+  {
+   "form": "tablet",
+   "mg": 800
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

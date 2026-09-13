@@ -1,0 +1,83 @@
+{
+ "id": "carvedilol",
+ "name": "Carvedilol",
+ "brand": [
+  "Coreg"
+ ],
+ "class": "α·β 아드레날린 차단제",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "MMVD stage B 보조 초기 (b)",
+   "route": "PO",
+   "low": 0.15,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "1주 후 혈압·심박수 평가"
+  },
+  {
+   "species": "dog",
+   "label": "MMVD stage B 보조 증량 (b)",
+   "route": "PO",
+   "low": 0.3,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "MMVD stage B 보조 초기 (a)",
+   "route": "PO",
+   "low": 0.31,
+   "high": 0.31,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "평균값, 7–14일마다 50–100% 증량"
+  },
+  {
+   "species": "dog",
+   "label": "MMVD stage B 보조 목표 (a)",
+   "route": "PO",
+   "low": 1.11,
+   "high": 1.11,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "평균값"
+  },
+  {
+   "species": "dog",
+   "label": "Pseudoephedrine 중독 보조",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "증례 보고"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 3.125
+  },
+  {
+   "form": "tablet",
+   "mg": 6.25
+  },
+  {
+   "form": "tablet",
+   "mg": 12.5
+  },
+  {
+   "form": "tablet",
+   "mg": 25
+  }
+ ],
+ "compounding": "조제 현탁액 안정성 자료 상충 — 단순시럽 조제(2·10 mg/mL) 시 갈색병·차광, 25°C 이하 90일",
+ "reviewed": null
+}

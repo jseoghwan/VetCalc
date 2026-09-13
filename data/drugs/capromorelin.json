@@ -1,0 +1,49 @@
+{
+ "id": "capromorelin",
+ "name": "Capromorelin",
+ "brand": [
+  "Entyce",
+  "Elura"
+ ],
+ "class": "그렐린 수용체 작용제 (식욕촉진제)",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "식욕 촉진 (label)",
+   "route": "PO",
+   "low": 3,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "4일 초과 효과 미평가"
+  },
+  {
+   "species": "cat",
+   "label": "CKD 체중감소 관리 (label)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "급여 30분 전"
+  },
+  {
+   "species": "cat",
+   "label": "식욕 촉진",
+   "route": "PO",
+   "low": 1,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "최대 21일"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

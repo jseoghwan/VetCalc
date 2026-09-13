@@ -1,0 +1,39 @@
+{
+ "id": "aluminum-hydroxide",
+ "name": "Aluminum Hydroxide",
+ "brand": [
+  "Amphojel"
+ ],
+ "class": "인 결합제·제산제",
+ "tags": [
+  "renal",
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "CKD 고인산혈증",
+   "route": "PO",
+   "low": 30,
+   "high": 100,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1일 총량, 매 식사에 분할 혼합; 저용량부터 4–6주마다 조정"
+  },
+  {
+   "species": "cat",
+   "label": "CKD 고인산혈증",
+   "route": "PO",
+   "low": 30,
+   "high": 100,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1일 총량, 매 식사에 분할 혼합; 저용량부터 4–6주마다 조정"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

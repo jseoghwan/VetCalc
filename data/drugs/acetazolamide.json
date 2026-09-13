@@ -1,0 +1,61 @@
+{
+ "id": "acetazolamide",
+ "name": "Acetazolamide",
+ "brand": [
+  "Diamox"
+ ],
+ "class": "탄산탈수효소 억제제 (이뇨제·항녹내장제)",
+ "tags": [
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "녹내장·대사성 알칼리증 보조",
+   "route": "PO",
+   "low": 4,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "발작성 이상운동증",
+   "route": "PO",
+   "low": 4,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "증례 보고"
+  },
+  {
+   "species": "cat",
+   "label": "녹내장 보조",
+   "route": "PO",
+   "low": 6,
+   "high": 8,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 125
+  },
+  {
+   "form": "tablet",
+   "mg": 250
+  },
+  {
+   "form": "capsule",
+   "mg": 500
+  }
+ ],
+ "compounding": "조제 현탁액(25 mg/mL) 60일 안정 자료 있음 — 차광 보관",
+ "reviewed": null
+}

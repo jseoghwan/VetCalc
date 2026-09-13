@@ -1,0 +1,72 @@
+{
+ "id": "codeine",
+ "name": "Codeine",
+ "brand": [
+  "Tylenol with Codeine"
+ ],
+ "class": "오피오이드 진해제",
+ "tags": [
+  "analgesic",
+  "respiratory"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "진해",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–12h"
+  },
+  {
+   "species": "dog",
+   "label": "진통 (단독)",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 q4–6h; 최대 4 mg/kg까지 필요할 수 있음"
+  },
+  {
+   "species": "dog",
+   "label": "진통 (acetaminophen 복합제)",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "acetaminophen 10–15 mg/kg 기준으로 정제 선택; 장기 시 q12h"
+  },
+  {
+   "species": "cat",
+   "label": "진통",
+   "route": "PO",
+   "low": 0.5,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–8h; acetaminophen 복합제 금지"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 15
+  },
+  {
+   "form": "tablet",
+   "mg": 30
+  },
+  {
+   "form": "tablet",
+   "mg": 60
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

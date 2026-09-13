@@ -1,0 +1,79 @@
+{
+ "id": "acetylcysteine",
+ "name": "Acetylcysteine",
+ "brand": [
+  "Mucomyst",
+  "Acetadote"
+ ],
+ "class": "해독제 (글루타티온 전구체)·점액용해제",
+ "tags": [
+  "hepatic",
+  "respiratory"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "간독성(acetaminophen 등) 부하 용량",
+   "route": "PO",
+   "low": 280,
+   "high": 280,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "위관 투여; 5%로 희석; 중증은 IV 선호"
+  },
+  {
+   "species": "dog",
+   "label": "간독성 유지 용량",
+   "route": "PO",
+   "low": 70,
+   "high": 70,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "최소 7회, 대량 과량 시 최대 17회"
+  },
+  {
+   "species": "dog",
+   "label": "퇴행성 척수병증 (초기 2주)",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "2주 후 격일로 q8h; 효과 미입증"
+  },
+  {
+   "species": "cat",
+   "label": "간독성(acetaminophen 등) 부하 용량",
+   "route": "PO",
+   "low": 280,
+   "high": 280,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "위관 투여; 5%로 희석; 중증은 IV 선호"
+  },
+  {
+   "species": "cat",
+   "label": "간독성 유지 용량",
+   "route": "PO",
+   "low": 70,
+   "high": 70,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "최소 7회, 대량 과량 시 최대 17회"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 500
+  },
+  {
+   "form": "capsule",
+   "mg": 600
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,81 @@
+{
+ "id": "bromocriptine",
+ "name": "Bromocriptine",
+ "brand": [
+  "Cycloset",
+  "Parlodel"
+ ],
+ "class": "Dopamine 작용제 / prolactin 억제제",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "위임신·유즙분비 억제",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mcg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h, 7–10일"
+  },
+  {
+   "species": "dog",
+   "label": "자궁축농증 보조 (prostaglandin 병용)",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mcg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "발정 유도",
+   "route": "PO",
+   "low": 20,
+   "high": 50,
+   "unit": "mcg/kg",
+   "freq": "q12h",
+   "note": "권장도 낮음"
+  },
+  {
+   "species": "dog",
+   "label": "임신 중절 (prostaglandin 병용)",
+   "route": "PO",
+   "low": 15,
+   "high": 30,
+   "unit": "mcg/kg",
+   "freq": "q12h",
+   "note": "권장도 낮음"
+  },
+  {
+   "species": "cat",
+   "label": "말단비대증 보조 (초기)",
+   "route": "PO",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "200 µg/cat, 조제 필요할 수 있음"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 0.8
+  },
+  {
+   "form": "tablet",
+   "mg": 2.5
+  },
+  {
+   "form": "capsule",
+   "mg": 5
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

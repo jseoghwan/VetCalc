@@ -1,0 +1,78 @@
+{
+ "id": "cefpodoxime",
+ "name": "Cefpodoxime",
+ "brand": [
+  "Simplicef",
+  "Vantin",
+  "Cefpoderm"
+ ],
+ "class": "3세대 세팔로스포린 (경구)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "피부 감염 (창상·농양) (label)",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "5–7일 또는 증상 소실 후 2–3일, 최대 28일"
+  },
+  {
+   "species": "dog",
+   "label": "심부 농피증",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "임상 소실 후 1–2주까지"
+  },
+  {
+   "species": "dog",
+   "label": "세균성 방광염",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "피부·연조직 감염 (a)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "임상 소실까지"
+  },
+  {
+   "species": "cat",
+   "label": "피부·연조직 감염 (b)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "임상 소실까지"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 200
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

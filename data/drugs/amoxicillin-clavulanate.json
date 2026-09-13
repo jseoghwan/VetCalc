@@ -1,0 +1,162 @@
+{
+ "id": "amoxicillin-clavulanate",
+ "name": "Amoxicillin/Clavulanate",
+ "brand": [
+  "Clavamox",
+  "Augmentin"
+ ],
+ "class": "β-lactam 항생제 (potentiated aminopenicillin)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "피부·연부조직·치주 감염 (label)",
+   "route": "PO",
+   "low": 13.75,
+   "high": 13.75,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "용량은 amoxicillin+clavulanate 합산 기준, 5–7일 (심부 농피증 21일, 최대 30일)"
+  },
+  {
+   "species": "dog",
+   "label": "산발성 세균성 방광염",
+   "route": "PO",
+   "low": 12.5,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h, 3–5일, 합산 기준"
+  },
+  {
+   "species": "dog",
+   "label": "표재성 농피증",
+   "route": "PO",
+   "low": 12.5,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "21–28일 (최대 90일), 합산 기준"
+  },
+  {
+   "species": "dog",
+   "label": "심부 농피증",
+   "route": "PO",
+   "low": 12.5,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "최소 28일 (최대 90일), 합산 기준"
+  },
+  {
+   "species": "dog",
+   "label": "심내막염 (Staphylococcus, 장기 요법)",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "6–8주, 합산 기준"
+  },
+  {
+   "species": "dog",
+   "label": "개 전염성 호흡기 질환 복합체 (CIRDC)",
+   "route": "PO",
+   "low": 11,
+   "high": 11,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "합산 기준"
+  },
+  {
+   "species": "cat",
+   "label": "피부·연부조직 감염·UTI (label)",
+   "route": "PO",
+   "low": 62.5,
+   "high": 62.5,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "합산 기준, 5–7일 (UTI 10–14일, 최대 30일)"
+  },
+  {
+   "species": "cat",
+   "label": "산발성 세균성 방광염",
+   "route": "PO",
+   "low": 12.5,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h, 3–5일, 합산 기준"
+  },
+  {
+   "species": "cat",
+   "label": "상부호흡기 질환 (세균성)",
+   "route": "PO",
+   "low": 12.5,
+   "high": 12.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "합산 기준"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "chewable tablet",
+   "mg": 62.5
+  },
+  {
+   "form": "tablet",
+   "mg": 62.5
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 125
+  },
+  {
+   "form": "tablet",
+   "mg": 125
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 200
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 250
+  },
+  {
+   "form": "tablet",
+   "mg": 250
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 375
+  },
+  {
+   "form": "tablet",
+   "mg": 375
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 400
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 875
+  },
+  {
+   "form": "tablet",
+   "mg": 1000
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

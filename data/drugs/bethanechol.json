@@ -1,0 +1,66 @@
+{
+ "id": "bethanechol",
+ "name": "Bethanechol",
+ "brand": [
+  "Urecholine"
+ ],
+ "class": "콜린성 작용제 (muscarinic)",
+ "tags": [
+  "urinary",
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "배뇨근 무력증·자율신경실조증 (방광 수축력 증가)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 25,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "default": true,
+   "note": "일부 q12h에 반응"
+  },
+  {
+   "species": "dog",
+   "label": "GI 운동 촉진 (거대식도 등)",
+   "route": "PO",
+   "low": 5,
+   "high": 15,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "최대 25 mg/dog q8h"
+  },
+  {
+   "species": "cat",
+   "label": "배뇨근 무력증·자율신경실조증 (방광 수축력 증가)",
+   "route": "PO",
+   "low": 1.25,
+   "high": 7.5,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "default": true,
+   "note": "일부 q12h에 반응"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 5
+  },
+  {
+   "form": "tablet",
+   "mg": 10
+  },
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

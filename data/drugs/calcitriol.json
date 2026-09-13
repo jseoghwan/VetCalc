@@ -1,0 +1,159 @@
+{
+ "id": "calcitriol",
+ "name": "Calcitriol",
+ "brand": [
+  "Rocaltrol",
+  "Calcijex"
+ ],
+ "class": "활성형 비타민 D 유사체",
+ "tags": [
+  "renal",
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "CKD 이차성 부갑상선기능항진증 (a)",
+   "route": "PO",
+   "low": 0.0015,
+   "high": 0.0035,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "원문 1.5–3.5 ng/kg, 최대 5 ng/kg/day, 저녁 공복"
+  },
+  {
+   "species": "dog",
+   "label": "CKD 이차성 부갑상선기능항진증 (b)",
+   "route": "PO",
+   "low": 0.002,
+   "high": 0.0025,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "note": "원문 2–2.5 ng/kg/day, 최대 5 ng/kg/day, 공복"
+  },
+  {
+   "species": "dog",
+   "label": "부갑상선기능저하증 장기 유지 (a)",
+   "route": "PO",
+   "low": 0.03,
+   "high": 0.06,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "note": "원문 30–60 ng/kg/day, 경구 칼슘 병용"
+  },
+  {
+   "species": "dog",
+   "label": "부갑상선기능저하증 초기 (b)",
+   "route": "PO",
+   "low": 0.01,
+   "high": 0.015,
+   "unit": "mcg/kg",
+   "freq": "q12h",
+   "note": "총 20–30 ng/kg/day 2회 분할, 2–4일"
+  },
+  {
+   "species": "dog",
+   "label": "부갑상선기능저하증 유지 (b)",
+   "route": "PO",
+   "low": 0.005,
+   "high": 0.015,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "note": "원문 5–15 ng/kg/day"
+  },
+  {
+   "species": "dog",
+   "label": "원발성 특발성 지루",
+   "route": "PO",
+   "low": 0.01,
+   "high": 0.01,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "note": "원문 10 ng/kg, 공복"
+  },
+  {
+   "species": "cat",
+   "label": "CKD 이차성 부갑상선기능항진증 (a)",
+   "route": "PO",
+   "low": 0.0015,
+   "high": 0.0035,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "원문 1.5–3.5 ng/kg, 식사와 분리"
+  },
+  {
+   "species": "cat",
+   "label": "CKD 이차성 부갑상선기능항진증 (b)",
+   "route": "PO",
+   "low": 0.0025,
+   "high": 0.0035,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "note": "원문 2.5–3.5 ng/kg"
+  },
+  {
+   "species": "cat",
+   "label": "부갑상선기능저하증 장기 유지 (a)",
+   "route": "PO",
+   "low": 0.03,
+   "high": 0.06,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "note": "원문 30–60 ng/kg/day, 경구 칼슘 병용"
+  },
+  {
+   "species": "cat",
+   "label": "부갑상선기능저하증 초기 (b)",
+   "route": "PO",
+   "low": 0.02,
+   "high": 0.03,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "note": "원문 20–30 ng/kg/day, 2–4일"
+  },
+  {
+   "species": "cat",
+   "label": "부갑상선기능저하증 장기 관리 (b)",
+   "route": "PO",
+   "low": 0.01,
+   "high": 0.02,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "note": "원문 10–20 ng/kg/day"
+  },
+  {
+   "species": "cat",
+   "label": "부갑상선기능저하증 초기 (c)",
+   "route": "PO",
+   "low": 0.01,
+   "high": 0.015,
+   "unit": "mcg/kg",
+   "freq": "q12h",
+   "note": "총 20–30 ng/kg/day 2회 분할, 2–4일"
+  },
+  {
+   "species": "cat",
+   "label": "부갑상선기능저하증 유지 (c)",
+   "route": "PO",
+   "low": 0.005,
+   "high": 0.015,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "note": "원문 5–15 ng/kg/day"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 0.00025
+  },
+  {
+   "form": "capsule",
+   "mg": 0.0005
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

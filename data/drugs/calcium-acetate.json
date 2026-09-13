@@ -1,0 +1,68 @@
+{
+ "id": "calcium-acetate",
+ "name": "Calcium Acetate",
+ "brand": [
+  "Calphron",
+  "Phoslyra"
+ ],
+ "class": "경구 인 결합제",
+ "tags": [
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "CKD 고인산혈증 (a)",
+   "route": "PO",
+   "low": 60,
+   "high": 90,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1일 총량, 식사마다 분할·혼합 급여, 하한부터 시작"
+  },
+  {
+   "species": "dog",
+   "label": "CKD 고인산혈증 (b)",
+   "route": "PO",
+   "low": 30,
+   "high": 60,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1일 총량, 식사마다 분할·혼합 급여"
+  },
+  {
+   "species": "cat",
+   "label": "CKD 고인산혈증 (a)",
+   "route": "PO",
+   "low": 60,
+   "high": 90,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1일 총량, 식사마다 분할·혼합 급여, 하한부터 시작"
+  },
+  {
+   "species": "cat",
+   "label": "CKD 고인산혈증 (b)",
+   "route": "PO",
+   "low": 30,
+   "high": 60,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1일 총량, 식사마다 분할·혼합 급여"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 667
+  },
+  {
+   "form": "tablet",
+   "mg": 667
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

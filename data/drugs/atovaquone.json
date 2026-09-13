@@ -1,0 +1,78 @@
+{
+ "id": "atovaquone",
+ "name": "Atovaquone",
+ "brand": [
+  "Mepron",
+  "Malarone"
+ ],
+ "class": "항원충제 (hydroxynaphthoquinone)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "Babesia gibsoni·conradae·vulpes (azithromycin 병용)",
+   "route": "PO",
+   "low": 13.3,
+   "high": 13.3,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "10일, 고지방식과 함께"
+  },
+  {
+   "species": "dog",
+   "label": "Babesia gibsoni 단독 요법",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "7일"
+  },
+  {
+   "species": "dog",
+   "label": "Babesia gibsoni (Malarone, proguanil 병용)",
+   "route": "PO",
+   "low": 17,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "10일, 고지방식과 함께, 용량은 atovaquone 성분 기준"
+  },
+  {
+   "species": "dog",
+   "label": "폐포자충증 (Pneumocystosis)",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "3주"
+  },
+  {
+   "species": "cat",
+   "label": "Cytauxzoonosis (azithromycin 병용)",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "10일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 62.5
+  },
+  {
+   "form": "tablet",
+   "mg": 250
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

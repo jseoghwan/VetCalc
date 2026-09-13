@@ -1,0 +1,47 @@
+{
+ "id": "amantadine",
+ "name": "Amantadine",
+ "brand": [
+  "Symmetrel"
+ ],
+ "class": "NMDA 수용체 길항제 (보조 진통제)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "신경병증성·wind-up 통증 보조 진통",
+   "route": "PO",
+   "low": 3,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "저용량부터 서서히 증량; PK상 q12h 필요할 수 있음"
+  },
+  {
+   "species": "cat",
+   "label": "신경병증성·wind-up 통증 보조 진통",
+   "route": "PO",
+   "low": 3,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "저용량부터 서서히 증량; PK상 q12h 필요할 수 있음"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

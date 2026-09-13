@@ -1,0 +1,57 @@
+{
+ "id": "chlorothiazide",
+ "name": "Chlorothiazide",
+ "brand": [
+  "Diuril"
+ ],
+ "class": "Thiazide 이뇨제",
+ "tags": [
+  "cardio",
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "CHF (label)",
+   "route": "PO",
+   "low": 11,
+   "high": 22,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 1일 2–3회"
+  },
+  {
+   "species": "dog",
+   "label": "이뇨·신성 요붕증",
+   "route": "PO",
+   "low": 20,
+   "high": 40,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "CHF (label)",
+   "route": "PO",
+   "low": 11,
+   "high": 22,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 1일 2–3회"
+  },
+  {
+   "species": "cat",
+   "label": "이뇨·신성 요붕증",
+   "route": "PO",
+   "low": 20,
+   "high": 40,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}
