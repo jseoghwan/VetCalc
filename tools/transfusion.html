@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>수혈 계산 · VECC</title>
+<meta name="description" content="WB·pRBC 수혈량과 속도, 혈장, albumin, IVIG 계산 — 과 프로토콜·SACCM 3판 기반, 개/고양이">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#4453A3">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="VECC Hub">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+</head>
+<body>
+<style>
+:root{
+  --bg:#F3F4F7; --surface:#FFFFFF; --surface-2:#E9EBF1; --line:#D6D9E2; --line-strong:#B9BECB;
+  --ink:#1A1D26; --ink-2:#4A5063; --muted:#6F7588;
+  --venous:#4453A3; --venous-soft:#E5E8F6; --venous-ink:#2E3A80;
+  --arterial:#B3313B; --arterial-soft:#F8E4E5; --arterial-ink:#8C242C;
+  --input-bg:#FFF6D9; --input-line:#E0A92B; --input-ink:#5B4300; --input-focus:#F5C23A;
+  --ok:#2E7D4F; --ok-soft:#DFF2E6; --low:#2B67B3; --low-soft:#DDE9F8; --high:#C13A2E; --high-soft:#F9E1DE; --warn:#9A6A00; --warn-soft:#FBEFC9;
+  --shadow:0 1px 2px rgba(20,24,40,.06), 0 8px 24px -12px rgba(20,24,40,.18);
+  --radius:10px;
+  --accent:var(--venous); --accent-soft:var(--venous-soft); --accent-ink:var(--venous-ink);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111318; --surface:#1A1D25; --surface-2:#232733; --line:#2F3442; --line-strong:#454B5C;
+    --ink:#E9EBF1; --ink-2:#C0C5D3; --muted:#8F95A8;
+    --venous:#8B97E0; --venous-soft:#252B48; --venous-ink:#C6CDF6;
+    --arterial:#E0666E; --arterial-soft:#42232A; --arterial-ink:#F3B6BA;
+    --input-bg:#33290F; --input-line:#D9A83A; --input-ink:#F6DFA0; --input-focus:#F5C23A;
+    --ok:#6FCF97; --ok-soft:#1D3328; --low:#7FB2F0; --low-soft:#1E2E45; --high:#F08479; --high-soft:#432420; --warn:#E5B94A; --warn-soft:#3B3116;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111318; --surface:#1A1D25; --surface-2:#232733; --line:#2F3442; --line-strong:#454B5C;
+  --ink:#E9EBF1; --ink-2:#C0C5D3; --muted:#8F95A8;
+  --venous:#8B97E0; --venous-soft:#252B48; --venous-ink:#C6CDF6;
+  --arterial:#E0666E; --arterial-soft:#42232A; --arterial-ink:#F3B6BA;
+  --input-bg:#33290F; --input-line:#D9A83A; --input-ink:#F6DFA0; --input-focus:#F5C23A;
+  --ok:#6FCF97; --ok-soft:#1D3328; --low:#7FB2F0; --low-soft:#1E2E45; --high:#F08479; --high-soft:#432420; --warn:#E5B94A; --warn-soft:#3B3116;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+[hidden]{display:none!important}
+body{margin:0;padding-top:env(safe-area-inset-top);background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans KR",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;font-size:15px;line-height:1.55}
+body[data-mode="emg"]{--accent:var(--arterial);--accent-soft:var(--arterial-soft);--accent-ink:var(--arterial-ink)}
+.mono{font-family:"IBM Plex Mono","SFMono-Regular",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums;font-size:.93em}
+a{color:var(--accent)}
+h1,h2,h3,h4{margin:0;text-wrap:balance;line-height:1.25}
+p{margin:0}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+.top-inner{max-width:1120px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:14px}
+.brand{display:flex;align-items:baseline;gap:10px;flex:1 1 auto;min-width:0}
+.brand h1{font-size:17px;font-weight:700;letter-spacing:-.01em;white-space:nowrap}
+.brand .home{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;padding:4px 8px 4px 4px;border-radius:6px;white-space:nowrap;align-self:center}
+.brand .home:hover{background:var(--surface-2);color:var(--ink)}
+.seg{display:inline-flex;border:1px solid var(--line-strong);border-radius:999px;padding:3px;background:var(--surface-2);gap:2px}
+.seg button{border:0;background:transparent;color:var(--ink-2);font-weight:600;font-size:13px;padding:5px 14px;border-radius:999px;cursor:pointer;min-height:30px}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.seg.sm button{font-size:12px;padding:3px 10px;min-height:26px}
+.tabs{max-width:1120px;margin:0 auto;padding:0 16px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{border:0;background:transparent;font-size:14px;font-weight:600;color:var(--muted);padding:10px 12px 11px;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap;display:flex;align-items:center;gap:7px}
+.tab .dot{width:8px;height:8px;border-radius:50%;background:currentColor;opacity:.55}
+.tab[aria-selected="true"]{color:var(--venous);border-bottom-color:var(--venous)}
+.tab[aria-selected="true"] .dot{opacity:1}
+.tab .cnt{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;background:var(--surface-2);color:var(--ink-2);padding:0 6px;border-radius:999px;line-height:1.6}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+
+main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
+.panel{display:none}
+.panel.active{display:block}
+.sec{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;margin:0 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.sec h2{font-size:15px;font-weight:700}
+.sec .kicker{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);padding:2px 7px;border-radius:4px;background:var(--accent-soft);line-height:1.5}
+.sec .note{font-size:12px;color:var(--muted);margin-left:auto;text-align:right;line-height:1.5}
+@media (max-width:640px){.sec .note{flex-basis:100%;margin-left:0;text-align:left}}
+
+/* inputs */
+.inputs{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:22px}
+.inputs-head{display:flex;align-items:center;gap:10px;padding:11px 16px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.inputs-head h2{font-size:14px;font-weight:700}
+.legend{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;color:var(--muted);margin-left:auto;white-space:nowrap}
+.legend i{display:inline-block;width:14px;height:10px;border-radius:2px;background:var(--input-bg);border:1.5px solid var(--input-line)}
+.inputs-body{padding:12px 16px 4px}
+.igroup{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px 12px;padding-bottom:12px}
+@media (max-width:480px){.igroup{grid-template-columns:1fr 1fr}}
+.field{display:flex;flex-direction:column;gap:3px;min-width:0}
+.field label{font-size:12.5px;font-weight:600;color:var(--ink-2);display:flex;justify-content:space-between;align-items:baseline;gap:6px;line-height:1.4;white-space:nowrap}
+.field label .u{font-weight:500;color:var(--muted);font-size:11px;flex-shrink:0}
+.field input,.field select{font-family:"IBM Plex Mono",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums;font-size:17px;font-weight:500;color:var(--input-ink);background:var(--input-bg);border:1.5px solid var(--input-line);border-radius:7px;padding:7px 10px;width:100%;min-width:0;-moz-appearance:textfield;line-height:1.3}
+.field input[type="text"]{font-family:inherit;font-size:15px}
+.field select{font-family:inherit;font-size:14px;appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--input-ink) 50%),linear-gradient(135deg,var(--input-ink) 50%,transparent 50%);background-position:calc(100% - 16px) 55%,calc(100% - 11px) 55%;background-size:5px 5px;background-repeat:no-repeat;padding-right:28px}
+.field input::-webkit-outer-spin-button,.field input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.field input:focus,.field select:focus{outline:0;border-color:var(--input-focus);box-shadow:0 0 0 3px color-mix(in srgb,var(--input-focus) 35%,transparent)}
+.field input::placeholder{color:var(--muted);opacity:.7;font-weight:400}
+.field .ref{font-size:10.5px;color:var(--muted);font-family:"IBM Plex Mono",monospace;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.field.wide{grid-column:span 2}
+@media (max-width:480px){.field.wide{grid-column:1 / -1}}
+.field.plain select,.field.plain input{background:var(--surface);border-color:var(--line-strong);color:var(--ink)}
+
+.chip{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:999px;line-height:1.5;white-space:nowrap}
+.chip.high{color:var(--high);background:var(--high-soft)}
+.chip.warn{color:var(--warn);background:var(--warn-soft)}
+.chip.ok{color:var(--ok);background:var(--ok-soft)}
+.chip.na{color:var(--muted);background:var(--surface-2)}
+.chip.v{color:var(--venous-ink);background:var(--venous-soft)}
+.ibtn{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-2);font-size:12.5px;font-weight:600;padding:5px 10px;border-radius:7px;cursor:pointer;white-space:nowrap;min-height:30px}
+.ibtn:hover{background:var(--surface-2);color:var(--ink)}
+.ibtn.danger:hover{color:var(--high);border-color:var(--high)}
+.ibtn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.ibtn.primary:hover{background:var(--accent-ink);border-color:var(--accent-ink);color:#fff}
+.ibtn[aria-expanded="true"]{background:var(--accent-soft);color:var(--accent-ink);border-color:transparent}
+.ibtn:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+/* result strip inside card */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:0 14px 12px}
+@media (max-width:640px){.tiles{grid-template-columns:1fr 1fr}}
+.tile{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;min-width:0}
+.tile .k{font-size:12px;font-weight:600;color:var(--ink-2);line-height:1.5;display:flex;justify-content:space-between;gap:6px}
+.tile .k small{font-weight:500;color:var(--muted);font-size:11px;white-space:nowrap}
+.tile .v{font-family:"IBM Plex Mono",Menlo,monospace;font-variant-numeric:tabular-nums;font-size:20px;font-weight:600;line-height:1.1;letter-spacing:-.01em;white-space:nowrap}
+.tile .v small{font-family:"IBM Plex Sans KR",sans-serif;font-size:12px;font-weight:500;color:var(--muted);margin-left:3px;letter-spacing:0}
+.tile .r{font-size:10.5px;color:var(--muted);font-family:"IBM Plex Mono",monospace;line-height:1.5;margin-top:1px}
+.tile.accent{border-color:color-mix(in srgb,var(--accent) 55%,var(--line));background:color-mix(in srgb,var(--accent-soft) 45%,var(--surface))}
+.tile.accent .v{color:var(--accent-ink)}
+.tile.bad{border-color:color-mix(in srgb,var(--high) 55%,var(--line))}
+.tile.bad .v{color:var(--high)}
+.tile.warn .v{color:var(--warn)}
+.rx-foot{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;padding:0 14px 12px;font-size:12.5px;color:var(--muted)}
+.rx-foot .grow{flex:1 1 auto}
+
+/* callouts + empty */
+.callout{border-left:3px solid var(--accent);background:var(--surface);border-radius:0 8px 8px 0;padding:10px 14px;font-size:13.5px;line-height:1.65;color:var(--ink-2);margin-top:12px}
+.callout.warn{border-left-color:var(--warn)}
+.callout b{color:var(--ink)}
+.callout.ref{border-left:3px dashed var(--line-strong);background:transparent;color:var(--muted);font-size:13px;padding:6px 14px}
+.empty{border:1px dashed var(--line-strong);border-radius:var(--radius);padding:26px 16px;text-align:center;color:var(--muted);font-size:14px;line-height:1.6}
+.empty b{color:var(--ink-2);font-weight:600}
+
+.foot{margin-top:40px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 18px}
+.sw-toast{position:fixed;left:50%;bottom:calc(64px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);opacity:0;background:var(--ink);color:var(--bg);font-size:13px;font-weight:600;padding:9px 14px;border-radius:999px;box-shadow:0 6px 20px -6px rgba(0,0,0,.4);z-index:50;pointer-events:none;transition:opacity .25s,transform .25s;white-space:nowrap}
+.sw-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media (prefers-reduced-motion:reduce){.sw-toast{transition:none}}
+</style>
+
+<style>
+/* fluid-specific */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+@media (max-width:760px){.grid2{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:14px}
+.card-head{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.card-head h3{font-size:14.5px;font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.card-head .src{margin-left:auto;font-size:11px;color:var(--muted);text-decoration:none;white-space:nowrap}
+.card-head .src:hover{color:var(--accent)}
+.card-body{padding:12px 14px 4px}
+.card .tiles{padding:0 14px 12px}
+.tiles.t3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:640px){.tiles.t3{grid-template-columns:1fr 1fr}}
+.tiles.t2{grid-template-columns:repeat(2,1fr)}
+.tile .k{flex-wrap:wrap}
+.tile .v.sm{font-size:16px;white-space:normal}
+.tile .v.xs{font-size:14px;white-space:normal;font-weight:600}
+.comp{display:flex;flex-wrap:wrap;gap:4px 10px;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-2);padding:0 14px 12px}
+.comp b{color:var(--ink);font-weight:600}
+.phase{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 14px 12px}
+@media (max-width:480px){.phase{grid-template-columns:1fr}}
+.phase .p{border:1px dashed var(--line-strong);border-radius:8px;padding:9px 12px;font-size:12.5px;color:var(--ink-2);line-height:1.6}
+.phase .p b{display:block;color:var(--ink);font-size:13px}
+.phase .p .mono{color:var(--accent-ink);font-weight:600}
+.callout.bad{border-left-color:var(--high);background:var(--high-soft);color:var(--ink)}
+table.ref{width:100%;border-collapse:collapse;font-size:12.5px;line-height:1.5}
+table.ref th,table.ref td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:nowrap;background:var(--surface-2)}
+table.ref td.mono{font-size:12px}
+table.ref tr.cur td{background:var(--accent-soft);color:var(--accent-ink);font-weight:600}
+.tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.aliq{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 12px}
+.aliq button{border:1.5px solid var(--line-strong);background:var(--surface);color:var(--ink-2);font:inherit;font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:999px;cursor:pointer;min-height:32px;font-family:"IBM Plex Mono",monospace}
+.aliq button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.aliq button.over[aria-pressed="true"]{background:var(--high);border-color:var(--high)}
+.aliq .lbl{align-self:center;font-size:12px;color:var(--muted);margin-right:4px}
+.bar-meter{height:8px;background:var(--surface-2);border-radius:999px;overflow:hidden;margin:6px 0 2px;position:relative}
+.bar-meter i{display:block;height:100%;background:var(--accent);border-radius:999px;max-width:100%}
+.bar-meter i.over{background:var(--high)}
+.sub{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:10px 14px 4px}
+</style>
+<style>
+.steps{display:flex;flex-direction:column;gap:6px;padding:0 14px 12px}
+.step{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:13px}
+.step .n{width:24px;height:24px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:700;font-size:12px;font-family:"IBM Plex Mono",monospace}
+.step .t b{display:block;color:var(--ink);font-size:13px}
+.step .t span{color:var(--ink-2);font-size:12px}
+.step .v{font-family:"IBM Plex Mono",monospace;font-weight:600;color:var(--accent-ink);text-align:right;white-space:nowrap;font-size:13px}
+.step .v small{display:block;font-weight:500;color:var(--muted);font-size:11px}
+.step.warn{border-color:color-mix(in srgb,var(--warn) 60%,var(--line))}.step.warn .n{background:var(--warn)}
+.step.bad{border-color:color-mix(in srgb,var(--high) 60%,var(--line))}.step.bad .n{background:var(--high)}
+.chk{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 12px}
+.chk .g{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+.chk .g .lb{font-size:11.5px;color:var(--muted);margin-right:2px}
+.chk button{border:1.5px solid var(--line-strong);background:var(--surface);color:var(--ink-2);font:inherit;font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:999px;cursor:pointer;min-height:30px}
+.chk button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.chk button.bad[aria-pressed="true"]{background:var(--high);border-color:var(--high)}
+</style>
+
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <a class="home" href="../index.html" aria-label="홈으로">‹ 홈</a>
+      <h1>VECC Transfusion</h1>
+    </div>
+    <div class="seg" role="group" aria-label="종 선택">
+      <button type="button" aria-pressed="true" data-sp="dog">DOG</button>
+      <button type="button" aria-pressed="false" data-sp="cat">CAT</button>
+    </div>
+  </div>
+  <nav class="tabs" role="tablist" aria-label="페이지">
+    <button class="tab" role="tab" id="tab-rbc" data-panel="p-rbc" aria-selected="true"><span class="dot"></span>WB · pRBC</button>
+    <button class="tab" role="tab" id="tab-ffp" data-panel="p-ffp" aria-selected="false"><span class="dot"></span>혈장</button>
+    <button class="tab" role="tab" id="tab-alb" data-panel="p-alb" aria-selected="false"><span class="dot"></span>Albumin</button>
+    <button class="tab" role="tab" id="tab-ivig" data-panel="p-ivig" aria-selected="false"><span class="dot"></span>IVIG</button>
+    <button class="tab" role="tab" id="tab-ref" data-panel="p-ref" aria-selected="false"><span class="dot"></span>참고</button>
+  </nav>
+</header>
+
+<main>
+<!-- ===================== WB · pRBC ===================== -->
+<section class="panel active" id="p-rbc" role="tabpanel" aria-labelledby="tab-rbc">
+  <aside class="inputs">
+    <div class="inputs-head"><h2>환자 · 제제</h2><span class="legend"><i></i> 노란 칸 = 직접 입력</span></div>
+    <div class="inputs-body">
+      <div class="igroup">
+        <div class="field"><label for="bw"><span>체중</span><span class="u">kg</span></label><input type="number" inputmode="decimal" step="0.1" min="0" id="bw" placeholder="0.0"><span class="ref">모든 탭 공통</span></div>
+        <div class="field plain"><label for="prod"><span>제제</span></label><select id="prod"><option value="prbc">pRBC</option><option value="wb">Whole blood</option></select><span class="ref">공혈 PCV 기본값이 바뀜</span></div>
+        <div class="field"><label for="pcv"><span>환자 PCV</span><span class="u">%</span></label><input type="number" inputmode="decimal" step="1" min="0" max="80" id="pcv" placeholder="—"></div>
+        <div class="field"><label for="pcvt"><span>목표 PCV</span><span class="u">%</span></label><input type="number" inputmode="decimal" step="1" min="0" max="80" id="pcvt" value="25"></div>
+        <div class="field"><label for="dpcv"><span>공혈(제제) PCV</span><span class="u">%</span></label><input type="number" inputmode="decimal" step="1" min="1" max="90" id="dpcv" value="60"><span class="ref">pRBC 55–70이면 희석 불필요</span></div>
+        <div class="field"><label for="dilr"><span>NS 희석</span><span class="u">mL / 혈액 100 mL</span></label><input type="number" inputmode="decimal" step="5" min="0" id="dilr" placeholder="0"><span class="ref">pRBC 점도 감소용 0.9% NaCl</span></div>
+        <div class="field plain"><label for="init"><span>초기 속도</span><span class="u">mL/kg/h</span></label><select id="init"><option value="0.25">0.25</option><option value="0.5" selected>0.5</option><option value="1">1</option></select><span class="ref">15–30분, vital 확인</span></div>
+        <div class="field plain"><label for="imin"><span>초기 관찰 시간</span><span class="u">분</span></label><select id="imin"><option value="15" selected>15</option><option value="30">30</option></select></div>
+        <div class="field"><label for="mrate"><span>유지 속도</span><span class="u">mL/kg/h</span></label><input type="number" inputmode="decimal" step="0.5" min="0" id="mrate" value="5"><span class="ref" id="mrate-ref">5–10 (최대 20)</span></div>
+        <div class="field plain"><label for="heart"><span>심장 질환</span></label><select id="heart"><option value="0" selected>아니오</option><option value="1">예 — 3–4 (최대 5)</option></select></div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="card">
+    <div class="card-head"><h3>수혈량 <span class="chip na" id="rbc-sp"></span></h3><span class="src">과 프로토콜 · SACCM Table 69.1</span></div>
+    <div class="tiles" id="rbc-tiles"></div>
+    <div class="comp" id="rbc-alt"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><h3>투여 계획</h3><span class="src">한 백 4시간 이내</span></div>
+    <div class="steps" id="rbc-steps"></div>
+    <div id="rbc-warn"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><h3>혈액형 · 교차시험</h3><a class="src" href="saccm.html#sacc3-p6-c70">SACCM Ch.70 ›</a></div>
+    <div class="chk" id="chk"></div>
+    <div id="chk-note"></div>
+  </div>
+
+  <div class="callout ref">VT(mL) = (목표 PCV − 환자 PCV) × 혈액량(개 90 · 고양이 60 mL/kg) × 체중 ÷ 공혈 PCV. 속도: 초기 0.25–0.5(–1) mL/kg/h로 15–30분 후 vital 확인 → 유지 5–10 mL/kg/h, 최대 20; 심장 질환 3–4, 최대 5 mL/kg/h. 대부분의 반응은 첫 15–30분에 발생 — 시작 ~15분에 혈청 색 재확인. 냉장고에서 꺼낸 뒤 4시간 내 완료. 모든 제제에 필터, 같은 라인에 저장성·고장성 수액·약물 금지(LRS 급속 주입은 예외). 심한 출혈 환자는 pRBC : FFP = 1:1 또는 1:2.</div>
+</section>
+
+<!-- ===================== 혈장 ===================== -->
+<section class="panel" id="p-ffp" role="tabpanel" aria-labelledby="tab-ffp">
+  <aside class="inputs">
+    <div class="inputs-head"><h2>혈장 제제</h2></div>
+    <div class="inputs-body"><div class="igroup">
+      <div class="field"><label for="bw2"><span>체중</span><span class="u">kg</span></label><input type="number" inputmode="decimal" step="0.1" min="0" id="bw2" placeholder="0.0"></div>
+      <div class="field"><label for="fdose"><span>FFP 용량</span><span class="u">mL/kg</span></label><input type="number" inputmode="decimal" step="1" min="0" id="fdose" value="10"><span class="ref">과 10–12 q8–12h · 교재 10–20</span></div>
+      <div class="field plain"><label for="fhrs"><span>투여 시간</span><span class="u">h</span></label><select id="fhrs"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option><option value="4">4</option></select><span class="ref">최대 4시간</span></div>
+      <div class="field"><label for="palb"><span>환자 albumin</span><span class="u">g/dL</span></label><input type="number" inputmode="decimal" step="0.1" min="0" id="palb" placeholder="—"><span class="ref">Albumin 탭과 공통</span></div>
+    </div></div>
+  </aside>
+  <div class="card">
+    <div class="card-head"><h3>FFP · Cryo</h3><a class="src" href="saccm.html#sacc3-p6-c69">SACCM Ch.69 Table 69.1 ›</a></div>
+    <div class="tiles" id="ffp-tiles"></div>
+    <div class="steps" id="ffp-steps"></div>
+  </div>
+  <div class="callout ref">혈장의 주 목적은 응고 단백 공급(간부전·살서제 중독·vWD·혈우병). 재투여는 응고 시간·출혈 재평가. 개 혈장량의 1/3 = 15–20 mL/kg. Cryo(FVIII·vWF·fibrinogen 농축) 1 unit / 10–12 kg; cryo-poor plasma 6–20 mL/kg(FII·VII·X, albumin). Albumin 보충 목적의 혈장은 비효율적 — 1 g/dL 올리려면 45 mL/kg 필요. 해동 후 필터로 투여, 고양이는 혈장도 혈액형 적합 필요.</div>
+</section>
+
+<!-- ===================== Albumin ===================== -->
+<section class="panel" id="p-alb" role="tabpanel" aria-labelledby="tab-alb">
+  <aside class="inputs">
+    <div class="inputs-head"><h2>Albumin</h2></div>
+    <div class="inputs-body"><div class="igroup">
+      <div class="field"><label for="bw3"><span>체중</span><span class="u">kg</span></label><input type="number" inputmode="decimal" step="0.1" min="0" id="bw3" placeholder="0.0"></div>
+      <div class="field"><label for="palb2"><span>환자 albumin</span><span class="u">g/dL</span></label><input type="number" inputmode="decimal" step="0.1" min="0" id="palb2" placeholder="—"></div>
+      <div class="field"><label for="talb"><span>목표 albumin</span><span class="u">g/dL</span></label><input type="number" inputmode="decimal" step="0.1" min="0" id="talb" value="2"><span class="ref">과 기준 2–2.5</span></div>
+      <div class="field plain"><label for="aconc"><span>제제</span></label><select id="aconc"><option value="25" selected>Human albumin 25%</option><option value="5">Human albumin 5% (고양이)</option><option value="c5">Canine albumin 5%</option><option value="c16">Canine albumin 16%</option></select><span class="ref">g/mL: 25% = 0.25</span></div>
+    </div></div>
+  </aside>
+
+  <div class="card">
+    <div class="card-head"><h3>결핍량</h3><span class="src">과 프로토콜 · SACCM Table 69.1</span></div>
+    <div class="tiles" id="alb-tiles"></div>
+  </div>
+
+  <div class="card" id="alb-plan-card">
+    <div class="card-head"><h3>HSA 25% 투여 순서 — test → high → low</h3><span class="src">Plumb's 10판 Albumin, Human (a)·(c)</span></div>
+    <div class="steps" id="alb-steps"></div>
+    <div id="alb-warn"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><h3>대안 프로토콜</h3></div>
+    <div class="tiles t2" id="alb-alt"></div>
+  </div>
+
+  <div class="callout warn">HSA는 개에서 중증·치명적 제III형 과민반응(투여 수일–수주 후) 보고 — 반복 투여·HSA 과거력 환자 주의. Test dose 중·후 HR·RR·체온 기준치와 비교, 안면 부종·아나필락시스 징후 시 즉시 중단. 최대 2 g/kg/day, 평균 5 mL/kg(1.25 g/kg). 고양이는 25%가 아닌 5%로.</div>
+</section>
+
+<!-- ===================== IVIG ===================== -->
+<section class="panel" id="p-ivig" role="tabpanel" aria-labelledby="tab-ivig">
+  <aside class="inputs">
+    <div class="inputs-head"><h2>Human IVIG</h2></div>
+    <div class="inputs-body"><div class="igroup">
+      <div class="field"><label for="bw4"><span>체중</span><span class="u">kg</span></label><input type="number" inputmode="decimal" step="0.1" min="0" id="bw4" placeholder="0.0"></div>
+      <div class="field plain"><label for="gind"><span>적응증</span></label><select id="gind"><option value="gen" selected>일반 (개 0.5–2.2, 흔히 1 g/kg)</option><option value="imha">IMHA 불응 — 0.5–1.5 g/kg, 4–12h</option><option value="itp">ITP — 0.28–1.3 g/kg</option><option value="evans">Evans · SARDS — 0.5–1.3 g/kg</option><option value="derm">피부 약물반응 — 0.5–1 g/kg, 4–6h</option></select><span class="ref">Plumb's 10판 Dosages</span></div>
+      <div class="field"><label for="gdose"><span>용량</span><span class="u">g/kg</span></label><input type="number" inputmode="decimal" step="0.1" min="0" id="gdose" value="1"><span class="ref" id="gdose-ref">개 0.5–2.2, 흔히 1 g/kg</span></div>
+      <div class="field plain"><label for="gconc"><span>제제 농도</span><span class="u">%</span></label><select id="gconc"><option value="5">5</option><option value="6" selected>6</option><option value="10">10</option></select><span class="ref">라벨 확인 (g/100 mL)</span></div>
+      <div class="field plain"><label for="ghrs"><span>투여 시간</span><span class="u">h</span></label><select id="ghrs"><option value="4">4</option><option value="6" selected>6</option><option value="8">8</option><option value="10">10</option><option value="12">12</option></select><span class="ref">4–12 h</span></div>
+    </div></div>
+  </aside>
+  <div class="card">
+    <div class="card-head"><h3>IVIG 용량</h3><span class="src">Plumb's 10판 Immune Globulin (Human), IV</span></div>
+    <div class="tiles" id="ivig-tiles"></div>
+    <div class="steps" id="ivig-steps"></div>
+    <div id="ivig-warn"></div>
+  </div>
+  <div class="callout ref">별도 라인으로 투여(투여 전 saline·dextrose로 flush), in-line filter 권장, 투여 전 실온으로. 천천히 시작(0.01 mL/kg/min)해 점진 증량, ≈0.08 mL/kg/min 초과 금지, 투여 중 면밀 감시. IMHA는 ACVIM 합의상 면역억제제 2종 불응 시 salvage 0.5–1 g/kg; ITP는 vincristine이 효능 유사·저비용으로 1차 보조. 피부 약물반응은 5–6% 0.5–1 g/kg 4–6h, 24시간 간격 1–2회, 3–4일 반복 가능.</div>
+  <div class="callout warn">HSA 과민반응 병력이 있는 개는 금기(IVIG에 미량 HSA). 사람 부작용 다수가 권장보다 빠른 속도와 연관 — 투여 전 충분한 수화, 혈전·신부전 위험 환자는 최저 용량·속도(sucrose 함유 제제는 신부전 위험↑). 건강한 개에서 과응고·염증 상태 유발 → IMHA에서 주의.</div>
+</section>
+
+<!-- ===================== 참고 ===================== -->
+<section class="panel" id="p-ref" role="tabpanel" aria-labelledby="tab-ref">
+  <div class="card"><div class="card-head"><h3>수혈 반응 징후 · 감시</h3><a class="src" href="saccm.html#sacc3-p6-c70">Ch.70 ›</a></div>
+    <div class="tblwrap"><table class="ref">
+      <tr><th>항목</th><th>내용</th></tr>
+      <tr><td>기준치</td><td>TPR, PCV, 총단백, 혈청 색 (수혈 전)</td></tr>
+      <tr><td>수혈 중</td><td>TPR·점막·CRT·의식·혈압, 시작 ~15분에 혈청 색 재확인(용혈 → 중단). 초기 15–30분에 대부분 반응 발생</td></tr>
+      <tr><td>반응 징후</td><td>발열, 빈맥, 오심, 유연, 구토, 안면 부종, 두드러기, 발작, 근육 떨림, 불안, 요·변 실금, 무뇨, 기침, 호흡 노력 증가</td></tr>
+      <tr><td>FNHTR</td><td>체온 &gt;39°C + 수혈 전 대비 &gt;1°C 상승 — 일시 중단, AHTR·TRALI 배제 후 천천히 재개</td></tr>
+      <tr><td>알레르기</td><td>경증~중등도는 완료 + diphenhydramine·항구토제; 아나필락시스는 epinephrine·수액·산소</td></tr>
+      <tr><td>AHTR</td><td>발열·빈맥·빈호흡·불안·구토, 혈색소혈증·혈색소뇨 → 즉시 중단, DIC·신손상 감시</td></tr>
+      <tr><td>TACO / TRALI</td><td>6시간 내 호흡곤란 — TACO(경정맥 팽창·수포음, 심·신질환 소인)는 속도↓·이뇨제, TRALI(비심인성 부종)는 산소·환기 지지</td></tr>
+      <tr><td>시간</td><td>냉장고에서 꺼낸 뒤 4시간 내 완료(오염 예방)</td></tr>
+    </table></div></div>
+
+  <div class="card"><div class="card-head"><h3>혈액형 · 교차시험</h3><a class="src" href="saccm.html#sacc3-p6-c70">Ch.70 ›</a></div>
+    <div class="tblwrap"><table class="ref">
+      <tr><th>항목</th><th>개</th><th>고양이</th></tr>
+      <tr><td>주요 항원</td><td>DEA 1 (가장 면역원성) — 자연 항체 없음, 감작 후 재노출 시 AHTR. Dal (−) 품종: Dalmatian, Doberman, Shih Tzu, Lhasa Apso, Beagle, Bichon</td><td>A &gt;95%, B(Turkish Van·Devon Rex·British Shorthair ~50%), AB 드묾. B형은 고역가 anti-A → A혈 소량에도 중증 AHTR. Mik 항원</td></tr>
+      <tr><td>혈액형 적합</td><td>DEA 1 기준 적합 권장</td><td>RBC·혈장 모두 혈액형 적합 필수</td></tr>
+      <tr><td>교차시험</td><td>첫 수혈견도 불일치 17% 보고(논란); 수혈 후 4일 지난 개는 필수; 임신력은 무관</td><td>첫 수혈도 유용성 시사(anti-Mik); 이전 수혈 고양이는 필수(동종면역 빠르면 2일)</td></tr>
+      <tr><td>Major / Minor</td><td colspan="2">Major = 공혈 RBC + 수혈자 혈장 · Minor = 공혈 혈장 + 수혈자 RBC. 육안 용혈·응집 = 부적합</td></tr>
+    </table></div></div>
+
+  <div class="card"><div class="card-head"><h3>Table 69.1 용량 요약</h3><a class="src" href="saccm.html#sacc3-p6-c69">Ch.69 ›</a></div>
+    <div class="tblwrap"><table class="ref">
+      <tr><th>제제</th><th>보관</th><th>용량</th></tr>
+      <tr><td>FWB / SWB</td><td>실온 24 h / 2–6°C 28–35 d</td><td class="mono">2 × ΔPCV × BW (mL) · 2 mL/kg → PCV ~1% · ~20 mL/kg</td></tr>
+      <tr><td>pRBC</td><td>2–6°C 35–42 d</td><td class="mono">1.5 × ΔPCV × BW · 또는 ΔPCV ÷ 공혈 PCV × 혈액량 × BW</td></tr>
+      <tr><td>FFP / FP / LP</td><td>≤−30°C 1 y / 5 y · 2–6°C 14 d</td><td class="mono">10–20 mL/kg</td></tr>
+      <tr><td>Cryoprecipitate</td><td>≤−30°C 12 mo</td><td class="mono">1 unit / 10–12 kg</td></tr>
+      <tr><td>Cryo-poor plasma</td><td>≤−30°C 12 mo</td><td class="mono">6–20 mL/kg</td></tr>
+      <tr><td>PRP / PC</td><td>실온 교반 5 d</td><td class="mono">1 unit / 10 kg · FWB 10 mL/kg → PLT +10,000/µL</td></tr>
+      <tr><td>Canine albumin</td><td>실온 24 mo</td><td class="mono">10 × (2.0 − 환자 alb) × BW × 0.3 (g) · 450 mg/kg → +0.5 g/dL</td></tr>
+    </table></div></div>
+</section>
+
+<div class="foot">
+  <span>수혈량·속도는 KU VEMC Transfusion Monitoring Chart(과 프로토콜)를 기준으로 하고, SACCM 3판 Ch.69·70과 Plumb's 10판(Albumin, Human · Immune Globulin)을 참고해 정리한 것입니다.</span>
+  <span>임상 판단의 보조 도구이며 최종 결정은 담당 수의사에게 있습니다.</span>
+</div>
+</main>
+
+<script src="../js/auth-gate.js"></script>
+<script>
+(function(){
+  'use strict';
+  const $ = (s, r=document) => r.querySelector(s), $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+  const store = { get(k,d){ try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch(e){ return d; } }, set(k,v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} } };
+  const fmt = (n, d=0) => (n == null || !isFinite(n)) ? '—' : (Math.round(n * Math.pow(10,d)) / Math.pow(10,d)).toLocaleString('en-US', { maximumFractionDigits: d });
+  const rng = (a, b, d=0) => fmt(a,d) + '–' + fmt(b,d);
+  const hm = (h) => { if (h == null || !isFinite(h)) return '—'; const m = Math.round(h * 60); return m >= 60 ? `${Math.floor(m/60)}h ${String(m%60).padStart(2,'0')}m` : `${m}분`; };
+
+  const BV = { dog:90, cat:60 };                 // 혈액량 mL/kg (과 프로토콜 = SACCM)
+  const RATE = { normal:{ maint:[5,10], max:20 }, heart:{ maint:[3,4], max:5 } };
+  const DPCV = { prbc:60, wb:45 };
+
+  const S = Object.assign({ species:'dog', bw:0, prod:'prbc', pcv:'', pcvt:25, dpcv:60, dilr:'', init:0.5, imin:15, mrate:5, heart:0,
+    bt:'', xm:'', prev:'', fdose:10, fhrs:2, palb:'', talb:2, aconc:'25', gind:'gen', gdose:1, gconc:6, ghrs:6 }, store.get('tx:draft', {}));
+  const save = () => store.set('tx:draft', S);
+  const ok = () => S.bw > 0;
+
+  /* ---------- WB · pRBC ---------- */
+  function rbcVT(){
+    if (!ok() || S.pcv === '' || !(S.pcvt > 0) || !(S.dpcv > 0)) return null;
+    const d = S.pcvt - S.pcv; if (d <= 0) return { vt:0, d };
+    return { vt: d * BV[S.species] * S.bw / S.dpcv, d };
+  }
+  function renderRBC(){
+    const sp = S.species, bw = S.bw, r = rbcVT();
+    $('#rbc-sp').textContent = `${sp==='dog'?'DOG':'CAT'} 혈액량 ${BV[sp]} mL/kg`;
+    $('#mrate-ref').textContent = S.heart ? '심장 질환 3–4 (최대 5)' : '5–10 (최대 20)';
+    const dil = r && S.dilr !== '' && +S.dilr > 0 ? r.vt * (+S.dilr) / 100 : 0;
+    const total = r ? r.vt + dil : null;
+    $('#rbc-tiles').innerHTML = !r
+      ? `<div class="tile"><span class="k">수혈량 (VT)</span><span class="v">—</span><span class="r">${!ok()?'체중':S.pcv===''?'환자 PCV':'목표·공혈 PCV'} 입력</span></div>`
+      : r.d <= 0 ? `<div class="tile"><span class="k">수혈량 (VT)</span><span class="v">0<small>mL</small></span><span class="r">환자 PCV가 목표 이상</span></div>`
+      : `<div class="tile accent"><span class="k">수혈량 (VT)</span><span class="v">${fmt(r.vt)}<small>mL</small></span><span class="r">(${S.pcvt} − ${S.pcv}) × ${BV[sp]} × ${bw} ÷ ${S.dpcv} · ${fmt(r.vt/bw,1)} mL/kg</span></div>
+         <div class="tile"><span class="k">+ NS 희석</span><span class="v">${fmt(dil)}<small>mL</small></span><span class="r">${S.dilr!==''&&+S.dilr>0?`혈액 100 mL당 ${S.dilr} mL`:'희석 없음 (공혈 PCV 55–70)'}</span></div>
+         <div class="tile accent"><span class="k">총 투여량</span><span class="v">${fmt(total)}<small>mL</small></span><span class="r">혈액 ${fmt(r.vt)} + 수액 ${fmt(dil)} · ${fmt(total/bw,1)} mL/kg</span></div>
+         <div class="tile"><span class="k">기대 PCV 상승</span><span class="v">+${fmt(r.d)}<small>%</small></span><span class="r">${S.pcv} → ${S.pcvt}% · 수혈 후 PCV 확인</span></div>`;
+    $('#rbc-alt').innerHTML = ok() && r && r.d > 0 ? `<span>교재 대안 —</span><span>pRBC 1.5 × ΔPCV × BW = <b>${fmt(1.5*r.d*bw)} mL</b></span><span>WB 2 × ΔPCV × BW = <b>${fmt(2*r.d*bw)} mL</b></span><span>WB 2 mL/kg ≈ PCV +1%</span>` : '';
+    // 투여 계획
+    const steps = $('#rbc-steps'), warn = $('#rbc-warn');
+    if (!r || r.d <= 0) { steps.innerHTML = `<div class="step"><span class="n">–</span><div class="t"><b>수혈량이 정해지면 계획이 나옵니다</b></div><span class="v"></span></div>`; warn.innerHTML = ''; return; }
+    const prof = S.heart ? RATE.heart : RATE.normal;
+    const iRate = +S.init * bw, iMin = +S.imin, iVol = iRate * iMin / 60;
+    const mr = Math.max(0, +S.mrate || 0), mRate = mr * bw;
+    const rest = Math.max(0, total - iVol), mHrs = mRate > 0 ? rest / mRate : null, totHrs = mHrs != null ? mHrs + iMin/60 : null;
+    const over4 = totHrs != null && totHrs > 4 + 1e-9;
+    const need = rest / (4 - iMin/60);                       // 4시간 안에 끝내려면 필요한 유지 속도 mL/h
+    const needKg = need / bw, overMax = needKg > prof.max + 1e-9, mrOver = mr > prof.max + 1e-9;
+    steps.innerHTML = `
+      <div class="step"><span class="n">1</span><div class="t"><b>초기 ${S.init} mL/kg/h × ${iMin}분</b><span>vital(TPR·점막·혈청 색) 확인 후 증량 · 반응 대부분 이 구간</span></div><span class="v">${fmt(iRate,1)} mL/h<small>${fmt(iVol,1)} mL</small></span></div>
+      <div class="step${mrOver?' bad':over4?' warn':''}"><span class="n">2</span><div class="t"><b>유지 ${mr} mL/kg/h</b><span>권장 ${rng(...prof.maint)} · 최대 ${prof.max} mL/kg/h${S.heart?' (심장 질환)':''}</span></div><span class="v">${fmt(mRate)} mL/h<small>${fmt(rest)} mL · ${hm(mHrs)}</small></span></div>
+      <div class="step${over4?' warn':''}"><span class="n">Σ</span><div class="t"><b>총 소요 ${hm(totHrs)}</b><span>${over4?`4시간 초과 — 4h 내 완료하려면 유지 ${fmt(needKg,1)} mL/kg/h (${fmt(need)} mL/h)${overMax?' → 최대 속도 초과, 백을 나누거나 pRBC 우선':''}`:'4시간 이내 완료 가능'}</span></div><span class="v">${fmt(total)} mL<small>혈액 ${fmt(r.vt)} + NS ${fmt(dil)}</small></span></div>`;
+    warn.innerHTML = mrOver ? `<div class="callout bad" style="margin:0 14px 12px"><b>유지 속도 ${mr} mL/kg/h가 최대 ${prof.max} mL/kg/h를 넘습니다.</b></div>` : '';
+  }
+  function renderChk(){
+    const sp = S.species;
+    const bts = sp === 'dog' ? [['dea1p','DEA 1 (+)'],['dea1n','DEA 1 (−)']] : [['A','A'],['B','B'],['AB','AB']];
+    const g = (lb, key, opts, badv) => `<div class="g"><span class="lb">${lb}</span>${opts.map(([v,l]) => `<button type="button" data-k="${key}" data-v="${v}" class="${badv&&badv.includes(v)?'bad':''}" aria-pressed="${S[key]===v}">${l}</button>`).join('')}</div>`;
+    $('#chk').innerHTML = g('환자 혈액형', 'bt', bts) + g('Major XM', 'xm', [['c','적합 (XM−)'],['i','부적합 (XM+)']], ['i']) + g('수혈 이력', 'prev', [['n','없음'],['y','있음 (>4일)']], ['y']);
+    const notes = [];
+    if (S.xm === 'i') notes.push('<b>교차시험 부적합</b> — 다른 공혈 단위로 재시험. 부적합 혈액은 AHTR 위험.');
+    if (sp === 'cat' && S.bt === 'B') notes.push('<b>B형 고양이</b> — 고역가 anti-A. 반드시 B형 혈액(A형 혈액 소량에도 중증 AHTR). 혈장도 혈액형 적합.');
+    if (sp === 'cat' && S.bt === 'AB') notes.push('AB형 고양이 — AB 공혈이 없으면 A형 pRBC(혈장 최소화) 고려. 자연 항체 없음.');
+    if (sp === 'cat' && S.bt === '') notes.push('고양이는 첫 수혈이라도 혈액형 검사 필수(자연 동종항체). 이전 수혈 고양이는 교차시험 필수(동종면역 빠르면 2일).');
+    if (sp === 'dog' && S.bt === 'dea1n') notes.push('DEA 1 (−) 개 — DEA 1 (−) 혈액 권장. (+) 혈액에 감작되면 재노출 시 AHTR.');
+    if (sp === 'dog' && S.prev === 'y') notes.push('<b>수혈 후 4일 이상 지난 개</b> — 교차시험 필수(anti-Dal 등, 최대 2년 지속).');
+    if (sp === 'dog' && S.prev === 'n' && S.xm === '') notes.push('첫 수혈견의 교차시험은 논란이나 불일치 17% 보고 — 가능하면 시행.');
+    $('#chk-note').innerHTML = notes.length ? `<div class="callout ${S.xm==='i'||(sp==='cat'&&S.bt==='B')?'bad':'warn'}" style="margin:0 14px 12px">${notes.join('<br>')}</div>` : '';
+  }
+
+  /* ---------- 혈장 ---------- */
+  function renderFFP(){
+    const bw = S.bw, d = +S.fdose || 0, vol = ok() ? d * bw : null, hrs = +S.fhrs;
+    $('#ffp-tiles').innerHTML = `
+      <div class="tile accent"><span class="k">FFP <small>${d} mL/kg</small></span><span class="v">${fmt(vol)}<small>mL</small></span><span class="r">q8–12h 반복 시 응고 시간·출혈 재평가</span></div>
+      <div class="tile"><span class="k">투여 속도 <small>${hrs}h</small></span><span class="v">${vol!=null?fmt(vol/hrs):'—'}<small>mL/h</small></span><span class="r">초기 15–30분은 천천히 시작 후 증량</span></div>
+      <div class="tile"><span class="k">Cryoprecipitate</span><span class="v sm">${ok()?rng(bw/12,bw/10,1):'—'}<small>unit</small></span><span class="r">1 unit / 10–12 kg (250 mL FFP 유래)</span></div>
+      <div class="tile"><span class="k">출혈 시 pRBC : FFP</span><span class="v sm">1:1 – 1:2</span><span class="r">심한 출혈 환자 · 대량 수혈 = 24h 내 혈액량 이상</span></div>`;
+    const alb = S.palb !== '' ? +S.palb : null;
+    $('#ffp-steps').innerHTML = alb != null && alb < 2 ? `<div class="step warn"><span class="n">!</span><div class="t"><b>albumin ${alb} g/dL → 2.0까지 혈장으로 올리려면 ≈ ${fmt((2-alb)*45*bw)} mL (${fmt((2-alb)*45)} mL/kg)</b><span>1 g/dL당 45 mL/kg — 비효율적, Albumin 탭 참조</span></div><span class="v"></span></div>` : '';
+  }
+
+  /* ---------- Albumin ---------- */
+  const CONC = { '25':{ g:0.25, name:'HSA 25%' }, '5':{ g:0.05, name:'HSA 5%' }, 'c5':{ g:0.05, name:'CSA 5%' }, 'c16':{ g:0.16, name:'CSA 16%' } };
+  function renderAlb(){
+    const bw = S.bw, pa = S.palb !== '' ? +S.palb : null, ta = +S.talb, c = CONC[S.aconc], sp = S.species;
+    const deficit = ok() && pa != null && ta > pa ? 10 * (ta - pa) * bw * 0.3 : null;   // g
+    $('#alb-tiles').innerHTML = `
+      <div class="tile accent"><span class="k">Albumin 결핍</span><span class="v">${fmt(deficit,1)}<small>g</small></span><span class="r">${deficit!=null?`10 × (${ta} − ${pa}) × ${bw} × 0.3 · ${fmt(deficit/bw,2)} g/kg`:(pa==null?'환자 albumin 입력':ok()?'환자 albumin이 목표 이상':'체중 입력')}</span></div>
+      <div class="tile"><span class="k">${c.name} 부피</span><span class="v">${deficit!=null?fmt(deficit/c.g):'—'}<small>mL</small></span><span class="r">${c.g} g/mL${deficit!=null?` · ${fmt(deficit/c.g/bw,1)} mL/kg`:''}</span></div>
+      <div class="tile${deficit!=null&&deficit/bw>2?' bad':''}"><span class="k">1일 최대 2 g/kg</span><span class="v">${ok()?fmt(2*bw,1):'—'}<small>g</small></span><span class="r">= ${c.name} ${ok()?fmt(2*bw/c.g):'—'} mL${deficit!=null&&deficit/bw>2?' · 결핍이 1일 최대 초과 — 나눠서':''}</span></div>
+      <div class="tile"><span class="k">과 평균 5 mL/kg <small>25%</small></span><span class="v">${ok()?fmt(5*bw):'—'}<small>mL</small></span><span class="r">= 1.25 g/kg (${ok()?fmt(1.25*bw,1):'—'} g)</span></div>`;
+    // HSA 25% 단계 (Plumb's a: test 0.25 mL/kg/h × 15분 → c: 2 mL/kg / 2h → 0.1–0.2 mL/kg/h × 10h, 총 2 g/kg)
+    const card = $('#alb-plan-card'); card.hidden = S.aconc !== '25';
+    if (S.aconc === '25') {
+      const t = 0.25 * bw, tv = t * 15 / 60, hv = 2 * bw, hr = hv / 2, lr1 = 0.1 * bw, lr2 = 0.2 * bw, lv1 = lr1 * 10, lv2 = lr2 * 10;
+      const tot1 = tv + hv + lv1, tot2 = tv + hv + lv2;
+      $('#alb-steps').innerHTML = ok() ? `
+        <div class="step"><span class="n">T</span><div class="t"><b>Test dose 0.25 mL/kg/h × 15분</b><span>HR·RR·체온 기준치 → 종료 시 재측정 · 안면 부종·아나필락시스 시 중단</span></div><span class="v">${fmt(t,2)} mL/h<small>${fmt(tv,2)} mL</small></span></div>
+        <div class="step"><span class="n">H</span><div class="t"><b>High 2 mL/kg / 2시간</b><span>= 0.5 g/kg · 1 mL/kg/h</span></div><span class="v">${fmt(hr,1)} mL/h<small>${fmt(hv,1)} mL</small></span></div>
+        <div class="step"><span class="n">L</span><div class="t"><b>Low 0.1–0.2 mL/kg/h × 10시간</b><span>= 0.25–0.5 g/kg</span></div><span class="v">${rng(lr1,lr2,2)} mL/h<small>${rng(lv1,lv2,1)} mL</small></span></div>
+        <div class="step"><span class="n">Σ</span><div class="t"><b>총 ${rng(tot1,tot2)} mL · ${rng(tot1*0.25/bw,tot2*0.25/bw,2)} g/kg · 약 12시간</b><span>원문(c) 순서 기준 — 원문의 '총 2 g/kg' 표기는 25%로 계산하면 0.75–1 g/kg이라 맞지 않음, 확인 필요${deficit!=null?` · 계산 결핍 ${fmt(deficit,1)} g = ${fmt(deficit/0.25)} mL${deficit/0.25 < tot1 ? ' → 결핍이 더 적으면 Low 단계를 줄임' : deficit/0.25 > tot2 ? ' → 결핍이 더 크면 다음 날 재평가 후 추가' : ''}`:''}</span></div><span class="v">${rng(tot1*0.25,tot2*0.25,1)} g</span></div>` : `<div class="step"><span class="n">–</span><div class="t"><b>체중을 입력하세요</b></div><span class="v"></span></div>`;
+      $('#alb-warn').innerHTML = '';
+    }
+    const alt = [];
+    if (sp === 'dog') {
+      alt.push(`<div class="tile"><span class="k">HSA 결핍량 12시간 주입 (b)</span><span class="v xs">${deficit!=null?`${fmt(deficit/0.25)} mL 25% → NS로 10% 희석 ${fmt(deficit/0.1)} mL, ${fmt(deficit/0.1/12)} mL/h`:'결핍량 필요'}</span><span class="r">필터 사용 · 대안 0.5–1.25 g/kg = ${ok()?rng(0.5*bw,1.25*bw,1):'—'} g</span></div>`);
+      alt.push(`<div class="tile"><span class="k">HSA 저혈압 slow push (a)</span><span class="v xs">${ok()?`평균 2 mL/kg = ${fmt(2*bw)} mL · 최대 4 mL/kg = ${fmt(4*bw)} mL`:'—'}</span><span class="r">이후 CRI 0.1–1.7 mL/kg/h (${ok()?rng(0.1*bw,1.7*bw,1):'—'} mL/h) 4–72h · 72h 최대 25 mL/kg</span></div>`);
+      alt.push(`<div class="tile"><span class="k">Canine albumin 5% — 저albumin</span><span class="v xs">${ok()?`800 mg/kg = ${fmt(0.8*bw,1)} g = ${fmt(0.8*bw/0.05)} mL / 6h (${fmt(0.8*bw/0.05/6)} mL/h)`:'—'}</span><span class="r">또는 최대 2 g/kg/day · 450 mg/kg → +0.5 g/dL</span></div>`);
+      alt.push(`<div class="tile"><span class="k">Canine albumin 16% — 저혈량성 쇼크</span><span class="v xs">${ok()?`2.5–5 g/kg = ${rng(15.6*bw,31.2*bw)} mL`:'—'}</span><span class="r">1 mL/min</span></div>`);
+    } else {
+      alt.push(`<div class="tile accent"><span class="k">HSA 5% (25% 아님) 2 mL/kg/h × 5–10h</span><span class="v xs">${ok()?`${fmt(2*bw)} mL/h → ${rng(10*bw,20*bw)} mL/day`:'—'}</span><span class="r">최대 10–20 mL/kg/day · albumin &lt;2 g/dL이면 다음 날 반복</span></div>`);
+      alt.push(`<div class="tile"><span class="k">25% → 5% 만들기</span><span class="v xs">25% 1 : NS 4</span><span class="r">예: 25% 20 mL + NS 80 mL = 5% 100 mL</span></div>`);
+    }
+    $('#alb-alt').innerHTML = alt.join('');
+  }
+
+  /* ---------- IVIG ---------- */
+  const GIND = { gen:{ lo:0.5, hi:2.2, ref:'개 0.5–2.2, 흔히 1 g/kg', hrs:null }, imha:{ lo:0.5, hi:1.5, ref:'IMHA 불응 0.5–1.5 g/kg (ACVIM salvage 0.5–1)', hrs:[4,12] }, itp:{ lo:0.28, hi:1.3, ref:'ITP 보고 범위 0.28–1.3 g/kg', hrs:null }, evans:{ lo:0.5, hi:1.3, ref:'Evans·SARDS 증례 0.5–1.3 g/kg', hrs:null }, derm:{ lo:0.5, hi:1, ref:'5–6% 0.5–1 g/kg, 4–6h, 24h 간격 1–2회', hrs:[4,6] } };
+  function renderIVIG(){
+    const bw = S.bw, d = +S.gdose || 0, c = +S.gconc / 100, hrs = +S.ghrs, ind = GIND[S.gind] || GIND.gen;
+    $('#gdose-ref').textContent = ind.ref;
+    const g = ok() ? d * bw : null, vol = g != null ? g / c : null;
+    const startR = 0.01 * 60 * bw, maxR = 0.08 * 60 * bw;             // mL/h (0.01 · 0.08 mL/kg/min)
+    const avg = vol != null ? vol / hrs : null, minHrs = vol != null ? vol / maxR : null;
+    const outRange = d < ind.lo - 1e-9 || d > ind.hi + 1e-9, hrsOut = ind.hrs && (hrs < ind.hrs[0] || hrs > ind.hrs[1]);
+    $('#ivig-tiles').innerHTML = `
+      <div class="tile accent${outRange?' bad':''}"><span class="k">총량 <small>${d} g/kg</small></span><span class="v">${fmt(g,1)}<small>g</small></span><span class="r">${outRange?`적응증 범위 ${ind.lo}–${ind.hi} g/kg 밖`:`범위 ${ind.lo}–${ind.hi} g/kg`}</span></div>
+      <div class="tile accent"><span class="k">${S.gconc}% 제제 부피</span><span class="v">${fmt(vol)}<small>mL</small></span><span class="r">${S.gconc} g / 100 mL</span></div>
+      <div class="tile${avg!=null&&avg>maxR+1e-9?' bad':hrsOut?' warn':''}"><span class="k">평균 속도 <small>${hrs}h</small></span><span class="v">${fmt(avg,1)}<small>mL/h</small></span><span class="r">${avg!=null?`${fmt(avg/bw/60,3)} mL/kg/min`:'—'}${hrsOut?` · 적응증 권장 ${ind.hrs[0]}–${ind.hrs[1]}h`:''}</span></div>
+      <div class="tile"><span class="k">최단 소요 시간</span><span class="v">${hm(minHrs)}</span><span class="r">최대 속도 0.08 mL/kg/min로만 줄 때 (ramp 제외)</span></div>`;
+    $('#ivig-steps').innerHTML = ok() ? `
+      <div class="step"><span class="n">1</span><div class="t"><b>시작 0.01 mL/kg/min</b><span>별도 라인·filter·실온 · 감시하며 점진 증량</span></div><span class="v">${fmt(startR,1)} mL/h<small>${fmt(startR/60,2)} mL/min</small></span></div>
+      <div class="step${avg!=null&&avg>maxR+1e-9?' bad':''}"><span class="n">↑</span><div class="t"><b>최대 0.08 mL/kg/min 초과 금지</b><span>${avg!=null&&avg>maxR+1e-9?`평균 속도가 최대를 넘음 — 투여 시간을 ${hm(minHrs)} 이상으로`:'평균 속도가 최대 이하'}</span></div><span class="v">${fmt(maxR,1)} mL/h<small>${fmt(maxR/60,2)} mL/min</small></span></div>
+      <div class="step"><span class="n">Σ</span><div class="t"><b>${fmt(vol)} mL / ${hrs}h</b><span>시작 속도로 늦게 가는 만큼 후반 속도를 올려야 총 시간이 맞음 (최대 이내에서)</span></div><span class="v">${fmt(avg,1)} mL/h<small>평균</small></span></div>` : '';
+    $('#ivig-warn').innerHTML = '';
+  }
+
+  function renderAll(){ renderRBC(); renderChk(); renderFFP(); renderAlb(); renderIVIG(); save(); }
+
+  /* ---------- 입력 ---------- */
+  const BW = ['bw','bw2','bw3','bw4'], ALB = ['palb','palb2'];
+  const NUM = ['pcvt','dpcv','mrate','fdose','talb','gdose'];       // 숫자, 빈 값이면 유지
+  const OPT = ['pcv','dilr'];                                        // 빈 값 허용
+  const SEL = ['prod','init','imin','heart','fhrs','aconc','gconc','ghrs','gind'];
+  function syncInputs(){
+    BW.forEach(id => { $('#'+id).value = S.bw || ''; }); ALB.forEach(id => { $('#'+id).value = S.palb === '' ? '' : S.palb; });
+    NUM.forEach(id => { $('#'+id).value = S[id]; }); OPT.forEach(id => { $('#'+id).value = S[id] === '' ? '' : S[id]; });
+    SEL.forEach(id => { $('#'+id).value = String(S[id]); });
+    $$('.top .seg button[data-sp]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.sp === S.species)));
+  }
+  document.addEventListener('input', (e) => {
+    const id = e.target.id; if (!id || e.target.tagName === 'SELECT') return;
+    if (BW.includes(id)) { S.bw = +e.target.value || 0; BW.filter(x => x !== id).forEach(x => { $('#'+x).value = e.target.value; }); }
+    else if (ALB.includes(id)) { S.palb = e.target.value === '' ? '' : +e.target.value; ALB.filter(x => x !== id).forEach(x => { $('#'+x).value = e.target.value; }); }
+    else if (NUM.includes(id)) { if (e.target.value !== '') S[id] = +e.target.value; }
+    else if (OPT.includes(id)) { S[id] = e.target.value === '' ? '' : +e.target.value; }
+    else return;
+    renderAll();
+  });
+  document.addEventListener('change', (e) => {
+    const id = e.target.id; if (!SEL.includes(id)) return;
+    S[id] = ['prod','aconc','gind'].includes(id) ? e.target.value : +e.target.value;
+    if (id === 'gind') { const g = GIND[S.gind]; S.gdose = S.gind === 'gen' ? 1 : g.lo; $('#gdose').value = S.gdose; if (g.hrs) { S.ghrs = g.hrs[0]; $('#ghrs').value = S.ghrs; } }
+    if (id === 'prod') { S.dpcv = DPCV[S.prod]; $('#dpcv').value = S.dpcv; }
+    if (id === 'heart') { S.mrate = S.heart ? 3 : 5; $('#mrate').value = S.mrate; }
+    renderAll();
+  });
+  $$('.top .seg button[data-sp]').forEach(b => b.addEventListener('click', () => { S.species = b.dataset.sp; S.bt = ''; if (S.species === 'cat' && S.aconc === '25') S.aconc = '5'; if (S.species === 'dog' && S.aconc === '5') S.aconc = '25'; syncInputs(); renderAll(); }));
+  $('#chk').addEventListener('click', (e) => { const b = e.target.closest('button[data-k]'); if (!b) return; S[b.dataset.k] = S[b.dataset.k] === b.dataset.v ? '' : b.dataset.v; renderAll(); });
+
+  $$('.tab').forEach(t => t.addEventListener('click', () => showTab(t.id)));
+  function showTab(id){ $$('.tab').forEach(t => { const on = t.id === id; t.setAttribute('aria-selected', String(on)); $('#' + t.dataset.panel).classList.toggle('active', on); }); }
+
+  syncInputs(); renderAll();
+})();
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('../sw.js').then((reg) => {
+      const showToast = (msg) => { const t = document.createElement('div'); t.className = 'sw-toast'; t.textContent = msg; document.body.appendChild(t); requestAnimationFrame(() => t.classList.add('show')); setTimeout(() => { t.classList.remove('show'); setTimeout(() => t.remove(), 400); }, 3200); };
+      const hadController = !!navigator.serviceWorker.controller; let refreshing = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => { if (refreshing || !hadController) return; refreshing = true; showToast('새 버전 적용 중…'); setTimeout(() => window.location.reload(), 700); });
+      reg.update().catch(() => {});
+    }).catch(() => {});
+  });
+}
+</script>
+</body>
+</html>
