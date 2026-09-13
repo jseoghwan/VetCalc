@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>경구 처방·조제 · VECC</title>
+<meta name="description" content="약물 DB 기반 경구 처방 작성과 조제(분말·캡슐·현탁액) 계산 — 개/고양이">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#4453A3">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="VECC Hub">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+</head>
+<body>
+<style>
+<body>
+<style>
+:root{
+  --bg:#F3F4F7; --surface:#FFFFFF; --surface-2:#E9EBF1; --line:#D6D9E2; --line-strong:#B9BECB;
+  --ink:#1A1D26; --ink-2:#4A5063; --muted:#6F7588;
+  --venous:#4453A3; --venous-soft:#E5E8F6; --venous-ink:#2E3A80;
+  --arterial:#B3313B; --arterial-soft:#F8E4E5; --arterial-ink:#8C242C;
+  --input-bg:#FFF6D9; --input-line:#E0A92B; --input-ink:#5B4300; --input-focus:#F5C23A;
+  --ok:#2E7D4F; --ok-soft:#DFF2E6; --low:#2B67B3; --low-soft:#DDE9F8; --high:#C13A2E; --high-soft:#F9E1DE; --warn:#9A6A00; --warn-soft:#FBEFC9;
+  --shadow:0 1px 2px rgba(20,24,40,.06), 0 8px 24px -12px rgba(20,24,40,.18);
+  --radius:10px;
+  --accent:var(--venous); --accent-soft:var(--venous-soft); --accent-ink:var(--venous-ink);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111318; --surface:#1A1D25; --surface-2:#232733; --line:#2F3442; --line-strong:#454B5C;
+    --ink:#E9EBF1; --ink-2:#C0C5D3; --muted:#8F95A8;
+    --venous:#8B97E0; --venous-soft:#252B48; --venous-ink:#C6CDF6;
+    --arterial:#E0666E; --arterial-soft:#42232A; --arterial-ink:#F3B6BA;
+    --input-bg:#33290F; --input-line:#D9A83A; --input-ink:#F6DFA0; --input-focus:#F5C23A;
+    --ok:#6FCF97; --ok-soft:#1D3328; --low:#7FB2F0; --low-soft:#1E2E45; --high:#F08479; --high-soft:#432420; --warn:#E5B94A; --warn-soft:#3B3116;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111318; --surface:#1A1D25; --surface-2:#232733; --line:#2F3442; --line-strong:#454B5C;
+  --ink:#E9EBF1; --ink-2:#C0C5D3; --muted:#8F95A8;
+  --venous:#8B97E0; --venous-soft:#252B48; --venous-ink:#C6CDF6;
+  --arterial:#E0666E; --arterial-soft:#42232A; --arterial-ink:#F3B6BA;
+  --input-bg:#33290F; --input-line:#D9A83A; --input-ink:#F6DFA0; --input-focus:#F5C23A;
+  --ok:#6FCF97; --ok-soft:#1D3328; --low:#7FB2F0; --low-soft:#1E2E45; --high:#F08479; --high-soft:#432420; --warn:#E5B94A; --warn-soft:#3B3116;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+[hidden]{display:none!important}
+body{margin:0;padding-top:env(safe-area-inset-top);background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans KR",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;font-size:15px;line-height:1.55}
+body[data-mode="emg"]{--accent:var(--arterial);--accent-soft:var(--arterial-soft);--accent-ink:var(--arterial-ink)}
+.mono{font-family:"IBM Plex Mono","SFMono-Regular",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums;font-size:.93em}
+a{color:var(--accent)}
+h1,h2,h3,h4{margin:0;text-wrap:balance;line-height:1.25}
+p{margin:0}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+[hidden]{display:none!important}
+body{margin:0;padding-top:env(safe-area-inset-top);background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans KR",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;font-size:15px;line-height:1.55}
+.mono{font-family:"IBM Plex Mono","SFMono-Regular",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+a{color:var(--accent)}
+h1,h2,h3,h4{margin:0;line-height:1.25}
+p{margin:0}
+button{font:inherit}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+.top-inner{max-width:1120px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:14px}
+.brand{display:flex;align-items:baseline;gap:10px;flex:1 1 auto;min-width:0}
+.brand h1{font-size:17px;font-weight:700;letter-spacing:-.01em;white-space:nowrap}
+.brand .home{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;padding:4px 8px 4px 4px;border-radius:6px;white-space:nowrap;align-self:center}
+.brand .home:hover{background:var(--surface-2);color:var(--ink)}
+.seg{display:inline-flex;border:1px solid var(--line-strong);border-radius:999px;padding:3px;background:var(--surface-2);gap:2px}
+.seg button{border:0;background:transparent;color:var(--ink-2);font-weight:600;font-size:13px;padding:5px 14px;border-radius:999px;cursor:pointer;min-height:30px}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.seg.sm button{font-size:12px;padding:3px 10px;min-height:26px}
+.tabs{max-width:1120px;margin:0 auto;padding:0 16px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{border:0;background:transparent;font-size:14px;font-weight:600;color:var(--muted);padding:10px 12px 11px;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap;display:flex;align-items:center;gap:7px}
+.tab .dot{width:8px;height:8px;border-radius:50%;background:currentColor;opacity:.55}
+.tab[aria-selected="true"]{color:var(--venous);border-bottom-color:var(--venous)}
+.tab[aria-selected="true"] .dot{opacity:1}
+.tab .cnt{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;background:var(--surface-2);color:var(--ink-2);padding:0 6px;border-radius:999px;line-height:1.6}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+
+main{max-width:1120px;margin:0 auto;padding:20px 16px 96px}
+.panel{display:none}
+.panel.active{display:block}
+.sec{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;margin:0 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.sec h2{font-size:15px;font-weight:700}
+.sec .kicker{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);padding:2px 7px;border-radius:4px;background:var(--accent-soft);line-height:1.5}
+.sec .note{font-size:12px;color:var(--muted);margin-left:auto;text-align:right;line-height:1.5}
+@media (max-width:640px){.sec .note{flex-basis:100%;margin-left:0;text-align:left}}
+
+/* inputs */
+.inputs{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:22px}
+.inputs-head{display:flex;align-items:center;gap:10px;padding:11px 16px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.inputs-head h2{font-size:14px;font-weight:700}
+.legend{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;color:var(--muted);margin-left:auto;white-space:nowrap}
+.legend i{display:inline-block;width:14px;height:10px;border-radius:2px;background:var(--input-bg);border:1.5px solid var(--input-line)}
+.inputs-body{padding:12px 16px 4px}
+.igroup{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px 12px;padding-bottom:12px}
+@media (max-width:480px){.igroup{grid-template-columns:1fr 1fr}}
+.field{display:flex;flex-direction:column;gap:3px;min-width:0}
+.field label{font-size:12.5px;font-weight:600;color:var(--ink-2);display:flex;justify-content:space-between;align-items:baseline;gap:6px;line-height:1.4;white-space:nowrap}
+.field label .u{font-weight:500;color:var(--muted);font-size:11px;flex-shrink:0}
+.field input,.field select{font-family:"IBM Plex Mono",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums;font-size:17px;font-weight:500;color:var(--input-ink);background:var(--input-bg);border:1.5px solid var(--input-line);border-radius:7px;padding:7px 10px;width:100%;min-width:0;-moz-appearance:textfield;line-height:1.3}
+.field input[type="text"]{font-family:inherit;font-size:15px}
+.field select{font-family:inherit;font-size:14px;appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--input-ink) 50%),linear-gradient(135deg,var(--input-ink) 50%,transparent 50%);background-position:calc(100% - 16px) 55%,calc(100% - 11px) 55%;background-size:5px 5px;background-repeat:no-repeat;padding-right:28px}
+.field input::-webkit-outer-spin-button,.field input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.field input:focus,.field select:focus{outline:0;border-color:var(--input-focus);box-shadow:0 0 0 3px color-mix(in srgb,var(--input-focus) 35%,transparent)}
+.field input::placeholder{color:var(--muted);opacity:.7;font-weight:400}
+.field .ref{font-size:10.5px;color:var(--muted);font-family:"IBM Plex Mono",monospace;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.field.wide{grid-column:span 2}
+@media (max-width:480px){.field.wide{grid-column:1 / -1}}
+.field.plain select,.field.plain input{background:var(--surface);border-color:var(--line-strong);color:var(--ink)}
+
+/* search */
+.search{position:relative;margin-bottom:22px}
+.search input{width:100%;font:inherit;font-size:15px;padding:11px 14px 11px 40px;border:1.5px solid var(--line-strong);border-radius:var(--radius);background:var(--surface);color:var(--ink)}
+.search input:focus{outline:0;border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 22%,transparent)}
+.search svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--muted);pointer-events:none}
+.sugg{position:absolute;left:0;right:0;top:calc(100% + 4px);background:var(--surface);border:1px solid var(--line-strong);border-radius:var(--radius);box-shadow:var(--shadow);z-index:15;max-height:320px;overflow:auto}
+.sugg button{display:flex;align-items:baseline;gap:10px;width:100%;text-align:left;border:0;background:transparent;padding:10px 14px;cursor:pointer;color:var(--ink);border-bottom:1px solid var(--line)}
+.sugg button:last-child{border-bottom:0}
+.sugg button:hover,.sugg button.hot{background:var(--surface-2)}
+.sugg b{font-weight:600}
+.sugg .ko{color:var(--ink-2);font-size:13px}
+.sugg .cls{margin-left:auto;font-size:11.5px;color:var(--muted);white-space:nowrap}
+.sugg .empty{padding:12px 14px;color:var(--muted);font-size:13.5px}
+
+/* drug cards */
+.rx-list{display:flex;flex-direction:column;gap:14px}
+.rx{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.rx-head{display:flex;align-items:center;gap:10px;padding:11px 14px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.rx-head .nm{display:flex;flex-direction:column;min-width:0;flex:1 1 auto}
+.rx-head h3{font-size:16px;font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.rx-head .ko{font-size:12.5px;color:var(--muted);font-weight:500}
+.rx-head .cls{font-size:12px;color:var(--ink-2)}
+.chip{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:999px;line-height:1.5;white-space:nowrap}
+.chip.high{color:var(--high);background:var(--high-soft)}
+.chip.warn{color:var(--warn);background:var(--warn-soft)}
+.chip.ok{color:var(--ok);background:var(--ok-soft)}
+.chip.na{color:var(--muted);background:var(--surface-2)}
+.chip.v{color:var(--venous-ink);background:var(--venous-soft)}
+.ibtn{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-2);font-size:12.5px;font-weight:600;padding:5px 10px;border-radius:7px;cursor:pointer;white-space:nowrap;min-height:30px}
+.ibtn:hover{background:var(--surface-2);color:var(--ink)}
+.ibtn.danger:hover{color:var(--high);border-color:var(--high)}
+.ibtn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.ibtn.primary:hover{background:var(--accent-ink);border-color:var(--accent-ink);color:#fff}
+.ibtn[aria-expanded="true"]{background:var(--accent-soft);color:var(--accent-ink);border-color:transparent}
+.ibtn:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.rx-body{padding:12px 14px 4px}
+.rx-body .igroup{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
+@media (max-width:480px){.rx-body .igroup{grid-template-columns:1fr 1fr}}
+.rx-info{padding:10px 14px 12px;background:var(--surface-2);border-top:1px solid var(--line);font-size:13.5px;line-height:1.6;color:var(--ink-2);display:grid;gap:6px 14px;grid-template-columns:auto 1fr}
+.rx-info dt{font-weight:600;color:var(--ink);white-space:nowrap;font-size:12.5px;padding-top:1px}
+.rx-info dd{margin:0}
+.rx-info dd.doses{font-family:"IBM Plex Mono",monospace;font-size:12.5px}
+.rx-info dd.doses div+div{margin-top:2px}
+.rx-info dd.doses .lb{font-family:"IBM Plex Sans KR",sans-serif;color:var(--muted);margin-right:6px}
+.rx-info dd.doses .cur{color:var(--accent-ink);font-weight:600}
+
+/* result strip inside card */
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;padding:0 14px 14px}
+@media (max-width:480px){.tiles{grid-template-columns:1fr 1fr}}
+.tile{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;min-width:0}
+.tile .k{font-size:12px;font-weight:600;color:var(--ink-2);line-height:1.5;display:flex;justify-content:space-between;gap:6px}
+.tile .k small{font-weight:500;color:var(--muted);font-size:11px;white-space:nowrap}
+.tile .v{font-family:"IBM Plex Mono",Menlo,monospace;font-variant-numeric:tabular-nums;font-size:21px;font-weight:600;line-height:1.1;letter-spacing:-.01em;white-space:nowrap}
+.tile .v small{font-family:"IBM Plex Sans KR",sans-serif;font-size:12px;font-weight:500;color:var(--muted);margin-left:3px;letter-spacing:0}
+.tile .r{font-size:10.5px;color:var(--muted);font-family:"IBM Plex Mono",monospace;line-height:1.5;margin-top:1px}
+.tile.accent{border-color:color-mix(in srgb,var(--accent) 55%,var(--line));background:color-mix(in srgb,var(--accent-soft) 45%,var(--surface))}
+.tile.accent .v{color:var(--accent-ink)}
+.tile.bad{border-color:color-mix(in srgb,var(--high) 55%,var(--line))}
+.tile.bad .v{color:var(--high)}
+.tile.warn .v{color:var(--warn)}
+.rx-foot{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;padding:0 14px 12px;font-size:12.5px;color:var(--muted)}
+.rx-foot .grow{flex:1 1 auto}
+
+/* callouts + empty */
+.callout{border-left:3px solid var(--accent);background:var(--surface);border-radius:0 8px 8px 0;padding:10px 14px;font-size:13.5px;line-height:1.65;color:var(--ink-2);margin-top:12px}
+.callout.warn{border-left-color:var(--warn)}
+.callout b{color:var(--ink)}
+.callout.ref{border-left:3px dashed var(--line-strong);background:transparent;color:var(--muted);font-size:13px;padding:6px 14px}
+.empty{border:1px dashed var(--line-strong);border-radius:var(--radius);padding:26px 16px;text-align:center;color:var(--muted);font-size:14px;line-height:1.6}
+.empty b{color:var(--ink-2);font-weight:600}
+
+/* saved list */
+.saved{display:flex;flex-direction:column;gap:10px}
+.saved .it{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:11px 14px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.saved .it .t{flex:1 1 220px;min-width:0}
+.saved .it h3{font-size:15px;font-weight:700}
+.saved .it p{font-size:12.5px;color:var(--ink-2);margin-top:2px;line-height:1.5}
+.saved .it .dt{font-size:11.5px;color:var(--muted);font-family:"IBM Plex Mono",monospace;white-space:nowrap}
+.saved .it .acts{display:flex;gap:6px}
+
+/* settings */
+.set{display:flex;flex-direction:column;gap:12px}
+.set .row{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.set .row .t{flex:1 1 200px}
+.set .row h3{font-size:14px;font-weight:700}
+.set .row p{font-size:12.5px;color:var(--muted);margin-top:2px;line-height:1.5}
+.ov{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.ov .r{display:flex;align-items:center;gap:10px;padding:9px 14px;border-bottom:1px solid var(--line);font-size:13.5px;flex-wrap:wrap}
+.ov .r:last-child{border-bottom:0}
+.ov .r b{font-weight:600}
+.ov .r .d{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink-2)}
+.ov .r .sp{font-size:11px;color:var(--muted)}
+.ov .r .ibtn{margin-left:auto}
+
+/* action bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:18;background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:9px 16px calc(9px + env(safe-area-inset-bottom))}
+.bar-inner{max-width:1120px;margin:0 auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.bar .sum{font-size:12.5px;color:var(--muted);flex:1 1 auto;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar .sum b{color:var(--ink);font-weight:600}
+
+.foot{margin-top:40px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 18px}
+.sw-toast{position:fixed;left:50%;bottom:calc(64px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);opacity:0;background:var(--ink);color:var(--bg);font-size:13px;font-weight:600;padding:9px 14px;border-radius:999px;box-shadow:0 6px 20px -6px rgba(0,0,0,.4);z-index:50;pointer-events:none;transition:opacity .25s,transform .25s;white-space:nowrap}
+.sw-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media (prefers-reduced-motion:reduce){.sw-toast{transition:none}}
+</style>
+
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <a class="home" href="../index.html" aria-label="홈으로">‹ 홈</a>
+      <h1>VECC Prescription</h1>
+    </div>
+    <div class="seg" role="group" aria-label="종 선택">
+      <button type="button" aria-pressed="true" data-sp="dog">DOG</button>
+      <button type="button" aria-pressed="false" data-sp="cat">CAT</button>
+    </div>
+  </div>
+  <nav class="tabs" role="tablist" aria-label="페이지">
+    <button class="tab" role="tab" id="tab-rx" data-panel="p-rx" aria-selected="true"><span class="dot"></span>처방 작성 <span class="cnt" id="cnt-rx">0</span></button>
+    <button class="tab" role="tab" id="tab-saved" data-panel="p-saved" aria-selected="false"><span class="dot"></span>저장된 처방 <span class="cnt" id="cnt-saved">0</span></button>
+    <button class="tab" role="tab" id="tab-set" data-panel="p-set" aria-selected="false"><span class="dot"></span>설정</button>
+  </nav>
+</header>
+
+<main>
+<!-- ===================== 처방 작성 ===================== -->
+<section class="panel active" id="p-rx" role="tabpanel" aria-labelledby="tab-rx">
+  <aside class="inputs">
+    <div class="inputs-head">
+      <h2>환자 입력</h2>
+      <span class="legend"><i></i> 노란 칸 = 직접 입력</span>
+    </div>
+    <div class="inputs-body">
+      <div class="igroup">
+        <div class="field"><label for="bw"><span>체중</span><span class="u">kg</span></label><input type="number" inputmode="decimal" step="0.1" min="0" id="bw" placeholder="0.0"><span class="ref">BW</span></div>
+        <div class="field"><label for="days"><span>처방 일수</span><span class="u">일</span></label><input type="number" inputmode="numeric" step="1" min="1" id="days" value="7"><span class="ref">총량 = 1회량 × 회/일 × 일수</span></div>
+        <div class="field wide"><label for="alias"><span>별칭</span><span class="u">선택</span></label><input type="text" id="alias" placeholder="예: 말티즈 7세 M — 환자 이름·차트번호는 넣지 않음" maxlength="40"><span class="ref">저장·복사 시 제목으로 씀</span></div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="search">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input type="search" id="q" placeholder="약물 검색 — 성분명·한글·상품명·계열" autocomplete="off" aria-label="약물 검색" aria-controls="sugg" aria-expanded="false">
+    <div class="sugg" id="sugg" role="listbox" hidden></div>
+  </div>
+
+  <div class="rx-list" id="rx-list"></div>
+  <div class="empty" id="rx-empty">위 검색창에서 약물을 골라 처방에 추가하세요.<br><b>표준 용량</b>이 채워지고, 보유 규격을 넣으면 조제량이 계산됩니다.</div>
+
+  <div class="callout ref" style="margin-top:22px">계산값은 <b>표준 용량 × 체중</b>(mg/마리 단위는 체중 무관)입니다. 정제 수는 반올림 단위(설정)로 올림·내림한 뒤 실제 1회 용량과 표준 대비 오차를 함께 보여줍니다.</div>
+</section>
+
+<!-- ===================== 저장된 처방 ===================== -->
+<section class="panel" id="p-saved" role="tabpanel" aria-labelledby="tab-saved">
+  <div class="sec"><span class="kicker">Saved</span><h2>저장된 처방</h2><span class="note">이 기기의 브라우저에만 저장됩니다</span></div>
+  <div class="saved" id="saved-list"></div>
+  <div class="empty" id="saved-empty">저장된 처방이 없습니다. 처방 작성 화면 아래 <b>저장</b>을 누르면 여기에 쌓입니다.</div>
+</section>
+
+<!-- ===================== 설정 ===================== -->
+<section class="panel" id="p-set" role="tabpanel" aria-labelledby="tab-set">
+  <div class="sec"><span class="kicker">Display</span><h2>표기 설정</h2><span class="note">저장은 항상 표준 단위, 표시·입력만 바뀝니다</span></div>
+  <div class="set">
+    <div class="row">
+      <div class="t"><h3>투여 간격 표기</h3><p>q24h · q12h · q8h 또는 SID · BID · TID</p></div>
+      <div class="seg sm" role="group" aria-label="투여 간격 표기"><button type="button" data-set="freq" data-val="q" aria-pressed="true">q24h</button><button type="button" data-set="freq" data-val="sid" aria-pressed="false">SID</button></div>
+    </div>
+    <div class="row">
+      <div class="t"><h3>정제 반올림 단위</h3><p>조제할 때 정제를 어디까지 쪼갤지</p></div>
+      <div class="seg sm" role="group" aria-label="반올림 단위"><button type="button" data-set="round" data-val="1" aria-pressed="false">1 T</button><button type="button" data-set="round" data-val="0.5" aria-pressed="true">½ T</button><button type="button" data-set="round" data-val="0.25" aria-pressed="false">¼ T</button></div>
+    </div>
+    <div class="row">
+      <div class="t"><h3>용량 단위</h3><p>약물 카드에서 mg/kg · µg/kg · mg/마리를 바꾸면 그 약물·종에서 기억되고, 다음에 추가할 때 같은 단위로 환산해 보여줍니다</p></div>
+    </div>
+  </div>
+
+  <div class="sec" style="margin-top:28px"><span class="kicker">Custom</span><h2>내가 바꾼 표준 용량</h2><span class="note">DB가 갱신돼도 유지됩니다</span></div>
+  <div class="ov" id="ov-list"></div>
+  <div class="empty" id="ov-empty">바꾼 용량이 없습니다. 약물 카드에서 용량을 고친 뒤 <b>이 용량을 내 기본값으로</b>를 누르면 여기에 표시됩니다.</div>
+
+  <div class="sec" style="margin-top:28px"><span class="kicker">Stock</span><h2>보유 규격</h2><span class="note">약물별로 마지막에 입력한 규격</span></div>
+  <div class="ov" id="stock-list"></div>
+  <div class="empty" id="stock-empty">아직 입력한 규격이 없습니다.</div>
+</section>
+
+<div class="foot">
+  <span>약물 DB는 과에서 정리한 표준 용량이며 개·고양이 경구 투여 기준입니다. 미검토 표시가 있는 약물은 확인 후 사용하세요.</span>
+  <span>임상 판단의 보조 도구이며 최종 결정은 담당 수의사에게 있습니다.</span>
+</div>
+</main>
+
+<div class="bar" id="bar" hidden>
+  <div class="bar-inner">
+    <span class="sum" id="bar-sum"></span>
+    <button type="button" class="ibtn" id="btn-copy">조제 지시서 복사</button>
+    <button type="button" class="ibtn danger" id="btn-clear">비우기</button>
+    <button type="button" class="ibtn primary" id="btn-save">저장</button>
+  </div>
+</div>
+
+<script src="../js/auth-gate.js"></script>
+<script src="../js/data-sync.js"></script>
+<script>
+(function(){
+  'use strict';
+  const DATA = '../data/drugs/';
+  const $ = (s, r=document) => r.querySelector(s), $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+  const esc = (s) => String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  const store = {
+    get(k, d){ try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch(e){ return d; } },
+    set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
+  };
+  const K = { settings:'rx:settings', overrides:'rx:overrides', stock:'rx:stock', saved:'rx:saved', draft:'rx:draft', units:'rx:units' };
+
+  /* ---------- 상태 ---------- */
+  const S = {
+    index: [], drugs: new Map(), pending: new Map(),
+    species: 'dog', bw: 0, days: 7, alias: '',
+    items: [],            // [{uid, id, doseIdx, val, unit, freq, form, strength, mode:'tablet'|'suspension', volume, open}]
+    settings: Object.assign({ freq:'q', round:0.5 }, store.get(K.settings, {})),
+    units: store.get(K.units, {}),           // {id:{species:unit}} 약물별로 마지막에 고른 표시 단위
+    overrides: store.get(K.overrides, {}),   // {id:{species:{val,unit,freq,label}}}
+    stock: store.get(K.stock, {}),           // {id:{form,strength,mode,volume}}
+    saved: store.get(K.saved, [])            // [{ts,alias,species,bw,days,items:[…]}]
+  };
+  let uidSeq = 1;
+
+  /* ---------- 단위·간격 ---------- */
+  const FREQ = { q24h:{h:24,sid:'SID',n:1}, q12h:{h:12,sid:'BID',n:2}, q8h:{h:8,sid:'TID',n:3}, q6h:{h:6,sid:'QID',n:4}, once:{h:0,sid:'1회',n:0} };
+  const freqLabel = (f) => !FREQ[f] ? f : (S.settings.freq === 'sid' ? FREQ[f].sid : (f === 'once' ? '1회' : f));
+  const freqN = (f) => FREQ[f] ? FREQ[f].n : 1;
+  const normFreq = (f) => FREQ[f] ? f : (String(f).startsWith('q12') ? 'q12h' : 'q24h');   // "q12–24h" 같은 표기는 첫 값을 기본으로
+  const UNITS = ['mg/kg','mcg/kg','mg/animal'];
+  const unitLabel = (u) => ({ 'mg/kg':'mg/kg', 'mcg/kg':'µg/kg', 'mg/animal': S.species === 'cat' ? 'mg/cat' : 'mg/dog' })[u] || u;
+  /* 1회 mg 로 환산. 체중이 없으면 per-kg 단위는 null */
+  function toMg(val, unit, bw){
+    if (!(val > 0)) return null;
+    if (unit === 'mg/animal') return val;
+    if (!(bw > 0)) return null;
+    return unit === 'mcg/kg' ? val * bw / 1000 : val * bw;
+  }
+  function fromMg(mg, unit, bw){
+    if (mg == null) return null;
+    if (unit === 'mg/animal') return mg;
+    if (!(bw > 0)) return null;
+    return unit === 'mcg/kg' ? mg / bw * 1000 : mg / bw;
+  }
+  const fmt = (n, d) => n == null || !isFinite(n) ? '—' : (Math.round(n * Math.pow(10, d)) / Math.pow(10, d)).toString();
+  const sig = (n) => n == null || !isFinite(n) ? '—' : (n >= 100 ? fmt(n,1) : n >= 10 ? fmt(n,2) : fmt(n,3));   // 18.75 같은 입력 정밀도를 잃지 않게
+  const tfmt = (t) => { const r = Math.round(t * 100) / 100; const w = Math.floor(r), f = r - w; const fr = f === 0 ? '' : f === 0.5 ? '½' : f === 0.25 ? '¼' : f === 0.75 ? '¾' : fmt(f,2).slice(1); return (w || !fr ? w : '') + fr; };
+
+  /* ---------- 데이터 ---------- */
+  function fetchDrug(id){
+    if (S.drugs.has(id)) return Promise.resolve(S.drugs.get(id));
+    if (!S.pending.has(id)) {
+      const p = fetch(DATA + encodeURIComponent(id) + '.json')
+        .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then((d) => { S.drugs.set(id, d); return d; })
+        .finally(() => S.pending.delete(id));
+      S.pending.set(id, p);
+    }
+    return S.pending.get(id);
+  }
+  async function loadIndex(){
+    const r = await fetch(DATA + 'index.json');
+    if (!r.ok) throw new Error(r.status);
+    const j = await r.json();
+    S.index = (j.drugs || []).slice().sort((a,b) => a.name.localeCompare(b.name));
+  }
+  function dosesFor(d, sp){ return (d.doses || []).filter(x => x.species === sp); }
+  function defaultDoseIdx(d, sp){ const ds = dosesFor(d, sp); const i = ds.findIndex(x => x.default); return i < 0 ? 0 : i; }
+
+  /* ---------- 검색 ---------- */
+  const q = $('#q'), sugg = $('#sugg');
+  let hot = -1;
+  function search(){
+    const t = q.value.trim().toLowerCase();
+    if (!t) { sugg.hidden = true; q.setAttribute('aria-expanded','false'); return; }
+    const hits = S.index.filter(d => [d.name, d.name_ko, d.class, ...(d.brand||[]), ...(d.tags||[])].join(' ').toLowerCase().includes(t)).slice(0, 12);
+    sugg.innerHTML = hits.length
+      ? hits.map((d,i) => `<button type="button" role="option" data-id="${esc(d.id)}"${i===0?' class="hot"':''}><b>${esc(d.name)}</b><span class="ko">${esc(d.name_ko||'')}</span><span class="cls">${esc(d.class||'')}</span></button>`).join('')
+      : `<div class="empty" style="border:0;padding:12px 14px;text-align:left">일치하는 약물이 없습니다. DB에 아직 없는 약물일 수 있습니다.</div>`;
+    hot = hits.length ? 0 : -1;
+    sugg.hidden = false; q.setAttribute('aria-expanded','true');
+  }
+  q.addEventListener('input', search);
+  q.addEventListener('focus', () => { if (q.value.trim()) search(); });
+  q.addEventListener('keydown', (e) => {
+    const bs = $$('button', sugg);
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { if (!bs.length) return; e.preventDefault(); hot = (hot + (e.key === 'ArrowDown' ? 1 : -1) + bs.length) % bs.length; bs.forEach((b,i) => b.classList.toggle('hot', i === hot)); }
+    else if (e.key === 'Enter') { if (bs[hot]) { e.preventDefault(); bs[hot].click(); } }
+    else if (e.key === 'Escape') { sugg.hidden = true; }
+  });
+  sugg.addEventListener('click', (e) => { const b = e.target.closest('button[data-id]'); if (!b) return; addDrug(b.dataset.id); q.value = ''; sugg.hidden = true; q.setAttribute('aria-expanded','false'); });
+  document.addEventListener('click', (e) => { if (!e.target.closest('.search')) sugg.hidden = true; });
+
+  /* ---------- 항목 추가/삭제 ---------- */
+  function itemFromDrug(d, sp){
+    const ov = (S.overrides[d.id] || {})[sp];
+    const st = S.stock[d.id] || {};
+    const di = defaultDoseIdx(d, sp);
+    const base = dosesFor(d, sp)[di];
+    const it = { uid: uidSeq++, id: d.id, doseIdx: di, open: false,
+      form: st.form || (d.strengths && d.strengths[0] ? d.strengths[0].form : 'tablet'),
+      strength: st.strength || (d.strengths && d.strengths[0] ? d.strengths[0].mg : ''),
+      mode: st.mode || 'tablet', volume: st.volume || '' };
+    if (ov) { it.val = ov.val; it.unit = ov.unit; it.freq = ov.freq; it.doseIdx = -1; }
+    else if (base) { it.val = base.low; it.unit = base.unit; it.freq = normFreq(base.freq); }
+    else { it.val = ''; it.unit = 'mg/kg'; it.freq = 'q24h'; }
+    const pu = (S.units[d.id] || {})[sp];
+    if (pu && pu !== it.unit) { const v = fromMg(toMg(+it.val, it.unit, S.bw), pu, S.bw); if (v != null) { it.val = +sig(v); it.unit = pu; } }
+    return it;
+  }
+  async function addDrug(id){
+    if (S.items.some(x => x.id === id)) { toast('이미 처방에 있는 약물입니다'); return; }
+    let d;
+    try { d = await fetchDrug(id); } catch(e){ toast('약물 파일을 불러오지 못했습니다'); return; }
+    S.items.push(itemFromDrug(d, S.species));
+    render(); saveDraft();
+  }
+  function applyDose(it, idx){                     // 종 변경·용량 선택 시 표준값으로 되돌림
+    const d = S.drugs.get(it.id); const ds = dosesFor(d, S.species);
+    if (idx === -1) { const ov = (S.overrides[it.id]||{})[S.species]; if (ov) { it.val = ov.val; it.unit = ov.unit; it.freq = ov.freq; it.doseIdx = -1; return; } idx = defaultDoseIdx(d, S.species); }
+    const b = ds[idx];
+    if (b) { it.val = b.low; it.unit = b.unit; it.freq = normFreq(b.freq); it.doseIdx = idx; }
+    else { it.val = ''; it.doseIdx = 0; }
+  }
+
+  /* ---------- 계산 ---------- */
+  function calc(it){
+    const d = S.drugs.get(it.id); const ds = dosesFor(d, S.species); const b = it.doseIdx >= 0 ? ds[it.doseIdx] : null;
+    const bw = S.bw, mg = toMg(+it.val, it.unit, bw);
+    const n = freqN(it.freq), days = it.freq === 'once' ? 1 : Math.max(1, S.days|0);
+    const dosesTotal = it.freq === 'once' ? 1 : n * days;
+    const total = mg == null ? null : mg * dosesTotal;
+    const out = { mg, n, days, dosesTotal, total, base: b, range: null, warn: null };
+    if (b && b.low !== b.high) out.range = { lo: toMg(b.low, b.unit, bw), hi: toMg(b.high, b.unit, bw) };
+    if (mg != null && out.range && (mg < out.range.lo - 1e-9 || mg > out.range.hi + 1e-9)) out.warn = '표준 범위 밖';
+    else if (mg != null && b && b.low === b.high && Math.abs(mg - toMg(b.low, b.unit, bw)) > 1e-9) out.warn = '표준과 다름';
+    const st = +it.strength;
+    if (total != null && st > 0) {
+      if (it.mode === 'suspension') {                       // 규격 = mg/mL 원액이 아니라, 정제를 갈아 총 mL로 만든다
+        const vol = +it.volume;
+        const rawT = total / st, r = S.settings.round, T = Math.round(rawT / r) * r;
+        out.T = T; out.rawT = rawT;
+        if (vol > 0) { out.conc = T * st / vol; out.mlPer = mg / out.conc; out.actual = out.mlPer * out.conc; }
+      } else {
+        const rawT = total / st, r = S.settings.round, T = Math.round(rawT / r) * r;
+        out.T = T; out.rawT = rawT;
+        out.actual = dosesTotal ? T * st / dosesTotal : null;   // 정제를 갈아 dosesTotal포로 나눌 때 1포 용량
+        out.perDoseT = T / dosesTotal;
+      }
+      if (out.actual != null && mg) out.err = (out.actual - mg) / mg * 100;
+    }
+    return out;
+  }
+
+  /* ---------- 렌더 ---------- */
+  function renderItem(it){
+    const d = S.drugs.get(it.id); const ds = dosesFor(d, S.species); const c = calc(it);
+    const ov = (S.overrides[it.id]||{})[S.species];
+    const unitOpts = UNITS.map(u => `<option value="${u}"${it.unit===u?' selected':''}>${unitLabel(u)}</option>`).join('');
+    const freqOpts = Object.keys(FREQ).map(f => `<option value="${f}"${it.freq===f?' selected':''}>${freqLabel(f)}</option>`).join('');
+    const doseOpts = [
+      ...(ov ? [`<option value="-1"${it.doseIdx===-1?' selected':''}>내 기본값 — ${sig(ov.val)} ${unitLabel(ov.unit)} ${freqLabel(ov.freq)}</option>`] : []),
+      ...ds.map((x,i) => `<option value="${i}"${it.doseIdx===i?' selected':''}>${esc(x.label||'표준')} — ${x.low===x.high?sig(x.low):sig(x.low)+'–'+sig(x.high)} ${unitLabel(x.unit)} ${freqLabel(normFreq(x.freq))}</option>`)
+    ].join('');
+    const noSp = !ds.length && !ov;
+    const strengthOpts = (d.strengths||[]).map(s => `<option value="${s.mg}">${s.mg} mg ${esc(s.form)}</option>`).join('');
+    const isCustom = it.doseIdx === -1 ? false : (c.base ? (+it.val !== +c.base.low || it.unit !== c.base.unit || it.freq !== normFreq(c.base.freq)) : +it.val > 0);   // DB 표준값에서 손댔는지
+    const chips = [
+      d.reviewed ? `<span class="chip ok">검토 ${esc(d.reviewed)}</span>` : `<span class="chip warn">미검토</span>`,
+      it.doseIdx === -1 ? `<span class="chip v">내 기본값</span>` : (c.warn ? `<span class="chip high">${c.warn}</span>` : '')
+    ].join('');
+    const tiles = c.mg == null
+      ? `<div class="tiles"><div class="tile"><span class="k">1회 용량</span><span class="v">—</span><span class="r">${it.unit==='mg/animal'?'용량을 입력하세요':'체중과 용량을 입력하세요'}</span></div></div>`
+      : `<div class="tiles">
+          <div class="tile accent${c.warn?' bad':''}"><span class="k">1회 용량</span><span class="v">${sig(c.mg)}<small>mg</small></span><span class="r">${c.range?`표준 ${sig(c.range.lo)}–${sig(c.range.hi)} mg`:(c.base?`표준 ${sig(toMg(c.base.low,c.base.unit,S.bw))} mg`:'&nbsp;')}</span></div>
+          <div class="tile"><span class="k">하루 <small>${freqLabel(it.freq)}</small></span><span class="v">${it.freq==='once'?'1회':sig(c.mg*c.n)+'<small>mg</small>'}</span><span class="r">${it.freq==='once'?'단회 투여':`${c.n}회 × ${c.days}일 = ${c.dosesTotal}회`}</span></div>
+          <div class="tile"><span class="k">총 필요량</span><span class="v">${sig(c.total)}<small>mg</small></span><span class="r">${+it.strength>0?`${fmt(c.rawT,2)} T 상당`:'규격 입력 필요'}</span></div>
+          ${c.T != null ? (it.mode === 'suspension'
+            ? `<div class="tile accent"><span class="k">정제 수</span><span class="v">${tfmt(c.T)}<small>T</small></span><span class="r">${it.strength} mg × ${tfmt(c.T)} = ${sig(c.T*+it.strength)} mg</span></div>
+               <div class="tile${c.err!=null&&Math.abs(c.err)>=10?' warn':''}"><span class="k">1회 투여량</span><span class="v">${c.mlPer!=null?sig(c.mlPer)+'<small>mL</small>':'—'}</span><span class="r">${c.conc!=null?`${sig(c.conc)} mg/mL · 총 ${it.volume} mL`:'총 부피를 입력하세요'}</span></div>`
+            : `<div class="tile accent"><span class="k">정제 수</span><span class="v">${tfmt(c.T)}<small>T</small></span><span class="r">갈아서 ${c.dosesTotal}포 · 1포 ${tfmt(c.perDoseT)} T</span></div>
+               <div class="tile${c.err!=null&&Math.abs(c.err)>=10?' warn':''}"><span class="k">실제 1회 용량</span><span class="v">${sig(c.actual)}<small>mg</small></span><span class="r">표준 대비 ${c.err>=0?'+':''}${fmt(c.err,1)}%</span></div>`) : ''}
+        </div>`;
+    const compWarn = d.compounding && /안정성|피함|불확실/.test(d.compounding) && it.mode === 'suspension' ? `<div class="callout warn" style="margin:0 14px 12px"><b>조제 현탁액 주의</b> — ${esc(d.compounding)}</div>` : '';
+    const info = `<dl class="rx-info" ${it.open?'':'hidden'} id="info-${it.uid}">
+        <dt>적응증</dt><dd>${esc(d.indication||'—')}</dd>
+        <dt>금기·주의</dt><dd>${esc(d.contraindication||'—')}</dd>
+        ${d.adverse?`<dt>부작용</dt><dd>${esc(d.adverse)}</dd>`:''}
+        <dt>용량 (${S.species==='dog'?'개':'고양이'})</dt><dd class="doses">${ds.length?ds.map((x,i)=>`<div class="${i===it.doseIdx?'cur':''}"><span class="lb">${esc(x.label||'표준')}</span>${x.low===x.high?sig(x.low):sig(x.low)+'–'+sig(x.high)} ${unitLabel(x.unit)} ${esc(x.route||'PO')} ${esc(x.freq)}${x.note?` <span class="lb">· ${esc(x.note)}</span>`:''}</div>`).join(''):'<div>요약에 해당 종 용량 없음</div>'}</dd>
+        ${d.monitoring?`<dt>모니터링</dt><dd>${esc(d.monitoring)}</dd>`:''}
+        ${d.compounding?`<dt>조제</dt><dd>${esc(d.compounding)}</dd>`:''}
+        <dt>규격</dt><dd>${(d.strengths||[]).map(s=>`${s.mg} mg ${esc(s.form)}`).join(' · ')||'—'}${d.brand&&d.brand.length?` <span style="color:var(--muted)">(${esc(d.brand.join(', '))})</span>`:''}</dd>
+      </dl>`;
+    return `<article class="rx" data-uid="${it.uid}">
+      <div class="rx-head">
+        <div class="nm"><h3>${esc(d.name)} <span class="ko">${esc(d.name_ko||'')}</span> ${chips}</h3><span class="cls">${esc(d.class||'')}</span></div>
+        <button type="button" class="ibtn" data-act="info" aria-expanded="${it.open}" aria-controls="info-${it.uid}">약물 정보</button>
+        <button type="button" class="ibtn danger" data-act="remove" aria-label="${esc(d.name)} 삭제">삭제</button>
+      </div>
+      ${info}
+      <div class="rx-body">
+        ${noSp ? `<div class="callout warn" style="margin:0 0 12px"><b>${S.species==='dog'?'개':'고양이'} 용량이 DB에 없습니다.</b> 직접 입력하거나 종을 확인하세요.</div>` : ''}
+        <div class="igroup">
+          <div class="field wide plain"><label><span>표준 용량 선택</span><span class="u">${ds.length}개</span></label><select data-f="doseIdx"${noSp?' disabled':''}>${doseOpts||'<option value="0">—</option>'}</select><span class="ref">${c.base&&c.base.note?esc(c.base.note):(it.doseIdx===-1&&ov?'내가 저장한 기본값':'&nbsp;')}</span></div>
+          <div class="field"><label><span>용량</span><span class="u">${isCustom?'수정됨':'표준'}</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="val" value="${esc(it.val)}"><span class="ref">${c.base?(c.base.low===c.base.high?`표준 ${sig(c.base.low)}`:`표준 ${sig(c.base.low)}–${sig(c.base.high)}`)+' '+unitLabel(c.base.unit):'&nbsp;'}</span></div>
+          <div class="field plain"><label><span>단위</span></label><select data-f="unit">${unitOpts}</select><span class="ref">${it.unit!=='mg/animal'&&!(S.bw>0)?'체중 필요':'&nbsp;'}</span></div>
+          <div class="field plain"><label><span>간격</span></label><select data-f="freq">${freqOpts}</select><span class="ref">${it.freq==='once'?'일수 무시':`하루 ${freqN(it.freq)}회`}</span></div>
+          <div class="field"><label><span>보유 규격</span><span class="u">mg/T</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="strength" value="${esc(it.strength)}" list="st-${it.uid}"><datalist id="st-${it.uid}">${strengthOpts}</datalist><span class="ref">${(d.strengths||[]).map(s=>s.mg).join(' / ')||'—'} mg</span></div>
+          <div class="field plain"><label><span>조제 형태</span></label><select data-f="mode"><option value="tablet"${it.mode==='tablet'?' selected':''}>분말·캡슐 (포 분할)</option><option value="suspension"${it.mode==='suspension'?' selected':''}>현탁액 (총 mL)</option></select><span class="ref">&nbsp;</span></div>
+          ${it.mode==='suspension'?`<div class="field"><label><span>총 부피</span><span class="u">mL</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="volume" value="${esc(it.volume)}" placeholder="0"><span class="ref">정제 전량을 이 부피로</span></div>`:''}
+        </div>
+      </div>
+      ${tiles}
+      ${compWarn}
+      <div class="rx-foot">
+        <span class="grow">${it.doseIdx===-1?'내 기본값 사용 중':(c.base?`표준: ${esc(c.base.label||'')} ${esc(c.base.route||'PO')}`:'')}</span>
+        ${isCustom?`<button type="button" class="ibtn" data-act="setdefault">이 용량을 내 기본값으로</button>`:''}
+        ${(it.doseIdx===-1||isCustom)&&ds.length?`<button type="button" class="ibtn" data-act="reset">DB 표준으로</button>`:''}
+      </div>
+    </article>`;
+  }
+  function render(){
+    const list = $('#rx-list');
+    list.innerHTML = S.items.map(renderItem).join('');
+    $('#rx-empty').hidden = !!S.items.length;
+    $('#cnt-rx').textContent = S.items.length;
+    renderBar();
+  }
+  function renderBar(){
+    $('#bar').hidden = !S.items.length || $('#tab-rx').getAttribute('aria-selected') !== 'true';
+    const okN = S.items.filter(it => calc(it).mg != null).length;
+    $('#bar-sum').innerHTML = `<b>${S.species==='dog'?'DOG':'CAT'}</b> ${S.bw>0?S.bw+' kg':'체중 없음'} · ${S.items.length}개 약물${okN<S.items.length?` · ${S.items.length-okN}개 계산 대기`:''}`;
+  }
+  $('#rx-list').addEventListener('input', (e) => {
+    const f = e.target.dataset.f; if (!f) return;
+    const it = S.items.find(x => x.uid === +e.target.closest('.rx').dataset.uid); if (!it) return;
+    it[f] = e.target.value;
+    if (['strength','mode','volume'].includes(f)) S.stock[it.id] = { form: it.form, strength: it.strength, mode: it.mode, volume: it.volume }, store.set(K.stock, S.stock);
+    if (['val','strength','volume'].includes(f)) { updateItem(it); renderBar(); return; }   // 숫자 입력 중에는 카드 전체를 다시 그리지 않음 (포커스 유지)
+    render(); saveDraft();
+  });
+  $('#rx-list').addEventListener('change', (e) => {
+    const f = e.target.dataset.f; if (!f) return;
+    const it = S.items.find(x => x.uid === +e.target.closest('.rx').dataset.uid); if (!it) return;
+    if (f === 'doseIdx') { applyDose(it, +e.target.value); }
+    else if (f === 'unit') {                         // 단위 바꾸면 값 환산
+      const mg = toMg(+it.val, it.unit, S.bw); it.unit = e.target.value;
+      const v = fromMg(mg, it.unit, S.bw); if (v != null) it.val = +sig(v);
+      S.units[it.id] = S.units[it.id] || {}; S.units[it.id][S.species] = it.unit; store.set(K.units, S.units);
+    }
+    else if (f === 'val') { it.val = e.target.value; }
+    render(); saveDraft();
+  });
+  function updateItem(it){                           // 값 입력 중 타일만 갱신
+    const art = $(`.rx[data-uid="${it.uid}"]`); if (!art) return;
+    const tmp = document.createElement('div'); tmp.innerHTML = renderItem(it);
+    ['.tiles','.rx-foot'].forEach(sel => { const a = $(sel, art), b = $(sel, tmp); if (a && b) a.replaceWith(b); });
+    const ch = $('.rx-head h3', tmp); const cur = $('.rx-head h3', art); if (ch && cur) cur.replaceWith(ch);
+    const lbl = $('[data-f="val"]', art).closest('.field').querySelector('label .u'); if (lbl) lbl.textContent = $('[data-f="val"]', tmp).closest('.field').querySelector('label .u').textContent;
+    saveDraft();
+  }
+  $('#rx-list').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-act]'); if (!b) return;
+    const it = S.items.find(x => x.uid === +b.closest('.rx').dataset.uid); if (!it) return;
+    const act = b.dataset.act;
+    if (act === 'remove') { S.items = S.items.filter(x => x !== it); }
+    else if (act === 'info') { it.open = !it.open; }
+    else if (act === 'reset') { delete (S.overrides[it.id]||{})[S.species]; if (S.overrides[it.id] && !Object.keys(S.overrides[it.id]).length) delete S.overrides[it.id]; store.set(K.overrides, S.overrides); applyDose(it, defaultDoseIdx(S.drugs.get(it.id), S.species)); toast('DB 표준 용량으로 되돌렸습니다'); }
+    else if (act === 'setdefault') {
+      if (!(+it.val > 0)) { toast('용량을 먼저 입력하세요'); return; }
+      const c = calc(it);
+      S.overrides[it.id] = S.overrides[it.id] || {};
+      S.overrides[it.id][S.species] = { val: +it.val, unit: it.unit, freq: it.freq, label: c.base ? (c.base.label||'') : '' };
+      store.set(K.overrides, S.overrides); it.doseIdx = -1; toast('내 기본값으로 저장했습니다');
+    }
+    render(); renderSettings(); saveDraft();
+  });
+
+  /* ---------- 환자 입력·종 ---------- */
+  $('#bw').addEventListener('input', () => { S.bw = +$('#bw').value || 0; render(); saveDraft(); });
+  $('#days').addEventListener('input', () => { S.days = +$('#days').value || 1; render(); saveDraft(); });
+  $('#alias').addEventListener('input', () => { S.alias = $('#alias').value; saveDraft(); });
+  $$('.top .seg button[data-sp]').forEach(b => b.addEventListener('click', () => setSpecies(b.dataset.sp)));
+  function setSpecies(sp, silent){
+    S.species = sp;
+    $$('.top .seg button[data-sp]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.sp === sp)));
+    S.items.forEach(it => applyDose(it, -1));
+    if (!silent) { render(); saveDraft(); }
+  }
+
+  /* ---------- 탭 ---------- */
+  $$('.tab').forEach(t => t.addEventListener('click', () => showTab(t.id)));
+  function showTab(id){
+    $$('.tab').forEach(t => { const on = t.id === id; t.setAttribute('aria-selected', String(on)); $('#' + t.dataset.panel).classList.toggle('active', on); });
+    $('#bar').hidden = id !== 'tab-rx' || !S.items.length;
+    if (id === 'tab-saved') renderSaved();
+    if (id === 'tab-set') renderSettings();
+  }
+
+  /* ---------- 임시 저장(draft) ---------- */
+  function saveDraft(){ store.set(K.draft, { species: S.species, bw: S.bw, days: S.days, alias: S.alias, items: S.items.map(({uid, open, ...r}) => r) }); }
+  async function restoreDraft(){
+    const d = store.get(K.draft, null); if (!d) return;
+    S.bw = d.bw || 0; S.days = d.days || 7; S.alias = d.alias || '';
+    $('#bw').value = S.bw || ''; $('#days').value = S.days; $('#alias').value = S.alias;
+    setSpecies(d.species || 'dog', true);
+    const items = [];
+    for (const r of (d.items || [])) { try { await fetchDrug(r.id); items.push(Object.assign({ uid: uidSeq++, open: false }, r)); } catch(e){} }
+    S.items = items;
+  }
+
+  /* ---------- 저장·복사 ---------- */
+  function rxText(){
+    const lines = [`[${S.alias || '처방'}] ${S.species==='dog'?'개':'고양이'} ${S.bw>0?S.bw+' kg':''} · ${S.days}일`.replace(/\s+·/,' ·')];
+    S.items.forEach(it => {
+      const d = S.drugs.get(it.id), c = calc(it);
+      let l = `- ${d.name} ${sig(+it.val)} ${unitLabel(it.unit)} PO ${freqLabel(it.freq)}`;
+      if (c.mg != null) l += ` → 1회 ${sig(c.mg)} mg`;
+      if (c.T != null) l += it.mode === 'suspension'
+        ? ` / ${it.strength} mg T × ${tfmt(c.T)} → ${it.volume||'?'} mL${c.conc?` (${sig(c.conc)} mg/mL, 1회 ${sig(c.mlPer)} mL)`:''}`
+        : ` / ${it.strength} mg T × ${tfmt(c.T)} → ${c.dosesTotal}포 (1포 ${sig(c.actual)} mg${c.err!=null?`, ${c.err>=0?'+':''}${fmt(c.err,1)}%`:''})`;
+      lines.push(l);
+    });
+    return lines.join('\n');
+  }
+  $('#btn-copy').addEventListener('click', async () => {
+    const t = rxText();
+    try { await navigator.clipboard.writeText(t); toast('조제 지시서를 복사했습니다'); }
+    catch(e){ const ta = document.createElement('textarea'); ta.value = t; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); toast('복사했습니다'); } catch(_){ toast('복사에 실패했습니다'); } ta.remove(); }
+  });
+  $('#btn-clear').addEventListener('click', () => { if (!S.items.length || confirm('처방 목록을 비울까요?')) { S.items = []; render(); saveDraft(); } });
+  $('#btn-save').addEventListener('click', () => {
+    if (!S.items.length) return;
+    const rec = { ts: Date.now(), alias: S.alias || '', species: S.species, bw: S.bw, days: S.days, items: S.items.map(({uid, open, ...r}) => r) };
+    S.saved.unshift(rec); S.saved = S.saved.slice(0, 50); store.set(K.saved, S.saved);
+    $('#cnt-saved').textContent = S.saved.length; toast('저장했습니다');
+  });
+  function renderSaved(){
+    const host = $('#saved-list'); $('#cnt-saved').textContent = S.saved.length;
+    $('#saved-empty').hidden = !!S.saved.length;
+    host.innerHTML = S.saved.map((r, i) => {
+      const dt = new Date(r.ts); const ds = `${dt.getFullYear()}-${String(dt.getMonth()+1).padStart(2,'0')}-${String(dt.getDate()).padStart(2,'0')} ${String(dt.getHours()).padStart(2,'0')}:${String(dt.getMinutes()).padStart(2,'0')}`;
+      const names = r.items.map(x => { const d = S.index.find(y => y.id === x.id); return `${d ? d.name : x.id} ${sig(+x.val)} ${x.unit==='mg/animal'?(r.species==='cat'?'mg/cat':'mg/dog'):x.unit==='mcg/kg'?'µg/kg':x.unit} ${freqLabel(x.freq)}`; }).join(' · ');
+      return `<div class="it"><div class="t"><h3>${esc(r.alias||'처방')} <span class="chip na">${r.species==='dog'?'DOG':'CAT'}${r.bw>0?' '+r.bw+' kg':''} · ${r.days}일</span></h3><p>${esc(names)}</p></div><span class="dt">${ds}</span><div class="acts"><button type="button" class="ibtn primary" data-i="${i}" data-act="load">불러오기</button><button type="button" class="ibtn danger" data-i="${i}" data-act="del">삭제</button></div></div>`;
+    }).join('');
+  }
+  $('#saved-list').addEventListener('click', async (e) => {
+    const b = e.target.closest('button[data-act]'); if (!b) return;
+    const i = +b.dataset.i, r = S.saved[i]; if (!r) return;
+    if (b.dataset.act === 'del') { if (confirm('이 처방을 삭제할까요?')) { S.saved.splice(i,1); store.set(K.saved, S.saved); renderSaved(); } return; }
+    S.bw = r.bw; S.days = r.days; S.alias = r.alias; $('#bw').value = S.bw || ''; $('#days').value = S.days; $('#alias').value = S.alias;
+    setSpecies(r.species, true);
+    const items = [];
+    for (const x of r.items) { try { await fetchDrug(x.id); items.push(Object.assign({ uid: uidSeq++, open: false }, x)); } catch(e){} }
+    S.items = items; render(); saveDraft(); showTab('tab-rx'); toast('불러왔습니다');
+  });
+
+  /* ---------- 설정 ---------- */
+  $$('.set [data-set]').forEach(b => b.addEventListener('click', () => {
+    const k = b.dataset.set; S.settings[k] = k === 'round' ? +b.dataset.val : b.dataset.val;
+    store.set(K.settings, S.settings); renderSettings(); render();
+  }));
+  function renderSettings(){
+    $$('.set [data-set]').forEach(b => b.setAttribute('aria-pressed', String(String(S.settings[b.dataset.set]) === b.dataset.val)));
+    const rows = [];
+    Object.entries(S.overrides).forEach(([id, bySp]) => Object.entries(bySp).forEach(([sp, o]) => {
+      const d = S.index.find(x => x.id === id);
+      rows.push(`<div class="r"><b>${esc(d?d.name:id)}</b><span class="sp">${sp==='dog'?'개':'고양이'}</span><span class="d">${sig(o.val)} ${o.unit==='mg/animal'?(sp==='cat'?'mg/cat':'mg/dog'):o.unit==='mcg/kg'?'µg/kg':o.unit} ${freqLabel(o.freq)}</span>${o.label?`<span class="sp">${esc(o.label)}</span>`:''}<button type="button" class="ibtn danger" data-ov="${esc(id)}" data-sp="${sp}">지우기</button></div>`);
+    }));
+    $('#ov-list').innerHTML = rows.join(''); $('#ov-empty').hidden = !!rows.length;
+    const st = Object.entries(S.stock).filter(([,v]) => +v.strength > 0).map(([id, v]) => { const d = S.index.find(x => x.id === id); return `<div class="r"><b>${esc(d?d.name:id)}</b><span class="d">${esc(v.strength)} mg/T</span><span class="sp">${v.mode==='suspension'?'현탁액'+(v.volume?` · ${esc(v.volume)} mL`:''):'분말·캡슐'}</span><button type="button" class="ibtn danger" data-stock="${esc(id)}">지우기</button></div>`; });
+    $('#stock-list').innerHTML = st.join(''); $('#stock-empty').hidden = !!st.length;
+  }
+  $('#p-set').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-ov],button[data-stock]'); if (!b) return;
+    if (b.dataset.ov) { delete S.overrides[b.dataset.ov][b.dataset.sp]; if (!Object.keys(S.overrides[b.dataset.ov]).length) delete S.overrides[b.dataset.ov]; store.set(K.overrides, S.overrides); S.items.filter(it => it.id === b.dataset.ov && it.doseIdx === -1).forEach(it => applyDose(it, defaultDoseIdx(S.drugs.get(it.id), S.species))); }
+    else { delete S.stock[b.dataset.stock]; store.set(K.stock, S.stock); }
+    renderSettings(); render(); saveDraft();
+  });
+
+  /* ---------- 토스트 ---------- */
+  let toastEl = null;
+  function toast(msg){
+    if (toastEl) toastEl.remove();
+    const t = document.createElement('div'); t.className = 'sw-toast'; t.textContent = msg; document.body.appendChild(t); toastEl = t;
+    requestAnimationFrame(() => t.classList.add('show'));
+    setTimeout(() => { t.classList.remove('show'); setTimeout(() => { if (toastEl === t) { t.remove(); toastEl = null; } }, 400); }, 2200);
+  }
+
+  /* ---------- 데이터 갱신 (js/data-sync.js) ---------- */
+  async function checkUpdates(){
+    if (!window.DataSync) return;
+    const res = await DataSync.run({ prefix: 'drugs/' });
+    if (!res.changed.length && !res.removed.length) return;
+    const ids = res.changed.concat(res.removed).map(p => p.replace(/^drugs\//, '').replace(/\.json$/, ''));
+    ids.forEach(id => S.drugs.delete(id));
+    if (ids.includes('index')) { try { await loadIndex(); } catch(e){} }
+    for (const it of S.items) { if (ids.includes(it.id)) { try { await fetchDrug(it.id); } catch(e){} } }
+    render(); renderSettings();
+  }
+
+  (async function init(){
+    try { await loadIndex(); }
+    catch(e){ $('#rx-empty').innerHTML = '약물 목록(data/drugs/index.json)을 불러오지 못했습니다. 인터넷 연결을 확인한 뒤 새로고침하세요.'; }
+    await restoreDraft();
+    $('#cnt-saved').textContent = S.saved.length;
+    renderSettings(); render();
+    checkUpdates().then(() => { if (!S.index.length) init(); }).catch(() => {});
+  })();
+})();
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('../sw.js').then((reg) => {
+      const showToast = (msg) => {
+        const t = document.createElement('div'); t.className = 'sw-toast'; t.textContent = msg; document.body.appendChild(t);
+        requestAnimationFrame(() => t.classList.add('show'));
+        setTimeout(() => { t.classList.remove('show'); setTimeout(() => t.remove(), 400); }, 3200);
+      };
+      const hadController = !!navigator.serviceWorker.controller;
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (refreshing || !hadController) return;
+        refreshing = true;
+        showToast('새 버전 적용 중…');
+        setTimeout(() => window.location.reload(), 700);
+      });
+      reg.update().catch(() => {});
+    }).catch(() => {});
+  });
+}
+</script>
+</body>
+</html>
