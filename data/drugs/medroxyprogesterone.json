@@ -1,0 +1,41 @@
+{
+ "id": "medroxyprogesterone",
+ "name": "Medroxyprogesterone",
+ "brand": [
+  "Provera",
+  "Depo-Provera"
+ ],
+ "class": "프로게스틴",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "임신견 황체 기능 부전",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "분만 예정일 며칠 전 중단"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 2.5
+  },
+  {
+   "form": "tablet",
+   "mg": 5
+  },
+  {
+   "form": "tablet",
+   "mg": 10
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

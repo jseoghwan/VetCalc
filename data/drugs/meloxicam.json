@@ -1,0 +1,96 @@
+{
+ "id": "meloxicam",
+ "name": "Meloxicam",
+ "brand": [
+  "Metacam",
+  "Mobic"
+ ],
+ "class": "NSAID (COX-2 선호성)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "골관절염 첫날 (label)",
+   "route": "PO",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "첫날 1회"
+  },
+  {
+   "species": "dog",
+   "label": "골관절염 유지 (label)",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "최소 유효 용량·최단 기간"
+  },
+  {
+   "species": "cat",
+   "label": "수술 후 통증, SC 초회 후 경구 유지",
+   "route": "PO",
+   "low": 0.05,
+   "high": 0.05,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "SC 0.2 mg/kg 24시간 후부터 최대 4회"
+  },
+  {
+   "species": "cat",
+   "label": "급성 근골격 통증 첫날",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "첫날 1회"
+  },
+  {
+   "species": "cat",
+   "label": "만성 근골격 통증 첫날",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "첫날 1회"
+  },
+  {
+   "species": "cat",
+   "label": "근골격 통증 유지",
+   "route": "PO",
+   "low": 0.05,
+   "high": 0.05,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "14일 내 반응 없으면 중단; 최소 유효 용량으로 감량"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 5
+  },
+  {
+   "form": "tablet",
+   "mg": 7.5
+  },
+  {
+   "form": "capsule",
+   "mg": 10
+  },
+  {
+   "form": "tablet",
+   "mg": 15
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,57 @@
+{
+ "id": "gemfibrozil",
+ "name": "Gemfibrozil",
+ "brand": [
+  "Lopid"
+ ],
+ "class": "피브레이트계 지질강하제",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "고중성지방혈증 (a)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "식전 ≈30분"
+  },
+  {
+   "species": "dog",
+   "label": "고중성지방혈증 (b)",
+   "route": "PO",
+   "low": 150,
+   "high": 300,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "식전 ≈30분"
+  },
+  {
+   "species": "cat",
+   "label": "고중성지방혈증",
+   "route": "PO",
+   "low": 7.5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "식전 ≈30분"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 300
+  },
+  {
+   "form": "tablet",
+   "mg": 600
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

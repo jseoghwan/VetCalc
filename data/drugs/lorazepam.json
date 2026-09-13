@@ -1,0 +1,72 @@
+{
+ "id": "lorazepam",
+ "name": "Lorazepam",
+ "brand": [
+  "Ativan"
+ ],
+ "class": "벤조디아제핀",
+ "tags": [
+  "behavior",
+  "anticonvulsant"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "행동 문제(공포·불안) (a)",
+   "route": "PO",
+   "low": 0.02,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "원문 1일 1–3회 또는 필요 시"
+  },
+  {
+   "species": "dog",
+   "label": "행동 문제(공포·불안) (b)",
+   "route": "PO",
+   "low": 0.02,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–24h"
+  },
+  {
+   "species": "cat",
+   "label": "행동 문제(공포·불안) (a)",
+   "route": "PO",
+   "low": 0.025,
+   "high": 0.08,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "원문 1일 1–2회 또는 필요 시"
+  },
+  {
+   "species": "cat",
+   "label": "행동 문제(공포·불안) (b)",
+   "route": "PO",
+   "low": 0.125,
+   "high": 0.25,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "원문 q12–24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 0.5
+  },
+  {
+   "form": "tablet",
+   "mg": 1
+  },
+  {
+   "form": "tablet",
+   "mg": 2
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

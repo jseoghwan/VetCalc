@@ -1,0 +1,249 @@
+{
+ "id": "fenbendazole",
+ "name": "Fenbendazole",
+ "brand": [
+  "Panacur",
+  "Safe-Guard"
+ ],
+ "class": "Benzimidazole 구충제",
+ "tags": [
+  "antimicrobial",
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "회충·구충·편충·조충 (label)",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "3일 연속, 식이와 함께; 편충은 2주·3개월 후 반복 권고"
+  },
+  {
+   "species": "dog",
+   "label": "성견 단회 구충 (b)",
+   "route": "PO",
+   "low": 100,
+   "high": 100,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "Angiostrongylus vasorum 완속 성충 구제",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "3–5일 투여 후 며칠 휴약, 반복"
+  },
+  {
+   "species": "dog",
+   "label": "Crenosoma vulpis",
+   "route": "PO",
+   "low": 25,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "3–14일"
+  },
+  {
+   "species": "dog",
+   "label": "Eucoleus (Capillaria) spp",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "10일"
+  },
+  {
+   "species": "dog",
+   "label": "Filaroides spp (a)",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "14–21일"
+  },
+  {
+   "species": "dog",
+   "label": "Filaroides spp (b)",
+   "route": "PO",
+   "low": 100,
+   "high": 100,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "7일"
+  },
+  {
+   "species": "dog",
+   "label": "Giardia",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "3–5일"
+  },
+  {
+   "species": "dog",
+   "label": "Mesocestoides spp",
+   "route": "PO",
+   "low": 100,
+   "high": 100,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "4주 이상"
+  },
+  {
+   "species": "dog",
+   "label": "Oslerus osleri",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "7–14일"
+  },
+  {
+   "species": "dog",
+   "label": "Paragonimus kellicotti",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "10–14일"
+  },
+  {
+   "species": "dog",
+   "label": "Physaloptera spp",
+   "route": "PO",
+   "low": 75,
+   "high": 90,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "5일, pyrantel 병용; 3주 후 반복"
+  },
+  {
+   "species": "dog",
+   "label": "Heterobilharzia americana",
+   "route": "PO",
+   "low": 24,
+   "high": 24,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "7일, praziquantel 병용"
+  },
+  {
+   "species": "dog",
+   "label": "저항성 A caninum 3제 요법",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "3일, pyrantel·moxidectin 병용"
+  },
+  {
+   "species": "dog",
+   "label": "태반·유즙 전파 예방 (a)",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "임신 40일~수유 14일"
+  },
+  {
+   "species": "dog",
+   "label": "태반·유즙 전파 예방 (b)",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "임신 40일~분만 2일 후"
+  },
+  {
+   "species": "cat",
+   "label": "회충·구충·편충·조충 (성묘·임신묘)",
+   "route": "PO",
+   "low": 100,
+   "high": 100,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "6개월령 이상"
+  },
+  {
+   "species": "cat",
+   "label": "회충·구충·편충·조충 (6개월 미만 자묘)",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "3일"
+  },
+  {
+   "species": "cat",
+   "label": "Aelurostrongylus abstrusus",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "3일; 필요 시 10–14일"
+  },
+  {
+   "species": "cat",
+   "label": "Eurytrema procyonis (췌장 흡충)",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "6일"
+  },
+  {
+   "species": "cat",
+   "label": "Giardia",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "5–7일"
+  },
+  {
+   "species": "cat",
+   "label": "Strongyloides spp",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "3–5일"
+  },
+  {
+   "species": "cat",
+   "label": "Paragonimus·Capillaria (Eucoleus) 감염",
+   "route": "PO",
+   "low": 25,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "10일 이상"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

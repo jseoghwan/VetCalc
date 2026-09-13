@@ -1,0 +1,73 @@
+{
+ "id": "metergoline",
+ "name": "Metergoline",
+ "brand": [
+  "Contralac",
+  "Liserdol"
+ ],
+ "class": "세로토닌 길항제; 프로락틴 억제제",
+ "tags": [
+  "endocrine",
+  "behavior"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "위임신·젖 분비 중단",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "4–5일; 실패 시 8–10일로 연장 반복"
+  },
+  {
+   "species": "dog",
+   "label": "임신 중절",
+   "route": "PO",
+   "low": 0.4,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "5일"
+  },
+  {
+   "species": "dog",
+   "label": "발정 유도 (저용량)",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "배란 100일 후부터 다음 발정전기까지"
+  },
+  {
+   "species": "cat",
+   "label": "위임신·젖 분비 중단",
+   "route": "PO",
+   "low": 0.125,
+   "high": 0.125,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "4–8일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 0.5
+  },
+  {
+   "form": "tablet",
+   "mg": 2
+  },
+  {
+   "form": "tablet",
+   "mg": 4
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

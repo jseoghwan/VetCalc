@@ -1,0 +1,74 @@
+{
+ "id": "lisinopril",
+ "name": "Lisinopril",
+ "brand": [
+  "Prinivil",
+  "Zestril",
+  "Qbrelis"
+ ],
+ "class": "ACE 억제제",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "심부전 보조 치료 등 ACE 억제제 적응증",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "원문 1일 1–2회"
+  },
+  {
+   "species": "cat",
+   "label": "심부전 보조 치료 등 ACE 억제제 적응증 (a)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "저나트륨 식이 병용"
+  },
+  {
+   "species": "cat",
+   "label": "심부전 보조 치료 등 ACE 억제제 적응증 (b)",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 2.5
+  },
+  {
+   "form": "tablet",
+   "mg": 5
+  },
+  {
+   "form": "tablet",
+   "mg": 10
+  },
+  {
+   "form": "tablet",
+   "mg": 20
+  },
+  {
+   "form": "tablet",
+   "mg": 30
+  },
+  {
+   "form": "tablet",
+   "mg": 40
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

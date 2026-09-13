@@ -1,0 +1,74 @@
+{
+ "id": "methimazole",
+ "name": "Methimazole",
+ "brand": [
+  "Felimazole",
+  "Tapazole"
+ ],
+ "class": "항갑상선제 (thioamide)",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "cat",
+   "label": "갑상선기능항진증 시작 용량 (label)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "3주 후 TT4 기준 2.5 mg 단위 조정; 최대 20 mg/day, 1회 10 mg 초과 금지"
+  },
+  {
+   "species": "cat",
+   "label": "갑상선기능항진증 유지 범위 (label)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 15,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "1일 총량, 분할 투여; 평균 2.5 mg/cat q12h"
+  },
+  {
+   "species": "cat",
+   "label": "갑상선기능항진증 초기 (extra-label)",
+   "route": "PO",
+   "low": 1.25,
+   "high": 2.5,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "2–3주 후 TT4 재평가, 2.5 mg/day 단위 조정; 안정 후 q24h 고려"
+  },
+  {
+   "species": "cat",
+   "label": "갑상선기능항진증 초기, TT4 극심 상승",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "q12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 1.25
+  },
+  {
+   "form": "tablet",
+   "mg": 2.5
+  },
+  {
+   "form": "tablet",
+   "mg": 5
+  },
+  {
+   "form": "tablet",
+   "mg": 10
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

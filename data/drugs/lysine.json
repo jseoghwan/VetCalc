@@ -1,0 +1,99 @@
+{
+ "id": "lysine",
+ "name": "Lysine",
+ "brand": [
+  "Viralys",
+  "Enisyl",
+  "Felisyl",
+  "Optixcare"
+ ],
+ "class": "아미노산 보충제 (항 FHV-1)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "cat",
+   "label": "FHV-1 재발 억제, 성묘 (a)",
+   "route": "PO",
+   "low": 250,
+   "high": 500,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h; 소량 사료에 섞어 한 번에 급여"
+  },
+  {
+   "species": "cat",
+   "label": "FHV-1 재발 억제, 성묘 (b)",
+   "route": "PO",
+   "low": 400,
+   "high": 400,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "FHV-1 재발 억제, 자묘 (a)",
+   "route": "PO",
+   "low": 250,
+   "high": 250,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "FHV-1 재발 억제, 자묘 (b)",
+   "route": "PO",
+   "low": 125,
+   "high": 250,
+   "unit": "mg/animal",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "FHV-1 결막염 중증도 완화",
+   "route": "PO",
+   "low": 500,
+   "high": 500,
+   "unit": "mg/animal",
+   "freq": "q12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 312
+  },
+  {
+   "form": "tablet",
+   "mg": 312
+  },
+  {
+   "form": "capsule",
+   "mg": 334
+  },
+  {
+   "form": "tablet",
+   "mg": 334
+  },
+  {
+   "form": "capsule",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  },
+  {
+   "form": "capsule",
+   "mg": 1000
+  },
+  {
+   "form": "tablet",
+   "mg": 1000
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,77 @@
+{
+ "id": "imepitoin",
+ "name": "Imepitoin",
+ "brand": [
+  "Pexion"
+ ],
+ "class": "GABA-A 수용체 부분 작용제 (항경련제)",
+ "tags": [
+  "anticonvulsant",
+  "behavior"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "특발성 뇌전증 (초기)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "1주 이상 후 효과 부족 시 50–100%씩 증량, 최대 30 mg/kg q12h"
+  },
+  {
+   "species": "dog",
+   "label": "특발성 뇌전증 (최대)",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "소음 공포 (label)",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "소음 이벤트 2일 전부터 시작해 이벤트 동안 지속"
+  },
+  {
+   "species": "dog",
+   "label": "폭풍 불안",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "지속 투여 (필요 시 투여 아님)"
+  },
+  {
+   "species": "cat",
+   "label": "특발성 뇌전증",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "자료 제한적"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 400
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,47 @@
+{
+ "id": "glyburide",
+ "name": "Glyburide",
+ "brand": [
+  "DiaBeta",
+  "Micronase"
+ ],
+ "class": "설포닐우레아계 경구 혈당강하제",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "cat",
+   "label": "비인슐린의존성 당뇨병 (a) 초기",
+   "route": "PO",
+   "low": 0.625,
+   "high": 0.625,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "비미분화 정제 기준; 일부 고양이는 1일 1회 가능"
+  },
+  {
+   "species": "cat",
+   "label": "비인슐린의존성 당뇨병 (a) 증량",
+   "route": "PO",
+   "low": 1.25,
+   "high": 1.25,
+   "unit": "mg/animal",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "비인슐린의존성 당뇨병 (b)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "케톤산증·말초신경병증 없는 양호한 고양이"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

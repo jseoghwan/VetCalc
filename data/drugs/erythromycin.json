@@ -1,0 +1,82 @@
+{
+ "id": "erythromycin",
+ "name": "Erythromycin",
+ "brand": [
+  "Gallimycin",
+  "Ery-Tab",
+  "ERYC",
+  "E.E.S."
+ ],
+ "class": "Macrolide 항생제; 위장관 운동촉진제",
+ "tags": [
+  "antimicrobial",
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "감수성 감염",
+   "route": "PO",
+   "low": 10,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "위장관 운동 촉진",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염",
+   "route": "PO",
+   "low": 10,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "cat",
+   "label": "위장관 운동 촉진",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "고양이 결장 운동 촉진 효과 불확실"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 250
+  },
+  {
+   "form": "tablet",
+   "mg": 250
+  },
+  {
+   "form": "tablet",
+   "mg": 333
+  },
+  {
+   "form": "tablet",
+   "mg": 400
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,186 @@
+{
+ "id": "levothyroxine",
+ "name": "Levothyroxine",
+ "brand": [
+  "Thyro-Tabs",
+  "Leventa",
+  "Synthroid",
+  "Levoxyl"
+ ],
+ "class": "갑상선 호르몬 (T4)",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "갑상선기능저하증 초기 (label)",
+   "route": "PO",
+   "low": 0.022,
+   "high": 0.022,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1일 총량, 단회 또는 분할; 유지 대부분 0.018–0.026 mg/kg/day; 4–8주마다 TT4로 조절"
+  },
+  {
+   "species": "dog",
+   "label": "갑상선기능저하증 초기 (정제, extra-label)",
+   "route": "PO",
+   "low": 0.01,
+   "high": 0.02,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "원문 q12–24h; 초기 최대 0.8 mg/dog q12h; 유지 평균 ≈0.017 mg/kg; 동반질환 시 25% 감량"
+  },
+  {
+   "species": "dog",
+   "label": "갑상선기능저하증 (경구액)",
+   "route": "PO",
+   "low": 0.02,
+   "high": 0.02,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "갑상선기능저하증",
+   "route": "PO",
+   "low": 0.05,
+   "high": 0.15,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "4–8주마다 TT4·TSH로 50% 단위 조절"
+  },
+  {
+   "species": "cat",
+   "label": "방사성요오드·항갑상선제 치료 후 (CKD 동반)",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 0.013
+  },
+  {
+   "form": "capsule",
+   "mg": 0.025
+  },
+  {
+   "form": "tablet",
+   "mg": 0.025
+  },
+  {
+   "form": "capsule",
+   "mg": 0.05
+  },
+  {
+   "form": "tablet",
+   "mg": 0.05
+  },
+  {
+   "form": "capsule",
+   "mg": 0.075
+  },
+  {
+   "form": "tablet",
+   "mg": 0.075
+  },
+  {
+   "form": "capsule",
+   "mg": 0.088
+  },
+  {
+   "form": "tablet",
+   "mg": 0.088
+  },
+  {
+   "form": "capsule",
+   "mg": 0.1
+  },
+  {
+   "form": "tablet",
+   "mg": 0.1
+  },
+  {
+   "form": "capsule",
+   "mg": 0.112
+  },
+  {
+   "form": "tablet",
+   "mg": 0.112
+  },
+  {
+   "form": "capsule",
+   "mg": 0.125
+  },
+  {
+   "form": "tablet",
+   "mg": 0.125
+  },
+  {
+   "form": "capsule",
+   "mg": 0.137
+  },
+  {
+   "form": "tablet",
+   "mg": 0.137
+  },
+  {
+   "form": "capsule",
+   "mg": 0.15
+  },
+  {
+   "form": "tablet",
+   "mg": 0.15
+  },
+  {
+   "form": "tablet",
+   "mg": 0.175
+  },
+  {
+   "form": "capsule",
+   "mg": 0.2
+  },
+  {
+   "form": "tablet",
+   "mg": 0.2
+  },
+  {
+   "form": "tablet",
+   "mg": 0.3
+  },
+  {
+   "form": "tablet",
+   "mg": 0.4
+  },
+  {
+   "form": "tablet",
+   "mg": 0.5
+  },
+  {
+   "form": "tablet",
+   "mg": 0.6
+  },
+  {
+   "form": "tablet",
+   "mg": 0.7
+  },
+  {
+   "form": "tablet",
+   "mg": 0.8
+  },
+  {
+   "form": "tablet",
+   "mg": 1
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

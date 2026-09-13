@@ -1,0 +1,114 @@
+{
+ "id": "imipramine",
+ "name": "Imipramine",
+ "brand": [
+  "Tofranil"
+ ],
+ "class": "삼환계 항우울제",
+ "tags": [
+  "behavior",
+  "urinary"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "요도 괄약근 기능부전",
+   "route": "PO",
+   "low": 5,
+   "high": 15,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "요도 괄약근 기능부전 (고용량)",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/animal",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "기면증 보조 (a)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h; 효과에 따라 조절"
+  },
+  {
+   "species": "dog",
+   "label": "기면증 보조 (b)",
+   "route": "PO",
+   "low": 0.45,
+   "high": 2.2,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h; 탈력발작 동반 예"
+  },
+  {
+   "species": "dog",
+   "label": "분리불안 등 행동 장애 보조",
+   "route": "PO",
+   "low": 2.2,
+   "high": 4.4,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "원문 1일 1–2회"
+  },
+  {
+   "species": "dog",
+   "label": "만성 통증 보조",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "cat",
+   "label": "요도 괄약근 기능부전·만성 통증 보조",
+   "route": "PO",
+   "low": 2.5,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 10
+  },
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "capsule",
+   "mg": 75
+  },
+  {
+   "form": "capsule",
+   "mg": 100
+  },
+  {
+   "form": "capsule",
+   "mg": 125
+  },
+  {
+   "form": "capsule",
+   "mg": 150
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

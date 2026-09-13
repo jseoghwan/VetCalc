@@ -1,0 +1,95 @@
+{
+ "id": "hydroxyurea",
+ "name": "Hydroxyurea",
+ "brand": [
+  "Hydrea",
+  "Droxia",
+  "Mylocel",
+  "Siklos"
+ ],
+ "class": "항암제 (항대사제)",
+ "tags": [
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "진성적혈구증가증·CML·비만세포종 (초기)",
+   "route": "PO",
+   "low": 30,
+   "high": 60,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1일 1회 또는 분할 q12h; 1–2주 후 q48h로 전환"
+  },
+  {
+   "species": "dog",
+   "label": "수막종",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q48h",
+   "note": "원문 q48–72h"
+  },
+  {
+   "species": "cat",
+   "label": "진성적혈구증가증·CML (초기) (a)",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1–2주 후 q48h로 전환"
+  },
+  {
+   "species": "cat",
+   "label": "진성적혈구증가증·CML (초기) (b)",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "1–2주 후 q48h로 전환"
+  },
+  {
+   "species": "cat",
+   "label": "원발성 적혈구증가증 유지 (중앙값)",
+   "route": "PO",
+   "low": 22,
+   "high": 22,
+   "unit": "mg/kg",
+   "freq": "q48h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "capsule",
+   "mg": 200
+  },
+  {
+   "form": "capsule",
+   "mg": 300
+  },
+  {
+   "form": "capsule",
+   "mg": 400
+  },
+  {
+   "form": "capsule",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 1000
+  }
+ ],
+ "compounding": "조제 현탁액 차광 보관, 가열(41°C) 시 역가 급감",
+ "reviewed": null
+}

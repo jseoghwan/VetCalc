@@ -1,0 +1,79 @@
+{
+ "id": "folic-acid",
+ "name": "Folic Acid",
+ "brand": [],
+ "class": "비타민 B9 (엽산)",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "엽산 결핍 (IBD·췌장외분비부전)",
+   "route": "PO",
+   "low": 0.4,
+   "high": 1,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "원문 400 µg–1 mg/dog; cobalamin 병용 권장"
+  },
+  {
+   "species": "dog",
+   "label": "엽산 결핍 (고용량 보고)",
+   "route": "PO",
+   "low": 2,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "엽산 결핍 (IBD·췌장외분비부전)",
+   "route": "PO",
+   "low": 0.4,
+   "high": 1,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "원문 400 µg–1 mg/cat; cobalamin 병용 권장"
+  },
+  {
+   "species": "cat",
+   "label": "장기 고용량 sulfa/TMP 투여 시 보충",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 0.4
+  },
+  {
+   "form": "capsule",
+   "mg": 0.8
+  },
+  {
+   "form": "tablet",
+   "mg": 0.8
+  },
+  {
+   "form": "tablet",
+   "mg": 1
+  },
+  {
+   "form": "capsule",
+   "mg": 5
+  },
+  {
+   "form": "capsule",
+   "mg": 20
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

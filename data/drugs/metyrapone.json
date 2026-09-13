@@ -1,0 +1,42 @@
+{
+ "id": "metyrapone",
+ "name": "Metyrapone",
+ "brand": [
+  "Metopirone"
+ ],
+ "class": "부신 스테로이드 합성 억제제 (11β-hydroxylase 억제)",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "cat",
+   "label": "부신피질기능항진증 (a)",
+   "route": "PO",
+   "low": 30,
+   "high": 70,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "첫 2–4주 하한부터 시작, ACTH 자극검사로 소폭 증량"
+  },
+  {
+   "species": "cat",
+   "label": "부신피질기능항진증 (b)",
+   "route": "PO",
+   "low": 250,
+   "high": 500,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "효과 시 5일 내 반응"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 250
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

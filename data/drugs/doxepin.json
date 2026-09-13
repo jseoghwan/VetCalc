@@ -1,0 +1,82 @@
+{
+ "id": "doxepin",
+ "name": "Doxepin",
+ "brand": [
+  "Sinequan",
+  "Silenor"
+ ],
+ "class": "삼환계 항우울제 (항히스타민 작용)",
+ "tags": [
+  "behavior"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "아토피 피부염 소양감 / 항히스타민",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "효과 없으면 최대 5 mg/kg까지 점증"
+  },
+  {
+   "species": "dog",
+   "label": "심인성 피부질환",
+   "route": "PO",
+   "low": 3,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "최대 50 mg/dog; 2주마다 1 mg/kg씩 증량"
+  },
+  {
+   "species": "cat",
+   "label": "심인성 피부질환·알레르기",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 3
+  },
+  {
+   "form": "tablet",
+   "mg": 6
+  },
+  {
+   "form": "capsule",
+   "mg": 10
+  },
+  {
+   "form": "capsule",
+   "mg": 25
+  },
+  {
+   "form": "capsule",
+   "mg": 50
+  },
+  {
+   "form": "capsule",
+   "mg": 75
+  },
+  {
+   "form": "capsule",
+   "mg": 100
+  },
+  {
+   "form": "capsule",
+   "mg": 150
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

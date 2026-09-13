@@ -1,0 +1,49 @@
+{
+ "id": "ivermectin",
+ "name": "Ivermectin",
+ "brand": [
+  "Heartgard",
+  "Ivomec"
+ ],
+ "class": "Avermectin 계 구충제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "전신성 모낭충증 (목표 용량)",
+   "route": "PO",
+   "low": 600,
+   "high": 600,
+   "unit": "mcg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "MDR1 변이견 금기; 50→100→150→200→300 mcg/kg 1일씩 점증 후 3–7일마다 100 mcg/kg씩 증량; 음성 피부소파 2회 후 4주까지"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "chewable tablet",
+   "mg": 0.055
+  },
+  {
+   "form": "tablet",
+   "mg": 0.068
+  },
+  {
+   "form": "tablet",
+   "mg": 0.136
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 0.165
+  },
+  {
+   "form": "tablet",
+   "mg": 0.272
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

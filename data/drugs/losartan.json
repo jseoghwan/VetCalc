@@ -1,0 +1,69 @@
+{
+ "id": "losartan",
+ "name": "Losartan",
+ "brand": [
+  "Cozaar"
+ ],
+ "class": "안지오텐신 II 수용체 차단제 (ARB)",
+ "tags": [
+  "renal",
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "사구체 질환 단백뇨, 비질소혈증 초기",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "IRIS 권고; ACE 억제제 병용"
+  },
+  {
+   "species": "dog",
+   "label": "사구체 질환 단백뇨, 비질소혈증 증량",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "사구체 질환 단백뇨, 질소혈증 초기",
+   "route": "PO",
+   "low": 0.125,
+   "high": 0.125,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "IRIS 권고; ACE 억제제 병용"
+  },
+  {
+   "species": "dog",
+   "label": "사구체 질환 단백뇨, 질소혈증 증량",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

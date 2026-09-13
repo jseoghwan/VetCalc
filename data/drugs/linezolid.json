@@ -1,0 +1,61 @@
+{
+ "id": "linezolid",
+ "name": "Linezolid",
+ "brand": [
+  "Zyvox"
+ ],
+ "class": "Oxazolidinone 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "다제내성 세균 감염",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "표준 치료 불응성 Nocardia증",
+   "route": "PO",
+   "low": 8,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "다제내성 세균 감염",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "cat",
+   "label": "표준 치료 불응성 Nocardia증",
+   "route": "PO",
+   "low": 8,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 600
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

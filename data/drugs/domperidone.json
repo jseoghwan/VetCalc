@@ -1,0 +1,54 @@
+{
+ "id": "domperidone",
+ "name": "Domperidone",
+ "brand": [
+  "Equidone",
+  "Motilium"
+ ],
+ "class": "도파민 D2 길항제",
+ "tags": [
+  "gi",
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "리슈만편모충증 대체 치료 (a)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "30일"
+  },
+  {
+   "species": "dog",
+   "label": "리슈만편모충증 대체 치료 (b)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "30일 (또는 4주 투여 후 3개월 휴약 반복)"
+  },
+  {
+   "species": "dog",
+   "label": "리슈만편모충증 예방",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "30일간, 4개월마다 반복"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 10
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

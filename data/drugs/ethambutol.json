@@ -1,0 +1,47 @@
+{
+ "id": "ethambutol",
+ "name": "Ethambutol",
+ "brand": [
+  "Myambutol"
+ ],
+ "class": "항마이코박테리아제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "파종성 결핵 (병용 요법)",
+   "route": "PO",
+   "low": 10,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "rifampin·isoniazid 병용, 9개월 이상"
+  },
+  {
+   "species": "cat",
+   "label": "마이코박테리아 감염 (병용 요법)",
+   "route": "PO",
+   "low": 10,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "항마이코박테리아제 1–2종 병용"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 400
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

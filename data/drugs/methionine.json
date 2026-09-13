@@ -1,0 +1,81 @@
+{
+ "id": "methionine",
+ "name": "Methionine",
+ "brand": [
+  "Methio-Form",
+  "Ammonil",
+  "Methigel"
+ ],
+ "class": "요 산성화제; 영양 보충제",
+ "tags": [
+  "urinary"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "요 산성화 (label)",
+   "route": "PO",
+   "low": 150,
+   "high": 300,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1일 총량, 1회 또는 2–3회 분할; 정제 분쇄해 사료에 혼합 가능"
+  },
+  {
+   "species": "dog",
+   "label": "감염성 스트루바이트 용해 보조",
+   "route": "PO",
+   "low": 75,
+   "high": 100,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "항생제 병용, 용해식 미사용; 1개월 내 50% 감소 없으면 재평가"
+  },
+  {
+   "species": "cat",
+   "label": "요 산성화 (label)",
+   "route": "PO",
+   "low": 188,
+   "high": 375,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1일 총량, 1회 또는 2–3회 분할; 정제 분쇄해 사료에 혼합 가능"
+  },
+  {
+   "species": "cat",
+   "label": "요 산성화 (extra-label)",
+   "route": "PO",
+   "low": 1000,
+   "high": 1500,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "사료에 혼합; 식이·항균제로 pH 미조절 시"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 200
+  },
+  {
+   "form": "tablet",
+   "mg": 200
+  },
+  {
+   "form": "capsule",
+   "mg": 500
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

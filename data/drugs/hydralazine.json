@@ -1,0 +1,124 @@
+{
+ "id": "hydralazine",
+ "name": "Hydralazine",
+ "brand": [
+  "Apresoline"
+ ],
+ "class": "직접 작용 혈관확장제",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "심부전 보조 (유효 용량 범위)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "저용량에서 시작해 0.5 mg/kg 단위로 증량; 이뇨제 병용"
+  },
+  {
+   "species": "dog",
+   "label": "심부전 시작 용량 (ACEi 미투여)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "12–48시간 후 재평가, 무반응 시 2→3 mg/kg q12h로 증량"
+  },
+  {
+   "species": "dog",
+   "label": "심부전 시작 용량 (ACEi 투여 중)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "혈압 감시하 0.5 mg/kg 단위 증량, 최대 3 mg/kg/12h"
+  },
+  {
+   "species": "dog",
+   "label": "급성 심부전 (중증 MR, ACEi 미투여)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "IV furosemide 병용; 혈압 감시"
+  },
+  {
+   "species": "dog",
+   "label": "전신 고혈압 (급성)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "효과 볼 때까지"
+  },
+  {
+   "species": "dog",
+   "label": "전신 고혈압 (장기)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "심부전 보조",
+   "route": "PO",
+   "low": 2.5,
+   "high": 10,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "2.5 mg/cat로 시작, 필요 시 10 mg/cat까지 증량"
+  },
+  {
+   "species": "cat",
+   "label": "전신 고혈압 (급성, 경구)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "효과 볼 때까지"
+  },
+  {
+   "species": "cat",
+   "label": "전신 고혈압 (장기)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h; amlodipine·ACEi 이후 3–4차 약물"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 10
+  },
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

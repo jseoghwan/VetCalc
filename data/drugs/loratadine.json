@@ -1,0 +1,99 @@
+{
+ "id": "loratadine",
+ "name": "Loratadine",
+ "brand": [
+  "Claritin",
+  "Alavert"
+ ],
+ "class": "2세대 항히스타민제",
+ "tags": [
+  "respiratory"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "항히스타민",
+   "route": "PO",
+   "low": 0.25,
+   "high": 1.1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "또는 2회 분할"
+  },
+  {
+   "species": "dog",
+   "label": "항히스타민 소형견",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "항히스타민 중형견",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "항히스타민 대형견",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/animal",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "항히스타민 (a)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "항히스타민 (b)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 5
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 5
+  },
+  {
+   "form": "tablet",
+   "mg": 5
+  },
+  {
+   "form": "capsule",
+   "mg": 10
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 10
+  },
+  {
+   "form": "tablet",
+   "mg": 10
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

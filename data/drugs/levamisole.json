@@ -1,0 +1,28 @@
+{
+ "id": "levamisole",
+ "name": "Levamisole",
+ "brand": [
+  "LevaMed"
+ ],
+ "class": "Imidazothiazole 계 구충제/면역조절제",
+ "tags": [
+  "immuno",
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "전신 홍반 루푸스(SLE) 보조 치료",
+   "route": "PO",
+   "low": 2,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q48h",
+   "default": true,
+   "note": "최대 150 mg/dog; prednisone 병용; 4개월 이상"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

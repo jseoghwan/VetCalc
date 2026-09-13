@@ -1,0 +1,55 @@
+{
+ "id": "felbamate",
+ "name": "Felbamate",
+ "brand": [
+  "Felbatol"
+ ],
+ "class": "항경련제",
+ "tags": [
+  "anticonvulsant"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "발작 조절 추가 요법 초기",
+   "route": "PO",
+   "low": 15,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "필요 시 2주마다 약 15 mg/kg씩 증량"
+  },
+  {
+   "species": "dog",
+   "label": "발작 조절 저용량 시작",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "q8h로 점차 증량"
+  },
+  {
+   "species": "dog",
+   "label": "발작 조절 상한 용량",
+   "route": "PO",
+   "low": 60,
+   "high": 70,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 400
+  },
+  {
+   "form": "tablet",
+   "mg": 600
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

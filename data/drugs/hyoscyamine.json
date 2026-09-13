@@ -1,0 +1,65 @@
+{
+ "id": "hyoscyamine",
+ "name": "Hyoscyamine",
+ "brand": [
+  "Levsin",
+  "Levbid",
+  "Anaspaz"
+ ],
+ "class": "항콜린제 (항무스카린제)",
+ "tags": [
+  "gi",
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "과민성 장 증후군",
+   "route": "PO",
+   "low": 3,
+   "high": 6,
+   "unit": "mcg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h; 속방형 기준"
+  },
+  {
+   "species": "dog",
+   "label": "동기능부전·방실차단",
+   "route": "PO",
+   "low": 3,
+   "high": 6,
+   "unit": "mcg/kg",
+   "freq": "q8h",
+   "note": "속방형 기준"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "chewable tablet",
+   "mg": 0.125
+  },
+  {
+   "form": "tablet",
+   "mg": 0.125
+  },
+  {
+   "form": "tablet",
+   "mg": 0.15
+  },
+  {
+   "form": "tablet",
+   "mg": 0.25
+  },
+  {
+   "form": "capsule",
+   "mg": 0.375
+  },
+  {
+   "form": "tablet",
+   "mg": 0.375
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

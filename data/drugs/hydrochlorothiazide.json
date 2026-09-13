@@ -1,0 +1,162 @@
+{
+ "id": "hydrochlorothiazide",
+ "name": "Hydrochlorothiazide",
+ "brand": [
+  "HydroDIURIL",
+  "Microzide",
+  "Aldactazide"
+ ],
+ "class": "Thiazide 이뇨제",
+ "tags": [
+  "cardio",
+  "renal",
+  "urinary"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "칼슘옥살레이트 요석 재발 예방",
+   "route": "PO",
+   "low": 2,
+   "high": 2.2,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "심부전 보조 (루프 이뇨제 불응) (a)",
+   "route": "PO",
+   "low": 0.2,
+   "high": 0.84,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "저용량 시작, 신장수치·전해질 감시"
+  },
+  {
+   "species": "dog",
+   "label": "심부전 보조 (루프 이뇨제 불응) (b)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "원문 1일 1–2회"
+  },
+  {
+   "species": "dog",
+   "label": "간질환 복수 (spironolactone 복합제)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "용량은 spironolactone 성분 기준 (1:1 복합제)"
+  },
+  {
+   "species": "dog",
+   "label": "전신 고혈압 (a)",
+   "route": "PO",
+   "low": 2,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "원문 1일 1–2회"
+  },
+  {
+   "species": "dog",
+   "label": "전신 고혈압 (b)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "원문 1일 1–2회; spironolactone 병용 가능"
+  },
+  {
+   "species": "dog",
+   "label": "신성 요붕증 (a)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "저나트륨 식이 병행"
+  },
+  {
+   "species": "dog",
+   "label": "신성 요붕증 (b)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "인슐린종 저혈당 (diazoxide 병용)",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "심부전 보조 (furosemide 불응)",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "저용량 시작, 신장수치·전해질 감시"
+  },
+  {
+   "species": "cat",
+   "label": "간질환 복수 (spironolactone 복합제)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "용량은 spironolactone 성분 기준 (1:1 복합제)"
+  },
+  {
+   "species": "cat",
+   "label": "요중 칼슘옥살레이트 포화도 감소",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "건강한 고양이 연구 기준"
+  },
+  {
+   "species": "cat",
+   "label": "신성 요붕증",
+   "route": "PO",
+   "low": 2.5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "중추성 요붕증",
+   "route": "PO",
+   "low": 12.5,
+   "high": 12.5,
+   "unit": "mg/animal",
+   "freq": "q12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 12.5
+  }
+ ],
+ "compounding": "조제 현탁액(spironolactone 복합) 차광 보관",
+ "reviewed": null
+}

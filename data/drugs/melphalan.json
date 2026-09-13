@@ -1,0 +1,82 @@
+{
+ "id": "melphalan",
+ "name": "Melphalan",
+ "brand": [
+  "Alkeran",
+  "Evomela"
+ ],
+ "class": "알킬화 항암제",
+ "tags": [
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "일반 지침",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "원문 빈도 매일~격일~펄스"
+  },
+  {
+   "species": "dog",
+   "label": "다발성 골수종 초기 (a)",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "10일 후 유지로 전환"
+  },
+  {
+   "species": "dog",
+   "label": "다발성 골수종 유지 (a)",
+   "route": "PO",
+   "low": 0.05,
+   "high": 0.05,
+   "unit": "mg/kg",
+   "freq": "q48h"
+  },
+  {
+   "species": "dog",
+   "label": "다발성 골수종 초기 (b)",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "4일"
+  },
+  {
+   "species": "dog",
+   "label": "다발성 골수종 유지 (b)",
+   "route": "PO",
+   "low": 2,
+   "high": 4,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "일반 지침",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "원문 빈도 매일~격일~펄스"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 2
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

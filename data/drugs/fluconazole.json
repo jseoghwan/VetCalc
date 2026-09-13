@@ -1,0 +1,131 @@
+{
+ "id": "fluconazole",
+ "name": "Fluconazole",
+ "brand": [
+  "Diflucan"
+ ],
+ "class": "Azole 항진균제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "전신 진균증",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h, 4–8개월"
+  },
+  {
+   "species": "dog",
+   "label": "전신 진균증 (CNS·안구 침범)",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "최대 용량"
+  },
+  {
+   "species": "dog",
+   "label": "요로 칸디다증",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "3–5주"
+  },
+  {
+   "species": "dog",
+   "label": "Coccidioides 골수염",
+   "route": "PO",
+   "low": 18,
+   "high": 18,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1일 총량, 초기 평균 용량"
+  },
+  {
+   "species": "dog",
+   "label": "Malassezia·피부사상균증·조갑진균증",
+   "route": "PO",
+   "low": 2.5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "전신 진균증",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "수개월"
+  },
+  {
+   "species": "cat",
+   "label": "전신 진균증 (실용 용량)",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "50 mg 정제 1정/cat"
+  },
+  {
+   "species": "cat",
+   "label": "전신 진균증 (급속 진행·중증 파종)",
+   "route": "PO",
+   "low": 100,
+   "high": 100,
+   "unit": "mg/animal",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "크립토코쿠스 전포도막염",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "Malassezia·피부사상균증·조갑진균증",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 150
+  },
+  {
+   "form": "tablet",
+   "mg": 200
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

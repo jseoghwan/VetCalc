@@ -1,0 +1,55 @@
+{
+ "id": "firocoxib",
+ "name": "Firocoxib",
+ "brand": [
+  "Previcox",
+  "Equioxx"
+ ],
+ "class": "NSAID (COX-2 선택적)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "골관절염·수술 후 통증 (label)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "수술 후 3일, 반 정 단위로 계산"
+  },
+  {
+   "species": "dog",
+   "label": "방광 이행상피암 보조",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "염증성 직장결장 폴립 보조",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "chewable tablet",
+   "mg": 57
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 227
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

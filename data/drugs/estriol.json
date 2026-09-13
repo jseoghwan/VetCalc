@@ -1,0 +1,81 @@
+{
+ "id": "estriol",
+ "name": "Estriol",
+ "brand": [
+  "Incurin"
+ ],
+ "class": "에스트로겐 호르몬제",
+ "tags": [
+  "urinary",
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "에스트로겐 반응성 요실금 초기 (label)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "최소 14일 후 단계적 감량; 최대 2 mg/dog/day"
+  },
+  {
+   "species": "dog",
+   "label": "요실금 감량 1단계 (label)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "감량 간격 최소 7일"
+  },
+  {
+   "species": "dog",
+   "label": "요실금 감량 2단계 (label)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "요실금 감량 3단계 (label)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/animal",
+   "freq": "q48h"
+  },
+  {
+   "species": "dog",
+   "label": "괄약근 부전 요실금 초기 (extra-label)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "7–14일; 효과 시 0.5 mg로 감량, 무효 시 2 mg로 증량"
+  },
+  {
+   "species": "dog",
+   "label": "괄약근 부전 요실금 유지 (extra-label)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/animal",
+   "freq": "q48h",
+   "note": "2 mg q24h 성공 후 감량"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 1
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

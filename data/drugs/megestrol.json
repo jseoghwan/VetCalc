@@ -1,0 +1,119 @@
+{
+ "id": "megestrol",
+ "name": "Megestrol",
+ "brand": [
+  "Ovaban",
+  "Megace"
+ ],
+ "class": "프로게스틴",
+ "tags": [
+  "endocrine",
+  "behavior"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "발정 지연, 발정전기 (label)",
+   "route": "PO",
+   "low": 2.2,
+   "high": 2.2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "8일; 발정전기 첫 3일 내 시작"
+  },
+  {
+   "species": "dog",
+   "label": "발정 지연, 무발정기 (label)",
+   "route": "PO",
+   "low": 0.55,
+   "high": 0.55,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "32일"
+  },
+  {
+   "species": "dog",
+   "label": "위임신 증상 완화 (label)",
+   "route": "PO",
+   "low": 2.2,
+   "high": 2.2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "8일; 현재는 권장되지 않음"
+  },
+  {
+   "species": "dog",
+   "label": "양성 전립선 비대",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "3–8주"
+  },
+  {
+   "species": "dog",
+   "label": "태반 부착부 퇴축 부전(SIPS) 1주차",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1주차"
+  },
+  {
+   "species": "dog",
+   "label": "태반 부착부 퇴축 부전(SIPS) 2주차",
+   "route": "PO",
+   "low": 0.05,
+   "high": 0.05,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2주차"
+  },
+  {
+   "species": "cat",
+   "label": "발정 지연, 발정전기 초기",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "4일 후 2주마다 5 mg/cat"
+  },
+  {
+   "species": "cat",
+   "label": "아토피 대체 치료",
+   "route": "PO",
+   "low": 2.5,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "q48h",
+   "note": "1–3주 후 주 1회로 감량"
+  },
+  {
+   "species": "cat",
+   "label": "중성화 수컷 마킹 억제 초기",
+   "route": "PO",
+   "low": 2.5,
+   "high": 10,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "1주 후 주 1–2회로 감량"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 20
+  },
+  {
+   "form": "tablet",
+   "mg": 40
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

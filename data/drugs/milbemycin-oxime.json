@@ -1,0 +1,65 @@
+{
+ "id": "milbemycin-oxime",
+ "name": "Milbemycin Oxime",
+ "brand": [
+  "Interceptor",
+  "Sentinel",
+  "Trifexis"
+ ],
+ "class": "Macrocyclic lactone 구충제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "모낭충증 (a)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1.6,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "평균 0.75 mg/kg/day; 1–6개월 또는 피부소파 음성까지"
+  },
+  {
+   "species": "dog",
+   "label": "모낭충증 (b)",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "개선충증 (a)",
+   "route": "PO",
+   "low": 0.75,
+   "high": 0.75,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "30일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 2.3
+  },
+  {
+   "form": "tablet",
+   "mg": 5.75
+  },
+  {
+   "form": "tablet",
+   "mg": 11.5
+  },
+  {
+   "form": "tablet",
+   "mg": 23
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

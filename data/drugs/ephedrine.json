@@ -1,0 +1,29 @@
+{
+ "id": "ephedrine",
+ "name": "Ephedrine",
+ "brand": [
+  "Rezipres",
+  "Emerphed"
+ ],
+ "class": "교감신경흥분제 (기관지확장제/승압제)",
+ "tags": [
+  "urinary",
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "아드레날린성 요실금",
+   "route": "PO",
+   "low": 1.5,
+   "high": 1.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "미국 내 경구 제형 단종"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,251 @@
+{
+ "id": "itraconazole",
+ "name": "Itraconazole",
+ "brand": [
+  "Itrafungol",
+  "Sporanox"
+ ],
+ "class": "Azole 계 항진균제 (triazole)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "전신 진균 감염",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "또는 분할 q12h; 식사와 함께; 임상 소실 후 30–60일 지속; ≥10 mg/kg/day 부작용 증가"
+  },
+  {
+   "species": "dog",
+   "label": "난치성 진균 감염 (pythiosis, zygomycosis 등)",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "수개월; 외과적 절제·추가 항진균제 병용"
+  },
+  {
+   "species": "dog",
+   "label": "Blastomycosis",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "임상 소실 후 1개월; 최대 10 mg/kg/day"
+  },
+  {
+   "species": "dog",
+   "label": "Histoplasmosis",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "중앙값; 원문 범위 4.3–33.8 mg/kg/day"
+  },
+  {
+   "species": "dog",
+   "label": "피부사상균증·조갑진균증",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "진균학적 치유(2주 간격 배양 2회 음성)까지"
+  },
+  {
+   "species": "dog",
+   "label": "Malassezia 피부염 (a) 매일",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "임상 소실 후 1주 지속"
+  },
+  {
+   "species": "dog",
+   "label": "Malassezia 피부염 (b) 펄스",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "주 2일 연속 투여"
+  },
+  {
+   "species": "dog",
+   "label": "Chagas병 (T. cruzi)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "amiodarone 병용"
+  },
+  {
+   "species": "dog",
+   "label": "Chagas병 (저체중견)",
+   "route": "PO",
+   "low": 100,
+   "high": 100,
+   "unit": "mg/animal",
+   "freq": "q48h",
+   "note": "100 mg 단위로 내림"
+  },
+  {
+   "species": "dog",
+   "label": "Pythiosis",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "terbinafine 병용"
+  },
+  {
+   "species": "cat",
+   "label": "피부사상균증 M. canis (label)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "7일 투여·7일 휴약 격주 3주기 (1·3·5주차)"
+  },
+  {
+   "species": "cat",
+   "label": "보호소 고양이 전신 피부사상균증",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "21일; 주 2회 유황석회 린스 병용"
+  },
+  {
+   "species": "cat",
+   "label": "Malassezia 피부염 (a) 매일",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "임상 소실 후 1주 지속"
+  },
+  {
+   "species": "cat",
+   "label": "Malassezia 피부염 (b) 펄스",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "주 2일 연속 투여"
+  },
+  {
+   "species": "cat",
+   "label": "전신 진균 감염 (a)",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "또는 분할 q12h; 식사와 함께; 임상 소실 후 30–60일 지속"
+  },
+  {
+   "species": "cat",
+   "label": "전신 진균 감염 (b)",
+   "route": "PO",
+   "low": 100,
+   "high": 100,
+   "unit": "mg/animal",
+   "freq": "q48h",
+   "note": "약동학 연구 기반"
+  },
+  {
+   "species": "cat",
+   "label": "진균성 골수염",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "증례 보고; 다른 증례 12.8→9 mg/kg q12h"
+  },
+  {
+   "species": "cat",
+   "label": "Cryptococcosis",
+   "route": "PO",
+   "low": 50,
+   "high": 100,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "스포로트리쿰증 단독 (a)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2–3개월 또는 임상 치유 후 1개월"
+  },
+  {
+   "species": "cat",
+   "label": "스포로트리쿰증 단독 (b)",
+   "route": "PO",
+   "low": 8.3,
+   "high": 27.7,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "스포로트리쿰증 단독 (c)",
+   "route": "PO",
+   "low": 50,
+   "high": 100,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "식사와 함께"
+  },
+  {
+   "species": "cat",
+   "label": "스포로트리쿰증 병용 (potassium iodide)",
+   "route": "PO",
+   "low": 100,
+   "high": 100,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "KI 병용; 중앙값 14주"
+  },
+  {
+   "species": "cat",
+   "label": "스포로트리쿰증 병용 (병변내 amphotericin B)",
+   "route": "PO",
+   "low": 100,
+   "high": 100,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 100
+  }
+ ],
+ "compounding": "조제 제형 사용 지양 (흡수 불량) — 상용 캡슐/액제 권장, 캡슐은 식사와 함께",
+ "reviewed": null
+}

@@ -1,0 +1,63 @@
+{
+ "id": "miltefosine",
+ "name": "Miltefosine",
+ "brand": [
+  "Milteforan",
+  "Impavido"
+ ],
+ "class": "항리슈마니아제 (alkylphosphocholine)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "리슈마니아증 (a)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "사료에 부어 식사와 함께, 28일"
+  },
+  {
+   "species": "dog",
+   "label": "리슈마니아증 (b) allopurinol 병용",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "28일; allopurinol은 6개월 이상"
+  },
+  {
+   "species": "dog",
+   "label": "리슈마니아증 (c) 초기 5일",
+   "route": "PO",
+   "low": 1.5,
+   "high": 1.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "5일 후 2.5 mg/kg로 증량; allopurinol 병용"
+  },
+  {
+   "species": "dog",
+   "label": "리슈마니아증 (c) 이후 25일",
+   "route": "PO",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "25일; allopurinol 병용"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 50
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

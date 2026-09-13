@@ -1,0 +1,305 @@
+{
+ "id": "doxycycline",
+ "name": "Doxycycline",
+ "brand": [
+  "Vibramycin",
+  "Doxy 100",
+  "Monodox",
+  "Doryx"
+ ],
+ "class": "테트라사이클린계 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "감수성 세균 감염",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h; 7–14일"
+  },
+  {
+   "species": "dog",
+   "label": "급성 호흡기 감염 (a)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "7–10일"
+  },
+  {
+   "species": "dog",
+   "label": "급성 호흡기 감염 (b)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "7–10일"
+  },
+  {
+   "species": "dog",
+   "label": "심장사상충 보조 치료",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "4주 (AHS 프로토콜 1–28일)"
+  },
+  {
+   "species": "dog",
+   "label": "렙토스피라증",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "2주"
+  },
+  {
+   "species": "dog",
+   "label": "과립구성 아나플라스마증",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "14일"
+  },
+  {
+   "species": "dog",
+   "label": "라임병",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "원문 q12–24h; 30일"
+  },
+  {
+   "species": "dog",
+   "label": "에를리키아증",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "28일"
+  },
+  {
+   "species": "dog",
+   "label": "리케차 감염 (RMSF)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "Babesia gibsoni 대체 치료",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "clindamycin·metronidazole 병용, 30–90일"
+  },
+  {
+   "species": "dog",
+   "label": "치주염 (저용량)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (a)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (b)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "급성 호흡기 감염 (a)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "7–10일"
+  },
+  {
+   "species": "cat",
+   "label": "급성 호흡기 감염 (b)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "7–10일"
+  },
+  {
+   "species": "cat",
+   "label": "Mycoplasma felis 상부호흡기 감염",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "7–14일"
+  },
+  {
+   "species": "cat",
+   "label": "Mycoplasma haemofelis (a)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2–4주"
+  },
+  {
+   "species": "cat",
+   "label": "Mycoplasma haemofelis (b)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "2–4주"
+  },
+  {
+   "species": "cat",
+   "label": "에를리키아증/아나플라스마증",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "21일"
+  },
+  {
+   "species": "cat",
+   "label": "바르토넬라증",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "원문 q12–24h"
+  },
+  {
+   "species": "cat",
+   "label": "임상적 톡소플라스마증",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "4주"
+  },
+  {
+   "species": "cat",
+   "label": "마이코박테리아·L-form·마이코플라스마 감염",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "Nocardia 감염",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "원문 5 mg/kg 이상; amoxicillin 병용"
+  },
+  {
+   "species": "cat",
+   "label": "클라미디아 감염",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "최소 3–4주"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 20
+  },
+  {
+   "form": "tablet",
+   "mg": 20
+  },
+  {
+   "form": "capsule",
+   "mg": 40
+  },
+  {
+   "form": "tablet",
+   "mg": 40
+  },
+  {
+   "form": "capsule",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "capsule",
+   "mg": 75
+  },
+  {
+   "form": "tablet",
+   "mg": 75
+  },
+  {
+   "form": "capsule",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "capsule",
+   "mg": 150
+  },
+  {
+   "form": "tablet",
+   "mg": 150
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

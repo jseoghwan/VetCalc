@@ -1,0 +1,73 @@
+{
+ "id": "fludrocortisone",
+ "name": "Fludrocortisone",
+ "brand": [
+  "Florinef"
+ ],
+ "class": "미네랄코르티코이드",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "부신피질기능저하증 유지 (초기)",
+   "route": "PO",
+   "low": 0.01,
+   "high": 0.02,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1일 1회 또는 2회 분할, 5일마다 0.05–0.1 mg씩 조정"
+  },
+  {
+   "species": "dog",
+   "label": "부신피질기능저하증 유지 (장기 필요 용량)",
+   "route": "PO",
+   "low": 0.02,
+   "high": 0.03,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1일 총량"
+  },
+  {
+   "species": "cat",
+   "label": "부신피질기능저하증 유지",
+   "route": "PO",
+   "low": 0.05,
+   "high": 0.1,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "필요 시 prednisolone 병용"
+  },
+  {
+   "species": "cat",
+   "label": "원발성 고알도스테론증 진단 (UACR)",
+   "route": "PO",
+   "low": 0.05,
+   "high": 0.05,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "4일"
+  },
+  {
+   "species": "cat",
+   "label": "원발성 고알도스테론증 진단 (혈청)",
+   "route": "PO",
+   "low": 0.05,
+   "high": 0.05,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "3회 투여"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 0.1
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,51 @@
+{
+ "id": "griseofulvin",
+ "name": "Griseofulvin",
+ "brand": [
+  "Fulvicin",
+  "Gris-PEG"
+ ],
+ "class": "항진균제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "피부사상균증 (microsize)",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1일 1회 또는 분할 q12h; 지방식과 함께; 임상 치유 후 2주 이상 지속"
+  },
+  {
+   "species": "dog",
+   "label": "피부사상균증 (ultramicrosize)",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "지방식과 함께; 임상 치유 후 2주 이상 지속"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 125
+  },
+  {
+   "form": "tablet",
+   "mg": 250
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

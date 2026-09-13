@@ -1,0 +1,124 @@
+{
+ "id": "levetiracetam",
+ "name": "Levetiracetam",
+ "brand": [
+  "Keppra"
+ ],
+ "class": "항경련제 (SV2A 리간드)",
+ "tags": [
+  "anticonvulsant"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "난치성 뇌전증 (속방정)",
+   "route": "PO",
+   "low": 20,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "1–2주마다 최대 60 mg/kg q8h까지 증량 가능; phenobarbital 병용 시 증량 필요할 수 있음"
+  },
+  {
+   "species": "dog",
+   "label": "난치성 뇌전증 (서방정)",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "최대 60 mg/kg q12h; 분할·분쇄 금지(최소 500 mg); 일부 q24h 가능"
+  },
+  {
+   "species": "dog",
+   "label": "문맥전신단락 수술 후 발작 예방",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "수술 최소 24시간 전부터"
+  },
+  {
+   "species": "dog",
+   "label": "군발 발작 펄스 요법 (가정 투여)",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "24시간 발작 없을 때까지"
+  },
+  {
+   "species": "dog",
+   "label": "반응성 발작 (유지)",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "IV 60 mg/kg 부하 후; 6개월 무발작 후 서서히 감량"
+  },
+  {
+   "species": "cat",
+   "label": "뇌전증 (a)",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "최대 40 mg/kg q8h"
+  },
+  {
+   "species": "cat",
+   "label": "뇌전증 (b) phenobarbital 병용",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "무효 시 20 mg/kg씩 증량"
+  },
+  {
+   "species": "cat",
+   "label": "뇌전증 (c) 서방정",
+   "route": "PO",
+   "low": 500,
+   "high": 500,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "근간대성 발작",
+   "route": "PO",
+   "low": 20,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "총 60–75 mg/kg/day 3회 분할"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 250
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 750
+  },
+  {
+   "form": "tablet",
+   "mg": 1000
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

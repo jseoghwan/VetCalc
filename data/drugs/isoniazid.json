@@ -1,0 +1,47 @@
+{
+ "id": "isoniazid",
+ "name": "Isoniazid",
+ "brand": [
+  "Laniazid",
+  "Nydrazid"
+ ],
+ "class": "항결핵제 (antimycobacterial)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "M. tuberculosis 화학예방",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "인체 자료 외삽"
+  },
+  {
+   "species": "cat",
+   "label": "고양이 결핵 (2차 치료, 내성 감염)",
+   "route": "PO",
+   "low": 10,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 300
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

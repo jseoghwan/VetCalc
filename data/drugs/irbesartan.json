@@ -1,0 +1,41 @@
+{
+ "id": "irbesartan",
+ "name": "Irbesartan",
+ "brand": [
+  "Avapro"
+ ],
+ "class": "안지오텐신 II 수용체 차단제 (ARB)",
+ "tags": [
+  "cardio",
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "고혈압·단백뇨·심부전",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h; 일화적 권고; 고양이 용량은 미확립"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 75
+  },
+  {
+   "form": "tablet",
+   "mg": 150
+  },
+  {
+   "form": "tablet",
+   "mg": 300
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

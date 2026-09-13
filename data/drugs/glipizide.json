@@ -1,0 +1,50 @@
+{
+ "id": "glipizide",
+ "name": "Glipizide",
+ "brand": [
+  "Glucotrol"
+ ],
+ "class": "설포닐우레아계 경구 혈당강하제",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "cat",
+   "label": "당뇨병 (초기)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "식사와 함께; 2주 후 반응 없으면 증량"
+  },
+  {
+   "species": "cat",
+   "label": "당뇨병 (증량)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "식사와 함께; 4–6주 무반응 시 인슐린 전환"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 2.5
+  },
+  {
+   "form": "tablet",
+   "mg": 5
+  },
+  {
+   "form": "tablet",
+   "mg": 10
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

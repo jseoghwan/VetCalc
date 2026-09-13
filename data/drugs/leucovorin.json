@@ -1,0 +1,53 @@
+{
+ "id": "leucovorin",
+ "name": "Leucovorin",
+ "brand": [],
+ "class": "엽산 유도체 (folinic acid)",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "엽산 결핍·골수억제 (pyrimethamine, trimethoprim, ormetoprim 관련)",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "인체 용량 외삽; 실용적으로 ½정 단위로 올림"
+  },
+  {
+   "species": "cat",
+   "label": "엽산 결핍·골수억제 (pyrimethamine, trimethoprim, ormetoprim 관련)",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "인체 용량 외삽; 실용적으로 ½정 단위로 올림"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 5
+  },
+  {
+   "form": "tablet",
+   "mg": 10
+  },
+  {
+   "form": "tablet",
+   "mg": 15
+  },
+  {
+   "form": "tablet",
+   "mg": 25
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

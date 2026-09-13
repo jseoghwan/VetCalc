@@ -1,0 +1,280 @@
+{
+ "id": "metronidazole",
+ "name": "Metronidazole",
+ "brand": [
+  "Flagyl"
+ ],
+ "class": "Nitroimidazole계 항생제·항원충제",
+ "tags": [
+  "antimicrobial",
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "혐기성 감염 (경증)",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "지아르디아증 (a)",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "fenbendazole 병용, 5일"
+  },
+  {
+   "species": "dog",
+   "label": "지아르디아증 (b)",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "5–7일; 2회 분할 가능"
+  },
+  {
+   "species": "dog",
+   "label": "기타 원충 감염 (Entamoeba, Pentatrichomonas)",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "8일"
+  },
+  {
+   "species": "dog",
+   "label": "클로스트리듐 장염 (a)",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h; 5일"
+  },
+  {
+   "species": "dog",
+   "label": "클로스트리듐 장염 (c)",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "5–7일; 2회 분할 가능"
+  },
+  {
+   "species": "dog",
+   "label": "염증성 장질환 (IBD) 보조",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "장기 투여 시 신경·간독성 위험"
+  },
+  {
+   "species": "dog",
+   "label": "IBD 보조, 간질환 동반",
+   "route": "PO",
+   "low": 7.5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "Helicobacter 위염 3제 요법 (a)",
+   "route": "PO",
+   "low": 15.4,
+   "high": 15.4,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "amoxicillin·bismuth 병용, 3주"
+  },
+  {
+   "species": "dog",
+   "label": "Helicobacter 위염 3제 요법 (b)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "amoxicillin·bismuth 병용, 2주"
+  },
+  {
+   "species": "dog",
+   "label": "Helicobacter 위염 3제 요법 (c)",
+   "route": "PO",
+   "low": 11,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "amoxicillin·bismuth 병용, 3주"
+  },
+  {
+   "species": "dog",
+   "label": "Babesia gibsoni 대체 요법",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "clindamycin·doxycycline 병용, 30–90일"
+  },
+  {
+   "species": "dog",
+   "label": "간성 뇌증",
+   "route": "PO",
+   "low": 7.5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "cat",
+   "label": "혐기성 감염 (경증) (a)",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "실용적으로 250 mg 정 ¼ (62.5 mg)/cat"
+  },
+  {
+   "species": "cat",
+   "label": "혐기성 감염 (경증) (b)",
+   "route": "PO",
+   "low": 15,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "지아르디아증 (a)",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "5일; benzoate 염이 내약성 좋음"
+  },
+  {
+   "species": "cat",
+   "label": "지아르디아증 (b)",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "5–7일; 2회 분할 가능"
+  },
+  {
+   "species": "cat",
+   "label": "트리코모나스증 (T. foetus)",
+   "route": "PO",
+   "low": 30,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "3–14일; ronidazole보다 제거율 낮음"
+  },
+  {
+   "species": "cat",
+   "label": "Helicobacter 위염 3제 요법 (a)",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "clarithromycin·amoxicillin 병용, 14일"
+  },
+  {
+   "species": "cat",
+   "label": "Helicobacter 위염 3제 요법 (b)",
+   "route": "PO",
+   "low": 11,
+   "high": 15.4,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h; amoxicillin·bismuth 병용, 3주"
+  },
+  {
+   "species": "cat",
+   "label": "Helicobacter 위염 3제 요법 (c)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "amoxicillin·bismuth 병용, 2주"
+  },
+  {
+   "species": "cat",
+   "label": "클로스트리듐 장염 (a)",
+   "route": "PO",
+   "low": 62.5,
+   "high": 62.5,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "5일"
+  },
+  {
+   "species": "cat",
+   "label": "클로스트리듐 장염 (b)",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "5–7일; 2회 분할 가능"
+  },
+  {
+   "species": "cat",
+   "label": "염증성 장질환 (IBD) 보조",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "실용적으로 250 mg 정 ¼ (62.5 mg)/cat; 장기 투여 시 신경·간독성 위험"
+  },
+  {
+   "species": "cat",
+   "label": "간성 뇌증",
+   "route": "PO",
+   "low": 7.5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 250
+  },
+  {
+   "form": "capsule",
+   "mg": 375
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,62 @@
+{
+ "id": "liothyronine",
+ "name": "Liothyronine",
+ "brand": [
+  "Cytomel",
+  "Triostat"
+ ],
+ "class": "갑상선 호르몬 (T3)",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "갑상선기능저하증 (초기)",
+   "route": "PO",
+   "low": 4,
+   "high": 6,
+   "unit": "mcg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "투여 후 T3 농도로 조절; 조절 후 q12h로 감량 가능"
+  },
+  {
+   "species": "cat",
+   "label": "T3 억제 검사 (갑상선기능항진증 진단)",
+   "route": "PO",
+   "low": 0.025,
+   "high": 0.025,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "25 µg/cat, 7회 투여; 마지막 투여 2–4시간 후 T3·T4 측정"
+  },
+  {
+   "species": "cat",
+   "label": "갑상선기능저하증 (초기)",
+   "route": "PO",
+   "low": 4.4,
+   "high": 4.4,
+   "unit": "mcg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 1일 2–3회; 투여 후 T3 농도로 조절"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 0.005
+  },
+  {
+   "form": "tablet",
+   "mg": 0.025
+  },
+  {
+   "form": "tablet",
+   "mg": 0.05
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

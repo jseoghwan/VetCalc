@@ -1,0 +1,58 @@
+{
+ "id": "esomeprazole",
+ "name": "Esomeprazole",
+ "brand": [
+  "Nexium"
+ ],
+ "class": "양성자펌프억제제 (PPI)",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "위산 분비 억제",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "공복 투여"
+  },
+  {
+   "species": "cat",
+   "label": "위산 분비 억제",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 20
+  },
+  {
+   "form": "tablet",
+   "mg": 20
+  },
+  {
+   "form": "capsule",
+   "mg": 24.65
+  },
+  {
+   "form": "capsule",
+   "mg": 40
+  },
+  {
+   "form": "capsule",
+   "mg": 49.3
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

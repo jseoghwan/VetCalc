@@ -1,0 +1,81 @@
+{
+ "id": "hydroxyzine",
+ "name": "Hydroxyzine",
+ "brand": [
+  "Atarax",
+  "Vistaril"
+ ],
+ "class": "1세대 항히스타민제 (H1 차단제)",
+ "tags": [
+  "respiratory"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "소양증·항히스타민 (a)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "약동학 연구 기준"
+  },
+  {
+   "species": "dog",
+   "label": "소양증·항히스타민 (b)",
+   "route": "PO",
+   "low": 3,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "소양증·항히스타민 (a)",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "소양증·항히스타민 (b)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 10
+  },
+  {
+   "form": "capsule",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "capsule",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "capsule",
+   "mg": 100
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,36 @@
+{
+ "id": "imidacloprid",
+ "name": "Imidacloprid",
+ "brand": [
+  "advantus"
+ ],
+ "class": "경구 살충제 (neonicotinoid)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "벼룩 감염 (label)",
+   "route": "PO",
+   "low": 0.7,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "라벨은 체중별 정제(1.8–10 kg: 7.5 mg, 10.5–50 kg: 37.5 mg); 필요 시 1일 1회 반복, 1일 1정 초과 금지"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "chewable tablet",
+   "mg": 7.5
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 37.5
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

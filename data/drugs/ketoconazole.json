@@ -1,0 +1,83 @@
+{
+ "id": "ketoconazole",
+ "name": "Ketoconazole",
+ "brand": [
+  "Nizoral"
+ ],
+ "class": "Azole 계 항진균제 (imidazole)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "Malassezia 피부염",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "3–4주, 임상 소실까지; 국소 치료 병용"
+  },
+  {
+   "species": "dog",
+   "label": "조갑진균증",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "건강한 발톱 재생 후 1–3개월"
+  },
+  {
+   "species": "dog",
+   "label": "Cyclosporine 용량 절감",
+   "route": "PO",
+   "low": 2.5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "용량 의존적 절감; CSA 농도 모니터링"
+  },
+  {
+   "species": "dog",
+   "label": "전신 진균 감염",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "원문 q12–24h; 임상 소실 후 최소 1개월"
+  },
+  {
+   "species": "cat",
+   "label": "전신 진균 감염 (a)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h, 식사와 함께; 독성 우려로 사용 논란"
+  },
+  {
+   "species": "cat",
+   "label": "전신 진균 감염 (b)",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "원문 q12–24h, 식사와 함께"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 200
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

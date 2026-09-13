@@ -1,0 +1,59 @@
+{
+ "id": "iodide",
+ "name": "Iodide",
+ "brand": [
+  "SSKI",
+  "Pima",
+  "Thyrosafe"
+ ],
+ "class": "요오드제 (항진균; potassium iodide)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "스포로트리쿰증",
+   "route": "PO",
+   "low": 40,
+   "high": 40,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "potassium iodide(SSKI) 기준; 식이와 함께"
+  },
+  {
+   "species": "cat",
+   "label": "스포로트리쿰증 (초기, 단독)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "potassium iodide 캡슐; 5일마다 5→10→15→20 mg/kg로 증량"
+  },
+  {
+   "species": "cat",
+   "label": "스포로트리쿰증 (itraconazole 병용)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "potassium iodide 기준; 30일마다 2.5 mg/kg씩 증량, 최대 20 mg/kg; 임상 치유 후 4주 지속"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 65
+  },
+  {
+   "form": "tablet",
+   "mg": 130
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

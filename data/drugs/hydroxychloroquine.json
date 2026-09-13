@@ -1,0 +1,42 @@
+{
+ "id": "hydroxychloroquine",
+ "name": "Hydroxychloroquine",
+ "brand": [
+  "Plaquenil"
+ ],
+ "class": "항말라리아제 (면역조절제)",
+ "tags": [
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "박탈성 피부 홍반루푸스 (ECLE) 보조",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "증례 보고 4두 기준"
+  },
+  {
+   "species": "dog",
+   "label": "전신성 원판상 홍반루푸스 (GDLE) 보조",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "국소 tacrolimus 병용"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 200
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

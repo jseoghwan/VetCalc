@@ -1,0 +1,43 @@
+{
+ "id": "dolasetron",
+ "name": "Dolasetron",
+ "brand": [
+  "Anzemet"
+ ],
+ "class": "5-HT3 수용체 길항제 (진토제)",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "진토",
+   "route": "PO",
+   "low": 0.6,
+   "high": 0.6,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "활동성 구토 시 최대 1 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "진토",
+   "route": "PO",
+   "low": 0.6,
+   "high": 0.6,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "활동성 구토 시 최대 1 mg/kg"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 50
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

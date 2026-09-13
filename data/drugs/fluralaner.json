@@ -1,0 +1,88 @@
+{
+ "id": "fluralaner",
+ "name": "Fluralaner",
+ "brand": [
+  "Bravecto"
+ ],
+ "class": "이속사졸린계 외부기생충제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "Triatoma infestans (샤가스병 매개충)",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "label 용량(25 mg/kg 12주마다, 1-Month 제품 10 mg/kg 매월)은 빈도 표현 불가"
+  },
+  {
+   "species": "cat",
+   "label": "Demodex gatoi·D. cati",
+   "route": "PO",
+   "low": 26,
+   "high": 34,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "112.5 mg 정제 1정/cat"
+  },
+  {
+   "species": "cat",
+   "label": "Lynxacarus radovsky",
+   "route": "PO",
+   "low": 25,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "once"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "chewable tablet",
+   "mg": 45
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 100
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 112
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 200
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 250
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 400
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 500
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 560
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 1000
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 1400
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

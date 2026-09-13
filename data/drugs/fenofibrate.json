@@ -1,0 +1,104 @@
+{
+ "id": "fenofibrate",
+ "name": "Fenofibrate",
+ "brand": [
+  "TriCor",
+  "Antara",
+  "Lipofen",
+  "Lofibra"
+ ],
+ "class": "Fibric acid 유도체 (지질저하제)",
+ "tags": [
+  "endocrine",
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "고중성지방혈증",
+   "route": "PO",
+   "low": 6.5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "아침 첫 식사와 함께; 제제 간 생물학적 동등성 없음(제품 지정)"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 30
+  },
+  {
+   "form": "tablet",
+   "mg": 35
+  },
+  {
+   "form": "tablet",
+   "mg": 40
+  },
+  {
+   "form": "capsule",
+   "mg": 43
+  },
+  {
+   "form": "tablet",
+   "mg": 48
+  },
+  {
+   "form": "capsule",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 54
+  },
+  {
+   "form": "capsule",
+   "mg": 67
+  },
+  {
+   "form": "capsule",
+   "mg": 90
+  },
+  {
+   "form": "tablet",
+   "mg": 105
+  },
+  {
+   "form": "tablet",
+   "mg": 120
+  },
+  {
+   "form": "capsule",
+   "mg": 130
+  },
+  {
+   "form": "capsule",
+   "mg": 134
+  },
+  {
+   "form": "tablet",
+   "mg": 145
+  },
+  {
+   "form": "capsule",
+   "mg": 150
+  },
+  {
+   "form": "tablet",
+   "mg": 160
+  },
+  {
+   "form": "capsule",
+   "mg": 200
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

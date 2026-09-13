@@ -1,0 +1,59 @@
+{
+ "id": "fluvoxamine",
+ "name": "Fluvoxamine",
+ "brand": [
+  "Luvox"
+ ],
+ "class": "선택적 세로토닌 재흡수 억제제 (SSRI)",
+ "tags": [
+  "behavior"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "행동 장애 보조",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "효과 판정 3–8주, 중단 시 수주에 걸쳐 감량"
+  },
+  {
+   "species": "cat",
+   "label": "행동 장애 보조",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "25 mg 정제 1/4(≈6 mg)이 최소 실용 단위"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "capsule",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "capsule",
+   "mg": 150
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

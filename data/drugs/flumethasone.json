@@ -1,0 +1,44 @@
+{
+ "id": "flumethasone",
+ "name": "Flumethasone",
+ "brand": [
+  "Flucort"
+ ],
+ "class": "글루코코르티코이드",
+ "tags": [
+  "endocrine",
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "염증성 근골격 질환·피부염 (label)",
+   "route": "PO",
+   "low": 0.0625,
+   "high": 0.25,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "1일 총량, 분할 투여; 미국 내 정제 미시판"
+  },
+  {
+   "species": "cat",
+   "label": "급·만성 피부염 (label)",
+   "route": "PO",
+   "low": 0.03125,
+   "high": 0.125,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "1일 총량, 분할 투여; 미국 내 정제 미시판"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 0.0625
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

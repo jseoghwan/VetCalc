@@ -1,0 +1,69 @@
+{
+ "id": "ketoprofen",
+ "name": "Ketoprofen",
+ "brand": [
+  "Ketofen"
+ ],
+ "class": "NSAID (propionic acid 계)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "급성 통증",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "3–5일"
+  },
+  {
+   "species": "dog",
+   "label": "만성 통증",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "급성 통증",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "3–5일"
+  },
+  {
+   "species": "cat",
+   "label": "만성 통증",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 50
+  },
+  {
+   "form": "capsule",
+   "mg": 75
+  },
+  {
+   "form": "capsule",
+   "mg": 200
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,150 @@
+{
+ "id": "melatonin",
+ "name": "Melatonin",
+ "brand": [
+  "PrimeX",
+  "Regulin",
+  "Dermatonin"
+ ],
+ "class": "호르몬·뉴트라슈티컬",
+ "tags": [
+  "endocrine",
+  "behavior"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "탈모(알로페시아 X 등) (a)",
+   "route": "PO",
+   "low": 3,
+   "high": 12,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 1일 2–3회; 최소 2–4개월"
+  },
+  {
+   "species": "dog",
+   "label": "탈모(알로페시아 X 등) (b)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1일 총량, 2–3회 분할"
+  },
+  {
+   "species": "dog",
+   "label": "수면장애·공포증 초기",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "원문 1일 1–3회; 1 mg 단위 올림"
+  },
+  {
+   "species": "dog",
+   "label": "야간 각성 취침 전",
+   "route": "PO",
+   "low": 1,
+   "high": 9,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "취침 30분 전 1회"
+  },
+  {
+   "species": "dog",
+   "label": "내원 전 진정, 5 kg 미만",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "스트레스 2시간 전"
+  },
+  {
+   "species": "dog",
+   "label": "내원 전 진정, 5–15 kg",
+   "route": "PO",
+   "low": 1.5,
+   "high": 1.5,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "스트레스 2시간 전"
+  },
+  {
+   "species": "dog",
+   "label": "내원 전 진정, 15–50 kg",
+   "route": "PO",
+   "low": 3,
+   "high": 3,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "스트레스 2시간 전"
+  },
+  {
+   "species": "dog",
+   "label": "내원 전 진정, 50 kg 초과",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "스트레스 2시간 전"
+  },
+  {
+   "species": "dog",
+   "label": "수술 전 진정",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "수술 2시간 전"
+  },
+  {
+   "species": "dog",
+   "label": "특발성 공포성 간병증",
+   "route": "PO",
+   "low": 3,
+   "high": 3,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "15 kg 초과는 증량 필요 가능"
+  },
+  {
+   "species": "cat",
+   "label": "수면장애·야간 활동 (a)",
+   "route": "PO",
+   "low": 1.5,
+   "high": 6,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "취침 전"
+  },
+  {
+   "species": "cat",
+   "label": "수면장애·야간 활동 (b)",
+   "route": "PO",
+   "low": 3,
+   "high": 12,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "원문 q12–24h"
+  },
+  {
+   "species": "cat",
+   "label": "발정 억제",
+   "route": "PO",
+   "low": 4,
+   "high": 30,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,88 @@
+{
+ "id": "loperamide",
+ "name": "Loperamide",
+ "brand": [
+  "Imodium",
+  "Difixin"
+ ],
+ "class": "오피오이드 지사제",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "지사제 4.5–11.4 kg (label)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "필요 시, 1일 3회·3일 초과 금지"
+  },
+  {
+   "species": "dog",
+   "label": "지사제 11.8–18.2 kg (label)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "필요 시, 1일 3회·3일 초과 금지"
+  },
+  {
+   "species": "dog",
+   "label": "지사제 18.6–27.3 kg (label)",
+   "route": "PO",
+   "low": 4,
+   "high": 4,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "필요 시, 1일 3회·3일 초과 금지"
+  },
+  {
+   "species": "dog",
+   "label": "지사제 (extra-label)",
+   "route": "PO",
+   "low": 0.08,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "필요 시; MDR1 변이견 회피"
+  },
+  {
+   "species": "dog",
+   "label": "지사제 고용량 (extra-label)",
+   "route": "PO",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 1일 3–4회"
+  },
+  {
+   "species": "cat",
+   "label": "지사제 (extra-label)",
+   "route": "PO",
+   "low": 0.04,
+   "high": 0.16,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "실용적으로 2 mg 정제 1/4–1/2; 흥분 반응 주의"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 2
+  },
+  {
+   "form": "tablet",
+   "mg": 2
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

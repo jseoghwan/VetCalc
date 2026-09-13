@@ -1,0 +1,95 @@
+{
+ "id": "famotidine",
+ "name": "Famotidine",
+ "brand": [
+  "Pepcid"
+ ],
+ "class": "H2 차단제",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "위산 분비 억제",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "실용적으로 5 mg 단위로 올림; 신기능 저하 시 q24h"
+  },
+  {
+   "species": "dog",
+   "label": "궤양 치료 보조 (a)",
+   "route": "PO",
+   "low": 1.88,
+   "high": 1.88,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "궤양 치료 보조 (b)",
+   "route": "PO",
+   "low": 2.8,
+   "high": 2.8,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "위산 분비 억제",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "실용적으로 5 mg/cat 단위로 올림; 신기능 저하 시 q24h"
+  },
+  {
+   "species": "cat",
+   "label": "궤양 치료 보조 (a)",
+   "route": "PO",
+   "low": 1.88,
+   "high": 1.88,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "cat",
+   "label": "궤양 치료 보조 (b)",
+   "route": "PO",
+   "low": 2.8,
+   "high": 2.8,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "chewable tablet",
+   "mg": 10
+  },
+  {
+   "form": "tablet",
+   "mg": 10
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 20
+  },
+  {
+   "form": "tablet",
+   "mg": 20
+  },
+  {
+   "form": "tablet",
+   "mg": 40
+  }
+ ],
+ "compounding": "정제 분할·분쇄 가능하나 쓴맛; 조제 현탁액은 pH 4–6 유지(pH<2에서 급속 분해)",
+ "reviewed": null
+}

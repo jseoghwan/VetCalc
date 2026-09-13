@@ -1,0 +1,77 @@
+{
+ "id": "methocarbamol",
+ "name": "Methocarbamol",
+ "brand": [
+  "Robaxin",
+  "Robaxin-V"
+ ],
+ "class": "중추성 근이완제",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "근육 경련 첫날 (label)",
+   "route": "PO",
+   "low": 132,
+   "high": 132,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1일 총량, 2–3회 분할 (q8–12h)"
+  },
+  {
+   "species": "dog",
+   "label": "근육 경련 유지 (label)",
+   "route": "PO",
+   "low": 66,
+   "high": 132,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1일 총량, q8–12h 분할; 5일 내 무반응 시 중단"
+  },
+  {
+   "species": "dog",
+   "label": "추간판질환 보조 근이완",
+   "route": "PO",
+   "low": 15,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "cat",
+   "label": "근육 경련 첫날 (label)",
+   "route": "PO",
+   "low": 132,
+   "high": 132,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1일 총량, 2–3회 분할 (q8–12h)"
+  },
+  {
+   "species": "cat",
+   "label": "근육 경련 유지 (label)",
+   "route": "PO",
+   "low": 66,
+   "high": 132,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1일 총량, q8–12h 분할; 5일 내 무반응 시 중단"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 750
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

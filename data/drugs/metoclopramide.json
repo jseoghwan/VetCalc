@@ -1,0 +1,79 @@
+{
+ "id": "metoclopramide",
+ "name": "Metoclopramide",
+ "brand": [
+  "Reglan",
+  "Emeprid",
+  "Metozolv"
+ ],
+ "class": "위장관 운동촉진제; 도파민 길항 진토제",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "진토·위 운동 촉진",
+   "route": "PO",
+   "low": 0.2,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–8h; 운동촉진 목적 시 식전 30–60분"
+  },
+  {
+   "species": "dog",
+   "label": "구토·위장운동 저하 (위염·유문경련 등) (a)",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "최대 q6h까지 가능"
+  },
+  {
+   "species": "dog",
+   "label": "구토·위장운동 저하 (위염·유문경련 등) (b)",
+   "route": "PO",
+   "low": 0.17,
+   "high": 0.33,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "최대 q6h까지 가능"
+  },
+  {
+   "species": "cat",
+   "label": "구토·위장운동 저하 (위염·유문경련 등) (a)",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "최대 q6h까지 가능"
+  },
+  {
+   "species": "cat",
+   "label": "구토·위장운동 저하 (위염·유문경련 등) (b)",
+   "route": "PO",
+   "low": 0.17,
+   "high": 0.33,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "최대 q6h까지 가능"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 5
+  },
+  {
+   "form": "tablet",
+   "mg": 10
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

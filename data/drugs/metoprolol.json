@@ -1,0 +1,83 @@
+{
+ "id": "metoprolol",
+ "name": "Metoprolol",
+ "brand": [
+  "Lopressor",
+  "Toprol XL"
+ ],
+ "class": "β1 선택적 β 차단제",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "심방세동 심박수 조절 시작 용량",
+   "route": "PO",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "tartrate 속방정; 2–3주마다 증량; 실용 최소 6.25 mg (25 mg 정 ¼)"
+  },
+  {
+   "species": "dog",
+   "label": "심방세동 심박수 조절 통상 용량",
+   "route": "PO",
+   "low": 0.4,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h; 증량 내약성 낮음"
+  },
+  {
+   "species": "dog",
+   "label": "심방세동 심박수 조절 최대 보고 용량",
+   "route": "PO",
+   "low": 6.6,
+   "high": 6.6,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "cat",
+   "label": "β 차단",
+   "route": "PO",
+   "low": 2,
+   "high": 15,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "default": true,
+   "note": "소용량은 조제 필요할 수 있음"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 37.5
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 75
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 200
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

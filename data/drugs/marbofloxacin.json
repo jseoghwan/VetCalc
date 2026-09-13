@@ -1,0 +1,154 @@
+{
+ "id": "marbofloxacin",
+ "name": "Marbofloxacin",
+ "brand": [
+  "Zeniquin",
+  "Marboquin"
+ ],
+ "class": "플루오로퀴놀론 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "피부·연부조직 감염 (label)",
+   "route": "PO",
+   "low": 2.75,
+   "high": 5.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "임상 증상 소실 후 2–3일 더, 최대 30일"
+  },
+  {
+   "species": "dog",
+   "label": "피부·연부조직 감염 (extra-label)",
+   "route": "PO",
+   "low": 5.5,
+   "high": 5.5,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "요로감염 (label)",
+   "route": "PO",
+   "low": 2.75,
+   "high": 5.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "최소 10일, 최대 30일"
+  },
+  {
+   "species": "dog",
+   "label": "산발성 세균성 방광염 (extra-label)",
+   "route": "PO",
+   "low": 2.75,
+   "high": 5.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "3–5일; Pseudomonas는 고용량"
+  },
+  {
+   "species": "dog",
+   "label": "리슈만편모충증",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "28일"
+  },
+  {
+   "species": "cat",
+   "label": "피부·연부조직 감염 (label)",
+   "route": "PO",
+   "low": 2.75,
+   "high": 5.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "임상 증상 소실 후 2–3일 더, 최대 30일"
+  },
+  {
+   "species": "cat",
+   "label": "피부·연부조직 감염 (extra-label)",
+   "route": "PO",
+   "low": 5.5,
+   "high": 5.5,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "요로감염 (label)",
+   "route": "PO",
+   "low": 2.75,
+   "high": 5.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "최소 10일, 최대 30일"
+  },
+  {
+   "species": "cat",
+   "label": "산발성 세균성 방광염 (extra-label)",
+   "route": "PO",
+   "low": 2.75,
+   "high": 5.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "3–5일; Pseudomonas는 고용량"
+  },
+  {
+   "species": "cat",
+   "label": "비결핵성 마이코박테리아 피부감염",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "rifampin + 마크로라이드 병용, 초기 2개월"
+  },
+  {
+   "species": "cat",
+   "label": "혈액 마이코플라스마 감염 (a)",
+   "route": "PO",
+   "low": 2.75,
+   "high": 2.75,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "14–28일"
+  },
+  {
+   "species": "cat",
+   "label": "혈액 마이코플라스마 감염 (b)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "doxycycline 후 PCR 양성 지속 시, 14일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 200
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,84 @@
+{
+ "id": "leflunomide",
+ "name": "Leflunomide",
+ "brand": [
+  "Arava"
+ ],
+ "class": "면역조절제 (pyrimidine 합성 억제제)",
+ "tags": [
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "IMHA (a)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "IMHA (b) 초기 권장",
+   "route": "PO",
+   "low": 3,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "면역매개성 다발성 관절염",
+   "route": "PO",
+   "low": 3,
+   "high": 4.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "최소 6주; 관절액 세포검사로 조절"
+  },
+  {
+   "species": "cat",
+   "label": "면역억제 (초기)",
+   "route": "PO",
+   "low": 2,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "실용적으로 10 mg/cat; 반응 후 감량 가능"
+  },
+  {
+   "species": "cat",
+   "label": "면역억제 (실용 용량)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "류마티스 관절염 보조 (초기)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "methotrexate 병용; 개선 후 주 2회로 감량"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 10
+  },
+  {
+   "form": "tablet",
+   "mg": 20
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

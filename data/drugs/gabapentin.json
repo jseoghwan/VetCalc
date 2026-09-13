@@ -1,0 +1,200 @@
+{
+ "id": "gabapentin",
+ "name": "Gabapentin",
+ "brand": [
+  "Neurontin"
+ ],
+ "class": "항경련제·신경병증성 통증 진통제 (gabapentinoid)",
+ "tags": [
+  "anticonvulsant",
+  "analgesic",
+  "behavior"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "난치성 발작 보조 (a)",
+   "route": "PO",
+   "low": 10,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "10 mg/kg로 시작 권장; 최대 30 mg/kg q8h 또는 q6h"
+  },
+  {
+   "species": "dog",
+   "label": "난치성 발작 보조 (b)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "3개월 연구 용량"
+  },
+  {
+   "species": "dog",
+   "label": "보조 진통 (만성·신경병증성 통증)",
+   "route": "PO",
+   "low": 10,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "q8h가 약동학적으로 더 효과적"
+  },
+  {
+   "species": "dog",
+   "label": "보조 진통 (발작 용량 준용)",
+   "route": "PO",
+   "low": 10,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "마취 전 투여 (MAC 감소)",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "마취 2시간 전"
+  },
+  {
+   "species": "dog",
+   "label": "폭풍 공포",
+   "route": "PO",
+   "low": 25,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "노출 90분 전"
+  },
+  {
+   "species": "cat",
+   "label": "난치성 발작 보조 (a)",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "cat",
+   "label": "난치성 발작 보조 (b)",
+   "route": "PO",
+   "low": 5,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 q6–12h"
+  },
+  {
+   "species": "cat",
+   "label": "보조 진통 (초기)",
+   "route": "PO",
+   "low": 3,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "필요 시 5–10 mg/kg q12h로 증량"
+  },
+  {
+   "species": "cat",
+   "label": "보조 진통 (증량)",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "보조 진통 (b)",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "cat",
+   "label": "중성화 수술 후 진통",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "수술 12시간 전·1시간 전 각 1회"
+  },
+  {
+   "species": "cat",
+   "label": "골관절염",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "내원 전 불안·공포 완화",
+   "route": "PO",
+   "low": 50,
+   "high": 200,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "≈9–48 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "내원 전 불안 완화 (CKD IRIS 2–3)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "내원 3시간 전"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "capsule",
+   "mg": 300
+  },
+  {
+   "form": "tablet",
+   "mg": 300
+  },
+  {
+   "form": "capsule",
+   "mg": 400
+  },
+  {
+   "form": "tablet",
+   "mg": 400
+  },
+  {
+   "form": "tablet",
+   "mg": 600
+  },
+  {
+   "form": "tablet",
+   "mg": 800
+  }
+ ],
+ "compounding": "시판 경구액은 xylitol 함유 가능(개 주의) — 정제로 조제한 100 mg/mL 현탁액은 56일 안정",
+ "reviewed": null
+}

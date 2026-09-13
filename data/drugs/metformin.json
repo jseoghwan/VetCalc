@@ -1,0 +1,56 @@
+{
+ "id": "metformin",
+ "name": "Metformin",
+ "brand": [
+  "Glucophage",
+  "Glumetza",
+  "Fortamet",
+  "Riomet"
+ ],
+ "class": "비구아나이드계 혈당강하제",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "cat",
+   "label": "비인슐린의존성 당뇨 (a)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "정제 사용 시 조제 필요; 최대 내약 용량 10 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "비인슐린의존성 당뇨 (b)",
+   "route": "PO",
+   "low": 25,
+   "high": 50,
+   "unit": "mg/animal",
+   "freq": "q12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 750
+  },
+  {
+   "form": "tablet",
+   "mg": 850
+  },
+  {
+   "form": "tablet",
+   "mg": 1000
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

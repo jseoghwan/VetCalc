@@ -1,0 +1,65 @@
+{
+ "id": "l-theanine",
+ "name": "L-Theanine",
+ "brand": [
+  "Anxitane",
+  "Composure",
+  "Solliquin"
+ ],
+ "class": "영양 보조 항불안제 (nutraceutical)",
+ "tags": [
+  "behavior"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "경도–중등도 불안 완화",
+   "route": "PO",
+   "low": 10,
+   "high": 100,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "체구별; 제품 라벨 참조; 행동치료 병행"
+  },
+  {
+   "species": "cat",
+   "label": "경도–중등도 불안 완화",
+   "route": "PO",
+   "low": 10,
+   "high": 25,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "원문 1일 1–2회; 제품 라벨 참조; 행동치료 병행"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "chewable tablet",
+   "mg": 10.5
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 21
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 35
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 50
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 100
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 205
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

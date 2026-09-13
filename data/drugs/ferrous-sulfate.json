@@ -1,0 +1,64 @@
+{
+ "id": "ferrous-sulfate",
+ "name": "Ferrous Sulfate",
+ "brand": [
+  "Feosol",
+  "FeroSul"
+ ],
+ "class": "철분 보충제 (조혈제)",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "철결핍성 빈혈·epoetin 병용 (a)",
+   "route": "PO",
+   "low": 11,
+   "high": 11,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "ferrous sulfate 기준(원소 철 아님)"
+  },
+  {
+   "species": "dog",
+   "label": "철결핍성 빈혈·epoetin 병용 (b)",
+   "route": "PO",
+   "low": 100,
+   "high": 300,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "ferrous sulfate 기준"
+  },
+  {
+   "species": "cat",
+   "label": "철결핍성 빈혈·epoetin 병용 (a)",
+   "route": "PO",
+   "low": 50,
+   "high": 100,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "ferrous sulfate 기준; 고양이는 경구 철 내약성 낮음"
+  },
+  {
+   "species": "cat",
+   "label": "철결핍성 빈혈·epoetin 병용 (b)",
+   "route": "PO",
+   "low": 30,
+   "high": 200,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "ferrous sulfate 기준, 원문 용량 범위"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 325
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,122 @@
+{
+ "id": "enrofloxacin",
+ "name": "Enrofloxacin",
+ "brand": [
+  "Baytril",
+  "Zobuxa"
+ ],
+ "class": "Fluoroquinolone 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "감수성 감염 (label)",
+   "route": "PO",
+   "low": 5,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "임상 증상 소실 후 2–3일 더, 최대 30일"
+  },
+  {
+   "species": "dog",
+   "label": "하부 요로감염 (a)",
+   "route": "PO",
+   "low": 10,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "다른 항생제 내성균에 한해"
+  },
+  {
+   "species": "dog",
+   "label": "산발성 세균성 방광염 (b)",
+   "route": "PO",
+   "low": 18,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "3일"
+  },
+  {
+   "species": "dog",
+   "label": "신우신염",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "육아종성 대장염 (E coli)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "8주"
+  },
+  {
+   "species": "dog",
+   "label": "Campylobacter 감염",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "세균성 피부감염",
+   "route": "PO",
+   "low": 5,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "Pseudomonas는 고용량"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (label)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "또는 분할 q12h; 최대 5 mg/kg/day(망막독성), 최대 30일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "chewable tablet",
+   "mg": 22.7
+  },
+  {
+   "form": "tablet",
+   "mg": 22.7
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 68
+  },
+  {
+   "form": "tablet",
+   "mg": 68
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 136
+  },
+  {
+   "form": "tablet",
+   "mg": 136
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

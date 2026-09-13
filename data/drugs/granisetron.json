@@ -1,0 +1,43 @@
+{
+ "id": "granisetron",
+ "name": "Granisetron",
+ "brand": [
+  "Kytril"
+ ],
+ "class": "5-HT3 길항제 진토제",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "구토 억제",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h"
+  },
+  {
+   "species": "cat",
+   "label": "구토 억제",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 1
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,66 @@
+{
+ "id": "meclizine",
+ "name": "Meclizine",
+ "brand": [
+  "Antivert",
+  "Bonine",
+  "Dramamine Less Drowsy"
+ ],
+ "class": "항히스타민 진토제",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "전정질환·멀미 구토 예방 (a)",
+   "route": "PO",
+   "low": 4,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "멀미 예방은 이동 30–60분 전"
+  },
+  {
+   "species": "dog",
+   "label": "전정질환·멀미 구토 예방 (b)",
+   "route": "PO",
+   "low": 12.5,
+   "high": 50,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "전정질환·멀미 구토 예방",
+   "route": "PO",
+   "low": 6.25,
+   "high": 12.5,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "식욕부진 가능"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 12.5
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

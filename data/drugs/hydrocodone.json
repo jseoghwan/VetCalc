@@ -1,0 +1,99 @@
+{
+ "id": "hydrocodone",
+ "name": "Hydrocodone",
+ "brand": [
+  "Hycodan",
+  "Tussigon",
+  "Vicodin"
+ ],
+ "class": "아편유사제 진해제 (복합제)",
+ "tags": [
+  "respiratory",
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "진해",
+   "route": "PO",
+   "low": 0.2,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–12h; hydrocodone 성분 기준"
+  },
+  {
+   "species": "dog",
+   "label": "진해 (고용량)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "hydrocodone 성분 기준; 과도한 진정 피할 것"
+  },
+  {
+   "species": "dog",
+   "label": "진통 (hydrocodone/acetaminophen 복합제)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.6,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "hydrocodone 성분 기준 (acetaminophen 15 mg/kg 동반); 고양이 금기"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 5
+  },
+  {
+   "form": "tablet",
+   "mg": 7.5
+  },
+  {
+   "form": "tablet",
+   "mg": 10
+  },
+  {
+   "form": "tablet",
+   "mg": 15
+  },
+  {
+   "form": "tablet",
+   "mg": 20
+  },
+  {
+   "form": "tablet",
+   "mg": 30
+  },
+  {
+   "form": "tablet",
+   "mg": 40
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 60
+  },
+  {
+   "form": "tablet",
+   "mg": 80
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 120
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

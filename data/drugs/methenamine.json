@@ -1,0 +1,60 @@
+{
+ "id": "methenamine",
+ "name": "Methenamine",
+ "brand": [
+  "Hiprex",
+  "Urex"
+ ],
+ "class": "요로 방부제",
+ "tags": [
+  "urinary",
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "재발성 요로감염 (a)",
+   "route": "PO",
+   "low": 10,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h; 산성뇨(pH ≤6) 필요; 실용적으로 250 mg 단위 반올림"
+  },
+  {
+   "species": "dog",
+   "label": "재발성 요로감염 (b)",
+   "route": "PO",
+   "low": 500,
+   "high": 500,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "산성뇨(pH ≤6) 필요"
+  },
+  {
+   "species": "cat",
+   "label": "재발성 요로감염 (a)",
+   "route": "PO",
+   "low": 10,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h; 산성뇨(pH ≤6) 필요; 고양이 내약성 불량"
+  },
+  {
+   "species": "cat",
+   "label": "재발성 요로감염 (b)",
+   "route": "PO",
+   "low": 250,
+   "high": 250,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "산성뇨(pH ≤6) 필요; 고양이 내약성 불량"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

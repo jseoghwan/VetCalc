@@ -1,0 +1,38 @@
+{
+ "id": "glycerin",
+ "name": "Glycerin",
+ "brand": [
+  "Osmoglyn"
+ ],
+ "class": "삼투압제 (경구)",
+ "tags": [
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "급성 녹내장 응급 (안압 강하)",
+   "route": "PO",
+   "low": 1000,
+   "high": 2000,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "원문 1–2 g/kg (90% 용액 ≈1.1–2.2 mL/kg); 45–50%로 희석"
+  },
+  {
+   "species": "cat",
+   "label": "급성 녹내장 응급 (안압 강하)",
+   "route": "PO",
+   "low": 1000,
+   "high": 2000,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "원문 1–2 g/kg (90% 용액 ≈1.1–2.2 mL/kg); 45–50%로 희석"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

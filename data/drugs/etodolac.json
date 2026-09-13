@@ -1,0 +1,57 @@
+{
+ "id": "etodolac",
+ "name": "Etodolac",
+ "brand": [
+  "EtoGesic",
+  "Lodine"
+ ],
+ "class": "비스테로이드성 소염진통제 (NSAID)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "골관절염 통증·염증 (label)",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "15 mg/kg 초과 금지; 장기 투여 시 최소 유효량으로 감량; 5 kg 미만 정확 투여 불가"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 150
+  },
+  {
+   "form": "capsule",
+   "mg": 200
+  },
+  {
+   "form": "capsule",
+   "mg": 300
+  },
+  {
+   "form": "tablet",
+   "mg": 300
+  },
+  {
+   "form": "tablet",
+   "mg": 400
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 600
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

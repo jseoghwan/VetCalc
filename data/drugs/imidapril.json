@@ -1,0 +1,36 @@
+{
+ "id": "imidapril",
+ "name": "Imidapril",
+ "brand": [
+  "Prilium"
+ ],
+ "class": "ACE 억제제",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "심부전 보조 (MR·DCM)",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "심부전 (증량)",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "필요 시 q24h에서 q12h로 증량"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

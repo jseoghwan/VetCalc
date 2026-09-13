@@ -1,0 +1,40 @@
+{
+ "id": "grapiprant",
+ "name": "Grapiprant",
+ "brand": [
+  "Galliprant"
+ ],
+ "class": "프로스타글란딘 E2 EP4 수용체 길항제 (비COX 억제 NSAID)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "골관절염 통증·염증 (label)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "반정 단위로 계산; 3.6 kg 미만은 정확 투여 불가; 공복 투여"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 20
+  },
+  {
+   "form": "tablet",
+   "mg": 60
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

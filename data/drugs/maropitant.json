@@ -1,0 +1,114 @@
+{
+ "id": "maropitant",
+ "name": "Maropitant",
+ "brand": [
+  "Cerenia"
+ ],
+ "class": "NK-1 수용체 길항제 (진토제)",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "급성 구토 예방 (label)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "2–7개월령 5일; 7개월 초과는 구토 멈출 때까지"
+  },
+  {
+   "species": "dog",
+   "label": "멀미 구토 예방 (label)",
+   "route": "PO",
+   "low": 8,
+   "high": 8,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "최대 2일 연속; 공복 또는 소량 식이"
+  },
+  {
+   "species": "dog",
+   "label": "다제 항암치료 구토 예방·치료",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "28일"
+  },
+  {
+   "species": "dog",
+   "label": "진해 보조(기관허탈 등)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q48h"
+  },
+  {
+   "species": "cat",
+   "label": "구토·멀미 예방",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "원문 투여 간격 미기재"
+  },
+  {
+   "species": "cat",
+   "label": "구토 유발 약물 전 예방",
+   "route": "PO",
+   "low": 8,
+   "high": 8,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "최대 18시간 전 투여"
+  },
+  {
+   "species": "cat",
+   "label": "CKD 관련 구토",
+   "route": "PO",
+   "low": 4,
+   "high": 4,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "2주"
+  },
+  {
+   "species": "cat",
+   "label": "고양이 아토피 피부증후군",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "4주"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 16
+  },
+  {
+   "form": "tablet",
+   "mg": 24
+  },
+  {
+   "form": "tablet",
+   "mg": 60
+  },
+  {
+   "form": "tablet",
+   "mg": 160
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}
