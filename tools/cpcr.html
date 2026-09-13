@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>CPCR · VECC</title>
+<meta name="description" content="RECOVER 2024 기반 CPCR — 체중별 약물 용량·제세동 에너지, 2분 압박 주기 타이머, BLS·ALS 요약">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#4453A3">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="VECC Hub">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+</head>
+<body data-mode="emg">
+<style>
+:root{
+  --bg:#F3F4F7; --surface:#FFFFFF; --surface-2:#E9EBF1; --line:#D6D9E2; --line-strong:#B9BECB;
+  --ink:#1A1D26; --ink-2:#4A5063; --muted:#6F7588;
+  --venous:#4453A3; --venous-soft:#E5E8F6; --venous-ink:#2E3A80;
+  --arterial:#B3313B; --arterial-soft:#F8E4E5; --arterial-ink:#8C242C;
+  --input-bg:#FFF6D9; --input-line:#E0A92B; --input-ink:#5B4300; --input-focus:#F5C23A;
+  --ok:#2E7D4F; --ok-soft:#DFF2E6; --low:#2B67B3; --low-soft:#DDE9F8; --high:#C13A2E; --high-soft:#F9E1DE; --warn:#9A6A00; --warn-soft:#FBEFC9;
+  --shadow:0 1px 2px rgba(20,24,40,.06), 0 8px 24px -12px rgba(20,24,40,.18);
+  --radius:10px;
+  --accent:var(--venous); --accent-soft:var(--venous-soft); --accent-ink:var(--venous-ink);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111318; --surface:#1A1D25; --surface-2:#232733; --line:#2F3442; --line-strong:#454B5C;
+    --ink:#E9EBF1; --ink-2:#C0C5D3; --muted:#8F95A8;
+    --venous:#8B97E0; --venous-soft:#252B48; --venous-ink:#C6CDF6;
+    --arterial:#E0666E; --arterial-soft:#42232A; --arterial-ink:#F3B6BA;
+    --input-bg:#33290F; --input-line:#D9A83A; --input-ink:#F6DFA0; --input-focus:#F5C23A;
+    --ok:#6FCF97; --ok-soft:#1D3328; --low:#7FB2F0; --low-soft:#1E2E45; --high:#F08479; --high-soft:#432420; --warn:#E5B94A; --warn-soft:#3B3116;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111318; --surface:#1A1D25; --surface-2:#232733; --line:#2F3442; --line-strong:#454B5C;
+  --ink:#E9EBF1; --ink-2:#C0C5D3; --muted:#8F95A8;
+  --venous:#8B97E0; --venous-soft:#252B48; --venous-ink:#C6CDF6;
+  --arterial:#E0666E; --arterial-soft:#42232A; --arterial-ink:#F3B6BA;
+  --input-bg:#33290F; --input-line:#D9A83A; --input-ink:#F6DFA0; --input-focus:#F5C23A;
+  --ok:#6FCF97; --ok-soft:#1D3328; --low:#7FB2F0; --low-soft:#1E2E45; --high:#F08479; --high-soft:#432420; --warn:#E5B94A; --warn-soft:#3B3116;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+[hidden]{display:none!important}
+body{margin:0;padding-top:env(safe-area-inset-top);background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans KR",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;font-size:15px;line-height:1.55}
+body[data-mode="emg"]{--accent:var(--arterial);--accent-soft:var(--arterial-soft);--accent-ink:var(--arterial-ink)}
+.mono{font-family:"IBM Plex Mono","SFMono-Regular",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums;font-size:.93em}
+a{color:var(--accent)}
+h1,h2,h3,h4{margin:0;text-wrap:balance;line-height:1.25}
+p{margin:0}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+.top-inner{max-width:1120px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:14px}
+.brand{display:flex;align-items:baseline;gap:10px;flex:1 1 auto;min-width:0}
+.brand h1{font-size:17px;font-weight:700;letter-spacing:-.01em;white-space:nowrap}
+.brand .home{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;padding:4px 8px 4px 4px;border-radius:6px;white-space:nowrap;align-self:center}
+.brand .home:hover{background:var(--surface-2);color:var(--ink)}
+.seg{display:inline-flex;border:1px solid var(--line-strong);border-radius:999px;padding:3px;background:var(--surface-2);gap:2px}
+.seg button{border:0;background:transparent;color:var(--ink-2);font-weight:600;font-size:13px;padding:5px 14px;border-radius:999px;cursor:pointer;min-height:30px}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.seg.sm button{font-size:12px;padding:3px 10px;min-height:26px}
+.tabs{max-width:1120px;margin:0 auto;padding:0 16px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{border:0;background:transparent;font-size:14px;font-weight:600;color:var(--muted);padding:10px 12px 11px;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap;display:flex;align-items:center;gap:7px}
+.tab .dot{width:8px;height:8px;border-radius:50%;background:currentColor;opacity:.55}
+.tab[aria-selected="true"]{color:var(--venous);border-bottom-color:var(--venous)}
+.tab[aria-selected="true"] .dot{opacity:1}
+.tab .cnt{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;background:var(--surface-2);color:var(--ink-2);padding:0 6px;border-radius:999px;line-height:1.6}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+
+main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
+.panel{display:none}
+.panel.active{display:block}
+.sec{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;margin:0 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.sec h2{font-size:15px;font-weight:700}
+.sec .kicker{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);padding:2px 7px;border-radius:4px;background:var(--accent-soft);line-height:1.5}
+.sec .note{font-size:12px;color:var(--muted);margin-left:auto;text-align:right;line-height:1.5}
+@media (max-width:640px){.sec .note{flex-basis:100%;margin-left:0;text-align:left}}
+
+/* inputs */
+.inputs{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:22px}
+.inputs-head{display:flex;align-items:center;gap:10px;padding:11px 16px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.inputs-head h2{font-size:14px;font-weight:700}
+.legend{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;color:var(--muted);margin-left:auto;white-space:nowrap}
+.legend i{display:inline-block;width:14px;height:10px;border-radius:2px;background:var(--input-bg);border:1.5px solid var(--input-line)}
+.inputs-body{padding:12px 16px 4px}
+.igroup{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px 12px;padding-bottom:12px}
+@media (max-width:480px){.igroup{grid-template-columns:1fr 1fr}}
+.field{display:flex;flex-direction:column;gap:3px;min-width:0}
+.field label{font-size:12.5px;font-weight:600;color:var(--ink-2);display:flex;justify-content:space-between;align-items:baseline;gap:6px;line-height:1.4;white-space:nowrap}
+.field label .u{font-weight:500;color:var(--muted);font-size:11px;flex-shrink:0}
+.field input,.field select{font-family:"IBM Plex Mono",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums;font-size:17px;font-weight:500;color:var(--input-ink);background:var(--input-bg);border:1.5px solid var(--input-line);border-radius:7px;padding:7px 10px;width:100%;min-width:0;-moz-appearance:textfield;line-height:1.3}
+.field input[type="text"]{font-family:inherit;font-size:15px}
+.field select{font-family:inherit;font-size:14px;appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--input-ink) 50%),linear-gradient(135deg,var(--input-ink) 50%,transparent 50%);background-position:calc(100% - 16px) 55%,calc(100% - 11px) 55%;background-size:5px 5px;background-repeat:no-repeat;padding-right:28px}
+.field input::-webkit-outer-spin-button,.field input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.field input:focus,.field select:focus{outline:0;border-color:var(--input-focus);box-shadow:0 0 0 3px color-mix(in srgb,var(--input-focus) 35%,transparent)}
+.field input::placeholder{color:var(--muted);opacity:.7;font-weight:400}
+.field .ref{font-size:10.5px;color:var(--muted);font-family:"IBM Plex Mono",monospace;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.field.wide{grid-column:span 2}
+@media (max-width:480px){.field.wide{grid-column:1 / -1}}
+.field.plain select,.field.plain input{background:var(--surface);border-color:var(--line-strong);color:var(--ink)}
+
+.chip{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:999px;line-height:1.5;white-space:nowrap}
+.chip.high{color:var(--high);background:var(--high-soft)}
+.chip.warn{color:var(--warn);background:var(--warn-soft)}
+.chip.ok{color:var(--ok);background:var(--ok-soft)}
+.chip.na{color:var(--muted);background:var(--surface-2)}
+.chip.v{color:var(--venous-ink);background:var(--venous-soft)}
+.ibtn{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-2);font-size:12.5px;font-weight:600;padding:5px 10px;border-radius:7px;cursor:pointer;white-space:nowrap;min-height:30px}
+.ibtn:hover{background:var(--surface-2);color:var(--ink)}
+.ibtn.danger:hover{color:var(--high);border-color:var(--high)}
+.ibtn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.ibtn.primary:hover{background:var(--accent-ink);border-color:var(--accent-ink);color:#fff}
+.ibtn[aria-expanded="true"]{background:var(--accent-soft);color:var(--accent-ink);border-color:transparent}
+.ibtn:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+/* result strip inside card */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:0 14px 12px}
+@media (max-width:640px){.tiles{grid-template-columns:1fr 1fr}}
+.tile{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;min-width:0}
+.tile .k{font-size:12px;font-weight:600;color:var(--ink-2);line-height:1.5;display:flex;justify-content:space-between;gap:6px}
+.tile .k small{font-weight:500;color:var(--muted);font-size:11px;white-space:nowrap}
+.tile .v{font-family:"IBM Plex Mono",Menlo,monospace;font-variant-numeric:tabular-nums;font-size:20px;font-weight:600;line-height:1.1;letter-spacing:-.01em;white-space:nowrap}
+.tile .v small{font-family:"IBM Plex Sans KR",sans-serif;font-size:12px;font-weight:500;color:var(--muted);margin-left:3px;letter-spacing:0}
+.tile .r{font-size:10.5px;color:var(--muted);font-family:"IBM Plex Mono",monospace;line-height:1.5;margin-top:1px}
+.tile.accent{border-color:color-mix(in srgb,var(--accent) 55%,var(--line));background:color-mix(in srgb,var(--accent-soft) 45%,var(--surface))}
+.tile.accent .v{color:var(--accent-ink)}
+.tile.bad{border-color:color-mix(in srgb,var(--high) 55%,var(--line))}
+.tile.bad .v{color:var(--high)}
+.tile.warn .v{color:var(--warn)}
+.rx-foot{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;padding:0 14px 12px;font-size:12.5px;color:var(--muted)}
+.rx-foot .grow{flex:1 1 auto}
+
+/* callouts + empty */
+.callout{border-left:3px solid var(--accent);background:var(--surface);border-radius:0 8px 8px 0;padding:10px 14px;font-size:13.5px;line-height:1.65;color:var(--ink-2);margin-top:12px}
+.callout.warn{border-left-color:var(--warn)}
+.callout b{color:var(--ink)}
+.callout.ref{border-left:3px dashed var(--line-strong);background:transparent;color:var(--muted);font-size:13px;padding:6px 14px}
+.empty{border:1px dashed var(--line-strong);border-radius:var(--radius);padding:26px 16px;text-align:center;color:var(--muted);font-size:14px;line-height:1.6}
+.empty b{color:var(--ink-2);font-weight:600}
+
+.foot{margin-top:40px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 18px}
+.sw-toast{position:fixed;left:50%;bottom:calc(64px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);opacity:0;background:var(--ink);color:var(--bg);font-size:13px;font-weight:600;padding:9px 14px;border-radius:999px;box-shadow:0 6px 20px -6px rgba(0,0,0,.4);z-index:50;pointer-events:none;transition:opacity .25s,transform .25s;white-space:nowrap}
+.sw-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media (prefers-reduced-motion:reduce){.sw-toast{transition:none}}
+</style>
+
+<style>
+/* fluid-specific */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+@media (max-width:760px){.grid2{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:14px}
+.card-head{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.card-head h3{font-size:14.5px;font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.card-head .src{margin-left:auto;font-size:11px;color:var(--muted);text-decoration:none;white-space:nowrap}
+.card-head .src:hover{color:var(--accent)}
+.card-body{padding:12px 14px 4px}
+.card .tiles{padding:0 14px 12px}
+.tiles.t3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:640px){.tiles.t3{grid-template-columns:1fr 1fr}}
+.tiles.t2{grid-template-columns:repeat(2,1fr)}
+.tile .k{flex-wrap:wrap}
+.tile .v.sm{font-size:16px;white-space:normal}
+.tile .v.xs{font-size:14px;white-space:normal;font-weight:600}
+.comp{display:flex;flex-wrap:wrap;gap:4px 10px;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-2);padding:0 14px 12px}
+.comp b{color:var(--ink);font-weight:600}
+.phase{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 14px 12px}
+@media (max-width:480px){.phase{grid-template-columns:1fr}}
+.phase .p{border:1px dashed var(--line-strong);border-radius:8px;padding:9px 12px;font-size:12.5px;color:var(--ink-2);line-height:1.6}
+.phase .p b{display:block;color:var(--ink);font-size:13px}
+.phase .p .mono{color:var(--accent-ink);font-weight:600}
+.callout.bad{border-left-color:var(--high);background:var(--high-soft);color:var(--ink)}
+table.ref{width:100%;border-collapse:collapse;font-size:12.5px;line-height:1.5}
+table.ref th,table.ref td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:nowrap;background:var(--surface-2)}
+table.ref td.mono{font-size:12px}
+table.ref tr.cur td{background:var(--accent-soft);color:var(--accent-ink);font-weight:600}
+.tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.aliq{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 12px}
+.aliq button{border:1.5px solid var(--line-strong);background:var(--surface);color:var(--ink-2);font:inherit;font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:999px;cursor:pointer;min-height:32px;font-family:"IBM Plex Mono",monospace}
+.aliq button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.aliq button.over[aria-pressed="true"]{background:var(--high);border-color:var(--high)}
+.aliq .lbl{align-self:center;font-size:12px;color:var(--muted);margin-right:4px}
+.bar-meter{height:8px;background:var(--surface-2);border-radius:999px;overflow:hidden;margin:6px 0 2px;position:relative}
+.bar-meter i{display:block;height:100%;background:var(--accent);border-radius:999px;max-width:100%}
+.bar-meter i.over{background:var(--high)}
+.sub{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:10px 14px 4px}
+</style>
+<style>
+.steps{display:flex;flex-direction:column;gap:6px;padding:0 14px 12px}
+.step{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:13px}
+.step .n{width:24px;height:24px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:700;font-size:12px;font-family:"IBM Plex Mono",monospace}
+.step .t b{display:block;color:var(--ink);font-size:13px}
+.step .t span{color:var(--ink-2);font-size:12px}
+.step .v{font-family:"IBM Plex Mono",monospace;font-weight:600;color:var(--accent-ink);text-align:right;white-space:nowrap;font-size:13px}
+.step .v small{display:block;font-weight:500;color:var(--muted);font-size:11px}
+.step.warn{border-color:color-mix(in srgb,var(--warn) 60%,var(--line))}.step.warn .n{background:var(--warn)}
+.step.bad{border-color:color-mix(in srgb,var(--high) 60%,var(--line))}.step.bad .n{background:var(--high)}
+.chk{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 12px}
+.chk .g{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+.chk .g .lb{font-size:11.5px;color:var(--muted);margin-right:2px}
+.chk button{border:1.5px solid var(--line-strong);background:var(--surface);color:var(--ink-2);font:inherit;font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:999px;cursor:pointer;min-height:30px}
+.chk button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.chk button.bad[aria-pressed="true"]{background:var(--high);border-color:var(--high)}
+</style>
+
+<style>
+/* cpcr-specific */
+.tile .v.lg{font-size:26px}
+.timer{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;padding:12px 14px}
+@media (max-width:560px){.timer{grid-template-columns:1fr}}
+.clock{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:52px;font-weight:600;line-height:1;letter-spacing:-.02em;color:var(--ink)}
+.clock.pause{color:var(--warn)}
+.clock.idle{color:var(--muted)}
+.tmeta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:12.5px;color:var(--muted);margin-top:6px}
+.tmeta b{color:var(--ink-2)}
+.tstate{font-size:14px;font-weight:700;color:var(--accent-ink);background:var(--accent-soft);border-radius:8px;padding:8px 12px;line-height:1.5}
+.tstate.warn{color:var(--warn);background:var(--warn-soft)}
+.tstate small{display:block;font-weight:500;color:var(--ink-2);font-size:12px;margin-top:2px}
+.tbtns{display:flex;flex-wrap:wrap;gap:8px;padding:0 14px 12px}
+.tbtns button{flex:1 1 120px;border:1.5px solid var(--line-strong);background:var(--surface);color:var(--ink);font:inherit;font-size:14px;font-weight:700;padding:11px 12px;border-radius:9px;cursor:pointer;min-height:46px}
+.tbtns button.go{background:var(--accent);border-color:var(--accent);color:#fff}
+.tbtns button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.rhy{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 14px 12px}
+@media (max-width:480px){.rhy{grid-template-columns:1fr}}
+.rhy button{border:1.5px solid var(--line-strong);background:var(--surface);color:var(--ink-2);font:inherit;text-align:left;padding:10px 13px;border-radius:9px;cursor:pointer;line-height:1.45}
+.rhy button b{display:block;font-size:14px;color:var(--ink);font-weight:700}
+.rhy button span{font-size:12px;color:var(--muted)}
+.rhy button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent)}
+.rhy button[aria-pressed="true"] b,.rhy button[aria-pressed="true"] span{color:#fff}
+.step .lg{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-2);font:inherit;font-size:11.5px;font-weight:700;padding:4px 9px;border-radius:999px;cursor:pointer;white-space:nowrap;min-height:28px}
+.step .lg:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.logbox{padding:0 14px 12px;font-size:12.5px}
+.logbox ol{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:4px;max-height:260px;overflow-y:auto}
+.logbox li{display:grid;grid-template-columns:auto 1fr;gap:10px;border-bottom:1px dashed var(--line);padding:4px 0;line-height:1.5}
+.logbox li .tm{font-family:"IBM Plex Mono",monospace;color:var(--accent-ink);font-weight:600}
+.logbox .none{color:var(--muted);padding:8px 0}
+.mini{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;padding:0 14px 12px}
+.mini .m{border:1px dashed var(--line-strong);border-radius:8px;padding:8px 11px;font-size:12.5px;line-height:1.55;color:var(--ink-2)}
+.mini .m b{display:block;color:var(--ink);font-size:13px}
+.mini .m .mono{color:var(--accent-ink);font-weight:600}
+.tag{display:inline-block;font-size:10.5px;font-weight:700;padding:1px 6px;border-radius:4px;line-height:1.6;margin-left:5px;vertical-align:1px}
+.tag.r24{color:#fff;background:var(--arterial)}
+.tag.old{color:var(--muted);background:var(--surface-2)}
+</style>
+
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <a class="home" href="../index.html" aria-label="홈으로">‹ 홈</a>
+      <h1>VECC CPCR</h1>
+    </div>
+    <div class="seg" role="group" aria-label="종 선택">
+      <button type="button" aria-pressed="true" data-sp="dog">DOG</button>
+      <button type="button" aria-pressed="false" data-sp="cat">CAT</button>
+    </div>
+  </div>
+  <nav class="tabs" role="tablist" aria-label="페이지">
+    <button class="tab" role="tab" id="tab-run" data-panel="p-run" aria-selected="true"><span class="dot"></span>CPR 진행</button>
+    <button class="tab" role="tab" id="tab-bls" data-panel="p-bls" aria-selected="false"><span class="dot"></span>BLS</button>
+    <button class="tab" role="tab" id="tab-als" data-panel="p-als" aria-selected="false"><span class="dot"></span>ALS 약물</button>
+    <button class="tab" role="tab" id="tab-rosc" data-panel="p-rosc" aria-selected="false"><span class="dot"></span>ROSC 후</button>
+    <button class="tab" role="tab" id="tab-ref" data-panel="p-ref" aria-selected="false"><span class="dot"></span>참고</button>
+  </nav>
+</header>
+
+<main>
+<!-- ===================== CPR 진행 ===================== -->
+<section class="panel active" id="p-run" role="tabpanel" aria-labelledby="tab-run">
+  <aside class="inputs">
+    <div class="inputs-head"><h2>환자 · 장비</h2><span class="legend"><i></i> 노란 칸 = 직접 입력</span></div>
+    <div class="inputs-body">
+      <div class="igroup">
+        <div class="field"><label for="bw"><span>체중</span><span class="u">kg</span></label><input type="number" inputmode="decimal" step="0.1" min="0" id="bw" placeholder="0.0"><span class="ref">모든 탭 공통</span></div>
+        <div class="field plain"><label for="defib"><span>제세동기</span></label><select id="defib"><option value="bi">Biphasic</option><option value="mono">Monophasic</option></select><span class="ref">Biphasic 우선 권고</span></div>
+        <div class="field plain"><label for="cepi"><span>Epinephrine</span></label><select id="cepi"><option value="1">1 mg/mL (1:1000)</option><option value="0.1">0.1 mg/mL (1:10000)</option></select><span class="ref">보유 규격</span></div>
+        <div class="field plain"><label for="catr"><span>Atropine</span></label><select id="catr"><option value="0.5">0.5 mg/mL</option><option value="1">1 mg/mL</option></select><span class="ref">보유 규격</span></div>
+      </div>
+    </div>
+    <div class="tiles" id="run-tiles"></div>
+    <div class="rx-foot"><span class="grow">용량은 RECOVER 2024 권고. 제세동 J은 장비에서 가장 가까운 설정값으로.</span></div>
+  </aside>
+
+  <div class="sec"><span class="kicker">Timer</span><h2>2분 압박 주기</h2><span class="note">주기 사이 중단은 10초 이내 — 시간이 끝나면 자동으로 다음 주기가 시작됩니다</span></div>
+  <div class="card">
+    <div class="timer">
+      <div>
+        <div class="clock idle" id="clock">2:00</div>
+        <div class="tmeta"><span>주기 <b id="cyc">1</b></span><span>총 경과 <b id="tot">0:00</b></span><span id="epi-due"></span></div>
+      </div>
+      <div class="tstate" id="tstate">시작을 누르면 2분 압박 주기가 돌아갑니다.<small>압박 100–120/분 · 흉곽 폭의 1/3–1/2 · 완전한 반동 · 환기 10회/분</small></div>
+    </div>
+    <div class="tbtns">
+      <button type="button" class="go" id="t-go">시작</button>
+      <button type="button" id="t-next">주기 종료</button>
+      <button type="button" id="t-reset">리셋</button>
+    </div>
+  </div>
+
+  <div class="sec"><span class="kicker">Rhythm</span><h2>리듬 확인 후 ALS</h2><span class="note">리듬 평가는 주기 사이 중단에만 — 압박 중 ECG는 해석하지 않습니다</span></div>
+  <div class="card">
+    <div class="rhy">
+      <button type="button" data-rhy="non" aria-pressed="true"><b>Asystole · PEA</b><span>비제세동 리듬 — 무수축, 무맥성 전기활동</span></button>
+      <button type="button" data-rhy="sh" aria-pressed="false"><b>VF · 무맥성 VT</b><span>제세동 리듬 — 세동, 무맥성 심실빈맥</span></button>
+    </div>
+    <div class="steps" id="rhy-steps"></div>
+    <div class="callout ref" id="rhy-note"></div>
+  </div>
+
+  <div class="sec"><span class="kicker">Record</span><h2>투여 기록</h2><span class="note">버튼을 누른 시각이 CPR 시작 기준으로 기록됩니다</span></div>
+  <div class="card">
+    <div class="logbox"><ol id="log"></ol></div>
+    <div class="tbtns" style="padding-top:0">
+      <button type="button" id="log-copy">기록 복사</button>
+      <button type="button" id="log-clear">기록 지우기</button>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>RECOVER 2024 가이드라인(BLS·ALS·Monitoring·Updated treatment recommendations)을 기준으로 과에서 정리한 것이며 원문을 옮긴 것이 아닙니다.</span>
+    <span>임상 판단의 보조 도구이며 최종 결정은 담당 수의사에게 있습니다.</span>
+  </div>
+</section>
+
+<!-- ===================== BLS ===================== -->
+<section class="panel" id="p-bls" role="tabpanel" aria-labelledby="tab-bls">
+  <div class="sec"><span class="kicker">BLS</span><h2>흉부압박</h2><span class="note">RECOVER 2024 · 강한 권고</span></div>
+  <div class="card">
+    <div class="card-head"><h3>압박의 기본</h3><a class="src" href="saccm.html#sacc3-p1-c4">SACCM Ch.4 ›</a></div>
+    <div class="mini">
+      <div class="m"><b>속도</b><span class="mono">100–120회/분</span> — 크기·종 무관. 120회 초과 금지</div>
+      <div class="m"><b>깊이 (측와위)</b>흉곽 좌우 폭의 <span class="mono">1/3–1/2</span></div>
+      <div class="m"><b>깊이 (배와위)</b>흉곽 배복 길이의 <span class="mono">1/4</span></div>
+      <div class="m"><b>주기</b><span class="mono">2분</span> 연속 — 주기마다 압박자 교대</div>
+      <div class="m"><b>중단</b>주기 사이 <span class="mono">&lt;10초</span></div>
+      <div class="m"><b>반동</b>완전한 흉곽 반동 — 기대지 않기(no leaning)</div>
+    </div>
+    <div class="callout">압박 중 ROSC가 의심돼도 <b>주기를 끊지 않습니다.</b> 중단은 ETCO₂가 갑자기 <b>10 mm Hg 이상 상승해 35 mm Hg 이상</b>에 도달하고 압박과 구분되는 맥박이 함께 확인될 때만. 카프노그래피가 없으면 ROSC가 의심돼도 2분 주기를 끝까지 합니다.</div>
+  </div>
+
+  <div class="sec"><h2>체형별 자세 · 손 위치</h2></div>
+  <div class="card">
+    <div class="tblwrap"><table class="ref">
+      <thead><tr><th>체형</th><th>자세</th><th>손 위치 · 기법</th></tr></thead>
+      <tbody>
+        <tr><td>중·대형 round-chested<br><span class="muted">Labrador, Golden, Rottweiler</span></td><td>측와위</td><td>흉곽에서 <b>가장 넓은 부위</b> (thoracic pump)</td></tr>
+        <tr><td>중·대형 keel-chested<br><span class="muted">Greyhound, Doberman</span></td><td>측와위</td><td><b>심장 바로 위</b> (cardiac pump)</td></tr>
+        <tr><td>Wide/flat-chested<br><span class="muted">English/French Bulldog</span></td><td>삽관 전까지 측와위 → 자세가 안정적이면 주기 사이에 <b>배와위</b>로</td><td>배와위에서는 흉골 바로 위, 깊이 배복 길이의 1/4</td></tr>
+        <tr><td>고양이 · 소형견</td><td>측와위</td><td>다음 셋 중 하나 — ① 양손 엄지 원주형(circumferential 2-thumb) ② 주로 쓰는 손으로 흉골을 감싸 쥐기 ③ 손바닥 뒤꿈치로 심장 위 압박</td></tr>
+      </tbody>
+    </table></div>
+    <div class="callout ref">RECOVER 2024 BLS 권고 + SACCM 3판 Table 4.1. 품종이 아니라 개체의 흉곽을 직접 보고 정합니다.</div>
+  </div>
+
+  <div class="sec"><h2>기도 · 환기</h2></div>
+  <div class="card">
+    <div class="mini">
+      <div class="m"><b>환기 수</b><span class="mono">10회/분</span> (6초마다 1회)</div>
+      <div class="m"><b>흡기 시간</b><span class="mono">1초</span></div>
+      <div class="m"><b>일회호흡량</b><span class="mono">10 mL/kg</span></div>
+      <div class="m"><b>압력</b>흉곽이 눈에 보이게 올라오는 최소 PIP</div>
+      <div class="m"><b>삽관</b>다수 구조자: 압박을 멈추지 않고 <b>가능한 한 빨리</b> 측와위에서 삽관</div>
+      <div class="m"><b>비삽관</b>밀착 마스크 + 수동 소생기 우선 → 불가 시 mouth-to-snout, 단독 구조자는 <span class="mono">30:2</span></div>
+    </div>
+    <div class="callout warn"><b>과환기 금지.</b> PaCO₂가 낮아지면 뇌혈관이 수축하고, 양압이 정맥환류를 막아 압박 효과와 관상동맥 관류압이 떨어집니다. 인공호흡기 사용 중 정지가 오면 수동 환기로 전환합니다.</div>
+  </div>
+
+  <div class="sec"><h2>기관 튜브 크기 참고</h2><span class="note">실제 크기는 촉진·후두경 소견으로 — 한 치수 위아래를 함께 준비</span></div>
+  <div class="card">
+    <div class="tblwrap"><table class="ref" id="ett-tbl">
+      <thead><tr><th>체중</th><th>내경 (mm, 커프)</th></tr></thead>
+      <tbody>
+        <tr><td>고양이 · 2 kg 미만</td><td class="mono">3.0–3.5</td></tr>
+        <tr><td>고양이 3–6 kg · 소형견 2–4 kg</td><td class="mono">3.5–4.5</td></tr>
+        <tr><td>개 5–10 kg</td><td class="mono">5.0–6.0</td></tr>
+        <tr><td>개 10–20 kg</td><td class="mono">6.5–8.0</td></tr>
+        <tr><td>개 20–30 kg</td><td class="mono">8.0–9.5</td></tr>
+        <tr><td>개 30 kg 이상</td><td class="mono">10–12</td></tr>
+      </tbody>
+    </table></div>
+    <div class="callout ref">튜브 위치는 카프노그래피로 확인 — 파형이 있고 CO₂가 일관되게 검출되면 적절. ETCO₂ &lt;12 mm Hg거나 0에 가까우면 다른 방법으로 기관 삽관을 확인합니다.</div>
+  </div>
+</section>
+
+<!-- ===================== ALS ===================== -->
+<section class="panel" id="p-als" role="tabpanel" aria-labelledby="tab-als">
+  <div class="sec"><span class="kicker">ALS</span><h2>약물 — 체중 기준 투여량</h2><span class="note" id="als-note">체중을 입력하세요</span></div>
+  <div class="card">
+    <div class="tblwrap"><table class="ref" id="drug-tbl">
+      <thead><tr><th>약물</th><th>용량</th><th>총량</th><th>농도</th><th>투여</th><th>비고</th></tr></thead>
+      <tbody></tbody>
+    </table></div>
+    <div class="callout ref">농도는 흔히 쓰는 규격을 가정한 값입니다. 보유 제품 농도가 다르면 총량(mg·U)을 기준으로 다시 계산하세요.</div>
+  </div>
+
+  <div class="sec"><h2>제세동</h2></div>
+  <div class="card">
+    <div class="tiles t3" id="defib-tiles"></div>
+    <div class="steps">
+      <div class="step"><span class="n">1</span><div class="t"><b>Biphasic 우선</b><span>Monophasic보다 강하게 권고 — 보유 장비를 미리 확인</span></div><span class="v"></span></div>
+      <div class="step"><span class="n">2</span><div class="t"><b>단일 shock 후 즉시 압박 재개</b><span>리듬·맥박 확인은 다음 2분 주기가 끝난 뒤에</span></div><span class="v"></span></div>
+      <div class="step"><span class="n">3</span><div class="t"><b>첫 shock이 실패하면 한 번만 2배로</b><span>2 → 4 J/kg, 이후 shock은 4 J/kg 유지</span></div><span class="v"></span></div>
+      <div class="step"><span class="n">4</span><div class="t"><b>첫 제세동 전에는 epinephrine을 쓰지 않음</b><span>제세동 리듬이 첫 shock 이후에도 지속될 때 vasopressin(없으면 epinephrine)</span></div><span class="v"></span></div>
+    </div>
+  </div>
+
+  <div class="sec"><h2>가역 원인 — 확인·조치</h2><span class="note">주기 사이에 팀에서 하나씩 소리내어 확인</span></div>
+  <div class="card">
+    <div class="chk" id="chk-ht"></div>
+    <div class="steps" id="ht-steps"></div>
+  </div>
+</section>
+
+<!-- ===================== ROSC 후 ===================== -->
+<section class="panel" id="p-rosc" role="tabpanel" aria-labelledby="tab-rosc">
+  <div class="sec"><span class="kicker">ROSC</span><h2>직후 목표치</h2><span class="note">ROSC를 얻은 환자의 상당수가 수 시간 내 재정지 — 감시를 늦추지 않습니다</span></div>
+  <div class="card">
+    <div class="card-head"><h3>산소화 · 환기 · 관류</h3><a class="src" href="saccm.html#sacc3-p1-c5">SACCM Ch.5 ›</a></div>
+    <div class="tiles t3" id="rosc-tiles"></div>
+    <div class="callout warn"><b>고산소혈증도 피합니다.</b> ROSC 직후에는 SpO₂ 94–98%를 목표로 산소를 조절(controlled reoxygenation)하고, 과환기 없이 정상 PaCO₂를 유지합니다.</div>
+  </div>
+
+  <div class="sec"><h2>재정지 예방 · CRI</h2><span class="note">희석 농도를 넣으면 펌프 속도가 계산됩니다</span></div>
+  <div class="card">
+    <div class="inputs-body">
+      <div class="igroup">
+        <div class="field plain"><label for="cri-drug"><span>약물</span></label><select id="cri-drug"></select><span class="ref">ROSC 직후 흔히 쓰는 CRI</span></div>
+        <div class="field"><label for="cri-dose"><span>목표 용량</span><span class="u">µg/kg/min</span></label><input type="number" inputmode="decimal" step="0.05" min="0" id="cri-dose"><span class="ref" id="cri-range"></span></div>
+        <div class="field"><label for="cri-conc"><span>희석 후 농도</span><span class="u">mg/mL</span></label><input type="number" inputmode="decimal" step="0.01" min="0" id="cri-conc" placeholder="예: 0.1"><span class="ref">원액 mg ÷ 총 mL</span></div>
+      </div>
+    </div>
+    <div class="tiles t3" id="cri-tiles"></div>
+    <div class="callout ref" id="cri-note"></div>
+  </div>
+
+  <div class="sec"><h2>신경 보호 · 다음 단계</h2></div>
+  <div class="card">
+    <div class="mini">
+      <div class="m"><b>TTM</b>혼수가 지속되고 고급 중환자 관리가 가능하면 <span class="mono">32–36°C, 24–48시간</span></div>
+      <div class="m"><b>재가온</b><span class="mono">0.25–0.5°C/시간</span> — 서서히</div>
+      <div class="m"><b>발작</b>예방·조기 조절. 삼투 치료는 뇌부종 소견이 있을 때</div>
+      <div class="m"><b>혈당</b>심한 고혈당만 교정 — 의인성 저혈당이 더 위험</div>
+      <div class="m"><b>Steroid</b>일상적 투여는 권장하지 않음. 승압제 의존 shock에서만 저용량 hydrocortisone 고려</div>
+      <div class="m"><b>재평가</b>전해질·혈당·산-염기·PCV·산소화를 즉시 확인하고 CPA의 원인을 교정</div>
+    </div>
+    <div class="callout ref">목표치와 CRI 용량은 SACCM 3판 Ch.5(Post-Cardiac Arrest Care) 정리를 따릅니다. RECOVER 2024 개정은 BLS·ALS·모니터링을 다루며 ROSC 후 관리는 포함하지 않습니다.</div>
+  </div>
+</section>
+
+<!-- ===================== 참고 ===================== -->
+<section class="panel" id="p-ref" role="tabpanel" aria-labelledby="tab-ref">
+  <div class="sec"><span class="kicker">2012 → 2024</span><h2>이번 개정에서 바뀐 것</h2><span class="note">과 자료·교재 요약이 2012년판 기준이면 아래가 다릅니다</span></div>
+  <div class="card">
+    <div class="tblwrap"><table class="ref">
+      <thead><tr><th>항목</th><th>2012</th><th>2024</th></tr></thead>
+      <tbody>
+        <tr><td>고용량 epinephrine</td><td>장시간 CPR에서 선택 가능</td><td><b>권장하지 않음</b> — 장시간이어도 0.01 mg/kg 유지</td></tr>
+        <tr><td>Atropine</td><td>3–5분마다 반복 가능</td><td><b>필요하면 1회만</b>, 가능한 한 이른 시점에</td></tr>
+        <tr><td>제세동 에너지</td><td>실패 시 점증</td><td>Biphasic <b>2 J/kg → 4 J/kg</b>로 한 번만 2배, 이후 4 J/kg 유지</td></tr>
+        <tr><td>제세동 리듬의 vasopressor</td><td>epinephrine 중심</td><td>첫 shock 전에는 쓰지 않음 · 지속되면 <b>vasopressin 0.8 U/kg</b>(없으면 epinephrine)</td></tr>
+        <tr><td>불응성 VF/PVT</td><td>lidocaine·amiodarone</td><td>개는 lidocaine 2 mg/kg, 고양이는 <b>lidocaine 대신 amiodarone</b> 5 mg/kg · <b>esmolol</b> 추가</td></tr>
+        <tr><td>ETCO₂ 목표</td><td>10–15 mm Hg 이상</td><td><b>18 mm Hg 이상</b>이 되도록 압박을 최적화</td></tr>
+        <tr><td>주기 사이 중단</td><td>2–5초</td><td><b>10초 이내</b>, ROSC 의심만으로 주기를 끊지 않음</td></tr>
+        <tr><td>배와위 압박 깊이</td><td>명시 없음</td><td>흉곽 배복 길이의 <b>1/4</b></td></tr>
+        <tr><td>오피오이드 투여 후 정지</td><td>—</td><td><b>naloxone 0.04 mg/kg</b>를 우선 투여 (서맥·무반응 단계에서도)</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="sec"><h2>모니터링 목표</h2></div>
+  <div class="card">
+    <div class="mini">
+      <div class="m"><b>ETCO₂</b>압박 질 지표 — <span class="mono">≥18 mm Hg</span>가 되도록 압박을 최적화</div>
+      <div class="m"><b>ETCO₂ (튜브 확인)</b><span class="mono">≥12 mm Hg</span>면 기관 삽관 시사</div>
+      <div class="m"><b>ETCO₂ (ROSC)</b>급격한 상승 <span class="mono">≥10 → ≥35 mm Hg</span></div>
+      <div class="m"><b>동맥 이완기압</b>동맥 카테터가 있으면 <span class="mono">≥30 mm Hg</span></div>
+      <div class="m"><b>맥박 촉진</b>CPA 진단을 위해 맥박을 짚느라 BLS를 늦추지 않음</div>
+      <div class="m"><b>ECG</b>주기 사이 중단에만 판독 — 팀 리더가 리듬을 소리내어 선언</div>
+      <div class="m"><b>전해질</b>K⁺·Na⁺는 CPR 중 측정 권고, 심한 이상이 의심되면 최우선</div>
+      <div class="m"><b>이온화 칼슘</b><span class="mono">&lt;0.8 mmol/L</span>가 확인될 때만 칼슘 투여</div>
+    </div>
+  </div>
+
+  <div class="sec"><h2>근거 · 범위</h2></div>
+  <div class="card">
+    <div class="card-body" style="padding-bottom:14px;font-size:13.5px;line-height:1.7;color:var(--ink-2)">
+      <p>용량·에너지·압박 기준은 <b>2024 RECOVER Guidelines</b>(Basic Life Support / Advanced Life Support / Monitoring / Updated treatment recommendations, JVECC 2024)를 기준으로 정리했습니다. ROSC 후 관리와 체형별 압박 기법의 세부는 <b>SACCM 3판 Ch.4·5</b>를 함께 참고했습니다.</p>
+      <p style="margin-top:8px">개흉 CPR과 내부 제세동 에너지, 진정제 역전(flumazenil·atipamezole), 기관내 투여 용량은 이번 정리에 넣지 않았습니다 — 2024 권고문에서 값을 확인한 뒤 추가할 예정입니다.</p>
+      <p style="margin-top:8px">Sodium bicarbonate와 dextrose는 2024 권고가 아니라 장시간 CPR·확인된 이상에 대한 관용적 용량이므로 <span class="tag old">참고</span>로 표시했습니다.</p>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>RECOVER 2024 가이드라인과 SACCM 3판을 참고해 과에서 새로 정리한 내용이며 원문을 옮긴 것이 아닙니다.</span>
+    <span>임상 판단의 보조 도구이며 최종 결정은 담당 수의사에게 있습니다.</span>
+  </div>
+</section>
+</main>
+
+<script src="../js/auth-gate.js"></script>
+<script>
+(function(){
+  'use strict';
+  const $ = (s, r=document) => r.querySelector(s), $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+  const store = { get(k,d){ try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch(e){ return d; } }, set(k,v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} } };
+  const fmt = (n, d=0) => (n == null || !isFinite(n)) ? '—' : (Math.round(n * Math.pow(10,d)) / Math.pow(10,d)).toLocaleString('en-US', { maximumFractionDigits: d });
+  const ms = (s) => { s = Math.max(0, Math.round(s)); return Math.floor(s/60) + ':' + String(s%60).padStart(2,'0'); };
+  /* 소용량은 자릿수를 늘려 표시 */
+  const vol = (mL) => mL == null || !isFinite(mL) ? '—' : mL < 1 ? fmt(mL,2) : mL < 10 ? fmt(mL,2) : fmt(mL,1);
+
+  const S = Object.assign({ species:'dog', bw:0, defib:'bi', cepi:1, catr:0.5, rhy:'non', ht:[], criDrug:'epi', criDose:0.2, criConc:'' }, store.get('cpcr:draft', {}));
+  const save = () => store.set('cpcr:draft', S);
+  const ok = () => S.bw > 0;
+
+  /* ---------------- 약물 정의 (RECOVER 2024) ---------------- */
+  const DRUGS = [
+    { id:'epi',  n:'Epinephrine',      d:0.01,  u:'mg/kg', conc:()=>S.cepi, cu:'mg/mL', r24:1, note:'비제세동 리듬 · IV/IO · 3–5분(두 주기)마다. 고용량은 권장하지 않음' },
+    { id:'vaso', n:'Vasopressin',      d:0.8,   u:'U/kg',  conc:()=>20,     cu:'U/mL',  r24:1, note:'첫 shock 후에도 제세동 리듬이 지속될 때 우선. 없으면 epinephrine' },
+    { id:'atr',  n:'Atropine',         d:0.04,  u:'mg/kg', conc:()=>S.catr, cu:'mg/mL', r24:1, note:'비제세동 리듬에 이른 시점 1회만 — 반복 투여 금지' },
+    { id:'nal',  n:'Naloxone',         d:0.04,  u:'mg/kg', conc:()=>0.4,    cu:'mg/mL', r24:1, note:'오피오이드 투여 이력이 있으면 BLS 시작 후 바로' },
+    { id:'lido', n:'Lidocaine',        d:2,     u:'mg/kg', conc:()=>20,     cu:'mg/mL', r24:1, sp:'dog', note:'개 · 첫 shock에 반응 없는 VF/무맥성 VT. 고양이에는 권장하지 않음' },
+    { id:'amio', n:'Amiodarone',       d:5,     u:'mg/kg', conc:()=>50,     cu:'mg/mL', r24:1, note:'고양이 1차 · 개는 lidocaine이 없을 때. polysorbate-80 함유 제형은 개에 금기' },
+    { id:'esm',  n:'Esmolol',          d:0.5,   u:'mg/kg', conc:()=>10,     cu:'mg/mL', r24:1, note:'지속되는 제세동 리듬 · 3–5분에 걸쳐 → 이후 50 µg/kg/min CRI' },
+    { id:'ca',   n:'Calcium gluconate 10%', d:50, u:'mg/kg', conc:()=>100,  cu:'mg/mL', r24:1, note:'이온화 칼슘 <0.8 mmol/L가 확인될 때만 · 2–5분에 걸쳐' },
+    { id:'bic',  n:'Sodium bicarbonate 8.4%', d:1, u:'mEq/kg', conc:()=>1,  cu:'mEq/mL', r24:0, note:'참고 — 15분 이상 CPR·확인된 중증 산혈증(pH<7)에서 천천히' },
+    { id:'dex',  n:'Dextrose 50%',     d:0.5,   u:'mL/kg', conc:()=>null,   cu:'', r24:0, note:'참고 — 확인된 저혈당에만. 1:4로 희석해 천천히' }
+  ];
+  const dTotal = (d) => ok() ? d.d * S.bw : null;
+  const dVol = (d) => { const c = d.conc(); if (!ok() || !c) return null; return d.d * S.bw / c; };
+
+  /* ---------------- 제세동 ---------------- */
+  const dJ = (first) => { if (!ok()) return null; return (S.defib === 'bi' ? (first ? 2 : 4) : 4) * S.bw; };
+
+  /* ---------------- 상단 타일 ---------------- */
+  function renderTiles(){
+    const epi = DRUGS[0], vaso = DRUGS[1], atr = DRUGS[2];
+    const t = (cls, k, sub, v, unit, r) => `<div class="tile ${cls}"><span class="k">${k}<small>${sub}</small></span><span class="v lg">${v}<small>${unit}</small></span><span class="r">${r}</span></div>`;
+    $('#run-tiles').innerHTML = !ok()
+      ? `<div class="tile"><span class="k">체중을 입력하세요</span><span class="v">—</span><span class="r">모든 용량이 즉시 계산됩니다</span></div>`
+      : t('accent','Epinephrine','0.01 mg/kg', vol(dVol(epi)), 'mL', `${fmt(dTotal(epi),3)} mg · ${S.cepi} mg/mL`)
+      + t('accent','Atropine','0.04 mg/kg · 1회', vol(dVol(atr)), 'mL', `${fmt(dTotal(atr),2)} mg · ${S.catr} mg/mL`)
+      + t('','Vasopressin','0.8 U/kg', vol(dVol(vaso)), 'mL', `${fmt(dTotal(vaso),1)} U · 20 U/mL`)
+      + t('bad','제세동 1차 → 이후', S.defib === 'bi' ? 'Biphasic' : 'Monophasic', `${fmt(dJ(true))}→${fmt(dJ(false))}`, 'J', S.defib === 'bi' ? '2 J/kg → 4 J/kg' : '4 J/kg');
+  }
+
+  /* ---------------- 리듬별 순서 ---------------- */
+  const NON = [
+    { b:'고품질 압박을 끊지 않고 계속', s:'100–120/분 · 2분 주기 · 환기 10회/분', v:'' },
+    { b:'Epinephrine', s:'IV/IO · 두 주기(3–5분)마다 반복', k:'epi' },
+    { b:'Atropine', s:'이른 시점에 1회만 — 특히 vagal tone에 의한 서맥성 정지', k:'atr' },
+    { b:'오피오이드 이력이 있으면 Naloxone', s:'서맥·무반응 단계에서도 즉시', k:'nal' },
+    { b:'가역 원인 확인', s:'주기 사이에 하나씩 — 아래 체크리스트', v:'' }
+  ];
+  const SH = [
+    { b:'즉시 1회 제세동 후 바로 압박 재개', s:'리듬·맥박은 다음 2분 주기가 끝난 뒤에 확인', k:'defib1' },
+    { b:'첫 shock 실패 시 에너지를 한 번만 2배', s:'이후 shock은 같은 에너지 유지', k:'defib2' },
+    { b:'지속되면 Vasopressin', s:'없으면 epinephrine 0.01 mg/kg — 첫 shock 전에는 금지', k:'vaso' },
+    { b:'항부정맥제', s:'개는 lidocaine, 고양이는 amiodarone', k:'anti' },
+    { b:'불응성이면 Esmolol', s:'3–5분에 걸쳐 투여 후 CRI', k:'esm' }
+  ];
+  function renderRhythm(){
+    const list = S.rhy === 'non' ? NON : SH;
+    const byId = (id) => DRUGS.find(d => d.id === id);
+    $('#rhy-steps').innerHTML = list.map((x, i) => {
+      let val = '', key = x.k;
+      if (key === 'defib1' || key === 'defib2') {
+        const j = dJ(key === 'defib1');
+        val = ok() ? `${fmt(j)} J<small>${S.defib === 'bi' ? (key === 'defib1' ? '2' : '4') : '4'} J/kg</small>` : '';
+      } else if (key === 'anti') {
+        const d = S.species === 'cat' ? byId('amio') : byId('lido');
+        val = ok() ? `${vol(dVol(d))} mL<small>${d.n} ${d.d} mg/kg</small>` : '';
+        key = d.id;
+      } else if (key) {
+        const d = byId(key);
+        if (d) val = ok() ? `${vol(dVol(d))} mL<small>${fmt(dTotal(d), d.d < 0.05 ? 3 : 2)} ${d.u.split('/')[0]}</small>` : '';
+      }
+      const label = key ? `<button type="button" class="lg" data-log="${key}">기록</button>` : '';
+      return `<div class="step"><span class="n">${i+1}</span><div class="t"><b>${x.b}</b><span>${x.s}</span></div><span class="v">${val || label ? val : ''}${label ? ' ' + label : ''}</span></div>`;
+    }).join('');
+    $('#rhy-note').innerHTML = S.rhy === 'non'
+      ? '무수축·PEA에서는 제세동을 하지 않습니다. Epinephrine을 두 주기마다, atropine은 1회만.'
+      : '첫 제세동 전 epinephrine은 권장하지 않습니다. 개는 lidocaine 2 mg/kg, 고양이는 amiodarone 5 mg/kg.';
+  }
+
+  /* ---------------- ALS 표 ---------------- */
+  function renderDrugs(){
+    $('#als-note').textContent = ok() ? `${S.species === 'dog' ? 'DOG' : 'CAT'} ${fmt(S.bw,1)} kg 기준` : '체중을 입력하세요';
+    $('#drug-tbl tbody').innerHTML = DRUGS.map(d => {
+      const off = d.sp && d.sp !== S.species;
+      const c = d.conc();
+      const total = dTotal(d), v = dVol(d);
+      const amount = d.u === 'mL/kg' ? (ok() ? `${vol(total)} mL` : '—') : (ok() ? `${fmt(total, d.d < 0.05 ? 3 : total < 10 ? 2 : 1)} ${d.u.split('/')[0]}` : '—');
+      const give = d.u === 'mL/kg' ? '—' : (ok() && c ? `<b>${vol(v)} mL</b>` : '—');
+      return `<tr${off ? ' style="opacity:.45"' : ''}>
+        <td><b>${d.n}</b>${d.r24 ? '<span class="tag r24">2024</span>' : '<span class="tag old">참고</span>'}</td>
+        <td class="mono">${d.d} ${d.u}</td>
+        <td class="mono">${amount}</td>
+        <td class="mono">${c ? c + ' ' + d.cu : '—'}</td>
+        <td class="mono">${give}</td>
+        <td>${off ? '고양이에는 권장하지 않음' : d.note}</td></tr>`;
+    }).join('');
+    $('#defib-tiles').innerHTML = !ok()
+      ? `<div class="tile"><span class="k">제세동 에너지</span><span class="v">—</span><span class="r">체중 입력</span></div>`
+      : `<div class="tile bad"><span class="k">1차 shock</span><span class="v">${fmt(dJ(true))}<small>J</small></span><span class="r">${S.defib === 'bi' ? 'Biphasic 2 J/kg' : 'Monophasic 4 J/kg'}</span></div>
+         <div class="tile bad"><span class="k">2차 이후</span><span class="v">${fmt(dJ(false))}<small>J</small></span><span class="r">한 번만 2배로 올리고 이후 유지</span></div>
+         <div class="tile"><span class="k">투여 간격</span><span class="v sm">2분 주기 후</span><span class="r">shock 직후 압박 즉시 재개</span></div>`;
+  }
+
+  /* ---------------- 가역 원인 ---------------- */
+  const HT = [
+    { k:'hypovol', n:'Hypovolemia', s:'출혈·탈수 — 수액 소생, 출혈원 확인' },
+    { k:'hypoxia', n:'Hypoxia', s:'기도 폐쇄·무기폐 — 튜브 위치·환기 재확인' },
+    { k:'hplus',   n:'H⁺ (산혈증)', s:'장시간 정지 — 환기 최적화, 필요 시 bicarbonate' },
+    { k:'hyperk',  n:'Hyper/hypokalemia', s:'K⁺ 측정 — 고K혈증에 calcium gluconate' },
+    { k:'hypoca',  n:'Hypocalcemia', s:'iCa <0.8 mmol/L에서만 calcium 투여' },
+    { k:'hypogly', n:'Hypoglycemia', s:'혈당 확인 — 확인된 저혈당에 dextrose' },
+    { k:'hypoth',  n:'Hypothermia', s:'저체온에서는 소생 시도를 더 길게' },
+    { k:'tension', n:'Tension pneumothorax', s:'흉부 천자 — 청진·POCUS' },
+    { k:'tampon',  n:'Tamponade', s:'심낭천자 — POCUS로 확인' },
+    { k:'toxin',   n:'Toxins', s:'오피오이드·진정제·약물 과량 — 역전제' },
+    { k:'thrombo', n:'Thromboembolism', s:'PTE·ATE 병력 확인' },
+    { k:'trauma',  n:'Trauma', s:'출혈·기흉·뇌손상 동반 여부' }
+  ];
+  function renderHT(){
+    $('#chk-ht').innerHTML = HT.map(h => `<button type="button" class="bad" data-ht="${h.k}" aria-pressed="${S.ht.includes(h.k)}">${h.n}</button>`).join('');
+    const on = HT.filter(h => S.ht.includes(h.k));
+    $('#ht-steps').innerHTML = on.length
+      ? on.map((h,i) => `<div class="step bad"><span class="n">!</span><div class="t"><b>${h.n}</b><span>${h.s}</span></div><span class="v"></span></div>`).join('')
+      : `<div class="step"><span class="n">–</span><div class="t"><b>해당하는 원인을 눌러 두세요</b><span>확인한 원인이 목록으로 남아 팀에서 공유하기 쉽습니다</span></div><span class="v"></span></div>`;
+  }
+
+  /* ---------------- ROSC 후 ---------------- */
+  const CRI = {
+    epi:   { n:'Epinephrine', lo:0.1, hi:0.5, note:'ROSC 직후 혈관 긴장도 유지 — 생리를 파악한 뒤 표적 약물로 교체' },
+    norepi:{ n:'Norepinephrine', lo:0.1, hi:0.5, note:'혈관확장이 주된 문제일 때' },
+    dobu:  { n:'Dobutamine', lo:5, hi:10, note:'허혈 후 좌심실 수축기 기능장애 — POCUS로 반응 평가' },
+    lido:  { n:'Lidocaine', lo:30, hi:50, note:'ROSC 후 VT가 지속될 때 — 2 mg/kg bolus 후 CRI (개)' }
+  };
+  function renderROSC(){
+    const sp = S.species;
+    const co2 = sp === 'dog' ? '32–43' : '26–36';
+    const t = (k, v, u, r) => `<div class="tile accent"><span class="k">${k}</span><span class="v sm">${v}<small>${u}</small></span><span class="r">${r}</span></div>`;
+    $('#rosc-tiles').innerHTML =
+        t('SpO₂ · SaO₂','94–98','%','고산소혈증도 피함')
+      + t('PaO₂','80–100','mm Hg','controlled reoxygenation')
+      + t('PaCO₂', co2,'mm Hg', sp === 'dog' ? 'DOG' : 'CAT')
+      + t('MAP','80–120','mm Hg','뇌혈류 자가조절 소실 — 높은 정상 목표')
+      + t('ScvO₂','&gt;70','%','조직 산소 공급 지표')
+      + t('Lactate','&lt;2.5','mmol/L','연속 측정으로 반응 평가');
+
+    const sel = $('#cri-drug');
+    if (!sel.options.length) sel.innerHTML = Object.entries(CRI).map(([k,v]) => `<option value="${k}">${v.n}</option>`).join('');
+    sel.value = S.criDrug;
+    const c = CRI[S.criDrug];
+    $('#cri-range').textContent = `${c.lo}–${c.hi} µg/kg/min`;
+    $('#cri-note').textContent = c.note;
+    const dose = +S.criDose || 0, conc = +S.criConc || 0;
+    const ugMin = ok() ? dose * S.bw : null;
+    const mgH = ugMin != null ? ugMin * 60 / 1000 : null;
+    const mlH = (mgH != null && conc > 0) ? mgH / conc : null;
+    const outOf = dose > 0 && (dose < c.lo || dose > c.hi);
+    $('#cri-tiles').innerHTML = !ok()
+      ? `<div class="tile"><span class="k">펌프 속도</span><span class="v">—</span><span class="r">체중 입력</span></div>`
+      : `<div class="tile${outOf ? ' warn' : ''}"><span class="k">투여 속도</span><span class="v">${fmt(ugMin,1)}<small>µg/min</small></span><span class="r">${outOf ? `권장 범위(${c.lo}–${c.hi}) 밖` : `${dose} µg/kg/min × ${fmt(S.bw,1)} kg`}</span></div>
+         <div class="tile"><span class="k">시간당</span><span class="v">${fmt(mgH,3)}<small>mg/h</small></span><span class="r">µg/min × 60 ÷ 1000</span></div>
+         <div class="tile accent"><span class="k">펌프</span><span class="v">${mlH != null ? fmt(mlH,1) : '—'}<small>mL/h</small></span><span class="r">${conc > 0 ? `희석 농도 ${conc} mg/mL` : '희석 후 농도를 입력하세요'}</span></div>`;
+  }
+
+  /* ---------------- 타이머 ---------------- */
+  const CYCLE = 120, PAUSE = 10;
+  let T = { on:false, phase:'comp', left:CYCLE, cycle:1, total:0, id:null }, wake = null, ac = null;
+  const LOG = store.get('cpcr:log', []);
+
+  function beep(times, freq){
+    try {
+      ac = ac || new (window.AudioContext || window.webkitAudioContext)();
+      for (let i = 0; i < times; i++) {
+        const o = ac.createOscillator(), g = ac.createGain(), t0 = ac.currentTime + i * 0.22;
+        o.frequency.value = freq; o.connect(g); g.connect(ac.destination);
+        g.gain.setValueAtTime(0.0001, t0); g.gain.exponentialRampToValueAtTime(0.25, t0 + 0.01);
+        g.gain.exponentialRampToValueAtTime(0.0001, t0 + 0.16);
+        o.start(t0); o.stop(t0 + 0.18);
+      }
+    } catch(e){}
+    try { navigator.vibrate && navigator.vibrate(times > 1 ? [120,80,120,80,120] : [90]); } catch(e){}
+  }
+  async function lock(){ try { if ('wakeLock' in navigator && !wake) wake = await navigator.wakeLock.request('screen'); } catch(e){} }
+  function unlock(){ try { wake && wake.release(); } catch(e){} wake = null; }
+
+  function tick(){
+    T.left--; T.total++;
+    if (T.left <= 0) {
+      if (T.phase === 'comp') { T.phase = 'pause'; T.left = PAUSE; beep(3, 880); }
+      else { T.phase = 'comp'; T.left = CYCLE; T.cycle++; beep(1, 620); }
+    } else if (T.phase === 'comp' && T.left === 10) { beep(1, 520); }
+    renderTimer();
+  }
+  function start(){ if (T.on) return; T.on = true; T.id = setInterval(tick, 1000); lock(); beep(1, 620); renderTimer(); }
+  function pause(){ T.on = false; clearInterval(T.id); T.id = null; unlock(); renderTimer(); }
+  function reset(){ pause(); T = { on:false, phase:'comp', left:CYCLE, cycle:1, total:0, id:null }; renderTimer(); }
+  function nextCycle(){ T.phase = 'comp'; T.left = CYCLE; T.cycle++; beep(1, 620); if (!T.on) start(); else renderTimer(); }
+
+  function renderTimer(){
+    const c = $('#clock');
+    c.textContent = ms(T.left);
+    c.className = 'clock' + (T.phase === 'pause' ? ' pause' : T.on ? '' : ' idle');
+    $('#cyc').textContent = T.cycle;
+    $('#tot').textContent = ms(T.total);
+    const epiDue = T.phase === 'comp' && T.cycle % 2 === 1;
+    $('#epi-due').innerHTML = epiDue ? '<span class="chip v">이번 주기 · epinephrine</span>' : '';
+    const st = $('#tstate');
+    if (T.phase === 'pause') {
+      st.className = 'tstate warn';
+      st.innerHTML = '압박 중단 — 리듬 확인 · 압박자 교대<small>10초 안에 다음 주기가 자동으로 시작됩니다. 맥박은 리듬과 함께만 확인.</small>';
+    } else if (!T.on && T.total === 0) {
+      st.className = 'tstate';
+      st.innerHTML = '시작을 누르면 2분 압박 주기가 돌아갑니다.<small>압박 100–120/분 · 흉곽 폭의 1/3–1/2 · 완전한 반동 · 환기 10회/분</small>';
+    } else if (!T.on) {
+      st.className = 'tstate';
+      st.innerHTML = '일시정지<small>기록은 유지됩니다. 시작을 누르면 이어서 진행합니다.</small>';
+    } else {
+      st.className = 'tstate';
+      st.innerHTML = `압박 중 · 주기 ${T.cycle}<small>${epiDue ? 'Epinephrine 투여 주기 — 두 주기(3–5분)마다' : '이번 주기는 epinephrine을 건너뜁니다'} · 압박 중 ECG는 판독하지 않음</small>`;
+    }
+    $('#t-go').textContent = T.on ? '일시정지' : (T.total === 0 ? '시작' : '이어서');
+    $('#t-go').classList.toggle('go', !T.on);
+  }
+
+  /* ---------------- 기록 ---------------- */
+  function logAdd(txt){ LOG.unshift({ t:T.total, txt }); store.set('cpcr:log', LOG.slice(0,80)); renderLog(); }
+  function renderLog(){
+    $('#log').innerHTML = LOG.length
+      ? LOG.map(e => `<li><span class="tm">${ms(e.t)}</span><span>${e.txt}</span></li>`).join('')
+      : '<li class="none">아직 기록이 없습니다 — 순서 카드의 “기록” 버튼을 누르면 시각과 함께 남습니다.</li>';
+  }
+  function logText(key){
+    if (key === 'defib1' || key === 'defib2') return `제세동 ${fmt(dJ(key === 'defib1'))} J (${S.defib === 'bi' ? 'biphasic' : 'monophasic'})`;
+    const d = DRUGS.find(x => x.id === key); if (!d) return key;
+    const v = dVol(d), tot = dTotal(d);
+    return `${d.n} ${fmt(tot, d.d < 0.05 ? 3 : 2)} ${d.u.split('/')[0]}${v != null ? ` (${vol(v)} mL)` : ''}`;
+  }
+
+  /* ---------------- 이벤트 ---------------- */
+  function syncInputs(){
+    $('#bw').value = S.bw || '';
+    $('#defib').value = S.defib; $('#cepi').value = S.cepi; $('#catr').value = S.catr;
+    $('#cri-dose').value = S.criDose; $('#cri-conc').value = S.criConc;
+    $$('.top .seg button[data-sp]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.sp === S.species)));
+    $$('.rhy button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.rhy === S.rhy)));
+  }
+  function renderAll(){ renderTiles(); renderRhythm(); renderDrugs(); renderHT(); renderROSC(); save(); }
+
+  document.addEventListener('input', (e) => {
+    const id = e.target.id; if (!id || e.target.tagName === 'SELECT') return;
+    if (id === 'bw') S.bw = +e.target.value || 0;
+    else if (id === 'cri-dose') S.criDose = e.target.value === '' ? '' : +e.target.value;
+    else if (id === 'cri-conc') S.criConc = e.target.value === '' ? '' : +e.target.value;
+    else return;
+    renderAll();
+  });
+  document.addEventListener('change', (e) => {
+    const id = e.target.id; if (!id || e.target.tagName !== 'SELECT') return;
+    if (id === 'defib') S.defib = e.target.value;
+    else if (id === 'cepi') S.cepi = +e.target.value;
+    else if (id === 'catr') S.catr = +e.target.value;
+    else if (id === 'cri-drug') { S.criDrug = e.target.value; S.criDose = CRI[S.criDrug].lo; $('#cri-dose').value = S.criDose; }
+    else return;
+    renderAll();
+  });
+  $$('.top .seg button[data-sp]').forEach(b => b.addEventListener('click', () => {
+    S.species = b.dataset.sp; syncInputs(); renderAll();
+  }));
+  $('#p-run').addEventListener('click', (e) => {
+    const r = e.target.closest('.rhy button'); if (r) { S.rhy = r.dataset.rhy; syncInputs(); renderRhythm(); save(); return; }
+    const l = e.target.closest('button[data-log]'); if (l) { if (!ok()) return; logAdd(logText(l.dataset.log)); }
+  });
+  $('#chk-ht').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-ht]'); if (!b) return;
+    const k = b.dataset.ht; S.ht = S.ht.includes(k) ? S.ht.filter(x => x !== k) : S.ht.concat(k);
+    renderHT(); save();
+  });
+  $('#t-go').addEventListener('click', () => T.on ? pause() : start());
+  $('#t-next').addEventListener('click', nextCycle);
+  $('#t-reset').addEventListener('click', reset);
+  $('#log-clear').addEventListener('click', () => { LOG.length = 0; store.set('cpcr:log', []); renderLog(); });
+  $('#log-copy').addEventListener('click', () => {
+    if (!LOG.length) return;
+    const head = `CPR 기록 · ${S.species === 'dog' ? 'DOG' : 'CAT'} ${S.bw || '?'} kg · 총 ${ms(T.total)}`;
+    const body = LOG.slice().reverse().map(e => `${ms(e.t)}  ${e.txt}`).join('\n');
+    const txt = head + '\n' + body + (S.ht.length ? '\n가역 원인: ' + HT.filter(h => S.ht.includes(h.k)).map(h => h.n).join(', ') : '');
+    const done = () => { const b = $('#log-copy'); b.textContent = '복사됨'; setTimeout(() => { b.textContent = '기록 복사'; }, 1600); };
+    if (navigator.clipboard) navigator.clipboard.writeText(txt).then(done).catch(() => {});
+    else { const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); done(); } catch(e){} ta.remove(); }
+  });
+  document.addEventListener('visibilitychange', () => { if (!document.hidden && T.on) lock(); });
+
+  $$('.tab').forEach(t => t.addEventListener('click', () => showTab(t.id)));
+  function showTab(id){ $$('.tab').forEach(t => { const on = t.id === id; t.setAttribute('aria-selected', String(on)); $('#' + t.dataset.panel).classList.toggle('active', on); }); }
+
+  syncInputs(); renderAll(); renderTimer(); renderLog();
+})();
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('../sw.js').then((reg) => {
+      const showToast = (msg) => { const t = document.createElement('div'); t.className = 'sw-toast'; t.textContent = msg; document.body.appendChild(t); requestAnimationFrame(() => t.classList.add('show')); setTimeout(() => { t.classList.remove('show'); setTimeout(() => t.remove(), 400); }, 3200); };
+      const hadController = !!navigator.serviceWorker.controller; let refreshing = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => { if (refreshing || !hadController) return; refreshing = true; showToast('새 버전 적용 중…'); setTimeout(() => window.location.reload(), 700); });
+      reg.update().catch(() => {});
+    }).catch(() => {});
+  });
+}
+</script>
+</body>
+</html>
