@@ -1,0 +1,76 @@
+{
+ "id": "s-adenosyl-methionine",
+ "name": "S-Adenosyl-Methionine",
+ "brand": [
+  "Denosyl",
+  "Denamarin"
+ ],
+ "class": "간 보호 영양보충제 (nutraceutical)",
+ "tags": [
+  "hepatic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "간 글루타티온 증가 (제품 지시)",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "가장 가까운 정제 규격으로 반올림; 공복(식전 1시간 이상); 2정 이상이면 2회 분할 가능"
+  },
+  {
+   "species": "dog",
+   "label": "괴사염증성·담즙정체성 간질환, 공포성 간병증 보조",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "공복 투여"
+  },
+  {
+   "species": "cat",
+   "label": "간 글루타티온 증가 (제품 지시)",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "가장 가까운 정제 규격으로 반올림; 공복; 투여 직후 물 3–6 mL"
+  },
+  {
+   "species": "cat",
+   "label": "간질환·간지질증 보조",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "공복 투여"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 90
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 225
+  },
+  {
+   "form": "tablet",
+   "mg": 225
+  },
+  {
+   "form": "tablet",
+   "mg": 425
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

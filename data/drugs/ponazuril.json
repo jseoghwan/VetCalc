@@ -1,0 +1,88 @@
+{
+ "id": "ponazuril",
+ "name": "Ponazuril",
+ "brand": [
+  "Marquis"
+ ],
+ "class": "항원충제 (triazine)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "콕시듐증 (a)",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "3일"
+  },
+  {
+   "species": "dog",
+   "label": "콕시듐증 (b)",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "3일; 필요 시 3일 과정 2회"
+  },
+  {
+   "species": "dog",
+   "label": "네오스포라·톡소플라즈마",
+   "route": "PO",
+   "low": 7.5,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "28일"
+  },
+  {
+   "species": "dog",
+   "label": "개 헤파토준증",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "14일 후 decoquinate 장기"
+  },
+  {
+   "species": "cat",
+   "label": "콕시듐증 (a)",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "3일"
+  },
+  {
+   "species": "cat",
+   "label": "콕시듐증 (b)",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "3일; 필요 시 3일 과정 2회"
+  },
+  {
+   "species": "cat",
+   "label": "네오스포라·톡소플라즈마",
+   "route": "PO",
+   "low": 7.5,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "28일"
+  }
+ ],
+ "strengths": [],
+ "compounding": "시판 페이스트(15%)는 소형동물에 너무 농축 — 희석 필요",
+ "reviewed": null
+}

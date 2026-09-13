@@ -1,0 +1,46 @@
+{
+ "id": "quinidine",
+ "name": "Quinidine",
+ "brand": [],
+ "class": "Class IA 항부정맥제",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "PVC·심실빈맥 (속방형)",
+   "route": "PO",
+   "low": 6,
+   "high": 16,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "PVC·심실빈맥 (서방형)",
+   "route": "PO",
+   "low": 6,
+   "high": 16,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 200
+  },
+  {
+   "form": "tablet",
+   "mg": 300
+  },
+  {
+   "form": "tablet",
+   "mg": 324
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

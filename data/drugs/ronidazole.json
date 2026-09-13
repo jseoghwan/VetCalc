@@ -1,0 +1,36 @@
+{
+ "id": "ronidazole",
+ "name": "Ronidazole",
+ "brand": [],
+ "class": "Nitroimidazole계 항원충제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "Giardia (견사 환경)",
+   "route": "PO",
+   "low": 30,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "7일; 위생·chlorhexidine 샴푸 병행 연구"
+  },
+  {
+   "species": "cat",
+   "label": "Tritrichomonas foetus 감염",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "14일"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,58 @@
+{
+ "id": "tinidazole",
+ "name": "Tinidazole",
+ "brand": [
+  "Tindamax"
+ ],
+ "class": "니트로이미다졸계 항원충제/항생제",
+ "tags": [
+  "antimicrobial",
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "지아르디아증",
+   "route": "PO",
+   "low": 44,
+   "high": 44,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "6일 (다른 출처 3일)"
+  },
+  {
+   "species": "cat",
+   "label": "지아르디아증",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "7–10일 (다른 출처 3일)"
+  },
+  {
+   "species": "cat",
+   "label": "Tritrichomonas foetus",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "14일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 250
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

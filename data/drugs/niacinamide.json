@@ -1,0 +1,52 @@
+{
+ "id": "niacinamide",
+ "name": "Niacinamide",
+ "brand": [],
+ "class": "비타민 B3 (면역조절제)",
+ "tags": [
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "무균성 염증·자가면역 피부질환 보조 (≤10 kg)",
+   "route": "PO",
+   "low": 250,
+   "high": 250,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "default": true,
+   "note": "tetracycline 병용, 체중 10 kg 이하"
+  },
+  {
+   "species": "dog",
+   "label": "무균성 염증·자가면역 피부질환 보조 (>10 kg)",
+   "route": "PO",
+   "low": 500,
+   "high": 500,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "tetracycline 병용, 체중 10 kg 초과"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "capsule",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

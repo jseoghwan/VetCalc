@@ -1,0 +1,77 @@
+{
+ "id": "paroxetine",
+ "name": "Paroxetine",
+ "brand": [
+  "Paxil"
+ ],
+ "class": "선택적 세로토닌 재흡수 억제제 (SSRI)",
+ "tags": [
+  "behavior"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "SSRI 반응성 행동 문제",
+   "route": "PO",
+   "low": 0.5,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "일반정 사용; 저용량부터 시작, 약 2개월 후 평가"
+  },
+  {
+   "species": "cat",
+   "label": "SSRI 반응성 행동 문제",
+   "route": "PO",
+   "low": 0.25,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "원문 1일 1–2회; 일반정 사용, 약 2개월 후 평가"
+  },
+  {
+   "species": "cat",
+   "label": "SSRI 반응성 행동 문제 — 실용 용량",
+   "route": "PO",
+   "low": 1.25,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "원문 1일 1–2회; 10 mg 정제 ⅛–½개"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 10
+  },
+  {
+   "form": "tablet",
+   "mg": 12.5
+  },
+  {
+   "form": "tablet",
+   "mg": 20
+  },
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 30
+  },
+  {
+   "form": "tablet",
+   "mg": 37.5
+  },
+  {
+   "form": "tablet",
+   "mg": 40
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

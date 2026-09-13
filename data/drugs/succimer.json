@@ -1,0 +1,47 @@
+{
+ "id": "succimer",
+ "name": "Succimer",
+ "brand": [
+  "Chemet"
+ ],
+ "class": "킬레이트제 (납 중독 해독제)",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "납 중독",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "5–10일"
+  },
+  {
+   "species": "cat",
+   "label": "납 중독",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "5–10일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 100
+  },
+  {
+   "form": "capsule",
+   "mg": 200
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,81 @@
+{
+ "id": "tolfenamic-acid",
+ "name": "Tolfenamic Acid",
+ "brand": [
+  "Tolfedine"
+ ],
+ "class": "비스테로이드성 소염진통제 (NSAID)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "급성 통증 (a)",
+   "route": "PO",
+   "low": 4,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "3–5일, 첫 용량은 주사제 권장"
+  },
+  {
+   "species": "dog",
+   "label": "만성 통증 (a)",
+   "route": "PO",
+   "low": 4,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "주당 연속 3–5일 투여"
+  },
+  {
+   "species": "dog",
+   "label": "NSAID 경구 (b)",
+   "route": "PO",
+   "low": 4,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "3일 투여 후 4일 휴약, 주 1회 반복 가능"
+  },
+  {
+   "species": "cat",
+   "label": "급성 통증",
+   "route": "PO",
+   "low": 4,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "3–5일, 첫 용량은 주사제 권장"
+  },
+  {
+   "species": "cat",
+   "label": "소염·발열 증후군",
+   "route": "PO",
+   "low": 4,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "식사와 함께, 3–5일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 6
+  },
+  {
+   "form": "tablet",
+   "mg": 20
+  },
+  {
+   "form": "tablet",
+   "mg": 60
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

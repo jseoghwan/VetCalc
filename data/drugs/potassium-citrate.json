@@ -1,0 +1,112 @@
+{
+ "id": "potassium-citrate",
+ "name": "Potassium Citrate",
+ "brand": [
+  "Urocit-K",
+  "CitraVet"
+ ],
+ "class": "요 알칼리화제·칼륨 보충제",
+ "tags": [
+  "urinary",
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "수산칼슘 결석 예방 보조",
+   "route": "PO",
+   "low": 50,
+   "high": 75,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "요 pH >7.5이면 사용 안 함"
+  },
+  {
+   "species": "dog",
+   "label": "CKD 칼륨 보충·알칼리화",
+   "route": "PO",
+   "low": 40,
+   "high": 60,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "Fanconi (K+ 1.5–2.0 mEq/L)",
+   "route": "PO",
+   "low": 1620,
+   "high": 1620,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "15 mEq"
+  },
+  {
+   "species": "dog",
+   "label": "Fanconi (K+ 2.1–2.75 mEq/L)",
+   "route": "PO",
+   "low": 1080,
+   "high": 1080,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "10 mEq"
+  },
+  {
+   "species": "dog",
+   "label": "Fanconi (K+ 2.76–3.75 mEq/L)",
+   "route": "PO",
+   "low": 540,
+   "high": 540,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "5 mEq"
+  },
+  {
+   "species": "cat",
+   "label": "수산칼슘 결석 예방 보조",
+   "route": "PO",
+   "low": 50,
+   "high": 75,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "CKD 저칼륨혈증 (a)",
+   "route": "PO",
+   "low": 40,
+   "high": 60,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1일 총량, 2–3회 분할"
+  },
+  {
+   "species": "cat",
+   "label": "CKD 대사성 산증",
+   "route": "PO",
+   "low": 40,
+   "high": 60,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 540
+  },
+  {
+   "form": "tablet",
+   "mg": 675
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 680
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

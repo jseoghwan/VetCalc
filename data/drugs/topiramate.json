@@ -1,0 +1,108 @@
+{
+ "id": "topiramate",
+ "name": "Topiramate",
+ "brand": [
+  "Topamax",
+  "Qudexy XR",
+  "Trokendi XR"
+ ],
+ "class": "항경련제",
+ "tags": [
+  "anticonvulsant"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "난치성 간질 보조 (초기)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "2주간 투여 후 증량"
+  },
+  {
+   "species": "dog",
+   "label": "난치성 간질 보조 (증량 1단계)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "약 2개월 유지 후 재평가"
+  },
+  {
+   "species": "dog",
+   "label": "난치성 간질 보조 (증량 2단계)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "발작 50% 미만 감소 시"
+  },
+  {
+   "species": "dog",
+   "label": "난치성 간질 보조 (증량 3단계)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "난치성 간질 보조 (반응군 용량 범위)",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 15
+  },
+  {
+   "form": "capsule",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "capsule",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "capsule",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "capsule",
+   "mg": 150
+  },
+  {
+   "form": "capsule",
+   "mg": 200
+  },
+  {
+   "form": "tablet",
+   "mg": 200
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

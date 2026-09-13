@@ -1,0 +1,119 @@
+{
+ "id": "penicillamine",
+ "name": "Penicillamine",
+ "brand": [
+  "Depen",
+  "Cuprimine"
+ ],
+ "class": "킬레이트제 (구리 배출)",
+ "tags": [
+  "hepatic",
+  "urinary"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "구리 연관 간병증 — 표준",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "공복(급여 20–30분 전)"
+  },
+  {
+   "species": "dog",
+   "label": "구리 연관 간병증 — 저용량(PK 연구)",
+   "route": "PO",
+   "low": 7,
+   "high": 7,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "공복; 구토 감소 목적"
+  },
+  {
+   "species": "dog",
+   "label": "구리 연관 만성 간염",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "식전 30분 또는 식후 2시간; 기간은 간 구리 정량에 따름"
+  },
+  {
+   "species": "dog",
+   "label": "시스틴 요로결석",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "식사와 함께"
+  },
+  {
+   "species": "dog",
+   "label": "도베르만 무증상 간염",
+   "route": "PO",
+   "low": 6.7,
+   "high": 6.7,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "급여 30분 전, 4개월"
+  },
+  {
+   "species": "dog",
+   "label": "납 중독 (a)",
+   "route": "PO",
+   "low": 27.5,
+   "high": 27.5,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 110 mg/kg/일 분할 q6–8h; 급여 30분 전, 1–2주"
+  },
+  {
+   "species": "dog",
+   "label": "납 중독 (b) 저용량",
+   "route": "PO",
+   "low": 8.25,
+   "high": 13.75,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 33–55 mg/kg/일 분할 q6–8h"
+  },
+  {
+   "species": "cat",
+   "label": "원발성 구리 간병증",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "용혈성 빈혈 보고"
+  },
+  {
+   "species": "cat",
+   "label": "납 중독",
+   "route": "PO",
+   "low": 125,
+   "high": 125,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "5일; 위장관 내 납 잔류 시 금기"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 250
+  },
+  {
+   "form": "tablet",
+   "mg": 250
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

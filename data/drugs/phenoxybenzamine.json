@@ -1,0 +1,62 @@
+{
+ "id": "phenoxybenzamine",
+ "name": "Phenoxybenzamine",
+ "brand": [
+  "Dibenzyline"
+ ],
+ "class": "비선택적 α-아드레날린 차단제",
+ "tags": [
+  "urinary",
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "기능적 요도 폐쇄 (요도 긴장 증가)",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "기능적 요도 폐쇄 — 실용 용량",
+   "route": "PO",
+   "low": 5,
+   "high": 20,
+   "unit": "mg/animal",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "갈색세포종 고혈압 (초기)",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "점진 증량, 최대 2.5 mg/kg q12h; 연구 중앙값 0.6 mg/kg q12h; 수술 전까지"
+  },
+  {
+   "species": "cat",
+   "label": "기능적 요도 폐쇄 (요도 긴장 증가)",
+   "route": "PO",
+   "low": 2,
+   "high": 4,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "bethanechol 병용 시 2–3일 먼저 시작"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 10
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

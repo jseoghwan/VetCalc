@@ -1,0 +1,77 @@
+{
+ "id": "orbifloxacin",
+ "name": "Orbifloxacin",
+ "brand": [
+  "Orbax"
+ ],
+ "class": "플루오로퀴놀론 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "감수성 세균 감염 (label)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "UTI 10일; 기타 임상 증상 소실 후 2–3일, 최대 30일"
+  },
+  {
+   "species": "dog",
+   "label": "산발성 방광염",
+   "route": "PO",
+   "low": 2.5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "3–5일"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 세균 감염 — 정제 (label)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "7.5 mg/kg/일 초과 금지; UTI 10일, 기타 증상 소실 후 2–3일, 최대 30일"
+  },
+  {
+   "species": "cat",
+   "label": "피부 감염 — 현탁액 (label)",
+   "route": "PO",
+   "low": 7.5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "증상 소실 후 2–3일"
+  },
+  {
+   "species": "cat",
+   "label": "산발성 방광염",
+   "route": "PO",
+   "low": 2.5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "현탁액 사용 시 7.5 mg/kg; 3–5일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 22.7
+  },
+  {
+   "form": "tablet",
+   "mg": 68
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

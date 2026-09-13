@@ -1,0 +1,46 @@
+{
+ "id": "quinacrine",
+ "name": "Quinacrine",
+ "brand": [],
+ "class": "항원충제 (acridine계)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "Giardia (최후 선택약)",
+   "route": "PO",
+   "low": 6.6,
+   "high": 6.6,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "5일"
+  },
+  {
+   "species": "cat",
+   "label": "Giardia (최후 선택약)",
+   "route": "PO",
+   "low": 9,
+   "high": 9,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "6일"
+  },
+  {
+   "species": "cat",
+   "label": "Coccidia (최후 선택약)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "5일"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

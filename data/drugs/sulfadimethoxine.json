@@ -1,0 +1,99 @@
+{
+ "id": "sulfadimethoxine",
+ "name": "Sulfadimethoxine",
+ "brand": [
+  "Albon"
+ ],
+ "class": "설폰아미드 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "감수성 세균 감염·콕시듐 장염, 부하 용량(첫날) (label)",
+   "route": "PO",
+   "low": 55,
+   "high": 55,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "감수성 세균 감염·콕시듐 장염, 유지 (label)",
+   "route": "PO",
+   "low": 27.5,
+   "high": 27.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "보통 3–5일, 증상 소실 후 48시간까지"
+  },
+  {
+   "species": "dog",
+   "label": "콕시듐증",
+   "route": "PO",
+   "low": 50,
+   "high": 60,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "5–20일"
+  },
+  {
+   "species": "dog",
+   "label": "콕시듐증 (amprolium 병용)",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "14일"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 세균 감염, 부하 용량(첫날) (label)",
+   "route": "PO",
+   "low": 55,
+   "high": 55,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 세균 감염, 유지 (label)",
+   "route": "PO",
+   "low": 27.5,
+   "high": 27.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "보통 3–5일, 증상 소실 후 48시간까지"
+  },
+  {
+   "species": "cat",
+   "label": "콕시듐증",
+   "route": "PO",
+   "low": 50,
+   "high": 60,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "5–20일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 125
+  },
+  {
+   "form": "tablet",
+   "mg": 250
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

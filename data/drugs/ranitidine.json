@@ -1,0 +1,79 @@
+{
+ "id": "ranitidine",
+ "name": "Ranitidine",
+ "brand": [
+  "Zantac"
+ ],
+ "class": "H2 차단제; 위장관 운동촉진제",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "식도염·궤양·위염·위장관 운동촉진 (a)",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h; 일화적 용량"
+  },
+  {
+   "species": "dog",
+   "label": "식도염·궤양·위염·위장관 운동촉진 (b)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h; 효과 부족 가능성 언급"
+  },
+  {
+   "species": "cat",
+   "label": "식도염·궤양·결장 운동촉진 (a)",
+   "route": "PO",
+   "low": 3.5,
+   "high": 3.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "약동학 자료 기반"
+  },
+  {
+   "species": "cat",
+   "label": "식도염·궤양 (b)",
+   "route": "PO",
+   "low": 1.4,
+   "high": 2.3,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "위산 억제 효과 미미(연구)"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 75
+  },
+  {
+   "form": "capsule",
+   "mg": 150
+  },
+  {
+   "form": "tablet",
+   "mg": 150
+  },
+  {
+   "form": "capsule",
+   "mg": 300
+  },
+  {
+   "form": "tablet",
+   "mg": 300
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

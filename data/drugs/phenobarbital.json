@@ -1,0 +1,109 @@
+{
+ "id": "phenobarbital",
+ "name": "Phenobarbital",
+ "brand": [
+  "Solfoton",
+  "Luminal"
+ ],
+ "class": "바르비투르산계 항경련제",
+ "tags": [
+  "anticonvulsant"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "특발성 뇌전증 — 초기 유지",
+   "route": "PO",
+   "low": 2.5,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "혈중 농도·효과·부작용에 따라 조정"
+  },
+  {
+   "species": "dog",
+   "label": "특발성 뇌전증 — 반감기 짧은 개",
+   "route": "PO",
+   "low": 3,
+   "high": 5.6,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "타액선증 (sialadenosis)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "타액선증 — 고용량 보고",
+   "route": "PO",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "특발성 뇌전증 — 초기 유지",
+   "route": "PO",
+   "low": 1,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "치료 농도 15–45 µg/mL"
+  },
+  {
+   "species": "cat",
+   "label": "특발성 뇌전증 — 실용 용량",
+   "route": "PO",
+   "low": 7.5,
+   "high": 15,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "15 mg 정제 ½–1개"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 15
+  },
+  {
+   "form": "tablet",
+   "mg": 16.2
+  },
+  {
+   "form": "tablet",
+   "mg": 30
+  },
+  {
+   "form": "tablet",
+   "mg": 32.4
+  },
+  {
+   "form": "tablet",
+   "mg": 60
+  },
+  {
+   "form": "tablet",
+   "mg": 64.8
+  },
+  {
+   "form": "tablet",
+   "mg": 97.2
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

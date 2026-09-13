@@ -1,0 +1,104 @@
+{
+ "id": "trimeprazine-prednisolone",
+ "name": "Trimeprazine/Prednisolone",
+ "brand": [
+  "Temaril-P"
+ ],
+ "class": "페노티아진계 항히스타민 + 글루코코르티코이드 복합제",
+ "tags": [
+  "respiratory",
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "소양·진해 (label, ≤4.5 kg)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "½정, trimeprazine 성분 기준(1정=trimeprazine 5 mg+prednisolone 2 mg), 4일 후 절반으로 감량"
+  },
+  {
+   "species": "dog",
+   "label": "소양·진해 (label, 4.9–9 kg)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "1정, trimeprazine 성분 기준, 4일 후 절반으로 감량"
+  },
+  {
+   "species": "dog",
+   "label": "소양·진해 (label, 9.5–18.1 kg)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "2정, trimeprazine 성분 기준, 4일 후 절반으로 감량"
+  },
+  {
+   "species": "dog",
+   "label": "소양·진해 (label, >18.1 kg)",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "3정, trimeprazine 성분 기준, 4일 후 절반으로 감량"
+  },
+  {
+   "species": "dog",
+   "label": "만성 소양증 보조 (초기)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "1정/5 kg, trimeprazine 성분 기준, 4–7일"
+  },
+  {
+   "species": "dog",
+   "label": "만성 소양증 보조 (2단계)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1정/5 kg, trimeprazine 성분 기준, 4–7일"
+  },
+  {
+   "species": "dog",
+   "label": "만성 소양증 보조 (유지)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q48h",
+   "note": "1정/5 kg, trimeprazine 성분 기준"
+  },
+  {
+   "species": "cat",
+   "label": "소양증",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "1정/cat, trimeprazine 성분 기준(1정=trimeprazine 5 mg+prednisolone 2 mg)"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 5
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

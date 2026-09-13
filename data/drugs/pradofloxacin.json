@@ -1,0 +1,91 @@
+{
+ "id": "pradofloxacin",
+ "name": "Pradofloxacin",
+ "brand": [
+  "Veraflox"
+ ],
+ "class": "플루오로퀴놀론 항생제 (3세대)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "창상·농피증·급성 UTI·치주 감염",
+   "route": "PO",
+   "low": 3,
+   "high": 4.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "상한 용량 선호"
+  },
+  {
+   "species": "cat",
+   "label": "피부 감염 (창상·농양) (label)",
+   "route": "PO",
+   "low": 7.5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "7일"
+  },
+  {
+   "species": "cat",
+   "label": "바르토넬라증",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "원문 1일 1–2회; 28–42일"
+  },
+  {
+   "species": "cat",
+   "label": "Mycoplasma haemofelis",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "14일"
+  },
+  {
+   "species": "cat",
+   "label": "급성 상부호흡기 감염 — 현탁액",
+   "route": "PO",
+   "low": 5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "5일"
+  },
+  {
+   "species": "cat",
+   "label": "급성 상부호흡기 감염 — 정제",
+   "route": "PO",
+   "low": 3,
+   "high": 4.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "5일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 15
+  },
+  {
+   "form": "tablet",
+   "mg": 60
+  },
+  {
+   "form": "tablet",
+   "mg": 120
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

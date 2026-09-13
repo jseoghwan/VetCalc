@@ -1,0 +1,98 @@
+{
+ "id": "propantheline",
+ "name": "Propantheline",
+ "brand": [
+  "Pro-Banthine"
+ ],
+ "class": "4급 암모늄 항무스카린제",
+ "tags": [
+  "urinary",
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "배뇨근 과반사·절박성 요실금",
+   "route": "PO",
+   "low": 7.5,
+   "high": 30,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–24h; 최소 유효 용량 사용"
+  },
+  {
+   "species": "dog",
+   "label": "만성 비감염성 설사",
+   "route": "PO",
+   "low": 2.5,
+   "high": 2.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "원문 1일 2–3회"
+  },
+  {
+   "species": "dog",
+   "label": "진토 (효과 낮음)",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "원문 1일 2–3회"
+  },
+  {
+   "species": "dog",
+   "label": "동성 서맥·불완전 AV 차단 (단기)",
+   "route": "PO",
+   "low": 7.5,
+   "high": 30,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "cat",
+   "label": "배뇨근 과반사·절박성 요실금 (a)",
+   "route": "PO",
+   "low": 5,
+   "high": 7.5,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "default": true,
+   "note": "최소 유효 용량 사용"
+  },
+  {
+   "species": "cat",
+   "label": "배뇨근 과반사·절박성 요실금 (b)",
+   "route": "PO",
+   "low": 7.5,
+   "high": 7.5,
+   "unit": "mg/animal",
+   "freq": "q72h"
+  },
+  {
+   "species": "cat",
+   "label": "진토 (효과 낮음)",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "원문 1일 2–3회"
+  },
+  {
+   "species": "cat",
+   "label": "동성 서맥·불완전 AV 차단 (단기)",
+   "route": "PO",
+   "low": 7.5,
+   "high": 7.5,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "원문 q8–12h"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

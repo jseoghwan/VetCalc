@@ -1,0 +1,37 @@
+{
+ "id": "trientine",
+ "name": "Trientine",
+ "brand": [
+  "Syprine"
+ ],
+ "class": "구리 킬레이트제",
+ "tags": [
+  "hepatic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "구리 축적성 간질환",
+   "route": "PO",
+   "low": 5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "식전 1–2시간"
+  },
+  {
+   "species": "dog",
+   "label": "구리 축적성 간질환 (고용량)",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "식전 1–2시간"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,62 @@
+{
+ "id": "naltrexone",
+ "name": "Naltrexone",
+ "brand": [
+  "ReVia"
+ ],
+ "class": "오피오이드 길항제",
+ "tags": [
+  "behavior"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "행동장애 보조 (상동증) (a)",
+   "route": "PO",
+   "low": 1.1,
+   "high": 2.2,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h, 50 mg 정제 사용 시 25 mg 단위로 반올림, 쓴맛"
+  },
+  {
+   "species": "dog",
+   "label": "행동장애 보조 (상동증) (b)",
+   "route": "PO",
+   "low": 2,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1일 총량, 1회 또는 q12h 분할"
+  },
+  {
+   "species": "dog",
+   "label": "유선암 절제 후 보조 (carboplatin 병용)",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "24주"
+  },
+  {
+   "species": "cat",
+   "label": "행동장애 보조 (상동증)",
+   "route": "PO",
+   "low": 25,
+   "high": 50,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 50
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

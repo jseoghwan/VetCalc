@@ -1,0 +1,85 @@
+{
+ "id": "robenacoxib",
+ "name": "Robenacoxib",
+ "brand": [
+  "Onsior"
+ ],
+ "class": "NSAID (COX-2 선택적)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "연부조직 수술 후 통증·염증 (label)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "최대 3일; 첫 용량은 수술 약 45분 전; 정제 분할 금지"
+  },
+  {
+   "species": "dog",
+   "label": "만성 골관절염 통증·염증",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "목표 1 mg/kg; 10일 내 반응 없으면 중단"
+  },
+  {
+   "species": "cat",
+   "label": "수술 후 통증·염증 (정제) (label)",
+   "route": "PO",
+   "low": 1,
+   "high": 2.4,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "목표 1 mg/kg; 최대 3일; 2.5–6 kg 6 mg 1정, 6.1–12 kg 2정; 분할 금지"
+  },
+  {
+   "species": "cat",
+   "label": "근골격계 급·만성 통증·염증",
+   "route": "PO",
+   "low": 1,
+   "high": 2.4,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "목표 1 mg/kg; 급성 통증은 최대 6일"
+  },
+  {
+   "species": "cat",
+   "label": "골관절염",
+   "route": "PO",
+   "low": 1,
+   "high": 2.4,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "28일 연구, CKD 동반 고양이 포함"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 6
+  },
+  {
+   "form": "tablet",
+   "mg": 10
+  },
+  {
+   "form": "tablet",
+   "mg": 20
+  },
+  {
+   "form": "tablet",
+   "mg": 40
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

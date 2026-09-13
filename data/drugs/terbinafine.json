@@ -1,0 +1,148 @@
+{
+ "id": "terbinafine",
+ "name": "Terbinafine",
+ "brand": [
+  "Lamisil"
+ ],
+ "class": "알릴아민계 항진균제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "전신 진균증",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "단독 사용 비권장, q12h 고려 가능"
+  },
+  {
+   "species": "dog",
+   "label": "크립토코쿠스증 (1차 치료 실패 후)",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "결장 피티움증 (itraconazole 병용)",
+   "route": "PO",
+   "low": 6,
+   "high": 12,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "난치성 비강 아스페르길루스증 (병용)",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "posaconazole·doxycycline 병용, 6–18개월"
+  },
+  {
+   "species": "dog",
+   "label": "피부사상균증",
+   "route": "PO",
+   "low": 30,
+   "high": 40,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "진균 배양 음성까지"
+  },
+  {
+   "species": "dog",
+   "label": "Malassezia 피부염",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "크립토코쿠스 CNS 감염",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "스포로트리쿰증",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "itraconazole 대체·병용"
+  },
+  {
+   "species": "cat",
+   "label": "피부사상균증, 펄스 요법 1주차 (a)",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "7일 투여 후 21일 휴약"
+  },
+  {
+   "species": "cat",
+   "label": "피부사상균증, 펄스 요법 2회차 (a)",
+   "route": "PO",
+   "low": 40,
+   "high": 40,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "휴약 후 7일 투여"
+  },
+  {
+   "species": "cat",
+   "label": "피부사상균증, 체중별 정제 (b)",
+   "route": "PO",
+   "low": 62.5,
+   "high": 250,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "<2.8 kg 62.5 mg, 2.8–5.5 kg 125 mg, >5.5 kg 250 mg; 21일, 식이와 함께"
+  },
+  {
+   "species": "cat",
+   "label": "비강 아스페르길루스증",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "비강 아스페르길루스증, 저용량",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "원문 q12–24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 250
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

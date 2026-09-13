@@ -1,0 +1,266 @@
+{
+ "id": "praziquantel",
+ "name": "Praziquantel",
+ "brand": [
+  "Droncit",
+  "Drontal Plus",
+  "Drontal",
+  "Biltricide"
+ ],
+ "class": "구충제 (조충·흡충, praziquantel)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "조충 (Taenia·Echinococcus·Dipylidium 등)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "Diphyllobothrium (a)",
+   "route": "PO",
+   "low": 7.5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2일"
+  },
+  {
+   "species": "dog",
+   "label": "Diphyllobothrium (b)",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2일"
+  },
+  {
+   "species": "dog",
+   "label": "Sparganum (a)",
+   "route": "PO",
+   "low": 7.5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2일"
+  },
+  {
+   "species": "dog",
+   "label": "Sparganum (b)",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2일"
+  },
+  {
+   "species": "dog",
+   "label": "Spirometra·Diphyllobothrium erinacei",
+   "route": "PO",
+   "low": 7.5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2일"
+  },
+  {
+   "species": "dog",
+   "label": "폐흡충 (Paragonimus)",
+   "route": "PO",
+   "low": 23,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "3일"
+  },
+  {
+   "species": "dog",
+   "label": "간흡충 (a)",
+   "route": "PO",
+   "low": 20,
+   "high": 40,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "3–10일"
+  },
+  {
+   "species": "dog",
+   "label": "간흡충 (b)",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "Alaria (a)",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "Alaria (b)",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2–10일"
+  },
+  {
+   "species": "dog",
+   "label": "연어중독 흡충 (Nanophyetus) 보조",
+   "route": "PO",
+   "low": 10,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "Heterobilharzia (증례)",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "2일"
+  },
+  {
+   "species": "cat",
+   "label": "조충 (Taenia·Echinococcus·Dipylidium 등)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "폐흡충 (Paragonimus)",
+   "route": "PO",
+   "low": 23,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "3일"
+  },
+  {
+   "species": "cat",
+   "label": "Diphyllobothrium (a)",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2일"
+  },
+  {
+   "species": "cat",
+   "label": "Diphyllobothrium (b)",
+   "route": "PO",
+   "low": 35,
+   "high": 35,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "Sparganum (a)",
+   "route": "PO",
+   "low": 7.5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2일"
+  },
+  {
+   "species": "cat",
+   "label": "Sparganum (b)",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2일"
+  },
+  {
+   "species": "cat",
+   "label": "Alaria (a)",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "Alaria (b)",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2–10일"
+  },
+  {
+   "species": "cat",
+   "label": "Spirometra (a)",
+   "route": "PO",
+   "low": 30,
+   "high": 35,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "Spirometra (b)",
+   "route": "PO",
+   "low": 30,
+   "high": 35,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2일"
+  },
+  {
+   "species": "cat",
+   "label": "Platynosomum",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "5–10일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 23
+  },
+  {
+   "form": "tablet",
+   "mg": 34
+  },
+  {
+   "form": "tablet",
+   "mg": 600
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

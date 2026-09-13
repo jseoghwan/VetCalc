@@ -1,0 +1,49 @@
+{
+ "id": "toltrazuril",
+ "name": "Toltrazuril",
+ "brand": [
+  "Baycox"
+ ],
+ "class": "트리아지논계 항원충제 (항콕시듐제)",
+ "tags": [
+  "antimicrobial",
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "콕시듐증",
+   "route": "PO",
+   "low": 10,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1–3일"
+  },
+  {
+   "species": "cat",
+   "label": "콕시듐증",
+   "route": "PO",
+   "low": 20,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "10일 후 반복 시 효과 향상"
+  },
+  {
+   "species": "cat",
+   "label": "톡소플라즈마 낭포체 배출기",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "2일"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

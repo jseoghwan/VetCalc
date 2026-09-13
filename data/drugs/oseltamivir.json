@@ -1,0 +1,40 @@
+{
+ "id": "oseltamivir",
+ "name": "Oseltamivir",
+ "brand": [
+  "Tamiflu"
+ ],
+ "class": "항바이러스제 (뉴라미니다제 억제제)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "파보바이러스 장염 보조 치료",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "5일; 효과 근거 제한적"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 30
+  },
+  {
+   "form": "capsule",
+   "mg": 45
+  },
+  {
+   "form": "capsule",
+   "mg": 75
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

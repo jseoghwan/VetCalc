@@ -1,0 +1,64 @@
+{
+ "id": "tadalafil",
+ "name": "Tadalafil",
+ "brand": [
+  "Cialis",
+  "Adcirca"
+ ],
+ "class": "PDE5 억제제",
+ "tags": [
+  "cardio",
+  "respiratory"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "폐동맥 고혈압 (a)",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "폐동맥 고혈압 (b)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q48h",
+   "note": "증례 보고"
+  },
+  {
+   "species": "dog",
+   "label": "양성 전립선 비대",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 2.5
+  },
+  {
+   "form": "tablet",
+   "mg": 5
+  },
+  {
+   "form": "tablet",
+   "mg": 10
+  },
+  {
+   "form": "tablet",
+   "mg": 20
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

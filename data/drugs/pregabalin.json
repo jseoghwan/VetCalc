@@ -1,0 +1,168 @@
+{
+ "id": "pregabalin",
+ "name": "Pregabalin",
+ "brand": [
+  "Lyrica"
+ ],
+ "class": "가바펜티노이드 (항경련제·신경병성 통증)",
+ "tags": [
+  "anticonvulsant",
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "발작 (난치성 보조)",
+   "route": "PO",
+   "low": 3,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "발작 — 시작 용량 (진정 감소)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "주 1 mg/kg씩 증량"
+  },
+  {
+   "species": "dog",
+   "label": "신경병성 통증",
+   "route": "PO",
+   "low": 2,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "신경병성 통증 (CKCS) — 초기 2일",
+   "route": "PO",
+   "low": 150,
+   "high": 150,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "신경병성 통증 (CKCS) — 이후",
+   "route": "PO",
+   "low": 150,
+   "high": 150,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "≈13–19 mg/kg"
+  },
+  {
+   "species": "dog",
+   "label": "수술 전후 통증 — 마취 1시간 전",
+   "route": "PO",
+   "low": 4,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "수술 전후 통증 — 수술 후",
+   "route": "PO",
+   "low": 4,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "5일"
+  },
+  {
+   "species": "dog",
+   "label": "기립성 진전",
+   "route": "PO",
+   "low": 3.5,
+   "high": 3.5,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "cat",
+   "label": "발작",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "신경병성 통증 (a)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "cat",
+   "label": "신경병성 통증 (b, 증례)",
+   "route": "PO",
+   "low": 3,
+   "high": 3,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "이동장 이동 시 항불안",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "이동 90분 전"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 25
+  },
+  {
+   "form": "capsule",
+   "mg": 50
+  },
+  {
+   "form": "capsule",
+   "mg": 75
+  },
+  {
+   "form": "capsule",
+   "mg": 100
+  },
+  {
+   "form": "capsule",
+   "mg": 150
+  },
+  {
+   "form": "capsule",
+   "mg": 200
+  },
+  {
+   "form": "capsule",
+   "mg": 225
+  },
+  {
+   "form": "capsule",
+   "mg": 300
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

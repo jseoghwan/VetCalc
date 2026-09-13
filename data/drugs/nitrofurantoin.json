@@ -1,0 +1,54 @@
+{
+ "id": "nitrofurantoin",
+ "name": "Nitrofurantoin",
+ "brand": [
+  "Macrodantin",
+  "Macrobid",
+  "Furadantin"
+ ],
+ "class": "Nitrofuran 계 요로 항생제",
+ "tags": [
+  "antimicrobial",
+  "urinary"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "산발성 세균성 방광염 (2차 선택, 다제내성)",
+   "route": "PO",
+   "low": 4.4,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "5일, 재발 시 7–14일"
+  },
+  {
+   "species": "cat",
+   "label": "산발성 세균성 방광염 (2차 선택, 다제내성)",
+   "route": "PO",
+   "low": 4.4,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "5일, 재발 시 7–14일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 25
+  },
+  {
+   "form": "capsule",
+   "mg": 50
+  },
+  {
+   "form": "capsule",
+   "mg": 100
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,101 @@
+{
+ "id": "sulfadimethoxine-ormetoprim",
+ "name": "Sulfadimethoxine/Ormetoprim",
+ "brand": [
+  "Primor"
+ ],
+ "class": "강화 설폰아미드 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "피부·연부조직 감염·UTI, 부하 용량(첫날) (label)",
+   "route": "PO",
+   "low": 55,
+   "high": 55,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "복합제 합산 용량 기준"
+  },
+  {
+   "species": "dog",
+   "label": "피부·연부조직 감염·UTI, 유지 (label)",
+   "route": "PO",
+   "low": 27.5,
+   "high": 27.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "복합제 합산 용량 기준, 최대 21일"
+  },
+  {
+   "species": "dog",
+   "label": "Isospora 감염",
+   "route": "PO",
+   "low": 66,
+   "high": 66,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "23일"
+  },
+  {
+   "species": "dog",
+   "label": "표재성 세균성 모낭염, 부하 용량(첫날)",
+   "route": "PO",
+   "low": 55,
+   "high": 55,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "dog",
+   "label": "표재성 세균성 모낭염, 유지",
+   "route": "PO",
+   "low": 27.5,
+   "high": 27.5,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "세균성 방광염, 단순",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "최단 3일"
+  },
+  {
+   "species": "dog",
+   "label": "세균성 방광염, 복잡",
+   "route": "PO",
+   "low": 15,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 120
+  },
+  {
+   "form": "tablet",
+   "mg": 240
+  },
+  {
+   "form": "tablet",
+   "mg": 600
+  },
+  {
+   "form": "tablet",
+   "mg": 1200
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

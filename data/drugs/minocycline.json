@@ -1,0 +1,162 @@
+{
+ "id": "minocycline",
+ "name": "Minocycline",
+ "brand": [
+  "Minocin",
+  "Solodyn"
+ ],
+ "class": "Tetracycline계 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "감수성 세균 감염",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "공복 투여; 실용적으로 25 mg 단위 반올림"
+  },
+  {
+   "species": "dog",
+   "label": "호흡기 감염",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "에를리히증 (E. canis)",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "28일"
+  },
+  {
+   "species": "dog",
+   "label": "심장사상충 보조 (doxycycline 대체)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "4주 (AHS 프로토콜 1–28일)"
+  },
+  {
+   "species": "dog",
+   "label": "라임병",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "원문 1일 1–2회; 30일"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (호흡기 포함) (a)",
+   "route": "PO",
+   "low": 8.8,
+   "high": 8.8,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "약동학·MIC 기반"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (b) 통상 경험 용량",
+   "route": "PO",
+   "low": 5,
+   "high": 12.5,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (c) 경험 용량 범위",
+   "route": "PO",
+   "low": 5,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 감염 (d) 실용 용량",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 45
+  },
+  {
+   "form": "capsule",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 55
+  },
+  {
+   "form": "tablet",
+   "mg": 65
+  },
+  {
+   "form": "capsule",
+   "mg": 75
+  },
+  {
+   "form": "tablet",
+   "mg": 75
+  },
+  {
+   "form": "tablet",
+   "mg": 80
+  },
+  {
+   "form": "tablet",
+   "mg": 90
+  },
+  {
+   "form": "capsule",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 105
+  },
+  {
+   "form": "tablet",
+   "mg": 115
+  },
+  {
+   "form": "tablet",
+   "mg": 135
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

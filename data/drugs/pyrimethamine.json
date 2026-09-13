@@ -1,0 +1,73 @@
+{
+ "id": "pyrimethamine",
+ "name": "Pyrimethamine",
+ "brand": [
+  "Daraprim"
+ ],
+ "class": "항원충제 (DHFR 억제제)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "톡소플라즈마증 (파종성)",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "sulfonamide 병용, 2–4주"
+  },
+  {
+   "species": "dog",
+   "label": "Hepatozoon americanum",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "TMS·clindamycin 병용"
+  },
+  {
+   "species": "dog",
+   "label": "신경포자충증(neosporosis)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "TMS 병용, 4주"
+  },
+  {
+   "species": "cat",
+   "label": "톡소플라즈마증 (파종성) (a)",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "sulfonamide 병용, 2–4주"
+  },
+  {
+   "species": "cat",
+   "label": "톡소플라즈마증 (폐, 중증) (b)",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "clindamycin 병용"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 25
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,191 @@
+{
+ "id": "trilostane",
+ "name": "Trilostane",
+ "brand": [
+  "Vetoryl"
+ ],
+ "class": "부신 스테로이드 합성 억제제",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "부신피질기능항진증 (label)",
+   "route": "PO",
+   "low": 2.2,
+   "high": 6.7,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "식사와 함께, 10–14일 후 ACTH 자극검사로 조정, 대부분 과량으로 간주"
+  },
+  {
+   "species": "dog",
+   "label": "HAC 1일 2회 (a, <5 kg)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "4주 후 임상·ACTH 검사로 조정"
+  },
+  {
+   "species": "dog",
+   "label": "HAC 1일 2회 (b)",
+   "route": "PO",
+   "low": 0.21,
+   "high": 1.1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "평균 0.86 mg/kg"
+  },
+  {
+   "species": "dog",
+   "label": "HAC 1일 2회 (c, 권장 시작)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": ">30 kg는 초기 1일 최대 30 mg/dog"
+  },
+  {
+   "species": "dog",
+   "label": "HAC 1일 2회 (c, 평균 초기)",
+   "route": "PO",
+   "low": 0.78,
+   "high": 3.1,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "HAC 1일 2회 (c, 평균 최종)",
+   "route": "PO",
+   "low": 1.43,
+   "high": 3.75,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "HAC 1일 1회 (a)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "식사와 함께, 반응 불충분 시 50% 증량 후 2회 분할"
+  },
+  {
+   "species": "dog",
+   "label": "HAC 1일 1회 (b, 평균 초기)",
+   "route": "PO",
+   "low": 2.9,
+   "high": 6.4,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "HAC 1일 1회 (b, 평균 최종)",
+   "route": "PO",
+   "low": 2.8,
+   "high": 19,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "Alopecia X (a)",
+   "route": "PO",
+   "low": 3,
+   "high": 3.6,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "4–6개월"
+  },
+  {
+   "species": "dog",
+   "label": "Alopecia X (b, <10 kg)",
+   "route": "PO",
+   "low": 10.85,
+   "high": 10.85,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1일 총량, 1회 또는 2회 분할, 4–8주"
+  },
+  {
+   "species": "dog",
+   "label": "Alopecia X (c, 포메라니안)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "부신피질기능항진증 (평균, 1일 1회)",
+   "route": "PO",
+   "low": 4.3,
+   "high": 4.3,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "부신피질기능항진증 (평균, 1일 2회)",
+   "route": "PO",
+   "low": 3.3,
+   "high": 3.3,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "부신피질기능항진증 (범위 하한)",
+   "route": "PO",
+   "low": 10,
+   "high": 30,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "원문 q12–24h"
+  },
+  {
+   "species": "cat",
+   "label": "부신피질기능항진증 (범위 상한)",
+   "route": "PO",
+   "low": 12,
+   "high": 12,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 5
+  },
+  {
+   "form": "capsule",
+   "mg": 10
+  },
+  {
+   "form": "capsule",
+   "mg": 30
+  },
+  {
+   "form": "capsule",
+   "mg": 60
+  },
+  {
+   "form": "capsule",
+   "mg": 120
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

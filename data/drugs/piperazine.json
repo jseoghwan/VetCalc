@@ -1,0 +1,56 @@
+{
+ "id": "piperazine",
+ "name": "Piperazine",
+ "brand": [],
+ "class": "구충제 (piperazine, 회충)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "회충 (label)",
+   "route": "PO",
+   "low": 50,
+   "high": 55,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "base 기준; 10일 후 반복"
+  },
+  {
+   "species": "dog",
+   "label": "회충 (extra-label)",
+   "route": "PO",
+   "low": 100,
+   "high": 110,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "21일 후 반복"
+  },
+  {
+   "species": "cat",
+   "label": "회충 (label)",
+   "route": "PO",
+   "low": 50,
+   "high": 55,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "base 기준; 10일 후 반복"
+  },
+  {
+   "species": "cat",
+   "label": "회충 (extra-label)",
+   "route": "PO",
+   "low": 100,
+   "high": 110,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "21일 후 반복"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

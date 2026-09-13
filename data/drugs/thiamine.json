@@ -1,0 +1,59 @@
+{
+ "id": "thiamine",
+ "name": "Thiamine",
+ "brand": [
+  "DERM-TABS"
+ ],
+ "class": "비타민 B1",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "티아민 결핍, 경구 유지",
+   "route": "PO",
+   "low": 50,
+   "high": 100,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h, 비경구 3–5일 후 경구 2–4주 (고양이 권장량을 개에도 적용)"
+  },
+  {
+   "species": "cat",
+   "label": "티아민 결핍, 경구 유지",
+   "route": "PO",
+   "low": 50,
+   "high": 100,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h, 비경구 3–5일 후 경구 2–4주"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 250
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

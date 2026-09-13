@@ -1,0 +1,53 @@
+{
+ "id": "sucralfate",
+ "name": "Sucralfate",
+ "brand": [
+  "Carafate"
+ ],
+ "class": "위점막 보호제",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "위점막 보호, 소형견",
+   "route": "PO",
+   "low": 250,
+   "high": 500,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 1일 2–4회, 1 g 정제의 ¼–½"
+  },
+  {
+   "species": "dog",
+   "label": "위점막 보호, 대형견",
+   "route": "PO",
+   "low": 1000,
+   "high": 1000,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "원문 1일 2–4회"
+  },
+  {
+   "species": "cat",
+   "label": "위점막 보호",
+   "route": "PO",
+   "low": 250,
+   "high": 500,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 1일 2–4회, 1 g 정제의 ¼–½"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 1000
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

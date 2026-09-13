@@ -1,0 +1,47 @@
+{
+ "id": "pyridostigmine",
+ "name": "Pyridostigmine",
+ "brand": [
+  "Mestinon"
+ ],
+ "class": "항콜린에스테라제 (중증근무력증)",
+ "tags": [
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "중증근무력증 보조",
+   "route": "PO",
+   "low": 0.2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h; 식사와 함께; 저용량부터 적정; 60 mg 정 1/4 단위 반올림"
+  },
+  {
+   "species": "cat",
+   "label": "중증근무력증 (개와 동일)",
+   "route": "PO",
+   "low": 0.2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h; 드물게 사용"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 60
+  },
+  {
+   "form": "tablet",
+   "mg": 180
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

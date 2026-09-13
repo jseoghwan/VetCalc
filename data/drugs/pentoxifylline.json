@@ -1,0 +1,106 @@
+{
+ "id": "pentoxifylline",
+ "name": "Pentoxifylline",
+ "brand": [
+  "Trental"
+ ],
+ "class": "혈액유변학적 개선제·면역조절제 (xanthine 유도체)",
+ "tags": [
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "염증성·자가면역성 피부질환",
+   "route": "PO",
+   "low": 10,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h; 서방정 분쇄 금지"
+  },
+  {
+   "species": "dog",
+   "label": "염증성·자가면역성 피부질환 — 통상 용량",
+   "route": "PO",
+   "low": 15,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "대칭성 루푸스양 발톱염",
+   "route": "PO",
+   "low": 15,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "허혈성 피부병증 (a)",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "허혈성 피부병증 (b)",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "허혈성 피부병증 (c) 연구 용량",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "혈관염",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "염증성 피부질환",
+   "route": "PO",
+   "low": 100,
+   "high": 100,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "피부 혈관염",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 400
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

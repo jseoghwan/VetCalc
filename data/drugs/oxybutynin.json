@@ -1,0 +1,54 @@
+{
+ "id": "oxybutynin",
+ "name": "Oxybutynin",
+ "brand": [
+  "Ditropan",
+  "Oxytrol"
+ ],
+ "class": "비뇨생식기 평활근 이완제 (항콜린제)",
+ "tags": [
+  "urinary"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "난치성 요실금 (배뇨근 과반사)",
+   "route": "PO",
+   "low": 0.2,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "난치성 요실금 — 실용 용량",
+   "route": "PO",
+   "low": 1.25,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "원문 q8–12h; 5 mg 정제 ¼–1개"
+  },
+  {
+   "species": "cat",
+   "label": "난치성 요실금 (배뇨근 과반사)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1.25,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h; 5 mg 정제 ⅛–¼개"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 5
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

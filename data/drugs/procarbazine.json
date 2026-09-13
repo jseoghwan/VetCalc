@@ -1,0 +1,32 @@
+{
+ "id": "procarbazine",
+ "name": "Procarbazine",
+ "brand": [
+  "Matulane"
+ ],
+ "class": "항암제 (alkylating, MOPP 프로토콜)",
+ "tags": [
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "cat",
+   "label": "림프종 구제요법 (마리당)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "주기 첫 14일; mg/m2 용량은 별도 계산"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 50
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

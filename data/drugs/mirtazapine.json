@@ -1,0 +1,97 @@
+{
+ "id": "mirtazapine",
+ "name": "Mirtazapine",
+ "brand": [
+  "Remeron",
+  "Mirataz",
+  "Remeron SolTab"
+ ],
+ "class": "사환계 항우울제; 5-HT3 길항 식욕촉진제",
+ "tags": [
+  "gi",
+  "behavior"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "식욕 촉진·진토 (a)",
+   "route": "PO",
+   "low": 1.1,
+   "high": 1.3,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "최대 30 mg/dog/day"
+  },
+  {
+   "species": "dog",
+   "label": "식욕 촉진·진토 (b)",
+   "route": "PO",
+   "low": 3.75,
+   "high": 30,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "체구에 따라; 최대 30 mg/dog/day"
+  },
+  {
+   "species": "dog",
+   "label": "항암치료 유발 식욕부진",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "식욕 촉진·진토 (건강한 고양이)",
+   "route": "PO",
+   "low": 1.88,
+   "high": 1.88,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "7.5 mg 정 ¼ 또는 15 mg 정 ⅛; 고용량은 효과 없이 부작용만 증가"
+  },
+  {
+   "species": "cat",
+   "label": "식욕 촉진·진토 (CKD·간질환)",
+   "route": "PO",
+   "low": 1.88,
+   "high": 1.88,
+   "unit": "mg/animal",
+   "freq": "q48h",
+   "note": "7.5 mg 정 ¼ 또는 15 mg 정 ⅛"
+  },
+  {
+   "species": "cat",
+   "label": "항암치료 유발 식욕부진",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "원문 q24–72h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 7.5
+  },
+  {
+   "form": "tablet",
+   "mg": 15
+  },
+  {
+   "form": "tablet",
+   "mg": 30
+  },
+  {
+   "form": "tablet",
+   "mg": 45
+  }
+ ],
+ "compounding": "조제 현탁액 차광 보관·사용 전 진탕; 조제 경피 겔은 역가 불안정",
+ "reviewed": null
+}

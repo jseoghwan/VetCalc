@@ -1,0 +1,49 @@
+{
+ "id": "nizatidine",
+ "name": "Nizatidine",
+ "brand": [
+  "Axid"
+ ],
+ "class": "H2 차단제 (위장관 운동촉진 작용)",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "위장관 운동 촉진·위산 분비 감소",
+   "route": "PO",
+   "low": 2.5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "위장관 운동 촉진·위산 분비 감소",
+   "route": "PO",
+   "low": 2.5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 75
+  },
+  {
+   "form": "capsule",
+   "mg": 150
+  },
+  {
+   "form": "capsule",
+   "mg": 300
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

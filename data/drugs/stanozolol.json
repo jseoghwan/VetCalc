@@ -1,0 +1,58 @@
+{
+ "id": "stanozolol",
+ "name": "Stanozolol",
+ "brand": [
+  "Winstrol-V"
+ ],
+ "class": "단백동화 스테로이드",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "단백동화제, 소형견 (label)",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "수 주간 지속"
+  },
+  {
+   "species": "dog",
+   "label": "단백동화제, 대형견 (label)",
+   "route": "PO",
+   "low": 2,
+   "high": 4,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "수 주간 지속"
+  },
+  {
+   "species": "dog",
+   "label": "기관 허탈",
+   "route": "PO",
+   "low": 0.15,
+   "high": 0.15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "2개월 후 15일간 감량"
+  },
+  {
+   "species": "cat",
+   "label": "단백동화제 (label)",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "고양이 간독성 주의, 수 주간 지속"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

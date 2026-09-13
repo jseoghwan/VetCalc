@@ -1,0 +1,80 @@
+{
+ "id": "pseudoephedrine",
+ "name": "Pseudoephedrine",
+ "brand": [
+  "Sudafed",
+  "Equiphed"
+ ],
+ "class": "교감신경흥분제 (α 작용제)",
+ "tags": [
+  "urinary",
+  "respiratory"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "요도 긴장도 증가 (요실금)",
+   "route": "PO",
+   "low": 1.5,
+   "high": 1.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 1일 2–3회; 야간 요실금은 취침 전 1회"
+  },
+  {
+   "species": "dog",
+   "label": "역행성 사정 (a)",
+   "route": "PO",
+   "low": 4,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "≥5 mg/kg 독성 주의"
+  },
+  {
+   "species": "dog",
+   "label": "역행성 사정 (b) 채정·교배 전",
+   "route": "PO",
+   "low": 4,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "1–3시간 전"
+  },
+  {
+   "species": "cat",
+   "label": "비충혈 완화",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 30
+  },
+  {
+   "form": "tablet",
+   "mg": 30
+  },
+  {
+   "form": "tablet",
+   "mg": 60
+  },
+  {
+   "form": "tablet",
+   "mg": 120
+  },
+  {
+   "form": "tablet",
+   "mg": 240
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,71 @@
+{
+ "id": "toceranib",
+ "name": "Toceranib",
+ "brand": [
+  "Palladia"
+ ],
+ "class": "티로신 키나아제 억제제 항암제",
+ "tags": [
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "비만세포종 (label)",
+   "route": "PO",
+   "low": 3.25,
+   "high": 3.25,
+   "unit": "mg/kg",
+   "freq": "q48h",
+   "note": "부작용 시 0.5 mg/kg씩 감량(최소 2.2 mg/kg), 정제 분할 금지"
+  },
+  {
+   "species": "dog",
+   "label": "항암 (extra-label, 저용량)",
+   "route": "PO",
+   "low": 2.4,
+   "high": 2.75,
+   "unit": "mg/kg",
+   "freq": "q48h",
+   "default": true,
+   "note": "월/수/금 투여도 가능"
+  },
+  {
+   "species": "cat",
+   "label": "항암 (목표 용량)",
+   "route": "PO",
+   "low": 3.25,
+   "high": 3.25,
+   "unit": "mg/kg",
+   "freq": "q48h",
+   "note": "또는 월/수/금 투여"
+  },
+  {
+   "species": "cat",
+   "label": "항암 (실용 용량)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/animal",
+   "freq": "q48h",
+   "default": true,
+   "note": "2.5–5 kg 고양이에서 2–4 mg/kg에 해당"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 10
+  },
+  {
+   "form": "tablet",
+   "mg": 15
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

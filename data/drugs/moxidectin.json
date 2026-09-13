@@ -1,0 +1,65 @@
+{
+ "id": "moxidectin",
+ "name": "Moxidectin",
+ "brand": [
+  "Cydectin",
+  "ProHeart",
+  "Advantage Multi",
+  "Simparica Trio"
+ ],
+ "class": "Milbemycin 계 구충제 (macrocyclic lactone)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "모낭충증",
+   "route": "PO",
+   "low": 0.2,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "경구 단일제 미국 내 미시판, MDR1 검사 권장; 츄어블 규격은 Simparica Trio의 moxidectin 성분 기준"
+  },
+  {
+   "species": "dog",
+   "label": "모낭충증 시험 용량(첫날)",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mcg/kg",
+   "freq": "once",
+   "note": "이후 매일 50 mcg/kg씩 증량"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "chewable tablet",
+   "mg": 0.06
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 0.12
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 0.24
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 0.48
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 0.96
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 1.44
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

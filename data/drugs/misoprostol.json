@@ -1,0 +1,86 @@
+{
+ "id": "misoprostol",
+ "name": "Misoprostol",
+ "brand": [
+  "Cytotec"
+ ],
+ "class": "프로스타글란딘 E1 유사체 (위점막 보호제)",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "아스피린 유발 위손상 예방",
+   "route": "PO",
+   "low": 3,
+   "high": 3,
+   "unit": "mcg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "기타 NSAID 유발 위손상 예방",
+   "route": "PO",
+   "low": 2,
+   "high": 5,
+   "unit": "mcg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h, 근거 제한적"
+  },
+  {
+   "species": "dog",
+   "label": "자궁축농증·자궁염 (aglepristone 병용)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mcg/kg",
+   "freq": "q12h",
+   "note": "3–12일차 투여"
+  },
+  {
+   "species": "dog",
+   "label": "아토피 피부염 보조",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mcg/kg",
+   "freq": "q8h",
+   "note": "1차 선택 아님, 효과 불확실"
+  },
+  {
+   "species": "cat",
+   "label": "NSAID 관련 위장관 부작용 예방",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mcg/kg",
+   "freq": "q8h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "유산 유도 보조 (aglepristone 병용)",
+   "route": "PO",
+   "low": 0.2,
+   "high": 0.2,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "note": "원문 200 µg/queen, 유산 시작까지"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 0.1
+  },
+  {
+   "form": "tablet",
+   "mg": 0.2
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

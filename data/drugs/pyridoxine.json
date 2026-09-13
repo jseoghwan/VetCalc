@@ -1,0 +1,68 @@
+{
+ "id": "pyridoxine",
+ "name": "Pyridoxine",
+ "brand": [],
+ "class": "비타민 B6 (영양제·해독제)",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "Penicillamine 병용 시 보충",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "d-penicillamine과 병행"
+  },
+  {
+   "species": "dog",
+   "label": "Doxil 피부독성 지연",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "항암 프로토콜 기간 동안"
+  },
+  {
+   "species": "dog",
+   "label": "위임신 시 수유 중단",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "Penicillamine 병용 시 보충",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "d-penicillamine과 병행"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

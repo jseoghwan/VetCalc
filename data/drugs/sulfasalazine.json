@@ -1,0 +1,74 @@
+{
+ "id": "sulfasalazine",
+ "name": "Sulfasalazine",
+ "brand": [
+  "Azulfidine",
+  "Sulfazine"
+ ],
+ "class": "설폰아미드/살리실산 항염제",
+ "tags": [
+  "gi",
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "염증성 대장 질환 (a)",
+   "route": "PO",
+   "low": 15,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h, 1일 최대 6 g, 2–4주 후 감량"
+  },
+  {
+   "species": "dog",
+   "label": "염증성 대장 질환, 식이요법 보조 (b)",
+   "route": "PO",
+   "low": 10,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "1회 최대 1 g, 식이와 함께, 4–6주 후 q12h로 감량"
+  },
+  {
+   "species": "dog",
+   "label": "혈관염 보조",
+   "route": "PO",
+   "low": 20,
+   "high": 40,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "cat",
+   "label": "염증성 대장 질환 (a)",
+   "route": "PO",
+   "low": 10,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "원문 1일 1–3회 (대개 1일 1회 권장), 살리실산 감수성 주의"
+  },
+  {
+   "species": "cat",
+   "label": "염증성 대장 질환, 식이요법 보조 (b)",
+   "route": "PO",
+   "low": 5,
+   "high": 12.5,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "식이와 함께, 2–3주"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 500
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,56 @@
+{
+ "id": "tetracycline",
+ "name": "Tetracycline",
+ "brand": [],
+ "class": "테트라사이클린계 항생제",
+ "tags": [
+  "antimicrobial",
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "면역매개성 피부질환 보조 (niacinamide 병용), 10 kg 이하",
+   "route": "PO",
+   "low": 250,
+   "high": 250,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "default": true,
+   "note": "niacinamide 250 mg/dog q8h 병용"
+  },
+  {
+   "species": "dog",
+   "label": "면역매개성 피부질환 보조 (niacinamide 병용), 10 kg 초과",
+   "route": "PO",
+   "low": 500,
+   "high": 500,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "niacinamide 500 mg/dog q8h 병용"
+  },
+  {
+   "species": "cat",
+   "label": "감수성 세균 감염",
+   "route": "PO",
+   "low": 15,
+   "high": 22,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "14–28일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 250
+  },
+  {
+   "form": "capsule",
+   "mg": 500
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

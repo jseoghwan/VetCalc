@@ -1,0 +1,104 @@
+{
+ "id": "omeprazole",
+ "name": "Omeprazole",
+ "brand": [
+  "GastroGard",
+  "Prilosec",
+  "UlcerGard"
+ ],
+ "class": "프로톤펌프 억제제 (PPI)",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "GI 궤양 치료·예방",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "중증 식도염",
+   "route": "PO",
+   "low": 1,
+   "high": 1.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "최대 2 mg/kg q12h 권고도 있음; 프로키네틱·sucralfate 병용"
+  },
+  {
+   "species": "dog",
+   "label": "운동 유발 위염 예방",
+   "route": "PO",
+   "low": 0.85,
+   "high": 0.85,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "약 0.85 mg/kg(20 mg 정제 1개), 급여 30분 전"
+  },
+  {
+   "species": "dog",
+   "label": "Helicobacter 감염 (3제 요법)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "21일; amoxicillin·clarithromycin 병용"
+  },
+  {
+   "species": "dog",
+   "label": "CSF 생성 감소",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "수두증 (연구 용량)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "GI 궤양 치료·예방",
+   "route": "PO",
+   "low": 1.1,
+   "high": 1.3,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "장용정 분할 가능"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 10
+  },
+  {
+   "form": "capsule",
+   "mg": 20
+  },
+  {
+   "form": "tablet",
+   "mg": 20
+  },
+  {
+   "form": "capsule",
+   "mg": 40
+  }
+ ],
+ "compounding": "분말 팩 조제 현탁액(2 mg/mL) 4°C 45일 안정; 말용 페이스트 희석 현탁액은 장기 안정성 미확인",
+ "reviewed": null
+}

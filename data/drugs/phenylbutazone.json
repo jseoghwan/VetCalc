@@ -1,0 +1,40 @@
+{
+ "id": "phenylbutazone",
+ "name": "Phenylbutazone",
+ "brand": [
+  "Butazolidin"
+ ],
+ "class": "비스테로이드성 소염제 (NSAID)",
+ "tags": [
+  "analgesic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "근골격계 소염 (label)",
+   "route": "PO",
+   "low": 14.7,
+   "high": 14.7,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "초기 용량, 최대 800 mg/일/개; 최저 유효 용량으로 감량; 더 안전한 NSAID 권장"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 200
+  },
+  {
+   "form": "tablet",
+   "mg": 1000
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

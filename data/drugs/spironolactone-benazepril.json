@@ -1,0 +1,40 @@
+{
+ "id": "spironolactone-benazepril",
+ "name": "Spironolactone/Benazepril",
+ "brand": [
+  "Cardalis"
+ ],
+ "class": "알도스테론 길항제/ACE 억제제 복합제",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "AVVI 울혈성 심부전 (label)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "용량은 spironolactone 성분 기준 (benazepril 0.25 mg/kg), 식이와 함께"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "chewable tablet",
+   "mg": 20
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 40
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 80
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

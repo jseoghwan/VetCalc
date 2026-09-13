@@ -1,0 +1,177 @@
+{
+ "id": "sulfa-trimethoprim",
+ "name": "Sulfa-/Trimethoprim",
+ "brand": [
+  "Bactrim",
+  "EquiSul-SDT",
+  "Uniprim",
+  "Sulfatrim"
+ ],
+ "class": "강화 설폰아미드 항생제 (sulfa/trimethoprim)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "전신 세균 감염 (label)",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "복합제 합산 용량 기준"
+  },
+  {
+   "species": "dog",
+   "label": "전신 세균 감염, 중증 (label)",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "초회 30 mg/kg 후 유지"
+  },
+  {
+   "species": "dog",
+   "label": "표재성 세균성 모낭염",
+   "route": "PO",
+   "low": 15,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "세균성 방광염, 단순",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "최단 3일"
+  },
+  {
+   "species": "dog",
+   "label": "세균성 방광염, 복잡",
+   "route": "PO",
+   "low": 15,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "콕시듐증 (4 kg 미만)",
+   "route": "PO",
+   "low": 15,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "원문 q12–24h"
+  },
+  {
+   "species": "dog",
+   "label": "콕시듐증 (4 kg 초과)",
+   "route": "PO",
+   "low": 30,
+   "high": 60,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "네오스포라증",
+   "route": "PO",
+   "low": 15,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "4주, pyrimethamine 병용"
+  },
+  {
+   "species": "dog",
+   "label": "톡소플라즈마증",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "4주"
+  },
+  {
+   "species": "dog",
+   "label": "폐포자충증 (a)",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "3주"
+  },
+  {
+   "species": "dog",
+   "label": "폐포자충증 (b)",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "3주"
+  },
+  {
+   "species": "dog",
+   "label": "미국 개 헤파토준증 (3제 요법)",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "14일, clindamycin·pyrimethamine 병용"
+  },
+  {
+   "species": "cat",
+   "label": "세균성 방광염, 단순",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "최단 3일"
+  },
+  {
+   "species": "cat",
+   "label": "세균성 방광염, 복잡",
+   "route": "PO",
+   "low": 15,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "콕시듐증",
+   "route": "PO",
+   "low": 15,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "원문 q12–24h"
+  },
+  {
+   "species": "cat",
+   "label": "톡소플라즈마증",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "4주"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,82 @@
+{
+ "id": "mitotane",
+ "name": "Mitotane",
+ "brand": [
+  "Lysodren"
+ ],
+ "class": "부신피질 용해제 (항종양제)",
+ "tags": [
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "PDH 유도기 (a)",
+   "route": "PO",
+   "low": 30,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1일 총량, 식사와 함께 1회 또는 q12h 분할, 7–10일"
+  },
+  {
+   "species": "dog",
+   "label": "PDH 유도기 (b)",
+   "route": "PO",
+   "low": 25,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "총 50 mg/kg/day 2회 분할, 3–7일 반응 확인"
+  },
+  {
+   "species": "dog",
+   "label": "PDH 부신피질 완전 파괴 프로토콜 (c)",
+   "route": "PO",
+   "low": 75,
+   "high": 100,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1일 총량, 3–4회 분할, 25일 연속, 평생 prednisone·mineralocorticoid 보충"
+  },
+  {
+   "species": "dog",
+   "label": "PDH 완전 부신 절제 프로토콜 (d)",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "총 100 mg/kg/day 2회 분할, 30일"
+  },
+  {
+   "species": "dog",
+   "label": "부신 종양 초기 치료 (a)",
+   "route": "PO",
+   "low": 50,
+   "high": 75,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1일 총량 분할, 5일 후 격일로 40일 이상, 소형견 최대 100 mg/kg/day"
+  },
+  {
+   "species": "dog",
+   "label": "부신 종양 초기 치료 (b)",
+   "route": "PO",
+   "low": 50,
+   "high": 75,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1일 총량 분할, 10–14일, 무반응 시 100 mg/kg/day로 증량"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 500
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

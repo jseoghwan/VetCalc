@@ -1,0 +1,78 @@
+{
+ "id": "sevelamer",
+ "name": "Sevelamer",
+ "brand": [
+  "Renagel",
+  "Renvela"
+ ],
+ "class": "인 결합제",
+ "tags": [
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "CKD 고인산혈증 보조",
+   "route": "PO",
+   "low": 30,
+   "high": 150,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1일 총량, 식사와 함께 2–3회 분할; 혈청 인·전해질에 따라 조정"
+  },
+  {
+   "species": "dog",
+   "label": "CKD 고인산혈증 보조 (소형견, 실용 용량)",
+   "route": "PO",
+   "low": 200,
+   "high": 400,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "원문 q8–12h, 식사와 함께"
+  },
+  {
+   "species": "dog",
+   "label": "CKD 고인산혈증 보조 (중·대형견, 실용 용량)",
+   "route": "PO",
+   "low": 400,
+   "high": 1600,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "원문 q8–12h, 식사와 함께"
+  },
+  {
+   "species": "cat",
+   "label": "CKD 고인산혈증 보조",
+   "route": "PO",
+   "low": 30,
+   "high": 150,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1일 총량, 식사와 함께 2–3회 분할; 혈청 인·전해질에 따라 조정"
+  },
+  {
+   "species": "cat",
+   "label": "CKD 고인산혈증 보조 (실용 용량)",
+   "route": "PO",
+   "low": 200,
+   "high": 400,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "원문 q8–12h, 식사와 함께"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 400
+  },
+  {
+   "form": "tablet",
+   "mg": 800
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,46 @@
+{
+ "id": "sodium-bicarbonate",
+ "name": "Sodium Bicarbonate",
+ "brand": [],
+ "class": "알칼리화제",
+ "tags": [
+  "urinary",
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "요 알칼리화",
+   "route": "PO",
+   "low": 650,
+   "high": 5850,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "원문 650 mg–5.85 g/animal; 체중·요 pH에 따라 개별화, 목표 요 pH 7–7.5; 드물게 권장"
+  },
+  {
+   "species": "cat",
+   "label": "요 알칼리화",
+   "route": "PO",
+   "low": 650,
+   "high": 5850,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true,
+   "note": "원문 650 mg–5.85 g/animal; 체중·요 pH에 따라 개별화, 목표 요 pH 7–7.5; 드물게 권장"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 325
+  },
+  {
+   "form": "tablet",
+   "mg": 650
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

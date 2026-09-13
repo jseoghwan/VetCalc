@@ -1,0 +1,48 @@
+{
+ "id": "tiopronin",
+ "name": "Tiopronin",
+ "brand": [
+  "Thiola",
+  "Thiola EC"
+ ],
+ "class": "시스틴 결석 치료제 (티올계 킬레이트제)",
+ "tags": [
+  "urinary",
+  "renal"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "시스틴 요석 예방",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "음수량 증가·요 알칼리화(pH 6.5–7.0) 병행"
+  },
+  {
+   "species": "dog",
+   "label": "시스틴 요석 용해",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "4주마다 재평가, 2–3개월 내 용해 안 되면 수술"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 300
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

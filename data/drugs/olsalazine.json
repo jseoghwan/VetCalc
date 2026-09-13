@@ -1,0 +1,32 @@
+{
+ "id": "olsalazine",
+ "name": "Olsalazine",
+ "brand": [
+  "Dipentum"
+ ],
+ "class": "5-ASA 계 국소 장 항염증제",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "염증성 장질환 (IBD)",
+   "route": "PO",
+   "low": 5,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "sulfasalazine 불내성 시, 최저 유효 용량으로 감량"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 250
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

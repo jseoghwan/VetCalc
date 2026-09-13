@@ -1,0 +1,87 @@
+{
+ "id": "ondansetron",
+ "name": "Ondansetron",
+ "brand": [
+  "Zofran",
+  "Zuplenz"
+ ],
+ "class": "5-HT3 수용체 길항제 (진토제)",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "구토 억제",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "폐쇄성 수면무호흡",
+   "route": "PO",
+   "low": 1,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "급성 구토",
+   "route": "PO",
+   "low": 0.1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–12h; 경구는 고용량·더 자주 필요할 수 있음"
+  },
+  {
+   "species": "cat",
+   "label": "CKD 관련 구토 (IRIS 1–2기)",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 q6–12h"
+  },
+  {
+   "species": "cat",
+   "label": "CKD 관련 구토 (IRIS 3기)",
+   "route": "PO",
+   "low": 0.05,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 q6–12h"
+  },
+  {
+   "species": "cat",
+   "label": "CKD 관련 구토 (IRIS 4기)",
+   "route": "PO",
+   "low": 0.025,
+   "high": 0.05,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "note": "원문 q6–12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 4
+  },
+  {
+   "form": "tablet",
+   "mg": 8
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

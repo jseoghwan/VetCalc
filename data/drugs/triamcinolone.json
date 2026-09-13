@@ -1,0 +1,219 @@
+{
+ "id": "triamcinolone",
+ "name": "Triamcinolone",
+ "brand": [
+  "Vetalog",
+  "Kenalog"
+ ],
+ "class": "글루코코르티코이드",
+ "tags": [
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "글루코코르티코이드 효과 초기 (label)",
+   "route": "PO",
+   "low": 0.11,
+   "high": 0.11,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "반응 불충분 시 0.22 mg/kg로 증량, 2주 내 감량"
+  },
+  {
+   "species": "dog",
+   "label": "글루코코르티코이드 효과 증량 (label)",
+   "route": "PO",
+   "low": 0.22,
+   "high": 0.22,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "글루코코르티코이드 효과 감량 유지 (label)",
+   "route": "PO",
+   "low": 0.028,
+   "high": 0.055,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "소염 유도",
+   "route": "PO",
+   "low": 0.05,
+   "high": 0.22,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "소염 유지",
+   "route": "PO",
+   "low": 0.05,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q48h",
+   "note": "원문 q48–72h"
+  },
+  {
+   "species": "dog",
+   "label": "자가면역 피부질환 유도",
+   "route": "PO",
+   "low": 0.4,
+   "high": 0.6,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "자가면역 피부질환 유지",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q48h",
+   "note": "원문 q48–72h"
+  },
+  {
+   "species": "cat",
+   "label": "글루코코르티코이드 효과 초기 (label)",
+   "route": "PO",
+   "low": 0.11,
+   "high": 0.11,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "반응 불충분 시 0.22 mg/kg로 증량, 2주 내 감량"
+  },
+  {
+   "species": "cat",
+   "label": "글루코코르티코이드 효과 증량 (label)",
+   "route": "PO",
+   "low": 0.22,
+   "high": 0.22,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "글루코코르티코이드 효과 감량 유지 (label)",
+   "route": "PO",
+   "low": 0.028,
+   "high": 0.055,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "소염 유도",
+   "route": "PO",
+   "low": 0.05,
+   "high": 0.22,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "소염 유지",
+   "route": "PO",
+   "low": 0.05,
+   "high": 0.1,
+   "unit": "mg/kg",
+   "freq": "q48h",
+   "note": "원문 q48–72h"
+  },
+  {
+   "species": "cat",
+   "label": "알레르기성 소양증 유도 (≤5 kg)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "7일 내 관해 없으면 2배 증량"
+  },
+  {
+   "species": "cat",
+   "label": "알레르기성 소양증 유도 (>5 kg)",
+   "route": "PO",
+   "low": 0.75,
+   "high": 0.75,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "7일 내 관해 없으면 2배 증량"
+  },
+  {
+   "species": "cat",
+   "label": "알레르기성 소양증 유도 (mg/kg 범위)",
+   "route": "PO",
+   "low": 0.09,
+   "high": 0.26,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "평균 0.18 mg/kg"
+  },
+  {
+   "species": "cat",
+   "label": "알레르기성 소양증 격일 유지",
+   "route": "PO",
+   "low": 0.08,
+   "high": 0.08,
+   "unit": "mg/kg",
+   "freq": "q48h",
+   "note": "평균값, 유도 용량의 25% 단위로 감량"
+  },
+  {
+   "species": "cat",
+   "label": "자가면역 피부질환 유도",
+   "route": "PO",
+   "low": 0.4,
+   "high": 0.6,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "자가면역 피부질환 유지",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q48h",
+   "note": "원문 q48–72h"
+  },
+  {
+   "species": "cat",
+   "label": "낙엽상 천포창 유도",
+   "route": "PO",
+   "low": 0.6,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "낙엽상 천포창 유지",
+   "route": "PO",
+   "low": 0.6,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q48h",
+   "note": "원문 2–7일마다"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 0.5
+  },
+  {
+   "form": "tablet",
+   "mg": 1.5
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

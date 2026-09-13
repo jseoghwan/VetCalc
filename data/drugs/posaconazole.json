@@ -1,0 +1,88 @@
+{
+ "id": "posaconazole",
+ "name": "Posaconazole",
+ "brand": [
+  "Noxafil"
+ ],
+ "class": "Azole 항진균제 (triazole)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "진균 감염 — 현탁액",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h"
+  },
+  {
+   "species": "dog",
+   "label": "진균 감염 — 지연방출정",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q48h"
+  },
+  {
+   "species": "cat",
+   "label": "진균 감염 (a) 부하 용량",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "진균 감염 (a) 유지",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q48h"
+  },
+  {
+   "species": "cat",
+   "label": "진균 감염 (a′) 부하 용량",
+   "route": "PO",
+   "low": 15,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "진균 감염 (a′) 유지",
+   "route": "PO",
+   "low": 7.5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "진균 감염 (b)",
+   "route": "PO",
+   "low": 5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "1일 2회 분할 가능"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 100
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

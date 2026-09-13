@@ -1,0 +1,128 @@
+{
+ "id": "propranolol",
+ "name": "Propranolol",
+ "brand": [],
+ "class": "비선택적 β 차단제 (Class II 항부정맥제)",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "부정맥 — 초기",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "효과 보며 최대 1.5 mg/kg q8h까지 증량"
+  },
+  {
+   "species": "dog",
+   "label": "부정맥 — 초기 (마리당, 실용)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 10,
+   "unit": "mg/animal",
+   "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "부정맥 — 최대",
+   "route": "PO",
+   "low": 1.5,
+   "high": 1.5,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "부정맥 — 최대 (마리당, 실용)",
+   "route": "PO",
+   "low": 10,
+   "high": 80,
+   "unit": "mg/animal",
+   "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "Fallot 4징 — 초기",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "4주에 걸쳐 1 mg/kg q8h까지 증량"
+  },
+  {
+   "species": "dog",
+   "label": "Fallot 4징 — 목표",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "고혈압",
+   "route": "PO",
+   "low": 0.2,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "cat",
+   "label": "부정맥",
+   "route": "PO",
+   "low": 2.5,
+   "high": 10,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h; 저용량부터 증량"
+  },
+  {
+   "species": "cat",
+   "label": "Fallot 4징 — 초기",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "4주에 걸쳐 1 mg/kg q8h까지 증량"
+  },
+  {
+   "species": "cat",
+   "label": "Fallot 4징 — 목표",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q8h"
+  },
+  {
+   "species": "cat",
+   "label": "고혈압",
+   "route": "PO",
+   "low": 2.5,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "q8h"
+  },
+  {
+   "species": "cat",
+   "label": "중증 갑상선중독증 보조",
+   "route": "PO",
+   "low": 2.5,
+   "high": 5,
+   "unit": "mg/animal",
+   "freq": "q8h"
+  }
+ ],
+ "strengths": [],
+ "compounding": null,
+ "reviewed": null
+}

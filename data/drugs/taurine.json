@@ -1,0 +1,91 @@
+{
+ "id": "taurine",
+ "name": "Taurine",
+ "brand": [
+  "Formula V",
+  "Dyna-Taurine"
+ ],
+ "class": "아미노산 보충제",
+ "tags": [
+  "cardio",
+  "endocrine"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "확장성 심근병증 (a), 25 kg 미만",
+   "route": "PO",
+   "low": 500,
+   "high": 1000,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "확장성 심근병증 (a), 25 kg 초과",
+   "route": "PO",
+   "low": 1000,
+   "high": 2000,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "확장성 심근병증 (b)",
+   "route": "PO",
+   "low": 30,
+   "high": 100,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "1일 총량 기준"
+  },
+  {
+   "species": "dog",
+   "label": "항경련 보조",
+   "route": "PO",
+   "low": 22,
+   "high": 22,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "cat",
+   "label": "타우린 결핍 확장성 심근병증",
+   "route": "PO",
+   "low": 250,
+   "high": 250,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "항경련 보조",
+   "route": "PO",
+   "low": 100,
+   "high": 400,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "간질환 보조",
+   "route": "PO",
+   "low": 250,
+   "high": 500,
+   "unit": "mg/animal",
+   "freq": "q12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 250
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

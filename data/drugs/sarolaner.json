@@ -1,0 +1,63 @@
+{
+ "id": "sarolaner",
+ "name": "Sarolaner",
+ "brand": [
+  "Simparica",
+  "Simparica TRIO"
+ ],
+ "class": "이속사졸린계 외부기생충 구제제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "진드기 매개 질병 예방 (실험 조건)",
+   "route": "PO",
+   "low": 2,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "단회; label 벼룩·진드기 용량은 최소 2 mg/kg 월 1회"
+  },
+  {
+   "species": "dog",
+   "label": "구더기증 (Cochliomyia hominivorax)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "단회"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "chewable tablet",
+   "mg": 5
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 10
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 20
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 40
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 80
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 120
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

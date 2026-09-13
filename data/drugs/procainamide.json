@@ -1,0 +1,64 @@
+{
+ "id": "procainamide",
+ "name": "Procainamide",
+ "brand": [
+  "Procanbid",
+  "Pronestyl"
+ ],
+ "class": "Class IA 항부정맥제",
+ "tags": [
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "심실빈맥 유지 (조제 서방형)",
+   "route": "PO",
+   "low": 30,
+   "high": 30,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "효능 자료 부족; 혈중농도 평가 고려"
+  },
+  {
+   "species": "cat",
+   "label": "심실빈맥·SVT 유지",
+   "route": "PO",
+   "low": 3,
+   "high": 8,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–8h; 드물게 사용"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 250
+  },
+  {
+   "form": "tablet",
+   "mg": 250
+  },
+  {
+   "form": "capsule",
+   "mg": 375
+  },
+  {
+   "form": "capsule",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 500
+  },
+  {
+   "form": "tablet",
+   "mg": 750
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

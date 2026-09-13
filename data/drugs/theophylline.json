@@ -1,0 +1,126 @@
+{
+ "id": "theophylline",
+ "name": "Theophylline",
+ "brand": [],
+ "class": "메틸잔틴계 기관지확장제 (PDE 억제제)",
+ "tags": [
+  "respiratory",
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "기관지확장, 서방정 초기 (a)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "서방정 기준, 효과·내약성에 따라 조절"
+  },
+  {
+   "species": "dog",
+   "label": "기관지확장, 서방정 용량 범위 (a)",
+   "route": "PO",
+   "low": 5,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "원문 q12–24h, 서방정 기준"
+  },
+  {
+   "species": "dog",
+   "label": "기관지확장, 속방정 (b)",
+   "route": "PO",
+   "low": 9,
+   "high": 9,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "속방정 기준"
+  },
+  {
+   "species": "dog",
+   "label": "서맥성 부정맥 (동기능부전)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "서방정 기준"
+  },
+  {
+   "species": "cat",
+   "label": "기관지확장, 서방정 (a)",
+   "route": "PO",
+   "low": 15,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "실용적으로 100 mg 서방정 1정, 저녁 투여, 일부는 q48h"
+  },
+  {
+   "species": "cat",
+   "label": "기관지확장, 속방정 (b)",
+   "route": "PO",
+   "low": 4.25,
+   "high": 4.25,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "속방정 기준"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "capsule",
+   "mg": 200
+  },
+  {
+   "form": "tablet",
+   "mg": 200
+  },
+  {
+   "form": "capsule",
+   "mg": 300
+  },
+  {
+   "form": "tablet",
+   "mg": 300
+  },
+  {
+   "form": "capsule",
+   "mg": 400
+  },
+  {
+   "form": "tablet",
+   "mg": 400
+  },
+  {
+   "form": "capsule",
+   "mg": 450
+  },
+  {
+   "form": "tablet",
+   "mg": 450
+  },
+  {
+   "form": "capsule",
+   "mg": 600
+  },
+  {
+   "form": "tablet",
+   "mg": 600
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

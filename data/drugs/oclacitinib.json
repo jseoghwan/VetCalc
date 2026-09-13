@@ -1,0 +1,197 @@
+{
+ "id": "oclacitinib",
+ "name": "Oclacitinib",
+ "brand": [
+  "Apoquel"
+ ],
+ "class": "JAK 억제제 (항소양·항염증제)",
+ "tags": [
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "알레르기·아토피 피부염 소양증 초기 (label)",
+   "route": "PO",
+   "low": 0.4,
+   "high": 0.6,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "최대 14일 후 q24h 유지로 전환"
+  },
+  {
+   "species": "dog",
+   "label": "알레르기·아토피 피부염 소양증 유지 (label)",
+   "route": "PO",
+   "low": 0.4,
+   "high": 0.6,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "장기 1일 2회 투여 비권장"
+  },
+  {
+   "species": "dog",
+   "label": "1일 1회 유지 시 재발하는 소양증 (a)",
+   "route": "PO",
+   "low": 0.4,
+   "high": 0.6,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "장기 안전성 미확립"
+  },
+  {
+   "species": "dog",
+   "label": "1일 1회 유지 시 재발하는 소양증 (b)",
+   "route": "PO",
+   "low": 0.2,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "경험적 용량"
+  },
+  {
+   "species": "dog",
+   "label": "허혈성 피부병증 초기 (a)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.7,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "prednisolone 병용"
+  },
+  {
+   "species": "dog",
+   "label": "허혈성 피부병증 감량 (a)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.7,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "prednisolone 중단 후 시도"
+  },
+  {
+   "species": "dog",
+   "label": "허혈성 피부병증 초기 (b)",
+   "route": "PO",
+   "low": 0.6,
+   "high": 0.6,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "60일"
+  },
+  {
+   "species": "dog",
+   "label": "허혈성 피부병증 유지 (b)",
+   "route": "PO",
+   "low": 0.6,
+   "high": 0.6,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "개선충증 소양증 초기",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "14일, 구충제 병용"
+  },
+  {
+   "species": "dog",
+   "label": "개선충증 소양증 유지",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "추가 14일"
+  },
+  {
+   "species": "dog",
+   "label": "과각화성 다형홍반",
+   "route": "PO",
+   "low": 0.6,
+   "high": 0.9,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "귀끝 궤양성 피부염 초기",
+   "route": "PO",
+   "low": 0.4,
+   "high": 0.6,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "최대 14일"
+  },
+  {
+   "species": "dog",
+   "label": "귀끝 궤양성 피부염 유지",
+   "route": "PO",
+   "low": 0.4,
+   "high": 0.6,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "고양이 아토피 피부 증후군 (FASS)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "원문 1일 1–2회, 28일"
+  },
+  {
+   "species": "cat",
+   "label": "과민성 피부염·두경부 소양증 초기",
+   "route": "PO",
+   "low": 0.4,
+   "high": 0.8,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "14일, 실용적으로 2.7 mg/cat (5.4 mg 정제 1/2)"
+  },
+  {
+   "species": "cat",
+   "label": "과민성 피부염·두경부 소양증 유지",
+   "route": "PO",
+   "low": 0.4,
+   "high": 0.8,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "추가 14일"
+  },
+  {
+   "species": "cat",
+   "label": "천식",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 3.6
+  },
+  {
+   "form": "tablet",
+   "mg": 5.4
+  },
+  {
+   "form": "tablet",
+   "mg": 16
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

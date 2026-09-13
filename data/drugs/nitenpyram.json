@@ -1,0 +1,67 @@
+{
+ "id": "nitenpyram",
+ "name": "Nitenpyram",
+ "brand": [
+  "Capstar"
+ ],
+ "class": "경구 살충제 (neonicotinoid)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "벼룩 감염 0.9–11.4 kg (label)",
+   "route": "PO",
+   "low": 11.4,
+   "high": 11.4,
+   "unit": "mg/animal",
+   "freq": "once",
+   "default": true,
+   "note": "11.4 mg 정제 1정, 재감염 시 1일 1회까지 반복 가능"
+  },
+  {
+   "species": "dog",
+   "label": "벼룩 감염 11.4–56.8 kg (label)",
+   "route": "PO",
+   "low": 57,
+   "high": 57,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "57 mg 정제 1정, 재감염 시 1일 1회까지 반복 가능"
+  },
+  {
+   "species": "dog",
+   "label": "나선구더기증 (screwworm)",
+   "route": "PO",
+   "low": 11.4,
+   "high": 57,
+   "unit": "mg/animal",
+   "freq": "once",
+   "note": "체중별 벼룩 label 용량(≤11.4 kg 11.4 mg, >11.4 kg 57 mg), 1회 또는 6시간 후 1회 추가"
+  },
+  {
+   "species": "cat",
+   "label": "벼룩 감염 0.9–11.4 kg (label)",
+   "route": "PO",
+   "low": 11.4,
+   "high": 11.4,
+   "unit": "mg/animal",
+   "freq": "once",
+   "default": true,
+   "note": "11.4 mg 정제 1정, 재감염 시 1일 1회까지 반복 가능"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 11.4
+  },
+  {
+   "form": "tablet",
+   "mg": 57
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

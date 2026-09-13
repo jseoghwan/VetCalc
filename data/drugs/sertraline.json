@@ -1,0 +1,51 @@
+{
+ "id": "sertraline",
+ "name": "Sertraline",
+ "brand": [
+  "Zoloft"
+ ],
+ "class": "선택적 세로토닌 재흡수 억제제 (SSRI)",
+ "tags": [
+  "behavior"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "행동장애 보조 (강박·불안)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "저용량부터 시작; q12h 사용 예도 있음; 6–8주 후 평가, 중단 시 2–3주 이상 감량"
+  },
+  {
+   "species": "cat",
+   "label": "행동장애 보조 (강박·불안·스프레이)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 1.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "저용량부터 시작; q12h 사용 예도 있음; 6–8주 후 평가, 중단 시 2–3주 이상 감량"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

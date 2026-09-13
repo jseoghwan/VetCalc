@@ -1,0 +1,97 @@
+{
+ "id": "pyrantel",
+ "name": "Pyrantel",
+ "brand": [
+  "Strongid T",
+  "Nemex",
+  "Pin-X"
+ ],
+ "class": "구충제 (pyrantel pamoate, 회충·구충)",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "회충·구충 >2.3 kg (label)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "base 기준; 강아지 2·3·4·6·8·10주령 반복"
+  },
+  {
+   "species": "dog",
+   "label": "회충·구충 <2.3 kg (label)",
+   "route": "PO",
+   "low": 10,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "base 기준"
+  },
+  {
+   "species": "dog",
+   "label": "구충·회충 (extra-label)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "pamoate 기준; 식후; 7–10일 후 반복"
+  },
+  {
+   "species": "dog",
+   "label": "Physaloptera",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "pamoate 기준"
+  },
+  {
+   "species": "cat",
+   "label": "회충·구충",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true,
+   "note": "pamoate 기준; 필요 시 반복"
+  },
+  {
+   "species": "cat",
+   "label": "새끼고양이 (2–3주령부터)",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "12주령까지 2–3주마다 반복"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 22.7
+  },
+  {
+   "form": "tablet",
+   "mg": 113.5
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 180
+  },
+  {
+   "form": "chewable tablet",
+   "mg": 720.5
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

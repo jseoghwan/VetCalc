@@ -1,0 +1,104 @@
+{
+ "id": "piroxicam",
+ "name": "Piroxicam",
+ "brand": [
+  "Feldene"
+ ],
+ "class": "NSAID (oxicam), 항종양 보조",
+ "tags": [
+  "analgesic",
+  "immuno"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "종양 보조요법 (매일)",
+   "route": "PO",
+   "low": 0.3,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "식사와 함께; 내약 시 매일 선호"
+  },
+  {
+   "species": "dog",
+   "label": "종양 보조요법 (격일)",
+   "route": "PO",
+   "low": 0.3,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "q48h"
+  },
+  {
+   "species": "dog",
+   "label": "특발성 림프형질세포성 비염",
+   "route": "PO",
+   "low": 0.3,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "최소 6개월"
+  },
+  {
+   "species": "cat",
+   "label": "이행상피암 보조",
+   "route": "PO",
+   "low": 0.3,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "q48h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "기타 종양 (OSCC 등) (a)",
+   "route": "PO",
+   "low": 0.13,
+   "high": 0.41,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "cat",
+   "label": "기타 종양 (OSCC 등) (b)",
+   "route": "PO",
+   "low": 0.3,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "q48h"
+  },
+  {
+   "species": "cat",
+   "label": "소염·진통",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "note": "최대 7일"
+  },
+  {
+   "species": "cat",
+   "label": "특발성 만성 비부비동염",
+   "route": "PO",
+   "low": 0.3,
+   "high": 0.3,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "원문 매일 또는 격일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 10
+  },
+  {
+   "form": "capsule",
+   "mg": 20
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

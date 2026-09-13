@@ -1,0 +1,52 @@
+{
+ "id": "oxazepam",
+ "name": "Oxazepam",
+ "brand": [
+  "Serax"
+ ],
+ "class": "벤조디아제핀",
+ "tags": [
+  "behavior",
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "공포·공포증",
+   "route": "PO",
+   "low": 0.2,
+   "high": 1,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h"
+  },
+  {
+   "species": "cat",
+   "label": "식욕 촉진·행동 문제",
+   "route": "PO",
+   "low": 0.2,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h; 고양이 급성 간부전 보고 있음"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 10
+  },
+  {
+   "form": "capsule",
+   "mg": 15
+  },
+  {
+   "form": "capsule",
+   "mg": 30
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

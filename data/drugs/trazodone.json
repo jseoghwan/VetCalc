@@ -1,0 +1,164 @@
+{
+ "id": "trazodone",
+ "name": "Trazodone",
+ "brand": [
+  "Desyrel"
+ ],
+ "class": "세로토닌 5-HT2A 길항·재흡수 억제제 (SARI)",
+ "tags": [
+  "behavior"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "불안장애 보조 (a, 초기)",
+   "route": "PO",
+   "low": 2.5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h, 3일간 적응 후 증량, 최종 평균 7.5 mg/kg/day, 최대 300 mg/회"
+  },
+  {
+   "species": "dog",
+   "label": "불안장애 보조 (b, 재택 일상)",
+   "route": "PO",
+   "low": 2,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 최대 q8h까지"
+  },
+  {
+   "species": "dog",
+   "label": "불안장애 보조 (c, 상황 시 추가)",
+   "route": "PO",
+   "low": 2,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "불안 상황 약 1시간 전, 최대 14 mg/kg/day"
+  },
+  {
+   "species": "dog",
+   "label": "병원 방문 전 불안 완화 (a)",
+   "route": "PO",
+   "low": 5,
+   "high": 7.5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "이동 90분 전, 최대 300 mg/회, 고불안견은 전날 밤에도 투여"
+  },
+  {
+   "species": "dog",
+   "label": "병원 방문 전 불안 완화 (a, 고용량)",
+   "route": "PO",
+   "low": 9,
+   "high": 12,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "이동 90분 전"
+  },
+  {
+   "species": "dog",
+   "label": "병원 방문 전 (b, gabapentin 병용)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "방문 2시간 전"
+  },
+  {
+   "species": "dog",
+   "label": "병원 방문 전 (c, Chill Protocol 보조)",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "전날 저녁 + 당일 아침 이동 2시간 전"
+  },
+  {
+   "species": "dog",
+   "label": "입원·수술 후 안정 (a)",
+   "route": "PO",
+   "low": 4,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "필요 시 10–12 mg/kg 또는 q8h로 증량, 최대 300 mg/회·600 mg/24h"
+  },
+  {
+   "species": "dog",
+   "label": "입원·수술 후 안정 (a, 증량)",
+   "route": "PO",
+   "low": 10,
+   "high": 12,
+   "unit": "mg/kg",
+   "freq": "q12h"
+  },
+  {
+   "species": "dog",
+   "label": "수술 후 (b, tramadol 병용 초기)",
+   "route": "PO",
+   "low": 3.5,
+   "high": 3.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "수술 후 첫 3일"
+  },
+  {
+   "species": "dog",
+   "label": "수술 후 (b, 유지)",
+   "route": "PO",
+   "low": 7,
+   "high": 7,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "최소 4주"
+  },
+  {
+   "species": "cat",
+   "label": "병원 방문 전 불안 완화 (a)",
+   "route": "PO",
+   "low": 50,
+   "high": 50,
+   "unit": "mg/animal",
+   "freq": "once",
+   "default": true,
+   "note": "방문 60–90분 전, 약 10.9 mg/kg 해당"
+  },
+  {
+   "species": "cat",
+   "label": "병원 방문 전 (b, gabapentin 병용)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "once",
+   "note": "방문 2시간 전"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 50
+  },
+  {
+   "form": "tablet",
+   "mg": 100
+  },
+  {
+   "form": "tablet",
+   "mg": 150
+  },
+  {
+   "form": "tablet",
+   "mg": 300
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

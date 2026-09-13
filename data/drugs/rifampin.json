@@ -1,0 +1,77 @@
+{
+ "id": "rifampin",
+ "name": "Rifampin",
+ "brand": [
+  "Rifadin"
+ ],
+ "class": "Rifamycin계 항생제",
+ "tags": [
+  "antimicrobial"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "표재성 세균성 모낭염 (a)",
+   "route": "PO",
+   "low": 5,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "다른 항균제 병용 권장"
+  },
+  {
+   "species": "dog",
+   "label": "MRS 농피증 (b)",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "note": "국소 항균제 병용, 4–5주"
+  },
+  {
+   "species": "dog",
+   "label": "개 나병양 육아종",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "최대 600 mg/회; clarithromycin 등 병용"
+  },
+  {
+   "species": "dog",
+   "label": "브루셀라증",
+   "route": "PO",
+   "low": 5,
+   "high": 5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "note": "doxycycline·gentamicin 병용, 3개월"
+  },
+  {
+   "species": "cat",
+   "label": "고양이 나병 증후군",
+   "route": "PO",
+   "low": 10,
+   "high": 15,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "다른 항마이코박테리아제 병용"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 150
+  },
+  {
+   "form": "capsule",
+   "mg": 300
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

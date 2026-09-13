@@ -1,0 +1,45 @@
+{
+ "id": "neomycin",
+ "name": "Neomycin",
+ "brand": [
+  "Biosol",
+  "Neomix"
+ ],
+ "class": "Aminoglycoside 항생제 (경구, 비흡수성)",
+ "tags": [
+  "antimicrobial",
+  "hepatic"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "간성 뇌증 보조",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "cat",
+   "label": "간성 뇌증 보조",
+   "route": "PO",
+   "low": 20,
+   "high": 20,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "default": true,
+   "note": "원문 q8–12h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 500
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

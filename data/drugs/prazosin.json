@@ -1,0 +1,108 @@
+{
+ "id": "prazosin",
+ "name": "Prazosin",
+ "brand": [
+  "Minipress"
+ ],
+ "class": "α1 아드레날린 차단제",
+ "tags": [
+  "urinary",
+  "cardio"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "배뇨근-요도 협조장애 (VURD)",
+   "route": "PO",
+   "low": 0.5,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "부작용 시 50% 감량"
+  },
+  {
+   "species": "dog",
+   "label": "전립선암 배뇨곤란 (증례)",
+   "route": "PO",
+   "low": 0.1,
+   "high": 0.4,
+   "unit": "mg/kg",
+   "freq": "q24h"
+  },
+  {
+   "species": "dog",
+   "label": "전신 고혈압 (a) 체중 기준",
+   "route": "PO",
+   "low": 0.5,
+   "high": 2,
+   "unit": "mg/kg",
+   "freq": "q8h",
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "전신 고혈압 (b) 마리당",
+   "route": "PO",
+   "low": 0.5,
+   "high": 2,
+   "unit": "mg/animal",
+   "freq": "q8h",
+   "note": "원문 q8–12h"
+  },
+  {
+   "species": "dog",
+   "label": "심부전 보조 (<15 kg)",
+   "route": "PO",
+   "low": 1,
+   "high": 1,
+   "unit": "mg/animal",
+   "freq": "q8h"
+  },
+  {
+   "species": "dog",
+   "label": "심부전 보조 (>15 kg)",
+   "route": "PO",
+   "low": 2,
+   "high": 2,
+   "unit": "mg/animal",
+   "freq": "q8h"
+  },
+  {
+   "species": "cat",
+   "label": "기능성 요도폐색 — 요도 저항 감소",
+   "route": "PO",
+   "low": 0.25,
+   "high": 1,
+   "unit": "mg/animal",
+   "freq": "q12h",
+   "default": true,
+   "note": "1–2주; 효능 논란"
+  },
+  {
+   "species": "cat",
+   "label": "고혈압",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.5,
+   "unit": "mg/animal",
+   "freq": "q24h"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 1
+  },
+  {
+   "form": "capsule",
+   "mg": 2
+  },
+  {
+   "form": "capsule",
+   "mg": 5
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,43 @@
+{
+ "id": "tamsulosin",
+ "name": "Tamsulosin",
+ "brand": [
+  "Flomax"
+ ],
+ "class": "α1 아드레날린 차단제",
+ "tags": [
+  "urinary"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "요관·요도 이완",
+   "route": "PO",
+   "low": 0.01,
+   "high": 0.2,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "효과 없으면 q12h로 증량 가능, 조제 캡슐 필요할 수 있음"
+  },
+  {
+   "species": "cat",
+   "label": "요관·요도 이완",
+   "route": "PO",
+   "low": 0.004,
+   "high": 0.006,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "조제 캡슐 필요"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 0.4
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

@@ -1,0 +1,40 @@
+{
+ "id": "promethazine",
+ "name": "Promethazine",
+ "brand": [
+  "Phenergan"
+ ],
+ "class": "Phenothiazine계 항히스타민·진토제",
+ "tags": [
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "진토·멀미 예방",
+   "route": "PO",
+   "low": 0.2,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q6h",
+   "default": true,
+   "note": "원문 q6–8h; 경구 생체이용률 낮음"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 12.5
+  },
+  {
+   "form": "tablet",
+   "mg": 25
+  },
+  {
+   "form": "tablet",
+   "mg": 50
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

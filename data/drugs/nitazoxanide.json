@@ -1,0 +1,52 @@
+{
+ "id": "nitazoxanide",
+ "name": "Nitazoxanide",
+ "brand": [
+  "Alinia"
+ ],
+ "class": "항원충제 (thiazolide)",
+ "tags": [
+  "antimicrobial",
+  "gi"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "Giardia 설사",
+   "route": "PO",
+   "low": 75,
+   "high": 150,
+   "unit": "mg/kg",
+   "freq": "once",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "Cryptosporidium 설사",
+   "route": "PO",
+   "low": 75,
+   "high": 150,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "Cryptosporidium 설사",
+   "route": "PO",
+   "low": 10,
+   "high": 25,
+   "unit": "mg/kg",
+   "freq": "q12h",
+   "default": true,
+   "note": "원문 q12–24h, 최대 28일"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 500
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}

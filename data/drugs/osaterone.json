@@ -1,0 +1,45 @@
+{
+ "id": "osaterone",
+ "name": "Osaterone",
+ "brand": [
+  "Ypozane"
+ ],
+ "class": "항안드로겐제 (프로게스틴 유도체)",
+ "tags": [
+  "endocrine",
+  "urinary"
+ ],
+ "doses": [
+  {
+   "species": "dog",
+   "label": "양성 전립선 비대 (BPH)",
+   "route": "PO",
+   "low": 0.25,
+   "high": 0.5,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "7일; 5개월 후 재평가"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 1.875
+  },
+  {
+   "form": "tablet",
+   "mg": 3.75
+  },
+  {
+   "form": "tablet",
+   "mg": 7.5
+  },
+  {
+   "form": "tablet",
+   "mg": 15
+  }
+ ],
+ "compounding": null,
+ "reviewed": null
+}
