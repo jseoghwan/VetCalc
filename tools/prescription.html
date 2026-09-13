@@ -363,7 +363,7 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
   let uidSeq = 1;
 
   /* ---------- 단위·간격 ---------- */
-  const FREQ = { q24h:{h:24,sid:'SID',n:1}, q12h:{h:12,sid:'BID',n:2}, q8h:{h:8,sid:'TID',n:3}, q6h:{h:6,sid:'QID',n:4}, once:{h:0,sid:'1회',n:0} };
+  const FREQ = { q24h:{h:24,sid:'SID',n:1}, q12h:{h:12,sid:'BID',n:2}, q8h:{h:8,sid:'TID',n:3}, q6h:{h:6,sid:'QID',n:4}, q48h:{h:48,sid:'격일',n:0.5}, q72h:{h:72,sid:'3일마다',n:1/3}, once:{h:0,sid:'1회',n:0} };
   const freqLabel = (f) => !FREQ[f] ? f : (S.settings.freq === 'sid' ? FREQ[f].sid : (f === 'once' ? '1회' : f));
   const freqN = (f) => FREQ[f] ? FREQ[f].n : 1;
   const normFreq = (f) => FREQ[f] ? f : (String(f).startsWith('q12') ? 'q12h' : 'q24h');   // "q12–24h" 같은 표기는 첫 값을 기본으로
@@ -383,7 +383,7 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
     return unit === 'mcg/kg' ? mg / bw * 1000 : mg / bw;
   }
   const fmt = (n, d) => n == null || !isFinite(n) ? '—' : (Math.round(n * Math.pow(10, d)) / Math.pow(10, d)).toString();
-  const sig = (n) => n == null || !isFinite(n) ? '—' : (n >= 100 ? fmt(n,1) : n >= 10 ? fmt(n,2) : fmt(n,3));   // 18.75 같은 입력 정밀도를 잃지 않게
+  const sig = (n) => n == null || !isFinite(n) ? '—' : (n >= 100 ? fmt(n,1) : n >= 10 ? fmt(n,2) : n >= 0.1 ? fmt(n,3) : fmt(n,5));   // 18.75 같은 입력 정밀도를 잃지 않게
   const tfmt = (t) => { const r = Math.round(t * 100) / 100; const w = Math.floor(r), f = Math.round((r - w) * 100) / 100; if (f === 0) return String(w); const fr = f === 0.5 ? '½' : f === 0.25 ? '¼' : f === 0.75 ? '¾' : null; return fr ? (w ? w + fr : fr) : fmt(r, 2); };
 
   /* ---------- 데이터 ---------- */
@@ -468,7 +468,7 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
     const d = S.drugs.get(it.id); const ds = dosesFor(d, S.species); const b = it.doseIdx >= 0 ? ds[it.doseIdx] : null;
     const bw = S.bw, mg = toMg(+it.val, it.unit, bw);
     const n = freqN(it.freq), days = it.freq === 'once' ? 1 : Math.max(1, S.days|0);
-    const dosesTotal = it.freq === 'once' ? 1 : n * days;
+    const dosesTotal = it.freq === 'once' ? 1 : Math.max(1, Math.round(n * days));
     const total = mg == null ? null : mg * dosesTotal;
     const out = { mg, n, days, dosesTotal, total, base: b, range: null, warn: null };
     if (b && b.low !== b.high) out.range = { lo: toMg(b.low, b.unit, bw), hi: toMg(b.high, b.unit, bw) };
@@ -478,11 +478,11 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
     if (total != null && st > 0) {
       if (it.mode === 'suspension') {                       // 규격 = mg/mL 원액이 아니라, 정제를 갈아 총 mL로 만든다
         const vol = +it.volume;
-        const rawT = total / st, r = S.settings.round, T = Math.round(rawT / r) * r;
+        const rawT = total / st, r = S.settings.round, T = Math.max(r, Math.round(rawT / r) * r);
         out.T = T; out.rawT = rawT;
         if (vol > 0) { out.conc = T * st / vol; out.mlPer = mg / out.conc; out.actual = out.mlPer * out.conc; }
       } else {
-        const rawT = total / st, r = S.settings.round, T = Math.round(rawT / r) * r;
+        const rawT = total / st, r = S.settings.round, T = Math.max(r, Math.round(rawT / r) * r);
         out.T = T; out.rawT = rawT;
         out.actual = dosesTotal ? T * st / dosesTotal : null;   // 정제를 갈아 dosesTotal포로 나눌 때 1포 용량
         out.perDoseT = T / dosesTotal;
@@ -513,7 +513,7 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
       ? `<div class="tiles"><div class="tile"><span class="k">1회 용량</span><span class="v">—</span><span class="r">${it.unit==='mg/animal'?'용량을 입력하세요':'체중과 용량을 입력하세요'}</span></div></div>`
       : `<div class="tiles">
           <div class="tile accent${c.warn?' bad':''}"><span class="k">1회 용량 <small>${freqLabel(it.freq)}</small></span><span class="v">${sig(c.mg)}<small>mg</small></span><span class="r">${c.range?`표준 ${sig(c.range.lo)}–${sig(c.range.hi)} mg`:(c.base?`표준 ${sig(toMg(c.base.low,c.base.unit,S.bw))} mg`:'&nbsp;')}</span></div>
-          <div class="tile"><span class="k">총 필요량</span><span class="v">${sig(c.total)}<small>mg</small></span><span class="r">${it.freq==='once'?'단회 투여':`${c.n}회/일 × ${c.days}일 = ${c.dosesTotal}회`}</span></div>
+          <div class="tile"><span class="k">총 필요량</span><span class="v">${sig(c.total)}<small>mg</small></span><span class="r">${it.freq==='once'?'단회 투여':c.n<1?`${freqLabel(it.freq)} × ${c.days}일 = ${c.dosesTotal}회`:`${c.n}회/일 × ${c.days}일 = ${c.dosesTotal}회`}</span></div>
           ${c.T != null ? (it.mode === 'suspension'
             ? `<div class="tile accent"><span class="k">정제 수</span><span class="v">${tfmt(c.T)}<small>T</small></span><span class="r">${it.strength} mg × ${tfmt(c.T)} = ${sig(c.T*+it.strength)} mg → ${it.volume||'?'} mL</span></div>
                <div class="tile${c.err!=null&&Math.abs(c.err)>=10?' warn':''}"><span class="k">1회 투여량</span><span class="v">${c.mlPer!=null?sig(c.mlPer)+'<small>mL</small>':'—'}</span><span class="r">${c.conc!=null?`${sig(c.conc)} mg/mL`:'총 부피를 입력하세요'}</span></div>`
@@ -546,7 +546,7 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
           <div class="field f6 plain"><label><span>표준 용량 선택</span><span class="u">${ds.length}개</span></label><select data-f="doseIdx"${noSp?' disabled':''}>${doseOpts||'<option value="0">—</option>'}</select><span class="ref">${c.base&&c.base.note?esc(c.base.note):(it.doseIdx===-1&&ov?'내가 저장한 기본값':'&nbsp;')}</span></div>
           <div class="field f2"><label><span>용량</span><span class="u">${isCustom?'수정됨':'표준'}</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="val" value="${esc(it.val)}"><span class="ref">${c.base?(c.base.low===c.base.high?`표준 ${sig(c.base.low)}`:`표준 ${sig(c.base.low)}–${sig(c.base.high)}`)+' '+unitLabel(c.base.unit):'&nbsp;'}</span></div>
           <div class="field f2 plain"><label><span>단위</span></label><select data-f="unit">${unitOpts}</select><span class="ref">${it.unit!=='mg/animal'&&!(S.bw>0)?'체중 필요':'&nbsp;'}</span></div>
-          <div class="field f2 plain"><label><span>간격</span></label><select data-f="freq">${freqOpts}</select><span class="ref">${it.freq==='once'?'일수 무시':`하루 ${freqN(it.freq)}회`}</span></div>
+          <div class="field f2 plain"><label><span>간격</span></label><select data-f="freq">${freqOpts}</select><span class="ref">${it.freq==='once'?'일수 무시':freqN(it.freq)<1?(it.freq==='q48h'?'2일에 1회':'3일에 1회'):`하루 ${freqN(it.freq)}회`}</span></div>
           <div class="field f2"><label><span>보유 규격</span><span class="u">mg/T</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="strength" value="${esc(it.strength)}" list="st-${it.uid}"><datalist id="st-${it.uid}">${strengthOpts}</datalist><span class="ref">${(d.strengths||[]).map(s=>s.mg).join(' / ')||'—'} mg</span></div>
           <div class="field ${it.mode==='suspension'?'f2':'f4'} plain"><label><span>조제 형태</span></label><select data-f="mode"><option value="tablet"${it.mode==='tablet'?' selected':''}>분말·캡슐 (포 분할)</option><option value="suspension"${it.mode==='suspension'?' selected':''}>현탁액 (총 mL)</option></select><span class="ref">&nbsp;</span></div>
           ${it.mode==='suspension'?`<div class="field f2"><label><span>총 부피</span><span class="u">mL</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="volume" value="${esc(it.volume)}" placeholder="0"><span class="ref">정제 전량을 이 부피로</span></div>`:''}
