@@ -18,8 +18,9 @@
    "high": 60,
    "unit": "mg/kg",
    "freq": "q24h",
+   "per": "day",
    "default": true,
-   "note": "1일 총량, 식사마다 분할, calcium carbonate 기준, 하한부터 시작"
+   "note": "식사마다 분할, calcium carbonate 기준, 하한부터 시작"
   },
   {
    "species": "dog",
@@ -29,7 +30,8 @@
    "high": 150,
    "unit": "mg/kg",
    "freq": "q24h",
-   "note": "1일 총량, 식사마다 분할, calcium carbonate 기준, 필요 시"
+   "per": "day",
+   "note": "식사마다 분할, calcium carbonate 기준, 필요 시"
   },
   {
    "species": "dog",
@@ -39,7 +41,8 @@
    "high": 10000,
    "unit": "mg/animal",
    "freq": "q24h",
-   "note": "calcium carbonate 기준 1일량 (소형견 1250 mg – 초대형견 10 g), 원소 칼슘 0.5–4 g/dog"
+   "per": "day",
+   "note": "calcium carbonate 기준 (소형견 1250 mg – 초대형견 10 g), 원소 칼슘 0.5–4 g/dog"
   },
   {
    "species": "cat",
@@ -49,8 +52,9 @@
    "high": 60,
    "unit": "mg/kg",
    "freq": "q24h",
+   "per": "day",
    "default": true,
-   "note": "1일 총량, 식사마다 분할, calcium carbonate 기준, 하한부터 시작"
+   "note": "식사마다 분할, calcium carbonate 기준, 하한부터 시작"
   },
   {
    "species": "cat",
@@ -60,7 +64,8 @@
    "high": 150,
    "unit": "mg/kg",
    "freq": "q24h",
-   "note": "1일 총량, 식사마다 분할, calcium carbonate 기준, 필요 시"
+   "per": "day",
+   "note": "식사마다 분할, calcium carbonate 기준, 필요 시"
   },
   {
    "species": "cat",
@@ -70,7 +75,8 @@
    "high": 2500,
    "unit": "mg/animal",
    "freq": "q24h",
-   "note": "calcium carbonate 기준 1일량, 원소 칼슘 0.5–1 g/cat"
+   "per": "day",
+   "note": "calcium carbonate 기준, 원소 칼슘 0.5–1 g/cat"
   }
  ],
  "strengths": [

@@ -17,9 +17,10 @@
    "low": 30,
    "high": 150,
    "unit": "mg/kg",
-   "freq": "q24h",
+   "freq": "q12h",
+   "per": "day",
    "default": true,
-   "note": "1일 총량, 식사와 함께 2–3회 분할; 혈청 인·전해질에 따라 조정"
+   "note": "식사와 함께 2–3회 분할; 혈청 인·전해질에 따라 조정"
   },
   {
    "species": "dog",
@@ -48,9 +49,10 @@
    "low": 30,
    "high": 150,
    "unit": "mg/kg",
-   "freq": "q24h",
+   "freq": "q12h",
+   "per": "day",
    "default": true,
-   "note": "1일 총량, 식사와 함께 2–3회 분할; 혈청 인·전해질에 따라 조정"
+   "note": "식사와 함께 2–3회 분할; 혈청 인·전해질에 따라 조정"
   },
   {
    "species": "cat",

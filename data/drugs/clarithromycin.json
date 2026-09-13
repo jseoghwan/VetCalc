@@ -26,8 +26,9 @@
    "low": 15,
    "high": 25,
    "unit": "mg/kg",
-   "freq": "q24h",
-   "note": "1일 총량, q8–12h 분할; rifampin 병용, 4–8주"
+   "freq": "q8h",
+   "per": "day",
+   "note": "q8–12h 분할; rifampin 병용, 4–8주"
   },
   {
    "species": "cat",

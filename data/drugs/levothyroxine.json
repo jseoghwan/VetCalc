@@ -20,8 +20,9 @@
    "high": 0.022,
    "unit": "mg/kg",
    "freq": "q24h",
+   "per": "day",
    "default": true,
-   "note": "1일 총량, 단회 또는 분할; 유지 대부분 0.018–0.026 mg/kg/day; 4–8주마다 TT4로 조절"
+   "note": "단회 또는 분할; 유지 대부분 0.018–0.026 mg/kg/day; 4–8주마다 TT4로 조절"
   },
   {
    "species": "dog",

@@ -48,7 +48,8 @@
    "high": 18,
    "unit": "mg/kg",
    "freq": "q24h",
-   "note": "1일 총량, 초기 평균 용량"
+   "per": "day",
+   "note": "초기 평균 용량"
   },
   {
    "species": "dog",

@@ -28,8 +28,9 @@
    "low": 2.5,
    "high": 15,
    "unit": "mg/animal",
-   "freq": "q24h",
-   "note": "1일 총량, 분할 투여; 평균 2.5 mg/cat q12h"
+   "freq": "q12h",
+   "per": "day",
+   "note": "분할 투여; 평균 2.5 mg/cat q12h"
   },
   {
    "species": "cat",

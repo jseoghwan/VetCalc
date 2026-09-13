@@ -18,6 +18,7 @@
    "high": 10,
    "unit": "mg/kg",
    "freq": "q24h",
+   "per": "day",
    "default": true,
    "note": "또는 분할 q12h; 식사와 함께; 임상 소실 후 30–60일 지속; ≥10 mg/kg/day 부작용 증가"
   },
@@ -49,6 +50,7 @@
    "high": 10,
    "unit": "mg/kg",
    "freq": "q24h",
+   "per": "day",
    "note": "중앙값; 원문 범위 4.3–33.8 mg/kg/day"
   },
   {

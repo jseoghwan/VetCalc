@@ -28,7 +28,7 @@
    "high": 0.03,
    "unit": "mg/kg",
    "freq": "q24h",
-   "note": "1일 총량"
+   "per": "day"
   },
   {
    "species": "cat",

@@ -17,8 +17,9 @@
    "low": 132,
    "high": 132,
    "unit": "mg/kg",
-   "freq": "q24h",
-   "note": "1일 총량, 2–3회 분할 (q8–12h)"
+   "freq": "q8h",
+   "per": "day",
+   "note": "2–3회 분할 (q8–12h)"
   },
   {
    "species": "dog",
@@ -27,9 +28,10 @@
    "low": 66,
    "high": 132,
    "unit": "mg/kg",
-   "freq": "q24h",
+   "freq": "q8h",
+   "per": "day",
    "default": true,
-   "note": "1일 총량, q8–12h 분할; 5일 내 무반응 시 중단"
+   "note": "q8–12h 분할; 5일 내 무반응 시 중단"
   },
   {
    "species": "dog",
@@ -47,8 +49,9 @@
    "low": 132,
    "high": 132,
    "unit": "mg/kg",
-   "freq": "q24h",
-   "note": "1일 총량, 2–3회 분할 (q8–12h)"
+   "freq": "q8h",
+   "per": "day",
+   "note": "2–3회 분할 (q8–12h)"
   },
   {
    "species": "cat",
@@ -57,9 +60,10 @@
    "low": 66,
    "high": 132,
    "unit": "mg/kg",
-   "freq": "q24h",
+   "freq": "q8h",
+   "per": "day",
    "default": true,
-   "note": "1일 총량, q8–12h 분할; 5일 내 무반응 시 중단"
+   "note": "q8–12h 분할; 5일 내 무반응 시 중단"
   }
  ],
  "strengths": [

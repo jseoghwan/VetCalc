@@ -17,8 +17,9 @@
    "high": 50,
    "unit": "mg/kg",
    "freq": "q24h",
+   "per": "day",
    "default": true,
-   "note": "1일 총량, 식사와 함께 1회 또는 q12h 분할, 7–10일"
+   "note": "식사와 함께 1회 또는 q12h 분할, 7–10일"
   },
   {
    "species": "dog",
@@ -37,8 +38,9 @@
    "low": 75,
    "high": 100,
    "unit": "mg/kg",
-   "freq": "q24h",
-   "note": "1일 총량, 3–4회 분할, 25일 연속, 평생 prednisone·mineralocorticoid 보충"
+   "freq": "q8h",
+   "per": "day",
+   "note": "3–4회 분할, 25일 연속, 평생 prednisone·mineralocorticoid 보충"
   },
   {
    "species": "dog",
@@ -58,7 +60,8 @@
    "high": 75,
    "unit": "mg/kg",
    "freq": "q24h",
-   "note": "1일 총량 분할, 5일 후 격일로 40일 이상, 소형견 최대 100 mg/kg/day"
+   "per": "day",
+   "note": "분할, 5일 후 격일로 40일 이상, 소형견 최대 100 mg/kg/day"
   },
   {
    "species": "dog",
@@ -68,7 +71,8 @@
    "high": 75,
    "unit": "mg/kg",
    "freq": "q24h",
-   "note": "1일 총량 분할, 10–14일, 무반응 시 100 mg/kg/day로 증량"
+   "per": "day",
+   "note": "분할, 10–14일, 무반응 시 100 mg/kg/day로 증량"
   }
  ],
  "strengths": [

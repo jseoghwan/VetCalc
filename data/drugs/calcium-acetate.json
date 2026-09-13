@@ -18,8 +18,9 @@
    "high": 90,
    "unit": "mg/kg",
    "freq": "q24h",
+   "per": "day",
    "default": true,
-   "note": "1일 총량, 식사마다 분할·혼합 급여, 하한부터 시작"
+   "note": "식사마다 분할·혼합 급여, 하한부터 시작"
   },
   {
    "species": "dog",
@@ -29,7 +30,8 @@
    "high": 60,
    "unit": "mg/kg",
    "freq": "q24h",
-   "note": "1일 총량, 식사마다 분할·혼합 급여"
+   "per": "day",
+   "note": "식사마다 분할·혼합 급여"
   },
   {
    "species": "cat",
@@ -39,8 +41,9 @@
    "high": 90,
    "unit": "mg/kg",
    "freq": "q24h",
+   "per": "day",
    "default": true,
-   "note": "1일 총량, 식사마다 분할·혼합 급여, 하한부터 시작"
+   "note": "식사마다 분할·혼합 급여, 하한부터 시작"
   },
   {
    "species": "cat",
@@ -50,7 +53,8 @@
    "high": 60,
    "unit": "mg/kg",
    "freq": "q24h",
-   "note": "1일 총량, 식사마다 분할·혼합 급여"
+   "per": "day",
+   "note": "식사마다 분할·혼합 급여"
   }
  ],
  "strengths": [

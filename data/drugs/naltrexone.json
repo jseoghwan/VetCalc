@@ -28,7 +28,8 @@
    "high": 5,
    "unit": "mg/kg",
    "freq": "q24h",
-   "note": "1일 총량, 1회 또는 q12h 분할"
+   "per": "day",
+   "note": "1회 또는 q12h 분할"
   },
   {
    "species": "dog",

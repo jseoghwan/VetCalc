@@ -19,8 +19,9 @@
    "high": 300,
    "unit": "mg/kg",
    "freq": "q24h",
+   "per": "day",
    "default": true,
-   "note": "1일 총량, 1회 또는 2–3회 분할; 정제 분쇄해 사료에 혼합 가능"
+   "note": "1회 또는 2–3회 분할; 정제 분쇄해 사료에 혼합 가능"
   },
   {
    "species": "dog",
@@ -40,8 +41,9 @@
    "high": 375,
    "unit": "mg/kg",
    "freq": "q24h",
+   "per": "day",
    "default": true,
-   "note": "1일 총량, 1회 또는 2–3회 분할; 정제 분쇄해 사료에 혼합 가능"
+   "note": "1회 또는 2–3회 분할; 정제 분쇄해 사료에 혼합 가능"
   },
   {
    "species": "cat",

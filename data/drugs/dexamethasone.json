@@ -40,6 +40,7 @@
    "high": 0.14,
    "unit": "mg/kg",
    "freq": "q24h",
+   "per": "day",
    "note": "원문 mg/kg/day, 경로 미기재"
   },
   {
@@ -70,6 +71,7 @@
    "high": 0.28,
    "unit": "mg/kg",
    "freq": "q24h",
+   "per": "day",
    "note": "원문 mg/kg/day, 경로 미기재"
   },
   {

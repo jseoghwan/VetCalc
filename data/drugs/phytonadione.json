@@ -58,8 +58,9 @@
    "low": 5,
    "high": 5,
    "unit": "mg/kg",
-   "freq": "q24h",
-   "note": "1일 총량, 2–3회 분할"
+   "freq": "q12h",
+   "per": "day",
+   "note": "2–3회 분할"
   },
   {
    "species": "dog",
@@ -118,8 +119,9 @@
    "low": 5,
    "high": 5,
    "unit": "mg/kg",
-   "freq": "q24h",
-   "note": "1일 총량, 2–3회 분할"
+   "freq": "q12h",
+   "per": "day",
+   "note": "2–3회 분할"
   },
   {
    "species": "cat",

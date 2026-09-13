@@ -29,7 +29,8 @@
    "high": 60,
    "unit": "mg/kg",
    "freq": "q24h",
-   "note": "1일 총량, 매 식사마다 분할; 효과 보며 조절"
+   "per": "day",
+   "note": "매 식사마다 분할; 효과 보며 조절"
   },
   {
    "species": "cat",
@@ -38,8 +39,9 @@
    "low": 30,
    "high": 30,
    "unit": "mg/kg",
-   "freq": "q24h",
-   "note": "1일 총량, 2–3회 분할 사료에 섞어; 최대 95 mg/kg/day 보고"
+   "freq": "q12h",
+   "per": "day",
+   "note": "2–3회 분할 사료에 섞어; 최대 95 mg/kg/day 보고"
   },
   {
    "species": "cat",
@@ -60,7 +62,8 @@
    "high": 60,
    "unit": "mg/kg",
    "freq": "q24h",
-   "note": "1일 총량, 매 식사마다 분할; 효과 보며 조절"
+   "per": "day",
+   "note": "매 식사마다 분할; 효과 보며 조절"
   }
  ],
  "strengths": [
