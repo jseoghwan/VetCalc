@@ -1,7 +1,7 @@
 /* VECC Calculation Tools — service worker
    업데이트 방법: 파일을 수정해 올릴 때 아래 VERSION 숫자를 하나 올리면
    모든 기기가 다음 접속 때 새 파일을 받습니다. */
-const VERSION = 'v18';
+const VERSION = 'v19';
 const CACHE = 'kuvecc-' + VERSION;
 /* 교재·자료 데이터(data/) 저장소. js/data-sync.js가 채우며 VERSION과 무관하게 유지됩니다. */
 const DATA_CACHE = 'kuvecc-data';
@@ -60,6 +60,23 @@ self.addEventListener('fetch', (e) => {
           if (cacheable(res)) cache.put(req, res.clone());
           return res;
         }).catch(() => new Response('', { status: 504, statusText: 'offline' })))
+      )
+    );
+    return;
+  }
+
+  /* 페이지 진입(navigate)은 항상 서버를 먼저 거칩니다.
+     접근 권한이 끊긴 기기는 여기서 Cloudflare Access 로그인 화면으로 넘어갑니다.
+     네트워크가 안 되면 그때만 캐시로 응답해 오프라인 사용을 유지합니다. */
+  if (req.mode === 'navigate') {
+    e.respondWith(
+      fetch(req).then((res) => {
+        if (cacheable(res)) caches.open(CACHE).then((c) => c.put(req, res.clone()));
+        return res;
+      }).catch(() =>
+        caches.open(CACHE).then((cache) =>
+          cache.match(req, { ignoreSearch: true }).then((hit) => hit || cache.match('./index.html'))
+        )
       )
     );
     return;
