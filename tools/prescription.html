@@ -584,9 +584,10 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
   }
   $('#rx-list').addEventListener('input', (e) => {
     const f = e.target.dataset.f; if (!f) return;
+    if (e.target.tagName === 'SELECT') return;            // select는 아래 change에서만 처리 (input에서 먼저 다시 그리면 change가 유실됨)
     const it = S.items.find(x => x.uid === +e.target.closest('.rx').dataset.uid); if (!it) return;
     it[f] = e.target.value;
-    if (['strength','mode','volume'].includes(f)) S.stock[it.id] = { form: it.form, strength: it.strength, mode: it.mode, volume: it.volume }, store.set(K.stock, S.stock);
+    if (['strength','volume'].includes(f)) S.stock[it.id] = { form: it.form, strength: it.strength, mode: it.mode, volume: it.volume }, store.set(K.stock, S.stock);
     if (['val','strength','volume'].includes(f)) { updateItem(it); renderBar(); return; }   // 숫자 입력 중에는 카드 전체를 다시 그리지 않음 (포커스 유지)
     render(); saveDraft();
   });
@@ -599,6 +600,8 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
       const v = fromMg(mg, it.unit, S.bw); if (v != null) it.val = +sig(v);
       S.units[it.id] = S.units[it.id] || {}; S.units[it.id][S.species] = it.unit; store.set(K.units, S.units);
     }
+    else if (f === 'freq') { it.freq = e.target.value; }
+    else if (f === 'mode') { it.mode = e.target.value; S.stock[it.id] = { form: it.form, strength: it.strength, mode: it.mode, volume: it.volume }; store.set(K.stock, S.stock); }
     else if (f === 'val') { it.val = e.target.value; }
     render(); saveDraft();
   });

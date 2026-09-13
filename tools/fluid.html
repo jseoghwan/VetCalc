@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>수액 치료 계산 · VECC</title>
+<meta name="description" content="수액 교정·쇼크 aliquot·전해질(Na·K·Ca)·당 교정 계산 — SACCM 3판 기반, 개/고양이">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#4453A3">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="VECC Hub">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+</head>
+<body>
+<style>
+:root{
+  --bg:#F3F4F7; --surface:#FFFFFF; --surface-2:#E9EBF1; --line:#D6D9E2; --line-strong:#B9BECB;
+  --ink:#1A1D26; --ink-2:#4A5063; --muted:#6F7588;
+  --venous:#4453A3; --venous-soft:#E5E8F6; --venous-ink:#2E3A80;
+  --arterial:#B3313B; --arterial-soft:#F8E4E5; --arterial-ink:#8C242C;
+  --input-bg:#FFF6D9; --input-line:#E0A92B; --input-ink:#5B4300; --input-focus:#F5C23A;
+  --ok:#2E7D4F; --ok-soft:#DFF2E6; --low:#2B67B3; --low-soft:#DDE9F8; --high:#C13A2E; --high-soft:#F9E1DE; --warn:#9A6A00; --warn-soft:#FBEFC9;
+  --shadow:0 1px 2px rgba(20,24,40,.06), 0 8px 24px -12px rgba(20,24,40,.18);
+  --radius:10px;
+  --accent:var(--venous); --accent-soft:var(--venous-soft); --accent-ink:var(--venous-ink);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111318; --surface:#1A1D25; --surface-2:#232733; --line:#2F3442; --line-strong:#454B5C;
+    --ink:#E9EBF1; --ink-2:#C0C5D3; --muted:#8F95A8;
+    --venous:#8B97E0; --venous-soft:#252B48; --venous-ink:#C6CDF6;
+    --arterial:#E0666E; --arterial-soft:#42232A; --arterial-ink:#F3B6BA;
+    --input-bg:#33290F; --input-line:#D9A83A; --input-ink:#F6DFA0; --input-focus:#F5C23A;
+    --ok:#6FCF97; --ok-soft:#1D3328; --low:#7FB2F0; --low-soft:#1E2E45; --high:#F08479; --high-soft:#432420; --warn:#E5B94A; --warn-soft:#3B3116;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111318; --surface:#1A1D25; --surface-2:#232733; --line:#2F3442; --line-strong:#454B5C;
+  --ink:#E9EBF1; --ink-2:#C0C5D3; --muted:#8F95A8;
+  --venous:#8B97E0; --venous-soft:#252B48; --venous-ink:#C6CDF6;
+  --arterial:#E0666E; --arterial-soft:#42232A; --arterial-ink:#F3B6BA;
+  --input-bg:#33290F; --input-line:#D9A83A; --input-ink:#F6DFA0; --input-focus:#F5C23A;
+  --ok:#6FCF97; --ok-soft:#1D3328; --low:#7FB2F0; --low-soft:#1E2E45; --high:#F08479; --high-soft:#432420; --warn:#E5B94A; --warn-soft:#3B3116;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+[hidden]{display:none!important}
+body{margin:0;padding-top:env(safe-area-inset-top);background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans KR",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;font-size:15px;line-height:1.55}
+body[data-mode="emg"]{--accent:var(--arterial);--accent-soft:var(--arterial-soft);--accent-ink:var(--arterial-ink)}
+.mono{font-family:"IBM Plex Mono","SFMono-Regular",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums;font-size:.93em}
+a{color:var(--accent)}
+h1,h2,h3,h4{margin:0;text-wrap:balance;line-height:1.25}
+p{margin:0}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+.top-inner{max-width:1120px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:14px}
+.brand{display:flex;align-items:baseline;gap:10px;flex:1 1 auto;min-width:0}
+.brand h1{font-size:17px;font-weight:700;letter-spacing:-.01em;white-space:nowrap}
+.brand .home{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;padding:4px 8px 4px 4px;border-radius:6px;white-space:nowrap;align-self:center}
+.brand .home:hover{background:var(--surface-2);color:var(--ink)}
+.seg{display:inline-flex;border:1px solid var(--line-strong);border-radius:999px;padding:3px;background:var(--surface-2);gap:2px}
+.seg button{border:0;background:transparent;color:var(--ink-2);font-weight:600;font-size:13px;padding:5px 14px;border-radius:999px;cursor:pointer;min-height:30px}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.seg.sm button{font-size:12px;padding:3px 10px;min-height:26px}
+.tabs{max-width:1120px;margin:0 auto;padding:0 16px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{border:0;background:transparent;font-size:14px;font-weight:600;color:var(--muted);padding:10px 12px 11px;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap;display:flex;align-items:center;gap:7px}
+.tab .dot{width:8px;height:8px;border-radius:50%;background:currentColor;opacity:.55}
+.tab[aria-selected="true"]{color:var(--venous);border-bottom-color:var(--venous)}
+.tab[aria-selected="true"] .dot{opacity:1}
+.tab .cnt{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;background:var(--surface-2);color:var(--ink-2);padding:0 6px;border-radius:999px;line-height:1.6}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+
+main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
+.panel{display:none}
+.panel.active{display:block}
+.sec{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;margin:0 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.sec h2{font-size:15px;font-weight:700}
+.sec .kicker{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);padding:2px 7px;border-radius:4px;background:var(--accent-soft);line-height:1.5}
+.sec .note{font-size:12px;color:var(--muted);margin-left:auto;text-align:right;line-height:1.5}
+@media (max-width:640px){.sec .note{flex-basis:100%;margin-left:0;text-align:left}}
+
+/* inputs */
+.inputs{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:22px}
+.inputs-head{display:flex;align-items:center;gap:10px;padding:11px 16px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.inputs-head h2{font-size:14px;font-weight:700}
+.legend{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;color:var(--muted);margin-left:auto;white-space:nowrap}
+.legend i{display:inline-block;width:14px;height:10px;border-radius:2px;background:var(--input-bg);border:1.5px solid var(--input-line)}
+.inputs-body{padding:12px 16px 4px}
+.igroup{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px 12px;padding-bottom:12px}
+@media (max-width:480px){.igroup{grid-template-columns:1fr 1fr}}
+.field{display:flex;flex-direction:column;gap:3px;min-width:0}
+.field label{font-size:12.5px;font-weight:600;color:var(--ink-2);display:flex;justify-content:space-between;align-items:baseline;gap:6px;line-height:1.4;white-space:nowrap}
+.field label .u{font-weight:500;color:var(--muted);font-size:11px;flex-shrink:0}
+.field input,.field select{font-family:"IBM Plex Mono",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums;font-size:17px;font-weight:500;color:var(--input-ink);background:var(--input-bg);border:1.5px solid var(--input-line);border-radius:7px;padding:7px 10px;width:100%;min-width:0;-moz-appearance:textfield;line-height:1.3}
+.field input[type="text"]{font-family:inherit;font-size:15px}
+.field select{font-family:inherit;font-size:14px;appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--input-ink) 50%),linear-gradient(135deg,var(--input-ink) 50%,transparent 50%);background-position:calc(100% - 16px) 55%,calc(100% - 11px) 55%;background-size:5px 5px;background-repeat:no-repeat;padding-right:28px}
+.field input::-webkit-outer-spin-button,.field input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.field input:focus,.field select:focus{outline:0;border-color:var(--input-focus);box-shadow:0 0 0 3px color-mix(in srgb,var(--input-focus) 35%,transparent)}
+.field input::placeholder{color:var(--muted);opacity:.7;font-weight:400}
+.field .ref{font-size:10.5px;color:var(--muted);font-family:"IBM Plex Mono",monospace;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.field.wide{grid-column:span 2}
+@media (max-width:480px){.field.wide{grid-column:1 / -1}}
+.field.plain select,.field.plain input{background:var(--surface);border-color:var(--line-strong);color:var(--ink)}
+
+.chip{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:999px;line-height:1.5;white-space:nowrap}
+.chip.high{color:var(--high);background:var(--high-soft)}
+.chip.warn{color:var(--warn);background:var(--warn-soft)}
+.chip.ok{color:var(--ok);background:var(--ok-soft)}
+.chip.na{color:var(--muted);background:var(--surface-2)}
+.chip.v{color:var(--venous-ink);background:var(--venous-soft)}
+.ibtn{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-2);font-size:12.5px;font-weight:600;padding:5px 10px;border-radius:7px;cursor:pointer;white-space:nowrap;min-height:30px}
+.ibtn:hover{background:var(--surface-2);color:var(--ink)}
+.ibtn.danger:hover{color:var(--high);border-color:var(--high)}
+.ibtn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.ibtn.primary:hover{background:var(--accent-ink);border-color:var(--accent-ink);color:#fff}
+.ibtn[aria-expanded="true"]{background:var(--accent-soft);color:var(--accent-ink);border-color:transparent}
+.ibtn:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+/* result strip inside card */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:0 14px 12px}
+@media (max-width:640px){.tiles{grid-template-columns:1fr 1fr}}
+.tile{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;min-width:0}
+.tile .k{font-size:12px;font-weight:600;color:var(--ink-2);line-height:1.5;display:flex;justify-content:space-between;gap:6px}
+.tile .k small{font-weight:500;color:var(--muted);font-size:11px;white-space:nowrap}
+.tile .v{font-family:"IBM Plex Mono",Menlo,monospace;font-variant-numeric:tabular-nums;font-size:20px;font-weight:600;line-height:1.1;letter-spacing:-.01em;white-space:nowrap}
+.tile .v small{font-family:"IBM Plex Sans KR",sans-serif;font-size:12px;font-weight:500;color:var(--muted);margin-left:3px;letter-spacing:0}
+.tile .r{font-size:10.5px;color:var(--muted);font-family:"IBM Plex Mono",monospace;line-height:1.5;margin-top:1px}
+.tile.accent{border-color:color-mix(in srgb,var(--accent) 55%,var(--line));background:color-mix(in srgb,var(--accent-soft) 45%,var(--surface))}
+.tile.accent .v{color:var(--accent-ink)}
+.tile.bad{border-color:color-mix(in srgb,var(--high) 55%,var(--line))}
+.tile.bad .v{color:var(--high)}
+.tile.warn .v{color:var(--warn)}
+.rx-foot{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;padding:0 14px 12px;font-size:12.5px;color:var(--muted)}
+.rx-foot .grow{flex:1 1 auto}
+
+/* callouts + empty */
+.callout{border-left:3px solid var(--accent);background:var(--surface);border-radius:0 8px 8px 0;padding:10px 14px;font-size:13.5px;line-height:1.65;color:var(--ink-2);margin-top:12px}
+.callout.warn{border-left-color:var(--warn)}
+.callout b{color:var(--ink)}
+.callout.ref{border-left:3px dashed var(--line-strong);background:transparent;color:var(--muted);font-size:13px;padding:6px 14px}
+.empty{border:1px dashed var(--line-strong);border-radius:var(--radius);padding:26px 16px;text-align:center;color:var(--muted);font-size:14px;line-height:1.6}
+.empty b{color:var(--ink-2);font-weight:600}
+
+.foot{margin-top:40px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 18px}
+.sw-toast{position:fixed;left:50%;bottom:calc(64px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);opacity:0;background:var(--ink);color:var(--bg);font-size:13px;font-weight:600;padding:9px 14px;border-radius:999px;box-shadow:0 6px 20px -6px rgba(0,0,0,.4);z-index:50;pointer-events:none;transition:opacity .25s,transform .25s;white-space:nowrap}
+.sw-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media (prefers-reduced-motion:reduce){.sw-toast{transition:none}}
+</style>
+
+<style>
+/* fluid-specific */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+@media (max-width:760px){.grid2{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:14px}
+.card-head{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.card-head h3{font-size:14.5px;font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.card-head .src{margin-left:auto;font-size:11px;color:var(--muted);text-decoration:none;white-space:nowrap}
+.card-head .src:hover{color:var(--accent)}
+.card-body{padding:12px 14px 4px}
+.card .tiles{padding:0 14px 12px}
+.tiles.t3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:640px){.tiles.t3{grid-template-columns:1fr 1fr}}
+.tiles.t2{grid-template-columns:repeat(2,1fr)}
+.tile .k{flex-wrap:wrap}
+.tile .v.sm{font-size:16px;white-space:normal}
+.tile .v.xs{font-size:14px;white-space:normal;font-weight:600}
+.comp{display:flex;flex-wrap:wrap;gap:4px 10px;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-2);padding:0 14px 12px}
+.comp b{color:var(--ink);font-weight:600}
+.phase{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 14px 12px}
+@media (max-width:480px){.phase{grid-template-columns:1fr}}
+.phase .p{border:1px dashed var(--line-strong);border-radius:8px;padding:9px 12px;font-size:12.5px;color:var(--ink-2);line-height:1.6}
+.phase .p b{display:block;color:var(--ink);font-size:13px}
+.phase .p .mono{color:var(--accent-ink);font-weight:600}
+.callout.bad{border-left-color:var(--high);background:var(--high-soft);color:var(--ink)}
+table.ref{width:100%;border-collapse:collapse;font-size:12.5px;line-height:1.5}
+table.ref th,table.ref td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:nowrap;background:var(--surface-2)}
+table.ref td.mono{font-size:12px}
+table.ref tr.cur td{background:var(--accent-soft);color:var(--accent-ink);font-weight:600}
+.tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.aliq{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 12px}
+.aliq button{border:1.5px solid var(--line-strong);background:var(--surface);color:var(--ink-2);font:inherit;font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:999px;cursor:pointer;min-height:32px;font-family:"IBM Plex Mono",monospace}
+.aliq button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.aliq button.over[aria-pressed="true"]{background:var(--high);border-color:var(--high)}
+.aliq .lbl{align-self:center;font-size:12px;color:var(--muted);margin-right:4px}
+.bar-meter{height:8px;background:var(--surface-2);border-radius:999px;overflow:hidden;margin:6px 0 2px;position:relative}
+.bar-meter i{display:block;height:100%;background:var(--accent);border-radius:999px;max-width:100%}
+.bar-meter i.over{background:var(--high)}
+.sub{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:10px 14px 4px}
+</style>
+
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <a class="home" href="../index.html" aria-label="홈으로">‹ 홈</a>
+      <h1>VECC Fluid Therapy</h1>
+    </div>
+    <div class="seg" role="group" aria-label="종 선택">
+      <button type="button" aria-pressed="true" data-sp="dog">DOG</button>
+      <button type="button" aria-pressed="false" data-sp="cat">CAT</button>
+    </div>
+  </div>
+  <nav class="tabs" role="tablist" aria-label="페이지">
+    <button class="tab" role="tab" id="tab-daily" data-panel="p-daily" aria-selected="true"><span class="dot"></span>수액 교정</button>
+    <button class="tab" role="tab" id="tab-shock" data-panel="p-shock" aria-selected="false"><span class="dot"></span>쇼크</button>
+    <button class="tab" role="tab" id="tab-lyte" data-panel="p-lyte" aria-selected="false"><span class="dot"></span>전해질·당</button>
+    <button class="tab" role="tab" id="tab-ref" data-panel="p-ref" aria-selected="false"><span class="dot"></span>참고표</button>
+  </nav>
+</header>
+
+<main>
+<!-- ===================== 수액 교정 ===================== -->
+<section class="panel active" id="p-daily" role="tabpanel" aria-labelledby="tab-daily">
+  <aside class="inputs">
+    <div class="inputs-head"><h2>환자 · 결핍 보충 계획</h2><span class="legend"><i></i> 노란 칸 = 직접 입력</span></div>
+    <div class="inputs-body">
+      <div class="igroup">
+        <div class="field"><label for="bw"><span>체중</span><span class="u">kg</span></label><input type="number" inputmode="decimal" step="0.1" min="0" id="bw" placeholder="0.0"><span class="ref">모든 탭 공통</span></div>
+        <div class="field plain"><label for="dehy"><span>탈수 추정</span><span class="u">%</span></label><select id="dehy">
+          <option value="0">0 — 감지 불가 (&lt;5%)</option><option value="5">5 — 점막 끈적</option><option value="6">6</option><option value="7" selected>7 — 긴장도 경도↓, 점막 건조</option><option value="8">8</option><option value="9">9 — 긴장도 뚜렷↓, 안구 함몰</option><option value="10">10</option><option value="11">11 — 피부 텐트 지속, 저혈량</option><option value="12">12 — 쇼크 (쇼크 탭 먼저)</option></select><span class="ref">Table 63.1 신체검사 소견</span></div>
+        <div class="field"><label for="dhrs"><span>결핍 보충 시간</span><span class="u">h</span></label><input type="number" inputmode="numeric" step="1" min="1" max="48" id="dhrs" value="12"><span class="ref">4–24 h (Ch.67)</span></div>
+        <div class="field"><label for="loss"><span>지속 손실 추정</span><span class="u">mL/day</span></label><input type="number" inputmode="decimal" step="10" min="0" id="loss" placeholder="0"><span class="ref">구토·설사·배액 등</span></div>
+        <div class="field plain"><label for="mmode"><span>유지량 방식</span></label><select id="mmode"><option value="rer" selected>RER — 70×BW^0.75 /24h</option><option value="lin">mL/kg/h 고정</option></select><span class="ref">RER 기반이 &lt;2·&gt;40 kg에서 정확</span></div>
+        <div class="field" id="f-mlkg" hidden><label for="mlkg"><span>유지 속도</span><span class="u">mL/kg/h</span></label><input type="number" inputmode="decimal" step="0.5" min="0" id="mlkg" value="3"><span class="ref">흔히 2–4, 비만·대형견 과대평가</span></div>
+        <div class="field plain"><label for="fluid"><span>수액 종류</span></label><select id="fluid"></select><span class="ref">Table 65.1 / 65.2</span></div>
+        <div class="field"><label for="uop"><span>측정 요량</span><span class="u">mL/h</span></label><input type="number" inputmode="decimal" step="1" min="0" id="uop" placeholder="—"><span class="ref">정상 1–2 mL/kg/h</span></div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="card">
+    <div class="card-head"><h3>수액 속도</h3><a class="src" href="saccm.html#sacc3-p6-c67">SACCM Ch.67 ›</a></div>
+    <div class="tiles" id="daily-tiles"></div>
+    <div class="phase" id="daily-phase"></div>
+    <div class="comp" id="fluid-comp"></div>
+  </div>
+
+  <div class="callout ref">결핍(mL) = 체중 × 1000 × 탈수% ÷ 100, 혈역학적으로 안정한 탈수 환자에서 4–24시간에 걸쳐 보충. 유지량은 RER(70×BW<sup>0.75</sup>) kcal = mL 기준. 저장성 수액·D5W는 bolus 금지. 신체검사 하루 2회 이상, 체중 하루 1회 이상 재평가. K⁺·dextrose 첨가는 <b>전해질·당</b> 탭.</div>
+</section>
+
+<!-- ===================== 쇼크 ===================== -->
+<section class="panel" id="p-shock" role="tabpanel" aria-labelledby="tab-shock">
+  <aside class="inputs">
+    <div class="inputs-head"><h2>등장성 정질액 — 총 쇼크 용량 <span class="chip v" id="shock-bw"></span></h2></div>
+    <div class="inputs-body">
+      <div class="igroup">
+        <div class="field"><label for="bw2"><span>체중</span><span class="u">kg</span></label><input type="number" inputmode="decimal" step="0.1" min="0" id="bw2" placeholder="0.0"><span class="ref">모든 탭 공통</span></div>
+        <div class="field plain"><label><span>총 쇼크 용량</span><span class="u">mL/kg</span></label><input type="text" readonly id="shockdose" value="80"><span class="ref">과 기준: 개 80 · 고양이 60</span></div>
+        <div class="field"><label for="naliq"><span>Aliquot 수</span><span class="u">개</span></label><input type="number" inputmode="numeric" step="1" min="1" max="10" id="naliq" value="4"><span class="ref">총량을 몇 번에 나눠 줄지</span></div>
+        <div class="field plain"><label for="amin"><span>Aliquot 투여 시간</span><span class="u">분</span></label><select id="amin"><option value="10">10</option><option value="15" selected>15</option><option value="20">20</option><option value="30">30</option></select><span class="ref">→ 펌프 mL/h</span></div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="card">
+    <div class="card-head"><h3>정질액 aliquot</h3><a class="src" href="saccm.html#sacc3-p6-c68">SACCM Ch.68 ›</a></div>
+    <div class="tiles t3" id="shock-tiles"></div>
+    <div class="aliq" id="aliq"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><h3>교질액 · 고장식염수 <span class="chip na">과 기준 5 mL/kg</span></h3><a class="src" href="saccm.html#sacc3-p6-c68">Table 68.1 ›</a></div>
+    <div class="tiles t3" id="colloid-tiles"></div>
+    <div class="callout ref" style="margin:0 14px 12px">교재 범위는 합성 교질액 2–5 mL/kg(10–30분, 총 개 10–20·고양이 5–10 mL/kg), 7–7.5% NaCl 3–5 mL/kg(10–20분)이나 과에서는 5 mL/kg로 통일. 고장식염수는 Na 감시, 탈수 환자·만성 저Na에 주의. HES는 대용량에서 응고 장애·AKI 위험.</div>
+  </div>
+
+  <div class="callout ref">aliquot마다 관류 지표(심박수·맥압·CRT·사지 온도·의식·혈압, 가능하면 lactate)를 재평가하고, 부작용이 보이거나 예정량 전에 개선되면 속도를 줄이거나 중단. 쇼크 전체 용량이 필요한 경우는 드묾. SSC 2016: 패혈증 유발 저혈압은 첫 3시간 내 정질액 ≥30 mL/kg, 초기 MAP 목표 65 mmHg. 혈액 제제는 Transfusion 탭.</div>
+</section>
+
+<!-- ===================== 전해질 · 당 ===================== -->
+<section class="panel" id="p-lyte" role="tabpanel" aria-labelledby="tab-lyte">
+  <aside class="inputs">
+    <div class="inputs-head"><h2>측정값</h2><span class="legend"><i></i> 비어 있으면 계산 안 함</span></div>
+    <div class="inputs-body">
+      <div class="igroup">
+        <div class="field"><label for="bw3"><span>체중</span><span class="u">kg</span></label><input type="number" inputmode="decimal" step="0.1" min="0" id="bw3" placeholder="0.0"></div>
+        <div class="field"><label for="na"><span>Na⁺</span><span class="u">mEq/L</span></label><input type="number" inputmode="decimal" step="1" min="0" id="na" placeholder="—"></div>
+        <div class="field"><label for="k"><span>K⁺</span><span class="u">mEq/L</span></label><input type="number" inputmode="decimal" step="0.1" min="0" id="k" placeholder="—"></div>
+        <div class="field"><label for="ica"><span>iCa</span><span class="u">mmol/L</span></label><input type="number" inputmode="decimal" step="0.01" min="0" id="ica" placeholder="—"><span class="ref">저Ca 개 &lt;1.25 · 고양이 &lt;1.1</span></div>
+        <div class="field"><label for="glu"><span>혈당</span><span class="u">mg/dL</span></label><input type="number" inputmode="decimal" step="1" min="0" id="glu" placeholder="—"><span class="ref">저혈당 ≤60</span></div>
+        <div class="field"><label for="rate"><span>수액 속도</span><span class="u">mL/h</span></label><input type="number" inputmode="decimal" step="1" min="0" id="rate" placeholder="—"><span class="ref" id="rate-ref">수액 교정 탭 계획 속도</span></div>
+        <div class="field plain"><label for="bag"><span>수액백</span><span class="u">mL</span></label><select id="bag"><option value="250">250</option><option value="500">500</option><option value="1000" selected>1000</option></select><span class="ref">첨가제 계산 기준</span></div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Na -->
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><h3>고Na혈증 — 자유수 결핍</h3><a class="src" href="saccm.html#sacc3-p5-c55">SACCM Ch.55 ›</a></div>
+      <div class="card-body"><div class="igroup" style="grid-template-columns:1fr 1fr">
+        <div class="field"><label for="natgt"><span>목표 Na⁺</span><span class="u">mEq/L</span></label><input type="number" inputmode="decimal" step="1" min="0" id="natgt" value="150"><span class="ref">정상 상한 근처</span></div>
+        <div class="field plain"><label for="narate"><span>하강 속도</span><span class="u">mEq/L/h</span></label><select id="narate"><option value="0.5">0.5 — 무증상</option><option value="1" selected>1 — 무증상</option><option value="2">2 — CNS 증상</option></select></div>
+      </div></div>
+      <div class="tiles t3" id="na-tiles"></div>
+      <div class="callout ref" style="margin:0 14px 12px">자유수(D5W)만으로는 탈수 교정·유지 요구량을 채우지 못하므로 정질액과 함께. 급성 Na 중독(소금 섭취·NaHCO₃ 과량)은 즉시 교정 — ≤12시간 분할, 가능하면 투석. 소생 수액은 환자 Na ±6 mEq/L 이내.</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h3>저Na혈증 (증상) — 3% NaCl</h3><a class="src" href="saccm.html#sacc3-p5-c55">SACCM Ch.55 ›</a></div>
+      <div class="tiles t2" id="hypo-tiles"></div>
+      <div class="callout warn" style="margin:0 14px 12px">급성(48시간 내)이면 ~5 mEq/L 즉시 상승 후 3% NaCl 0.5–2 mL/kg/h로 참고 범위 하한까지. 만성·불명이면 첫 24시간 ≤10 mEq/L, 이후 매 24시간 ≤8 mEq/L (ODS 위험). 동반 저K 교정이 Na 교정을 가속함에 주의. 급격한 Na 하강·뇌부종: 7–7.5% NaCl 3–5 mL/kg/20분 또는 mannitol 0.5–1 g/kg/20–30분.</div>
+    </div>
+  </div>
+
+  <!-- K -->
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><h3>저K혈증 — KCl 첨가</h3><a class="src" href="saccm.html#sacc3-p5-c56">SACCM Ch.56 Table 56.1 ›</a></div>
+      <div class="card-body"><div class="igroup" style="grid-template-columns:1fr 1fr">
+        <div class="field"><label for="kconc"><span>KCl 제제 농도</span><span class="u">mEq/mL</span></label><input type="number" inputmode="decimal" step="0.1" min="0" id="kconc" value="2"><span class="ref">40 mEq/20 mL = 2</span></div>
+        <div class="field plain"><label><span>&nbsp;</span></label><span class="ref" id="k-row" style="font-size:12px;white-space:normal;padding-top:8px">—</span></div>
+      </div></div>
+      <div class="tiles t3" id="k-tiles"></div>
+      <div id="k-warn"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h3>고K혈증 응급 <span class="chip high" id="hk-chip" hidden>K &gt;7.5</span></h3><a class="src" href="saccm.html#sacc3-p5-c56">Table 56.2 ›</a></div>
+      <div class="tiles t2" id="hk-tiles"></div>
+      <div class="callout ref" style="margin:0 14px 12px">모든 고K: 외인성 K 중단, ECG·혈압 감시, 요 배설 감소 원인(요도 폐색·uroabdomen·부신) 확인. 무증상·요량 정상·K 5.5–6.5는 재수화만으로 교정 가능. K &gt;7.5는 심독성 길항(Ca) → 세포내 이동(dextrose/insulin, β-agonist). NaHCO₃ 1–2 mEq/kg 서서히는 드물게 사용. 부신피질기능저하증은 insulin 0.25 U/kg.</div>
+    </div>
+  </div>
+
+  <!-- Ca · 당 -->
+  <div class="grid2">
+    <div class="card">
+      <div class="card-head"><h3>저Ca혈증 — Calcium gluconate 10%</h3><a class="src" href="saccm.html#sacc3-p5-c57">SACCM Ch.57 Table 57.2 ›</a></div>
+      <div class="tiles t2" id="ca-tiles"></div>
+      <div class="callout ref" style="margin:0 14px 12px">서서히 IV, ECG 감시 — 서맥·QT 단축 시 중단. Ca는 SC 금지(농양·괴사·석회화), bicarbonate 함유 수액과 혼합 금지(침전). 10% calcium gluconate = 원소 Ca 9.3 mg/mL; CRI 용량은 원소 Ca 기준. Calcium chloride 10%(27.2 mg/mL)는 혈관 밖 유출 시 극히 부식성. 경구 유지 25–50 mg/kg/day (원소 Ca).</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h3>저혈당 — Dextrose</h3><a class="src" href="saccm.html#sacc3-p7-c75">SACCM Ch.75 Table 75.1 ›</a></div>
+      <div class="card-body"><div class="igroup" style="grid-template-columns:1fr 1fr">
+        <div class="field plain"><label for="dil"><span>Bolus 희석</span></label><select id="dil"><option value="2">1:2</option><option value="3">1:3</option><option value="4">1:4</option></select><span class="ref">최소 1:2 (phlebitis)</span></div>
+        <div class="field plain"><label for="dex"><span>CRI 목표 농도</span><span class="u">%</span></label><select id="dex"><option value="2.5" selected>2.5</option><option value="5">5</option></select><span class="ref">50% dextrose 첨가량</span></div>
+      </div></div>
+      <div class="tiles t2" id="glu-tiles"></div>
+      <div class="callout ref" style="margin:0 14px 12px">증상 있는 저혈당은 원인과 무관하게 IV dextrose가 초기 치료 — 목표는 증상 소실, 5분에 걸쳐 투여. 의식이 명료하면 소량 잦은 식사, 아니면 원인 해결까지 2.5–5% CRI. D5W 단독 수액은 중증 저Na 위험. Insulinoma 의심 시 큰 bolus 회피(반동성 저혈당) → glucagon CRI 5–10 ng/kg/min. 유지에 &gt;10% dextrose가 필요하면 central line.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 참고표 ===================== -->
+<section class="panel" id="p-ref" role="tabpanel" aria-labelledby="tab-ref">
+  <div class="card"><div class="card-head"><h3>Table 63.1 간질 탈수 % 추정</h3><a class="src" href="saccm.html#sacc3-p6-c63">Ch.63 ›</a></div>
+    <div class="tblwrap"><table class="ref"><tr><th>추정 탈수</th><th>신체검사 소견</th></tr>
+      <tr><td class="mono">&lt;5%</td><td>감지 불가</td></tr><tr><td class="mono">5–6%</td><td>점막 끈적(tacky) ± 피부 긴장도 약간 변화</td></tr><tr><td class="mono">6–8%</td><td>피부 긴장도 경도 감소, 점막 건조</td></tr><tr><td class="mono">8–10%</td><td>피부 긴장도 뚜렷한 감소, 안구 함몰</td></tr><tr><td class="mono">10–12%</td><td>피부 텐트 지속, 각막 광택 소실, 저혈량 증거</td></tr><tr><td class="mono">&gt;12%</td><td>저혈량성 쇼크, 사망</td></tr></table></div></div>
+
+  <div class="card"><div class="card-head"><h3>Table 56.1 정맥 K⁺ 보충 지침</h3><a class="src" href="saccm.html#sacc3-p5-c56">Ch.56 ›</a></div>
+    <div class="tblwrap"><table class="ref" id="ktable"></table></div>
+    <div class="callout ref" style="margin:0 14px 12px">최대 속도는 0.5 mEq/kg/h를 넘지 않도록. K 추가 시 환자 쪽 밸브를 잠그고 수액백을 충분히 혼합.</div></div>
+
+  <div class="card"><div class="card-head"><h3>Table 65.1 · 65.2 정질액 조성</h3><a class="src" href="saccm.html#sacc3-p6-c65">Ch.65 ›</a></div>
+    <div class="tblwrap"><table class="ref" id="comptable"></table></div></div>
+
+  <div class="card"><div class="card-head"><h3>Table 68.1 쇼크 수액 (교재 원 범위)</h3><a class="src" href="saccm.html#sacc3-p6-c68">Ch.68 ›</a></div>
+    <div class="tblwrap"><table class="ref">
+      <tr><th>수액</th><th>1회 bolus</th><th>총 쇼크 용량</th><th>비고</th></tr>
+      <tr><td>등장성 정질액</td><td class="mono">10–20 mL/kg, 15–30분</td><td class="mono">개 60–90 · 고양이 45–60 mL/kg</td><td>빠른 재분포(75% 간질) → 확장 효과 짧음; COP↓·투과성↑ 환자는 부종 위험</td></tr>
+      <tr><td>합성 교질액</td><td class="mono">2–5 mL/kg, 10–30분</td><td class="mono">개 10–20 · 고양이 5–10 mL/kg</td><td>지속 확장; 대용량 시 응고 장애, AKI 유발·악화 가능</td></tr>
+      <tr><td>고장식염수 7–7.5%</td><td class="mono">3–5 mL/kg, 10–20분</td><td class="mono">—</td><td>Na 감시; 탈수 환자 간질 고갈 악화; 23.4% NaCl + 교질액 1:2 혼합 가능</td></tr>
+    </table></div></div>
+
+  <div class="card"><div class="card-head"><h3>수액 치료 중 감시</h3><a class="src" href="saccm.html#sacc3-p6-c67">Ch.67 ›</a></div>
+    <div class="tblwrap"><table class="ref">
+      <tr><th>범주</th><th>항목</th></tr>
+      <tr><td>신체검사 (하루 ≥2회)</td><td>의식, 점막 색·습윤도, CRT, 피부 긴장도, 심박수, 맥박 강도, 호흡수·노력, 체온(사지 포함)</td></tr>
+      <tr><td>흉부 청진</td><td>호흡음 증가, 수포음, 천명음, 부정맥·새 심잡음</td></tr>
+      <tr><td>체중</td><td>하루 ≥1회 — 급성 체중 변화의 90%는 체수분 (1 kg ≈ 1 L)</td></tr>
+      <tr><td>과부하 징후</td><td>장액성 콧물, 결막부종, 경정맥 팽창, 함요부종; 폐부종은 호흡수·노력↑ → 수포음 → 호흡곤란 순</td></tr>
+      <tr><td>요량</td><td>정상 1–2 mL/kg/h, 투여량과 비교</td></tr>
+      <tr><td>실험실</td><td>BUN·creatinine, 연속 PCV·TP, lactate, 전해질·혈당·산-염기</td></tr>
+    </table></div></div>
+</section>
+
+<div class="foot">
+  <span>수식·용량은 SACCM 3판(Ch.55, 56, 57, 63, 65, 67, 68, 75)을 참고해 과에서 정리한 것이며, 쇼크 용량(개 80·고양이 60 mL/kg, 교질액 5 mL/kg)은 과 기준입니다.</span>
+  <span>임상 판단의 보조 도구이며 최종 결정은 담당 수의사에게 있습니다.</span>
+</div>
+</main>
+
+<script src="../js/auth-gate.js"></script>
+<script>
+(function(){
+  'use strict';
+  const $ = (s, r=document) => r.querySelector(s), $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+  const esc = (s) => String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  const store = { get(k,d){ try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch(e){ return d; } }, set(k,v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} } };
+  const fmt = (n, d=0) => (n == null || !isFinite(n)) ? '—' : (Math.round(n * Math.pow(10,d)) / Math.pow(10,d)).toLocaleString('en-US', { maximumFractionDigits: d });
+  const rng = (a, b, d=0) => fmt(a,d) + '–' + fmt(b,d);
+
+  /* ---------- 데이터 (SACCM 3판 요약 + 과 기준) ---------- */
+  const FLUIDS = [   // Table 65.1 / 65.2
+    { id:'lrs',  name:"Lactated Ringer's (LRS)", grp:'등장성', osm:273, na:130, k:4,  cl:109, mg:'—', ca:'1.5–3', buf:'Lactate 28', dex:'—' },
+    { id:'pl148',name:'Plasma-Lyte 148',        grp:'등장성', osm:294, na:140, k:5,  cl:98,  mg:'1.5–3', ca:'—', buf:'Acetate 27 · Gluconate 23', dex:'—' },
+    { id:'nr',   name:'Normosol-R',             grp:'등장성', osm:294, na:140, k:5,  cl:98,  mg:'1.5–3', ca:'—', buf:'Acetate 27 · Gluconate 23', dex:'—' },
+    { id:'pla',  name:'Plasma-Lyte A',          grp:'등장성', osm:294, na:140, k:5,  cl:98,  mg:'3', ca:'—', buf:'Acetate 27 · Gluconate 23', dex:'—' },
+    { id:'ns',   name:'0.9% NaCl',              grp:'등장성', osm:308, na:154, k:0,  cl:154, mg:'—', ca:'—', buf:'—', dex:'—' },
+    { id:'hs',   name:'0.45% NaCl',             grp:'저장성', osm:154, na:77,  k:0,  cl:77,  mg:'—', ca:'—', buf:'—', dex:'—', hypo:true },
+    { id:'hsd',  name:'0.45% NaCl + 2.5% Dextrose', grp:'저장성', osm:280, na:77, k:0, cl:77, mg:'—', ca:'—', buf:'—', dex:'2.5%', hypo:true },
+    { id:'pl56', name:'Plasma-Lyte 56',         grp:'저장성', osm:110, na:40,  k:13, cl:40,  mg:'3', ca:'—', buf:'Acetate 16', dex:'—', hypo:true },
+    { id:'nm',   name:'Normosol-M + 5% Dextrose', grp:'저장성', osm:363, na:40, k:13, cl:40, mg:'3', ca:'—', buf:'Acetate 16', dex:'5%', hypo:true },
+    { id:'hlrs', name:'½ LRS + 2.5% Dextrose',  grp:'저장성', osm:263, na:65.5, k:2, cl:55, mg:'—', ca:'1.5', buf:'Lactate 14', dex:'2.5%', hypo:true },
+    { id:'d5w',  name:'D5W (5% Dextrose in Water)', grp:'자유수', osm:252, na:0, k:0, cl:0, mg:'—', ca:'—', buf:'—', dex:'5%', hypo:true }
+  ];
+  const KTABLE = [  // Table 56.1
+    { hi:2.0, k250:20, k1000:80, max:6,  label:'<2.0' },
+    { hi:2.5, k250:15, k1000:60, max:8,  label:'2.1–2.5' },
+    { hi:3.0, k250:10, k1000:40, max:12, label:'2.6–3.0' },
+    { hi:3.5, k250:7,  k1000:28, max:18, label:'3.1–3.5' },
+    { hi:5.0, k250:5,  k1000:20, max:25, label:'3.6–5.0' }
+  ];
+  const SHOCK_DOSE = { dog:80, cat:60 };   // 과 기준 총 쇼크 용량 (교재 개 60–90, 고양이 45–60)
+  const COLLOID = 5;                       // 과 기준 mL/kg (교재 HES 2–5, HTS 3–5)
+
+  /* ---------- 상태 ---------- */
+  const S = Object.assign({ species:'dog', bw:0, dehy:7, dhrs:12, loss:'', mmode:'rer', mlkg:3, fluid:'lrs', uop:'', naliq:4, amin:15, given:0,
+    na:'', k:'', ica:'', glu:'', rate:'', bag:1000, natgt:150, narate:1, kconc:2, dil:2, dex:2.5 }, store.get('fl:draft', {}));
+  const save = () => store.set('fl:draft', S);
+  const kRow = (k) => KTABLE.find(r => k <= r.hi + 1e-9) || null;
+  const bwOK = () => S.bw > 0;
+
+  /* ---------- 계산 ---------- */
+  function daily(){
+    const bw = S.bw; if (!(bw > 0)) return null;
+    const m = S.mmode === 'rer' ? 70 * Math.pow(bw, 0.75) / 24 : S.mlkg * bw;
+    const deficit = bw * 1000 * S.dehy / 100, hrs = Math.max(1, +S.dhrs || 12), lossH = (+S.loss || 0) / 24;
+    const rate1 = m + deficit / hrs + lossH, rate2 = m + lossH;
+    return { m, deficit, hrs, lossH, rate1, rate2, day1: rate1 * Math.min(hrs, 24) + rate2 * Math.max(0, 24 - hrs), x: m > 0 ? rate1 / m : null };
+  }
+  const gtt20 = (mlh) => mlh * 20 / 60;
+
+  /* ---------- 렌더: 수액 교정 ---------- */
+  function renderDaily(){
+    const d = daily(); const host = $('#daily-tiles'), ph = $('#daily-phase');
+    const f = FLUIDS.find(x => x.id === S.fluid) || FLUIDS[0];
+    const uop = S.uop !== '' && bwOK() ? (+S.uop) / S.bw : null;
+    if (!d) { host.innerHTML = `<div class="tile"><span class="k">유지량</span><span class="v">—</span><span class="r">체중을 입력하세요</span></div>`; ph.innerHTML = ''; }
+    else {
+      host.innerHTML = `
+        <div class="tile"><span class="k">유지량 <small>${S.mmode==='rer'?'RER':S.mlkg+' mL/kg/h'}</small></span><span class="v">${fmt(d.m,1)}<small>mL/h</small></span><span class="r">${fmt(d.m*24)} mL/day · ${fmt(d.m/S.bw,1)} mL/kg/h</span></div>
+        <div class="tile"><span class="k">결핍량 <small>${S.dehy}%</small></span><span class="v">${fmt(d.deficit)}<small>mL</small></span><span class="r">${d.hrs}h에 걸쳐 ${fmt(d.deficit/d.hrs,1)} mL/h</span></div>
+        <div class="tile"><span class="k">지속 손실</span><span class="v">${fmt(d.lossH,1)}<small>mL/h</small></span><span class="r">${fmt(+S.loss||0)} mL/day</span></div>
+        <div class="tile accent"><span class="k">총 속도 <small>첫 ${d.hrs}h</small></span><span class="v">${fmt(d.rate1)}<small>mL/h</small></span><span class="r">유지량 × ${fmt(d.x,1)} · ${fmt(d.rate1/S.bw,1)} mL/kg/h</span></div>`;
+      ph.innerHTML = `
+        <div class="p"><b>1단계 — 결핍 보충 중 (0–${d.hrs}h)</b><span class="mono">${fmt(d.rate1)} mL/h</span> · 20 gtt 세트 <span class="mono">${fmt(gtt20(d.rate1))} gtt/min</span> · micro <span class="mono">${fmt(d.rate1)} gtt/min</span><br>1일 예상 투여량 <span class="mono">${fmt(d.day1)} mL</span>${d.hrs < 24 ? ` (${d.hrs}h까지 ${fmt(d.rate1)} → 이후 ${fmt(d.rate2)} mL/h)` : ''}</div>
+        <div class="p"><b>2단계 — 결핍 보충 후 (유지 + 손실)</b><span class="mono">${fmt(d.rate2)} mL/h</span> · 20 gtt 세트 <span class="mono">${fmt(gtt20(d.rate2))} gtt/min</span><br>정상 요량 <span class="mono">${fmt(S.bw)}–${fmt(S.bw*2)} mL/h</span>${uop!=null?` · 측정 <span class="mono" style="color:${uop<1?'var(--high)':'inherit'}">${fmt(uop,2)} mL/kg/h</span>${uop<1?' (1 미만)':uop>2?' (2 초과)':''}`:''}</div>`;
+    }
+    $('#fluid-comp').innerHTML = `<span><b>${esc(f.name)}</b> ${f.grp}</span><span>${f.osm} mOsm/L</span><span>Na ${f.na}</span><span>K ${f.k}</span><span>Cl ${f.cl}</span><span>Mg ${f.mg}</span><span>Ca ${f.ca}</span><span>완충제 ${f.buf}</span>${f.dex!=='—'?`<span>Dextrose ${f.dex}</span>`:''}`
+      + (f.hypo ? `<span style="color:var(--warn);font-weight:600">저장성 — bolus 금지, 결핍 보충·쇼크에 부적합</span>` : '');
+    $('#rate-ref').textContent = d ? `수액 교정 탭 계획 속도 ${fmt(d.rate1)} mL/h (비우면 이 값)` : '수액 교정 탭 계획 속도';
+  }
+
+  /* ---------- 렌더: 쇼크 ---------- */
+  function renderShock(){
+    const bw = S.bw, sp = S.species, ok = bwOK(), dose = SHOCK_DOSE[sp];
+    $('#shockdose').value = dose; $('#shock-bw').textContent = `${sp==='dog'?'DOG':'CAT'} ${dose} mL/kg`;
+    const n = Math.max(1, Math.min(10, Math.round(+S.naliq || 4))); if (S.given > n) S.given = n;
+    const total = ok ? dose * bw : null, per = total != null ? total / n : null, perKg = dose / n, min = +S.amin;
+    const givenMl = per != null ? per * S.given : null, pct = S.given / n * 100;
+    $('#shock-tiles').innerHTML = `
+      <div class="tile"><span class="k">총 쇼크 용량</span><span class="v">${fmt(total)}<small>mL</small></span><span class="r">${dose} mL/kg × ${ok?bw+' kg':'체중'}</span></div>
+      <div class="tile accent"><span class="k">1 aliquot <small>${n}개 중 1</small></span><span class="v">${fmt(per)}<small>mL</small></span><span class="r">${fmt(perKg,1)} mL/kg · ${min}분 → 펌프 ${per!=null?fmt(per*60/min):'—'} mL/h</span></div>
+      <div class="tile${S.given>=n?' warn':''}"><span class="k">투여 완료</span><span class="v">${S.given}<small>/ ${n}</small></span><div class="bar-meter"><i style="width:${pct}%"></i></div><span class="r">${givenMl!=null?`${fmt(givenMl)} mL · ${fmt(perKg*S.given,1)} mL/kg`:'—'}${S.given>=n?' · 총량 도달 — 재평가':''}</span></div>`;
+    $('#aliq').innerHTML = `<span class="lbl">준 만큼 누르기</span>` + Array.from({length:n}, (_,i) => `<button type="button" data-a="${i+1}" aria-pressed="${i < S.given}">#${i+1}${per!=null?` ${fmt(per)}`:''}</button>`).join('') + (S.given ? `<button type="button" data-a="0" style="border-style:dashed">초기화</button>` : '');
+    const c = ok ? COLLOID * bw : null;
+    const tile = (name, note) => `<div class="tile"><span class="k">${name}<small>${COLLOID} mL/kg</small></span><span class="v">${fmt(c)}<small>mL</small></span><span class="r">${note}${c!=null?` · 10분 ${fmt(c*6)} · 20분 ${fmt(c*3)} mL/h`:''}</span></div>`;
+    $('#colloid-tiles').innerHTML = tile('Hetastarch (HES 6%)', '10–30분') + tile('Tetrastarch (Voluven 등)', '10–30분') + tile('고장식염수 7–7.5%', '10–20분 · ≤1 mL/kg/min');
+  }
+
+  /* ---------- 렌더: 전해질·당 ---------- */
+  function planRate(){ const d = daily(); return S.rate !== '' && +S.rate > 0 ? +S.rate : (d ? d.rate1 : null); }
+  function renderNa(){
+    const bw = S.bw, na = +S.na, tgt = +S.natgt, rate = +S.narate, ok = bwOK(); const host = $('#na-tiles');
+    if (!ok || !(na > 0) || !(tgt > 0) || na <= tgt)
+      host.innerHTML = `<div class="tile"><span class="k">자유수 결핍</span><span class="v">—</span><span class="r">${!ok?'체중':(!(na>0)?'Na⁺':(na<=tgt?'측정 Na가 목표 이하':'목표 Na⁺'))} 입력</span></div>`;
+    else {
+      const fwd = (na / tgt - 1) * 0.6 * bw, hrs = (na - tgt) / rate, mlh = fwd * 1000 / hrs;
+      host.innerHTML = `
+        <div class="tile accent"><span class="k">자유수 결핍</span><span class="v">${fmt(fwd,2)}<small>L</small></span><span class="r">(${na}÷${tgt} − 1) × 0.6 × ${bw}</span></div>
+        <div class="tile"><span class="k">교정 시간</span><span class="v">${fmt(hrs,1)}<small>h</small></span><span class="r">Δ ${fmt(na-tgt)} mEq/L ÷ ${rate}/h</span></div>
+        <div class="tile accent"><span class="k">D5W (또는 경구수)</span><span class="v">${fmt(mlh)}<small>mL/h</small></span><span class="r">유지 수액과 별도 · Na ${rate>=2?'2':'≤4'}시간마다 측정</span></div>`;
+    }
+    const m = (a) => ok ? fmt(a*bw,1) : '—';
+    $('#hypo-tiles').innerHTML = `
+      <div class="tile accent"><span class="k">접근 1 — 2 mL/kg / 20분</span><span class="v">${m(2)}<small>mL</small></span><span class="r">펌프 ${ok?fmt(2*bw*3):'—'} mL/h · 목표 +5 mEq/L, 재측정 후 반복</span></div>
+      <div class="tile"><span class="k">접근 2 — 1.5 mL/kg / 10분</span><span class="v">${m(1.5)}<small>mL</small></span><span class="r">펌프 ${ok?fmt(1.5*bw*6):'—'} mL/h · 최대 2회, +4–6 mEq/L</span></div>
+      <div class="tile"><span class="k">급성기 지속 — 0.5–2 mL/kg/h</span><span class="v sm">${ok?rng(0.5*bw,2*bw,1):'—'}<small>mL/h</small></span><span class="r">참고 범위 하한까지</span></div>
+      <div class="tile"><span class="k">뇌부종 — 7–7.5% NaCl 3–5 mL/kg</span><span class="v sm">${ok?rng(3*bw,5*bw,1):'—'}<small>mL</small></span><span class="r">20분 · 중심정맥 · mannitol 0.5–1 g/kg = 20% ${ok?rng(2.5*bw,5*bw,1):'—'} mL</span></div>`;
+  }
+  function renderK(){
+    const host = $('#k-tiles'), warn = $('#k-warn'), k = +S.k, row = S.k !== '' && k > 0 ? kRow(k) : null, ok = bwOK();
+    $('#k-row').textContent = row ? `K ${row.label} 행 — 1 L당 KCl ${row.k1000} mEq, 최대 ${row.max} mL/kg/h` : (S.k !== '' && k > 5 ? 'K > 5.0 — 보충 대상 아님' : 'K⁺를 입력하면 Table 56.1 행 선택');
+    if (!row) { host.innerHTML = `<div class="tile"><span class="k">KCl 추가량</span><span class="v">—</span><span class="r">${S.k!==''&&k>5?'보충 불필요':'K⁺ 입력'}</span></div>`; warn.innerHTML = ''; }
+    else {
+      const bag = +S.bag, meqBag = row.k1000 * bag / 1000, mlKcl = S.kconc > 0 ? meqBag / S.kconc : null;
+      const maxRate = ok ? row.max * S.bw : null, rate = planRate();
+      const deliv = (rate != null && ok) ? (row.k1000 * rate / 1000) / S.bw : null;
+      const over = maxRate != null && rate != null && rate > maxRate + 1e-9;
+      host.innerHTML = `
+        <div class="tile accent"><span class="k">KCl 추가 <small>${bag} mL 백</small></span><span class="v">${fmt(meqBag,1)}<small>mEq</small></span><span class="r">= ${fmt(mlKcl,1)} mL (${S.kconc} mEq/mL) · ${row.k1000} mEq/L</span></div>
+        <div class="tile${over?' bad':''}"><span class="k">최대 수액 속도</span><span class="v">${fmt(maxRate)}<small>mL/h</small></span><span class="r">${row.max} mL/kg/h${rate!=null?` · 계획 ${fmt(rate)} mL/h`:''}</span></div>
+        <div class="tile${deliv!=null&&deliv>0.5?' bad':''}"><span class="k">K⁺ 속도 <small>계획 속도 기준</small></span><span class="v">${fmt(deliv,2)}<small>mEq/kg/h</small></span><span class="r">상한 0.5 mEq/kg/h</span></div>`;
+      warn.innerHTML = over ? `<div class="callout bad" style="margin:0 14px 12px"><b>계획 속도 ${fmt(rate)} mL/h가 이 K 농도의 최대 속도 ${fmt(maxRate)} mL/h를 넘습니다.</b> 농도를 낮추거나(한 단계 아래 행) 결핍 보충 시간을 늘리세요.</div>` : '';
+    }
+    // 고K 응급 (Table 56.2)
+    const bw = S.bw, hk = S.k !== '' && k > 7.5; $('#hk-chip').hidden = !hk;
+    const r = (a,b,d=1) => ok ? rng(a*bw,b*bw,d) : '—';
+    $('#hk-tiles').innerHTML = `
+      <div class="tile${hk?' accent':''}"><span class="k">10% Ca gluconate 0.5–1.5 mL/kg</span><span class="v sm">${r(0.5,1.5)}<small>mL</small></span><span class="r">15–20분 서서히, ECG · 발현 3–5분 · K는 안 낮춤</span></div>
+      <div class="tile${hk?' accent':''}"><span class="k">50% dextrose 0.5–1 mL/kg</span><span class="v sm">${r(0.5,1)}<small>mL</small></span><span class="r">1:1 희석, 3–5분 · 발현 &lt;1h · 경증은 단독</span></div>
+      <div class="tile"><span class="k">Regular insulin 0.25–0.5 U/kg + dextrose</span><span class="v sm">${ok?rng(0.25*bw,0.5*bw,2):'—'}<small>U</small></span><span class="r">insulin 1 U당 dextrose 1 g(50% ${ok?rng(0.5*bw,1*bw,1):'—'} mL) 1:1 희석 IV, 이후 2.5–5% CRI 4–6h · 발현 15–30분</span></div>
+      <div class="tile"><span class="k">Terbutaline 0.01 mg/kg</span><span class="v sm">${ok?fmt(0.01*bw,3):'—'}<small>mg</small></span><span class="r">IM·SC·IV · 발현 20–40분 · NaHCO₃ 1–2 mEq/kg = ${r(1,2)} mEq (서서히, 드물게)</span></div>`;
+  }
+  function renderCa(){
+    const bw = S.bw, ok = bwOK(), ica = +S.ica, sp = S.species, low = S.ica !== '' && ica > 0 && ica < (sp==='dog'?1.25:1.1);
+    const r = (a,b,d=1) => ok ? rng(a*bw,b*bw,d) : '—';
+    $('#ca-tiles').innerHTML = `
+      <div class="tile${low?' accent':''}"><span class="k">급성 위기 bolus 0.5–1.5 mL/kg</span><span class="v sm">${r(0.5,1.5)}<small>mL</small></span><span class="r">= 50–150 mg/kg, 20–30분 서서히 효과 볼 때까지 · 20분 기준 펌프 ${ok?rng(1.5*bw,4.5*bw):'—'} mL/h</span></div>
+      <div class="tile${low?' accent':''}"><span class="k">유지 CRI 5–15 mg/kg/h <small>원소 Ca</small></span><span class="v sm">${ok?rng(5*bw/9.3,15*bw/9.3,1):'—'}<small>mL/h</small></span><span class="r">10% gluconate(9.3 mg/mL) 기준 · 원문 대안 1000–1500 mg/kg/day (42–63 mg/kg/h)</span></div>
+      <div class="tile"><span class="k">${sp==='dog'?'개':'고양이'} iCa 기준</span><span class="v sm">${S.ica!==''?fmt(ica,2):'—'}<small>mmol/L</small></span><span class="r">저Ca ${sp==='dog'?'<1.25':'<1.1'} · 고Ca ${sp==='dog'?'>1.5':'>1.4'}${low?' · <b style="color:var(--high)">저Ca</b>':''}</span></div>
+      <div class="tile"><span class="k">고Ca — 0.9% NaCl 4–6 mL/kg/h</span><span class="v sm">${r(4,6,0)}<small>mL/h</small></span><span class="r">탈수 교정 후 유지의 1.5–2배 이상 · furosemide 1–2 mg/kg = ${r(1,2)} mg (용적 확보 후)</span></div>`;
+  }
+  function renderGlu(){
+    const bw = S.bw, ok = bwOK(), glu = +S.glu, low = S.glu !== '' && glu > 0 && glu <= 60, dil = +S.dil, pct = +S.dex, bag = +S.bag;
+    const v50 = bag * pct / (50 - pct);
+    $('#glu-tiles').innerHTML = `
+      <div class="tile${low?' accent':''}"><span class="k">50% dextrose bolus 0.5–1 mL/kg</span><span class="v sm">${ok?rng(0.5*bw,1*bw,1):'—'}<small>mL</small></span><span class="r">= 0.25–0.5 g/kg · 희석 1:${dil} → 총 ${ok?rng(0.5*bw*(1+dil),1*bw*(1+dil),0):'—'} mL, 5분에 걸쳐 IV${low?' · <b style="color:var(--high)">혈당 ≤60</b>':''}</span></div>
+      <div class="tile"><span class="k">CRI ${pct}% — D50 첨가 <small>${bag} mL 백</small></span><span class="v sm">${fmt(v50,1)}<small>mL</small></span><span class="r">첨가 후 총 ${fmt(bag+v50)} mL · 교재: 2.5% = D50 50 + 정질액 950, 5% = 100 + 900</span></div>`;
+  }
+  function renderRef(){
+    const k = +S.k, cur = S.k !== '' && k > 0 ? kRow(k) : null;
+    $('#ktable').innerHTML = `<tr><th>혈청 K⁺ (mEq/L)</th><th>250 mL에 KCl (mEq)</th><th>1 L에 KCl (mEq)</th><th>최대 속도 (mL/kg/h)</th><th>${bwOK()?'이 환자 최대 (mL/h)':'—'}</th></tr>` +
+      KTABLE.map(r => `<tr class="${cur===r?'cur':''}"><td class="mono">${r.label}</td><td class="mono">${r.k250}</td><td class="mono">${r.k1000}</td><td class="mono">${r.max}</td><td class="mono">${bwOK()?fmt(r.max*S.bw):'—'}</td></tr>`).join('');
+    $('#comptable').innerHTML = `<tr><th>수액</th><th>mOsm/L</th><th>Na⁺</th><th>K⁺</th><th>Cl⁻</th><th>Mg²⁺</th><th>Ca²⁺</th><th>완충제 (mEq/L)</th><th>Dextrose</th></tr>` +
+      FLUIDS.map(f => `<tr class="${f.id===S.fluid?'cur':''}"><td>${esc(f.name)}<br><span style="font-size:11px;color:var(--muted)">${f.grp}</span></td><td class="mono">${f.osm}</td><td class="mono">${f.na||'—'}</td><td class="mono">${f.k||'—'}</td><td class="mono">${f.cl||'—'}</td><td class="mono">${f.mg}</td><td class="mono">${f.ca}</td><td class="mono">${f.buf}</td><td class="mono">${f.dex}</td></tr>`).join('')
+      + `<tr><td>3% NaCl</td><td class="mono">1026</td><td class="mono">513</td><td class="mono">—</td><td class="mono">513</td><td class="mono">—</td><td class="mono">—</td><td class="mono">—</td><td class="mono">—</td></tr>
+         <tr><td>7.5% NaCl</td><td class="mono">2566</td><td class="mono">1283</td><td class="mono">—</td><td class="mono">1283</td><td class="mono">—</td><td class="mono">—</td><td class="mono">—</td><td class="mono">—</td></tr>
+         <tr><td>23.4% NaCl</td><td class="mono">8000</td><td class="mono">4000</td><td class="mono">—</td><td class="mono">4000</td><td class="mono">—</td><td class="mono">—</td><td class="mono">—</td><td class="mono">—</td></tr>`;
+  }
+  function renderAll(){ renderDaily(); renderShock(); renderNa(); renderK(); renderCa(); renderGlu(); renderRef(); save(); }
+
+  /* ---------- 입력 바인딩 ---------- */
+  $('#fluid').innerHTML = FLUIDS.map(f => `<option value="${f.id}">${esc(f.name)}${f.hypo?' (저장성)':''}</option>`).join('');
+  const NUM = ['dhrs','mlkg','naliq','natgt','kconc'];                 // 숫자, 빈 값이면 유지
+  const OPT = ['loss','uop','na','k','ica','glu','rate'];              // 빈 값 허용
+  const SEL = ['dehy','mmode','fluid','amin','bag','narate','dil','dex'];
+  const BW  = ['bw','bw2','bw3'];
+  function syncInputs(){
+    BW.forEach(id => { $('#'+id).value = S.bw || ''; });
+    NUM.forEach(id => { $('#'+id).value = S[id]; });
+    OPT.forEach(id => { $('#'+id).value = S[id] === '' ? '' : S[id]; });
+    SEL.forEach(id => { $('#'+id).value = String(S[id]); });
+    $('#f-mlkg').hidden = S.mmode !== 'lin';
+    $$('.top .seg button[data-sp]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.sp === S.species)));
+  }
+  document.addEventListener('input', (e) => {
+    const id = e.target.id; if (!id || e.target.tagName === 'SELECT') return;
+    if (BW.includes(id)) { S.bw = +e.target.value || 0; BW.filter(x => x !== id).forEach(x => { $('#'+x).value = e.target.value; }); renderAll(); }
+    else if (NUM.includes(id)) { if (e.target.value !== '') S[id] = +e.target.value; renderAll(); }
+    else if (OPT.includes(id)) { S[id] = e.target.value === '' ? '' : +e.target.value; renderAll(); }
+  });
+  document.addEventListener('change', (e) => {
+    const id = e.target.id; if (!SEL.includes(id)) return;
+    S[id] = ['mmode','fluid'].includes(id) ? e.target.value : +e.target.value;
+    $('#f-mlkg').hidden = S.mmode !== 'lin';
+    renderAll();
+  });
+  $$('.top .seg button[data-sp]').forEach(b => b.addEventListener('click', () => { S.species = b.dataset.sp; syncInputs(); renderAll(); }));
+  $('#aliq').addEventListener('click', (e) => { const b = e.target.closest('button[data-a]'); if (!b) return; const a = +b.dataset.a; S.given = (a === S.given) ? a - 1 : a; renderAll(); });
+
+  /* ---------- 탭 ---------- */
+  $$('.tab').forEach(t => t.addEventListener('click', () => showTab(t.id)));
+  function showTab(id){ $$('.tab').forEach(t => { const on = t.id === id; t.setAttribute('aria-selected', String(on)); $('#' + t.dataset.panel).classList.toggle('active', on); }); }
+
+  syncInputs(); renderAll();
+})();
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('../sw.js').then((reg) => {
+      const showToast = (msg) => { const t = document.createElement('div'); t.className = 'sw-toast'; t.textContent = msg; document.body.appendChild(t); requestAnimationFrame(() => t.classList.add('show')); setTimeout(() => { t.classList.remove('show'); setTimeout(() => t.remove(), 400); }, 3200); };
+      const hadController = !!navigator.serviceWorker.controller; let refreshing = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => { if (refreshing || !hadController) return; refreshing = true; showToast('새 버전 적용 중…'); setTimeout(() => window.location.reload(), 700); });
+      reg.update().catch(() => {});
+    }).catch(() => {});
+  });
+}
+</script>
+</body>
+</html>
