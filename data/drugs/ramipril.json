@@ -1,0 +1,62 @@
+{
+ "id": "ramipril",
+ "name": "Ramipril",
+ "name_ko": "라미프릴",
+ "brand": [
+  "Altace",
+  "Vasotop"
+ ],
+ "class": "ACE 억제제",
+ "tags": [
+  "cardio",
+  "renal"
+ ],
+ "indication": "개 심부전(보조), 고양이 전신 고혈압; CKD·단백뇨 신증의 보조 치료",
+ "contraindication": "ACE 억제제 과민증, 폐색성 심질환(대동맥판 협착·HOCM), K 보존 이뇨제 병용 금기(UK 라벨). 탈수 환자는 급성 저혈압 위험 — 저혈량 위험군은 ½ 용량으로 시작해 1주간 증량. 간기능 저하 시 활성화 감소",
+ "adverse": "저혈압, 신기능 악화·고칼륨혈증(모니터링)",
+ "doses": [
+  {
+   "species": "dog",
+   "label": "심부전",
+   "route": "PO",
+   "low": 0.125,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "0.125로 시작, 폐울혈 정도에 따라 0.25까지"
+  },
+  {
+   "species": "cat",
+   "label": "전신 고혈압",
+   "route": "PO",
+   "low": 0.125,
+   "high": 0.25,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true,
+   "note": "0.125로 시작, 14일 후 SBP >160이면 0.25"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "capsule",
+   "mg": 1.25
+  },
+  {
+   "form": "capsule",
+   "mg": 2.5
+  },
+  {
+   "form": "capsule",
+   "mg": 5
+  },
+  {
+   "form": "capsule",
+   "mg": 10
+  }
+ ],
+ "monitoring": "혈압, 신장 수치·전해질(K), 임상 반응",
+ "compounding": null,
+ "reviewed": null
+}

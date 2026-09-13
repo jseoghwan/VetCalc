@@ -1,0 +1,69 @@
+{
+ "id": "clopidogrel",
+ "name": "Clopidogrel",
+ "name_ko": "클로피도그렐",
+ "brand": [
+  "Plavix"
+ ],
+ "class": "항혈소판제 (thienopyridine, P2Y12 억제)",
+ "tags": [
+  "cardio",
+  "antithrombotic"
+ ],
+ "indication": "혈전색전증 예방·재발 억제 — 고양이 ATE 후 유지, 개 IMHA·과응고 상태의 혈전 예방(중증 혈소판감소증 <30,000/µL 제외)",
+ "contraindication": "과민증, 활동성 출혈, 유전성 혈소판 기능 이상. 혈소판감소증·응고병증은 상대적 금기. 개는 중단 후 약 7일까지 혈소판 기능 회복 안 됨 — 선택 수술 시 5~7일 전 중단(고위험 혈전 환자는 유지)",
+ "adverse": "구토·식욕부진·설사(음식과 투여로 완화), 고양이 장기 투여 시 비재생성 빈혈 보고",
+ "doses": [
+  {
+   "species": "dog",
+   "label": "항혈소판 유지",
+   "route": "PO",
+   "low": 1,
+   "high": 4,
+   "unit": "mg/kg",
+   "freq": "q24h",
+   "default": true
+  },
+  {
+   "species": "dog",
+   "label": "부하 용량(첫날, 선택)",
+   "route": "PO",
+   "low": 4,
+   "high": 10,
+   "unit": "mg/kg",
+   "freq": "once"
+  },
+  {
+   "species": "cat",
+   "label": "ATE 유지·혈전 예방",
+   "route": "PO",
+   "low": 18.75,
+   "high": 18.75,
+   "unit": "mg/animal",
+   "freq": "q24h",
+   "default": true
+  },
+  {
+   "species": "cat",
+   "label": "ATE 부하 용량(진단 시 1회)",
+   "route": "PO",
+   "low": 37.5,
+   "high": 75,
+   "unit": "mg/animal",
+   "freq": "once"
+  }
+ ],
+ "strengths": [
+  {
+   "form": "tablet",
+   "mg": 75
+  },
+  {
+   "form": "tablet",
+   "mg": 300
+  }
+ ],
+ "monitoring": "출혈 징후, 임상 반응 (정량적 모니터링 권고 없음)",
+ "compounding": "매우 쓴맛 — 캡슐 충전 고려. 75 mg 정제 기반 경구 현탁액 안정성 자료 있음",
+ "reviewed": null
+}
