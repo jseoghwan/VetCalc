@@ -17,8 +17,6 @@
 </head>
 <body>
 <style>
-<body>
-<style>
 :root{
   --bg:#F3F4F7; --surface:#FFFFFF; --surface-2:#E9EBF1; --line:#D6D9E2; --line-strong:#B9BECB;
   --ink:#1A1D26; --ink-2:#4A5063; --muted:#6F7588;
@@ -91,7 +89,7 @@ button{font:inherit}
 .tab .cnt{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;background:var(--surface-2);color:var(--ink-2);padding:0 6px;border-radius:999px;line-height:1.6}
 .tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
 
-main{max-width:1120px;margin:0 auto;padding:20px 16px 96px}
+main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
 .panel{display:none}
 .panel.active{display:block}
 .sec{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;margin:0 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
@@ -140,9 +138,16 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 96px}
 /* drug cards */
 .rx-list{display:flex;flex-direction:column;gap:14px}
 .rx{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
-.rx-head{display:flex;align-items:center;gap:10px;padding:11px 14px;border-bottom:1px solid var(--line);flex-wrap:wrap}
-.rx-head .nm{display:flex;flex-direction:column;min-width:0;flex:1 1 auto}
-.rx-head h3{font-size:16px;font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.rx-head{display:flex;align-items:flex-start;gap:8px;padding:10px 10px 10px 14px;border-bottom:1px solid var(--line)}
+.rx-head .nm{display:flex;flex-direction:column;min-width:0;flex:1 1 auto;gap:1px}
+.rx-head h3{font-size:16px;font-weight:700;display:flex;align-items:center;gap:6px 8px;flex-wrap:wrap;line-height:1.3}
+.rx-head .acts{display:flex;gap:4px;flex-shrink:0;margin-top:-2px}
+.ico{width:34px;height:34px;border-radius:8px;border:1px solid transparent;background:transparent;color:var(--muted);display:grid;place-items:center;cursor:pointer;padding:0}
+.ico svg{width:18px;height:18px}
+.ico:hover{background:var(--surface-2);color:var(--ink)}
+.ico[aria-expanded="true"]{background:var(--accent-soft);color:var(--accent-ink)}
+.ico.danger:hover{color:var(--high);background:var(--high-soft)}
+.ico:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
 .rx-head .ko{font-size:12.5px;color:var(--muted);font-weight:500}
 .rx-head .cls{font-size:12px;color:var(--ink-2)}
 .chip{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:999px;line-height:1.5;white-space:nowrap}
@@ -158,9 +163,13 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 96px}
 .ibtn.primary:hover{background:var(--accent-ink);border-color:var(--accent-ink);color:#fff}
 .ibtn[aria-expanded="true"]{background:var(--accent-soft);color:var(--accent-ink);border-color:transparent}
 .ibtn:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
-.rx-body{padding:12px 14px 4px}
-.rx-body .igroup{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
-@media (max-width:480px){.rx-body .igroup{grid-template-columns:1fr 1fr}}
+.rx-body{padding:12px 14px 2px}
+.rx-body .igroup{grid-template-columns:repeat(6,1fr);gap:10px 8px}
+.rx-body .f2{grid-column:span 2}.rx-body .f3{grid-column:span 3}.rx-body .f4{grid-column:span 4}.rx-body .f6{grid-column:1 / -1}
+.rx-body .field input,.rx-body .field select{font-size:15px;padding:7px 8px}
+.rx-body .field select{padding-right:22px;background-position:calc(100% - 12px) 55%,calc(100% - 8px) 55%}
+.rx-body .field label{font-size:12px}
+.rx-body .field .ref{font-size:10px;white-space:normal}
 .rx-info{padding:10px 14px 12px;background:var(--surface-2);border-top:1px solid var(--line);font-size:13.5px;line-height:1.6;color:var(--ink-2);display:grid;gap:6px 14px;grid-template-columns:auto 1fr}
 .rx-info dt{font-weight:600;color:var(--ink);white-space:nowrap;font-size:12.5px;padding-top:1px}
 .rx-info dd{margin:0}
@@ -170,12 +179,12 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 96px}
 .rx-info dd.doses .cur{color:var(--accent-ink);font-weight:600}
 
 /* result strip inside card */
-.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;padding:0 14px 14px}
-@media (max-width:480px){.tiles{grid-template-columns:1fr 1fr}}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:0 14px 12px}
+@media (max-width:640px){.tiles{grid-template-columns:1fr 1fr}}
 .tile{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;min-width:0}
 .tile .k{font-size:12px;font-weight:600;color:var(--ink-2);line-height:1.5;display:flex;justify-content:space-between;gap:6px}
 .tile .k small{font-weight:500;color:var(--muted);font-size:11px;white-space:nowrap}
-.tile .v{font-family:"IBM Plex Mono",Menlo,monospace;font-variant-numeric:tabular-nums;font-size:21px;font-weight:600;line-height:1.1;letter-spacing:-.01em;white-space:nowrap}
+.tile .v{font-family:"IBM Plex Mono",Menlo,monospace;font-variant-numeric:tabular-nums;font-size:20px;font-weight:600;line-height:1.1;letter-spacing:-.01em;white-space:nowrap}
 .tile .v small{font-family:"IBM Plex Sans KR",sans-serif;font-size:12px;font-weight:500;color:var(--muted);margin-left:3px;letter-spacing:0}
 .tile .r{font-size:10.5px;color:var(--muted);font-family:"IBM Plex Mono",monospace;line-height:1.5;margin-top:1px}
 .tile.accent{border-color:color-mix(in srgb,var(--accent) 55%,var(--line));background:color-mix(in srgb,var(--accent-soft) 45%,var(--surface))}
@@ -222,6 +231,8 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 96px}
 .bar-inner{max-width:1120px;margin:0 auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .bar .sum{font-size:12.5px;color:var(--muted);flex:1 1 auto;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .bar .sum b{color:var(--ink);font-weight:600}
+.bar .ibtn{min-height:38px;padding:7px 14px}
+@media (max-width:640px){.bar .sum{flex-basis:100%;margin-bottom:-2px}.bar .ibtn{flex:1 1 0;text-align:center}.bar .ibtn.danger{flex:0 0 auto}}
 
 .foot{margin-top:40px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 18px}
 .sw-toast{position:fixed;left:50%;bottom:calc(64px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);opacity:0;background:var(--ink);color:var(--bg);font-size:13px;font-weight:600;padding:9px 14px;border-radius:999px;box-shadow:0 6px 20px -6px rgba(0,0,0,.4);z-index:50;pointer-events:none;transition:opacity .25s,transform .25s;white-space:nowrap}
@@ -258,8 +269,8 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 96px}
     <div class="inputs-body">
       <div class="igroup">
         <div class="field"><label for="bw"><span>체중</span><span class="u">kg</span></label><input type="number" inputmode="decimal" step="0.1" min="0" id="bw" placeholder="0.0"><span class="ref">BW</span></div>
-        <div class="field"><label for="days"><span>처방 일수</span><span class="u">일</span></label><input type="number" inputmode="numeric" step="1" min="1" id="days" value="7"><span class="ref">총량 = 1회량 × 회/일 × 일수</span></div>
-        <div class="field wide"><label for="alias"><span>별칭</span><span class="u">선택</span></label><input type="text" id="alias" placeholder="예: 말티즈 7세 M — 환자 이름·차트번호는 넣지 않음" maxlength="40"><span class="ref">저장·복사 시 제목으로 씀</span></div>
+        <div class="field"><label for="days"><span>처방 일수</span><span class="u">일</span></label><input type="number" inputmode="numeric" step="1" min="1" id="days" value="7"><span class="ref">총량 = 회/일 × 일수</span></div>
+        <div class="field wide"><label for="alias"><span>별칭</span><span class="u">선택</span></label><input type="text" id="alias" placeholder="예: 말티즈 7세 M" maxlength="40"><span class="ref">저장·복사 시 제목 · 환자 이름·차트번호는 넣지 않음</span></div>
       </div>
     </div>
   </aside>
@@ -373,7 +384,7 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 96px}
   }
   const fmt = (n, d) => n == null || !isFinite(n) ? '—' : (Math.round(n * Math.pow(10, d)) / Math.pow(10, d)).toString();
   const sig = (n) => n == null || !isFinite(n) ? '—' : (n >= 100 ? fmt(n,1) : n >= 10 ? fmt(n,2) : fmt(n,3));   // 18.75 같은 입력 정밀도를 잃지 않게
-  const tfmt = (t) => { const r = Math.round(t * 100) / 100; const w = Math.floor(r), f = r - w; const fr = f === 0 ? '' : f === 0.5 ? '½' : f === 0.25 ? '¼' : f === 0.75 ? '¾' : fmt(f,2).slice(1); return (w || !fr ? w : '') + fr; };
+  const tfmt = (t) => { const r = Math.round(t * 100) / 100; const w = Math.floor(r), f = Math.round((r - w) * 100) / 100; if (f === 0) return String(w); const fr = f === 0.5 ? '½' : f === 0.25 ? '¼' : f === 0.75 ? '¾' : null; return fr ? (w ? w + fr : fr) : fmt(r, 2); };
 
   /* ---------- 데이터 ---------- */
   function fetchDrug(id){
@@ -501,14 +512,14 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 96px}
     const tiles = c.mg == null
       ? `<div class="tiles"><div class="tile"><span class="k">1회 용량</span><span class="v">—</span><span class="r">${it.unit==='mg/animal'?'용량을 입력하세요':'체중과 용량을 입력하세요'}</span></div></div>`
       : `<div class="tiles">
-          <div class="tile accent${c.warn?' bad':''}"><span class="k">1회 용량</span><span class="v">${sig(c.mg)}<small>mg</small></span><span class="r">${c.range?`표준 ${sig(c.range.lo)}–${sig(c.range.hi)} mg`:(c.base?`표준 ${sig(toMg(c.base.low,c.base.unit,S.bw))} mg`:'&nbsp;')}</span></div>
-          <div class="tile"><span class="k">하루 <small>${freqLabel(it.freq)}</small></span><span class="v">${it.freq==='once'?'1회':sig(c.mg*c.n)+'<small>mg</small>'}</span><span class="r">${it.freq==='once'?'단회 투여':`${c.n}회 × ${c.days}일 = ${c.dosesTotal}회`}</span></div>
-          <div class="tile"><span class="k">총 필요량</span><span class="v">${sig(c.total)}<small>mg</small></span><span class="r">${+it.strength>0?`${fmt(c.rawT,2)} T 상당`:'규격 입력 필요'}</span></div>
+          <div class="tile accent${c.warn?' bad':''}"><span class="k">1회 용량 <small>${freqLabel(it.freq)}</small></span><span class="v">${sig(c.mg)}<small>mg</small></span><span class="r">${c.range?`표준 ${sig(c.range.lo)}–${sig(c.range.hi)} mg`:(c.base?`표준 ${sig(toMg(c.base.low,c.base.unit,S.bw))} mg`:'&nbsp;')}</span></div>
+          <div class="tile"><span class="k">총 필요량</span><span class="v">${sig(c.total)}<small>mg</small></span><span class="r">${it.freq==='once'?'단회 투여':`${c.n}회/일 × ${c.days}일 = ${c.dosesTotal}회`}</span></div>
           ${c.T != null ? (it.mode === 'suspension'
-            ? `<div class="tile accent"><span class="k">정제 수</span><span class="v">${tfmt(c.T)}<small>T</small></span><span class="r">${it.strength} mg × ${tfmt(c.T)} = ${sig(c.T*+it.strength)} mg</span></div>
-               <div class="tile${c.err!=null&&Math.abs(c.err)>=10?' warn':''}"><span class="k">1회 투여량</span><span class="v">${c.mlPer!=null?sig(c.mlPer)+'<small>mL</small>':'—'}</span><span class="r">${c.conc!=null?`${sig(c.conc)} mg/mL · 총 ${it.volume} mL`:'총 부피를 입력하세요'}</span></div>`
+            ? `<div class="tile accent"><span class="k">정제 수</span><span class="v">${tfmt(c.T)}<small>T</small></span><span class="r">${it.strength} mg × ${tfmt(c.T)} = ${sig(c.T*+it.strength)} mg → ${it.volume||'?'} mL</span></div>
+               <div class="tile${c.err!=null&&Math.abs(c.err)>=10?' warn':''}"><span class="k">1회 투여량</span><span class="v">${c.mlPer!=null?sig(c.mlPer)+'<small>mL</small>':'—'}</span><span class="r">${c.conc!=null?`${sig(c.conc)} mg/mL`:'총 부피를 입력하세요'}</span></div>`
             : `<div class="tile accent"><span class="k">정제 수</span><span class="v">${tfmt(c.T)}<small>T</small></span><span class="r">갈아서 ${c.dosesTotal}포 · 1포 ${tfmt(c.perDoseT)} T</span></div>
-               <div class="tile${c.err!=null&&Math.abs(c.err)>=10?' warn':''}"><span class="k">실제 1회 용량</span><span class="v">${sig(c.actual)}<small>mg</small></span><span class="r">표준 대비 ${c.err>=0?'+':''}${fmt(c.err,1)}%</span></div>`) : ''}
+               <div class="tile${c.err!=null&&Math.abs(c.err)>=10?' warn':''}"><span class="k">실제 1회 용량</span><span class="v">${sig(c.actual)}<small>mg</small></span><span class="r">표준 대비 ${c.err>=0?'+':''}${fmt(c.err,1)}%</span></div>`)
+            : `<div class="tile"><span class="k">정제 수</span><span class="v">—</span><span class="r">보유 규격을 입력하세요</span></div><div class="tile"><span class="k">실제 1회 용량</span><span class="v">—</span><span class="r">&nbsp;</span></div>`}
         </div>`;
     const compWarn = d.compounding && /안정성|피함|불확실/.test(d.compounding) && it.mode === 'suspension' ? `<div class="callout warn" style="margin:0 14px 12px"><b>조제 현탁액 주의</b> — ${esc(d.compounding)}</div>` : '';
     const info = `<dl class="rx-info" ${it.open?'':'hidden'} id="info-${it.uid}">
@@ -523,20 +534,22 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 96px}
     return `<article class="rx" data-uid="${it.uid}">
       <div class="rx-head">
         <div class="nm"><h3>${esc(d.name)} <span class="ko">${esc(d.name_ko||'')}</span> ${chips}</h3><span class="cls">${esc(d.class||'')}</span></div>
-        <button type="button" class="ibtn" data-act="info" aria-expanded="${it.open}" aria-controls="info-${it.uid}">약물 정보</button>
-        <button type="button" class="ibtn danger" data-act="remove" aria-label="${esc(d.name)} 삭제">삭제</button>
+        <div class="acts">
+          <button type="button" class="ico" data-act="info" aria-expanded="${it.open}" aria-controls="info-${it.uid}" aria-label="약물 정보" title="약물 정보"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></button>
+          <button type="button" class="ico danger" data-act="remove" aria-label="${esc(d.name)} 삭제" title="삭제"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+        </div>
       </div>
       ${info}
       <div class="rx-body">
         ${noSp ? `<div class="callout warn" style="margin:0 0 12px"><b>${S.species==='dog'?'개':'고양이'} 용량이 DB에 없습니다.</b> 직접 입력하거나 종을 확인하세요.</div>` : ''}
         <div class="igroup">
-          <div class="field wide plain"><label><span>표준 용량 선택</span><span class="u">${ds.length}개</span></label><select data-f="doseIdx"${noSp?' disabled':''}>${doseOpts||'<option value="0">—</option>'}</select><span class="ref">${c.base&&c.base.note?esc(c.base.note):(it.doseIdx===-1&&ov?'내가 저장한 기본값':'&nbsp;')}</span></div>
-          <div class="field"><label><span>용량</span><span class="u">${isCustom?'수정됨':'표준'}</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="val" value="${esc(it.val)}"><span class="ref">${c.base?(c.base.low===c.base.high?`표준 ${sig(c.base.low)}`:`표준 ${sig(c.base.low)}–${sig(c.base.high)}`)+' '+unitLabel(c.base.unit):'&nbsp;'}</span></div>
-          <div class="field plain"><label><span>단위</span></label><select data-f="unit">${unitOpts}</select><span class="ref">${it.unit!=='mg/animal'&&!(S.bw>0)?'체중 필요':'&nbsp;'}</span></div>
-          <div class="field plain"><label><span>간격</span></label><select data-f="freq">${freqOpts}</select><span class="ref">${it.freq==='once'?'일수 무시':`하루 ${freqN(it.freq)}회`}</span></div>
-          <div class="field"><label><span>보유 규격</span><span class="u">mg/T</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="strength" value="${esc(it.strength)}" list="st-${it.uid}"><datalist id="st-${it.uid}">${strengthOpts}</datalist><span class="ref">${(d.strengths||[]).map(s=>s.mg).join(' / ')||'—'} mg</span></div>
-          <div class="field plain"><label><span>조제 형태</span></label><select data-f="mode"><option value="tablet"${it.mode==='tablet'?' selected':''}>분말·캡슐 (포 분할)</option><option value="suspension"${it.mode==='suspension'?' selected':''}>현탁액 (총 mL)</option></select><span class="ref">&nbsp;</span></div>
-          ${it.mode==='suspension'?`<div class="field"><label><span>총 부피</span><span class="u">mL</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="volume" value="${esc(it.volume)}" placeholder="0"><span class="ref">정제 전량을 이 부피로</span></div>`:''}
+          <div class="field f6 plain"><label><span>표준 용량 선택</span><span class="u">${ds.length}개</span></label><select data-f="doseIdx"${noSp?' disabled':''}>${doseOpts||'<option value="0">—</option>'}</select><span class="ref">${c.base&&c.base.note?esc(c.base.note):(it.doseIdx===-1&&ov?'내가 저장한 기본값':'&nbsp;')}</span></div>
+          <div class="field f2"><label><span>용량</span><span class="u">${isCustom?'수정됨':'표준'}</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="val" value="${esc(it.val)}"><span class="ref">${c.base?(c.base.low===c.base.high?`표준 ${sig(c.base.low)}`:`표준 ${sig(c.base.low)}–${sig(c.base.high)}`)+' '+unitLabel(c.base.unit):'&nbsp;'}</span></div>
+          <div class="field f2 plain"><label><span>단위</span></label><select data-f="unit">${unitOpts}</select><span class="ref">${it.unit!=='mg/animal'&&!(S.bw>0)?'체중 필요':'&nbsp;'}</span></div>
+          <div class="field f2 plain"><label><span>간격</span></label><select data-f="freq">${freqOpts}</select><span class="ref">${it.freq==='once'?'일수 무시':`하루 ${freqN(it.freq)}회`}</span></div>
+          <div class="field f2"><label><span>보유 규격</span><span class="u">mg/T</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="strength" value="${esc(it.strength)}" list="st-${it.uid}"><datalist id="st-${it.uid}">${strengthOpts}</datalist><span class="ref">${(d.strengths||[]).map(s=>s.mg).join(' / ')||'—'} mg</span></div>
+          <div class="field ${it.mode==='suspension'?'f2':'f4'} plain"><label><span>조제 형태</span></label><select data-f="mode"><option value="tablet"${it.mode==='tablet'?' selected':''}>분말·캡슐 (포 분할)</option><option value="suspension"${it.mode==='suspension'?' selected':''}>현탁액 (총 mL)</option></select><span class="ref">&nbsp;</span></div>
+          ${it.mode==='suspension'?`<div class="field f2"><label><span>총 부피</span><span class="u">mL</span></label><input type="number" inputmode="decimal" step="any" min="0" data-f="volume" value="${esc(it.volume)}" placeholder="0"><span class="ref">정제 전량을 이 부피로</span></div>`:''}
         </div>
       </div>
       ${tiles}
