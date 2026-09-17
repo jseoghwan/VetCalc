@@ -21,6 +21,7 @@
   --ink:#1A1D26; --ink-2:#4A5063; --muted:#6F7588;
   --venous:#4453A3; --venous-soft:#E5E8F6; --venous-ink:#2E3A80;
   --arterial:#B3313B; --arterial-soft:#F8E4E5; --arterial-ink:#8C242C;
+  --learn:#2E7D4F;
   --shadow:0 1px 2px rgba(20,24,40,.06), 0 8px 24px -12px rgba(20,24,40,.18);
   --radius:12px;
 }
@@ -30,6 +31,7 @@
     --ink:#E9EBF1; --ink-2:#C0C5D3; --muted:#8F95A8;
     --venous:#8B97E0; --venous-soft:#252B48; --venous-ink:#C6CDF6;
     --arterial:#E0666E; --arterial-soft:#42232A; --arterial-ink:#F3B6BA;
+    --learn:#6FCF97;
     --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
   }
 }
@@ -50,6 +52,7 @@ a{color:inherit;text-decoration:none}
 .card h3{display:flex;align-items:center;gap:9px;font-size:15px;font-weight:700}
 .card h3::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--venous);flex-shrink:0}   /* 계산기 파랑 */
 .card.t h3::before{background:var(--arterial)}                                                              /* 교재 빨강 */
+.card.l h3::before{background:var(--learn)}                                                                 /* 학습 초록 */
 .card.soon{opacity:.6;box-shadow:none;border-style:dashed}
 .card.soon h3::before{background:var(--line-strong)}
 .note{margin-top:22px;padding:12px 14px;border-left:3px dashed var(--line-strong);font-size:12.5px;color:var(--muted);line-height:1.6}
@@ -85,6 +88,11 @@ a{color:inherit;text-decoration:none}
   <div class="grid">
     <a class="card t" href="tools/saccm.html"><h3>SACCM 3판 요약</h3></a>
     <a class="card t" href="tools/consensus.html"><h3>Consensus 요약</h3></a>
+  </div>
+
+  <div class="sec">학습</div>
+  <div class="grid">
+    <a class="card l" href="tools/cardio.html"><h3>Cardiovascular</h3></a>
   </div>
 
   <div class="sec">참고 자료</div>
