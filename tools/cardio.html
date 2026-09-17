@@ -182,6 +182,13 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
 .o2bar i{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:var(--arterial)}
 .o2bar b{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--ink)}
 
+/* 심장 조직 색 */
+:root{--myo:#D9A29E;--myo-line:#9C5A5E;--valve:#FFF6E6}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--myo:#7C4A50;--myo-line:#D3A0A4;--valve:#F8EAD2}}
+:root[data-theme="dark"]{--myo:#7C4A50;--myo-line:#D3A0A4;--valve:#F8EAD2}
+#lungs .fis{stroke:var(--line-strong);stroke-width:1;opacity:.6}
+#rbcBack circle,#rbcFront circle{stroke:var(--surface);stroke-width:.5}
+#chlab text{font-size:8.5px;font-weight:700;fill:#fff;text-anchor:middle;dominant-baseline:middle;paint-order:stroke;stroke:rgba(0,0,0,.28);stroke-width:1.6px;pointer-events:none}
 /* svg text */
 .stage text{font-family:"IBM Plex Sans KR",sans-serif;font-size:10.5px;fill:var(--ink-2)}
 .stage .n{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:11.5px;fill:var(--ink)}
@@ -278,48 +285,50 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
 
   <!-- ============ 그림 ============ -->
   <div class="card stage" id="stage">
-    <svg id="fig" viewBox="0 0 400 314" role="img" aria-label="심장 수축·이완과 폐순환·체순환 혈류 모식도">
-      <!-- 혈관 트랙 -->
-      <path id="trk-pa" fill="none" stroke-linecap="round"/>
-      <path id="trk-pv" fill="none" stroke-linecap="round"/>
-      <path id="trk-ve" fill="none" stroke-linecap="round"/>
-      <path id="trk-ar" fill="none" stroke-linecap="round"/>
-      <path id="trk-res-bg" fill="none" stroke="var(--surface)"/>
-      <path id="trk-res" fill="none"/>
-      <!-- 폐 -->
+    <svg id="fig" viewBox="0 0 400 362" role="img" aria-label="심장 4방 단면의 수축·이완, 판막 개폐와 폐순환·체순환 혈류 모식도">
+      <g id="cl" fill="none" stroke="none"></g>
+      <!-- 기관 · 폐 -->
+      <path id="trachea" d="M199,0 L199,30 M199,30 L185,46 M199,30 L213,46" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
       <g id="lungs">
-        <path id="lungL" d="M194,10 C168,6 140,22 138,50 C137,66 160,70 194,62 Z"/>
-        <path id="lungR" d="M206,10 C232,6 260,22 262,50 C263,66 240,70 206,62 Z"/>
+        <path id="lungL" d="M186,12 C168,2 132,12 116,40 C104,62 102,82 108,92 C134,98 168,96 186,90 C190,64 190,34 186,12 Z"/>
+        <path id="lungR" d="M212,12 C230,2 266,12 282,40 C294,62 296,82 290,92 C264,98 230,96 212,90 C208,64 208,34 212,12 Z"/>
+        <path class="fis" d="M114,52 C138,54 164,66 187,82 M284,52 C260,54 234,66 211,82" fill="none"/>
         <g id="edema" opacity="0"></g>
       </g>
       <!-- 조직 -->
-      <rect id="tissue" x="124" y="256" width="152" height="54" rx="10"/>
-      <!-- 적혈구 -->
-      <g id="rbc"></g>
+      <rect id="tissue" x="120" y="300" width="160" height="56" rx="12"/>
+      <g id="lanes" fill="none"></g>
+      <!-- 심장 뒤를 지나는 혈관 -->
+      <g id="ribBack"></g>
+      <g id="rbcBack"></g>
       <!-- 심장 -->
-      <g id="heart">
-        <ellipse id="peri" cx="200" cy="176" rx="58" ry="62" fill="none" stroke="var(--warn)" opacity="0"/>
-        <path id="ghostR" d="M198,146 C168,140 152,160 162,188 C170,208 187,218 197,226 Z" fill="none" stroke="var(--line-strong)" stroke-dasharray="3 3"/>
-        <path id="ghostL" d="M202,146 C232,140 248,160 238,188 C230,208 213,218 203,226 Z" fill="none" stroke="var(--line-strong)" stroke-dasharray="3 3"/>
-        <ellipse id="ra" cx="176" cy="133" rx="15" ry="10.5"/>
-        <ellipse id="la" cx="224" cy="133" rx="15" ry="10.5"/>
-        <path id="rv" d="M198,146 C168,140 152,160 162,188 C170,208 187,218 197,226 Z"/>
-        <path id="lv" d="M202,146 C232,140 248,160 238,188 C230,208 213,218 203,226 Z"/>
-        <text x="187" y="166" text-anchor="middle" class="s" style="fill:#fff;font-weight:700;font-size:8.5px">RV</text>
-        <text x="213" y="166" text-anchor="middle" class="s" style="fill:#fff;font-weight:700;font-size:8.5px">LV</text>
+      <g id="heart" transform="translate(196 178) rotate(-14) scale(0.92)">
+        <ellipse id="peri" cx="-1" cy="30" rx="76" ry="92"/>
+        <path id="ra"/><path id="la"/>
+        <path id="block"/>
+        <path id="myo"/>
+        <path id="rvc"/><path id="lvc"/>
+        <path id="neckR"/><path id="neckL"/>
+        <path id="ghost" fill="none"/>
+        <g id="avv" fill="none" stroke-linecap="round"><path/><path/><path/><path/></g>
       </g>
+      <!-- 심장 앞을 지나는 혈관 -->
+      <g id="ribFront"></g>
+      <g id="heartTop" transform="translate(196 178) rotate(-14) scale(0.92)">
+        <g id="slv" fill="none" stroke-linecap="round"><path/><path/><path/><path/></g>
+      </g>
+      <g id="rbcFront"></g>
       <!-- 라벨 -->
-      <text x="200" y="84" text-anchor="middle">폐 · SaO₂ <tspan class="n" id="t-sa">98</tspan>%</text>
-      <text x="394" y="140" text-anchor="end">MAP <tspan class="n" id="t-map">100</tspan></text>
-      <text x="394" y="155" text-anchor="end" class="s" id="t-bp">125/88 mmHg</text>
-      <text x="394" y="172" text-anchor="end">CO <tspan class="n" id="t-co">150</tspan></text>
-      <text x="394" y="300" text-anchor="end">세동맥 · SVR <tspan class="n" id="t-svr">100</tspan>%</text>
-      <text x="6" y="140">SvO₂ <tspan class="n" id="t-sv">74</tspan>%</text>
-      <text x="6" y="155" class="s">정맥 저장고 = preload</text>
-      <text x="6" y="300">정맥환류 <tspan class="n" id="t-pre">100</tspan>%</text>
-      <text x="200" y="244" text-anchor="middle">EF <tspan class="n" id="t-ef">60</tspan>% · SV <tspan class="n" id="t-svol">1.5</tspan> <tspan class="s">mL/kg</tspan></text>
-      <text x="200" y="291" text-anchor="middle" id="t-tis1">조직 · O₂ER <tspan class="n" id="t-er">24</tspan>%</text>
-      <text x="200" y="304" text-anchor="middle" class="s" id="t-tis2">VO₂ 7.0 · 공급 충분</text>
+      <g id="chlab"><text id="lb-ra">RA</text><text id="lb-la">LA</text><text id="lb-rv">RV</text><text id="lb-lv">LV</text></g>
+      <text x="394" y="16" text-anchor="end">폐 · SaO₂ <tspan class="n" id="t-sa">98</tspan>%</text>
+      <text x="394" y="186" text-anchor="end">MAP <tspan class="n" id="t-map">100</tspan></text>
+      <text x="394" y="200" text-anchor="end" class="s" id="t-bp">125/88 mmHg</text>
+      <text x="6" y="128">SvO₂ <tspan class="n" id="t-sv">74</tspan>%</text>
+      <text x="6" y="142" class="s">정맥 저장고 = preload</text>
+      <text x="6" y="352">정맥환류 <tspan class="n" id="t-pre">100</tspan>%</text>
+      <text x="394" y="352" text-anchor="end">세동맥 · SVR <tspan class="n" id="t-svr">100</tspan>%</text>
+      <text x="200" y="291" text-anchor="middle">EF <tspan class="n" id="t-ef">60</tspan>% · SV <tspan class="n" id="t-svol">1.5</tspan> <tspan class="s">mL/kg</tspan></text>
+      <text x="200" y="348" text-anchor="middle">조직 · O₂ER <tspan class="n" id="t-er">24</tspan>% <tspan class="s" id="t-tis2">· VO₂ 7.0</tspan></text>
     </svg>
     <div class="mini">
       <div id="m-map"><span class="k">MAP <small>mmHg</small></span><span class="v" id="v-map">100</span><span class="r" id="r-map">&nbsp;</span></div>
@@ -364,13 +373,14 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
   <div class="card"><div class="tblwrap"><table class="ref">
     <thead><tr><th>단계</th><th>관계</th><th>그림에서 보이는 것</th></tr></thead>
     <tbody>
-      <tr><td>충만</td><td>유효 preload = 정맥환류 × (1 − 충만 제한) × 이완기 충만 시간(HR↑ → 감소). EDV는 preload에 포화 곡선으로 반응</td><td>정맥 굵기, 이완기 말 심실 크기(점선 = 정상 EDV)</td></tr>
+      <tr><td>충만</td><td>유효 preload = 정맥환류 × (1 − 충만 제한) × 이완기 충만 시간(HR↑ → 감소). EDV는 preload에 포화 곡선으로 반응</td><td>대정맥 굵기, 심방 크기, 이완기 말 심장 크기(점선 = 정상 윤곽). 덜 찬 심장은 작고 벽이 두꺼워 보임</td></tr>
+      <tr><td>심주기</td><td>등용적 수축 → 박출 → 등용적 이완 → 충만(급속 · 완만 · 심방 수축). 수축기 길이는 HR에 따라 달라지고 빈맥에서는 이완기가 먼저 짧아짐</td><td>방실판막·반월판 개폐 — 네 판막이 모두 닫힌 순간이 한 박동에 두 번</td></tr>
       <tr><td>충만압</td><td>LVEDP는 EDV에 지수적으로 증가 — 늘어난 심실에 수액을 더 주면 SV보다 압력이 먼저 오름</td><td>폐에 점(울혈)이 나타남</td></tr>
-      <tr><td>박출</td><td>ESV = V₀ + MAP ÷ Ees (Ees ∝ 수축력). SV = EDV − ESV — afterload가 오르거나 수축력이 떨어지면 ESV가 커짐</td><td>수축기 말 심실 크기, EF</td></tr>
-      <tr><td>압력</td><td>CO = HR × SV, MAP = CVP + CO × SVR. SV와 MAP는 서로 물려 있어 한 번에 풂 (심실–동맥 결합)</td><td>동맥 굵기·박동, 세동맥 좁아짐, 적혈구 속도</td></tr>
+      <tr><td>박출</td><td>ESV = V₀ + MAP ÷ Ees (Ees ∝ 수축력). SV = EDV − ESV — afterload가 오르거나 수축력이 떨어지면 ESV가 커짐</td><td>수축기에 판막면이 심첨 쪽으로 내려가고 벽이 두꺼워지며 내강이 좁아짐. 수축력이 낮으면 이 움직임이 작음</td></tr>
+      <tr><td>압력</td><td>CO = HR × SV, MAP = CVP + CO × SVR. SV와 MAP는 서로 물려 있어 한 번에 풂 (심실–동맥 결합)</td><td>대동맥 굵기와 맥파, 세동맥 구간의 폭, 적혈구 속도</td></tr>
       <tr><td>산소</td><td>CaO₂ = 1.34 × Hb × SaO₂ (용존 산소 생략), DO₂ = CO × CaO₂. O₂ER = VO₂ ÷ DO₂, 최대 추출률(기본 70%)을 넘으면 VO₂가 공급에 의존</td><td>적혈구 수(Hb)·색(포화도), 조직 상자 색</td></tr>
     </tbody></table></div></div>
-  <div class="callout warn"><b>한계</b> — 압수용체 반사·RAAS 같은 보상, 우심–좌심 차이, 판막 질환, 이완 장애(HCM), 부정맥의 방실 비동기, 폐혈관 저항, 산소 공급에 따른 SaO₂ 반응 차이(shunt)는 들어 있지 않습니다. 개입 버튼의 변화 폭도 임의로 정한 값입니다. 치료 결정에 쓰지 마세요.</div>
+  <div class="callout warn"><b>한계</b> — 압수용체 반사·RAAS 같은 보상, 우심–좌심 차이, 판막 질환, 이완 장애(HCM), 부정맥의 방실 비동기, 폐혈관 저항, 산소 공급에 따른 SaO₂ 반응 차이(shunt)는 들어 있지 않습니다. 개입 버튼의 변화 폭도 임의로 정한 값입니다. 그림은 4방 단면 모식도로, 대혈관의 교차를 생략하고 대정맥을 하나로 그리는 등 주행을 단순화했습니다. 치료 결정에 쓰지 마세요.</div>
 
   <div class="sec" style="margin-top:26px"><h2>이어서 보기</h2></div>
   <div class="links">
@@ -394,7 +404,7 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
   <div class="foot">
     <span>생리학 일반 원리를 바탕으로 과에서 새로 만든 교육용 모델이며 특정 교재의 그림·수치를 옮긴 것이 아닙니다.</span>
     <span>임상 판단의 보조 도구이며 최종 결정은 담당 수의사에게 있습니다.</span>
-  <span style="opacity:.55;margin-left:auto">cardio v0.2</span>
+  <span style="opacity:.55;margin-left:auto">cardio v0.3</span>
   </div>
 </section>
 </main>
@@ -443,7 +453,7 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
     { k:'obs', name:'충만 제한',sub:'tamponade · 긴장성 기흉', u:'%',    min:0,  max:85,  step:5 }
   ];
   const PRESETS = [
-    { id:'normal', name:'정상', p:{}, story:'안정 시 개 기준. 점선은 정상 이완기 말 심실 크기입니다. 슬라이더를 하나씩 움직여 어디가 바뀌는지 먼저 확인해 보세요.' },
+    { id:'normal', name:'정상', p:{}, story:'안정 시 개 기준. 점선은 정상 크기의 심장 윤곽입니다. 「느리게」로 두면 판막이 여닫히는 순서가 잘 보입니다. 슬라이더를 하나씩 움직여 어디가 바뀌는지 먼저 확인해 보세요.' },
     { id:'hypo', name:'저혈량', p:{ hr:180, pre:30, con:110, svr:150, hb:12 }, story:'정맥 저장고가 비어 <b>EDV가 작아지고</b> SV가 떨어집니다. 빈맥과 혈관 수축으로 MAP를 버티지만(보상) CO와 DO₂는 이미 낮습니다.', first:'먼저 무너지는 것: preload → SV. 혈압은 늦게 떨어진다.' },
     { id:'cardio', name:'심인성', p:{ hr:150, pre:170, con:22, svr:110, sa:93 }, story:'심실은 <b>크게 늘어나 있는데 짜내지 못합니다</b>(ESV↑, EF↓). 충만압이 이미 높아 수액을 더 주면 SV보다 폐울혈이 먼저 늘어납니다.', first:'먼저 무너지는 것: 수축력 → EF. preload는 이미 과잉.' },
     { id:'dist1', name:'분포성 · 초기', p:{ hr:160, pre:70, con:100, svr:45, hb:14, sa:96, vo2:130 }, story:'세동맥이 열려 <b>SVR이 떨어지고</b> 상대적 저혈량이 겹칩니다. CO는 오히려 높지만(hyperdynamic) 관류압이 낮고 산소 요구량은 늘어 있습니다.', first:'먼저 무너지는 것: SVR → MAP. CO 숫자만 보면 속는다.' },
@@ -483,43 +493,196 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
   $('#ivs').innerHTML = IVS.map(v => `<div class="iv" data-id="${v.id}"><button type="button" class="iv-main" data-id="${v.id}" aria-pressed="false"><span class="nm">${v.name}<small id="tag-${v.id}">${v.tag}</small></span><span class="fx" id="fx-${v.id}"></span><span class="bar"><i id="bar-${v.id}"></i></span></button><button type="button" class="rep" data-more="${v.id}" hidden aria-label="${v.name} 한 번 더">＋</button></div>`).join('');
 
   /* ---------------- 그림 준비 ---------------- */
-  const D = {
-    pa:'M185,160 C170,120 85,122 85,76 C85,30 145,22 200,22',
-    pv:'M200,22 C255,22 315,30 315,76 C315,122 230,120 215,160',
-    ar:'M215,160 C212,178 280,172 325,198 C362,220 345,262 200,270',
-    ve:'M200,270 C55,262 38,220 75,198 C120,172 188,178 185,160'
-  };
-  const trk = {}; ['pa','pv','ar','ve'].forEach(k => { trk[k] = $('#trk-' + k); trk[k].setAttribute('d', D[k]); });
-  const mixV = 'color-mix(in srgb,var(--venous) 32%,var(--surface))', mixA = 'color-mix(in srgb,var(--arterial) 32%,var(--surface))';
-  trk.pa.style.stroke = mixV; trk.ve.style.stroke = mixV; trk.pv.style.stroke = mixA; trk.ar.style.stroke = mixA;
-  trk.pa.setAttribute('stroke-width', 8); trk.pv.setAttribute('stroke-width', 8);
-  const resBg = $('#trk-res-bg'), res = $('#trk-res'); resBg.setAttribute('d', D.ar); res.setAttribute('d', D.ar); res.style.stroke = 'var(--arterial)';
-  const Lar = trk.ar.getTotalLength(), rA = Lar * 0.60, rB = Lar * 0.78;
-  [resBg, res].forEach(e => e.setAttribute('stroke-dasharray', `0 ${rA} ${rB - rA} ${Lar}`));
-  resBg.setAttribute('stroke-width', 20);
+  const lerp = (a, b, t) => a + (b - a) * t;
+  const smooth = (a, b, x) => { const t = clamp((x - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
+  const F = (n) => n.toFixed(1);
+  const mk = (tag, parent, attrs) => { const e = document.createElementNS(SVGNS, tag); if (attrs) for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
 
-  /* 적혈구 경로 표본화 */
-  const order = ['pa','pv','ar','ve'], lens = order.map(k => trk[k].getTotalLength()), Ltot = lens.reduce((a,b) => a+b, 0);
-  const NPT = 720, PTS = new Float32Array(NPT * 2);
-  for (let i = 0; i < NPT; i++){ let s = i / NPT * Ltot, j = 0; while (j < 3 && s > lens[j]) { s -= lens[j]; j++; } const pt = trk[order[j]].getPointAtLength(s); PTS[i*2] = pt.x; PTS[i*2+1] = pt.y; }
-  const fLung = lens[0] / Ltot, fLV = (lens[0] + lens[1]) / Ltot, fTis = (lens[0] + lens[1] + lens[2]) / Ltot;
-  const MAXP = 64, parts = [], gR = $('#rbc');
-  for (let i = 0; i < MAXP; i++){ const c = document.createElementNS(SVGNS, 'circle'); c.setAttribute('r', 3.1); gR.appendChild(c); parts.push({ el:c, s:(i * 0.61803398875) % 1, off:((i * 7) % 5 - 2) * 1.1 }); }
+  /* 심장은 자체 좌표(원점 = 방실판막면 중앙, y↓ = 심첨 방향)로 그리고 통째로 기울여 놓습니다. */
+  const HC = { x:196, y:178, s:0.92, deg:-14 }, TH = HC.deg * Math.PI / 180, cT = Math.cos(TH), sT = Math.sin(TH);
+  const L2G = (x, y) => [HC.x + HC.s * (cT * x - sT * y), HC.y + HC.s * (sT * x + cT * y)];
+  const UP = [sT, -cT], DOWN = [-sT, cT];
+  const P2 = (p) => F(p[0]) + ',' + F(p[1]);
+  const along = (p, v, k) => [p[0] + v[0] * k, p[1] + v[1] * k];
+  const gAo = L2G(12.5, -9.5), gPa = L2G(-18.5, -9.5), gVc = L2G(-60, -14), gLa1 = L2G(30, -34), gLa2 = L2G(47, -34), gB = along(gPa, UP, 46);
+
+  /* 혈관 중심선 — [좌폐 경로, 우폐 경로]처럼 둘이면 적혈구가 절반씩 나뉘어 지나갑니다. */
+  const CL = {
+    ve: [`M128,321 C94,321 58,306 58,262 L58,226 C58,196 92,186 ${P2(gVc)}`],
+    pt: [`M${P2(gPa)} L${P2(gB)}`],
+    pa: [`M${P2(gB)} C${P2(along(gB, UP, 16))} 166,90 176,66`, `M${P2(gB)} C180,118 206,102 222,68`],
+    lb: [`M176,66 C168,44 146,24 132,46 C122,66 142,84 172,84`, `M222,68 C230,44 252,24 266,46 C276,66 256,84 226,84`],
+    pv: [`M172,84 C176,106 196,126 ${P2(gLa1)}`, `M226,84 C226,104 227,118 ${P2(gLa2)}`],
+    ar: [`M${P2(gAo)} C${P2(along(gAo, UP, 32))} 204,104 234,104 C270,104 304,118 304,158 L304,246 C304,298 297,321 272,321`],
+    tb: [`M272,321 L128,321`]
+  };
+  const clG = $('#cl');
+  function sample(d, n){
+    const p = mk('path', clG, { d }), L = p.getTotalLength(), X = new Float32Array(n), Y = new Float32Array(n), NX = new Float32Array(n), NY = new Float32Array(n);
+    for (let i = 0; i < n; i++){
+      const s = L * i / (n - 1), a = p.getPointAtLength(s), b0 = p.getPointAtLength(Math.max(0, s - 0.8)), b1 = p.getPointAtLength(Math.min(L, s + 0.8));
+      const tx = b1.x - b0.x, ty = b1.y - b0.y, h = Math.hypot(tx, ty) || 1; X[i] = a.x; Y[i] = a.y; NX[i] = -ty / h; NY[i] = tx / h;
+    }
+    clG.removeChild(p); return { L, X, Y, NX, NY, n };
+  }
+
+  /* 혈관 굵기(전체 폭) — u = 0(시작)…1(끝), c = 이번 프레임의 상태 */
+  const gauss = (x) => Math.exp(-x * x);
+  const W = {
+    ar: (u, c) => {
+      let w = lerp(12, 7.2, smooth(0, 0.76, u)) + 2.2 * gauss((u - 0.035) / 0.03);             // 뿌리 → 말초, Valsalva동
+      w *= lerp(1, c.kA, smooth(0.04, 0.14, u));                                               // 혈압에 따른 팽창
+      w *= 1 + 0.15 * c.amp * gauss((u - c.up) / 0.085) * (c.up >= 0 ? 1 : 0);                 // 맥파
+      const z = smooth(0.76, 0.81, u) * (1 - smooth(0.95, 1, u));                              // 세동맥 구간
+      w = lerp(w, c.wRes, z); return lerp(w, 3.4, smooth(0.95, 1, u));
+    },
+    ve: (u, c) => lerp(4.2, 15.5, smooth(0, 0.9, u)) * lerp(1, c.kV, smooth(0, 0.25, u)),
+    pt: (u, c) => lerp(12, 10.5, u) * (1 + 0.10 * c.amp * gauss((u - c.up * 2.2) / 0.3) * (c.up >= 0 ? 1 : 0)),
+    pa: (u, c) => lerp(8.4, 3.6, smooth(0, 1, u)),
+    pv: (u, c) => lerp(3.6, 7.6, smooth(0, 1, u)) * c.kPV
+  };
+  const BED = { lb: 9.5, tb: 9 }, bedRamp = (u) => Math.pow(Math.sin(Math.PI * clamp(u, 0, 1)), 0.55);
+  const LANES = [-1, -0.5, 0, 0.5, 1];
+
+  /* 리본(채움 도형) */
+  const gBack = $('#ribBack'), gFront = $('#ribFront');
+  const mixV = 'color-mix(in srgb,var(--venous) 30%,var(--surface))', mixA = 'color-mix(in srgb,var(--arterial) 30%,var(--surface))';
+  const wallV = 'color-mix(in srgb,var(--venous) 62%,var(--surface))', wallA = 'color-mix(in srgb,var(--arterial) 72%,var(--surface))';
+  const RIB = [];
+  function addRibbon(key, r, front, oxy, o){
+    o = o || {}; const S = sample(CL[key][r], Math.max(10, Math.round((o.n || 1) * 34))), g = front ? gFront : gBack;
+    const casing = front ? mk('path', g, { fill:'none' }) : null; if (casing) { casing.style.stroke = 'var(--surface)'; casing.setAttribute('stroke-width', 4.5); casing.setAttribute('stroke-linejoin', 'round'); }
+    const el = mk('path', g, { 'stroke-linejoin':'round' }); el.style.fill = o.fill || (oxy ? mixA : mixV); el.style.stroke = o.stroke || (oxy ? wallA : wallV); el.setAttribute('stroke-width', o.sw != null ? o.sw : (oxy && key === 'ar' ? 1.5 : 1.1));
+    RIB.push({ key, S, el, casing, wf: W[key], root: !!o.root, range: o.range || [0, 1], live: !!o.live, last: '' });
+  }
+  addRibbon('ve', 0, false, false, { n:1.6 });
+  addRibbon('pa', 1, false, false);  addRibbon('pv', 0, false, true);  addRibbon('pv', 1, false, true);
+  addRibbon('pt', 0, true, false, { root:true, live:true });  addRibbon('pa', 0, true, false);
+  addRibbon('ar', 0, true, true, { n:2.4, root:true, live:true });
+  addRibbon('ar', 0, true, true, { n:2.4, range:[0.775, 0.975], fill:'color-mix(in srgb,var(--arterial) 58%,var(--surface))', stroke:'var(--arterial)', sw:1.2, live:true });
+  RIB[RIB.length - 1].casing.remove(); RIB[RIB.length - 1].casing = null;
+
+  function ribbonD(R, c, dRoot){
+    const S = R.S, n = S.n, l = [], r = [];
+    for (let i = 0; i < n; i++){
+      const u = i / (n - 1); if (u < R.range[0] || u > R.range[1]) continue;
+      const w = R.wf(u, c) / 2; let x = S.X[i], y = S.Y[i];
+      if (R.root) { const k = (1 - smooth(0, 38, u * S.L)) * dRoot; x += DOWN[0] * k; y += DOWN[1] * k; }
+      l.push(F(x + S.NX[i] * w) + ',' + F(y + S.NY[i] * w)); r.push(F(x - S.NX[i] * w) + ',' + F(y - S.NY[i] * w));
+    }
+    return 'M' + l.join('L') + 'L' + r.reverse().join('L') + 'Z';
+  }
+
+  /* 모세혈관상 */
+  const gLanes = $('#lanes');
+  [['lb', 0], ['lb', 1], ['tb', 0]].forEach(([k, r]) => {
+    const S = sample(CL[k][r], 40);
+    LANES.forEach(a => { const pts = []; for (let i = 0; i < S.n; i++){ const o = a * BED[k] * bedRamp(i / (S.n - 1)); pts.push(F(S.X[i] + S.NX[i] * o) + ',' + F(S.Y[i] + S.NY[i] * o)); }
+      const p = mk('path', gLanes, { d:'M' + pts.join('L'), 'stroke-width':0.9 }); p.style.stroke = 'var(--line-strong)'; p.style.opacity = k === 'tb' ? .7 : .5; });
+  });
+
+  /* 적혈구가 도는 한 바퀴: 대정맥 → (우심) → 폐동맥 → 폐 → 폐정맥 → (좌심) → 대동맥 → 조직 */
+  const SEGS = [
+    { k:'ve', front:[0],    col:'v' }, { k:'hr', hid:1, len:26 }, { k:'pt', front:[1], col:'v', pulse:1 },
+    { k:'pa', front:[1, 0], col:'v', pulse:1 }, { k:'lb', front:[0, 0], bed:'lung' }, { k:'pv', front:[0, 0], col:'a' },
+    { k:'hl', hid:1, len:26 }, { k:'ar', front:[1], col:'a', pulse:1 }, { k:'tb', front:[0], bed:'tis' }
+  ];
+  const NPT = 960, segOf = new Uint8Array(NPT), uOf = new Float32Array(NPT), PX = [new Float32Array(NPT), new Float32Array(NPT)], PY = [new Float32Array(NPT), new Float32Array(NPT)], QX = [new Float32Array(NPT), new Float32Array(NPT)], QY = [new Float32Array(NPT), new Float32Array(NPT)];
+  (function buildTable(){
+    const tmp = (d) => { const p = mk('path', clG, { d }), L = p.getTotalLength(); clG.removeChild(p); return L; };
+    SEGS.forEach(s => { if (!s.hid) s.len = CL[s.k].reduce((a, d) => a + tmp(d), 0) / CL[s.k].length; });
+    const Lt = SEGS.reduce((a, s) => a + s.len, 0); let i0 = 0;
+    SEGS.forEach((s, si) => {
+      const n = si === SEGS.length - 1 ? NPT - i0 : Math.max(4, Math.round(s.len / Lt * NPT));
+      const S = s.hid ? null : [0, 1].map(r => sample(CL[s.k][Math.min(r, CL[s.k].length - 1)], n));
+      for (let j = 0; j < n; j++){ const i = i0 + j; segOf[i] = si; uOf[i] = j / (n - 1);
+        for (let r = 0; r < 2; r++){ if (S) { PX[r][i] = S[r].X[j]; PY[r][i] = S[r].Y[j]; QX[r][i] = S[r].NX[j]; QY[r][i] = S[r].NY[j]; } } }
+      i0 += n;
+    });
+  })();
+  const gRB = $('#rbcBack'), gRF = $('#rbcFront'), MAXP = 84, parts = [];
+  for (let i = 0; i < MAXP; i++){ const c = mk('circle', gRB, { r:2.5 }); parts.push({ el:c, s:(i * 0.61803398875) % 1, lane:LANES[(i * 3) % 5], r:i % 2, where:0, on:-1 }); }
+
   /* 폐울혈 점 */
-  const gE = $('#edema'); [[150,46],[158,34],[166,52],[172,28],[178,44],[186,56],[160,58],[214,56],[222,44],[228,28],[234,52],[242,34],[250,46],[240,58]].forEach(([x,y]) => { const c = document.createElementNS(SVGNS,'circle'); c.setAttribute('cx',x); c.setAttribute('cy',y); c.setAttribute('r',2.4); c.style.fill = 'var(--low)'; gE.appendChild(c); });
+  const gE = $('#edema'); [[126,72],[138,82],[150,68],[160,84],[170,74],[134,60],[150,52],[166,58],[120,86],[178,88]].forEach(([x, y]) => { [x, 398 - x].forEach(xx => { const c = mk('circle', gE, { cx:xx, cy:y, r:2.3 }); c.style.fill = 'var(--low)'; }); });
 
   /* 색 */
   let RGB = {};
   const hex = (h) => { h = h.trim().replace('#',''); if (h.length === 3) h = h.split('').map(c => c+c).join(''); return [0,2,4].map(i => parseInt(h.substr(i,2),16)); };
   function readColors(){ const cs = getComputedStyle(document.documentElement); ['venous','arterial','venous-soft','arterial-soft'].forEach(k => RGB[k] = hex(cs.getPropertyValue('--' + k))); }
   readColors(); matchMedia('(prefers-color-scheme: dark)').addEventListener('change', readColors);
-  const mix = (a, b, t) => `rgb(${a.map((v,i) => Math.round(v + (b[i]-v) * t)).join(',')})`;
-  const satColor = (sat) => mix(RGB.venous, RGB.arterial, Math.pow(clamp((sat - 45) / 53, 0, 1), 1.6));
-  const satSoft = (sat) => mix(RGB['venous-soft'], RGB['arterial-soft'], clamp((sat - 60) / 38, 0, 1));
+  const mix3 = (a, b, t) => a.map((v, i) => Math.round(v + (b[i] - v) * t)), css = (c) => `rgb(${c[0]},${c[1]},${c[2]})`;
+  const satRGB = (sat) => mix3(RGB.venous, RGB.arterial, Math.pow(clamp((sat - 45) / 53, 0, 1), 1.6));
+  const satSoft = (sat) => css(mix3(RGB['venous-soft'], RGB['arterial-soft'], clamp((sat - 60) / 38, 0, 1)));
 
-  const el = {}; ['lv','rv','la','ra','peri','lungL','lungR','tissue','edema'].forEach(k => el[k] = $('#' + k));
-  el.lungL.style.stroke = el.lungR.style.stroke = 'var(--line-strong)';
-  const T = {}; ['sa','map','bp','co','svr','sv','pre','ef','svol','er','tis2'].forEach(k => T[k] = $('#t-' + k));
+  /* ---------------- 심장 그리기 ---------------- */
+  const H = {}; ['peri','ra','la','block','myo','rvc','lvc','neckR','neckL','ghost'].forEach(k => H[k] = $('#' + k));
+  const AVV = $$('#avv path'), SLV = $$('#slv path');
+  [H.myo, H.block].forEach(e => { e.style.fill = 'var(--myo)'; e.style.stroke = 'var(--myo-line)'; e.setAttribute('stroke-width', 1.4); e.setAttribute('stroke-linejoin', 'round'); });
+  [H.rvc, H.lvc].forEach(e => { e.style.stroke = 'var(--myo-line)'; e.setAttribute('stroke-width', 0.9); e.setAttribute('stroke-linejoin', 'round'); });
+  [H.ra, H.la].forEach(e => { e.style.stroke = 'var(--myo-line)'; e.setAttribute('stroke-width', 2.6); e.setAttribute('stroke-linejoin', 'round'); });
+  H.ghost.style.stroke = 'var(--ink-2)'; H.ghost.setAttribute('stroke-dasharray', '3 3.5'); H.ghost.setAttribute('stroke-width', 1); H.ghost.style.opacity = .5;
+  AVV.concat(SLV).forEach(e => { e.style.stroke = 'var(--valve)'; e.setAttribute('stroke-width', 2.5); });
+  const NT = 22;
+  const prof = (t) => Math.pow(Math.max(0, 1 - Math.pow(t, 2.3)), 0.6) * (1 + (t < 0.7 ? 0.13 * Math.pow(Math.sin(Math.PI * t / 0.7), 1.6) : 0));
+  const cxT = (t) => -2 + 18 * Math.pow(t, 1.15), sxT = (t) => -3 + 15 * Math.pow(t, 1.1), wT = (t) => 0.1 + 0.9 * smooth(0, 0.3, t);
+  function outerD(so, d, Ya){
+    const l = [], r = []; for (let j = 0; j <= NT + 8; j++){ const t = Math.sin(Math.PI / 2 * j / (NT + 8)), y = d + t * (Ya - d), hw = 58 * so * prof(t), c = cxT(t); l.push(F(c - hw) + ',' + F(y)); r.push(F(c + hw) + ',' + F(y)); }
+    return 'M' + l.join('L') + 'L' + r.reverse().join('L') + 'Z';
+  }
+  H.ghost.setAttribute('d', outerD(1, 0, 104));
+  function leaflets(els, xa, xb, y, L, open, dir, openAng){
+    /* xa·xb = 판륜 양 끝, dir = +1이면 심실 쪽(아래), −1이면 동맥 쪽(위)으로 열림 */
+    const half = Math.abs(xb - xa) / 2, LL = Math.max(L, half + 0.6), aC = Math.acos(clamp(half / LL, 0, 1)), a = lerp(aC, openAng, open), sg = xb > xa ? 1 : -1;
+    const t1 = [xa + sg * LL * Math.cos(a), y + dir * LL * Math.sin(a)], t2 = [xb - sg * LL * Math.cos(a), y + dir * LL * Math.sin(a)], bel = -dir * 2.2 * (1 - open);
+    els[0].setAttribute('d', `M${F(xa)},${F(y)} Q${F((xa + t1[0]) / 2)},${F((y + t1[1]) / 2 + bel)} ${F(t1[0])},${F(t1[1])}`);
+    els[1].setAttribute('d', `M${F(xb)},${F(y)} Q${F((xb + t2[0]) / 2)},${F((y + t2[1]) / 2 + bel)} ${F(t2[0])},${F(t2[1])}`);
+  }
+  function drawHeart(o){
+    /* o = { EDV, V, EDP, kick, oA, oS, cA, cV, obs } */
+    const fED = clamp(Math.pow(o.EDV / EDV0, 0.75), 0.3, 1.45), f = clamp(Math.pow(o.V / EDV0, 0.75), 0.2, 1.45), e = Math.max(0, fED - f);
+    const sizeED = fED >= 1 ? 1 + 0.32 * (fED - 1) : 1 - 0.16 * (1 - fED), sizeT = fED < 1 ? 1 + 0.55 * (1 - fED) : 1 / (1 + 0.6 * (fED - 1));
+    const so = sizeED * (1 - 0.08 * e), d = clamp(8.7 * (o.EDV - o.V), -2, 20), Ya = 104 * (1 + 0.45 * (sizeED - 1)) - 3 * e;
+    const yT = (t) => d + t * (Ya - d), Tm = (t, k) => sizeT * (1 + k * e * wT(t));
+    H.myo.setAttribute('d', outerD(so, d, Ya));
+    /* LV 내강: 중격면 ↔ 측벽 내면, 심첨에서 만남 */
+    const bL = 0.88 - 0.16 * e, aL = bL - 0.24, lvA = [], lvB = [];
+    const XlS = (t) => sxT(t) + 5.5 * Tm(t, 1), XrS = (t) => sxT(t) - 5.5 * Tm(t, 1);
+    const XlL = (t) => Math.max(cxT(t) + 58 * so * prof(t) - 12.5 * Tm(t, 1), XlS(t) + 1.2);
+    const tip = (t, a0, b0) => t <= a0 ? 1 : Math.sqrt(Math.max(0, 1 - Math.pow((t - a0) / (b0 - a0), 2)));
+    for (let j = 0; j <= NT; j++){ const t = bL * Math.sin(Math.PI / 2 * j / NT), y = Math.max(yT(t), d + 1.2), a0 = XlS(t), b0 = XlL(t), cc = lerp((a0 + b0) / 2, (a0 + b0) / 2 + 1.5, smooth(aL, bL, t)), hh = (b0 - a0) / 2 * tip(t, aL, bL);
+      lvA.push(F(cc - hh) + ',' + F(y)); lvB.push(F(cc + hh) + ',' + F(y)); }
+    H.lvc.setAttribute('d', 'M' + lvA.join('L') + 'L' + lvB.reverse().join('L') + 'Z');
+    /* RV 내강: 자유벽 내면 ↔ 중격 우측면 */
+    const bR = 0.80 - 0.10 * e, rvA = [], rvB = [], inw = e * 22 + Math.max(0, 1 - fED) * 14;
+    const XrL = (t) => Math.min(cxT(t) - 58 * so * prof(t) + 4.6 * Tm(t, 0.6) + inw * Math.pow(Math.sin(Math.PI * clamp(t / 0.84, 0, 1)), 0.9), XrS(t) - 1.2);
+    for (let j = 0; j <= NT; j++){ const t = bR * Math.sin(Math.PI / 2 * j / NT), y = Math.max(yT(t), d + 1.2), a0 = XrL(t), b0 = XrS(t), k = tip(t, bR - 0.34, bR), cc = lerp((a0 + b0) / 2, b0 - 3, 1 - k);
+      rvA.push(F(cc - (cc - a0) * k) + ',' + F(y)); rvB.push(F(cc + (b0 - cc) * k) + ',' + F(y)); }
+    H.rvc.setAttribute('d', 'M' + rvA.join('L') + 'L' + rvB.reverse().join('L') + 'Z');
+    H.lvc.style.fill = H.neckL.style.fill = H.la.style.fill = o.cA; H.rvc.style.fill = H.neckR.style.fill = H.ra.style.fill = o.cV;
+    /* 심방: 지붕은 고정, 바닥(판막면)이 수축기에 내려가며 커짐 */
+    const A = clamp(Math.sqrt(clamp(o.EDP, 2, 40) / 8), 0.78, 1.45) * (1 - 0.13 * o.kick), xl = -58 * so + 3, xr = 58 * so - 5;
+    H.ra.setAttribute('d', `M-14,${F(d)} L${F(xl)},${F(d)} C${F(xl - 10)},${F(d - 6)} ${F(-58 - 14 * A)},${F(-34 * A)} -50,${F(-28 - 18 * A)} C-38,${F(-30 - 22 * A)} -14,-42 -14,-22 Z`);
+    H.la.setAttribute('d', `M12,${F(d)} L${F(xr)},${F(d)} C${F(xr + 10)},${F(d - 6)} ${F(54 + 14 * A)},${F(-34 * A)} 47,${F(-28 - 18 * A)} C36,${F(-30 - 22 * A)} 12,-42 12,-22 Z`);
+    H.block.setAttribute('d', `M-27,${F(d + 1)} L23,${F(d + 1)} L21,-30 Q-2,-42 -25,-30 Z`);
+    H.neckR.setAttribute('d', `M-25,${F(d + 2.5)} L-25,${F(d - 9.5)} L-12,${F(d - 9.5)} L-12,${F(d + 2.5)} Z`);
+    H.neckL.setAttribute('d', `M6,${F(d + 2.5)} L6,${F(d - 9.5)} L19,${F(d - 9.5)} L19,${F(d + 2.5)} Z`);
+    /* 판막 */
+    leaflets([AVV[0], AVV[1]], Math.max(-52.5, XrL(0) + 0.6), -28.5, d + 0.6, 12.5, o.oA, 1, 1.38);
+    leaflets([AVV[2], AVV[3]], 23.5, Math.max(30, Math.min(41.5, XlL(0) - 0.6)), d + 0.6, 12, o.oA, 1, 1.38);
+    leaflets([SLV[0], SLV[1]], -25, -12, d - 9.5, 8, o.oS, -1, 1.45);
+    leaflets([SLV[2], SLV[3]], 6, 19, d - 9.5, 8, o.oS, -1, 1.45);
+    /* 심낭 */
+    const ob = clamp(o.obs / 85, 0, 1);
+    H.peri.style.fill = ob > 0.01 ? 'var(--warn-soft)' : 'none'; H.peri.style.fillOpacity = (0.35 + 0.6 * ob).toFixed(2);
+    H.peri.style.stroke = ob > 0.01 ? 'var(--warn)' : 'var(--line-strong)'; H.peri.setAttribute('stroke-width', (1 + 3.2 * ob).toFixed(1)); H.peri.style.opacity = ob > 0.01 ? 1 : 0.7;
+    return { d, f, fED };
+  }
+  [['ra', -46, -18], ['la', 40, -18], ['rv', -31, 34], ['lv', 25, 40]].forEach(([k, x, y]) => { const p = L2G(x, y), t = $('#lb-' + k); t.setAttribute('x', F(p[0])); t.setAttribute('y', F(p[1])); });
+
+  const el = {}; ['lungL','lungR','tissue','edema','trachea'].forEach(k => el[k] = $('#' + k));
+  el.lungL.style.stroke = el.lungR.style.stroke = 'var(--line-strong)'; el.trachea.style.stroke = 'var(--line-strong)'; el.trachea.setAttribute('stroke-width', 6);
+  const T = {}; ['sa','map','bp','svr','sv','pre','ef','svol','er','tis2'].forEach(k => T[k] = $('#t-' + k));
   const setTxt = (node, v) => { if (node.textContent !== v) node.textContent = v; };
 
   /* ---------------- 값 표시 (슬라이더·개입·깃발) ---------------- */
@@ -576,52 +739,61 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
   }
 
   /* ---------------- 프레임 ---------------- */
-  let phase = 0, last = performance.now();
+  let phase = 0, last = performance.now(), slowKey = '';
   function frame(now){
     const dt = clamp((now - last) / 1000, 0, 0.05); last = now;
     const a = 1 - Math.exp(-dt * 5); Object.keys(tgt).forEach(k => { cur[k] += (tgt[k] - cur[k]) * a; if (Math.abs(tgt[k] - cur[k]) < 0.01) cur[k] = tgt[k]; });
     const m = model(cur), Tc = 60 / cur.hr;
     if (speed > 0) phase = (phase + dt / (Tc * speed)) % 1;
 
-    /* 심주기 */
-    const fs = Math.min(0.3 * Math.sqrt(Tc), 0.6 * Tc) / Tc;
-    let V, atr = 1, ej = 0;
-    if (phase < fs) { const x = phase / fs; V = m.EDV - m.SV * (0.5 - 0.5 * Math.cos(Math.PI * x)); ej = Math.sin(Math.PI * x); atr = 1 + 0.10 * x; }
-    else { const u = (phase - fs) / (1 - fs); let g; if (u < 0.75) { const y = u / 0.75; g = 0.8 * (1 - (1-y)*(1-y)); atr = 1.10 - 0.04 * y; } else { const y = (u - 0.75) / 0.25, sm = y*y*(3-2*y); g = 0.8 + 0.2 * sm; atr = 1.06 - 0.24 * Math.sin(Math.PI * y) * 0.75; } V = m.ESV + m.SV * g; }
-    const sc = clamp(Math.sqrt(V / EDV0), 0.28, 1.3), preS = clamp(Math.sqrt(clamp(m.EDP,2,40) / 8), 0.7, 1.5) * atr;
-    el.lv.setAttribute('transform', `translate(202 150) scale(${sc.toFixed(3)}) translate(-202 -150)`);
-    el.rv.setAttribute('transform', `translate(198 150) scale(${sc.toFixed(3)}) translate(-198 -150)`);
-    el.la.setAttribute('transform', `translate(224 133) scale(${preS.toFixed(3)}) translate(-224 -133)`);
-    el.ra.setAttribute('transform', `translate(176 133) scale(${preS.toFixed(3)}) translate(-176 -133)`);
-    const cA = satColor(cur.sa), cV = satColor(m.SvO2);
-    el.lv.style.fill = el.la.style.fill = cA; el.rv.style.fill = el.ra.style.fill = cV;
-    el.peri.setAttribute('opacity', cur.obs > 1 ? 1 : 0); el.peri.setAttribute('stroke-width', (cur.obs * 0.1).toFixed(1));
-    el.peri.setAttribute('rx', (58 - cur.obs * 0.1).toFixed(1)); el.peri.setAttribute('ry', (62 - cur.obs * 0.1).toFixed(1));
+    /* 심주기: 등용적 수축 → 박출 → 등용적 이완 → 충만(급속 · 완만 · 심방 수축) */
+    const fs = Math.min(0.3 * Math.sqrt(Tc), 0.6 * Tc) / Tc, tIVC = 0.16 * fs, tIVR = Math.min(0.10, 0.24 * (1 - fs));
+    let V, ej = 0, oS = 0, oA = 0, kick = 0;
+    if (phase < tIVC) V = m.EDV;
+    else if (phase < fs) { const x = (phase - tIVC) / (fs - tIVC); V = m.EDV - m.SV * (0.5 - 0.5 * Math.cos(Math.PI * x)); ej = Math.sin(Math.PI * x); oS = Math.min(1, x / 0.14, (1 - x) / 0.12); }
+    else if (phase < fs + tIVR) V = m.ESV;
+    else { const u = (phase - fs - tIVR) / (1 - fs - tIVR); let g;
+      if (u < 0.75) { const y = u / 0.75; g = 0.8 * (1 - (1 - y) * (1 - y)); } else { const y = (u - 0.75) / 0.25; g = 0.8 + 0.2 * y * y * (3 - 2 * y); kick = Math.sin(Math.PI * y); }
+      V = m.ESV + m.SV * g; oA = Math.min(1, u / 0.09, (1 - u) / 0.05) * (1 - 0.42 * gauss((u - 0.6) / 0.13)); }
+    oS = clamp(oS, 0, 1); oA = clamp(oA, 0, 1);
+
+    const rgbA = satRGB(cur.sa), rgbV = satRGB(m.SvO2), cA = css(rgbA), cV = css(rgbV);
+    const hg = drawHeart({ EDV:m.EDV, V, EDP:m.EDP, kick, oA, oS, cA, cV, obs:cur.obs });
+    $('#lb-rv').style.opacity = $('#lb-lv').style.opacity = clamp((hg.fED - 0.42) / 0.2, 0, 1).toFixed(2);   /* 박동마다 깜빡이지 않게 이완기 말 크기 기준 */
 
     /* 혈관 */
-    trk.ar.setAttribute('stroke-width', (3 + clamp(m.MAP, 20, 180) / 100 * 6 + ej * clamp(m.SV / 1.5, 0, 1.6) * 2.2).toFixed(1));
-    trk.ve.setAttribute('stroke-width', (3 + clamp(cur.pre, 20, 200) / 100 * 7).toFixed(1));
-    res.setAttribute('stroke-width', clamp(9 * Math.pow(100 / cur.svr, 1.1), 2, 17).toFixed(1));
+    const up = phase >= tIVC ? (phase - tIVC) / 0.36 * 0.8 : -1;
+    const c = { kA: 0.78 + 0.28 * clamp(m.MAP, 30, 170) / 100, wRes: clamp(7.4 * Math.pow(100 / cur.svr, 1.15), 1.8, 13), kV: clamp(0.5 + 0.5 * cur.pre / 100, 0.6, 1.45),
+                kPV: clamp(0.85 + 0.15 * m.EDP / 8, 0.8, 1.5), amp: clamp(m.SV / 1.5, 0, 1.6) * (up >= 0 && up < 0.8 ? Math.sqrt(1 - up / 0.8) : 0), up };
+    const key = [cur.pre, m.EDP, cur.svr, m.MAP].map(x => x.toFixed(1)).join('|'), slow = key !== slowKey; slowKey = key;
+    const dRoot = HC.s * hg.d;
+    RIB.forEach(R => { if (!R.live && !slow && R.last) return; const d = ribbonD(R, c, dRoot); if (d !== R.last) { R.el.setAttribute('d', d); if (R.casing) R.casing.setAttribute('d', d); R.last = d; } });
+
     el.lungL.style.fill = el.lungR.style.fill = satSoft(cur.sa);
     el.edema.setAttribute('opacity', clamp((m.EDP - 16) / 12, 0, 1).toFixed(2));
     el.tissue.style.fill = m.limited ? 'var(--high-soft)' : 'var(--surface-2)'; el.tissue.style.stroke = m.limited ? 'var(--high)' : 'var(--line-strong)';
 
     /* 적혈구 */
-    const n = Math.round(clamp(cur.hb, 0, 20) / 20 * MAXP * 0.85 + 4), base = 0.085 * (m.CO / 150) / (speed || 1) * (speed ? 1 : 0);
+    const n = Math.round(clamp(cur.hb, 0, 20) / 20 * MAXP * 0.88 + 5), base = speed ? 0.075 * (m.CO / 150) / speed : 0;
     for (let i = 0; i < MAXP; i++){
-      const p = parts[i]; if (i >= n) { if (p.on !== 0) { p.el.setAttribute('visibility','hidden'); p.on = 0; } continue; }
-      if (p.on !== 1) { p.el.setAttribute('visibility','visible'); p.on = 1; }
-      const inArt = p.s >= fLV && p.s < fTis;
-      p.s = (p.s + base * dt * (inArt ? (0.45 + 1.5 * ej) : 1)) % 1;
-      const idx = Math.floor(p.s * NPT) % NPT;
-      p.el.setAttribute('cx', (PTS[idx*2] + p.off).toFixed(1)); p.el.setAttribute('cy', (PTS[idx*2+1] + p.off * 0.6).toFixed(1));
-      p.el.style.fill = (p.s >= fLung && p.s < fTis) ? cA : cV;
+      const p = parts[i];
+      if (i >= n) { if (p.on !== 0) { p.el.setAttribute('visibility', 'hidden'); p.on = 0; } continue; }
+      let idx = Math.floor(p.s * NPT) % NPT, sg = SEGS[segOf[idx]];
+      p.s = (p.s + base * dt * (sg.hid ? 2.2 : sg.bed ? 0.55 : sg.pulse ? 0.45 + 1.5 * ej : 1)) % 1;
+      idx = Math.floor(p.s * NPT) % NPT; sg = SEGS[segOf[idx]];
+      if (sg.hid) { if (p.on !== 0) { p.el.setAttribute('visibility', 'hidden'); p.on = 0; } continue; }
+      if (p.on !== 1) { p.el.setAttribute('visibility', 'visible'); p.on = 1; }
+      const r = p.r, u = uOf[idx], front = sg.front[Math.min(r, sg.front.length - 1)];
+      if (p.where !== front) { (front ? gRF : gRB).appendChild(p.el); p.where = front; }
+      const hw = sg.bed ? BED[sg.k] * bedRamp(u) : Math.max(0, W[sg.k](u, c) / 2 - 2.6) * 0.9, off = p.lane * hw;
+      p.el.setAttribute('cx', F(PX[r][idx] + QX[r][idx] * off)); p.el.setAttribute('cy', F(PY[r][idx] + QY[r][idx] * off));
+      p.el.style.fill = sg.bed === 'lung' ? css(mix3(rgbV, rgbA, smooth(0.2, 0.75, u))) : sg.bed === 'tis' ? css(mix3(rgbA, rgbV, smooth(0.25, 0.8, u))) : (sg.col === 'a' ? cA : cV);
     }
 
     /* 숫자 */
-    setTxt(T.sa, fmt(cur.sa)); setTxt(T.map, fmt(m.MAP)); setTxt(T.bp, `${fmt(m.SBP)}/${fmt(m.DBP)} mmHg`); setTxt(T.co, fmt(m.CO));
+    setTxt(T.sa, fmt(cur.sa)); setTxt(T.map, fmt(m.MAP)); setTxt(T.bp, `${fmt(m.SBP)}/${fmt(m.DBP)} mmHg`);
     setTxt(T.svr, fmt(cur.svr)); setTxt(T.sv, fmt(m.SvO2)); setTxt(T.pre, fmt(cur.pre)); setTxt(T.ef, fmt(m.EF)); setTxt(T.svol, fmt(m.SV, 2)); setTxt(T.er, fmt(m.ER));
-    setTxt(T.tis2, m.limited ? `VO₂ ${fmt(m.VO2,1)} < 요구 ${fmt(m.need,1)} · 산소 부채` : `VO₂ ${fmt(m.VO2,1)} · 공급 충분`);
+    setTxt(T.tis2, m.limited ? `· VO₂ ${fmt(m.VO2,1)} < 요구 ${fmt(m.need,1)}` : `· VO₂ ${fmt(m.VO2,1)}`);
     setTxt($('#v-map'), fmt(m.MAP)); setTxt($('#r-map'), `${fmt(m.SBP)}/${fmt(m.DBP)}`);
     setTxt($('#v-co'), fmt(m.CO)); setTxt($('#r-co'), `${fmt(cur.hr)} × ${fmt(m.SV,2)}`);
     setTxt($('#v-do2'), fmt(m.DO2, 1)); setTxt($('#v-edp'), fmt(m.fillP)); setTxt($('#r-edp'), `EDV ${fmt(m.EDV,2)} mL/kg`);
