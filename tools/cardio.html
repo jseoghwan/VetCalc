@@ -215,25 +215,33 @@ input[type=range]:focus-visible::-webkit-slider-thumb{box-shadow:0 0 0 4px color
 .story{margin-top:10px;font-size:13px;line-height:1.65;color:var(--ink-2)}
 .story b{color:var(--ink)}
 .story .first{display:block;margin-top:4px;padding:6px 10px;border-radius:7px;background:var(--high-soft);color:var(--ink);font-size:12.5px}
-.ivs{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ivs{display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:stretch}
 @media (min-width:861px) and (max-width:1020px){.ivs{grid-template-columns:1fr}}
-.iv{display:flex;flex-direction:column;gap:2px;text-align:left;border:1px solid var(--line-strong);background:var(--surface);border-radius:9px;padding:8px 10px;cursor:pointer;font:inherit;color:var(--ink);min-width:0}
-.iv:hover{background:var(--surface-2)}
-.iv:disabled{opacity:.45;cursor:default}
-.iv:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
-.iv .nm{font-size:13px;font-weight:700;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:0 6px;white-space:nowrap}
+.iv{position:relative;min-width:0}
+.iv-main{display:flex;flex-direction:column;gap:2px;width:100%;height:100%;text-align:left;border:1px solid var(--line-strong);background:var(--surface);border-radius:9px;padding:8px 10px;cursor:pointer;font:inherit;color:var(--ink);min-width:0}
+.iv-main:hover{background:var(--surface-2)}
+.iv-main:disabled{opacity:.45;cursor:default}
+.iv-main:focus-visible,.rep:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.iv-main[aria-pressed="true"]{border-color:var(--accent);background:color-mix(in srgb,var(--accent-soft) 60%,var(--surface));box-shadow:inset 3px 0 0 var(--accent)}
+.iv-main[aria-pressed="true"] .nm small{color:var(--accent-ink);font-weight:600}
+.iv-main[aria-pressed="true"] .nm{padding-right:30px}
+.iv-main .nm small{white-space:normal;text-align:right}
+.rep{position:absolute;top:5px;right:5px;width:26px;height:26px;border-radius:7px;border:1px solid var(--accent);background:var(--surface);color:var(--accent-ink);font:inherit;font-size:14px;font-weight:700;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
+.rep:hover{background:var(--accent);color:#fff}
+.iv-main .nm{font-size:13px;font-weight:700;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:0 6px;white-space:nowrap}
 .seg button{white-space:nowrap}
-.iv .nm small{font-weight:500;color:var(--muted);font-size:11px;white-space:nowrap}
-.iv .fx{font-family:"IBM Plex Mono",monospace;font-size:11.5px;display:flex;gap:10px;flex-wrap:wrap}
-.iv .fx span{white-space:nowrap}
+.iv-main .nm small{font-weight:500;color:var(--muted);font-size:11px;white-space:nowrap}
+.iv-main .fx{font-family:"IBM Plex Mono",monospace;font-size:11.5px;display:flex;gap:10px;flex-wrap:wrap}
+.iv-main .fx span{white-space:nowrap}
 .up{color:var(--ok)} .dn{color:var(--high)} .eq{color:var(--muted)}
-.iv .bar{height:4px;border-radius:2px;background:var(--surface-2);position:relative;margin-top:3px;overflow:hidden}
-.iv .bar i{position:absolute;top:0;bottom:0;left:50%;background:var(--ok)}
-.iv .bar i.neg{background:var(--high)}
-.iv .bar::after{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--line-strong)}
-.log{margin-top:10px;font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-2);line-height:1.7;max-height:118px;overflow:auto}
-.log div{border-top:1px dashed var(--line);padding:2px 0}
-.log div:first-child{border-top:0}
+.iv-main .fx{flex:1 1 auto;align-content:start}
+.iv-main .bar{height:4px;border-radius:2px;background:var(--surface-2);position:relative;margin-top:3px;overflow:hidden}
+.iv-main .bar i{position:absolute;top:0;bottom:0;left:50%;background:var(--ok)}
+.iv-main .bar i.neg{background:var(--high)}
+.iv-main .bar::after{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--line-strong)}
+.applied{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-top:11px;padding-top:10px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--ink-2)}
+.applied .k{font-size:11px;font-weight:700;letter-spacing:.06em;color:var(--accent-ink);background:var(--accent-soft);padding:1px 7px;border-radius:999px}
+.applied #applied-list{flex:1 1 auto;min-width:0;font-weight:600;color:var(--ink)}
 .rowbtn{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
 table.ref{width:100%;border-collapse:collapse;font-size:12.5px;line-height:1.5}
 table.ref th,table.ref td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
@@ -338,10 +346,10 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
     </div>
 
     <div class="card">
-      <div class="card-head"><h3>개입 <span class="chip na">지금 상태에서 예상 효과</span></h3><button type="button" class="ibtn" id="btn-undo" style="margin-left:auto" disabled>되돌리기</button></div>
+      <div class="card-head"><h3>개입 <span class="chip na">눌러서 켜고 끄기</span></h3><button type="button" class="ibtn" id="btn-undo" style="margin-left:auto" disabled>되돌리기</button></div>
       <div class="card-body">
         <div class="ivs" id="ivs"></div>
-        <div class="log" id="log" hidden></div>
+        <div class="applied" id="applied" hidden><span class="k">적용 중</span> <span id="applied-list"></span><button type="button" class="ibtn" id="applied-clear">전부 해제</button></div>
       </div>
     </div>
 
@@ -445,17 +453,25 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
   ];
   const lim = (k, v) => { const s = SL.find(x => x.k === k); return s ? clamp(v, s.min, s.max) : v; };
   const IVS = [
-    { id:'fluid', name:'수액 bolus', tag:'preload↑ · Hb 희석', f:p => ({ ...p, pre:lim('pre', p.pre + 25), hb:lim('hb', p.hb * 0.93) }) },
-    { id:'rbc',   name:'수혈 (pRBC)', tag:'Hb↑ · preload↑',   f:p => ({ ...p, hb:lim('hb', p.hb + 3), pre:lim('pre', p.pre + 15) }) },
-    { id:'press', name:'승압제', tag:'SVR↑ · 정맥 수축',        f:p => ({ ...p, svr:lim('svr', p.svr + 40), pre:lim('pre', p.pre + 10), con:lim('con', p.con + 10) }) },
-    { id:'ino',   name:'강심제', tag:'수축력↑ · SVR↓',          f:p => ({ ...p, con:lim('con', p.con + 40), hr:lim('hr', p.hr + 10), svr:lim('svr', p.svr - 10) }) },
-    { id:'o2',    name:'산소 공급', tag:'SaO₂↑',                f:p => ({ ...p, sa:lim('sa', Math.round(p.sa + (99 - p.sa) * 0.75)) }) },
-    { id:'diur',  name:'이뇨제', tag:'preload↓',                f:p => ({ ...p, pre:lim('pre', p.pre - 25) }) },
-    { id:'dil',   name:'혈관확장제', tag:'SVR↓',                f:p => ({ ...p, svr:lim('svr', p.svr - 30) }) },
-    { id:'tap',   name:'폐쇄 해소', tag:'심낭천자 · 흉강천자',  f:p => ({ ...p, obs:0 }), need:p => p.obs > 0 }
+    { id:'fluid', name:'수액 bolus', tag:'preload↑ · Hb 희석', max:4, f:p => ({ ...p, pre:lim('pre', p.pre + 25), hb:lim('hb', p.hb * 0.93) }) },
+    { id:'rbc',   name:'수혈 (pRBC)', tag:'Hb↑ · preload↑',   max:4, f:p => ({ ...p, hb:lim('hb', p.hb + 3), pre:lim('pre', p.pre + 15) }) },
+    { id:'press', name:'승압제', tag:'SVR↑ · 정맥 수축',        max:3, f:p => ({ ...p, svr:lim('svr', p.svr + 40), pre:lim('pre', p.pre + 10), con:lim('con', p.con + 10) }) },
+    { id:'ino',   name:'강심제', tag:'수축력↑ · SVR↓',          max:3, f:p => ({ ...p, con:lim('con', p.con + 40), hr:lim('hr', p.hr + 10), svr:lim('svr', p.svr - 10) }) },
+    { id:'o2',    name:'산소 공급', tag:'SaO₂↑',                max:1, f:p => ({ ...p, sa:lim('sa', Math.round(p.sa + (99 - p.sa) * 0.75)) }) },
+    { id:'diur',  name:'이뇨제', tag:'preload↓',                max:3, f:p => ({ ...p, pre:lim('pre', p.pre - 25) }) },
+    { id:'dil',   name:'혈관확장제', tag:'SVR↓',                max:3, f:p => ({ ...p, svr:lim('svr', p.svr - 30) }) },
+    { id:'tap',   name:'폐쇄 해소', tag:'심낭천자 · 흉강천자',  max:1, f:p => ({ ...p, obs:0 }), need:b => b.obs > 0 }
   ];
+  const ivOf = (id) => IVS.find(v => v.id === id);
 
-  let tgt = { ...NORMAL }, cur = { ...NORMAL }, preset = 'normal', hist = [], speed = matchMedia('(prefers-reduced-motion: reduce)').matches ? 4 : 1;
+  /* base = 프리셋·슬라이더로 정한 바탕 상태, active = 지금 켜 둔 개입 목록.
+     화면에 보이는 값 tgt = base에 active를 차례로 적용한 결과 — 개입을 끄면 바탕으로 정확히 되돌아갑니다. */
+  let base = { ...NORMAL }, active = [], preset = 'normal', hist = [], tgt = { ...NORMAL }, cur = { ...NORMAL },
+      speed = matchMedia('(prefers-reduced-motion: reduce)').matches ? 4 : 1;
+  const clampEff = (p) => { SL.forEach(s => p[s.k] = clamp(p[s.k], s.min, s.max)); return p; };
+  function effOf(list){ let p = { ...base }; list.forEach(a => { const v = ivOf(a.id); for (let i = 0; i < a.n; i++) p = v.f(p); }); return clampEff(p); }
+  const doseOf = (id) => { const a = active.find(x => x.id === id); return a ? a.n : 0; };
+  function commit(){ tgt = effOf(active); renderControls(); }
 
   /* ---------------- DOM 구성 ---------------- */
   $('#sliders').innerHTML = SL.map(s => `
@@ -463,7 +479,7 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
     <div class="sl-track"><span class="tick" style="left:calc(11px + (100% - 22px) * ${(NORMAL[s.k] - s.min) / (s.max - s.min)})"></span>
     <input type="range" id="s-${s.k}" min="${s.min}" max="${s.max}" step="${s.step}" value="${NORMAL[s.k]}"></div></div>`).join('');
   $('#presets').innerHTML = PRESETS.map(p => `<button type="button" data-id="${p.id}" aria-pressed="false">${p.name}</button>`).join('');
-  $('#ivs').innerHTML = IVS.map(v => `<button type="button" class="iv" data-id="${v.id}"><span class="nm">${v.name}<small>${v.tag}</small></span><span class="fx" id="fx-${v.id}"></span><span class="bar"><i id="bar-${v.id}"></i></span></button>`).join('');
+  $('#ivs').innerHTML = IVS.map(v => `<div class="iv" data-id="${v.id}"><button type="button" class="iv-main" data-id="${v.id}" aria-pressed="false"><span class="nm">${v.name}<small id="tag-${v.id}">${v.tag}</small></span><span class="fx" id="fx-${v.id}"></span><span class="bar"><i id="bar-${v.id}"></i></span></button><button type="button" class="rep" data-more="${v.id}" hidden aria-label="${v.name} 한 번 더">＋</button></div>`).join('');
 
   /* ---------------- 그림 준비 ---------------- */
   const D = {
@@ -517,19 +533,30 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
     $$('#presets button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.id === preset)));
     const ps = PRESETS.find(p => p.id === preset);
     let extra = '';
-    if (tgt.vo2 !== 100 || tgt.erMax !== 70) extra = `<span class="first" style="background:var(--warn-soft)">이 상태에 포함된 조건: 산소 요구량 ${tgt.vo2}% · 최대 추출률 ${tgt.erMax}% (슬라이더 없음, 「정상으로」에서 초기화)</span>`;
+    if (base.vo2 !== 100 || base.erMax !== 70) extra = `<span class="first" style="background:var(--warn-soft)">이 상태에 포함된 조건: 산소 요구량 ${base.vo2}% · 최대 추출률 ${base.erMax}% (슬라이더 없음, 「정상으로」에서 초기화)</span>`;
     $('#story').innerHTML = ps ? `${ps.story}${ps.first ? `<span class="first">${ps.first}</span>` : ''}${extra}` : `직접 조정한 상태입니다.${extra}`;
 
-    const m0 = model(tgt);
+    const mNow = model(tgt);
     IVS.forEach(v => {
-      const btn = $(`.iv[data-id="${v.id}"]`), off = v.need && !v.need(tgt); btn.disabled = !!off;
-      const m1 = model(v.f(tgt)), dD = (m1.DO2 / m0.DO2 - 1) * 100, dM = m1.MAP - m0.MAP, dP = m1.fillP - m0.fillP;
+      const btn = $(`.iv-main[data-id="${v.id}"]`), more = $(`.rep[data-more="${v.id}"]`);
+      const n = doseOf(v.id), on = n > 0, off = v.need && !v.need(base) && !on;
+      btn.disabled = !!off; btn.setAttribute('aria-pressed', String(on));
+      /* 켜져 있으면 "이 개입이 지금 만들고 있는 차이", 꺼져 있으면 "누르면 생길 차이" — 둘 다 한 번분의 몫 */
+      let m0, m1;
+      if (on) { m1 = mNow; m0 = model(effOf(active.map(a => a.id === v.id ? { id:a.id, n:a.n - 1 } : a).filter(a => a.n > 0))); }
+      else { m0 = mNow; m1 = model(effOf(active.concat({ id:v.id, n:1 }))); }
+      const dD = (m1.DO2 / m0.DO2 - 1) * 100, dM = m1.MAP - m0.MAP, dP = m1.fillP - m0.fillP;
       const cls = (x, th) => Math.abs(x) < th ? 'eq' : (x > 0 ? 'up' : 'dn'), sg = (x, d=0) => (x >= 0 ? '+' : '−') + fmt(Math.abs(x), d);
+      $('#tag-' + v.id).textContent = on ? (n > 1 ? `적용 중 ×${n} · 눌러서 해제` : '적용 중 · 눌러서 해제') : v.tag;
       $('#fx-' + v.id).innerHTML = off ? '<span class="eq">해당 없음</span>' :
         `<span class="${cls(dD,2)}">DO₂ ${sg(dD)}%</span><span class="${cls(dM,2)}">MAP ${sg(dM)}</span>${Math.abs(dP) >= 2 ? `<span class="${dP > 0 ? 'dn' : 'up'}">충만압 ${sg(dP)}</span>` : ''}`;
       const bar = $('#bar-' + v.id), w = off ? 0 : clamp(Math.abs(dD), 0, 60) / 60 * 50;
       bar.className = dD < 0 ? 'neg' : ''; bar.style.width = w + '%'; bar.style.left = dD < 0 ? (50 - w) + '%' : '50%';
+      more.hidden = !(on && n < (v.max || 1));
     });
+    const sum = $('#applied');
+    if (!active.length) sum.hidden = true;
+    else { sum.hidden = false; $('#applied-list').textContent = active.map(a => ivOf(a.id).name + (a.n > 1 ? ` ×${a.n}` : '')).join(' · '); }
     $('#btn-undo').disabled = !hist.length;
   }
   function flags(m, p){
@@ -604,20 +631,30 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
   }
 
   /* ---------------- 이벤트 ---------------- */
-  function push(logged){ hist.push({ p:{ ...tgt }, preset, logged:!!logged }); if (hist.length > 30) hist.shift(); }
+  function push(){ hist.push({ base:{ ...base }, active:active.map(a => ({ ...a })), preset }); if (hist.length > 40) hist.shift(); }
+  /* 슬라이더는 화면에 보이는 값(개입 포함)을 움직입니다 → 그 차이만큼 바탕을 옮겨 개입의 몫은 그대로 둡니다. */
   $('#sliders').addEventListener('pointerdown', (e) => { if (e.target.type === 'range') push(); });
   $('#sliders').addEventListener('keydown', (e) => { if (e.target.type === 'range' && !e.repeat) push(); });
-  $('#sliders').addEventListener('input', (e) => { const k = e.target.id.slice(2); tgt[k] = +e.target.value; preset = null; renderControls(); });
-  $('#presets').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; push(); const ps = PRESETS.find(p => p.id === b.dataset.id); tgt = { ...NORMAL, ...ps.p }; preset = ps.id; renderControls(); });
-  $('#ivs').addEventListener('click', (e) => {
-    const b = e.target.closest('.iv'); if (!b || b.disabled) return; const v = IVS.find(x => x.id === b.dataset.id);
-    const m0 = model(tgt); push(true); tgt = v.f(tgt); const m1 = model(tgt);
-    const log = $('#log'); log.hidden = false;
-    log.insertAdjacentHTML('afterbegin', `<div>${v.name} — DO₂ ${fmt(m0.DO2,1)}→${fmt(m1.DO2,1)} · MAP ${fmt(m0.MAP)}→${fmt(m1.MAP)} · 충만압 ${fmt(m0.fillP)}→${fmt(m1.fillP)}</div>`);
-    renderControls();
+  $('#sliders').addEventListener('input', (e) => {
+    const k = e.target.id.slice(2); base[k] = lim(k, base[k] + (+e.target.value - tgt[k])); preset = null; commit();
   });
-  $('#btn-undo').addEventListener('click', () => { const h = hist.pop(); if (!h) return; tgt = h.p; preset = h.preset; const l = $('#log'); if (h.logged && l.firstChild) l.firstChild.remove(); if (!l.firstChild) l.hidden = true; renderControls(); });
-  $('#btn-reset').addEventListener('click', () => { push(); tgt = { ...NORMAL }; preset = 'normal'; $('#log').innerHTML = ''; $('#log').hidden = true; renderControls(); });
+  $('#presets').addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return; push();
+    const ps = PRESETS.find(p => p.id === b.dataset.id); base = { ...NORMAL, ...ps.p }; active = []; preset = ps.id; commit();
+  });
+  $('#ivs').addEventListener('click', (e) => {
+    const more = e.target.closest('.rep');
+    if (more) { const a = active.find(x => x.id === more.dataset.more), v = ivOf(more.dataset.more);
+      if (!a || a.n >= (v.max || 1)) return; push(); a.n++; commit(); return; }
+    const b = e.target.closest('.iv-main'); if (!b || b.disabled) return;
+    push();
+    const i = active.findIndex(a => a.id === b.dataset.id);
+    if (i >= 0) active.splice(i, 1); else active.push({ id:b.dataset.id, n:1 });
+    commit();
+  });
+  $('#applied-clear').addEventListener('click', () => { push(); active = []; commit(); });
+  $('#btn-undo').addEventListener('click', () => { const h = hist.pop(); if (!h) return; base = h.base; active = h.active; preset = h.preset; commit(); });
+  $('#btn-reset').addEventListener('click', () => { push(); base = { ...NORMAL }; active = []; preset = 'normal'; commit(); });
   $$('.seg button[data-spd]').forEach(b => b.addEventListener('click', () => { speed = +b.dataset.spd; syncSpeed(); }));
   function syncSpeed(){ $$('.seg button[data-spd]').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.spd === speed))); }
 
@@ -625,7 +662,7 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
   const setHead = () => document.documentElement.style.setProperty('--head-h', $('#top').offsetHeight + 'px');
   setHead(); addEventListener('resize', setHead); if (document.fonts && document.fonts.ready) document.fonts.ready.then(setHead);
 
-  syncSpeed(); renderControls(); requestAnimationFrame(frame);
+  syncSpeed(); commit(); requestAnimationFrame(frame);
   window.__cardioModel = model;
 })();
 </script>
