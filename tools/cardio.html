@@ -249,11 +249,11 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
 .strip{position:sticky;top:calc(var(--head-h,96px) + 8px);z-index:10;margin-bottom:14px}
 @media (max-width:860px){.strip{top:var(--head-h,96px);margin:-20px -16px 14px;border-radius:0;border-left:0;border-right:0;border-top:0}}
 .strip-wrap{position:relative;touch-action:pan-y}
-.strip canvas{display:block;width:100%;height:176px;
+.strip canvas{display:block;width:100%;height:200px;
   background-color:var(--paper);
   background-image:linear-gradient(90deg,var(--grid2) 1px,transparent 1px),linear-gradient(var(--grid2) 1px,transparent 1px),linear-gradient(90deg,var(--grid1) 1px,transparent 1px),linear-gradient(var(--grid1) 1px,transparent 1px);
   background-size:40px 40px,40px 40px,8px 8px,8px 8px;background-position:0 8px,0 8px,0 8px,0 8px}
-@media (max-width:860px){.strip canvas{height:150px}}
+@media (max-width:860px){.strip canvas{height:188px}}
 .strip-bar{display:flex;align-items:center;gap:8px;padding:6px 10px;border-top:1px solid var(--line);flex-wrap:wrap;font-size:12px;color:var(--muted)}
 .strip-bar .grow{flex:1 1 auto}
 .cal{position:absolute;inset:0;pointer-events:none}
@@ -688,7 +688,7 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
   <div class="foot">
     <span>생리학 일반 원리를 바탕으로 과에서 새로 만든 교육용 모델이며 특정 교재의 그림·수치를 옮긴 것이 아닙니다.</span>
     <span>임상 판단의 보조 도구이며 최종 결정은 담당 수의사에게 있습니다.</span>
-  <span style="opacity:.55;margin-left:auto">cardio v1.4</span>
+  <span style="opacity:.55;margin-left:auto">cardio v1.5</span>
   </div>
 </section>
 </main>
@@ -1122,7 +1122,7 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
   let ht = 0;                       /* 심장 시간(초) — 「느리게」에서는 천천히 흐름 */
   const beats = [], pw = [];
   const AHEAD = 1.0;                /* 미리 만들어 두는 시간 */
-  let rhy = 'sinus', rhySeed = 1, wave = 'none', beatSeq = 0;
+  let rhy = 'sinus', rhySeed = 1, wave = 'none', beatSeq = 0, pSeq = 0;
   /* 파형 변화 — 리듬 위에 덧씌우는 수정자. 전기적 성질을 바꾸면 기계적 결과(SV)도 따라옵니다. */
   const WAVE = {
     none: { name:'없음' },
@@ -1145,7 +1145,7 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
   const prMs = (hr) => clamp(0.10 - (hr - 100) * 0.0002, 0.06, 0.13);
   const lastV = () => beats.length ? beats[beats.length - 1] : null;
   const lastP = () => pw.length ? pw[pw.length - 1] : null;
-  function addP(t, cond){ pw.push({ t, cond:!!cond, hidden: !!WV().noP }); return pw[pw.length - 1]; }   /* 심방 정지: P가 사라져도 방실결절은 그대로 뛰게 둠 */
+  function addP(t, cond){ pw.push({ t, cond:!!cond, hidden: !!WV().noP, n: pSeq++ }); return pw[pw.length - 1]; }   /* 심방 정지: P가 사라져도 방실결절은 그대로 뛰게 둠 */
 
   /* 리듬 생성기 — 각자 "다음 사건"을 ht + AHEAD 까지 채웁니다 */
   const RHY = {
@@ -1162,7 +1162,7 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
   function genSinus(hr, o){
     const RR0 = 60 / hr;
     while (!lastP() || lastP().t < ht + AHEAD) {
-      const p0 = lastP(), i = pw.length;
+      const p0 = lastP(), i = pSeq;   /* 오래된 P는 배열에서 빠지므로 길이가 아니라 누적 번호로 주기를 셉니다 */
       let RR = RR0;
       if (o.breath) RR = RR0 * (1 + o.breath * Math.sin((p0 ? p0.t : 0) / 3.2 * 2 * Math.PI));
       const t = p0 ? p0.t + RR : ht + 0.1;
@@ -1176,7 +1176,7 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
       if (!drop) beats.push(mkV(t + pr, { RR: v0 ? t + pr - v0.tQ : RR, kick:true, tPsrc:t }));
       /* 심실조기수축: 정상 박동 몇 개마다 이른 넓은 QRS + 보상성 휴지 */
       if (o.vpcEvery && !drop && i > 0 && i % o.vpcEvery === o.vpcEvery - 1) {
-        const v = lastV(); beats.push(mkV(v.tQ + 0.46 * RR, { RR: 0.46 * RR, wide:true, kick:false, amp:1.35 }));
+        const v = lastV(); beats.push(mkV(v.tQ + 0.46 * RR, { RR: 0.46 * RR, wide:true, kick:false, amp:1.22 }));
       }
     }
   }
@@ -1189,7 +1189,7 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
   }
   function genVT(hr){
     const RRv = clamp(60 / clamp(hr * 1.8, 170, 260), 0.23, 0.36);             /* 심실 기원 빠른 리듬 — HR 슬라이더의 약 1.8배 */
-    while (!lastV() || lastV().tQ < ht + AHEAD) { const v = lastV(); beats.push(mkV(v ? v.tQ + RRv : ht + 0.2, { RR:RRv, wide:true, kick:false, amp:1.25 })); }
+    while (!lastV() || lastV().tQ < ht + AHEAD) { const v = lastV(); beats.push(mkV(v ? v.tQ + RRv : ht + 0.2, { RR:RRv, wide:true, kick:false, amp:1.12 })); }
     const RRa = 60 / clamp(hr * 0.55, 70, 160);                               /* 심방은 제 속도로 따로 뜀(방실 해리) */
     while (!lastP() || lastP().t < ht + AHEAD) { const p = lastP(); addP(p ? p.t + RRa : ht + 0.15, false); }
   }
@@ -1204,7 +1204,7 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
     while (pw.length > 3 && pw[0].t < ht - 9) pw.shift();
   }
   function resetRhythm(id){
-    rhy = id; beats.length = 0; pw.length = 0; rhySeed = 7; schedule();
+    rhy = id; beats.length = 0; pw.length = 0; rhySeed = 7; pSeq = 0; beatSeq = 0; schedule();
     if (E2.ctx) { E2.ctx.clearRect(0, 0, E2.W, E2.H); E2.sweep = -1; if (E2.frozen) setFrozen(false); }
     if (ECG.on) { ECG.lastX = -1; ecgResize(); }
     e2Rhy();
@@ -1240,8 +1240,8 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
         v += A * W.st * smooth(a0, a0 + 0.045, t) * (1 - smooth(a1, tT, t));   /* 앞뒤를 부드럽게 이어 T로 녹아들게 */
       }
       if (b.wide || W.sine)   /* 심실 기원·sine: 넓고 주 편향이 반대, T도 반대 방향(discordant) */
-        v += A * (0.26 * G(b.tQ + 0.18 * q, q / 6.5) - 1.30 * G(b.tQ + 0.52 * q, q / 4.0) + 0.16 * G(b.tQ + 0.88 * q, q / 6)
-                + 0.42 * tA * G(tT, b.Td * tN / (t < tT ? 2.6 : 3.8)));
+        v += A * (-0.16 * G(b.tQ + 0.14 * q, q / 7) + 1.25 * G(b.tQ + 0.48 * q, q / 4.0) - 0.22 * G(b.tQ + 0.90 * q, q / 6)
+                - 0.40 * tA * G(tT, b.Td * tN / (t < tT ? 2.6 : 3.8)));   /* 크고 넓은 위쪽 편향 + 반대 방향 T — 작은 화면에서도 잘리지 않음 */
       else
         v += A * (-0.12 * G(b.tQ + 0.20 * q, q / 9) + 1.55 * G(b.tQ + 0.43 * q, q / 7.5) - 0.30 * G(b.tQ + 0.68 * q, q / 8.5)
                 + 0.30 * tA * G(tT, b.Td * tN / (t < tT ? 3.2 : 4.4)));
@@ -1269,7 +1269,7 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
         if (t - tm < 0.2 && xm < x) { c.fillStyle = E.col.tx; c.fillText(label, xm, Math.max(10 * E.dpr, base - amp * mv - 5 * E.dpr)); } };
       for (let k = 0; k < pw.length; k++) mark(pw[k], 'l0', 'P', pw[k].t + 0.022, 0.17);
       for (let k = 0; k < beats.length; k++){ const b = beats[k];
-        mark(b, 'l1', b.wide ? 'QRS 넓음' : 'QRS', b.tQ + 0.43 * b.QRS, b.wide ? -0.2 : 1.55);
+        mark(b, 'l1', b.wide ? 'QRS 넓음' : 'QRS', b.tQ + 0.45 * b.QRS, b.wide ? 1.3 * b.amp : 1.55);
         mark(b, 'l2', 'T', b.tQ + b.QT - 0.46 * b.Td, 0.30); }
       E.lastX = x; E.lastY = y;
     }
@@ -1295,8 +1295,8 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
     { id:'RR',  name:'RR',  seg:(b, nb) => nb ? [b.tQ + 0.43 * b.QRS, nb.tQ + 0.43 * nb.QRS] : null, lit:'', txt:'박동 사이 간격. 60 ÷ RR(초) = 심박수. 규칙성을 볼 때도 이 간격을 비교합니다.' }
   ];
   const NORMR = {
-    dog: { hr:'70–160 (대형견 60–140)', P:'≤ 40 ms · ≤ 0.4 mV', PR:'60–130 ms', QRS:'≤ 60 ms (대형견 ≤ 65)', QT:'150–250 ms' },
-    cat: { hr:'140–220', P:'≤ 40 ms · ≤ 0.2 mV', PR:'50–90 ms', QRS:'≤ 40 ms', QT:'120–180 ms' }
+    dog: { hr:'70–160 (초소형 ≤ 180 · 초대형 60–140)', P:'≤ 40 ms · ≤ 0.4 mV', PR:'60–130 ms', QRS:'≤ 50 ms (소형) · ≤ 60 ms (대형)', QT:'150–250 ms' },
+    cat: { hr:'120–240', P:'≤ 40 ms · ≤ 0.2 mV', PR:'50–90 ms', QRS:'≤ 40 ms', QT:'120–180 ms' }
   };
   const E2 = { cv:$('#ecg2c'), ctx:null, W:0, H:0, dpr:1, PPS:200, WIN:3, frozen:false, t1:0, sweep:-1, sy:0, part:null, col:{},
                cal:[0.3, 0.6], drag:-1, espec:'dog' };
@@ -1313,7 +1313,7 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
     E2.cal = [Math.min(E2.cal[0], r.width - 30), Math.min(E2.cal[1], r.width - 10)];
     if (E2.frozen) e2Static(); e2Cal();
   }
-  const e2Y = (v) => E2.H * 0.66 - v * 80 * E2.dpr;          /* 1 mV = 10 작은 칸 */
+  const e2Y = (v) => E2.H * 0.72 - v * 80 * E2.dpr;          /* 기저선을 낮춰 R 꼭대기가 잘리지 않게 */          /* 1 mV = 10 작은 칸 */
   function e2Seg(){                                           /* 지금 고른 구간의 [시작, 끝] 시각 */
     if (!E2.part) return null; const P = PARTS.find(p => p.id === E2.part);
     for (let i = beats.length - 1; i >= 0; i--){ const b = beats[i]; if (b.tQ + b.QT + 0.05 > E2.t1) continue; return P.seg(b, beats[i + 1]); }
@@ -1419,9 +1419,9 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
 
   const WTXT = {
     none: { t:'리듬만 보고 있습니다. 아래 항목을 고르면 같은 리듬 위에 파형 변화가 덧씌워집니다.' },
-    hk1:  { t:'<b>K⁺ 약 5.5–6.5 mEq/L</b> — T가 좁고 뾰족해집니다(tented T). 리듬과 다른 간격은 아직 정상이라 놓치기 쉽습니다.', l:[['bloodgas.html','Blood Gas'],['saccm.html#sacc3-p5-c56','Ch.56 칼륨']] },
+    hk1:  { t:'<b>K⁺ 약 5.5–6.5 mEq/L</b> — T가 좁고 뾰족해집니다(tented T). 리듬과 다른 간격은 아직 정상이라 놓치기 쉽습니다. 단, <b>수치와 ECG 변화는 잘 맞지 않을 때가 많아</b>(산증·저Ca·상승 속도에 좌우) 단계는 대략의 순서로만 보세요.', l:[['bloodgas.html','Blood Gas'],['saccm.html#sacc3-p5-c56','Ch.56 칼륨']] },
     hk2:  { t:'<b>약 7–8 mEq/L</b> — 심방근이 먼저 마비되어 <b>P가 사라지고</b>(심방 정지) QRS가 넓어지며 심박수가 느려집니다. 방실결절은 계속 뛰므로 규칙적인 서맥으로 보입니다. 넓은 QRS 때문에 박출량도 떨어집니다.', l:[['bloodgas.html','Blood Gas'],['fluid.html','Fluid'],['saccm.html#sacc3-p5-c56','Ch.56 칼륨']] },
-    hk3:  { t:'<b>약 8.5 mEq/L 이상</b> — QRS와 T가 하나로 녹아 <b>sine wave</b>가 됩니다. 심정지 직전이며 calcium gluconate로 막을 안정화하는 것이 먼저입니다.', l:[['bloodgas.html','Blood Gas'],['saccm.html#sacc3-p5-c56','Ch.56 칼륨'],['cpcr.html','CPCR']] },
+    hk3:  { t:'<b>약 9–10 mEq/L 이상</b> — QRS와 T가 하나로 녹아 <b>sine wave</b>가 됩니다. 심정지 직전이며 calcium gluconate로 막을 안정화하는 것이 먼저입니다.', l:[['bloodgas.html','Blood Gas'],['saccm.html#sacc3-p5-c56','Ch.56 칼륨'],['cpcr.html','CPCR']] },
     peri: { t:'<b>심낭 삼출</b> — 전체 파형이 작아지고(저전압) 박동마다 크기가 번갈아 달라집니다(electrical alternans). 심장이 액체 속에서 흔들리기 때문입니다. 혈역학 탭의 <b>충만 제한</b> 슬라이더와 같이 보세요.', l:[['saccm.html#sacc3-p4-c47','Ch.47 심낭 질환'],['fluid.html','Fluid']] },
     isch: { t:'<b>ST 하강</b> — 심내막하 허혈에서 흔합니다. 빈맥·저혈압·빈혈로 심근 산소 수요와 공급이 어긋날 때 나타나며, 원인 교정이 치료입니다.', l:[['saccm.html#sacc3-p4-c42','Ch.42 심실 부전'],['transfusion.html','Transfusion']] },
     inj:  { t:'<b>ST 상승</b> — 심근 손상·심막염에서 보입니다. GDV·외상·췌장염 뒤의 심근염(전통적으로 말하는 외상성 심근염)에서 VPC와 함께 나타나기도 합니다.', l:[['saccm.html#sacc3-p4-c50','Ch.50 심실 빈맥'],['saccm.html#sacc3-p4-c47','Ch.47 심낭 질환']] }
@@ -1633,6 +1633,8 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
     schedule();
     if (tab === 'ecg') { E2.t1 = ht; if (!E2.ctx) e2Resize(); if (run) e2Sweep(ht0, ht); }
 
+    if (tab !== 'hemo' && tab !== 'ecg') { requestAnimationFrame(frame); return; }   /* 곡선·승압제·참고 탭: 시간만 흐르게 두고 그리기는 생략 */
+
     /* 기계적 심주기: 등용적 수축 → 박출 → 등용적 이완 → 충만(급속 · 완만 · 심방 수축) */
     const st = mechAt(ht), b = st.b, nb = st.nb;
     if (b && (!b.vol || b.volK !== m.SV)) { b.vol = beatVols(b, m, st.i); b.volK = m.SV; }
@@ -1767,10 +1769,11 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
   const setHead = () => document.documentElement.style.setProperty('--head-h', $('#top').offsetHeight + 'px');
   setHead(); addEventListener('resize', setHead); if (document.fonts && document.fonts.ready) document.fonts.ready.then(setHead);
 
+  const openHash = () => { const h = (location.hash || '').slice(1), t = h && $('#tab-' + h); if (t) t.click(); };
+  addEventListener('hashchange', openHash);
   let ecgPref = null; try { ecgPref = localStorage.getItem('cardio:ecg'); } catch (e) {}
   setEcg(ecgPref == null ? matchMedia('(min-width: 861px)').matches : ecgPref === '1');   /* 처음에는 PC만 켜 둠 — 폰은 숫자 타일 자리를 쓰므로 버튼으로 */
-  syncSpeed(); commit(); requestAnimationFrame(frame);
-  window.__cardioModel = model;
+  syncSpeed(); commit(); requestAnimationFrame(frame); openHash();
 })();
 </script>
 <script>
