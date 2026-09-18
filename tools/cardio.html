@@ -168,6 +168,24 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
 @media (max-width:860px){.stage{top:var(--head-h,96px);margin:-20px -16px 14px;border-radius:0;border-left:0;border-right:0;border-top:0}}
 .stage svg{display:block;width:100%;height:auto;max-height:46vh;background:var(--surface)}
 .stage-bar{display:flex;align-items:center;gap:8px;padding:6px 10px;border-top:1px solid var(--line);flex-wrap:wrap}
+.stage-bar .ibtn{min-height:26px;padding:2px 10px;font-size:12px;align-self:flex-start}
+.stage-bar .ibtn[aria-pressed="true"]{background:var(--ok-soft);color:var(--ok);border-color:transparent}
+/* ECG 띠 */
+.ecg{border-top:1px solid var(--line);background:var(--surface)}
+.ecg canvas{display:block;width:100%;height:78px;
+  background-image:linear-gradient(90deg,var(--line) 1px,transparent 1px),linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--line) 45%,transparent) 1px,transparent 1px);
+  background-size:20% 100%,100% 19.5px,4% 100%}
+.ecg-meta{display:flex;flex-wrap:wrap;align-items:center;gap:2px 12px;padding:3px 10px 5px;font-size:11px;color:var(--muted);font-family:"IBM Plex Mono",monospace}
+.ecg-meta b{font-family:"IBM Plex Sans KR",sans-serif;color:var(--ok);font-weight:700}
+.ecg-meta .lg{margin-left:auto;display:inline-flex;align-items:center;gap:4px;font-family:"IBM Plex Sans KR",sans-serif}
+.ecg-meta .lg i{display:inline-block;width:9px;height:5px;border-radius:1px;margin-left:6px}
+@media (max-width:860px){.stage.ecg-on .mini{display:none}}
+@media (max-width:520px){.ecg-meta b,.ecg-meta .w{display:none}.ecg-meta{font-size:10.5px;gap:2px 8px}.ecg-meta .lg i{margin-left:4px}}
+/* 전도계 */
+.cond path{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.cd0{stroke:#F2B632;stroke-width:1.2;opacity:.45}
+.cd1{stroke:#FFD23F;stroke-width:2.6}
+#chlab text.cd,#m-chlab text.cd{font-size:7.5px;fill:#FFD23F;stroke:rgba(0,0,0,.5);stroke-width:1.8px}
 .stage-bar .chips{display:flex;gap:4px;flex-wrap:wrap;flex:1 1 auto;min-width:0}
 .mini{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
 .mini div{padding:6px 8px 7px;border-right:1px solid var(--line);min-width:0}
@@ -183,12 +201,80 @@ main{max-width:1120px;margin:0 auto;padding:20px 16px 120px}
 .o2bar b{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--ink)}
 
 /* 심장 조직 색 */
-:root{--myo:#D9A29E;--myo-line:#9C5A5E;--valve:#FFF6E6}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--myo:#7C4A50;--myo-line:#D3A0A4;--valve:#F8EAD2}}
-:root[data-theme="dark"]{--myo:#7C4A50;--myo-line:#D3A0A4;--valve:#F8EAD2}
-#lungs .fis{stroke:var(--line-strong);stroke-width:1;opacity:.6}
-#rbcBack circle,#rbcFront circle{stroke:var(--surface);stroke-width:.5}
-#chlab text{font-size:8.5px;font-weight:700;fill:#fff;text-anchor:middle;dominant-baseline:middle;paint-order:stroke;stroke:rgba(0,0,0,.28);stroke-width:1.6px;pointer-events:none}
+:root{--paper:#FFF8F6;--grid1:#F3D8D4;--grid2:#E7B4AE;--ecg-tr:#1E7A46;
+  --myo:#D79C98;--myo-hi:#EFC9C2;--myo-lo:#B06C70;--myo-line:#8F4E54;--valve:#FFF6E6;--valve-line:rgba(70,20,28,.55);--hl:.42;--shade:.17}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--myo:#7C4A50;--myo-hi:#A06A72;--myo-lo:#56303A;--myo-line:#D3A0A4;--valve:#F8EAD2;--valve-line:rgba(0,0,0,.6);--hl:.2;--shade:.4;--lung-op:.4;--paper:#1C1616;--grid1:#392626;--grid2:#4E3230;--ecg-tr:#4ED88A}}
+:root[data-theme="dark"]{--myo:#7C4A50;--myo-hi:#A06A72;--myo-lo:#56303A;--myo-line:#D3A0A4;--valve:#F8EAD2;--valve-line:rgba(0,0,0,.6);--hl:.2;--shade:.4;--lung-op:.4;--paper:#1C1616;--grid1:#392626;--grid2:#4E3230;--ecg-tr:#4ED88A}
+.hi{fill:#fff;opacity:var(--hl);stroke:none;pointer-events:none}
+.shd{fill:#000;opacity:var(--shade);stroke:none;pointer-events:none}
+.fis{stroke:var(--line-strong);stroke-width:1;opacity:.6}
+#rbcBack circle,#rbcFront circle{stroke:var(--surface);stroke-width:.45}
+#ribBack{opacity:.93}
+#chlab text,#m-chlab text{font-size:8.5px;font-weight:700;fill:#fff;text-anchor:middle;dominant-baseline:middle;paint-order:stroke;stroke:rgba(0,0,0,.28);stroke-width:1.6px;pointer-events:none}
+.svbars{display:flex;align-items:flex-end;gap:3px;height:56px;padding-bottom:2px;border-bottom:1px solid var(--line)}
+.svbars i{flex:1 1 0;min-width:0;border-radius:3px 3px 0 0;background:var(--accent);opacity:.85;transition:height .12s linear}
+.svbars i.wide{background:var(--high)}
+.svbars i.nokick{background:var(--warn)}
+.svnum{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;padding-top:8px;font-size:12px;color:var(--muted)}
+.svnum b{font-family:"IBM Plex Mono",monospace;font-size:20px;font-weight:600;color:var(--ink);margin-right:3px}
+.svnum small{display:block;font-size:11px}
+.svnum .cmp{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-weight:600}
+.svnum .cmp.dn{color:var(--high)} .svnum .cmp.eq{color:var(--ok)}
+/* 곡선 · 승압제 탭 */
+.cv-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:14px;align-items:start}
+@media (max-width:860px){.cv-grid{grid-template-columns:1fr;gap:0}}
+#cv-fs,#cv-do,#vs-map{display:block;width:100%;height:auto;background:var(--surface)}
+.cv-ax{stroke:var(--line-strong);stroke-width:1}
+.cv-gr{stroke:var(--line);stroke-width:.7}
+.cv-curve{fill:none;stroke:var(--accent);stroke-width:2.4;stroke-linecap:round}
+.cv-prev{fill:none;stroke:var(--muted);stroke-width:1.6;stroke-dasharray:4 3;opacity:.7}
+.cv-zone{fill:var(--high-soft);opacity:.65}
+.cv-dot{fill:var(--accent);stroke:var(--surface);stroke-width:2}
+.cv-dot2{fill:var(--muted);opacity:.6}
+.cv-t{font-family:"IBM Plex Sans KR",sans-serif;font-size:8.5px;fill:var(--muted)}
+.cv-t.n{font-family:"IBM Plex Mono",monospace;font-size:9.5px;font-weight:600;fill:var(--ink)}
+.cv-t.hi{fill:var(--high)}
+.fx-rows{display:flex;flex-direction:column;gap:9px}
+.fx-row{display:grid;grid-template-columns:92px 1fr 62px;align-items:center;gap:8px;font-size:12.5px}
+.fx-row b{font-weight:600;color:var(--ink-2)}
+.fx-row .t{height:7px;border-radius:4px;background:var(--surface-2);position:relative;overflow:hidden}
+.fx-row .t i{position:absolute;top:0;bottom:0;left:50%;background:var(--ok)}
+.fx-row .t i.neg{background:var(--high)}
+.fx-row .t::after{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--line-strong)}
+.fx-row .v{font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-weight:600;text-align:right}
+.rc-bar{fill:var(--surface-2)}
+.rc-fill{fill:var(--accent)}
+.rc-fill.a{fill:var(--high)} .rc-fill.b{fill:var(--venous)} .rc-fill.d{fill:var(--ok)} .rc-fill.v{fill:var(--warn)}
+/* ECG 탭 */
+.strip{position:sticky;top:calc(var(--head-h,96px) + 8px);z-index:10;margin-bottom:14px}
+@media (max-width:860px){.strip{top:var(--head-h,96px);margin:-20px -16px 14px;border-radius:0;border-left:0;border-right:0;border-top:0}}
+.strip-wrap{position:relative;touch-action:pan-y}
+.strip canvas{display:block;width:100%;height:176px;
+  background-color:var(--paper);
+  background-image:linear-gradient(90deg,var(--grid2) 1px,transparent 1px),linear-gradient(var(--grid2) 1px,transparent 1px),linear-gradient(90deg,var(--grid1) 1px,transparent 1px),linear-gradient(var(--grid1) 1px,transparent 1px);
+  background-size:40px 40px,40px 40px,8px 8px,8px 8px;background-position:0 8px,0 8px,0 8px,0 8px}
+@media (max-width:860px){.strip canvas{height:150px}}
+.strip-bar{display:flex;align-items:center;gap:8px;padding:6px 10px;border-top:1px solid var(--line);flex-wrap:wrap;font-size:12px;color:var(--muted)}
+.strip-bar .grow{flex:1 1 auto}
+.cal{position:absolute;inset:0;pointer-events:none}
+.cal .cbar{position:absolute;top:0;bottom:0;width:34px;margin-left:-17px;pointer-events:auto;cursor:ew-resize;touch-action:none;display:flex;justify-content:center}
+.cal .cbar i{width:1.5px;background:var(--venous);opacity:.55}
+.cal .cbar b{position:absolute;top:1px;width:24px;height:24px;border-radius:50%;background:var(--venous);color:#fff;font-size:12px;font-weight:700;line-height:24px;text-align:center;opacity:.95;box-shadow:var(--shadow)}
+.cal .cbar:last-of-type b{top:auto;bottom:1px}
+.cal .cbar:last-of-type i{opacity:.55}
+.cread{background:var(--venous-soft);color:var(--venous-ink);border-radius:999px;padding:2px 10px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-weight:600;white-space:nowrap}
+@media (max-width:520px){.strip-bar #e2-int{display:none}}
+.ecg-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1fr);gap:14px;align-items:start}
+@media (max-width:860px){.ecg-grid{grid-template-columns:1fr;gap:0}}
+#mini{display:block;width:100%;height:auto;max-height:36vh}
+#mini #m-chlab text{font-size:6px;stroke-width:1.2px}
+#mini #m-chlab text.cd{font-size:5.4px;stroke-width:1.2px}
+@media (max-width:860px){#mini{max-height:26vh}}
+.mini-note{font-size:12.5px;line-height:1.6;color:var(--ink-2);min-height:3.2em;padding-bottom:10px}
+.mini-note b{color:var(--ink)}
+.mini-note .rng{font-family:"IBM Plex Mono",monospace;color:var(--accent-ink);font-weight:600}
+table.ref tr.on td{background:var(--accent-soft);color:var(--accent-ink);font-weight:600}
+
 /* svg text */
 .stage text{font-family:"IBM Plex Sans KR",sans-serif;font-size:10.5px;fill:var(--ink-2)}
 .stage .n{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:11.5px;fill:var(--ink)}
@@ -275,6 +361,9 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
   </div>
   <nav class="tabs" role="tablist" aria-label="페이지">
     <button class="tab" role="tab" id="tab-hemo" data-panel="p-hemo" aria-selected="true"><span class="dot"></span>혈역학</button>
+    <button class="tab" role="tab" id="tab-ecg" data-panel="p-ecg" aria-selected="false"><span class="dot"></span>ECG</button>
+    <button class="tab" role="tab" id="tab-curve" data-panel="p-curve" aria-selected="false"><span class="dot"></span>곡선</button>
+    <button class="tab" role="tab" id="tab-vaso" data-panel="p-vaso" aria-selected="false"><span class="dot"></span>승압제</button>
     <button class="tab" role="tab" id="tab-ref" data-panel="p-ref" aria-selected="false"><span class="dot"></span>모델 · 참고</button>
   </nav>
 </header>
@@ -286,40 +375,66 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
   <!-- ============ 그림 ============ -->
   <div class="card stage" id="stage">
     <svg id="fig" viewBox="0 0 400 362" role="img" aria-label="심장 4방 단면의 수축·이완, 판막 개폐와 폐순환·체순환 혈류 모식도">
+      <defs>
+        <linearGradient id="gMyo" gradientUnits="userSpaceOnUse" x1="-62" y1="-6" x2="46" y2="112">
+          <stop offset="0" style="stop-color:var(--myo-hi)"/><stop offset=".5" style="stop-color:var(--myo)"/><stop offset="1" style="stop-color:var(--myo-lo)"/>
+        </linearGradient>
+        <radialGradient id="gLV" cx=".42" cy=".26" r="1.05"><stop offset="0"/><stop offset=".6"/><stop offset="1"/></radialGradient>
+        <radialGradient id="gRV" cx=".52" cy=".24" r="1.05"><stop offset="0"/><stop offset=".6"/><stop offset="1"/></radialGradient>
+        <radialGradient id="gLA" cx=".34" cy=".62" r="1"><stop offset="0"/><stop offset=".6"/><stop offset="1"/></radialGradient>
+        <radialGradient id="gRA" cx=".66" cy=".62" r="1"><stop offset="0"/><stop offset=".6"/><stop offset="1"/></radialGradient>
+        <radialGradient id="gRbcA" cx=".5" cy=".5" r=".5"><stop offset="0"/><stop offset=".45"/><stop offset="1"/></radialGradient>
+        <radialGradient id="gRbcV" cx=".5" cy=".5" r=".5"><stop offset="0"/><stop offset=".45"/><stop offset="1"/></radialGradient>
+        <radialGradient id="gLungHi" cx=".42" cy=".34" r=".7"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".55" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".10"/></radialGradient>
+        <linearGradient id="gTis" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".45"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".08"/></linearGradient>
+        <pattern id="fiber" patternUnits="userSpaceOnUse" width="4.6" height="4.6" patternTransform="rotate(34)"><path d="M0,2.3 H4.6" style="stroke:var(--myo-lo)" stroke-width=".8" opacity=".3"/></pattern>
+      </defs>
       <g id="cl" fill="none" stroke="none"></g>
       <!-- 기관 · 폐 -->
       <path id="trachea" d="M199,0 L199,30 M199,30 L185,46 M199,30 L213,46" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="rings" d="M199,2 L199,29 M197,32 L186,45 M201,32 L212,45" fill="none" stroke-dasharray="1.3 3.1"/>
       <g id="lungs">
         <path id="lungL" d="M186,12 C168,2 132,12 116,40 C104,62 102,82 108,92 C134,98 168,96 186,90 C190,64 190,34 186,12 Z"/>
         <path id="lungR" d="M212,12 C230,2 266,12 282,40 C294,62 296,82 290,92 C264,98 230,96 212,90 C208,64 208,34 212,12 Z"/>
+        <path d="M186,12 C168,2 132,12 116,40 C104,62 102,82 108,92 C134,98 168,96 186,90 C190,64 190,34 186,12 Z" fill="url(#gLungHi)" style="opacity:var(--lung-op,1)"/>
+        <path d="M212,12 C230,2 266,12 282,40 C294,62 296,82 290,92 C264,98 230,96 212,90 C208,64 208,34 212,12 Z" fill="url(#gLungHi)" style="opacity:var(--lung-op,1)"/>
         <path class="fis" d="M114,52 C138,54 164,66 187,82 M284,52 C260,54 234,66 211,82" fill="none"/>
         <g id="edema" opacity="0"></g>
       </g>
       <!-- 조직 -->
       <rect id="tissue" x="120" y="300" width="160" height="56" rx="12"/>
+      <rect x="120" y="300" width="160" height="56" rx="12" fill="url(#gTis)" pointer-events="none"/>
       <g id="lanes" fill="none"></g>
       <!-- 심장 뒤를 지나는 혈관 -->
       <g id="ribBack"></g>
       <g id="rbcBack"></g>
       <!-- 심장 -->
       <g id="heart" transform="translate(196 178) rotate(-14) scale(0.92)">
-        <ellipse id="peri" cx="-1" cy="30" rx="76" ry="92"/>
+        <ellipse id="peri" cx="-1" cy="35" rx="73" ry="84"/>
+        <g transform="translate(3.2 4.4)"><path id="shRa" class="shd"/><path id="shLa" class="shd"/><path id="shMyo" class="shd"/></g>
+        <path id="raW" fill="none"/><path id="laW" fill="none"/>
         <path id="ra"/><path id="la"/>
-        <path id="block"/>
-        <path id="myo"/>
+        <g id="cdA" class="cond" display="none"><path id="cdA0" class="cd0"/><path id="cdA1" class="cd1" pathLength="1"/><path id="cdA2" class="cd1" pathLength="1"/><path id="cdA3" class="cd1" pathLength="1"/><circle id="cdSA" r="3.2"/></g>
+        <path id="myo"/><path id="fib" fill="url(#fiber)" pointer-events="none"/>
         <path id="rvc"/><path id="lvc"/>
+        <path id="neckW"/>
         <path id="neckR"/><path id="neckL"/>
+        <path id="pap"/>
+        <path id="chord" fill="none" stroke-linecap="round"/>
+        <g id="cdV" class="cond" display="none"><path id="cdV0" class="cd0"/><path id="cdHis" class="cd1" pathLength="1"/><path id="cdL" class="cd1" pathLength="1"/><path id="cdR" class="cd1" pathLength="1"/><circle id="cdAV" r="2.9"/></g>
         <path id="ghost" fill="none"/>
+        <path id="avvO" fill="none" stroke-linecap="round"/>
         <g id="avv" fill="none" stroke-linecap="round"><path/><path/><path/><path/></g>
       </g>
       <!-- 심장 앞을 지나는 혈관 -->
       <g id="ribFront"></g>
       <g id="heartTop" transform="translate(196 178) rotate(-14) scale(0.92)">
+        <path id="slvO" fill="none" stroke-linecap="round"/>
         <g id="slv" fill="none" stroke-linecap="round"><path/><path/><path/><path/></g>
       </g>
       <g id="rbcFront"></g>
       <!-- 라벨 -->
-      <g id="chlab"><text id="lb-ra">RA</text><text id="lb-la">LA</text><text id="lb-rv">RV</text><text id="lb-lv">LV</text></g>
+      <g id="chlab"><text id="lb-ra">RA</text><text id="lb-la">LA</text><text id="lb-rv">RV</text><text id="lb-lv">LV</text><text id="lb-sa" class="cd" display="none">SA</text><text id="lb-av" class="cd" display="none">AV</text></g>
       <text x="394" y="16" text-anchor="end">폐 · SaO₂ <tspan class="n" id="t-sa">98</tspan>%</text>
       <text x="394" y="186" text-anchor="end">MAP <tspan class="n" id="t-map">100</tspan></text>
       <text x="394" y="200" text-anchor="end" class="s" id="t-bp">125/88 mmHg</text>
@@ -330,13 +445,17 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
       <text x="200" y="291" text-anchor="middle">EF <tspan class="n" id="t-ef">60</tspan>% · SV <tspan class="n" id="t-svol">1.5</tspan> <tspan class="s">mL/kg</tspan></text>
       <text x="200" y="348" text-anchor="middle">조직 · O₂ER <tspan class="n" id="t-er">24</tspan>% <tspan class="s" id="t-tis2">· VO₂ 7.0</tspan></text>
     </svg>
+    <div class="ecg" id="ecg" hidden>
+      <canvas id="ecgc"></canvas>
+      <div class="ecg-meta"><b>Lead II</b><span id="ecg-int"></span><span class="lg"><i style="background:var(--warn)"></i>등용적<i style="background:var(--arterial)"></i>박출<i style="background:var(--venous)"></i>충만</span></div>
+    </div>
     <div class="mini">
       <div id="m-map"><span class="k">MAP <small>mmHg</small></span><span class="v" id="v-map">100</span><span class="r" id="r-map">&nbsp;</span></div>
       <div id="m-co"><span class="k">CO <small>mL/kg/min</small></span><span class="v" id="v-co">150</span><span class="r" id="r-co">&nbsp;</span></div>
       <div id="m-do2"><span class="k">DO₂ <small>mL/kg/min</small></span><span class="v" id="v-do2">29.5</span><div class="o2bar" title="세로선 = 임계 DO₂"><i id="o2fill"></i><b id="o2crit"></b></div></div>
       <div id="m-edp"><span class="k">충만압 <small>mmHg</small></span><span class="v" id="v-edp">8</span><span class="r" id="r-edp">&nbsp;</span></div>
     </div>
-    <div class="stage-bar"><div class="chips" id="flags"></div></div>
+    <div class="stage-bar"><div class="chips" id="flags"></div><button type="button" class="ibtn" id="btn-ecg" aria-pressed="false">ECG</button></div>
   </div>
 
   <!-- ============ 조작 ============ -->
@@ -367,6 +486,146 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
  </div>
 </section>
 
+<!-- ===================== ECG ===================== -->
+<section class="panel" id="p-ecg" role="tabpanel" aria-labelledby="tab-ecg">
+  <div class="card strip" id="strip">
+    <div class="strip-wrap" id="stripwrap">
+      <canvas id="ecg2c"></canvas>
+      <div class="cal" id="cal" hidden>
+        <div class="cbar" data-cal="0"><i></i><b>1</b></div>
+        <div class="cbar" data-cal="1"><i></i><b>2</b></div>
+      </div>
+    </div>
+    <div class="strip-bar">
+      <span class="chip v">Lead II</span>
+      <span class="mono" id="e2-int"></span>
+      <span class="cread" id="cread" hidden></span>
+      <span class="grow"></span>
+      <button type="button" class="ibtn" id="btn-freeze">멈춤</button>
+    </div>
+  </div>
+
+  <div class="ecg-grid">
+    <div class="card">
+      <div class="card-head"><h3>파형 · 심장</h3><span class="chip na" id="e2-sp">개</span></div>
+      <svg id="mini" viewBox="130 100 140 194" role="img" aria-label="전도계와 심장 단면"></svg>
+      <div class="card-body" style="padding-top:0"><div class="mini-note" id="e2-note">아래에서 구간을 고르면 그 구간이 파형과 심장에서 함께 강조됩니다.</div></div>
+    </div>
+
+    <div>
+      <div class="card">
+        <div class="card-head"><h3>리듬</h3><a class="src" href="saccm.html#sacc3-p4-c48">SACCM Ch.48–50 ›</a></div>
+        <div class="card-body">
+          <div class="pills" id="e2-rhy"></div>
+          <div class="story" id="e2-rtxt"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>파형 변화</h3><span class="chip na">리듬 위에 덧씌움</span></div>
+        <div class="card-body">
+          <div class="pills" id="e2-wave"></div>
+          <div class="story" id="e2-wtxt"></div>
+          <div class="links" id="e2-wlink" style="margin-top:10px"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>혈역학 영향</h3><span class="chip na">박동별 일회박출량</span></div>
+        <div class="card-body">
+          <div class="svbars" id="e2-bars"></div>
+          <div class="svnum"><span><b id="e2-co">—</b> mL/kg/min<small>최근 6초 실효 CO</small></span><span id="e2-cmp" class="cmp"></span></div>
+          <div class="mini-note" id="e2-hnote" style="min-height:0;padding-top:8px;padding-bottom:0"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>구간 읽기</h3></div>
+        <div class="card-body">
+          <div class="pills" id="e2-parts"></div>
+          <div class="tblwrap" style="margin-top:12px"><table class="ref" id="e2-tbl"></table></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>조작</h3><div class="seg sm" role="group" aria-label="종" style="margin-left:auto"><button type="button" data-esp="dog" aria-pressed="true">DOG</button><button type="button" data-esp="cat" aria-pressed="false">CAT</button></div></div>
+        <div class="card-body" id="e2-ctl" style="padding-top:2px;padding-bottom:2px"></div>
+      </div>
+
+      <div class="callout ref">캘리퍼는 <b>멈춤</b> 상태에서 씁니다. 두 선을 끌어 간격을 재면 ms와 그 간격이 RR일 때의 심박수가 같이 나옵니다. 종이 눈금은 작은 칸 0.04초, 큰 칸 0.2초입니다.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 곡선 ===================== -->
+<section class="panel" id="p-curve" role="tabpanel" aria-labelledby="tab-curve">
+  <div class="cv-grid">
+    <div>
+      <div class="card">
+        <div class="card-head"><h3>Frank–Starling</h3><span class="chip na" id="cv-fs-chip">수액 반응성</span><a class="src" href="saccm.html#sacc3-p6-c68">Ch.68 ›</a></div>
+        <svg id="cv-fs" viewBox="0 0 300 200" role="img" aria-label="충만압에 따른 일회박출량 곡선"></svg>
+        <div class="card-body" style="padding-top:0"><div class="mini-note" id="cv-fs-note"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>DO₂ · VO₂</h3><span class="chip na">산소 공급과 소비</span><a class="src" href="saccm.html#sacc3-p5-c61">Ch.61 ›</a></div>
+        <svg id="cv-do" viewBox="0 0 300 200" role="img" aria-label="산소 공급에 따른 산소 소비 곡선"></svg>
+        <div class="card-body" style="padding-top:0"><div class="mini-note" id="cv-do-note"></div></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card">
+        <div class="card-head"><h3>상태</h3><button type="button" class="ibtn" id="cv-reset" style="margin-left:auto">정상으로</button></div>
+        <div class="card-body"><div class="pills" id="cv-presets"></div></div>
+      </div>
+      <div class="card">
+        <div class="card-head"><h3>개입</h3><span class="chip na">같은 개입, 다른 결과</span></div>
+        <div class="card-body"><div class="ivs" id="cv-ivs"></div>
+          <div class="applied" id="cv-applied" hidden><span class="k">적용 중</span> <span id="cv-applied-list"></span><button type="button" class="ibtn" id="cv-clear">전부 해제</button></div>
+        </div>
+      </div>
+      <div class="callout ref">두 곡선은 혈역학 탭과 같은 모델에서 나옵니다. 프리셋·개입·슬라이더를 바꾸면 세 화면이 함께 움직입니다. 점선 곡선은 개입 직전 상태입니다.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 승압제 ===================== -->
+<section class="panel" id="p-vaso" role="tabpanel" aria-labelledby="tab-vaso">
+  <div class="sec"><h2>수용체와 혈역학</h2><span class="note">약물을 고르면 작용 수용체와 그 결과가 표시됩니다</span></div>
+  <div class="pills" id="vs-drugs" style="margin-bottom:12px"></div>
+
+  <div class="cv-grid">
+    <div class="card">
+      <div class="card-head"><h3 id="vs-name">—</h3><span class="chip na" id="vs-class"></span></div>
+      <svg id="vs-map" viewBox="0 0 300 150" role="img" aria-label="수용체별 작용 강도"></svg>
+      <div class="card-body" style="padding-top:0">
+        <div class="mini-note" id="vs-note" style="min-height:4.6em"></div>
+        <div class="sl" id="vs-dose-row" style="border-bottom:0;padding-bottom:0">
+          <div class="sl-top"><label for="vs-dose">용량<small id="vs-unit"></small></label><output id="vs-out"></output></div>
+          <div class="sl-track"><input type="range" id="vs-dose" min="0" max="100" step="1" value="40"></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card">
+        <div class="card-head"><h3>예상 변화</h3><span class="chip na">이 용량에서</span></div>
+        <div class="card-body"><div class="fx-rows" id="vs-fx"></div></div>
+      </div>
+      <div class="card">
+        <div class="card-head"><h3>이럴 때 쓴다</h3></div>
+        <div class="card-body"><div class="mini-note" id="vs-use" style="min-height:0"></div>
+          <div class="links" id="vs-link" style="margin-top:10px"></div></div>
+      </div>
+      <div class="callout warn" id="vs-warn"></div>
+    </div>
+  </div>
+
+  <div class="sec" style="margin-top:22px"><h2>한눈에 비교</h2></div>
+  <div class="card"><div class="tblwrap"><table class="ref" id="vs-tbl"></table></div></div>
+</section>
+
 <!-- ===================== 참고 ===================== -->
 <section class="panel" id="p-ref" role="tabpanel" aria-labelledby="tab-ref">
   <div class="sec"><h2>이 모델이 계산하는 방식</h2><span class="note">정상 상태: HR 100 · SV 1.5 mL/kg · CO 150 mL/kg/min · MAP 100 · DO₂ ≈ 30 · VO₂ 7</span></div>
@@ -375,23 +634,48 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
     <tbody>
       <tr><td>충만</td><td>유효 preload = 정맥환류 × (1 − 충만 제한) × 이완기 충만 시간(HR↑ → 감소). EDV는 preload에 포화 곡선으로 반응</td><td>대정맥 굵기, 심방 크기, 이완기 말 심장 크기(점선 = 정상 윤곽). 덜 찬 심장은 작고 벽이 두꺼워 보임</td></tr>
       <tr><td>심주기</td><td>등용적 수축 → 박출 → 등용적 이완 → 충만(급속 · 완만 · 심방 수축). 수축기 길이는 HR에 따라 달라지고 빈맥에서는 이완기가 먼저 짧아짐</td><td>방실판막·반월판 개폐 — 네 판막이 모두 닫힌 순간이 한 박동에 두 번</td></tr>
+      <tr><td>리듬</td><td>심방 사건(P)과 심실 사건(QRS)을 따로 만들어 둡니다. 전도되지 않은 P는 QRS를 만들지 않고, 심실 기원 박동은 넓은 QRS에 심방 수축 기여가 없습니다</td><td>ECG 탭의 리듬 프리셋 9가지 — 파형·작은 심장·혈역학 탭의 심장이 모두 같은 리듬으로 움직임</td></tr>
+      <tr><td>박동별 박출</td><td>박동마다 SV가 달라짐: 직전 이완기가 짧으면 충만 부족(지수 곡선), 전도된 P가 없으면 심방 수축 몫 −14%, 심실 기원이면 동기화 불량으로 −25%</td><td>「혈역학 영향」의 막대와 최근 6초 실효 CO, 그림의 EF·SV</td></tr>
+      <tr><td>전기</td><td>전기 사건이 심장을 움직임: P → 심방 수축, QRS → 약 30 ms 뒤 등용적 수축 시작, T가 끝날 무렵 대동맥판이 닫힘. PR·QT는 HR에 따라 짧아짐(QRS 50 ms 고정)</td><td>「ECG」 버튼 — lead II 모양의 합성 파형과 아래 색 띠(등용적 · 박출 · 충만), 전도계에 불이 들어오는 순서(SA → 심방 → AV 지연 → His · 각 · Purkinje)</td></tr>
       <tr><td>충만압</td><td>LVEDP는 EDV에 지수적으로 증가 — 늘어난 심실에 수액을 더 주면 SV보다 압력이 먼저 오름</td><td>폐에 점(울혈)이 나타남</td></tr>
       <tr><td>박출</td><td>ESV = V₀ + MAP ÷ Ees (Ees ∝ 수축력). SV = EDV − ESV — afterload가 오르거나 수축력이 떨어지면 ESV가 커짐</td><td>수축기에 판막면이 심첨 쪽으로 내려가고 벽이 두꺼워지며 내강이 좁아짐. 수축력이 낮으면 이 움직임이 작음</td></tr>
       <tr><td>압력</td><td>CO = HR × SV, MAP = CVP + CO × SVR. SV와 MAP는 서로 물려 있어 한 번에 풂 (심실–동맥 결합)</td><td>대동맥 굵기와 맥파, 세동맥 구간의 폭, 적혈구 속도</td></tr>
       <tr><td>산소</td><td>CaO₂ = 1.34 × Hb × SaO₂ (용존 산소 생략), DO₂ = CO × CaO₂. O₂ER = VO₂ ÷ DO₂, 최대 추출률(기본 70%)을 넘으면 VO₂가 공급에 의존</td><td>적혈구 수(Hb)·색(포화도), 조직 상자 색</td></tr>
     </tbody></table></div></div>
-  <div class="callout warn"><b>한계</b> — 압수용체 반사·RAAS 같은 보상, 우심–좌심 차이, 판막 질환, 이완 장애(HCM), 부정맥의 방실 비동기, 폐혈관 저항, 산소 공급에 따른 SaO₂ 반응 차이(shunt)는 들어 있지 않습니다. 개입 버튼의 변화 폭도 임의로 정한 값입니다. 그림은 4방 단면 모식도로, 대혈관의 교차를 생략하고 대정맥을 하나로 그리는 등 주행을 단순화했습니다. 치료 결정에 쓰지 마세요.</div>
+  <div class="callout warn"><b>한계</b> — 압수용체 반사·RAAS 같은 보상, 우심–좌심 차이, 판막 질환, 이완 장애(HCM), 부정맥의 방실 비동기, 폐혈관 저항, 산소 공급에 따른 SaO₂ 반응 차이(shunt)는 들어 있지 않습니다. 개입 버튼의 변화 폭도 임의로 정한 값입니다. ECG는 실제 기록이 아니라 간격만 맞춘 합성 파형이고 지금은 정상 동율동만 있습니다. 그림은 4방 단면 모식도로, 대혈관의 교차를 생략하고 대정맥을 하나로 그리는 등 주행을 단순화했습니다. 치료 결정에 쓰지 마세요.</div>
+
+  <div class="sec" style="margin-top:26px"><h2>ECG 탭</h2><span class="note">리듬 9가지 · 파형 변화 6가지</span></div>
+  <div class="card"><div class="card-body" style="padding-bottom:12px"><div class="callout ref" style="margin-top:0">
+    파형은 실제 기록이 아니라 간격만 맞춘 <b>합성 lead II</b>입니다. 리듬을 고르면 심방·심실 사건이 그 리듬대로 만들어지고, 작은 심장과 혈역학 탭의 심장도 같은 리듬으로 뜁니다. 박동마다 충만 시간과 심방 수축 유무로 박출량이 달라지며, 그 값이 「혈역학 영향」의 막대와 실효 CO입니다. 종이 눈금은 작은 칸 0.04초, 큰 칸 0.2초이고 세로는 1 mV = 큰 칸 2개입니다.
+    <b>멈춤</b>을 누르면 창 전체가 왼쪽에서 오른쪽으로 다시 그려지고 캘리퍼 두 개가 나타납니다. 끌어서 잰 간격은 ms로, 그 간격이 RR일 때의 심박수도 함께 나옵니다.
+    구간 버튼(P·PR·QRS·ST·T·QT·RR)을 누르면 그 구간이 파형에서 칠해지고 심장에서 해당 부위에 불이 들어옵니다. 정상치는 개·고양이를 전환할 수 있습니다.
+  </div></div></div>
+
+  <div class="sec" style="margin-top:26px"><h2>곡선 탭</h2><span class="note">혈역학 탭과 같은 모델을 그래프로</span></div>
+  <div class="card"><div class="card-body" style="padding-bottom:12px"><div class="callout ref" style="margin-top:0">
+    <b>Frank–Starling</b>은 다른 조건을 그대로 두고 preload만 15–210%로 훑어 그린 곡선입니다. 지금 상태가 점으로 찍히고, 그 자리에서 수액 한 번(preload +25%)을 주면 SV가 몇 % 오르는지 계산해 「수액 반응 있음 / 약함 / 없음」으로 표시합니다. 개입을 켜 두면 개입 직전 위치가 회색 점으로 남습니다.<br>
+    <b>DO₂ · VO₂</b>는 최대 추출률(기본 70%)로 꺾이는 두 직선입니다. 꺾이는 지점이 임계 DO₂이고, 그보다 왼쪽(분홍 구간)에서는 VO₂가 공급을 따라 내려가 산소 부채가 쌓입니다.
+  </div></div></div>
+
+  <div class="sec" style="margin-top:26px"><h2>승압제 탭</h2><span class="note">수용체 → 혈역학의 방향만 보여 주는 교육용</span></div>
+  <div class="card"><div class="card-body" style="padding-bottom:12px"><div class="callout warn" style="margin-top:0">
+    막대는 그 용량에서 어느 수용체에 주로 붙는지를 <b>상대적으로</b> 나타낸 것이고, 「예상 변화」의 화살표도 방향과 대략의 크기일 뿐 실제 반응은 환자 상태(용적·산증·수용체 하향조절)에 따라 달라집니다. 표의 용량은 흔히 인용되는 범위이며, <b>실제 처방은 CRI 계산기와 처방 탭에서 확인하세요.</b> 이 탭은 혈역학 모델과 연결되어 있지 않습니다 — 약을 고른다고 혈역학 탭의 숫자가 바뀌지는 않습니다.
+  </div></div></div>
 
   <div class="sec" style="margin-top:26px"><h2>이어서 보기</h2></div>
   <div class="links">
     <a class="calc" href="fluid.html">Fluid Therapy — 쇼크 bolus</a>
     <a class="calc" href="anesthesia.html">Anesthesia Drugs — 승압제 CRI</a>
+    <a class="calc" href="prescription.html">Prescription</a>
     <a class="calc" href="transfusion.html">Transfusion</a>
     <a class="calc" href="bloodgas.html">Blood Gas</a>
     <a class="book" href="saccm.html#sacc3-p1-c6">Ch.6 Shock</a>
     <a class="book" href="saccm.html#sacc3-p4-c41">Ch.41 Mechanisms of Heart Failure</a>
     <a class="book" href="saccm.html#sacc3-p4-c42">Ch.42 Ventricular Failure</a>
     <a class="book" href="saccm.html#sacc3-p4-c47">Ch.47 Pericardial Diseases</a>
+    <a class="book" href="saccm.html#sacc3-p4-c48">Ch.48 Bradyarrhythmias</a>
+    <a class="book" href="saccm.html#sacc3-p4-c49">Ch.49 Supraventricular Tachyarrhythmias</a>
+    <a class="book" href="saccm.html#sacc3-p4-c50">Ch.50 Ventricular Tachyarrhythmias</a>
     <a class="book" href="saccm.html#sacc3-p5-c61">Ch.61 Hyperlactatemia</a>
     <a class="book" href="saccm.html#sacc3-p6-c68">Ch.68 Shock Fluids</a>
     <a class="book" href="saccm.html#sacc3-p6-c71">Ch.71 Hemorrhagic Shock</a>
@@ -404,7 +688,7 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
   <div class="foot">
     <span>생리학 일반 원리를 바탕으로 과에서 새로 만든 교육용 모델이며 특정 교재의 그림·수치를 옮긴 것이 아닙니다.</span>
     <span>임상 판단의 보조 도구이며 최종 결정은 담당 수의사에게 있습니다.</span>
-  <span style="opacity:.55;margin-left:auto">cardio v0.3</span>
+  <span style="opacity:.55;margin-left:auto">cardio v1.4</span>
   </div>
 </section>
 </main>
@@ -489,8 +773,11 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
     <div class="sl"><div class="sl-top"><label for="s-${s.k}">${s.name}<small>${s.sub}</small></label><output id="o-${s.k}"></output></div>
     <div class="sl-track"><span class="tick" style="left:calc(11px + (100% - 22px) * ${(NORMAL[s.k] - s.min) / (s.max - s.min)})"></span>
     <input type="range" id="s-${s.k}" min="${s.min}" max="${s.max}" step="${s.step}" value="${NORMAL[s.k]}"></div></div>`).join('');
-  $('#presets').innerHTML = PRESETS.map(p => `<button type="button" data-id="${p.id}" aria-pressed="false">${p.name}</button>`).join('');
-  $('#ivs').innerHTML = IVS.map(v => `<div class="iv" data-id="${v.id}"><button type="button" class="iv-main" data-id="${v.id}" aria-pressed="false"><span class="nm">${v.name}<small id="tag-${v.id}">${v.tag}</small></span><span class="fx" id="fx-${v.id}"></span><span class="bar"><i id="bar-${v.id}"></i></span></button><button type="button" class="rep" data-more="${v.id}" hidden aria-label="${v.name} 한 번 더">＋</button></div>`).join('');
+  const presetHTML = PRESETS.map(p => `<button type="button" data-id="${p.id}" aria-pressed="false">${p.name}</button>`).join('');
+  const ivHTML = (pf) => IVS.map(v => `<div class="iv" data-id="${v.id}"><button type="button" class="iv-main" data-id="${v.id}" aria-pressed="false"><span class="nm">${v.name}<small id="${pf}tag-${v.id}">${v.tag}</small></span><span class="fx" id="${pf}fx-${v.id}"></span><span class="bar"><i id="${pf}bar-${v.id}"></i></span></button><button type="button" class="rep" data-more="${v.id}" hidden aria-label="${v.name} 한 번 더">＋</button></div>`).join('');
+  $('#presets').innerHTML = presetHTML; $('#cv-presets').innerHTML = presetHTML;
+  $('#ivs').innerHTML = ivHTML(''); $('#cv-ivs').innerHTML = ivHTML('cv-');
+  const PFX = ['', 'cv-'];
 
   /* ---------------- 그림 준비 ---------------- */
   const lerp = (a, b, t) => a + (b - a) * t;
@@ -504,7 +791,7 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
   const UP = [sT, -cT], DOWN = [-sT, cT];
   const P2 = (p) => F(p[0]) + ',' + F(p[1]);
   const along = (p, v, k) => [p[0] + v[0] * k, p[1] + v[1] * k];
-  const gAo = L2G(12.5, -9.5), gPa = L2G(-18.5, -9.5), gVc = L2G(-60, -14), gLa1 = L2G(30, -34), gLa2 = L2G(47, -34), gB = along(gPa, UP, 46);
+  const gAo = L2G(12.5, -9.5), gPa = L2G(-18.5, -9.5), gVc = L2G(-47, -12), gLa1 = L2G(27, -20), gLa2 = L2G(42, -19), gB = along(gPa, UP, 46);
 
   /* 혈관 중심선 — [좌폐 경로, 우폐 경로]처럼 둘이면 적혈구가 절반씩 나뉘어 지나갑니다. */
   const CL = {
@@ -551,25 +838,29 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
   const RIB = [];
   function addRibbon(key, r, front, oxy, o){
     o = o || {}; const S = sample(CL[key][r], Math.max(10, Math.round((o.n || 1) * 34))), g = front ? gFront : gBack;
-    const casing = front ? mk('path', g, { fill:'none' }) : null; if (casing) { casing.style.stroke = 'var(--surface)'; casing.setAttribute('stroke-width', 4.5); casing.setAttribute('stroke-linejoin', 'round'); }
-    const el = mk('path', g, { 'stroke-linejoin':'round' }); el.style.fill = o.fill || (oxy ? mixA : mixV); el.style.stroke = o.stroke || (oxy ? wallA : wallV); el.setAttribute('stroke-width', o.sw != null ? o.sw : (oxy && key === 'ar' ? 1.5 : 1.1));
-    RIB.push({ key, S, el, casing, wf: W[key], root: !!o.root, range: o.range || [0, 1], live: !!o.live, last: '' });
+    const shadow = front && !o.bare ? mk('path', g, { 'class':'shd', transform:'translate(1.6 2.6)' }) : null;
+    const casing = front && !o.bare ? mk('path', g, { fill:'none' }) : null; if (casing) { casing.style.stroke = 'var(--surface)'; casing.setAttribute('stroke-width', 4); casing.setAttribute('stroke-linejoin', 'round'); }
+    const el = mk('path', g, { 'stroke-linejoin':'round' }), hi = mk('path', g, { 'class':'hi' }); el.style.fill = o.fill || (oxy ? mixA : mixV); el.style.stroke = o.stroke || (oxy ? wallA : wallV); el.setAttribute('stroke-width', o.sw != null ? o.sw : (oxy && key === 'ar' ? 1.5 : 1.1));
+    RIB.push({ key, S, el, casing, shadow, hi, wf: W[key], root: !!o.root, range: o.range || [0, 1], live: !!o.live, last: '' });
   }
   addRibbon('ve', 0, false, false, { n:1.6 });
   addRibbon('pa', 1, false, false);  addRibbon('pv', 0, false, true);  addRibbon('pv', 1, false, true);
   addRibbon('pt', 0, true, false, { root:true, live:true });  addRibbon('pa', 0, true, false);
   addRibbon('ar', 0, true, true, { n:2.4, root:true, live:true });
-  addRibbon('ar', 0, true, true, { n:2.4, range:[0.775, 0.975], fill:'color-mix(in srgb,var(--arterial) 58%,var(--surface))', stroke:'var(--arterial)', sw:1.2, live:true });
-  RIB[RIB.length - 1].casing.remove(); RIB[RIB.length - 1].casing = null;
+  addRibbon('ar', 0, true, true, { n:2.4, range:[0.775, 0.975], fill:'color-mix(in srgb,var(--arterial) 58%,var(--surface))', stroke:'var(--arterial)', sw:1.2, live:true, bare:true });
 
+  const LIGHT = [-0.6, -0.8];   /* 빛은 왼쪽 위에서 — 혈관이 꺾이면 하이라이트도 관 표면을 따라 돌아갑니다 */
   function ribbonD(R, c, dRoot){
-    const S = R.S, n = S.n, l = [], r = [];
+    const S = R.S, n = S.n, l = [], r = [], hl = [], hr = [], span = R.range[1] - R.range[0];
     for (let i = 0; i < n; i++){
       const u = i / (n - 1); if (u < R.range[0] || u > R.range[1]) continue;
       const w = R.wf(u, c) / 2; let x = S.X[i], y = S.Y[i];
       if (R.root) { const k = (1 - smooth(0, 38, u * S.L)) * dRoot; x += DOWN[0] * k; y += DOWN[1] * k; }
       l.push(F(x + S.NX[i] * w) + ',' + F(y + S.NY[i] * w)); r.push(F(x - S.NX[i] * w) + ',' + F(y - S.NY[i] * w));
+      const uu = (u - R.range[0]) / span, k = S.NX[i] * LIGHT[0] + S.NY[i] * LIGHT[1], oc = k * 0.5 * w, bt = Math.max(0.35, 0.17 * w) * smooth(0, 0.08, uu) * (1 - smooth(0.92, 1, uu));
+      hl.push(F(x + S.NX[i] * (oc + bt)) + ',' + F(y + S.NY[i] * (oc + bt))); hr.push(F(x + S.NX[i] * (oc - bt)) + ',' + F(y + S.NY[i] * (oc - bt)));
     }
+    R.hiD = 'M' + hl.join('L') + 'L' + hr.reverse().join('L') + 'Z';
     return 'M' + l.join('L') + 'L' + r.reverse().join('L') + 'Z';
   }
 
@@ -601,7 +892,7 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
     });
   })();
   const gRB = $('#rbcBack'), gRF = $('#rbcFront'), MAXP = 84, parts = [];
-  for (let i = 0; i < MAXP; i++){ const c = mk('circle', gRB, { r:2.5 }); parts.push({ el:c, s:(i * 0.61803398875) % 1, lane:LANES[(i * 3) % 5], r:i % 2, where:0, on:-1 }); }
+  for (let i = 0; i < MAXP; i++){ const c = mk('circle', gRB, { r:2.7 }); parts.push({ el:c, s:(i * 0.61803398875) % 1, lane:LANES[(i * 3) % 5], r:i % 2, where:0, on:-1 }); }
 
   /* 폐울혈 점 */
   const gE = $('#edema'); [[126,72],[138,82],[150,68],[160,84],[170,74],[134,60],[150,52],[166,58],[120,86],[178,88]].forEach(([x, y]) => { [x, 398 - x].forEach(xx => { const c = mk('circle', gE, { cx:xx, cy:y, r:2.3 }); c.style.fill = 'var(--low)'; }); });
@@ -616,11 +907,33 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
   const satSoft = (sat) => css(mix3(RGB['venous-soft'], RGB['arterial-soft'], clamp((sat - 60) / 38, 0, 1)));
 
   /* ---------------- 심장 그리기 ---------------- */
-  const H = {}; ['peri','ra','la','block','myo','rvc','lvc','neckR','neckL','ghost'].forEach(k => H[k] = $('#' + k));
-  const AVV = $$('#avv path'), SLV = $$('#slv path');
-  [H.myo, H.block].forEach(e => { e.style.fill = 'var(--myo)'; e.style.stroke = 'var(--myo-line)'; e.setAttribute('stroke-width', 1.4); e.setAttribute('stroke-linejoin', 'round'); });
-  [H.rvc, H.lvc].forEach(e => { e.style.stroke = 'var(--myo-line)'; e.setAttribute('stroke-width', 0.9); e.setAttribute('stroke-linejoin', 'round'); });
-  [H.ra, H.la].forEach(e => { e.style.stroke = 'var(--myo-line)'; e.setAttribute('stroke-width', 2.6); e.setAttribute('stroke-linejoin', 'round'); });
+  const HKEYS = ['peri','ra','la','raW','laW','neckW','myo','fib','rvc','lvc','neckR','neckL','ghost','pap','chord','avvO','slvO','shRa','shLa','shMyo','cdA0','cdA1','cdA2','cdA3','cdSA','cdV0','cdHis','cdL','cdR','cdAV'];
+  function bindHeart(pre){
+    const o = {}; HKEYS.forEach(k => o[k] = $('#' + pre + k));
+    [['lbSA','lb-sa'], ['lbAV','lb-av'], ['lbRA','lb-ra'], ['lbLA','lb-la'], ['lbRV','lb-rv'], ['lbLV','lb-lv']].forEach(([k, id]) => o[k] = $('#' + pre + id));
+    o.cdA = $('#' + pre + 'cdA'); o.cdV = $('#' + pre + 'cdV'); o.AVV = $$('#' + pre + 'avv path'); o.SLV = $$('#' + pre + 'slv path');
+    return o;
+  }
+  let H = bindHeart(''), AVV = H.AVV, SLV = H.SLV;
+  [H.myo, H.neckW, H.pap].forEach(e => { e.style.fill = 'url(#gMyo)'; e.style.stroke = 'var(--myo-line)'; e.setAttribute('stroke-width', e === H.myo ? 1.4 : 0.9); e.setAttribute('stroke-linejoin', 'round'); });
+  [H.rvc, H.lvc].forEach(e => { e.style.stroke = 'var(--valve-line)'; e.setAttribute('stroke-width', 1.3); e.setAttribute('stroke-linejoin', 'round'); });
+  H.lvc.style.fill = 'url(#gLV)'; H.rvc.style.fill = 'url(#gRV)'; H.la.style.fill = 'url(#gLA)'; H.ra.style.fill = 'url(#gRA)';
+  H.chord.style.stroke = 'var(--valve)'; H.chord.setAttribute('stroke-width', 0.75); H.chord.style.opacity = .85;
+  [H.avvO, H.slvO].forEach(e => { e.style.stroke = 'var(--valve-line)'; e.setAttribute('stroke-width', 4); });
+  $('#rings').style.stroke = 'var(--surface)'; $('#rings').setAttribute('stroke-width', 6.2); $('#rings').style.opacity = .55;
+  /* 색이 바뀔 때만 그라디언트를 갱신: 가운데 밝게 → 가장자리 어둡게 */
+  const GR = {}; ['gLV','gRV','gLA','gRA','gRbcA','gRbcV'].forEach(id => GR[id] = { stops: [], last:'' });
+  const bindGrads = () => Object.keys(GR).forEach(id => { GR[id].stops = $$('#' + id + ' stop').concat($$('#m-' + id + ' stop')); GR[id].last = ''; });
+  bindGrads();
+  function setGrad(id, rgb, rbc){
+    const key = rgb.join(','), g = GR[id]; if (g.last === key) return; g.last = key;
+    const lightC = css(mix3(rgb, [255,255,255], rbc ? 0.10 : 0.30)), dark = css(mix3(rgb, [0,0,0], rbc ? 0.12 : 0.34)), base = css(rgb);
+    const c3 = rbc ? [dark, base, lightC] : [lightC, base, dark];   /* rbc: 가운데가 옅게 들어간 원반 */
+    for (let i = 0; i + 2 < g.stops.length; i += 3) for (let j = 0; j < 3; j++) g.stops[i + j].style.stopColor = c3[j];
+  }
+  /* 심방 벽 = 얇은 근육층: 어두운 바깥선(raW·laW) 위에 근육색 띠(ra·la의 stroke)를 겹칩니다. 바닥(판막면)은 열린 경로라 선이 생기지 않습니다. */
+  [H.raW, H.laW].forEach(e => { e.style.stroke = 'var(--myo-line)'; e.setAttribute('stroke-width', 5.4); e.setAttribute('stroke-linejoin', 'round'); e.setAttribute('stroke-linecap', 'butt'); });
+  [H.ra, H.la].forEach(e => { e.style.stroke = 'var(--myo)'; e.setAttribute('stroke-width', 3.4); e.setAttribute('stroke-linejoin', 'round'); e.setAttribute('stroke-linecap', 'butt'); });
   H.ghost.style.stroke = 'var(--ink-2)'; H.ghost.setAttribute('stroke-dasharray', '3 3.5'); H.ghost.setAttribute('stroke-width', 1); H.ghost.style.opacity = .5;
   AVV.concat(SLV).forEach(e => { e.style.stroke = 'var(--valve)'; e.setAttribute('stroke-width', 2.5); });
   const NT = 22;
@@ -635,8 +948,9 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
     /* xa·xb = 판륜 양 끝, dir = +1이면 심실 쪽(아래), −1이면 동맥 쪽(위)으로 열림 */
     const half = Math.abs(xb - xa) / 2, LL = Math.max(L, half + 0.6), aC = Math.acos(clamp(half / LL, 0, 1)), a = lerp(aC, openAng, open), sg = xb > xa ? 1 : -1;
     const t1 = [xa + sg * LL * Math.cos(a), y + dir * LL * Math.sin(a)], t2 = [xb - sg * LL * Math.cos(a), y + dir * LL * Math.sin(a)], bel = -dir * 2.2 * (1 - open);
-    els[0].setAttribute('d', `M${F(xa)},${F(y)} Q${F((xa + t1[0]) / 2)},${F((y + t1[1]) / 2 + bel)} ${F(t1[0])},${F(t1[1])}`);
-    els[1].setAttribute('d', `M${F(xb)},${F(y)} Q${F((xb + t2[0]) / 2)},${F((y + t2[1]) / 2 + bel)} ${F(t2[0])},${F(t2[1])}`);
+    const d1 = `M${F(xa)},${F(y)} Q${F((xa + t1[0]) / 2)},${F((y + t1[1]) / 2 + bel)} ${F(t1[0])},${F(t1[1])}`, d2 = `M${F(xb)},${F(y)} Q${F((xb + t2[0]) / 2)},${F((y + t2[1]) / 2 + bel)} ${F(t2[0])},${F(t2[1])}`;
+    els[0].setAttribute('d', d1); els[1].setAttribute('d', d2);
+    return { d: d1 + d2, t1, t2, m1: [(xa + t1[0] * 2) / 3, (y + t1[1] * 2) / 3], m2: [(xb + t2[0] * 2) / 3, (y + t2[1] * 2) / 3] };
   }
   function drawHeart(o){
     /* o = { EDV, V, EDP, kick, oA, oS, cA, cV, obs } */
@@ -644,41 +958,99 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
     const sizeED = fED >= 1 ? 1 + 0.32 * (fED - 1) : 1 - 0.16 * (1 - fED), sizeT = fED < 1 ? 1 + 0.55 * (1 - fED) : 1 / (1 + 0.6 * (fED - 1));
     const so = sizeED * (1 - 0.08 * e), d = clamp(8.7 * (o.EDV - o.V), -2, 20), Ya = 104 * (1 + 0.45 * (sizeED - 1)) - 3 * e;
     const yT = (t) => d + t * (Ya - d), Tm = (t, k) => sizeT * (1 + k * e * wT(t));
-    H.myo.setAttribute('d', outerD(so, d, Ya));
+    const dMyo = outerD(so, d, Ya); H.myo.setAttribute('d', dMyo); H.fib.setAttribute('d', dMyo); H.shMyo.setAttribute('d', dMyo);
     /* LV 내강: 중격면 ↔ 측벽 내면, 심첨에서 만남 */
     const bL = 0.88 - 0.16 * e, aL = bL - 0.24, lvA = [], lvB = [];
     const XlS = (t) => sxT(t) + 5.5 * Tm(t, 1), XrS = (t) => sxT(t) - 5.5 * Tm(t, 1);
     const XlL = (t) => Math.max(cxT(t) + 58 * so * prof(t) - 12.5 * Tm(t, 1), XlS(t) + 1.2);
     const tip = (t, a0, b0) => t <= a0 ? 1 : Math.sqrt(Math.max(0, 1 - Math.pow((t - a0) / (b0 - a0), 2)));
-    for (let j = 0; j <= NT; j++){ const t = bL * Math.sin(Math.PI / 2 * j / NT), y = Math.max(yT(t), d + 1.2), a0 = XlS(t), b0 = XlL(t), cc = lerp((a0 + b0) / 2, (a0 + b0) / 2 + 1.5, smooth(aL, bL, t)), hh = (b0 - a0) / 2 * tip(t, aL, bL);
-      lvA.push(F(cc - hh) + ',' + F(y)); lvB.push(F(cc + hh) + ',' + F(y)); }
-    H.lvc.setAttribute('d', 'M' + lvA.join('L') + 'L' + lvB.reverse().join('L') + 'Z');
+    const lvE = (t) => { const y = t === 0 ? d - 0.7 : Math.max(yT(t), d + 1.2), a0 = XlS(t), b0 = XlL(t), cc = lerp((a0 + b0) / 2, (a0 + b0) / 2 + 1.5, smooth(aL, bL, t)), hh = (b0 - a0) / 2 * tip(t, aL, bL); return [cc - hh, cc + hh, y]; };
+    for (let j = 0; j <= NT; j++){ const q = lvE(bL * Math.sin(Math.PI / 2 * j / NT)); lvA.push(F(q[0]) + ',' + F(q[2])); lvB.push(F(q[1]) + ',' + F(q[2])); }
+    H.lvc.setAttribute('d', 'M' + lvA.join('L') + 'L' + lvB.reverse().join('L'));
     /* RV 내강: 자유벽 내면 ↔ 중격 우측면 */
     const bR = 0.80 - 0.10 * e, rvA = [], rvB = [], inw = e * 22 + Math.max(0, 1 - fED) * 14;
     const XrL = (t) => Math.min(cxT(t) - 58 * so * prof(t) + 4.6 * Tm(t, 0.6) + inw * Math.pow(Math.sin(Math.PI * clamp(t / 0.84, 0, 1)), 0.9), XrS(t) - 1.2);
-    for (let j = 0; j <= NT; j++){ const t = bR * Math.sin(Math.PI / 2 * j / NT), y = Math.max(yT(t), d + 1.2), a0 = XrL(t), b0 = XrS(t), k = tip(t, bR - 0.34, bR), cc = lerp((a0 + b0) / 2, b0 - 3, 1 - k);
-      rvA.push(F(cc - (cc - a0) * k) + ',' + F(y)); rvB.push(F(cc + (b0 - cc) * k) + ',' + F(y)); }
-    H.rvc.setAttribute('d', 'M' + rvA.join('L') + 'L' + rvB.reverse().join('L') + 'Z');
-    H.lvc.style.fill = H.neckL.style.fill = H.la.style.fill = o.cA; H.rvc.style.fill = H.neckR.style.fill = H.ra.style.fill = o.cV;
+    const rvE = (t) => { const y = t === 0 ? d - 0.7 : Math.max(yT(t), d + 1.2), a0 = XrL(t), b0 = XrS(t), k = tip(t, bR - 0.34, bR), cc = lerp((a0 + b0) / 2, b0 - 3, 1 - k); return [cc - (cc - a0) * k, cc + (b0 - cc) * k, y]; };
+    for (let j = 0; j <= NT; j++){ const q = rvE(bR * Math.sin(Math.PI / 2 * j / NT)); rvA.push(F(q[0]) + ',' + F(q[2])); rvB.push(F(q[1]) + ',' + F(q[2])); }
+    H.rvc.setAttribute('d', 'M' + rvA.join('L') + 'L' + rvB.reverse().join('L'));
+    H.neckL.style.fill = o.cA; H.neckR.style.fill = o.cV;
     /* 심방: 지붕은 고정, 바닥(판막면)이 수축기에 내려가며 커짐 */
-    const A = clamp(Math.sqrt(clamp(o.EDP, 2, 40) / 8), 0.78, 1.45) * (1 - 0.13 * o.kick), xl = -58 * so + 3, xr = 58 * so - 5;
-    H.ra.setAttribute('d', `M-14,${F(d)} L${F(xl)},${F(d)} C${F(xl - 10)},${F(d - 6)} ${F(-58 - 14 * A)},${F(-34 * A)} -50,${F(-28 - 18 * A)} C-38,${F(-30 - 22 * A)} -14,-42 -14,-22 Z`);
-    H.la.setAttribute('d', `M12,${F(d)} L${F(xr)},${F(d)} C${F(xr + 10)},${F(d - 6)} ${F(54 + 14 * A)},${F(-34 * A)} 47,${F(-28 - 18 * A)} C36,${F(-30 - 22 * A)} 12,-42 12,-22 Z`);
-    H.block.setAttribute('d', `M-27,${F(d + 1)} L23,${F(d + 1)} L21,-30 Q-2,-42 -25,-30 Z`);
+    /* 심방: 돔 모양 지붕은 고정, 바닥(판막면)이 수축기에 내려가며 커짐. 좌우가 심방중격(x≈0.5) 하나를 사이에 두고 맞닿고,
+       바깥벽은 방실구에서 살짝 들어갔다가 불룩해져 심실 윤곽으로 이어집니다. 충만압이 높으면(A↑) 지붕과 바깥벽이 함께 늘어납니다. */
+    const A = clamp(Math.sqrt(clamp(o.EDP, 2, 40) / 8), 0.7, 1.4) * (1 - 0.13 * o.kick), xl = -2 - 58 * so + 2.6, xr = -2 + 58 * so - 2.6, z = lerp(1, sizeED, 0.85);   /* z: 심장 전체 크기를 따라감 */
+    /* 바깥벽은 심실 윤곽의 접선(거의 수직)을 그대로 이어받아 위로 올라간 뒤 둥글게 넘어갑니다 → 심장 전체가 하나의 둥근 윤곽.
+       정상에서는 심실 기저부보다 옆으로 튀어나오지 않고, 충만압이 높을 때만(A > 1) 바깥으로 부풉니다. */
+    const Hh = 29 * A * z, bul = 9 * Math.max(0, A - 1) * z, wR = -0.6 - xl, wL = xr - 2.4;   /* 낮고 넓은 지붕, 어깨는 둥글게 */
+    const dRa = `M${F(xl)},${F(d)} C${F(xl - 1 - bul)},${F(d - 0.50 * Hh)} ${F(xl + 0.12 * wR - bul)},${F(-0.98 * Hh)} ${F(xl + 0.46 * wR)},${F(-Hh)} C${F(xl + 0.78 * wR)},${F(-1.02 * Hh)} -0.6,${F(-0.92 * Hh)} -0.6,${F(-0.50 * Hh)} L-0.6,${F(d)}`;
+    const dLa = `M${F(xr)},${F(d)} C${F(xr + 1 + bul)},${F(d - 0.50 * Hh)} ${F(xr - 0.12 * wL + bul)},${F(-0.98 * Hh)} ${F(xr - 0.46 * wL)},${F(-Hh)} C${F(xr - 0.78 * wL)},${F(-1.02 * Hh)} 2.4,${F(-0.92 * Hh)} 2.4,${F(-0.50 * Hh)} L2.4,${F(d)}`;
+    H.ra.setAttribute('d', dRa); H.raW.setAttribute('d', dRa); H.shRa.setAttribute('d', dRa); H.la.setAttribute('d', dLa); H.laW.setAttribute('d', dLa); H.shLa.setAttribute('d', dLa);
+    /* 유출로(RVOT · LVOT): 근육 벽을 가진 짧은 목 — 심방 앞을 지나 반월판까지 */
+    H.neckW.setAttribute('d', `M-28.4,${F(d + 1.5)} L-28.4,${F(d - 10.2)} L-8.6,${F(d - 10.2)} L-8.6,${F(d + 1.5)} Z M2.6,${F(d + 1.5)} L2.6,${F(d - 10.2)} L22.4,${F(d - 10.2)} L22.4,${F(d + 1.5)} Z`);
     H.neckR.setAttribute('d', `M-25,${F(d + 2.5)} L-25,${F(d - 9.5)} L-12,${F(d - 9.5)} L-12,${F(d + 2.5)} Z`);
     H.neckL.setAttribute('d', `M6,${F(d + 2.5)} L6,${F(d - 9.5)} L19,${F(d - 9.5)} L19,${F(d + 2.5)} Z`);
     /* 판막 */
-    leaflets([AVV[0], AVV[1]], Math.max(-52.5, XrL(0) + 0.6), -28.5, d + 0.6, 12.5, o.oA, 1, 1.38);
-    leaflets([AVV[2], AVV[3]], 23.5, Math.max(30, Math.min(41.5, XlL(0) - 0.6)), d + 0.6, 12, o.oA, 1, 1.38);
-    leaflets([SLV[0], SLV[1]], -25, -12, d - 9.5, 8, o.oS, -1, 1.45);
-    leaflets([SLV[2], SLV[3]], 6, 19, d - 9.5, 8, o.oS, -1, 1.45);
+    const tv = leaflets([AVV[0], AVV[1]], Math.max(-52.5, XrL(0) + 0.6), -28.6, d + 0.6, 12.5, o.oA, 1, 1.38);
+    const mv = leaflets([AVV[2], AVV[3]], 22.6, Math.max(29, Math.min(41.5, XlL(0) - 0.6)), d + 0.6, 12, o.oA, 1, 1.38);
+    const pvv = leaflets([SLV[0], SLV[1]], -25, -12, d - 9.5, 8, o.oS, -1, 1.45), aov = leaflets([SLV[2], SLV[3]], 6, 19, d - 9.5, 8, o.oS, -1, 1.45);
+    H.avvO.setAttribute('d', tv.d + mv.d); H.slvO.setAttribute('d', pvv.d + aov.d);
+    /* 유두근(벽에서 내강 쪽으로 솟은 근육)과 건삭(판막 끝을 붙잡는 끈) */
+    const papD = [], chD = [];
+    const pap = (E, side, t1, t2, reach, rise) => {           /* side: 0 = 내강의 왼쪽 면, 1 = 오른쪽 면 */
+      const p1 = E(t1), p2 = E(t2), pm = E((t1 + t2) / 2), sg = side ? -1 : 1, x1 = p1[side], x2 = p2[side];
+      let cxp = pm[side] + sg * reach; const room = pm[1] - pm[0]; if (room < reach * 0.9) cxp = pm[side] + sg * Math.max(1.5, room * 0.55);
+      const cyp = pm[2] - rise; papD.push(`M${F(x1)},${F(p1[2])} Q${F(cxp)},${F(cyp)} ${F(x2)},${F(p2[2])} Z`);
+      return [0.25 * x1 + 0.5 * cxp + 0.25 * x2, 0.25 * p1[2] + 0.5 * cyp + 0.25 * p2[2]];
+    };
+    const hRVf = pap(rvE, 0, 0.40 * bR / 0.8, 0.62 * bR / 0.8, 13, 12), hRVs = pap(rvE, 1, 0.36 * bR / 0.8, 0.54 * bR / 0.8, 9, 10);
+    const hLVs = pap(lvE, 0, 0.56 * bL / 0.88, 0.76 * bL / 0.88, 11, 13), hLVl = pap(lvE, 1, 0.48 * bL / 0.88, 0.70 * bL / 0.88, 13, 13);
+    const ch = (a, b) => chD.push(`M${F(a[0])},${F(a[1])} L${F(b[0])},${F(b[1])}`);
+    ch(tv.t1, hRVf); ch(tv.m1, hRVf); ch(tv.t2, hRVs); ch(tv.m2, hRVs); ch(mv.t1, hLVs); ch(mv.m1, hLVs); ch(mv.t2, hLVl); ch(mv.m2, hLVl);
+    H.pap.setAttribute('d', papD.join('')); H.chord.setAttribute('d', chD.join(''));
     /* 심낭 */
     const ob = clamp(o.obs / 85, 0, 1);
     H.peri.style.fill = ob > 0.01 ? 'var(--warn-soft)' : 'none'; H.peri.style.fillOpacity = (0.35 + 0.6 * ob).toFixed(2);
     H.peri.style.stroke = ob > 0.01 ? 'var(--warn)' : 'var(--line-strong)'; H.peri.setAttribute('stroke-width', (1 + 3.2 * ob).toFixed(1)); H.peri.style.opacity = ob > 0.01 ? 1 : 0.7;
-    return { d, f, fED };
+    /* 전도계: SA node → 심방(결절간로 · Bachmann) → AV node(지연) → His → 좌·우각 → Purkinje. 벽과 함께 움직이므로 매 프레임 경로를 다시 만듭니다. */
+    if (o.cd) {
+      const cd = o.cd, SA = [xl + 0.24 * wR, -0.84 * Hh], AV = [-4.6, d - 4.6];
+      const a1 = `M${F(SA[0])},${F(SA[1])} Q${F(SA[0] + 6)},${F(d - 7)} ${F(AV[0])},${F(AV[1])}`;
+      const a2 = `M${F(SA[0])},${F(SA[1])} C${F(SA[0] + 14)},${F(-Hh - 0.5)} -10,${F(-0.98 * Hh)} -3.4,${F(-0.55 * Hh)} L${F(AV[0] + 0.8)},${F(AV[1])}`;
+      const a3 = `M${F(SA[0])},${F(SA[1])} C${F(SA[0] + 16)},${F(-Hh - 1)} 12,${F(-Hh - 1)} ${F(xr - 0.42 * wL)},${F(-0.62 * Hh)}`;
+      H.cdA0.setAttribute('d', a1 + a2 + a3); H.cdA1.setAttribute('d', a1); H.cdA2.setAttribute('d', a2); H.cdA3.setAttribute('d', a3);
+      const tH = 0.09, his = `M${F(AV[0])},${F(AV[1])} L${F(sxT(0) - 0.4)},${F(d + 2)} L${F(sxT(tH))},${F(yT(tH))}`;
+      const branch = (E, sep, free, b0, topFree) => { const pts = [F(sxT(tH)) + ',' + F(yT(tH))], n = 12;
+        for (let j = 1; j <= n; j++){ const q = E(lerp(tH + 0.04, b0 * 0.965, j / n)); pts.push(F(q[sep] + (sep ? 1.7 : -1.7)) + ',' + F(q[2])); }
+        const qt = E(b0 * 0.995); pts.push(F((qt[0] + qt[1]) / 2) + ',' + F(qt[2] + 2.2));
+        for (let j = 0; j <= n; j++){ const q = E(lerp(b0 * 0.965, topFree, j / n)); pts.push(F(q[free] + (free ? 1.7 : -1.7)) + ',' + F(q[2])); }
+        return 'M' + pts.join('L'); };
+      const lb = branch(lvE, 0, 1, bL, 0.30), rb = branch(rvE, 1, 0, bR, 0.26);
+      H.cdV0.setAttribute('d', his + lb + rb); H.cdHis.setAttribute('d', his); H.cdL.setAttribute('d', lb); H.cdR.setAttribute('d', rb);
+      const lit = (e, prog, fade) => { e.setAttribute('stroke-dasharray', F(clamp(prog, 0, 1) * 1.001).replace(/^0\.0$/, '0.0001') + ' 2'); e.style.opacity = (prog > 0 ? fade : 0).toFixed(2); };
+      lit(H.cdA1, cd.atr, cd.fA); lit(H.cdA2, cd.atr, cd.fA); lit(H.cdA3, cd.atr, cd.fA); lit(H.cdHis, cd.his, cd.fV); lit(H.cdL, cd.ven, cd.fV); lit(H.cdR, cd.ven, cd.fV);
+      H.cdSA.setAttribute('cx', F(SA[0])); H.cdSA.setAttribute('cy', F(SA[1])); H.cdSA.setAttribute('r', F(3 + 2.2 * cd.sa)); H.cdSA.style.fill = cd.sa > 0.05 ? '#FFE27A' : '#F2B632'; H.cdSA.style.stroke = 'rgba(0,0,0,.45)'; H.cdSA.setAttribute('stroke-width', 0.7);
+      H.cdAV.setAttribute('cx', F(AV[0])); H.cdAV.setAttribute('cy', F(AV[1])); H.cdAV.setAttribute('r', F(2.7 + 1.6 * cd.avn)); H.cdAV.style.fill = cd.avn > 0.05 ? '#FFE27A' : '#F2B632'; H.cdAV.style.stroke = 'rgba(0,0,0,.45)'; H.cdAV.setAttribute('stroke-width', 0.7);
+      const gs = L2G(SA[0] - 1, SA[1] - 7.5), ga = L2G(AV[0] + 9, AV[1] - 5.5);
+      H.lbSA.setAttribute('x', F(gs[0])); H.lbSA.setAttribute('y', F(gs[1])); H.lbAV.setAttribute('x', F(ga[0])); H.lbAV.setAttribute('y', F(ga[1]));
+    }
+    return { d, f, fED, Hh };
   }
-  [['ra', -46, -18], ['la', 40, -18], ['rv', -31, 34], ['lv', 25, 40]].forEach(([k, x, y]) => { const p = L2G(x, y), t = $('#lb-' + k); t.setAttribute('x', F(p[0])); t.setAttribute('y', F(p[1])); });
+  [['ra', -40, -8], ['la', 36, -8], ['rv', -31, 34], ['lv', 25, 40]].forEach(([k, x, y]) => { const p = L2G(x, y), t = $('#lb-' + k); t.setAttribute('x', F(p[0])); t.setAttribute('y', F(p[1])); });
+
+  /* ECG 탭의 작은 심장: 같은 그림을 그대로 복제해 id에 m- 접두사를 붙이고, 그릴 때마다 지금 보이는 쪽만 갱신합니다. */
+  const MINI = $('#mini');
+  if (MINI) {
+    const defs = $('#fig defs').cloneNode(true);                       /* 그라디언트·패턴은 SVG마다 따로 있어야 하므로 함께 복제 */
+    defs.querySelectorAll('[id]').forEach(e => e.id = 'm-' + e.id); MINI.appendChild(defs);
+    ['heart','heartTop','chlab'].forEach(id => { const c = $('#' + id).cloneNode(true); c.id = 'm-' + id;
+      c.querySelectorAll('[id]').forEach(e => e.id = 'm-' + e.id); MINI.appendChild(c); });
+    const fix = (v) => v && /url\(\s*["']?#/.test(v) ? v.replace(/url\(\s*["']?#/g, 'url(#m-').replace(/["']?\)/g, ')') : null;   /* 복제본 안의 참조를 m- 쪽으로 */
+    MINI.querySelectorAll('*').forEach(e => { ['fill', 'stroke'].forEach(k => { const a = fix(e.getAttribute(k)); if (a) e.setAttribute(k, a);
+      const st = fix(e.style[k]); if (st) e.style[k] = st; }); });
+  }
+  const HSET = { hemo: H, ecg: MINI ? bindHeart('m-') : H };
+  if (MINI) { ['cdA','cdV','lbSA','lbAV'].forEach(k => HSET.ecg[k].setAttribute('display', 'inline')); HSET.ecg.peri.style.display = 'none'; }
+  bindGrads();
+  function useHeart(which){ H = HSET[which] || HSET.hemo; AVV = H.AVV; SLV = H.SLV; }
 
   const el = {}; ['lungL','lungR','tissue','edema','trachea'].forEach(k => el[k] = $('#' + k));
   el.lungL.style.stroke = el.lungR.style.stroke = 'var(--line-strong)'; el.trachea.style.stroke = 'var(--line-strong)'; el.trachea.setAttribute('stroke-width', 6);
@@ -693,8 +1065,9 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
       o.innerHTML = `${fmt(v, s.d || 0)}<small>${s.u}</small>`;
       const dev = s.k === 'obs' ? (v > 0 ? 1 : 0) : (v - NORMAL[s.k]) / (s.max - s.min);
       o.className = Math.abs(dev) < 0.03 ? '' : (dev > 0 ? 'hi' : 'lo');
+      if (s.k === 'hr') { const i2 = $('#s2-hr'), o2 = $('#o2-hr'); if (i2) { if (+i2.value !== v) i2.value = v; o2.innerHTML = `${fmt(v)}<small>bpm</small>`; } }
     });
-    $$('#presets button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.id === preset)));
+    $$('#presets button, #cv-presets button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.id === preset)));
     const ps = PRESETS.find(p => p.id === preset);
     let extra = '';
     if (base.vo2 !== 100 || base.erMax !== 70) extra = `<span class="first" style="background:var(--warn-soft)">이 상태에 포함된 조건: 산소 요구량 ${base.vo2}% · 최대 추출률 ${base.erMax}% (슬라이더 없음, 「정상으로」에서 초기화)</span>`;
@@ -702,26 +1075,28 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
 
     const mNow = model(tgt);
     IVS.forEach(v => {
-      const btn = $(`.iv-main[data-id="${v.id}"]`), more = $(`.rep[data-more="${v.id}"]`);
+      const btns = $$(`.iv-main[data-id="${v.id}"]`), mores = $$(`.rep[data-more="${v.id}"]`);
       const n = doseOf(v.id), on = n > 0, off = v.need && !v.need(base) && !on;
-      btn.disabled = !!off; btn.setAttribute('aria-pressed', String(on));
+      btns.forEach(btn => { btn.disabled = !!off; btn.setAttribute('aria-pressed', String(on)); });
       /* 켜져 있으면 "이 개입이 지금 만들고 있는 차이", 꺼져 있으면 "누르면 생길 차이" — 둘 다 한 번분의 몫 */
       let m0, m1;
       if (on) { m1 = mNow; m0 = model(effOf(active.map(a => a.id === v.id ? { id:a.id, n:a.n - 1 } : a).filter(a => a.n > 0))); }
       else { m0 = mNow; m1 = model(effOf(active.concat({ id:v.id, n:1 }))); }
       const dD = (m1.DO2 / m0.DO2 - 1) * 100, dM = m1.MAP - m0.MAP, dP = m1.fillP - m0.fillP;
       const cls = (x, th) => Math.abs(x) < th ? 'eq' : (x > 0 ? 'up' : 'dn'), sg = (x, d=0) => (x >= 0 ? '+' : '−') + fmt(Math.abs(x), d);
-      $('#tag-' + v.id).textContent = on ? (n > 1 ? `적용 중 ×${n} · 눌러서 해제` : '적용 중 · 눌러서 해제') : v.tag;
-      $('#fx-' + v.id).innerHTML = off ? '<span class="eq">해당 없음</span>' :
+      const tagTxt = on ? (n > 1 ? `적용 중 ×${n} · 눌러서 해제` : '적용 중 · 눌러서 해제') : v.tag;
+      const fxHTML = off ? '<span class="eq">해당 없음</span>' :
         `<span class="${cls(dD,2)}">DO₂ ${sg(dD)}%</span><span class="${cls(dM,2)}">MAP ${sg(dM)}</span>${Math.abs(dP) >= 2 ? `<span class="${dP > 0 ? 'dn' : 'up'}">충만압 ${sg(dP)}</span>` : ''}`;
-      const bar = $('#bar-' + v.id), w = off ? 0 : clamp(Math.abs(dD), 0, 60) / 60 * 50;
-      bar.className = dD < 0 ? 'neg' : ''; bar.style.width = w + '%'; bar.style.left = dD < 0 ? (50 - w) + '%' : '50%';
-      more.hidden = !(on && n < (v.max || 1));
+      const w = off ? 0 : clamp(Math.abs(dD), 0, 60) / 60 * 50;
+      PFX.forEach(pf => { const tg = $('#' + pf + 'tag-' + v.id); if (!tg) return; tg.textContent = tagTxt; $('#' + pf + 'fx-' + v.id).innerHTML = fxHTML;
+        const bar = $('#' + pf + 'bar-' + v.id); bar.className = dD < 0 ? 'neg' : ''; bar.style.width = w + '%'; bar.style.left = dD < 0 ? (50 - w) + '%' : '50%'; });
+      mores.forEach(mr => mr.hidden = !(on && n < (v.max || 1)));
     });
-    const sum = $('#applied');
-    if (!active.length) sum.hidden = true;
-    else { sum.hidden = false; $('#applied-list').textContent = active.map(a => ivOf(a.id).name + (a.n > 1 ? ` ×${a.n}` : '')).join(' · '); }
+    const txt = active.map(a => ivOf(a.id).name + (a.n > 1 ? ` ×${a.n}` : '')).join(' · ');
+    ['#applied', '#cv-applied'].forEach((id, i) => { const el = $(id); el.hidden = !active.length;
+      if (active.length) $(i ? '#cv-applied-list' : '#applied-list').textContent = txt; });
     $('#btn-undo').disabled = !hist.length;
+    if (tab === 'curve') drawCurves();
   }
   function flags(m, p){
     const f = [];
@@ -733,41 +1108,586 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
     if (m.fill < 0.8) f.push(['warn','빈맥 · 이완기 충만 시간 부족']);
     if (p.hr < 60) f.push(['warn','서맥 · CO가 HR에 의존']);
     if (p.erMax < 69 && m.limited) f.push(['v','SvO₂가 유지돼도 추출 장애']);
+    if (rhy !== 'sinus' || wave !== 'none') f.unshift(['v', `${RHY[rhy].name}${wave !== 'none' ? ' · ' + WAVE[wave].name : ''} — 그림의 EF·SV는 박동별, 아래 표는 동율동 기준값`]);
     if (!f.length) f.push(['ok','관류 · 산소 공급 충분']);
     const html = f.map(x => `<span class="chip ${x[0]}">${x[1]}</span>`).join('');
     const box = $('#flags'); if (box.dataset.h !== html) { box.innerHTML = html; box.dataset.h = html; }
   }
 
+  /* ---------------- 전기 타임라인 ----------------
+     심장은 시계가 아니라 전기 사건에 반응합니다: P → 심방 수축, QRS → (전기-기계 지연 뒤) 등용적 수축 · 박출, T 끝 무렵 → 이완.
+     심방 사건(pw)과 심실 사건(beats)을 따로 만들어 두므로, 리듬은 "무엇을 언제 만드는가"만 바꾸면 됩니다.
+       pw    = [{ t, cond }]                      cond = 심실로 전도된 P인가
+       beats = [{ tQ, QRS, QT, ts, tS, wide, kick, … }]   kick = 직전에 전도된 P가 있어 심방 수축 기여가 있는가 */
+  let ht = 0;                       /* 심장 시간(초) — 「느리게」에서는 천천히 흐름 */
+  const beats = [], pw = [];
+  const AHEAD = 1.0;                /* 미리 만들어 두는 시간 */
+  let rhy = 'sinus', rhySeed = 1, wave = 'none', beatSeq = 0;
+  /* 파형 변화 — 리듬 위에 덧씌우는 수정자. 전기적 성질을 바꾸면 기계적 결과(SV)도 따라옵니다. */
+  const WAVE = {
+    none: { name:'없음' },
+    hk1:  { name:'고K 경도', tAmp:2.4, tNarrow:0.5 },
+    hk2:  { name:'고K 중등도', noP:true, qrsF:2.0, hrF:0.8, tAmp:2.0, tNarrow:0.6 },
+    hk3:  { name:'고K 중증 (sine)', noP:true, qrsF:4.2, hrF:0.5, tAmp:1.5, tNarrow:1.8, sine:true },
+    peri: { name:'심낭수', amp:0.42, alt:0.70, hrF:1.5 },
+    isch: { name:'ST 하강', st:-0.18 },
+    inj:  { name:'ST 상승', st:0.26 }
+  };
+  const WV = () => WAVE[wave] || WAVE.none;
+  const rnd = () => { rhySeed = (rhySeed * 1103515245 + 12345) & 0x7fffffff; return rhySeed / 0x7fffffff; };
+
+  function mkV(tQ, o){              /* 심실 활성화 하나 */
+    o = o || {}; const W = WV(), wide = !!o.wide, RR = clamp(o.RR || 0.6, 0.18, 2.2), qf = W.qrsF || 1;
+    const ts = Math.min(0.27 * Math.sqrt(RR), 0.6 * RR, 0.26) * (wide ? 1.05 : 1), QRS = (wide ? 0.12 : 0.05) * qf, QT = ts + 0.02 + (qf > 1 ? 0.03 * (qf - 1) : 0);
+    return { tQ, QRS, QT, ts, RR, wide, dys: qf > 1.5, alt: (beatSeq++) % 2, kick: !!o.kick && !W.noP, tPsrc: (W.noP || o.tPsrc == null) ? null : o.tPsrc, amp: o.amp != null ? o.amp : 1,
+             tS: tQ + 0.03, ivc: 0.16 * ts, ivr: Math.min(0.07, 0.10 * RR, 0.24 * Math.max(0.05, RR - ts)), Td: 0.40 * QT };
+  }
+  const prMs = (hr) => clamp(0.10 - (hr - 100) * 0.0002, 0.06, 0.13);
+  const lastV = () => beats.length ? beats[beats.length - 1] : null;
+  const lastP = () => pw.length ? pw[pw.length - 1] : null;
+  function addP(t, cond){ pw.push({ t, cond:!!cond, hidden: !!WV().noP }); return pw[pw.length - 1]; }   /* 심방 정지: P가 사라져도 방실결절은 그대로 뛰게 둠 */
+
+  /* 리듬 생성기 — 각자 "다음 사건"을 ht + AHEAD 까지 채웁니다 */
+  const RHY = {
+    sinus:  { name:'정상 동율동', gen:(hr) => genSinus(hr, {}) },
+    arr:    { name:'호흡성 동성부정맥', gen:(hr) => genSinus(hr, { breath:0.22 }) },
+    avb1:   { name:'1도 방실차단', gen:(hr) => genSinus(hr, { pr:0.24 }) },
+    wench:  { name:'2도 Mobitz I', gen:(hr) => genSinus(hr, { wenckebach:true }) },
+    mobitz2:{ name:'2도 Mobitz II', gen:(hr) => genSinus(hr, { dropEvery:3 }) },
+    vpc:    { name:'심실조기수축 (VPC)', gen:(hr) => genSinus(hr, { vpcEvery:4 }) },
+    af:     { name:'심방세동 (AF)', gen:genAF },
+    vt:     { name:'심실빈맥 (VT)', gen:genVT },
+    avb3:   { name:'3도 방실차단', gen:genAVB3 }
+  };
+  function genSinus(hr, o){
+    const RR0 = 60 / hr;
+    while (!lastP() || lastP().t < ht + AHEAD) {
+      const p0 = lastP(), i = pw.length;
+      let RR = RR0;
+      if (o.breath) RR = RR0 * (1 + o.breath * Math.sin((p0 ? p0.t : 0) / 3.2 * 2 * Math.PI));
+      const t = p0 ? p0.t + RR : ht + 0.1;
+      /* 이번 P가 심실로 전도되는가 */
+      let drop = false, pr = o.pr || prMs(hr);
+      if (o.dropEvery && i % o.dropEvery === o.dropEvery - 1) drop = true;
+      if (o.wenckebach) { const k = i % 4; if (k === 3) drop = true; else pr = 0.10 + 0.06 * k; }
+      const v0 = lastV();
+      if (!drop && v0 && t + pr < v0.tQ + 0.20) drop = true;         /* 불응기: 너무 이른 P는 전도되지 않음 */
+      addP(t, !drop);
+      if (!drop) beats.push(mkV(t + pr, { RR: v0 ? t + pr - v0.tQ : RR, kick:true, tPsrc:t }));
+      /* 심실조기수축: 정상 박동 몇 개마다 이른 넓은 QRS + 보상성 휴지 */
+      if (o.vpcEvery && !drop && i > 0 && i % o.vpcEvery === o.vpcEvery - 1) {
+        const v = lastV(); beats.push(mkV(v.tQ + 0.46 * RR, { RR: 0.46 * RR, wide:true, kick:false, amp:1.35 }));
+      }
+    }
+  }
+  function genAF(hr){
+    const RR0 = 60 / hr;
+    while (!lastV() || lastV().tQ < ht + AHEAD) {
+      const v = lastV(), RR = RR0 * (0.55 + 1.05 * Math.pow(rnd(), 1.4));     /* 불규칙 — 짧은 간격이 더 잦음 */
+      beats.push(mkV(v ? v.tQ + RR : ht + 0.2, { RR, kick:false }));
+    }
+  }
+  function genVT(hr){
+    const RRv = clamp(60 / clamp(hr * 1.8, 170, 260), 0.23, 0.36);             /* 심실 기원 빠른 리듬 — HR 슬라이더의 약 1.8배 */
+    while (!lastV() || lastV().tQ < ht + AHEAD) { const v = lastV(); beats.push(mkV(v ? v.tQ + RRv : ht + 0.2, { RR:RRv, wide:true, kick:false, amp:1.25 })); }
+    const RRa = 60 / clamp(hr * 0.55, 70, 160);                               /* 심방은 제 속도로 따로 뜀(방실 해리) */
+    while (!lastP() || lastP().t < ht + AHEAD) { const p = lastP(); addP(p ? p.t + RRa : ht + 0.15, false); }
+  }
+  function genAVB3(hr){
+    const RRa = 60 / hr, RRe = 60 / 42;                                       /* 심방은 정상 속도, 심실은 느린 이탈 리듬 */
+    while (!lastP() || lastP().t < ht + AHEAD) { const p = lastP(); addP(p ? p.t + RRa : ht + 0.12, false); }
+    while (!lastV() || lastV().tQ < ht + AHEAD) { const v = lastV(); beats.push(mkV(v ? v.tQ + RRe : ht + 0.35, { RR:RRe, wide:true, kick:false, amp:1.1 })); }
+  }
+  function schedule(){
+    (RHY[rhy] || RHY.sinus).gen(clamp(cur.hr * (WV().hrF || 1), 24, 300));
+    while (beats.length > 3 && beats[0].tQ < ht - 9) beats.shift();
+    while (pw.length > 3 && pw[0].t < ht - 9) pw.shift();
+  }
+  function resetRhythm(id){
+    rhy = id; beats.length = 0; pw.length = 0; rhySeed = 7; schedule();
+    if (E2.ctx) { E2.ctx.clearRect(0, 0, E2.W, E2.H); E2.sweep = -1; if (E2.frozen) setFrozen(false); }
+    if (ECG.on) { ECG.lastX = -1; ecgResize(); }
+    e2Rhy();
+  }
+
+  /* 박동별 용적 — 충만 시간이 짧거나 심방 수축이 없으면 그 박동의 SV가 줄어듭니다 */
+  const fillOf = (tD) => 1 - Math.exp(-Math.max(0, tD) / 0.16);
+  function beatVols(b, m, i){
+    const prev = i > 0 ? beats[i - 1] : null, tD = prev ? Math.max(0.02, b.tS - (prev.tS + prev.ts)) : 0.35;
+    const ref = Math.max(0.06, 60 / cur.hr - Math.min(0.26, 0.27 * Math.sqrt(60 / cur.hr)));
+    const rel = clamp(fillOf(tD) / fillOf(ref), 0.25, 1.12) * (b.kick ? 1 : 0.86);
+    const EDV = m.ESV + (m.EDV - m.ESV) * clamp(rel, 0.2, 1.15);
+    const SV = Math.max(0.02, (EDV - m.ESV) * (b.wide || b.dys ? 0.75 : 1));   /* 심실 기원은 좌우 심실이 따로 놀아 박출이 더 떨어짐 */
+    return { EDV, SV, ESV: EDV - SV, rel };
+  }
+  function mechAt(t){   /* 시각 t의 기계적 단계: 0 충만 · 1 등용적 수축 · 2 박출 · 3 등용적 이완 */
+    let b = null, i = -1; for (let k = 0; k < beats.length; k++) if (beats[k].tS <= t) { b = beats[k]; i = k; }
+    if (!b) return { ph:0, b:null, i:-1, nb:beats[0], ni:0 };
+    const nb = beats[i + 1] || null;
+    if (t < b.tS + b.ivc) return { ph:1, b, i, nb, ni:i + 1 }; if (t < b.tS + b.ts) return { ph:2, b, i, nb, ni:i + 1 };
+    if (t < b.tS + b.ts + b.ivr) return { ph:3, b, i, nb, ni:i + 1 };
+    return { ph:0, b, i, nb, ni:i + 1 };
+  }
+  function ecgAt(t){    /* lead II 모양의 합성 파형(mV) */
+    let v = 0;
+    const W = WV(), AMP = W.amp || 1;
+    for (let i = pw.length - 1; i >= 0; i--){ const p = pw[i]; if (p.hidden || t < p.t - 0.06 || t > p.t + 0.10) continue; v += AMP * 0.17 * gauss((t - (p.t + 0.022)) / 0.0125); }
+    for (let i = beats.length - 1; i >= 0; i--){ const b = beats[i]; if (t < b.tQ - 0.05 || t > b.tQ + b.QT + 0.12) continue;
+      const q = b.QRS, tT = b.tQ + b.QT - 0.46 * b.Td, G = (c, w2) => gauss((t - c) / w2);
+      const A = b.amp * AMP * (W.alt && b.alt ? W.alt : 1), tN = W.tNarrow || 1, tA = W.tAmp || 1;
+      if (W.st) {   /* ST 분절이 기저선에서 벗어남 — QRS 끝에서 T 시작까지 */
+        const a0 = b.tQ + q * 0.8, a1 = tT - b.Td * 0.75;
+        v += A * W.st * smooth(a0, a0 + 0.045, t) * (1 - smooth(a1, tT, t));   /* 앞뒤를 부드럽게 이어 T로 녹아들게 */
+      }
+      if (b.wide || W.sine)   /* 심실 기원·sine: 넓고 주 편향이 반대, T도 반대 방향(discordant) */
+        v += A * (0.26 * G(b.tQ + 0.18 * q, q / 6.5) - 1.30 * G(b.tQ + 0.52 * q, q / 4.0) + 0.16 * G(b.tQ + 0.88 * q, q / 6)
+                + 0.42 * tA * G(tT, b.Td * tN / (t < tT ? 2.6 : 3.8)));
+      else
+        v += A * (-0.12 * G(b.tQ + 0.20 * q, q / 9) + 1.55 * G(b.tQ + 0.43 * q, q / 7.5) - 0.30 * G(b.tQ + 0.68 * q, q / 8.5)
+                + 0.30 * tA * G(tT, b.Td * tN / (t < tT ? 3.2 : 4.4)));
+    }
+    if (rhy === 'af') v += 0.055 * Math.sin(t * 61) * Math.sin(t * 27.3 + 1.1);   /* 잔떨림(f wave) */
+    return v;
+  }
+
+  /* ---------------- ECG 띠 (쓸고 지나가는 모니터 방식) ---------------- */
+  const ECG = { on:false, cv:$('#ecgc'), ctx:null, W:0, Hc:0, dpr:1, WIN:2.5, lastX:-1, lastY:0, col:{} };
+  function ecgColors(){ const cs = getComputedStyle(document.documentElement), g = (k) => cs.getPropertyValue(k).trim(); ECG.col = { tr:g('--ok'), tx:g('--muted'), ph:[g('--venous'), g('--warn'), g('--arterial'), g('--warn')] }; }
+  function ecgResize(){ if (!ECG.on) return; const r = ECG.cv.getBoundingClientRect(); ECG.dpr = Math.min(3, window.devicePixelRatio || 1); ECG.W = ECG.cv.width = Math.max(10, Math.round(r.width * ECG.dpr)); ECG.Hc = ECG.cv.height = Math.round(r.height * ECG.dpr); ECG.ctx = ECG.cv.getContext('2d'); ECG.lastX = -1; ecgColors(); }
+  function ecgDraw(t0, t1){
+    const E = ECG, c = E.ctx; if (!c || t1 <= t0) return;
+    const base = E.Hc * 0.66, mv = E.Hc * 0.30, band = Math.round(4 * E.dpr), gap = 16 * E.dpr, n = Math.max(1, Math.ceil((t1 - t0) / 0.002));
+    c.lineWidth = 1.7 * E.dpr; c.lineJoin = 'round'; c.lineCap = 'round'; c.strokeStyle = E.col.tr; c.font = `600 ${Math.round(10 * E.dpr)}px "IBM Plex Sans KR",sans-serif`; c.textAlign = 'center';
+    for (let i = 1; i <= n; i++){
+      const t = t0 + (t1 - t0) * i / n, x = ((t % E.WIN) / E.WIN) * E.W, y = base - ecgAt(t) * mv;
+      if (E.lastX < 0 || x < E.lastX) { c.clearRect(0, 0, gap, E.Hc); E.lastX = x; E.lastY = y; }
+      c.clearRect(x + 1, 0, Math.min(gap, E.W - x), E.Hc);
+      c.beginPath(); c.moveTo(E.lastX, E.lastY); c.lineTo(x, y); c.stroke();
+      c.globalAlpha = 0.75; c.fillStyle = E.col.ph[mechAt(t).ph]; c.fillRect(E.lastX, E.Hc - band, Math.max(1, x - E.lastX + 0.5), band); c.globalAlpha = 1;
+      /* 글자는 쓸고 지나가는 지우개에 잘리지 않게, 파형이 글자 폭만큼 지나간 뒤에 제자리에 적습니다 */
+      const mark = (o, flag, label, tm, amp) => { if (o[flag] || t < tm + 0.11) return; o[flag] = 1; const xm = ((tm % E.WIN) / E.WIN) * E.W;
+        if (t - tm < 0.2 && xm < x) { c.fillStyle = E.col.tx; c.fillText(label, xm, Math.max(10 * E.dpr, base - amp * mv - 5 * E.dpr)); } };
+      for (let k = 0; k < pw.length; k++) mark(pw[k], 'l0', 'P', pw[k].t + 0.022, 0.17);
+      for (let k = 0; k < beats.length; k++){ const b = beats[k];
+        mark(b, 'l1', b.wide ? 'QRS 넓음' : 'QRS', b.tQ + 0.43 * b.QRS, b.wide ? -0.2 : 1.55);
+        mark(b, 'l2', 'T', b.tQ + b.QT - 0.46 * b.Td, 0.30); }
+      E.lastX = x; E.lastY = y;
+    }
+  }
+  function setEcg(on){
+    ECG.on = !!on; $('#ecg').hidden = !ECG.on; $('#stage').classList.toggle('ecg-on', ECG.on); $('#btn-ecg').setAttribute('aria-pressed', String(ECG.on));
+    ['cdA','cdV','lbSA','lbAV'].forEach(k => HSET.hemo[k].setAttribute('display', ECG.on ? 'inline' : 'none'));
+    try { localStorage.setItem('cardio:ecg', ECG.on ? '1' : '0'); } catch (e) {}
+    if (ECG.on) requestAnimationFrame(ecgResize);
+  }
+  $('#btn-ecg').addEventListener('click', () => setEcg(!ECG.on));
+  addEventListener('resize', ecgResize); matchMedia('(prefers-color-scheme: dark)').addEventListener('change', ecgColors);
+
+
+  /* ---------------- ECG 탭 ---------------- */
+  const PARTS = [
+    { id:'P',   name:'P',   seg:b => [b.tP, b.tP + b.P],                       lit:'atr', txt:'심방 탈분극. SA node에서 시작해 우심방 → 좌심방으로 퍼집니다. 없으면 심방세동·심방 정지를 의심합니다.' },
+    { id:'PR',  name:'PR',  seg:b => [b.tP, b.tQ],                             lit:'av',  txt:'P 시작 ~ QRS 시작. 대부분이 <b>AV node 지연</b>이며, 이 지연 덕분에 심방이 먼저 짜고 심실이 뒤따릅니다. 길어지면 1도 방실차단.' },
+    { id:'QRS', name:'QRS', seg:b => [b.tQ, b.tQ + b.QRS],                     lit:'ven', txt:'심실 탈분극. His → 좌·우각 → Purkinje로 빠르게 퍼져 좁습니다. 넓어지면 심실 기원 박동이나 전도 지연.' },
+    { id:'ST',  name:'ST',  seg:b => [b.tQ + b.QRS, b.tQ + b.QT - 0.9 * b.Td], lit:'ej',  txt:'심실이 모두 탈분극해 있는 구간. 이때 박출이 일어납니다. 기저선에서 벗어나면 심근 허혈·심낭 질환을 의심합니다.' },
+    { id:'T',   name:'T',   seg:b => [b.tQ + b.QT - 0.9 * b.Td, b.tQ + b.QT],  lit:'rep', txt:'심실 재분극. 끝날 무렵 대동맥판이 닫히고 이완이 시작됩니다. 뾰족하고 커지면 고칼륨혈증을 먼저 떠올립니다.' },
+    { id:'QT',  name:'QT',  seg:b => [b.tQ, b.tQ + b.QT],                      lit:'ven', txt:'심실의 탈분극 + 재분극 전체. 심박수에 따라 변하므로 보정해서 봅니다. 길어지면 torsades de pointes 위험.' },
+    { id:'RR',  name:'RR',  seg:(b, nb) => nb ? [b.tQ + 0.43 * b.QRS, nb.tQ + 0.43 * nb.QRS] : null, lit:'', txt:'박동 사이 간격. 60 ÷ RR(초) = 심박수. 규칙성을 볼 때도 이 간격을 비교합니다.' }
+  ];
+  const NORMR = {
+    dog: { hr:'70–160 (대형견 60–140)', P:'≤ 40 ms · ≤ 0.4 mV', PR:'60–130 ms', QRS:'≤ 60 ms (대형견 ≤ 65)', QT:'150–250 ms' },
+    cat: { hr:'140–220', P:'≤ 40 ms · ≤ 0.2 mV', PR:'50–90 ms', QRS:'≤ 40 ms', QT:'120–180 ms' }
+  };
+  const E2 = { cv:$('#ecg2c'), ctx:null, W:0, H:0, dpr:1, PPS:200, WIN:3, frozen:false, t1:0, sweep:-1, sy:0, part:null, col:{},
+               cal:[0.3, 0.6], drag:-1, espec:'dog' };
+  $('#e2-parts').innerHTML = PARTS.map(p => `<button type="button" data-part="${p.id}" aria-pressed="false">${p.name}</button>`).join('');
+  $('#e2-ctl').innerHTML = `<div class="sl"><div class="sl-top"><label for="s2-hr">심박수<small>HR</small></label><output id="o2-hr"></output></div>
+    <div class="sl-track"><input type="range" id="s2-hr" min="30" max="260" step="5" value="100"></div></div>`;
+
+  function e2Colors(){ const cs = getComputedStyle(document.documentElement), g = (k) => cs.getPropertyValue(k).trim();
+    E2.col = { tr:g('--ecg-tr'), tx:g('--muted'), hi:g('--accent-soft'), hiL:g('--accent') }; }
+  function e2Resize(){
+    const r = E2.cv.getBoundingClientRect(); if (!r.width) return;
+    E2.dpr = Math.min(3, window.devicePixelRatio || 1); E2.W = E2.cv.width = Math.round(r.width * E2.dpr); E2.H = E2.cv.height = Math.round(r.height * E2.dpr);
+    E2.ctx = E2.cv.getContext('2d'); E2.WIN = r.width / E2.PPS; E2.sweep = -1; e2Colors();
+    E2.cal = [Math.min(E2.cal[0], r.width - 30), Math.min(E2.cal[1], r.width - 10)];
+    if (E2.frozen) e2Static(); e2Cal();
+  }
+  const e2Y = (v) => E2.H * 0.66 - v * 80 * E2.dpr;          /* 1 mV = 10 작은 칸 */
+  function e2Seg(){                                           /* 지금 고른 구간의 [시작, 끝] 시각 */
+    if (!E2.part) return null; const P = PARTS.find(p => p.id === E2.part);
+    for (let i = beats.length - 1; i >= 0; i--){ const b = beats[i]; if (b.tQ + b.QT + 0.05 > E2.t1) continue; return P.seg(b, beats[i + 1]); }
+    return null;
+  }
+  function e2SegAt(t){                                        /* 시각 t가 들어 있는 박동의 강조 구간 */
+    if (!E2.part) return null; const P = PARTS.find(p => p.id === E2.part);
+    for (let i = beats.length - 1; i >= 0; i--){ const sg = P.seg(beats[i], beats[i + 1]); if (sg && t >= sg[0] && t <= sg[1]) return sg; }
+    return null;
+  }
+  function e2Band(c, t0, t1){                                 /* 멈춤: 창 안의 구간을 테두리와 함께 칠함 */
+    const sg = e2Seg(); if (!sg || sg[1] < t0 || sg[0] > t1) return;
+    const x = (t) => (t - t0) * E2.PPS * E2.dpr, a = Math.max(x(sg[0]), 0), b2 = Math.min(x(sg[1]), E2.W);
+    c.save(); c.globalAlpha = 0.55; c.fillStyle = E2.col.hi; c.fillRect(a, 0, Math.max(2, b2 - a), E2.H);
+    c.globalAlpha = 1; c.strokeStyle = E2.col.hiL; c.lineWidth = 1.5 * E2.dpr; c.setLineDash([4 * E2.dpr, 3 * E2.dpr]);
+    [a, b2].forEach(xx => { c.beginPath(); c.moveTo(xx, 0); c.lineTo(xx, E2.H); c.stroke(); }); c.restore();
+  }
+  function e2Trace(c, t0, t1){
+    c.strokeStyle = E2.col.tr; c.lineWidth = 2 * E2.dpr; c.lineJoin = 'round'; c.lineCap = 'round'; c.beginPath();
+    const n = Math.round((t1 - t0) / 0.002);
+    for (let i = 0; i <= n; i++){ const t = t0 + (t1 - t0) * i / n, x = (t - t0) * E2.PPS * E2.dpr, y = e2Y(ecgAt(t)); i ? c.lineTo(x, y) : c.moveTo(x, y); }
+    c.stroke();
+  }
+  function e2Static(){                                        /* 멈춤: 창 전체를 왼→오 한 번에 다시 그림 */
+    const c = E2.ctx; if (!c) return; c.clearRect(0, 0, E2.W, E2.H);
+    const t0 = E2.t1 - E2.WIN; e2Band(c, t0, E2.t1); e2Trace(c, t0, E2.t1);
+  }
+  function e2Sweep(ta, tb){                                   /* 실시간: 모니터처럼 쓸고 지나감 */
+    const c = E2.ctx; if (!c || tb <= ta) return;
+    const gap = 18 * E2.dpr, n = Math.max(1, Math.ceil((tb - ta) / 0.003));
+    c.strokeStyle = E2.col.tr; c.lineWidth = 2 * E2.dpr; c.lineJoin = 'round'; c.lineCap = 'round';
+    for (let i = 1; i <= n; i++){
+      const t = ta + (tb - ta) * i / n, x = ((t % E2.WIN) / E2.WIN) * E2.W, y = e2Y(ecgAt(t));
+      if (E2.sweep < 0 || x < E2.sweep) { c.clearRect(0, 0, gap, E2.H); E2.sweep = x; E2.sy = y; }
+      c.clearRect(x + 1, 0, Math.min(gap, E2.W - x), E2.H);
+      if (E2.part && e2SegAt(t)) { c.save(); c.globalAlpha = 0.55; c.fillStyle = E2.col.hi;   /* 지나가는 그 순간에만 한 번 칠함 */
+        c.fillRect(E2.sweep, 0, Math.max(1, x - E2.sweep + 1), E2.H); c.restore(); }
+      c.beginPath(); c.moveTo(E2.sweep, E2.sy); c.lineTo(x, y); c.stroke(); E2.sweep = x; E2.sy = y;
+    }
+  }
+  function e2Cal(){                                           /* 캘리퍼 위치·판독(판독값은 파형을 가리지 않게 아래 막대에) */
+    const on = E2.frozen; $('#cal').hidden = !on; $('#cread').hidden = !on; if (!on) return;
+    $$('#cal .cbar').forEach((b, i) => b.style.left = E2.cal[i] + 'px');
+    const dt = Math.abs(E2.cal[1] - E2.cal[0]) / E2.PPS, hr = dt > 0.05 ? Math.round(60 / dt) : null;
+    $('#cread').textContent = `${Math.round(dt * 1000)} ms${hr ? ` · RR이면 ${hr} bpm` : ''}`;
+  }
+  $('#cal').addEventListener('pointerdown', (e) => { const b = e.target.closest('.cbar'); if (!b) return; E2.drag = +b.dataset.cal; b.setPointerCapture(e.pointerId); });
+  $('#cal').addEventListener('pointermove', (e) => { if (E2.drag < 0) return; const r = E2.cv.getBoundingClientRect(); E2.cal[E2.drag] = clamp(e.clientX - r.left, 0, r.width); e2Cal(); });
+  ['pointerup', 'pointercancel'].forEach(k => $('#cal').addEventListener(k, () => { if (E2.drag >= 0) e2Snap(E2.drag); E2.drag = -1; }));
+  function e2Snap(i){                                         /* 놓을 때 가까운 특징점(P 시작 · R 꼭대기 · T 끝)에 살짝 붙음 */
+    const t0 = E2.t1 - E2.WIN, x0 = E2.cal[i]; let best = null, bd = 14;
+    beats.forEach(b => [b.tP, b.tQ + 0.43 * b.QRS, b.tQ + b.QT].forEach(t => {
+      const x = (t - t0) * E2.PPS, d = Math.abs(x - x0); if (x >= 0 && d < bd) { bd = d; best = x; } }));
+    if (best != null) { E2.cal[i] = best; e2Cal(); }
+  }
+  function setFrozen(on){
+    E2.frozen = !!on; $('#btn-freeze').textContent = E2.frozen ? '재개' : '멈춤'; $('#btn-freeze').setAttribute('aria-pressed', String(E2.frozen));
+    if (E2.frozen) { const w = E2.cv.getBoundingClientRect().width; E2.cal = [w * 0.3, w * 0.55]; e2Static(); } else E2.sweep = -1;
+    e2Cal();
+  }
+  $('#btn-freeze').addEventListener('click', () => setFrozen(!E2.frozen));
+  function e2Part(id){
+    E2.part = (E2.part === id) ? null : id;
+    $$('#e2-parts button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.part === E2.part)));
+    const P = PARTS.find(p => p.id === E2.part), R = NORMR[E2.espec];
+    $('#e2-note').innerHTML = P ? `<b>${P.name}</b> — ${P.txt}${R[P.id] ? ` <span class="rng">정상 ${R[P.id]}</span>` : ''}`
+                                : '아래에서 구간을 고르면 그 구간이 파형과 심장에서 함께 강조됩니다.';
+    $$('#e2-tbl tr').forEach(tr => tr.classList.toggle('on', tr.dataset.row === E2.part));
+    if (E2.frozen) e2Static(); else if (E2.ctx) { E2.ctx.clearRect(0, 0, E2.W, E2.H); E2.sweep = -1; }
+  }
+  $('#e2-parts').addEventListener('click', (e) => { const b = e.target.closest('button'); if (b) e2Part(b.dataset.part); });
+  function e2Table(){
+    const R = NORMR[E2.espec];
+    $('#e2-tbl').innerHTML = `<thead><tr><th>항목</th><th>정상 (${E2.espec === 'dog' ? '개' : '고양이'})</th></tr></thead><tbody>` +
+      [['hr', '심박수 (bpm)'], ['P', 'P'], ['PR', 'PR'], ['QRS', 'QRS'], ['QT', 'QT']].map(([k, n]) =>
+        `<tr data-row="${k}"><td>${n}</td><td class="mono">${R[k]}</td></tr>`).join('') + '</tbody>';
+    $('#e2-sp').textContent = E2.espec === 'dog' ? '개' : '고양이';
+    $$('#e2-tbl tr').forEach(tr => tr.classList.toggle('on', tr.dataset.row === E2.part));
+  }
+  $$('[data-esp]').forEach(b => b.addEventListener('click', () => {
+    E2.espec = b.dataset.esp; $$('[data-esp]').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.esp === E2.espec)));
+    e2Table(); e2Part(E2.part); e2Part(E2.part);   /* 같은 구간을 유지하며 설명·정상치만 갱신 */
+  }));
+  $('#e2-ctl').addEventListener('input', (e) => { if (e.target.id !== 's2-hr') return; base.hr = lim('hr', base.hr + (+e.target.value - tgt.hr)); preset = null; commit(); });
+  $('#e2-ctl').addEventListener('pointerdown', (e) => { if (e.target.id === 's2-hr') push(); });
+  const RTXT = {
+    sinus:  '기준 리듬. P → QRS → T가 일정한 간격으로 반복되고 P와 QRS가 1:1입니다.',
+    arr:    '호흡에 따라 RR이 규칙적으로 늘었다 줄었다 합니다. <b>개에서는 정상</b>이며 미주신경 긴장이 높을 때 뚜렷해집니다. P 모양과 PR은 일정합니다.',
+    avb1:   'PR이 길어지지만(여기서는 240 ms) 모든 P가 심실로 전도됩니다. 박출은 정상이라 혈역학 영향은 거의 없고, 대개 원인(미주신경 긴장·약물·전해질) 쪽을 봅니다.',
+    wench:  'PR이 박동마다 조금씩 길어지다가 <b>한 번 전도되지 않고</b> 떨어집니다. 떨어진 뒤 PR이 다시 짧아지는 것이 특징입니다.',
+    mobitz2:'PR은 일정한데 <b>예고 없이</b> QRS가 빠집니다. Mobitz I보다 아래쪽(His 이하) 병변일 때가 많아 3도로 진행할 위험이 큽니다.',
+    vpc:    '정상 박동 사이에 <b>이르고 넓은 QRS</b>가 끼어듭니다. 충만 시간이 짧고 심방 수축 기여도 없어 그 박동의 박출은 거의 없습니다 — 맥박 결손으로 만져집니다. 뒤따르는 휴지 후 첫 박동은 오래 찼기 때문에 오히려 큽니다.',
+    af:     'P가 없고 기저선이 잔떨림으로 흔들리며 RR이 <b>불규칙하게 불규칙</b>합니다. 심방 수축 기여(약 15–20%)가 사라지고 짧은 간격의 박동은 충만이 부족해 박출량이 들쭉날쭉합니다.',
+    vt:     '넓은 QRS가 빠르게 이어지고(HR 슬라이더의 약 1.8배) P는 제 속도로 따로 지나갑니다 — 방실 해리. 충만 시간이 짧고 심방 수축 기여도 없으며 심실이 동기화되지 않아 <b>박동 하나하나가 거의 짜내지 못합니다</b>. 맥박이 약하거나 안 잡히면 무맥성 VT로 보고 즉시 대응합니다.',
+    avb3:   'P는 제 속도로 규칙적인데 QRS와 전혀 관계가 없고, 심실은 느린 이탈 리듬(약 40회)으로 뜁니다. HR 슬라이더는 심방 속도만 바꿉니다 — 심실은 따라오지 않습니다.'
+  };
+  $('#e2-rhy').innerHTML = Object.keys(RHY).map(k => `<button type="button" data-rhy="${k}">${RHY[k].name}</button>`).join('');
+  function e2Rhy(){
+    $$('#e2-rhy button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.rhy === rhy)));
+    $('#e2-rtxt').innerHTML = RTXT[rhy] || '';
+  }
+  $('#e2-rhy').addEventListener('click', (e) => { const b = e.target.closest('button'); if (b) resetRhythm(b.dataset.rhy); });
+
+  const WTXT = {
+    none: { t:'리듬만 보고 있습니다. 아래 항목을 고르면 같은 리듬 위에 파형 변화가 덧씌워집니다.' },
+    hk1:  { t:'<b>K⁺ 약 5.5–6.5 mEq/L</b> — T가 좁고 뾰족해집니다(tented T). 리듬과 다른 간격은 아직 정상이라 놓치기 쉽습니다.', l:[['bloodgas.html','Blood Gas'],['saccm.html#sacc3-p5-c56','Ch.56 칼륨']] },
+    hk2:  { t:'<b>약 7–8 mEq/L</b> — 심방근이 먼저 마비되어 <b>P가 사라지고</b>(심방 정지) QRS가 넓어지며 심박수가 느려집니다. 방실결절은 계속 뛰므로 규칙적인 서맥으로 보입니다. 넓은 QRS 때문에 박출량도 떨어집니다.', l:[['bloodgas.html','Blood Gas'],['fluid.html','Fluid'],['saccm.html#sacc3-p5-c56','Ch.56 칼륨']] },
+    hk3:  { t:'<b>약 8.5 mEq/L 이상</b> — QRS와 T가 하나로 녹아 <b>sine wave</b>가 됩니다. 심정지 직전이며 calcium gluconate로 막을 안정화하는 것이 먼저입니다.', l:[['bloodgas.html','Blood Gas'],['saccm.html#sacc3-p5-c56','Ch.56 칼륨'],['cpcr.html','CPCR']] },
+    peri: { t:'<b>심낭 삼출</b> — 전체 파형이 작아지고(저전압) 박동마다 크기가 번갈아 달라집니다(electrical alternans). 심장이 액체 속에서 흔들리기 때문입니다. 혈역학 탭의 <b>충만 제한</b> 슬라이더와 같이 보세요.', l:[['saccm.html#sacc3-p4-c47','Ch.47 심낭 질환'],['fluid.html','Fluid']] },
+    isch: { t:'<b>ST 하강</b> — 심내막하 허혈에서 흔합니다. 빈맥·저혈압·빈혈로 심근 산소 수요와 공급이 어긋날 때 나타나며, 원인 교정이 치료입니다.', l:[['saccm.html#sacc3-p4-c42','Ch.42 심실 부전'],['transfusion.html','Transfusion']] },
+    inj:  { t:'<b>ST 상승</b> — 심근 손상·심막염에서 보입니다. GDV·외상·췌장염 뒤의 심근염(전통적으로 말하는 외상성 심근염)에서 VPC와 함께 나타나기도 합니다.', l:[['saccm.html#sacc3-p4-c50','Ch.50 심실 빈맥'],['saccm.html#sacc3-p4-c47','Ch.47 심낭 질환']] }
+  };
+  $('#e2-wave').innerHTML = Object.keys(WAVE).map(k => `<button type="button" data-wave="${k}">${WAVE[k].name}</button>`).join('');
+  function e2Wave(){
+    $$('#e2-wave button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.wave === wave)));
+    const w = WTXT[wave] || WTXT.none; $('#e2-wtxt').innerHTML = w.t;
+    $('#e2-wlink').innerHTML = (w.l || []).map(([h, n]) => `<a class="${h.indexOf('saccm') === 0 ? 'book' : 'calc'}" href="${h}">${n}</a>`).join('');
+  }
+  $('#e2-wave').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; wave = b.dataset.wave; resetRhythm(rhy); e2Wave(); });
+
+  /* 최근 박동들의 박출량 — 리듬이 혈역학에 어떤 영향을 주는지 */
+  const BAR = []; for (let i = 0; i < 12; i++) { const el = document.createElement('i'); $('#e2-bars').appendChild(el); BAR.push(el); }
+  let hemoKey = '';
+  function e2Hemo(m){
+    const done = beats.filter(b => b.tS + b.ts <= ht), last = done.slice(-12), ref = m.SV || 1;
+    const win = 6, t0 = ht - win; let sum = 0, n = 0;
+    done.forEach((b, i) => { if (b.tS > t0) { sum += (b.vol ? b.vol.SV : 0); n++; } });
+    const span = Math.min(win, ht - (done.length ? done[0].tS : ht)) || win, co = n ? sum / span * 60 : 0;
+    const key = [last.length, co.toFixed(0), (last[last.length - 1] || {}).tQ].join('|'); if (key === hemoKey) return; hemoKey = key;
+    BAR.forEach((el, i) => { const b = last[last.length - BAR.length + i];
+      el.style.height = b && b.vol ? clamp(b.vol.SV / (ref * 1.35), 0.02, 1) * 100 + '%' : '0';
+      el.className = b ? (b.wide ? 'wide' : (b.kick ? '' : 'nokick')) : ''; });
+    setTxt($('#e2-co'), co ? fmt(co) : '—');
+    const r = m.CO ? co / m.CO : 1, cmp = $('#e2-cmp');
+    cmp.textContent = co ? `동율동 ${fmt(m.CO)} 대비 ${Math.round(r * 100)}%` : '';
+    cmp.className = 'cmp ' + (r < 0.92 ? 'dn' : 'eq');
+    const W = WV(), flat = (rhy === 'sinus' || rhy === 'arr' || rhy === 'avb1') && !W.noP && !(W.qrsF > 1.5);
+    $('#e2-hnote').innerHTML = (flat ? '막대 하나가 한 박동의 박출량입니다. 모두 고르면 충만과 심방 수축이 제대로 이뤄지고 있다는 뜻입니다.'
+      : '<span style="color:var(--warn)">■</span> 심방 수축 기여 없음 · <span style="color:var(--high)">■</span> 심실 기원·넓은 QRS — 막대가 낮을수록 그 박동은 거의 짜내지 못한 것입니다.')
+      + (wave === 'peri' ? '<br><span style="color:var(--warn)">심낭 압박으로 인한 충만 제한은 이 계산에 들어 있지 않아 CO가 실제보다 높게 나옵니다 — 혈역학 탭의 「충만 제한」 슬라이더를 함께 올려 보세요.</span>' : '');
+  }
+
+  e2Table(); e2Part(null); e2Rhy(); e2Wave();
+  addEventListener('resize', () => { if (tab === 'ecg') e2Resize(); });
+
+  function intervals(){   /* 지금 화면의 박동들에서 실제로 읽히는 값 */
+    const done = beats.filter(b => b.tQ <= ht), last = done[done.length - 1];
+    let hr = '—', pr = '—';
+    const rr = []; for (let i = Math.max(1, done.length - 5); i < done.length; i++) rr.push(done[i].tQ - done[i - 1].tQ);
+    if (rr.length) { const mean = rr.reduce((a, x) => a + x, 0) / rr.length, spread = Math.max(...rr) - Math.min(...rr);
+      hr = Math.round(60 / mean) + (spread > mean * 0.15 ? ' (불규칙)' : ''); }
+    for (let i = done.length - 1; i >= 0; i--) if (done[i].tPsrc != null) { pr = Math.round((done[i].tQ - done[i].tPsrc) * 1000); break; }
+    return { hr, pr, qrs: last ? Math.round(last.QRS * 1000) : '—', qt: last ? Math.round(last.QT * 1000) : '—' };
+  }
+
+
+  /* ---------------- 곡선 탭 ---------------- */
+  const CV = { fs:$('#cv-fs'), doo:$('#cv-do'), last:'' };
+  const PAD = { l:34, r:12, t:12, b:26 };
+  function axes(svg, xs, ys, xlab, ylab){
+    svg.innerHTML = '';
+    const W = 300, Hs = 200, g = (t, a) => { const e = document.createElementNS(SVGNS, t); for (const k in a) e.setAttribute(k, a[k]); svg.appendChild(e); return e; };
+    xs.forEach(v => { const x = PAD.l + (W - PAD.l - PAD.r) * v.p; g('line', { x1:x, y1:PAD.t, x2:x, y2:Hs - PAD.b, class:'cv-gr' });
+      const t = g('text', { x, y:Hs - PAD.b + 11, class:'cv-t', 'text-anchor':'middle' }); t.textContent = v.t; });
+    ys.forEach(v => { const y = Hs - PAD.b - (Hs - PAD.t - PAD.b) * v.p; g('line', { x1:PAD.l, y1:y, x2:W - PAD.r, y2:y, class:'cv-gr' });
+      const t = g('text', { x:PAD.l - 4, y:y + 3, class:'cv-t', 'text-anchor':'end' }); t.textContent = v.t; });
+    g('line', { x1:PAD.l, y1:PAD.t, x2:PAD.l, y2:Hs - PAD.b, class:'cv-ax' });
+    g('line', { x1:PAD.l, y1:Hs - PAD.b, x2:W - PAD.r, y2:Hs - PAD.b, class:'cv-ax' });
+    const xt = g('text', { x:W - PAD.r, y:Hs - 4, class:'cv-t', 'text-anchor':'end' }); xt.textContent = xlab;
+    const yt = g('text', { x:2, y:PAD.t - 4, class:'cv-t' }); yt.textContent = ylab;
+    return g;
+  }
+  const px = (v, max) => PAD.l + (300 - PAD.l - PAD.r) * clamp(v / max, 0, 1);
+  const py = (v, max) => 200 - PAD.b - (200 - PAD.t - PAD.b) * clamp(v / max, 0, 1);
+
+  function drawCurves(){
+    const p0 = effOf([]), pNow = tgt, m0 = model(p0), mN = model(pNow);
+    /* --- Frank–Starling: 충만압(EDP) ↔ 일회박출량 --- */
+    const XM = 30, YM = 2.6;
+    const g = axes(CV.fs, [{p:0,t:'0'},{p:.33,t:'10'},{p:.67,t:'20'},{p:1,t:'30'}],
+                          [{p:0,t:'0'},{p:.385,t:'1'},{p:.77,t:'2'}], '충만압 mmHg', 'SV mL/kg');
+    const line = (par, cls) => { const pts = [];
+      for (let i = 0; i <= 40; i++){ const q = { ...par, pre: lerp(15, 210, i / 40) }, mm = model(q); pts.push(px(mm.EDP, XM) + ',' + py(mm.SV, YM)); }
+      g('path', { d:'M' + pts.join('L'), class:cls }); };
+    if (preset !== null || active.length) line(p0, 'cv-prev');
+    line(pNow, 'cv-curve');
+    if (active.length) g('circle', { cx:px(m0.EDP, XM), cy:py(m0.SV, YM), r:3.4, class:'cv-dot cv-dot2' });
+    g('circle', { cx:px(mN.EDP, XM), cy:py(mN.SV, YM), r:5, class:'cv-dot' });
+    const lx = px(mN.EDP, XM), far = lx > 176;
+    const lab = g('text', { x:lx + (far ? -8 : 8), y:clamp(py(mN.SV, YM) - 8, 20, 168), class:'cv-t n', 'text-anchor':far ? 'end' : 'start' });
+    lab.textContent = `${fmt(mN.EDP)} mmHg · SV ${fmt(mN.SV, 2)}`;
+    /* 지금 위치에서 preload를 더 올리면 SV가 얼마나 오르는가 = 수액 반응성 */
+    const up = model({ ...pNow, pre: lim('pre', pNow.pre + 25) }), gain = (up.SV / mN.SV - 1) * 100, dP = up.EDP - mN.EDP;
+    $('#cv-fs-chip').textContent = gain >= 12 ? '수액 반응 있음' : gain >= 5 ? '반응 약함' : '수액 반응 없음';
+    $('#cv-fs-chip').className = 'chip ' + (gain >= 12 ? 'ok' : gain >= 5 ? 'warn' : 'high');
+    const sg2 = (x, d) => (Math.abs(x) < 0.5 ? '거의 변화 없음' : (x > 0 ? '+' : '−') + fmt(Math.abs(x), d || 0));
+    $('#cv-fs-note').innerHTML = `이 위치에서 수액 한 번(preload +25%)을 주면 <b>SV ${Math.abs(gain) < 0.5 ? '거의 그대로' : sg2(gain) + '%'}</b>, 충만압 ${sg2(dP)}${Math.abs(dP) < 0.5 ? '' : ' mmHg'}. ` +
+      (gain >= 12 ? '곡선의 가파른 구간이라 줄수록 박출이 늘어납니다.' : '곡선의 평탄부입니다 — 더 줘도 SV는 거의 늘지 않고 충만압만 올라 폐울혈로 갑니다. 수축력·후부하 쪽을 보세요.');
+
+    /* --- DO₂ · VO₂ --- */
+    const DM = 45, VM = 14, g2 = axes(CV.doo, [{p:0,t:'0'},{p:.33,t:'15'},{p:.67,t:'30'},{p:1,t:'45'}],
+                                              [{p:0,t:'0'},{p:.5,t:'7'},{p:1,t:'14'}], 'DO₂ mL/kg/min', 'VO₂');
+    const need = mN.need, erMax = pNow.erMax / 100, crit = need / erMax;
+    g2('rect', { x:PAD.l, y:PAD.t, width:Math.max(0, px(crit, DM) - PAD.l), height:200 - PAD.t - PAD.b, class:'cv-zone' });
+    const pts2 = []; for (let i = 0; i <= 40; i++){ const d = DM * i / 40; pts2.push(px(d, DM) + ',' + py(Math.min(need, d * erMax), VM)); }
+    g2('path', { d:'M' + pts2.join('L'), class:'cv-curve' });
+    g2('line', { x1:px(crit, DM), y1:PAD.t, x2:px(crit, DM), y2:200 - PAD.b, class:'cv-ax', stroke:'var(--high)', 'stroke-dasharray':'3 3' });
+    const ct = g2('text', { x:px(crit, DM) + 3, y:PAD.t + 9, class:'cv-t hi' }); ct.textContent = `임계 DO₂ ${fmt(crit, 1)}`;
+    g2('circle', { cx:px(mN.DO2, DM), cy:py(mN.VO2, VM), r:5, class:'cv-dot' });
+    const dx = px(mN.DO2, DM), dfar = dx > 176;
+    const l2 = g2('text', { x:dx + (dfar ? -8 : 8), y:clamp(py(mN.VO2, VM) - 8, 20, 168), class:'cv-t n', 'text-anchor':dfar ? 'end' : 'start' });
+    l2.textContent = `DO₂ ${fmt(mN.DO2, 1)} · O₂ER ${fmt(mN.ER)}%`;
+    $('#cv-do-note').innerHTML = mN.limited
+      ? `<b style="color:var(--high)">공급 의존 구간</b> — 추출률이 한계(${fmt(pNow.erMax)}%)에 걸려 VO₂가 DO₂를 따라 내려갑니다. 산소 부채가 쌓이고 lactate가 오릅니다. DO₂를 ${fmt(crit - mN.DO2, 1)} 이상 올려야 합니다.`
+      : `여유 있는 구간입니다. DO₂가 <b>${fmt(crit, 1)}</b> 아래로 내려가면 추출만으로는 감당이 안 되어 VO₂가 떨어지기 시작합니다. 지금 여유는 <b>${fmt(mN.DO2 - crit, 1)} mL/kg/min</b>.`;
+  }
+
+  /* ---------------- 승압제 · 강심제 탭 ---------------- */
+  const REC = [['a1','α1','a'], ['b1','β1','b'], ['b2','β2','b'], ['d','D','d'], ['v1','V1','v'], ['pde','PDE3','d']];
+  const VASO = [
+    { id:'dopa', name:'Dopamine', cls:'카테콜아민 · 용량 의존', unit:'mcg/kg/min', lo:1, hi:20, def:7, step:0.5,
+      rec:(x) => ({ d: clamp(1.1 - x / 6, 0.15, 1), b1: clamp(x / 9, 0, 1), a1: clamp((x - 8) / 9, 0, 1) }),
+      note:'용량에 따라 붙는 수용체가 달라집니다. 낮은 용량에서는 도파민 수용체, 중간에서는 β1(수축력·심박수), 높은 용량에서 α1(혈관 수축)이 우세합니다. 이른바 "신장 용량"은 신장 보호 효과가 입증되지 않았습니다.',
+      use:'저혈압에 쓰지만 용량 구간이 겹쳐 효과를 예측하기 어렵습니다. 요즘은 노르에피네프린·도부타민으로 나눠 쓰는 쪽이 일반적입니다.',
+      warn:'빈맥과 부정맥이 흔합니다. 고양이는 반응이 다르고 예민합니다.' },
+    { id:'dobu', name:'Dobutamine', cls:'강심제 (β1)', unit:'mcg/kg/min', lo:1, hi:20, def:5, step:0.5,
+      rec:(x) => ({ b1: clamp(0.25 + x / 14, 0, 1), b2: clamp(x / 40, 0, 0.35) }),
+      note:'β1에 주로 작용해 수축력을 올립니다. β2 작용이 조금 있어 SVR은 오히려 살짝 떨어질 수 있고, 그래서 혈압은 생각만큼 안 오르기도 합니다.',
+      use:'심근 수축력이 문제일 때(심인성 쇼크, 패혈증의 심근 억제). 혈관이 열려 저혈압인 상황에는 승압제를 따로 씁니다.',
+      warn:'고양이는 낮은 용량으로 시작하고(경련 보고), 개도 빈맥·부정맥이 있으면 감량합니다. 24–48시간 넘기면 효과가 줄어듭니다.' },
+    { id:'nore', name:'Norepinephrine', cls:'승압제 (α1 ≫ β1)', unit:'mcg/kg/min', lo:0.05, hi:2, def:0.3, step:0.05,
+      rec:(x) => ({ a1: clamp(0.4 + x / 1.4, 0, 1), b1: clamp(0.15 + x / 5, 0, 0.55) }),
+      note:'α1을 통해 혈관을 조여 관류압을 올립니다. β1 작용이 조금 있어 심박수는 크게 늘지 않는 편입니다.',
+      use:'분포성 쇼크(패혈증)에서 수액을 충분히 주고도 MAP가 낮을 때 1차로 씁니다.',
+      warn:'혈관 내 용적이 비어 있는 상태에서 쓰면 혈압 숫자만 올라가고 조직 관류는 더 나빠집니다. 수액 상태를 먼저 보세요. 혈관 밖으로 새면 조직 괴사가 생깁니다.' },
+    { id:'epi', name:'Epinephrine', cls:'카테콜아민 · 용량 의존', unit:'mcg/kg/min', lo:0.05, hi:1, def:0.2, step:0.05,
+      rec:(x) => ({ b1: clamp(0.5 + x / 2, 0, 1), b2: clamp(0.6 - x / 1.6, 0.1, 0.8), a1: clamp(x / 0.7, 0, 1) }),
+      note:'낮은 용량에서는 β 작용(수축력↑·혈관 확장)이, 높은 용량에서는 α1이 우세해집니다. 심정지·아나필락시스에서는 다른 용량 체계를 씁니다.',
+      use:'아나필락시스, 다른 약에 반응하지 않는 저혈압, 심정지(볼루스).',
+      warn:'빈맥·부정맥·젖산 상승·고혈당이 흔합니다. CRI 용량과 심정지 볼루스 용량을 섞지 마세요.' },
+    { id:'phen', name:'Phenylephrine', cls:'순수 α1 승압제', unit:'mcg/kg/min', lo:0.5, hi:3, def:1, step:0.25,
+      rec:(x) => ({ a1: clamp(0.5 + x / 4, 0, 1) }),
+      note:'α1만 자극합니다. 혈관이 조여 MAP는 오르지만 후부하가 늘어 CO는 오히려 줄 수 있고, 반사성 서맥이 옵니다.',
+      use:'β 자극을 피하고 싶을 때(빈맥성 부정맥 동반), 마취 중 혈관 확장.',
+      warn:'심장이 약한 환자에게는 CO를 떨어뜨립니다. 혈압만 보고 판단하지 마세요.' },
+    { id:'vaso', name:'Vasopressin', cls:'V1 수용체 (비카테콜아민)', unit:'mU/kg/min', lo:0.5, hi:5, def:2, step:0.25,
+      rec:(x) => ({ v1: clamp(0.4 + x / 6, 0, 1) }),
+      note:'아드레날린 수용체를 거치지 않고 V1으로 혈관을 조입니다. 산증에서도 효과가 유지되는 것이 장점입니다.',
+      use:'카테콜아민에 반응하지 않는 혈관마비성 쇼크, 심한 산증. 노르에피네프린에 더해 씁니다.',
+      warn:'과하면 말초·장·관상동맥 관류가 줄어듭니다. 단독 1차 약제로는 쓰지 않습니다.' },
+    { id:'milr', name:'Milrinone', cls:'PDE3 억제 · inodilator', unit:'mcg/kg/min', lo:1, hi:10, def:5, step:0.5,
+      rec:(x) => ({ pde: clamp(0.3 + x / 12, 0, 1) }),
+      note:'수용체가 아니라 세포 안의 cAMP 분해를 막아 수축력을 올립니다. 동시에 혈관을 확장시켜 후부하를 낮춥니다. β 수용체가 둔해진 심장에서도 듣습니다.',
+      use:'β 자극에 반응이 떨어진 심부전, 후부하를 같이 낮추고 싶을 때.',
+      warn:'혈관 확장 때문에 저혈압이 올 수 있어 용적이 부족하면 위험합니다.' },
+    { id:'pimo', name:'Pimobendan', cls:'Ca 감작 + PDE3 · 경구', unit:'mg/kg q12h', lo:0.2, hi:0.3, def:0.25, step:0.05,
+      rec:(x) => ({ pde: 0.55 }),
+      note:'칼슘 감작으로 수축력을 올리면서 혈관도 확장합니다. 산소 소비를 크게 늘리지 않는 것이 카테콜아민과 다른 점입니다. 경구약이라 급성기보다는 이어지는 치료에 씁니다.',
+      use:'MMVD·DCM의 심부전. 급성기에 주사 강심제로 버틴 뒤 이어서 씁니다.',
+      warn:'용량은 처방 탭에서 확인하세요. 유출로 폐쇄가 있는 경우에는 신중합니다.' }
+  ];
+  const FXROW = [['hr','심박수'], ['con','수축력'], ['svr','혈관 저항'], ['co','심박출량'], ['map','혈압']];
+  let vsDrug = VASO[0];
+  $('#vs-drugs').innerHTML = VASO.map(d => `<button type="button" data-vs="${d.id}">${d.name}</button>`).join('');
+  $('#vs-fx').innerHTML = FXROW.map(([k, n]) => `<div class="fx-row"><b>${n}</b><span class="t"><i id="vsb-${k}"></i></span><span class="v" id="vsv-${k}"></span></div>`).join('');
+  $('#vs-tbl').innerHTML = `<thead><tr><th>약물</th><th>주 작용</th><th>용량</th><th>주 효과</th></tr></thead><tbody>` +
+    VASO.map(d => { const r = d.rec(d.def), top = Object.keys(r).sort((a, b) => r[b] - r[a]).slice(0, 2).map(k => (REC.find(x => x[0] === k) || [0, k])[1]).join(' · ');
+      return `<tr data-row="${d.id}"><td>${d.name}</td><td>${top}</td><td class="mono">${d.lo}–${d.hi} ${d.unit}</td><td>${d.cls}</td></tr>`; }).join('') + '</tbody>';
+
+  function vsFx(r){   /* 수용체 조합에서 나오는 대략적인 혈역학 방향 */
+    const a1 = r.a1 || 0, b1 = r.b1 || 0, b2 = r.b2 || 0, d = r.d || 0, v1 = r.v1 || 0, pde = r.pde || 0;
+    const hr = b1 * 0.85 + d * 0.25 - v1 * 0.15 - a1 * 0.25, con = b1 * 0.9 + pde * 0.85 + d * 0.3;
+    const svr = a1 * 1.0 + v1 * 0.95 - b2 * 0.55 - pde * 0.5 - d * 0.15;
+    const co = con * 0.8 + hr * 0.35 - Math.max(0, svr) * 0.45;
+    return { hr, con, svr, co, map: Math.max(0, svr) * 0.75 + co * 0.5 - Math.max(0, -svr) * 0.3 };
+  }
+  function vsDraw(){
+    const d = vsDrug, inp = $('#vs-dose'), x = +inp.value, r = d.rec(x), fx = vsFx(r);
+    $$('#vs-drugs button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.vs === d.id)));
+    $$('#vs-tbl tr').forEach(tr => tr.classList.toggle('on', tr.dataset.row === d.id));
+    setTxt($('#vs-name'), d.name); setTxt($('#vs-class'), d.cls); setTxt($('#vs-unit'), d.unit);
+    $('#vs-out').innerHTML = `${x}<small>${d.unit}</small>`;
+    $('#vs-note').innerHTML = d.note; $('#vs-use').innerHTML = d.use; $('#vs-warn').innerHTML = `<b>주의</b> — ${d.warn}`;
+    $('#vs-link').innerHTML = ['<a class="calc" href="anesthesia.html">CRI 계산기</a>', '<a class="calc" href="prescription.html">처방</a>',
+      `<a class="book" href="saccm.html#sacc3-p18-c${d.id === 'vaso' ? 148 : d.id === 'pimo' ? 150 : d.id === 'milr' ? 149 : 147}">SACCM</a>`].join('');
+    /* 수용체 막대 */
+    const svg = $('#vs-map'); svg.innerHTML = '';
+    const mkb = (t, a) => { const e = document.createElementNS(SVGNS, t); for (const k in a) e.setAttribute(k, a[k]); svg.appendChild(e); return e; };
+    REC.forEach(([k, label, cls], i) => {
+      const y = 14 + i * 22, val = r[k] || 0;
+      const tx = mkb('text', { x:4, y:y + 9, class:'cv-t n' }); tx.textContent = label;
+      mkb('rect', { x:34, y, width:230, height:12, rx:6, class:'rc-bar' });
+      if (val > 0.01) mkb('rect', { x:34, y, width:Math.max(4, 230 * clamp(val, 0, 1)), height:12, rx:6, class:'rc-fill ' + cls });
+      const vt = mkb('text', { x:270, y:y + 9, class:'cv-t' }); vt.textContent = val > 0.01 ? Math.round(val * 100) + '%' : '—';
+    });
+    FXROW.forEach(([k]) => { const v = clamp(fx[k], -1.2, 1.2), w = Math.abs(v) / 1.2 * 50, el = $('#vsb-' + k);
+      el.className = v < 0 ? 'neg' : ''; el.style.width = w + '%'; el.style.left = v < 0 ? (50 - w) + '%' : '50%';
+      const arrow = Math.abs(v) < 0.08 ? '—' : (v > 0 ? '↑' : '↓').repeat(Math.min(3, Math.ceil(Math.abs(v) / 0.42)));
+      setTxt($('#vsv-' + k), arrow); $('#vsv-' + k).style.color = Math.abs(v) < 0.08 ? 'var(--muted)' : (v > 0 ? 'var(--ok)' : 'var(--high)'); });
+  }
+  function vsPick(id){
+    vsDrug = VASO.find(v => v.id === id) || VASO[0];
+    const inp = $('#vs-dose'); inp.min = vsDrug.lo; inp.max = vsDrug.hi; inp.step = vsDrug.step; inp.value = vsDrug.def;
+    $('#vs-dose-row .tick') && $('#vs-dose-row .tick').remove(); vsDraw();
+  }
+  $('#vs-drugs').addEventListener('click', (e) => { const b = e.target.closest('button'); if (b) vsPick(b.dataset.vs); });
+  $('#vs-dose').addEventListener('input', vsDraw);
+  vsPick('dopa');
+
   /* ---------------- 프레임 ---------------- */
-  let phase = 0, last = performance.now(), slowKey = '';
+  let last = performance.now(), slowKey = '', intKey = '';
   function frame(now){
     const dt = clamp((now - last) / 1000, 0, 0.05); last = now;
     const a = 1 - Math.exp(-dt * 5); Object.keys(tgt).forEach(k => { cur[k] += (tgt[k] - cur[k]) * a; if (Math.abs(tgt[k] - cur[k]) < 0.01) cur[k] = tgt[k]; });
-    const m = model(cur), Tc = 60 / cur.hr;
-    if (speed > 0) phase = (phase + dt / (Tc * speed)) % 1;
+    const m = model(cur), ht0 = ht, run = speed > 0 && !(tab === 'ecg' && E2.frozen);
+    if (run) ht += dt / speed;
+    schedule();
+    if (tab === 'ecg') { E2.t1 = ht; if (!E2.ctx) e2Resize(); if (run) e2Sweep(ht0, ht); }
 
-    /* 심주기: 등용적 수축 → 박출 → 등용적 이완 → 충만(급속 · 완만 · 심방 수축) */
-    const fs = Math.min(0.3 * Math.sqrt(Tc), 0.6 * Tc) / Tc, tIVC = 0.16 * fs, tIVR = Math.min(0.10, 0.24 * (1 - fs));
-    let V, ej = 0, oS = 0, oA = 0, kick = 0;
-    if (phase < tIVC) V = m.EDV;
-    else if (phase < fs) { const x = (phase - tIVC) / (fs - tIVC); V = m.EDV - m.SV * (0.5 - 0.5 * Math.cos(Math.PI * x)); ej = Math.sin(Math.PI * x); oS = Math.min(1, x / 0.14, (1 - x) / 0.12); }
-    else if (phase < fs + tIVR) V = m.ESV;
-    else { const u = (phase - fs - tIVR) / (1 - fs - tIVR); let g;
-      if (u < 0.75) { const y = u / 0.75; g = 0.8 * (1 - (1 - y) * (1 - y)); } else { const y = (u - 0.75) / 0.25; g = 0.8 + 0.2 * y * y * (3 - 2 * y); kick = Math.sin(Math.PI * y); }
-      V = m.ESV + m.SV * g; oA = Math.min(1, u / 0.09, (1 - u) / 0.05) * (1 - 0.42 * gauss((u - 0.6) / 0.13)); }
+    /* 기계적 심주기: 등용적 수축 → 박출 → 등용적 이완 → 충만(급속 · 완만 · 심방 수축) */
+    const st = mechAt(ht), b = st.b, nb = st.nb;
+    if (b && (!b.vol || b.volK !== m.SV)) { b.vol = beatVols(b, m, st.i); b.volK = m.SV; }
+    if (nb && (!nb.vol || nb.volK !== m.SV)) { nb.vol = beatVols(nb, m, st.ni); nb.volK = m.SV; }
+    const vb = b ? b.vol : { EDV:m.EDV, SV:m.SV, ESV:m.ESV }, vn = nb ? nb.vol : vb;
+    let V, ej = 0, oS = 0, oA = 0, kick = 0, svNow = vb.SV;
+    if (!b) V = m.EDV;
+    else if (st.ph === 1) V = vb.EDV;
+    else if (st.ph === 2) { const x = (ht - b.tS - b.ivc) / (b.ts - b.ivc); V = vb.EDV - vb.SV * (0.5 - 0.5 * Math.cos(Math.PI * x)); ej = Math.sin(Math.PI * x); oS = Math.min(1, x / 0.14, (1 - x) / 0.12); }
+    else if (st.ph === 3) V = vb.ESV;
+    else {   /* 충만: 다음 박동까지 — 전도된 P가 있을 때만 마지막에 심방 수축 몫이 더해집니다 */
+      const t0 = b.tS + b.ts + b.ivr, t1 = nb ? nb.tS : t0 + Math.max(0.35, 60 / cur.hr), tD = Math.max(0.05, t1 - t0);
+      const kT = (nb && nb.kick && nb.tPsrc != null) ? clamp((nb.tPsrc + 0.02 - t0) / tD, 0.08, 0.94) : null;
+      const u = clamp((ht - t0) / tD, 0, 1); let g;
+      if (kT != null) { if (u < kT) { const y = u / kT; g = 0.82 * (1 - (1 - y) * (1 - y)); }
+        else { const y = (u - kT) / (1 - kT); g = 0.82 + 0.18 * y * y * (3 - 2 * y); kick = Math.sin(Math.PI * y); } }
+      else g = 1 - (1 - u) * (1 - u);
+      V = vb.ESV + Math.max(0, vn.EDV - vb.ESV) * g;
+      oA = Math.min(1, (ht - t0) / 0.03, (t1 - ht) / 0.02) * (kT != null ? 1 - 0.38 * gauss((u - clamp(kT - 0.3, 0.1, 0.8)) / 0.16) : 1); }
     oS = clamp(oS, 0, 1); oA = clamp(oA, 0, 1);
 
+    /* 전도계 진행도 + ECG 띠 */
+    let cd = null;
+    if (ECG.on || tab === 'ecg') {
+      let eb = null; for (let i = 0; i < beats.length; i++) if (beats[i].tP <= ht) eb = beats[i];
+      if (eb) { const dA = ht - eb.tP, dQ = ht - eb.tQ;
+        cd = { sa: 1 - clamp(dA / 0.07, 0, 1), atr: dA / eb.P, fA: 1 - clamp((dA - eb.P) / 0.09, 0, 1), avn: (dA > 0.6 * eb.P && dQ < 0) ? 0.55 + 0.45 * Math.sin(dA * 60) : 0,
+               his: (dQ + 0.028) / 0.03, ven: dQ / eb.QRS, fV: 1 - clamp((dQ - eb.QRS) / 0.12, 0, 1) }; }
+      else cd = { sa:0, atr:0, fA:0, avn:0, his:0, ven:0, fV:0 };
+      if (tab === 'ecg' && E2.part) {   /* 구간을 고르면 그 구간이 맡는 곳에 불을 켜 둠 */
+        const L = (PARTS.find(p => p.id === E2.part) || {}).lit;
+        if (L === 'atr') cd = { ...cd, sa:1, atr:1, fA:1, avn:0, his:0, ven:0, fV:0 };
+        else if (L === 'av') cd = { ...cd, sa:0, atr:1, fA:0.55, avn:1, his:0, ven:0, fV:0 };
+        else if (L === 'ven' || L === 'ej' || L === 'rep') cd = { ...cd, sa:0, atr:0, fA:0, avn:0, his:1, ven:1, fV:L === 'ven' ? 1 : 0.45 };
+      }
+      if (run && ECG.on && tab === 'hemo') ecgDraw(ht0, ht);
+      if (tab === 'ecg') e2Hemo(m);
+      const iv = intervals(); const k2 = [iv.hr, iv.pr, iv.qrs, iv.qt, tab].join('|');
+      if (k2 !== intKey) { intKey = k2; const txt = `HR ${iv.hr} · PR ${iv.pr} · QRS ${iv.qrs} · QT ${iv.qt} ms`;
+        $('#e2-int').textContent = txt; $('#ecg-int').innerHTML = `<span class="w">HR ${iv.hr} · </span>PR ${iv.pr} · QRS ${iv.qrs} · QT ${iv.qt} ms`; }
+    }
+
     const rgbA = satRGB(cur.sa), rgbV = satRGB(m.SvO2), cA = css(rgbA), cV = css(rgbV);
-    const hg = drawHeart({ EDV:m.EDV, V, EDP:m.EDP, kick, oA, oS, cA, cV, obs:cur.obs });
-    $('#lb-rv').style.opacity = $('#lb-lv').style.opacity = clamp((hg.fED - 0.42) / 0.2, 0, 1).toFixed(2);   /* 박동마다 깜빡이지 않게 이완기 말 크기 기준 */
+    setGrad('gLV', rgbA); setGrad('gLA', rgbA); setGrad('gRV', rgbV); setGrad('gRA', rgbV); setGrad('gRbcA', rgbA, 1); setGrad('gRbcV', rgbV, 1);
+    const hg = drawHeart({ EDV:m.EDV, V, EDP:m.EDP, kick, oA, oS, cA, cV, obs:cur.obs, cd });
+    H.lbRA.style.opacity = H.lbLA.style.opacity = clamp((hg.Hh - 18) / 6, 0, 1).toFixed(2);
+    H.lbRV.style.opacity = H.lbLV.style.opacity = clamp((hg.fED - 0.42) / 0.2, 0, 1).toFixed(2);   /* 박동마다 깜빡이지 않게 이완기 말 크기 기준 */
 
     /* 혈관 */
-    const up = phase >= tIVC ? (phase - tIVC) / 0.36 * 0.8 : -1;
+    const up = (b && ht >= b.tS + b.ivc) ? (ht - b.tS - b.ivc) / (0.36 * b.RR) * 0.8 : -1;
     const c = { kA: 0.78 + 0.28 * clamp(m.MAP, 30, 170) / 100, wRes: clamp(7.4 * Math.pow(100 / cur.svr, 1.15), 1.8, 13), kV: clamp(0.5 + 0.5 * cur.pre / 100, 0.6, 1.45),
-                kPV: clamp(0.85 + 0.15 * m.EDP / 8, 0.8, 1.5), amp: clamp(m.SV / 1.5, 0, 1.6) * (up >= 0 && up < 0.8 ? Math.sqrt(1 - up / 0.8) : 0), up };
+                kPV: clamp(0.85 + 0.15 * m.EDP / 8, 0.8, 1.5), amp: clamp(svNow / 1.5, 0, 1.6) * (up >= 0 && up < 0.8 ? Math.sqrt(1 - up / 0.8) : 0), up };
     const key = [cur.pre, m.EDP, cur.svr, m.MAP].map(x => x.toFixed(1)).join('|'), slow = key !== slowKey; slowKey = key;
     const dRoot = HC.s * hg.d;
-    RIB.forEach(R => { if (!R.live && !slow && R.last) return; const d = ribbonD(R, c, dRoot); if (d !== R.last) { R.el.setAttribute('d', d); if (R.casing) R.casing.setAttribute('d', d); R.last = d; } });
+    RIB.forEach(R => { if (!R.live && !slow && R.last) return; const d = ribbonD(R, c, dRoot); if (d !== R.last) { R.el.setAttribute('d', d); R.hi.setAttribute('d', R.hiD); if (R.casing) R.casing.setAttribute('d', d); if (R.shadow) R.shadow.setAttribute('d', d); R.last = d; } });
 
     el.lungL.style.fill = el.lungR.style.fill = satSoft(cur.sa);
     el.edema.setAttribute('opacity', clamp((m.EDP - 16) / 12, 0, 1).toFixed(2));
@@ -787,12 +1707,13 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
       if (p.where !== front) { (front ? gRF : gRB).appendChild(p.el); p.where = front; }
       const hw = sg.bed ? BED[sg.k] * bedRamp(u) : Math.max(0, W[sg.k](u, c) / 2 - 2.6) * 0.9, off = p.lane * hw;
       p.el.setAttribute('cx', F(PX[r][idx] + QX[r][idx] * off)); p.el.setAttribute('cy', F(PY[r][idx] + QY[r][idx] * off));
-      p.el.style.fill = sg.bed === 'lung' ? css(mix3(rgbV, rgbA, smooth(0.2, 0.75, u))) : sg.bed === 'tis' ? css(mix3(rgbA, rgbV, smooth(0.25, 0.8, u))) : (sg.col === 'a' ? cA : cV);
+      if (sg.bed) { p.el.style.fill = sg.bed === 'lung' ? css(mix3(rgbV, rgbA, smooth(0.2, 0.75, u))) : css(mix3(rgbA, rgbV, smooth(0.25, 0.8, u))); p.fk = ''; }
+      else if (p.fk !== sg.col) { p.el.style.fill = sg.col === 'a' ? 'url(#gRbcA)' : 'url(#gRbcV)'; p.fk = sg.col; }
     }
 
     /* 숫자 */
     setTxt(T.sa, fmt(cur.sa)); setTxt(T.map, fmt(m.MAP)); setTxt(T.bp, `${fmt(m.SBP)}/${fmt(m.DBP)} mmHg`);
-    setTxt(T.svr, fmt(cur.svr)); setTxt(T.sv, fmt(m.SvO2)); setTxt(T.pre, fmt(cur.pre)); setTxt(T.ef, fmt(m.EF)); setTxt(T.svol, fmt(m.SV, 2)); setTxt(T.er, fmt(m.ER));
+    setTxt(T.svr, fmt(cur.svr)); setTxt(T.sv, fmt(m.SvO2)); setTxt(T.pre, fmt(cur.pre)); setTxt(T.ef, fmt(vb.EDV > 0 ? vb.SV / vb.EDV * 100 : 0)); setTxt(T.svol, fmt(vb.SV, 2));   /* 그림의 EF·SV는 방금 지나간 그 박동의 값 */ setTxt(T.er, fmt(m.ER));
     setTxt(T.tis2, m.limited ? `· VO₂ ${fmt(m.VO2,1)} < 요구 ${fmt(m.need,1)}` : `· VO₂ ${fmt(m.VO2,1)}`);
     setTxt($('#v-map'), fmt(m.MAP)); setTxt($('#r-map'), `${fmt(m.SBP)}/${fmt(m.DBP)}`);
     setTxt($('#v-co'), fmt(m.CO)); setTxt($('#r-co'), `${fmt(cur.hr)} × ${fmt(m.SV,2)}`);
@@ -811,11 +1732,12 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
   $('#sliders').addEventListener('input', (e) => {
     const k = e.target.id.slice(2); base[k] = lim(k, base[k] + (+e.target.value - tgt[k])); preset = null; commit();
   });
-  $('#presets').addEventListener('click', (e) => {
+  const onPreset = (e) => {
     const b = e.target.closest('button'); if (!b) return; push();
     const ps = PRESETS.find(p => p.id === b.dataset.id); base = { ...NORMAL, ...ps.p }; active = []; preset = ps.id; commit();
-  });
-  $('#ivs').addEventListener('click', (e) => {
+  };
+  ['#presets', '#cv-presets'].forEach(id => $(id).addEventListener('click', onPreset));
+  const onIv = (e) => {
     const more = e.target.closest('.rep');
     if (more) { const a = active.find(x => x.id === more.dataset.more), v = ivOf(more.dataset.more);
       if (!a || a.n >= (v.max || 1)) return; push(); a.n++; commit(); return; }
@@ -824,17 +1746,29 @@ table.ref th{font-size:11.5px;color:var(--muted);font-weight:600;white-space:now
     const i = active.findIndex(a => a.id === b.dataset.id);
     if (i >= 0) active.splice(i, 1); else active.push({ id:b.dataset.id, n:1 });
     commit();
-  });
-  $('#applied-clear').addEventListener('click', () => { push(); active = []; commit(); });
+  };
+  ['#ivs', '#cv-ivs'].forEach(id => $(id).addEventListener('click', onIv));
+  ['#applied-clear', '#cv-clear'].forEach(id => $(id).addEventListener('click', () => { push(); active = []; commit(); }));
+  $('#cv-reset').addEventListener('click', () => { push(); base = { ...NORMAL }; active = []; preset = 'normal'; commit(); });
   $('#btn-undo').addEventListener('click', () => { const h = hist.pop(); if (!h) return; base = h.base; active = h.active; preset = h.preset; commit(); });
   $('#btn-reset').addEventListener('click', () => { push(); base = { ...NORMAL }; active = []; preset = 'normal'; commit(); });
   $$('.seg button[data-spd]').forEach(b => b.addEventListener('click', () => { speed = +b.dataset.spd; syncSpeed(); }));
   function syncSpeed(){ $$('.seg button[data-spd]').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.spd === speed))); }
 
-  $$('.tab').forEach(t => t.addEventListener('click', () => { $$('.tab').forEach(x => { const on = x === t; x.setAttribute('aria-selected', String(on)); $('#' + x.dataset.panel).classList.toggle('active', on); }); window.scrollTo(0, 0); }));
+  let tab = 'hemo';
+  $$('.tab').forEach(t => t.addEventListener('click', () => {
+    $$('.tab').forEach(x => { const on = x === t; x.setAttribute('aria-selected', String(on)); $('#' + x.dataset.panel).classList.toggle('active', on); });
+    tab = t.id.slice(4); useHeart(tab === 'ecg' ? 'ecg' : 'hemo');
+    if (tab === 'ecg') { requestAnimationFrame(() => { e2Resize(); if (E2.frozen) e2Static(); }); }
+    else if (tab === 'curve') drawCurves();
+    else if (tab === 'hemo' && ECG.on) { ECG.lastX = -1; requestAnimationFrame(ecgResize); }
+    window.scrollTo(0, 0);
+  }));
   const setHead = () => document.documentElement.style.setProperty('--head-h', $('#top').offsetHeight + 'px');
   setHead(); addEventListener('resize', setHead); if (document.fonts && document.fonts.ready) document.fonts.ready.then(setHead);
 
+  let ecgPref = null; try { ecgPref = localStorage.getItem('cardio:ecg'); } catch (e) {}
+  setEcg(ecgPref == null ? matchMedia('(min-width: 861px)').matches : ecgPref === '1');   /* 처음에는 PC만 켜 둠 — 폰은 숫자 타일 자리를 쓰므로 버튼으로 */
   syncSpeed(); commit(); requestAnimationFrame(frame);
   window.__cardioModel = model;
 })();
